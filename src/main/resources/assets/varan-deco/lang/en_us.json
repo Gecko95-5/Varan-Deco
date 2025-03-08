@@ -1,0 +1,39 @@
+{
+  "item.varan-deco.placeholder_stick": "Placeholder Stick",
+
+  "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
+  "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
+  "block.varan-deco.polished_granite_temp": "Non-Craftable Polished Granite",
+  "block.varan-deco.stone_temp": "Stone Template",
+  "block.varan-deco.smooth_stone_temp": "Smooth Stone Template",
+  "block.varan-deco.calcite_temp": "Calcite Template",
+  "block.varan-deco.tuff_temp": "Tuff Template",
+  "block.varan-deco.dripstone_temp": "Dripstone Block Template",
+
+  "block.varan-deco.stone_wall": "Stone Wall",
+  "block.varan-deco.polished_andesite_wall": "Polished Andesite Wall",
+  "block.varan-deco.polished_diorite_wall": "Polished Diorite Wall",
+  "block.varan-deco.polished_granite_wall": "Polished Granite Wall",
+
+  "block.varan-deco.smooth_stone_stairs": "Smooth Stone Stairs",
+  "block.varan-deco.smooth_stone_wall": "Smooth Stone Wall",
+
+  "block.varan-deco.calcite_stairs": "Calcite Stairs",
+  "block.varan-deco.calcite_slab": "Calcite Slab",
+  "block.varan-deco.calcite_wall": "Calcite Wall",
+
+  "block.varan-deco.tuff_stairs": "Tuff Stairs",
+  "block.varan-deco.tuff_slab": "Tuff Slab",
+  "block.varan-deco.tuff_wall": "Tuff Wall",
+
+  "block.varan-deco.dripstone_stairs": "Dripstone Stairs",
+  "block.varan-deco.dripstone_slab": "Dripstone Slab",
+  "block.varan-deco.dripstone_wall": "Dripstone Wall",
+
+  "block.varan-deco.polished_stone": "Polished Stone",
+  "block.varan-deco.polished_stone_stairs": "Polished Stone Stairs",
+  "block.varan-deco.polished_stone_slab": "Polished Stone Slab",
+  "block.varan-deco.polished_stone_wall": "Polished Stone Wall",
+
+  "block.varan-deco.stone_tiles": "Stone Tiles"
+}
