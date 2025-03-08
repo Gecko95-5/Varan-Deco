@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:polished_stone_wall",
+    "varan-deco:polished_andesite_wall",
+    "varan-deco:polished_diorite_wall",
+    "varan-deco:polished_granite_wall",
+    "varan-deco:stone_wall",
+    "varan-deco:smooth_stone_wall",
+    "varan-deco:dripstone_wall",
+    "varan-deco:calcite_wall",
+    "varan-deco:tuff_wall"
+  ]
+}

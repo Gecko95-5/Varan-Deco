@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:polished_stone",
+    "varan-deco:polished_stone_stairs",
+    "varan-deco:polished_stone_slab",
+    "varan-deco:polished_stone_wall",
+    "varan-deco:polished_andesite_wall",
+    "varan-deco:polished_diorite_wall",
+    "varan-deco:polished_granite_wall",
+    "varan-deco:stone_wall",
+    "varan-deco:smooth_stone_stairs",
+    "varan-deco:smooth_stone_wall",
+    "varan-deco:dripstone_stairs",
+    "varan-deco:dripstone_slab",
+    "varan-deco:dripstone_wall",
+    "varan-deco:calcite_stairs",
+    "varan-deco:calcite_slab",
+    "varan-deco:calcite_wall",
+    "varan-deco:tuff_stairs",
+    "varan-deco:tuff_slab",
+    "varan-deco:tuff_wall",
+    "varan-deco:stone_tiles"
+  ]
+}

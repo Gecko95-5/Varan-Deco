@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/tuff_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/tuff_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/tuff_slab_top"
+    }
+  }
+}
