@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/snow_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/snow_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/snow_slab_top"
+    }
+  }
+}

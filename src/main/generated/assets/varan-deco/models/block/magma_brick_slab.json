@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "varan-deco:block/magma_bricks",
+    "side": "varan-deco:block/magma_bricks",
+    "top": "varan-deco:block/magma_bricks"
+  }
+}

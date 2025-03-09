@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:gilded_blackstone"
+    },
+    "P": {
+      "item": "minecraft:polished_blackstone"
+    }
+  },
+  "pattern": [
+    "P#",
+    "#P"
+  ],
+  "result": {
+    "count": 2,
+    "item": "varan-deco:polished_gilded_blackstone"
+  }
+}

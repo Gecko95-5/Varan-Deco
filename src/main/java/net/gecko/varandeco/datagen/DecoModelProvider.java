@@ -7,6 +7,7 @@ import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 
 public class DecoModelProvider extends FabricModelProvider {
     public DecoModelProvider(FabricDataGenerator dataGenerator) {
@@ -31,10 +32,29 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TUFF_TEMP);
         BlockStateModelGenerator.BlockTexturePool dripstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DRIPSTONE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool packmudpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PACKED_MUD_TEMP);
         BlockStateModelGenerator.BlockTexturePool polistonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_STONE);
         BlockStateModelGenerator.BlockTexturePool stonetilepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool netherbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.NETHER_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rednetherbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_NETHER_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool netherrackpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.NETHERRACK_TEMP);
+        BlockStateModelGenerator.BlockTexturePool magmapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MAGMA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool magmabrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MAGMA_BRICKS);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_MAGMA_BRICKS, TexturedModel.CUBE_BOTTOM_TOP);
+        BlockStateModelGenerator.BlockTexturePool blackstonetilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_BLACKSTONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool snowpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SNOW_TEMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.POLISHED_GLIDED_BLACKSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -57,6 +77,38 @@ public class DecoModelProvider extends FabricModelProvider {
        polistonepool.stairs(DecoBlocks.POLISHED_STONE_STAIRS);
        polistonepool.slab(DecoBlocks.POLISHED_STONE_SLAB);
        polistonepool.wall(DecoBlocks.POLISHED_STONE_WALL);
+
+       stonetilepool.stairs(DecoBlocks.STONE_TILE_STAIRS);
+       stonetilepool.slab(DecoBlocks.STONE_TILE_SLAB);
+       stonetilepool.wall(DecoBlocks.STONE_TILE_WALL);
+
+       packmudpool.stairs(DecoBlocks.PACKED_MUD_STAIRS);
+       packmudpool.slab(DecoBlocks.PACKED_MUD_SLAB);
+       packmudpool.wall(DecoBlocks.PACKED_MUD_WALL);
+
+       netherbrickpool.fenceGate(DecoBlocks.NETHER_BRICK_FENCE_GATE);
+       rednetherbrickpool.fence(DecoBlocks.RED_NETHER_BRICK_FENCE);
+       rednetherbrickpool.fenceGate(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE);
+
+       netherrackpool.stairs(DecoBlocks.NETHERRACK_STAIRS);
+       netherrackpool.slab(DecoBlocks.NETHERRACK_SLAB);
+       netherrackpool.wall(DecoBlocks.NETHERRACK_WALL);
+
+       magmapool.stairs(DecoBlocks.MAGMA_STAIRS);
+       magmapool.slab(DecoBlocks.MAGMA_SLAB);
+       magmapool.wall(DecoBlocks.MAGMA_WALL);
+
+       magmabrickpool.stairs(DecoBlocks.MAGMA_BRICK_STAIRS);
+       magmabrickpool.slab(DecoBlocks.MAGMA_BRICK_SLAB);
+       magmabrickpool.wall(DecoBlocks.MAGMA_BRICK_WALL);
+
+       blackstonetilepool.stairs(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS);
+       blackstonetilepool.slab(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB);
+       blackstonetilepool.wall(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL);
+
+       snowpool.stairs(DecoBlocks.SNOW_STAIRS);
+       snowpool.slab(DecoBlocks.SNOW_SLAB);
+       snowpool.wall(DecoBlocks.SNOW_WALL);
     }
 
     @Override

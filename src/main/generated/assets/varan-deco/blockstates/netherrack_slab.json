@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/netherrack_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/netherrack_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/netherrack_slab_top"
+    }
+  }
+}

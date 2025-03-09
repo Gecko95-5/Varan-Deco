@@ -9,6 +9,13 @@
     "varan-deco:smooth_stone_wall",
     "varan-deco:dripstone_wall",
     "varan-deco:calcite_wall",
-    "varan-deco:tuff_wall"
+    "varan-deco:tuff_wall",
+    "varan-deco:stone_tile_wall",
+    "varan-deco:packed_mud_wall",
+    "varan-deco:netherrack_wall",
+    "varan-deco:magma_wall",
+    "varan-deco:magma_brick_wall",
+    "varan-deco:polished_blackstone_tile_wall",
+    "varan-deco:snow_wall"
   ]
 }

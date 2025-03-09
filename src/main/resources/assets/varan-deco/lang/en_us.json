@@ -9,6 +9,12 @@
   "block.varan-deco.calcite_temp": "Calcite Template",
   "block.varan-deco.tuff_temp": "Tuff Template",
   "block.varan-deco.dripstone_temp": "Dripstone Block Template",
+  "block.varan-deco.netherrack_temp": "Netherrack Template",
+  "block.varan-deco.magma_temp": "Magma Block Template",
+  "block.varan-deco.packed_mud_temp": "Non-Craftable Packed Mud",
+  "block.varan-deco.nether_bricks_temp": "Non-Craftable Nether Bricks",
+  "block.varan-deco.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
+  "block.varan-deco.snow_temp": "Non-Craftable Snow",
 
   "block.varan-deco.stone_wall": "Stone Wall",
   "block.varan-deco.polished_andesite_wall": "Polished Andesite Wall",
@@ -35,5 +41,42 @@
   "block.varan-deco.polished_stone_slab": "Polished Stone Slab",
   "block.varan-deco.polished_stone_wall": "Polished Stone Wall",
 
-  "block.varan-deco.stone_tiles": "Stone Tiles"
+  "block.varan-deco.stone_tiles": "Stone Tiles",
+  "block.varan-deco.stone_tile_stairs": "Stone Tile Stairs",
+  "block.varan-deco.stone_tile_slab": "Stone Tile Slab",
+  "block.varan-deco.stone_tile_wall": "Stone Tile Wall",
+
+  "block.varan-deco.packed_mud_stairs": "Packed Mud Stairs",
+  "block.varan-deco.packed_mud_slab": "Packed Mud Slab",
+  "block.varan-deco.packed_mud_wall": "Packed Mud Wall",
+
+  "block.varan-deco.netherrack_stairs": "Netherrack Stairs",
+  "block.varan-deco.netherrack_slab": "Netherrack Slab",
+  "block.varan-deco.netherrack_wall": "Netherrack Wall",
+
+  "block.varan-deco.magma_stairs": "Magma Stairs",
+  "block.varan-deco.magma_slab": "Magma Slab",
+  "block.varan-deco.magma_wall": "Magma Wall",
+
+  "block.varan-deco.magma_bricks": "Magma Bricks",
+  "block.varan-deco.magma_brick_stairs": "Magma Brick Stairs",
+  "block.varan-deco.magma_brick_slab": "Magma Brick Slab",
+  "block.varan-deco.magma_brick_wall": "Magma Brick Wall",
+  "block.varan-deco.chiseled_magma_bricks": "Chiseled Magma Bricks",
+
+  "block.varan-deco.red_nether_brick_fence": "Red Nether Brick Fence",
+  "block.varan-deco.nether_brick_fence_gate": "Nether Brick Fence Gate",
+  "block.varan-deco.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
+
+  "block.varan-deco.polished_blackstone_tiles": "Polished Blackstone Tiles",
+  "block.varan-deco.polished_blackstone_tile_stairs": "Polished Blackstone Tile Stairs",
+  "block.varan-deco.polished_blackstone_tile_slab": "Polished Blackstone Tile Slab",
+  "block.varan-deco.polished_blackstone_tile_wall": "Polished Blackstone Tile Wall",
+
+  "block.varan-deco.polished_gilded_blackstone": "Polished Gilded Blackstone",
+  "block.varan-deco.chiseled_gilded_blackstone": "Chiseled Polished Glided Blackstone",
+
+  "block.varan-deco.snow_stairs": "Snow Stairs",
+  "block.varan-deco.snow_slab": "Snow Slab",
+  "block.varan-deco.snow_wall": "Snow Wall"
 }

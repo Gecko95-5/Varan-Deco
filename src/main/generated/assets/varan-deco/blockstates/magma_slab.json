@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/magma_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/magma_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/magma_slab_top"
+    }
+  }
+}

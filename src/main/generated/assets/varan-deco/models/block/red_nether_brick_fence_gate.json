@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "varan-deco:block/red_nether_bricks_temp"
+  }
+}
