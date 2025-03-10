@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "varan-deco:block/snow_bricks",
+    "side": "varan-deco:block/snow_bricks",
+    "top": "varan-deco:block/snow_bricks"
+  }
+}

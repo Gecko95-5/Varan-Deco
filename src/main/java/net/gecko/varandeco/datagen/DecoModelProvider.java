@@ -55,6 +55,20 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SNOW_TEMP);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.POLISHED_GLIDED_BLACKSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
+        BlockStateModelGenerator.BlockTexturePool packicepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PACKED_ICE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool blueicepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLUE_ICE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool snowbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SNOW_BRICKS);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_SNOW_BRICKS, TexturedModel.CUBE_COLUMN);
+        BlockStateModelGenerator.BlockTexturePool icebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ICE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLACK_ICE);
+        BlockStateModelGenerator.BlockTexturePool smoothsandstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SANDSTONE_TOP_TEMP);
+        BlockStateModelGenerator.BlockTexturePool smoothredsandstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_TOP_TEMP);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -109,10 +123,29 @@ public class DecoModelProvider extends FabricModelProvider {
        snowpool.stairs(DecoBlocks.SNOW_STAIRS);
        snowpool.slab(DecoBlocks.SNOW_SLAB);
        snowpool.wall(DecoBlocks.SNOW_WALL);
+
+       packicepool.stairs(DecoBlocks.PACKED_ICE_STAIRS);
+       packicepool.slab(DecoBlocks.PACKED_ICE_SLAB);
+       packicepool.wall(DecoBlocks.PACKED_ICE_WALL);
+
+       blueicepool.stairs(DecoBlocks.BLUE_ICE_STAIRS);
+       blueicepool.slab(DecoBlocks.BLUE_ICE_SLAB);
+       blueicepool.wall(DecoBlocks.BLUE_ICE_WALL);
+
+       snowbrickpool.stairs(DecoBlocks.SNOW_BRICK_STAIRS);
+       snowbrickpool.slab(DecoBlocks.SNOW_BRICK_SLAB);
+       snowbrickpool.wall(DecoBlocks.SNOW_BRICK_WALL);
+
+       icebrickpool.stairs(DecoBlocks.ICE_BRICK_STAIRS);
+       icebrickpool.slab(DecoBlocks.ICE_BRICK_SLAB);
+       icebrickpool.wall(DecoBlocks.ICE_BRICK_WALL);
+
+       smoothsandstonepool.wall(DecoBlocks.SMOOTH_SANDSTONE_WALL);
+       smoothredsandstonepool.wall(DecoBlocks.SMOOTH_RED_SANDSTONE_WALL);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(DecoItems.PLACEHOLDER_STICK, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
     }
 }

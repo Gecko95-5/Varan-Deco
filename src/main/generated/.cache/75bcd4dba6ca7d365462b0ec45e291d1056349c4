@@ -1,6 +1,7 @@
-// 1.19.2	2025-03-08T23:51:48.8570417	Tags for minecraft:block
-75ad94cb5c98693f88d1615970be67d3aee49326 data\minecraft\tags\blocks\mineable\pickaxe.json
-cbbfac02660525e99d5de454ab6f77693673aa29 data\minecraft\tags\blocks\walls.json
+// 1.19.2	2025-03-09T22:19:18.2758375	Tags for minecraft:block
+40f165b34c45192b165ccb541259704f3d119bd5 data\minecraft\tags\blocks\mineable\pickaxe.json
+ce31acf7a17e4864e181fab04cf10a559ebb95e9 data\minecraft\tags\blocks\needs_iron_tool.json
+f08b59f64c0c358f9a948329e208338f78c18b13 data\minecraft\tags\blocks\walls.json
 ce2e1f9a1c3673bc59b2c5976270b8648cd73707 data\minecraft\tags\blocks\fence_gates.json
-5df67f0f02e287e5913b7b485137502742cf43ca data\minecraft\tags\blocks\mineable\shovel.json
+b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\mineable\shovel.json
 6269e39bedb81a6c2c929a630f4be9059c616623 data\minecraft\tags\blocks\fences.json

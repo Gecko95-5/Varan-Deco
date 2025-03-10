@@ -16,6 +16,16 @@
     "varan-deco:magma_wall",
     "varan-deco:magma_brick_wall",
     "varan-deco:polished_blackstone_tile_wall",
-    "varan-deco:snow_wall"
+    "varan-deco:snow_wall",
+    "varan-deco:packed_ice_wall",
+    "varan-deco:blue_ice_wall",
+    "varan-deco:snow_brick_wall",
+    "varan-deco:ice_brick_wall",
+    "varan-deco:cut_sandstone_wall",
+    "varan-deco:cut_red_sandstone_wall",
+    "varan-deco:smooth_sandstone_wall",
+    "varan-deco:smooth_red_sandstone_wall",
+    "varan-deco:cut_sandstone_brick_wall",
+    "varan-deco:cut_red_sandstone_brick_wall"
   ]
 }

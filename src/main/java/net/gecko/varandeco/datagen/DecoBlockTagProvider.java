@@ -58,12 +58,45 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB)
                 .add(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL)
                 .add(DecoBlocks.POLISHED_GLIDED_BLACKSTONE)
-                .add(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
+                .add(DecoBlocks.CHISELED_GLIDED_BLACKSTONE)
+                .add(DecoBlocks.BLUE_ICE_STAIRS)
+                .add(DecoBlocks.BLUE_ICE_SLAB)
+                .add(DecoBlocks.BLUE_ICE_WALL)
+                .add(DecoBlocks.PACKED_ICE_STAIRS)
+                .add(DecoBlocks.PACKED_ICE_SLAB)
+                .add(DecoBlocks.PACKED_ICE_WALL)
+                .add(DecoBlocks.ICE_BRICKS)
+                .add(DecoBlocks.ICE_BRICK_STAIRS)
+                .add(DecoBlocks.ICE_BRICK_SLAB)
+                .add(DecoBlocks.ICE_BRICK_WALL)
+                .add(DecoBlocks.BLACK_ICE)
+                .add(DecoBlocks.CUT_SANDSTONE_STAIRS)
+                .add(DecoBlocks.CUT_SANDSTONE_WALL)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_STAIRS)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_SANDSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_RED_SANDSTONE_WALL)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICKS)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICK_WALL)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
                 .add(DecoBlocks.SNOW_SLAB)
-                .add(DecoBlocks.SNOW_WALL);
+                .add(DecoBlocks.SNOW_WALL)
+                .add(DecoBlocks.SNOW_BRICKS)
+                .add(DecoBlocks.CHISELED_SNOW_BRICKS)
+                .add(DecoBlocks.SNOW_BRICK_STAIRS)
+                .add(DecoBlocks.SNOW_BRICK_SLAB)
+                .add(DecoBlocks.SNOW_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(DecoBlocks.BLACK_ICE);
 
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -82,7 +115,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MAGMA_WALL)
                 .add(DecoBlocks.MAGMA_BRICK_WALL)
                 .add(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL)
-                .add(DecoBlocks.SNOW_WALL);
+                .add(DecoBlocks.SNOW_WALL)
+                .add(DecoBlocks.PACKED_ICE_WALL)
+                .add(DecoBlocks.BLUE_ICE_WALL)
+                .add(DecoBlocks.SNOW_BRICK_WALL)
+                .add(DecoBlocks.ICE_BRICK_WALL)
+                .add(DecoBlocks.CUT_SANDSTONE_WALL)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_SANDSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_RED_SANDSTONE_WALL)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICK_WALL)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE);

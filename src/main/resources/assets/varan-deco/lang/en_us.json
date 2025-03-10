@@ -1,5 +1,5 @@
 {
-  "item.varan-deco.placeholder_stick": "Placeholder Stick",
+  "item.varan-deco.snow_brick": "Snow Brick",
 
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -15,6 +15,8 @@
   "block.varan-deco.nether_bricks_temp": "Non-Craftable Nether Bricks",
   "block.varan-deco.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
   "block.varan-deco.snow_temp": "Non-Craftable Snow",
+  "block.varan-deco.packed_ice_temp": "Non-Craftable Packed Ice",
+  "block.varan-deco.blue_ice_temp": "Non-Craftable Blue Ice",
 
   "block.varan-deco.stone_wall": "Stone Wall",
   "block.varan-deco.polished_andesite_wall": "Polished Andesite Wall",
@@ -78,5 +80,45 @@
 
   "block.varan-deco.snow_stairs": "Snow Stairs",
   "block.varan-deco.snow_slab": "Snow Slab",
-  "block.varan-deco.snow_wall": "Snow Wall"
+  "block.varan-deco.snow_wall": "Snow Wall",
+
+  "block.varan-deco.packed_ice_stairs": "Packed Ice Stairs",
+  "block.varan-deco.packed_ice_slab": "Packed Ice Slab",
+  "block.varan-deco.packed_ice_wall": "Packed Ice Wall",
+
+  "block.varan-deco.blue_ice_stairs": "Blue Ice Stairs",
+  "block.varan-deco.blue_ice_slab": "Blue Ice Slab",
+  "block.varan-deco.blue_ice_wall": "Blue Ice Wall",
+
+  "block.varan-deco.snow_bricks": "Snow Bricks",
+  "block.varan-deco.snow_brick_stairs": "Snow Brick Stairs",
+  "block.varan-deco.snow_brick_slab": "Snow Brick Slab",
+  "block.varan-deco.snow_brick_wall": "Snow Brick Wall",
+  "block.varan-deco.chiseled_snow_bricks": "Chiseled Snow Bricks",
+
+  "block.varan-deco.ice_bricks": "Ice Bricks",
+  "block.varan-deco.ice_brick_stairs": "Ice Brick Stairs",
+  "block.varan-deco.ice_brick_slab": "Ice Brick Slab",
+  "block.varan-deco.ice_brick_wall": "Ice Brick Wall",
+
+  "block.varan-deco.black_ice": "Black Ice",
+
+  "block.varan-deco.cut_sandstone_stairs": "Cut Sandstone Stairs",
+  "block.varan-deco.cut_sandstone_wall": "Cut Sandstone Wall",
+
+  "block.varan-deco.cut_red_sandstone_stairs": "Cut Red Sandstone Stairs",
+  "block.varan-deco.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
+
+  "block.varan-deco.smooth_sandstone_wall": "Smooth Sandstone Wall",
+  "block.varan-deco.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
+
+  "block.varan-deco.cut_sandstone_bricks": "Cut Sandstone Bricks",
+  "block.varan-deco.cut_sandstone_brick_stairs": "Cut Sandstone Brick Stairs",
+  "block.varan-deco.cut_sandstone_brick_slab": "Cut Sandstone Brick Slab",
+  "block.varan-deco.cut_sandstone_brick_wall": "Cut Sandstone Brick Wall",
+
+  "block.varan-deco.cut_red_sandstone_bricks": "Cut Red Sandstone Bricks",
+  "block.varan-deco.cut_red_sandstone_brick_stairs": "Cut Red Sandstone Brick Stairs",
+  "block.varan-deco.cut_red_sandstone_brick_slab": "Cut Red Sandstone Brick Slab",
+  "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall"
 }

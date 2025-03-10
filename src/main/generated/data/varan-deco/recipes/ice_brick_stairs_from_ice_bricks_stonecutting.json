@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:ice_bricks"
+  },
+  "result": "varan-deco:ice_brick_stairs"
+}

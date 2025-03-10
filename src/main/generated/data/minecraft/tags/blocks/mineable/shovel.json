@@ -3,6 +3,11 @@
   "values": [
     "varan-deco:snow_stairs",
     "varan-deco:snow_slab",
-    "varan-deco:snow_wall"
+    "varan-deco:snow_wall",
+    "varan-deco:snow_bricks",
+    "varan-deco:chiseled_snow_bricks",
+    "varan-deco:snow_brick_stairs",
+    "varan-deco:snow_brick_slab",
+    "varan-deco:snow_brick_wall"
   ]
 }
