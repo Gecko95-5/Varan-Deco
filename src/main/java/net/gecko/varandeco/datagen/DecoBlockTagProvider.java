@@ -127,11 +127,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(DecoBlocks.RED_NETHER_BRICK_FENCE);
+                .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
+                .add(DecoBlocks.CACTUS_PLANK_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
-                .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE);
+                .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE)
+                .add(DecoBlocks.CACTUS_PLANK_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(DecoBlocks.CACTUS_PLANKS);
@@ -176,5 +178,20 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ICE_BRICK_SLAB)
                 .add(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB)
                 .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(DecoBlocks.CACTUS_PLANK_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(DecoBlocks.CACTUS_PLANK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(DecoBlocks.CACTUS_PLANK_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(DecoBlocks.CACTUS_PLANK_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
     }
 }

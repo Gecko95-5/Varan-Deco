@@ -1,4 +1,4 @@
-// 1.19.2	2025-03-10T22:29:38.7152321	minecraft:block Loot Table
+// 1.19.2	2025-03-10T23:02:37.5357757	minecraft:block Loot Table
 710553ad30244d1e184c707c155d770032e55610 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_stairs.json
 292931d7a4572294541621b416a2add23fa6b09b data\varan-deco\loot_tables\blocks\smooth_sandstone_wall.json
 ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_red_sandstone_bricks.json
@@ -7,13 +7,16 @@ ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_
 355309f4fa828098469442c247091977033171f7 data\varan-deco\loot_tables\blocks\stone_tile_slab.json
 d68c8fa930f6ef65649b754fbfc7c53f03ed6430 data\varan-deco\loot_tables\blocks\cut_red_sandstone_brick_wall.json
 495e6d076448c57df215fbf5d82954fbe6558fae data\varan-deco\loot_tables\blocks\snow_stairs.json
+4903ed284c12e8ea9e54e631e0fd8bd005126582 data\varan-deco\loot_tables\blocks\cactus_plank_pressure_plate.json
 6e925c31a1d9b2b8198db4247c6b8a63e2a1709b data\varan-deco\loot_tables\blocks\polished_andesite_wall.json
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
+d58d6db122096ee5c4d66ad43fc259d88f823256 data\varan-deco\loot_tables\blocks\cactus_plank_stairs.json
 991cac58c7a9737b4a9e84cd284b93e0529107df data\varan-deco\loot_tables\blocks\polished_granite_wall.json
 47d7b306521036b51d6e145b37c305c5c8118f17 data\varan-deco\loot_tables\blocks\packed_ice_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
 c349b90d06f90d1e7147563daff0e799fedff9a2 data\varan-deco\loot_tables\blocks\tuff_slab.json
 f4828cf37f99672dbd99e0ff9ca524299ea143c1 data\varan-deco\loot_tables\blocks\magma_brick_slab.json
+5c5b5eccdbdc591e6dfe9011df67540a1a0f68fc data\varan-deco\loot_tables\blocks\cactus_plank_button.json
 acc9431fdd718aaa80e29c5243f400e0654662aa data\varan-deco\loot_tables\blocks\tuff_stairs.json
 a15b9f4a32cfafee03fec6946af487a1fc0e844b data\varan-deco\loot_tables\blocks\stone_tiles.json
 3fec255449d1065f884f634b06506cd45d452583 data\varan-deco\loot_tables\blocks\snow_brick_stairs.json
@@ -48,11 +51,13 @@ fd21e0678130fbf3892ec892004cc6fc1d18830a data\varan-deco\loot_tables\blocks\smoo
 306ac795035c8f2a0868c6e574e375482de1fac9 data\varan-deco\loot_tables\blocks\packed_mud_slab.json
 6ecb3ae89da55f4acbf2148ca3e4f3dae4a0b1d7 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_slab.json
 2c159f47114bfde1987d2439af06f74f86447ea4 data\varan-deco\loot_tables\blocks\cut_sandstone_brick_stairs.json
+8556d7e9b94b22eace1dc34b30eb701218a5cf08 data\varan-deco\loot_tables\blocks\cactus_plank_fence.json
 30c05cac40106ec7a288603f68c17f55299612a4 data\varan-deco\loot_tables\blocks\cut_sandstone_brick_wall.json
 90c64907ce6710dcf036c0dc8fe284c736d7cb23 data\varan-deco\loot_tables\blocks\stone_wall.json
 04ca573b4236a37b911fc7f721fc4f411a56e833 data\varan-deco\loot_tables\blocks\smooth_red_sandstone_wall.json
 a0faef70d7fadffb839aeb25e526b5f7321eeba5 data\varan-deco\loot_tables\blocks\magma_stairs.json
 cd6d84259bfa1462c961909ef79dfb6473f146be data\varan-deco\loot_tables\blocks\red_nether_brick_fence_gate.json
+602299bd8621d07414b7e7e9605927e357c873c6 data\varan-deco\loot_tables\blocks\cactus_plank_fence_gate.json
 064dfc80e7bbdecf44a43e95d96df900900d3f6f data\varan-deco\loot_tables\blocks\ice_bricks.json
 9ea2abcea06cb69d087d833ddd00e349379fec98 data\varan-deco\loot_tables\blocks\polished_stone.json
 54bb42dee20c2c27504dd87e917240852b697ccf data\varan-deco\loot_tables\blocks\polished_stone_slab.json
@@ -79,3 +84,4 @@ af4e26b53e53b0a8f17d6319d43818fd9284570d data\varan-deco\loot_tables\blocks\ice_
 7e1d73f2a13b9353a6e03afc91e3ee850362cc09 data\varan-deco\loot_tables\blocks\dripstone_wall.json
 83a4acb79be3a20d76d75de7a2b65444de5b867f data\varan-deco\loot_tables\blocks\calcite_slab.json
 78f3dfa6165c5e65bf89ee17b54945c029b7e644 data\varan-deco\loot_tables\blocks\polished_gilded_blackstone.json
+4827ed828c882a4c6829350d3e96ff62808a2448 data\varan-deco\loot_tables\blocks\cactus_plank_slab.json

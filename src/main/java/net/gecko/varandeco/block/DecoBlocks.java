@@ -97,6 +97,9 @@ public class DecoBlocks {
     public static final Block STONE_TILE_STAIRS = registerBlock("stone_tile_stairs",
             new StairsBlock(DecoBlocks.STONE_TILES.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_PLANK_STAIRS = registerBlock("cactus_plank_stairs",
+            new StairsBlock(DecoBlocks.CACTUS_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_STAIRS = registerBlock("cut_sandstone_brick_stairs",
             new StairsBlock(DecoBlocks.CUT_SANDSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -138,6 +141,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_STONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block STONE_TILE_SLAB = registerBlock("stone_tile_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_PLANK_SLAB = registerBlock("cactus_plank_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_SLAB = registerBlock("cut_sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
@@ -153,6 +158,8 @@ public class DecoBlocks {
 
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_PLANK_FENCE = registerBlock("cactus_plank_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block STONE_WALL = registerBlock("stone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -211,6 +218,14 @@ public class DecoBlocks {
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_PLANK_FENCE_GATE = registerBlock("cactus_plank_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
+            new WoodenButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block STONE_TEMP = registerBlock("stone_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);

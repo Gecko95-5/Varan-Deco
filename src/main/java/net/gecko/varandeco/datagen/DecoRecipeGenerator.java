@@ -488,5 +488,40 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.CACTUS),
                         RecipeProvider.conditionsFromItem(Items.CACTUS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANKS)));
+
+        createStairsRecipe(DecoBlocks.CACTUS_PLANK_STAIRS, Ingredient.ofItems(DecoBlocks.CACTUS_PLANKS))
+                .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CACTUS_PLANK_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.CACTUS_PLANK_SLAB, DecoBlocks.CACTUS_PLANKS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_FENCE)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.STICK)
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.STICK)
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_FENCE_GATE)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE, DecoBlocks.CACTUS_PLANKS);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_BUTTON)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_BUTTON)));
     }
 }

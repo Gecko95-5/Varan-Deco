@@ -204,5 +204,17 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_planks"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CACTUS_PLANK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_fence"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_FENCE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_FENCE_GATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_pressure_plate"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_button"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_BUTTON));
     }
 }

@@ -69,7 +69,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SANDSTONE_TOP_TEMP);
         BlockStateModelGenerator.BlockTexturePool smoothredsandstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_TOP_TEMP);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CACTUS_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool cactusplankpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CACTUS_PLANKS);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -143,6 +144,13 @@ public class DecoModelProvider extends FabricModelProvider {
 
        smoothsandstonepool.wall(DecoBlocks.SMOOTH_SANDSTONE_WALL);
        smoothredsandstonepool.wall(DecoBlocks.SMOOTH_RED_SANDSTONE_WALL);
+
+       cactusplankpool.stairs(DecoBlocks.CACTUS_PLANK_STAIRS);
+       cactusplankpool.slab(DecoBlocks.CACTUS_PLANK_SLAB);
+       cactusplankpool.fence(DecoBlocks.CACTUS_PLANK_FENCE);
+       cactusplankpool.button(DecoBlocks.CACTUS_PLANK_BUTTON);
+       cactusplankpool.pressurePlate(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
+       cactusplankpool.fenceGate(DecoBlocks.CACTUS_PLANK_FENCE_GATE);
     }
 
     @Override
