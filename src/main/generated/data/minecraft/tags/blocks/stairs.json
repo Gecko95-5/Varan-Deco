@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:polished_stone_stairs",
+    "varan-deco:smooth_stone_stairs",
+    "varan-deco:dripstone_stairs",
+    "varan-deco:calcite_stairs",
+    "varan-deco:tuff_stairs",
+    "varan-deco:stone_tile_stairs",
+    "varan-deco:packed_mud_stairs",
+    "varan-deco:netherrack_stairs",
+    "varan-deco:magma_stairs",
+    "varan-deco:magma_brick_stairs",
+    "varan-deco:polished_blackstone_tile_stairs",
+    "varan-deco:snow_stairs",
+    "varan-deco:packed_ice_stairs",
+    "varan-deco:blue_ice_stairs",
+    "varan-deco:snow_brick_stairs",
+    "varan-deco:ice_brick_stairs",
+    "varan-deco:cut_sandstone_stairs",
+    "varan-deco:cut_red_sandstone_stairs",
+    "varan-deco:cut_sandstone_brick_stairs",
+    "varan-deco:cut_red_sandstone_brick_stairs"
+  ]
+}

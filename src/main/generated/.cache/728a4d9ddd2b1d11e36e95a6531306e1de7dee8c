@@ -1,4 +1,4 @@
-// 1.19.2	2025-03-09T22:19:18.2409293	minecraft:block Loot Table
+// 1.19.2	2025-03-10T22:29:38.7152321	minecraft:block Loot Table
 710553ad30244d1e184c707c155d770032e55610 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_stairs.json
 292931d7a4572294541621b416a2add23fa6b09b data\varan-deco\loot_tables\blocks\smooth_sandstone_wall.json
 ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_red_sandstone_bricks.json
@@ -61,6 +61,7 @@ e23608cbb7d4539c38e2216008df4483540d7caf data\varan-deco\loot_tables\blocks\blac
 2b2cf58baad6ba022e2a889b2fe22ecc7cdcb314 data\varan-deco\loot_tables\blocks\polished_diorite_wall.json
 35995f4475e157c1c84bb6f3d52889321331b745 data\varan-deco\loot_tables\blocks\polished_stone_wall.json
 8294852dbec9480ddcbbf6a15ebe2be4a237b4e1 data\varan-deco\loot_tables\blocks\cut_sandstone_brick_slab.json
+44d07b0782ca766cb59e20221390bea00305679c data\varan-deco\loot_tables\blocks\cactus_planks.json
 c30afe84537b0ac115a99f94ae249d88ef58fefe data\varan-deco\loot_tables\blocks\magma_bricks.json
 be872026da653d6a2152abf465a142b8eaf2f427 data\varan-deco\loot_tables\blocks\blue_ice_stairs.json
 bab9b0d8c2cd9b20ab0acadb151afd37931aa430 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_wall.json

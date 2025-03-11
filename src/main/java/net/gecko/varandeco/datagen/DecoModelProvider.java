@@ -69,6 +69,7 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SANDSTONE_TOP_TEMP);
         BlockStateModelGenerator.BlockTexturePool smoothredsandstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_TOP_TEMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CACTUS_PLANKS);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);

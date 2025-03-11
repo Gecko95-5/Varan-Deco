@@ -201,5 +201,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_red_sandstone_brick_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_planks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANKS));
     }
 }

@@ -98,7 +98,6 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE);
 
-
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(DecoBlocks.POLISHED_STONE_WALL)
                 .add(DecoBlocks.POLISHED_ANDESITE_WALL)
@@ -133,5 +132,49 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(DecoBlocks.CACTUS_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(DecoBlocks.POLISHED_STONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_STONE_STAIRS)
+                .add(DecoBlocks.DRIPSTONE_STAIRS)
+                .add(DecoBlocks.CALCITE_STAIRS)
+                .add(DecoBlocks.TUFF_STAIRS)
+                .add(DecoBlocks.STONE_TILE_STAIRS)
+                .add(DecoBlocks.PACKED_MUD_STAIRS)
+                .add(DecoBlocks.NETHERRACK_STAIRS)
+                .add(DecoBlocks.MAGMA_STAIRS)
+                .add(DecoBlocks.MAGMA_BRICK_STAIRS)
+                .add(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS)
+                .add(DecoBlocks.SNOW_STAIRS)
+                .add(DecoBlocks.PACKED_ICE_STAIRS)
+                .add(DecoBlocks.BLUE_ICE_STAIRS)
+                .add(DecoBlocks.SNOW_BRICK_STAIRS)
+                .add(DecoBlocks.ICE_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_SANDSTONE_STAIRS)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_STAIRS)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(DecoBlocks.POLISHED_STONE_SLAB)
+                .add(DecoBlocks.DRIPSTONE_SLAB)
+                .add(DecoBlocks.CALCITE_SLAB)
+                .add(DecoBlocks.TUFF_SLAB)
+                .add(DecoBlocks.STONE_TILE_SLAB)
+                .add(DecoBlocks.PACKED_MUD_SLAB)
+                .add(DecoBlocks.NETHERRACK_SLAB)
+                .add(DecoBlocks.MAGMA_SLAB)
+                .add(DecoBlocks.MAGMA_BRICK_SLAB)
+                .add(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB)
+                .add(DecoBlocks.SNOW_SLAB)
+                .add(DecoBlocks.PACKED_ICE_SLAB)
+                .add(DecoBlocks.BLUE_ICE_SLAB)
+                .add(DecoBlocks.SNOW_BRICK_SLAB)
+                .add(DecoBlocks.ICE_BRICK_SLAB)
+                .add(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB)
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB);
     }
 }

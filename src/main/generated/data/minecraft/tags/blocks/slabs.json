@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:polished_stone_slab",
+    "varan-deco:dripstone_slab",
+    "varan-deco:calcite_slab",
+    "varan-deco:tuff_slab",
+    "varan-deco:stone_tile_slab",
+    "varan-deco:packed_mud_slab",
+    "varan-deco:netherrack_slab",
+    "varan-deco:magma_slab",
+    "varan-deco:magma_brick_slab",
+    "varan-deco:polished_blackstone_tile_slab",
+    "varan-deco:snow_slab",
+    "varan-deco:packed_ice_slab",
+    "varan-deco:blue_ice_slab",
+    "varan-deco:snow_brick_slab",
+    "varan-deco:ice_brick_slab",
+    "varan-deco:cut_sandstone_brick_slab",
+    "varan-deco:cut_red_sandstone_brick_slab"
+  ]
+}

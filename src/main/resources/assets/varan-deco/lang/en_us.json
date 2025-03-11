@@ -120,5 +120,10 @@
   "block.varan-deco.cut_red_sandstone_bricks": "Cut Red Sandstone Bricks",
   "block.varan-deco.cut_red_sandstone_brick_stairs": "Cut Red Sandstone Brick Stairs",
   "block.varan-deco.cut_red_sandstone_brick_slab": "Cut Red Sandstone Brick Slab",
-  "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall"
+  "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall",
+
+  "block.varan-deco.cactus_planks": "Cactus Planks",
+
+  "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks",
+  "itemGroup.varan-deco.varan_deco_items": "Varan Deco Items"
 }

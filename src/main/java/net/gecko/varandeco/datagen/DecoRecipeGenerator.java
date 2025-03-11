@@ -6,11 +6,15 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipeProvider;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.ShapelessRecipe;
+import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeBookCategory;
 import net.minecraft.util.Identifier;
 
@@ -479,5 +483,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL, Items.RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL, Items.CUT_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL, DecoBlocks.CUT_RED_SANDSTONE_BRICKS);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANKS,2)
+                .criterion(RecipeProvider.hasItem(Items.CACTUS),
+                        RecipeProvider.conditionsFromItem(Items.CACTUS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANKS)));
     }
 }
