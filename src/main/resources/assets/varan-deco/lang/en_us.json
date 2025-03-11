@@ -123,6 +123,12 @@
   "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
+  "block.varan-deco.cactus_plank_stairs": "Cactus Plank Stairs",
+  "block.varan-deco.cactus_plank_slab": "Cactus Plank Slab",
+  "block.varan-deco.cactus_plank_fence": "Cactus Plank Fence",
+  "block.varan-deco.cactus_plank_fence_gate": "Cactus Plank Fence Gate",
+  "block.varan-deco.cactus_plank_button": "Cactus Plank Button",
+  "block.varan-deco.cactus_plank_pressure_plate": "Cactus Plank Pressure Plate",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks",
   "itemGroup.varan-deco.varan_deco_items": "Varan Deco Items"
