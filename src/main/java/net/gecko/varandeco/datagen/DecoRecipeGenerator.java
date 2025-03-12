@@ -523,5 +523,21 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_TRAPDOOR)));
     }
 }

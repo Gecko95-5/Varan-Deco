@@ -193,5 +193,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(DecoBlocks.CACTUS_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(DecoBlocks.CACTUS_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+                .add(DecoBlocks.STANDING_CACTUS_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(DecoBlocks.WALL_CACTUS_SIGN);
     }
 }

@@ -1,11 +1,15 @@
 package net.gecko.varandeco.block;
 
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
 import net.gecko.varandeco.block.magmablocks.*;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.minecraft.block.*;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -214,6 +218,12 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new MagmaWallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+
+    public static final Block CACTUS_DOOR = registerBlock("cactus_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_TRAPDOOR = registerBlock("cactus_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
@@ -226,6 +236,13 @@ public class DecoBlocks {
                     FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
             new WoodenButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Identifier CACTUS_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus");
+
+    public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
+            new TerraformSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_CACTUS_SIGN = registerBlockWithoutItem("wall_cactus_sign",
+            new TerraformWallSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
 
     public static final Block STONE_TEMP = registerBlock("stone_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
@@ -263,6 +280,10 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
     public static final Block RED_SANDSTONE_TOP_TEMP = registerBlock("red_sandstone_top_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+
+    public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
+            .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(VaranDeco.MOD_ID, name), block);

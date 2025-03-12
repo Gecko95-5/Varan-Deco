@@ -216,5 +216,15 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_plank_button"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_PLANK_BUTTON));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_door"),
+                BlockLootTableGenerator.doorDrops(DecoBlocks.CACTUS_DOOR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_trapdoor"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_TRAPDOOR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/standing_cactus_sign"),
+                BlockLootTableGenerator.drops(DecoItems.CACTUS_SIGN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wall_cactus_sign"),
+                BlockLootTableGenerator.drops(DecoItems.CACTUS_SIGN));
     }
 }

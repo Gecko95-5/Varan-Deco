@@ -1,5 +1,6 @@
 {
   "item.varan-deco.snow_brick": "Snow Brick",
+  "item.varan-deco.cactus_sign": "Cactus Sign",
 
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -123,12 +124,16 @@
   "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
-  "block.varan-deco.cactus_plank_stairs": "Cactus Plank Stairs",
-  "block.varan-deco.cactus_plank_slab": "Cactus Plank Slab",
-  "block.varan-deco.cactus_plank_fence": "Cactus Plank Fence",
-  "block.varan-deco.cactus_plank_fence_gate": "Cactus Plank Fence Gate",
-  "block.varan-deco.cactus_plank_button": "Cactus Plank Button",
-  "block.varan-deco.cactus_plank_pressure_plate": "Cactus Plank Pressure Plate",
+  "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",
+  "block.varan-deco.cactus_plank_slab": "Cactus Slab",
+  "block.varan-deco.cactus_plank_fence": "Cactus Fence",
+  "block.varan-deco.cactus_plank_fence_gate": "Cactus Fence Gate",
+  "block.varan-deco.cactus_plank_button": "Cactus Button",
+  "block.varan-deco.cactus_plank_pressure_plate": "Cactus Pressure Plate",
+  "block.varan-deco.cactus_door": "Cactus Door",
+  "block.varan-deco.cactus_trapdoor": "Cactus Trapdoor",
+  "block.varan-deco.standing_cactus_sign": "Cactus Standing Sign",
+  "block.varan-deco.wall_cactus_sign": "Cactus Wall Sign",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks",
   "itemGroup.varan-deco.varan_deco_items": "Varan Deco Items"
