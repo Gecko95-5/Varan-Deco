@@ -83,7 +83,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)
                 .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB)
-                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL);
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL)
+                .add(DecoBlocks.DARK_PRISMARINE_WALL)
+                .add(DecoBlocks.PRISMARINE_BRICK_WALL)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -124,7 +130,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_SANDSTONE_WALL)
                 .add(DecoBlocks.SMOOTH_RED_SANDSTONE_WALL)
                 .add(DecoBlocks.CUT_SANDSTONE_BRICK_WALL)
-                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL);
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL)
+                .add(DecoBlocks.DARK_PRISMARINE_WALL)
+                .add(DecoBlocks.PRISMARINE_BRICK_WALL)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)

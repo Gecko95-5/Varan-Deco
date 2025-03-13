@@ -18,6 +18,8 @@
   "block.varan-deco.snow_temp": "Non-Craftable Snow",
   "block.varan-deco.packed_ice_temp": "Non-Craftable Packed Ice",
   "block.varan-deco.blue_ice_temp": "Non-Craftable Blue Ice",
+  "block.varan-deco.dark_prismarine_temp": "Non-Craftable Dark Prismarine",
+  "block.varan-deco.prismarine_brick_temp": "Non-Craftable Prismarine Bricks",
 
   "block.varan-deco.stone_wall": "Stone Wall",
   "block.varan-deco.polished_andesite_wall": "Polished Andesite Wall",
@@ -122,6 +124,14 @@
   "block.varan-deco.cut_red_sandstone_brick_stairs": "Cut Red Sandstone Brick Stairs",
   "block.varan-deco.cut_red_sandstone_brick_slab": "Cut Red Sandstone Brick Slab",
   "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall",
+
+  "block.varan-deco.prismarine_brick_wall": "Prismarine Brick Wall",
+  "block.varan-deco.dark_prismarine_wall": "Dark Prismarine Wall",
+
+  "block.varan-deco.crystallized_prismarine": "Crystallized Prismarine",
+  "block.varan-deco.crystallized_prismarine_stairs": "Crystallized Prismarine Stairs",
+  "block.varan-deco.crystallized_prismarine_slab": "Crystallized Prismarine Slab",
+  "block.varan-deco.crystallized_prismarine_wall": "Crystallized Prismarine Wall",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",

@@ -71,6 +71,12 @@
     "varan-deco:cut_red_sandstone_bricks",
     "varan-deco:cut_red_sandstone_brick_stairs",
     "varan-deco:cut_red_sandstone_brick_slab",
-    "varan-deco:cut_red_sandstone_brick_wall"
+    "varan-deco:cut_red_sandstone_brick_wall",
+    "varan-deco:dark_prismarine_wall",
+    "varan-deco:prismarine_brick_wall",
+    "varan-deco:crystallized_prismarine",
+    "varan-deco:crystallized_prismarine_stairs",
+    "varan-deco:crystallized_prismarine_slab",
+    "varan-deco:crystallized_prismarine_wall"
   ]
 }

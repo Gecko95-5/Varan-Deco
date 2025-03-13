@@ -1,7 +1,8 @@
-// 1.19.2	2025-03-11T21:59:12.4549428	minecraft:block Loot Table
+// 1.19.2	2025-03-12T23:11:59.6127968	minecraft:block Loot Table
 710553ad30244d1e184c707c155d770032e55610 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_stairs.json
 292931d7a4572294541621b416a2add23fa6b09b data\varan-deco\loot_tables\blocks\smooth_sandstone_wall.json
 ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_red_sandstone_bricks.json
+a345ee746252d37d5eb24008307da5b5ee923e0b data\varan-deco\loot_tables\blocks\dark_prismarine_wall.json
 634274b5af5e9c0dec338658f155ed06985f88a3 data\varan-deco\loot_tables\blocks\ice_brick_slab.json
 467d01e9fa87df222ec613bce40a7e80d5f689bd data\varan-deco\loot_tables\blocks\snow_brick_wall.json
 355309f4fa828098469442c247091977033171f7 data\varan-deco\loot_tables\blocks\stone_tile_slab.json
@@ -15,6 +16,7 @@ d58d6db122096ee5c4d66ad43fc259d88f823256 data\varan-deco\loot_tables\blocks\cact
 47d7b306521036b51d6e145b37c305c5c8118f17 data\varan-deco\loot_tables\blocks\packed_ice_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
 c349b90d06f90d1e7147563daff0e799fedff9a2 data\varan-deco\loot_tables\blocks\tuff_slab.json
+3815c2d88e725e692ee965aa0aa5122cc457ee50 data\varan-deco\loot_tables\blocks\prismarine_brick_wall.json
 f4828cf37f99672dbd99e0ff9ca524299ea143c1 data\varan-deco\loot_tables\blocks\magma_brick_slab.json
 5c5b5eccdbdc591e6dfe9011df67540a1a0f68fc data\varan-deco\loot_tables\blocks\cactus_plank_button.json
 acc9431fdd718aaa80e29c5243f400e0654662aa data\varan-deco\loot_tables\blocks\tuff_stairs.json
@@ -35,6 +37,7 @@ b0b2c0d00e19cf1e5ef1fc7279b2bb2adba8fc76 data\varan-deco\loot_tables\blocks\neth
 240a86d38500130eda107a8705798e8f4bf602e2 data\varan-deco\loot_tables\blocks\calcite_stairs.json
 98468ec45510b2dabf1a870af361e1ffc0692a57 data\varan-deco\loot_tables\blocks\cut_sandstone_wall.json
 6c673550da0fe7f31644bd1c4be6b962c4cf50f2 data\varan-deco\loot_tables\blocks\tuff_wall.json
+b2326f5a91bd7a412ef9e0d7fe08d0ecd0a81b3e data\varan-deco\loot_tables\blocks\crystallized_prismarine_stairs.json
 9944175cffa6c63292121ee1f03da7e2a9bfdcce data\varan-deco\loot_tables\blocks\dripstone_slab.json
 9460e90404227495af0fadb82180027a699ea32a data\varan-deco\loot_tables\blocks\snow_wall.json
 2f847812beb0d146d7839432785f0e2209b025a8 data\varan-deco\loot_tables\blocks\cut_red_sandstone_stairs.json
@@ -42,8 +45,10 @@ b0b2c0d00e19cf1e5ef1fc7279b2bb2adba8fc76 data\varan-deco\loot_tables\blocks\neth
 450874d61d92e36206a6d8f1617f32f864907c8b data\varan-deco\loot_tables\blocks\magma_slab.json
 bf1e2c670f83f880a34c1183186e05fdfb91acc1 data\varan-deco\loot_tables\blocks\netherrack_slab.json
 9f45a4ffec580368146bfa6f55dcb6f2530d5352 data\varan-deco\loot_tables\blocks\packed_mud_wall.json
+b1f60a9d8955fa7322edeb54a89fc2ec2339bf4f data\varan-deco\loot_tables\blocks\crystallized_prismarine.json
 05b06c871d3f2e613c20cf14d70eba0f85dc6da5 data\varan-deco\loot_tables\blocks\cut_sandstone_stairs.json
 f9d8d50429ee11d7a08d2c1019b22c32b3172164 data\varan-deco\loot_tables\blocks\packed_ice_slab.json
+ff264ea9f2c7fc71def108f5c02cedd6921e9002 data\varan-deco\loot_tables\blocks\crystallized_prismarine_slab.json
 990618641a4b66b925e17b9f21775a70d34e2fb0 data\varan-deco\loot_tables\blocks\cut_red_sandstone_wall.json
 fd21e0678130fbf3892ec892004cc6fc1d18830a data\varan-deco\loot_tables\blocks\smooth_stone_wall.json
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_tables\blocks\packed_ice_stairs.json
@@ -82,6 +87,7 @@ a2b0e06019eb0cdf5a0f75bad903dd2d22c329b6 data\varan-deco\loot_tables\blocks\pack
 dd258382c5b3fb544ccd084895f95ce7081764a6 data\varan-deco\loot_tables\blocks\stone_tile_stairs.json
 cb38ed485f4d017e3691f98bb5b416523ef0f533 data\varan-deco\loot_tables\blocks\netherrack_stairs.json
 2c90bbebe95a5e6268ed4104a9b21fd5f98b0aa5 data\varan-deco\loot_tables\blocks\netherrack_wall.json
+08cee1ef041bf7ffda1e3a3d3123fc3fe2564987 data\varan-deco\loot_tables\blocks\crystallized_prismarine_wall.json
 43dc8444e7ddbc2a93e3123940e94011563f5f9f data\varan-deco\loot_tables\blocks\dripstone_stairs.json
 af4e26b53e53b0a8f17d6319d43818fd9284570d data\varan-deco\loot_tables\blocks\ice_brick_stairs.json
 0f4c2aee8233d629c761c09a7696840593046d60 data\varan-deco\loot_tables\blocks\cut_red_sandstone_brick_slab.json

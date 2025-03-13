@@ -226,5 +226,20 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoItems.CACTUS_SIGN));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wall_cactus_sign"),
                 BlockLootTableGenerator.drops(DecoItems.CACTUS_SIGN));
+
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/prismarine_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.PRISMARINE_BRICK_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_prismarine_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_PRISMARINE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL));
     }
 }

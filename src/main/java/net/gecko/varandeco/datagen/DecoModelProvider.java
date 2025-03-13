@@ -71,6 +71,12 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_TOP_TEMP);
         BlockStateModelGenerator.BlockTexturePool cactusplankpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CACTUS_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool prismarinebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PRISMARINE_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool darkprismarinepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DARK_PRISMARINE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool cryprismarinepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRYSTALLIZED_PRISMARINE);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
@@ -147,6 +153,13 @@ public class DecoModelProvider extends FabricModelProvider {
 
        smoothsandstonepool.wall(DecoBlocks.SMOOTH_SANDSTONE_WALL);
        smoothredsandstonepool.wall(DecoBlocks.SMOOTH_RED_SANDSTONE_WALL);
+
+       darkprismarinepool.wall(DecoBlocks.DARK_PRISMARINE_WALL);
+       prismarinebrickpool.wall(DecoBlocks.PRISMARINE_BRICK_WALL);
+
+       cryprismarinepool.stairs(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS);
+       cryprismarinepool.slab(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB);
+       cryprismarinepool.wall(DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL);
 
        cactusplankpool.stairs(DecoBlocks.CACTUS_PLANK_STAIRS);
        cactusplankpool.slab(DecoBlocks.CACTUS_PLANK_SLAB);
