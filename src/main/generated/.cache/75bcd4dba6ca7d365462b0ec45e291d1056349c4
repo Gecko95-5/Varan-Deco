@@ -1,5 +1,5 @@
-// 1.19.2	2025-03-12T23:11:59.6048191	Tags for minecraft:block
-5330e0c5bde345630ddde9c5248655333e1ef154 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.19.2	2025-03-13T22:53:38.2878357	Tags for minecraft:block
+8ae2c149c20dd740d17283380ceb127f035dafb9 data\minecraft\tags\blocks\mineable\pickaxe.json
 ce31acf7a17e4864e181fab04cf10a559ebb95e9 data\minecraft\tags\blocks\needs_iron_tool.json
 8c46315632eab92ed12a2eb6233fa014958d5ae0 data\minecraft\tags\blocks\wooden_trapdoors.json
 3e614ba327dbb160681636809cd4344b73c0ab24 data\minecraft\tags\blocks\wall_signs.json
@@ -11,7 +11,7 @@ f7ec4e53a832600855c2ad6733a4456f46be0a4a data\minecraft\tags\blocks\stairs.json
 db506ed11852204cf9a3c2a67ff374bf6d35e857 data\minecraft\tags\blocks\planks.json
 cbddcd138577b80d9be969a7e2e12ba0a007996a data\minecraft\tags\blocks\wooden_stairs.json
 4ce81500361457971589d5b1a3aa65a08f7ed831 data\minecraft\tags\blocks\wooden_buttons.json
-4854b7c9fa8093af64cec18a2866da47658cbf0d data\minecraft\tags\blocks\walls.json
+dd1ff62279e8b88d2885a2eaeba54664d9a4a6fb data\minecraft\tags\blocks\walls.json
 b45459afabd6a44b57b04db833e8fd84717cdaa2 data\minecraft\tags\blocks\fence_gates.json
 73f962c840bf5ef2cda6380e8a2b7acfae5c622c data\minecraft\tags\blocks\standing_signs.json
 83f0ad8b59943fec68f51e093182b99a5b154603 data\minecraft\tags\blocks\wooden_slabs.json

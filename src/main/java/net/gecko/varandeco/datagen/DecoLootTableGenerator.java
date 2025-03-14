@@ -241,5 +241,23 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crystallized_prismarine_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_prismarine"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_PRISMARINE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_prismarine_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_PRISMARINE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_prismarine_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIGHT_PRISMARINE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_prismarine_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_PRISMARINE_WALL));
     }
 }

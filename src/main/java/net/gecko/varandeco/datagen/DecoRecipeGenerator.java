@@ -566,5 +566,48 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.CRYSTALLIZED_PRISMARINE), Blocks.SEA_LANTERN,
                 0.35f, 200).criterion(hasItem(DecoBlocks.CRYSTALLIZED_PRISMARINE), conditionsFromItem(DecoBlocks.CRYSTALLIZED_PRISMARINE))
                 .offerTo(exporter, new Identifier("sea_lantern_from_smelting"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.PRISMARINE_CRYSTALS)
+                .criterion(RecipeProvider.hasItem(Items.PRISMARINE_CRYSTALS),
+                        RecipeProvider.conditionsFromItem(Items.PRISMARINE_CRYSTALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS)));
+
+        createStairsRecipe(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS))
+                .criterion(hasItem(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS),conditionsFromItem(DecoBlocks.CRYSTALLIZED_PRISMARINE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
+
+        offerSlabRecipe(exporter, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
+
+        offerWallRecipe(exporter, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_WALL, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_WALL, DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.LIGHT_PRISMARINE)
+                .pattern("###")
+                .pattern("#I#")
+                .pattern("###")
+                .input('#', Items.PRISMARINE_CRYSTALS)
+                .input('I', Items.WHITE_DYE)
+                .criterion(RecipeProvider.hasItem(Items.PRISMARINE_CRYSTALS),
+                        RecipeProvider.conditionsFromItem(Items.PRISMARINE_CRYSTALS))
+                .criterion(RecipeProvider.hasItem(Items.WHITE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.WHITE_DYE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.LIGHT_PRISMARINE)));
+
+        createStairsRecipe(DecoBlocks.LIGHT_PRISMARINE_STAIRS, Ingredient.ofItems(DecoBlocks.LIGHT_PRISMARINE))
+                .criterion(hasItem(DecoBlocks.LIGHT_PRISMARINE),conditionsFromItem(DecoBlocks.LIGHT_PRISMARINE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIGHT_PRISMARINE_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_PRISMARINE_STAIRS, DecoBlocks.LIGHT_PRISMARINE);
+
+        offerSlabRecipe(exporter, DecoBlocks.LIGHT_PRISMARINE_SLAB, DecoBlocks.LIGHT_PRISMARINE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_PRISMARINE_SLAB, DecoBlocks.LIGHT_PRISMARINE);
+
+        offerWallRecipe(exporter, DecoBlocks.LIGHT_PRISMARINE_WALL, DecoBlocks.LIGHT_PRISMARINE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_PRISMARINE_WALL, DecoBlocks.LIGHT_PRISMARINE);
     }
 }

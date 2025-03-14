@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:light_prismarine"
+  },
+  "result": "varan-deco:light_prismarine_stairs"
+}

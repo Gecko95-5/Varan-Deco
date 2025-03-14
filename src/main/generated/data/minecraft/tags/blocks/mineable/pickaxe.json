@@ -77,6 +77,14 @@
     "varan-deco:crystallized_prismarine",
     "varan-deco:crystallized_prismarine_stairs",
     "varan-deco:crystallized_prismarine_slab",
-    "varan-deco:crystallized_prismarine_wall"
+    "varan-deco:crystallized_prismarine_wall",
+    "varan-deco:crystallized_prismarine_bricks",
+    "varan-deco:crystallized_prismarine_brick_stairs",
+    "varan-deco:crystallized_prismarine_brick_slab",
+    "varan-deco:crystallized_prismarine_brick_wall",
+    "varan-deco:light_prismarine",
+    "varan-deco:light_prismarine_stairs",
+    "varan-deco:light_prismarine_slab",
+    "varan-deco:light_prismarine_wall"
   ]
 }
