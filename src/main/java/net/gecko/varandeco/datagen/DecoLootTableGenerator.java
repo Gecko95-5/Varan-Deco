@@ -302,5 +302,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_soul_soilstone_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.CUT_SOUL_SOILSTONE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_soul_soilstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_SOUL_SOILSTONE));
     }
 }

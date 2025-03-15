@@ -1,4 +1,4 @@
-// 1.19.2	2025-03-14T23:41:50.5269731	minecraft:block Loot Table
+// 1.19.2	2025-03-15T10:57:28.2908619	minecraft:block Loot Table
 ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_red_sandstone_bricks.json
 710553ad30244d1e184c707c155d770032e55610 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_stairs.json
 a345ee746252d37d5eb24008307da5b5ee923e0b data\varan-deco\loot_tables\blocks\dark_prismarine_wall.json
@@ -23,6 +23,7 @@ e2637e0a5825f60da80019f267d69fc528c6906a data\varan-deco\loot_tables\blocks\bubb
 7e8fc9ce5c4c669784f16321727e1a04aa2e9a0c data\varan-deco\loot_tables\blocks\chiseled_gilded_blackstone.json
 908dfab07949286ec459ba4b429296655cb98a04 data\varan-deco\loot_tables\blocks\chiseled_magma_bricks.json
 fc964aef3edba996dd2dea9a88d407268d14aa23 data\varan-deco\loot_tables\blocks\light_prismarine_wall.json
+13591efb78294415a866a15862050bb36df7e79c data\varan-deco\loot_tables\blocks\chiseled_soul_soilstone.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_tables\blocks\bubble_brick_wall.json
 4d1dd0ccf8ca1860eced4250bde6f01c638658b8 data\varan-deco\loot_tables\blocks\soul_soilstone_wall.json
 240a86d38500130eda107a8705798e8f4bf602e2 data\varan-deco\loot_tables\blocks\calcite_stairs.json

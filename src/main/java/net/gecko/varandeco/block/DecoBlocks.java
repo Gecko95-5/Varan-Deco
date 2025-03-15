@@ -67,6 +67,8 @@ public class DecoBlocks {
     public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0.8f).requiresTool().mapColor(MapColor.BROWN)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_SOUL_SOILSTONE = registerBlock("chiseled_soul_soilstone",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SOUL_SOILSTONE = registerBlock("cut_soul_soilstone",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_RED_SANDSTONE_BRICKS = registerBlock("cut_red_sandstone_bricks",

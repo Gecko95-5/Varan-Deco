@@ -116,7 +116,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB)
-                .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL);
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL)
+                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -250,7 +251,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
-                .add(DecoBlocks.CUT_SOUL_SOILSTONE);
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE)
+                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE);
 
         getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
@@ -260,6 +262,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB)
-                .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL);
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL)
+                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE);
     }
 }

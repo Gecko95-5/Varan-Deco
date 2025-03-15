@@ -165,6 +165,8 @@
   "block.varan-deco.cut_soul_soilstone_slab": "Cut Soul Soilstone Slab",
   "block.varan-deco.cut_soul_soilstone_wall": "Cut Soul Soilstone Wall",
 
+  "block.varan-deco.chiseled_soul_soilstone": "Chiseled Soul Soilstone",
+
   "block.varan-deco.chiseled_prismarine_bricks": "Chiseled Prismarine Bricks",
   "block.varan-deco.chiseled_crystallized_prismarine_bricks": "Chiseled Crystallized Prismarine Bricks",
 
@@ -177,7 +179,7 @@
   "block.varan-deco.cactus_plank_pressure_plate": "Cactus Pressure Plate",
   "block.varan-deco.cactus_door": "Cactus Door",
   "block.varan-deco.cactus_trapdoor": "Cactus Trapdoor",
-  "block.varan-deco.standing_cactus_sign": "Cactus Standing Sign",
+  "block.varan-deco.standing_cactus_sign": "Cactus Sign",
   "block.varan-deco.wall_cactus_sign": "Cactus Wall Sign",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
