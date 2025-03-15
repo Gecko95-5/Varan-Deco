@@ -1,6 +1,7 @@
 {
   "item.varan-deco.snow_brick": "Snow Brick",
   "item.varan-deco.cactus_sign": "Cactus Sign",
+  "item.varan-deco.bubble_orb": "Bubble Orb",
 
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -63,11 +64,22 @@
   "block.varan-deco.magma_slab": "Magma Slab",
   "block.varan-deco.magma_wall": "Magma Wall",
 
+  "block.varan-deco.bubble_block": "Bubble Block",
+  "block.varan-deco.bubble_stairs": "Bubble Stairs",
+  "block.varan-deco.bubble_slab": "Bubble Slab",
+  "block.varan-deco.bubble_wall": "Bubble Wall",
+
   "block.varan-deco.magma_bricks": "Magma Bricks",
   "block.varan-deco.magma_brick_stairs": "Magma Brick Stairs",
   "block.varan-deco.magma_brick_slab": "Magma Brick Slab",
   "block.varan-deco.magma_brick_wall": "Magma Brick Wall",
   "block.varan-deco.chiseled_magma_bricks": "Chiseled Magma Bricks",
+
+  "block.varan-deco.bubble_bricks": "Bubble Bricks",
+  "block.varan-deco.bubble_brick_stairs": "Bubble Brick Stairs",
+  "block.varan-deco.bubble_brick_slab": "Bubble Brick Slab",
+  "block.varan-deco.bubble_brick_wall": "Bubble Brick Wall",
+  "block.varan-deco.chiseled_bubble_bricks": "Chiseled Bubble Bricks",
 
   "block.varan-deco.red_nether_brick_fence": "Red Nether Brick Fence",
   "block.varan-deco.nether_brick_fence_gate": "Nether Brick Fence Gate",
@@ -143,6 +155,19 @@
   "block.varan-deco.light_prismarine_slab": "Light Prismarine Slab",
   "block.varan-deco.light_prismarine_wall": "Light Prismarine Wall",
 
+  "block.varan-deco.soul_soilstone": "Soul Soilstone",
+  "block.varan-deco.soul_soilstone_stairs": "Soul Soilstone Stairs",
+  "block.varan-deco.soul_soilstone_slab": "Soul Soilstone Slab",
+  "block.varan-deco.soul_soilstone_wall": "Soul Soilstone Wall",
+
+  "block.varan-deco.cut_soul_soilstone": "Cut Soul Soilstone",
+  "block.varan-deco.cut_soul_soilstone_stairs": "Cut Soul Soilstone Stairs",
+  "block.varan-deco.cut_soul_soilstone_slab": "Cut Soul Soilstone Slab",
+  "block.varan-deco.cut_soul_soilstone_wall": "Cut Soul Soilstone Wall",
+
+  "block.varan-deco.chiseled_prismarine_bricks": "Chiseled Prismarine Bricks",
+  "block.varan-deco.chiseled_crystallized_prismarine_bricks": "Chiseled Crystallized Prismarine Bricks",
+
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",
   "block.varan-deco.cactus_plank_slab": "Cactus Slab",
@@ -155,6 +180,5 @@
   "block.varan-deco.standing_cactus_sign": "Cactus Standing Sign",
   "block.varan-deco.wall_cactus_sign": "Cactus Wall Sign",
 
-  "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks",
-  "itemGroup.varan-deco.varan_deco_items": "Varan Deco Items"
+  "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "varan-deco:block/bubble_block",
+    "side": "varan-deco:block/bubble_block",
+    "top": "varan-deco:block/bubble_block"
+  }
+}

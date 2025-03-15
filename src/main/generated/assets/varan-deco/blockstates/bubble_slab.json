@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/bubble_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/bubble_block"
+    },
+    "type=top": {
+      "model": "varan-deco:block/bubble_slab_top"
+    }
+  }
+}

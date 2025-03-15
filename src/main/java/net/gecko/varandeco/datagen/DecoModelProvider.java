@@ -81,6 +81,13 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool lightprismarinepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.LIGHT_PRISMARINE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_PRISMARINE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool bubblepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BUBBLE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool bubblebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BUBBLE_BRICKS);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_BUBBLE_BRICKS, TexturedModel.CUBE_BOTTOM_TOP);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
@@ -173,6 +180,14 @@ public class DecoModelProvider extends FabricModelProvider {
        lightprismarinepool.slab(DecoBlocks.LIGHT_PRISMARINE_SLAB);
        lightprismarinepool.wall(DecoBlocks.LIGHT_PRISMARINE_WALL);
 
+       bubblepool.stairs(DecoBlocks.BUBBLE_STAIRS);
+       bubblepool.slab(DecoBlocks.BUBBLE_SLAB);
+       bubblepool.wall(DecoBlocks.BUBBLE_WALL);
+
+       bubblebrickpool.stairs(DecoBlocks.BUBBLE_BRICK_STAIRS);
+       bubblebrickpool.slab(DecoBlocks.BUBBLE_BRICK_SLAB);
+       bubblebrickpool.wall(DecoBlocks.BUBBLE_BRICK_WALL);
+
        cactusplankpool.stairs(DecoBlocks.CACTUS_PLANK_STAIRS);
        cactusplankpool.slab(DecoBlocks.CACTUS_PLANK_SLAB);
        cactusplankpool.fence(DecoBlocks.CACTUS_PLANK_FENCE);
@@ -186,5 +201,6 @@ public class DecoModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
     }
 }

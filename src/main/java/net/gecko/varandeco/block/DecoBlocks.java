@@ -5,7 +5,7 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
-import net.gecko.varandeco.block.magmablocks.*;
+import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
@@ -37,20 +37,38 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
             new MagmaBrickBlock(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.DIAMOND_BLUE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRYSTALLIZED_PRISMARINE = registerBlock("crystallized_prismarine",
             new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("crystallized_prismarine_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("chiseled_crystallized_prismarine_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
+                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LIGHT_PRISMARINE = registerBlock("light_prismarine",
             new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.OFF_WHITE)
-                    .luminance(state -> 5)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MAGMA_BRICKS = registerBlock("magma_bricks",
             new MagmaBrickBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).luminance(state -> 1)
                     .strength(1.5F).sounds(BlockSoundGroup.NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_MAGMA_BRICKS = registerBlock("chiseled_magma_bricks",
             new MagmaBrickBlock(FabricBlockSettings.copyOf(DecoBlocks.MAGMA_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_BLOCK = registerBlock("bubble_block",
+            new BubbleBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(0.5F).resistance(25.0f)
+                    .mapColor(MapColor.BLUE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_BRICKS = registerBlock("bubble_bricks",
+            new BubbleBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BLOCK).strength(1.5F)
+                    .mapColor(MapColor.STONE_GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_BUBBLE_BRICKS = registerBlock("chiseled_bubble_bricks",
+            new BubbleBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0.8f).requiresTool().mapColor(MapColor.BROWN)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_SOUL_SOILSTONE = registerBlock("cut_soul_soilstone",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_RED_SANDSTONE_BRICKS = registerBlock("cut_red_sandstone_bricks",
             new Block(FabricBlockSettings.of(Material.STONE).strength(1.6f).requiresTool()),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -131,6 +149,18 @@ public class DecoBlocks {
     public static final Block MAGMA_BRICK_STAIRS = registerBlock("magma_brick_stairs",
             new MagmaBrickStairBlock(DecoBlocks.MAGMA_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(DecoBlocks.MAGMA_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_STAIRS = registerBlock("bubble_stairs",
+            new BubbleStairBlock(DecoBlocks.BUBBLE_BLOCK.getDefaultState(),
+                    FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_BRICK_STAIRS = registerBlock("bubble_brick_stairs",
+            new BubbleStairBlock(DecoBlocks.BUBBLE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SOUL_SOILSTONE_STAIRS = registerBlock("soul_soilstone_stairs",
+            new StairsBlock(DecoBlocks.SOUL_SOILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_SOUL_SOILSTONE_STAIRS = registerBlock("cut_soul_soilstone_stairs",
+            new StairsBlock(DecoBlocks.CUT_SOUL_SOILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(DecoBlocks.CUT_SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_RED_SANDSTONE_BRICK_STAIRS = registerBlock("cut_red_sandstone_brick_stairs",
             new StairsBlock(DecoBlocks.CUT_RED_SANDSTONE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -177,6 +207,14 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.LIGHT_PRISMARINE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MAGMA_BRICK_SLAB = registerBlock("magma_brick_slab",
             new MagmaBrickSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MAGMA_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_SLAB = registerBlock("bubble_slab",
+            new BubbleSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_BRICK_SLAB = registerBlock("bubble_brick_slab",
+            new BubbleSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SOUL_SOILSTONE_SLAB = registerBlock("soul_soilstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_SOUL_SOILSTONE_SLAB = registerBlock("cut_soul_soilstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_RED_SANDSTONE_BRICK_SLAB = registerBlock("cut_red_sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block ICE_BRICK_SLAB = registerBlock("ice_brick_slab",
@@ -244,7 +282,15 @@ public class DecoBlocks {
     public static final Block LIGHT_PRISMARINE_WALL = registerBlock("light_prismarine_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.LIGHT_PRISMARINE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MAGMA_BRICK_WALL = registerBlock("magma_brick_wall",
-            new MagmaWallBlock(FabricBlockSettings.copyOf(DecoBlocks.MAGMA_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new MagmaBrickWallBlock(FabricBlockSettings.copyOf(DecoBlocks.MAGMA_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_WALL = registerBlock("bubble_wall",
+            new BubbleWallBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BUBBLE_BRICK_WALL = registerBlock("bubble_brick_wall",
+            new BubbleWallBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SOUL_SOILSTONE_WALL = registerBlock("soul_soilstone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_SOUL_SOILSTONE_WALL = registerBlock("cut_soul_soilstone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_RED_SANDSTONE_BRICK_WALL = registerBlock("cut_red_sandstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block ICE_BRICK_WALL = registerBlock("ice_brick_wall",

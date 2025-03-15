@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "I": {
+      "item": "varan-deco:bubble_orb"
+    }
+  },
+  "pattern": [
+    "#I",
+    "I#"
+  ],
+  "result": {
+    "item": "varan-deco:bubble_block"
+  }
+}

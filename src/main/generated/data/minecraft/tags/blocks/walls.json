@@ -31,6 +31,10 @@
     "varan-deco:prismarine_brick_wall",
     "varan-deco:crystallized_prismarine_wall",
     "varan-deco:crystallized_prismarine_brick_wall",
-    "varan-deco:light_prismarine_wall"
+    "varan-deco:light_prismarine_wall",
+    "varan-deco:bubble_wall",
+    "varan-deco:bubble_brick_wall",
+    "varan-deco:soul_soilstone_wall",
+    "varan-deco:cut_soul_soilstone_wall"
   ]
 }
