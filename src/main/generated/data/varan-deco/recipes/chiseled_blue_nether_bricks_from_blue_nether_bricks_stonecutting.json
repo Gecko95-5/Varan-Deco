@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:blue_nether_bricks"
+  },
+  "result": "varan-deco:chiseled_blue_nether_bricks"
+}

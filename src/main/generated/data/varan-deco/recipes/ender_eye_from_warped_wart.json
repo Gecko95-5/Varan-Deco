@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:warped_wart"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "F": {
+      "item": "minecraft:chorus_fruit"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#F#",
+    " #B"
+  ],
+  "result": {
+    "item": "minecraft:ender_eye"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:soul_soilstone"
+  },
+  "result": "varan-deco:smooth_soul_soilstone"
+}

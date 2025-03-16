@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/blue_nether_bricks",
+    "side": "varan-deco:block/blue_nether_bricks",
+    "top": "varan-deco:block/blue_nether_bricks"
+  }
+}

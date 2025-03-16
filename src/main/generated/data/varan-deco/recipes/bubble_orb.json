@@ -1,6 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredients": [],
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
   "result": {
     "item": "varan-deco:bubble_orb"
   }

@@ -20,6 +20,18 @@
     "varan-deco:cut_sandstone_stairs",
     "varan-deco:cut_red_sandstone_stairs",
     "varan-deco:cut_sandstone_brick_stairs",
-    "varan-deco:cut_red_sandstone_brick_stairs"
+    "varan-deco:cut_red_sandstone_brick_stairs",
+    "varan-deco:crystallized_prismarine_stairs",
+    "varan-deco:crystallized_prismarine_brick_stairs",
+    "varan-deco:light_prismarine_stairs",
+    "varan-deco:bubble_stairs",
+    "varan-deco:bubble_brick_stairs",
+    "varan-deco:soul_soilstone_stairs",
+    "varan-deco:cut_soul_soilstone_stairs",
+    "varan-deco:smooth_soul_soilstone_stairs",
+    "varan-deco:cut_soul_soilstone_brick_stairs",
+    "varan-deco:quartz_brick_stairs",
+    "varan-deco:cut_quartz_stairs",
+    "varan-deco:blue_nether_brick_stairs"
   ]
 }

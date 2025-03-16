@@ -3,7 +3,9 @@ package net.gecko.varandeco.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.item.DecoItems;
+import net.minecraft.block.NetherWartBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -88,6 +90,22 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool bubblebrickpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BUBBLE_BRICKS);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_BUBBLE_BRICKS, TexturedModel.CUBE_BOTTOM_TOP);
+        BlockStateModelGenerator.BlockTexturePool smoothsoulsoilpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_SOUL_SOILSTONE);
+        BlockStateModelGenerator.BlockTexturePool quartzpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.QUARTZ_TEMP);
+        BlockStateModelGenerator.BlockTexturePool smoothquartzpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_QUARTZ_TEMP);
+        BlockStateModelGenerator.BlockTexturePool quartzbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.QUARTZ_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool cutquartzpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_QUARTZ);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_RED_NETHER_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_RED_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool bluenetherpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLUE_NETHER_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
@@ -188,6 +206,21 @@ public class DecoModelProvider extends FabricModelProvider {
        bubblebrickpool.slab(DecoBlocks.BUBBLE_BRICK_SLAB);
        bubblebrickpool.wall(DecoBlocks.BUBBLE_BRICK_WALL);
 
+       smoothsoulsoilpool.stairs(DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS);
+       smoothsoulsoilpool.slab(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB);
+       smoothsoulsoilpool.wall(DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL);
+
+       quartzbrickpool.stairs(DecoBlocks.QUARTZ_BRICK_STAIRS);
+       quartzbrickpool.slab(DecoBlocks.QUARTZ_BRICK_SLAB);
+       quartzbrickpool.wall(DecoBlocks.QUARTZ_BRICK_WALL);
+
+       cutquartzpool.stairs(DecoBlocks.CUT_QUARTZ_STAIRS);
+       cutquartzpool.slab(DecoBlocks.CUT_QUARTZ_SLAB);
+       cutquartzpool.wall(DecoBlocks.CUT_QUARTZ_WALL);
+
+       quartzpool.wall(DecoBlocks.QUARTZ_WALL);
+       smoothquartzpool.wall(DecoBlocks.SMOOTH_QUARTZ_WALL);
+
        cactusplankpool.stairs(DecoBlocks.CACTUS_PLANK_STAIRS);
        cactusplankpool.slab(DecoBlocks.CACTUS_PLANK_SLAB);
        cactusplankpool.fence(DecoBlocks.CACTUS_PLANK_FENCE);
@@ -195,7 +228,15 @@ public class DecoModelProvider extends FabricModelProvider {
        cactusplankpool.pressurePlate(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
        cactusplankpool.fenceGate(DecoBlocks.CACTUS_PLANK_FENCE_GATE);
 
+       bluenetherpool.stairs(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
+       bluenetherpool.slab(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
+       bluenetherpool.fence(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
+       bluenetherpool.wall(DecoBlocks.BLUE_NETHER_BRICK_WALL);
+       bluenetherpool.fenceGate(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
+
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
+
+       blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
     }
 
     @Override

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:quartz_block"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "#Q",
+    "Q#"
+  ],
+  "result": {
+    "item": "varan-deco:cut_quartz"
+  }
+}

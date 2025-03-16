@@ -117,7 +117,34 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL)
-                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE);
+                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL)
+                .add(DecoBlocks.SMOOTH_QUARTZ_WALL)
+                .add(DecoBlocks.QUARTZ_WALL)
+                .add(DecoBlocks.QUARTZ_BRICK_STAIRS)
+                .add(DecoBlocks.QUARTZ_BRICK_SLAB)
+                .add(DecoBlocks.QUARTZ_BRICK_WALL)
+                .add(DecoBlocks.CUT_QUARTZ)
+                .add(DecoBlocks.CUT_QUARTZ_STAIRS)
+                .add(DecoBlocks.CUT_QUARTZ_SLAB)
+                .add(DecoBlocks.CUT_QUARTZ_WALL)
+                .add(DecoBlocks.CHISELED_RED_NETHER_BRICKS)
+                .add(DecoBlocks.CRACKED_RED_NETHER_BRICKS)
+                .add(DecoBlocks.BLUE_NETHER_BRICKS)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_STAIRS)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_SLAB)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_FENCE)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_WALL)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE)
+                .add(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS)
+                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -128,6 +155,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_STAIRS)
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.SNOW_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(DecoBlocks.BIRCH_CRAFTING_TABLE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE);
@@ -167,11 +197,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BUBBLE_WALL)
                 .add(DecoBlocks.BUBBLE_BRICK_WALL)
                 .add(DecoBlocks.SOUL_SOILSTONE_WALL)
-                .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL);
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL)
+                .add(DecoBlocks.SMOOTH_QUARTZ_WALL)
+                .add(DecoBlocks.QUARTZ_WALL)
+                .add(DecoBlocks.QUARTZ_BRICK_WALL)
+                .add(DecoBlocks.CUT_QUARTZ_WALL)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
-                .add(DecoBlocks.CACTUS_PLANK_FENCE);
+                .add(DecoBlocks.CACTUS_PLANK_FENCE)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
@@ -201,7 +239,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SANDSTONE_STAIRS)
                 .add(DecoBlocks.CUT_RED_SANDSTONE_STAIRS)
                 .add(DecoBlocks.CUT_SANDSTONE_BRICK_STAIRS)
-                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS);
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS)
+                .add(DecoBlocks.LIGHT_PRISMARINE_STAIRS)
+                .add(DecoBlocks.BUBBLE_STAIRS)
+                .add(DecoBlocks.BUBBLE_BRICK_STAIRS)
+                .add(DecoBlocks.SOUL_SOILSTONE_STAIRS)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.QUARTZ_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_QUARTZ_STAIRS)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -220,7 +270,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.ICE_BRICK_SLAB)
                 .add(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB)
-                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB);
+                .add(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB)
+                .add(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB)
+                .add(DecoBlocks.LIGHT_PRISMARINE_SLAB)
+                .add(DecoBlocks.BUBBLE_SLAB)
+                .add(DecoBlocks.BUBBLE_BRICK_SLAB)
+                .add(DecoBlocks.SOUL_SOILSTONE_SLAB)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
+                .add(DecoBlocks.QUARTZ_BRICK_SLAB)
+                .add(DecoBlocks.CUT_QUARTZ_SLAB)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS);
@@ -252,7 +314,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE)
-                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE);
+                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
@@ -263,6 +327,14 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_WALL)
-                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE);
+                .add(DecoBlocks.CHISELED_SOUL_SOILSTONE)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB)
+                .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
+                .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL);
     }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:blue_nether_bricks"
+  },
+  "result": "varan-deco:cracked_blue_nether_bricks"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:warped_wart"
+    },
+    "F": {
+      "item": "minecraft:chorus_fruit"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#F#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:ender_pearl"
+  }
+}

@@ -2,6 +2,7 @@
   "item.varan-deco.snow_brick": "Snow Brick",
   "item.varan-deco.cactus_sign": "Cactus Sign",
   "item.varan-deco.bubble_orb": "Bubble Orb",
+  "item.varan-deco.warped_wart": "Warped Wart",
 
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -21,6 +22,11 @@
   "block.varan-deco.blue_ice_temp": "Non-Craftable Blue Ice",
   "block.varan-deco.dark_prismarine_temp": "Non-Craftable Dark Prismarine",
   "block.varan-deco.prismarine_brick_temp": "Non-Craftable Prismarine Bricks",
+  "block.varan-deco.quartz_temp": "Non-Craftable Quartz Block",
+  "block.varan-deco.smooth_quartz_temp": "Non-Craftable Smooth Quartz Block",
+  "block.varan-deco.quartz_bricks_temp": "Non-Craftable Quartz Bricks",
+
+  "block.varan-deco.warped_wart_plant": "Warped Wart",
 
   "block.varan-deco.stone_wall": "Stone Wall",
   "block.varan-deco.polished_andesite_wall": "Polished Andesite Wall",
@@ -150,6 +156,9 @@
   "block.varan-deco.crystallized_prismarine_brick_slab": "Crystallized Prismarine Brick Slab",
   "block.varan-deco.crystallized_prismarine_brick_wall": "Crystallized Prismarine Brick Wall",
 
+  "block.varan-deco.chiseled_prismarine_bricks": "Chiseled Prismarine Bricks",
+  "block.varan-deco.chiseled_crystallized_prismarine_bricks": "Chiseled Crystallized Prismarine Bricks",
+
   "block.varan-deco.light_prismarine": "Light Prismarine",
   "block.varan-deco.light_prismarine_stairs": "Light Prismarine Stairs",
   "block.varan-deco.light_prismarine_slab": "Light Prismarine Slab",
@@ -165,10 +174,44 @@
   "block.varan-deco.cut_soul_soilstone_slab": "Cut Soul Soilstone Slab",
   "block.varan-deco.cut_soul_soilstone_wall": "Cut Soul Soilstone Wall",
 
+  "block.varan-deco.cut_soul_soilstone_bricks": "Cut Soul Soilstone Bricks",
+  "block.varan-deco.cut_soul_soilstone_brick_stairs": "Cut Soul Soilstone Brick Stairs",
+  "block.varan-deco.cut_soul_soilstone_brick_slab": "Cut Soul Soilstone Brick Slab",
+  "block.varan-deco.cut_soul_soilstone_brick_wall": "Cut Soul Soilstone Brick Wall",
+
+  "block.varan-deco.smooth_soul_soilstone": "Smooth Soul Soilstone",
+  "block.varan-deco.smooth_soul_soilstone_stairs": "Smooth Soul Soilstone Stairs",
+  "block.varan-deco.smooth_soul_soilstone_slab": "Smooth Soul Soilstone Slab",
+  "block.varan-deco.smooth_soul_soilstone_wall": "Smooth Soul Soilstone Wall",
+
+  "block.varan-deco.quartz_wall": "Quartz Wall",
+  "block.varan-deco.smooth_quartz_wall": "Smooth Quartz Wall",
+
+  "block.varan-deco.quartz_brick_stairs": "Quartz Brick Stairs",
+  "block.varan-deco.quartz_brick_slab": "Quartz Brick Slab",
+  "block.varan-deco.quartz_brick_wall": "Quartz Brick Wall",
+
+  "block.varan-deco.cut_quartz": "Cut Quartz",
+  "block.varan-deco.cut_quartz_stairs": "Cut Quartz Stairs",
+  "block.varan-deco.cut_quartz_slab": "Cut Quartz Slab",
+  "block.varan-deco.cut_quartz_wall": "Cut Quartz Wall",
+
   "block.varan-deco.chiseled_soul_soilstone": "Chiseled Soul Soilstone",
 
-  "block.varan-deco.chiseled_prismarine_bricks": "Chiseled Prismarine Bricks",
-  "block.varan-deco.chiseled_crystallized_prismarine_bricks": "Chiseled Crystallized Prismarine Bricks",
+  "block.varan-deco.chiseled_red_nether_bricks": "Chiseled Red Nether Bricks",
+  "block.varan-deco.cracked_red_nether_bricks": "Cracked Red Nether Bricks",
+
+  "block.varan-deco.blue_nether_bricks": "Blue Nether Bricks",
+  "block.varan-deco.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
+  "block.varan-deco.blue_nether_brick_slab": "Blue Nether Brick Slab",
+  "block.varan-deco.blue_nether_brick_wall": "Blue Nether Brick Wall",
+  "block.varan-deco.blue_nether_brick_fence": "Blue Nether Brick Fence",
+  "block.varan-deco.blue_nether_brick_fence_gate": "Blue Nether Brick Fence Gate",
+
+  "block.varan-deco.chiseled_blue_nether_bricks": "Chiseled Blue Nether Bricks",
+  "block.varan-deco.cracked_blue_nether_bricks": "Cracked Blue Nether Bricks",
+
+  "block.varan-deco.birch_crafting_table": "Birch Crafting Table",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",

@@ -17,6 +17,18 @@
     "varan-deco:snow_brick_slab",
     "varan-deco:ice_brick_slab",
     "varan-deco:cut_sandstone_brick_slab",
-    "varan-deco:cut_red_sandstone_brick_slab"
+    "varan-deco:cut_red_sandstone_brick_slab",
+    "varan-deco:crystallized_prismarine_slab",
+    "varan-deco:crystallized_prismarine_brick_slab",
+    "varan-deco:light_prismarine_slab",
+    "varan-deco:bubble_slab",
+    "varan-deco:bubble_brick_slab",
+    "varan-deco:soul_soilstone_slab",
+    "varan-deco:cut_soul_soilstone_slab",
+    "varan-deco:smooth_soul_soilstone_slab",
+    "varan-deco:cut_soul_soilstone_brick_slab",
+    "varan-deco:quartz_brick_slab",
+    "varan-deco:cut_quartz_slab",
+    "varan-deco:blue_nether_brick_slab"
   ]
 }

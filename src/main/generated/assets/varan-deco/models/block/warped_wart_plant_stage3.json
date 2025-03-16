@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "varan-deco:block/warped_wart_plant_stage3"
+  }
+}

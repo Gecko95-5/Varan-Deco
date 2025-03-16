@@ -227,7 +227,6 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wall_cactus_sign"),
                 BlockLootTableGenerator.drops(DecoItems.CACTUS_SIGN));
 
-
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/prismarine_brick_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.PRISMARINE_BRICK_WALL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_prismarine_wall"),
@@ -305,5 +304,70 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_soul_soilstone"),
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_SOUL_SOILSTONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_soul_soilstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_SOUL_SOILSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_soul_soilstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_soul_soilstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_soul_soilstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_soul_soilstone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_soul_soilstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_soul_soilstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_soul_soilstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/quartz_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.QUARTZ_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_quartz_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_QUARTZ_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/quartz_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.QUARTZ_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/quartz_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.QUARTZ_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/quartz_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.QUARTZ_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_quartz"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_QUARTZ));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_quartz_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_QUARTZ_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_quartz_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_QUARTZ_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_quartz_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_QUARTZ_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_red_nether_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_RED_NETHER_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_red_nether_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_RED_NETHER_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_NETHER_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_fence"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_NETHER_BRICK_FENCE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_blue_nether_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_CRAFTING_TABLE));
     }
 }

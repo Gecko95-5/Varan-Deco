@@ -35,6 +35,13 @@
     "varan-deco:bubble_wall",
     "varan-deco:bubble_brick_wall",
     "varan-deco:soul_soilstone_wall",
-    "varan-deco:cut_soul_soilstone_wall"
+    "varan-deco:cut_soul_soilstone_wall",
+    "varan-deco:smooth_soul_soilstone_wall",
+    "varan-deco:cut_soul_soilstone_brick_wall",
+    "varan-deco:smooth_quartz_wall",
+    "varan-deco:quartz_wall",
+    "varan-deco:quartz_brick_wall",
+    "varan-deco:cut_quartz_wall",
+    "varan-deco:blue_nether_brick_wall"
   ]
 }

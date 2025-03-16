@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:warped_wart"
+    },
+    "N": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "pattern": [
+    "#N",
+    "N#"
+  ],
+  "result": {
+    "item": "varan-deco:blue_nether_bricks"
+  }
+}
