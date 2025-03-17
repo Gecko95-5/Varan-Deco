@@ -1,7 +1,6 @@
 package net.gecko.varandeco.screen;
 
 import net.gecko.varandeco.block.DecoBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingInventory;
@@ -14,8 +13,10 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeMatcher;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.book.RecipeBookCategory;
-import net.minecraft.screen.*;
-import net.minecraft.screen.CraftingScreenHandler;
+import net.minecraft.screen.AbstractRecipeScreenHandler;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
+import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.CraftingResultSlot;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -23,7 +24,7 @@ import net.minecraft.world.World;
 
 import java.util.Optional;
 
-public class CustomCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingInventory> {
+public class CactusCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingInventory> {
     public static final int field_30781 = 0;
     private static final int field_30782 = 1;
     private static final int field_30783 = 10;
@@ -36,11 +37,11 @@ public class CustomCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     private final ScreenHandlerContext context;
     private final PlayerEntity player;
 
-    public CustomCraftingScreenHandler(int syncId, PlayerInventory playerInventory) {
+    public CactusCraftingScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
 
-    public CustomCraftingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
+    public CactusCraftingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
         super(ScreenHandlerType.CRAFTING, syncId);
         this.context = context;
         this.player = playerInventory.player;
@@ -112,7 +113,7 @@ public class CustomCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
 
     @Override
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, DecoBlocks.BIRCH_CRAFTING_TABLE);
+        return canUse(this.context, player, DecoBlocks.CACTUS_CRAFTING_TABLE);
     }
 
     @Override

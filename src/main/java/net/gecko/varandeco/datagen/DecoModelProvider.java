@@ -107,6 +107,16 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS);
 
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.ACACIA_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.DARK_OAK_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.JUNGLE_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MANGROVE_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CRAFTING_TABLE);
+
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
 

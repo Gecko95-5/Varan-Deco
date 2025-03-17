@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:crafting_table",
+    "varan-deco:birch_crafting_table",
+    "varan-deco:spruce_crafting_table",
+    "varan-deco:jungle_crafting_table",
+    "varan-deco:acacia_crafting_table",
+    "varan-deco:dark_oak_crafting_table",
+    "varan-deco:mangrove_crafting_table",
+    "varan-deco:crimson_crafting_table",
+    "varan-deco:warped_crafting_table",
+    "varan-deco:cactus_crafting_table"
+  ]
+}

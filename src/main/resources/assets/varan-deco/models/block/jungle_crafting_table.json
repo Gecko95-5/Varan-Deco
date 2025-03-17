@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/jungle_planks",
+    "east": "varan-deco:block/jungle_crafting_table_side",
+    "north": "varan-deco:block/jungle_crafting_table_front",
+    "particle": "varan-deco:block/jungle_crafting_table_front",
+    "south": "varan-deco:block/jungle_crafting_table_side",
+    "up": "varan-deco:block/jungle_crafting_table_top",
+    "west": "varan-deco:block/jungle_crafting_table_front"
+  }
+}

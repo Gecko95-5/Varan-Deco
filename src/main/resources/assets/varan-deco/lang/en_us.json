@@ -211,7 +211,27 @@
   "block.varan-deco.chiseled_blue_nether_bricks": "Chiseled Blue Nether Bricks",
   "block.varan-deco.cracked_blue_nether_bricks": "Cracked Blue Nether Bricks",
 
+  "block.varan-deco.spruce_crafting_table": "Spruce Crafting Table",
   "block.varan-deco.birch_crafting_table": "Birch Crafting Table",
+  "block.varan-deco.jungle_crafting_table": "Jungle Crafting Table",
+  "block.varan-deco.acacia_crafting_table": "Acacia Crafting Table",
+  "block.varan-deco.dark_oak_crafting_table": "Dark Oak Crafting Table",
+  "block.varan-deco.mangrove_crafting_table": "Mangrove Crafting Table",
+  "block.varan-deco.crimson_crafting_table": "Crimson Crafting Table",
+  "block.varan-deco.warped_crafting_table": "Warped Crafting Table",
+  "block.varan-deco.cactus_crafting_table": "Cactus Crafting Table",
+
+  "block.varan-deco.oak_barrel": "Oak Barrel",
+  "block.varan-deco.birch_barrel": "Birch Barrel",
+  "block.varan-deco.jungle_barrel": "Jungle Barrel",
+  "block.varan-deco.acacia_barrel": "Acacia Barrel",
+  "block.varan-deco.dark_oak_barrel": "Dark Oak Barrel",
+  "block.varan-deco.mangrove_barrel": "Mangrove Barrel",
+  "block.varan-deco.crimson_barrel": "Crimson Barrel",
+  "block.varan-deco.warped_barrel": "Warped Barrel",
+  "block.varan-deco.cactus_barrel": "Cactus Barrel",
+
+  "block.varan-deco.birch_ladder": "Birch Ladder",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",

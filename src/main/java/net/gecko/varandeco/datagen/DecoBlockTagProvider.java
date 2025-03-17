@@ -3,6 +3,9 @@ package net.gecko.varandeco.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.gecko.varandeco.util.DecoTags;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
 
 public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -157,7 +160,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(DecoBlocks.BIRCH_CRAFTING_TABLE);
+                .addTag(DecoTags.Blocks.CRAFTING_TABLES)
+                .addTag(DecoTags.Blocks.BARRELS)
+                .add(DecoBlocks.BIRCH_LADDER);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE);
@@ -336,5 +341,31 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.CRAFTING_TABLES)
+                .add(Blocks.CRAFTING_TABLE)
+                .add(DecoBlocks.BIRCH_CRAFTING_TABLE)
+                .add(DecoBlocks.SPRUCE_CRAFTING_TABLE)
+                .add(DecoBlocks.JUNGLE_CRAFTING_TABLE)
+                .add(DecoBlocks.ACACIA_CRAFTING_TABLE)
+                .add(DecoBlocks.DARK_OAK_CRAFTING_TABLE)
+                .add(DecoBlocks.MANGROVE_CRAFTING_TABLE)
+                .add(DecoBlocks.CRIMSON_CRAFTING_TABLE)
+                .add(DecoBlocks.WARPED_CRAFTING_TABLE)
+                .add(DecoBlocks.CACTUS_CRAFTING_TABLE);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.BARRELS)
+                .add(DecoBlocks.OAK_BARREL)
+                .add(DecoBlocks.BIRCH_BARREL)
+                .add(DecoBlocks.JUNGLE_BARREL)
+                .add(DecoBlocks.ACACIA_BARREL)
+                .add(DecoBlocks.DARK_OAK_BARREL)
+                .add(DecoBlocks.MANGROVE_BARREL)
+                .add(DecoBlocks.CRIMSON_BARREL)
+                .add(DecoBlocks.WARPED_BARREL)
+                .add(DecoBlocks.CACTUS_BARREL);
+
+        getOrCreateTagBuilder(BlockTags.CLIMBABLE)
+                .add(DecoBlocks.BIRCH_LADDER);
     }
 }

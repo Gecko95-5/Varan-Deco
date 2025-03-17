@@ -1,10 +1,10 @@
-package net.gecko.varandeco.block.custom;
+package net.gecko.varandeco.block.craftingtables;
 
-import net.gecko.varandeco.screen.CustomCraftingScreenHandler;
+import net.gecko.varandeco.screen.AcaciaCraftingScreenHandler;
+import net.gecko.varandeco.screen.MangroveCraftingScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.screen.CraftingScreenHandler;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
@@ -16,10 +16,10 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class CustomCraftingTableBlock extends Block {
+public class MangroveCraftingTableBlock extends Block {
 	private static final Text TITLE = Text.translatable("container.crafting");
 
-	public CustomCraftingTableBlock(Settings settings) {
+	public MangroveCraftingTableBlock(Settings settings) {
 		super(settings);
 	}
 
@@ -37,7 +37,7 @@ public class CustomCraftingTableBlock extends Block {
 	@Override
 	public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
 		return new SimpleNamedScreenHandlerFactory(
-			(syncId, inventory, player) -> new CustomCraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE
+			(syncId, inventory, player) -> new MangroveCraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE
 		);
 	}
 }

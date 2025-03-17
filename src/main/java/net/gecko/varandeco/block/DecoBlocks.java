@@ -4,8 +4,8 @@ import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
+import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
-import net.gecko.varandeco.block.custom.CustomCraftingTableBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.item.DecoItemGroup;
@@ -361,8 +361,46 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new MagmaWallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block BIRCH_LADDER = registerBlock("birch_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
+            new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
-            new CustomCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new BirchCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_CRAFTING_TABLE = registerBlock("jungle_crafting_table",
+            new JungleCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DIRT_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_CRAFTING_TABLE = registerBlock("acacia_crafting_table",
+            new AcaciaCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_CRAFTING_TABLE = registerBlock("dark_oak_crafting_table",
+            new DarkOakCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_CRAFTING_TABLE = registerBlock("mangrove_crafting_table",
+            new MangroveCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.RED)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_CRAFTING_TABLE = registerBlock("crimson_crafting_table",
+            new CrimsonCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DULL_PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_CRAFTING_TABLE = registerBlock("warped_crafting_table",
+            new WarpedCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.TEAL)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
+            new CactusCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block OAK_BARREL = registerBlock("oak_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.OAK_TAN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_BARREL = registerBlock("birch_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_BARREL = registerBlock("jungle_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_BARREL = registerBlock("acacia_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.ORANGE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_BARREL = registerBlock("dark_oak_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.RED)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DULL_PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_BARREL = registerBlock("warped_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);

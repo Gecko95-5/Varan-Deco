@@ -369,5 +369,43 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_crafting_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.BIRCH_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.SPRUCE_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.JUNGLE_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acacia_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.ACACIA_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_CRAFTING_TABLE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.OAK_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.JUNGLE_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acacia_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.ACACIA_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_BARREL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_LADDER));
     }
 }
