@@ -8,6 +8,9 @@ import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
+import net.gecko.varandeco.block.smithingtables.BirchSmithingTableBlock;
+import net.gecko.varandeco.block.smithingtables.CrimsonSmithingTableBlock;
+import net.gecko.varandeco.block.smithingtables.WarpedSmithingTableBlock;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
@@ -361,7 +364,23 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new MagmaWallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block SPRUCE_LADDER = registerBlock("spruce_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_LADDER = registerBlock("birch_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_LADDER = registerBlock("jungle_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_LADDER = registerBlock("acacia_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_LADDER = registerBlock("dark_oak_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_LADDER = registerBlock("mangrove_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_LADDER = registerBlock("crimson_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_LADDER = registerBlock("warped_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_LADDER = registerBlock("cactus_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
@@ -401,6 +420,15 @@ public class DecoBlocks {
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+
+    public static final Block BIRCH_SMITHING_TABLE = registerBlock("birch_smithing_table",
+            new BirchSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block CRIMSON_SMITHING_TABLE = registerBlock("crimson_smithing_table",
+            new CrimsonSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_SMITHING_TABLE = registerBlock("warped_smithing_table",
+            new WarpedSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);

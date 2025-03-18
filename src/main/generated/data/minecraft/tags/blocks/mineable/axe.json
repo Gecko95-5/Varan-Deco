@@ -1,8 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#varan-deco:crafting_tables",
-    "#varan-deco:barrels",
-    "varan-deco:birch_ladder"
+    "#varan-deco:deco_crafting_tables",
+    "#varan-deco:deco_barrels",
+    "#varan-deco:deco_ladders",
+    "#varan-deco:deco_smithing_tables"
   ]
 }

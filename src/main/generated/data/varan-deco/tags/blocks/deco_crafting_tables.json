@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:crafting_table",
     "varan-deco:birch_crafting_table",
     "varan-deco:spruce_crafting_table",
     "varan-deco:jungle_crafting_table",

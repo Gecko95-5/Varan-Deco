@@ -231,7 +231,19 @@
   "block.varan-deco.warped_barrel": "Warped Barrel",
   "block.varan-deco.cactus_barrel": "Cactus Barrel",
 
+  "block.varan-deco.spruce_ladder": "Spruce Ladder",
   "block.varan-deco.birch_ladder": "Birch Ladder",
+  "block.varan-deco.jungle_ladder": "Jungle Ladder",
+  "block.varan-deco.acacia_ladder": "Acacia Ladder",
+  "block.varan-deco.dark_oak_ladder": "Dark Oak Ladder",
+  "block.varan-deco.mangrove_ladder": "Mangrove Ladder",
+  "block.varan-deco.crimson_ladder": "Crimson Ladder",
+  "block.varan-deco.warped_ladder": "Warped Ladder",
+  "block.varan-deco.cactus_ladder": "Cactus Ladder",
+
+  "block.varan-deco.birch_smithing_table": "Birch Smithing Table",
+  "block.varan-deco.crimson_smithing_table": "Crimson Smithing Table",
+  "block.varan-deco.warped_smithing_table": "Warped Smithing Table",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",

@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
 
@@ -160,9 +159,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .addTag(DecoTags.Blocks.CRAFTING_TABLES)
-                .addTag(DecoTags.Blocks.BARRELS)
-                .add(DecoBlocks.BIRCH_LADDER);
+                .addTag(DecoTags.Blocks.DECO_CRAFTING_TABLES)
+                .addTag(DecoTags.Blocks.DECO_BARRELS)
+                .addTag(DecoTags.Blocks.DECO_LADDERS)
+                .addTag(DecoTags.Blocks.DECO_SMITHING_TABLES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE);
@@ -342,8 +342,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.CRAFTING_TABLES)
-                .add(Blocks.CRAFTING_TABLE)
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_CRAFTING_TABLES)
                 .add(DecoBlocks.BIRCH_CRAFTING_TABLE)
                 .add(DecoBlocks.SPRUCE_CRAFTING_TABLE)
                 .add(DecoBlocks.JUNGLE_CRAFTING_TABLE)
@@ -354,7 +353,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE)
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.BARRELS)
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
+                .add(DecoBlocks.BIRCH_SMITHING_TABLE)
+                .add(DecoBlocks.CRIMSON_SMITHING_TABLE)
+                .add(DecoBlocks.WARPED_SMITHING_TABLE);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_BARRELS)
                 .add(DecoBlocks.OAK_BARREL)
                 .add(DecoBlocks.BIRCH_BARREL)
                 .add(DecoBlocks.JUNGLE_BARREL)
@@ -365,7 +369,18 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_BARREL)
                 .add(DecoBlocks.CACTUS_BARREL);
 
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_LADDERS)
+                .add(DecoBlocks.BIRCH_LADDER)
+                .add(DecoBlocks.SPRUCE_LADDER)
+                .add(DecoBlocks.JUNGLE_LADDER)
+                .add(DecoBlocks.ACACIA_LADDER)
+                .add(DecoBlocks.DARK_OAK_LADDER)
+                .add(DecoBlocks.MANGROVE_LADDER)
+                .add(DecoBlocks.CRIMSON_LADDER)
+                .add(DecoBlocks.WARPED_LADDER)
+                .add(DecoBlocks.CACTUS_LADDER);
+
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
-                .add(DecoBlocks.BIRCH_LADDER);
+                .addTag(DecoTags.Blocks.DECO_LADDERS);
     }
 }
