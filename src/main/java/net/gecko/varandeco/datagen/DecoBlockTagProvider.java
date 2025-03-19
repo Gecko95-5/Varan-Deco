@@ -354,9 +354,14 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
+                .add(DecoBlocks.OAK_SMITHING_TABLE)
+                .add(DecoBlocks.SPRUCE_SMITHING_TABLE)
                 .add(DecoBlocks.BIRCH_SMITHING_TABLE)
+                .add(DecoBlocks.ACACIA_SMITHING_TABLE)
+                .add(DecoBlocks.DARK_OAK_SMITHING_TABLE)
                 .add(DecoBlocks.CRIMSON_SMITHING_TABLE)
-                .add(DecoBlocks.WARPED_SMITHING_TABLE);
+                .add(DecoBlocks.WARPED_SMITHING_TABLE)
+                .add(DecoBlocks.CACTUS_SMITHING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_BARRELS)
                 .add(DecoBlocks.OAK_BARREL)

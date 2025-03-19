@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "varan-deco:block/birch_beehive_end",
+    "front": "varan-deco:block/birch_beehive_front_honey",
+    "particle": "varan-deco:block/birch_beehive_side",
+    "side": "varan-deco:block/birch_beehive_side",
+    "top": "varan-deco:block/birch_beehive_end"
+  }
+}

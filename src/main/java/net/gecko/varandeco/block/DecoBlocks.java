@@ -8,9 +8,7 @@ import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
-import net.gecko.varandeco.block.smithingtables.BirchSmithingTableBlock;
-import net.gecko.varandeco.block.smithingtables.CrimsonSmithingTableBlock;
-import net.gecko.varandeco.block.smithingtables.WarpedSmithingTableBlock;
+import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
@@ -421,14 +419,27 @@ public class DecoBlocks {
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
-
+    public static final Block OAK_SMITHING_TABLE = registerBlock("oak_smithing_table",
+            new OakSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_SMITHING_TABLE = registerBlock("spruce_smithing_table",
+            new SpruceSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_SMITHING_TABLE = registerBlock("birch_smithing_table",
             new BirchSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
-
+    public static final Block JUNGLE_SMITHING_TABLE = registerBlock("jungle_smithing_table",
+            new JungleSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_SMITHING_TABLE = registerBlock("acacia_smithing_table",
+            new AcaciaSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_SMITHING_TABLE = registerBlock("dark_oak_smithing_table",
+            new DarkOakSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRIMSON_SMITHING_TABLE = registerBlock("crimson_smithing_table",
             new CrimsonSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WARPED_SMITHING_TABLE = registerBlock("warped_smithing_table",
             new WarpedSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
+            new CactusSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block BIRCH_BEEHIVE = registerBlock("birch_beehive",
+            new BeehiveBlock(FabricBlockSettings.copyOf(Blocks.BEEHIVE).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);

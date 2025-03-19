@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "varan-deco:block/cactus_smithing_table_bottom",
+    "east": "varan-deco:block/cactus_smithing_table_side",
+    "north": "varan-deco:block/cactus_smithing_table_front",
+    "particle": "varan-deco:block/cactus_smithing_table_front",
+    "south": "varan-deco:block/cactus_smithing_table_front",
+    "up": "minecraft:block/smithing_table_top",
+    "west": "varan-deco:block/cactus_smithing_table_side"
+  }
+}

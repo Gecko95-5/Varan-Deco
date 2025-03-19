@@ -1,11 +1,11 @@
-// 1.19.2	2025-03-17T22:22:20.6358483	Tags for minecraft:block
+// 1.19.2	2025-03-18T22:32:14.4950736	Tags for minecraft:block
 083523f230afc94f331914d3d35a0d799beb21ca data\minecraft\tags\blocks\mineable\pickaxe.json
 ad3c591502f47db269e9252e597e4b72a0f24dee data\minecraft\tags\blocks\slabs.json
 294ce070b05ec9a35b2563ff313a8ef2abe7e1f1 data\minecraft\tags\blocks\stairs.json
 db506ed11852204cf9a3c2a67ff374bf6d35e857 data\minecraft\tags\blocks\planks.json
 8d461017cf23c97979510fbb843853e3743de4a5 data\minecraft\tags\blocks\walls.json
 b45459afabd6a44b57b04db833e8fd84717cdaa2 data\minecraft\tags\blocks\fence_gates.json
-bd3fb92b84518662ac1c9950b0657cb9c86b5a9d data\varan-deco\tags\blocks\deco_smithing_tables.json
+b426a834869d75fdd256dcec12ecaef024b2bad2 data\varan-deco\tags\blocks\deco_smithing_tables.json
 671f84b438c6477b2fc340505b437c72d39271d0 data\varan-deco\tags\blocks\deco_crafting_tables.json
 5f85dd7977a15204e131d366127723d2edf8346e data\minecraft\tags\blocks\soul_speed_blocks.json
 17a0621d55df6cce6110e3eec873d7e0d55bda23 data\minecraft\tags\blocks\wooden_doors.json
