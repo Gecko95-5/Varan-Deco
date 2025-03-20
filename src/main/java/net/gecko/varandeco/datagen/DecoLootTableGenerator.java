@@ -388,6 +388,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_barrel"),
                 BlockLootTableGenerator.drops(DecoBlocks.OAK_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.SPRUCE_BARREL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_barrel"),
                 BlockLootTableGenerator.drops(DecoBlocks.BIRCH_BARREL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_barrel"),
@@ -436,6 +438,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.ACACIA_SMITHING_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_smithing_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_SMITHING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_smithing_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_SMITHING_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_smithing_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_SMITHING_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_smithing_table"),
@@ -443,7 +447,7 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_smithing_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_SMITHING_TABLE));
 
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_beehive"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.BIRCH_BEEHIVE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE));
     }
 }

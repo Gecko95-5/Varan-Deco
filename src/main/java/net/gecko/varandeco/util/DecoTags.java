@@ -22,11 +22,25 @@ public class DecoTags {
         public static final TagKey<Block> DECO_SMITHING_TABLES =
                 createTag("deco_smithing_tables");
 
+        public static final TagKey<Block> DECO_CARTOGRAPHY_TABLES =
+                createTag("deco_cartography_tables");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(VaranDeco.MOD_ID, name));
         }
     }
     public static class Items {
+        public static final TagKey<Item> DECO_SMITHING_TABLES =
+                createTag("deco_smithing_tables");
+
+        public static final TagKey<Item> DECO_CRAFTING_TABLES =
+                createTag("deco_crafting_tables");
+
+        public static final TagKey<Item> DECO_BARRELS =
+                createTag("deco_barrels");
+
+        public static final TagKey<Item> DECO_CARTOGRAPHY_TABLES =
+                createTag("deco_cartography_tables");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registry.ITEM_KEY, new Identifier(VaranDeco.MOD_ID, name));

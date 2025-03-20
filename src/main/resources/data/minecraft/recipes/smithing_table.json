@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:mangrove_planks"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "varan-deco:deco_crafting_tables"
     },
-    "@": {
-      "item": "minecraft:iron_ingot"
+    {
+      "tag": "varan-deco:deco_smithing_tables"
     }
-  },
-  "pattern": [
-    "@@",
-    "##",
-    "##"
   ],
   "result": {
     "item": "minecraft:smithing_table"

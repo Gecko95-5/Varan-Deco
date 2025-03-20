@@ -222,6 +222,7 @@
   "block.varan-deco.cactus_crafting_table": "Cactus Crafting Table",
 
   "block.varan-deco.oak_barrel": "Oak Barrel",
+  "block.varan-deco.spruce_barrel": "Spruce Barrel",
   "block.varan-deco.birch_barrel": "Birch Barrel",
   "block.varan-deco.jungle_barrel": "Jungle Barrel",
   "block.varan-deco.acacia_barrel": "Acacia Barrel",
@@ -247,11 +248,12 @@
   "block.varan-deco.jungle_smithing_table": "Jungle Smithing Table",
   "block.varan-deco.acacia_smithing_table": "Acacia Smithing Table",
   "block.varan-deco.dark_oak_smithing_table": "Dark Oak Smithing Table",
+  "block.varan-deco.mangrove_smithing_table": "Mangrove Smithing Table",
   "block.varan-deco.crimson_smithing_table": "Crimson Smithing Table",
   "block.varan-deco.warped_smithing_table": "Warped Smithing Table",
   "block.varan-deco.cactus_smithing_table": "Cactus Smithing Table",
 
-  "block.varan-deco.birch_beehive": "Birch Beehive",
+  "block.varan-deco.birch_cartography_table": "Birch Cartography Table",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",

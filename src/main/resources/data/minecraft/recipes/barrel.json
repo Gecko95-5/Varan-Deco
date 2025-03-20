@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "P": {
-      "item": "minecraft:spruce_planks"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "varan-deco:deco_crafting_tables"
     },
-    "S": {
-      "item": "minecraft:spruce_slab"
+    {
+      "tag": "varan-deco:deco_barrels"
     }
-  },
-  "pattern": [
-    "PSP",
-    "P P",
-    "PSP"
   ],
   "result": {
     "item": "minecraft:barrel"
