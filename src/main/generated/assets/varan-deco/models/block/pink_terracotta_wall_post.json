@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "varan-deco:block/pink_terracotta_temp"
+  }
+}

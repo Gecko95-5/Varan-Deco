@@ -25,6 +25,23 @@
   "block.varan-deco.quartz_temp": "Non-Craftable Quartz Block",
   "block.varan-deco.smooth_quartz_temp": "Non-Craftable Smooth Quartz Block",
   "block.varan-deco.quartz_bricks_temp": "Non-Craftable Quartz Bricks",
+  "block.varan-deco.terracotta_temp": "Non-Craftable Terracotta",
+  "block.varan-deco.white_terracotta_temp": "Non-Craftable White Terracotta",
+  "block.varan-deco.light_gray_terracotta_temp": "Non-Craftable Light Gray Terracotta",
+  "block.varan-deco.gray_terracotta_temp": "Non-Craftable Gray Terracotta",
+  "block.varan-deco.black_terracotta_temp": "Non-Craftable Black Terracotta",
+  "block.varan-deco.brown_terracotta_temp": "Non-Craftable Brown Terracotta",
+  "block.varan-deco.red_terracotta_temp": "Non-Craftable Red Terracotta",
+  "block.varan-deco.orange_terracotta_temp": "Non-Craftable Orange Terracotta",
+  "block.varan-deco.yellow_terracotta_temp": "Non-Craftable Yellow Terracotta",
+  "block.varan-deco.lime_terracotta_temp": "Non-Craftable Lime Terracotta",
+  "block.varan-deco.green_terracotta_temp": "Non-Craftable Green Terracotta",
+  "block.varan-deco.cyan_terracotta_temp": "Non-Craftable Cyan Terracotta",
+  "block.varan-deco.light_blue_terracotta_temp": "Non-Craftable Light Blue Terracotta",
+  "block.varan-deco.blue_terracotta_temp": "Non-Craftable Blue Terracotta",
+  "block.varan-deco.purple_terracotta_temp": "Non-Craftable Purple Terracotta",
+  "block.varan-deco.magenta_terracotta_temp": "Non-Craftable Magenta Terracotta",
+  "block.varan-deco.pink_terracotta_temp": "Non-Craftable Pink Terracotta",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
@@ -253,7 +270,16 @@
   "block.varan-deco.warped_smithing_table": "Warped Smithing Table",
   "block.varan-deco.cactus_smithing_table": "Cactus Smithing Table",
 
+  "block.varan-deco.oak_cartography_table": "Oak Cartography Table",
   "block.varan-deco.birch_cartography_table": "Birch Cartography Table",
+  "block.varan-deco.spruce_cartography_table": "Spruce Cartography Table",
+  "block.varan-deco.jungle_cartography_table": "Jungle Cartography Table",
+  "block.varan-deco.acacia_cartography_table": "Acacia Cartography Table",
+  "block.varan-deco.dark_oak_cartography_table": "Dark Oak Cartography Table",
+  "block.varan-deco.mangrove_cartography_table": "Mangrove Cartography Table",
+  "block.varan-deco.crimson_cartography_table": "Crimson Cartography Table",
+  "block.varan-deco.warped_cartography_table": "Warped Cartography Table",
+  "block.varan-deco.cactus_cartography_table": "Cactus Cartography Table",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",
@@ -266,6 +292,74 @@
   "block.varan-deco.cactus_trapdoor": "Cactus Trapdoor",
   "block.varan-deco.standing_cactus_sign": "Cactus Sign",
   "block.varan-deco.wall_cactus_sign": "Cactus Wall Sign",
+
+  "block.varan-deco.terracotta_stairs": "Terracotta Stairs",
+  "block.varan-deco.terracotta_slab": "Terracotta Slab",
+  "block.varan-deco.terracotta_wall": "Terracotta Wall",
+
+  "block.varan-deco.white_terracotta_stairs": "White Terracotta Stairs",
+  "block.varan-deco.white_terracotta_slab": "White Terracotta Slab",
+  "block.varan-deco.white_terracotta_wall": "White Terracotta Wall",
+
+  "block.varan-deco.light_gray_terracotta_stairs": "Light Gray Terracotta Stairs",
+  "block.varan-deco.light_gray_terracotta_slab": "Light Gray Terracotta Slab",
+  "block.varan-deco.light_gray_terracotta_wall": "Light Gray Terracotta Wall",
+
+  "block.varan-deco.gray_terracotta_stairs": "Gray Terracotta Stairs",
+  "block.varan-deco.gray_terracotta_slab": "Gray Terracotta Slab",
+  "block.varan-deco.gray_terracotta_wall": "Gray Terracotta Wall",
+
+  "block.varan-deco.black_terracotta_stairs": "Black Terracotta Stairs",
+  "block.varan-deco.black_terracotta_slab": "Black Terracotta Slab",
+  "block.varan-deco.black_terracotta_wall": "Black Terracotta Wall",
+
+  "block.varan-deco.brown_terracotta_stairs": "Brown Terracotta Stairs",
+  "block.varan-deco.brown_terracotta_slab": "Brown Terracotta Slab",
+  "block.varan-deco.brown_terracotta_wall": "Brown Terracotta Wall",
+
+  "block.varan-deco.red_terracotta_stairs": "Red Terracotta Stairs",
+  "block.varan-deco.red_terracotta_slab": "Red Terracotta Slab",
+  "block.varan-deco.red_terracotta_wall": "Red Terracotta Wall",
+
+  "block.varan-deco.orange_terracotta_stairs": "Orange Terracotta Stairs",
+  "block.varan-deco.orange_terracotta_slab": "Orange Terracotta Slab",
+  "block.varan-deco.orange_terracotta_wall": "Orange Terracotta Wall",
+
+  "block.varan-deco.yellow_terracotta_stairs": "Yellow Terracotta Stairs",
+  "block.varan-deco.yellow_terracotta_slab": "Yellow Terracotta Slab",
+  "block.varan-deco.yellow_terracotta_wall": "Yellow Terracotta Wall",
+
+  "block.varan-deco.lime_terracotta_stairs": "Lime Terracotta Stairs",
+  "block.varan-deco.lime_terracotta_slab": "Lime Terracotta Slab",
+  "block.varan-deco.lime_terracotta_wall": "Lime Terracotta Wall",
+
+  "block.varan-deco.green_terracotta_stairs": "Green Terracotta Stairs",
+  "block.varan-deco.green_terracotta_slab": "Green Terracotta Slab",
+  "block.varan-deco.green_terracotta_wall": "Green Terracotta Wall",
+
+  "block.varan-deco.cyan_terracotta_stairs": "Cyan Terracotta Stairs",
+  "block.varan-deco.cyan_terracotta_slab": "Cyan Terracotta Slab",
+  "block.varan-deco.cyan_terracotta_wall": "Cyan Terracotta Wall",
+
+  "block.varan-deco.light_blue_terracotta_stairs": "Light Blue Terracotta Stairs",
+  "block.varan-deco.light_blue_terracotta_slab": "Light Blue Terracotta Slab",
+  "block.varan-deco.light_blue_terracotta_wall": "Light Blue Terracotta Wall",
+
+  "block.varan-deco.blue_terracotta_stairs": "Blue Terracotta Stairs",
+  "block.varan-deco.blue_terracotta_slab": "Blue Terracotta Slab",
+  "block.varan-deco.blue_terracotta_wall": "Blue Terracotta Wall",
+
+  "block.varan-deco.purple_terracotta_stairs": "Purple Terracotta Stairs",
+  "block.varan-deco.purple_terracotta_slab": "Purple Terracotta Slab",
+  "block.varan-deco.purple_terracotta_wall": "Purple Terracotta Wall",
+
+  "block.varan-deco.magenta_terracotta_stairs": "Magenta Terracotta Stairs",
+  "block.varan-deco.magenta_terracotta_slab": "Magenta Terracotta Slab",
+  "block.varan-deco.magenta_terracotta_wall": "Magenta Terracotta Wall",
+
+  "block.varan-deco.pink_terracotta_stairs": "Pink Terracotta Stairs",
+  "block.varan-deco.pink_terracotta_slab": "Pink Terracotta Slab",
+  "block.varan-deco.pink_terracotta_wall": "Pink Terracotta Wall",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

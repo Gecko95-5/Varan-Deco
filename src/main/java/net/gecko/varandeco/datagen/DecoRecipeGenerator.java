@@ -895,5 +895,193 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.BLAZE_POWDER),
                         RecipeProvider.conditionsFromItem(Items.BLAZE_POWDER))
                 .offerTo(exporter, new Identifier("ender_eye_from_warped_wart"));
+
+        createStairsRecipe(DecoBlocks.TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.TERRACOTTA))
+                .criterion(hasItem(Blocks.TERRACOTTA),conditionsFromItem(Blocks.TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.WHITE_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.WHITE_TERRACOTTA))
+                .criterion(hasItem(Blocks.WHITE_TERRACOTTA),conditionsFromItem(Blocks.WHITE_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WHITE_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_TERRACOTTA_STAIRS, Blocks.WHITE_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.WHITE_TERRACOTTA_SLAB, Blocks.WHITE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_TERRACOTTA_SLAB, Blocks.WHITE_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.WHITE_TERRACOTTA_WALL, Blocks.WHITE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_TERRACOTTA_WALL, Blocks.WHITE_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.BLACK_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.BLACK_TERRACOTTA))
+                .criterion(hasItem(Blocks.BLACK_TERRACOTTA),conditionsFromItem(Blocks.BLACK_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACK_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_TERRACOTTA_STAIRS, Blocks.BLACK_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.BLACK_TERRACOTTA_SLAB, Blocks.BLACK_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_TERRACOTTA_SLAB, Blocks.BLACK_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.BLACK_TERRACOTTA_WALL, Blocks.BLACK_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_TERRACOTTA_WALL, Blocks.BLACK_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.GRAY_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.GRAY_TERRACOTTA))
+                .criterion(hasItem(Blocks.GRAY_TERRACOTTA),conditionsFromItem(Blocks.GRAY_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GRAY_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_TERRACOTTA_STAIRS, Blocks.GRAY_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.GRAY_TERRACOTTA_SLAB, Blocks.GRAY_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_TERRACOTTA_SLAB, Blocks.GRAY_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.GRAY_TERRACOTTA_WALL, Blocks.GRAY_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_TERRACOTTA_WALL, Blocks.GRAY_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.LIGHT_GRAY_TERRACOTTA))
+                .criterion(hasItem(Blocks.LIGHT_GRAY_TERRACOTTA),conditionsFromItem(Blocks.LIGHT_GRAY_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS, Blocks.LIGHT_GRAY_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL, Blocks.LIGHT_GRAY_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL, Blocks.LIGHT_GRAY_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.BROWN_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.BROWN_TERRACOTTA))
+                .criterion(hasItem(Blocks.BROWN_TERRACOTTA),conditionsFromItem(Blocks.BROWN_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BROWN_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_TERRACOTTA_STAIRS, Blocks.BROWN_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.BROWN_TERRACOTTA_SLAB, Blocks.BROWN_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_TERRACOTTA_SLAB, Blocks.BROWN_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.BROWN_TERRACOTTA_WALL, Blocks.BROWN_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_TERRACOTTA_WALL, Blocks.BROWN_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.RED_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.RED_TERRACOTTA))
+                .criterion(hasItem(Blocks.RED_TERRACOTTA),conditionsFromItem(Blocks.RED_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.RED_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_TERRACOTTA_STAIRS, Blocks.RED_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.RED_TERRACOTTA_SLAB, Blocks.RED_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_TERRACOTTA_SLAB, Blocks.RED_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.RED_TERRACOTTA_WALL, Blocks.RED_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_TERRACOTTA_WALL, Blocks.RED_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.ORANGE_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.ORANGE_TERRACOTTA))
+                .criterion(hasItem(Blocks.ORANGE_TERRACOTTA),conditionsFromItem(Blocks.ORANGE_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.ORANGE_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_TERRACOTTA_STAIRS, Blocks.ORANGE_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.ORANGE_TERRACOTTA_SLAB, Blocks.ORANGE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_TERRACOTTA_SLAB, Blocks.ORANGE_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.ORANGE_TERRACOTTA_WALL, Blocks.ORANGE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_TERRACOTTA_WALL, Blocks.ORANGE_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.YELLOW_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.YELLOW_TERRACOTTA))
+                .criterion(hasItem(Blocks.YELLOW_TERRACOTTA),conditionsFromItem(Blocks.YELLOW_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.YELLOW_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_TERRACOTTA_STAIRS, Blocks.YELLOW_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.YELLOW_TERRACOTTA_SLAB, Blocks.YELLOW_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_TERRACOTTA_SLAB, Blocks.YELLOW_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.YELLOW_TERRACOTTA_WALL, Blocks.YELLOW_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_TERRACOTTA_WALL, Blocks.YELLOW_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.LIME_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.LIME_TERRACOTTA))
+                .criterion(hasItem(Blocks.LIME_TERRACOTTA),conditionsFromItem(Blocks.LIME_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIME_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIME_TERRACOTTA_STAIRS, Blocks.LIME_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.LIME_TERRACOTTA_SLAB, Blocks.LIME_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIME_TERRACOTTA_SLAB, Blocks.LIME_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.LIME_TERRACOTTA_WALL, Blocks.LIME_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIME_TERRACOTTA_WALL, Blocks.LIME_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.GREEN_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.GREEN_TERRACOTTA))
+                .criterion(hasItem(Blocks.GREEN_TERRACOTTA),conditionsFromItem(Blocks.GREEN_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GREEN_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_TERRACOTTA_STAIRS, Blocks.GREEN_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.GREEN_TERRACOTTA_SLAB, Blocks.GREEN_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_TERRACOTTA_SLAB, Blocks.GREEN_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.GREEN_TERRACOTTA_WALL, Blocks.GREEN_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_TERRACOTTA_WALL, Blocks.GREEN_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.CYAN_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.CYAN_TERRACOTTA))
+                .criterion(hasItem(Blocks.CYAN_TERRACOTTA),conditionsFromItem(Blocks.CYAN_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CYAN_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_TERRACOTTA_STAIRS, Blocks.CYAN_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.CYAN_TERRACOTTA_SLAB, Blocks.CYAN_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_TERRACOTTA_SLAB, Blocks.CYAN_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.CYAN_TERRACOTTA_WALL, Blocks.CYAN_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_TERRACOTTA_WALL, Blocks.CYAN_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.BLUE_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.BLUE_TERRACOTTA))
+                .criterion(hasItem(Blocks.BLUE_TERRACOTTA),conditionsFromItem(Blocks.BLUE_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLUE_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_TERRACOTTA_STAIRS, Blocks.BLUE_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.BLUE_TERRACOTTA_SLAB, Blocks.BLUE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_TERRACOTTA_SLAB, Blocks.BLUE_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.BLUE_TERRACOTTA_WALL, Blocks.BLUE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_TERRACOTTA_WALL, Blocks.BLUE_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.LIGHT_BLUE_TERRACOTTA))
+                .criterion(hasItem(Blocks.LIGHT_BLUE_TERRACOTTA),conditionsFromItem(Blocks.LIGHT_BLUE_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS, Blocks.LIGHT_BLUE_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL, Blocks.LIGHT_BLUE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL, Blocks.LIGHT_BLUE_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.PURPLE_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.PURPLE_TERRACOTTA))
+                .criterion(hasItem(Blocks.PURPLE_TERRACOTTA),conditionsFromItem(Blocks.PURPLE_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PURPLE_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_TERRACOTTA_STAIRS, Blocks.PURPLE_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.PURPLE_TERRACOTTA_SLAB, Blocks.PURPLE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_TERRACOTTA_SLAB, Blocks.PURPLE_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.PURPLE_TERRACOTTA_WALL, Blocks.PURPLE_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_TERRACOTTA_WALL, Blocks.PURPLE_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.MAGENTA_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.MAGENTA_TERRACOTTA))
+                .criterion(hasItem(Blocks.MAGENTA_TERRACOTTA),conditionsFromItem(Blocks.MAGENTA_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MAGENTA_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_TERRACOTTA_STAIRS, Blocks.MAGENTA_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.MAGENTA_TERRACOTTA_SLAB, Blocks.MAGENTA_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_TERRACOTTA_SLAB, Blocks.MAGENTA_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.MAGENTA_TERRACOTTA_WALL, Blocks.MAGENTA_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_TERRACOTTA_WALL, Blocks.MAGENTA_TERRACOTTA);
+
+        createStairsRecipe(DecoBlocks.PINK_TERRACOTTA_STAIRS, Ingredient.ofItems(Blocks.PINK_TERRACOTTA))
+                .criterion(hasItem(Blocks.PINK_TERRACOTTA),conditionsFromItem(Blocks.PINK_TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PINK_TERRACOTTA_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.PINK_TERRACOTTA_STAIRS, Blocks.PINK_TERRACOTTA);
+
+        offerSlabRecipe(exporter, DecoBlocks.PINK_TERRACOTTA_SLAB, Blocks.PINK_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PINK_TERRACOTTA_SLAB, Blocks.PINK_TERRACOTTA);
+
+        offerWallRecipe(exporter, DecoBlocks.PINK_TERRACOTTA_WALL, Blocks.PINK_TERRACOTTA);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PINK_TERRACOTTA_WALL, Blocks.PINK_TERRACOTTA);
+
     }
 }

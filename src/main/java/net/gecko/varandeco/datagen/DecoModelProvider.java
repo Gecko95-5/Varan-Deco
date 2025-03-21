@@ -128,7 +128,16 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_SMITHING_TABLE);
 
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
@@ -260,6 +269,93 @@ public class DecoModelProvider extends FabricModelProvider {
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
+
+        BlockStateModelGenerator.BlockTexturePool terracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool whiteterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WHITE_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool lightgrayterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.LIGHT_GRAY_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool grayterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GRAY_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool blackterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACK_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool brownterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BROWN_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool redterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool orangeterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ORANGE_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool yellowterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.YELLOW_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool limeterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.LIME_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool greenterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GREEN_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool cyanterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CYAN_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool lightblueterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.LIGHT_BLUE_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool blueterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLUE_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool purpleterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PURPLE_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool magnetaterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MAGENTA_TERRACOTTA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool pinkterracottapool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PINK_TERRACOTTA_TEMP);
+
+        terracottapool.stairs(DecoBlocks.TERRACOTTA_STAIRS);
+        terracottapool.slab(DecoBlocks.TERRACOTTA_SLAB);
+        terracottapool.wall(DecoBlocks.TERRACOTTA_WALL);
+        whiteterracottapool.stairs(DecoBlocks.WHITE_TERRACOTTA_STAIRS);
+        whiteterracottapool.slab(DecoBlocks.WHITE_TERRACOTTA_SLAB);
+        whiteterracottapool.wall(DecoBlocks.WHITE_TERRACOTTA_WALL);
+        lightgrayterracottapool.stairs(DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+        lightgrayterracottapool.slab(DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+        lightgrayterracottapool.wall(DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL);
+        grayterracottapool.stairs(DecoBlocks.GRAY_TERRACOTTA_STAIRS);
+        grayterracottapool.slab(DecoBlocks.GRAY_TERRACOTTA_SLAB);
+        grayterracottapool.wall(DecoBlocks.GRAY_TERRACOTTA_WALL);
+        blackterracottapool.stairs(DecoBlocks.BLACK_TERRACOTTA_STAIRS);
+        blackterracottapool.slab(DecoBlocks.BLACK_TERRACOTTA_SLAB);
+        blackterracottapool.wall(DecoBlocks.BLACK_TERRACOTTA_WALL);
+        brownterracottapool.stairs(DecoBlocks.BROWN_TERRACOTTA_STAIRS);
+        brownterracottapool.slab(DecoBlocks.BROWN_TERRACOTTA_SLAB);
+        brownterracottapool.wall(DecoBlocks.BROWN_TERRACOTTA_WALL);
+        redterracottapool.stairs(DecoBlocks.RED_TERRACOTTA_STAIRS);
+        redterracottapool.slab(DecoBlocks.RED_TERRACOTTA_SLAB);
+        redterracottapool.wall(DecoBlocks.RED_TERRACOTTA_WALL);
+        orangeterracottapool.stairs(DecoBlocks.ORANGE_TERRACOTTA_STAIRS);
+        orangeterracottapool.slab(DecoBlocks.ORANGE_TERRACOTTA_SLAB);
+        orangeterracottapool.wall(DecoBlocks.ORANGE_TERRACOTTA_WALL);
+        yellowterracottapool.stairs(DecoBlocks.YELLOW_TERRACOTTA_STAIRS);
+        yellowterracottapool.slab(DecoBlocks.YELLOW_TERRACOTTA_SLAB);
+        yellowterracottapool.wall(DecoBlocks.YELLOW_TERRACOTTA_WALL);
+        limeterracottapool.stairs(DecoBlocks.LIME_TERRACOTTA_STAIRS);
+        limeterracottapool.slab(DecoBlocks.LIME_TERRACOTTA_SLAB);
+        limeterracottapool.wall(DecoBlocks.LIME_TERRACOTTA_WALL);
+        greenterracottapool.stairs(DecoBlocks.GREEN_TERRACOTTA_STAIRS);
+        greenterracottapool.slab(DecoBlocks.GREEN_TERRACOTTA_SLAB);
+        greenterracottapool.wall(DecoBlocks.GREEN_TERRACOTTA_WALL);
+        cyanterracottapool.stairs(DecoBlocks.CYAN_TERRACOTTA_STAIRS);
+        cyanterracottapool.slab(DecoBlocks.CYAN_TERRACOTTA_SLAB);
+        cyanterracottapool.wall(DecoBlocks.CYAN_TERRACOTTA_WALL);
+        lightblueterracottapool.stairs(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+        lightblueterracottapool.slab(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+        lightblueterracottapool.wall(DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL);
+        blueterracottapool.stairs(DecoBlocks.BLUE_TERRACOTTA_STAIRS);
+        blueterracottapool.slab(DecoBlocks.BLUE_TERRACOTTA_SLAB);
+        blueterracottapool.wall(DecoBlocks.BLUE_TERRACOTTA_WALL);
+        purpleterracottapool.stairs(DecoBlocks.PURPLE_TERRACOTTA_STAIRS);
+        purpleterracottapool.slab(DecoBlocks.PURPLE_TERRACOTTA_SLAB);
+        purpleterracottapool.wall(DecoBlocks.PURPLE_TERRACOTTA_WALL);
+        magnetaterracottapool.stairs(DecoBlocks.MAGENTA_TERRACOTTA_STAIRS);
+        magnetaterracottapool.slab(DecoBlocks.MAGENTA_TERRACOTTA_SLAB);
+        magnetaterracottapool.wall(DecoBlocks.MAGENTA_TERRACOTTA_WALL);
+        pinkterracottapool.stairs(DecoBlocks.PINK_TERRACOTTA_STAIRS);
+        pinkterracottapool.slab(DecoBlocks.PINK_TERRACOTTA_SLAB);
+        pinkterracottapool.wall(DecoBlocks.PINK_TERRACOTTA_WALL);
     }
 
     @Override

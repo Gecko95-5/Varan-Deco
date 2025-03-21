@@ -447,7 +447,129 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_smithing_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_SMITHING_TABLE));
 
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.OAK_CARTOGRAPHY_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_cartography_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acacia_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.TERRACOTTA_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.WHITE_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WHITE_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.WHITE_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_gray_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_gray_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_gray_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gray_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRAY_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gray_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.GRAY_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gray_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRAY_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACK_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BLACK_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACK_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brown_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BROWN_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brown_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BROWN_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brown_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BROWN_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.RED_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/orange_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.ORANGE_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/orange_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.ORANGE_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/orange_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.ORANGE_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.YELLOW_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.YELLOW_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.YELLOW_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lime_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIME_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lime_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIME_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lime_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIME_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/green_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.GREEN_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/green_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.GREEN_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/green_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.GREEN_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CYAN_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CYAN_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CYAN_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_blue_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_blue_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_blue_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purple_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPLE_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purple_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.PURPLE_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purple_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPLE_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/magenta_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/magenta_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MAGENTA_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/magenta_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_TERRACOTTA_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_terracotta_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.PINK_TERRACOTTA_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_terracotta_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.PINK_TERRACOTTA_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_terracotta_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.PINK_TERRACOTTA_WALL));
     }
 }

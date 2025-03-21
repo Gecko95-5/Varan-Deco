@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:terracotta_slab",
+    "varan-deco:black_terracotta_slab",
+    "varan-deco:light_blue_terracotta_slab",
+    "varan-deco:light_gray_terracotta_slab",
+    "varan-deco:white_terracotta_slab",
+    "varan-deco:gray_terracotta_slab",
+    "varan-deco:red_terracotta_slab",
+    "varan-deco:orange_terracotta_slab",
+    "varan-deco:yellow_terracotta_slab",
+    "varan-deco:lime_terracotta_slab",
+    "varan-deco:green_terracotta_slab",
+    "varan-deco:cyan_terracotta_slab",
+    "varan-deco:blue_terracotta_slab",
+    "varan-deco:purple_terracotta_slab",
+    "varan-deco:pink_terracotta_slab",
+    "varan-deco:magenta_terracotta_slab",
+    "varan-deco:brown_terracotta_slab"
+  ]
+}

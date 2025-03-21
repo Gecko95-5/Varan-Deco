@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
-import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
 
 public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -146,7 +145,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLUE_NETHER_BRICK_WALL)
                 .add(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS)
-                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)
+                .addTag(DecoTags.Blocks.TERRACOTTA_STAIRS)
+                .addTag(DecoTags.Blocks.TERRACOTTA_SLABS)
+                .addTag(DecoTags.Blocks.TERRACOTTA_WALLS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -209,7 +211,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.QUARTZ_WALL)
                 .add(DecoBlocks.QUARTZ_BRICK_WALL)
                 .add(DecoBlocks.CUT_QUARTZ_WALL)
-                .add(DecoBlocks.BLUE_NETHER_BRICK_WALL);
+                .add(DecoBlocks.BLUE_NETHER_BRICK_WALL)
+                .addTag(DecoTags.Blocks.TERRACOTTA_WALLS);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -256,7 +259,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.QUARTZ_BRICK_STAIRS)
                 .add(DecoBlocks.CUT_QUARTZ_STAIRS)
-                .add(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
+                .add(DecoBlocks.BLUE_NETHER_BRICK_STAIRS)
+                .addTag(DecoTags.Blocks.TERRACOTTA_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -287,7 +291,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
                 .add(DecoBlocks.QUARTZ_BRICK_SLAB)
                 .add(DecoBlocks.CUT_QUARTZ_SLAB)
-                .add(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
+                .add(DecoBlocks.BLUE_NETHER_BRICK_SLAB)
+                .addTag(DecoTags.Blocks.TERRACOTTA_SLABS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS);
@@ -364,6 +369,63 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_SMITHING_TABLE)
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE);
 
+        getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_STAIRS)
+                .add(DecoBlocks.TERRACOTTA_STAIRS)
+                .add(DecoBlocks.BLACK_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.WHITE_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.GRAY_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.RED_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.ORANGE_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.YELLOW_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.LIME_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.GREEN_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.CYAN_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.BLUE_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.PURPLE_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.PINK_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.MAGENTA_TERRACOTTA_STAIRS)
+                .add(DecoBlocks.BROWN_TERRACOTTA_STAIRS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_SLABS)
+                .add(DecoBlocks.TERRACOTTA_SLAB)
+                .add(DecoBlocks.BLACK_TERRACOTTA_SLAB)
+                .add(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB)
+                .add(DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB)
+                .add(DecoBlocks.WHITE_TERRACOTTA_SLAB)
+                .add(DecoBlocks.GRAY_TERRACOTTA_SLAB)
+                .add(DecoBlocks.RED_TERRACOTTA_SLAB)
+                .add(DecoBlocks.ORANGE_TERRACOTTA_SLAB)
+                .add(DecoBlocks.YELLOW_TERRACOTTA_SLAB)
+                .add(DecoBlocks.LIME_TERRACOTTA_SLAB)
+                .add(DecoBlocks.GREEN_TERRACOTTA_SLAB)
+                .add(DecoBlocks.CYAN_TERRACOTTA_SLAB)
+                .add(DecoBlocks.BLUE_TERRACOTTA_SLAB)
+                .add(DecoBlocks.PURPLE_TERRACOTTA_SLAB)
+                .add(DecoBlocks.PINK_TERRACOTTA_SLAB)
+                .add(DecoBlocks.MAGENTA_TERRACOTTA_SLAB)
+                .add(DecoBlocks.BROWN_TERRACOTTA_SLAB);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_WALLS)
+                .add(DecoBlocks.TERRACOTTA_WALL)
+                .add(DecoBlocks.BLACK_TERRACOTTA_WALL)
+                .add(DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL)
+                .add(DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL)
+                .add(DecoBlocks.WHITE_TERRACOTTA_WALL)
+                .add(DecoBlocks.GRAY_TERRACOTTA_WALL)
+                .add(DecoBlocks.RED_TERRACOTTA_WALL)
+                .add(DecoBlocks.ORANGE_TERRACOTTA_WALL)
+                .add(DecoBlocks.YELLOW_TERRACOTTA_WALL)
+                .add(DecoBlocks.LIME_TERRACOTTA_WALL)
+                .add(DecoBlocks.GREEN_TERRACOTTA_WALL)
+                .add(DecoBlocks.CYAN_TERRACOTTA_WALL)
+                .add(DecoBlocks.BLUE_TERRACOTTA_WALL)
+                .add(DecoBlocks.PURPLE_TERRACOTTA_WALL)
+                .add(DecoBlocks.PINK_TERRACOTTA_WALL)
+                .add(DecoBlocks.MAGENTA_TERRACOTTA_WALL)
+                .add(DecoBlocks.BROWN_TERRACOTTA_WALL);
+
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_BARRELS)
                 .add(DecoBlocks.OAK_BARREL)
                 .add(DecoBlocks.SPRUCE_BARREL)
@@ -388,7 +450,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CACTUS_LADDER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_CARTOGRAPHY_TABLES)
-                .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE);
+                .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS);

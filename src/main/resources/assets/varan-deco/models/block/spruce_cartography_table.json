@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/spruce_planks",
+    "east": "varan-deco:block/spruce_cartography_table_side3",
+    "north": "varan-deco:block/spruce_cartography_table_side3",
+    "particle": "varan-deco:block/spruce_cartography_table_side3",
+    "south": "varan-deco:block/spruce_cartography_table_side1",
+    "up": "varan-deco:block/spruce_cartography_table_top",
+    "west": "varan-deco:block/spruce_cartography_table_side2"
+  }
+}

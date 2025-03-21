@@ -132,6 +132,9 @@
     "varan-deco:blue_nether_brick_wall",
     "varan-deco:blue_nether_brick_fence_gate",
     "varan-deco:chiseled_blue_nether_bricks",
-    "varan-deco:cracked_blue_nether_bricks"
+    "varan-deco:cracked_blue_nether_bricks",
+    "#varan-deco:terracotta_stairs",
+    "#varan-deco:terracotta_slabs",
+    "#varan-deco:terracotta_walls"
   ]
 }

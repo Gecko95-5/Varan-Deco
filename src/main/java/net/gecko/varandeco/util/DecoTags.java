@@ -25,6 +25,15 @@ public class DecoTags {
         public static final TagKey<Block> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
 
+        public static final TagKey<Block> TERRACOTTA_STAIRS =
+                createTag("terracotta_stairs");
+
+        public static final TagKey<Block> TERRACOTTA_SLABS =
+                createTag("terracotta_slabs");
+
+        public static final TagKey<Block> TERRACOTTA_WALLS =
+                createTag("terracotta_walls");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(VaranDeco.MOD_ID, name));
         }

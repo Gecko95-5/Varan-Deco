@@ -46,7 +46,16 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
-                .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE.asItem());
+                .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE.asItem())

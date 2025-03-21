@@ -4,13 +4,14 @@ import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
-import net.gecko.varandeco.block.cartographytables.BirchCartographyTableBlock;
+import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.item.DecoItemGroup;
+import net.gecko.varandeco.screen.OakCartographyTableScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
@@ -143,6 +144,57 @@ public class DecoBlocks {
     public static final Block QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
             new StairsBlock(Blocks.QUARTZ_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
+            new StairsBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ORANGE_TERRACOTTA_STAIRS = registerBlock("orange_terracotta_stairs",
+            new StairsBlock(Blocks.ORANGE_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MAGENTA_TERRACOTTA_STAIRS = registerBlock("magenta_terracotta_stairs",
+            new StairsBlock(Blocks.MAGENTA_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_BLUE_TERRACOTTA_STAIRS = registerBlock("light_blue_terracotta_stairs",
+            new StairsBlock(Blocks.LIGHT_BLUE_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block YELLOW_TERRACOTTA_STAIRS = registerBlock("yellow_terracotta_stairs",
+            new StairsBlock(Blocks.YELLOW_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIME_TERRACOTTA_STAIRS = registerBlock("lime_terracotta_stairs",
+            new StairsBlock(Blocks.LIME_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PINK_TERRACOTTA_STAIRS = registerBlock("pink_terracotta_stairs",
+            new StairsBlock(Blocks.PINK_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GRAY_TERRACOTTA_STAIRS = registerBlock("gray_terracotta_stairs",
+            new StairsBlock(Blocks.GRAY_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_GRAY_TERRACOTTA_STAIRS = registerBlock("light_gray_terracotta_stairs",
+            new StairsBlock(Blocks.LIGHT_GRAY_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CYAN_TERRACOTTA_STAIRS = registerBlock("cyan_terracotta_stairs",
+            new StairsBlock(Blocks.CYAN_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PURPLE_TERRACOTTA_STAIRS = registerBlock("purple_terracotta_stairs",
+            new StairsBlock(Blocks.PURPLE_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLUE_TERRACOTTA_STAIRS = registerBlock("blue_terracotta_stairs",
+            new StairsBlock(Blocks.BLUE_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BROWN_TERRACOTTA_STAIRS = registerBlock("brown_terracotta_stairs",
+            new StairsBlock(Blocks.BROWN_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GREEN_TERRACOTTA_STAIRS = registerBlock("green_terracotta_stairs",
+            new StairsBlock(Blocks.GREEN_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block RED_TERRACOTTA_STAIRS = registerBlock("red_terracotta_stairs",
+            new StairsBlock(Blocks.RED_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACK_TERRACOTTA_STAIRS = registerBlock("black_terracotta_stairs",
+            new StairsBlock(Blocks.BLACK_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
+            new StairsBlock(Blocks.TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.TERRACOTTA)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PACKED_ICE_STAIRS = registerBlock("packed_ice_stairs",
             new StairsBlock(Blocks.PACKED_ICE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.PACKED_ICE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -226,6 +278,40 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.PACKED_MUD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WHITE_TERRACOTTA_SLAB = registerBlock("white_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ORANGE_TERRACOTTA_SLAB = registerBlock("orange_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MAGENTA_TERRACOTTA_SLAB = registerBlock("magenta_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_BLUE_TERRACOTTA_SLAB = registerBlock("light_blue_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block YELLOW_TERRACOTTA_SLAB = registerBlock("yellow_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIME_TERRACOTTA_SLAB = registerBlock("lime_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PINK_TERRACOTTA_SLAB = registerBlock("pink_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GRAY_TERRACOTTA_SLAB = registerBlock("gray_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_GRAY_TERRACOTTA_SLAB = registerBlock("light_gray_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CYAN_TERRACOTTA_SLAB = registerBlock("cyan_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PURPLE_TERRACOTTA_SLAB = registerBlock("purple_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLUE_TERRACOTTA_SLAB = registerBlock("blue_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BROWN_TERRACOTTA_SLAB = registerBlock("brown_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GREEN_TERRACOTTA_SLAB = registerBlock("green_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block RED_TERRACOTTA_SLAB = registerBlock("red_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACK_TERRACOTTA_SLAB = registerBlock("black_terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block TERRACOTTA_SLAB = registerBlock("terracotta_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PACKED_ICE_SLAB = registerBlock("packed_ice_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BLUE_ICE_SLAB = registerBlock("blue_ice_slab",
@@ -320,6 +406,40 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block QUARTZ_BRICK_WALL = registerBlock("quartz_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WHITE_TERRACOTTA_WALL = registerBlock("white_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ORANGE_TERRACOTTA_WALL = registerBlock("orange_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MAGENTA_TERRACOTTA_WALL = registerBlock("magenta_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_BLUE_TERRACOTTA_WALL = registerBlock("light_blue_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block YELLOW_TERRACOTTA_WALL = registerBlock("yellow_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIME_TERRACOTTA_WALL = registerBlock("lime_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PINK_TERRACOTTA_WALL = registerBlock("pink_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GRAY_TERRACOTTA_WALL = registerBlock("gray_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_GRAY_TERRACOTTA_WALL = registerBlock("light_gray_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CYAN_TERRACOTTA_WALL = registerBlock("cyan_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PURPLE_TERRACOTTA_WALL = registerBlock("purple_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLUE_TERRACOTTA_WALL = registerBlock("blue_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BROWN_TERRACOTTA_WALL = registerBlock("brown_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GREEN_TERRACOTTA_WALL = registerBlock("green_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block RED_TERRACOTTA_WALL = registerBlock("red_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACK_TERRACOTTA_WALL = registerBlock("black_terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block TERRACOTTA_WALL = registerBlock("terracotta_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PACKED_ICE_WALL = registerBlock("packed_ice_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BLUE_ICE_WALL = registerBlock("blue_ice_wall",
@@ -422,8 +542,26 @@ public class DecoBlocks {
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block OAK_CARTOGRAPHY_TABLE = registerBlock("oak_cartography_table",
+            new OakCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_CARTOGRAPHY_TABLE = registerBlock("birch_cartography_table",
             new BirchCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_CARTOGRAPHY_TABLE = registerBlock("spruce_cartography_table",
+            new SpruceCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_CARTOGRAPHY_TABLE = registerBlock("jungle_cartography_table",
+            new JungleCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_CARTOGRAPHY_TABLE = registerBlock("acacia_cartography_table",
+            new AcaciaCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_CARTOGRAPHY_TABLE = registerBlock("dark_oak_cartography_table",
+            new DarkOakCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_CARTOGRAPHY_TABLE = registerBlock("mangrove_cartography_table",
+            new MangroveCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerBlock("crimson_cartography_table",
+            new CrimsonCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_CARTOGRAPHY_TABLE = registerBlock("warped_cartography_table",
+            new WarpedCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_CARTOGRAPHY_TABLE = registerBlock("cactus_cartography_table",
+            new CactusCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block OAK_SMITHING_TABLE = registerBlock("oak_smithing_table",
             new OakSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -519,7 +657,40 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
     public static final Block QUARTZ_BRICKS_TEMP = registerBlock("quartz_bricks_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
-
+    public static final Block TERRACOTTA_TEMP = registerBlock("terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block WHITE_TERRACOTTA_TEMP = registerBlock("white_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block LIGHT_GRAY_TERRACOTTA_TEMP = registerBlock("light_gray_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block GRAY_TERRACOTTA_TEMP = registerBlock("gray_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block BLACK_TERRACOTTA_TEMP = registerBlock("black_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block BROWN_TERRACOTTA_TEMP = registerBlock("brown_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block RED_TERRACOTTA_TEMP = registerBlock("red_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block ORANGE_TERRACOTTA_TEMP = registerBlock("orange_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block YELLOW_TERRACOTTA_TEMP = registerBlock("yellow_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block LIME_TERRACOTTA_TEMP = registerBlock("lime_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block GREEN_TERRACOTTA_TEMP = registerBlock("green_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block CYAN_TERRACOTTA_TEMP = registerBlock("cyan_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block LIGHT_BLUE_TERRACOTTA_TEMP = registerBlock("light_blue_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block BLUE_TERRACOTTA_TEMP = registerBlock("blue_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block PURPLE_TERRACOTTA_TEMP = registerBlock("purple_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block MAGENTA_TERRACOTTA_TEMP = registerBlock("magenta_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block PINK_TERRACOTTA_TEMP = registerBlock("pink_terracotta_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();

@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-    "varan-deco:birch_cartography_table"
+    "varan-deco:oak_cartography_table",
+    "varan-deco:birch_cartography_table",
+    "varan-deco:spruce_cartography_table",
+    "varan-deco:jungle_cartography_table",
+    "varan-deco:acacia_cartography_table",
+    "varan-deco:dark_oak_cartography_table",
+    "varan-deco:mangrove_cartography_table",
+    "varan-deco:crimson_cartography_table",
+    "varan-deco:warped_cartography_table",
+    "varan-deco:cactus_cartography_table"
   ]
 }
