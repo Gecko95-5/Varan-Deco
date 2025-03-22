@@ -1,4 +1,4 @@
-// 1.19.2	2025-03-22T00:20:10.8240491	minecraft:block Loot Table
+// 1.19.2	2025-03-22T10:52:37.1048122	minecraft:block Loot Table
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 05054130380a90a45483a3073a9649b2d0eb05ea data\varan-deco\loot_tables\blocks\blue_nether_bricks_stairs.json
@@ -75,6 +75,7 @@ acc9431fdd718aaa80e29c5243f400e0654662aa data\varan-deco\loot_tables\blocks\tuff
 3fec255449d1065f884f634b06506cd45d452583 data\varan-deco\loot_tables\blocks\snow_brick_stairs.json
 b3ccde414b85d4014550e7f1f0a77b11c3443753 data\varan-deco\loot_tables\blocks\green_terracotta_stairs.json
 ca11c1c8ded4ae43a25a39952daf5b12004ca0db data\varan-deco\loot_tables\blocks\crimson_cartography_table.json
+c26e97835ecdb357fbdd8c02412defce5c1e7c64 data\varan-deco\loot_tables\blocks\tinted_glass_pane.json
 503100a878f716210ba2e0c16c6d49ef8f0266a3 data\varan-deco\loot_tables\blocks\snow_brick_slab.json
 c10d614b41432abbc14907d37880c3baf5afafdd data\varan-deco\loot_tables\blocks\cut_cyan_concrete_stairs.json
 53e7f97ca348f186cb3f1ffe18198df8554662e9 data\varan-deco\loot_tables\blocks\chiseled_snow_bricks.json

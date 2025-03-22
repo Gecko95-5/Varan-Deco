@@ -2043,5 +2043,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerChiseledBlockRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, DecoBlocks.PINK_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, Items.PINK_CONCRETE);
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.TINTED_GLASS_PANE, Blocks.TINTED_GLASS);
     }
 }

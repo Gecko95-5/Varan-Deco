@@ -963,5 +963,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_CONCRETE_PILLAR));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_concrete_pillar"),
                 BlockLootTableGenerator.drops(DecoBlocks.PINK_CONCRETE_PILLAR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tinted_glass_pane"),
+                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.TINTED_GLASS_PANE));
     }
 }
