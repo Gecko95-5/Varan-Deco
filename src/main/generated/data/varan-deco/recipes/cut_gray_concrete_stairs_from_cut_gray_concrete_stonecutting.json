@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:cut_gray_concrete"
+  },
+  "result": "varan-deco:cut_gray_concrete_stairs"
+}

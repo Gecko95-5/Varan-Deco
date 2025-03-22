@@ -361,5 +361,253 @@
   "block.varan-deco.pink_terracotta_slab": "Pink Terracotta Slab",
   "block.varan-deco.pink_terracotta_wall": "Pink Terracotta Wall",
 
+  "block.varan-deco.white_concrete_stairs": "White Concrete Stairs",
+  "block.varan-deco.white_concrete_slab": "White Concrete Slab",
+  "block.varan-deco.white_concrete_wall": "White Concrete Wall",
+
+  "block.varan-deco.light_gray_concrete_stairs": "Light Gray Concrete Stairs",
+  "block.varan-deco.light_gray_concrete_slab": "Light Gray Concrete Slab",
+  "block.varan-deco.light_gray_concrete_wall": "Light Gray Concrete Wall",
+
+  "block.varan-deco.gray_concrete_stairs": "Gray Concrete Stairs",
+  "block.varan-deco.gray_concrete_slab": "Gray Concrete Slab",
+  "block.varan-deco.gray_concrete_wall": "Gray Concrete Wall",
+
+  "block.varan-deco.black_concrete_stairs": "Black Concrete Stairs",
+  "block.varan-deco.black_concrete_slab": "Black Concrete Slab",
+  "block.varan-deco.black_concrete_wall": "Black Concrete Wall",
+
+  "block.varan-deco.brown_concrete_stairs": "Brown Concrete Stairs",
+  "block.varan-deco.brown_concrete_slab": "Brown Concrete Slab",
+  "block.varan-deco.brown_concrete_wall": "Brown Concrete Wall",
+
+  "block.varan-deco.red_concrete_stairs": "Red Concrete Stairs",
+  "block.varan-deco.red_concrete_slab": "Red Concrete Slab",
+  "block.varan-deco.red_concrete_wall": "Red Concrete Wall",
+
+  "block.varan-deco.orange_concrete_stairs": "Orange Concrete Stairs",
+  "block.varan-deco.orange_concrete_slab": "Orange Concrete Slab",
+  "block.varan-deco.orange_concrete_wall": "Orange Concrete Wall",
+
+  "block.varan-deco.yellow_concrete_stairs": "Yellow Concrete Stairs",
+  "block.varan-deco.yellow_concrete_slab": "Yellow Concrete Slab",
+  "block.varan-deco.yellow_concrete_wall": "Yellow Concrete Wall",
+
+  "block.varan-deco.lime_concrete_stairs": "Lime Concrete Stairs",
+  "block.varan-deco.lime_concrete_slab": "Lime Concrete Slab",
+  "block.varan-deco.lime_concrete_wall": "Lime Concrete Wall",
+
+  "block.varan-deco.green_concrete_stairs": "Green Concrete Stairs",
+  "block.varan-deco.green_concrete_slab": "Green Concrete Slab",
+  "block.varan-deco.green_concrete_wall": "Green Concrete Wall",
+
+  "block.varan-deco.cyan_concrete_stairs": "Cyan Concrete Stairs",
+  "block.varan-deco.cyan_concrete_slab": "Cyan Concrete Slab",
+  "block.varan-deco.cyan_concrete_wall": "Cyan Concrete Wall",
+
+  "block.varan-deco.light_blue_concrete_stairs": "Light Blue Concrete Stairs",
+  "block.varan-deco.light_blue_concrete_slab": "Light Blue Concrete Slab",
+  "block.varan-deco.light_blue_concrete_wall": "Light Blue Concrete Wall",
+
+  "block.varan-deco.blue_concrete_stairs": "Blue Concrete Stairs",
+  "block.varan-deco.blue_concrete_slab": "Blue Concrete Slab",
+  "block.varan-deco.blue_concrete_wall": "Blue Concrete Wall",
+
+  "block.varan-deco.purple_concrete_stairs": "Purple Concrete Stairs",
+  "block.varan-deco.purple_concrete_slab": "Purple Concrete Slab",
+  "block.varan-deco.purple_concrete_wall": "Purple Concrete Wall",
+
+  "block.varan-deco.magenta_concrete_stairs": "Magenta Concrete Stairs",
+  "block.varan-deco.magenta_concrete_slab": "Magenta Concrete Slab",
+  "block.varan-deco.magenta_concrete_wall": "Magenta Concrete Wall",
+
+  "block.varan-deco.pink_concrete_stairs": "Pink Concrete Stairs",
+  "block.varan-deco.pink_concrete_slab": "Pink Concrete Slab",
+  "block.varan-deco.pink_concrete_wall": "Pink Concrete Wall",
+
+  "block.varan-deco.terracotta_bricks": "Terracotta Bricks",
+  "block.varan-deco.white_terracotta_bricks": "White Terracotta Bricks",
+  "block.varan-deco.light_gray_terracotta_bricks": "Light Gray Terracotta Bricks",
+  "block.varan-deco.gray_terracotta_bricks": "Gray Terracotta Bricks",
+  "block.varan-deco.black_terracotta_bricks": "Black Terracotta Bricks",
+  "block.varan-deco.brown_terracotta_bricks": "Brown Terracotta Bricks",
+  "block.varan-deco.red_terracotta_bricks": "Red Terracotta Bricks",
+  "block.varan-deco.orange_terracotta_bricks": "Orange Terracotta Bricks",
+  "block.varan-deco.yellow_terracotta_bricks": "Yellow Terracotta Bricks",
+  "block.varan-deco.lime_terracotta_bricks": "Lime Terracotta Bricks",
+  "block.varan-deco.green_terracotta_bricks": "Green Terracotta Bricks",
+  "block.varan-deco.cyan_terracotta_bricks": "Cyan Terracotta Bricks",
+  "block.varan-deco.light_blue_terracotta_bricks": "Light Blue Terracotta Bricks",
+  "block.varan-deco.blue_terracotta_bricks": "Blue Terracotta Bricks",
+  "block.varan-deco.purple_terracotta_bricks": "Purple Terracotta Bricks",
+  "block.varan-deco.magenta_terracotta_bricks": "Magenta Terracotta Bricks",
+  "block.varan-deco.pink_terracotta_bricks": "Pink Terracotta Bricks",
+
+  "block.varan-deco.cut_white_concrete": "Cut White Concrete",
+  "block.varan-deco.cut_light_gray_concrete": "Cut Light Gray Concrete",
+  "block.varan-deco.cut_gray_concrete": "Cut Gray Concrete",
+  "block.varan-deco.cut_black_concrete": "Cut Black Concrete",
+  "block.varan-deco.cut_brown_concrete": "Cut Brown Concrete",
+  "block.varan-deco.cut_red_concrete": "Cut Red Concrete",
+  "block.varan-deco.cut_orange_concrete": "Cut Orange Concrete",
+  "block.varan-deco.cut_yellow_concrete": "Cut Yellow Concrete",
+  "block.varan-deco.cut_lime_concrete": "Cut Lime Concrete",
+  "block.varan-deco.cut_green_concrete": "Cut Green Concrete",
+  "block.varan-deco.cut_cyan_concrete": "Cut Cyan Concrete",
+  "block.varan-deco.cut_light_blue_concrete": "Cut Light Blue Concrete",
+  "block.varan-deco.cut_blue_concrete": "Cut Blue Concrete",
+  "block.varan-deco.cut_purple_concrete": "Cut Purple Concrete",
+  "block.varan-deco.cut_magenta_concrete": "Cut Magenta Concrete",
+  "block.varan-deco.cut_pink_concrete": "Cut Pink Concrete",
+
+  "block.varan-deco.terracotta_brick_stairs": "Terracotta Brick Stairs",
+  "block.varan-deco.terracotta_brick_slab": "Terracotta Brick Slab",
+  "block.varan-deco.terracotta_brick_wall": "Terracotta Brick Wall",
+
+  "block.varan-deco.white_terracotta_brick_stairs": "White Terracotta Brick Stairs",
+  "block.varan-deco.white_terracotta_brick_slab": "White Terracotta Brick Slab",
+  "block.varan-deco.white_terracotta_brick_wall": "White Terracotta Brick Wall",
+
+  "block.varan-deco.light_gray_terracotta_brick_stairs": "Light Gray Terracotta Brick Stairs",
+  "block.varan-deco.light_gray_terracotta_brick_slab": "Light Gray Terracotta Brick Slab",
+  "block.varan-deco.light_gray_terracotta_brick_wall": "Light Gray Terracotta Brick Wall",
+
+  "block.varan-deco.gray_terracotta_brick_stairs": "Gray Terracotta Brick Stairs",
+  "block.varan-deco.gray_terracotta_brick_slab": "Gray Terracotta Brick Slab",
+  "block.varan-deco.gray_terracotta_brick_wall": "Gray Terracotta Brick Wall",
+
+  "block.varan-deco.black_terracotta_brick_stairs": "Black Terracotta Brick Stairs",
+  "block.varan-deco.black_terracotta_brick_slab": "Black Terracotta Brick Slab",
+  "block.varan-deco.black_terracotta_brick_wall": "Black Terracotta Brick Wall",
+
+  "block.varan-deco.brown_terracotta_brick_stairs": "Brown Terracotta Brick Stairs",
+  "block.varan-deco.brown_terracotta_brick_slab": "Brown Terracotta Brick Slab",
+  "block.varan-deco.brown_terracotta_brick_wall": "Brown Terracotta Brick Wall",
+
+  "block.varan-deco.red_terracotta_brick_stairs": "Red Terracotta Brick Stairs",
+  "block.varan-deco.red_terracotta_brick_slab": "Red Terracotta Brick Slab",
+  "block.varan-deco.red_terracotta_brick_wall": "Red Terracotta Brick Wall",
+
+  "block.varan-deco.orange_terracotta_brick_stairs": "Orange Terracotta Brick Stairs",
+  "block.varan-deco.orange_terracotta_brick_slab": "Orange Terracotta Brick Slab",
+  "block.varan-deco.orange_terracotta_brick_wall": "Orange Terracotta Brick Wall",
+
+  "block.varan-deco.yellow_terracotta_brick_stairs": "Yellow Terracotta Brick Stairs",
+  "block.varan-deco.yellow_terracotta_brick_slab": "Yellow Terracotta Brick Slab",
+  "block.varan-deco.yellow_terracotta_brick_wall": "Yellow Terracotta Brick Wall",
+
+  "block.varan-deco.lime_terracotta_brick_stairs": "Lime Terracotta Brick Stairs",
+  "block.varan-deco.lime_terracotta_brick_slab": "Lime Terracotta Brick Slab",
+  "block.varan-deco.lime_terracotta_brick_wall": "Lime Terracotta Brick Wall",
+
+  "block.varan-deco.green_terracotta_brick_stairs": "Green Terracotta Brick Stairs",
+  "block.varan-deco.green_terracotta_brick_slab": "Green Terracotta Brick Slab",
+  "block.varan-deco.green_terracotta_brick_wall": "Green Terracotta Brick Wall",
+
+  "block.varan-deco.cyan_terracotta_brick_stairs": "Cyan Terracotta Brick Stairs",
+  "block.varan-deco.cyan_terracotta_brick_slab": "Cyan Terracotta Brick Slab",
+  "block.varan-deco.cyan_terracotta_brick_wall": "Cyan Terracotta Brick Wall",
+
+  "block.varan-deco.light_blue_terracotta_brick_stairs": "Light Blue Terracotta Brick Stairs",
+  "block.varan-deco.light_blue_terracotta_brick_slab": "Light Blue Terracotta Brick Slab",
+  "block.varan-deco.light_blue_terracotta_brick_wall": "Light Blue Terracotta Brick Wall",
+
+  "block.varan-deco.blue_terracotta_brick_stairs": "Blue Terracotta Brick Stairs",
+  "block.varan-deco.blue_terracotta_brick_slab": "Blue Terracotta Brick Slab",
+  "block.varan-deco.blue_terracotta_brick_wall": "Blue Terracotta Brick Wall",
+
+  "block.varan-deco.purple_terracotta_brick_stairs": "Purple Terracotta Brick Stairs",
+  "block.varan-deco.purple_terracotta_brick_slab": "Purple Terracotta Brick Slab",
+  "block.varan-deco.purple_terracotta_brick_wall": "Purple Terracotta Brick Wall",
+
+  "block.varan-deco.magenta_terracotta_brick_stairs": "Magenta Terracotta Brick Stairs",
+  "block.varan-deco.magenta_terracotta_brick_slab": "Magenta Terracotta Brick Slab",
+  "block.varan-deco.magenta_terracotta_brick_wall": "Magenta Terracotta Brick Wall",
+
+  "block.varan-deco.pink_terracotta_brick_stairs": "Pink Terracotta Brick Stairs",
+  "block.varan-deco.pink_terracotta_brick_slab": "Pink Terracotta Brick Slab",
+  "block.varan-deco.pink_terracotta_brick_wall": "Pink Terracotta Brick Wall",
+
+  "block.varan-deco.cut_white_concrete_stairs": "Cut White Concrete Stairs",
+  "block.varan-deco.cut_white_concrete_slab": "Cut White Concrete Slab",
+  "block.varan-deco.cut_white_concrete_wall": "Cut White Concrete Wall",
+
+  "block.varan-deco.cut_light_gray_concrete_stairs": "Cut Light Gray Concrete Stairs",
+  "block.varan-deco.cut_light_gray_concrete_slab": "Cut Light Gray Concrete Slab",
+  "block.varan-deco.cut_light_gray_concrete_wall": "Cut Light Gray Concrete Wall",
+
+  "block.varan-deco.cut_gray_concrete_stairs": "Cut Gray Concrete Stairs",
+  "block.varan-deco.cut_gray_concrete_slab": "Cut Gray Concrete Slab",
+  "block.varan-deco.cut_gray_concrete_wall": "Cut Gray Concrete Wall",
+
+  "block.varan-deco.cut_black_concrete_stairs": "Cut Black Concrete Stairs",
+  "block.varan-deco.cut_black_concrete_slab": "Cut Black Concrete Slab",
+  "block.varan-deco.cut_black_concrete_wall": "Cut Black Concrete Wall",
+
+  "block.varan-deco.cut_brown_concrete_stairs": "Cut Brown Concrete Stairs",
+  "block.varan-deco.cut_brown_concrete_slab": "Cut Brown Concrete Slab",
+  "block.varan-deco.cut_brown_concrete_wall": "Cut Brown Concrete Wall",
+
+  "block.varan-deco.cut_red_concrete_stairs": "Cut Red Concrete Stairs",
+  "block.varan-deco.cut_red_concrete_slab": "Cut Red Concrete Slab",
+  "block.varan-deco.cut_red_concrete_wall": "Cut Red Concrete Wall",
+
+  "block.varan-deco.cut_orange_concrete_stairs": "Cut Orange Concrete Stairs",
+  "block.varan-deco.cut_orange_concrete_slab": "Cut Orange Concrete Slab",
+  "block.varan-deco.cut_orange_concrete_wall": "Cut Orange Concrete Wall",
+
+  "block.varan-deco.cut_yellow_concrete_stairs": "Cut Yellow Concrete Stairs",
+  "block.varan-deco.cut_yellow_concrete_slab": "Cut Yellow Concrete Slab",
+  "block.varan-deco.cut_yellow_concrete_wall": "Cut Yellow Concrete Wall",
+
+  "block.varan-deco.cut_lime_concrete_stairs": "Cut Lime Concrete Stairs",
+  "block.varan-deco.cut_lime_concrete_slab": "Cut Lime Concrete Slab",
+  "block.varan-deco.cut_lime_concrete_wall": "Cut Lime Concrete Wall",
+
+  "block.varan-deco.cut_green_concrete_stairs": "Cut Green Concrete Stairs",
+  "block.varan-deco.cut_green_concrete_slab": "Cut Green Concrete Slab",
+  "block.varan-deco.cut_green_concrete_wall": "Cut Green Concrete Wall",
+
+  "block.varan-deco.cut_cyan_concrete_stairs": "Cut Cyan Concrete Stairs",
+  "block.varan-deco.cut_cyan_concrete_slab": "Cut Cyan Concrete Slab",
+  "block.varan-deco.cut_cyan_concrete_wall": "Cut Cyan Concrete Wall",
+
+  "block.varan-deco.cut_light_blue_concrete_stairs": "Cut Light Blue Concrete Stairs",
+  "block.varan-deco.cut_light_blue_concrete_slab": "Cut Light Blue Concrete Slab",
+  "block.varan-deco.cut_light_blue_concrete_wall": "Cut Light Blue Concrete Wall",
+
+  "block.varan-deco.cut_blue_concrete_stairs": "Cut Blue Concrete Stairs",
+  "block.varan-deco.cut_blue_concrete_slab": "Cut Blue Concrete Slab",
+  "block.varan-deco.cut_blue_concrete_wall": "Cut Blue Concrete Wall",
+
+  "block.varan-deco.cut_purple_concrete_stairs": "Cut Purple Concrete Stairs",
+  "block.varan-deco.cut_purple_concrete_slab": "Cut Purple Concrete Slab",
+  "block.varan-deco.cut_purple_concrete_wall": "Cut Purple Concrete Wall",
+
+  "block.varan-deco.cut_magenta_concrete_stairs": "Cut Magenta Concrete Stairs",
+  "block.varan-deco.cut_magenta_concrete_slab": "Cut Magenta Concrete Slab",
+  "block.varan-deco.cut_magenta_concrete_wall": "Cut Magenta Concrete Wall",
+
+  "block.varan-deco.cut_pink_concrete_stairs": "Cut Pink Concrete Stairs",
+  "block.varan-deco.cut_pink_concrete_slab": "Cut Pink Concrete Slab",
+  "block.varan-deco.cut_pink_concrete_wall": "Cut Pink Concrete Wall",
+
+  "block.varan-deco.white_concrete_pillar": "White Concrete Pillar",
+  "block.varan-deco.light_gray_concrete_pillar": "Light Gray Concrete Pillar",
+  "block.varan-deco.gray_concrete_pillar": "Gray Concrete Pillar",
+  "block.varan-deco.black_concrete_pillar": "Black Concrete Pillar",
+  "block.varan-deco.brown_concrete_pillar": "Brown Concrete Pillar",
+  "block.varan-deco.red_concrete_pillar": "Red Concrete Pillar",
+  "block.varan-deco.orange_concrete_pillar": "Orange Concrete Pillar",
+  "block.varan-deco.yellow_concrete_pillar": "Yellow Concrete Pillar",
+  "block.varan-deco.lime_concrete_pillar": "Lime Concrete Pillar",
+  "block.varan-deco.green_concrete_pillar": "Green Concrete Pillar",
+  "block.varan-deco.cyan_concrete_pillar": "Cyan Concrete Pillar",
+  "block.varan-deco.light_blue_concrete_pillar": "Light Blue Concrete Pillar",
+  "block.varan-deco.blue_concrete_pillar": "Blue Concrete Pillar",
+  "block.varan-deco.purple_concrete_pillar": "Purple Concrete Pillar",
+  "block.varan-deco.magenta_concrete_pillar": "Magenta Concrete Pillar",
+  "block.varan-deco.pink_concrete_pillar": "Pink Concrete Pillar",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

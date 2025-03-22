@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "varan-deco:block/blue_terracotta_bricks",
+    "side": "varan-deco:block/blue_terracotta_bricks",
+    "top": "varan-deco:block/blue_terracotta_bricks"
+  }
+}

@@ -43,6 +43,7 @@
     "varan-deco:quartz_brick_wall",
     "varan-deco:cut_quartz_wall",
     "varan-deco:blue_nether_brick_wall",
-    "#varan-deco:terracotta_walls"
+    "#varan-deco:terracotta_walls",
+    "#varan-deco:concrete_walls"
   ]
 }

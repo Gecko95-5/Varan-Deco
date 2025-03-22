@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:cut_red_concrete"
+  },
+  "result": "varan-deco:cut_red_concrete_slab"
+}

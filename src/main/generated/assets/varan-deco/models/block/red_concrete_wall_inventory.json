@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "varan-deco:block/red_concrete_temp"
+  }
+}

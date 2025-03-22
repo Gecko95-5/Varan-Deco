@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "varan-deco:block/white_concrete_pillar_top",
+    "side": "varan-deco:block/white_concrete_pillar_side"
+  }
+}

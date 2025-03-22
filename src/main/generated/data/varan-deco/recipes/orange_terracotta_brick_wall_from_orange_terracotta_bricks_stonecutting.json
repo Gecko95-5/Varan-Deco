@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:orange_terracotta_bricks"
+  },
+  "result": "varan-deco:orange_terracotta_brick_wall"
+}

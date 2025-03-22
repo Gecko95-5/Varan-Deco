@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/cut_pink_concrete",
+    "side": "varan-deco:block/cut_pink_concrete",
+    "top": "varan-deco:block/cut_pink_concrete"
+  }
+}

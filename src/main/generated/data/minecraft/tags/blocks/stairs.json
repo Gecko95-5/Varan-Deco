@@ -33,6 +33,7 @@
     "varan-deco:quartz_brick_stairs",
     "varan-deco:cut_quartz_stairs",
     "varan-deco:blue_nether_brick_stairs",
-    "#varan-deco:terracotta_stairs"
+    "#varan-deco:terracotta_stairs",
+    "#varan-deco:concrete_stairs"
   ]
 }
