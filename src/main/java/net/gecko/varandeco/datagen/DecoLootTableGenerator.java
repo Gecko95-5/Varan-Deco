@@ -966,5 +966,28 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tinted_glass_pane"),
                 BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.TINTED_GLASS_PANE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tinted_hardened_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_TINTED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tinted_hardened_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_TINTED_GLASS_PANE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_white_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_WHITE_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_orange_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_magenta_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_white_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_orange_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_magenta_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE));
     }
 }

@@ -12,7 +12,6 @@ import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.item.DecoItemGroup;
-import net.gecko.varandeco.screen.OakCartographyTableScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
@@ -20,6 +19,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -34,6 +34,21 @@ public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
             new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(2.0f).resistance(3.0f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
+            new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_TINTED_GLASS = registerBlock("hardened_tinted_glass",
+            new TintedGlassBlock(FabricBlockSettings.copyOf(Blocks.TINTED_GLASS).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_WHITE_STAINED_GLASS = registerBlock("hardened_white_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE, FabricBlockSettings.copyOf(Blocks.WHITE_STAINED_GLASS).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_ORANGE_STAINED_GLASS = registerBlock("hardened_orange_stained_glass",
+            new StainedGlassBlock(DyeColor.ORANGE, FabricBlockSettings.copyOf(Blocks.ORANGE_STAINED_GLASS).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_MAGENTA_STAINED_GLASS = registerBlock("hardened_magenta_stained_glass",
+            new StainedGlassBlock(DyeColor.MAGENTA, FabricBlockSettings.copyOf(Blocks.MAGENTA_STAINED_GLASS).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICKS = registerBlock("cut_sandstone_bricks",
             new Block(FabricBlockSettings.of(Material.STONE).strength(1.6f).requiresTool()),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -115,7 +130,7 @@ public class DecoBlocks {
     public static final Block CHISELED_MAGMA_BRICKS = registerBlock("chiseled_magma_bricks",
             new MagmaBrickBlock(FabricBlockSettings.copyOf(DecoBlocks.MAGMA_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BUBBLE_BLOCK = registerBlock("bubble_block",
-            new BubbleBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(0.5F).resistance(25.0f)
+            new BubbleBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(0.5F,25.0f)
                     .mapColor(MapColor.BLUE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BUBBLE_BRICKS = registerBlock("bubble_bricks",
             new BubbleBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BLOCK).strength(1.5F)
@@ -209,8 +224,6 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
             new WarpedWartBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque()));
-    public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane",
-            new TintedGlassPaneBlock(FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS_PANE).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CALCITE)),
@@ -964,6 +977,24 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new MagmaWallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane",
+            new TintedGlassPaneBlock(FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS_PANE).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_GLASS_PANE = registerBlock("hardened_glass_pane",
+            new PaneBlock(FabricBlockSettings.copyOf(Blocks.GLASS_PANE).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_TINTED_GLASS_PANE = registerBlock("hardened_tinted_glass_pane",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.TINTED_GLASS_PANE).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_WHITE_STAINED_GLASS_PANE = registerBlock("hardened_white_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.WHITE,FabricBlockSettings.copyOf(Blocks.WHITE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_ORANGE_STAINED_GLASS_PANE = registerBlock("hardened_orange_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.ORANGE,FabricBlockSettings.copyOf(Blocks.ORANGE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_MAGENTA_STAINED_GLASS_PANE = registerBlock("hardened_magenta_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.MAGENTA,FabricBlockSettings.copyOf(Blocks.MAGENTA_STAINED_GLASS_PANE).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block OAK_BARREL = registerBlock("oak_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.OAK_TAN)), DecoItemGroup.VARAN_DECO_BLOCKS);

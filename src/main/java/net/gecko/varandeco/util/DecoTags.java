@@ -43,6 +43,12 @@ public class DecoTags {
         public static final TagKey<Block> CONCRETE_WALLS =
                 createTag("concrete_walls");
 
+        public static final TagKey<Block> HARDENED_GLASS =
+                createTag("hardened_glass");
+
+        public static final TagKey<Block> HARDENED_GLASS_PANES =
+                createTag("hardened_glass_panes");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(VaranDeco.MOD_ID, name));
         }

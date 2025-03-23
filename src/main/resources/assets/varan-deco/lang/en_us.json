@@ -611,5 +611,17 @@
 
   "block.varan-deco.tinted_glass_pane": "Tinted Glass Pane",
 
+  "block.varan-deco.hardened_glass": "Hardened Glass",
+  "block.varan-deco.hardened_glass_pane": "Hardened Glass Pane",
+  "block.varan-deco.hardened_tinted_glass": "Hardened Tinted Glass",
+  "block.varan-deco.hardened_tinted_glass_pane": "Hardened Tinted Glass Pane",
+
+  "block.varan-deco.hardened_white_stained_glass": "Hardened White Stained Glass",
+  "block.varan-deco.hardened_white_stained_glass_pane": "Hardened White Stained Glass Pane",
+  "block.varan-deco.hardened_orange_stained_glass": "Hardened Orange Stained Glass",
+  "block.varan-deco.hardened_orange_stained_glass_pane": "Hardened Orange Stained Glass Pane",
+  "block.varan-deco.hardened_magenta_stained_glass": "Hardened Magenta Stained Glass",
+  "block.varan-deco.hardened_magenta_stained_glass_pane": "Hardened Magenta Stained Glass Pane",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

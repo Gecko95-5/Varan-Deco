@@ -200,7 +200,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLUE_CONCRETE_PILLAR)
                 .add(DecoBlocks.PURPLE_CONCRETE_PILLAR)
                 .add(DecoBlocks.MAGENTA_CONCRETE_PILLAR)
-                .add(DecoBlocks.PINK_CONCRETE_PILLAR);
+                .add(DecoBlocks.PINK_CONCRETE_PILLAR)
+                .addTag(DecoTags.Blocks.HARDENED_GLASS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -217,6 +218,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.DECO_BARRELS)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
                 .addTag(DecoTags.Blocks.DECO_SMITHING_TABLES);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .addTag(DecoTags.Blocks.HARDENED_GLASS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE);
@@ -671,6 +675,21 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS)
+                .add(DecoBlocks.HARDENED_GLASS)
+                .add(DecoBlocks.HARDENED_TINTED_GLASS)
+                .add(DecoBlocks.HARDENED_WHITE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS)
+                .addTag(DecoTags.Blocks.HARDENED_GLASS_PANES);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS_PANES)
+                .add(DecoBlocks.HARDENED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_TINTED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE);
 
     }
 }

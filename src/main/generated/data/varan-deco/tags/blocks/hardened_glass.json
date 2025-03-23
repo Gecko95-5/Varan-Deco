@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:hardened_glass",
+    "varan-deco:hardened_tinted_glass",
+    "varan-deco:hardened_white_stained_glass",
+    "varan-deco:hardened_orange_stained_glass",
+    "varan-deco:hardened_magenta_stained_glass",
+    "#varan-deco:hardened_glass_panes"
+  ]
+}

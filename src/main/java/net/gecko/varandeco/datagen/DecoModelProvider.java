@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.item.DecoItems;
-import net.minecraft.block.NetherWartBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -422,6 +421,12 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.PURPLE_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.MAGENTA_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.PINK_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
+
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GLASS, DecoBlocks.HARDENED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_TINTED_GLASS, DecoBlocks.HARDENED_TINTED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_WHITE_STAINED_GLASS, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE);
 
         terracottapool.stairs(DecoBlocks.TERRACOTTA_STAIRS);
         terracottapool.slab(DecoBlocks.TERRACOTTA_SLAB);

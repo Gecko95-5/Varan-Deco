@@ -187,6 +187,7 @@
     "varan-deco:blue_concrete_pillar",
     "varan-deco:purple_concrete_pillar",
     "varan-deco:magenta_concrete_pillar",
-    "varan-deco:pink_concrete_pillar"
+    "varan-deco:pink_concrete_pillar",
+    "#varan-deco:hardened_glass"
   ]
 }
