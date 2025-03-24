@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "varan-deco:block/deepslate_furnace_front",
+    "side": "varan-deco:block/deepslate_furnace_side",
+    "top": "varan-deco:block/deepslate_furnace_top",
+    "bottom": "varan-deco:block/smooth_deepslate"
+  }
+}

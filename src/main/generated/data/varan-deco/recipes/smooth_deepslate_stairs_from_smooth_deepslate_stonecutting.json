@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:smooth_deepslate"
+  },
+  "result": "varan-deco:smooth_deepslate_stairs"
+}

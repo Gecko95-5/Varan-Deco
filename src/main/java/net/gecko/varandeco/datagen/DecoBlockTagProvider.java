@@ -201,7 +201,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.PURPLE_CONCRETE_PILLAR)
                 .add(DecoBlocks.MAGENTA_CONCRETE_PILLAR)
                 .add(DecoBlocks.PINK_CONCRETE_PILLAR)
-                .addTag(DecoTags.Blocks.HARDENED_GLASS);
+                .addTag(DecoTags.Blocks.HARDENED_GLASS)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE_SLAB)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE_WALL)
+                .addTag(DecoTags.Blocks.DECO_FURNACES);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -679,17 +684,46 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_TINTED_GLASS)
+                .add(DecoBlocks.HARDENED_BLACK_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS)
                 .add(DecoBlocks.HARDENED_WHITE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_GRAY_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_RED_STAINED_GLASS)
                 .add(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_LIME_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_GREEN_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_CYAN_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_BLUE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_PINK_STAINED_GLASS)
                 .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS)
+                .add(DecoBlocks.HARDENED_BROWN_STAINED_GLASS)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS_PANES);
 
         getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS_PANES)
                 .add(DecoBlocks.HARDENED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_TINTED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE)
-                .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE);
+                .add(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE)
+                .add(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
+                .add(DecoBlocks.DEEPSLATE_FURNACE);
 
     }
 }

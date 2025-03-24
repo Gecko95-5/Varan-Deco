@@ -978,16 +978,80 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_white_stained_glass"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_WHITE_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_light_gray_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_gray_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GRAY_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_black_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_BLACK_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_brown_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_BROWN_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_red_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_RED_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_yellow_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_orange_stained_glass"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_lime_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_LIME_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_green_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GREEN_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_cyan_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_CYAN_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_light_blue_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_blue_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_BLUE_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_purple_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_magenta_stained_glass"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_pink_stained_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_PINK_STAINED_GLASS));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_white_stained_glass_pane"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_light_gray_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_gray_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_black_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_brown_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_red_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_yellow_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_orange_stained_glass_pane"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_lime_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_green_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_cyan_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_light_blue_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_blue_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_purple_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_magenta_stained_glass_pane"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_pink_stained_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_deepslate"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_DEEPSLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_deepslate_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_deepslate_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_DEEPSLATE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_deepslate_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_DEEPSLATE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_furnace"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_FURNACE));
     }
 }

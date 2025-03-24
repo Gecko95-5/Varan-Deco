@@ -862,7 +862,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICKS), DecoBlocks.CRACKED_BLUE_NETHER_BRICKS,
                         0.1f, 200).criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICKS), conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICKS))
-                .offerTo(exporter, new Identifier("cracked_blue_nether_bricks_from_smelting"));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)));
 
         ShapedRecipeJsonBuilder.create(Items.ENDER_PEARL)
                 .pattern(" # ")
@@ -2076,7 +2076,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
                 .criterion(RecipeProvider.hasItem(Items.GLASS_PANE),
                         RecipeProvider.conditionsFromItem(Items.GLASS_PANE))
-                .offerTo(exporter, new Identifier("tinted_glass_pane_iron_ingot"));
+                .offerTo(exporter, new Identifier("hardened_glass_pane_iron_ingot"));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_TINTED_GLASS,2)
                 .pattern(" # ")
@@ -2088,7 +2088,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
                 .criterion(RecipeProvider.hasItem(Items.TINTED_GLASS),
                         RecipeProvider.conditionsFromItem(Items.TINTED_GLASS))
-                .offerTo(exporter, new Identifier("tinted_hardened_glass_iron_ingot"));
+                .offerTo(exporter, new Identifier("hardened_tinted_glass_iron_ingot"));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_TINTED_GLASS,2)
                 .pattern(" # ")
@@ -2112,7 +2112,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.TINTED_GLASS_PANE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.TINTED_GLASS_PANE))
-                .offerTo(exporter, new Identifier("tinted_hardened_glass_pane_iron_ingot"));
+                .offerTo(exporter, new Identifier("hardened_tinted_glass_pane_iron_ingot"));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_TINTED_GLASS_PANE,2)
                 .pattern(" # ")
@@ -2124,9 +2124,824 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
-                .offerTo(exporter, new Identifier("tinted_hardened_glass_pane_amethyst_shard"));
+                .offerTo(exporter, new Identifier("hardened_tinted_glass_pane_amethyst_shard"));
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_TINTED_GLASS_PANE, DecoBlocks.HARDENED_TINTED_GLASS);
 
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_WHITE_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.WHITE_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.WHITE_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.WHITE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_white_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_WHITE_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.WHITE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.WHITE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.WHITE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_WHITE_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.WHITE_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.WHITE_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.WHITE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_white_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.WHITE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.WHITE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.WHITE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_white_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_WHITE_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.ORANGE_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.ORANGE_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.ORANGE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_orange_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.ORANGE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.ORANGE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.ORANGE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.ORANGE_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.ORANGE_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.ORANGE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_orange_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.ORANGE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.ORANGE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.ORANGE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_orange_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.MAGENTA_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.MAGENTA_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.MAGENTA_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_magenta_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.MAGENTA_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.MAGENTA_DYE),
+                        RecipeProvider.conditionsFromItem(Items.MAGENTA_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.MAGENTA_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.MAGENTA_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.MAGENTA_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_magenta_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.MAGENTA_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.MAGENTA_DYE),
+                        RecipeProvider.conditionsFromItem(Items.MAGENTA_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_magenta_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.LIGHT_BLUE_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.LIGHT_BLUE_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_light_blue_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.LIGHT_BLUE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.LIGHT_BLUE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.LIGHT_BLUE_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_light_blue_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.LIGHT_BLUE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.LIGHT_BLUE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_light_blue_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.YELLOW_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.YELLOW_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.YELLOW_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_yellow_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.YELLOW_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
+                        RecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.YELLOW_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.YELLOW_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.YELLOW_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_yellow_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.YELLOW_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
+                        RecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_yellow_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE, DecoBlocks.HARDENED_YELLOW_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIME_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.LIME_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.LIME_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.LIME_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_lime_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIME_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.LIME_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.LIME_DYE),
+                        RecipeProvider.conditionsFromItem(Items.LIME_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_LIME_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.LIME_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.LIME_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.LIME_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_lime_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.LIME_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.LIME_DYE),
+                        RecipeProvider.conditionsFromItem(Items.LIME_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_lime_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE, DecoBlocks.HARDENED_LIME_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PINK_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.PINK_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.PINK_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.PINK_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_pink_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PINK_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.PINK_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.PINK_DYE),
+                        RecipeProvider.conditionsFromItem(Items.PINK_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_PINK_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.PINK_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.PINK_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.PINK_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_pink_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.PINK_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.PINK_DYE),
+                        RecipeProvider.conditionsFromItem(Items.PINK_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_pink_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE, DecoBlocks.HARDENED_PINK_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GRAY_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.GRAY_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.GRAY_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.GRAY_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_gray_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GRAY_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.GRAY_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.GRAY_DYE),
+                        RecipeProvider.conditionsFromItem(Items.GRAY_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_GRAY_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.GRAY_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.GRAY_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.GRAY_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_gray_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.GRAY_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.GRAY_DYE),
+                        RecipeProvider.conditionsFromItem(Items.GRAY_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_gray_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE, DecoBlocks.HARDENED_GRAY_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.LIGHT_GRAY_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.LIGHT_GRAY_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_light_gray_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.LIGHT_GRAY_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.LIGHT_GRAY_DYE),
+                        RecipeProvider.conditionsFromItem(Items.LIGHT_GRAY_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.LIGHT_GRAY_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_light_gray_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.LIGHT_GRAY_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.LIGHT_GRAY_DYE),
+                        RecipeProvider.conditionsFromItem(Items.LIGHT_GRAY_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_light_gray_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE, DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_CYAN_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.CYAN_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.CYAN_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.CYAN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_cyan_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_CYAN_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.CYAN_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.CYAN_DYE),
+                        RecipeProvider.conditionsFromItem(Items.CYAN_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_CYAN_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.CYAN_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.CYAN_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.CYAN_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_cyan_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.CYAN_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.CYAN_DYE),
+                        RecipeProvider.conditionsFromItem(Items.CYAN_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_cyan_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE, DecoBlocks.HARDENED_CYAN_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.PURPLE_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.PURPLE_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.PURPLE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_purple_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.PURPLE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.PURPLE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.PURPLE_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.PURPLE_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.PURPLE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_purple_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.PURPLE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.PURPLE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_purple_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_PURPLE_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLUE_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.BLUE_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.BLUE_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.BLUE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_blue_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLUE_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.BLUE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.BLUE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_BLUE_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.BLUE_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.BLUE_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.BLUE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_blue_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.BLUE_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.BLUE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_blue_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_BLUE_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BROWN_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.BROWN_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.BROWN_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.BROWN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_brown_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BROWN_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.BROWN_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.BROWN_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BROWN_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_BROWN_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.BROWN_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.BROWN_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.BROWN_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_brown_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.BROWN_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.BROWN_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BROWN_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_brown_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE, DecoBlocks.HARDENED_BROWN_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GREEN_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.GREEN_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.GREEN_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.GREEN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_green_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GREEN_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.GREEN_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.GREEN_DYE),
+                        RecipeProvider.conditionsFromItem(Items.GREEN_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_GREEN_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.GREEN_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.GREEN_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.GREEN_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_green_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.GREEN_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.GREEN_DYE),
+                        RecipeProvider.conditionsFromItem(Items.GREEN_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_green_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE, DecoBlocks.HARDENED_GREEN_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_RED_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.RED_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.RED_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.RED_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_red_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_RED_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.RED_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.RED_DYE),
+                        RecipeProvider.conditionsFromItem(Items.RED_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_RED_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.RED_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.RED_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.RED_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_red_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.RED_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.RED_DYE),
+                        RecipeProvider.conditionsFromItem(Items.RED_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_red_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE, DecoBlocks.HARDENED_RED_STAINED_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLACK_STAINED_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Items.BLACK_STAINED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.BLACK_STAINED_GLASS),
+                        RecipeProvider.conditionsFromItem(Items.BLACK_STAINED_GLASS))
+                .offerTo(exporter, new Identifier("hardened_black_stained_glass_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLACK_STAINED_GLASS,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.BLACK_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS)
+                .criterion(RecipeProvider.hasItem(Items.BLACK_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BLACK_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_BLACK_STAINED_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('X', Blocks.BLACK_STAINED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Blocks.BLACK_STAINED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(Blocks.BLACK_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("hardened_black_stained_glass_pane_iron_ingot"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.BLACK_DYE)
+                .input('#', DecoBlocks.HARDENED_GLASS_PANE)
+                .criterion(RecipeProvider.hasItem(Items.BLACK_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BLACK_DYE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLASS_PANE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("dyed_hardened_black_stained_glass_pane"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE, DecoBlocks.HARDENED_BLACK_STAINED_GLASS);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE), DecoBlocks.SMOOTH_DEEPSLATE,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE), conditionsFromItem(Items.DEEPSLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SMOOTH_DEEPSLATE)));
+
+        createStairsRecipe(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS, Ingredient.ofItems(DecoBlocks.SMOOTH_DEEPSLATE))
+                .criterion(hasItem(DecoBlocks.SMOOTH_DEEPSLATE),conditionsFromItem(DecoBlocks.SMOOTH_DEEPSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_DEEPSLATE_STAIRS, DecoBlocks.SMOOTH_DEEPSLATE);
+
+        offerSlabRecipe(exporter, DecoBlocks.SMOOTH_DEEPSLATE_SLAB, DecoBlocks.SMOOTH_DEEPSLATE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_DEEPSLATE_SLAB, DecoBlocks.SMOOTH_DEEPSLATE,2);
+
+        offerWallRecipe(exporter, DecoBlocks.SMOOTH_DEEPSLATE_WALL, DecoBlocks.SMOOTH_DEEPSLATE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_DEEPSLATE_WALL, DecoBlocks.SMOOTH_DEEPSLATE);
     }
 }

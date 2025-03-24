@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.tag.ItemTags;
 
@@ -79,5 +80,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CRIMSON_BARREL.asItem())
                 .add(DecoBlocks.WARPED_BARREL.asItem())
                 .add(DecoBlocks.CACTUS_BARREL.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.FURNACES)
+                .add(Items.FURNACE.asItem())
+                .add(DecoBlocks.DEEPSLATE_FURNACE.asItem());
     }
 }
