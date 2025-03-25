@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:furnace",
-    "varan-deco:deepslate_furnace"
+    "varan-deco:deepslate_furnace",
+    "varan-deco:blackstone_furnace"
   ]
 }

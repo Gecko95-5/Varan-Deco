@@ -107,6 +107,8 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS);
         BlockStateModelGenerator.BlockTexturePool smoothdeepslatepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_DEEPSLATE);
+        BlockStateModelGenerator.BlockTexturePool smoothblackstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_BLACKSTONE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
@@ -266,6 +268,11 @@ public class DecoModelProvider extends FabricModelProvider {
        bluenetherpool.fence(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
        bluenetherpool.wall(DecoBlocks.BLUE_NETHER_BRICK_WALL);
        bluenetherpool.fenceGate(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
+
+       smoothdeepslatepool.stairs(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS);
+       smoothdeepslatepool.wall(DecoBlocks.SMOOTH_DEEPSLATE_WALL);
+       smoothblackstonepool.stairs(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS);
+       smoothblackstonepool.wall(DecoBlocks.SMOOTH_BLACKSTONE_WALL);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
 
@@ -644,9 +651,6 @@ public class DecoModelProvider extends FabricModelProvider {
         cutpinkconcretepool.stairs(DecoBlocks.CUT_PINK_CONCRETE_STAIRS);
         cutpinkconcretepool.slab(DecoBlocks.CUT_PINK_CONCRETE_SLAB);
         cutpinkconcretepool.wall(DecoBlocks.CUT_PINK_CONCRETE_WALL);
-
-        smoothdeepslatepool.stairs(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS);
-        smoothdeepslatepool.wall(DecoBlocks.SMOOTH_DEEPSLATE_WALL);
     }
 
     @Override

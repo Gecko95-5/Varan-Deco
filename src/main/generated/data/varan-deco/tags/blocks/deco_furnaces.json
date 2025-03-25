@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "varan-deco:deepslate_furnace"
+    "varan-deco:deepslate_furnace",
+    "varan-deco:blackstone_furnace"
   ]
 }

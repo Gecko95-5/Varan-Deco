@@ -193,6 +193,10 @@
     "varan-deco:smooth_deepslate_stairs",
     "varan-deco:smooth_deepslate_slab",
     "varan-deco:smooth_deepslate_wall",
+    "varan-deco:smooth_blackstone",
+    "varan-deco:smooth_blackstone_stairs",
+    "varan-deco:smooth_blackstone_slab",
+    "varan-deco:smooth_blackstone_wall",
     "#varan-deco:deco_furnaces"
   ]
 }

@@ -31,6 +31,8 @@
     "varan-deco:cut_quartz_slab",
     "varan-deco:blue_nether_brick_slab",
     "#varan-deco:terracotta_slabs",
-    "#varan-deco:concrete_slabs"
+    "#varan-deco:concrete_slabs",
+    "varan-deco:smooth_deepslate_slab",
+    "varan-deco:smooth_blackstone_slab"
   ]
 }

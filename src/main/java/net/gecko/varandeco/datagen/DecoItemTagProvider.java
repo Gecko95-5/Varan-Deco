@@ -83,6 +83,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())
-                .add(DecoBlocks.DEEPSLATE_FURNACE.asItem());
+                .add(DecoBlocks.DEEPSLATE_FURNACE.asItem())
+                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem());
     }
 }

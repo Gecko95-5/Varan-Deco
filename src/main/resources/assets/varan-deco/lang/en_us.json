@@ -655,5 +655,11 @@
   "block.varan-deco.smooth_deepslate_wall": "Smooth Deepslate Wall",
   "block.varan-deco.deepslate_furnace": "Deepslate Furnace",
 
+  "block.varan-deco.smooth_blackstone": "Smooth Blackstone",
+  "block.varan-deco.smooth_blackstone_stairs": "Smooth Blackstone Stairs",
+  "block.varan-deco.smooth_blackstone_slab": "Smooth Blackstone Slab",
+  "block.varan-deco.smooth_blackstone_wall": "Smooth Blackstone Wall",
+  "block.varan-deco.blackstone_furnace": "Blackstone Furnace",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

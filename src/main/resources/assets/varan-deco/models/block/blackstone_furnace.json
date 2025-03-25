@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "varan-deco:block/blackstone_furnace_front",
+    "side": "varan-deco:block/blackstone_furnace_side",
+    "top": "varan-deco:block/blackstone_furnace_top",
+    "bottom": "varan-deco:block/smooth_blackstone"
+  }
+}

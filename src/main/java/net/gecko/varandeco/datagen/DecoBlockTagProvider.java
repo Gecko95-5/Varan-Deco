@@ -206,6 +206,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_SLAB)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_WALL)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL)
                 .addTag(DecoTags.Blocks.DECO_FURNACES);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
@@ -274,7 +278,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_QUARTZ_WALL)
                 .add(DecoBlocks.BLUE_NETHER_BRICK_WALL)
                 .addTag(DecoTags.Blocks.TERRACOTTA_WALLS)
-                .addTag(DecoTags.Blocks.CONCRETE_WALLS);
+                .addTag(DecoTags.Blocks.CONCRETE_WALLS)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE_WALL)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -323,7 +329,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_QUARTZ_STAIRS)
                 .add(DecoBlocks.BLUE_NETHER_BRICK_STAIRS)
                 .addTag(DecoTags.Blocks.TERRACOTTA_STAIRS)
-                .addTag(DecoTags.Blocks.CONCRETE_STAIRS);
+                .addTag(DecoTags.Blocks.CONCRETE_STAIRS)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -356,7 +364,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_QUARTZ_SLAB)
                 .add(DecoBlocks.BLUE_NETHER_BRICK_SLAB)
                 .addTag(DecoTags.Blocks.TERRACOTTA_SLABS)
-                .addTag(DecoTags.Blocks.CONCRETE_SLABS);
+                .addTag(DecoTags.Blocks.CONCRETE_SLABS)
+                .add(DecoBlocks.SMOOTH_DEEPSLATE_SLAB)
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS);
@@ -723,7 +733,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
-                .add(DecoBlocks.DEEPSLATE_FURNACE);
+                .add(DecoBlocks.DEEPSLATE_FURNACE)
+                .add(DecoBlocks.BLACKSTONE_FURNACE);
 
     }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "varan-deco:block/smooth_blackstone",
+    "side": "varan-deco:block/smooth_blackstone_slab_side",
+    "top": "varan-deco:block/smooth_blackstone"
+  }
+}

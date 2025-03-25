@@ -1053,5 +1053,17 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_furnace"),
                 BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_FURNACE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_blackstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_BLACKSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_blackstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_blackstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_BLACKSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_blackstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_BLACKSTONE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blackstone_furnace"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACKSTONE_FURNACE));
     }
 }
