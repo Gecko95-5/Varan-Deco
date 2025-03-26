@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:smooth_blackstone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "varan-deco:blackstone_furnace"
+    }
+  },
+  "pattern": [
+    "III",
+    "IXI",
+    "###"
+  ],
+  "result": {
+    "item": "varan-deco:blackstone_blast_furnace"
+  }
+}

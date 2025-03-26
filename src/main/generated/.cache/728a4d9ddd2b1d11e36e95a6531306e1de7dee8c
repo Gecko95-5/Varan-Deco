@@ -1,4 +1,4 @@
-// 1.19.2	2025-03-24T23:15:24.5001446	minecraft:block Loot Table
+// 1.19.2	2025-03-25T21:34:49.5674107	minecraft:block Loot Table
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 05054130380a90a45483a3073a9649b2d0eb05ea data\varan-deco\loot_tables\blocks\blue_nether_bricks_stairs.json
@@ -179,6 +179,7 @@ f61f7d06209f357d015bd101c6690aa18412bf0e data\varan-deco\loot_tables\blocks\crys
 b740fbf9d27840893f2882e62e1272275d797094 data\varan-deco\loot_tables\blocks\pink_terracotta_brick_wall.json
 cb38ed485f4d017e3691f98bb5b416523ef0f533 data\varan-deco\loot_tables\blocks\netherrack_stairs.json
 08cee1ef041bf7ffda1e3a3d3123fc3fe2564987 data\varan-deco\loot_tables\blocks\crystallized_prismarine_wall.json
+48a8654155bdcb802a25274fcf76bd552523c86a data\varan-deco\loot_tables\blocks\deepslate_blast_furnace.json
 7e1d73f2a13b9353a6e03afc91e3ee850362cc09 data\varan-deco\loot_tables\blocks\dripstone_wall.json
 78f3dfa6165c5e65bf89ee17b54945c029b7e644 data\varan-deco\loot_tables\blocks\polished_gilded_blackstone.json
 292931d7a4572294541621b416a2add23fa6b09b data\varan-deco\loot_tables\blocks\smooth_sandstone_wall.json
@@ -252,6 +253,7 @@ a20d11f56648b6698de8ce0977f7c6f9ccb3e62c data\varan-deco\loot_tables\blocks\hard
 ba22920913223f906a4b69ef5c0da29adf30d520 data\varan-deco\loot_tables\blocks\hardened_blue_stained_glass_pane.json
 1830763d7200d89f96d212127db70253631b0aae data\varan-deco\loot_tables\blocks\blue_concrete_wall.json
 dd258382c5b3fb544ccd084895f95ce7081764a6 data\varan-deco\loot_tables\blocks\stone_tile_stairs.json
+500bb3d49eb4e0bed3ad850c5dc941a18f135b13 data\varan-deco\loot_tables\blocks\blackstone_blast_furnace.json
 db1c3052b0db4448008422a29b07add3835d45b6 data\varan-deco\loot_tables\blocks\cut_soul_soilstone_stairs.json
 95c04df6c7049e0c9235de9dceeb1b77179306a3 data\varan-deco\loot_tables\blocks\cut_cyan_concrete_wall.json
 6d804da7a5aef942425be6bf9de7f93fa583e2aa data\varan-deco\loot_tables\blocks\hardened_white_stained_glass.json

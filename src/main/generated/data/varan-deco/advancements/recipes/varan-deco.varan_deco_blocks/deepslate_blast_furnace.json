@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:deepslate_furnace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_iron_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_smooth_deepslate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:smooth_deepslate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:deepslate_blast_furnace"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_ingot",
+      "has_deepslate_furnace",
+      "has_smooth_deepslate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:deepslate_blast_furnace"
+    ]
+  }
+}

@@ -734,7 +734,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
                 .add(DecoBlocks.DEEPSLATE_FURNACE)
-                .add(DecoBlocks.BLACKSTONE_FURNACE);
+                .add(DecoBlocks.BLACKSTONE_FURNACE)
+                .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
+                .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE);
 
     }
 }

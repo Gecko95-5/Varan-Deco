@@ -13,6 +13,10 @@ public class DecoBlockEntities {
 
     public static BlockEntityType<BlackstoneFurnaceBlockEntity> BLACKSTONE_FURNACE_BE;
 
+    public static BlockEntityType<DeepslateBlastFurnaceBlockEntity> DEEPSLATE_BLAST_FURNACE_BE;
+
+    public static BlockEntityType<BlackstoneBlastFurnaceBlockEntity> BLACKSTONE_BLAST_FURNACE_BE;
+
     public static void registerBlockEntities(){
 
         DEEPSLATE_FURNACE_BE = Registry.register(Registry.BLOCK_ENTITY_TYPE,
@@ -24,5 +28,15 @@ public class DecoBlockEntities {
                 new Identifier(VaranDeco.MOD_ID, "blackstone_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(BlackstoneFurnaceBlockEntity::new,
                         DecoBlocks.BLACKSTONE_FURNACE).build(null));
+
+        DEEPSLATE_BLAST_FURNACE_BE = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(VaranDeco.MOD_ID, "deepslate_blast_furnace_be"),
+                FabricBlockEntityTypeBuilder.create(DeepslateBlastFurnaceBlockEntity::new,
+                        DecoBlocks.DEEPSLATE_BLAST_FURNACE).build(null));
+
+        BLACKSTONE_BLAST_FURNACE_BE = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(VaranDeco.MOD_ID, "blackstone_blast_furnace_be"),
+                FabricBlockEntityTypeBuilder.create(BlackstoneBlastFurnaceBlockEntity::new,
+                        DecoBlocks.BLACKSTONE_BLAST_FURNACE).build(null));
     }
 }

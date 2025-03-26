@@ -9,7 +9,9 @@ import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.furnaces.BlackstoneBlastFurnaceBlock;
 import net.gecko.varandeco.block.furnaces.BlackstoneFurnaceBlock;
+import net.gecko.varandeco.block.furnaces.DeepslateBlastFurnaceBlock;
 import net.gecko.varandeco.block.furnaces.DeepslateFurnaceBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
@@ -1123,6 +1125,13 @@ public class DecoBlocks {
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
+            new DeepslateBlastFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
+                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACKSTONE_BLAST_FURNACE = registerBlock("blackstone_blast_furnace",
+            new BlackstoneBlastFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE).mapColor(MapColor.BLACK)
+                    .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block OAK_CARTOGRAPHY_TABLE = registerBlock("oak_cartography_table",
             new OakCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);

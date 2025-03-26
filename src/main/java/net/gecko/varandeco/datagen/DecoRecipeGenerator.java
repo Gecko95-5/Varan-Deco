@@ -2958,5 +2958,35 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, DecoBlocks.SMOOTH_BLACKSTONE_WALL, DecoBlocks.SMOOTH_BLACKSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_BLACKSTONE_WALL, DecoBlocks.SMOOTH_BLACKSTONE);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
+                .pattern("III")
+                .pattern("IXI")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('X', DecoBlocks.DEEPSLATE_FURNACE)
+                .input('#', DecoBlocks.SMOOTH_DEEPSLATE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.DEEPSLATE_FURNACE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SMOOTH_DEEPSLATE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SMOOTH_DEEPSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DEEPSLATE_BLAST_FURNACE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.BLACKSTONE_BLAST_FURNACE)
+                .pattern("III")
+                .pattern("IXI")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('X', DecoBlocks.BLACKSTONE_FURNACE)
+                .input('#', DecoBlocks.SMOOTH_BLACKSTONE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLACKSTONE_FURNACE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SMOOTH_BLACKSTONE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SMOOTH_BLACKSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACKSTONE_BLAST_FURNACE)));
     }
 }
