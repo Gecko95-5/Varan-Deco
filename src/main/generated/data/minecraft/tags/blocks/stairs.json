@@ -36,6 +36,7 @@
     "#varan-deco:terracotta_stairs",
     "#varan-deco:concrete_stairs",
     "varan-deco:smooth_deepslate_stairs",
-    "varan-deco:smooth_blackstone_stairs"
+    "varan-deco:smooth_blackstone_stairs",
+    "varan-deco:deepslate_stairs"
   ]
 }

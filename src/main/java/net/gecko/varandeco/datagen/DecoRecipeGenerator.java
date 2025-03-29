@@ -2988,5 +2988,41 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.SMOOTH_BLACKSTONE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.SMOOTH_BLACKSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACKSTONE_BLAST_FURNACE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_STONECUTTER)
+                .pattern(" I ")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('#', Items.DEEPSLATE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.DEEPSLATE),
+                        RecipeProvider.conditionsFromItem(Items.DEEPSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DEEPSLATE_STONECUTTER)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.BLACKSTONE_STONECUTTER)
+                .pattern(" I ")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('#', Items.BLACKSTONE)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.BLACKSTONE),
+                        RecipeProvider.conditionsFromItem(Items.BLACKSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACKSTONE_STONECUTTER)));
+
+        createStairsRecipe(DecoBlocks.DEEPSLATE_STAIRS, Ingredient.ofItems(Items.DEEPSLATE))
+                .criterion(hasItem(Items.DEEPSLATE),conditionsFromItem(Items.DEEPSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DEEPSLATE_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.DEEPSLATE_STAIRS, Items.DEEPSLATE);
+
+        offerSlabRecipe(exporter, DecoBlocks.DEEPSLATE_SLAB, Items.DEEPSLATE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.DEEPSLATE_SLAB, Items.DEEPSLATE,2);
+
+        offerWallRecipe(exporter, DecoBlocks.DEEPSLATE_WALL, Items.DEEPSLATE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.DEEPSLATE_WALL, Items.DEEPSLATE);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_BRICKS, Items.BRICK_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BRICKS, Items.BRICKS);
     }
 }

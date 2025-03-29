@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#varan-deco:hardened_glass"
+    "#varan-deco:hardened_glass",
+    "minecraft:blast_furnace",
+    "varan-deco:deepslate_blast_furnace",
+    "varan-deco:blackstone_blast_furnace"
   ]
 }

@@ -1,7 +1,6 @@
 package net.gecko.varandeco.block.cartographytables;
 
-import net.gecko.varandeco.screen.SpruceCartographyTableScreenHandler;
-import net.gecko.varandeco.screen.WarpedCartographyTableScreenHandler;
+import net.gecko.varandeco.screen.wood.WarpedCartographyTableScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

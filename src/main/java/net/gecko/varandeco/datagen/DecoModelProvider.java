@@ -109,6 +109,7 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_DEEPSLATE);
         BlockStateModelGenerator.BlockTexturePool smoothblackstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_BLACKSTONE);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_BRICKS, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);

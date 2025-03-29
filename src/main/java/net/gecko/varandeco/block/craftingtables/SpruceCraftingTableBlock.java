@@ -1,7 +1,6 @@
 package net.gecko.varandeco.block.craftingtables;
 
-import net.gecko.varandeco.screen.BirchCraftingScreenHandler;
-import net.gecko.varandeco.screen.SpruceCraftingScreenHandler;
+import net.gecko.varandeco.screen.wood.SpruceCraftingScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

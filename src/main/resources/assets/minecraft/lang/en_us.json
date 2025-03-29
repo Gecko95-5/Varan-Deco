@@ -2,5 +2,7 @@
   "block.minecraft.crafting_table": "Oak Crafting Table",
   "block.minecraft.ladder": "Oak Ladder",
   "block.minecraft.furnace": "Stone Furnace",
-  "block.minecraft.blast_furnace": "Stone Blast Furnace"
+  "block.minecraft.blast_furnace": "Stone Blast Furnace",
+  "block.minecraft.smoker": "Stone Smoker",
+  "block.minecraft.stonecutter": "Stone Stonecutter"
 }

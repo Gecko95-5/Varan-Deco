@@ -1070,5 +1070,25 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_BLAST_FURNACE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blackstone_blast_furnace"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLACKSTONE_BLAST_FURNACE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_smoker"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_SMOKER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blackstone_smoker"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACKSTONE_SMOKER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_stonecutter"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_STONECUTTER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blackstone_stonecutter"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACKSTONE_STONECUTTER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DEEPSLATE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_BRICKS));
     }
 }

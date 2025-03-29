@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
+import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
 
 public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -210,7 +211,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL)
-                .addTag(DecoTags.Blocks.DECO_FURNACES);
+                .addTag(DecoTags.Blocks.DECO_FURNACES)
+                .add(DecoBlocks.DEEPSLATE_STONECUTTER)
+                .add(DecoBlocks.BLACKSTONE_STONECUTTER)
+                .add(DecoBlocks.DEEPSLATE_STAIRS)
+                .add(DecoBlocks.DEEPSLATE_SLAB)
+                .add(DecoBlocks.DEEPSLATE_WALL)
+                .add(DecoBlocks.CHISELED_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -229,7 +236,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.DECO_SMITHING_TABLES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .addTag(DecoTags.Blocks.HARDENED_GLASS);
+                .addTag(DecoTags.Blocks.HARDENED_GLASS)
+                .add(Blocks.BLAST_FURNACE)
+                .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
+                .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE);
@@ -280,7 +290,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.TERRACOTTA_WALLS)
                 .addTag(DecoTags.Blocks.CONCRETE_WALLS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_WALL)
-                .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL);
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL)
+                .add(DecoBlocks.DEEPSLATE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -331,7 +342,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.TERRACOTTA_STAIRS)
                 .addTag(DecoTags.Blocks.CONCRETE_STAIRS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS)
-                .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS);
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS)
+                .add(DecoBlocks.DEEPSLATE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -366,7 +378,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.TERRACOTTA_SLABS)
                 .addTag(DecoTags.Blocks.CONCRETE_SLABS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_SLAB)
-                .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB);
+                .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB)
+                .add(DecoBlocks.DEEPSLATE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS);
@@ -736,7 +749,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEEPSLATE_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
-                .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE);
+                .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE)
+                .add(DecoBlocks.DEEPSLATE_SMOKER)
+                .add(DecoBlocks.BLACKSTONE_SMOKER);
 
     }
 }

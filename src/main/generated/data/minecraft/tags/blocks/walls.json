@@ -46,6 +46,7 @@
     "#varan-deco:terracotta_walls",
     "#varan-deco:concrete_walls",
     "varan-deco:smooth_deepslate_wall",
-    "varan-deco:smooth_blackstone_wall"
+    "varan-deco:smooth_blackstone_wall",
+    "varan-deco:deepslate_wall"
   ]
 }

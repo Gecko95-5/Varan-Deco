@@ -197,6 +197,12 @@
     "varan-deco:smooth_blackstone_stairs",
     "varan-deco:smooth_blackstone_slab",
     "varan-deco:smooth_blackstone_wall",
-    "#varan-deco:deco_furnaces"
+    "#varan-deco:deco_furnaces",
+    "varan-deco:deepslate_stonecutter",
+    "varan-deco:blackstone_stonecutter",
+    "varan-deco:deepslate_stairs",
+    "varan-deco:deepslate_slab",
+    "varan-deco:deepslate_wall",
+    "varan-deco:chiseled_bricks"
   ]
 }

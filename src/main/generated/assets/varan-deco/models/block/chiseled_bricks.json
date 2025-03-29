@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "varan-deco:block/chiseled_bricks_top",
+    "side": "varan-deco:block/chiseled_bricks_side"
+  }
+}

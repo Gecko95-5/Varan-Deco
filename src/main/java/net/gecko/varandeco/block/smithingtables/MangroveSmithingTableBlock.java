@@ -1,7 +1,6 @@
 package net.gecko.varandeco.block.smithingtables;
 
-import net.gecko.varandeco.screen.AcaciaSmithingScreenHandler;
-import net.gecko.varandeco.screen.MangroveSmithingScreenHandler;
+import net.gecko.varandeco.screen.wood.MangroveSmithingScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CraftingTableBlock;
 import net.minecraft.entity.player.PlayerEntity;

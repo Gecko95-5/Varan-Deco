@@ -9,10 +9,7 @@ import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.BlackIceBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
-import net.gecko.varandeco.block.furnaces.BlackstoneBlastFurnaceBlock;
-import net.gecko.varandeco.block.furnaces.BlackstoneFurnaceBlock;
-import net.gecko.varandeco.block.furnaces.DeepslateBlastFurnaceBlock;
-import net.gecko.varandeco.block.furnaces.DeepslateFurnaceBlock;
+import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.item.DecoItemGroup;
@@ -53,6 +50,8 @@ public class DecoBlocks {
     public static final Block SMOOTH_BLACKSTONE = registerBlock("smooth_blackstone",
             new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE).strength(2.0f,6.0f)
                     .mapColor(MapColor.DARK_AQUA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_BRICKS = registerBlock("chiseled_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SNOW_BRICKS = registerBlock("snow_bricks",
             new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).slipperiness(0.89F)
                     .strength(1.0f).resistance(0.7f).requiresTool().sounds(BlockSoundGroup.SNOW)),
@@ -274,6 +273,9 @@ public class DecoBlocks {
     public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
             new WarpedWartBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque()));
 
+    public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
+            new StairsBlock(Blocks.DEEPSLATE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.DEEPSLATE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CALCITE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -578,6 +580,8 @@ public class DecoBlocks {
             new MagmaBrickStairBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES.getDefaultState(),
                     FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block TUFF_SLAB = registerBlock("tuff_slab",
@@ -835,6 +839,8 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_DIORITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DEEPSLATE_WALL = registerBlock("deepslate_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block TUFF_WALL = registerBlock("tuff_wall",
@@ -1126,6 +1132,13 @@ public class DecoBlocks {
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
+            new DeepslateSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
+                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACKSTONE_SMOKER = registerBlock("blackstone_smoker",
+            new BlackstoneSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.BLACK)
+                    .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
             new DeepslateBlastFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
                     .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1174,6 +1187,13 @@ public class DecoBlocks {
             new WarpedSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
             new CactusSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block DEEPSLATE_STONECUTTER = registerBlock("deepslate_stonecutter",
+            new DeepslateStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.DEEPSLATE_GRAY)
+                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACKSTONE_STONECUTTER = registerBlock("blackstone_stonecutter",
+            new BlackstoneStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
+                    .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,

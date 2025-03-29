@@ -664,5 +664,17 @@
   "block.varan-deco.deepslate_blast_furnace": "Deepslate Blast Furnace",
   "block.varan-deco.blackstone_blast_furnace": "Blackstone Blast Furnace",
 
+  "block.varan-deco.deepslate_smoker": "Deepslate Smoker",
+  "block.varan-deco.blackstone_smoker": "Blackstone Smoker",
+
+  "block.varan-deco.deepslate_stonecutter": "Deepslate Stonecutter",
+  "block.varan-deco.blackstone_stonecutter": "Blackstone Stonecutter",
+
+  "block.varan-deco.deepslate_stairs": "Deepslate Stairs",
+  "block.varan-deco.deepslate_slab": "Deepslate Slab",
+  "block.varan-deco.deepslate_wall": "Deepslate Wall",
+
+  "block.varan-deco.chiseled_bricks": "Chiseled Bricks",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }
