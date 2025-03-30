@@ -1,14 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:water_bucket"
-    },
-    {
-      "item": "minecraft:slime_ball"
-    }
-  ],
-  "result": {
-    "item": "varan-deco:bubble_orb"
-  }
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "minecraft:snowball"
+  },
+  "result": "varan-deco:bubble_orb"
 }

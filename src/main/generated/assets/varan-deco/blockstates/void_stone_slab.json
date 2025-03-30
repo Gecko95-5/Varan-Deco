@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/void_stone_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/void_stone"
+    },
+    "type=top": {
+      "model": "varan-deco:block/void_stone_slab_top"
+    }
+  }
+}

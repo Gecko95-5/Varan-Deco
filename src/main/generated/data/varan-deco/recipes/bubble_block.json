@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:cobblestone"
+      "item": "minecraft:prismarine_shard"
     },
     "I": {
       "item": "varan-deco:bubble_orb"

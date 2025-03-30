@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:purpur_bricks"
+  },
+  "result": "varan-deco:purpur_brick_stairs"
+}

@@ -1,12 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_prismarine_crystals": {
+    "has_amethyst_shard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:prismarine_crystals"
+              "minecraft:amethyst_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_crystallized_prismarine": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:crystallized_prismarine"
             ]
           }
         ]
@@ -18,24 +30,12 @@
         "recipe": "minecraft:light_prismarine"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_white_dye": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:white_dye"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_prismarine_crystals",
-      "has_white_dye",
+      "has_crystallized_prismarine",
+      "has_amethyst_shard",
       "has_the_recipe"
     ]
   ],

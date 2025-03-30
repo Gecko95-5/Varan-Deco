@@ -34,6 +34,11 @@
     "#varan-deco:concrete_slabs",
     "varan-deco:smooth_deepslate_slab",
     "varan-deco:smooth_blackstone_slab",
-    "varan-deco:deepslate_slab"
+    "varan-deco:deepslate_slab",
+    "varan-deco:end_stone_slab",
+    "varan-deco:smooth_purpur_slab",
+    "varan-deco:purpur_brick_slab",
+    "varan-deco:void_stone_slab",
+    "varan-deco:void_stone_brick_slab"
   ]
 }

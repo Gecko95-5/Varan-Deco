@@ -42,6 +42,23 @@
   "block.varan-deco.purple_terracotta_temp": "Non-Craftable Purple Terracotta",
   "block.varan-deco.magenta_terracotta_temp": "Non-Craftable Magenta Terracotta",
   "block.varan-deco.pink_terracotta_temp": "Non-Craftable Pink Terracotta",
+  "block.varan-deco.white_concrete_temp": "Non-Craftable White Concrete",
+  "block.varan-deco.light_gray_concrete_temp": "Non-Craftable Light Gray Concrete",
+  "block.varan-deco.gray_concrete_temp": "Non-Craftable Gray Concrete",
+  "block.varan-deco.black_concrete_temp": "Non-Craftable Black Concrete",
+  "block.varan-deco.brown_concrete_temp": "Non-Craftable Brown Concrete",
+  "block.varan-deco.red_concrete_temp": "Non-Craftable Red Concrete",
+  "block.varan-deco.orange_concrete_temp": "Non-Craftable Orange Concrete",
+  "block.varan-deco.yellow_concrete_temp": "Non-Craftable Yellow Concrete",
+  "block.varan-deco.lime_concrete_temp": "Non-Craftable Lime Concrete",
+  "block.varan-deco.green_concrete_temp": "Non-Craftable Green Concrete",
+  "block.varan-deco.cyan_concrete_temp": "Non-Craftable Cyan Concrete",
+  "block.varan-deco.light_blue_concrete_temp": "Non-Craftable Light Blue Concrete",
+  "block.varan-deco.blue_concrete_temp": "Non-Craftable Blue Concrete",
+  "block.varan-deco.purple_concrete_temp": "Non-Craftable Purple Concrete",
+  "block.varan-deco.magenta_concrete_temp": "Non-Craftable Magenta Concrete",
+  "block.varan-deco.pink_concrete_temp": "Non-Craftable Pink Concrete",
+  "block.varan-deco.end_stone_temp": "End Stone Template",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
@@ -675,6 +692,36 @@
   "block.varan-deco.deepslate_wall": "Deepslate Wall",
 
   "block.varan-deco.chiseled_bricks": "Chiseled Bricks",
+
+  "block.varan-deco.end_stone_stairs": "End Stone Stairs",
+  "block.varan-deco.end_stone_slab": "End Stone Slab",
+  "block.varan-deco.end_stone_wall": "End Stone Wall",
+
+  "block.varan-deco.chiseled_end_stone": "Chiseled End Stone",
+
+  "block.varan-deco.smooth_purpur": "Smooth Purpur",
+  "block.varan-deco.smooth_purpur_stairs": "Smooth Purpur Stairs",
+  "block.varan-deco.smooth_purpur_slab": "Smooth Purpur Slab",
+  "block.varan-deco.smooth_purpur_wall": "Smooth Purpur Wall",
+
+  "block.varan-deco.purpur_bricks": "Purpur Bricks",
+  "block.varan-deco.purpur_brick_stairs": "Purpur Brick Stairs",
+  "block.varan-deco.purpur_brick_slab": "Purpur Brick Slab",
+  "block.varan-deco.purpur_brick_wall": "Purpur Brick Wall",
+
+  "block.varan-deco.chiseled_purpur": "Chiseled Purpur",
+
+  "block.varan-deco.void_stone": "Void Stone",
+  "block.varan-deco.void_stone_stairs": "Void Stone Stairs",
+  "block.varan-deco.void_stone_slab": "Void Stone Slab",
+  "block.varan-deco.void_stone_wall": "Void Stone Wall",
+
+  "block.varan-deco.void_stone_bricks": "Void Stone Bricks",
+  "block.varan-deco.void_stone_brick_stairs": "Void Stone Brick Stairs",
+  "block.varan-deco.void_stone_brick_slab": "Void Stone Brick Slab",
+  "block.varan-deco.void_stone_brick_wall": "Void Stone Brick Wall",
+
+  "block.varan-deco.chiseled_void_stone": "Chiseled Void Stone",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

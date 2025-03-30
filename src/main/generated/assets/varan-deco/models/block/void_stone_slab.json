@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "varan-deco:block/void_stone",
+    "side": "varan-deco:block/void_stone",
+    "top": "varan-deco:block/void_stone"
+  }
+}

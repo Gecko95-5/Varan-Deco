@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "varan-deco:void_stone_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_void_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:void_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_void_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "varan-deco:void_stone_slab"
+    ]
+  }
+}

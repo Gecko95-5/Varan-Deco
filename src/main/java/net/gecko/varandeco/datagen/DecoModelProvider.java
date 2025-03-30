@@ -110,6 +110,19 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool smoothblackstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_BLACKSTONE);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_BRICKS, TexturedModel.CUBE_COLUMN);
+        BlockStateModelGenerator.BlockTexturePool endstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.END_STONE_TEMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_END_STONE);
+        BlockStateModelGenerator.BlockTexturePool smoothpurpurpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_PURPUR);
+        BlockStateModelGenerator.BlockTexturePool purpurbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PURPUR_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_PURPUR);
+        BlockStateModelGenerator.BlockTexturePool voidstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.VOID_STONE);
+        BlockStateModelGenerator.BlockTexturePool voidstonebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.VOID_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_VOID_STONE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
@@ -274,6 +287,26 @@ public class DecoModelProvider extends FabricModelProvider {
        smoothdeepslatepool.wall(DecoBlocks.SMOOTH_DEEPSLATE_WALL);
        smoothblackstonepool.stairs(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS);
        smoothblackstonepool.wall(DecoBlocks.SMOOTH_BLACKSTONE_WALL);
+
+        endstonepool.stairs(DecoBlocks.END_STONE_STAIRS);
+        endstonepool.slab(DecoBlocks.END_STONE_SLAB);
+        endstonepool.wall(DecoBlocks.END_STONE_WALL);
+
+        smoothpurpurpool.stairs(DecoBlocks.SMOOTH_PURPUR_STAIRS);
+        smoothpurpurpool.slab(DecoBlocks.SMOOTH_PURPUR_SLAB);
+        smoothpurpurpool.wall(DecoBlocks.SMOOTH_PURPUR_WALL);
+
+        purpurbrickpool.stairs(DecoBlocks.PURPUR_BRICK_STAIRS);
+        purpurbrickpool.slab(DecoBlocks.PURPUR_BRICK_SLAB);
+        purpurbrickpool.wall(DecoBlocks.PURPUR_BRICK_WALL);
+
+        voidstonepool.stairs(DecoBlocks.VOID_STONE_STAIRS);
+        voidstonepool.slab(DecoBlocks.VOID_STONE_SLAB);
+        voidstonepool.wall(DecoBlocks.VOID_STONE_WALL);
+
+        voidstonebrickpool.stairs(DecoBlocks.VOID_STONE_BRICK_STAIRS);
+        voidstonebrickpool.slab(DecoBlocks.VOID_STONE_BRICK_SLAB);
+        voidstonebrickpool.wall(DecoBlocks.VOID_STONE_BRICK_WALL);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
 

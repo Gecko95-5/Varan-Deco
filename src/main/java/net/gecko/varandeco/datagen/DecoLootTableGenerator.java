@@ -1090,5 +1090,57 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_bricks"),
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.END_STONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_end_stone"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_END_STONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_purpur"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_PURPUR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_purpur_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_PURPUR_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_purpur_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_PURPUR_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_purpur_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_PURPUR_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purpur_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPUR_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purpur_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPUR_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purpur_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.PURPUR_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purpur_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPUR_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_purpur"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_PURPUR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.VOID_STONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.VOID_STONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_void_stone"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_VOID_STONE));
     }
 }

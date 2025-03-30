@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_slime_ball": {
+    "has_snowball": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:slime_ball"
+              "minecraft:snowball"
             ]
           }
         ]
@@ -18,24 +18,11 @@
         "recipe": "minecraft:bubble_orb"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_water_bucket": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:water_bucket"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_slime_ball",
-      "has_water_bucket",
+      "has_snowball",
       "has_the_recipe"
     ]
   ],
