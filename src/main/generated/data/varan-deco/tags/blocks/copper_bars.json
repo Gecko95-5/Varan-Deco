@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:heavy_copper_bars",
+    "varan-deco:waxed_heavy_copper_bars",
+    "varan-deco:exposed_heavy_copper_bars",
+    "varan-deco:waxed_exposed_heavy_copper_bars",
+    "varan-deco:weathered_heavy_copper_bars",
+    "varan-deco:waxed_weathered_heavy_copper_bars",
+    "varan-deco:oxidized_heavy_copper_bars",
+    "varan-deco:waxed_oxidized_heavy_copper_bars"
+  ]
+}

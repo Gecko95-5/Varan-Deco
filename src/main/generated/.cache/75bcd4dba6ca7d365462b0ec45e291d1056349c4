@@ -1,4 +1,4 @@
-// 1.19.2	2025-03-30T22:40:46.7647037	Tags for minecraft:block
+// 1.19.2	2025-03-31T09:01:11.8576652	Tags for minecraft:block
 8c4cb19bfc777642595087793f46ff47086e1a38 data\varan-deco\tags\blocks\hardened_glass_panes.json
 d14960b99eeef7e414afe93b341c2ea311f31251 data\minecraft\tags\blocks\mineable\pickaxe.json
 e6daf194a7895a22069bfc6bdfb4854b75d5e6a9 data\varan-deco\tags\blocks\concrete_walls.json
@@ -24,6 +24,7 @@ ee8e6bd3bb9a2d4060230c8113a0e6d81ac6dd7b data\varan-deco\tags\blocks\concrete_st
 b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\mineable\shovel.json
 2028d8dbfb1610b35359b0f7e662cdca4f28bfea data\minecraft\tags\blocks\wooden_fences.json
 0df54ebcaa62dfc34acecc27063d23a6929a16de data\minecraft\tags\blocks\fences.json
+af0d2c98b801589e67b4809354e925303fe0f9ba data\varan-deco\tags\blocks\copper_bars.json
 cbddcd138577b80d9be969a7e2e12ba0a007996a data\minecraft\tags\blocks\wooden_stairs.json
 39a7ca8403897f1fb565bbb61058d9264d1b4ceb data\varan-deco\tags\blocks\terracotta_walls.json
 4ce81500361457971589d5b1a3aa65a08f7ed831 data\minecraft\tags\blocks\wooden_buttons.json

@@ -1192,5 +1192,22 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_deepslate_button"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_DEEPSLATE_BUTTON));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/exposed_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_exposed_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/weathered_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_weathered_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oxidized_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_heavy_copper_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS));
     }
 }

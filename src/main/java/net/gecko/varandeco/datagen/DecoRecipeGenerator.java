@@ -3202,5 +3202,65 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.POLISHED_DEEPSLATE),
                         RecipeProvider.conditionsFromItem(Items.POLISHED_DEEPSLATE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.COPPER_BLOCK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HEAVY_COPPER_BARS)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.WAXED_COPPER_BLOCK)
+                .criterion(RecipeProvider.hasItem(Items.WAXED_COPPER_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.WAXED_COPPER_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_HEAVY_COPPER_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.EXPOSED_COPPER)
+                .criterion(RecipeProvider.hasItem(Items.EXPOSED_COPPER),
+                        RecipeProvider.conditionsFromItem(Items.EXPOSED_COPPER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.WAXED_EXPOSED_COPPER)
+                .criterion(RecipeProvider.hasItem(Items.WAXED_EXPOSED_COPPER),
+                        RecipeProvider.conditionsFromItem(Items.WAXED_EXPOSED_COPPER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.WEATHERED_COPPER)
+                .criterion(RecipeProvider.hasItem(Items.WEATHERED_COPPER),
+                        RecipeProvider.conditionsFromItem(Items.WEATHERED_COPPER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.WAXED_WEATHERED_COPPER)
+                .criterion(RecipeProvider.hasItem(Items.WAXED_WEATHERED_COPPER),
+                        RecipeProvider.conditionsFromItem(Items.WAXED_WEATHERED_COPPER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.OXIDIZED_COPPER)
+                .criterion(RecipeProvider.hasItem(Items.OXIDIZED_COPPER),
+                        RecipeProvider.conditionsFromItem(Items.OXIDIZED_COPPER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.WAXED_OXIDIZED_COPPER)
+                .criterion(RecipeProvider.hasItem(Items.WAXED_OXIDIZED_COPPER),
+                        RecipeProvider.conditionsFromItem(Items.WAXED_OXIDIZED_COPPER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)));
     }
 }

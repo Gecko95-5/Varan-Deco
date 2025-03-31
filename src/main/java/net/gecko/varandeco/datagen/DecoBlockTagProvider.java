@@ -838,5 +838,15 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEEPSLATE_SMOKER)
                 .add(DecoBlocks.BLACKSTONE_SMOKER);
 
+        getOrCreateTagBuilder(DecoTags.Blocks.COPPER_BARS)
+                .add(DecoBlocks.HEAVY_COPPER_BARS)
+                .add(DecoBlocks.WAXED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS);
+
     }
 }

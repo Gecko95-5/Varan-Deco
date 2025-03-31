@@ -52,6 +52,9 @@ public class DecoTags {
         public static final TagKey<Block> DECO_FURNACES =
                 createTag("deco_furnaces");
 
+        public static final TagKey<Block> COPPER_BARS =
+                createTag("copper_bars");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(VaranDeco.MOD_ID, name));
         }
