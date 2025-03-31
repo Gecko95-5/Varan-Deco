@@ -52,6 +52,8 @@
     "varan-deco:smooth_purpur_wall",
     "varan-deco:purpur_brick_wall",
     "varan-deco:void_stone_wall",
-    "varan-deco:void_stone_brick_wall"
+    "varan-deco:void_stone_brick_wall",
+    "varan-deco:obsidian_wall",
+    "varan-deco:obsidian_brick_wall"
   ]
 }

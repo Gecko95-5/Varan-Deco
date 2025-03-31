@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "varan-deco:black_ice"
+    "varan-deco:black_ice",
+    "varan-deco:gold_door",
+    "varan-deco:gold_trapdoor"
   ]
 }

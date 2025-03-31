@@ -239,7 +239,28 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.VOID_STONE_WALL)
                 .add(DecoBlocks.VOID_STONE_BRICK_WALL)
                 .add(DecoBlocks.VOID_STONE_BRICKS)
-                .add(DecoBlocks.CHISELED_VOID_STONE);
+                .add(DecoBlocks.CHISELED_VOID_STONE)
+                .add(DecoBlocks.OBSIDIAN_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_BRICK_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_SLAB)
+                .add(DecoBlocks.OBSIDIAN_BRICK_SLAB)
+                .add(DecoBlocks.OBSIDIAN_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICK_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICKS)
+                .add(DecoBlocks.OBSIDIAN_PILLAR)
+                .add(DecoBlocks.CHISELED_OBSIDIAN)
+                .add(DecoBlocks.CHARCOAL_BLOCK)
+                .add(DecoBlocks.FLINT_BLOCK)
+                .add(DecoBlocks.ECHO_BLOCK)
+                .add(DecoBlocks.CUT_IRON)
+                .add(DecoBlocks.CUT_IRON_STAIRS)
+                .add(DecoBlocks.CUT_IRON_SLAB)
+                .add(DecoBlocks.LIGHT_IRON_BARS)
+                .add(DecoBlocks.HEAVY_IRON_BARS)
+                .add(DecoBlocks.GOLD_DOOR)
+                .add(DecoBlocks.GOLD_TRAPDOOR)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -261,10 +282,29 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.HARDENED_GLASS)
                 .add(Blocks.BLAST_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
-                .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE);
+                .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE)
+                .add(DecoBlocks.CUT_IRON)
+                .add(DecoBlocks.CUT_IRON_STAIRS)
+                .add(DecoBlocks.CUT_IRON_SLAB)
+                .add(DecoBlocks.LIGHT_IRON_BARS)
+                .add(Blocks.IRON_BARS)
+                .add(DecoBlocks.HEAVY_IRON_BARS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(DecoBlocks.BLACK_ICE);
+                .add(DecoBlocks.BLACK_ICE)
+                .add(DecoBlocks.GOLD_DOOR)
+                .add(DecoBlocks.GOLD_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(DecoBlocks.OBSIDIAN_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_BRICK_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_SLAB)
+                .add(DecoBlocks.OBSIDIAN_BRICK_SLAB)
+                .add(DecoBlocks.OBSIDIAN_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICK_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICKS)
+                .add(DecoBlocks.OBSIDIAN_PILLAR)
+                .add(DecoBlocks.CHISELED_OBSIDIAN);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(DecoBlocks.POLISHED_STONE_WALL)
@@ -318,7 +358,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_PURPUR_WALL)
                 .add(DecoBlocks.PURPUR_BRICK_WALL)
                 .add(DecoBlocks.VOID_STONE_WALL)
-                .add(DecoBlocks.VOID_STONE_BRICK_WALL);
+                .add(DecoBlocks.VOID_STONE_BRICK_WALL)
+                .add(DecoBlocks.OBSIDIAN_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -375,7 +417,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_PURPUR_STAIRS)
                 .add(DecoBlocks.PURPUR_BRICK_STAIRS)
                 .add(DecoBlocks.VOID_STONE_STAIRS)
-                .add(DecoBlocks.VOID_STONE_BRICK_STAIRS);
+                .add(DecoBlocks.VOID_STONE_BRICK_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_BRICK_STAIRS)
+                .add(DecoBlocks.CUT_IRON_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -416,7 +461,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_PURPUR_SLAB)
                 .add(DecoBlocks.PURPUR_BRICK_SLAB)
                 .add(DecoBlocks.VOID_STONE_SLAB)
-                .add(DecoBlocks.VOID_STONE_BRICK_SLAB);
+                .add(DecoBlocks.VOID_STONE_BRICK_SLAB)
+                .add(DecoBlocks.OBSIDIAN_SLAB)
+                .add(DecoBlocks.OBSIDIAN_BRICK_SLAB)
+                .add(DecoBlocks.CUT_IRON_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS);

@@ -123,6 +123,19 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool voidstonebrickpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.VOID_STONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_VOID_STONE);
+        BlockStateModelGenerator.BlockTexturePool obsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OBSIDIAN_TEMP);
+        BlockStateModelGenerator.BlockTexturePool obsidianbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OBSIDIAN_BRICKS);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_OBSIDIAN, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.OBSIDIAN_PILLAR, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHARCOAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.FLINT_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ECHO_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool cutironpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_IRON);
+        BlockStateModelGenerator.BlockTexturePool polishedeepslatepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_DEEPSLATE_TEMP);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
@@ -158,6 +171,9 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.GOLD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.GOLD_TRAPDOOR);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -307,6 +323,20 @@ public class DecoModelProvider extends FabricModelProvider {
         voidstonebrickpool.stairs(DecoBlocks.VOID_STONE_BRICK_STAIRS);
         voidstonebrickpool.slab(DecoBlocks.VOID_STONE_BRICK_SLAB);
         voidstonebrickpool.wall(DecoBlocks.VOID_STONE_BRICK_WALL);
+
+        obsidianpool.stairs(DecoBlocks.OBSIDIAN_STAIRS);
+        obsidianpool.slab(DecoBlocks.OBSIDIAN_SLAB);
+        obsidianpool.wall(DecoBlocks.OBSIDIAN_WALL);
+
+        obsidianbrickpool.stairs(DecoBlocks.OBSIDIAN_BRICK_STAIRS);
+        obsidianbrickpool.slab(DecoBlocks.OBSIDIAN_BRICK_SLAB);
+        obsidianbrickpool.wall(DecoBlocks.OBSIDIAN_BRICK_WALL);
+
+        cutironpool.stairs(DecoBlocks.CUT_IRON_STAIRS);
+        cutironpool.slab(DecoBlocks.CUT_IRON_SLAB);
+
+        polishedeepslatepool.button(DecoBlocks.POLISHED_DEEPSLATE_BUTTON);
+        polishedeepslatepool.pressurePlate(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
 

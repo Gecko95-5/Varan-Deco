@@ -225,6 +225,27 @@
     "varan-deco:void_stone_wall",
     "varan-deco:void_stone_brick_wall",
     "varan-deco:void_stone_bricks",
-    "varan-deco:chiseled_void_stone"
+    "varan-deco:chiseled_void_stone",
+    "varan-deco:obsidian_stairs",
+    "varan-deco:obsidian_brick_stairs",
+    "varan-deco:obsidian_slab",
+    "varan-deco:obsidian_brick_slab",
+    "varan-deco:obsidian_wall",
+    "varan-deco:obsidian_brick_wall",
+    "varan-deco:obsidian_bricks",
+    "varan-deco:obsidian_pillar",
+    "varan-deco:chiseled_obsidian",
+    "varan-deco:charcoal_block",
+    "varan-deco:flint_block",
+    "varan-deco:echo_block",
+    "varan-deco:cut_iron",
+    "varan-deco:cut_iron_stairs",
+    "varan-deco:cut_iron_slab",
+    "varan-deco:light_iron_bars",
+    "varan-deco:heavy_iron_bars",
+    "varan-deco:gold_door",
+    "varan-deco:gold_trapdoor",
+    "varan-deco:polished_deepslate_button",
+    "varan-deco:polished_deepslate_pressure_plate"
   ]
 }

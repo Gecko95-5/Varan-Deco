@@ -4,6 +4,12 @@
     "#varan-deco:hardened_glass",
     "minecraft:blast_furnace",
     "varan-deco:deepslate_blast_furnace",
-    "varan-deco:blackstone_blast_furnace"
+    "varan-deco:blackstone_blast_furnace",
+    "varan-deco:cut_iron",
+    "varan-deco:cut_iron_stairs",
+    "varan-deco:cut_iron_slab",
+    "varan-deco:light_iron_bars",
+    "minecraft:iron_bars",
+    "varan-deco:heavy_iron_bars"
   ]
 }

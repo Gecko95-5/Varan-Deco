@@ -42,6 +42,9 @@
     "varan-deco:smooth_purpur_stairs",
     "varan-deco:purpur_brick_stairs",
     "varan-deco:void_stone_stairs",
-    "varan-deco:void_stone_brick_stairs"
+    "varan-deco:void_stone_brick_stairs",
+    "varan-deco:obsidian_stairs",
+    "varan-deco:obsidian_brick_stairs",
+    "varan-deco:cut_iron_stairs"
   ]
 }

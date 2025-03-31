@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "varan-deco:block/chiseled_obsidian_top",
+    "side": "varan-deco:block/chiseled_obsidian_side"
+  }
+}

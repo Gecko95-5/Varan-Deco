@@ -1142,5 +1142,55 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_void_stone"),
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_VOID_STONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.OBSIDIAN_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OBSIDIAN_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.OBSIDIAN_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.OBSIDIAN_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.OBSIDIAN_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OBSIDIAN_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.OBSIDIAN_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/obsidian_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.OBSIDIAN_PILLAR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_obsidian"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_OBSIDIAN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/charcoal_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHARCOAL_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/flint_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.FLINT_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_BLOCK));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_iron"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_IRON));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_iron_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_IRON_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_iron_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_IRON_SLAB));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_iron_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIGHT_IRON_BARS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/heavy_iron_bars"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HEAVY_IRON_BARS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gold_door"),
+                BlockLootTableGenerator.doorDrops(DecoBlocks.GOLD_DOOR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gold_trapdoor"),
+                BlockLootTableGenerator.drops(DecoBlocks.GOLD_TRAPDOOR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_deepslate_pressure_plate"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_deepslate_button"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_DEEPSLATE_BUTTON));
     }
 }

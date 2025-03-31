@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "varan-deco:block/cut_iron",
+    "side": "varan-deco:block/cut_iron",
+    "top": "varan-deco:block/cut_iron"
+  }
+}

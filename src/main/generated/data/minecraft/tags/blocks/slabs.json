@@ -39,6 +39,9 @@
     "varan-deco:smooth_purpur_slab",
     "varan-deco:purpur_brick_slab",
     "varan-deco:void_stone_slab",
-    "varan-deco:void_stone_brick_slab"
+    "varan-deco:void_stone_brick_slab",
+    "varan-deco:obsidian_slab",
+    "varan-deco:obsidian_brick_slab",
+    "varan-deco:cut_iron_slab"
   ]
 }

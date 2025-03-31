@@ -3109,5 +3109,98 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, Items.PRISMARINE_BRICK_STAIRS, Items.PRISMARINE);
         offerStonecuttingRecipe(exporter, Items.PRISMARINE_BRICK_SLAB, Items.PRISMARINE);
         offerStonecuttingRecipe(exporter, DecoBlocks.PRISMARINE_BRICK_WALL, Items.PRISMARINE);
+
+        createStairsRecipe(DecoBlocks.OBSIDIAN_STAIRS, Ingredient.ofItems(Items.OBSIDIAN))
+                .criterion(hasItem(Items.OBSIDIAN),conditionsFromItem(Items.OBSIDIAN))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.OBSIDIAN_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_STAIRS, Items.OBSIDIAN);
+
+        offerSlabRecipe(exporter, DecoBlocks.OBSIDIAN_SLAB, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_SLAB, Items.OBSIDIAN,2);
+
+        offerWallRecipe(exporter, DecoBlocks.OBSIDIAN_WALL, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_WALL, Items.OBSIDIAN);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.OBSIDIAN_BRICKS, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICKS, Items.OBSIDIAN);
+
+        createStairsRecipe(DecoBlocks.OBSIDIAN_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.OBSIDIAN_BRICKS))
+                .criterion(hasItem(DecoBlocks.OBSIDIAN_BRICKS),conditionsFromItem(DecoBlocks.OBSIDIAN_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.OBSIDIAN_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_STAIRS, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_STAIRS, DecoBlocks.OBSIDIAN_BRICKS);
+
+        offerSlabRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, DecoBlocks.OBSIDIAN_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, Items.OBSIDIAN,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, DecoBlocks.OBSIDIAN_BRICKS,2);
+
+        offerWallRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.OBSIDIAN_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.OBSIDIAN_BRICKS);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.OBSIDIAN_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, Items.OBSIDIAN);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
+
+        offerReversibleCompactingRecipes(exporter, DecoBlocks.FLINT_BLOCK, Items.FLINT);
+        offerReversibleCompactingRecipes(exporter, DecoBlocks.CHARCOAL_BLOCK, Items.CHARCOAL);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.ECHO_BLOCK, Items.ECHO_SHARD);
+
+        offerCutCopperRecipe(exporter, DecoBlocks.CUT_IRON, Items.IRON_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_IRON, Items.IRON_BLOCK);
+
+        createStairsRecipe(DecoBlocks.CUT_IRON_STAIRS, Ingredient.ofItems(DecoBlocks.CUT_IRON))
+                .criterion(hasItem(DecoBlocks.CUT_IRON),conditionsFromItem(DecoBlocks.CUT_IRON))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CUT_IRON_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_IRON_STAIRS, Items.IRON_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_IRON_STAIRS, DecoBlocks.CUT_IRON);
+
+        offerSlabRecipe(exporter, DecoBlocks.CUT_IRON_SLAB, DecoBlocks.CUT_IRON);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_IRON_SLAB, Items.IRON_BLOCK,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_IRON_SLAB, DecoBlocks.CUT_IRON,2);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.LIGHT_IRON_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.IRON_NUGGET)
+                .criterion(RecipeProvider.hasItem(Items.IRON_NUGGET),
+                        RecipeProvider.conditionsFromItem(Items.IRON_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.LIGHT_IRON_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HEAVY_IRON_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.IRON_BLOCK)
+                .criterion(RecipeProvider.hasItem(Items.IRON_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.IRON_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HEAVY_IRON_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GOLD_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.GOLD_INGOT)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.GOLD_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GOLD_TRAPDOOR)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.GOLD_INGOT)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.GOLD_TRAPDOOR)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Items.POLISHED_DEEPSLATE);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
+                .input(Items.POLISHED_DEEPSLATE)
+                .criterion(RecipeProvider.hasItem(Items.POLISHED_DEEPSLATE),
+                        RecipeProvider.conditionsFromItem(Items.POLISHED_DEEPSLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)));
     }
 }

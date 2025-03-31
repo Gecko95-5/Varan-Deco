@@ -59,6 +59,7 @@
   "block.varan-deco.magenta_concrete_temp": "Non-Craftable Magenta Concrete",
   "block.varan-deco.pink_concrete_temp": "Non-Craftable Pink Concrete",
   "block.varan-deco.end_stone_temp": "End Stone Template",
+  "block.varan-deco.obsidian_temp": "Obsidian Template",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
@@ -722,6 +723,35 @@
   "block.varan-deco.void_stone_brick_wall": "Void Stone Brick Wall",
 
   "block.varan-deco.chiseled_void_stone": "Chiseled Void Stone",
+
+  "block.varan-deco.obsidian_stairs": "Obsidian Stairs",
+  "block.varan-deco.obsidian_slab": "Obsidian Slab",
+  "block.varan-deco.obsidian_wall": "Obsidian Wall",
+
+  "block.varan-deco.obsidian_bricks": "Obsidian Bricks",
+  "block.varan-deco.obsidian_brick_stairs": "Obsidian Brick Stairs",
+  "block.varan-deco.obsidian_brick_slab": "Obsidian Brick Slab",
+  "block.varan-deco.obsidian_brick_wall": "Obsidian Brick Wall",
+
+  "block.varan-deco.chiseled_obsidian": "Chiseled Obsidian",
+  "block.varan-deco.obsidian_pillar": "Obsidian Pillar",
+
+  "block.varan-deco.flint_block": "Block of Flint",
+  "block.varan-deco.charcoal_block": "Block of Charcoal",
+  "block.varan-deco.echo_block": "Echo Block",
+
+  "block.varan-deco.cut_iron": "Cut Iron",
+  "block.varan-deco.cut_iron_stairs": "Cut Iron Stairs",
+  "block.varan-deco.cut_iron_slab": "Cut Iron Slab",
+
+  "block.varan-deco.light_iron_bars": "Light Iron Bars",
+  "block.varan-deco.heavy_iron_bars": "Heavy Iron Bars",
+
+  "block.varan-deco.gold_door": "Gold Door",
+  "block.varan-deco.gold_trapdoor": "Gold Trapdoor",
+
+  "block.varan-deco.polished_deepslate_button": "Polished Deepslate Button",
+  "block.varan-deco.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

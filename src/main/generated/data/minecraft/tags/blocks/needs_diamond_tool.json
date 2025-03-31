@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:obsidian_stairs",
+    "varan-deco:obsidian_brick_stairs",
+    "varan-deco:obsidian_slab",
+    "varan-deco:obsidian_brick_slab",
+    "varan-deco:obsidian_wall",
+    "varan-deco:obsidian_brick_wall",
+    "varan-deco:obsidian_bricks",
+    "varan-deco:obsidian_pillar",
+    "varan-deco:chiseled_obsidian"
+  ]
+}

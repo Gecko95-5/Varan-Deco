@@ -1,13 +1,14 @@
-// 1.19.2	2025-03-30T00:02:48.9175093	Tags for minecraft:block
+// 1.19.2	2025-03-30T22:40:46.7647037	Tags for minecraft:block
 8c4cb19bfc777642595087793f46ff47086e1a38 data\varan-deco\tags\blocks\hardened_glass_panes.json
-8fbc57098e7b039ccc9ae4982937c33562eee692 data\minecraft\tags\blocks\mineable\pickaxe.json
+d14960b99eeef7e414afe93b341c2ea311f31251 data\minecraft\tags\blocks\mineable\pickaxe.json
 e6daf194a7895a22069bfc6bdfb4854b75d5e6a9 data\varan-deco\tags\blocks\concrete_walls.json
-7d48c0a98df4bc7cc499af16de02fa82f3058259 data\minecraft\tags\blocks\slabs.json
-37f3a1c312a438c9ba3f14feb0a2b60682a34c50 data\minecraft\tags\blocks\stairs.json
+4427a89071adbf69e89e8a8460feff7cda235c79 data\minecraft\tags\blocks\slabs.json
+f7dcdba9d15395aec89aac1a5fa8db0252bb908c data\minecraft\tags\blocks\stairs.json
 db506ed11852204cf9a3c2a67ff374bf6d35e857 data\minecraft\tags\blocks\planks.json
-0ab352cf3a58119c6e599c477e453341bc6a34fc data\minecraft\tags\blocks\needs_stone_tool.json
+205c312232a24312f2a65ceb1255025687310e6b data\minecraft\tags\blocks\needs_stone_tool.json
 225124da5c3a06044318ca6ef320397078fa466a data\varan-deco\tags\blocks\terracotta_stairs.json
-826fe8155b3501cbfab4dc43b488043b6f2357ca data\minecraft\tags\blocks\walls.json
+b962027d06555f143bdd5ab1beda22a6f1161b11 data\minecraft\tags\blocks\needs_diamond_tool.json
+53e49d8b2f551484ffd6cae5e6acee01f11165d2 data\minecraft\tags\blocks\walls.json
 b45459afabd6a44b57b04db833e8fd84717cdaa2 data\minecraft\tags\blocks\fence_gates.json
 a65f2f58ea38a7f5e5ea6a5de782afe3aa3ab49a data\varan-deco\tags\blocks\deco_smithing_tables.json
 d533ac9bae31073b1976290d95395a4093bba6c2 data\varan-deco\tags\blocks\hardened_glass.json
@@ -17,7 +18,7 @@ d533ac9bae31073b1976290d95395a4093bba6c2 data\varan-deco\tags\blocks\hardened_gl
 17a0621d55df6cce6110e3eec873d7e0d55bda23 data\minecraft\tags\blocks\wooden_doors.json
 c64f70d00b51bb88bd96886d64de69d759602615 data\minecraft\tags\blocks\mineable\axe.json
 ee8e6bd3bb9a2d4060230c8113a0e6d81ac6dd7b data\varan-deco\tags\blocks\concrete_stairs.json
-ce31acf7a17e4864e181fab04cf10a559ebb95e9 data\minecraft\tags\blocks\needs_iron_tool.json
+4da9bc50f9ea812d4ab20107c9d362358d7d83b1 data\minecraft\tags\blocks\needs_iron_tool.json
 8c46315632eab92ed12a2eb6233fa014958d5ae0 data\minecraft\tags\blocks\wooden_trapdoors.json
 3e614ba327dbb160681636809cd4344b73c0ab24 data\minecraft\tags\blocks\wall_signs.json
 b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\mineable\shovel.json
