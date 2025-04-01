@@ -753,5 +753,17 @@
   "block.varan-deco.polished_deepslate_button": "Polished Deepslate Button",
   "block.varan-deco.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
 
+  "block.varan-deco.heavy_copper_bars": "Heavy Copper Bars",
+  "block.varan-deco.waxed_heavy_copper_bars": "Waxed Heavy Copper Bars",
+
+  "block.varan-deco.exposed_heavy_copper_bars": "Exposed Heavy Copper Bars",
+  "block.varan-deco.waxed_exposed_heavy_copper_bars": "Waxed Exposed Heavy Copper Bars",
+
+  "block.varan-deco.weathered_heavy_copper_bars": "Weathered Heavy Copper Bars",
+  "block.varan-deco.waxed_weathered_heavy_copper_bars": "Waxed Weathered Heavy Copper Bars",
+
+  "block.varan-deco.oxidized_heavy_copper_bars": "Oxidized Heavy Copper Bars",
+  "block.varan-deco.waxed_oxidized_heavy_copper_bars": "Waxed Oxidized Heavy Copper Bars",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }
