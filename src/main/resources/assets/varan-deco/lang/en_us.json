@@ -3,6 +3,7 @@
   "item.varan-deco.cactus_sign": "Cactus Sign",
   "item.varan-deco.bubble_orb": "Bubble Orb",
   "item.varan-deco.warped_wart": "Warped Wart",
+  "item.varan-deco.copper_nugget": "Copper Nugget",
 
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -60,6 +61,12 @@
   "block.varan-deco.pink_concrete_temp": "Non-Craftable Pink Concrete",
   "block.varan-deco.end_stone_temp": "End Stone Template",
   "block.varan-deco.obsidian_temp": "Obsidian Template",
+  "block.varan-deco.polished_deepslate_temp": "Non-Craftable Polished Deepslate",
+  "block.varan-deco.deepslate_temp": "Deepslate Template",
+  "block.varan-deco.cobbled_deepslate_temp": "Cobbled Deepslate Template",
+  "block.varan-deco.cobblestone_temp": "Cobblestone Template",
+  "block.varan-deco.blackstone_temp": "Blackstone Template",
+  "block.varan-deco.polished_stone_temp": "Non-Craftable Polished Stone",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
@@ -764,6 +771,45 @@
 
   "block.varan-deco.oxidized_heavy_copper_bars": "Oxidized Heavy Copper Bars",
   "block.varan-deco.waxed_oxidized_heavy_copper_bars": "Waxed Oxidized Heavy Copper Bars",
+
+  "block.varan-deco.light_copper_bars": "Light Copper Bars",
+  "block.varan-deco.waxed_light_copper_bars": "Waxed Light Copper Bars",
+
+  "block.varan-deco.exposed_light_copper_bars": "Exposed Light Copper Bars",
+  "block.varan-deco.waxed_exposed_light_copper_bars": "Waxed Exposed Light Copper Bars",
+
+  "block.varan-deco.weathered_light_copper_bars": "Weathered Light Copper Bars",
+  "block.varan-deco.waxed_weathered_light_copper_bars": "Waxed Weathered Light Copper Bars",
+
+  "block.varan-deco.oxidized_light_copper_bars": "Oxidized Light Copper Bars",
+  "block.varan-deco.waxed_oxidized_light_copper_bars": "Waxed Oxidized Light Copper Bars",
+
+  "block.varan-deco.copper_bars": "Copper Bars",
+  "block.varan-deco.waxed_copper_bars": "Waxed Copper Bars",
+
+  "block.varan-deco.exposed_copper_bars": "Exposed Copper Bars",
+  "block.varan-deco.waxed_exposed_copper_bars": "Waxed Exposed Copper Bars",
+
+  "block.varan-deco.weathered_copper_bars": "Weathered Copper Bars",
+  "block.varan-deco.waxed_weathered_copper_bars": "Waxed Weathered Copper Bars",
+
+  "block.varan-deco.oxidized_copper_bars": "Oxidized Copper Bars",
+  "block.varan-deco.waxed_oxidized_copper_bars": "Waxed Oxidized Copper Bars",
+
+  "block.varan-deco.deepslate_button": "Deepslate Button",
+  "block.varan-deco.deepslate_pressure_plate": "Deepslate Pressure Plate",
+
+  "block.varan-deco.cobbled_deepslate_button": "Cobbled Deepslate Button",
+  "block.varan-deco.cobbled_deepslate_pressure_plate": "Cobbled Deepslate Pressure Plate",
+
+  "block.varan-deco.cobblestone_button": "Cobblestone Button",
+  "block.varan-deco.cobblestone_pressure_plate": "Cobblestone Pressure Plate",
+
+  "block.varan-deco.blackstone_button": "Blackstone Button",
+  "block.varan-deco.blackstone_pressure_plate": "Blackstone Pressure Plate",
+
+  "block.varan-deco.polished_stone_button": "Polished Stone Button",
+  "block.varan-deco.polished_stone_pressure_plate": "Polished Stone Pressure Plate",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

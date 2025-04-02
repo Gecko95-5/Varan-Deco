@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "varan-deco:deepslate_pressure_plate"
+  }
+}

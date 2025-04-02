@@ -136,6 +136,14 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_IRON);
         BlockStateModelGenerator.BlockTexturePool polishedeepslatepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_DEEPSLATE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool deepslatepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEEPSLATE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool cobbledeepslatepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COBBLED_DEEPSLATE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool cobblestonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COBBLESTONE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool blackstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACKSTONE_TEMP);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
@@ -337,6 +345,21 @@ public class DecoModelProvider extends FabricModelProvider {
 
         polishedeepslatepool.button(DecoBlocks.POLISHED_DEEPSLATE_BUTTON);
         polishedeepslatepool.pressurePlate(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+
+        deepslatepool.button(DecoBlocks.DEEPSLATE_BUTTON);
+        deepslatepool.pressurePlate(DecoBlocks.DEEPSLATE_PRESSURE_PLATE);
+
+        cobbledeepslatepool.button(DecoBlocks.COBBLED_DEEPSLATE_BUTTON);
+        cobbledeepslatepool.pressurePlate(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE);
+
+        cobblestonepool.button(DecoBlocks.COBBLESTONE_BUTTON);
+        cobblestonepool.pressurePlate(DecoBlocks.COBBLESTONE_PRESSURE_PLATE);
+
+        blackstonepool.button(DecoBlocks.BLACKSTONE_BUTTON);
+        blackstonepool.pressurePlate(DecoBlocks.BLACKSTONE_PRESSURE_PLATE);
+
+        polistonepool.button(DecoBlocks.POLISHED_STONE_BUTTON);
+        polistonepool.pressurePlate(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
 
@@ -721,5 +744,6 @@ public class DecoModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
     }
 }

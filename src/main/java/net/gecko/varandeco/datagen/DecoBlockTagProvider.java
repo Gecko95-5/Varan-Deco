@@ -260,7 +260,18 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.GOLD_DOOR)
                 .add(DecoBlocks.GOLD_TRAPDOOR)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
-                .add(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+                .add(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
+                .add(DecoBlocks.DEEPSLATE_BUTTON)
+                .add(DecoBlocks.DEEPSLATE_PRESSURE_PLATE)
+                .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
+                .add(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE)
+                .add(DecoBlocks.COBBLESTONE_BUTTON)
+                .add(DecoBlocks.COBBLESTONE_PRESSURE_PLATE)
+                .add(DecoBlocks.BLACKSTONE_BUTTON)
+                .add(DecoBlocks.BLACKSTONE_PRESSURE_PLATE)
+                .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE)
+                .add(DecoBlocks.POLISHED_STONE_BUTTON)
+                .addTag(DecoTags.Blocks.COPPER_BARS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -288,7 +299,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_IRON_SLAB)
                 .add(DecoBlocks.LIGHT_IRON_BARS)
                 .add(Blocks.IRON_BARS)
-                .add(DecoBlocks.HEAVY_IRON_BARS);
+                .add(DecoBlocks.HEAVY_IRON_BARS)
+                .addTag(DecoTags.Blocks.COPPER_BARS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
@@ -846,7 +858,23 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)
                 .add(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)
                 .add(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)
-                .add(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS);
+                .add(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)
+                .add(DecoBlocks.LIGHT_COPPER_BARS)
+                .add(DecoBlocks.WAXED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.WAXED_EXPOSED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.WAXED_WEATHERED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS)
+                .add(DecoBlocks.COPPER_BARS)
+                .add(DecoBlocks.WAXED_COPPER_BARS)
+                .add(DecoBlocks.EXPOSED_COPPER_BARS)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_BARS)
+                .add(DecoBlocks.WEATHERED_COPPER_BARS)
+                .add(DecoBlocks.WAXED_WEATHERED_COPPER_BARS)
+                .add(DecoBlocks.OXIDIZED_COPPER_BARS)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
 
     }
 }

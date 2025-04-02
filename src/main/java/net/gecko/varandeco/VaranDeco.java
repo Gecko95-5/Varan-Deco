@@ -36,6 +36,24 @@ public class VaranDeco implements ModInitializer {
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS, DecoBlocks.WEATHERED_HEAVY_COPPER_BARS);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS, DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS);
 
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_BARS, DecoBlocks.WAXED_COPPER_BARS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_BARS, DecoBlocks.WAXED_EXPOSED_COPPER_BARS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_BARS, DecoBlocks.WAXED_WEATHERED_COPPER_BARS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_BARS, DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
+
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_BARS, DecoBlocks.EXPOSED_COPPER_BARS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_BARS, DecoBlocks.WEATHERED_COPPER_BARS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_BARS, DecoBlocks.OXIDIZED_COPPER_BARS);
+
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.LIGHT_COPPER_BARS, DecoBlocks.WAXED_LIGHT_COPPER_BARS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS, DecoBlocks.WAXED_EXPOSED_LIGHT_COPPER_BARS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS, DecoBlocks.WAXED_WEATHERED_LIGHT_COPPER_BARS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS, DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS);
+
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.LIGHT_COPPER_BARS, DecoBlocks.EXPOSED_LIGHT_COPPER_BARS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS, DecoBlocks.WEATHERED_LIGHT_COPPER_BARS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS, DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS);
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }

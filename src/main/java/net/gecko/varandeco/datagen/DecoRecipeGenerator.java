@@ -3262,5 +3262,63 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.WAXED_OXIDIZED_COPPER),
                         RecipeProvider.conditionsFromItem(Items.WAXED_OXIDIZED_COPPER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.COPPER_INGOT)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COPPER_BARS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.LIGHT_COPPER_BARS,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoItems.COPPER_NUGGET)
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.LIGHT_COPPER_BARS)));
+
+        offerReversibleCompactingRecipes(exporter, Items.COPPER_INGOT, DecoItems.COPPER_NUGGET);
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_BUTTON)
+                .input(Items.DEEPSLATE)
+                .criterion(RecipeProvider.hasItem(Items.DEEPSLATE),
+                        RecipeProvider.conditionsFromItem(Items.DEEPSLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.DEEPSLATE_BUTTON)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
+                .input(Items.COBBLED_DEEPSLATE)
+                .criterion(RecipeProvider.hasItem(Items.COBBLED_DEEPSLATE),
+                        RecipeProvider.conditionsFromItem(Items.COBBLED_DEEPSLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLESTONE_BUTTON)
+                .input(Items.COBBLESTONE)
+                .criterion(RecipeProvider.hasItem(Items.COBBLESTONE),
+                        RecipeProvider.conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COBBLESTONE_BUTTON)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.BLACKSTONE_BUTTON)
+                .input(Items.BLACKSTONE)
+                .criterion(RecipeProvider.hasItem(Items.BLACKSTONE),
+                        RecipeProvider.conditionsFromItem(Items.BLACKSTONE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BLACKSTONE_BUTTON)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.POLISHED_STONE_BUTTON)
+                .input(DecoBlocks.POLISHED_STONE)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.POLISHED_STONE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.POLISHED_STONE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_STONE_BUTTON)));
     }
 }

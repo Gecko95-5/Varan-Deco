@@ -27,6 +27,9 @@ public class DecoItems {
     public static final Item WARPED_WART = registerItem("warped_wart",
             new AliasedBlockItem(DecoBlocks.WARPED_WART_PLANT,new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
 
+    public static final Item COPPER_NUGGET = registerItem("copper_nugget",
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranDeco.MOD_ID, name),item);
     }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-deco:polished_stone"
+    }
+  ],
+  "result": {
+    "item": "varan-deco:polished_stone_button"
+  }
+}

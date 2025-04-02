@@ -3,7 +3,7 @@
     "textures": {
         "particle": "varan-deco:block/oxidized_heavy_copper_bars",
         "bars": "varan-deco:block/oxidized_heavy_copper_bars",
-        "edge": "varan-deco:block/oxidized_heavy_copper_bars_edge"
+        "edge": "varan-deco:block/oxidized_copper_bars_edge"
     },
     "elements": [
         {   "from": [ 8, 0, 8 ],

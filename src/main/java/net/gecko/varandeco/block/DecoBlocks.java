@@ -908,32 +908,71 @@ public class DecoBlocks {
     public static final Block LIGHT_IRON_BARS = registerBlock("light_iron_bars",
             new PaneBlock(FabricBlockSettings.copyOf(Blocks.IRON_BARS).strength(2.5f,6.0f))
             , DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block LIGHT_COPPER_BARS = registerBlock("light_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(DecoBlocks.LIGHT_IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_LIGHT_COPPER_BARS = registerBlock("waxed_light_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.LIGHT_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_LIGHT_COPPER_BARS = registerBlock("exposed_light_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(DecoBlocks.LIGHT_IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_LIGHT_COPPER_BARS = registerBlock("waxed_exposed_light_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_LIGHT_COPPER_BARS = registerBlock("weathered_light_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(DecoBlocks.LIGHT_IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_LIGHT_COPPER_BARS = registerBlock("waxed_weathered_light_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_LIGHT_COPPER_BARS = registerBlock("oxidized_light_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(DecoBlocks.LIGHT_IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_LIGHT_COPPER_BARS = registerBlock("waxed_oxidized_light_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COPPER_BARS = registerBlock("copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_COPPER_BARS = registerBlock("waxed_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_COPPER_BARS = registerBlock("exposed_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_COPPER_BARS = registerBlock("waxed_exposed_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_COPPER_BARS = registerBlock("weathered_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_COPPER_BARS = registerBlock("waxed_weathered_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_COPPER_BARS = registerBlock("oxidized_copper_bars",
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_COPPER_BARS = registerBlock("waxed_oxidized_copper_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block HEAVY_IRON_BARS = registerBlock("heavy_iron_bars",
             new PaneBlock(FabricBlockSettings.copyOf(Blocks.IRON_BARS).strength(10.0f,12.0f)
                     .mapColor(MapColor.IRON_GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block HEAVY_COPPER_BARS = registerBlock("heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
-                    .strength(10.0f,12.0f).mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(DecoBlocks.HEAVY_IRON_BARS)
+                    .mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_HEAVY_COPPER_BARS = registerBlock("waxed_heavy_copper_bars",
             new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.HEAVY_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block EXPOSED_HEAVY_COPPER_BARS = registerBlock("exposed_heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
-                    .strength(10.0f,12.0f).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(DecoBlocks.HEAVY_IRON_BARS)
+                    .mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_EXPOSED_HEAVY_COPPER_BARS = registerBlock("waxed_exposed_heavy_copper_bars",
             new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WEATHERED_HEAVY_COPPER_BARS = registerBlock("weathered_heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
-                    .strength(10.0f,12.0f).mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(DecoBlocks.HEAVY_IRON_BARS)
+                    .mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_WEATHERED_HEAVY_COPPER_BARS = registerBlock("waxed_weathered_heavy_copper_bars",
             new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block OXIDIZED_HEAVY_COPPER_BARS = registerBlock("oxidized_heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.IRON_BARS)
-                    .strength(10.0f,12.0f).mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
+            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(DecoBlocks.HEAVY_IRON_BARS)
+                    .mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_OXIDIZED_HEAVY_COPPER_BARS = registerBlock("waxed_oxidized_heavy_copper_bars",
             new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
@@ -1316,14 +1355,42 @@ public class DecoBlocks {
             new BlackstoneStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
+            new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COBBLED_DEEPSLATE_BUTTON = registerBlock("cobbled_deepslate_button",
+            new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COBBLESTONE_BUTTON = registerBlock("cobblestone_button",
+            new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACKSTONE_BUTTON = registerBlock("blackstone_button",
+            new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POLISHED_STONE_BUTTON = registerBlock("polished_stone_button",
+            new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
             new WoodenButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COBBLED_DEEPSLATE_PRESSURE_PLATE = registerBlock("cobbled_deepslate_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
                             .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.BLACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POLISHED_STONE_PRESSURE_PLATE = registerBlock("polished_stone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.BLACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1470,6 +1537,14 @@ public class DecoBlocks {
     public static final Block OBSIDIAN_TEMP = registerBlock("obsidian_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
     public static final Block POLISHED_DEEPSLATE_TEMP = registerBlock("polished_deepslate_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block DEEPSLATE_TEMP = registerBlock("deepslate_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block BLACKSTONE_TEMP = registerBlock("blackstone_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block COBBLESTONE_TEMP = registerBlock("cobblestone_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+    public static final Block COBBLED_DEEPSLATE_TEMP = registerBlock("cobbled_deepslate_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
