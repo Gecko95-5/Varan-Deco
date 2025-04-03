@@ -144,6 +144,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COBBLESTONE_TEMP);
         BlockStateModelGenerator.BlockTexturePool blackstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACKSTONE_TEMP);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);

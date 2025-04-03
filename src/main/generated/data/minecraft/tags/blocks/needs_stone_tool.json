@@ -10,6 +10,7 @@
     "varan-deco:cut_iron_slab",
     "varan-deco:light_iron_bars",
     "minecraft:iron_bars",
-    "varan-deco:heavy_iron_bars"
+    "varan-deco:heavy_iron_bars",
+    "#varan-deco:copper_bars"
   ]
 }

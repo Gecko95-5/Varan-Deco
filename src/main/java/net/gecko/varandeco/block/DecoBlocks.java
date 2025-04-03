@@ -17,6 +17,7 @@ import net.gecko.varandeco.item.DecoItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -852,6 +853,12 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
             new MagmaBrickSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_YELLOW_TULIP = registerBlockWithoutItem("potted_yellow_tulip",
+            new FlowerPotBlock(YELLOW_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);

@@ -876,5 +876,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_BARS)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
 
+        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
+                .add(DecoBlocks.YELLOW_TULIP);
+
+        getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
+                .add(DecoBlocks.POTTED_YELLOW_TULIP);
     }
 }

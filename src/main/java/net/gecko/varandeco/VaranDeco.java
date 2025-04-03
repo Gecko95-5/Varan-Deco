@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.item.DecoItems;
+import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
+import net.gecko.varandeco.world.gen.DecoWorldGeneration;
 import net.minecraft.block.Blocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +25,8 @@ public class VaranDeco implements ModInitializer {
 		DecoItems.registerDecoItems();
 		DecoBlocks.registerDecoBlocks();
 		DecoBlockEntities.registerBlockEntities();
+		DecoConfiguredFeatures.registerConfiguredFeatures();
+		DecoWorldGeneration.generateWorldGen();
 
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(Blocks.CACTUS,5,5);

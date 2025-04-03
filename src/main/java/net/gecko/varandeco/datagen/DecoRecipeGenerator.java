@@ -3320,5 +3320,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.POLISHED_STONE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.POLISHED_STONE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_STONE_BUTTON)));
+
+        ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
+                .input(DecoBlocks.YELLOW_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_TULIP))
+                .offerTo(exporter, new Identifier("yellow_dye_from_yellow_tulip"));
     }
 }

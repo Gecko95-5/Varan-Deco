@@ -1268,5 +1268,10 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_stone_button"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_STONE_BUTTON));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.YELLOW_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_yellow_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_YELLOW_TULIP));
     }
 }
