@@ -3326,5 +3326,41 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_TULIP))
                 .offerTo(exporter, new Identifier("yellow_dye_from_yellow_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
+                .input(DecoBlocks.PURPLE_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.PURPLE_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.PURPLE_TULIP))
+                .offerTo(exporter, new Identifier("purple_dye_from_purple_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
+                .input(DecoBlocks.MAGENTA_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MAGENTA_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MAGENTA_TULIP))
+                .offerTo(exporter, new Identifier("magenta_dye_from_magenta_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE)
+                .input(DecoBlocks.BLACK_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLACK_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLACK_TULIP))
+                .offerTo(exporter, new Identifier("black_dye_from_black_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.LIME_DYE)
+                .input(DecoBlocks.GREEN_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.GREEN_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.GREEN_TULIP))
+                .offerTo(exporter, new Identifier("lime_dye_from_green_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.LIGHT_BLUE_DYE)
+                .input(DecoBlocks.BLUE_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_TULIP))
+                .offerTo(exporter, new Identifier("light_blue_dye_from_blue_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.CYAN_DYE)
+                .input(DecoBlocks.CYAN_TULIP)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CYAN_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CYAN_TULIP))
+                .offerTo(exporter, new Identifier("cyan_dye_from_cyan_tulip"));
     }
 }

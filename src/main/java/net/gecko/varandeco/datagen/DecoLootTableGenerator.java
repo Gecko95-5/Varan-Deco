@@ -1273,5 +1273,29 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.YELLOW_TULIP));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_yellow_tulip"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_YELLOW_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purple_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPLE_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_purple_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_PURPLE_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/magenta_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_magenta_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_MAGENTA_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_blue_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_BLUE_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACK_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_black_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_BLACK_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/green_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.GREEN_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_green_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_GREEN_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_tulip"),
+                BlockLootTableGenerator.drops(DecoBlocks.CYAN_TULIP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_cyan_tulip"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_CYAN_TULIP));
     }
 }

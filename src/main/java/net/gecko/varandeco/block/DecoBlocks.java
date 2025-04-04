@@ -859,6 +859,37 @@ public class DecoBlocks {
                 DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_YELLOW_TULIP = registerBlockWithoutItem("potted_yellow_tulip",
             new FlowerPotBlock(YELLOW_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+    public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_PURPLE_TULIP = registerBlockWithoutItem("potted_purple_tulip",
+            new FlowerPotBlock(PURPLE_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+    public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_MAGENTA_TULIP = registerBlockWithoutItem("potted_magenta_tulip",
+            new FlowerPotBlock(MAGENTA_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+    public static final Block BLUE_TULIP = registerBlock("blue_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BLUE_TULIP = registerBlockWithoutItem("potted_blue_tulip",
+            new FlowerPotBlock(BLUE_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+
+    public static final Block BLACK_TULIP = registerBlock("black_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BLACK_TULIP = registerBlockWithoutItem("potted_black_tulip",
+            new FlowerPotBlock(BLACK_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+    public static final Block GREEN_TULIP = registerBlock("green_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_GREEN_TULIP = registerBlockWithoutItem("potted_green_tulip",
+            new FlowerPotBlock(GREEN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+    public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
+            new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_CYAN_TULIP = registerBlockWithoutItem("potted_cyan_tulip",
+            new FlowerPotBlock(CYAN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);

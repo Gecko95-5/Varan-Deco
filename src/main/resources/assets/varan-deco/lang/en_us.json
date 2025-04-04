@@ -814,5 +814,23 @@
   "block.varan-deco.yellow_tulip": "Yellow Tulip",
   "block.varan-deco.potted_yellow_tulip": "Potted Yellow Tulip",
 
+  "block.varan-deco.purple_tulip": "Purple Tulip",
+  "block.varan-deco.potted_purple_tulip": "Potted Purple Tulip",
+
+  "block.varan-deco.magenta_tulip": "Magenta Tulip",
+  "block.varan-deco.potted_magenta_tulip": "Potted Magenta Tulip",
+
+  "block.varan-deco.black_tulip": "Black Tulip",
+  "block.varan-deco.potted_black_tulip": "Potted Black Tulip",
+
+  "block.varan-deco.green_tulip": "Green Tulip",
+  "block.varan-deco.potted_green_tulip": "Potted Green Tulip",
+
+  "block.varan-deco.blue_tulip": "Blue Tulip",
+  "block.varan-deco.potted_blue_tulip": "Potted Blue Tulip",
+
+  "block.varan-deco.cyan_tulip": "Cyan Tulip",
+  "block.varan-deco.potted_cyan_tulip": "Potted Cyan Tulip",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

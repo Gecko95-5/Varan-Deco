@@ -10,5 +10,7 @@ public class DecoFlowerGeneration {
     public static void generateFlowers(){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.FOREST_TULIPS_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.MEADOW),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.MEADOW_TULIPS_PLACED.getKey().get());
     }
 }

@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "varan-deco:yellow_tulip"
+    "varan-deco:yellow_tulip",
+    "varan-deco:purple_tulip",
+    "varan-deco:magenta_tulip",
+    "varan-deco:blue_tulip",
+    "varan-deco:black_tulip",
+    "varan-deco:green_tulip",
+    "varan-deco:cyan_tulip"
   ]
 }

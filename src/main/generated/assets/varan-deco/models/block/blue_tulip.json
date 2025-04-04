@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "varan-deco:block/blue_tulip"
+  }
+}
