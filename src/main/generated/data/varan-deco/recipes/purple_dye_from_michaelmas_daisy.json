@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-deco:michaelmas_daisy"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purple_dye"
+  }
+}

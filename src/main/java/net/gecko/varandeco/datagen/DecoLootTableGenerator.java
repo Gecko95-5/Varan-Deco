@@ -1297,5 +1297,28 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CYAN_TULIP));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_cyan_tulip"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_CYAN_TULIP));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/barberton_daisy"),
+                BlockLootTableGenerator.drops(DecoBlocks.BARBERTON_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_barberton_daisy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_BARBERTON_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_eyed_daisy"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_EYED_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_blue_eyed_daisy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_BLUE_EYED_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gerbera_daisy"),
+                BlockLootTableGenerator.drops(DecoBlocks.GERBERA_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_gerbera_daisy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_GERBERA_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/michaelmas_daisy"),
+                BlockLootTableGenerator.drops(DecoBlocks.MICHAELMAS_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_michaelmas_daisy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_MICHAELMAS_DAISY));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/puffy_dandelion"),
+                BlockLootTableGenerator.drops(DecoBlocks.PUFFY_DANDELION));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_puffy_dandelion"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_PUFFY_DANDELION));
+
     }
 }

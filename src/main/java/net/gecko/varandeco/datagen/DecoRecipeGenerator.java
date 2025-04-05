@@ -3362,5 +3362,29 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CYAN_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CYAN_TULIP))
                 .offerTo(exporter, new Identifier("cyan_dye_from_cyan_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(Items.RED_DYE)
+                .input(DecoBlocks.BARBERTON_DAISY)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BARBERTON_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BARBERTON_DAISY))
+                .offerTo(exporter, new Identifier("red_dye_from_barberton_daisy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
+                .input(DecoBlocks.BLUE_EYED_DAISY)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_EYED_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_EYED_DAISY))
+                .offerTo(exporter, new Identifier("yellow_dye_from_blue_eyed_daisy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
+                .input(DecoBlocks.GERBERA_DAISY)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.GERBERA_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.GERBERA_DAISY))
+                .offerTo(exporter, new Identifier("pink_dye_from_gerbera_daisy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
+                .input(DecoBlocks.MICHAELMAS_DAISY)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MICHAELMAS_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MICHAELMAS_DAISY))
+                .offerTo(exporter, new Identifier("purple_dye_from_michaelmas_daisy"));
     }
 }

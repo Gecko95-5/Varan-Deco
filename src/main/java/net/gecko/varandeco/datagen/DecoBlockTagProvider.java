@@ -883,7 +883,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLUE_TULIP)
                 .add(DecoBlocks.BLACK_TULIP)
                 .add(DecoBlocks.GREEN_TULIP)
-                .add(DecoBlocks.CYAN_TULIP);
+                .add(DecoBlocks.CYAN_TULIP)
+                .add(DecoBlocks.BARBERTON_DAISY)
+                .add(DecoBlocks.BLUE_EYED_DAISY)
+                .add(DecoBlocks.GERBERA_DAISY)
+                .add(DecoBlocks.MICHAELMAS_DAISY)
+                .add(DecoBlocks.PUFFY_DANDELION);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -892,6 +897,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_BLUE_TULIP)
                 .add(DecoBlocks.POTTED_BLACK_TULIP)
                 .add(DecoBlocks.POTTED_GREEN_TULIP)
-                .add(DecoBlocks.POTTED_CYAN_TULIP);
+                .add(DecoBlocks.POTTED_CYAN_TULIP)
+                .add(DecoBlocks.POTTED_BARBERTON_DAISY)
+                .add(DecoBlocks.POTTED_BLUE_EYED_DAISY)
+                .add(DecoBlocks.POTTED_GERBERA_DAISY)
+                .add(DecoBlocks.POTTED_MICHAELMAS_DAISY)
+                .add(DecoBlocks.POTTED_PUFFY_DANDELION);
     }
 }

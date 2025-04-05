@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-deco:barberton_daisy"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
+}

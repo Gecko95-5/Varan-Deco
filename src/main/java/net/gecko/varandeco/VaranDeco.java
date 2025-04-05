@@ -31,6 +31,19 @@ public class VaranDeco implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(Blocks.CACTUS,5,5);
 
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.YELLOW_TULIP,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.PURPLE_TULIP,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.MAGENTA_TULIP,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.BLACK_TULIP,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.GREEN_TULIP,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.BLUE_TULIP,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CYAN_TULIP,60, 100);
+
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.BARBERTON_DAISY,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.BLUE_EYED_DAISY,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.GERBERA_DAISY,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.MICHAELMAS_DAISY,60, 100);
+
 		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.HEAVY_COPPER_BARS, DecoBlocks.WAXED_HEAVY_COPPER_BARS);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS, DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS, DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS);

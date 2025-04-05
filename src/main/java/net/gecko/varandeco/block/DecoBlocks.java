@@ -6,10 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.BlackIceBlock;
-import net.gecko.varandeco.block.custom.OxidizablePaneBlock;
-import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
-import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
@@ -890,6 +887,33 @@ public class DecoBlocks {
                 DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_CYAN_TULIP = registerBlockWithoutItem("potted_cyan_tulip",
             new FlowerPotBlock(CYAN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
+
+    public static final Block BARBERTON_DAISY = registerBlock("barberton_daisy",
+            new FlowerBlock(StatusEffects.INSTANT_HEALTH, 1,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BARBERTON_DAISY = registerBlockWithoutItem("potted_barberton_daisy",
+            new FlowerPotBlock(BARBERTON_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
+    public static final Block BLUE_EYED_DAISY = registerBlock("blue_eyed_daisy",
+            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BLUE_EYED_DAISY = registerBlockWithoutItem("potted_blue_eyed_daisy",
+            new FlowerPotBlock(BLUE_EYED_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
+    public static final Block GERBERA_DAISY = registerBlock("gerbera_daisy",
+            new FlowerBlock(StatusEffects.REGENERATION, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_GERBERA_DAISY = registerBlockWithoutItem("potted_gerbera_daisy",
+            new FlowerPotBlock(GERBERA_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
+    public static final Block MICHAELMAS_DAISY = registerBlock("michaelmas_daisy",
+            new FlowerBlock(StatusEffects.RESISTANCE, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_MICHAELMAS_DAISY = registerBlockWithoutItem("potted_michaelmas_daisy",
+            new FlowerPotBlock(MICHAELMAS_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
+
+    public static final Block PUFFY_DANDELION = registerBlock("puffy_dandelion",
+            new PuffyDandelionBlock(StatusEffects.SATURATION, 3,FabricBlockSettings.copyOf(Blocks.DANDELION)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_PUFFY_DANDELION = registerBlockWithoutItem("potted_puffy_dandelion",
+            new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);

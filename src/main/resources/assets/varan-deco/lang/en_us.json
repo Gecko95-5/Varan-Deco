@@ -813,24 +813,30 @@
 
   "block.varan-deco.yellow_tulip": "Yellow Tulip",
   "block.varan-deco.potted_yellow_tulip": "Potted Yellow Tulip",
-
   "block.varan-deco.purple_tulip": "Purple Tulip",
   "block.varan-deco.potted_purple_tulip": "Potted Purple Tulip",
-
   "block.varan-deco.magenta_tulip": "Magenta Tulip",
   "block.varan-deco.potted_magenta_tulip": "Potted Magenta Tulip",
-
   "block.varan-deco.black_tulip": "Black Tulip",
   "block.varan-deco.potted_black_tulip": "Potted Black Tulip",
-
   "block.varan-deco.green_tulip": "Green Tulip",
   "block.varan-deco.potted_green_tulip": "Potted Green Tulip",
-
   "block.varan-deco.blue_tulip": "Blue Tulip",
   "block.varan-deco.potted_blue_tulip": "Potted Blue Tulip",
-
   "block.varan-deco.cyan_tulip": "Cyan Tulip",
   "block.varan-deco.potted_cyan_tulip": "Potted Cyan Tulip",
+
+  "block.varan-deco.barberton_daisy": "Barberton Daisy",
+  "block.varan-deco.potted_barberton_daisy": "Potted Barberton Daisy",
+  "block.varan-deco.blue_eyed_daisy": "Blue-Eyed Daisy",
+  "block.varan-deco.potted_blue_eyed_daisy": "Potted Blue-Eyed Daisy",
+  "block.varan-deco.gerbera_daisy": "Gerbera Daisy",
+  "block.varan-deco.potted_gerbera_daisy": "Potted Gerbera Daisy",
+  "block.varan-deco.michaelmas_daisy": "Michaelmas Daisy",
+  "block.varan-deco.potted_michaelmas_daisy": "Potted Michaelmas Daisy",
+
+  "block.varan-deco.puffy_dandelion": "Puffy Dandelion",
+  "block.varan-deco.potted_puffy_dandelion": "Potted Puffy Dandelion",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }
