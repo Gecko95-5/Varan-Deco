@@ -899,7 +899,7 @@ public class DecoBlocks {
     public static final Block POTTED_BLUE_EYED_DAISY = registerBlockWithoutItem("potted_blue_eyed_daisy",
             new FlowerPotBlock(BLUE_EYED_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
     public static final Block GERBERA_DAISY = registerBlock("gerbera_daisy",
-            new FlowerBlock(StatusEffects.REGENERATION, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+            new FlowerBlock(StatusEffects.REGENERATION, 5,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
                 DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_GERBERA_DAISY = registerBlockWithoutItem("potted_gerbera_daisy",
             new FlowerPotBlock(GERBERA_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
@@ -914,6 +914,33 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_PUFFY_DANDELION = registerBlockWithoutItem("potted_puffy_dandelion",
             new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
+
+    public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
+            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_CALIFORNIA_POPPY = registerBlockWithoutItem("potted_california_poppy",
+            new FlowerPotBlock(CALIFORNIA_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block SALMON_POPPY = registerBlock("salmon_poppy",
+            new FlowerBlock(StatusEffects.BLINDNESS, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_SALMON_POPPY = registerBlockWithoutItem("potted_salmon_poppy",
+            new FlowerPotBlock(SALMON_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block YELLOW_ORCHID = registerBlock("yellow_orchid",
+            new FlowerBlock(StatusEffects.SATURATION, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid",
+            new FlowerPotBlock(YELLOW_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+    public static final Block WHITE_ORCHID = registerBlock("white_orchid",
+            new FlowerBlock(StatusEffects.GLOWING, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_WHITE_ORCHID = registerBlockWithoutItem("potted_white_orchid",
+            new FlowerPotBlock(WHITE_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+    public static final Block PINK_ORCHID = registerBlock("pink_orchid",
+            new FlowerBlock(StatusEffects.SLOW_FALLING, 7,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_PINK_ORCHID = registerBlockWithoutItem("potted_pink_orchid",
+            new FlowerPotBlock(PINK_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);

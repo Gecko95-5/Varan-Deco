@@ -838,5 +838,17 @@
   "block.varan-deco.puffy_dandelion": "Puffy Dandelion",
   "block.varan-deco.potted_puffy_dandelion": "Potted Puffy Dandelion",
 
+  "block.varan-deco.california_poppy": "California Poppy",
+  "block.varan-deco.potted_california_poppy": "Potted California Poppy",
+  "block.varan-deco.salmon_poppy": "Salmon Poppy",
+  "block.varan-deco.potted_salmon_poppy": "Potted Salmon Poppy",
+
+  "block.varan-deco.yellow_orchid": "Yellow Orchid",
+  "block.varan-deco.potted_yellow_orchid": "Potted Yellow Orchid",
+  "block.varan-deco.white_orchid": "White Orchid",
+  "block.varan-deco.potted_white_orchid": "Potted White Orchid",
+  "block.varan-deco.pink_orchid": "Pink Orchid",
+  "block.varan-deco.potted_pink_orchid": "Potted Pink Orchid",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

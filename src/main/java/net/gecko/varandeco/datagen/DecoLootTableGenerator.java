@@ -1320,5 +1320,27 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_puffy_dandelion"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_PUFFY_DANDELION));
 
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/california_poppy"),
+                BlockLootTableGenerator.drops(DecoBlocks.CALIFORNIA_POPPY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_california_poppy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_CALIFORNIA_POPPY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/salmon_poppy"),
+                BlockLootTableGenerator.drops(DecoBlocks.SALMON_POPPY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_salmon_poppy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_SALMON_POPPY));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_orchid"),
+                BlockLootTableGenerator.drops(DecoBlocks.WHITE_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_white_orchid"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_WHITE_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_orchid"),
+                BlockLootTableGenerator.drops(DecoBlocks.YELLOW_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_yellow_orchid"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_YELLOW_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_orchid"),
+                BlockLootTableGenerator.drops(DecoBlocks.PINK_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_pink_orchid"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_PINK_ORCHID));
+
     }
 }

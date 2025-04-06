@@ -888,7 +888,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLUE_EYED_DAISY)
                 .add(DecoBlocks.GERBERA_DAISY)
                 .add(DecoBlocks.MICHAELMAS_DAISY)
-                .add(DecoBlocks.PUFFY_DANDELION);
+                .add(DecoBlocks.PUFFY_DANDELION)
+                .add(DecoBlocks.CALIFORNIA_POPPY)
+                .add(DecoBlocks.SALMON_POPPY)
+                .add(DecoBlocks.YELLOW_ORCHID)
+                .add(DecoBlocks.WHITE_ORCHID)
+                .add(DecoBlocks.PINK_ORCHID);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -902,6 +907,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_BLUE_EYED_DAISY)
                 .add(DecoBlocks.POTTED_GERBERA_DAISY)
                 .add(DecoBlocks.POTTED_MICHAELMAS_DAISY)
-                .add(DecoBlocks.POTTED_PUFFY_DANDELION);
+                .add(DecoBlocks.POTTED_PUFFY_DANDELION)
+                .add(DecoBlocks.POTTED_CALIFORNIA_POPPY)
+                .add(DecoBlocks.POTTED_SALMON_POPPY)
+                .add(DecoBlocks.POTTED_YELLOW_ORCHID)
+                .add(DecoBlocks.POTTED_WHITE_ORCHID)
+                .add(DecoBlocks.POTTED_PINK_ORCHID);
     }
 }

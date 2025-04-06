@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:white_dye_from_white_orchid"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_orchid": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:white_orchid"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_orchid",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:white_dye_from_white_orchid"
+    ]
+  }
+}

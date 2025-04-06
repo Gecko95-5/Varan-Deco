@@ -43,6 +43,19 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.PUFFY_DANDELION, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_PUFFY_DANDELION, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CALIFORNIA_POPPY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_CALIFORNIA_POPPY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SALMON_POPPY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_SALMON_POPPY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.YELLOW_ORCHID, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_YELLOW_ORCHID, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.PINK_ORCHID, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_PINK_ORCHID, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WHITE_ORCHID, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_WHITE_ORCHID, RenderLayer.getCutout());
+
+
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CACTUS_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CACTUS_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WARPED_WART_PLANT, RenderLayer.getCutout());

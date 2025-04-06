@@ -3386,5 +3386,36 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.MICHAELMAS_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.MICHAELMAS_DAISY))
                 .offerTo(exporter, new Identifier("purple_dye_from_michaelmas_daisy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.ORANGE_DYE)
+                .input(DecoBlocks.CALIFORNIA_POPPY)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CALIFORNIA_POPPY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CALIFORNIA_POPPY))
+                .offerTo(exporter, new Identifier("orange_dye_from_california_poppy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
+                .input(DecoBlocks.SALMON_POPPY)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SALMON_POPPY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SALMON_POPPY))
+                .offerTo(exporter, new Identifier("pink_dye_from_salmon_poppy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.WHITE_DYE)
+                .input(DecoBlocks.WHITE_ORCHID)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_ORCHID),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_ORCHID))
+                .offerTo(exporter, new Identifier("white_dye_from_white_orchid"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
+                .input(DecoBlocks.PINK_ORCHID)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_ORCHID),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_ORCHID))
+                .offerTo(exporter, new Identifier("pink_dye_from_pink_orchid"));
+
+        ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
+                .input(DecoBlocks.YELLOW_ORCHID)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_ORCHID),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_ORCHID))
+                .offerTo(exporter, new Identifier("yellow_dye_from_yellow_orchid"));
+
     }
 }

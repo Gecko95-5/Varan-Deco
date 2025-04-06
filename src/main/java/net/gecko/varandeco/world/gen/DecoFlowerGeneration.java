@@ -24,5 +24,9 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SAVANNA_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_PEAKS),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SAVANNA_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SWAMP),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SWAMP_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.RIVER),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_RIVER_PLACED.getKey().get());
     }
 }

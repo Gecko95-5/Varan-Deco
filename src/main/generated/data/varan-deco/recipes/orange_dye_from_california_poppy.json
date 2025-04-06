@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-deco:california_poppy"
+    }
+  ],
+  "result": {
+    "item": "minecraft:orange_dye"
+  }
+}

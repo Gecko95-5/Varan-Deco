@@ -44,6 +44,15 @@ public class VaranDeco implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.GERBERA_DAISY,60, 100);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.MICHAELMAS_DAISY,60, 100);
 
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.PUFFY_DANDELION,60, 100);
+
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CALIFORNIA_POPPY,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.SALMON_POPPY,60, 100);
+
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.YELLOW_ORCHID,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WHITE_ORCHID,60, 100);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.PINK_ORCHID,60, 100);
+
 		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.HEAVY_COPPER_BARS, DecoBlocks.WAXED_HEAVY_COPPER_BARS);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS, DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS, DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS);

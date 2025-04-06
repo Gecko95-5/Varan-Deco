@@ -171,6 +171,18 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PUFFY_DANDELION, DecoBlocks.POTTED_PUFFY_DANDELION,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.CALIFORNIA_POPPY, DecoBlocks.POTTED_CALIFORNIA_POPPY,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.SALMON_POPPY, DecoBlocks.POTTED_SALMON_POPPY,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_ORCHID, DecoBlocks.POTTED_YELLOW_ORCHID,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.WHITE_ORCHID, DecoBlocks.POTTED_WHITE_ORCHID,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PINK_ORCHID, DecoBlocks.POTTED_PINK_ORCHID,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.ACACIA_CRAFTING_TABLE);

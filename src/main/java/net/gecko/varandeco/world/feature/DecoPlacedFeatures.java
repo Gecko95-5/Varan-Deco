@@ -27,6 +27,15 @@ public class DecoPlacedFeatures {
             RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
             BiomePlacementModifier.of());
 
+    public static final RegistryEntry<PlacedFeature> DECO_SWAMP_PLACED = PlacedFeatures.register("deco_swamp_flowers_placed",
+            DecoConfiguredFeatures.DECO_SWAMP, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_RIVER_PLACED = PlacedFeatures.register("deco_river_flowers_placed",
+            DecoConfiguredFeatures.DECO_RIVER,NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+            RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+            BiomePlacementModifier.of());
+
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
     }
