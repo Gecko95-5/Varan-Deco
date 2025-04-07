@@ -28,5 +28,56 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SWAMP_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.RIVER),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_RIVER_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SUNFLOWER_PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA_PLATEAU),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_SAVANNA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SNOWY_PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BIRCH_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BAMBOO_JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SPARSE_JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_HILLS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_GRAVELLY_HILLS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.RIVER),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FROZEN_RIVER),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROSE_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_MIDLANDS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ENDER_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_HIGHLANDS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ENDER_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_BARRENS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ENDER_PLACED.getKey().get());
+
     }
 }

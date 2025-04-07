@@ -7,6 +7,9 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
+import net.gecko.varandeco.block.roses.EnderRoseBlock;
+import net.gecko.varandeco.block.roses.EnderRoseBushBlock;
+import net.gecko.varandeco.block.roses.WitherRoseBushBlock;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
@@ -941,6 +944,24 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_PINK_ORCHID = registerBlockWithoutItem("potted_pink_orchid",
             new FlowerPotBlock(PINK_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+
+    public static final Block ROSE = registerBlock("rose",
+            new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
+            new FlowerPotBlock(ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block ENDER_ROSE = registerBlock("ender_rose",
+            new EnderRoseBlock(StatusEffects.LEVITATION,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_ENDER_ROSE = registerBlockWithoutItem("potted_ender_rose",
+            new FlowerPotBlock(ENDER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block WITHER_ROSE_BUSH = registerBlock("wither_rose_bush",
+            new WitherRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ENDER_ROSE_BUSH = registerBlock("ender_rose_bush",
+            new EnderRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);

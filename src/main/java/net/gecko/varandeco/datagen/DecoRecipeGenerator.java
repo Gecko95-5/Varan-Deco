@@ -3417,5 +3417,52 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_ORCHID))
                 .offerTo(exporter, new Identifier("yellow_dye_from_yellow_orchid"));
 
+        ShapelessRecipeJsonBuilder.create(Items.RED_DYE)
+                .input(DecoBlocks.ROSE)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
+                .offerTo(exporter, new Identifier("red_dye_from_rose"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
+                .input(DecoBlocks.ENDER_ROSE)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
+                .offerTo(exporter, new Identifier("purple_dye_from_ender_rose"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE,4)
+                .input(DecoBlocks.ENDER_ROSE_BUSH)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE_BUSH),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
+                .offerTo(exporter, new Identifier("purple_dye_from_ender_rose_bush"));
+
+        ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE,4)
+                .input(DecoBlocks.WITHER_ROSE_BUSH)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WITHER_ROSE_BUSH),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WITHER_ROSE_BUSH))
+                .offerTo(exporter, new Identifier("black_dye_from_wither_rose_bush"));
+
+        ShapedRecipeJsonBuilder.create(Items.ROSE_BUSH)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.ROSE)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.ROSE_BUSH)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.ENDER_ROSE_BUSH)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.ENDER_ROSE)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.ENDER_ROSE_BUSH)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WITHER_ROSE_BUSH)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.WITHER_ROSE)
+                .criterion(RecipeProvider.hasItem(Items.WITHER_ROSE),
+                        RecipeProvider.conditionsFromItem(Items.WITHER_ROSE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WITHER_ROSE_BUSH)));
     }
 }

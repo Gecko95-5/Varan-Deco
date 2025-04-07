@@ -850,5 +850,13 @@
   "block.varan-deco.pink_orchid": "Pink Orchid",
   "block.varan-deco.potted_pink_orchid": "Potted Pink Orchid",
 
+  "block.varan-deco.rose": "Rose",
+  "block.varan-deco.potted_rose": "Potted Rose",
+  "block.varan-deco.ender_rose": "Ender Rose",
+  "block.varan-deco.potted_ender_rose": "Potted Ender Rose",
+
+  "block.varan-deco.ender_rose_bush": "Ender Rose Bush",
+  "block.varan-deco.wither_rose_bush": "Wither Rose Bush",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

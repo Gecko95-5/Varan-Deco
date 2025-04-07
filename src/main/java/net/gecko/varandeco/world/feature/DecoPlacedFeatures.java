@@ -1,8 +1,11 @@
 package net.gecko.varandeco.world.feature;
 
+import net.minecraft.util.math.intprovider.ClampedIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.feature.VegetationConfiguredFeatures;
 import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
@@ -35,6 +38,20 @@ public class DecoPlacedFeatures {
             DecoConfiguredFeatures.DECO_RIVER,NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
             RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
             BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_ROSE_PLACED = PlacedFeatures.register("deco_rose_placed",
+            DecoConfiguredFeatures.DECO_ROSE, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_ENDER_PLACED = PlacedFeatures.register("deco_ender_placed",
+            DecoConfiguredFeatures.DECO_ENDER, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_WITHER_PLACED = PlacedFeatures.register("deco_wither_placed",
+            DecoConfiguredFeatures.DECO_WITHER, RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_SOULSAND_PLACED = PlacedFeatures.register("deco_soulsand_placed",
+            DecoConfiguredFeatures.DECO_SOULSAND, RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
 
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
