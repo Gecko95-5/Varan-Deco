@@ -94,6 +94,15 @@ public class DecoConfiguredFeatures {
                             0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
                             0.005F, List.of(Blocks.NETHER_WART.getDefaultState(), DecoBlocks.WARPED_WART_PLANT.getDefaultState()))))));
 
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_RED_SUNFLOWER = ConfiguredFeatures.register(
+            "deco_red_sunflower", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                    new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.RED_SUNFLOWER)))
+    );
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_NOVA_STARFLOWER = ConfiguredFeatures.register(
+            "deco_nova_starflower", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                    new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.NOVA_STARFLOWER)))
+    );
+
     public static void registerConfiguredFeatures() {
         VaranDeco.LOGGER.debug("Registering the ModConfiguredFeatures for " + VaranDeco.MOD_ID);
     }

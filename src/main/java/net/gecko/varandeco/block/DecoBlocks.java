@@ -963,6 +963,13 @@ public class DecoBlocks {
             new EnderRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block RED_SUNFLOWER = registerBlock("red_sunflower",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block NOVA_STARFLOWER = registerBlock("nova_starflower",
+            new NovaStarflowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",

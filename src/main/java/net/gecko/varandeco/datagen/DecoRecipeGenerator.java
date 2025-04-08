@@ -3326,37 +3326,31 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_TULIP))
                 .offerTo(exporter, new Identifier("yellow_dye_from_yellow_tulip"));
-
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.PURPLE_TULIP)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PURPLE_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PURPLE_TULIP))
                 .offerTo(exporter, new Identifier("purple_dye_from_purple_tulip"));
-
         ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
                 .input(DecoBlocks.MAGENTA_TULIP)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.MAGENTA_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.MAGENTA_TULIP))
                 .offerTo(exporter, new Identifier("magenta_dye_from_magenta_tulip"));
-
         ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE)
                 .input(DecoBlocks.BLACK_TULIP)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLACK_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLACK_TULIP))
                 .offerTo(exporter, new Identifier("black_dye_from_black_tulip"));
-
         ShapelessRecipeJsonBuilder.create(Items.LIME_DYE)
                 .input(DecoBlocks.GREEN_TULIP)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GREEN_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GREEN_TULIP))
                 .offerTo(exporter, new Identifier("lime_dye_from_green_tulip"));
-
         ShapelessRecipeJsonBuilder.create(Items.LIGHT_BLUE_DYE)
                 .input(DecoBlocks.BLUE_TULIP)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_TULIP))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_blue_tulip"));
-
         ShapelessRecipeJsonBuilder.create(Items.CYAN_DYE)
                 .input(DecoBlocks.CYAN_TULIP)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CYAN_TULIP),
@@ -3368,19 +3362,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BARBERTON_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BARBERTON_DAISY))
                 .offerTo(exporter, new Identifier("red_dye_from_barberton_daisy"));
-
         ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
                 .input(DecoBlocks.BLUE_EYED_DAISY)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_EYED_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_EYED_DAISY))
                 .offerTo(exporter, new Identifier("yellow_dye_from_blue_eyed_daisy"));
-
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.GERBERA_DAISY)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GERBERA_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GERBERA_DAISY))
                 .offerTo(exporter, new Identifier("pink_dye_from_gerbera_daisy"));
-
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.MICHAELMAS_DAISY)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.MICHAELMAS_DAISY),
@@ -3392,7 +3383,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CALIFORNIA_POPPY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CALIFORNIA_POPPY))
                 .offerTo(exporter, new Identifier("orange_dye_from_california_poppy"));
-
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.SALMON_POPPY)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.SALMON_POPPY),
@@ -3404,13 +3394,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_ORCHID),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_ORCHID))
                 .offerTo(exporter, new Identifier("white_dye_from_white_orchid"));
-
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.PINK_ORCHID)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_ORCHID),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_ORCHID))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_orchid"));
-
         ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
                 .input(DecoBlocks.YELLOW_ORCHID)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_ORCHID),
@@ -3422,19 +3410,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
                 .offerTo(exporter, new Identifier("red_dye_from_rose"));
-
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.ENDER_ROSE)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
                 .offerTo(exporter, new Identifier("purple_dye_from_ender_rose"));
-
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE,4)
                 .input(DecoBlocks.ENDER_ROSE_BUSH)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE_BUSH),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
                 .offerTo(exporter, new Identifier("purple_dye_from_ender_rose_bush"));
-
         ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE,4)
                 .input(DecoBlocks.WITHER_ROSE_BUSH)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WITHER_ROSE_BUSH),
@@ -3448,7 +3433,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.ROSE_BUSH)));
-
         ShapedRecipeJsonBuilder.create(DecoBlocks.ENDER_ROSE_BUSH)
                 .pattern("##")
                 .pattern("##")
@@ -3456,7 +3440,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.ENDER_ROSE_BUSH)));
-
         ShapedRecipeJsonBuilder.create(DecoBlocks.WITHER_ROSE_BUSH)
                 .pattern("##")
                 .pattern("##")
@@ -3464,5 +3447,17 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.WITHER_ROSE),
                         RecipeProvider.conditionsFromItem(Items.WITHER_ROSE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WITHER_ROSE_BUSH)));
+
+        ShapelessRecipeJsonBuilder.create(Items.RED_DYE,2)
+                .input(DecoBlocks.RED_SUNFLOWER)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.RED_SUNFLOWER),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.RED_SUNFLOWER))
+                .offerTo(exporter, new Identifier("red_dye_from_red_sunflower"));
+
+        ShapelessRecipeJsonBuilder.create(Items.WHITE_DYE,2)
+                .input(DecoBlocks.NOVA_STARFLOWER)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.NOVA_STARFLOWER),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
+                .offerTo(exporter, new Identifier("white_dye_from_nova_starflower"));
     }
 }

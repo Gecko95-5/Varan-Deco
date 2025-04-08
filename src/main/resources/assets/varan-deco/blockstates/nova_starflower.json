@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "varan-deco:block/nova_starflower_bottom"
+    },
+    "half=upper": {
+      "model": "varan-deco:block/nova_starflower_top"
+    }
+  }
+}
