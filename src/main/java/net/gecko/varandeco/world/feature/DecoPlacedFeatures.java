@@ -61,6 +61,10 @@ public class DecoPlacedFeatures {
             DecoConfiguredFeatures.DECO_NOVA_STARFLOWER, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
+    public static final RegistryEntry<PlacedFeature> DECO_PAEONIA_PLACED = PlacedFeatures.register("deco_paeonia_placed",
+            DecoConfiguredFeatures.DECO_PAEONIA, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
     }

@@ -1350,5 +1350,14 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.ENDER_ROSE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_ender_rose"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_ENDER_ROSE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/paeonia"),
+                BlockLootTableGenerator.drops(DecoBlocks.PAEONIA));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_paeonia"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_PAEONIA));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lavender"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAVENDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_lavender"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_LAVENDER));
     }
 }

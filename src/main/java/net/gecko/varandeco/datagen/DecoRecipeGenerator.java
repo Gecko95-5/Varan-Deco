@@ -3459,5 +3459,26 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.NOVA_STARFLOWER),
                         RecipeProvider.conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
                 .offerTo(exporter, new Identifier("white_dye_from_nova_starflower"));
+
+        ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
+                .input(DecoBlocks.PAEONIA)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.PAEONIA),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.PAEONIA))
+                .offerTo(exporter, new Identifier("pink_dye_from_paeonia"));
+        ShapedRecipeJsonBuilder.create(Items.PEONY)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.PAEONIA)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.PAEONIA),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.PAEONIA))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.PEONY)));
+
+        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
+                .input(DecoBlocks.LAVENDER)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.LAVENDER),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.LAVENDER))
+                .offerTo(exporter, new Identifier("purple_dye_from_lavender"));
+
+        offerReversibleCompactingRecipes(exporter, Items.COPPER_INGOT, DecoItems.COPPER_NUGGET);
     }
 }

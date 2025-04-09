@@ -861,5 +861,10 @@
   "block.varan-deco.red_sunflower": "Red-Sunflower",
   "block.varan-deco.nova_starflower": "Nova-Starflower",
 
+  "block.varan-deco.paeonia": "Paeonia",
+  "block.varan-deco.potted_paeonia": "Potted Paeonia",
+  "block.varan-deco.lavender": "Lavender",
+  "block.varan-deco.potted_lavender": "Potted Lavender",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

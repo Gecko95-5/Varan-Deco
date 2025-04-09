@@ -895,7 +895,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WHITE_ORCHID)
                 .add(DecoBlocks.PINK_ORCHID)
                 .add(DecoBlocks.ROSE)
-                .add(DecoBlocks.ENDER_ROSE);
+                .add(DecoBlocks.ENDER_ROSE)
+                .add(DecoBlocks.PAEONIA)
+                .add(DecoBlocks.LAVENDER);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -916,7 +918,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_WHITE_ORCHID)
                 .add(DecoBlocks.POTTED_PINK_ORCHID)
                 .add(DecoBlocks.POTTED_ROSE)
-                .add(DecoBlocks.POTTED_ENDER_ROSE);
+                .add(DecoBlocks.POTTED_ENDER_ROSE)
+                .add(DecoBlocks.POTTED_PAEONIA)
+                .add(DecoBlocks.POTTED_LAVENDER);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)

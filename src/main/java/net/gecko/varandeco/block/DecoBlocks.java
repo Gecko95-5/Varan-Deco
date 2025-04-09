@@ -970,6 +970,18 @@ public class DecoBlocks {
             new NovaStarflowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block PAEONIA = registerBlock("paeonia",
+            new FlowerBlock(StatusEffects.SLOWNESS,7,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_PAEONIA = registerBlockWithoutItem("potted_paeonia",
+            new FlowerPotBlock(PAEONIA,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block LAVENDER = registerBlock("lavender",
+            new FlowerBlock(StatusEffects.HASTE,5,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
+            new FlowerPotBlock(LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
