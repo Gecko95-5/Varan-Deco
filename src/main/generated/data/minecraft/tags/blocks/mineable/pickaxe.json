@@ -257,6 +257,15 @@
     "varan-deco:blackstone_pressure_plate",
     "varan-deco:polished_stone_pressure_plate",
     "varan-deco:polished_stone_button",
-    "#varan-deco:copper_bars"
+    "#varan-deco:copper_bars",
+    "#varan-deco:copper_lantern",
+    "varan-deco:copper_chain",
+    "varan-deco:waxed_copper_chain",
+    "varan-deco:exposed_copper_chain",
+    "varan-deco:waxed_exposed_copper_chain",
+    "varan-deco:weathered_copper_chain",
+    "varan-deco:waxed_exposed_copper_chain",
+    "varan-deco:oxidized_copper_chain",
+    "varan-deco:waxed_oxidized_copper_chain"
   ]
 }

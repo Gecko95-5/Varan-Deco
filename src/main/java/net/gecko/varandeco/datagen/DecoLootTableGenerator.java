@@ -1359,5 +1359,56 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.LAVENDER));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_lavender"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_LAVENDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/exposed_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.EXPOSED_COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_exposed_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/weathered_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WEATHERED_COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_weathered_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oxidized_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OXIDIZED_COPPER_CHAIN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_chain"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/exposed_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.EXPOSED_COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_exposed_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/weathered_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WEATHERED_COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_weathered_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oxidized_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OXIDIZED_COPPER_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/exposed_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_exposed_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/weathered_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_weathered_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oxidized_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_soul_lantern"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN));
     }
 }

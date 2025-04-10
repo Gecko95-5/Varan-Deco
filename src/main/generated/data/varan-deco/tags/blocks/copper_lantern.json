@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:copper_lantern",
+    "varan-deco:waxed_copper_lantern",
+    "varan-deco:exposed_copper_lantern",
+    "varan-deco:waxed_exposed_copper_lantern",
+    "varan-deco:weathered_copper_lantern",
+    "varan-deco:waxed_exposed_copper_lantern",
+    "varan-deco:oxidized_copper_lantern",
+    "varan-deco:waxed_oxidized_copper_lantern",
+    "varan-deco:copper_soul_lantern",
+    "varan-deco:waxed_copper_soul_lantern",
+    "varan-deco:exposed_copper_soul_lantern",
+    "varan-deco:waxed_exposed_copper_soul_lantern",
+    "varan-deco:weathered_copper_soul_lantern",
+    "varan-deco:waxed_exposed_copper_soul_lantern",
+    "varan-deco:oxidized_copper_soul_lantern",
+    "varan-deco:waxed_oxidized_copper_soul_lantern"
+  ]
+}

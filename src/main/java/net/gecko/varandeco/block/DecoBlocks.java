@@ -7,6 +7,9 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
+import net.gecko.varandeco.block.oxidizable.OxidizableChainBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizableLanternBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizablePaneBlock;
 import net.gecko.varandeco.block.roses.EnderRoseBlock;
 import net.gecko.varandeco.block.roses.EnderRoseBushBlock;
 import net.gecko.varandeco.block.roses.WitherRoseBushBlock;
@@ -854,6 +857,39 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
             new MagmaBrickSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block PUFFY_DANDELION = registerBlock("puffy_dandelion",
+            new PuffyDandelionBlock(StatusEffects.SATURATION, 3,FabricBlockSettings.copyOf(Blocks.DANDELION)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_PUFFY_DANDELION = registerBlockWithoutItem("potted_puffy_dandelion",
+            new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
+
+    public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
+            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_CALIFORNIA_POPPY = registerBlockWithoutItem("potted_california_poppy",
+            new FlowerPotBlock(CALIFORNIA_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block SALMON_POPPY = registerBlock("salmon_poppy",
+            new FlowerBlock(StatusEffects.BLINDNESS, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_SALMON_POPPY = registerBlockWithoutItem("potted_salmon_poppy",
+            new FlowerPotBlock(SALMON_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block YELLOW_ORCHID = registerBlock("yellow_orchid",
+            new FlowerBlock(StatusEffects.SATURATION, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid",
+            new FlowerPotBlock(YELLOW_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+    public static final Block WHITE_ORCHID = registerBlock("white_orchid",
+            new FlowerBlock(StatusEffects.GLOWING, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_WHITE_ORCHID = registerBlockWithoutItem("potted_white_orchid",
+            new FlowerPotBlock(WHITE_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+    public static final Block PINK_ORCHID = registerBlock("pink_orchid",
+            new FlowerBlock(StatusEffects.SLOW_FALLING, 7,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_PINK_ORCHID = registerBlockWithoutItem("potted_pink_orchid",
+            new FlowerPotBlock(PINK_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+
     public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
                 DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -912,64 +948,6 @@ public class DecoBlocks {
     public static final Block POTTED_MICHAELMAS_DAISY = registerBlockWithoutItem("potted_michaelmas_daisy",
             new FlowerPotBlock(MICHAELMAS_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
 
-    public static final Block PUFFY_DANDELION = registerBlock("puffy_dandelion",
-            new PuffyDandelionBlock(StatusEffects.SATURATION, 3,FabricBlockSettings.copyOf(Blocks.DANDELION)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_PUFFY_DANDELION = registerBlockWithoutItem("potted_puffy_dandelion",
-            new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
-
-    public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.POPPY)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_CALIFORNIA_POPPY = registerBlockWithoutItem("potted_california_poppy",
-            new FlowerPotBlock(CALIFORNIA_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
-    public static final Block SALMON_POPPY = registerBlock("salmon_poppy",
-            new FlowerBlock(StatusEffects.BLINDNESS, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_SALMON_POPPY = registerBlockWithoutItem("potted_salmon_poppy",
-            new FlowerPotBlock(SALMON_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
-
-    public static final Block YELLOW_ORCHID = registerBlock("yellow_orchid",
-            new FlowerBlock(StatusEffects.SATURATION, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid",
-            new FlowerPotBlock(YELLOW_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
-    public static final Block WHITE_ORCHID = registerBlock("white_orchid",
-            new FlowerBlock(StatusEffects.GLOWING, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_WHITE_ORCHID = registerBlockWithoutItem("potted_white_orchid",
-            new FlowerPotBlock(WHITE_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
-    public static final Block PINK_ORCHID = registerBlock("pink_orchid",
-            new FlowerBlock(StatusEffects.SLOW_FALLING, 7,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_PINK_ORCHID = registerBlockWithoutItem("potted_pink_orchid",
-            new FlowerPotBlock(PINK_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
-
-    public static final Block ROSE = registerBlock("rose",
-            new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
-            new FlowerPotBlock(ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
-    public static final Block ENDER_ROSE = registerBlock("ender_rose",
-            new EnderRoseBlock(StatusEffects.LEVITATION,FabricBlockSettings.copyOf(Blocks.POPPY)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POTTED_ENDER_ROSE = registerBlockWithoutItem("potted_ender_rose",
-            new FlowerPotBlock(ENDER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
-
-    public static final Block WITHER_ROSE_BUSH = registerBlock("wither_rose_bush",
-            new WitherRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block ENDER_ROSE_BUSH = registerBlock("ender_rose_bush",
-            new EnderRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-
-    public static final Block RED_SUNFLOWER = registerBlock("red_sunflower",
-            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block NOVA_STARFLOWER = registerBlock("nova_starflower",
-            new NovaStarflowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-
     public static final Block PAEONIA = registerBlock("paeonia",
             new FlowerBlock(StatusEffects.SLOWNESS,7,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -981,6 +959,17 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
             new FlowerPotBlock(LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block ROSE = registerBlock("rose",
+            new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
+            new FlowerPotBlock(ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block ENDER_ROSE = registerBlock("ender_rose",
+            new EnderRoseBlock(StatusEffects.LEVITATION,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_ENDER_ROSE = registerBlockWithoutItem("potted_ender_rose",
+            new FlowerPotBlock(ENDER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1104,6 +1093,27 @@ public class DecoBlocks {
                     .mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_OXIDIZED_HEAVY_COPPER_BARS = registerBlock("waxed_oxidized_heavy_copper_bars",
             new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COPPER_CHAIN = registerBlock("copper_chain",
+            new OxidizableChainBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.CHAIN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_COPPER_CHAIN = registerBlock("waxed_copper_chain",
+            new ChainBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_COPPER_CHAIN = registerBlock("exposed_copper_chain",
+            new OxidizableChainBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.CHAIN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_COPPER_CHAIN = registerBlock("waxed_exposed_copper_chain",
+            new ChainBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_COPPER_CHAIN = registerBlock("weathered_copper_chain",
+            new OxidizableChainBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.CHAIN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_COPPER_CHAIN = registerBlock("waxed_weathered_copper_chain",
+            new ChainBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_COPPER_CHAIN = registerBlock("oxidized_copper_chain",
+            new OxidizableChainBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.CHAIN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_COPPER_CHAIN = registerBlock("waxed_oxidized_copper_chain",
+            new ChainBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block STONE_WALL = registerBlock("stone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1343,6 +1353,20 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new MagmaWallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block RED_SUNFLOWER = registerBlock("red_sunflower",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block NOVA_STARFLOWER = registerBlock("nova_starflower",
+            new NovaStarflowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block WITHER_ROSE_BUSH = registerBlock("wither_rose_bush",
+            new WitherRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ENDER_ROSE_BUSH = registerBlock("ender_rose_bush",
+            new EnderRoseBushBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane",
             new TintedGlassPaneBlock(FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS_PANE).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_GLASS_PANE = registerBlock("hardened_glass_pane",
@@ -1483,6 +1507,48 @@ public class DecoBlocks {
     public static final Block BLACKSTONE_STONECUTTER = registerBlock("blackstone_stonecutter",
             new BlackstoneStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COPPER_LANTERN = registerBlock("copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_COPPER_LANTERN = registerBlock("waxed_copper_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_COPPER_LANTERN = registerBlock("exposed_copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_COPPER_LANTERN = registerBlock("waxed_exposed_copper_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_COPPER_LANTERN = registerBlock("weathered_copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_COPPER_LANTERN = registerBlock("waxed_weathered_copper_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_COPPER_LANTERN = registerBlock("oxidized_copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_COPPER_LANTERN = registerBlock("waxed_oxidized_copper_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COPPER_SOUL_LANTERN = registerBlock("copper_soul_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_COPPER_SOUL_LANTERN = registerBlock("waxed_copper_soul_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_SOUL_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_COPPER_SOUL_LANTERN = registerBlock("exposed_copper_soul_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_COPPER_SOUL_LANTERN = registerBlock("waxed_exposed_copper_soul_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_COPPER_SOUL_LANTERN = registerBlock("weathered_copper_soul_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_COPPER_SOUL_LANTERN = registerBlock("waxed_weathered_copper_soul_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("oxidized_copper_soul_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("waxed_oxidized_copper_soul_lantern",
+            new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
             new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)),

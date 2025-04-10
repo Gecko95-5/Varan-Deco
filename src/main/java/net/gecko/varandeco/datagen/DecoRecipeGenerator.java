@@ -3479,6 +3479,39 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.LAVENDER))
                 .offerTo(exporter, new Identifier("purple_dye_from_lavender"));
 
-        offerReversibleCompactingRecipes(exporter, Items.COPPER_INGOT, DecoItems.COPPER_NUGGET);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.COPPER_LANTERN)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.TORCH)
+                .input('#', DecoItems.COPPER_NUGGET)
+                .criterion(RecipeProvider.hasItem(Items.TORCH),
+                        RecipeProvider.conditionsFromItem(Items.TORCH))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COPPER_LANTERN)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.COPPER_SOUL_LANTERN)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', Items.SOUL_TORCH)
+                .input('#', DecoItems.COPPER_NUGGET)
+                .criterion(RecipeProvider.hasItem(Items.SOUL_TORCH),
+                        RecipeProvider.conditionsFromItem(Items.SOUL_TORCH))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COPPER_SOUL_LANTERN)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.COPPER_CHAIN)
+                .pattern("#")
+                .pattern("X")
+                .pattern("#")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', DecoItems.COPPER_NUGGET)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COPPER_CHAIN)));
     }
 }

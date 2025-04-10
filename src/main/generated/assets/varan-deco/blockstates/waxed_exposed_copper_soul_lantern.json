@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "varan-deco:block/waxed_exposed_copper_soul_lantern"
+    },
+    "hanging=true": {
+      "model": "varan-deco:block/waxed_exposed_copper_soul_lantern_hanging"
+    }
+  }
+}

@@ -199,6 +199,26 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.LAVENDER, DecoBlocks.POTTED_LAVENDER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerLantern(DecoBlocks.COPPER_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.EXPOSED_COPPER_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WEATHERED_COPPER_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.OXIDIZED_COPPER_LANTERN);
+
+        blockStateModelGenerator.registerLantern(DecoBlocks.COPPER_SOUL_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN);
+
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_COPPER_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_COPPER_SOUL_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
+
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.ACACIA_CRAFTING_TABLE);

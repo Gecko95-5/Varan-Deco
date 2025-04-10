@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "varan-deco:block/copper_lantern"
+    },
+    "hanging=true": {
+      "model": "varan-deco:block/copper_lantern_hanging"
+    }
+  }
+}
