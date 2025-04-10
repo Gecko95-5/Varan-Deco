@@ -866,5 +866,41 @@
   "block.varan-deco.lavender": "Lavender",
   "block.varan-deco.potted_lavender": "Potted Lavender",
 
+  "block.varan-deco.copper_chain": "Copper Chain",
+  "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
+
+  "block.varan-deco.exposed_copper_chain": "Exposed Copper Chain",
+  "block.varan-deco.waxed_exposed_copper_chain": "Waxed Exposed Copper Chain",
+
+  "block.varan-deco.weathered_copper_chain": "Weathered Copper Chain",
+  "block.varan-deco.waxed_weathered_copper_chain": "Waxed Weathered Copper Chain",
+
+  "block.varan-deco.oxidized_copper_chain": "Oxidized Copper Chain",
+  "block.varan-deco.waxed_oxidized_copper_chain": "Waxed Oxidized Copper Chain",
+
+  "block.varan-deco.copper_lantern": "Copper Lantern",
+  "block.varan-deco.waxed_copper_lantern": "Waxed Copper Lantern",
+
+  "block.varan-deco.exposed_copper_lantern": "Exposed Copper Lantern",
+  "block.varan-deco.waxed_exposed_copper_lantern": "Waxed Exposed Copper Lantern",
+
+  "block.varan-deco.weathered_copper_lantern": "Weathered Copper Lantern",
+  "block.varan-deco.waxed_weathered_copper_lantern": "Waxed Weathered Copper Lantern",
+
+  "block.varan-deco.oxidized_copper_lantern": "Oxidized Copper Lantern",
+  "block.varan-deco.waxed_oxidized_copper_lantern": "Waxed Oxidized Copper Lantern",
+
+  "block.varan-deco.copper_soul_lantern": "Copper Soul Lantern",
+  "block.varan-deco.waxed_copper_soul_lantern": "Waxed Copper Soul Lantern",
+
+  "block.varan-deco.exposed_copper_soul_lantern": "Exposed Copper Soul Lantern",
+  "block.varan-deco.waxed_exposed_copper_soul_lantern": "Waxed Exposed Copper Soul Lantern",
+
+  "block.varan-deco.weathered_copper_soul_lantern": "Weathered Copper Soul Lantern",
+  "block.varan-deco.waxed_weathered_copper_soul_lantern": "Waxed Weathered Copper Soul Lantern",
+
+  "block.varan-deco.oxidized_copper_soul_lantern": "Oxidized Copper Soul Lantern",
+  "block.varan-deco.waxed_oxidized_copper_soul_lantern": "Waxed Oxidized Copper Soul Lantern",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

@@ -91,6 +91,33 @@ public class VaranDeco implements ModInitializer {
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS, DecoBlocks.WEATHERED_LIGHT_COPPER_BARS);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS, DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS);
 
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_LANTERN, DecoBlocks.WAXED_COPPER_LANTERN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_LANTERN, DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_LANTERN, DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_LANTERN, DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_LANTERN, DecoBlocks.EXPOSED_COPPER_LANTERN);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_LANTERN, DecoBlocks.WEATHERED_COPPER_LANTERN);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_LANTERN, DecoBlocks.OXIDIZED_COPPER_LANTERN);
+
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_SOUL_LANTERN, DecoBlocks.WAXED_COPPER_SOUL_LANTERN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN, DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN, DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN, DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
+
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_SOUL_LANTERN, DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN, DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN, DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN);
+
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_CHAIN, DecoBlocks.WAXED_COPPER_CHAIN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_CHAIN, DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_CHAIN, DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_CHAIN, DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_CHAIN, DecoBlocks.EXPOSED_COPPER_CHAIN);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_CHAIN, DecoBlocks.WEATHERED_COPPER_CHAIN);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_CHAIN, DecoBlocks.OXIDIZED_COPPER_CHAIN);
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }

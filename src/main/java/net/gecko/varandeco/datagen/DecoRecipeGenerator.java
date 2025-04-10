@@ -3279,8 +3279,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.LIGHT_COPPER_BARS)));
 
-        offerReversibleCompactingRecipes(exporter, Items.COPPER_INGOT, DecoItems.COPPER_NUGGET);
-
         offerPressurePlateRecipe(exporter, DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_BUTTON)
