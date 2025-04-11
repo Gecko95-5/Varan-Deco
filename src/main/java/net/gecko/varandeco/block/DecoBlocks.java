@@ -312,6 +312,54 @@ public class DecoBlocks {
             new BlackIceBlock(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.BLACK).slipperiness(1.18F)
                     .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WHITE_BLOCK = registerBlock("white_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.WHITE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ORANGE_BLOCK = registerBlock("orange_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.ORANGE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MAGENTA_BLOCK = registerBlock("magenta_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.MAGENTA).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_BLUE_BLOCK = registerBlock("light_blue_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_BLUE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block YELLOW_BLOCK = registerBlock("yellow_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.YELLOW).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIME_BLOCK = registerBlock("lime_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PINK_BLOCK = registerBlock("pink_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PINK).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GRAY_BLOCK = registerBlock("gray_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GRAY).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_GRAY_BLOCK = registerBlock("light_gray_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_GRAY).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CYAN_BLOCK = registerBlock("cyan_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.CYAN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PURPLE_BLOCK = registerBlock("purple_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PURPLE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLUE_BLOCK = registerBlock("blue_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLUE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BROWN_BLOCK = registerBlock("brown_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BROWN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GREEN_BLOCK = registerBlock("green_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GREEN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block RED_BLOCK = registerBlock("red_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.RED).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACK_BLOCK = registerBlock("black_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLACK).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
             new WarpedWartBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque()));
 

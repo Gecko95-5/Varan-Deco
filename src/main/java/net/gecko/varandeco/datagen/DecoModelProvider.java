@@ -260,6 +260,23 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLACK_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BROWN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.RED_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ORANGE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.YELLOW_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIME_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GREEN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CYAN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PURPLE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MAGENTA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_BLOCK);
+
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
 

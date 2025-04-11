@@ -3513,5 +3513,22 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COPPER_CHAIN)));
 
         offerPressurePlateRecipe(exporter, DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Items.COPPER_INGOT);
+
+        offerReversibleCompactingRecipes(exporter, DecoBlocks.WHITE_BLOCK, Items.WHITE_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.LIGHT_GRAY_BLOCK, Items.LIGHT_GRAY_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.GRAY_BLOCK, Items.GRAY_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.BLACK_BLOCK, Items.BLACK_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.BROWN_BLOCK, Items.BROWN_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.RED_BLOCK, Items.RED_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.ORANGE_BLOCK, Items.ORANGE_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.YELLOW_BLOCK, Items.YELLOW_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.LIME_BLOCK, Items.LIME_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.GREEN_BLOCK, Items.GREEN_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.CYAN_BLOCK, Items.CYAN_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.LIGHT_BLUE_BLOCK, Items.LIGHT_BLUE_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.BLUE_BLOCK, Items.BLUE_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.PURPLE_BLOCK, Items.PURPLE_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.MAGENTA_BLOCK, Items.MAGENTA_DYE);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.PINK_BLOCK, Items.PINK_DYE);
     }
 }
