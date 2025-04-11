@@ -3511,5 +3511,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
                         RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COPPER_CHAIN)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Items.COPPER_INGOT);
     }
 }

@@ -902,5 +902,17 @@
   "block.varan-deco.oxidized_copper_soul_lantern": "Oxidized Copper Soul Lantern",
   "block.varan-deco.waxed_oxidized_copper_soul_lantern": "Waxed Oxidized Copper Soul Lantern",
 
+  "block.varan-deco.copper_weight_pressure_plate": "Copper Weight Pressure Plate",
+  "block.varan-deco.waxed_copper_weight_pressure_plate": "Waxed Copper Weight Pressure Plate",
+
+  "block.varan-deco.exposed_copper_weight_pressure_plate": "Exposed Copper Weight Pressure Plate",
+  "block.varan-deco.waxed_exposed_copper_weight_pressure_plate": "Waxed Exposed Copper Weight Pressure Plate",
+
+  "block.varan-deco.weathered_copper_weight_pressure_plate": "Weathered Copper Weight Pressure Plate",
+  "block.varan-deco.waxed_weathered_copper_weight_pressure_plate": "Waxed Weathered Copper Weight Pressure Plate",
+
+  "block.varan-deco.oxidized_copper_weight_pressure_plate": "Oxidized Copper Weight Pressure Plate",
+  "block.varan-deco.waxed_oxidized_copper_weight_pressure_plate": "Waxed Oxidized Copper Weight Pressure Plate",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

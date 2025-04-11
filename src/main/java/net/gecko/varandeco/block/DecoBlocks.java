@@ -10,6 +10,7 @@ import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.oxidizable.OxidizableChainBlock;
 import net.gecko.varandeco.block.oxidizable.OxidizableLanternBlock;
 import net.gecko.varandeco.block.oxidizable.OxidizablePaneBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizablePressurePlateBlock;
 import net.gecko.varandeco.block.roses.EnderRoseBlock;
 import net.gecko.varandeco.block.roses.EnderRoseBushBlock;
 import net.gecko.varandeco.block.roses.WitherRoseBushBlock;
@@ -1586,6 +1587,28 @@ public class DecoBlocks {
     public static final Block POLISHED_STONE_PRESSURE_PLATE = registerBlock("polished_stone_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
                     .mapColor(MapColor.BLACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("copper_weight_pressure_plate",
+            new OxidizablePressurePlateBlock(Oxidizable.OxidationLevel.UNAFFECTED,20,FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_copper_weight_pressure_plate",
+            new WeightedPressurePlateBlock(20,FabricBlockSettings.copyOf(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("exposed_copper_weight_pressure_plate",
+            new OxidizablePressurePlateBlock(Oxidizable.OxidationLevel.EXPOSED,50,FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_exposed_copper_weight_pressure_plate",
+            new WeightedPressurePlateBlock(50,FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("weathered_copper_weight_pressure_plate",
+            new OxidizablePressurePlateBlock(Oxidizable.OxidationLevel.WEATHERED,70,FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_weathered_copper_weight_pressure_plate",
+            new WeightedPressurePlateBlock(70,FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("oxidized_copper_weight_pressure_plate",
+            new OxidizablePressurePlateBlock(Oxidizable.OxidationLevel.OXIDIZED,100,FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
+                    .sounds(BlockSoundGroup.COPPER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_oxidized_copper_weight_pressure_plate",
+            new WeightedPressurePlateBlock(100,FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);

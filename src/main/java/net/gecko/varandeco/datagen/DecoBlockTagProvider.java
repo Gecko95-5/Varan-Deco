@@ -280,7 +280,15 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
                 .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
+                .add(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -309,7 +317,15 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LIGHT_IRON_BARS)
                 .add(Blocks.IRON_BARS)
                 .add(DecoBlocks.HEAVY_IRON_BARS)
-                .addTag(DecoTags.Blocks.COPPER_BARS);
+                .addTag(DecoTags.Blocks.COPPER_BARS)
+                .add(DecoBlocks.COPPER_CHAIN)
+                .add(DecoBlocks.WAXED_COPPER_CHAIN)
+                .add(DecoBlocks.EXPOSED_COPPER_CHAIN)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
+                .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
+                .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
@@ -954,5 +970,23 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.STONE_PRESSURE_PLATES)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
+                .add(DecoBlocks.DEEPSLATE_PRESSURE_PLATE)
+                .add(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE)
+                .add(DecoBlocks.COBBLESTONE_PRESSURE_PLATE)
+                .add(DecoBlocks.BLACKSTONE_PRESSURE_PLATE)
+                .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
     }
 }

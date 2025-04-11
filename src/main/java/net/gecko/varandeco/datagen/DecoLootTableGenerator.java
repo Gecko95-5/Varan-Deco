@@ -1410,5 +1410,22 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_soul_lantern"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/exposed_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_exposed_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/weathered_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_weathered_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oxidized_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_weight_pressure_plate"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE));
     }
 }

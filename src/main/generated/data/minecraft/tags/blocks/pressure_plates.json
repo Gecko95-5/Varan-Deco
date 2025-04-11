@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:copper_weight_pressure_plate",
+    "varan-deco:waxed_copper_weight_pressure_plate",
+    "varan-deco:exposed_copper_weight_pressure_plate",
+    "varan-deco:waxed_exposed_copper_weight_pressure_plate",
+    "varan-deco:weathered_copper_weight_pressure_plate",
+    "varan-deco:waxed_exposed_copper_weight_pressure_plate",
+    "varan-deco:oxidized_copper_weight_pressure_plate",
+    "varan-deco:waxed_oxidized_copper_weight_pressure_plate"
+  ]
+}

@@ -11,6 +11,14 @@
     "varan-deco:light_iron_bars",
     "minecraft:iron_bars",
     "varan-deco:heavy_iron_bars",
-    "#varan-deco:copper_bars"
+    "#varan-deco:copper_bars",
+    "varan-deco:copper_chain",
+    "varan-deco:waxed_copper_chain",
+    "varan-deco:exposed_copper_chain",
+    "varan-deco:waxed_exposed_copper_chain",
+    "varan-deco:weathered_copper_chain",
+    "varan-deco:waxed_exposed_copper_chain",
+    "varan-deco:oxidized_copper_chain",
+    "varan-deco:waxed_oxidized_copper_chain"
   ]
 }
