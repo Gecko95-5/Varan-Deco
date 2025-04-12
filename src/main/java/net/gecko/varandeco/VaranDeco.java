@@ -3,15 +3,16 @@ package net.gecko.varandeco;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.item.DecoItems;
+import net.gecko.varandeco.util.DecoTags;
 import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
 import net.minecraft.block.Blocks;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE;
 import static org.slf4j.LoggerFactory.*;
@@ -127,6 +128,13 @@ public class VaranDeco implements ModInitializer {
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_LADDER,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_CARTOGRAPHY_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_SMITHING_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_BARRELS,300);
 
 		LOGGER.info("Hello Fabric world!");
 	}

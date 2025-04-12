@@ -25,6 +25,9 @@ public class DecoTags {
         public static final TagKey<Block> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
 
+        public static final TagKey<Block> WOODEN_LOGS =
+                createTag("wooden_logs");
+
         public static final TagKey<Block> TERRACOTTA_STAIRS =
                 createTag("terracotta_stairs");
 
@@ -72,8 +75,14 @@ public class DecoTags {
         public static final TagKey<Item> DECO_BARRELS =
                 createTag("deco_barrels");
 
+        public static final TagKey<Item> WOODED_CRAFTING_TABLES =
+                createTag("wooden_crafting_tables");
+
         public static final TagKey<Item> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
+
+        public static final TagKey<Item> DECO_LADDER =
+                createTag("deco_ladder");
 
         public static final TagKey<Item> FURNACES =
                 createTag("furnaces");

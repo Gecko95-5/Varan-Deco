@@ -199,6 +199,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.LAVENDER, DecoBlocks.POTTED_LAVENDER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        BlockStateModelGenerator.BlockTexturePool woodenpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
+
         blockStateModelGenerator.registerPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
         blockStateModelGenerator.registerPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
         blockStateModelGenerator.registerPressurePlate(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.EXPOSED_COPPER);
@@ -400,6 +403,13 @@ public class DecoModelProvider extends FabricModelProvider {
        cactusplankpool.button(DecoBlocks.CACTUS_PLANK_BUTTON);
        cactusplankpool.pressurePlate(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
        cactusplankpool.fenceGate(DecoBlocks.CACTUS_PLANK_FENCE_GATE);
+
+        woodenpool.stairs(DecoBlocks.WOODEN_STAIRS);
+        woodenpool.slab(DecoBlocks.WOODEN_SLAB);
+        woodenpool.fence(DecoBlocks.WOODEN_FENCE);
+        woodenpool.button(DecoBlocks.WOODEN_BUTTON);
+        woodenpool.pressurePlate(DecoBlocks.WOODEN_PRESSURE_PLATE);
+        woodenpool.fenceGate(DecoBlocks.WOODEN_FENCE_GATE);
 
        bluenetherpool.stairs(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
        bluenetherpool.slab(DecoBlocks.BLUE_NETHER_BRICK_SLAB);

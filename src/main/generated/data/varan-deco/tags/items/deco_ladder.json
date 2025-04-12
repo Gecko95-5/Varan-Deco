@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ladder",
+    "varan-deco:birch_ladder",
+    "varan-deco:spruce_ladder",
+    "varan-deco:jungle_ladder",
+    "varan-deco:acacia_ladder",
+    "varan-deco:dark_oak_ladder",
+    "varan-deco:mangrove_ladder",
+    "varan-deco:cactus_ladder"
+  ]
+}

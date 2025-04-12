@@ -914,5 +914,30 @@
   "block.varan-deco.oxidized_copper_weight_pressure_plate": "Oxidized Copper Weight Pressure Plate",
   "block.varan-deco.waxed_oxidized_copper_weight_pressure_plate": "Waxed Oxidized Copper Weight Pressure Plate",
 
+  "block.varan-deco.white_block": "White Block",
+  "block.varan-deco.light_gray_block": "Light Gray Block",
+  "block.varan-deco.gray_block": "Gray Block",
+  "block.varan-deco.black_block": "Black Block",
+  "block.varan-deco.brown_block": "Brown Block",
+  "block.varan-deco.red_block": "Red Block",
+  "block.varan-deco.orange_block": "Orange Block",
+  "block.varan-deco.yellow_block": "Yellow Block",
+  "block.varan-deco.lime_block": "Lime Block",
+  "block.varan-deco.green_block": "Green Block",
+  "block.varan-deco.cyan_block": "Cyan Block",
+  "block.varan-deco.light_blue_block": "Light Blue Block",
+  "block.varan-deco.blue_block": "Blue Block",
+  "block.varan-deco.purple_block": "Purple Block",
+  "block.varan-deco.magenta_block": "Magenta Block",
+  "block.varan-deco.pink_block": "Pink Block",
+
+  "block.varan-deco.wooden_planks": "Wooden Planks",
+  "block.varan-deco.wooden_stairs": "Wooden Stairs",
+  "block.varan-deco.wooden_slab": "Wooden Slab",
+  "block.varan-deco.wooden_fence": "Wooden Fence",
+  "block.varan-deco.wooden_fence_gate": "Wooden Fence Gate",
+  "block.varan-deco.wooden_button": "Wooden Button",
+  "block.varan-deco.wooden_pressure_plate": "Wooden Pressure Plate",
+
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

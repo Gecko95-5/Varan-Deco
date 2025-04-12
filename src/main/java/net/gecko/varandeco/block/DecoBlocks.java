@@ -34,6 +34,9 @@ public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
             new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f,3.0f)
+                    .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.SPRUCE_BROWN).requiresTool()
                     .strength(5.0F, 6.0F).sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -520,6 +523,9 @@ public class DecoBlocks {
     public static final Block CACTUS_PLANK_STAIRS = registerBlock("cactus_plank_stairs",
             new StairsBlock(DecoBlocks.CACTUS_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_STAIRS = registerBlock("wooden_stairs",
+            new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_STAIRS = registerBlock("cut_sandstone_brick_stairs",
             new StairsBlock(DecoBlocks.CUT_SANDSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -791,6 +797,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_SLAB = registerBlock("cactus_plank_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_SLAB = registerBlock("cut_sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_PURPUR_SLAB = registerBlock("smooth_purpur_slab",
@@ -941,59 +949,59 @@ public class DecoBlocks {
 
     public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_YELLOW_TULIP = registerBlockWithoutItem("potted_yellow_tulip",
             new FlowerPotBlock(YELLOW_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_PURPLE_TULIP = registerBlockWithoutItem("potted_purple_tulip",
             new FlowerPotBlock(PURPLE_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_MAGENTA_TULIP = registerBlockWithoutItem("potted_magenta_tulip",
             new FlowerPotBlock(MAGENTA_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block BLUE_TULIP = registerBlock("blue_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BLUE_TULIP = registerBlockWithoutItem("potted_blue_tulip",
             new FlowerPotBlock(BLUE_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
 
     public static final Block BLACK_TULIP = registerBlock("black_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BLACK_TULIP = registerBlockWithoutItem("potted_black_tulip",
             new FlowerPotBlock(BLACK_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block GREEN_TULIP = registerBlock("green_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_GREEN_TULIP = registerBlockWithoutItem("potted_green_tulip",
             new FlowerPotBlock(GREEN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
             new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_CYAN_TULIP = registerBlockWithoutItem("potted_cyan_tulip",
             new FlowerPotBlock(CYAN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
 
     public static final Block BARBERTON_DAISY = registerBlock("barberton_daisy",
             new FlowerBlock(StatusEffects.INSTANT_HEALTH, 1,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BARBERTON_DAISY = registerBlockWithoutItem("potted_barberton_daisy",
             new FlowerPotBlock(BARBERTON_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
     public static final Block BLUE_EYED_DAISY = registerBlock("blue_eyed_daisy",
             new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BLUE_EYED_DAISY = registerBlockWithoutItem("potted_blue_eyed_daisy",
             new FlowerPotBlock(BLUE_EYED_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
     public static final Block GERBERA_DAISY = registerBlock("gerbera_daisy",
             new FlowerBlock(StatusEffects.REGENERATION, 5,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_GERBERA_DAISY = registerBlockWithoutItem("potted_gerbera_daisy",
             new FlowerPotBlock(GERBERA_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
     public static final Block MICHAELMAS_DAISY = registerBlock("michaelmas_daisy",
             new FlowerBlock(StatusEffects.RESISTANCE, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
-                DecoItemGroup.VARAN_DECO_BLOCKS);
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_MICHAELMAS_DAISY = registerBlockWithoutItem("potted_michaelmas_daisy",
             new FlowerPotBlock(MICHAELMAS_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
 
@@ -1067,6 +1075,8 @@ public class DecoBlocks {
 
     public static final Block CACTUS_PLANK_FENCE = registerBlock("cactus_plank_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",
@@ -1616,16 +1626,18 @@ public class DecoBlocks {
             new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
             new WoodenButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
+            new WoodenButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                            .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLED_DEEPSLATE_PRESSURE_PLATE = registerBlock("cobbled_deepslate_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                            .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                            .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1660,6 +1672,9 @@ public class DecoBlocks {
     public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_PRESSURE_PLATE = registerBlock("wooden_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block GOLD_DOOR = registerBlock("gold_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1672,6 +1687,8 @@ public class DecoBlocks {
 
     public static final Block CACTUS_PLANK_FENCE_GATE = registerBlock("cactus_plank_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_FENCE_GATE = registerBlock("wooden_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",

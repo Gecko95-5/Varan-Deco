@@ -1460,5 +1460,20 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_BLOCK));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_block"),
                 BlockLootTableGenerator.drops(DecoBlocks.PINK_BLOCK));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_planks"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_PLANKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WOODEN_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_fence"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_FENCE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_FENCE_GATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_pressure_plate"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_button"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_BUTTON));
     }
 }

@@ -401,16 +401,21 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
-                .add(DecoBlocks.CACTUS_PLANK_FENCE)
                 .add(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(DecoBlocks.CACTUS_PLANK_FENCE)
+                .add(DecoBlocks.WOODEN_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE)
-                .add(DecoBlocks.CACTUS_PLANK_FENCE_GATE);
+                .add(DecoBlocks.CACTUS_PLANK_FENCE_GATE)
+                .add(DecoBlocks.WOODEN_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
-                .add(DecoBlocks.CACTUS_PLANKS);
+                .add(DecoBlocks.CACTUS_PLANKS)
+                .add(DecoBlocks.WOODEN_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(DecoBlocks.POLISHED_STONE_STAIRS)
@@ -504,19 +509,24 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_IRON_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
-                .add(DecoBlocks.CACTUS_PLANK_STAIRS);
+                .add(DecoBlocks.CACTUS_PLANK_STAIRS)
+                .add(DecoBlocks.WOODEN_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
-                .add(DecoBlocks.CACTUS_PLANK_SLAB);
+                .add(DecoBlocks.CACTUS_PLANK_SLAB)
+                .add(DecoBlocks.WOODEN_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
-                .add(DecoBlocks.CACTUS_PLANK_FENCE);
+                .add(DecoBlocks.CACTUS_PLANK_FENCE)
+                .add(DecoBlocks.WOODEN_FENCE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
-                .add(DecoBlocks.CACTUS_PLANK_BUTTON);
+                .add(DecoBlocks.CACTUS_PLANK_BUTTON)
+                .add(DecoBlocks.WOODEN_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
-                .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
+                .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)
+                .add(DecoBlocks.WOODEN_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR);

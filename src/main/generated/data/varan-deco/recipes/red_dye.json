@@ -1,16 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "varan-deco:red_block"
     }
-  },
-  "pattern": [
-    "###",
-    "###",
-    "###"
   ],
   "result": {
+    "count": 9,
     "item": "minecraft:red_dye"
   }
 }
