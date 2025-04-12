@@ -21,19 +21,33 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.WOODEN_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
-                .add(DecoBlocks.CACTUS_PLANK_STAIRS.asItem());
+                .add(DecoBlocks.CACTUS_PLANK_STAIRS.asItem())
+                .add(DecoBlocks.WOODEN_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
-                .add(DecoBlocks.CACTUS_PLANK_SLAB.asItem());
+                .add(DecoBlocks.CACTUS_PLANK_SLAB.asItem())
+                .add(DecoBlocks.WOODEN_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
-                .add(DecoBlocks.CACTUS_PLANK_FENCE.asItem());
+                .add(DecoBlocks.CACTUS_PLANK_FENCE.asItem())
+                .add(DecoBlocks.WOODEN_FENCE.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
-                .add(DecoBlocks.CACTUS_PLANK_BUTTON.asItem());
+                .add(DecoBlocks.CACTUS_PLANK_BUTTON.asItem())
+                .add(DecoBlocks.WOODEN_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
-                .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem());
+                .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem())
+                .add(DecoBlocks.WOODEN_PRESSURE_PLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .addTag(DecoTags.Items.WOODEN_LOGS);
+
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_LOGS)
+                .add(DecoBlocks.WOODEN_LOG.asItem())
+                .add(DecoBlocks.WOODEN_WOOD.asItem())
+                .add(DecoBlocks.STRIPPED_WOODEN_LOG.asItem())
+                .add(DecoBlocks.STRIPPED_WOODEN_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR.asItem());
@@ -44,7 +58,16 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SIGNS)
                 .add(DecoBlocks.STANDING_CACTUS_SIGN.asItem())
                 .add(DecoBlocks.WALL_CACTUS_SIGN.asItem())
-                .add(DecoItems.CACTUS_SIGN.asItem());
+                .add(DecoItems.CACTUS_SIGN.asItem())
+                .add(DecoBlocks.STANDING_WOODEN_SIGN.asItem())
+                .add(DecoBlocks.WALL_WOODEN_SIGN.asItem())
+                .add(DecoItems.WOODEN_SIGN.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+                .add(DecoBlocks.WOODEN_SAPLING.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LEAVES)
+                .add(DecoBlocks.WOODEN_LEAVES.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_CRAFTING_TABLES)
                 .add(Blocks.CRAFTING_TABLE.asItem())
@@ -59,7 +82,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ACACIA_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
+                .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_LADDER)
                 .add(Blocks.LADDER.asItem())
@@ -69,7 +93,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ACACIA_LADDER.asItem())
                 .add(DecoBlocks.DARK_OAK_LADDER.asItem())
                 .add(DecoBlocks.MANGROVE_LADDER.asItem())
-                .add(DecoBlocks.CACTUS_LADDER.asItem());
+                .add(DecoBlocks.CACTUS_LADDER.asItem())
+                .add(DecoBlocks.WOODEN_LADDER.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem())

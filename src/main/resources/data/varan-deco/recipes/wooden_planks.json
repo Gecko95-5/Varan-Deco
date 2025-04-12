@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "varan-deco:wooden_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:wooden_planks"
+  }
+}

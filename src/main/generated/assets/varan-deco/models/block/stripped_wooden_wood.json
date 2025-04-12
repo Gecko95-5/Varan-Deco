@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "varan-deco:block/stripped_wooden_log",
+    "side": "varan-deco:block/stripped_wooden_log"
+  }
+}

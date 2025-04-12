@@ -3755,5 +3755,75 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
                 .offerTo(exporter, new Identifier("lime_dye_from_yellow_dye"));
 
+        createStairsRecipe(DecoBlocks.WOODEN_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_PLANKS))
+                .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WOODEN_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.WOODEN_SLAB, DecoBlocks.WOODEN_PLANKS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_FENCE)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.STICK)
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.STICK)
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_FENCE_GATE)));
+
+        offerPressurePlateRecipe(exporter, DecoBlocks.WOODEN_PRESSURE_PLATE, DecoBlocks.WOODEN_PLANKS);
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.WOODEN_BUTTON)
+                .input(DecoBlocks.WOODEN_PLANKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_TRAPDOOR)));
+
+        createSignRecipe(DecoItems.WOODEN_SIGN, Ingredient.ofItems(DecoBlocks.WOODEN_PLANKS))
+                .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.WOODEN_SIGN)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_WOOD,4)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WOODEN_LOG)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_LOG),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_LOG))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_WOOD)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.STRIPPED_WOODEN_WOOD,4)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.STRIPPED_WOODEN_LOG)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD)));
     }
 }

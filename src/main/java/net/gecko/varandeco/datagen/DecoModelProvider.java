@@ -199,8 +199,14 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.LAVENDER, DecoBlocks.POTTED_LAVENDER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.WOODEN_SAPLING, DecoBlocks.POTTED_WOODEN_SAPLING,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
+
+        blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
+        blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
 
         blockStateModelGenerator.registerPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
         blockStateModelGenerator.registerPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
@@ -240,6 +246,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_CRAFTING_TABLE);
+
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_LEAVES);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_SMITHING_TABLE);
@@ -282,6 +291,9 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_DOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_TRAPDOOR);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.GOLD_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.GOLD_TRAPDOOR);
@@ -472,6 +484,7 @@ public class DecoModelProvider extends FabricModelProvider {
         polistonepool.pressurePlate(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
+       woodenpool.family(DecoBlocks.WOODEN_FAMILY);
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 

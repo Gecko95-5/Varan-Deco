@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-    "#varan-deco:deco_ladders"
+    "#varan-deco:deco_ladders",
+    "minecraft:chain",
+    "varan-deco:copper_chain",
+    "varan-deco:waxed_copper_chain",
+    "varan-deco:exposed_copper_chain",
+    "varan-deco:waxed_exposed_copper_chain",
+    "varan-deco:weathered_copper_chain",
+    "varan-deco:waxed_exposed_copper_chain",
+    "varan-deco:oxidized_copper_chain",
+    "varan-deco:waxed_oxidized_copper_chain"
   ]
 }

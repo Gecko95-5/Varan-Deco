@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "varan-deco:block/wooden_leaves"
+  }
+}

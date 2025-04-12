@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "varan-deco:cactus_plank_button"
+    "varan-deco:cactus_plank_button",
+    "varan-deco:wooden_button"
   ]
 }

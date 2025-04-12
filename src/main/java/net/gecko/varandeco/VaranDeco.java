@@ -2,9 +2,11 @@ package net.gecko.varandeco;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.item.DecoItems;
@@ -12,6 +14,8 @@ import net.gecko.varandeco.util.DecoTags;
 import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.color.world.BiomeColors;
+import net.minecraft.client.color.world.FoliageColors;
 import org.slf4j.Logger;
 
 import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE;
@@ -32,6 +36,12 @@ public class VaranDeco implements ModInitializer {
 
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(Blocks.CACTUS,5,5);
+
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_PLANKS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.STRIPPED_WOODEN_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.STRIPPED_WOODEN_WOOD,5,5);
 
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.YELLOW_TULIP,60, 100);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.PURPLE_TULIP,60, 100);
@@ -128,6 +138,14 @@ public class VaranDeco implements ModInitializer {
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+		StrippableBlockRegistry.register(DecoBlocks.WOODEN_LOG, DecoBlocks.STRIPPED_WOODEN_LOG);
+		StrippableBlockRegistry.register(DecoBlocks.WOODEN_WOOD, DecoBlocks.STRIPPED_WOODEN_WOOD);
+
+		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
+						world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
+				DecoBlocks.WOODEN_LEAVES);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);

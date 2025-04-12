@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-deco:wooden_planks"
+    }
+  ],
+  "result": {
+    "item": "varan-deco:wooden_button"
+  }
+}

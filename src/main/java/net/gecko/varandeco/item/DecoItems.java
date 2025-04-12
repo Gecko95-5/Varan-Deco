@@ -17,6 +17,9 @@ public class DecoItems {
     public static final Item CACTUS_SIGN = registerItem("cactus_sign",
             new SignItem(new Item.Settings().maxCount(16).group(DecoItemGroup.VARAN_DECO_BLOCKS),
                     DecoBlocks.STANDING_CACTUS_SIGN, DecoBlocks.WALL_CACTUS_SIGN));
+    public static final Item WOODEN_SIGN = registerItem("wooden_sign",
+            new SignItem(new Item.Settings().maxCount(16).group(DecoItemGroup.VARAN_DECO_BLOCKS),
+                    DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
 
     public static final Item SNOW_BRICK = registerItem("snow_brick",
             new SnowBrickItem(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS).maxCount(16)));

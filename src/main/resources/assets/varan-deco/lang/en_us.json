@@ -1,6 +1,7 @@
 {
   "item.varan-deco.snow_brick": "Snow Brick",
   "item.varan-deco.cactus_sign": "Cactus Sign",
+  "item.varan-deco.wooden_sign": "Wooden Sign",
   "item.varan-deco.bubble_orb": "Bubble Orb",
   "item.varan-deco.warped_wart": "Warped Wart",
   "item.varan-deco.copper_nugget": "Copper Nugget",
@@ -262,6 +263,7 @@
   "block.varan-deco.crimson_crafting_table": "Crimson Crafting Table",
   "block.varan-deco.warped_crafting_table": "Warped Crafting Table",
   "block.varan-deco.cactus_crafting_table": "Cactus Crafting Table",
+  "block.varan-deco.wooden_crafting_table": "Wooden Crafting Table",
 
   "block.varan-deco.oak_barrel": "Oak Barrel",
   "block.varan-deco.spruce_barrel": "Spruce Barrel",
@@ -283,6 +285,7 @@
   "block.varan-deco.crimson_ladder": "Crimson Ladder",
   "block.varan-deco.warped_ladder": "Warped Ladder",
   "block.varan-deco.cactus_ladder": "Cactus Ladder",
+  "block.varan-deco.wooden_ladder": "Wooden Ladder",
 
   "block.varan-deco.oak_smithing_table": "Oak Smithing Table",
   "block.varan-deco.spruce_smithing_table": "Spruce Smithing Table",
@@ -317,6 +320,8 @@
   "block.varan-deco.cactus_trapdoor": "Cactus Trapdoor",
   "block.varan-deco.standing_cactus_sign": "Cactus Sign",
   "block.varan-deco.wall_cactus_sign": "Cactus Wall Sign",
+  "block.varan-deco.standing_wooden_sign": "Wooden Sign",
+  "block.varan-deco.wall_wooden_sign": "Wooden Wall Sign",
 
   "block.varan-deco.terracotta_stairs": "Terracotta Stairs",
   "block.varan-deco.terracotta_slab": "Terracotta Slab",
@@ -938,6 +943,15 @@
   "block.varan-deco.wooden_fence_gate": "Wooden Fence Gate",
   "block.varan-deco.wooden_button": "Wooden Button",
   "block.varan-deco.wooden_pressure_plate": "Wooden Pressure Plate",
+
+  "block.varan-deco.wooden_log": "Wooden Log",
+  "block.varan-deco.wooden_wood": "Wooden Wood",
+  "block.varan-deco.stripped_wooden_log": "Stripped Wooden Log",
+  "block.varan-deco.stripped_wooden_wood": "Stripped Wooden Wood",
+  "block.varan-deco.wooden_leaves": "Wooden Leaves",
+
+  "block.varan-deco.wooden_door": "Wooden Door",
+  "block.varan-deco.wooden_trapdoor": "Wooden Trapdoor",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

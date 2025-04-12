@@ -1475,5 +1475,34 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WOODEN_PRESSURE_PLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_button"),
                 BlockLootTableGenerator.drops(DecoBlocks.WOODEN_BUTTON));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_log"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_LOG));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_wood"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_WOOD));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_wooden_log"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_WOODEN_LOG));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_wooden_wood"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_WOODEN_WOOD));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_door"),
+                BlockLootTableGenerator.doorDrops(DecoBlocks.WOODEN_DOOR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_trapdoor"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_TRAPDOOR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_LADDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/standing_wooden_sign"),
+                BlockLootTableGenerator.drops(DecoItems.WOODEN_SIGN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wall_wooden_sign"),
+                BlockLootTableGenerator.drops(DecoItems.WOODEN_SIGN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_sapling"),
+                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_SAPLING));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_wooden_sapling"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING));
     }
 }

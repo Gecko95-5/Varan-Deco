@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "varan-deco:block/wooden_planks",
+    "east": "varan-deco:block/wooden_crafting_table_side",
+    "north": "varan-deco:block/wooden_crafting_table_front",
+    "particle": "varan-deco:block/wooden_crafting_table_front",
+    "south": "varan-deco:block/wooden_crafting_table_side",
+    "up": "varan-deco:block/wooden_crafting_table_top",
+    "west": "varan-deco:block/wooden_crafting_table_front"
+  }
+}

@@ -18,7 +18,9 @@ import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.item.DecoItemGroup;
+import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
 import net.minecraft.block.*;
+import net.minecraft.block.sapling.OakSaplingGenerator;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffects;
@@ -28,6 +30,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.Registry;
 
 public class DecoBlocks {
@@ -35,7 +38,7 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
-            new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f,3.0f)
+            new Block(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.SPRUCE_BROWN).requiresTool()
@@ -53,6 +56,16 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_IRON_SLAB = registerBlock("cut_iron_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_IRON)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_LOG = registerBlock("wooden_log",
+            createLogBlock(MapColor.BROWN, MapColor.TERRACOTTA_BROWN),DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_WOODEN_LOG = registerBlock("stripped_wooden_log",
+            createLogBlock(MapColor.BROWN, MapColor.BROWN),DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_WOODEN_WOOD = registerBlock("stripped_wooden_wood",
+            new PillarBlock(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_WOOD = registerBlock("wooden_wood",
+            new PillarBlock(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
             new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -914,6 +927,14 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
             new MagmaBrickSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block WOODEN_SAPLING = registerBlock("wooden_sapling",
+            new SaplingBlock(new WoodenSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_WOODEN_SAPLING = registerBlockWithoutItem("potted_wooden_sapling",
+            new FlowerPotBlock(WOODEN_SAPLING,FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING)));
+
+    public static final Block WOODEN_LEAVES = registerBlock("wooden_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block PUFFY_DANDELION = registerBlock("puffy_dandelion",
             new PuffyDandelionBlock(StatusEffects.SATURATION, 3,FabricBlockSettings.copyOf(Blocks.DANDELION)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1046,6 +1067,8 @@ public class DecoBlocks {
             new WarpedCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.TEAL)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
             new CactusCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_CRAFTING_TABLE = registerBlock("wooden_crafting_table",
+            new WoodenCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.TERRACOTTA_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             new DeepslateFurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -1071,6 +1094,8 @@ public class DecoBlocks {
     public static final Block WARPED_LADDER = registerBlock("warped_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_LADDER = registerBlock("cactus_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CACTUS_PLANK_FENCE = registerBlock("cactus_plank_fence",
@@ -1680,10 +1705,14 @@ public class DecoBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_DOOR = registerBlock("wooden_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.BROWN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block GOLD_TRAPDOOR = registerBlock("gold_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_TRAPDOOR = registerBlock("cactus_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_TRAPDOOR = registerBlock("wooden_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.BROWN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CACTUS_PLANK_FENCE_GATE = registerBlock("cactus_plank_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1697,11 +1726,17 @@ public class DecoBlocks {
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Identifier CACTUS_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus");
+    public static final Identifier WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden");
 
     public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
             new TerraformSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_CACTUS_SIGN = registerBlockWithoutItem("wall_cactus_sign",
             new TerraformWallSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+
+    public static final Block STANDING_WOODEN_SIGN = registerBlockWithoutItem("standing_wooden_sign",
+            new TerraformSignBlock(WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_WOODEN_SIGN = registerBlockWithoutItem("wall_wooden_sign",
+            new TerraformWallSignBlock(WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
 
     public static final Block STONE_TEMP = registerBlock("stone_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
@@ -1829,9 +1864,21 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
     public static final Block COBBLED_DEEPSLATE_TEMP = registerBlock("cobbled_deepslate_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)), ItemGroup.SEARCH);
+
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
+    public static final BlockFamily WOODEN_FAMILY = BlockFamilies.register(DecoBlocks.WOODEN_PLANKS)
+            .sign(DecoBlocks.STANDING_WOODEN_SIGN,DecoBlocks.WALL_WOODEN_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
+    private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
+        return new PillarBlock(
+                AbstractBlock.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
+                        .strength(2.0F)
+                        .sounds(BlockSoundGroup.WOOD)
+        );
+    }
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(VaranDeco.MOD_ID, name), block);
