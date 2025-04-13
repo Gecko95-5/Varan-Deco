@@ -290,6 +290,21 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
 
+        getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
+                .addTag(DecoTags.Blocks.DECO_BARRELS);
+
+        getOrCreateTagBuilder(BlockTags.ICE)
+                .add(DecoBlocks.BLACK_ICE)
+                .add(DecoBlocks.PACKED_ICE_STAIRS)
+                .add(DecoBlocks.PACKED_ICE_SLAB)
+                .add(DecoBlocks.PACKED_ICE_WALL)
+                .add(DecoBlocks.BLUE_ICE_STAIRS)
+                .add(DecoBlocks.BLUE_ICE_SLAB)
+                .add(DecoBlocks.BLUE_ICE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.IMPERMEABLE)
+                .addTag(DecoTags.Blocks.HARDENED_GLASS);
+
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
                 .add(DecoBlocks.SNOW_SLAB)
@@ -299,6 +314,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_STAIRS)
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.SNOW_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
+                .add(DecoBlocks.WOODEN_LOG);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .addTag(DecoTags.Blocks.DECO_CRAFTING_TABLES)
@@ -1029,5 +1047,24 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.PIGLIN_REPELLENTS)
+                .add(DecoBlocks.COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.WAXED_COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
+
+        getOrCreateTagBuilder(BlockTags.SCULK_REPLACEABLE)
+                .add(DecoBlocks.VOID_STONE);
+
+        getOrCreateTagBuilder(BlockTags.SNAPS_GOAT_HORN)
+                .addTag(BlockTags.PICKAXE_MINEABLE);
+
+        getOrCreateTagBuilder(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)
+                .add(DecoBlocks.BLACK_ICE);
     }
 }

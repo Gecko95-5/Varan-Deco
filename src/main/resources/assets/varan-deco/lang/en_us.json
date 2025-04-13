@@ -950,8 +950,23 @@
   "block.varan-deco.stripped_wooden_wood": "Stripped Wooden Wood",
   "block.varan-deco.wooden_leaves": "Wooden Leaves",
 
+  "block.varan-deco.wooden_sapling": "Wooden Sapling",
+  "block.varan-deco.potted_wooden_sapling": "Pottted Wooden Sapling",
+
   "block.varan-deco.wooden_door": "Wooden Door",
   "block.varan-deco.wooden_trapdoor": "Wooden Trapdoor",
+
+  "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
+  "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
+  "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
+
+  "item.minecraft.potion.effect.long_bubble_potion": "Water Bubble Potion",
+  "item.minecraft.splash_potion.effect.long_bubble_potion": "Splash Potion of The Water Bubble",
+  "item.minecraft.lingering_potion.effect.long_bubble_potion": "Lingering Potion of The Water Bubble",
+
+  "item.minecraft.potion.effect.strong_bubble_potion": "Water Bubble Potion",
+  "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
+  "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

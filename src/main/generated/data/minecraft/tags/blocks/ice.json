@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:black_ice",
+    "varan-deco:packed_ice_stairs",
+    "varan-deco:packed_ice_slab",
+    "varan-deco:packed_ice_wall",
+    "varan-deco:blue_ice_stairs",
+    "varan-deco:blue_ice_slab",
+    "varan-deco:blue_ice_wall"
+  ]
+}

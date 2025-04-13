@@ -10,6 +10,8 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.item.DecoItems;
+import net.gecko.varandeco.potion.DecoPotion;
+import net.gecko.varandeco.util.DecoCustomTrades;
 import net.gecko.varandeco.util.DecoTags;
 import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
@@ -33,6 +35,8 @@ public class VaranDeco implements ModInitializer {
 		DecoBlockEntities.registerBlockEntities();
 		DecoConfiguredFeatures.registerConfiguredFeatures();
 		DecoWorldGeneration.generateWorldGen();
+		DecoCustomTrades.registerCustomTrades();
+		DecoPotion.registerPotions();
 
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(Blocks.CACTUS,5,5);

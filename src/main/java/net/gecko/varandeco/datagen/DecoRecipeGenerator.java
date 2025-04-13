@@ -628,10 +628,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.PRISMARINE_SHARD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS)));
 
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.SNOWBALL), DecoItems.BUBBLE_ORB,
-                        0.35f, 100).criterion(hasItem(Items.SNOWBALL), conditionsFromItem(Items.SNOWBALL))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.BUBBLE_ORB)));
-
         ShapedRecipeJsonBuilder.create(DecoBlocks.BUBBLE_BLOCK)
                 .pattern("#I")
                 .pattern("I#")

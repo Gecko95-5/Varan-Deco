@@ -129,5 +129,13 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.FURNACE.asItem())
                 .add(DecoBlocks.DEEPSLATE_FURNACE.asItem())
                 .add(DecoBlocks.BLACKSTONE_FURNACE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
+                .add(Blocks.STONE.asItem())
+                .add(Blocks.DEEPSLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(Blocks.STONE.asItem())
+                .add(Blocks.DEEPSLATE.asItem());
     }
 }

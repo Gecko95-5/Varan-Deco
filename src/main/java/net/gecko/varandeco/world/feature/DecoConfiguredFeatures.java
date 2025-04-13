@@ -10,10 +10,9 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.ThreeLayersFeatureSize;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.foliage.MegaPineFoliagePlacer;
-import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
+import net.minecraft.world.gen.foliage.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider;
 import net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider;
@@ -21,8 +20,10 @@ import net.minecraft.world.gen.treedecorator.AlterGroundTreeDecorator;
 import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
+import java.util.OptionalInt;
 
 public class DecoConfiguredFeatures {
 
@@ -117,23 +118,23 @@ public class DecoConfiguredFeatures {
             ConfiguredFeatures.register("deco_wooden_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new ForkingTrunkPlacer(5, 2, 2),
                     BlockStateProvider.of(DecoBlocks.WOODEN_LEAVES),
-                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                    new TwoLayersFeatureSize(1, 0, 1)).build());
+                    new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4),
+                    new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DECO_FANCY_WOODEN_TREE =
             ConfiguredFeatures.register("deco_fancy_wooden_tree", Feature.TREE, new TreeFeatureConfig.Builder(
-                    BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new LargeOakTrunkPlacer(3, 11, 0),
+                    BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new StraightTrunkPlacer(6, 4, 0),
                     BlockStateProvider.of(DecoBlocks.WOODEN_LEAVES),
                     new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2),
                             UniformIntProvider.create(1, 2)), new TwoLayersFeatureSize(2, 0, 2)).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DECO_MEGA_WOODEN_TREE =
             ConfiguredFeatures.register("deco_mega_wooden_tree", Feature.TREE, new TreeFeatureConfig.Builder(
-                    BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new DarkOakTrunkPlacer(6, 2, 1),
+                    BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new DarkOakTrunkPlacer(13, 2, 14),
                     BlockStateProvider.of(DecoBlocks.WOODEN_LEAVES),
-                    new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0),
-                            UniformIntProvider.create(3, 7)), new TwoLayersFeatureSize(1, 1, 2))
-                    .decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
+                    new TwoLayersFeatureSize(1, 1, 2)).decorators
+                            (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
                     .build());
 
     public static void registerConfiguredFeatures() {
