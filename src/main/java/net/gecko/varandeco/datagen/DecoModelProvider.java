@@ -1,6 +1,6 @@
 package net.gecko.varandeco.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
@@ -12,8 +12,8 @@ import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
 
 public class DecoModelProvider extends FabricModelProvider {
-    public DecoModelProvider(FabricDataGenerator dataGenerator) {
-        super(dataGenerator);
+    public DecoModelProvider(FabricDataOutput output) {
+        super(output);
     }
 
     @Override

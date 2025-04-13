@@ -9,9 +9,9 @@ import net.minecraft.world.gen.GenerationStep;
 public class DecoUndergroundGeneration {
     public static void generateUnderground(){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
-                GenerationStep.Feature.UNDERGROUND_DECORATION, DecoPlacedFeatures.DECO_WITHER_PLACED.getKey().get());
+                GenerationStep.Feature.UNDERGROUND_DECORATION, DecoPlacedFeatures.DECO_WITHER_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
-                GenerationStep.Feature.UNDERGROUND_DECORATION, DecoPlacedFeatures.DECO_SOULSAND_PLACED.getKey().get());
+                GenerationStep.Feature.UNDERGROUND_DECORATION, DecoPlacedFeatures.DECO_SOULSAND_PLACED);
 
     }
 }

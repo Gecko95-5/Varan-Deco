@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "redstone",
   "key": {
     "#": {
       "item": "varan-deco:cactus_planks"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:cactus_plank_fence_gate"
-  }
+  },
+  "show_notification": true
 }

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "minecraft:flint"
@@ -12,5 +13,6 @@
   ],
   "result": {
     "item": "varan-deco:flint_block"
-  }
+  },
+  "show_notification": true
 }

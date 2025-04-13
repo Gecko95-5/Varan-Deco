@@ -32,7 +32,7 @@ public class BlackIceBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.bypassesSteppingEffects()) {
-            entity.damage(DamageSource.FREEZE, 1.0F);
+            entity.damage(world.getDamageSources().freeze(), 1.0F);
         }
         if (!entity.bypassesSteppingEffects()) {
             entity.extinguish();
@@ -44,7 +44,7 @@ public class BlackIceBlock extends Block {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!player.bypassesSteppingEffects()) {
-            player.damage(DamageSource.FREEZE, 0.1F);
+            player.damage(world.getDamageSources().freeze(), 0.1F);
         }
         return super.onUse(state, world, pos, player, hand, hit);
     }

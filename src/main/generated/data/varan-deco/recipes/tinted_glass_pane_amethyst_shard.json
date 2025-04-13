@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:amethyst_shard"
@@ -16,5 +17,6 @@
   "result": {
     "count": 2,
     "item": "varan-deco:tinted_glass_pane"
-  }
+  },
+  "show_notification": true
 }

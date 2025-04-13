@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "minecraft:netherrack"
@@ -13,5 +14,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:netherrack_stairs"
-  }
+  },
+  "show_notification": true
 }

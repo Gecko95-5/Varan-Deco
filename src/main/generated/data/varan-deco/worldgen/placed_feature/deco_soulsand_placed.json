@@ -1,0 +1,12 @@
+{
+  "feature": "varan-deco:deco_soulsand_flowers",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 32
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "varan-deco:snow_brick"
@@ -12,5 +13,6 @@
   ],
   "result": {
     "item": "varan-deco:snow_brick_stairs"
-  }
+  },
+  "show_notification": true
 }

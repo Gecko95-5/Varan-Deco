@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:cyan_dye"
@@ -12,5 +13,6 @@
   ],
   "result": {
     "item": "varan-deco:cyan_block"
-  }
+  },
+  "show_notification": true
 }

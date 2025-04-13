@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "varan-deco:warped_wart"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "minecraft:ender_pearl"
-  }
+  },
+  "show_notification": true
 }

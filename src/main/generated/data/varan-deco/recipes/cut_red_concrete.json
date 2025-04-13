@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "S": {
       "item": "minecraft:red_concrete"
@@ -12,5 +13,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:cut_red_concrete"
-  }
+  },
+  "show_notification": true
 }

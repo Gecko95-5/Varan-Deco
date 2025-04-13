@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "varan-deco:warped_wart"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:blue_nether_bricks"
-  }
+  },
+  "show_notification": true
 }

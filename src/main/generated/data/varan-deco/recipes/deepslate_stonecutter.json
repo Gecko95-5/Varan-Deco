@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:deepslate"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:deepslate_stonecutter"
-  }
+  },
+  "show_notification": true
 }

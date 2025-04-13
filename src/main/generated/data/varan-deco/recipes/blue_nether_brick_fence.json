@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "varan-deco:blue_nether_bricks"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:blue_nether_brick_fence"
-  }
+  },
+  "show_notification": true
 }

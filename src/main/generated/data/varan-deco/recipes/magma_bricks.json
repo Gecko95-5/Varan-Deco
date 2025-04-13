@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "S": {
       "item": "minecraft:magma_block"
@@ -12,5 +13,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:magma_bricks"
-  }
+  },
+  "show_notification": true
 }

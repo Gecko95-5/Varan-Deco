@@ -2,6 +2,7 @@ package net.gecko.varandeco.screen.stone;
 
 import com.google.common.collect.Lists;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
@@ -11,10 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.StonecuttingRecipe;
-import net.minecraft.screen.Property;
-import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerContext;
-import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -143,7 +141,7 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 	private void updateInput(Inventory input, ItemStack stack) {
 		this.availableRecipes.clear();
 		this.selectedRecipe.set(-1);
-		this.outputSlot.setStack(ItemStack.EMPTY);
+		this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
 		if (!stack.isEmpty()) {
 			this.availableRecipes = this.world.getRecipeManager().getAllMatches(RecipeType.STONECUTTING, input, this.world);
 		}
@@ -152,10 +150,15 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 	void populateResult() {
 		if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
 			StonecuttingRecipe stonecuttingRecipe = (StonecuttingRecipe)this.availableRecipes.get(this.selectedRecipe.get());
-			this.output.setLastRecipe(stonecuttingRecipe);
-			this.outputSlot.setStack(stonecuttingRecipe.craft(this.input));
+			ItemStack itemStack = stonecuttingRecipe.craft(this.input, this.world.getRegistryManager());
+			if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
+				this.output.setLastRecipe(stonecuttingRecipe);
+				this.outputSlot.setStackNoCallbacks(itemStack);
+			} else {
+				this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
+			}
 		} else {
-			this.outputSlot.setStack(ItemStack.EMPTY);
+			this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
 		}
 
 		this.sendContentUpdates();
@@ -176,21 +179,21 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 	}
 
 	@Override
-	public ItemStack transferSlot(PlayerEntity player, int index) {
+	public ItemStack quickMove(PlayerEntity player, int slot) {
 		ItemStack itemStack = ItemStack.EMPTY;
-		Slot slot = this.slots.get(index);
-		if (slot != null && slot.hasStack()) {
-			ItemStack itemStack2 = slot.getStack();
+		Slot slot2 = this.slots.get(slot);
+		if (slot2 != null && slot2.hasStack()) {
+			ItemStack itemStack2 = slot2.getStack();
 			Item item = itemStack2.getItem();
 			itemStack = itemStack2.copy();
-			if (index == 1) {
+			if (slot == 1) {
 				item.onCraft(itemStack2, player.world, player);
 				if (!this.insertItem(itemStack2, 2, 38, true)) {
 					return ItemStack.EMPTY;
 				}
 
-				slot.onQuickTransfer(itemStack2, itemStack);
-			} else if (index == 0) {
+				slot2.onQuickTransfer(itemStack2, itemStack);
+			} else if (slot == 0) {
 				if (!this.insertItem(itemStack2, 2, 38, false)) {
 					return ItemStack.EMPTY;
 				}
@@ -198,24 +201,24 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 				if (!this.insertItem(itemStack2, 0, 1, false)) {
 					return ItemStack.EMPTY;
 				}
-			} else if (index >= 2 && index < 29) {
+			} else if (slot >= 2 && slot < 29) {
 				if (!this.insertItem(itemStack2, 29, 38, false)) {
 					return ItemStack.EMPTY;
 				}
-			} else if (index >= 29 && index < 38 && !this.insertItem(itemStack2, 2, 29, false)) {
+			} else if (slot >= 29 && slot < 38 && !this.insertItem(itemStack2, 2, 29, false)) {
 				return ItemStack.EMPTY;
 			}
 
 			if (itemStack2.isEmpty()) {
-				slot.setStack(ItemStack.EMPTY);
+				slot2.setStack(ItemStack.EMPTY);
 			}
 
-			slot.markDirty();
+			slot2.markDirty();
 			if (itemStack2.getCount() == itemStack.getCount()) {
 				return ItemStack.EMPTY;
 			}
 
-			slot.onTakeItem(player, itemStack2);
+			slot2.onTakeItem(player, itemStack2);
 			this.sendContentUpdates();
 		}
 
@@ -223,8 +226,8 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 	}
 
 	@Override
-	public void close(PlayerEntity player) {
-		super.close(player);
+	public void onClosed(PlayerEntity player) {
+		super.onClosed(player);
 		this.output.removeStack(1);
 		this.context.run((world, pos) -> this.dropInventory(player, this.input));
 	}

@@ -1,0 +1,12 @@
+{
+  "feature": "varan-deco:deco_wither_flower",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 32
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "minecraft:quartz_block"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:cut_quartz"
-  }
+  },
+  "show_notification": true
 }

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "varan-deco:terracotta_bricks"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "varan-deco:pink_terracotta_bricks"
-  }
+  },
+  "show_notification": true
 }

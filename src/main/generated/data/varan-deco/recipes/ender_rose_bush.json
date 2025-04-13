@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "varan-deco:ender_rose"
@@ -11,5 +12,6 @@
   ],
   "result": {
     "item": "varan-deco:ender_rose_bush"
-  }
+  },
+  "show_notification": true
 }

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "varan-deco:pink_concrete_slab"
@@ -11,5 +12,6 @@
   ],
   "result": {
     "item": "varan-deco:pink_concrete_pillar"
-  }
+  },
+  "show_notification": true
 }

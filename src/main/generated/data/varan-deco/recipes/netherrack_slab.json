@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "minecraft:netherrack"
@@ -11,5 +12,6 @@
   "result": {
     "count": 6,
     "item": "varan-deco:netherrack_slab"
-  }
+  },
+  "show_notification": true
 }

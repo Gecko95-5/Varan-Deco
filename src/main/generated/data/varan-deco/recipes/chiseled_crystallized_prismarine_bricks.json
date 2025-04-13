@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "minecraft:prismarine_crystals"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "varan-deco:chiseled_crystallized_prismarine_bricks"
-  }
+  },
+  "show_notification": true
 }

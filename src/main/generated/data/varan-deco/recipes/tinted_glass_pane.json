@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stained_glass_pane",
   "key": {
     "#": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "X": {
-      "item": "minecraft:glass_pane"
+      "item": "minecraft:tinted_glass"
     }
   },
   "pattern": [
-    " # ",
-    "#X#",
-    " # "
+    "###",
+    "###"
   ],
   "result": {
-    "count": 2,
+    "count": 16,
     "item": "varan-deco:tinted_glass_pane"
-  }
+  },
+  "show_notification": true
 }

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "varan-deco:wooden_planks"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:wooden_fence"
-  }
+  },
+  "show_notification": true
 }

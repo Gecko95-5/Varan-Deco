@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "varan-deco:snow_brick"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "varan-deco:chiseled_snow_bricks"
-  }
+  },
+  "show_notification": true
 }

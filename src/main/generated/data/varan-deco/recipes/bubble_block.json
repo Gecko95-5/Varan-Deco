@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "minecraft:prismarine_shard"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:bubble_block"
-  }
+  },
+  "show_notification": true
 }

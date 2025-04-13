@@ -25,7 +25,7 @@ public class EnderRoseBushBlock extends TallFlowerBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
-            if (entity instanceof LivingEntity livingEntity && !livingEntity.isInvulnerableTo(DamageSource.MAGIC.setProjectile())) {
+            if (entity instanceof LivingEntity livingEntity && !livingEntity.isInvulnerableTo(world.getDamageSources().magic())) {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 40));
             }
         }

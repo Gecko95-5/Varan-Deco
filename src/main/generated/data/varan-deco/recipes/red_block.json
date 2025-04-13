@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:red_dye"
@@ -12,5 +13,6 @@
   ],
   "result": {
     "item": "varan-deco:red_block"
-  }
+  },
+  "show_notification": true
 }

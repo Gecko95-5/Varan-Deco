@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "varan-deco:hardened_glass"
@@ -16,5 +17,6 @@
   "result": {
     "count": 8,
     "item": "varan-deco:hardened_lime_stained_glass"
-  }
+  },
+  "show_notification": true
 }

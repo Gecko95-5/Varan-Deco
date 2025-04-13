@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "redstone",
   "key": {
     "#": {
       "item": "minecraft:red_nether_bricks"
@@ -14,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:red_nether_brick_fence_gate"
-  }
+  },
+  "show_notification": true
 }
