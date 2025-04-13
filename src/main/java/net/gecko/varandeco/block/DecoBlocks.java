@@ -344,7 +344,8 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.YELLOW).resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LIME_BLOCK = registerBlock("lime_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIME).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PINK_BLOCK = registerBlock("pink_block",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PINK).resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
