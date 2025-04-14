@@ -1045,6 +1045,14 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLACKSTONE_PRESSURE_PLATE)
                 .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
 
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
+                .add(DecoBlocks.DEEPSLATE_BUTTON)
+                .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
+                .add(DecoBlocks.COBBLESTONE_BUTTON)
+                .add(DecoBlocks.BLACKSTONE_BUTTON)
+                .add(DecoBlocks.POLISHED_STONE_BUTTON);
+
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES);
 
