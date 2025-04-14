@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:polished_deepslate_button",
+    "varan-deco:deepslate_button",
+    "varan-deco:cobbled_deepslate_button",
+    "varan-deco:cobblestone_button",
+    "varan-deco:blackstone_button",
+    "varan-deco:polished_stone_button"
+  ]
+}

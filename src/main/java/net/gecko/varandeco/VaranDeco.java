@@ -21,6 +21,7 @@ import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.FoliageColors;
 import org.slf4j.Logger;
 
+import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_BUTTON;
 import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE;
 import static org.slf4j.LoggerFactory.*;
 
@@ -31,7 +32,7 @@ public class VaranDeco implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		DecoItemGroup.registerItemGroups();
 		DecoItems.registerDecoItems();
 		DecoBlocks.registerDecoBlocks();
 		DecoBlockEntities.registerBlockEntities();
@@ -143,6 +144,15 @@ public class VaranDeco implements ModInitializer {
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_BUTTON, DecoBlocks.WAXED_COPPER_BUTTON);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(EXPOSED_COPPER_BUTTON, DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_BUTTON, DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_BUTTON, DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
+
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_BUTTON, EXPOSED_COPPER_BUTTON);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(EXPOSED_COPPER_BUTTON, DecoBlocks.WEATHERED_COPPER_BUTTON);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_BUTTON, DecoBlocks.OXIDIZED_COPPER_BUTTON);
 
 		StrippableBlockRegistry.register(DecoBlocks.WOODEN_LOG, DecoBlocks.STRIPPED_WOODEN_LOG);
 		StrippableBlockRegistry.register(DecoBlocks.WOODEN_WOOD, DecoBlocks.STRIPPED_WOODEN_WOOD);

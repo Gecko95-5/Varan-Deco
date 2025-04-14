@@ -44,6 +44,29 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem())
                 .add(DecoBlocks.WOODEN_PRESSURE_PLATE.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON.asItem())
+                .add(DecoBlocks.DEEPSLATE_BUTTON.asItem())
+                .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON.asItem())
+                .add(DecoBlocks.COBBLESTONE_BUTTON.asItem())
+                .add(DecoBlocks.BLACKSTONE_BUTTON.asItem())
+                .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.METAL_BUTTONS)
+                .add(DecoBlocks.IRON_BUTTON.asItem())
+                .add(DecoBlocks.GOLD_BUTTON.asItem())
+                .add(DecoBlocks.COPPER_BUTTON.asItem())
+                .add(DecoBlocks.EXPOSED_COPPER_BUTTON.asItem())
+                .add(DecoBlocks.WEATHERED_COPPER_BUTTON.asItem())
+                .add(DecoBlocks.OXIDIZED_COPPER_BUTTON.asItem())
+                .add(DecoBlocks.WAXED_COPPER_BUTTON.asItem())
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON.asItem())
+                .add(DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON.asItem())
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON.asItem());
+
+        getOrCreateTagBuilder(ItemTags.BUTTONS)
+                .addTag(DecoTags.Items.METAL_BUTTONS);
+
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .addTag(DecoTags.Items.WOODEN_LOGS);
 

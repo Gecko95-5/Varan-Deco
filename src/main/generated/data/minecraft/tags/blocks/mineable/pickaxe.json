@@ -245,18 +245,12 @@
     "varan-deco:heavy_iron_bars",
     "varan-deco:gold_door",
     "varan-deco:gold_trapdoor",
-    "varan-deco:polished_deepslate_button",
     "varan-deco:polished_deepslate_pressure_plate",
-    "varan-deco:deepslate_button",
     "varan-deco:deepslate_pressure_plate",
-    "varan-deco:cobbled_deepslate_button",
     "varan-deco:cobbled_deepslate_pressure_plate",
-    "varan-deco:cobblestone_button",
     "varan-deco:cobblestone_pressure_plate",
-    "varan-deco:blackstone_button",
     "varan-deco:blackstone_pressure_plate",
     "varan-deco:polished_stone_pressure_plate",
-    "varan-deco:polished_stone_button",
     "#varan-deco:copper_bars",
     "#varan-deco:copper_lantern",
     "varan-deco:copper_chain",
@@ -274,6 +268,7 @@
     "varan-deco:weathered_copper_weight_pressure_plate",
     "varan-deco:waxed_exposed_copper_weight_pressure_plate",
     "varan-deco:oxidized_copper_weight_pressure_plate",
-    "varan-deco:waxed_oxidized_copper_weight_pressure_plate"
+    "varan-deco:waxed_oxidized_copper_weight_pressure_plate",
+    "#varan-deco:metal_buttons"
   ]
 }

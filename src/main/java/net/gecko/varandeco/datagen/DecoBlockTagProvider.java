@@ -262,18 +262,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HEAVY_IRON_BARS)
                 .add(DecoBlocks.GOLD_DOOR)
                 .add(DecoBlocks.GOLD_TRAPDOOR)
-                .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
-                .add(DecoBlocks.DEEPSLATE_BUTTON)
                 .add(DecoBlocks.DEEPSLATE_PRESSURE_PLATE)
-                .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
                 .add(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE)
-                .add(DecoBlocks.COBBLESTONE_BUTTON)
                 .add(DecoBlocks.COBBLESTONE_PRESSURE_PLATE)
-                .add(DecoBlocks.BLACKSTONE_BUTTON)
                 .add(DecoBlocks.BLACKSTONE_PRESSURE_PLATE)
                 .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE)
-                .add(DecoBlocks.POLISHED_STONE_BUTTON)
                 .addTag(DecoTags.Blocks.COPPER_BARS)
                 .addTag(DecoTags.Blocks.COPPER_LANTERN)
                 .add(DecoBlocks.COPPER_CHAIN)
@@ -291,7 +285,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
+                .addTag(DecoTags.Blocks.METAL_BUTTONS);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -447,6 +442,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD)
                 .add(DecoBlocks.STRIPPED_WOODEN_LOG);
 
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .addTag(DecoTags.Blocks.METAL_BUTTONS);
+
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(DecoBlocks.POLISHED_STONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_STONE_STAIRS)
@@ -553,6 +551,26 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(DecoBlocks.CACTUS_PLANK_BUTTON)
                 .add(DecoBlocks.WOODEN_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.STONE_BUTTONS)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
+                .add(DecoBlocks.DEEPSLATE_BUTTON)
+                .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
+                .add(DecoBlocks.COBBLESTONE_BUTTON)
+                .add(DecoBlocks.BLACKSTONE_BUTTON)
+                .add(DecoBlocks.POLISHED_STONE_BUTTON);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.METAL_BUTTONS)
+                .add(DecoBlocks.IRON_BUTTON)
+                .add(DecoBlocks.GOLD_BUTTON)
+                .add(DecoBlocks.COPPER_BUTTON)
+                .add(DecoBlocks.EXPOSED_COPPER_BUTTON)
+                .add(DecoBlocks.WEATHERED_COPPER_BUTTON)
+                .add(DecoBlocks.OXIDIZED_COPPER_BUTTON)
+                .add(DecoBlocks.WAXED_COPPER_BUTTON)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON)
+                .add(DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)

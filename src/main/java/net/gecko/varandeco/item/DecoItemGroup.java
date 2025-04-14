@@ -159,8 +159,10 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CUT_IRON_SLAB.asItem());
                         entries.add(DecoBlocks.LIGHT_IRON_BARS.asItem());
                         entries.add(DecoBlocks.HEAVY_IRON_BARS.asItem());
+                        entries.add(DecoBlocks.IRON_BUTTON.asItem());
                         entries.add(DecoBlocks.GOLD_DOOR.asItem());
                         entries.add(DecoBlocks.GOLD_TRAPDOOR.asItem());
+                        entries.add(DecoBlocks.GOLD_BUTTON.asItem());
                         entries.add(DecoBlocks.QUARTZ_WALL.asItem());
                         entries.add(DecoBlocks.QUARTZ_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.QUARTZ_BRICK_SLAB.asItem());
@@ -211,6 +213,14 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.WAXED_COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.EXPOSED_COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.WEATHERED_COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.OXIDIZED_COPPER_BUTTON.asItem());
+                        entries.add(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON.asItem());
                         entries.add(DecoBlocks.PACKED_ICE_STAIRS.asItem());
                         entries.add(DecoBlocks.PACKED_ICE_SLAB.asItem());
                         entries.add(DecoBlocks.PACKED_ICE_WALL.asItem());
@@ -690,4 +700,8 @@ public class DecoItemGroup {
                         entries.add(DecoItems.WARPED_WART);
                         entries.add(DecoItems.COPPER_NUGGET);
                     }).build());
+
+    public static void registerItemGroups(){
+        VaranDeco.LOGGER.info("Registering Item Groups for " + VaranDeco.MOD_ID);
     }
+}

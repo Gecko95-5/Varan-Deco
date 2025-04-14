@@ -3820,5 +3820,21 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),
                         conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.COPPER_BUTTON)
+                .input(DecoItems.COPPER_NUGGET)
+                .criterion(hasItem(DecoItems.COPPER_NUGGET),
+                        conditionsFromItem(DecoItems.COPPER_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COPPER_BUTTON)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.IRON_BUTTON)
+                .input(Items.IRON_NUGGET)
+                .criterion(hasItem(Items.IRON_NUGGET),
+                        conditionsFromItem(Items.IRON_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.IRON_BUTTON)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.GOLD_BUTTON)
+                .input(Items.GOLD_NUGGET)
+                .criterion(hasItem(Items.GOLD_NUGGET),
+                        conditionsFromItem(Items.GOLD_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_BUTTON)));
     }
 }

@@ -3,33 +3,27 @@ package net.gecko.varandeco.block;
 import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
-import net.gecko.varandeco.block.oxidizable.OxidizableChainBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizableLanternBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizablePaneBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizablePressurePlateBlock;
+import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.roses.EnderRoseBlock;
 import net.gecko.varandeco.block.roses.EnderRoseBushBlock;
 import net.gecko.varandeco.block.roses.WitherRoseBushBlock;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
-import net.gecko.varandeco.item.DecoItemGroup;
-import net.gecko.varandeco.util.DecoTags;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -322,7 +316,8 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK)));
     public static final Block BLACK_ICE = registerBlock("black_ice",
             new BlackIceBlock(FabricBlockSettings.create().slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F).mapColor(MapColor.BLACK)));
+                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
+                    .mapColor(MapColor.BLACK).pistonBehavior(PistonBehavior.BLOCK)));
     public static final Block WHITE_BLOCK = registerBlock("white_block",
             new Block(FabricBlockSettings.create().resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.WHITE)));
@@ -1534,6 +1529,38 @@ public class DecoBlocks {
     public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
                     BlockSetType.OAK, 30, true));
+
+    public static final Block IRON_BUTTON = registerBlock("iron_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
+                    BlockSetType.IRON, 50, false));
+    public static final Block GOLD_BUTTON = registerBlock("gold_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
+                    BlockSetType.GOLD, 1, false));
+
+    public static final Block COPPER_BUTTON = registerBlock("copper_button",
+            new OxidizableButtonBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 10, false));
+    public static final Block WAXED_COPPER_BUTTON = registerBlock("waxed_copper_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_BUTTON),
+                    BlockSetType.IRON, 10, false));
+    public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button",
+            new OxidizableButtonBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 20, false));
+    public static final Block WAXED_EXPOSED_COPPER_BUTTON = registerBlock("waxed_exposed_copper_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_BUTTON),
+                    BlockSetType.IRON, 20, false));
+    public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button",
+            new OxidizableButtonBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 30, false));
+    public static final Block WAXED_WEATHERED_COPPER_BUTTON = registerBlock("waxed_weathered_copper_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_BUTTON),
+                    BlockSetType.IRON, 30, false));
+    public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button",
+            new OxidizableButtonBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 40, false));
+    public static final Block WAXED_OXIDIZED_COPPER_BUTTON = registerBlock("waxed_oxidized_copper_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_BUTTON),
+                    BlockSetType.IRON, 40, false));
 
     public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)

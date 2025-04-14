@@ -956,6 +956,18 @@
   "block.varan-deco.wooden_door": "Wooden Door",
   "block.varan-deco.wooden_trapdoor": "Wooden Trapdoor",
 
+  "block.varan-deco.iron_button": "Iron Button",
+  "block.varan-deco.gold_button": "Gold Button",
+
+  "block.varan-deco.copper_button": "Copper Button",
+  "block.varan-deco.waxed_copper_button": "Waxed Copper Button",
+  "block.varan-deco.exposed_copper_button": "Exposed Copper Button",
+  "block.varan-deco.waxed_exposed_copper_button": "Waxed Exposed Copper Button",
+  "block.varan-deco.weathered_copper_button": "Weathered Copper Button",
+  "block.varan-deco.waxed_weathered_copper_button": "Waxed Weathered Copper Button",
+  "block.varan-deco.oxidized_copper_button": "Oxidized Copper Button",
+  "block.varan-deco.waxed_oxidized_copper_button": "Waxed Oxidized Copper Button",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
@@ -968,5 +980,5 @@
   "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
 
-  "itemGroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
+  "itemgroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
 }

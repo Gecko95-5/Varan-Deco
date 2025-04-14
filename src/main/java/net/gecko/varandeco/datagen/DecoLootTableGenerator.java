@@ -633,8 +633,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CUT_IRON_STAIRS);
         slabDrops(DecoBlocks.CUT_IRON_SLAB);
 
-        slabDrops(DecoBlocks.LIGHT_IRON_BARS);
-        slabDrops(DecoBlocks.HEAVY_IRON_BARS);
+        addDrop(DecoBlocks.LIGHT_IRON_BARS);
+        addDrop(DecoBlocks.HEAVY_IRON_BARS);
 
         doorDrops(DecoBlocks.GOLD_DOOR);
         addDrop(DecoBlocks.GOLD_TRAPDOOR);
@@ -642,32 +642,32 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
         addDrop(DecoBlocks.POLISHED_DEEPSLATE_BUTTON);
 
-        slabDrops(DecoBlocks.HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS);
 
-        slabDrops(DecoBlocks.LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_EXPOSED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_WEATHERED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS);
 
-        slabDrops(DecoBlocks.COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_COPPER_BARS);
-        slabDrops(DecoBlocks.EXPOSED_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_BARS);
-        slabDrops(DecoBlocks.WEATHERED_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_BARS);
-        slabDrops(DecoBlocks.OXIDIZED_COPPER_BARS);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
+        addDrop(DecoBlocks.COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_COPPER_BARS);
+        addDrop(DecoBlocks.EXPOSED_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_BARS);
+        addDrop(DecoBlocks.WEATHERED_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_BARS);
+        addDrop(DecoBlocks.OXIDIZED_COPPER_BARS);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
 
         addDrop(DecoBlocks.DEEPSLATE_PRESSURE_PLATE);
         addDrop(DecoBlocks.DEEPSLATE_BUTTON);
@@ -733,41 +733,52 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.LAVENDER);
         pottedPlantDrops(DecoBlocks.POTTED_LAVENDER);
 
-        slabDrops(DecoBlocks.COPPER_CHAIN);
-        slabDrops(DecoBlocks.WAXED_COPPER_CHAIN);
-        slabDrops(DecoBlocks.EXPOSED_COPPER_CHAIN);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN);
-        slabDrops(DecoBlocks.WEATHERED_COPPER_CHAIN);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN);
-        slabDrops(DecoBlocks.OXIDIZED_COPPER_CHAIN);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+        addDrop(DecoBlocks.COPPER_CHAIN);
+        addDrop(DecoBlocks.WAXED_COPPER_CHAIN);
+        addDrop(DecoBlocks.EXPOSED_COPPER_CHAIN);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+        addDrop(DecoBlocks.WEATHERED_COPPER_CHAIN);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+        addDrop(DecoBlocks.OXIDIZED_COPPER_CHAIN);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
 
-        slabDrops(DecoBlocks.COPPER_LANTERN);
-        slabDrops(DecoBlocks.WAXED_COPPER_LANTERN);
-        slabDrops(DecoBlocks.EXPOSED_COPPER_LANTERN);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN);
-        slabDrops(DecoBlocks.WEATHERED_COPPER_LANTERN);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN);
-        slabDrops(DecoBlocks.OXIDIZED_COPPER_LANTERN);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+        addDrop(DecoBlocks.COPPER_LANTERN);
+        addDrop(DecoBlocks.WAXED_COPPER_LANTERN);
+        addDrop(DecoBlocks.EXPOSED_COPPER_LANTERN);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+        addDrop(DecoBlocks.WEATHERED_COPPER_LANTERN);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+        addDrop(DecoBlocks.OXIDIZED_COPPER_LANTERN);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
 
-        slabDrops(DecoBlocks.COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.WAXED_COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.WAXED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
 
-        slabDrops(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
-        slabDrops(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+        addDrop(DecoBlocks.COPPER_BUTTON);
+        addDrop(DecoBlocks.WAXED_COPPER_BUTTON);
+        addDrop(DecoBlocks.COPPER_BUTTON);
+        addDrop(DecoBlocks.WAXED_COPPER_BUTTON);
+        addDrop(DecoBlocks.EXPOSED_COPPER_BUTTON);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON);
+        addDrop(DecoBlocks.WEATHERED_COPPER_BUTTON);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON);
+        addDrop(DecoBlocks.OXIDIZED_COPPER_BUTTON);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
 
         addDrop(DecoBlocks.WHITE_BLOCK);
         addDrop(DecoBlocks.LIGHT_GRAY_BLOCK);
