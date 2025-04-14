@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_packed_ice",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_packed_ice"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:packed_ice_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

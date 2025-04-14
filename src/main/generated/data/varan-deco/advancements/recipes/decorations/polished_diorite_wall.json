@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_polished_diorite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_polished_diorite"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:polished_diorite_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_soul_soilstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_soul_soilstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cut_soul_soilstone_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

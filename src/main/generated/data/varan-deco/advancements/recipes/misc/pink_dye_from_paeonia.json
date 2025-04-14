@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_paeonia",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_paeonia"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_dye_from_paeonia"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

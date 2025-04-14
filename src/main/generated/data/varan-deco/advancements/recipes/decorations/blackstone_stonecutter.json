@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
-      "has_blackstone",
-      "has_the_recipe"
+      "has_blackstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:blackstone_stonecutter"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

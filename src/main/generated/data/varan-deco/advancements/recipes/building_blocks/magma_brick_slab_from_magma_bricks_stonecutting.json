@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_magma_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_magma_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:magma_brick_slab_from_magma_bricks_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

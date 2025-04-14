@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_polished_diorite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_polished_diorite"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:polished_diorite_wall_from_polished_diorite_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

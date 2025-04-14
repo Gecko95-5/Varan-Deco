@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_nether_brick",
-      "has_nether_bricks",
-      "has_the_recipe"
+      "has_nether_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:nether_brick_fence_gate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

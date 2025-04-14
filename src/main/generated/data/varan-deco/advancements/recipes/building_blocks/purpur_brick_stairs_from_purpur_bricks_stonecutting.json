@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_purpur_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_purpur_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:purpur_brick_stairs_from_purpur_bricks_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

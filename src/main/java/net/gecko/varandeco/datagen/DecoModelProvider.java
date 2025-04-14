@@ -208,14 +208,14 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
         blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
 
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.EXPOSED_COPPER);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.EXPOSED_COPPER);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.WEATHERED_COPPER);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.WEATHERED_COPPER);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.OXIDIZED_COPPER);
-        blockStateModelGenerator.registerPressurePlate(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.OXIDIZED_COPPER);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.EXPOSED_COPPER);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.EXPOSED_COPPER);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.WEATHERED_COPPER);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.WEATHERED_COPPER);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.OXIDIZED_COPPER);
+        blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.OXIDIZED_COPPER);
 
         blockStateModelGenerator.registerLantern(DecoBlocks.COPPER_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.EXPOSED_COPPER_LANTERN);

@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_purple_dye",
-      "has_hardened_glass",
-      "has_the_recipe"
+      "has_hardened_glass"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:hardened_purple_stained_glass"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

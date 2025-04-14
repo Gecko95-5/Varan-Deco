@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_snowball",
-      "has_snow_brick",
-      "has_the_recipe"
+      "has_snow_brick"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:chiseled_snow_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

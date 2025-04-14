@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_wither_rose_bush",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_wither_rose_bush"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:black_dye_from_wither_rose_bush"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_smooth_deepslate",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_smooth_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:smooth_deepslate_stairs_from_smooth_deepslate_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

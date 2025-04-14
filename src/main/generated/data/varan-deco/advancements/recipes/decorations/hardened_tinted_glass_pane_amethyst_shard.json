@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_amethyst_shard",
-      "has_hardened_glass_pane",
-      "has_the_recipe"
+      "has_hardened_glass_pane"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:hardened_tinted_glass_pane_amethyst_shard"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

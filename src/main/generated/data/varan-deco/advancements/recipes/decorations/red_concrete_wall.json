@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_red_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_red_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:red_concrete_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

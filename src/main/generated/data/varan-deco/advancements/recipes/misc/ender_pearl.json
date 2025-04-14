@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_warped_wart",
-      "has_chorus_fruit",
-      "has_the_recipe"
+      "has_chorus_fruit"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:ender_pearl"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

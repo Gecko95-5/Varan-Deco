@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_obsidian_pillar",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_obsidian_pillar"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:chiseled_obsidian_from_obsidian_pillar_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

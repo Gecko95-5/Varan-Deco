@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_green_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_green_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:green_concrete_wall_from_green_concrete_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

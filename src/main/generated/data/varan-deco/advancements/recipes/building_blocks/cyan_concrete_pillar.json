@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cyan_concrete_slab",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cyan_concrete_slab"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cyan_concrete_pillar"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_blue_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_blue_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:blue_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

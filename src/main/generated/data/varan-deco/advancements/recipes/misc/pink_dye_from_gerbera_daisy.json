@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_gerbera_daisy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_gerbera_daisy"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_dye_from_gerbera_daisy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

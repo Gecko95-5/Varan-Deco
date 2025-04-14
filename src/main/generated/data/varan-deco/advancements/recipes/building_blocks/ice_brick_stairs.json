@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_ice_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_ice_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:ice_brick_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

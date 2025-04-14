@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_light_gray_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_light_gray_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:light_gray_terracotta_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

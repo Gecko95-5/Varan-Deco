@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_red_nether_brick_slab",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_red_nether_brick_slab"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:chiseled_red_nether_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

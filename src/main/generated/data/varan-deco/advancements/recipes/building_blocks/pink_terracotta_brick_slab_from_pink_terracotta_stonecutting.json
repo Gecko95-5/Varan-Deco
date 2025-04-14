@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_pink_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_pink_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_terracotta_brick_slab_from_pink_terracotta_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

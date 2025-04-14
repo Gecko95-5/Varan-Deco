@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_quartz_block",
-      "has_quartz",
-      "has_the_recipe"
+      "has_quartz"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_quartz"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

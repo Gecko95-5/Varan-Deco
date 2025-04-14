@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_purple_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_purple_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:purple_terracotta_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

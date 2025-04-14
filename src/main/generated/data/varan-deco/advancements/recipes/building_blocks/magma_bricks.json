@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_magma_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_magma_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:magma_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

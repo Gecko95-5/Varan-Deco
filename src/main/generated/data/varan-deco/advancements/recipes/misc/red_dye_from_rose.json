@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_rose",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_rose"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:red_dye_from_rose"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

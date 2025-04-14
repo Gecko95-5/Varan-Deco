@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_smooth_purpur",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_smooth_purpur"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:smooth_purpur_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_charcoal",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_charcoal"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:charcoal_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

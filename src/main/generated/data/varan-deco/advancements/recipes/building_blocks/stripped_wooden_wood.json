@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_stripped_wooden_log",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_stripped_wooden_log"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:stripped_wooden_wood"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

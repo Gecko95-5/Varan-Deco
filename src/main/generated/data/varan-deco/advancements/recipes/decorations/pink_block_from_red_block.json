@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_red_block",
-      "has_white_block",
-      "has_the_recipe"
+      "has_white_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_block_from_red_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

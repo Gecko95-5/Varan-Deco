@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
-      "has_glass_pane",
-      "has_the_recipe"
+      "has_glass_pane"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:hardened_glass_pane_iron_ingot"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

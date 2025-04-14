@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_red_sunflower",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_red_sunflower"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:red_dye_from_red_sunflower"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

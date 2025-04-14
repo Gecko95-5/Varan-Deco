@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_white_orchid",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_white_orchid"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_dye_from_pink_orchid"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

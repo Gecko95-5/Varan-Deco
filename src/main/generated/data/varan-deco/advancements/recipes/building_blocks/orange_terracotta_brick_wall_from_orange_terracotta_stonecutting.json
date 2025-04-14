@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_orange_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_orange_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:orange_terracotta_brick_wall_from_orange_terracotta_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

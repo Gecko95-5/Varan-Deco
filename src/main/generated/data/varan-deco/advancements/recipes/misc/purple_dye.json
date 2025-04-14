@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_purple_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_purple_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:purple_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

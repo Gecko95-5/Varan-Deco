@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_waxed_weathered_copper",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_waxed_weathered_copper"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:waxed_weathered_heavy_copper_bars"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

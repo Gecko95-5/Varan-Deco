@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_light_gray_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_light_gray_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:light_gray_concrete_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

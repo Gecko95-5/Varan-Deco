@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_california_poppy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_california_poppy"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:orange_dye_from_california_poppy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

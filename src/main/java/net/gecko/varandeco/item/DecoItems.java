@@ -36,21 +36,8 @@ public class DecoItems {
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(VaranDeco.MOD_ID, name),item);
     }
-    public static void addItemsToItemGroups() {
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CACTUS_SIGN);
-        addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_SIGN);
-        addToItemGroup(DecoItemGroup.VARAN_DECO, SNOW_BRICK);
-        addToItemGroup(DecoItemGroup.VARAN_DECO, BUBBLE_ORB);
-        addToItemGroup(DecoItemGroup.VARAN_DECO, WARPED_WART);
-        addToItemGroup(DecoItemGroup.VARAN_DECO, COPPER_NUGGET);
-    }
-
-    public static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
 
     public static void registerDecoItems() {
         VaranDeco.LOGGER.debug("Registering Items for" + VaranDeco.MOD_ID);
-        addItemsToItemGroups();
     }
 }

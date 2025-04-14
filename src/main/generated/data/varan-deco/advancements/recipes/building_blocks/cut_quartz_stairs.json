@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_quartz",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_quartz"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_quartz_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

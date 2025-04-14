@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_prismarine_shard",
-      "has_bubble_orb",
-      "has_the_recipe"
+      "has_bubble_orb"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:bubble_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

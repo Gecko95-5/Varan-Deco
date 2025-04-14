@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_glass",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_glass"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:hardened_magenta_stained_glass_pane"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

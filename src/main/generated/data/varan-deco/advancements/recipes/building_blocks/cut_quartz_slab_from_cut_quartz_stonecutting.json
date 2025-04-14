@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_quartz",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_quartz"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_quartz_slab_from_cut_quartz_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

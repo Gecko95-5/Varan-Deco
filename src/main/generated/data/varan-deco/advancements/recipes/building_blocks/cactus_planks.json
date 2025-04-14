@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cactus",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cactus"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cactus_planks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

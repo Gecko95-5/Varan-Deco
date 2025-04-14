@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_gray_concrete_slab",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_gray_concrete_slab"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:gray_concrete_pillar"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

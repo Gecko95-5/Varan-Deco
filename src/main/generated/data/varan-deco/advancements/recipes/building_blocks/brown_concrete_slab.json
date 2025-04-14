@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_brown_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_brown_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:brown_concrete_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

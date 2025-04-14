@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_smooth_sandstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_smooth_sandstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:smooth_sandstone_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

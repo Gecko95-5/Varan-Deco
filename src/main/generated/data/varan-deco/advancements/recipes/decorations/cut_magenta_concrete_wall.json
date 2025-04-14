@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_magenta_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_magenta_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cut_magenta_concrete_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

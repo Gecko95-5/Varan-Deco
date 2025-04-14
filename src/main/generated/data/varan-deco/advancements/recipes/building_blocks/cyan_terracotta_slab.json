@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cyan_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cyan_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cyan_terracotta_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

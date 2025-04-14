@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_brown_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_brown_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:brown_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

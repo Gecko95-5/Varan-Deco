@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_magenta_dye",
-      "has_hardened_glass_pane",
-      "has_the_recipe"
+      "has_hardened_glass_pane"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:dyed_hardened_magenta_stained_glass_pane"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

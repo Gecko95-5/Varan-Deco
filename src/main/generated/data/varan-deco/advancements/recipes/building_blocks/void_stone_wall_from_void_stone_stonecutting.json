@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_void_stone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_void_stone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:void_stone_wall_from_void_stone_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

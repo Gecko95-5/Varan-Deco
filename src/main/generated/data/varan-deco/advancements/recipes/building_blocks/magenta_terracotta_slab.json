@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_magenta_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_magenta_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:magenta_terracotta_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

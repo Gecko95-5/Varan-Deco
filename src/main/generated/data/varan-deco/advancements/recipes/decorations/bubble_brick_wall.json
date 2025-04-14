@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_bubble_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_bubble_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:bubble_brick_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_snow_brick",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_snow_brick"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:snow_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

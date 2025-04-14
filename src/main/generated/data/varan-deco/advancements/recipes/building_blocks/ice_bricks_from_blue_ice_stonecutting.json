@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_blue_ice",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_blue_ice"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:ice_bricks_from_blue_ice_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

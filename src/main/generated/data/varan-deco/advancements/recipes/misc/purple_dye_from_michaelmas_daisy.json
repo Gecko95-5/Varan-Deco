@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_michaelmas_daisy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_michaelmas_daisy"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:purple_dye_from_michaelmas_daisy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

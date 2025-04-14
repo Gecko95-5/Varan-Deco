@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_obsidian_slab",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_obsidian_slab"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:obsidian_pillar"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

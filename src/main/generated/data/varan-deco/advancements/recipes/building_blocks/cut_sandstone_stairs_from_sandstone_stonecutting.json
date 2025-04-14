@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_sandstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_sandstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_sandstone_stairs_from_sandstone_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

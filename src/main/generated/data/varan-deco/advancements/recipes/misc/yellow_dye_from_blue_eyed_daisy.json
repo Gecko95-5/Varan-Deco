@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_blue_eyed_daisy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_blue_eyed_daisy"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:yellow_dye_from_blue_eyed_daisy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

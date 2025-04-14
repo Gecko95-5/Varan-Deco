@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cactus_planks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cactus_planks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cactus_trapdoor"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

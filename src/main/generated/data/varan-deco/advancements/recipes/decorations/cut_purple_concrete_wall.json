@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_purple_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_purple_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cut_purple_concrete_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -46,15 +46,16 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
       "has_deepslate_furnace",
-      "has_smooth_deepslate",
-      "has_the_recipe"
+      "has_smooth_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:deepslate_blast_furnace"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

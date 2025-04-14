@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_crystallized_prismarine",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_crystallized_prismarine"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:sea_lantern_from_smelting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

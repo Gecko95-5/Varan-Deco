@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_paeonia",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_paeonia"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:peony"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

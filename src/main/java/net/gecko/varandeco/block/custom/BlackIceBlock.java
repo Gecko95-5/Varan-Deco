@@ -3,13 +3,10 @@ package net.gecko.varandeco.block.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -24,10 +21,6 @@ public class BlackIceBlock extends Block {
         super(settings);
     }
 
-    @Override
-    public PistonBehavior getPistonBehavior(BlockState state) {
-        return PistonBehavior.BLOCK;
-    }
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
@@ -58,8 +51,8 @@ public class BlackIceBlock extends Block {
                 return;
             }
 
-            Material material = world.getBlockState(pos.down()).getMaterial();
-            if (material.blocksMovement() || material.isSolid()) {
+            BlockState blockState = world.getBlockState(pos.down());
+            if (blockState.blocksMovement() || blockState.isReplaceable()) {
                 world.setBlockState(pos, Blocks.PACKED_ICE.getDefaultState());
             }
         }

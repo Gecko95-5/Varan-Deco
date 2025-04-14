@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_soul_soilstone_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_soul_soilstone_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_soul_soilstone_brick_wall_from_cut_soul_soilstone_bricks_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

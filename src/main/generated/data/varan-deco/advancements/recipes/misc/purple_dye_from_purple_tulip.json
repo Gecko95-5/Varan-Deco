@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_purple_tulip",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_purple_tulip"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:purple_dye_from_purple_tulip"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

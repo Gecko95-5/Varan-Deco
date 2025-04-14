@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_sandstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_sandstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cut_sandstone_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

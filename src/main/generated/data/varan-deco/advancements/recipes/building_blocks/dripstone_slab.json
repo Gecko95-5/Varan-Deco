@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_dripstone_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_dripstone_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:dripstone_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

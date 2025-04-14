@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_prismarine_crystals",
-      "has_prismarine_shard",
-      "has_the_recipe"
+      "has_prismarine_shard"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:chiseled_crystallized_prismarine_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

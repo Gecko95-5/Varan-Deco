@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_obsidian_pillar",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_obsidian_pillar"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:chiseled_obsidian"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

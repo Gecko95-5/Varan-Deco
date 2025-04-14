@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_wooden_planks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_wooden_planks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:wooden_sign"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

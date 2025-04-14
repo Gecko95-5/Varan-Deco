@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_salmon_poppy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_salmon_poppy"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_dye_from_salmon_poppy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

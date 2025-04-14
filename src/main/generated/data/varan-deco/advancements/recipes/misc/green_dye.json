@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_green_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_green_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:green_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_crystallized_prismarine",
-      "has_amethyst_shard",
-      "has_the_recipe"
+      "has_amethyst_shard"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:light_prismarine"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

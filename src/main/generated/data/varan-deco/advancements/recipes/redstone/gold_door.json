@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_gold_ingot",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_gold_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:gold_door"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_yellow_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_yellow_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:yellow_terracotta_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

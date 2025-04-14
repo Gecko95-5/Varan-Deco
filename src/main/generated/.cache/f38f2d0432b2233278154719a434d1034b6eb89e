@@ -1,4 +1,4 @@
-// 1.19.4	2025-04-13T19:57:04.5074973	Varan-Deco/Tags for minecraft:block
+// 1.20.2	2025-04-13T22:35:59.4452774	Varan-Deco/Tags for minecraft:block
 ca77bb1e80d4473489358c4a6701d9c168c04385 data\minecraft\tags\blocks\mineable\pickaxe.json
 4427a89071adbf69e89e8a8460feff7cda235c79 data\minecraft\tags\blocks\slabs.json
 d6fd153e3ac88d06da79dd14f1c47f0086ccea4b data\minecraft\tags\blocks\planks.json
@@ -33,9 +33,9 @@ ac53701d329aeca1c7adbae27837f62ec46ec9d8 data\minecraft\tags\blocks\snaps_goat_h
 ce31acf7a17e4864e181fab04cf10a559ebb95e9 data\minecraft\tags\blocks\snow_layer_cannot_survive_on.json
 06bd1476079615f2c1cd225789179eab4b2fd9ef data\minecraft\tags\blocks\guarded_by_piglins.json
 225124da5c3a06044318ca6ef320397078fa466a data\varan-deco\tags\blocks\terracotta_stairs.json
-b962027d06555f143bdd5ab1beda22a6f1161b11 data\minecraft\tags\blocks\needs_diamond_tool.json
-53e49d8b2f551484ffd6cae5e6acee01f11165d2 data\minecraft\tags\blocks\walls.json
 d2ef2ba41887482d61b3004b1b2ce08efe095be3 data\minecraft\tags\blocks\fence_gates.json
+53e49d8b2f551484ffd6cae5e6acee01f11165d2 data\minecraft\tags\blocks\walls.json
+b962027d06555f143bdd5ab1beda22a6f1161b11 data\minecraft\tags\blocks\needs_diamond_tool.json
 d407b9751f8dea4784116ff1c5a484adc2658aeb data\varan-deco\tags\blocks\wooden_logs.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\blocks\saplings.json
 88f186ed1354e3f7568744f890421f939c61e7bf data\minecraft\tags\blocks\wooden_doors.json

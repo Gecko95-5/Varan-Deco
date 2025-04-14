@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cobbled_deepslate",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cobbled_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cobbled_deepslate_button"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

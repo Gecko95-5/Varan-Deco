@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_light_prismarine",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_light_prismarine"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:light_prismarine_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

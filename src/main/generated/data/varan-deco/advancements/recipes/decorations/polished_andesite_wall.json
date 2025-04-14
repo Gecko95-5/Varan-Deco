@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_polished_andesite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_polished_andesite"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:polished_andesite_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_torch",
-      "has_copper_nugget",
-      "has_the_recipe"
+      "has_copper_nugget"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:copper_lantern"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

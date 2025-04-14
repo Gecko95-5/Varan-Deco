@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_yellow_dye",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_yellow_dye"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:yellow_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_tuff",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_tuff"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:tuff_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

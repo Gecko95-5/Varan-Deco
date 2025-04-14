@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_blue_tulip",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_blue_tulip"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:light_blue_dye_from_blue_tulip"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

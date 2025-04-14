@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_green_tulip",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_green_tulip"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:lime_dye_from_green_tulip"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

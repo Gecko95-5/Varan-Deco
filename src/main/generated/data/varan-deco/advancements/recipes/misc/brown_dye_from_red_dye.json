@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_red_dye",
-      "has_green_dye",
-      "has_the_recipe"
+      "has_green_dye"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:brown_dye_from_red_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

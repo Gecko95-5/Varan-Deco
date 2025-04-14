@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_magenta_dye",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_magenta_dye"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:magenta_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

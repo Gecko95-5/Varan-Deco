@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_iron",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_iron"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_iron_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

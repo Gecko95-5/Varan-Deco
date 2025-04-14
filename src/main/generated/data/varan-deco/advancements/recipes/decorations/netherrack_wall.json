@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_netherrack",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_netherrack"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:netherrack_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

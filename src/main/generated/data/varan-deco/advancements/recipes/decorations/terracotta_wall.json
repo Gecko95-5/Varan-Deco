@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:terracotta_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -46,15 +46,16 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
       "has_blackstone_furnace",
-      "has_smooth_blackstone",
-      "has_the_recipe"
+      "has_smooth_blackstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:blackstone_blast_furnace"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

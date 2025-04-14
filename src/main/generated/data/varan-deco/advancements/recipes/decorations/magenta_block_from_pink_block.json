@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_pink_block",
-      "has_purple_block",
-      "has_the_recipe"
+      "has_purple_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:magenta_block_from_pink_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

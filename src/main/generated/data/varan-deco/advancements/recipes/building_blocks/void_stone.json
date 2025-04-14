@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_ender_pearl",
-      "has_end_stone",
-      "has_the_recipe"
+      "has_end_stone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:void_stone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

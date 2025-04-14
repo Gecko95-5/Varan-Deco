@@ -31,7 +31,6 @@ public class VaranDeco implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		DecoItemGroup.registerItemGroup();
 
 		DecoItems.registerDecoItems();
 		DecoBlocks.registerDecoBlocks();

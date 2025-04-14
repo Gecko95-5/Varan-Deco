@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_soul_soilstone_slab",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_soul_soilstone_slab"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:chiseled_soul_soilstone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

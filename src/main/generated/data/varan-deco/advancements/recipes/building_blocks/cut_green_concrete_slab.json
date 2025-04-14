@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cut_green_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cut_green_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cut_green_concrete_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

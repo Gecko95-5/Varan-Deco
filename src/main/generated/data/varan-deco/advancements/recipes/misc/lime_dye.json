@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_lime_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_lime_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:lime_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

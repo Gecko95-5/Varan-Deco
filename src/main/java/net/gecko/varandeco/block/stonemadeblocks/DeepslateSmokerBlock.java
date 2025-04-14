@@ -31,7 +31,7 @@ public class DeepslateSmokerBlock extends AbstractFurnaceBlock {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return checkType(type, DecoBlockEntities.DEEPSLATE_SMOKER_BE, DeepslateSmokerBlockEntity::tick);
+		return validateTicker(type, DecoBlockEntities.DEEPSLATE_SMOKER_BE, DeepslateSmokerBlockEntity::tick);
 	}
 
 	@Override

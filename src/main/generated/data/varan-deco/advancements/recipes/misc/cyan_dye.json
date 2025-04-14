@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cyan_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cyan_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cyan_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

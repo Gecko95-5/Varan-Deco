@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_ender_rose_bush",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_ender_rose_bush"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:purple_dye_from_ender_rose_bush"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

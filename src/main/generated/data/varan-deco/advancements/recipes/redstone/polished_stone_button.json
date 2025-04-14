@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_polished_stone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_polished_stone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:polished_stone_button"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

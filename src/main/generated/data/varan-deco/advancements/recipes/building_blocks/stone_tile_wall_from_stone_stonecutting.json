@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_stone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_stone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:stone_tile_wall_from_stone_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

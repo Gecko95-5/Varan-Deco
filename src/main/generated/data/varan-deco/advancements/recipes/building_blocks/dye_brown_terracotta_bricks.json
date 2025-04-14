@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_terracotta_bricks",
-      "has_brown_dye",
-      "has_the_recipe"
+      "has_brown_dye"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:dye_brown_terracotta_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

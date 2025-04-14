@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cobblestone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:polished_stone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

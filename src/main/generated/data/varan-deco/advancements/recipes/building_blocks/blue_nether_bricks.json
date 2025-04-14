@@ -34,14 +34,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_warped_wart",
-      "has_nether_brick",
-      "has_the_recipe"
+      "has_nether_brick"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:blue_nether_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

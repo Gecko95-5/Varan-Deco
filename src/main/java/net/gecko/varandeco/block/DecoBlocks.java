@@ -23,6 +23,7 @@ import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.util.DecoTags;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffects;
@@ -38,20 +39,20 @@ import net.minecraft.util.math.Direction;
 
 public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
-            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(2.0f,3.0f)
-                    .sounds(BlockSoundGroup.WOOD)));
+            new Block(FabricBlockSettings.create().strength(2.0f,3.0f)
+                    .sounds(BlockSoundGroup.WOOD).mapColor(MapColor.PALE_GREEN)));
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
-            new Block(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,3.0f)
+            new Block(FabricBlockSettings.create().mapColor(MapColor.BROWN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD)));
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
-            new Block(FabricBlockSettings.of(Material.STONE, MapColor.SPRUCE_BROWN).requiresTool()
-                    .strength(5.0F, 6.0F).sounds(BlockSoundGroup.WOOD)));
+            new Block(FabricBlockSettings.create().requiresTool()
+                    .strength(5.0F, 6.0F).sounds(BlockSoundGroup.WOOD).mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block FLINT_BLOCK = registerBlock("flint_block",
-            new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).requiresTool().strength(5.0F, 6.0F)
+            new Block(FabricBlockSettings.create().requiresTool().strength(5.0F, 6.0F)
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
     public static final Block ECHO_BLOCK = registerBlock("echo_block",
-            new Block(FabricBlockSettings.of(Material.METAL, MapColor.BLACK).requiresTool().strength(2.0F, 3.0F)
-                    .sounds(BlockSoundGroup.SCULK_CATALYST).luminance(state -> 7)));
+            new Block(FabricBlockSettings.create().requiresTool().strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.SCULK_CATALYST).luminance(state -> 7).mapColor(MapColor.BLACK)));
     public static final Block CUT_IRON = registerBlock("cut_iron",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block CUT_IRON_STAIRS = registerBlock("cut_iron_stairs",
@@ -63,10 +64,10 @@ public class DecoBlocks {
     public static final Block STRIPPED_WOODEN_LOG = registerBlock("stripped_wooden_log",
             createLogBlock(MapColor.BROWN, MapColor.BROWN));
     public static final Block STRIPPED_WOODEN_WOOD = registerBlock("stripped_wooden_wood",
-            new PillarBlock(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
+            new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD)));
     public static final Block WOODEN_WOOD = registerBlock("wooden_wood",
-            new PillarBlock(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,2.0f)
+            new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD)));
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
             new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0f,100.0f)
@@ -75,7 +76,7 @@ public class DecoBlocks {
             new TintedGlassBlock(FabricBlockSettings.copyOf(Blocks.TINTED_GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()));
     public static final Block CUT_SANDSTONE_BRICKS = registerBlock("cut_sandstone_bricks",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(1.6f).requiresTool()));
+            new Block(FabricBlockSettings.create().strength(1.6f).requiresTool()));
     public static final Block SMOOTH_PURPUR = registerBlock("smooth_purpur",
             new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK)));
     public static final Block SMOOTH_DEEPSLATE = registerBlock("smooth_deepslate",
@@ -97,12 +98,12 @@ public class DecoBlocks {
     public static final Block PURPUR_BRICKS = registerBlock("purpur_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK)));
     public static final Block SNOW_BRICKS = registerBlock("snow_bricks",
-            new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).slipperiness(0.89F)
+            new Block(FabricBlockSettings.create().slipperiness(0.89F)
                     .strength(1.0f).resistance(0.7f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block POLISHED_STONE = registerBlock("polished_stone",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(2.5f).resistance(6.0f).requiresTool()));
+            new Block(FabricBlockSettings.create().strength(2.5f).resistance(6.0f).requiresTool()));
     public static final Block STONE_TILES = registerBlock("stone_tiles",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f).resistance(6.0f).requiresTool()));
+            new Block(FabricBlockSettings.create().strength(1.5f).resistance(6.0f).requiresTool()));
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
             new MagmaBrickBlock(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)));
     public static final Block CHISELED_END_STONE = registerBlock("chiseled_end_stone",
@@ -199,7 +200,7 @@ public class DecoBlocks {
             new StainedGlassBlock(DyeColor.BLACK, FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool()));
     public static final Block CUT_RED_SANDSTONE_BRICKS = registerBlock("cut_red_sandstone_bricks",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(1.6f).requiresTool()));
+            new Block(FabricBlockSettings.create().strength(1.6f).requiresTool()));
     public static final Block CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.DIAMOND_BLUE)));
     public static final Block CRYSTALLIZED_PRISMARINE = registerBlock("crystallized_prismarine",
@@ -217,7 +218,7 @@ public class DecoBlocks {
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
             new MagmaBrickBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).strength(1.4f)));
     public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0.8f).requiresTool().mapColor(MapColor.BROWN)));
+            new Block(FabricBlockSettings.create().strength(0.8f).requiresTool().mapColor(MapColor.BROWN)));
     public static final Block CHISELED_SOUL_SOILSTONE = registerBlock("chiseled_soul_soilstone",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)));
     public static final Block CUT_SOUL_SOILSTONE = registerBlock("cut_soul_soilstone",
@@ -318,58 +319,58 @@ public class DecoBlocks {
     public static final Block CHISELED_GLIDED_BLACKSTONE = registerBlock("chiseled_gilded_blackstone",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_GLIDED_BLACKSTONE)));
     public static final Block POLISHED_BLACKSTONE_TILES = registerBlock("polished_blackstone_tiles",
-            new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).strength(1.5f).resistance(6.0f).requiresTool()));
+            new Block(FabricBlockSettings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK)));
     public static final Block BLACK_ICE = registerBlock("black_ice",
-            new BlackIceBlock(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.BLACK).slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)));
+            new BlackIceBlock(FabricBlockSettings.create().slipperiness(1.18F)
+                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F).mapColor(MapColor.BLACK)));
     public static final Block WHITE_BLOCK = registerBlock("white_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.WHITE).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.WHITE)));
     public static final Block ORANGE_BLOCK = registerBlock("orange_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.ORANGE).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.ORANGE)));
     public static final Block MAGENTA_BLOCK = registerBlock("magenta_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.MAGENTA).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.MAGENTA)));
     public static final Block LIGHT_BLUE_BLOCK = registerBlock("light_blue_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_BLUE).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.LIGHT_BLUE)));
     public static final Block YELLOW_BLOCK = registerBlock("yellow_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.YELLOW).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.YELLOW)));
     public static final Block LIME_BLOCK = registerBlock("lime_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIME).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.LIME)));
     public static final Block PINK_BLOCK = registerBlock("pink_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PINK).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.PINK)));
     public static final Block GRAY_BLOCK = registerBlock("gray_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GRAY).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.GRAY)));
     public static final Block LIGHT_GRAY_BLOCK = registerBlock("light_gray_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_GRAY).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.LIGHT_GRAY)));
     public static final Block CYAN_BLOCK = registerBlock("cyan_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.CYAN).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.CYAN)));
     public static final Block PURPLE_BLOCK = registerBlock("purple_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PURPLE).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.PURPLE)));
     public static final Block BLUE_BLOCK = registerBlock("blue_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLUE).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.BLUE)));
     public static final Block BROWN_BLOCK = registerBlock("brown_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BROWN).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.BROWN)));
     public static final Block GREEN_BLOCK = registerBlock("green_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GREEN).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.GREEN)));
     public static final Block RED_BLOCK = registerBlock("red_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.RED).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.RED)));
     public static final Block BLACK_BLOCK = registerBlock("black_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLACK).resistance(0.5f)
-                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+            new Block(FabricBlockSettings.create().resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.BLACK)));
 
     public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
             new WarpedWartBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque()));
@@ -1618,131 +1619,131 @@ public class DecoBlocks {
             new TerraformWallSignBlock(WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
 
     public static final Block STONE_TEMP = registerBlock("stone_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block SMOOTH_STONE_TEMP = registerBlock("smooth_stone_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block POLISHED_ANDESITE_TEMP = registerBlock("polished_andesite_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block POLISHED_DIORITE_TEMP = registerBlock("polished_diorite_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block POLISHED_GRANITE_TEMP = registerBlock("polished_granite_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block DRIPSTONE_TEMP = registerBlock("dripstone_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block CALCITE_TEMP = registerBlock("calcite_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block TUFF_TEMP = registerBlock("tuff_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PACKED_MUD_TEMP = registerBlock("packed_mud_temp",
-            new Block(FabricBlockSettings.of(Material.WOOD).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block NETHER_BRICKS_TEMP = registerBlock("nether_bricks_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block RED_NETHER_BRICKS_TEMP = registerBlock("red_nether_bricks_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block NETHERRACK_TEMP = registerBlock("netherrack_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block MAGMA_TEMP = registerBlock("magma_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block SNOW_TEMP = registerBlock("snow_temp",
-            new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PACKED_ICE_TEMP = registerBlock("packed_ice_temp",
-            new Block(FabricBlockSettings.of(Material.DENSE_ICE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BLUE_ICE_TEMP = registerBlock("blue_ice_temp",
-            new Block(FabricBlockSettings.of(Material.DENSE_ICE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block SANDSTONE_TOP_TEMP = registerBlock("sandstone_top_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block RED_SANDSTONE_TOP_TEMP = registerBlock("red_sandstone_top_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block DARK_PRISMARINE_TEMP = registerBlock("dark_prismarine_temp",
-            new Block(FabricBlockSettings.of(Material.DENSE_ICE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PRISMARINE_BRICKS_TEMP = registerBlock("prismarine_bricks_temp",
-            new Block(FabricBlockSettings.of(Material.DENSE_ICE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block QUARTZ_TEMP = registerBlock("quartz_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block SMOOTH_QUARTZ_TEMP = registerBlock("smooth_quartz_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block QUARTZ_BRICKS_TEMP = registerBlock("quartz_bricks_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block TERRACOTTA_TEMP = registerBlock("terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block WHITE_TERRACOTTA_TEMP = registerBlock("white_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block LIGHT_GRAY_TERRACOTTA_TEMP = registerBlock("light_gray_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block GRAY_TERRACOTTA_TEMP = registerBlock("gray_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BLACK_TERRACOTTA_TEMP = registerBlock("black_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BROWN_TERRACOTTA_TEMP = registerBlock("brown_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block RED_TERRACOTTA_TEMP = registerBlock("red_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block ORANGE_TERRACOTTA_TEMP = registerBlock("orange_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block YELLOW_TERRACOTTA_TEMP = registerBlock("yellow_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block LIME_TERRACOTTA_TEMP = registerBlock("lime_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block GREEN_TERRACOTTA_TEMP = registerBlock("green_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block CYAN_TERRACOTTA_TEMP = registerBlock("cyan_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block LIGHT_BLUE_TERRACOTTA_TEMP = registerBlock("light_blue_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BLUE_TERRACOTTA_TEMP = registerBlock("blue_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PURPLE_TERRACOTTA_TEMP = registerBlock("purple_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block MAGENTA_TERRACOTTA_TEMP = registerBlock("magenta_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PINK_TERRACOTTA_TEMP = registerBlock("pink_terracotta_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block WHITE_CONCRETE_TEMP = registerBlock("white_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block LIGHT_GRAY_CONCRETE_TEMP = registerBlock("light_gray_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block GRAY_CONCRETE_TEMP = registerBlock("gray_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BLACK_CONCRETE_TEMP = registerBlock("black_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BROWN_CONCRETE_TEMP = registerBlock("brown_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block RED_CONCRETE_TEMP = registerBlock("red_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block ORANGE_CONCRETE_TEMP = registerBlock("orange_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block YELLOW_CONCRETE_TEMP = registerBlock("yellow_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block LIME_CONCRETE_TEMP = registerBlock("lime_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block GREEN_CONCRETE_TEMP = registerBlock("green_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block CYAN_CONCRETE_TEMP = registerBlock("cyan_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block LIGHT_BLUE_CONCRETE_TEMP = registerBlock("light_blue_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BLUE_CONCRETE_TEMP = registerBlock("blue_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PURPLE_CONCRETE_TEMP = registerBlock("purple_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block MAGENTA_CONCRETE_TEMP = registerBlock("magenta_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block PINK_CONCRETE_TEMP = registerBlock("pink_concrete_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block END_STONE_TEMP = registerBlock("end_stone_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block OBSIDIAN_TEMP = registerBlock("obsidian_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block POLISHED_DEEPSLATE_TEMP = registerBlock("polished_deepslate_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block DEEPSLATE_TEMP = registerBlock("deepslate_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BLACKSTONE_TEMP = registerBlock("blackstone_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block COBBLESTONE_TEMP = registerBlock("cobblestone_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block COBBLED_DEEPSLATE_TEMP = registerBlock("cobbled_deepslate_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+            new Block(FabricBlockSettings.create().strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
@@ -1751,11 +1752,14 @@ public class DecoBlocks {
             .sign(DecoBlocks.STANDING_WOODEN_SIGN,DecoBlocks.WALL_WOODEN_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
 
-    private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
+    public static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
         return new PillarBlock(
-                AbstractBlock.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
+                AbstractBlock.Settings.create()
+                        .mapColor(state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
+                        .instrument(Instrument.BASS)
                         .strength(2.0F)
                         .sounds(BlockSoundGroup.WOOD)
+                        .burnable()
         );
     }
 
@@ -1771,683 +1775,8 @@ public class DecoBlocks {
         return Registry.register(Registries.ITEM, new Identifier(VaranDeco.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
-    public static void addBlocksToItemGroups() {
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CACTUS_PLANKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_PLANK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_PLANK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_PLANK_FENCE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_PLANK_FENCE_GATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_DOOR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_TRAPDOOR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_PLANK_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_LOG.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, STRIPPED_WOODEN_LOG.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_WOOD.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, STRIPPED_WOODEN_WOOD.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_PLANKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_FENCE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_FENCE_GATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_DOOR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_TRAPDOOR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.STONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COBBLESTONE_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COBBLESTONE_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, POLISHED_STONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_STONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_STONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_STONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_STONE_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_STONE_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_STONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_STONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, STONE_TILES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.STONE_TILE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.STONE_TILE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.STONE_TILE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_GRANITE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_DIORITE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_ANDESITE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, DecoBlocks.DEEPSLATE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COBBLED_DEEPSLATE_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_DEEPSLATE_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, SMOOTH_DEEPSLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_DEEPSLATE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_DEEPSLATE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_DEEPSLATE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PACKED_MUD_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PACKED_MUD_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PACKED_MUD_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_SANDSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SANDSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SANDSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CUT_SANDSTONE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SANDSTONE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SANDSTONE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SANDSTONE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_RED_SANDSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_SANDSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_SANDSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_SANDSTONE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DARK_PRISMARINE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PRISMARINE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_PRISMARINE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_PRISMARINE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_PRISMARINE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_PRISMARINE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_PRISMARINE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.NETHERRACK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.NETHERRACK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.NETHERRACK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.NETHER_BRICK_FENCE_GATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRACKED_RED_NETHER_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_NETHER_BRICK_FENCE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_NETHER_BRICK_FENCE_GATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_RED_NETHER_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_NETHER_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRACKED_BLUE_NETHER_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_NETHER_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_NETHER_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_NETHER_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_NETHER_BRICK_FENCE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_BLUE_NETHER_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACKSTONE_BUTTON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACKSTONE_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_GLIDED_BLACKSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_GLIDED_BLACKSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, SMOOTH_BLACKSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_BLACKSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_BLACKSTONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_BLACKSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_BLACKSTONE_TILES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.END_STONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.END_STONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.END_STONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_END_STONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, VOID_STONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_VOID_STONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, VOID_STONE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_PURPUR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, PURPUR_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPUR_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPUR_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPUR_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, SMOOTH_PURPUR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_PURPUR_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_PURPUR_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_PURPUR_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHARCOAL_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, FLINT_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CUT_IRON.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CUT_IRON_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CUT_IRON_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_IRON_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HEAVY_IRON_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GOLD_DOOR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GOLD_TRAPDOOR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.QUARTZ_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.QUARTZ_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.QUARTZ_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.QUARTZ_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_QUARTZ_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CUT_QUARTZ.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_QUARTZ_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_QUARTZ_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_QUARTZ_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, ECHO_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PACKED_ICE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PACKED_ICE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PACKED_ICE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_ICE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_ICE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_ICE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_ICE.asItem());;
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, SNOW_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_SNOW_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CALCITE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CALCITE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CALCITE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TUFF_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TUFF_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TUFF_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DRIPSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DRIPSTONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DRIPSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BUBBLE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_BUBBLE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGMA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_MAGMA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OBSIDIAN_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OBSIDIAN_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OBSIDIAN_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_OBSIDIAN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, OBSIDIAN_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OBSIDIAN_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OBSIDIAN_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OBSIDIAN_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, OBSIDIAN_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SOUL_SOILSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SOUL_SOILSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SOUL_SOILSTONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SOUL_SOILSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_SOUL_SOILSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_SOUL_SOILSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_TERRACOTTA_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_TERRACOTTA_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_TERRACOTTA_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,WHITE_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,LIGHT_GRAY_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,GRAY_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,BLACK_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,BROWN_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,RED_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,ORANGE_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,YELLOW_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,LIME_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,GREEN_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,CYAN_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,LIGHT_BLUE_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,BLUE_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,PURPLE_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,MAGENTA_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,PINK_TERRACOTTA_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_TERRACOTTA_BRICK_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_TERRACOTTA_BRICK_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_TERRACOTTA_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_GRAY_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GRAY_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GRAY_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GRAY_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GRAY_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLACK_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLACK_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLACK_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLACK_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BROWN_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BROWN_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BROWN_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BROWN_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_RED_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_ORANGE_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_ORANGE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_ORANGE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_ORANGE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_YELLOW_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_YELLOW_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_YELLOW_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_YELLOW_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIME_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIME_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIME_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIME_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GREEN_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GREEN_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GREEN_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_GREEN_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_CYAN_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_CYAN_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_CYAN_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_CYAN_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_BLUE_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLUE_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLUE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLUE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_BLUE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PURPLE_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PURPLE_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PURPLE_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PURPLE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_MAGENTA_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_MAGENTA_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_MAGENTA_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PINK_CONCRETE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PINK_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PINK_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_PINK_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_PILLAR.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, HARDENED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO, HARDENED_TINTED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_WHITE_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_GRAY_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_BLACK_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_BROWN_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_RED_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_ORANGE_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_YELLOW_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_LIME_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_GREEN_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_CYAN_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_BLUE_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_PURPLE_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_PINK_STAINED_GLASS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.TINTED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_TINTED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ORANGE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIME_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_BLUE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_LEAVES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_SAPLING.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PUFFY_DANDELION.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CALIFORNIA_POPPY.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SALMON_POPPY.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_ORCHID.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_ORCHID.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_ORCHID.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.YELLOW_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GREEN_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CYAN_TULIP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BARBERTON_DAISY.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_EYED_DAISY.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GERBERA_DAISY.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MICHAELMAS_DAISY.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PAEONIA.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LAVENDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ROSE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ENDER_ROSE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_SUNFLOWER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.NOVA_STARFLOWER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WITHER_ROSE_BUSH.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ENDER_ROSE_BUSH.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SPRUCE_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BIRCH_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.JUNGLE_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ACACIA_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WARPED_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_CRAFTING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_STONECUTTER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACKSTONE_STONECUTTER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BIRCH_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ACACIA_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OAK_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SPRUCE_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BIRCH_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.JUNGLE_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ACACIA_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DARK_OAK_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MANGROVE_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRIMSON_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WARPED_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_SMITHING_TABLE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_FURNACE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACKSTONE_FURNACE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_SMOKER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACKSTONE_SMOKER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DEEPSLATE_BLAST_FURNACE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACKSTONE_BLAST_FURNACE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SPRUCE_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BIRCH_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.JUNGLE_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ACACIA_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DARK_OAK_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MANGROVE_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRIMSON_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WARPED_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_LADDER.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.OAK_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SPRUCE_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BIRCH_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.JUNGLE_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ACACIA_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.DARK_OAK_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MANGROVE_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRIMSON_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WARPED_BARREL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_BARREL.asItem());
-    }
-
-    public static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
     
     public static void registerDecoBlocks(){
         VaranDeco.LOGGER.debug("Registering Blocks for " + VaranDeco.MOD_ID);
-        addBlocksToItemGroups();
     }
 }

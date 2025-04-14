@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_ender_rose",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_ender_rose"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:ender_rose_bush"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

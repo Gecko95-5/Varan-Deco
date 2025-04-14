@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_white_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_white_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:white_terracotta_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

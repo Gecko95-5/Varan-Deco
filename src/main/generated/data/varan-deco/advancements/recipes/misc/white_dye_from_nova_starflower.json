@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_nova_starflower",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_nova_starflower"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:white_dye_from_nova_starflower"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

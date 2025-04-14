@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_magenta_concrete",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_magenta_concrete"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:cut_magenta_concrete_slab_from_magenta_concrete_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

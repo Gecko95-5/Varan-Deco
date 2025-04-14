@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_barberton_daisy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_barberton_daisy"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:red_dye_from_barberton_daisy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

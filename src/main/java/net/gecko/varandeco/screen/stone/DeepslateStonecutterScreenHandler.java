@@ -10,6 +10,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.screen.*;
@@ -21,16 +22,16 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class DeepslateStonecutterScreenHandler extends ScreenHandler {
-	public static final int field_30842 = 0;
-	public static final int field_30843 = 1;
-	private static final int field_30844 = 2;
-	private static final int field_30845 = 29;
-	private static final int field_30846 = 29;
-	private static final int field_30847 = 38;
+	public static final int INPUT_ID = 0;
+	public static final int OUTPUT_ID = 1;
+	private static final int INVENTORY_START = 2;
+	private static final int INVENTORY_END = 29;
+	private static final int OUTPUT_START = 29;
+	private static final int OUTPUT_END = 38;
 	private final ScreenHandlerContext context;
 	private final Property selectedRecipe = Property.create();
 	private final World world;
-	private List<StonecuttingRecipe> availableRecipes = Lists.<StonecuttingRecipe>newArrayList();
+	private List<RecipeEntry<StonecuttingRecipe>> availableRecipes = Lists.<RecipeEntry<StonecuttingRecipe>>newArrayList();
 	private ItemStack inputStack = ItemStack.EMPTY;
 	long lastTakeTime;
 	final Slot inputSlot;
@@ -53,7 +54,7 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 	public DeepslateStonecutterScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
 		super(ScreenHandlerType.STONECUTTER, syncId);
 		this.context = context;
-		this.world = playerInventory.player.world;
+		this.world = playerInventory.player.getWorld();
 		this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 33));
 		this.outputSlot = this.addSlot(new Slot(this.output, 1, 143, 33) {
 			@Override
@@ -63,8 +64,8 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 
 			@Override
 			public void onTakeItem(PlayerEntity player, ItemStack stack) {
-				stack.onCraft(player.world, player, stack.getCount());
-				DeepslateStonecutterScreenHandler.this.output.unlockLastRecipe(player);
+				stack.onCraft(player.getWorld(), player, stack.getCount());
+				DeepslateStonecutterScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
 				ItemStack itemStack = DeepslateStonecutterScreenHandler.this.inputSlot.takeStack(1);
 				if (!itemStack.isEmpty()) {
 					DeepslateStonecutterScreenHandler.this.populateResult();
@@ -78,6 +79,10 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 					}
 				});
 				super.onTakeItem(player, stack);
+			}
+
+			private List<ItemStack> getInputStacks() {
+				return List.of(DeepslateStonecutterScreenHandler.this.inputSlot.getStack());
 			}
 		});
 
@@ -98,7 +103,7 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 		return this.selectedRecipe.get();
 	}
 
-	public List<StonecuttingRecipe> getAvailableRecipes() {
+	public List<RecipeEntry<StonecuttingRecipe>> getAvailableRecipes() {
 		return this.availableRecipes;
 	}
 
@@ -112,7 +117,7 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 
 	@Override
 	public boolean canUse(PlayerEntity player) {
-		return canUse(this.context, player, DecoBlocks.DEEPSLATE_STONECUTTER);
+		return canUse(this.context, player, Blocks.STONECUTTER);
 	}
 
 	@Override
@@ -149,10 +154,10 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 
 	void populateResult() {
 		if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
-			StonecuttingRecipe stonecuttingRecipe = (StonecuttingRecipe)this.availableRecipes.get(this.selectedRecipe.get());
-			ItemStack itemStack = stonecuttingRecipe.craft(this.input, this.world.getRegistryManager());
+			RecipeEntry<StonecuttingRecipe> recipeEntry = (RecipeEntry<StonecuttingRecipe>)this.availableRecipes.get(this.selectedRecipe.get());
+			ItemStack itemStack = recipeEntry.value().craft(this.input, this.world.getRegistryManager());
 			if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
-				this.output.setLastRecipe(stonecuttingRecipe);
+				this.output.setLastRecipe(recipeEntry);
 				this.outputSlot.setStackNoCallbacks(itemStack);
 			} else {
 				this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
@@ -187,7 +192,7 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 			Item item = itemStack2.getItem();
 			itemStack = itemStack2.copy();
 			if (slot == 1) {
-				item.onCraft(itemStack2, player.world, player);
+				item.onCraft(itemStack2, player.getWorld(), player);
 				if (!this.insertItem(itemStack2, 2, 38, true)) {
 					return ItemStack.EMPTY;
 				}

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_gray_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_gray_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:gray_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

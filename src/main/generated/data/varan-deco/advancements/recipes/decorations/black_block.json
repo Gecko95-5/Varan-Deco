@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_black_dye",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_black_dye"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:black_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

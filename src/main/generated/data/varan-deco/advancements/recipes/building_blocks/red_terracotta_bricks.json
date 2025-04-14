@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_red_terracotta",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_red_terracotta"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:red_terracotta_bricks"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

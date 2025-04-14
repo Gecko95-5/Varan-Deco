@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_blackstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_blackstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:smooth_blackstone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

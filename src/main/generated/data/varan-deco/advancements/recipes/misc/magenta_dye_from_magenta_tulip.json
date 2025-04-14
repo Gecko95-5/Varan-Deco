@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_magenta_tulip",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_magenta_tulip"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:magenta_dye_from_magenta_tulip"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

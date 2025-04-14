@@ -46,15 +46,16 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_red_dye",
       "has_yellow_dye",
-      "has_blue_dye",
-      "has_the_recipe"
+      "has_blue_dye"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:brown_dye_from_blue_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

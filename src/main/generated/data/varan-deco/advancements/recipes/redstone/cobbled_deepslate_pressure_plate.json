@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cobbled_deepslate",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cobbled_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:cobbled_deepslate_pressure_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

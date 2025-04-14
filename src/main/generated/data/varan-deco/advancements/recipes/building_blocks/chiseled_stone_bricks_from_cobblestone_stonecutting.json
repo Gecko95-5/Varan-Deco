@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_cobblestone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:chiseled_stone_bricks_from_cobblestone_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

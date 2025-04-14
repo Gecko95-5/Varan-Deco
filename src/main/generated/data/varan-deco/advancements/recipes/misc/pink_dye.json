@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_pink_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_pink_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:pink_dye"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

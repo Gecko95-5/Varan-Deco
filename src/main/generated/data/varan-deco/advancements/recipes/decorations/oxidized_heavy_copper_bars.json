@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_oxidized_copper",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_oxidized_copper"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:oxidized_heavy_copper_bars"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

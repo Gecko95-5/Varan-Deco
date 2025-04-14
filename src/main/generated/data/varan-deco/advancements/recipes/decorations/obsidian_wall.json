@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_obsidian",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_obsidian"
     ]
   ],
   "rewards": {
     "recipes": [
       "varan-deco:obsidian_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

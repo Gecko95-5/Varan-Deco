@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_crystallized_prismarine_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_crystallized_prismarine_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:crystallized_prismarine_brick_stairs_from_crystallized_prismarine_bricks_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

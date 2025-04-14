@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_soul_soilstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_soul_soilstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:smooth_soul_soilstone_from_smelting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

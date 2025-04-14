@@ -6,12 +6,10 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.inventory.CraftingResultInventory;
 import net.minecraft.inventory.Inventory;
+import net.minecraft.inventory.RecipeInputInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
-import net.minecraft.recipe.CraftingRecipe;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.RecipeMatcher;
-import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeBookCategory;
 import net.minecraft.screen.AbstractRecipeScreenHandler;
 import net.minecraft.screen.ScreenHandler;
@@ -25,14 +23,14 @@ import net.minecraft.world.World;
 import java.util.Optional;
 
 public class CactusCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingInventory> {
-    public static final int field_30781 = 0;
-    private static final int field_30782 = 1;
-    private static final int field_30783 = 10;
-    private static final int field_30784 = 10;
-    private static final int field_30785 = 37;
-    private static final int field_30786 = 37;
-    private static final int field_30787 = 46;
-    private final CraftingInventory input = new CraftingInventory(this, 3, 3);
+    public static final int RESULT_ID = 0;
+    private static final int INPUT_START = 1;
+    private static final int INPUT_END = 10;
+    private static final int INVENTORY_START = 10;
+    private static final int INVENTORY_END = 37;
+    private static final int HOTBAR_START = 37;
+    private static final int HOTBAR_END = 46;
+    private final RecipeInputInventory input = new CraftingInventory(this, 3, 3);
     private final CraftingResultInventory result = new CraftingResultInventory();
     private final ScreenHandlerContext context;
     private final PlayerEntity player;
@@ -65,15 +63,16 @@ public class CactusCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     }
 
     protected static void updateResult(
-            ScreenHandler handler, World world, PlayerEntity player, CraftingInventory craftingInventory, CraftingResultInventory resultInventory
+            ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory
     ) {
         if (!world.isClient) {
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<CraftingRecipe> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
+            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
             if (optional.isPresent()) {
-                CraftingRecipe craftingRecipe = (CraftingRecipe)optional.get();
-                if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, craftingRecipe)) {
+                RecipeEntry<CraftingRecipe> recipeEntry = (RecipeEntry<CraftingRecipe>)optional.get();
+                CraftingRecipe craftingRecipe = recipeEntry.value();
+                if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry)) {
                     ItemStack itemStack2 = craftingRecipe.craft(craftingInventory, world.getRegistryManager());
                     if (itemStack2.isItemEnabled(world.getEnabledFeatures())) {
                         itemStack = itemStack2;
@@ -104,9 +103,11 @@ public class CactusCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     }
 
     @Override
-    public boolean matches(Recipe<? super CraftingInventory> recipe) {
-        return recipe.matches(this.input, this.player.world);
+    public boolean matches(RecipeEntry<? extends Recipe<CraftingInventory>> recipe) {
+        return recipe.value().matches((CraftingInventory) this.input, this.player.getWorld());
     }
+
+
 
     @Override
     public void onClosed(PlayerEntity player) {

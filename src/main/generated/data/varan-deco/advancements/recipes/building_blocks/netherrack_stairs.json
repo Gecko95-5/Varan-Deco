@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_netherrack",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_netherrack"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:netherrack_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
