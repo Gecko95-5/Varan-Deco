@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:snowball"
+      "item": "minecraft:snow_block"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "###"
   ],
   "result": {
+    "count": 4,
     "item": "varan-deco:snow_stairs"
   },
   "show_notification": true
