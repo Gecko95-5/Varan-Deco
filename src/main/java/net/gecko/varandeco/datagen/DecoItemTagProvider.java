@@ -8,6 +8,7 @@ import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -141,5 +142,13 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(Blocks.STONE.asItem())
                 .add(Blocks.DEEPSLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.BUTTONS)
+                .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON.asItem())
+                .add(DecoBlocks.DEEPSLATE_BUTTON.asItem())
+                .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON.asItem())
+                .add(DecoBlocks.COBBLESTONE_BUTTON.asItem())
+                .add(DecoBlocks.BLACKSTONE_BUTTON.asItem())
+                .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem());
     }
 }
