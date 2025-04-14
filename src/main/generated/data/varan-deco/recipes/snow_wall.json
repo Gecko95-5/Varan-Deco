@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:snowball"
+      "item": "minecraft:snow_block"
     }
   },
   "pattern": [
@@ -11,6 +11,7 @@
     "###"
   ],
   "result": {
+    "count": 6,
     "item": "varan-deco:snow_wall"
   },
   "show_notification": true

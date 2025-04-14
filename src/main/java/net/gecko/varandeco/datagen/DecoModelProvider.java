@@ -868,5 +868,14 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
         itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
+
+        itemModelGenerator.register(DecoItems.CACTUS_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CACTUS_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WOODEN_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WOODEN_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CRIMSON_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CRIMSON_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WARPED_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WARPED_CHEST_BOAT, Models.GENERATED);
     }
 }

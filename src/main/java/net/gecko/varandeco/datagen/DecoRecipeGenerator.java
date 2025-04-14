@@ -275,29 +275,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CHISELED_GLIDED_BLACKSTONE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_STAIRS)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .input('#', Items.SNOWBALL)
-                .criterion(hasItem(Items.SNOWBALL),
-                        conditionsFromItem(Items.SNOWBALL))
+        createStairsRecipe(DecoBlocks.SNOW_STAIRS, Ingredient.ofItems(Items.SNOW_BLOCK))
+                .criterion(hasItem(Items.SNOW_BLOCK),conditionsFromItem(Items.SNOW_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SNOW_STAIRS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_SLAB,2)
-                .pattern("###")
-                .input('#', Items.SNOWBALL)
-                .criterion(hasItem(Items.SNOWBALL),
-                        conditionsFromItem(Items.SNOWBALL))
-                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SNOW_SLAB)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SNOW_SLAB, Items.SNOW_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_WALL)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.SNOWBALL)
-                .criterion(hasItem(Items.SNOWBALL),
-                        conditionsFromItem(Items.SNOWBALL))
-                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SNOW_WALL)));
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.SNOW_WALL, Items.SNOW_BLOCK);
 
         createStairsRecipe(DecoBlocks.PACKED_ICE_STAIRS, Ingredient.ofItems(Items.PACKED_ICE))
                 .criterion(hasItem(Items.PACKED_ICE),conditionsFromItem(Items.PACKED_ICE))
@@ -335,29 +319,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_BRICKS, DecoItems.SNOW_BRICK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_BRICK_STAIRS)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .input('#', DecoItems.SNOW_BRICK)
-                .criterion(hasItem(DecoItems.SNOW_BRICK),
-                        conditionsFromItem(DecoItems.SNOW_BRICK))
+
+        createStairsRecipe(DecoBlocks.SNOW_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.SNOW_BRICKS))
+                .criterion(hasItem(DecoBlocks.SNOW_BRICKS),conditionsFromItem(DecoBlocks.SNOW_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SNOW_BRICK_STAIRS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_BRICK_SLAB,2)
-                .pattern("###")
-                .input('#', DecoItems.SNOW_BRICK)
-                .criterion(hasItem(DecoItems.SNOW_BRICK),
-                        conditionsFromItem(DecoItems.SNOW_BRICK))
-                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SNOW_BRICK_SLAB)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SNOW_BRICK_SLAB, DecoBlocks.SNOW_BRICKS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_BRICK_WALL)
-                .pattern("###")
-                .pattern("###")
-                .input('#', DecoItems.SNOW_BRICK)
-                .criterion(hasItem(DecoItems.SNOW_BRICK),
-                        conditionsFromItem(DecoItems.SNOW_BRICK))
-                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SNOW_BRICK_WALL)));
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.SNOW_BRICK_WALL, DecoBlocks.SNOW_BRICKS);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_SNOW_BRICKS)
                 .pattern("###")

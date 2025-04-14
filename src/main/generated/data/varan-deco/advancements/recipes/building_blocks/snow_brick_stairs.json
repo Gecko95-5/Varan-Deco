@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_snow_brick": {
+    "has_snow_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:snow_brick"
+              "varan-deco:snow_bricks"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_snow_brick"
+      "has_snow_bricks"
     ]
   ],
   "rewards": {

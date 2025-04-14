@@ -71,9 +71,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(DecoBlocks.POLISHED_GLIDED_BLACKSTONE);
         addDropWithSilkTouch(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
 
-        addDrop(DecoBlocks.SNOW_STAIRS, block -> this.drops(block, Items.SNOWBALL, ConstantLootNumberProvider.create(6.0F)));
-        addDrop(DecoBlocks.SNOW_SLAB, block -> this.drops(block, Items.SNOWBALL, ConstantLootNumberProvider.create(3.0F)));
-        addDrop(DecoBlocks.SNOW_WALL, block -> this.drops(block, Items.SNOWBALL, ConstantLootNumberProvider.create(4.0F)));
+        addDrop(DecoBlocks.SNOW_STAIRS);
+        slabDrops(DecoBlocks.SNOW_SLAB);
+        addDrop(DecoBlocks.SNOW_WALL);
 
         addDrop(DecoBlocks.PACKED_ICE_STAIRS);
         slabDrops(DecoBlocks.PACKED_ICE_SLAB);
@@ -85,9 +85,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.SNOW_BRICKS, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(4.0F)));
         addDrop(DecoBlocks.CHISELED_SNOW_BRICKS, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(8.0F)));
-        addDrop(DecoBlocks.SNOW_BRICK_STAIRS, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(6.0F)));
-        addDrop(DecoBlocks.SNOW_BRICK_SLAB, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(3.0F)));
-        addDrop(DecoBlocks.SNOW_BRICK_WALL, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(6.0F)));
+        addDrop(DecoBlocks.SNOW_BRICK_STAIRS);
+        slabDrops(DecoBlocks.SNOW_BRICK_SLAB);
+        addDrop(DecoBlocks.SNOW_BRICK_WALL);
 
         addDrop(DecoBlocks.ICE_BRICKS);
         addDrop(DecoBlocks.ICE_BRICK_STAIRS);

@@ -673,6 +673,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.BLACKSTONE_SMOKER.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_BLAST_FURNACE.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_BLAST_FURNACE.asItem());
+                        entries.add(DecoItems.CACTUS_SIGN);
+                        entries.add(DecoItems.WOODEN_SIGN);
                         entries.add(DecoBlocks.SPRUCE_LADDER.asItem());
                         entries.add(DecoBlocks.BIRCH_LADDER.asItem());
                         entries.add(DecoBlocks.JUNGLE_LADDER.asItem());
@@ -693,12 +695,18 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CRIMSON_BARREL.asItem());
                         entries.add(DecoBlocks.WARPED_BARREL.asItem());
                         entries.add(DecoBlocks.CACTUS_BARREL.asItem());
-                        entries.add(DecoItems.CACTUS_SIGN);
-                        entries.add(DecoItems.WOODEN_SIGN);
-                        entries.add(DecoItems.SNOW_BRICK);
-                        entries.add(DecoItems.BUBBLE_ORB);
-                        entries.add(DecoItems.WARPED_WART);
+                        entries.add(DecoItems.CACTUS_BOAT);
+                        entries.add(DecoItems.CACTUS_CHEST_BOAT);
+                        entries.add(DecoItems.WOODEN_BOAT);
+                        entries.add(DecoItems.WOODEN_CHEST_BOAT);
+                        entries.add(DecoItems.CRIMSON_BOAT);
+                        entries.add(DecoItems.CRIMSON_CHEST_BOAT);
+                        entries.add(DecoItems.WARPED_BOAT);
+                        entries.add(DecoItems.WARPED_CHEST_BOAT);
                         entries.add(DecoItems.COPPER_NUGGET);
+                        entries.add(DecoItems.SNOW_BRICK);
+                        entries.add(DecoItems.WARPED_WART);
+                        entries.add(DecoItems.BUBBLE_ORB);
                     }).build());
 
     public static void registerItemGroups(){

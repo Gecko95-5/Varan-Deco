@@ -6,6 +6,15 @@
   "item.varan-deco.warped_wart": "Warped Wart",
   "item.varan-deco.copper_nugget": "Copper Nugget",
 
+  "item.varan-deco.cactus_boat": "Cactus Boat",
+  "item.varan-deco.cactus_chest_boat": "Cactus Chest Boat",
+  "item.varan-deco.wooden_boat": "Wooden Boat",
+  "item.varan-deco.wooden_chest_boat": "Wooden Chest Boat",
+  "item.varan-deco.crimson_boat": "Crimson Boat",
+  "item.varan-deco.crimson_chest_boat": "Crimson Chest Boat",
+  "item.varan-deco.warped_boat": "Warped Boat",
+  "item.varan-deco.warped_chest_boat": "Warped Chest Boat",
+
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
   "block.varan-deco.polished_granite_temp": "Non-Craftable Polished Granite",

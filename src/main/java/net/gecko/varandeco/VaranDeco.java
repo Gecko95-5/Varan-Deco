@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
+import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
@@ -39,6 +40,7 @@ public class VaranDeco implements ModInitializer {
 		DecoWorldGeneration.generateWorldGen();
 		DecoCustomTrades.registerCustomTrades();
 		DecoPotion.registerPotions();
+		DecoBoats.registerBoats();
 
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(Blocks.CACTUS,5,5);
@@ -168,6 +170,7 @@ public class VaranDeco implements ModInitializer {
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_CARTOGRAPHY_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_SMITHING_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_BARRELS,300);
+
 
 		LOGGER.info("Hello Fabric world!");
 	}

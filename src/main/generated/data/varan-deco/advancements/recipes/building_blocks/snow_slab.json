@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_snowball": {
+    "has_snow_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:snowball"
+              "minecraft:snow_block"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:snow_slab"
+        "recipe": "varan-deco:snow_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_snowball"
+      "has_snow_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:snow_slab"
+      "varan-deco:snow_slab"
     ]
   },
   "sends_telemetry_event": false
