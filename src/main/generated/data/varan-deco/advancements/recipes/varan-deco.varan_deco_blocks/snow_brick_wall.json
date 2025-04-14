@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_snow_brick": {
+    "has_snow_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:snow_brick"
+              "varan-deco:snow_bricks"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:snow_brick_wall"
+        "recipe": "varan-deco:snow_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_snow_brick",
+      "has_snow_bricks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:snow_brick_wall"
+      "varan-deco:snow_brick_wall"
     ]
   }
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "varan-deco:snow_brick"
+      "item": "varan-deco:snow_bricks"
     }
   },
   "pattern": [
@@ -11,6 +11,7 @@
     "###"
   ],
   "result": {
+    "count": 4,
     "item": "varan-deco:snow_brick_stairs"
   }
 }

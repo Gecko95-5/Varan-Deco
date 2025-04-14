@@ -126,11 +126,11 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.CHISELED_GLIDED_BLACKSTONE));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/snow_stairs"),
-                BlockLootTableGenerator.drops(DecoBlocks.SNOW_STAIRS, Items.SNOWBALL, ConstantLootNumberProvider.create(6.0F)));
+                BlockLootTableGenerator.drops(DecoBlocks.SNOW_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/snow_slab"),
-                BlockLootTableGenerator.drops(DecoBlocks.SNOW_SLAB, Items.SNOWBALL, ConstantLootNumberProvider.create(3.0F)));
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SNOW_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/snow_wall"),
-                BlockLootTableGenerator.drops(DecoBlocks.SNOW_WALL, Items.SNOWBALL, ConstantLootNumberProvider.create(6.0F)));
+                BlockLootTableGenerator.drops(DecoBlocks.SNOW_WALL));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_ice_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.PACKED_ICE_STAIRS));
@@ -151,11 +151,11 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_snow_bricks"),
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_SNOW_BRICKS, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(8.0F)));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/snow_brick_stairs"),
-                BlockLootTableGenerator.drops(DecoBlocks.SNOW_BRICK_STAIRS, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(6.0F)));
+                BlockLootTableGenerator.drops(DecoBlocks.SNOW_BRICK_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/snow_brick_slab"),
-                BlockLootTableGenerator.drops(DecoBlocks.SNOW_BRICK_SLAB, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(3.0F)));
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SNOW_BRICK_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/snow_brick_wall"),
-                BlockLootTableGenerator.drops(DecoBlocks.SNOW_BRICK_WALL, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(6.0F)));
+                BlockLootTableGenerator.drops(DecoBlocks.SNOW_BRICK_WALL));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/ice_bricks"),
                 BlockLootTableGenerator.drops(DecoBlocks.ICE_BRICKS));

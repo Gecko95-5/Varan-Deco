@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:snowball"
+      "item": "minecraft:snow_block"
     }
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "count": 2,
+    "count": 6,
     "item": "varan-deco:snow_slab"
   }
 }
