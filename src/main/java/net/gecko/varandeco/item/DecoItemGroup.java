@@ -641,6 +641,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ACACIA_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem());
+                        entries.add(DecoBlocks.CHERRY_CRAFTING_TABLE.asItem());
+                        entries.add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
@@ -692,6 +694,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ACACIA_BARREL.asItem());
                         entries.add(DecoBlocks.DARK_OAK_BARREL.asItem());
                         entries.add(DecoBlocks.MANGROVE_BARREL.asItem());
+                        entries.add(DecoBlocks.CHERRY_BARREL.asItem());
+                        entries.add(DecoBlocks.BAMBOO_BARREL.asItem());
                         entries.add(DecoBlocks.CRIMSON_BARREL.asItem());
                         entries.add(DecoBlocks.WARPED_BARREL.asItem());
                         entries.add(DecoBlocks.CACTUS_BARREL.asItem());

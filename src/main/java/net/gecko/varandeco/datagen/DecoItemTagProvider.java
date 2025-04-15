@@ -110,7 +110,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem());
+                .add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.CHERRY_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_LADDER)
                 .add(Blocks.LADDER.asItem())
@@ -150,7 +152,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ACACIA_BARREL.asItem())
                 .add(DecoBlocks.DARK_OAK_BARREL.asItem())
                 .add(DecoBlocks.MANGROVE_BARREL.asItem())
-                .add(DecoBlocks.CACTUS_BARREL.asItem());
+                .add(DecoBlocks.CACTUS_BARREL.asItem())
+                .add(DecoBlocks.CHERRY_BARREL.asItem())
+                .add(DecoBlocks.BAMBOO_BARREL.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())

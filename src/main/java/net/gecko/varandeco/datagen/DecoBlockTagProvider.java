@@ -631,7 +631,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE)
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE)
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE)
-                .add(DecoBlocks.WOODEN_CRAFTING_TABLE);
+                .add(DecoBlocks.WOODEN_CRAFTING_TABLE)
+                .add(DecoBlocks.CHERRY_CRAFTING_TABLE)
+                .add(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE)
@@ -864,7 +866,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_BARREL)
                 .add(DecoBlocks.CRIMSON_BARREL)
                 .add(DecoBlocks.WARPED_BARREL)
-                .add(DecoBlocks.CACTUS_BARREL);
+                .add(DecoBlocks.CACTUS_BARREL)
+                .add(DecoBlocks.CHERRY_BARREL)
+                .add(DecoBlocks.BAMBOO_BARREL);;
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_LADDERS)
                 .add(DecoBlocks.BIRCH_LADDER)

@@ -217,6 +217,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CRIMSON_CRAFTING_TABLE);
         addDrop(DecoBlocks.WARPED_CRAFTING_TABLE);
         addDrop(DecoBlocks.CACTUS_CRAFTING_TABLE);
+        addDrop(DecoBlocks.BAMBOO_CRAFTING_TABLE);
+        addDrop(DecoBlocks.CHERRY_CRAFTING_TABLE);
 
         addDrop(DecoBlocks.OAK_BARREL);
         addDrop(DecoBlocks.SPRUCE_BARREL);
@@ -228,6 +230,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CRIMSON_BARREL);
         addDrop(DecoBlocks.WARPED_BARREL);
         addDrop(DecoBlocks.CACTUS_BARREL);
+        addDrop(DecoBlocks.BAMBOO_BARREL);
+        addDrop(DecoBlocks.CHERRY_BARREL);
 
         addDrop(DecoBlocks.BIRCH_LADDER);
         addDrop(DecoBlocks.SPRUCE_LADDER);
