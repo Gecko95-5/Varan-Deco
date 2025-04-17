@@ -45,11 +45,22 @@ public class VaranDeco implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(Blocks.CACTUS,5,5);
 
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANK_STAIRS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANK_SLAB,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANK_FENCE,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.CACTUS_PLANK_FENCE_GATE,5,20);
+
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_PLANKS,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_LOG,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.STRIPPED_WOODEN_LOG,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_WOOD,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.STRIPPED_WOODEN_WOOD,5,5);
+
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_STAIRS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_SLAB,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_FENCE,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_FENCE_GATE,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.WOODEN_LEAVES,30, 60);
 
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.YELLOW_TULIP,60, 100);
 		FlammableBlockRegistry.getDefaultInstance().add(DecoBlocks.PURPLE_TULIP,60, 100);
