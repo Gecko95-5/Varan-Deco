@@ -941,9 +941,11 @@ public class DecoBlocks {
     public static final Block MANGROVE_CRAFTING_TABLE = registerBlock("mangrove_crafting_table",
             new MangroveCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.RED)));
     public static final Block CRIMSON_CRAFTING_TABLE = registerBlock("crimson_crafting_table",
-            new CrimsonCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DULL_PINK)));
+            new CrimsonCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DULL_PINK)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WARPED_CRAFTING_TABLE = registerBlock("warped_crafting_table",
-            new WarpedCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.TEAL)));
+            new WarpedCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.TEAL)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
             new CactusCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN)));
     public static final Block WOODEN_CRAFTING_TABLE = registerBlock("wooden_crafting_table",
@@ -969,9 +971,11 @@ public class DecoBlocks {
     public static final Block MANGROVE_LADDER = registerBlock("mangrove_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)));
     public static final Block CRIMSON_LADDER = registerBlock("crimson_ladder",
-            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)));
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WARPED_LADDER = registerBlock("warped_ladder",
-            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)));
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block CACTUS_LADDER = registerBlock("cactus_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)));
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
@@ -1398,9 +1402,11 @@ public class DecoBlocks {
     public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.RED)));
     public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
-            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DULL_PINK)));
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WARPED_BARREL = registerBlock("warped_barrel",
-            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)));
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
 
@@ -1433,9 +1439,11 @@ public class DecoBlocks {
     public static final Block MANGROVE_CARTOGRAPHY_TABLE = registerBlock("mangrove_cartography_table",
             new MangroveCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)));
     public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerBlock("crimson_cartography_table",
-            new CrimsonCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)));
+            new CrimsonCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WARPED_CARTOGRAPHY_TABLE = registerBlock("warped_cartography_table",
-            new WarpedCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)));
+            new WarpedCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block CACTUS_CARTOGRAPHY_TABLE = registerBlock("cactus_cartography_table",
             new CactusCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)));
 
@@ -1454,9 +1462,11 @@ public class DecoBlocks {
     public static final Block MANGROVE_SMITHING_TABLE = registerBlock("mangrove_smithing_table",
             new MangroveSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
     public static final Block CRIMSON_SMITHING_TABLE = registerBlock("crimson_smithing_table",
-            new CrimsonSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
+            new CrimsonSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WARPED_SMITHING_TABLE = registerBlock("warped_smithing_table",
-            new WarpedSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
+            new WarpedSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
             new CactusSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
 
