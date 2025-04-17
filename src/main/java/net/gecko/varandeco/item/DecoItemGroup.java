@@ -666,6 +666,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ACACIA_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.DARK_OAK_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.MANGROVE_SMITHING_TABLE.asItem());
+                        entries.add(DecoBlocks.CHERRY_SMITHING_TABLE.asItem());
+                        entries.add(DecoBlocks.BAMBOO_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.CRIMSON_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem());
@@ -683,6 +685,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ACACIA_LADDER.asItem());
                         entries.add(DecoBlocks.DARK_OAK_LADDER.asItem());
                         entries.add(DecoBlocks.MANGROVE_LADDER.asItem());
+                        entries.add(DecoBlocks.CHERRY_LADDER.asItem());
+                        entries.add(DecoBlocks.BAMBOO_LADDER.asItem());
                         entries.add(DecoBlocks.CRIMSON_LADDER.asItem());
                         entries.add(DecoBlocks.WARPED_LADDER.asItem());
                         entries.add(DecoBlocks.CACTUS_LADDER.asItem());

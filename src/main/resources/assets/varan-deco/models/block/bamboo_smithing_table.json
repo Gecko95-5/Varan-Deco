@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "varan-deco:block/bamboo_smithing_table_bottom",
+    "east": "varan-deco:block/bamboo_smithing_table_side",
+    "north": "varan-deco:block/bamboo_smithing_table_front",
+    "particle": "varan-deco:block/bamboo_smithing_table_front",
+    "south": "varan-deco:block/bamboo_smithing_table_front",
+    "up": "varan-deco:block/bamboo_smithing_table_top",
+    "west": "varan-deco:block/bamboo_smithing_table_side"
+  }
+}

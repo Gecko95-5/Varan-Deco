@@ -242,6 +242,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CRIMSON_LADDER);
         addDrop(DecoBlocks.WARPED_LADDER);
         addDrop(DecoBlocks.CACTUS_LADDER);
+        addDrop(DecoBlocks.BAMBOO_LADDER);
+        addDrop(DecoBlocks.CHERRY_LADDER);
 
         addDrop(DecoBlocks.OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.SPRUCE_SMITHING_TABLE);
@@ -253,6 +255,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CRIMSON_SMITHING_TABLE);
         addDrop(DecoBlocks.WARPED_SMITHING_TABLE);
         addDrop(DecoBlocks.CACTUS_SMITHING_TABLE);
+        addDrop(DecoBlocks.CHERRY_SMITHING_TABLE);
+        addDrop(DecoBlocks.BAMBOO_SMITHING_TABLE);
 
         addDrop(DecoBlocks.OAK_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE);

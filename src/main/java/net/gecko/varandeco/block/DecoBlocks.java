@@ -978,6 +978,12 @@ public class DecoBlocks {
     public static final Block WARPED_LADDER = registerBlock("warped_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
+    public static final Block BAMBOO_LADDER = registerBlock("bamboo_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD)));
+    public static final Block CHERRY_LADDER = registerBlock("cherry_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD)));
     public static final Block CACTUS_LADDER = registerBlock("cactus_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)));
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
@@ -1404,9 +1410,11 @@ public class DecoBlocks {
     public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.RED)));
     public static final Block BAMBOO_BARREL = registerBlock("bamboo_barrel",
-            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.YELLOW)));
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.YELLOW)
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD)));
     public static final Block CHERRY_BARREL = registerBlock("cherry_barrel",
-            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)));
+            new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD)));
     public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
@@ -1473,6 +1481,12 @@ public class DecoBlocks {
     public static final Block WARPED_SMITHING_TABLE = registerBlock("warped_smithing_table",
             new WarpedSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
+    public static final Block BAMBOO_SMITHING_TABLE = registerBlock("bamboo_smithing_table",
+            new BambooSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD)));
+    public static final Block CHERRY_SMITHING_TABLE = registerBlock("cherry_smithing_table",
+            new CherrySmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD)));
     public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
             new CactusSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
 

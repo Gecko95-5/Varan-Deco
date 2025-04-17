@@ -262,6 +262,8 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_SMITHING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_SMITHING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_SMITHING_TABLE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE);

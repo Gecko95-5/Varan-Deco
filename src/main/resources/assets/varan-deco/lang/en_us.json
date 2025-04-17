@@ -299,6 +299,8 @@
   "block.varan-deco.warped_ladder": "Warped Ladder",
   "block.varan-deco.cactus_ladder": "Cactus Ladder",
   "block.varan-deco.wooden_ladder": "Wooden Ladder",
+  "block.varan-deco.cherry_ladder": "Cherry Ladder",
+  "block.varan-deco.bamboo_ladder": "Bamboo Ladder",
 
   "block.varan-deco.oak_smithing_table": "Oak Smithing Table",
   "block.varan-deco.spruce_smithing_table": "Spruce Smithing Table",
@@ -310,6 +312,8 @@
   "block.varan-deco.crimson_smithing_table": "Crimson Smithing Table",
   "block.varan-deco.warped_smithing_table": "Warped Smithing Table",
   "block.varan-deco.cactus_smithing_table": "Cactus Smithing Table",
+  "block.varan-deco.cherry_smithing_table": "Cherry Smithing Table",
+  "block.varan-deco.bamboo_smithing_table": "Bamboo Smithing Table",
 
   "block.varan-deco.oak_cartography_table": "Oak Cartography Table",
   "block.varan-deco.birch_cartography_table": "Birch Cartography Table",
@@ -993,5 +997,5 @@
   "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
 
-  "itemgroup.varan-deco.varan_deco_blocks": "Varan Deco Blocks"
+  "itemgroup.varan_deco_blocks": "Varan Deco Blocks"
 }
