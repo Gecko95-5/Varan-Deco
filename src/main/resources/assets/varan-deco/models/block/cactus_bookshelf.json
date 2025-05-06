@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "varan-deco:block/cactus_planks",
+    "side": "varan-deco:block/cactus_bookshelf"
+  }
+}

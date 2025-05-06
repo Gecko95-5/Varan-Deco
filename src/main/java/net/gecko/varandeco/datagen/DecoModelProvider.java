@@ -250,6 +250,19 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.ACACIA_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.DARK_OAK_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.JUNGLE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MANGROVE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_BOOKSHELF);
+
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_LEAVES);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_SMITHING_TABLE);
@@ -275,6 +288,8 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_BLOCK);

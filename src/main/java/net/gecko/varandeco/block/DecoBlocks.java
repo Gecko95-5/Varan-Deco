@@ -1424,6 +1424,35 @@ public class DecoBlocks {
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
 
+    public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
+    public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.PALE_YELLOW)));
+    public static final Block JUNGLE_BOOKSHELF = registerBlock("jungle_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.DIRT_BROWN)));
+    public static final Block ACACIA_BOOKSHELF = registerBlock("acacia_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.ORANGE)));
+    public static final Block DARK_OAK_BOOKSHELF = registerBlock("dark_oak_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));
+    public static final Block MANGROVE_BOOKSHELF = registerBlock("mangrove_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.RED)));
+    public static final Block BAMBOO_BOOKSHELF = registerBlock("bamboo_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.YELLOW)
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD)));
+    public static final Block CHERRY_BOOKSHELF = registerBlock("cherry_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.TERRACOTTA_WHITE)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD)));
+    public static final Block CRIMSON_BOOKSHELF = registerBlock("crimson_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.DULL_PINK)
+                    .sounds(BlockSoundGroup.NETHER_WOOD)));
+    public static final Block WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.DARK_AQUA)
+                    .sounds(BlockSoundGroup.NETHER_WOOD)));
+    public static final Block CACTUS_BOOKSHELF = registerBlock("cactus_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.PALE_GREEN)));
+    public static final Block WOODEN_BOOKSHELF = registerBlock("wooden_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));
+
     public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
             new DeepslateSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
                     .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE)));
@@ -1452,6 +1481,12 @@ public class DecoBlocks {
             new DarkOakCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)));
     public static final Block MANGROVE_CARTOGRAPHY_TABLE = registerBlock("mangrove_cartography_table",
             new MangroveCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)));
+    public static final Block CHERRY_CARTOGRAPHY_TABLE = registerBlock("cherry_cartography_table",
+            new CherryCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD)));
+    public static final Block BAMBOO_CARTOGRAPHY_TABLE = registerBlock("bamboo_cartography_table",
+            new BambooCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD)));
     public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerBlock("crimson_cartography_table",
             new CrimsonCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD)));

@@ -656,6 +656,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE.asItem());
+                        entries.add(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE.asItem());
+                        entries.add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem());
@@ -691,6 +693,18 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_LADDER.asItem());
                         entries.add(DecoBlocks.CACTUS_LADDER.asItem());
                         entries.add(DecoBlocks.WOODEN_LADDER.asItem());
+                        entries.add(DecoBlocks.SPRUCE_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.BIRCH_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.JUNGLE_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.ACACIA_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.DARK_OAK_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.MANGROVE_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.CHERRY_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.BAMBOO_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.CRIMSON_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.WARPED_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.CACTUS_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.WOODEN_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.OAK_BARREL.asItem());
                         entries.add(DecoBlocks.SPRUCE_BARREL.asItem());
                         entries.add(DecoBlocks.BIRCH_BARREL.asItem());

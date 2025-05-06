@@ -245,6 +245,18 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.BAMBOO_LADDER);
         addDrop(DecoBlocks.CHERRY_LADDER);
 
+        addDrop(DecoBlocks.BIRCH_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.SPRUCE_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.JUNGLE_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.ACACIA_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.DARK_OAK_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.MANGROVE_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.CRIMSON_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.WARPED_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.CACTUS_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.BAMBOO_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.CHERRY_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+
         addDrop(DecoBlocks.OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.SPRUCE_SMITHING_TABLE);
         addDrop(DecoBlocks.BIRCH_SMITHING_TABLE);
@@ -268,6 +280,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
+        addDrop(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
+        addDrop(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
         slabDrops(DecoBlocks.TERRACOTTA_SLAB);

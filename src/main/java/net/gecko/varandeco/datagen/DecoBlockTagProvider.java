@@ -320,7 +320,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.DECO_CRAFTING_TABLES)
                 .addTag(DecoTags.Blocks.DECO_BARRELS)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
-                .addTag(DecoTags.Blocks.DECO_SMITHING_TABLES);
+                .addTag(DecoTags.Blocks.DECO_SMITHING_TABLES)
+                .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS)
@@ -886,6 +887,20 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BAMBOO_LADDER)
                 .add(DecoBlocks.CHERRY_LADDER);
 
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_BOOKSHELVES)
+                .add(DecoBlocks.BIRCH_BOOKSHELF)
+                .add(DecoBlocks.SPRUCE_BOOKSHELF)
+                .add(DecoBlocks.JUNGLE_BOOKSHELF)
+                .add(DecoBlocks.ACACIA_BOOKSHELF)
+                .add(DecoBlocks.DARK_OAK_BOOKSHELF)
+                .add(DecoBlocks.MANGROVE_BOOKSHELF)
+                .add(DecoBlocks.CRIMSON_BOOKSHELF)
+                .add(DecoBlocks.WARPED_BOOKSHELF)
+                .add(DecoBlocks.CACTUS_BOOKSHELF)
+                .add(DecoBlocks.WOODEN_BOOKSHELF)
+                .add(DecoBlocks.BAMBOO_BOOKSHELF)
+                .add(DecoBlocks.CHERRY_BOOKSHELF);
+
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE)
@@ -896,7 +911,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE)
-                .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
+                .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
@@ -1095,5 +1112,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)
                 .add(DecoBlocks.BLACK_ICE);
+
+        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
+                .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
     }
 }

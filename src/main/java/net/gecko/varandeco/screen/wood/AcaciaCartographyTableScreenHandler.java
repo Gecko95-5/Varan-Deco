@@ -97,7 +97,7 @@ public class AcaciaCartographyTableScreenHandler extends ScreenHandler {
 
 	@Override
 	public boolean canUse(PlayerEntity player) {
-		return canUse(this.context, player, Blocks.CARTOGRAPHY_TABLE);
+		return canUse(this.context, player, DecoBlocks.ACACIA_CARTOGRAPHY_TABLE);
 	}
 
 	@Override
