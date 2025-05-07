@@ -256,7 +256,20 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CACTUS_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.BAMBOO_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.CHERRY_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
-
+        
+        addDrop(DecoBlocks.OAK_MOSAIC);
+        addDrop(DecoBlocks.BIRCH_MOSAIC);
+        addDrop(DecoBlocks.SPRUCE_MOSAIC);
+        addDrop(DecoBlocks.JUNGLE_MOSAIC);
+        addDrop(DecoBlocks.ACACIA_MOSAIC);
+        addDrop(DecoBlocks.DARK_OAK_MOSAIC);
+        addDrop(DecoBlocks.MANGROVE_MOSAIC);
+        addDrop(DecoBlocks.CHERRY_MOSAIC);
+        addDrop(DecoBlocks.CRIMSON_MOSAIC);
+        addDrop(DecoBlocks.WARPED_MOSAIC);
+        addDrop(DecoBlocks.CACTUS_MOSAIC);
+        addDrop(DecoBlocks.WOODEN_MOSAIC);
+                
         addDrop(DecoBlocks.OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.SPRUCE_SMITHING_TABLE);
         addDrop(DecoBlocks.BIRCH_SMITHING_TABLE);

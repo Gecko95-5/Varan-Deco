@@ -37,6 +37,18 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WOODEN_TRAPDOOR.asItem());
                         entries.add(DecoBlocks.WOODEN_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.WOODEN_BUTTON.asItem());
+                        entries.add(DecoBlocks.OAK_MOSAIC.asItem());
+                        entries.add(DecoBlocks.SPRUCE_MOSAIC.asItem());
+                        entries.add(DecoBlocks.BIRCH_MOSAIC.asItem());
+                        entries.add(DecoBlocks.JUNGLE_MOSAIC.asItem());
+                        entries.add(DecoBlocks.ACACIA_MOSAIC.asItem());
+                        entries.add(DecoBlocks.DARK_OAK_MOSAIC.asItem());
+                        entries.add(DecoBlocks.MANGROVE_MOSAIC.asItem());
+                        entries.add(DecoBlocks.CHERRY_MOSAIC.asItem());
+                        entries.add(DecoBlocks.CRIMSON_MOSAIC.asItem());
+                        entries.add(DecoBlocks.WARPED_MOSAIC.asItem());
+                        entries.add(DecoBlocks.CACTUS_MOSAIC.asItem());
+                        entries.add(DecoBlocks.WOODEN_MOSAIC.asItem());
                         entries.add(DecoBlocks.STONE_WALL.asItem());
                         entries.add(DecoBlocks.COBBLESTONE_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.COBBLESTONE_BUTTON.asItem());

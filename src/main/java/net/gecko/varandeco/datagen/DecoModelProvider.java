@@ -217,6 +217,31 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.OXIDIZED_COPPER);
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.OXIDIZED_COPPER);
 
+        BlockStateModelGenerator.BlockTexturePool oakmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OAK_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool birchmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BIRCH_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool sprucemosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SPRUCE_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool junglemosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.JUNGLE_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool acaciamosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ACACIA_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool darkoakmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DARK_OAK_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool mangrovemosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MANGROVE_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool cherrymosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHERRY_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool crimsonmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRIMSON_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool warpedmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WARPED_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool cactusmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CACTUS_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool woodenmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_MOSAIC);
+        
         blockStateModelGenerator.registerLantern(DecoBlocks.COPPER_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.EXPOSED_COPPER_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.WEATHERED_COPPER_LANTERN);

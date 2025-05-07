@@ -367,6 +367,31 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.create().resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.BLACK)));
 
+    public static final Block OAK_MOSAIC = registerBlock("oak_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SPRUCE_MOSAIC = registerBlock("spruce_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.SPRUCE_PLANKS)));
+    public static final Block BIRCH_MOSAIC = registerBlock("birch_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.BIRCH_PLANKS)));
+    public static final Block JUNGLE_MOSAIC = registerBlock("jungle_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS)));
+    public static final Block ACACIA_MOSAIC = registerBlock("acacia_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.ACACIA_PLANKS)));
+    public static final Block DARK_OAK_MOSAIC = registerBlock("dark_oak_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.DARK_OAK_PLANKS)));
+    public static final Block MANGROVE_MOSAIC = registerBlock("mangrove_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.MANGROVE_PLANKS)));
+    public static final Block CHERRY_MOSAIC = registerBlock("cherry_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS)));
+    public static final Block CRIMSON_MOSAIC = registerBlock("crimson_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS)));
+    public static final Block WARPED_MOSAIC = registerBlock("warped_mosaic",
+            new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
+    public static final Block CACTUS_MOSAIC = registerBlock("cactus_mosaic",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
+    public static final Block WOODEN_MOSAIC = registerBlock("wooden_mosaic",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+
     public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
             new WarpedWartBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque()));
 
@@ -1425,7 +1450,7 @@ public class DecoBlocks {
             new BarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
 
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));
     public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.PALE_YELLOW)));
     public static final Block JUNGLE_BOOKSHELF = registerBlock("jungle_bookshelf",

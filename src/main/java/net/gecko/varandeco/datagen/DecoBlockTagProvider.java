@@ -321,7 +321,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.DECO_BARRELS)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
                 .addTag(DecoTags.Blocks.DECO_SMITHING_TABLES)
-                .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
+                .addTag(DecoTags.Blocks.DECO_BOOKSHELVES)
+                .add(DecoBlocks.OAK_MOSAIC)
+                .add(DecoBlocks.BIRCH_MOSAIC)
+                .add(DecoBlocks.SPRUCE_MOSAIC)
+                .add(DecoBlocks.JUNGLE_MOSAIC)
+                .add(DecoBlocks.ACACIA_MOSAIC)
+                .add(DecoBlocks.DARK_OAK_MOSAIC)
+                .add(DecoBlocks.MANGROVE_MOSAIC)
+                .add(DecoBlocks.CHERRY_MOSAIC)
+                .add(DecoBlocks.CRIMSON_MOSAIC)
+                .add(DecoBlocks.WARPED_MOSAIC)
+                .add(DecoBlocks.CACTUS_MOSAIC)
+                .add(DecoBlocks.WOODEN_MOSAIC);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS)
