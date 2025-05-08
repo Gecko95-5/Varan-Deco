@@ -269,6 +269,32 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WARPED_MOSAIC);
         addDrop(DecoBlocks.CACTUS_MOSAIC);
         addDrop(DecoBlocks.WOODEN_MOSAIC);
+        
+        addDrop(DecoBlocks.OAK_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.BIRCH_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.SPRUCE_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.JUNGLE_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.ACACIA_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.DARK_OAK_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.MANGROVE_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.CHERRY_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.CRIMSON_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.WARPED_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.CACTUS_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.WOODEN_MOSAIC_STAIRS);
+        
+        slabDrops(DecoBlocks.OAK_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.BIRCH_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.SPRUCE_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.JUNGLE_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.ACACIA_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.DARK_OAK_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.MANGROVE_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.CHERRY_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.CRIMSON_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.WARPED_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.CACTUS_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.WOODEN_MOSAIC_SLAB);
                 
         addDrop(DecoBlocks.OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.SPRUCE_SMITHING_TABLE);
@@ -295,6 +321,30 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE);
+        
+        addDrop(DecoBlocks.STANDING_STRIPPED_OAK_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_SPRUCE_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_BIRCH_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_JUNGLE_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_ACACIA_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_DARK_OAK_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_CHERRY_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_MANGROVE_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_CRIMSON_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_WARPED_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN);
+        
+        addDrop(DecoBlocks.WALL_STRIPPED_OAK_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_BIRCH_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_JUNGLE_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_ACACIA_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_DARK_OAK_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_CHERRY_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_MANGROVE_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_WARPED_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
         slabDrops(DecoBlocks.TERRACOTTA_SLAB);

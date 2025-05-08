@@ -2,6 +2,17 @@
   "replace": false,
   "values": [
     "varan-deco:wall_cactus_sign",
-    "varan-deco:wall_wooden_sign"
+    "varan-deco:wall_wooden_sign",
+    "varan-deco:wall_stripped_oak_sign",
+    "varan-deco:wall_stripped_spruce_sign",
+    "varan-deco:wall_stripped_birch_sign",
+    "varan-deco:wall_stripped_jungle_sign",
+    "varan-deco:wall_stripped_acacia_sign",
+    "varan-deco:wall_stripped_dark_oak_sign",
+    "varan-deco:wall_stripped_cherry_sign",
+    "varan-deco:wall_stripped_mangrove_sign",
+    "varan-deco:wall_stripped_crimson_sign",
+    "varan-deco:wall_stripped_warped_sign",
+    "varan-deco:wall_stripped_wooden_sign"
   ]
 }

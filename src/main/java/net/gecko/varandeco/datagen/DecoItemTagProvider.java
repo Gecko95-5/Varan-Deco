@@ -82,14 +82,6 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
                 .add(DecoBlocks.CACTUS_TRAPDOOR.asItem());
 
-        getOrCreateTagBuilder(ItemTags.SIGNS)
-                .add(DecoBlocks.STANDING_CACTUS_SIGN.asItem())
-                .add(DecoBlocks.WALL_CACTUS_SIGN.asItem())
-                .add(DecoItems.CACTUS_SIGN.asItem())
-                .add(DecoBlocks.STANDING_WOODEN_SIGN.asItem())
-                .add(DecoBlocks.WALL_WOODEN_SIGN.asItem())
-                .add(DecoItems.WOODEN_SIGN.asItem());
-
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
                 .add(DecoBlocks.WOODEN_SAPLING.asItem());
 

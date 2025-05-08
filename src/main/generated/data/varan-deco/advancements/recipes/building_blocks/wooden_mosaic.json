@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "varan-deco:wooden_mosaic"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wooden_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:wooden_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wooden_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "varan-deco:wooden_mosaic"
+    ]
+  },
+  "sends_telemetry_event": false
+}

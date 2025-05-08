@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/cherry_mosaic",
+    "side": "varan-deco:block/cherry_mosaic",
+    "top": "varan-deco:block/cherry_mosaic"
+  }
+}

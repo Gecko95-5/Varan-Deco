@@ -45,6 +45,18 @@
     "varan-deco:void_stone_brick_stairs",
     "varan-deco:obsidian_stairs",
     "varan-deco:obsidian_brick_stairs",
-    "varan-deco:cut_iron_stairs"
+    "varan-deco:cut_iron_stairs",
+    "varan-deco:oak_mosaic_stairs",
+    "varan-deco:birch_mosaic_stairs",
+    "varan-deco:spruce_mosaic_stairs",
+    "varan-deco:jungle_mosaic_stairs",
+    "varan-deco:acacia_mosaic_stairs",
+    "varan-deco:dark_oak_mosaic_stairs",
+    "varan-deco:mangrove_mosaic_stairs",
+    "varan-deco:cherry_mosaic_stairs",
+    "varan-deco:crimson_mosaic_stairs",
+    "varan-deco:warped_mosaic_stairs",
+    "varan-deco:cactus_mosaic_stairs",
+    "varan-deco:wooden_mosaic_stairs"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/warped_mosaic_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/warped_mosaic"
+    },
+    "type=top": {
+      "model": "varan-deco:block/warped_mosaic_slab_top"
+    }
+  }
+}

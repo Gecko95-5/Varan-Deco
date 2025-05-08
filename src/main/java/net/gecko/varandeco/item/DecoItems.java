@@ -22,6 +22,39 @@ public class DecoItems {
     public static final Item WOODEN_SIGN = registerItem("wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
+    public static final Item STRIPPED_OAK_SIGN = registerItem("stripped_oak_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_OAK_SIGN, DecoBlocks.WALL_STRIPPED_OAK_SIGN));
+    public static final Item STRIPPED_SPRUCE_SIGN = registerItem("stripped_spruce_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_SPRUCE_SIGN, DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN));
+    public static final Item STRIPPED_BIRCH_SIGN = registerItem("stripped_birch_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_SPRUCE_SIGN, DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN));
+    public static final Item STRIPPED_JUNGLE_SIGN = registerItem("stripped_jungle_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_JUNGLE_SIGN, DecoBlocks.WALL_STRIPPED_JUNGLE_SIGN));
+    public static final Item STRIPPED_ACACIA_SIGN = registerItem("stripped_acacia_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_ACACIA_SIGN, DecoBlocks.WALL_STRIPPED_ACACIA_SIGN));
+    public static final Item STRIPPED_DARK_OAK_SIGN = registerItem("stripped_dark_oak_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_DARK_OAK_SIGN, DecoBlocks.WALL_STRIPPED_DARK_OAK_SIGN));
+    public static final Item STRIPPED_MANGROVE_SIGN = registerItem("stripped_mangrove_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_MANGROVE_SIGN, DecoBlocks.WALL_STRIPPED_MANGROVE_SIGN));
+    public static final Item STRIPPED_CHERRY_SIGN = registerItem("stripped_cherry_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_CHERRY_SIGN, DecoBlocks.WALL_STRIPPED_CHERRY_SIGN));
+    public static final Item STRIPPED_CRIMSON_SIGN = registerItem("stripped_crimson_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_CRIMSON_SIGN, DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN));
+    public static final Item STRIPPED_WARPED_SIGN = registerItem("stripped_warped_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_WARPED_SIGN, DecoBlocks.WALL_STRIPPED_WARPED_SIGN));
+    public static final Item STRIPPED_WOODEN_SIGN = registerItem("stripped_wooden_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN, DecoBlocks.WALL_STRIPPED_WOODEN_SIGN));
 
     public static final Item SNOW_BRICK = registerItem("snow_brick",
             new SnowBrickItem(new Item.Settings().maxCount(16)));

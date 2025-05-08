@@ -3805,5 +3805,78 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_NUGGET),
                         conditionsFromItem(Items.GOLD_NUGGET))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_BUTTON)));
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.OAK_MOSAIC, Blocks.OAK_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SPRUCE_MOSAIC, Blocks.SPRUCE_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.BIRCH_MOSAIC, Blocks.BIRCH_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.JUNGLE_MOSAIC, Blocks.JUNGLE_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.ACACIA_MOSAIC, Blocks.ACACIA_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.DARK_OAK_MOSAIC, Blocks.DARK_OAK_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MANGROVE_MOSAIC, Blocks.MANGROVE_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHERRY_MOSAIC, Blocks.CHERRY_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRIMSON_MOSAIC, Blocks.CRIMSON_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WARPED_MOSAIC, Blocks.WARPED_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CACTUS_MOSAIC, DecoBlocks.CACTUS_PLANK_SLAB);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WOODEN_MOSAIC, DecoBlocks.WOODEN_SLAB);
+
+        createStairsRecipe(DecoBlocks.OAK_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
+                .criterion(hasItem(DecoBlocks.OAK_MOSAIC),conditionsFromItem(DecoBlocks.OAK_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.OAK_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.OAK_MOSAIC_SLAB, DecoBlocks.OAK_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.SPRUCE_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.SPRUCE_MOSAIC))
+                .criterion(hasItem(DecoBlocks.SPRUCE_MOSAIC),conditionsFromItem(DecoBlocks.SPRUCE_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SPRUCE_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SPRUCE_MOSAIC_SLAB, DecoBlocks.SPRUCE_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.BIRCH_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.BIRCH_MOSAIC))
+                .criterion(hasItem(DecoBlocks.BIRCH_MOSAIC),conditionsFromItem(DecoBlocks.BIRCH_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BIRCH_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.BIRCH_MOSAIC_SLAB, DecoBlocks.BIRCH_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.JUNGLE_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.JUNGLE_MOSAIC))
+                .criterion(hasItem(DecoBlocks.JUNGLE_MOSAIC),conditionsFromItem(DecoBlocks.JUNGLE_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.JUNGLE_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.JUNGLE_MOSAIC_SLAB, DecoBlocks.JUNGLE_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.ACACIA_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.ACACIA_MOSAIC))
+                .criterion(hasItem(DecoBlocks.ACACIA_MOSAIC),conditionsFromItem(DecoBlocks.ACACIA_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.ACACIA_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.ACACIA_MOSAIC_SLAB, DecoBlocks.ACACIA_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.DARK_OAK_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.DARK_OAK_MOSAIC))
+                .criterion(hasItem(DecoBlocks.DARK_OAK_MOSAIC),conditionsFromItem(DecoBlocks.DARK_OAK_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DARK_OAK_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.DARK_OAK_MOSAIC_SLAB, DecoBlocks.DARK_OAK_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.MANGROVE_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.MANGROVE_MOSAIC))
+                .criterion(hasItem(DecoBlocks.MANGROVE_MOSAIC),conditionsFromItem(DecoBlocks.MANGROVE_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MANGROVE_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MANGROVE_MOSAIC_SLAB, DecoBlocks.MANGROVE_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.CHERRY_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.CHERRY_MOSAIC))
+                .criterion(hasItem(DecoBlocks.CHERRY_MOSAIC),conditionsFromItem(DecoBlocks.CHERRY_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CHERRY_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHERRY_MOSAIC_SLAB, DecoBlocks.CHERRY_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.CRIMSON_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.CRIMSON_MOSAIC))
+                .criterion(hasItem(DecoBlocks.CRIMSON_MOSAIC),conditionsFromItem(DecoBlocks.CRIMSON_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRIMSON_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRIMSON_MOSAIC_SLAB, DecoBlocks.CRIMSON_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.WARPED_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.WARPED_MOSAIC))
+                .criterion(hasItem(DecoBlocks.WARPED_MOSAIC),conditionsFromItem(DecoBlocks.WARPED_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WARPED_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WARPED_MOSAIC_SLAB, DecoBlocks.WARPED_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.CACTUS_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.CACTUS_MOSAIC))
+                .criterion(hasItem(DecoBlocks.CACTUS_MOSAIC),conditionsFromItem(DecoBlocks.CACTUS_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CACTUS_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CACTUS_MOSAIC_SLAB, DecoBlocks.CACTUS_MOSAIC);
+
+        createStairsRecipe(DecoBlocks.WOODEN_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_MOSAIC))
+                .criterion(hasItem(DecoBlocks.WOODEN_MOSAIC),conditionsFromItem(DecoBlocks.WOODEN_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WOODEN_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WOODEN_MOSAIC_SLAB, DecoBlocks.WOODEN_MOSAIC);
     }
 }
