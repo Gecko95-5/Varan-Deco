@@ -1,6 +1,8 @@
 package net.gecko.varandeco.block;
 
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -1779,6 +1781,9 @@ public class DecoBlocks {
     public static final Identifier CACTUS_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus");
     public static final Identifier WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden");
 
+    public static final Identifier WOODEN_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/wooden");
+    public static final Identifier WOODEN_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden");
+
     public static final Identifier STRIPPED_OAK_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_oak");
     public static final Identifier STRIPPED_SPRUCE_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_spruce");
     public static final Identifier STRIPPED_BIRCH_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_birch");
@@ -1791,6 +1796,20 @@ public class DecoBlocks {
     public static final Identifier STRIPPED_WARPED_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_warped");
     public static final Identifier STRIPPED_WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_wooden");
 
+    public static final Identifier OAK_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/oak_mosaic");
+    public static final Identifier SPRUCE_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/spruce_mosaic");
+    public static final Identifier BIRCH_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/birch_mosaic");
+    public static final Identifier JUNGLE_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/jungle_mosaic");
+    public static final Identifier ACACIA_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/acacia_mosaic");
+    public static final Identifier DARK_OAK_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/dark_oak_mosaic");
+    public static final Identifier MANGROVE_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/mangrove_mosaic");
+    public static final Identifier CHERRY_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cherry_mosaic");
+    public static final Identifier BAMBOO_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/bamboo_mosaic");
+    public static final Identifier CRIMSON_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/crimson_mosaic");
+    public static final Identifier WARPED_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/warped_mosaic");
+    public static final Identifier CACTUS_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus_mosaic");
+    public static final Identifier WOODEN_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden_mosaic");
+
     public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
             new TerraformSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_CACTUS_SIGN = registerBlockWithoutItem("wall_cactus_sign",
@@ -1800,6 +1819,11 @@ public class DecoBlocks {
             new TerraformSignBlock(WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_WOODEN_SIGN = registerBlockWithoutItem("wall_wooden_sign",
             new TerraformWallSignBlock(WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+
+    public static final Block HANGING_WOODEN_SIGN = registerBlockWithoutItem("hanging_wooden_sign",
+            new TerraformHangingSignBlock(WOODEN_HANGING_SIGN_TEXTURE, WOODEN_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_WOODEN_SIGN = registerBlockWithoutItem("wall_hanging_wooden_sign",
+            new TerraformWallHangingSignBlock(WOODEN_HANGING_SIGN_TEXTURE, WOODEN_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
 
     public static final Block STANDING_STRIPPED_OAK_SIGN = registerBlockWithoutItem("standing_stripped_oak_sign",
             new TerraformSignBlock(STRIPPED_OAK_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
@@ -1845,6 +1869,59 @@ public class DecoBlocks {
             new TerraformSignBlock(STRIPPED_WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_STRIPPED_WOODEN_SIGN = registerBlockWithoutItem("wall_stripped_wooden_sign",
             new TerraformWallSignBlock(STRIPPED_WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+
+    public static final Block STANDING_OAK_MOSAIC_SIGN = registerBlockWithoutItem("standing_oak_mosaic_sign",
+            new TerraformSignBlock(OAK_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_oak_mosaic_sign",
+            new TerraformWallSignBlock(OAK_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+    public static final Block STANDING_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("standing_spruce_mosaic_sign",
+            new TerraformSignBlock(SPRUCE_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.SPRUCE_SIGN)));
+    public static final Block WALL_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("wall_spruce_mosaic_sign",
+            new TerraformWallSignBlock(SPRUCE_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.SPRUCE_WALL_SIGN)));
+    public static final Block STANDING_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("standing_birch_mosaic_sign",
+            new TerraformSignBlock(BIRCH_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.BIRCH_SIGN)));
+    public static final Block WALL_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("wall_birch_mosaic_sign",
+            new TerraformWallSignBlock(BIRCH_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.BIRCH_WALL_SIGN)));
+    public static final Block STANDING_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("standing_jungle_mosaic_sign",
+            new TerraformSignBlock(JUNGLE_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.JUNGLE_SIGN)));
+    public static final Block WALL_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("wall_jungle_mosaic_sign",
+            new TerraformWallSignBlock(JUNGLE_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.JUNGLE_WALL_SIGN)));
+    public static final Block STANDING_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("standing_acacia_mosaic_sign",
+            new TerraformSignBlock(ACACIA_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.ACACIA_SIGN)));
+    public static final Block WALL_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("wall_acacia_mosaic_sign",
+            new TerraformWallSignBlock(ACACIA_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_SIGN)));
+    public static final Block STANDING_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("standing_dark_oak_mosaic_sign",
+            new TerraformSignBlock(DARK_OAK_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.DARK_OAK_SIGN)));
+    public static final Block WALL_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_dark_oak_mosaic_sign",
+            new TerraformWallSignBlock(DARK_OAK_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.DARK_OAK_WALL_SIGN)));
+    public static final Block STANDING_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("standing_mangrove_mosaic_sign",
+            new TerraformSignBlock(MANGROVE_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.MANGROVE_SIGN)));
+    public static final Block WALL_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("wall_mangrove_mosaic_sign",
+            new TerraformWallSignBlock(MANGROVE_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.MANGROVE_WALL_SIGN)));
+    public static final Block STANDING_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("standing_cherry_mosaic_sign",
+            new TerraformSignBlock(CHERRY_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN)));
+    public static final Block WALL_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("wall_cherry_mosaic_sign",
+            new TerraformWallSignBlock(CHERRY_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_SIGN)));
+    public static final Block STANDING_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("standing_bamboo_mosaic_sign",
+            new TerraformSignBlock(BAMBOO_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.BAMBOO_SIGN)));
+    public static final Block WALL_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("wall_bamboo_mosaic_sign",
+            new TerraformWallSignBlock(BAMBOO_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.BAMBOO_WALL_SIGN)));
+    public static final Block STANDING_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("standing_crimson_mosaic_sign",
+            new TerraformSignBlock(CRIMSON_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CRIMSON_SIGN)));
+    public static final Block WALL_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("wall_crimson_mosaic_sign",
+            new TerraformWallSignBlock(CRIMSON_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CRIMSON_WALL_SIGN)));
+    public static final Block STANDING_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("standing_warped_mosaic_sign",
+            new TerraformSignBlock(WARPED_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_SIGN)));
+    public static final Block WALL_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("wall_warped_mosaic_sign",
+            new TerraformWallSignBlock(WARPED_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_SIGN)));
+    public static final Block STANDING_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("standing_cactus_mosaic_sign",
+            new TerraformSignBlock(CACTUS_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("wall_cactus_mosaic_sign",
+            new TerraformWallSignBlock(CACTUS_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+    public static final Block STANDING_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("standing_wooden_mosaic_sign",
+            new TerraformSignBlock(WOODEN_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("wall_wooden_mosaic_sign",
+            new TerraformWallSignBlock(WOODEN_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
 
     public static final Block STONE_TEMP = registerBlock("stone_temp",
             new Block(FabricBlockSettings.create().strength(0f)));
@@ -1994,6 +2071,9 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block STRIPPED_WOODEN_TEMP = registerBlock("stripped_wooden_temp",
             new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block BAMBOO_MOSAIC_TEMP = registerBlock("bamboo_mosaic_temp",
+            new Block(FabricBlockSettings.create().sounds(BlockSoundGroup.BAMBOO_WOOD)
+                    .strength(2.0F, 3.0F)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
@@ -2035,6 +2115,46 @@ public class DecoBlocks {
     public static final BlockFamily STRIPPED_WOODEN_FAMILY = BlockFamilies.register(DecoBlocks.STRIPPED_WOODEN_WOOD)
             .sign(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN,DecoBlocks.WALL_STRIPPED_WOODEN_SIGN)
             .group("stripped_wooden").build();
+
+    public static final BlockFamily OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.OAK_MOSAIC)
+            .sign(DecoBlocks.STANDING_OAK_MOSAIC_SIGN,DecoBlocks.WALL_OAK_MOSAIC_SIGN)
+            .group("oak_mosaic").build();
+    public static final BlockFamily SPRUCE_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.SPRUCE_MOSAIC)
+            .sign(DecoBlocks.STANDING_SPRUCE_MOSAIC_SIGN,DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN)
+            .group("spruce_mosaic").build();
+    public static final BlockFamily BIRCH_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.BIRCH_MOSAIC)
+            .sign(DecoBlocks.STANDING_BIRCH_MOSAIC_SIGN,DecoBlocks.WALL_BIRCH_MOSAIC_SIGN)
+            .group("birch_mosaic").build();
+    public static final BlockFamily JUNGLE_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.JUNGLE_MOSAIC)
+            .sign(DecoBlocks.STANDING_JUNGLE_MOSAIC_SIGN,DecoBlocks.WALL_JUNGLE_MOSAIC_SIGN)
+            .group("jungle_mosaic").build();
+    public static final BlockFamily DARK_OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.DARK_OAK_MOSAIC)
+            .sign(DecoBlocks.STANDING_DARK_OAK_MOSAIC_SIGN,DecoBlocks.WALL_DARK_OAK_MOSAIC_SIGN)
+            .group("dark_oak_mosaic").build();
+    public static final BlockFamily ACACIA_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.ACACIA_MOSAIC)
+            .sign(DecoBlocks.STANDING_ACACIA_MOSAIC_SIGN,DecoBlocks.WALL_ACACIA_MOSAIC_SIGN)
+            .group("acacia_mosaic").build();
+    public static final BlockFamily CHERRY_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.CHERRY_MOSAIC)
+            .sign(DecoBlocks.STANDING_CHERRY_MOSAIC_SIGN,DecoBlocks.WALL_CHERRY_MOSAIC_SIGN)
+            .group("cherry_mosaic").build();
+    public static final BlockFamily MANGROVE_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.MANGROVE_MOSAIC)
+            .sign(DecoBlocks.STANDING_MANGROVE_MOSAIC_SIGN,DecoBlocks.WALL_MANGROVE_MOSAIC_SIGN)
+            .group("mangrove_mosaic").build();
+    public static final BlockFamily BAMBOO_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.BAMBOO_MOSAIC_TEMP)
+            .sign(DecoBlocks.STANDING_BAMBOO_MOSAIC_SIGN,DecoBlocks.WALL_BAMBOO_MOSAIC_SIGN)
+            .group("bamboo_mosaic").build();
+    public static final BlockFamily CRIMSON_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.CRIMSON_MOSAIC)
+            .sign(DecoBlocks.STANDING_CRIMSON_MOSAIC_SIGN,DecoBlocks.WALL_CRIMSON_MOSAIC_SIGN)
+            .group("crimson_mosaic").build();
+    public static final BlockFamily WARPED_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.WARPED_MOSAIC)
+            .sign(DecoBlocks.STANDING_WARPED_MOSAIC_SIGN,DecoBlocks.WALL_WARPED_MOSAIC_SIGN)
+            .group("warped_mosaic").build();
+    public static final BlockFamily CACTUS_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_MOSAIC)
+            .sign(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN,DecoBlocks.WALL_CACTUS_MOSAIC_SIGN)
+            .group("cactus_mosaic").build();
+    public static final BlockFamily WOODEN_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.WOODEN_MOSAIC)
+            .sign(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN,DecoBlocks.WALL_WOODEN_MOSAIC_SIGN)
+            .group("wooden_mosaic").build();
 
     public static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
         return new PillarBlock(

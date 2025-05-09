@@ -658,7 +658,20 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STANDING_STRIPPED_MANGROVE_SIGN)
                 .add(DecoBlocks.STANDING_STRIPPED_CRIMSON_SIGN)
                 .add(DecoBlocks.STANDING_STRIPPED_WARPED_SIGN)
-                .add(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN);
+                .add(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN)
+                .add(DecoBlocks.STANDING_OAK_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_SPRUCE_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_BIRCH_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_JUNGLE_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_ACACIA_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_DARK_OAK_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_CHERRY_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_MANGROVE_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_BAMBOO_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_CRIMSON_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_WARPED_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
                 .add(DecoBlocks.WALL_CACTUS_SIGN)
@@ -673,7 +686,26 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_STRIPPED_MANGROVE_SIGN)
                 .add(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN)
                 .add(DecoBlocks.WALL_STRIPPED_WARPED_SIGN)
-                .add(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN);
+                .add(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN)
+                .add(DecoBlocks.WALL_OAK_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_BIRCH_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_JUNGLE_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_ACACIA_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_DARK_OAK_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_CHERRY_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_MANGROVE_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_BAMBOO_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_CRIMSON_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_WARPED_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_CACTUS_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+                .add(DecoBlocks.HANGING_WOODEN_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(DecoBlocks.WALL_HANGING_WOODEN_SIGN);
 
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
                 .add(DecoBlocks.WOODEN_SAPLING);

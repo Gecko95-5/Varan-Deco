@@ -264,6 +264,11 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WARPED_TEMP);
         BlockStateModelGenerator.BlockTexturePool woodenstrippedpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WOODEN_TEMP);
+        BlockStateModelGenerator.BlockTexturePool bamboomosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BAMBOO_MOSAIC_TEMP);
+
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_WOODEN_LOG, DecoBlocks.HANGING_WOODEN_SIGN,
+                DecoBlocks.WALL_HANGING_WOODEN_SIGN);
 
         oakstrippedpool.family(DecoBlocks.STRIPPED_OAK_FAMILY);
         sprucestrippedpool.family(DecoBlocks.STRIPPED_SPRUCE_FAMILY);
@@ -276,6 +281,20 @@ public class DecoModelProvider extends FabricModelProvider {
         crimsonstrippedpool.family(DecoBlocks.STRIPPED_CRIMSON_FAMILY);
         warpedstrippedpool.family(DecoBlocks.STRIPPED_WARPED_FAMILY);
         woodenstrippedpool.family(DecoBlocks.STRIPPED_WOODEN_FAMILY);
+
+        oakmosaicpool.family(DecoBlocks.OAK_MOSAIC_FAMILY);
+        sprucemosaicpool.family(DecoBlocks.SPRUCE_MOSAIC_FAMILY);
+        birchmosaicpool.family(DecoBlocks.BIRCH_MOSAIC_FAMILY);
+        junglemosaicpool.family(DecoBlocks.JUNGLE_MOSAIC_FAMILY);
+        acaciamosaicpool.family(DecoBlocks.ACACIA_MOSAIC_FAMILY);
+        darkoakmosaicpool.family(DecoBlocks.DARK_OAK_MOSAIC_FAMILY);
+        mangrovemosaicpool.family(DecoBlocks.MANGROVE_MOSAIC_FAMILY);
+        cherrymosaicpool.family(DecoBlocks.CHERRY_MOSAIC_FAMILY);
+        cactusmosaicpool.family(DecoBlocks.CACTUS_MOSAIC_FAMILY);
+        crimsonmosaicpool.family(DecoBlocks.CRIMSON_MOSAIC_FAMILY);
+        warpedmosaicpool.family(DecoBlocks.WARPED_MOSAIC_FAMILY);
+        woodenmosaicpool.family(DecoBlocks.WOODEN_MOSAIC_FAMILY);
+        bamboomosaicpool.family(DecoBlocks.BAMBOO_MOSAIC_FAMILY);
 
         blockStateModelGenerator.registerLantern(DecoBlocks.COPPER_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.EXPOSED_COPPER_LANTERN);

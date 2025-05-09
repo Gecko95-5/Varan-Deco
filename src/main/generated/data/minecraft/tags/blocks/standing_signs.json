@@ -13,6 +13,19 @@
     "varan-deco:standing_stripped_mangrove_sign",
     "varan-deco:standing_stripped_crimson_sign",
     "varan-deco:standing_stripped_warped_sign",
-    "varan-deco:standing_stripped_wooden_sign"
+    "varan-deco:standing_stripped_wooden_sign",
+    "varan-deco:standing_oak_mosaic_sign",
+    "varan-deco:standing_spruce_mosaic_sign",
+    "varan-deco:standing_birch_mosaic_sign",
+    "varan-deco:standing_jungle_mosaic_sign",
+    "varan-deco:standing_acacia_mosaic_sign",
+    "varan-deco:standing_dark_oak_mosaic_sign",
+    "varan-deco:standing_cherry_mosaic_sign",
+    "varan-deco:standing_mangrove_mosaic_sign",
+    "varan-deco:standing_bamboo_mosaic_sign",
+    "varan-deco:standing_crimson_mosaic_sign",
+    "varan-deco:standing_warped_mosaic_sign",
+    "varan-deco:standing_cactus_mosaic_sign",
+    "varan-deco:standing_wooden_mosaic_sign"
   ]
 }

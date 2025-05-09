@@ -334,6 +334,20 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STANDING_STRIPPED_WARPED_SIGN);
         addDrop(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN);
         
+        addDrop(DecoBlocks.STANDING_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_SPRUCE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_BIRCH_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_JUNGLE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_ACACIA_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_DARK_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_CHERRY_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_MANGROVE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_BAMBOO_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_CRIMSON_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_WARPED_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN);
+        
         addDrop(DecoBlocks.WALL_STRIPPED_OAK_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_BIRCH_SIGN);
@@ -345,6 +359,23 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_WARPED_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN);
+        
+        addDrop(DecoBlocks.WALL_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_BIRCH_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_JUNGLE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_ACACIA_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_DARK_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_CHERRY_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_MANGROVE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_BAMBOO_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_CRIMSON_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_WARPED_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_CACTUS_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN);
+
+        addDrop(DecoBlocks.HANGING_WOODEN_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_WOODEN_SIGN);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
         slabDrops(DecoBlocks.TERRACOTTA_SLAB);

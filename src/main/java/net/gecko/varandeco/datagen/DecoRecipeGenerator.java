@@ -3878,5 +3878,81 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.WOODEN_MOSAIC),conditionsFromItem(DecoBlocks.WOODEN_MOSAIC))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WOODEN_MOSAIC_STAIRS)));
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WOODEN_MOSAIC_SLAB, DecoBlocks.WOODEN_MOSAIC);
+
+        createSignRecipe(DecoItems.STRIPPED_OAK_SIGN, Ingredient.ofItems(Blocks.STRIPPED_OAK_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_OAK_LOG),conditionsFromItem(Blocks.STRIPPED_OAK_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_OAK_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_SPRUCE_SIGN, Ingredient.ofItems(Blocks.STRIPPED_SPRUCE_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_SPRUCE_LOG),conditionsFromItem(Blocks.STRIPPED_SPRUCE_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_SPRUCE_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_BIRCH_SIGN, Ingredient.ofItems(Blocks.STRIPPED_BIRCH_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_BIRCH_LOG),conditionsFromItem(Blocks.STRIPPED_BIRCH_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_BIRCH_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_JUNGLE_SIGN, Ingredient.ofItems(Blocks.STRIPPED_JUNGLE_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_JUNGLE_LOG),conditionsFromItem(Blocks.STRIPPED_JUNGLE_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_JUNGLE_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_ACACIA_SIGN, Ingredient.ofItems(Blocks.STRIPPED_ACACIA_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_ACACIA_LOG),conditionsFromItem(Blocks.STRIPPED_ACACIA_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_ACACIA_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_DARK_OAK_SIGN, Ingredient.ofItems(Blocks.STRIPPED_DARK_OAK_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_DARK_OAK_LOG),conditionsFromItem(Blocks.STRIPPED_DARK_OAK_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_DARK_OAK_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_MANGROVE_SIGN, Ingredient.ofItems(Blocks.STRIPPED_MANGROVE_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_MANGROVE_LOG),conditionsFromItem(Blocks.STRIPPED_MANGROVE_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_MANGROVE_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_CHERRY_SIGN, Ingredient.ofItems(Blocks.STRIPPED_CHERRY_LOG))
+                .criterion(hasItem(Blocks.STRIPPED_CHERRY_LOG),conditionsFromItem(Blocks.STRIPPED_CHERRY_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_CHERRY_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_CRIMSON_SIGN, Ingredient.ofItems(Blocks.STRIPPED_CRIMSON_STEM))
+                .criterion(hasItem(Blocks.STRIPPED_CRIMSON_STEM),conditionsFromItem(Blocks.STRIPPED_CRIMSON_STEM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_CRIMSON_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_WARPED_SIGN, Ingredient.ofItems(Blocks.STRIPPED_WARPED_STEM))
+                .criterion(hasItem(Blocks.STRIPPED_WARPED_STEM),conditionsFromItem(Blocks.STRIPPED_WARPED_STEM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_WARPED_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_WOODEN_SIGN, Ingredient.ofItems(DecoBlocks.STRIPPED_WOODEN_LOG))
+                .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_WOODEN_SIGN)));
+
+        createSignRecipe(DecoItems.OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
+                .criterion(hasItem(DecoBlocks.OAK_MOSAIC),conditionsFromItem(DecoBlocks.OAK_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.OAK_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.SPRUCE_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.SPRUCE_MOSAIC))
+                .criterion(hasItem(DecoBlocks.SPRUCE_MOSAIC),conditionsFromItem(DecoBlocks.SPRUCE_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.SPRUCE_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.BIRCH_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.BIRCH_MOSAIC))
+                .criterion(hasItem(DecoBlocks.BIRCH_MOSAIC),conditionsFromItem(DecoBlocks.BIRCH_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.BIRCH_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.JUNGLE_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.JUNGLE_MOSAIC))
+                .criterion(hasItem(DecoBlocks.JUNGLE_MOSAIC),conditionsFromItem(DecoBlocks.JUNGLE_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.JUNGLE_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.ACACIA_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.ACACIA_MOSAIC))
+                .criterion(hasItem(DecoBlocks.ACACIA_MOSAIC),conditionsFromItem(DecoBlocks.ACACIA_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.ACACIA_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.DARK_OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.DARK_OAK_MOSAIC))
+                .criterion(hasItem(DecoBlocks.DARK_OAK_MOSAIC),conditionsFromItem(DecoBlocks.DARK_OAK_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.DARK_OAK_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.MANGROVE_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.MANGROVE_MOSAIC))
+                .criterion(hasItem(DecoBlocks.MANGROVE_MOSAIC),conditionsFromItem(DecoBlocks.MANGROVE_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.MANGROVE_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.CHERRY_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.CHERRY_MOSAIC))
+                .criterion(hasItem(DecoBlocks.CHERRY_MOSAIC),conditionsFromItem(DecoBlocks.CHERRY_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.CHERRY_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.BAMBOO_MOSAIC_SIGN, Ingredient.ofItems(Blocks.BAMBOO_MOSAIC))
+                .criterion(hasItem(Blocks.BAMBOO_MOSAIC),conditionsFromItem(Blocks.BAMBOO_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.BAMBOO_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.CRIMSON_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.CRIMSON_MOSAIC))
+                .criterion(hasItem(DecoBlocks.CRIMSON_MOSAIC),conditionsFromItem(DecoBlocks.CRIMSON_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.CRIMSON_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.WARPED_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.WARPED_MOSAIC))
+                .criterion(hasItem(DecoBlocks.WARPED_MOSAIC),conditionsFromItem(DecoBlocks.WARPED_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.WARPED_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.WOODEN_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.WOODEN_MOSAIC))
+                .criterion(hasItem(DecoBlocks.WOODEN_MOSAIC),conditionsFromItem(DecoBlocks.WOODEN_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.WOODEN_MOSAIC_SIGN)));
+        createSignRecipe(DecoItems.CACTUS_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.CACTUS_MOSAIC))
+                .criterion(hasItem(DecoBlocks.CACTUS_MOSAIC),conditionsFromItem(DecoBlocks.CACTUS_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.CACTUS_MOSAIC_SIGN)));
+
+        offerHangingSignRecipe(exporter, DecoItems.WOODEN_HANGING_SIGN, DecoBlocks.WOODEN_LOG);
     }
 }

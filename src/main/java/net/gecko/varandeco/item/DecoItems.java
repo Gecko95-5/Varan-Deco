@@ -6,10 +6,7 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.item.projectile.SnowBrickItem;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SignItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,6 +19,7 @@ public class DecoItems {
     public static final Item WOODEN_SIGN = registerItem("wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
+
     public static final Item STRIPPED_OAK_SIGN = registerItem("stripped_oak_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_STRIPPED_OAK_SIGN, DecoBlocks.WALL_STRIPPED_OAK_SIGN));
@@ -30,7 +28,7 @@ public class DecoItems {
                     DecoBlocks.STANDING_STRIPPED_SPRUCE_SIGN, DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN));
     public static final Item STRIPPED_BIRCH_SIGN = registerItem("stripped_birch_sign",
             new SignItem(new Item.Settings().maxCount(16),
-                    DecoBlocks.STANDING_STRIPPED_SPRUCE_SIGN, DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN));
+                    DecoBlocks.STANDING_STRIPPED_BIRCH_SIGN, DecoBlocks.WALL_STRIPPED_BIRCH_SIGN));
     public static final Item STRIPPED_JUNGLE_SIGN = registerItem("stripped_jungle_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_STRIPPED_JUNGLE_SIGN, DecoBlocks.WALL_STRIPPED_JUNGLE_SIGN));
@@ -55,6 +53,50 @@ public class DecoItems {
     public static final Item STRIPPED_WOODEN_SIGN = registerItem("stripped_wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN, DecoBlocks.WALL_STRIPPED_WOODEN_SIGN));
+
+    public static final Item OAK_MOSAIC_SIGN = registerItem("oak_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_OAK_MOSAIC_SIGN, DecoBlocks.WALL_OAK_MOSAIC_SIGN));
+    public static final Item SPRUCE_MOSAIC_SIGN = registerItem("spruce_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_SPRUCE_MOSAIC_SIGN, DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN));
+    public static final Item BIRCH_MOSAIC_SIGN = registerItem("birch_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_BIRCH_MOSAIC_SIGN, DecoBlocks.WALL_BIRCH_MOSAIC_SIGN));
+    public static final Item JUNGLE_MOSAIC_SIGN = registerItem("jungle_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_JUNGLE_MOSAIC_SIGN, DecoBlocks.WALL_JUNGLE_MOSAIC_SIGN));
+    public static final Item ACACIA_MOSAIC_SIGN = registerItem("acacia_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_ACACIA_MOSAIC_SIGN, DecoBlocks.WALL_ACACIA_MOSAIC_SIGN));
+    public static final Item DARK_OAK_MOSAIC_SIGN = registerItem("dark_oak_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_DARK_OAK_MOSAIC_SIGN, DecoBlocks.WALL_DARK_OAK_MOSAIC_SIGN));
+    public static final Item MANGROVE_MOSAIC_SIGN = registerItem("mangrove_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_MANGROVE_MOSAIC_SIGN, DecoBlocks.WALL_MANGROVE_MOSAIC_SIGN));
+    public static final Item CHERRY_MOSAIC_SIGN = registerItem("cherry_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_CHERRY_MOSAIC_SIGN, DecoBlocks.WALL_CHERRY_MOSAIC_SIGN));
+    public static final Item BAMBOO_MOSAIC_SIGN = registerItem("bamboo_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_BAMBOO_MOSAIC_SIGN, DecoBlocks.WALL_BAMBOO_MOSAIC_SIGN));
+    public static final Item CRIMSON_MOSAIC_SIGN = registerItem("crimson_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_CRIMSON_MOSAIC_SIGN, DecoBlocks.WALL_CRIMSON_MOSAIC_SIGN));
+    public static final Item WARPED_MOSAIC_SIGN = registerItem("warped_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_WARPED_MOSAIC_SIGN, DecoBlocks.WALL_WARPED_MOSAIC_SIGN));
+    public static final Item CACTUS_MOSAIC_SIGN = registerItem("cactus_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN, DecoBlocks.WALL_CACTUS_MOSAIC_SIGN));
+    public static final Item WOODEN_MOSAIC_SIGN = registerItem("wooden_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_WOODEN_MOSAIC_SIGN));
+
+    public static final Item WOODEN_HANGING_SIGN = registerItem("wooden_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_WOODEN_SIGN, DecoBlocks.WALL_HANGING_WOODEN_SIGN,
+                    new Item.Settings().maxCount(16)));
 
     public static final Item SNOW_BRICK = registerItem("snow_brick",
             new SnowBrickItem(new Item.Settings().maxCount(16)));
