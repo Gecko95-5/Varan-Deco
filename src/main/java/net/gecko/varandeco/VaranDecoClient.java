@@ -254,6 +254,58 @@ public class VaranDecoClient implements ClientModInitializer {
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_HANGING_SIGN_TEXTURE));
 
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.OAK_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.SPRUCE_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.BIRCH_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.JUNGLE_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.ACACIA_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MANGROVE_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CHERRY_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CRIMSON_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WARPED_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_PLANKS_HANGING_SIGN_TEXTURE));
+
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.OAK_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.BIRCH_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.ACACIA_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CHERRY_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WARPED_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_MOSAIC_HANGING_SIGN_TEXTURE));
+
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CRIMSON_BOAT_ID,false);

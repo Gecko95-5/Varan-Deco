@@ -3954,5 +3954,34 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.CACTUS_MOSAIC_SIGN)));
 
         offerHangingSignRecipe(exporter, DecoItems.WOODEN_HANGING_SIGN, DecoBlocks.WOODEN_LOG);
+
+
+        offerHangingSignRecipe(exporter, DecoItems.OAK_PLANKS_HANGING_SIGN, Blocks.OAK_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.SPRUCE_PLANKS_HANGING_SIGN, Blocks.SPRUCE_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.BIRCH_PLANKS_HANGING_SIGN, Blocks.BIRCH_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.JUNGLE_PLANKS_HANGING_SIGN, Blocks.JUNGLE_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.ACACIA_PLANKS_HANGING_SIGN, Blocks.ACACIA_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.DARK_OAK_PLANKS_HANGING_SIGN, Blocks.DARK_OAK_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.MANGROVE_PLANKS_HANGING_SIGN, Blocks.MANGROVE_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.CHERRY_PLANKS_HANGING_SIGN, Blocks.CHERRY_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.CRIMSON_PLANKS_HANGING_SIGN, Blocks.CRIMSON_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.WARPED_PLANKS_HANGING_SIGN, Blocks.WARPED_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.CACTUS_PLANKS_HANGING_SIGN, DecoBlocks.CACTUS_PLANKS);
+        offerHangingSignRecipe(exporter, DecoItems.WOODEN_PLANKS_HANGING_SIGN, DecoBlocks.WOODEN_PLANKS);
+
+        offerHangingSignRecipe(exporter, DecoItems.OAK_MOSAIC_HANGING_SIGN, DecoBlocks.OAK_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.SPRUCE_MOSAIC_HANGING_SIGN, DecoBlocks.SPRUCE_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.BIRCH_MOSAIC_HANGING_SIGN, DecoBlocks.BIRCH_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.JUNGLE_MOSAIC_HANGING_SIGN, DecoBlocks.JUNGLE_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.ACACIA_MOSAIC_HANGING_SIGN, DecoBlocks.ACACIA_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.DARK_OAK_MOSAIC_HANGING_SIGN, DecoBlocks.DARK_OAK_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.MANGROVE_MOSAIC_HANGING_SIGN, DecoBlocks.MANGROVE_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.CHERRY_MOSAIC_HANGING_SIGN, DecoBlocks.CHERRY_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.BAMBOO_MOSAIC_HANGING_SIGN, Blocks.BAMBOO_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.CRIMSON_MOSAIC_HANGING_SIGN, DecoBlocks.CRIMSON_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.WARPED_MOSAIC_HANGING_SIGN, DecoBlocks.WARPED_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.CACTUS_MOSAIC_HANGING_SIGN, DecoBlocks.CACTUS_MOSAIC);
+        offerHangingSignRecipe(exporter, DecoItems.WOODEN_MOSAIC_HANGING_SIGN, DecoBlocks.WOODEN_MOSAIC);
+
     }
 }

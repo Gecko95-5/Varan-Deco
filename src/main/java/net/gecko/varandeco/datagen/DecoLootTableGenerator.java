@@ -376,6 +376,58 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.HANGING_WOODEN_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_WOODEN_SIGN);
+        
+        addDrop(DecoBlocks.HANGING_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_SPRUCE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_BIRCH_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_JUNGLE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_ACACIA_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_DARK_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_MANGROVE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_CHERRY_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_BAMBOO_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_CACTUS_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_CRIMSON_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_WARPED_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_OAK_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_SPRUCE_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_BIRCH_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_JUNGLE_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_ACACIA_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_DARK_OAK_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_MANGROVE_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_CHERRY_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_CACTUS_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_WOODEN_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_CRIMSON_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_WARPED_PLANKS_SIGN);
+                        
+        addDrop(DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_SPRUCE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_BIRCH_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_JUNGLE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_ACACIA_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_DARK_OAK_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_MANGROVE_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_CHERRY_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_BAMBOO_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_CACTUS_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_CRIMSON_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_WARPED_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_SPRUCE_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_BIRCH_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_JUNGLE_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_ACACIA_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_DARK_OAK_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_MANGROVE_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_CHERRY_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_CACTUS_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_CRIMSON_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_WARPED_PLANKS_SIGN);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
         slabDrops(DecoBlocks.TERRACOTTA_SLAB);

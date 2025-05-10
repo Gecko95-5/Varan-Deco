@@ -1810,6 +1810,60 @@ public class DecoBlocks {
     public static final Identifier CACTUS_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus_mosaic");
     public static final Identifier WOODEN_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden_mosaic");
 
+    public static final Identifier OAK_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/oak_mosaic");
+    public static final Identifier SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/spruce_mosaic");
+    public static final Identifier BIRCH_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/birch_mosaic");
+    public static final Identifier JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/jungle_mosaic");
+    public static final Identifier ACACIA_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/acacia_mosaic");
+    public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_mosaic");
+    public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_mosaic");
+    public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_mosaic");
+    public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/bamboo_mosaic");
+    public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_mosaic");
+    public static final Identifier WARPED_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/warped_mosaic");
+    public static final Identifier CACTUS_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_mosaic");
+    public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/wooden_mosaic");
+
+    public static final Identifier OAK_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/oak_mosaic");
+    public static final Identifier SPRUCE_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/spruce_mosaic");
+    public static final Identifier BIRCH_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/birch_mosaic");
+    public static final Identifier JUNGLE_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/jungle_mosaic");
+    public static final Identifier ACACIA_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/acacia_mosaic");
+    public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_mosaic");
+    public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_mosaic");
+    public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_mosaic");
+    public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/bamboo_mosaic");
+    public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_mosaic");
+    public static final Identifier WARPED_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_mosaic");
+    public static final Identifier CACTUS_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_mosaic");
+    public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_mosaic");
+
+    public static final Identifier OAK_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/oak_planks");
+    public static final Identifier SPRUCE_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/spruce_planks");
+    public static final Identifier BIRCH_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/birch_planks");
+    public static final Identifier JUNGLE_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/jungle_planks");
+    public static final Identifier ACACIA_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/acacia_planks");
+    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_planks");
+    public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_planks");
+    public static final Identifier CHERRY_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_planks");
+    public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_planks");
+    public static final Identifier WARPED_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/warped_planks");
+    public static final Identifier CACTUS_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_planks");
+    public static final Identifier WOODEN_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/wooden_planks");
+
+    public static final Identifier OAK_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/oak_planks");
+    public static final Identifier SPRUCE_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/spruce_planks");
+    public static final Identifier BIRCH_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/birch_planks");
+    public static final Identifier JUNGLE_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/jungle_planks");
+    public static final Identifier ACACIA_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/acacia_planks");
+    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_planks");
+    public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_planks");
+    public static final Identifier CHERRY_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_planks");
+    public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_planks");
+    public static final Identifier WARPED_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_planks");
+    public static final Identifier CACTUS_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_planks");
+    public static final Identifier WOODEN_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_planks");
+
     public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
             new TerraformSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_CACTUS_SIGN = registerBlockWithoutItem("wall_cactus_sign",
@@ -1922,6 +1976,108 @@ public class DecoBlocks {
             new TerraformSignBlock(WOODEN_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("wall_wooden_mosaic_sign",
             new TerraformWallSignBlock(WOODEN_MOSAIC_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+
+    public static final Block HANGING_OAK_MOSAIC_SIGN = registerBlockWithoutItem("hanging_oak_mosaic_sign",
+            new TerraformHangingSignBlock(OAK_MOSAIC_HANGING_SIGN_TEXTURE, OAK_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_oak_mosaic_sign",
+            new TerraformWallHangingSignBlock(OAK_MOSAIC_HANGING_SIGN_TEXTURE, OAK_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("hanging_spruce_mosaic_sign",
+            new TerraformHangingSignBlock(SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE, SPRUCE_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.SPRUCE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_spruce_mosaic_sign",
+            new TerraformWallHangingSignBlock(SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE, SPRUCE_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.SPRUCE_WALL_HANGING_SIGN)));
+    public static final Block HANGING_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("hanging_birch_mosaic_sign",
+            new TerraformHangingSignBlock(BIRCH_MOSAIC_HANGING_SIGN_TEXTURE, BIRCH_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.BIRCH_HANGING_SIGN)));
+    public static final Block WALL_HANGING_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_birch_mosaic_sign",
+            new TerraformWallHangingSignBlock(BIRCH_MOSAIC_HANGING_SIGN_TEXTURE, BIRCH_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.BIRCH_WALL_HANGING_SIGN)));
+    public static final Block HANGING_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("hanging_jungle_mosaic_sign",
+            new TerraformHangingSignBlock(JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE, JUNGLE_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.JUNGLE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_jungle_mosaic_sign",
+            new TerraformWallHangingSignBlock(JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE, JUNGLE_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.JUNGLE_WALL_HANGING_SIGN)));
+    public static final Block HANGING_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("hanging_acacia_mosaic_sign",
+            new TerraformHangingSignBlock(ACACIA_MOSAIC_HANGING_SIGN_TEXTURE, ACACIA_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.ACACIA_HANGING_SIGN)));
+    public static final Block WALL_HANGING_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_acacia_mosaic_sign",
+            new TerraformWallHangingSignBlock(ACACIA_MOSAIC_HANGING_SIGN_TEXTURE, ACACIA_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_HANGING_SIGN)));
+    public static final Block HANGING_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("hanging_dark_oak_mosaic_sign",
+            new TerraformHangingSignBlock(DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE, DARK_OAK_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.DARK_OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_dark_oak_mosaic_sign",
+            new TerraformWallHangingSignBlock(DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE, DARK_OAK_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.DARK_OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("hanging_mangrove_mosaic_sign",
+            new TerraformHangingSignBlock(MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE, MANGROVE_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.MANGROVE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_mangrove_mosaic_sign",
+            new TerraformWallHangingSignBlock(MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE, MANGROVE_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.MANGROVE_WALL_HANGING_SIGN)));
+    public static final Block HANGING_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("hanging_cherry_mosaic_sign",
+            new TerraformHangingSignBlock(CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN)));
+    public static final Block WALL_HANGING_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_cherry_mosaic_sign",
+            new TerraformWallHangingSignBlock(CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN)));
+    public static final Block HANGING_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("hanging_bamboo_mosaic_sign",
+            new TerraformHangingSignBlock(BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.BAMBOO_HANGING_SIGN)));
+    public static final Block WALL_HANGING_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_bamboo_mosaic_sign",
+            new TerraformWallHangingSignBlock(BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.BAMBOO_WALL_HANGING_SIGN)));
+    public static final Block HANGING_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("hanging_crimson_mosaic_sign",
+            new TerraformHangingSignBlock(CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE, CRIMSON_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CRIMSON_HANGING_SIGN)));
+    public static final Block WALL_HANGING_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_crimson_mosaic_sign",
+            new TerraformWallHangingSignBlock(CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE, CRIMSON_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CRIMSON_WALL_HANGING_SIGN)));
+    public static final Block HANGING_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("hanging_warped_mosaic_sign",
+            new TerraformHangingSignBlock(WARPED_MOSAIC_HANGING_SIGN_TEXTURE, WARPED_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.WARPED_HANGING_SIGN)));
+    public static final Block WALL_HANGING_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_warped_mosaic_sign",
+            new TerraformWallHangingSignBlock(WARPED_MOSAIC_HANGING_SIGN_TEXTURE, WARPED_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_HANGING_SIGN)));
+    public static final Block HANGING_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("hanging_cactus_mosaic_sign",
+            new TerraformHangingSignBlock(CACTUS_MOSAIC_HANGING_SIGN_TEXTURE, CACTUS_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_cactus_mosaic_sign",
+            new TerraformWallHangingSignBlock(CACTUS_MOSAIC_HANGING_SIGN_TEXTURE, CACTUS_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("hanging_wooden_mosaic_sign",
+            new TerraformHangingSignBlock(WOODEN_MOSAIC_HANGING_SIGN_TEXTURE, WOODEN_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_wooden_mosaic_sign",
+            new TerraformWallHangingSignBlock(WOODEN_MOSAIC_HANGING_SIGN_TEXTURE, WOODEN_MOSAIC_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+
+    public static final Block HANGING_OAK_PLANKS_SIGN = registerBlockWithoutItem("hanging_oak_planks_sign",
+            new TerraformHangingSignBlock(OAK_PLANKS_HANGING_SIGN_TEXTURE, OAK_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_OAK_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_oak_planks_sign",
+            new TerraformWallHangingSignBlock(OAK_PLANKS_HANGING_SIGN_TEXTURE, OAK_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_SPRUCE_PLANKS_SIGN = registerBlockWithoutItem("hanging_spruce_planks_sign",
+            new TerraformHangingSignBlock(SPRUCE_PLANKS_HANGING_SIGN_TEXTURE, SPRUCE_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.SPRUCE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_SPRUCE_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_spruce_planks_sign",
+            new TerraformWallHangingSignBlock(SPRUCE_PLANKS_HANGING_SIGN_TEXTURE, SPRUCE_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.SPRUCE_WALL_HANGING_SIGN)));
+    public static final Block HANGING_BIRCH_PLANKS_SIGN = registerBlockWithoutItem("hanging_birch_planks_sign",
+            new TerraformHangingSignBlock(BIRCH_PLANKS_HANGING_SIGN_TEXTURE, BIRCH_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.BIRCH_HANGING_SIGN)));
+    public static final Block WALL_HANGING_BIRCH_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_birch_planks_sign",
+            new TerraformWallHangingSignBlock(BIRCH_PLANKS_HANGING_SIGN_TEXTURE, BIRCH_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.BIRCH_WALL_HANGING_SIGN)));
+    public static final Block HANGING_JUNGLE_PLANKS_SIGN = registerBlockWithoutItem("hanging_jungle_planks_sign",
+            new TerraformHangingSignBlock(JUNGLE_PLANKS_HANGING_SIGN_TEXTURE, JUNGLE_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.JUNGLE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_JUNGLE_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_jungle_planks_sign",
+            new TerraformWallHangingSignBlock(JUNGLE_PLANKS_HANGING_SIGN_TEXTURE, JUNGLE_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.JUNGLE_WALL_HANGING_SIGN)));
+    public static final Block HANGING_ACACIA_PLANKS_SIGN = registerBlockWithoutItem("hanging_acacia_planks_sign",
+            new TerraformHangingSignBlock(ACACIA_PLANKS_HANGING_SIGN_TEXTURE, ACACIA_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.ACACIA_HANGING_SIGN)));
+    public static final Block WALL_HANGING_ACACIA_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_acacia_planks_sign",
+            new TerraformWallHangingSignBlock(ACACIA_PLANKS_HANGING_SIGN_TEXTURE, ACACIA_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_HANGING_SIGN)));
+    public static final Block HANGING_DARK_OAK_PLANKS_SIGN = registerBlockWithoutItem("hanging_dark_oak_planks_sign",
+            new TerraformHangingSignBlock(DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE, DARK_OAK_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.DARK_OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_DARK_OAK_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_dark_oak_planks_sign",
+            new TerraformWallHangingSignBlock(DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE, DARK_OAK_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.DARK_OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_MANGROVE_PLANKS_SIGN = registerBlockWithoutItem("hanging_mangrove_planks_sign",
+            new TerraformHangingSignBlock(MANGROVE_PLANKS_HANGING_SIGN_TEXTURE, MANGROVE_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.MANGROVE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_MANGROVE_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_mangrove_planks_sign",
+            new TerraformWallHangingSignBlock(MANGROVE_PLANKS_HANGING_SIGN_TEXTURE, MANGROVE_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.MANGROVE_WALL_HANGING_SIGN)));
+    public static final Block HANGING_CHERRY_PLANKS_SIGN = registerBlockWithoutItem("hanging_cherry_planks_sign",
+            new TerraformHangingSignBlock(CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN)));
+    public static final Block WALL_HANGING_CHERRY_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_cherry_planks_sign",
+            new TerraformWallHangingSignBlock(CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN)));
+    public static final Block HANGING_CRIMSON_PLANKS_SIGN = registerBlockWithoutItem("hanging_crimson_planks_sign",
+            new TerraformHangingSignBlock(CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CRIMSON_HANGING_SIGN)));
+    public static final Block WALL_HANGING_CRIMSON_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_crimson_planks_sign",
+            new TerraformWallHangingSignBlock(CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.CRIMSON_WALL_HANGING_SIGN)));
+    public static final Block HANGING_WARPED_PLANKS_SIGN = registerBlockWithoutItem("hanging_warped_planks_sign",
+            new TerraformHangingSignBlock(WARPED_PLANKS_HANGING_SIGN_TEXTURE, WARPED_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.WARPED_HANGING_SIGN)));
+    public static final Block WALL_HANGING_WARPED_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_warped_planks_sign",
+            new TerraformWallHangingSignBlock(WARPED_PLANKS_HANGING_SIGN_TEXTURE, WARPED_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_HANGING_SIGN)));
+    public static final Block HANGING_CACTUS_PLANKS_SIGN = registerBlockWithoutItem("hanging_cactus_planks_sign",
+            new TerraformHangingSignBlock(CACTUS_PLANKS_HANGING_SIGN_TEXTURE, CACTUS_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_CACTUS_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_cactus_planks_sign",
+            new TerraformWallHangingSignBlock(CACTUS_PLANKS_HANGING_SIGN_TEXTURE, CACTUS_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_WOODEN_PLANKS_SIGN = registerBlockWithoutItem("hanging_wooden_planks_sign",
+            new TerraformHangingSignBlock(WOODEN_PLANKS_HANGING_SIGN_TEXTURE, WOODEN_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_WOODEN_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_wooden_planks_sign",
+            new TerraformWallHangingSignBlock(WOODEN_PLANKS_HANGING_SIGN_TEXTURE, WOODEN_PLANKS_HANGING_SIGN_GUI, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
 
     public static final Block STONE_TEMP = registerBlock("stone_temp",
             new Block(FabricBlockSettings.create().strength(0f)));

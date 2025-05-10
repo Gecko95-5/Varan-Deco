@@ -270,6 +270,58 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_WOODEN_LOG, DecoBlocks.HANGING_WOODEN_SIGN,
                 DecoBlocks.WALL_HANGING_WOODEN_SIGN);
 
+        blockStateModelGenerator.registerHangingSign(Blocks.OAK_PLANKS, DecoBlocks.HANGING_OAK_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.SPRUCE_PLANKS, DecoBlocks.HANGING_SPRUCE_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_SPRUCE_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.BIRCH_PLANKS, DecoBlocks.HANGING_BIRCH_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_BIRCH_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.JUNGLE_PLANKS, DecoBlocks.HANGING_JUNGLE_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_JUNGLE_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.ACACIA_PLANKS, DecoBlocks.HANGING_ACACIA_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_ACACIA_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.DARK_OAK_PLANKS, DecoBlocks.HANGING_DARK_OAK_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_DARK_OAK_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.MANGROVE_PLANKS, DecoBlocks.HANGING_MANGROVE_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_MANGROVE_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.CHERRY_PLANKS, DecoBlocks.HANGING_CHERRY_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_CHERRY_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.CRIMSON_PLANKS, DecoBlocks.HANGING_CRIMSON_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_CRIMSON_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.WARPED_PLANKS, DecoBlocks.HANGING_WARPED_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_WARPED_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.CACTUS_PLANKS, DecoBlocks.HANGING_CACTUS_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_CACTUS_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.WOODEN_PLANKS, DecoBlocks.HANGING_WOODEN_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN);
+
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.OAK_MOSAIC, DecoBlocks.HANGING_OAK_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.SPRUCE_MOSAIC, DecoBlocks.HANGING_SPRUCE_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_SPRUCE_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.BIRCH_MOSAIC, DecoBlocks.HANGING_BIRCH_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_BIRCH_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.JUNGLE_MOSAIC, DecoBlocks.HANGING_JUNGLE_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_JUNGLE_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.ACACIA_MOSAIC, DecoBlocks.HANGING_ACACIA_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_ACACIA_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.DARK_OAK_MOSAIC, DecoBlocks.HANGING_DARK_OAK_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_DARK_OAK_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.MANGROVE_MOSAIC, DecoBlocks.HANGING_MANGROVE_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_MANGROVE_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.CHERRY_MOSAIC, DecoBlocks.HANGING_CHERRY_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_CHERRY_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(Blocks.BAMBOO_MOSAIC, DecoBlocks.HANGING_BAMBOO_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_BAMBOO_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.CRIMSON_MOSAIC, DecoBlocks.HANGING_CRIMSON_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_CRIMSON_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.WARPED_MOSAIC, DecoBlocks.HANGING_WARPED_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_WARPED_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.CACTUS_MOSAIC, DecoBlocks.HANGING_CACTUS_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_CACTUS_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.WOODEN_MOSAIC, DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN);
+
         oakstrippedpool.family(DecoBlocks.STRIPPED_OAK_FAMILY);
         sprucestrippedpool.family(DecoBlocks.STRIPPED_SPRUCE_FAMILY);
         birchstrippedpool.family(DecoBlocks.STRIPPED_BIRCH_FAMILY);
