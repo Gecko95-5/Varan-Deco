@@ -10,11 +10,12 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
+import net.gecko.varandeco.block.flowers.AncientRoseBlock;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
-import net.gecko.varandeco.block.roses.EnderRoseBlock;
-import net.gecko.varandeco.block.roses.EnderRoseBushBlock;
-import net.gecko.varandeco.block.roses.WitherRoseBushBlock;
+import net.gecko.varandeco.block.flowers.EnderRoseBlock;
+import net.gecko.varandeco.block.flowers.EnderRoseBushBlock;
+import net.gecko.varandeco.block.flowers.WitherRoseBushBlock;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
@@ -195,6 +196,56 @@ public class DecoBlocks {
     public static final Block HARDENED_BLACK_STAINED_GLASS = registerBlock("hardened_black_stained_glass",
             new StainedGlassBlock(DyeColor.BLACK, FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool()));
+
+    public static final Block MOSAIC_WHITE_STAINED_GLASS = registerBlock("mosaic_white_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE, FabricBlockSettings.copyOf(Blocks.WHITE_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_ORANGE_STAINED_GLASS = registerBlock("mosaic_orange_stained_glass",
+            new StainedGlassBlock(DyeColor.ORANGE, FabricBlockSettings.copyOf(Blocks.ORANGE_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_MAGENTA_STAINED_GLASS = registerBlock("mosaic_magenta_stained_glass",
+            new StainedGlassBlock(DyeColor.MAGENTA, FabricBlockSettings.copyOf(Blocks.MAGENTA_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_LIGHT_BLUE_STAINED_GLASS = registerBlock("mosaic_light_blue_stained_glass",
+            new StainedGlassBlock(DyeColor.LIGHT_BLUE, FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_YELLOW_STAINED_GLASS = registerBlock("mosaic_yellow_stained_glass",
+            new StainedGlassBlock(DyeColor.YELLOW, FabricBlockSettings.copyOf(Blocks.YELLOW_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_LIME_STAINED_GLASS = registerBlock("mosaic_lime_stained_glass",
+            new StainedGlassBlock(DyeColor.LIME, FabricBlockSettings.copyOf(Blocks.LIME_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_PINK_STAINED_GLASS = registerBlock("mosaic_pink_stained_glass",
+            new StainedGlassBlock(DyeColor.PINK, FabricBlockSettings.copyOf(Blocks.PINK_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_GRAY_STAINED_GLASS = registerBlock("mosaic_gray_stained_glass",
+            new StainedGlassBlock(DyeColor.GRAY, FabricBlockSettings.copyOf(Blocks.GRAY_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_LIGHT_GRAY_STAINED_GLASS = registerBlock("mosaic_light_gray_stained_glass",
+            new StainedGlassBlock(DyeColor.LIGHT_GRAY, FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_CYAN_STAINED_GLASS = registerBlock("mosaic_cyan_stained_glass",
+            new StainedGlassBlock(DyeColor.CYAN, FabricBlockSettings.copyOf(Blocks.CYAN_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_PURPLE_STAINED_GLASS = registerBlock("mosaic_purple_stained_glass",
+            new StainedGlassBlock(DyeColor.PURPLE, FabricBlockSettings.copyOf(Blocks.PURPLE_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_BLUE_STAINED_GLASS = registerBlock("mosaic_blue_stained_glass",
+            new StainedGlassBlock(DyeColor.BLUE, FabricBlockSettings.copyOf(Blocks.BLUE_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_BROWN_STAINED_GLASS = registerBlock("mosaic_brown_stained_glass",
+            new StainedGlassBlock(DyeColor.BROWN, FabricBlockSettings.copyOf(Blocks.BROWN_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_GREEN_STAINED_GLASS = registerBlock("mosaic_green_stained_glass",
+            new StainedGlassBlock(DyeColor.GREEN, FabricBlockSettings.copyOf(Blocks.GREEN_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_RED_STAINED_GLASS = registerBlock("mosaic_red_stained_glass",
+            new StainedGlassBlock(DyeColor.RED, FabricBlockSettings.copyOf(Blocks.RED_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_BLACK_STAINED_GLASS = registerBlock("mosaic_black_stained_glass",
+            new StainedGlassBlock(DyeColor.BLACK, FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+
     public static final Block CUT_RED_SANDSTONE_BRICKS = registerBlock("cut_red_sandstone_bricks",
             new Block(FabricBlockSettings.create().strength(1.6f).requiresTool()));
     public static final Block CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
@@ -1001,6 +1052,14 @@ public class DecoBlocks {
     public static final Block POTTED_ENDER_ROSE = registerBlockWithoutItem("potted_ender_rose",
             new FlowerPotBlock(ENDER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
+    public static final Block ANCIENT_ROSE_CORP = registerBlockWithoutItem("ancient_rose_corp",
+            new AncientRoseBlock(FabricBlockSettings.copyOf(Blocks.TORCHFLOWER_CROP).nonOpaque()));
+
+    public static final Block ANCIENT_ROSE = registerBlock("ancient_rose",
+            new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)));
+    public static final Block POTTED_ANCIENT_ROSE = registerBlockWithoutItem("potted_ancient_rose",
+            new FlowerPotBlock(ANCIENT_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
@@ -1470,6 +1529,55 @@ public class DecoBlocks {
                     .nonOpaque().requiresTool()));
     public static final Block HARDENED_BLACK_STAINED_GLASS_PANE = registerBlock("hardened_black_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.BLACK, FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS_PANE).strength(25.0F,100.0f)
+                    .nonOpaque().requiresTool()));
+
+    public static final Block MOSAIC_WHITE_STAINED_GLASS_PANE = registerBlock("mosaic_white_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.WHITE,FabricBlockSettings.copyOf(Blocks.WHITE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_ORANGE_STAINED_GLASS_PANE = registerBlock("mosaic_orange_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.ORANGE,FabricBlockSettings.copyOf(Blocks.ORANGE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_MAGENTA_STAINED_GLASS_PANE = registerBlock("mosaic_magenta_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.MAGENTA,FabricBlockSettings.copyOf(Blocks.MAGENTA_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE = registerBlock("mosaic_light_blue_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_YELLOW_STAINED_GLASS_PANE = registerBlock("mosaic_yellow_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.YELLOW, FabricBlockSettings.copyOf(Blocks.YELLOW_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_LIME_STAINED_GLASS_PANE = registerBlock("mosaic_lime_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.LIME, FabricBlockSettings.copyOf(Blocks.LIME_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_PINK_STAINED_GLASS_PANE = registerBlock("mosaic_pink_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.PINK, FabricBlockSettings.copyOf(Blocks.PINK_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_GRAY_STAINED_GLASS_PANE = registerBlock("mosaic_gray_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.GRAY, FabricBlockSettings.copyOf(Blocks.GRAY_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE = registerBlock("mosaic_light_gray_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_CYAN_STAINED_GLASS_PANE = registerBlock("mosaic_cyan_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.CYAN, FabricBlockSettings.copyOf(Blocks.CYAN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_PURPLE_STAINED_GLASS_PANE = registerBlock("mosaic_purple_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.PURPLE, FabricBlockSettings.copyOf(Blocks.PURPLE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_BLUE_STAINED_GLASS_PANE = registerBlock("mosaic_blue_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.BLUE, FabricBlockSettings.copyOf(Blocks.BLUE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_BROWN_STAINED_GLASS_PANE = registerBlock("mosaic_brown_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.BROWN, FabricBlockSettings.copyOf(Blocks.BROWN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_GREEN_STAINED_GLASS_PANE = registerBlock("mosaic_green_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.GREEN, FabricBlockSettings.copyOf(Blocks.GREEN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_RED_STAINED_GLASS_PANE = registerBlock("mosaic_red_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.RED, FabricBlockSettings.copyOf(Blocks.RED_STAINED_GLASS_PANE).strength(0.6F,0.3f)
+                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_BLACK_STAINED_GLASS_PANE = registerBlock("mosaic_black_stained_glass_pane",
+            new StainedGlassPaneBlock(DyeColor.BLACK, FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS_PANE).strength(0.6F,0.3f)
                     .nonOpaque().requiresTool()));
 
     public static final Block OAK_BARREL = registerBlock("oak_barrel",

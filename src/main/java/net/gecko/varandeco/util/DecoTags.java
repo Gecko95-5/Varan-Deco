@@ -55,6 +55,12 @@ public class DecoTags {
         public static final TagKey<Block> HARDENED_GLASS_PANES =
                 createTag("hardened_glass_panes");
 
+        public static final TagKey<Block> MOSAIC_GLASS =
+                createTag("mosaic_glass");
+
+        public static final TagKey<Block> MOSAIC_GLASS_PANES =
+                createTag("mosaic_glass_panes");
+
         public static final TagKey<Block> DECO_FURNACES =
                 createTag("deco_furnaces");
 

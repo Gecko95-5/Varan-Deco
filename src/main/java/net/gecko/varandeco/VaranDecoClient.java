@@ -193,8 +193,47 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HARDENED_GREEN_STAINED_GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_LIME_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_PINK_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_RED_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
+
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEEPSLATE_STONECUTTER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BLACKSTONE_STONECUTTER, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ANCIENT_ROSE_CORP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ANCIENT_ROSE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ANCIENT_ROSE, RenderLayer.getCutout());
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));

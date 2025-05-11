@@ -184,6 +184,9 @@ public class DecoItems {
     public static final Item WARPED_WART = registerItem("warped_wart",
             new AliasedBlockItem(DecoBlocks.WARPED_WART_PLANT,new Item.Settings()));
 
+    public static final Item ANCIENT_ROSE_SEEDS = registerItem("ancient_rose_seeds",
+            new AliasedBlockItem(DecoBlocks.ANCIENT_ROSE_CORP,new Item.Settings()));
+
     public static final Item COPPER_NUGGET = registerItem("copper_nugget",
             new Item(new Item.Settings()));
 

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:mosaic_black_stained_glass_pane",
+    "varan-deco:mosaic_light_blue_stained_glass_pane",
+    "varan-deco:mosaic_light_gray_stained_glass_pane",
+    "varan-deco:mosaic_white_stained_glass_pane",
+    "varan-deco:mosaic_gray_stained_glass_pane",
+    "varan-deco:mosaic_red_stained_glass_pane",
+    "varan-deco:mosaic_orange_stained_glass_pane",
+    "varan-deco:mosaic_yellow_stained_glass_pane",
+    "varan-deco:mosaic_lime_stained_glass_pane",
+    "varan-deco:mosaic_green_stained_glass_pane",
+    "varan-deco:mosaic_cyan_stained_glass_pane",
+    "varan-deco:mosaic_blue_stained_glass_pane",
+    "varan-deco:mosaic_purple_stained_glass_pane",
+    "varan-deco:mosaic_pink_stained_glass_pane",
+    "varan-deco:mosaic_magenta_stained_glass_pane",
+    "varan-deco:mosaic_brown_stained_glass_pane"
+  ]
+}

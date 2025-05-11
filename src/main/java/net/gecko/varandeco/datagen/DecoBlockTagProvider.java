@@ -1132,6 +1132,43 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE);
 
+        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_GLASS)
+                .add(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_RED_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_LIME_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_PINK_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS)
+                .add(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS)
+                .addTag(DecoTags.Blocks.MOSAIC_GLASS_PANES);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_GLASS_PANES)
+                .add(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE)
+                .add(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE);
+
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
                 .add(DecoBlocks.DEEPSLATE_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_FURNACE)
@@ -1187,7 +1224,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ROSE)
                 .add(DecoBlocks.ENDER_ROSE)
                 .add(DecoBlocks.PAEONIA)
-                .add(DecoBlocks.LAVENDER);
+                .add(DecoBlocks.LAVENDER)
+                .add(DecoBlocks.ANCIENT_ROSE);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -1211,7 +1249,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_ENDER_ROSE)
                 .add(DecoBlocks.POTTED_PAEONIA)
                 .add(DecoBlocks.POTTED_LAVENDER)
-                .add(DecoBlocks.POTTED_WOODEN_SAPLING);
+                .add(DecoBlocks.POTTED_WOODEN_SAPLING)
+                .add(DecoBlocks.POTTED_ANCIENT_ROSE);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)

@@ -4,7 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 
 public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
@@ -722,6 +726,40 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE);
         addDrop(DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE);
 
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_RED_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_LIME_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_PINK_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS);
+
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE);
+
         addDrop(DecoBlocks.SMOOTH_DEEPSLATE);
         addDrop(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS);
         slabDrops(DecoBlocks.SMOOTH_DEEPSLATE_SLAB);
@@ -989,5 +1027,13 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.WOODEN_SAPLING);
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);
+
+
+        addDrop(DecoBlocks.ANCIENT_ROSE_CORP,
+                applyExplosionDecay(DecoBlocks.ANCIENT_ROSE_CORP,
+                        LootTable.builder().pool(LootPool.builder().with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS)))));
+
+        addDrop(DecoBlocks.ANCIENT_ROSE);
+        pottedPlantDrops(DecoBlocks.POTTED_ANCIENT_ROSE);
     }
 }

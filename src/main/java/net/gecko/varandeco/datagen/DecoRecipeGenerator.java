@@ -3955,7 +3955,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerHangingSignRecipe(exporter, DecoItems.WOODEN_HANGING_SIGN, DecoBlocks.WOODEN_LOG);
 
-
         offerHangingSignRecipe(exporter, DecoItems.OAK_PLANKS_HANGING_SIGN, Blocks.OAK_PLANKS);
         offerHangingSignRecipe(exporter, DecoItems.SPRUCE_PLANKS_HANGING_SIGN, Blocks.SPRUCE_PLANKS);
         offerHangingSignRecipe(exporter, DecoItems.BIRCH_PLANKS_HANGING_SIGN, Blocks.BIRCH_PLANKS);
@@ -3983,5 +3982,125 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerHangingSignRecipe(exporter, DecoItems.CACTUS_MOSAIC_HANGING_SIGN, DecoBlocks.CACTUS_MOSAIC);
         offerHangingSignRecipe(exporter, DecoItems.WOODEN_MOSAIC_HANGING_SIGN, DecoBlocks.WOODEN_MOSAIC);
 
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.WHITE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.WHITE_STAINED_GLASS), conditionsFromItem(Items.WHITE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_GRAY_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.LIGHT_GRAY_STAINED_GLASS), conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GRAY_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.GRAY_STAINED_GLASS), conditionsFromItem(Items.GRAY_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLACK_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.BLACK_STAINED_GLASS), conditionsFromItem(Items.BLACK_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BROWN_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.BROWN_STAINED_GLASS), conditionsFromItem(Items.BROWN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_RED_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.RED_STAINED_GLASS), conditionsFromItem(Items.RED_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_RED_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.ORANGE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.ORANGE_STAINED_GLASS), conditionsFromItem(Items.ORANGE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.YELLOW_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.YELLOW_STAINED_GLASS), conditionsFromItem(Items.YELLOW_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIME_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.LIME_STAINED_GLASS), conditionsFromItem(Items.LIME_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_LIME_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GREEN_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.GREEN_STAINED_GLASS), conditionsFromItem(Items.GREEN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.CYAN_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.CYAN_STAINED_GLASS), conditionsFromItem(Items.CYAN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_BLUE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.LIGHT_BLUE_STAINED_GLASS), conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLUE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.BLUE_STAINED_GLASS), conditionsFromItem(Items.BLUE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PURPLE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.PURPLE_STAINED_GLASS), conditionsFromItem(Items.PURPLE_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.MAGENTA_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.MAGENTA_STAINED_GLASS), conditionsFromItem(Items.MAGENTA_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS)));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PINK_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS,
+                        0.1f, 200).criterion(hasItem(Items.PINK_STAINED_GLASS), conditionsFromItem(Items.PINK_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSAIC_PINK_STAINED_GLASS)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.WHITE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.WHITE_STAINED_GLASS_PANE), conditionsFromItem(Items.WHITE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_white_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_GRAY_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.LIGHT_GRAY_STAINED_GLASS_PANE), conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_light_gray_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GRAY_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.GRAY_STAINED_GLASS_PANE), conditionsFromItem(Items.GRAY_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_gray_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLACK_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.BLACK_STAINED_GLASS_PANE), conditionsFromItem(Items.BLACK_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_black_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BROWN_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.BROWN_STAINED_GLASS_PANE), conditionsFromItem(Items.BROWN_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_brown_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.RED_STAINED_GLASS_PANE), conditionsFromItem(Items.RED_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_red_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.ORANGE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.ORANGE_STAINED_GLASS_PANE), conditionsFromItem(Items.ORANGE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_orange_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.YELLOW_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.YELLOW_STAINED_GLASS_PANE), conditionsFromItem(Items.YELLOW_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_yellow_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIME_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.LIME_STAINED_GLASS_PANE), conditionsFromItem(Items.LIME_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_lime_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GREEN_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.GREEN_STAINED_GLASS_PANE), conditionsFromItem(Items.GREEN_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_green_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.CYAN_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.CYAN_STAINED_GLASS_PANE), conditionsFromItem(Items.CYAN_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_cyan_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_BLUE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.LIGHT_BLUE_STAINED_GLASS_PANE), conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_light_blue_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLUE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.BLUE_STAINED_GLASS_PANE), conditionsFromItem(Items.BLUE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_blue_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PURPLE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.PURPLE_STAINED_GLASS_PANE), conditionsFromItem(Items.PURPLE_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_purple_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.MAGENTA_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.MAGENTA_STAINED_GLASS_PANE), conditionsFromItem(Items.MAGENTA_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_magenta_glass_pane_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PINK_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE,
+                        0.1f, 200).criterion(hasItem(Items.PINK_STAINED_GLASS_PANE), conditionsFromItem(Items.PINK_STAINED_GLASS_PANE))
+                .offerTo(exporter, new Identifier("mosaic_pink_glass_pane_from_smelting"));
+
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_RED_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_LIME_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS);
+        offerStainedGlassPaneRecipe(exporter, DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_PINK_STAINED_GLASS);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LIGHT_BLUE_DYE)
+                .input(DecoBlocks.ANCIENT_ROSE)
+                .criterion(hasItem(DecoBlocks.NOVA_STARFLOWER),
+                        conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
+                .offerTo(exporter, new Identifier("light_blue_dye_from_ancient_rose"));
     }
 }

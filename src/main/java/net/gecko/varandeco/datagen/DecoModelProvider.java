@@ -202,6 +202,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.WOODEN_SAPLING, DecoBlocks.POTTED_WOODEN_SAPLING,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ANCIENT_ROSE, DecoBlocks.POTTED_ANCIENT_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
 
@@ -847,6 +850,23 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_RED_STAINED_GLASS, DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE);
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_BLACK_STAINED_GLASS, DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE);
 
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_LIME_STAINED_GLASS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_PINK_STAINED_GLASS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_RED_STAINED_GLASS, DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE);
+
         terracottapool.stairs(DecoBlocks.TERRACOTTA_STAIRS);
         terracottapool.slab(DecoBlocks.TERRACOTTA_SLAB);
         terracottapool.wall(DecoBlocks.TERRACOTTA_WALL);
@@ -1055,6 +1075,7 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
         itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.ANCIENT_ROSE_SEEDS, Models.GENERATED);
 
         itemModelGenerator.register(DecoItems.CACTUS_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CACTUS_CHEST_BOAT, Models.GENERATED);
