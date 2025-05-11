@@ -1,7 +1,6 @@
 package net.gecko.varandeco.item;
 
 import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
@@ -185,7 +184,10 @@ public class DecoItems {
             new AliasedBlockItem(DecoBlocks.WARPED_WART_PLANT,new Item.Settings()));
 
     public static final Item ANCIENT_ROSE_SEEDS = registerItem("ancient_rose_seeds",
-            new AliasedBlockItem(DecoBlocks.ANCIENT_ROSE_CORP,new Item.Settings()));
+            new AliasedBlockItem(DecoBlocks.ANCIENT_ROSE_CROP,new Item.Settings()));
+
+    public static final Item MIGHTY_LAVENDER_FLOWER = registerItem("mighty_lavender_flower",
+            new AliasedBlockItem(DecoBlocks.MIGHTY_LAVENDER_CROP,new Item.Settings()));
 
     public static final Item COPPER_NUGGET = registerItem("copper_nugget",
             new Item(new Item.Settings()));

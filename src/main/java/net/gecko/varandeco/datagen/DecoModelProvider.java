@@ -194,6 +194,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoubleBlock(DecoBlocks.ENDER_ROSE_BUSH,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerDoubleBlock(DecoBlocks.MIGHTY_LAVENDER,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PAEONIA, DecoBlocks.POTTED_PAEONIA,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.LAVENDER, DecoBlocks.POTTED_LAVENDER,
@@ -225,25 +228,31 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool birchmosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BIRCH_MOSAIC);
         BlockStateModelGenerator.BlockTexturePool sprucemosaicpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SPRUCE_MOSAIC);
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SPRUCE_MOSAIC_TEMP);
         BlockStateModelGenerator.BlockTexturePool junglemosaicpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.JUNGLE_MOSAIC);
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.JUNGLE_MOSAIC_TEMP);
         BlockStateModelGenerator.BlockTexturePool acaciamosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ACACIA_MOSAIC);
         BlockStateModelGenerator.BlockTexturePool darkoakmosaicpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DARK_OAK_MOSAIC);
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DARK_OAK_MOSAIC_TEMP);
         BlockStateModelGenerator.BlockTexturePool mangrovemosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MANGROVE_MOSAIC);
         BlockStateModelGenerator.BlockTexturePool cherrymosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHERRY_MOSAIC);
         BlockStateModelGenerator.BlockTexturePool crimsonmosaicpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRIMSON_MOSAIC);
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRIMSON_MOSAIC_TEMP);
         BlockStateModelGenerator.BlockTexturePool warpedmosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WARPED_MOSAIC);
         BlockStateModelGenerator.BlockTexturePool cactusmosaicpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CACTUS_MOSAIC);
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CACTUS_MOSAIC_TEMP);
         BlockStateModelGenerator.BlockTexturePool woodenmosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_MOSAIC);
+
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.SPRUCE_MOSAIC, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.JUNGLE_MOSAIC, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.DARK_OAK_MOSAIC, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.CRIMSON_MOSAIC, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.CACTUS_MOSAIC, TexturedModel.CUBE_ALL);
 
         BlockStateModelGenerator.BlockTexturePool oakstrippedpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_OAK_TEMP);
@@ -1076,6 +1085,8 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
         itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DecoItems.ANCIENT_ROSE_SEEDS, Models.GENERATED);
+
+        itemModelGenerator.register(DecoItems.MIGHTY_LAVENDER_FLOWER, Models.HANDHELD);
 
         itemModelGenerator.register(DecoItems.CACTUS_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CACTUS_CHEST_BOAT, Models.GENERATED);

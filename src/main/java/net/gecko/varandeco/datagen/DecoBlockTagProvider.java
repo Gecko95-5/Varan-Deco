@@ -1256,7 +1256,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WITHER_ROSE_BUSH)
                 .add(DecoBlocks.ENDER_ROSE_BUSH)
                 .add(DecoBlocks.RED_SUNFLOWER)
-                .add(DecoBlocks.NOVA_STARFLOWER);
+                .add(DecoBlocks.NOVA_STARFLOWER)
+                .add(DecoBlocks.MIGHTY_LAVENDER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.COPPER_LANTERN)
                 .add(DecoBlocks.COPPER_LANTERN)

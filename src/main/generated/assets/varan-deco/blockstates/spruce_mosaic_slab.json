@@ -4,7 +4,7 @@
       "model": "varan-deco:block/spruce_mosaic_slab"
     },
     "type=double": {
-      "model": "varan-deco:block/spruce_mosaic"
+      "model": "varan-deco:block/spruce_mosaic_temp"
     },
     "type=top": {
       "model": "varan-deco:block/spruce_mosaic_slab_top"

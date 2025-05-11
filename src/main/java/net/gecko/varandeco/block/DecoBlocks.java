@@ -10,12 +10,9 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
-import net.gecko.varandeco.block.flowers.AncientRoseBlock;
+import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
-import net.gecko.varandeco.block.flowers.EnderRoseBlock;
-import net.gecko.varandeco.block.flowers.EnderRoseBushBlock;
-import net.gecko.varandeco.block.flowers.WitherRoseBushBlock;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
@@ -423,25 +420,25 @@ public class DecoBlocks {
     public static final Block OAK_MOSAIC = registerBlock("oak_mosaic",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block SPRUCE_MOSAIC = registerBlock("spruce_mosaic",
-            new Block(FabricBlockSettings.copyOf(Blocks.SPRUCE_PLANKS)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_PLANKS)));
     public static final Block BIRCH_MOSAIC = registerBlock("birch_mosaic",
             new Block(FabricBlockSettings.copyOf(Blocks.BIRCH_PLANKS)));
     public static final Block JUNGLE_MOSAIC = registerBlock("jungle_mosaic",
-            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS)));
     public static final Block ACACIA_MOSAIC = registerBlock("acacia_mosaic",
             new Block(FabricBlockSettings.copyOf(Blocks.ACACIA_PLANKS)));
     public static final Block DARK_OAK_MOSAIC = registerBlock("dark_oak_mosaic",
-            new Block(FabricBlockSettings.copyOf(Blocks.DARK_OAK_PLANKS)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_PLANKS)));
     public static final Block MANGROVE_MOSAIC = registerBlock("mangrove_mosaic",
             new Block(FabricBlockSettings.copyOf(Blocks.MANGROVE_PLANKS)));
     public static final Block CHERRY_MOSAIC = registerBlock("cherry_mosaic",
             new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS)));
     public static final Block CRIMSON_MOSAIC = registerBlock("crimson_mosaic",
-            new Block(FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS)));
     public static final Block WARPED_MOSAIC = registerBlock("warped_mosaic",
             new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block CACTUS_MOSAIC = registerBlock("cactus_mosaic",
-            new Block(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
+            new PillarBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block WOODEN_MOSAIC = registerBlock("wooden_mosaic",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
 
@@ -1052,13 +1049,28 @@ public class DecoBlocks {
     public static final Block POTTED_ENDER_ROSE = registerBlockWithoutItem("potted_ender_rose",
             new FlowerPotBlock(ENDER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
-    public static final Block ANCIENT_ROSE_CORP = registerBlockWithoutItem("ancient_rose_corp",
+    public static final Block ANCIENT_ROSE_CROP = registerBlockWithoutItem("ancient_rose_crop",
             new AncientRoseBlock(FabricBlockSettings.copyOf(Blocks.TORCHFLOWER_CROP).nonOpaque()));
+
+    public static final Block MIGHTY_LAVENDER_CROP = registerBlockWithoutItem("mighty_lavender_crop",
+            new MightyLavenderCropBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CROP)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
     public static final Block ANCIENT_ROSE = registerBlock("ancient_rose",
             new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)));
     public static final Block POTTED_ANCIENT_ROSE = registerBlockWithoutItem("potted_ancient_rose",
             new FlowerPotBlock(ANCIENT_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block MIGHTY_LAVENDER = registerBlock("mighty_lavender",
+            new MightyLavenderBlock(FabricBlockSettings.copyOf(Blocks.PEONY)));
 
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)));
@@ -2336,8 +2348,17 @@ public class DecoBlocks {
     public static final Block STRIPPED_WOODEN_TEMP = registerBlock("stripped_wooden_temp",
             new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block BAMBOO_MOSAIC_TEMP = registerBlock("bamboo_mosaic_temp",
-            new Block(FabricBlockSettings.create().sounds(BlockSoundGroup.BAMBOO_WOOD)
-                    .strength(2.0F, 3.0F)));
+            new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block SPRUCE_MOSAIC_TEMP = registerBlock("spruce_mosaic_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block JUNGLE_MOSAIC_TEMP = registerBlock("jungle_mosaic_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block DARK_OAK_MOSAIC_TEMP = registerBlock("dark_oak_mosaic_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block CRIMSON_MOSAIC_TEMP = registerBlock("crimson_mosaic_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block CACTUS_MOSAIC_TEMP = registerBlock("cactus_mosaic_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)

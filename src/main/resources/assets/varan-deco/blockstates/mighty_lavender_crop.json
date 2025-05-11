@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "varan-deco:block/mighty_lavender_crop_stage_0"
+    },
+    "age=1": {
+      "model": "varan-deco:block/mighty_lavender_crop_stage_1"
+    },
+    "age=2": {
+      "model": "varan-deco:block/mighty_lavender_crop_stage_2"
+    },
+    "age=3": {
+      "model": "varan-deco:block/mighty_lavender_crop_stage_3"
+    },
+    "age=4": {
+      "model": "varan-deco:block/mighty_lavender_crop_stage_4"
+    }
+  }
+}

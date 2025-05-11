@@ -4102,5 +4102,25 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.NOVA_STARFLOWER),
                         conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_ancient_rose"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE,4)
+                .input(DecoBlocks.MIGHTY_LAVENDER)
+                .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
+                        conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
+                .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
+                .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
+                .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
+                        conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
+                .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender_flower"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.MIGHTY_LAVENDER)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoItems.MIGHTY_LAVENDER_FLOWER)
+                .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
+                        conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MIGHTY_LAVENDER)));
     }
 }

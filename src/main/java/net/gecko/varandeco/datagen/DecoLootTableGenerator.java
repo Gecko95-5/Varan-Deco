@@ -5,11 +5,22 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.CarrotsBlock;
+import net.minecraft.block.PitcherCropBlock;
+import net.minecraft.block.TallPlantBlock;
+import net.minecraft.block.enums.DoubleBlockHalf;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.loot.entry.AlternativeEntry;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
     public DecoLootTableGenerator(FabricDataOutput dataOutput) {
@@ -1029,11 +1040,28 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);
 
 
-        addDrop(DecoBlocks.ANCIENT_ROSE_CORP,
-                applyExplosionDecay(DecoBlocks.ANCIENT_ROSE_CORP,
+        addDrop(DecoBlocks.ANCIENT_ROSE_CROP,
+                applyExplosionDecay(DecoBlocks.ANCIENT_ROSE_CROP,
                         LootTable.builder().pool(LootPool.builder().with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS)))));
+        LootCondition.Builder builder3 = BlockStatePropertyLootCondition.builder(DecoBlocks.MIGHTY_LAVENDER_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CarrotsBlock.AGE, 4));
 
         addDrop(DecoBlocks.ANCIENT_ROSE);
         pottedPlantDrops(DecoBlocks.POTTED_ANCIENT_ROSE);
+
+
+        addDrop(
+                DecoBlocks.MIGHTY_LAVENDER_CROP,
+                this.applyExplosionDecay(
+                        Blocks.CARROTS,
+                        LootTable.builder()
+                                .pool(LootPool.builder().with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER)))
+                                .pool(
+                                        LootPool.builder()
+                                                .conditionally(builder3)
+                                                .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286F, 3)))
+                                )
+                )
+        );
     }
 }

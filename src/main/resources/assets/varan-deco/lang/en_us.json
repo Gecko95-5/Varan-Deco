@@ -6,6 +6,7 @@
   "item.varan-deco.warped_wart": "Warped Wart",
   "item.varan-deco.copper_nugget": "Copper Nugget",
   "item.varan-deco.ancient_rose_seeds": "Ancient Rose Seeds",
+  "item.varan-deco.mighty_lavender_flower": "Mighty Lavender Flower",
 
   "item.varan-deco.cactus_boat": "Cactus Boat",
   "item.varan-deco.cactus_chest_boat": "Cactus Chest Boat",
@@ -145,10 +146,16 @@
   "block.varan-deco.stripped_warped_temp": "Non-Craftable Stripped Warped Wood",
   "block.varan-deco.stripped_wooden_temp": "Non-Craftable Stripped Wooden Wood",
   "block.varan-deco.bamboo_mosaic_temp": "Non-Craftable Bamboo Mosaic",
+  "block.varan-deco.spruce_mosaic_temp": "Non-Craftable Spruce Mosaic",
+  "block.varan-deco.jungle_mosaic_temp": "Non-Craftable Jungle Mosaic",
+  "block.varan-deco.dark_oak_mosaic_temp": "Non-Craftable Dark Oak Mosaic",
+  "block.varan-deco.crimson_mosaic_temp": "Non-Craftable Crimson Mosaic",
+  "block.varan-deco.cactus_mosaic_temp": "Non-Craftable Cactus Mosaic",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
-  "block.varan-deco.ancient_rose_corp": "Ancient Rose",
+  "block.varan-deco.ancient_rose_crop": "Ancient Rose",
+  "block.varan-deco.mighty_lavender_crop": "Mighty Lavender",
 
   "block.varan-deco.stone_wall": "Stone Wall",
   "block.varan-deco.polished_andesite_wall": "Polished Andesite Wall",
@@ -1144,6 +1151,8 @@
 
   "block.varan-deco.ancient_rose": "Ancient Rose",
   "block.varan-deco.potted_ancient_rose": "Potted Ancient Rose",
+
+  "block.varan-deco.mighty_lavender": "Mighty Lavender",
 
   "block.varan-deco.red_sunflower": "Red-Sunflower",
   "block.varan-deco.nova_starflower": "Nova-Starflower",

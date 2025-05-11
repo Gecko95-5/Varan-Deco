@@ -688,6 +688,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.NOVA_STARFLOWER.asItem());
                         entries.add(DecoBlocks.WITHER_ROSE_BUSH.asItem());
                         entries.add(DecoBlocks.ENDER_ROSE_BUSH.asItem());
+                        entries.add(DecoBlocks.MIGHTY_LAVENDER.asItem());
                         entries.add(DecoBlocks.COPPER_LANTERN.asItem());
                         entries.add(DecoBlocks.WAXED_COPPER_LANTERN.asItem());
                         entries.add(DecoBlocks.EXPOSED_COPPER_LANTERN.asItem());
@@ -847,6 +848,7 @@ public class DecoItemGroup {
                         entries.add(DecoItems.COPPER_NUGGET);
                         entries.add(DecoItems.SNOW_BRICK);
                         entries.add(DecoItems.ANCIENT_ROSE_SEEDS);
+                        entries.add(DecoItems.MIGHTY_LAVENDER_FLOWER);
                         entries.add(DecoItems.WARPED_WART);
                         entries.add(DecoItems.BUBBLE_ORB);
                     }).build());

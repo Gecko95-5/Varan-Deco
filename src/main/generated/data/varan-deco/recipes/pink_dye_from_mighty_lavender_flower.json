@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "varan-deco:mighty_lavender_flower"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_dye"
+  }
+}

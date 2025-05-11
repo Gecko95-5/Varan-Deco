@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "varan-deco:block/jungle_mosaic",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "varan-deco:block/jungle_mosaic"
+    },
+    "axis=z": {
+      "model": "varan-deco:block/jungle_mosaic",
+      "x": 90
     }
   }
 }

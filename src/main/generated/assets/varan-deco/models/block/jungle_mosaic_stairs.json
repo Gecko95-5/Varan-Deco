@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/stairs",
   "textures": {
-    "bottom": "varan-deco:block/jungle_mosaic",
-    "side": "varan-deco:block/jungle_mosaic",
-    "top": "varan-deco:block/jungle_mosaic"
+    "bottom": "varan-deco:block/jungle_mosaic_temp",
+    "side": "varan-deco:block/jungle_mosaic_temp",
+    "top": "varan-deco:block/jungle_mosaic_temp"
   }
 }
