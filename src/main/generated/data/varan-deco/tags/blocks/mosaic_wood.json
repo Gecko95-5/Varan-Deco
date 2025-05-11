@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:oak_mosaic",
+    "varan-deco:birch_mosaic",
+    "varan-deco:spruce_mosaic",
+    "varan-deco:jungle_mosaic",
+    "varan-deco:acacia_mosaic",
+    "varan-deco:dark_oak_mosaic",
+    "varan-deco:mangrove_mosaic",
+    "varan-deco:cherry_mosaic",
+    "varan-deco:cactus_mosaic",
+    "varan-deco:wooden_mosaic"
+  ]
+}

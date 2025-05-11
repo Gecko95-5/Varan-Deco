@@ -54,6 +54,9 @@
     "varan-deco:crimson_mosaic_slab",
     "varan-deco:warped_mosaic_slab",
     "varan-deco:cactus_mosaic_slab",
-    "varan-deco:wooden_mosaic_slab"
+    "varan-deco:wooden_mosaic_slab",
+    "#varan-deco:mosaic_slab",
+    "varan-deco:crimson_mosaic_slab",
+    "varan-deco:warped_mosaic_slab"
   ]
 }

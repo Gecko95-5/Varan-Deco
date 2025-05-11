@@ -138,8 +138,6 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ACACIA_BOOKSHELF.asItem())
                 .add(DecoBlocks.DARK_OAK_BOOKSHELF.asItem())
                 .add(DecoBlocks.MANGROVE_BOOKSHELF.asItem())
-                .add(DecoBlocks.CRIMSON_BOOKSHELF.asItem())
-                .add(DecoBlocks.WARPED_BOOKSHELF.asItem())
                 .add(DecoBlocks.CACTUS_BOOKSHELF.asItem())
                 .add(DecoBlocks.WOODEN_BOOKSHELF.asItem())
                 .add(DecoBlocks.BAMBOO_BOOKSHELF.asItem())
@@ -180,5 +178,41 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(Blocks.STONE.asItem())
                 .add(Blocks.DEEPSLATE.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.MOSAIC_WOOD)
+                .add(DecoBlocks.OAK_MOSAIC.asItem())
+                .add(DecoBlocks.BIRCH_MOSAIC.asItem())
+                .add(DecoBlocks.SPRUCE_MOSAIC.asItem())
+                .add(DecoBlocks.JUNGLE_MOSAIC.asItem())
+                .add(DecoBlocks.ACACIA_MOSAIC.asItem())
+                .add(DecoBlocks.DARK_OAK_MOSAIC.asItem())
+                .add(DecoBlocks.MANGROVE_MOSAIC.asItem())
+                .add(DecoBlocks.CHERRY_MOSAIC.asItem())
+                .add(DecoBlocks.CACTUS_MOSAIC.asItem())
+                .add(DecoBlocks.WOODEN_MOSAIC.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.MOSAIC_STAIRS)
+                .add(DecoBlocks.OAK_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.BIRCH_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.SPRUCE_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.JUNGLE_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.ACACIA_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.DARK_OAK_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.MANGROVE_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.CHERRY_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.CACTUS_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.WOODEN_MOSAIC_STAIRS.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.MOSAIC_SLABS)
+                .add(DecoBlocks.OAK_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.BIRCH_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.SPRUCE_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.JUNGLE_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.ACACIA_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.DARK_OAK_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.MANGROVE_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.CHERRY_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.CACTUS_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.WOODEN_MOSAIC_SLAB.asItem());
     }
 }

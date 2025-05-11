@@ -61,5 +61,14 @@ public class DecoFlammableBlocks {
         registry.add(DecoBlocks.PAEONIA,60, 100);
         registry.add(DecoBlocks.LAVENDER,60, 100);
         
+        registry.add(DecoTags.Blocks.DECO_BOOKSHELVES,30,20);
+
+        registry.add(DecoBlocks.ANCIENT_ROSE,60, 100);
+        registry.add(DecoBlocks.MIGHTY_LAVENDER,60, 100);
+
+        registry.add(DecoTags.Blocks.MOSAIC_WOOD,5,20);
+        registry.add(DecoTags.Blocks.MOSAIC_SLABS,5,20);
+        registry.add(DecoTags.Blocks.MOSAIC_STAIRS,5,20);
+
     }
 }
