@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:purpur_bricks"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

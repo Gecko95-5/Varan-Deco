@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:gray_block_from_black_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

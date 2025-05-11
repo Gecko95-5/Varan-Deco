@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:mosaic_red_stained_glass_pane"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

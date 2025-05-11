@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:hardened_tinted_glass_pane_iron_ingot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

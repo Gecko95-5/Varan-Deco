@@ -64,7 +64,7 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 
 			@Override
 			public void onTakeItem(PlayerEntity player, ItemStack stack) {
-				stack.onCraft(player.getWorld(), player, stack.getCount());
+				stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
 				BlackstoneStonecutterScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
 				ItemStack itemStack = BlackstoneStonecutterScreenHandler.this.inputSlot.takeStack(1);
 				if (!itemStack.isEmpty()) {
@@ -192,7 +192,7 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 			Item item = itemStack2.getItem();
 			itemStack = itemStack2.copy();
 			if (slot == 1) {
-				item.onCraft(itemStack2, player.getWorld(), player);
+				item.onCraftByPlayer(itemStack2, player.getWorld(), player);
 				if (!this.insertItem(itemStack2, 2, 38, true)) {
 					return ItemStack.EMPTY;
 				}

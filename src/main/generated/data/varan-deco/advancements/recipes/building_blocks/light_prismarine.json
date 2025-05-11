@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:light_prismarine"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

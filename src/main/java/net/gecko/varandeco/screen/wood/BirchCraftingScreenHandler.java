@@ -128,7 +128,7 @@ public class BirchCraftingScreenHandler extends AbstractRecipeScreenHandler<Craf
             ItemStack itemStack2 = slot2.getStack();
             itemStack = itemStack2.copy();
             if (slot == 0) {
-                this.context.run((world, pos) -> itemStack2.getItem().onCraft(itemStack2, world, player));
+                this.context.run((world, pos) -> itemStack2.getItem().onCraft(itemStack2, world));
                 if (!this.insertItem(itemStack2, 10, 46, true)) {
                     return ItemStack.EMPTY;
                 }

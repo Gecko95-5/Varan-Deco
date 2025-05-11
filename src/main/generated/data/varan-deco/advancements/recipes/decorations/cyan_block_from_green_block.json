@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:cyan_block_from_green_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

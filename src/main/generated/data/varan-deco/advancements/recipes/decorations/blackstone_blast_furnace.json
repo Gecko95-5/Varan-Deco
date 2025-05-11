@@ -56,6 +56,5 @@
     "recipes": [
       "minecraft:blackstone_blast_furnace"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

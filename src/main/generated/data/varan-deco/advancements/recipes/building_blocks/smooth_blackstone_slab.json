@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:smooth_blackstone_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

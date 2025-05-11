@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:stripped_cherry_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

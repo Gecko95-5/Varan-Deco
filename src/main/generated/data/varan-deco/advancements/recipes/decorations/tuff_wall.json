@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:tuff_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

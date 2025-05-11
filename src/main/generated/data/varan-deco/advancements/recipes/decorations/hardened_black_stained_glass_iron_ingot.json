@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:hardened_black_stained_glass_iron_ingot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

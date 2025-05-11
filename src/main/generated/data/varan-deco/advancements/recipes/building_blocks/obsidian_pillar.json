@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:obsidian_pillar"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

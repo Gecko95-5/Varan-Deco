@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:chiseled_soul_soilstone_from_soul_soilstone_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

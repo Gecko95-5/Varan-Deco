@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:echo_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:tinted_glass_pane_amethyst_shard"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:bubble_brick_slab_from_bubble_bricks_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

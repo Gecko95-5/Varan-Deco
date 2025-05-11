@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:crystallized_prismarine_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

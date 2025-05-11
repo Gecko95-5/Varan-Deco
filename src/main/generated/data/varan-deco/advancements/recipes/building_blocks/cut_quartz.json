@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:cut_quartz"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

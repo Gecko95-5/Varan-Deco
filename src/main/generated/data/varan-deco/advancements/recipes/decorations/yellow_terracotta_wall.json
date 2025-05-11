@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:yellow_terracotta_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

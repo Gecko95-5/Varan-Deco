@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:stripped_birch_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

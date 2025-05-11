@@ -56,6 +56,5 @@
     "recipes": [
       "minecraft:ender_eye_from_warped_wart"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

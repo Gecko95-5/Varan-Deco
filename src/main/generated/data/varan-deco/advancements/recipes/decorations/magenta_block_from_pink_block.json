@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:magenta_block_from_pink_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

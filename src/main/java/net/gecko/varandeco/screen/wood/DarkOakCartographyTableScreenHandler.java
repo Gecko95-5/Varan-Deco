@@ -71,7 +71,7 @@ public class DarkOakCartographyTableScreenHandler extends ScreenHandler {
 			public void onTakeItem(PlayerEntity player, ItemStack stack) {
 				DarkOakCartographyTableScreenHandler.this.slots.get(0).takeStack(1);
 				DarkOakCartographyTableScreenHandler.this.slots.get(1).takeStack(1);
-				stack.getItem().onCraft(stack, player.getWorld(), player);
+				stack.getItem().onCraft(stack, player.getWorld());
 				context.run((world, pos) -> {
 					long l = world.getTime();
 					if (DarkOakCartographyTableScreenHandler.this.lastTakeResultTime != l) {
@@ -161,7 +161,7 @@ public class DarkOakCartographyTableScreenHandler extends ScreenHandler {
 			ItemStack itemStack2 = slot2.getStack();
 			itemStack = itemStack2.copy();
 			if (slot == 2) {
-				itemStack2.getItem().onCraft(itemStack2, player.getWorld(), player);
+				itemStack2.getItem().onCraft(itemStack2, player.getWorld());
 				if (!this.insertItem(itemStack2, 3, 39, true)) {
 					return ItemStack.EMPTY;
 				}

@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:polished_blackstone_tile_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

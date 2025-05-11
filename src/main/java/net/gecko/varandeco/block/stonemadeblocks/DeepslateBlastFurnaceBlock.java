@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
+import com.mojang.serialization.MapCodec;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.block.entity.DeepslateBlastFurnaceBlockEntity;
 import net.minecraft.block.AbstractFurnaceBlock;
@@ -20,6 +21,12 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class DeepslateBlastFurnaceBlock extends AbstractFurnaceBlock {
+	public static final MapCodec<DeepslateBlastFurnaceBlock> CODEC = createCodec(DeepslateBlastFurnaceBlock::new);
+
+	@Override
+	public MapCodec<DeepslateBlastFurnaceBlock> getCodec() {
+		return CODEC;
+	}
 	public DeepslateBlastFurnaceBlock(Settings settings) {
 		super(settings);
 	}

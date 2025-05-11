@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:green_concrete_pillar"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

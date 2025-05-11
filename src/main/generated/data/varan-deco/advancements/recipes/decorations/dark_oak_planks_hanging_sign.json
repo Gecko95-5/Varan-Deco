@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:dark_oak_planks_hanging_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

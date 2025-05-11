@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:blue_terracotta_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:heavy_iron_bars"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

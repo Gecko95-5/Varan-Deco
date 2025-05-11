@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:smooth_purpur_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

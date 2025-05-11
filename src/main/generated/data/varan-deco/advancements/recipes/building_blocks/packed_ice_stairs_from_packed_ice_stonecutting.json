@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:packed_ice_stairs_from_packed_ice_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

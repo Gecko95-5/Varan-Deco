@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:hardened_tinted_glass"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

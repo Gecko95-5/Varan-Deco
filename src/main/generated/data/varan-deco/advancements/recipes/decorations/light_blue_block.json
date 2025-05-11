@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:light_blue_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

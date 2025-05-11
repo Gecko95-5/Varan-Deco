@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:cut_white_concrete"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

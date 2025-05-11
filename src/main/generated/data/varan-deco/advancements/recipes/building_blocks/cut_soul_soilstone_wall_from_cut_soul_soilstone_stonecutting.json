@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:cut_soul_soilstone_wall_from_cut_soul_soilstone_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

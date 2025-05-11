@@ -15,7 +15,7 @@ import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
-import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
+import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
@@ -64,7 +64,7 @@ public class DecoBlocks {
             new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD)));
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
-            new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0f,100.0f)
+            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()));
     public static final Block HARDENED_TINTED_GLASS = registerBlock("hardened_tinted_glass",
             new TintedGlassBlock(FabricBlockSettings.copyOf(Blocks.TINTED_GLASS).strength(25.0f,100.0f)
@@ -949,7 +949,7 @@ public class DecoBlocks {
             new MagmaBrickSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)));
 
     public static final Block WOODEN_SAPLING = registerBlock("wooden_sapling",
-            new SaplingBlock(new WoodenSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new SaplingBlock(DecoSaplingGenerators.WOODEN ,FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block POTTED_WOODEN_SAPLING = registerBlockWithoutItem("potted_wooden_sapling",
             new FlowerPotBlock(WOODEN_SAPLING,FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING)));
 
@@ -1772,131 +1772,117 @@ public class DecoBlocks {
             new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)));
 
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE),
-                    BlockSetType.STONE, 20, false));
+            new ButtonBlock(BlockSetType.STONE, 20, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block COBBLED_DEEPSLATE_BUTTON = registerBlock("cobbled_deepslate_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE),
-                    BlockSetType.STONE, 20, false));
+            new ButtonBlock(BlockSetType.STONE, 20,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE),
-                    BlockSetType.STONE, 20, false));
+            new ButtonBlock(BlockSetType.STONE, 20, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block COBBLESTONE_BUTTON = registerBlock("cobblestone_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
-                    BlockSetType.STONE, 20, false));
+            new ButtonBlock(BlockSetType.STONE, 20,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
     public static final Block BLACKSTONE_BUTTON = registerBlock("blackstone_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
-                    BlockSetType.POLISHED_BLACKSTONE, 20, false));
+            new ButtonBlock(BlockSetType.POLISHED_BLACKSTONE, 20, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
     public static final Block POLISHED_STONE_BUTTON = registerBlock("polished_stone_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
-                    BlockSetType.STONE, 20, false));
+            new ButtonBlock(BlockSetType.STONE, 20, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
     public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
-                    BlockSetType.BIRCH, 30, true));
+            new ButtonBlock(BlockSetType.BIRCH, 30, FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)));
     public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
-                    BlockSetType.OAK, 30, true));
+            new ButtonBlock(BlockSetType.OAK, 30, FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)));
 
     public static final Block IRON_BUTTON = registerBlock("iron_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
-                    BlockSetType.IRON, 50, false));
+            new ButtonBlock(BlockSetType.IRON, 50, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON),
-                    BlockSetType.GOLD, 1, false));
+            new ButtonBlock(BlockSetType.GOLD, 1, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
 
     public static final Block COPPER_BUTTON = registerBlock("copper_button",
             new OxidizableButtonBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 10, false));
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 10));
     public static final Block WAXED_COPPER_BUTTON = registerBlock("waxed_copper_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_BUTTON),
-                    BlockSetType.IRON, 10, false));
+            new ButtonBlock(BlockSetType.IRON, 10, FabricBlockSettings.copyOf(DecoBlocks.COPPER_BUTTON)));
     public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button",
             new OxidizableButtonBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 20, false));
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 20));
     public static final Block WAXED_EXPOSED_COPPER_BUTTON = registerBlock("waxed_exposed_copper_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_BUTTON),
-                    BlockSetType.IRON, 20, false));
+            new ButtonBlock(BlockSetType.IRON, 20, FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_BUTTON)));
     public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button",
             new OxidizableButtonBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 30, false));
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 30));
     public static final Block WAXED_WEATHERED_COPPER_BUTTON = registerBlock("waxed_weathered_copper_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_BUTTON),
-                    BlockSetType.IRON, 30, false));
+            new ButtonBlock(BlockSetType.IRON, 30, FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_BUTTON)));
     public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button",
             new OxidizableButtonBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 40, false));
+                    .sounds(BlockSoundGroup.COPPER), BlockSetType.IRON, 40));
     public static final Block WAXED_OXIDIZED_COPPER_BUTTON = registerBlock("waxed_oxidized_copper_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_BUTTON),
-                    BlockSetType.IRON, 40, false));
+            new ButtonBlock(BlockSetType.IRON, 40, FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_BUTTON)));
 
     public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE),BlockSetType.STONE));
+            new PressurePlateBlock(BlockSetType.STONE, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block COBBLED_DEEPSLATE_PRESSURE_PLATE = registerBlock("cobbled_deepslate_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE),BlockSetType.STONE));
+            new PressurePlateBlock(BlockSetType.STONE, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE),BlockSetType.STONE));
+            new PressurePlateBlock(BlockSetType.STONE, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE),BlockSetType.STONE));
+            new PressurePlateBlock(BlockSetType.STONE, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)));
     public static final Block BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.BLACK),BlockSetType.POLISHED_BLACKSTONE));
+            new PressurePlateBlock(BlockSetType.POLISHED_BLACKSTONE, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.BLACK)));
     public static final Block POLISHED_STONE_PRESSURE_PLATE = registerBlock("polished_stone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.STONE_GRAY),BlockSetType.STONE));
+            new PressurePlateBlock(BlockSetType.STONE, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                    .mapColor(MapColor.STONE_GRAY)));
 
     public static final Block COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("copper_weight_pressure_plate",
             new OxidizablePressurePlateBlock(20, Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
                     .sounds(BlockSoundGroup.COPPER),BlockSetType.IRON));
     public static final Block WAXED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(20,FabricBlockSettings.copyOf(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE),BlockSetType.IRON));
+            new WeightedPressurePlateBlock(20,BlockSetType.IRON,FabricBlockSettings.copyOf(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)));
     public static final Block EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("exposed_copper_weight_pressure_plate",
             new OxidizablePressurePlateBlock(50, Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
                     .sounds(BlockSoundGroup.COPPER),BlockSetType.IRON));
     public static final Block WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_exposed_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(50,FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE),BlockSetType.IRON));
+            new WeightedPressurePlateBlock(50,BlockSetType.IRON,FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)));
     public static final Block WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("weathered_copper_weight_pressure_plate",
             new OxidizablePressurePlateBlock(70,Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
                     .sounds(BlockSoundGroup.COPPER),BlockSetType.IRON));
     public static final Block WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_weathered_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(70,FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE),BlockSetType.IRON));
+            new WeightedPressurePlateBlock(70,BlockSetType.IRON,FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE)));
     public static final Block OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("oxidized_copper_weight_pressure_plate",
             new OxidizablePressurePlateBlock(100, Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
                     .sounds(BlockSoundGroup.COPPER),BlockSetType.IRON));
     public static final Block WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_oxidized_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(100,FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE),BlockSetType.IRON));
+            new WeightedPressurePlateBlock(100, BlockSetType.IRON, FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)));
 
     public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN),BlockSetType.BIRCH));
+            new PressurePlateBlock(BlockSetType.BIRCH,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN)));
     public static final Block WOODEN_PRESSURE_PLATE = registerBlock("wooden_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE),BlockSetType.OAK));
+            new PressurePlateBlock(BlockSetType.OAK,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)));
 
     public static final Block GOLD_DOOR = registerBlock("gold_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.GOLD));
+            new DoorBlock(BlockSetType.GOLD, FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()));
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(), BlockSetType.BIRCH));
+            new DoorBlock(BlockSetType.BIRCH, FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()));
     public static final Block WOODEN_DOOR = registerBlock("wooden_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.BROWN).nonOpaque(),BlockSetType.OAK));
+            new DoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.BROWN).nonOpaque()));
     public static final Block GOLD_TRAPDOOR = registerBlock("gold_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.GOLD));
+            new TrapdoorBlock(BlockSetType.GOLD, FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()));
     public static final Block CACTUS_TRAPDOOR = registerBlock("cactus_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(), BlockSetType.BIRCH));
+            new TrapdoorBlock(BlockSetType.BIRCH, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()));
     public static final Block WOODEN_TRAPDOOR = registerBlock("wooden_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.BROWN).nonOpaque(),BlockSetType.OAK));
+            new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.BROWN).nonOpaque()));
 
     public static final Block CACTUS_PLANK_FENCE_GATE = registerBlock("cactus_plank_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS), WoodType.BIRCH));
+            new FenceGateBlock(WoodType.BIRCH, FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block WOODEN_FENCE_GATE = registerBlock("wooden_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS), WoodType.OAK));
+            new FenceGateBlock(WoodType.OAK, FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS), WoodType.SPRUCE));
+            new FenceGateBlock(WoodType.SPRUCE, FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)));
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS), WoodType.MANGROVE));
+            new FenceGateBlock(WoodType.MANGROVE, FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)));
     public static final Block BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("blue_nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS), WoodType.SPRUCE));
+            new FenceGateBlock(WoodType.SPRUCE, FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)));
 
     public static final Identifier CACTUS_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus");
     public static final Identifier WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden");

@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:dye_pink_terracotta_bricks"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

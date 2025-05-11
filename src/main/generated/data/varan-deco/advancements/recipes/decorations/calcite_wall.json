@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:calcite_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

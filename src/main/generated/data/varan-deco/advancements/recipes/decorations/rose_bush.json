@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:rose_bush"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

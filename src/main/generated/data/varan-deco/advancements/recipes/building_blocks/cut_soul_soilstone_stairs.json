@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:cut_soul_soilstone_stairs"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

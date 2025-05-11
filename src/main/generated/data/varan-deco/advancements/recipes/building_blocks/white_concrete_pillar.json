@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:white_concrete_pillar"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

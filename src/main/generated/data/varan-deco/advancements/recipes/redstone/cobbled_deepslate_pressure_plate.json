@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:cobbled_deepslate_pressure_plate"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

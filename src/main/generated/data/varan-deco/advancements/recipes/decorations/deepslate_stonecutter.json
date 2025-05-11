@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:deepslate_stonecutter"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

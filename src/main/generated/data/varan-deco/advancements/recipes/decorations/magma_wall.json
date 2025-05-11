@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:magma_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

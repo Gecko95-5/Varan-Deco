@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:hardened_yellow_stained_glass_pane_iron_ingot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

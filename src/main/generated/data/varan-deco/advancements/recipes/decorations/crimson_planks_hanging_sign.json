@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:crimson_planks_hanging_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

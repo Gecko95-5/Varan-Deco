@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:quartz_brick_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

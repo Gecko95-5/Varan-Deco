@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:light_blue_dye_from_blue_tulip"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

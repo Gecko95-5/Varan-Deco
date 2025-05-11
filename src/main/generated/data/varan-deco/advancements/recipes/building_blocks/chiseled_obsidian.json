@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:chiseled_obsidian"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

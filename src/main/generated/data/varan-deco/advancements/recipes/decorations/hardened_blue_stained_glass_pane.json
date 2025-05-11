@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:hardened_blue_stained_glass_pane"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

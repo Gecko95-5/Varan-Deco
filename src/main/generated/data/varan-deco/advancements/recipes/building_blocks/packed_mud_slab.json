@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:packed_mud_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

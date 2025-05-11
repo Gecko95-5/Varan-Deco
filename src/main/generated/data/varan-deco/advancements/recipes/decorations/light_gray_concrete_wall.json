@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:light_gray_concrete_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

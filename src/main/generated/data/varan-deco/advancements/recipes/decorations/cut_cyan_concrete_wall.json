@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:cut_cyan_concrete_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

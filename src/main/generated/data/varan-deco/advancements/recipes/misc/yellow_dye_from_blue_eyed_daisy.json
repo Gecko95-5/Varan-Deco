@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:yellow_dye_from_blue_eyed_daisy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

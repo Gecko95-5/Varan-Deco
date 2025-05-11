@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:crimson_mosaic_hanging_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

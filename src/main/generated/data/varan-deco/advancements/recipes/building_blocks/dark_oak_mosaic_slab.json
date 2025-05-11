@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:dark_oak_mosaic_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

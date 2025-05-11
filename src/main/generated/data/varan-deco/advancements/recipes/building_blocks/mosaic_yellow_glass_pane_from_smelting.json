@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:mosaic_yellow_glass_pane_from_smelting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

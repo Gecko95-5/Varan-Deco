@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:stripped_jungle_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

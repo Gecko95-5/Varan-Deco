@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:blue_ice_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

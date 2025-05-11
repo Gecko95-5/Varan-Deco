@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:cut_red_sandstone_brick_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

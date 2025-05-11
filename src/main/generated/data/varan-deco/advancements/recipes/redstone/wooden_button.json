@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:wooden_button"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

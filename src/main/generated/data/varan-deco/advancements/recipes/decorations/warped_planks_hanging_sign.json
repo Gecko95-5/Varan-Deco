@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:warped_planks_hanging_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

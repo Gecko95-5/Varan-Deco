@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:exposed_heavy_copper_bars"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:light_prismarine_slab_from_light_prismarine_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

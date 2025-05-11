@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:purple_dye_from_michaelmas_daisy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

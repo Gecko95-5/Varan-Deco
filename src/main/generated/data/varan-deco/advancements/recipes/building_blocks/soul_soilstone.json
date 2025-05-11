@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:soul_soilstone"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

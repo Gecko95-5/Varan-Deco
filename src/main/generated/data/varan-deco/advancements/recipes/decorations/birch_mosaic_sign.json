@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:birch_mosaic_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

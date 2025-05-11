@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:cut_white_concrete_stairs"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

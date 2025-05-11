@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:wooden_mosaic_hanging_sign"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

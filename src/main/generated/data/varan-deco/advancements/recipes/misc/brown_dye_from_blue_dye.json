@@ -56,6 +56,5 @@
     "recipes": [
       "minecraft:brown_dye_from_blue_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

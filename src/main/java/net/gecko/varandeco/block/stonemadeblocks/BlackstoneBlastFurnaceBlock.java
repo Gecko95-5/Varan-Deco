@@ -1,9 +1,11 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
+import com.mojang.serialization.MapCodec;
 import net.gecko.varandeco.block.entity.BlackstoneBlastFurnaceBlockEntity;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.FurnaceBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
@@ -20,6 +22,13 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class BlackstoneBlastFurnaceBlock extends AbstractFurnaceBlock {
+	public static final MapCodec<BlackstoneBlastFurnaceBlock> CODEC = createCodec(BlackstoneBlastFurnaceBlock::new);
+
+	@Override
+	public MapCodec<BlackstoneBlastFurnaceBlock> getCodec() {
+		return CODEC;
+	}
+
 	public BlackstoneBlastFurnaceBlock(Settings settings) {
 		super(settings);
 	}

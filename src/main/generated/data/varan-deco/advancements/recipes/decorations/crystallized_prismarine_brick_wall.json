@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:crystallized_prismarine_brick_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

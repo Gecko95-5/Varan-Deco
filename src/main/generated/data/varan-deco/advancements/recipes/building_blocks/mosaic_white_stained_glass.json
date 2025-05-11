@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:mosaic_white_stained_glass"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

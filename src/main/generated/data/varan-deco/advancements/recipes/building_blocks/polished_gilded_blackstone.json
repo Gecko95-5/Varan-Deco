@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:polished_gilded_blackstone"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

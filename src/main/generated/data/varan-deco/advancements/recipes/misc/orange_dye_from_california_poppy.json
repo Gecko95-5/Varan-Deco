@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:orange_dye_from_california_poppy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

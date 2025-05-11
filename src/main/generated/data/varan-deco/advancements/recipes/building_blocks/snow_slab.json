@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:snow_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

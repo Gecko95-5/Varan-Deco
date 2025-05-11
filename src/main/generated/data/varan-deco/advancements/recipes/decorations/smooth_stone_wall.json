@@ -30,6 +30,5 @@
     "recipes": [
       "varan-deco:smooth_stone_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

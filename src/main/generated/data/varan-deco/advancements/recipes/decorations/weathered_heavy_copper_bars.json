@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:weathered_heavy_copper_bars"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

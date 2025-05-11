@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:black_ice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

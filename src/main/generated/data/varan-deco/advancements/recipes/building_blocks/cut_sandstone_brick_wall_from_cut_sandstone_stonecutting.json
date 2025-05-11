@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:cut_sandstone_brick_wall_from_cut_sandstone_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
