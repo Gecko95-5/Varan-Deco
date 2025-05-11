@@ -40,6 +40,7 @@ public class VaranDeco implements ModInitializer {
 		DecoStrippableBlocks.registerStrippables();
 		DecoOxidizableBlocks.registerOxidizableBlocks();
 		DecoOxidizableBlocks.registerWaxableBlocks();
+		DecoLootTableModifiers.modifyLootTables();
 
 		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
 						world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
