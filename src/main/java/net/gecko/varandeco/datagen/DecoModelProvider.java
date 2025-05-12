@@ -30,8 +30,6 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_STONE_TEMP);
         BlockStateModelGenerator.BlockTexturePool calcitepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CALCITE_TEMP);
-        BlockStateModelGenerator.BlockTexturePool tuffpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TUFF_TEMP);
         BlockStateModelGenerator.BlockTexturePool dripstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DRIPSTONE_TEMP);
         BlockStateModelGenerator.BlockTexturePool packmudpool =
@@ -471,9 +469,6 @@ public class DecoModelProvider extends FabricModelProvider {
        calcitepool.stairs(DecoBlocks.CALCITE_STAIRS);
        calcitepool.slab(DecoBlocks.CALCITE_SLAB);
        calcitepool.wall(DecoBlocks.CALCITE_WALL);
-       tuffpool.stairs(DecoBlocks.TUFF_STAIRS);
-       tuffpool.slab(DecoBlocks.TUFF_SLAB);
-       tuffpool.wall(DecoBlocks.TUFF_WALL);
        dripstonepool.stairs(DecoBlocks.DRIPSTONE_STAIRS);
        dripstonepool.slab(DecoBlocks.DRIPSTONE_SLAB);
        dripstonepool.wall(DecoBlocks.DRIPSTONE_WALL);

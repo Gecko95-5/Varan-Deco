@@ -56,17 +56,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.CALCITE_WALL, Items.CALCITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CALCITE_WALL, Items.CALCITE);
 
-        createStairsRecipe(DecoBlocks.TUFF_STAIRS, Ingredient.ofItems(Items.TUFF))
-                .criterion(hasItem(Items.TUFF),conditionsFromItem(Items.TUFF))
-                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TUFF_STAIRS)));
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.TUFF_STAIRS, Items.TUFF);
-
-        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.TUFF_SLAB, Items.TUFF);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.TUFF_SLAB, Items.TUFF,2);
-
-        offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.TUFF_WALL, Items.TUFF);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.TUFF_WALL, Items.TUFF);
-
         createStairsRecipe(DecoBlocks.DRIPSTONE_STAIRS, Ingredient.ofItems(Items.DRIPSTONE_BLOCK))
                 .criterion(hasItem(Items.DRIPSTONE_BLOCK),conditionsFromItem(Items.DRIPSTONE_BLOCK))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.DRIPSTONE_STAIRS)));

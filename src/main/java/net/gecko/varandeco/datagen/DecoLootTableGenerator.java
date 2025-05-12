@@ -54,9 +54,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CALCITE_STAIRS);
         slabDrops(DecoBlocks.CALCITE_SLAB);
         addDrop(DecoBlocks.CALCITE_WALL);
-        addDrop(DecoBlocks.TUFF_STAIRS);
-        slabDrops(DecoBlocks.TUFF_SLAB);
-        addDrop(DecoBlocks.TUFF_WALL);
 
         addDrop(DecoBlocks.STONE_TILES);
         addDrop(DecoBlocks.STONE_TILE_STAIRS);

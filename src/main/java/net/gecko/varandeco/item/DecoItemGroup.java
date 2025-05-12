@@ -279,9 +279,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CALCITE_STAIRS.asItem());
                         entries.add(DecoBlocks.CALCITE_SLAB.asItem());
                         entries.add(DecoBlocks.CALCITE_WALL.asItem());
-                        entries.add(DecoBlocks.TUFF_STAIRS.asItem());
-                        entries.add(DecoBlocks.TUFF_SLAB.asItem());
-                        entries.add(DecoBlocks.TUFF_WALL.asItem());
                         entries.add(DecoBlocks.DRIPSTONE_STAIRS.asItem());
                         entries.add(DecoBlocks.DRIPSTONE_SLAB.asItem());
                         entries.add(DecoBlocks.DRIPSTONE_WALL.asItem());
