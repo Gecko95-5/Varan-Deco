@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cut_quartz"
-            ]
+            "items": "varan-deco:cut_quartz"
           }
         ]
       },

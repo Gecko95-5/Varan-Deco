@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cyan_concrete_slab"
-            ]
+            "items": "varan-deco:cyan_concrete_slab"
           }
         ]
       },

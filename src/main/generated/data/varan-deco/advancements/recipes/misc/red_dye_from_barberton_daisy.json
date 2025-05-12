@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:barberton_daisy"
-            ]
+            "items": "varan-deco:barberton_daisy"
           }
         ]
       },

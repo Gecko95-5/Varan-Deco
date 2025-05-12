@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:white_orchid"
-            ]
+            "items": "varan-deco:white_orchid"
           }
         ]
       },

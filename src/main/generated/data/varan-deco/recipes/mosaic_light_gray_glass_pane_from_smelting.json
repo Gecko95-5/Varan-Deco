@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:light_gray_stained_glass_pane"
   },
-  "result": "varan-deco:mosaic_light_gray_stained_glass_pane"
+  "result": {
+    "id": "varan-deco:mosaic_light_gray_stained_glass_pane"
+  }
 }

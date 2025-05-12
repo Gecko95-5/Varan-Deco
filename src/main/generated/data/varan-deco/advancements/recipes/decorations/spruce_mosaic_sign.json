@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:spruce_mosaic"
-            ]
+            "items": "varan-deco:spruce_mosaic"
           }
         ]
       },

@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "varan-deco:crystallized_prismarine"
   },
-  "result": "minecraft:sea_lantern"
+  "result": {
+    "id": "minecraft:sea_lantern"
+  }
 }

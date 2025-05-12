@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:smooth_purpur"
-            ]
+            "items": "varan-deco:smooth_purpur"
           }
         ]
       },

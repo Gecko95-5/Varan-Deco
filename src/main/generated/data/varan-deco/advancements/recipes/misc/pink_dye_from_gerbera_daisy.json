@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:gerbera_daisy"
-            ]
+            "items": "varan-deco:gerbera_daisy"
           }
         ]
       },

@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "varan-deco:soul_soilstone"
   },
-  "result": "varan-deco:smooth_soul_soilstone"
+  "result": {
+    "id": "varan-deco:smooth_soul_soilstone"
+  }
 }

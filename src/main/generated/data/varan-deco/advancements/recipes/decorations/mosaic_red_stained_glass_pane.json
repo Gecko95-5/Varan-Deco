@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:mosaic_red_stained_glass"
-            ]
+            "items": "varan-deco:mosaic_red_stained_glass"
           }
         ]
       },

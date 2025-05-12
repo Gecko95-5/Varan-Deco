@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:nether_brick"
-            ]
+            "items": "minecraft:nether_brick"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:red_nether_bricks"
-            ]
+            "items": "minecraft:red_nether_bricks"
           }
         ]
       },

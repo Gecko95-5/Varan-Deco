@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blue_tulip"
-            ]
+            "items": "varan-deco:blue_tulip"
           }
         ]
       },

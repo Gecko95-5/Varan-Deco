@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:deepslate"
   },
-  "result": "varan-deco:smooth_deepslate"
+  "result": {
+    "id": "varan-deco:smooth_deepslate"
+  }
 }

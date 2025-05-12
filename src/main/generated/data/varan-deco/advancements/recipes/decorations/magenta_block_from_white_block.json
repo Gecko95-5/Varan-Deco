@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blue_block"
-            ]
+            "items": "varan-deco:blue_block"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:red_block"
-            ]
+            "items": "varan-deco:red_block"
           }
         ]
       },
@@ -35,9 +31,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:white_block"
-            ]
+            "items": "varan-deco:white_block"
           }
         ]
       },

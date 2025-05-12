@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blue_nether_bricks"
-            ]
+            "items": "varan-deco:blue_nether_bricks"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:nether_brick"
-            ]
+            "items": "minecraft:nether_brick"
           }
         ]
       },

@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:cyan_concrete"
   },
-  "result": "varan-deco:cyan_concrete_slab"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:cyan_concrete_slab"
+  }
 }

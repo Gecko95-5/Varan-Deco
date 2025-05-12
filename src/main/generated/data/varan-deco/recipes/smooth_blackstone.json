@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:blackstone"
   },
-  "result": "varan-deco:smooth_blackstone"
+  "result": {
+    "id": "varan-deco:smooth_blackstone"
+  }
 }

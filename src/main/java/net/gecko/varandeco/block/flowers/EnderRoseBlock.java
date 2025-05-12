@@ -1,16 +1,17 @@
 package net.gecko.varandeco.block.flowers;
 
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.gecko.varandeco.block.DecoBlocks;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
+import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
@@ -20,12 +21,26 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
 public class EnderRoseBlock extends FlowerBlock {
-    public EnderRoseBlock(StatusEffect effect, Settings settings) {
-        super(effect, 8, settings);
+    public static final MapCodec<EnderRoseBlock> CODEC = RecordCodecBuilder.mapCodec(
+            instance -> instance.group(STEW_EFFECT_CODEC.forGetter(FlowerBlock::getStewEffects), createSettingsCodec()).apply(instance, EnderRoseBlock::new)
+    );
+
+    @Override
+    public MapCodec<EnderRoseBlock> getCodec() {
+        return CODEC;
     }
+
+    public EnderRoseBlock(RegistryEntry<StatusEffect> registryEntry, float f, AbstractBlock.Settings settings) {
+        this(createStewEffectList(registryEntry, f), settings);
+    }
+
+    public EnderRoseBlock(SuspiciousStewEffectsComponent suspiciousStewEffectsComponent, AbstractBlock.Settings settings) {
+        super(suspiciousStewEffectsComponent, settings);
+    }
+
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return super.canPlantOnTop(floor, world, pos) || floor.isOf(Blocks.END_STONE) || floor.isOf(DecoBlocks.VOID_STONE);
+        return super.canPlantOnTop(floor, world, pos) || floor.isOf(Blocks.NETHERRACK) || floor.isOf(Blocks.SOUL_SAND) || floor.isOf(Blocks.SOUL_SOIL);
     }
 
     @Override
@@ -43,10 +58,11 @@ public class EnderRoseBlock extends FlowerBlock {
             }
         }
     }
+
     @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
-            if (entity instanceof LivingEntity livingEntity && !livingEntity.isInvulnerableTo(world.getDamageSources().magic())) {
+            if (entity instanceof LivingEntity livingEntity && !livingEntity.isInvulnerableTo(world.getDamageSources().wither())) {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 40));
             }
         }

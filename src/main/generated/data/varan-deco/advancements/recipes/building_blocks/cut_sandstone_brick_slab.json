@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cut_sandstone_bricks"
-            ]
+            "items": "varan-deco:cut_sandstone_bricks"
           }
         ]
       },

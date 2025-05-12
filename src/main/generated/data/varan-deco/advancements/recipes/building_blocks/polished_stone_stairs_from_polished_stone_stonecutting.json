@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:polished_stone"
-            ]
+            "items": "varan-deco:polished_stone"
           }
         ]
       },

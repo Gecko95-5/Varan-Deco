@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:orange_terracotta_bricks"
-            ]
+            "items": "varan-deco:orange_terracotta_bricks"
           }
         ]
       },

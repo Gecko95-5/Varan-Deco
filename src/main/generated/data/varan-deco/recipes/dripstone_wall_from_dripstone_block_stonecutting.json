@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:dripstone_block"
   },
-  "result": "varan-deco:dripstone_wall"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:dripstone_wall"
+  }
 }

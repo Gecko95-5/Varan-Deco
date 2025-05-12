@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:light_blue_terracotta"
   },
-  "result": "varan-deco:light_blue_terracotta_brick_stairs"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:light_blue_terracotta_brick_stairs"
+  }
 }

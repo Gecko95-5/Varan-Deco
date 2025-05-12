@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "varan-deco:blue_nether_bricks"
   },
-  "result": "varan-deco:cracked_blue_nether_bricks"
+  "result": {
+    "id": "varan-deco:cracked_blue_nether_bricks"
+  }
 }

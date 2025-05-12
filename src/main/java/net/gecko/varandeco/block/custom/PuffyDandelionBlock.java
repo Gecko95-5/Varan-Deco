@@ -2,6 +2,7 @@ package net.gecko.varandeco.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
@@ -11,8 +12,8 @@ import net.minecraft.world.WorldView;
 
 public class PuffyDandelionBlock extends FlowerBlock implements Fertilizable {
 
-    public PuffyDandelionBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
-        super(suspiciousStewEffect, effectDuration, settings);
+    public PuffyDandelionBlock(RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Settings settings) {
+        super(stewEffect, effectLengthInSeconds, settings);
     }
 
     @Override

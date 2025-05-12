@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:blue_ice"
-            ]
+            "items": "minecraft:blue_ice"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:packed_ice"
-            ]
+            "items": "minecraft:packed_ice"
           }
         ]
       },

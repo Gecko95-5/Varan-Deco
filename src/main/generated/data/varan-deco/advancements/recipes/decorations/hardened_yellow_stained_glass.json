@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:hardened_glass"
-            ]
+            "items": "varan-deco:hardened_glass"
           }
         ]
       },
@@ -23,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:yellow_dye"
-            ]
+            "items": "minecraft:yellow_dye"
           }
         ]
       },

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:copper_ingot"
-            ]
+            "items": "minecraft:copper_ingot"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:copper_nugget"
-            ]
+            "items": "varan-deco:copper_nugget"
           }
         ]
       },

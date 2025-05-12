@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cactus_plank_slab"
-            ]
+            "items": "varan-deco:cactus_plank_slab"
           }
         ]
       },

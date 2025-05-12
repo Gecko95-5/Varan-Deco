@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:gilded_blackstone"
-            ]
+            "items": "minecraft:gilded_blackstone"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:polished_blackstone"
-            ]
+            "items": "minecraft:polished_blackstone"
           }
         ]
       },

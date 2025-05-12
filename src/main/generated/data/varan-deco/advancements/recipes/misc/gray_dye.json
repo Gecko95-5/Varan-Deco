@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:gray_block"
-            ]
+            "items": "varan-deco:gray_block"
           }
         ]
       },

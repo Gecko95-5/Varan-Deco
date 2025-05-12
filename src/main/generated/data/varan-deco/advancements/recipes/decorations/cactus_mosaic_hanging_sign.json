@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cactus_mosaic"
-            ]
+            "items": "varan-deco:cactus_mosaic"
           }
         ]
       },

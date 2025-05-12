@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cut_soul_soilstone_bricks"
-            ]
+            "items": "varan-deco:cut_soul_soilstone_bricks"
           }
         ]
       },

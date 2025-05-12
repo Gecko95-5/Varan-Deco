@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:white_terracotta_bricks"
-            ]
+            "items": "varan-deco:white_terracotta_bricks"
           }
         ]
       },

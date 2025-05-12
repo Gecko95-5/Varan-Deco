@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:bubble_block"
-            ]
+            "items": "varan-deco:bubble_block"
           }
         ]
       },

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:california_poppy"
-            ]
+            "items": "varan-deco:california_poppy"
           }
         ]
       },

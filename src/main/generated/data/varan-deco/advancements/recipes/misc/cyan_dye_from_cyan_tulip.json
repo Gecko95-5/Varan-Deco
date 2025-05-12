@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cyan_tulip"
-            ]
+            "items": "varan-deco:cyan_tulip"
           }
         ]
       },

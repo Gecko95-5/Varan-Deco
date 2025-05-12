@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:cyan_dye"
-            ]
+            "items": "minecraft:cyan_dye"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:terracotta_bricks"
-            ]
+            "items": "varan-deco:terracotta_bricks"
           }
         ]
       },

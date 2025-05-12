@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:ender_rose_bush"
-            ]
+            "items": "varan-deco:ender_rose_bush"
           }
         ]
       },

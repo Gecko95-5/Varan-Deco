@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:purple_stained_glass"
   },
-  "result": "varan-deco:mosaic_purple_stained_glass"
+  "result": {
+    "id": "varan-deco:mosaic_purple_stained_glass"
+  }
 }

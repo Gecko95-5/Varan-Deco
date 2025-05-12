@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "varan-deco:smooth_purpur"
   },
-  "result": "varan-deco:smooth_purpur_wall"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:smooth_purpur_wall"
+  }
 }

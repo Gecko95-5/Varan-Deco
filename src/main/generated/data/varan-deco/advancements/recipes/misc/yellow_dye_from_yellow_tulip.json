@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:yellow_tulip"
-            ]
+            "items": "varan-deco:yellow_tulip"
           }
         ]
       },

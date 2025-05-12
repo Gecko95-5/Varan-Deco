@@ -21,11 +21,15 @@ import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
-    public DecoLootTableGenerator(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    public DecoLootTableGenerator(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
+
     @Override
     public void generate() {
         addDrop(DecoBlocks.POLISHED_STONE);

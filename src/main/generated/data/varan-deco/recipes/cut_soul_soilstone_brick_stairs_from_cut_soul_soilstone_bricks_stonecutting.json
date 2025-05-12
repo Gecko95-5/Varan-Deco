@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "varan-deco:cut_soul_soilstone_bricks"
   },
-  "result": "varan-deco:cut_soul_soilstone_brick_stairs"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:cut_soul_soilstone_brick_stairs"
+  }
 }

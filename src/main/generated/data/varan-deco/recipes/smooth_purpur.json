@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:purpur_block"
   },
-  "result": "varan-deco:smooth_purpur"
+  "result": {
+    "id": "varan-deco:smooth_purpur"
+  }
 }

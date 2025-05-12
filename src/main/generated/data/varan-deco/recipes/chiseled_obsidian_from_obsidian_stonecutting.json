@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:obsidian"
   },
-  "result": "varan-deco:chiseled_obsidian"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:chiseled_obsidian"
+  }
 }

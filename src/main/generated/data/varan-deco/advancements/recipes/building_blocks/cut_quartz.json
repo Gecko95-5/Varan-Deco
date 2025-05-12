@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:quartz"
-            ]
+            "items": "minecraft:quartz"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:quartz_block"
-            ]
+            "items": "minecraft:quartz_block"
           }
         ]
       },

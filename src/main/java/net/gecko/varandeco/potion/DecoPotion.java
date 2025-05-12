@@ -1,5 +1,6 @@
 package net.gecko.varandeco.potion;
 
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -10,41 +11,30 @@ import net.minecraft.potion.Potions;
 import net.minecraft.recipe.BrewingRecipeRegistry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 public class DecoPotion {
 
-    public static Potion WATER_BUBBLE_POTION;
-    public static Potion STRONG_WATER_BUBBLE_POTION;
-    public static Potion LONG_WATER_BUBBLE_POTION;
+    public static final RegistryEntry<Potion> WATER_BUBBLE_POTION = registerPotion("bubble_potion",
+            new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0),
+                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0)));
+
+    public static final RegistryEntry<Potion> STRONG_WATER_BUBBLE_POTION = registerPotion("strong_bubble_potion",
+            new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 900, 0),
+                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 1)));
+
+    public static final RegistryEntry<Potion> LONG_WATER_BUBBLE_POTION  = registerPotion("long_bubble_potion",
+            new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0),
+                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0)));
 
 
-    public static Potion registerBubblePotion(String name) {
-        return Registry.register(Registries.POTION, new Identifier(VaranDeco.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0),
-                        new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0)));
-    }    public static Potion registerStrongBubblePotion(String name) {
-        return Registry.register(Registries.POTION, new Identifier(VaranDeco.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 900, 0),
-                        new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 1)));
-    }
-    public static Potion registerLongBubblePotion(String name) {
-        return Registry.register(Registries.POTION, new Identifier(VaranDeco.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0),
-                        new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0)));
-    }
-    public static void registerPotions(){
-        WATER_BUBBLE_POTION = registerBubblePotion("bubble_potion");
-        STRONG_WATER_BUBBLE_POTION = registerStrongBubblePotion("strong_bubble_potion");
-        LONG_WATER_BUBBLE_POTION = registerLongBubblePotion("long_bubble_potion");
-
-        registerPotionRecipes();
+    private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {
+        return Registry.registerReference(Registries.POTION, Identifier.of(VaranDeco.MOD_ID, name), potion);
     }
 
-    private static void registerPotionRecipes(){
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE, DecoPotion.STRONG_WATER_BUBBLE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
+    public static void registerPotions() {
+        VaranDeco.LOGGER.info("Registering Mod Potions for " + VaranDeco.MOD_ID);
     }
 }
+

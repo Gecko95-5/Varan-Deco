@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:end_stone"
-            ]
+            "items": "minecraft:end_stone"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:ender_pearl"
-            ]
+            "items": "minecraft:ender_pearl"
           }
         ]
       },

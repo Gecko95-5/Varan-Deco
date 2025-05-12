@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:warped_wart"
-            ]
+            "items": "varan-deco:warped_wart"
           }
         ]
       },

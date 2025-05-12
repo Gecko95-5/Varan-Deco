@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:paeonia"
-            ]
+            "items": "varan-deco:paeonia"
           }
         ]
       },

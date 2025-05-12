@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:chiseled_polished_blackstone"
-            ]
+            "items": "minecraft:chiseled_polished_blackstone"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:polished_gilded_blackstone"
-            ]
+            "items": "varan-deco:polished_gilded_blackstone"
           }
         ]
       },

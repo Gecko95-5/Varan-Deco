@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:lavender"
-            ]
+            "items": "varan-deco:lavender"
           }
         ]
       },

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:copper_nugget"
-            ]
+            "items": "varan-deco:copper_nugget"
           }
         ]
       },

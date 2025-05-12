@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blue_nether_bricks"
-            ]
+            "items": "varan-deco:blue_nether_bricks"
           }
         ]
       },

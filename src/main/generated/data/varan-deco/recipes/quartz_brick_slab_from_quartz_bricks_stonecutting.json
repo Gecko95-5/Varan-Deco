@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:quartz_bricks"
   },
-  "result": "varan-deco:quartz_brick_slab"
+  "result": {
+    "count": 1,
+    "id": "varan-deco:quartz_brick_slab"
+  }
 }
