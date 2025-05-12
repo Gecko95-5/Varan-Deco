@@ -1,9 +1,9 @@
 package net.gecko.varandeco.block;
 
-import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
-import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
-import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
-import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
@@ -15,7 +15,7 @@ import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
@@ -1882,91 +1882,91 @@ public class DecoBlocks {
     public static final Block BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("blue_nether_brick_fence_gate",
             new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
 
-    public static final Identifier CACTUS_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus");
-    public static final Identifier WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden");
+    public static final Identifier CACTUS_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/cactus");
+    public static final Identifier WOODEN_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/wooden");
 
-    public static final Identifier WOODEN_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/wooden");
-    public static final Identifier WOODEN_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden");
+    public static final Identifier WOODEN_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/wooden");
+    public static final Identifier WOODEN_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden");
 
-    public static final Identifier STRIPPED_OAK_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_oak");
-    public static final Identifier STRIPPED_SPRUCE_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_spruce");
-    public static final Identifier STRIPPED_BIRCH_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_birch");
-    public static final Identifier STRIPPED_JUNGLE_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_jungle");
-    public static final Identifier STRIPPED_ACACIA_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_acacia");
-    public static final Identifier STRIPPED_DARK_OAK_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_dark_oak");
-    public static final Identifier STRIPPED_MANGROVE_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_mangrove");
-    public static final Identifier STRIPPED_CHERRY_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_cherry");
-    public static final Identifier STRIPPED_CRIMSON_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_crimson");
-    public static final Identifier STRIPPED_WARPED_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_warped");
-    public static final Identifier STRIPPED_WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/stripped_wooden");
+    public static final Identifier STRIPPED_OAK_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_oak");
+    public static final Identifier STRIPPED_SPRUCE_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_spruce");
+    public static final Identifier STRIPPED_BIRCH_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_birch");
+    public static final Identifier STRIPPED_JUNGLE_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_jungle");
+    public static final Identifier STRIPPED_ACACIA_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_acacia");
+    public static final Identifier STRIPPED_DARK_OAK_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_dark_oak");
+    public static final Identifier STRIPPED_MANGROVE_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_mangrove");
+    public static final Identifier STRIPPED_CHERRY_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_cherry");
+    public static final Identifier STRIPPED_CRIMSON_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_crimson");
+    public static final Identifier STRIPPED_WARPED_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_warped");
+    public static final Identifier STRIPPED_WOODEN_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_wooden");
 
-    public static final Identifier OAK_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/oak_mosaic");
-    public static final Identifier SPRUCE_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/spruce_mosaic");
-    public static final Identifier BIRCH_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/birch_mosaic");
-    public static final Identifier JUNGLE_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/jungle_mosaic");
-    public static final Identifier ACACIA_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/acacia_mosaic");
-    public static final Identifier DARK_OAK_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/dark_oak_mosaic");
-    public static final Identifier MANGROVE_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/mangrove_mosaic");
-    public static final Identifier CHERRY_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cherry_mosaic");
-    public static final Identifier BAMBOO_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/bamboo_mosaic");
-    public static final Identifier CRIMSON_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/crimson_mosaic");
-    public static final Identifier WARPED_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/warped_mosaic");
-    public static final Identifier CACTUS_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus_mosaic");
-    public static final Identifier WOODEN_MOSAIC_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden_mosaic");
+    public static final Identifier OAK_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/oak_mosaic");
+    public static final Identifier SPRUCE_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/spruce_mosaic");
+    public static final Identifier BIRCH_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/birch_mosaic");
+    public static final Identifier JUNGLE_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/jungle_mosaic");
+    public static final Identifier ACACIA_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/acacia_mosaic");
+    public static final Identifier DARK_OAK_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/dark_oak_mosaic");
+    public static final Identifier MANGROVE_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/mangrove_mosaic");
+    public static final Identifier CHERRY_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/cherry_mosaic");
+    public static final Identifier BAMBOO_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/bamboo_mosaic");
+    public static final Identifier CRIMSON_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/crimson_mosaic");
+    public static final Identifier WARPED_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/warped_mosaic");
+    public static final Identifier CACTUS_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/cactus_mosaic");
+    public static final Identifier WOODEN_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/wooden_mosaic");
 
-    public static final Identifier OAK_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/oak_mosaic");
-    public static final Identifier SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/spruce_mosaic");
-    public static final Identifier BIRCH_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/birch_mosaic");
-    public static final Identifier JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/jungle_mosaic");
-    public static final Identifier ACACIA_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/acacia_mosaic");
-    public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_mosaic");
-    public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_mosaic");
-    public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_mosaic");
-    public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/bamboo_mosaic");
-    public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_mosaic");
-    public static final Identifier WARPED_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/warped_mosaic");
-    public static final Identifier CACTUS_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_mosaic");
-    public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/wooden_mosaic");
+    public static final Identifier OAK_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/oak_mosaic");
+    public static final Identifier SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/spruce_mosaic");
+    public static final Identifier BIRCH_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/birch_mosaic");
+    public static final Identifier JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/jungle_mosaic");
+    public static final Identifier ACACIA_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/acacia_mosaic");
+    public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_mosaic");
+    public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_mosaic");
+    public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_mosaic");
+    public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/bamboo_mosaic");
+    public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_mosaic");
+    public static final Identifier WARPED_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/warped_mosaic");
+    public static final Identifier CACTUS_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_mosaic");
+    public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/wooden_mosaic");
 
-    public static final Identifier OAK_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/oak_mosaic");
-    public static final Identifier SPRUCE_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/spruce_mosaic");
-    public static final Identifier BIRCH_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/birch_mosaic");
-    public static final Identifier JUNGLE_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/jungle_mosaic");
-    public static final Identifier ACACIA_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/acacia_mosaic");
-    public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_mosaic");
-    public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_mosaic");
-    public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_mosaic");
-    public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/bamboo_mosaic");
-    public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_mosaic");
-    public static final Identifier WARPED_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_mosaic");
-    public static final Identifier CACTUS_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_mosaic");
-    public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_mosaic");
+    public static final Identifier OAK_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/oak_mosaic");
+    public static final Identifier SPRUCE_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/spruce_mosaic");
+    public static final Identifier BIRCH_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/birch_mosaic");
+    public static final Identifier JUNGLE_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/jungle_mosaic");
+    public static final Identifier ACACIA_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/acacia_mosaic");
+    public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_mosaic");
+    public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_mosaic");
+    public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_mosaic");
+    public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/bamboo_mosaic");
+    public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_mosaic");
+    public static final Identifier WARPED_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_mosaic");
+    public static final Identifier CACTUS_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_mosaic");
+    public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_mosaic");
 
-    public static final Identifier OAK_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/oak_planks");
-    public static final Identifier SPRUCE_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/spruce_planks");
-    public static final Identifier BIRCH_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/birch_planks");
-    public static final Identifier JUNGLE_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/jungle_planks");
-    public static final Identifier ACACIA_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/acacia_planks");
-    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_planks");
-    public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_planks");
-    public static final Identifier CHERRY_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_planks");
-    public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_planks");
-    public static final Identifier WARPED_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/warped_planks");
-    public static final Identifier CACTUS_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_planks");
-    public static final Identifier WOODEN_PLANKS_HANGING_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/hanging/wooden_planks");
+    public static final Identifier OAK_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/oak_planks");
+    public static final Identifier SPRUCE_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/spruce_planks");
+    public static final Identifier BIRCH_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/birch_planks");
+    public static final Identifier JUNGLE_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/jungle_planks");
+    public static final Identifier ACACIA_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/acacia_planks");
+    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_planks");
+    public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_planks");
+    public static final Identifier CHERRY_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_planks");
+    public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_planks");
+    public static final Identifier WARPED_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/warped_planks");
+    public static final Identifier CACTUS_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_planks");
+    public static final Identifier WOODEN_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/wooden_planks");
 
-    public static final Identifier OAK_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/oak_planks");
-    public static final Identifier SPRUCE_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/spruce_planks");
-    public static final Identifier BIRCH_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/birch_planks");
-    public static final Identifier JUNGLE_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/jungle_planks");
-    public static final Identifier ACACIA_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/acacia_planks");
-    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_planks");
-    public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_planks");
-    public static final Identifier CHERRY_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_planks");
-    public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_planks");
-    public static final Identifier WARPED_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_planks");
-    public static final Identifier CACTUS_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_planks");
-    public static final Identifier WOODEN_PLANKS_HANGING_SIGN_GUI = new Identifier(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_planks");
+    public static final Identifier OAK_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/oak_planks");
+    public static final Identifier SPRUCE_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/spruce_planks");
+    public static final Identifier BIRCH_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/birch_planks");
+    public static final Identifier JUNGLE_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/jungle_planks");
+    public static final Identifier ACACIA_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/acacia_planks");
+    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_planks");
+    public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_planks");
+    public static final Identifier CHERRY_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_planks");
+    public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_planks");
+    public static final Identifier WARPED_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_planks");
+    public static final Identifier CACTUS_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_planks");
+    public static final Identifier WOODEN_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_planks");
 
     public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
             new TerraformSignBlock(CACTUS_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
@@ -2429,7 +2429,7 @@ public class DecoBlocks {
         return new PillarBlock(
                 AbstractBlock.Settings.create()
                         .mapColor(state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
-                        .instrument(Instrument.BASS)
+                        .instrument(NoteBlockInstrument.BASS)
                         .strength(2.0F)
                         .sounds(BlockSoundGroup.WOOD)
                         .burnable()
@@ -2437,15 +2437,15 @@ public class DecoBlocks {
     }
 
     private static Block registerBlockWithoutItem(String name, Block block) {
-        return Registry.register(Registries.BLOCK, new Identifier(VaranDeco.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(VaranDeco.MOD_ID, name), block);
     }
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(VaranDeco.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(VaranDeco.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(VaranDeco.MOD_ID, name),
+        return Registry.register(Registries.ITEM, Identifier.of(VaranDeco.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
     

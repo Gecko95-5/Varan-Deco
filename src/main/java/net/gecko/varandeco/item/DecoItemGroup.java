@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class DecoItemGroup {
     public static final ItemGroup VARAN_DECO_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(VaranDeco.MOD_ID, "varan_deco"),
+            Identifier.of(VaranDeco.MOD_ID, "varan_deco"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_blocks"))
                     .icon(() -> new ItemStack(DecoBlocks.STONE_TILES)).entries((displayContext, entries) -> {
                         entries.add(DecoBlocks.CACTUS_PLANKS.asItem());

@@ -213,7 +213,7 @@ public class DecoItems {
             DecoBoats.WARPED_BOAT_KEY, true);
 
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, new Identifier(VaranDeco.MOD_ID, name),item);
+        return Registry.register(Registries.ITEM, Identifier.of(VaranDeco.MOD_ID, name),item);
     }
 
     public static void registerDecoItems() {

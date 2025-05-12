@@ -9,6 +9,7 @@ import net.minecraft.block.CarrotsBlock;
 import net.minecraft.block.PitcherCropBlock;
 import net.minecraft.block.TallPlantBlock;
 import net.minecraft.block.enums.DoubleBlockHalf;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
@@ -21,6 +22,7 @@ import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -32,6 +34,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         addDrop(DecoBlocks.POLISHED_STONE);
         addDrop(DecoBlocks.POLISHED_STONE_STAIRS);
         slabDrops(DecoBlocks.POLISHED_STONE_SLAB);
@@ -1063,7 +1066,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
                                 .pool(
                                         LootPool.builder()
                                                 .conditionally(builder3)
-                                                .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286F, 3)))
+                                                .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(impl.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3)))
                                 )
                 )
         );

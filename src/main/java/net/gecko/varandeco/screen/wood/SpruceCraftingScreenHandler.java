@@ -11,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeBookCategory;
+import net.minecraft.recipe.input.CraftingRecipeInput;
 import net.minecraft.screen.AbstractRecipeScreenHandler;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -19,10 +20,11 @@ import net.minecraft.screen.slot.CraftingResultSlot;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingInventory> {
+public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingRecipeInput, CraftingRecipe> {
     public static final int RESULT_ID = 0;
     private static final int INPUT_START = 1;
     private static final int INPUT_END = 10;
@@ -34,6 +36,7 @@ public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     private final CraftingResultInventory result = new CraftingResultInventory();
     private final ScreenHandlerContext context;
     private final PlayerEntity player;
+    private boolean filling;
 
     public SpruceCraftingScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
@@ -63,17 +66,23 @@ public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     }
 
     protected static void updateResult(
-            ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory
+            ScreenHandler handler,
+            World world,
+            PlayerEntity player,
+            RecipeInputInventory craftingInventory,
+            CraftingResultInventory resultInventory,
+            @Nullable RecipeEntry<CraftingRecipe> recipe
     ) {
         if (!world.isClient) {
+            CraftingRecipeInput craftingRecipeInput = craftingInventory.createRecipeInput();
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
+            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingRecipeInput, world, recipe);
             if (optional.isPresent()) {
                 RecipeEntry<CraftingRecipe> recipeEntry = (RecipeEntry<CraftingRecipe>)optional.get();
                 CraftingRecipe craftingRecipe = recipeEntry.value();
                 if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry)) {
-                    ItemStack itemStack2 = craftingRecipe.craft(craftingInventory, world.getRegistryManager());
+                    ItemStack itemStack2 = craftingRecipe.craft(craftingRecipeInput, world.getRegistryManager());
                     if (itemStack2.isItemEnabled(world.getEnabledFeatures())) {
                         itemStack = itemStack2;
                     }
@@ -88,7 +97,20 @@ public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
 
     @Override
     public void onContentChanged(Inventory inventory) {
-        this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result));
+        if (!this.filling) {
+            this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, null));
+        }
+    }
+
+    @Override
+    public void onInputSlotFillStart() {
+        this.filling = true;
+    }
+
+    @Override
+    public void onInputSlotFillFinish(RecipeEntry<CraftingRecipe> recipe) {
+        this.filling = false;
+        this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, recipe));
     }
 
     @Override
@@ -103,11 +125,9 @@ public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     }
 
     @Override
-    public boolean matches(RecipeEntry<? extends Recipe<CraftingInventory>> recipe) {
-        return recipe.value().matches((CraftingInventory) this.input, this.player.getWorld());
+    public boolean matches(RecipeEntry<CraftingRecipe> recipe) {
+        return recipe.value().matches(this.input.createRecipeInput(), this.player.getWorld());
     }
-
-
 
     @Override
     public void onClosed(PlayerEntity player) {
@@ -128,7 +148,7 @@ public class SpruceCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
             ItemStack itemStack2 = slot2.getStack();
             itemStack = itemStack2.copy();
             if (slot == 0) {
-                this.context.run((world, pos) -> itemStack2.getItem().onCraft(itemStack2, world));
+                this.context.run((world, pos) -> itemStack2.getItem().onCraftByPlayer(itemStack2, world, player));
                 if (!this.insertItem(itemStack2, 10, 46, true)) {
                     return ItemStack.EMPTY;
                 }

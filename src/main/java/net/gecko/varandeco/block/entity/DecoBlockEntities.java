@@ -25,32 +25,32 @@ public class DecoBlockEntities {
     public static void registerBlockEntities(){
 
         DEEPSLATE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(VaranDeco.MOD_ID, "deepslate_furnace_be"),
+                Identifier.of(VaranDeco.MOD_ID, "deepslate_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(DeepslateFurnaceBlockEntity::new,
                         DecoBlocks.DEEPSLATE_FURNACE).build(null));
 
         BLACKSTONE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(VaranDeco.MOD_ID, "blackstone_furnace_be"),
+                Identifier.of(VaranDeco.MOD_ID, "blackstone_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(BlackstoneFurnaceBlockEntity::new,
                         DecoBlocks.BLACKSTONE_FURNACE).build(null));
 
         DEEPSLATE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(VaranDeco.MOD_ID, "deepslate_blast_furnace_be"),
+                Identifier.of(VaranDeco.MOD_ID, "deepslate_blast_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(DeepslateBlastFurnaceBlockEntity::new,
                         DecoBlocks.DEEPSLATE_BLAST_FURNACE).build(null));
 
         BLACKSTONE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(VaranDeco.MOD_ID, "blackstone_blast_furnace_be"),
+                Identifier.of(VaranDeco.MOD_ID, "blackstone_blast_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(BlackstoneBlastFurnaceBlockEntity::new,
                         DecoBlocks.BLACKSTONE_BLAST_FURNACE).build(null));
 
         DEEPSLATE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(VaranDeco.MOD_ID, "deepslate_smoker_be"),
+                Identifier.of(VaranDeco.MOD_ID, "deepslate_smoker_be"),
                 FabricBlockEntityTypeBuilder.create(DeepslateSmokerBlockEntity::new,
                         DecoBlocks.DEEPSLATE_SMOKER).build(null));
 
         BLACKSTONE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(VaranDeco.MOD_ID, "blackstone_smoker_be"),
+                Identifier.of(VaranDeco.MOD_ID, "blackstone_smoker_be"),
                 FabricBlockEntityTypeBuilder.create(BlackstoneSmokerBlockEntity::new,
                         DecoBlocks.BLACKSTONE_SMOKER).build(null));
     }

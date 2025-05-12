@@ -83,7 +83,7 @@ public class DecoTags {
                 createTag("mosaic_slab");
 
         private static TagKey<Block> createTag(String name){
-            return TagKey.of(Registries.BLOCK.getKey(), new Identifier(VaranDeco.MOD_ID, name));
+            return TagKey.of(Registries.BLOCK.getKey(), Identifier.of(VaranDeco.MOD_ID, name));
         }
     }
     public static class Items {
@@ -127,7 +127,7 @@ public class DecoTags {
                 createTag("mosaic_slab");
 
         private static TagKey<Item> createTag(String name){
-            return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));
+            return TagKey.of(Registries.ITEM.getKey(), Identifier.of(VaranDeco.MOD_ID, name));
         }
     }
 }

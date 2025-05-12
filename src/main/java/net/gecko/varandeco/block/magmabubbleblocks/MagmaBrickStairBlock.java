@@ -16,7 +16,7 @@ public class MagmaBrickStairBlock extends StairsBlock {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
+        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity) {
             entity.damage(world.getDamageSources().hotFloor(), 0.5F);
         }
 
