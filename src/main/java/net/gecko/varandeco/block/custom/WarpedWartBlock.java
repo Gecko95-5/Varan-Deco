@@ -60,7 +60,7 @@ public class WarpedWartBlock extends PlantBlock {
 	}
 
 	@Override
-	public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
+	protected ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state, boolean includeData) {
 		return new ItemStack(DecoItems.WARPED_WART);
 	}
 

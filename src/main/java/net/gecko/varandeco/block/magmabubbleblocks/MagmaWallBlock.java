@@ -13,10 +13,11 @@ public class MagmaWallBlock extends WallBlock {
     public MagmaWallBlock(Settings settings) {
         super(settings);
     }
+
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity) {
-            entity.damage(world.getDamageSources().hotFloor(), 1.0F);
+            entity.serverDamage(world.getDamageSources().hotFloor(), 1.0F);
         }
 
         super.onSteppedOn(world, pos, state, entity);

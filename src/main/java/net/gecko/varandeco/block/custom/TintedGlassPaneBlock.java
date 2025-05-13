@@ -9,13 +9,14 @@ public class TintedGlassPaneBlock extends PaneBlock {
     public TintedGlassPaneBlock(Settings settings) {
         super(settings);
     }
+
     @Override
-    public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {
+    protected boolean isTransparent(BlockState state) {
         return false;
     }
 
     @Override
-    public int getOpacity(BlockState state, BlockView world, BlockPos pos) {
-        return world.getMaxLightLevel();
+    protected int getOpacity(BlockState state) {
+        return 15;
     }
 }

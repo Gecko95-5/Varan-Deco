@@ -32,47 +32,47 @@ public class DecoBlockEntities {
 
         DEEPSLATE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_furnace_be"),
-                BlockEntityType.Builder.create(DeepslateFurnaceBlockEntity::new,
-                        DecoBlocks.DEEPSLATE_FURNACE).build(null));
+                FabricBlockEntityTypeBuilder.create(DeepslateFurnaceBlockEntity::new,
+                        DecoBlocks.DEEPSLATE_FURNACE).build());
 
         BLACKSTONE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "blackstone_furnace_be"),
-                BlockEntityType.Builder.create(BlackstoneFurnaceBlockEntity::new,
-                        DecoBlocks.BLACKSTONE_FURNACE).build(null));
+                FabricBlockEntityTypeBuilder.create(BlackstoneFurnaceBlockEntity::new,
+                        DecoBlocks.BLACKSTONE_FURNACE).build());
 
         TUFF_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "tuff_furnace_be"),
-                BlockEntityType.Builder.create(TuffFurnaceBlockEntity::new,
-                        DecoBlocks.TUFF_FURNACE).build(null));
+                FabricBlockEntityTypeBuilder.create(TuffFurnaceBlockEntity::new,
+                        DecoBlocks.TUFF_FURNACE).build());
 
         DEEPSLATE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_blast_furnace_be"),
-                BlockEntityType.Builder.create(DeepslateBlastFurnaceBlockEntity::new,
-                        DecoBlocks.DEEPSLATE_BLAST_FURNACE).build(null));
+                FabricBlockEntityTypeBuilder.create(DeepslateBlastFurnaceBlockEntity::new,
+                        DecoBlocks.DEEPSLATE_BLAST_FURNACE).build());
 
         BLACKSTONE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "blackstone_blast_furnace_be"),
-                BlockEntityType.Builder.create(BlackstoneBlastFurnaceBlockEntity::new,
-                        DecoBlocks.BLACKSTONE_BLAST_FURNACE).build(null));
+                FabricBlockEntityTypeBuilder.create(BlackstoneBlastFurnaceBlockEntity::new,
+                        DecoBlocks.BLACKSTONE_BLAST_FURNACE).build());
 
         TUFF_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "tuff_blast_furnace_be"),
-                BlockEntityType.Builder.create(TuffBlastFurnaceBlockEntity::new,
-                        DecoBlocks.TUFF_BLAST_FURNACE).build(null));
+                FabricBlockEntityTypeBuilder.create(TuffBlastFurnaceBlockEntity::new,
+                        DecoBlocks.TUFF_BLAST_FURNACE).build());
 
         DEEPSLATE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_smoker_be"),
-                BlockEntityType.Builder.create(DeepslateSmokerBlockEntity::new,
-                        DecoBlocks.DEEPSLATE_SMOKER).build(null));
+                FabricBlockEntityTypeBuilder.create(DeepslateSmokerBlockEntity::new,
+                        DecoBlocks.DEEPSLATE_SMOKER).build());
 
         BLACKSTONE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "blackstone_smoker_be"),
-                BlockEntityType.Builder.create(BlackstoneSmokerBlockEntity::new,
-                        DecoBlocks.BLACKSTONE_SMOKER).build(null));
+                FabricBlockEntityTypeBuilder.create(BlackstoneSmokerBlockEntity::new,
+                        DecoBlocks.BLACKSTONE_SMOKER).build());
 
         TUFF_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "tuff_smoker_be"),
-                BlockEntityType.Builder.create(TuffSmokerBlockEntity::new,
-                        DecoBlocks.TUFF_SMOKER).build(null));
+                FabricBlockEntityTypeBuilder.create(TuffSmokerBlockEntity::new,
+                        DecoBlocks.TUFF_SMOKER).build());
     }
 }

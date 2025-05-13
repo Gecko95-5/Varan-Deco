@@ -21,10 +21,6 @@ public class BlackstoneSmokerBlockEntity extends AbstractFurnaceBlockEntity {
 		return Text.translatable("container.smoker");
 	}
 
-	@Override
-	protected int getFuelTime(ItemStack fuel) {
-		return super.getFuelTime(fuel) / 2;
-	}
 
 	@Override
 	protected ScreenHandler createScreenHandler(int syncId, PlayerInventory playerInventory) {

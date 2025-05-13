@@ -20,10 +20,6 @@ public class BlackstoneBlastFurnaceBlockEntity extends AbstractFurnaceBlockEntit
 		return Text.translatable("container.blast_furnace");
 	}
 
-	@Override
-	protected int getFuelTime(ItemStack fuel) {
-		return super.getFuelTime(fuel) / 2;
-	}
 
 	@Override
 	protected ScreenHandler createScreenHandler(int syncId, PlayerInventory playerInventory) {

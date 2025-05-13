@@ -2491,8 +2491,8 @@ public class DecoBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(VaranDeco.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, Identifier.of(VaranDeco.MOD_ID, name),
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(VaranDeco.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
     

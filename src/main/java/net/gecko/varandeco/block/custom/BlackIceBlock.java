@@ -10,6 +10,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.EnchantmentTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -26,7 +27,7 @@ public class BlackIceBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.bypassesSteppingEffects()) {
-            entity.damage(world.getDamageSources().freeze(), 1.0F);
+            entity.serverDamage(world.getDamageSources().freeze(), 1.0F);
         }
         if (!entity.bypassesSteppingEffects()) {
             entity.extinguish();
@@ -38,7 +39,7 @@ public class BlackIceBlock extends Block {
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         if (!player.bypassesSteppingEffects()) {
-            player.damage(world.getDamageSources().freeze(), 0.1F);
+            player.serverDamage(world.getDamageSources().freeze(), 0.1F);
         }
         return super.onUse(state, world, pos, player, hit);
     }

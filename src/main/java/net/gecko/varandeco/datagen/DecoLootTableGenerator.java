@@ -34,7 +34,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
         addDrop(DecoBlocks.POLISHED_STONE);
         addDrop(DecoBlocks.POLISHED_STONE_STAIRS);
         slabDrops(DecoBlocks.POLISHED_STONE_SLAB);

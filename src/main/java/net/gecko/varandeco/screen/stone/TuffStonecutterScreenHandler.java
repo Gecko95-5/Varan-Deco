@@ -13,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.StonecuttingRecipe;
+import net.minecraft.recipe.display.CuttingRecipeDisplay;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.screen.Property;
 import net.minecraft.screen.ScreenHandler;
@@ -24,8 +25,9 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Optional;
 
-public class TuffStonecutterScreenHandler extends ScreenHandler {
+public class TuffStonecutterScreenHandler  extends ScreenHandler {
 	public static final int INPUT_ID = 0;
 	public static final int OUTPUT_ID = 1;
 	private static final int INVENTORY_START = 2;
@@ -33,9 +35,9 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 	private static final int OUTPUT_START = 29;
 	private static final int OUTPUT_END = 38;
 	private final ScreenHandlerContext context;
-	private final Property selectedRecipe = Property.create();
+	final Property selectedRecipe = Property.create();
 	private final World world;
-	private List<RecipeEntry<StonecuttingRecipe>> availableRecipes = Lists.<RecipeEntry<StonecuttingRecipe>>newArrayList();
+	private CuttingRecipeDisplay.Grouping<StonecuttingRecipe> availableRecipes = CuttingRecipeDisplay.Grouping.empty();
 	private ItemStack inputStack = ItemStack.EMPTY;
 	long lastTakeTime;
 	final Slot inputSlot;
@@ -72,7 +74,7 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 				TuffStonecutterScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
 				ItemStack itemStack = TuffStonecutterScreenHandler.this.inputSlot.takeStack(1);
 				if (!itemStack.isEmpty()) {
-					TuffStonecutterScreenHandler.this.populateResult();
+					TuffStonecutterScreenHandler.this.populateResult(TuffStonecutterScreenHandler.this.selectedRecipe.get());
 				}
 
 				context.run((world, pos) -> {
@@ -89,17 +91,7 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 				return List.of(TuffStonecutterScreenHandler.this.inputSlot.getStack());
 			}
 		});
-
-		for (int i = 0; i < 3; i++) {
-			for (int j = 0; j < 9; j++) {
-				this.addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
-			}
-		}
-
-		for (int i = 0; i < 9; i++) {
-			this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
-		}
-
+		this.addPlayerSlots(playerInventory, 8, 84);
 		this.addProperty(this.selectedRecipe);
 	}
 
@@ -107,7 +99,7 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 		return this.selectedRecipe.get();
 	}
 
-	public List<RecipeEntry<StonecuttingRecipe>> getAvailableRecipes() {
+	public CuttingRecipeDisplay.Grouping<StonecuttingRecipe> getAvailableRecipes() {
 		return this.availableRecipes;
 	}
 
@@ -126,12 +118,16 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 
 	@Override
 	public boolean onButtonClick(PlayerEntity player, int id) {
-		if (this.isInBounds(id)) {
-			this.selectedRecipe.set(id);
-			this.populateResult();
-		}
+		if (this.selectedRecipe.get() == id) {
+			return false;
+		} else {
+			if (this.isInBounds(id)) {
+				this.selectedRecipe.set(id);
+				this.populateResult(id);
+			}
 
-		return true;
+			return true;
+		}
 	}
 
 	private boolean isInBounds(int id) {
@@ -143,38 +139,43 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 		ItemStack itemStack = this.inputSlot.getStack();
 		if (!itemStack.isOf(this.inputStack.getItem())) {
 			this.inputStack = itemStack.copy();
-			this.updateInput(inventory, itemStack);
+			this.updateInput(itemStack);
 		}
 	}
 
-	private void updateInput(Inventory input, ItemStack stack) {
-		this.availableRecipes.clear();
+	private void updateInput(ItemStack stack) {
 		this.selectedRecipe.set(-1);
 		this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
 		if (!stack.isEmpty()) {
-			this.availableRecipes = this.world.getRecipeManager().getAllMatches(RecipeType.STONECUTTING, createRecipeInput(input), this.world);
-		}
-	}
-
-	void populateResult() {
-		if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
-			RecipeEntry<StonecuttingRecipe> recipeEntry = this.availableRecipes.get(this.selectedRecipe.get());
-			ItemStack itemStack = recipeEntry.value().craft(createRecipeInput(this.input), this.world.getRegistryManager());
-			if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
-				this.output.setLastRecipe(recipeEntry);
-				this.outputSlot.setStackNoCallbacks(itemStack);
-			} else {
-				this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
-			}
+			this.availableRecipes = this.world.getRecipeManager().getStonecutterRecipes().filter(stack);
 		} else {
-			this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
+			this.availableRecipes = CuttingRecipeDisplay.Grouping.empty();
 		}
-
-		this.sendContentUpdates();
 	}
 
-	private static SingleStackRecipeInput createRecipeInput(Inventory inventory) {
-		return new SingleStackRecipeInput(inventory.getStack(0));
+	void populateResult(int selectedId) {
+		Optional<RecipeEntry<StonecuttingRecipe>> optional;
+		if (!this.availableRecipes.isEmpty() && this.isInBounds(selectedId)) {
+			CuttingRecipeDisplay.GroupEntry<StonecuttingRecipe> groupEntry = (CuttingRecipeDisplay.GroupEntry<StonecuttingRecipe>)this.availableRecipes
+					.entries()
+					.get(selectedId);
+			optional = groupEntry.recipe().recipe();
+		} else {
+			optional = Optional.empty();
+		}
+
+		optional.ifPresentOrElse(
+				recipe -> {
+					this.output.setLastRecipe(recipe);
+					this.outputSlot
+							.setStackNoCallbacks(((StonecuttingRecipe)recipe.value()).craft(new SingleStackRecipeInput(this.input.getStack(0)), this.world.getRegistryManager()));
+				},
+				() -> {
+					this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
+					this.output.setLastRecipe(null);
+				}
+		);
+		this.sendContentUpdates();
 	}
 
 	@Override
@@ -210,7 +211,7 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 				if (!this.insertItem(itemStack2, 2, 38, false)) {
 					return ItemStack.EMPTY;
 				}
-			} else if (this.world.getRecipeManager().getFirstMatch(RecipeType.STONECUTTING, new SingleStackRecipeInput(itemStack2), this.world).isPresent()) {
+			} else if (this.world.getRecipeManager().getStonecutterRecipes().contains(itemStack2)) {
 				if (!this.insertItem(itemStack2, 0, 1, false)) {
 					return ItemStack.EMPTY;
 				}
@@ -232,6 +233,10 @@ public class TuffStonecutterScreenHandler extends ScreenHandler {
 			}
 
 			slot2.onTakeItem(player, itemStack2);
+			if (slot == 1) {
+				player.dropItem(itemStack2, false);
+			}
+
 			this.sendContentUpdates();
 		}
 

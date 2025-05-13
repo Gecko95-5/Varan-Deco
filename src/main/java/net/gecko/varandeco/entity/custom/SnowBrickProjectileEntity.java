@@ -60,7 +60,7 @@ public class SnowBrickProjectileEntity extends ThrownItemEntity {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
         int i = entity instanceof BlazeEntity ? 5 : 2;
-        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), i);
+        entity.serverDamage(this.getDamageSources().thrown(this, this.getOwner()), i);
     }
 
     @Override

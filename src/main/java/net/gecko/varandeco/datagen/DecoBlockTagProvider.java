@@ -1277,7 +1277,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_WOODEN_SAPLING)
                 .add(DecoBlocks.POTTED_ANCIENT_ROSE);
 
-        getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
+        getOrCreateTagBuilder(BlockTags.FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)
                 .add(DecoBlocks.ENDER_ROSE_BUSH)
                 .add(DecoBlocks.RED_SUNFLOWER)
