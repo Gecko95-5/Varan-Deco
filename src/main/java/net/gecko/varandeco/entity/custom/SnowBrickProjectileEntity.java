@@ -15,14 +15,21 @@ import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 
 public class SnowBrickProjectileEntity extends ThrownItemEntity {
+
     public SnowBrickProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
-    public SnowBrickProjectileEntity(LivingEntity livingEntity, World world) {
-        super(DecoEntities.SNOW_BRICK_PROJECTILE, livingEntity, world);
+    public SnowBrickProjectileEntity(World world, LivingEntity owner, ItemStack stack) {
+        super(DecoEntities.SNOW_BRICK_PROJECTILE, owner, world, stack);
+    }
+
+    public SnowBrickProjectileEntity(World world, double x, double y, double z, ItemStack stack) {
+        super(DecoEntities.SNOW_BRICK_PROJECTILE, x, y, z, world, stack);
     }
 
     @Override

@@ -1,15 +1,15 @@
 package net.gecko.varandeco.datagen;
 
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TexturedModel;
 
 public class DecoModelProvider extends FabricModelProvider {
     public DecoModelProvider(FabricDataOutput output) {
@@ -158,67 +158,67 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_TUFF);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PURPLE_TULIP, DecoBlocks.POTTED_PURPLE_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.MAGENTA_TULIP, DecoBlocks.POTTED_MAGENTA_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.BLACK_TULIP, DecoBlocks.POTTED_BLACK_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.GREEN_TULIP, DecoBlocks.POTTED_GREEN_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.BLUE_TULIP, DecoBlocks.POTTED_BLUE_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.CYAN_TULIP, DecoBlocks.POTTED_CYAN_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.BARBERTON_DAISY, DecoBlocks.POTTED_BARBERTON_DAISY,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.BLUE_EYED_DAISY, DecoBlocks.POTTED_BLUE_EYED_DAISY,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.GERBERA_DAISY, DecoBlocks.POTTED_GERBERA_DAISY,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.MICHAELMAS_DAISY, DecoBlocks.POTTED_MICHAELMAS_DAISY,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PUFFY_DANDELION, DecoBlocks.POTTED_PUFFY_DANDELION,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.CALIFORNIA_POPPY, DecoBlocks.POTTED_CALIFORNIA_POPPY,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.SALMON_POPPY, DecoBlocks.POTTED_SALMON_POPPY,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_ORCHID, DecoBlocks.POTTED_YELLOW_ORCHID,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.WHITE_ORCHID, DecoBlocks.POTTED_WHITE_ORCHID,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PINK_ORCHID, DecoBlocks.POTTED_PINK_ORCHID,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ROSE, DecoBlocks.POTTED_ROSE,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ENDER_ROSE, DecoBlocks.POTTED_ENDER_ROSE,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerDoubleBlock(DecoBlocks.WITHER_ROSE_BUSH,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerDoubleBlock(DecoBlocks.ENDER_ROSE_BUSH,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerDoubleBlock(DecoBlocks.MIGHTY_LAVENDER,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PAEONIA, DecoBlocks.POTTED_PAEONIA,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.LAVENDER, DecoBlocks.POTTED_LAVENDER,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.WOODEN_SAPLING, DecoBlocks.POTTED_WOODEN_SAPLING,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ANCIENT_ROSE, DecoBlocks.POTTED_ANCIENT_ROSE,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
@@ -861,41 +861,41 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.MAGENTA_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.PINK_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
 
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GLASS, DecoBlocks.HARDENED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_TINTED_GLASS, DecoBlocks.HARDENED_TINTED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_WHITE_STAINED_GLASS, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS, DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_BLUE_STAINED_GLASS, DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS, DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_LIME_STAINED_GLASS, DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_PINK_STAINED_GLASS, DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GRAY_STAINED_GLASS, DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS, DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_CYAN_STAINED_GLASS, DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS, DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_BROWN_STAINED_GLASS, DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GREEN_STAINED_GLASS, DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_RED_STAINED_GLASS, DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_BLACK_STAINED_GLASS, DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_GLASS, DecoBlocks.HARDENED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_TINTED_GLASS, DecoBlocks.HARDENED_TINTED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_WHITE_STAINED_GLASS, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS, DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_BLUE_STAINED_GLASS, DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS, DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_LIME_STAINED_GLASS, DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_PINK_STAINED_GLASS, DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_GRAY_STAINED_GLASS, DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS, DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_CYAN_STAINED_GLASS, DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS, DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_BROWN_STAINED_GLASS, DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_GREEN_STAINED_GLASS, DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_RED_STAINED_GLASS, DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.HARDENED_BLACK_STAINED_GLASS, DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE);
 
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_LIME_STAINED_GLASS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_PINK_STAINED_GLASS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_RED_STAINED_GLASS, DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_LIME_STAINED_GLASS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_PINK_STAINED_GLASS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_RED_STAINED_GLASS, DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE);
 
         terracottapool.stairs(DecoBlocks.TERRACOTTA_STAIRS);
         terracottapool.slab(DecoBlocks.TERRACOTTA_SLAB);
@@ -1118,4 +1118,5 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.WARPED_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WARPED_CHEST_BOAT, Models.GENERATED);
     }
+    
 }

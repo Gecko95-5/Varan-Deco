@@ -11,7 +11,7 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
@@ -26,7 +26,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class TuffStonecutterBlock extends Block {
 	private static final Text TITLE = Text.translatable("container.stonecutter");
-	public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
 	protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 9.0, 16.0);
 
 	public TuffStonecutterBlock(Settings settings) {

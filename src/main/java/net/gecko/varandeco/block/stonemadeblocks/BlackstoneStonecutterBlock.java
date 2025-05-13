@@ -11,12 +11,11 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -27,7 +26,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class BlackstoneStonecutterBlock extends Block {
 	private static final Text TITLE = Text.translatable("container.stonecutter");
-	public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
 	protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 9.0, 16.0);
 
 	public BlackstoneStonecutterBlock(Settings settings) {
