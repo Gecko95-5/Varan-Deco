@@ -32,6 +32,7 @@
     "#varan-deco:concrete_slabs",
     "varan-deco:smooth_deepslate_slab",
     "varan-deco:smooth_blackstone_slab",
+    "varan-deco:smooth_tuff_slab",
     "varan-deco:deepslate_slab",
     "varan-deco:end_stone_slab",
     "varan-deco:smooth_purpur_slab",
@@ -55,6 +56,7 @@
     "varan-deco:wooden_mosaic_slab",
     "#varan-deco:mosaic_slab",
     "varan-deco:crimson_mosaic_slab",
-    "varan-deco:warped_mosaic_slab"
+    "varan-deco:warped_mosaic_slab",
+    "varan-deco:tuff_tile_slab"
   ]
 }

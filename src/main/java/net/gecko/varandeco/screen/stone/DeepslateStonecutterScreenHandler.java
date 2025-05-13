@@ -118,7 +118,7 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 
 	@Override
 	public boolean canUse(PlayerEntity player) {
-		return canUse(this.context, player, Blocks.STONECUTTER);
+		return canUse(this.context, player, DecoBlocks.DEEPSLATE_STONECUTTER);
 	}
 
 	@Override

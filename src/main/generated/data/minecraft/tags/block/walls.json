@@ -45,6 +45,7 @@
     "#varan-deco:concrete_walls",
     "varan-deco:smooth_deepslate_wall",
     "varan-deco:smooth_blackstone_wall",
+    "varan-deco:smooth_tuff_wall",
     "varan-deco:deepslate_wall",
     "varan-deco:end_stone_wall",
     "varan-deco:smooth_purpur_wall",
@@ -52,6 +53,7 @@
     "varan-deco:void_stone_wall",
     "varan-deco:void_stone_brick_wall",
     "varan-deco:obsidian_wall",
-    "varan-deco:obsidian_brick_wall"
+    "varan-deco:obsidian_brick_wall",
+    "varan-deco:tuff_tile_wall"
   ]
 }

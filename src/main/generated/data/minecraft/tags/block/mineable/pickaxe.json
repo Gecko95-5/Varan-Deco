@@ -193,9 +193,14 @@
     "varan-deco:smooth_blackstone_stairs",
     "varan-deco:smooth_blackstone_slab",
     "varan-deco:smooth_blackstone_wall",
+    "varan-deco:smooth_tuff",
+    "varan-deco:smooth_tuff_stairs",
+    "varan-deco:smooth_tuff_slab",
+    "varan-deco:smooth_tuff_wall",
     "#varan-deco:deco_furnaces",
     "varan-deco:deepslate_stonecutter",
     "varan-deco:blackstone_stonecutter",
+    "varan-deco:tuff_stonecutter",
     "varan-deco:deepslate_stairs",
     "varan-deco:deepslate_slab",
     "varan-deco:deepslate_wall",
@@ -237,6 +242,7 @@
     "varan-deco:cut_iron",
     "varan-deco:cut_iron_stairs",
     "varan-deco:cut_iron_slab",
+    "varan-deco:chiseled_iron",
     "varan-deco:light_iron_bars",
     "varan-deco:heavy_iron_bars",
     "varan-deco:gold_door",
@@ -265,6 +271,14 @@
     "varan-deco:waxed_exposed_copper_weight_pressure_plate",
     "varan-deco:oxidized_copper_weight_pressure_plate",
     "varan-deco:waxed_oxidized_copper_weight_pressure_plate",
-    "#varan-deco:metal_buttons"
+    "#varan-deco:metal_buttons",
+    "varan-deco:tuff_tiles",
+    "varan-deco:tuff_tile_stairs",
+    "varan-deco:tuff_tile_slab",
+    "varan-deco:tuff_tile_wall",
+    "varan-deco:chiseled_stone",
+    "varan-deco:chiseled_deepslate_bricks",
+    "varan-deco:chiseled_polished_blackstone_bricks",
+    "varan-deco:iron_grate"
   ]
 }

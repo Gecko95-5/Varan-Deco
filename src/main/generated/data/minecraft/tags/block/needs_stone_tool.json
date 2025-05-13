@@ -4,9 +4,11 @@
     "minecraft:blast_furnace",
     "varan-deco:deepslate_blast_furnace",
     "varan-deco:blackstone_blast_furnace",
+    "varan-deco:tuff_blast_furnace",
     "varan-deco:cut_iron",
     "varan-deco:cut_iron_stairs",
     "varan-deco:cut_iron_slab",
+    "varan-deco:chiseled_iron",
     "varan-deco:light_iron_bars",
     "minecraft:iron_bars",
     "varan-deco:heavy_iron_bars",
@@ -18,6 +20,7 @@
     "varan-deco:weathered_copper_chain",
     "varan-deco:waxed_exposed_copper_chain",
     "varan-deco:oxidized_copper_chain",
-    "varan-deco:waxed_oxidized_copper_chain"
+    "varan-deco:waxed_oxidized_copper_chain",
+    "varan-deco:iron_grate"
   ]
 }

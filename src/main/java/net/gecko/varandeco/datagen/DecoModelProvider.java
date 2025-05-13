@@ -131,6 +131,11 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHARCOAL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.FLINT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ECHO_BLOCK);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_STONE, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_DEEPSLATE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.IRON_GRATE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_IRON);
         BlockStateModelGenerator.BlockTexturePool cutironpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_IRON);
         BlockStateModelGenerator.BlockTexturePool polishedeepslatepool =
@@ -143,6 +148,15 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COBBLESTONE_TEMP);
         BlockStateModelGenerator.BlockTexturePool blackstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACKSTONE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool tuffpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TUFF_TEMP);
+        BlockStateModelGenerator.BlockTexturePool polishedtuffpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_TUFF_TEMP);
+        BlockStateModelGenerator.BlockTexturePool tufftilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TUFF_TILES);
+        BlockStateModelGenerator.BlockTexturePool smoothtuffpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_TUFF);
+
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.PURPLE_TULIP, DecoBlocks.POTTED_PURPLE_TULIP,
@@ -679,6 +693,18 @@ public class DecoModelProvider extends FabricModelProvider {
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
 
+        smoothtuffpool.stairs(DecoBlocks.SMOOTH_TUFF_STAIRS);
+        smoothtuffpool.wall(DecoBlocks.SMOOTH_TUFF_WALL);
+
+        tufftilepool.stairs(DecoBlocks.TUFF_TILE_STAIRS);
+        tufftilepool.slab(DecoBlocks.TUFF_TILE_SLAB);
+        tufftilepool.wall(DecoBlocks.TUFF_TILE_WALL);
+
+        tuffpool.button(DecoBlocks.TUFF_BUTTON);
+        tuffpool.pressurePlate(DecoBlocks.TUFF_PRESSURE_PLATE);
+
+        polishedtuffpool.button(DecoBlocks.POLISHED_TUFF_BUTTON);
+        polishedtuffpool.pressurePlate(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE);
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 

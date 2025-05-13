@@ -21,7 +21,6 @@ public class SnowBrickProjectileEntity extends ThrownItemEntity {
     public SnowBrickProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
-
     public SnowBrickProjectileEntity(LivingEntity livingEntity, World world) {
         super(DecoEntities.SNOW_BRICK_PROJECTILE, livingEntity, world);
     }

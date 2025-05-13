@@ -211,9 +211,14 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_TUFF)
+                .add(DecoBlocks.SMOOTH_TUFF_STAIRS)
+                .add(DecoBlocks.SMOOTH_TUFF_SLAB)
+                .add(DecoBlocks.SMOOTH_TUFF_WALL)
                 .addTag(DecoTags.Blocks.DECO_FURNACES)
                 .add(DecoBlocks.DEEPSLATE_STONECUTTER)
                 .add(DecoBlocks.BLACKSTONE_STONECUTTER)
+                .add(DecoBlocks.TUFF_STONECUTTER)
                 .add(DecoBlocks.DEEPSLATE_STAIRS)
                 .add(DecoBlocks.DEEPSLATE_SLAB)
                 .add(DecoBlocks.DEEPSLATE_WALL)
@@ -255,6 +260,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_IRON)
                 .add(DecoBlocks.CUT_IRON_STAIRS)
                 .add(DecoBlocks.CUT_IRON_SLAB)
+                .add(DecoBlocks.CHISELED_IRON)
                 .add(DecoBlocks.LIGHT_IRON_BARS)
                 .add(DecoBlocks.HEAVY_IRON_BARS)
                 .add(DecoBlocks.GOLD_DOOR)
@@ -283,7 +289,15 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
-                .addTag(DecoTags.Blocks.METAL_BUTTONS);
+                .addTag(DecoTags.Blocks.METAL_BUTTONS)
+                .add(DecoBlocks.TUFF_TILES)
+                .add(DecoBlocks.TUFF_TILE_STAIRS)
+                .add(DecoBlocks.TUFF_TILE_SLAB)
+                .add(DecoBlocks.TUFF_TILE_WALL)
+                .add(DecoBlocks.CHISELED_STONE)
+                .add(DecoBlocks.CHISELED_DEEPSLATE_BRICKS)
+                .add(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS)
+                .add(DecoBlocks.IRON_GRATE);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -336,9 +350,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.BLAST_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE)
+                .add(DecoBlocks.TUFF_BLAST_FURNACE)
                 .add(DecoBlocks.CUT_IRON)
                 .add(DecoBlocks.CUT_IRON_STAIRS)
                 .add(DecoBlocks.CUT_IRON_SLAB)
+                .add(DecoBlocks.CHISELED_IRON)
                 .add(DecoBlocks.LIGHT_IRON_BARS)
                 .add(Blocks.IRON_BARS)
                 .add(DecoBlocks.HEAVY_IRON_BARS)
@@ -350,7 +366,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
                 .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
+                .add(DecoBlocks.IRON_GRATE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
@@ -414,6 +431,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.CONCRETE_WALLS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_WALL)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_WALL)
+                .add(DecoBlocks.SMOOTH_TUFF_WALL)
                 .add(DecoBlocks.DEEPSLATE_WALL)
                 .add(DecoBlocks.END_STONE_WALL)
                 .add(DecoBlocks.SMOOTH_PURPUR_WALL)
@@ -421,7 +439,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.VOID_STONE_WALL)
                 .add(DecoBlocks.VOID_STONE_BRICK_WALL)
                 .add(DecoBlocks.OBSIDIAN_WALL)
-                .add(DecoBlocks.OBSIDIAN_BRICK_WALL);
+                .add(DecoBlocks.OBSIDIAN_BRICK_WALL)
+                .add(DecoBlocks.TUFF_TILE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -525,6 +544,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.CONCRETE_STAIRS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_TUFF_STAIRS)
                 .add(DecoBlocks.DEEPSLATE_STAIRS)
                 .add(DecoBlocks.END_STONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_PURPUR_STAIRS)
@@ -536,7 +556,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_IRON_STAIRS)
                 .addTag(DecoTags.Blocks.MOSAIC_STAIRS)
                 .add(DecoBlocks.CRIMSON_MOSAIC_STAIRS)
-                .add(DecoBlocks.WARPED_MOSAIC_STAIRS);
+                .add(DecoBlocks.WARPED_MOSAIC_STAIRS)
+                .add(DecoBlocks.TUFF_TILE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -571,6 +592,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.CONCRETE_SLABS)
                 .add(DecoBlocks.SMOOTH_DEEPSLATE_SLAB)
                 .add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB)
+                .add(DecoBlocks.SMOOTH_TUFF_SLAB)
                 .add(DecoBlocks.DEEPSLATE_SLAB)
                 .add(DecoBlocks.END_STONE_SLAB)
                 .add(DecoBlocks.SMOOTH_PURPUR_SLAB)
@@ -594,7 +616,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_MOSAIC_SLAB)
                 .addTag(DecoTags.Blocks.MOSAIC_SLABS)
                 .add(DecoBlocks.CRIMSON_MOSAIC_SLAB)
-                .add(DecoBlocks.WARPED_MOSAIC_SLAB);
+                .add(DecoBlocks.WARPED_MOSAIC_SLAB)
+                .add(DecoBlocks.TUFF_TILE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -618,7 +641,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
                 .add(DecoBlocks.COBBLESTONE_BUTTON)
                 .add(DecoBlocks.BLACKSTONE_BUTTON)
-                .add(DecoBlocks.POLISHED_STONE_BUTTON);
+                .add(DecoBlocks.POLISHED_STONE_BUTTON)
+                .add(DecoBlocks.TUFF_BUTTON)
+                .add(DecoBlocks.POLISHED_TUFF_BUTTON);
 
         getOrCreateTagBuilder(DecoTags.Blocks.METAL_BUTTONS)
                 .add(DecoBlocks.IRON_BUTTON)
@@ -1169,10 +1194,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
                 .add(DecoBlocks.DEEPSLATE_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_FURNACE)
+                .add(DecoBlocks.TUFF_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE)
+                .add(DecoBlocks.TUFF_BLAST_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_SMOKER)
-                .add(DecoBlocks.BLACKSTONE_SMOKER);
+                .add(DecoBlocks.BLACKSTONE_SMOKER)
+                .add(DecoBlocks.TUFF_SMOKER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.COPPER_BARS)
                 .add(DecoBlocks.HEAVY_COPPER_BARS)
@@ -1290,7 +1318,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE)
                 .add(DecoBlocks.COBBLESTONE_PRESSURE_PLATE)
                 .add(DecoBlocks.BLACKSTONE_PRESSURE_PLATE)
-                .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
+                .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE)
+                .add(DecoBlocks.TUFF_PRESSURE_PLATE)
+                .add(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES);

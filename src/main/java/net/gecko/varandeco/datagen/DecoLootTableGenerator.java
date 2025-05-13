@@ -60,6 +60,11 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         slabDrops(DecoBlocks.STONE_TILE_SLAB);
         addDrop(DecoBlocks.STONE_TILE_WALL);
 
+        addDrop(DecoBlocks.TUFF_TILES);
+        addDrop(DecoBlocks.TUFF_TILE_STAIRS);
+        slabDrops(DecoBlocks.TUFF_TILE_SLAB);
+        addDrop(DecoBlocks.TUFF_TILE_WALL);
+
         addDrop(DecoBlocks.PACKED_MUD_STAIRS);
         slabDrops(DecoBlocks.PACKED_MUD_SLAB);
         addDrop(DecoBlocks.PACKED_MUD_WALL);
@@ -789,14 +794,24 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.BLACKSTONE_FURNACE);
 
+        addDrop(DecoBlocks.SMOOTH_TUFF);
+        addDrop(DecoBlocks.SMOOTH_TUFF_STAIRS);
+        slabDrops(DecoBlocks.SMOOTH_TUFF_SLAB);
+        addDrop(DecoBlocks.SMOOTH_TUFF_WALL);
+
+        addDrop(DecoBlocks.TUFF_FURNACE);
+
         addDrop(DecoBlocks.DEEPSLATE_BLAST_FURNACE);
         addDrop(DecoBlocks.BLACKSTONE_BLAST_FURNACE);
+        addDrop(DecoBlocks.TUFF_BLAST_FURNACE);
 
         addDrop(DecoBlocks.DEEPSLATE_SMOKER);
         addDrop(DecoBlocks.BLACKSTONE_SMOKER);
+        addDrop(DecoBlocks.TUFF_SMOKER);
 
         addDrop(DecoBlocks.DEEPSLATE_STONECUTTER);
         addDrop(DecoBlocks.BLACKSTONE_STONECUTTER);
+        addDrop(DecoBlocks.TUFF_STONECUTTER);
 
         addDrop(DecoBlocks.DEEPSLATE_STAIRS);
         slabDrops(DecoBlocks.DEEPSLATE_SLAB);
@@ -904,6 +919,18 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
         addDrop(DecoBlocks.POLISHED_STONE_BUTTON);
+
+        addDrop(DecoBlocks.TUFF_PRESSURE_PLATE);
+        addDrop(DecoBlocks.TUFF_BUTTON);
+
+        addDrop(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE);
+        addDrop(DecoBlocks.POLISHED_TUFF_BUTTON);
+
+        addDrop(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS);
+        addDrop(DecoBlocks.CHISELED_STONE);
+        addDrop(DecoBlocks.CHISELED_DEEPSLATE_BRICKS);
+        addDrop(DecoBlocks.IRON_GRATE);
+        addDrop(DecoBlocks.CHISELED_IRON);
 
         addDrop(DecoBlocks.YELLOW_TULIP);
         pottedPlantDrops(DecoBlocks.POTTED_YELLOW_TULIP);

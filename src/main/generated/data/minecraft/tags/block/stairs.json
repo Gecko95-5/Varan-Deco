@@ -35,6 +35,7 @@
     "#varan-deco:concrete_stairs",
     "varan-deco:smooth_deepslate_stairs",
     "varan-deco:smooth_blackstone_stairs",
+    "varan-deco:smooth_tuff_stairs",
     "varan-deco:deepslate_stairs",
     "varan-deco:end_stone_stairs",
     "varan-deco:smooth_purpur_stairs",
@@ -46,6 +47,7 @@
     "varan-deco:cut_iron_stairs",
     "#varan-deco:mosaic_stairs",
     "varan-deco:crimson_mosaic_stairs",
-    "varan-deco:warped_mosaic_stairs"
+    "varan-deco:warped_mosaic_stairs",
+    "varan-deco:tuff_tile_stairs"
   ]
 }

@@ -151,6 +151,7 @@
   "block.varan-deco.dark_oak_mosaic_temp": "Non-Craftable Dark Oak Mosaic",
   "block.varan-deco.crimson_mosaic_temp": "Non-Craftable Crimson Mosaic",
   "block.varan-deco.cactus_mosaic_temp": "Non-Craftable Cactus Mosaic",
+  "block.varan-deco.polished_tuff_temp": "Non-Craftable Polished Tuff",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
@@ -168,10 +169,6 @@
   "block.varan-deco.calcite_stairs": "Calcite Stairs",
   "block.varan-deco.calcite_slab": "Calcite Slab",
   "block.varan-deco.calcite_wall": "Calcite Wall",
-
-  "block.varan-deco.tuff_stairs": "Tuff Stairs",
-  "block.varan-deco.tuff_slab": "Tuff Slab",
-  "block.varan-deco.tuff_wall": "Tuff Wall",
 
   "block.varan-deco.dripstone_stairs": "Dripstone Stairs",
   "block.varan-deco.dripstone_slab": "Dripstone Slab",
@@ -227,6 +224,12 @@
 
   "block.varan-deco.polished_gilded_blackstone": "Polished Gilded Blackstone",
   "block.varan-deco.chiseled_gilded_blackstone": "Chiseled Polished Glided Blackstone",
+
+  "block.varan-deco.chiseled_stone": "Chiseled Stone",
+  "block.varan-deco.chiseled_polished_blackstone_bricks": "Chiseled Polished Blackstone Bricks",
+  "block.varan-deco.chiseled_deepslate_bricks": "Chiseled Deepslate Bricks",
+  "block.varan-deco.iron_grate": "Iron Grate",
+  "block.varan-deco.chiseled_iron": "Chiseled Iron",
 
   "block.varan-deco.snow_stairs": "Snow Stairs",
   "block.varan-deco.snow_slab": "Snow Slab",
@@ -977,14 +980,23 @@
   "block.varan-deco.smooth_blackstone_wall": "Smooth Blackstone Wall",
   "block.varan-deco.blackstone_furnace": "Blackstone Furnace",
 
+  "block.varan-deco.smooth_tuff": "Smooth Tuff",
+  "block.varan-deco.smooth_tuff_stairs": "Smooth Tuff Stairs",
+  "block.varan-deco.smooth_tuff_slab": "Smooth Tuff Slab",
+  "block.varan-deco.smooth_tuff_wall": "Smooth Tuff Wall",
+  "block.varan-deco.tuff_furnace": "Tuff Furnace",
+
   "block.varan-deco.deepslate_blast_furnace": "Deepslate Blast Furnace",
   "block.varan-deco.blackstone_blast_furnace": "Blackstone Blast Furnace",
+  "block.varan-deco.tuff_blast_furnace": "Tuff Blast Furnace",
 
   "block.varan-deco.deepslate_smoker": "Deepslate Smoker",
   "block.varan-deco.blackstone_smoker": "Blackstone Smoker",
+  "block.varan-deco.tuff_smoker": "Tuff Smoker",
 
   "block.varan-deco.deepslate_stonecutter": "Deepslate Stonecutter",
   "block.varan-deco.blackstone_stonecutter": "Blackstone Stonecutter",
+  "block.varan-deco.tuff_stonecutter": "Tuff Stonecutter",
 
   "block.varan-deco.deepslate_stairs": "Deepslate Stairs",
   "block.varan-deco.deepslate_slab": "Deepslate Slab",
@@ -1050,6 +1062,11 @@
 
   "block.varan-deco.polished_deepslate_button": "Polished Deepslate Button",
   "block.varan-deco.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
+
+  "block.varan-deco.tuff_button": "Tuff Button",
+  "block.varan-deco.tuff_pressure_plate": "Tuff Pressure Plate",
+  "block.varan-deco.polished_tuff_button": "Polished Tuff Button",
+  "block.varan-deco.polished_tuff_pressure_plate": "Polished Tuff Pressure Plate",
 
   "block.varan-deco.heavy_copper_bars": "Heavy Copper Bars",
   "block.varan-deco.waxed_heavy_copper_bars": "Waxed Heavy Copper Bars",
@@ -1257,6 +1274,11 @@
   "block.varan-deco.waxed_weathered_copper_button": "Waxed Weathered Copper Button",
   "block.varan-deco.oxidized_copper_button": "Oxidized Copper Button",
   "block.varan-deco.waxed_oxidized_copper_button": "Waxed Oxidized Copper Button",
+
+  "block.varan-deco.tuff_tiles": "Tuff Tiles",
+  "block.varan-deco.tuff_tile_stairs": "Tuff Tile Stairs",
+  "block.varan-deco.tuff_tile_slab": "Tuff Tile Slab",
+  "block.varan-deco.tuff_tile_wall": "Tuff Tile Wall",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",

@@ -82,6 +82,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.POLISHED_STONE_WALL.asItem());
                         entries.add(DecoBlocks.POLISHED_STONE_BUTTON.asItem());
                         entries.add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.CHISELED_STONE.asItem());
                         entries.add(DecoBlocks.SMOOTH_STONE_STAIRS.asItem());
                         entries.add(DecoBlocks.SMOOTH_STONE_WALL.asItem());
                         entries.add(DecoBlocks.STONE_TILES.asItem());
@@ -104,6 +105,19 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS.asItem());
                         entries.add(DecoBlocks.SMOOTH_DEEPSLATE_SLAB.asItem());
                         entries.add(DecoBlocks.SMOOTH_DEEPSLATE_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_DEEPSLATE_BRICKS.asItem());
+                        entries.add(DecoBlocks.TUFF_BUTTON.asItem());
+                        entries.add(DecoBlocks.TUFF_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.POLISHED_TUFF_BUTTON.asItem());
+                        entries.add(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.SMOOTH_TUFF.asItem());
+                        entries.add(DecoBlocks.SMOOTH_TUFF_STAIRS.asItem());
+                        entries.add(DecoBlocks.SMOOTH_TUFF_SLAB.asItem());
+                        entries.add(DecoBlocks.SMOOTH_TUFF_WALL.asItem());
+                        entries.add(DecoBlocks.TUFF_TILES.asItem());
+                        entries.add(DecoBlocks.TUFF_TILE_STAIRS.asItem());
+                        entries.add(DecoBlocks.TUFF_TILE_SLAB.asItem());
+                        entries.add(DecoBlocks.TUFF_TILE_WALL.asItem());
                         entries.add(DecoBlocks.CHISELED_BRICKS.asItem());
                         entries.add(DecoBlocks.PACKED_MUD_STAIRS.asItem());
                         entries.add(DecoBlocks.PACKED_MUD_SLAB.asItem());
@@ -162,6 +176,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS.asItem());
                         entries.add(DecoBlocks.SMOOTH_BLACKSTONE_SLAB.asItem());
                         entries.add(DecoBlocks.SMOOTH_BLACKSTONE_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS.asItem());
                         entries.add(DecoBlocks.POLISHED_BLACKSTONE_TILES.asItem());
                         entries.add(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS.asItem());
                         entries.add(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB.asItem());
@@ -190,6 +205,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.SMOOTH_PURPUR_WALL.asItem());
                         entries.add(DecoBlocks.CHARCOAL_BLOCK.asItem());
                         entries.add(DecoBlocks.FLINT_BLOCK.asItem());
+                        entries.add(DecoBlocks.CHISELED_IRON.asItem());
+                        entries.add(DecoBlocks.IRON_GRATE.asItem());
                         entries.add(DecoBlocks.CUT_IRON.asItem());
                         entries.add(DecoBlocks.CUT_IRON_STAIRS.asItem());
                         entries.add(DecoBlocks.CUT_IRON_SLAB.asItem());
@@ -715,6 +732,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_STONECUTTER.asItem());
+                        entries.add(DecoBlocks.TUFF_STONECUTTER.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_STONECUTTER.asItem());
                         entries.add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE.asItem());
@@ -741,10 +759,13 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_FURNACE.asItem());
+                        entries.add(DecoBlocks.TUFF_FURNACE.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_FURNACE.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_SMOKER.asItem());
+                        entries.add(DecoBlocks.TUFF_SMOKER.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_SMOKER.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_BLAST_FURNACE.asItem());
+                        entries.add(DecoBlocks.TUFF_BLAST_FURNACE.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_BLAST_FURNACE.asItem());
                         entries.add(DecoItems.STRIPPED_OAK_SIGN);
                         entries.add(DecoItems.OAK_MOSAIC_SIGN);

@@ -14,44 +14,65 @@ public class DecoBlockEntities {
 
     public static BlockEntityType<BlackstoneFurnaceBlockEntity> BLACKSTONE_FURNACE_BE;
 
+    public static BlockEntityType<TuffFurnaceBlockEntity> TUFF_FURNACE_BE;
+
     public static BlockEntityType<DeepslateBlastFurnaceBlockEntity> DEEPSLATE_BLAST_FURNACE_BE;
 
     public static BlockEntityType<BlackstoneBlastFurnaceBlockEntity> BLACKSTONE_BLAST_FURNACE_BE;
+
+    public static BlockEntityType<TuffBlastFurnaceBlockEntity> TUFF_BLAST_FURNACE_BE;
 
     public static BlockEntityType<DeepslateSmokerBlockEntity> DEEPSLATE_SMOKER_BE;
 
     public static BlockEntityType<BlackstoneSmokerBlockEntity> BLACKSTONE_SMOKER_BE;
 
+    public static BlockEntityType<TuffSmokerBlockEntity> TUFF_SMOKER_BE;
+
     public static void registerBlockEntities(){
 
         DEEPSLATE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_furnace_be"),
-                FabricBlockEntityTypeBuilder.create(DeepslateFurnaceBlockEntity::new,
+                BlockEntityType.Builder.create(DeepslateFurnaceBlockEntity::new,
                         DecoBlocks.DEEPSLATE_FURNACE).build(null));
 
         BLACKSTONE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "blackstone_furnace_be"),
-                FabricBlockEntityTypeBuilder.create(BlackstoneFurnaceBlockEntity::new,
+                BlockEntityType.Builder.create(BlackstoneFurnaceBlockEntity::new,
                         DecoBlocks.BLACKSTONE_FURNACE).build(null));
+
+        TUFF_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "tuff_furnace_be"),
+                BlockEntityType.Builder.create(TuffFurnaceBlockEntity::new,
+                        DecoBlocks.TUFF_FURNACE).build(null));
 
         DEEPSLATE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_blast_furnace_be"),
-                FabricBlockEntityTypeBuilder.create(DeepslateBlastFurnaceBlockEntity::new,
+                BlockEntityType.Builder.create(DeepslateBlastFurnaceBlockEntity::new,
                         DecoBlocks.DEEPSLATE_BLAST_FURNACE).build(null));
 
         BLACKSTONE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "blackstone_blast_furnace_be"),
-                FabricBlockEntityTypeBuilder.create(BlackstoneBlastFurnaceBlockEntity::new,
+                BlockEntityType.Builder.create(BlackstoneBlastFurnaceBlockEntity::new,
                         DecoBlocks.BLACKSTONE_BLAST_FURNACE).build(null));
+
+        TUFF_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "tuff_blast_furnace_be"),
+                BlockEntityType.Builder.create(TuffBlastFurnaceBlockEntity::new,
+                        DecoBlocks.TUFF_BLAST_FURNACE).build(null));
 
         DEEPSLATE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_smoker_be"),
-                FabricBlockEntityTypeBuilder.create(DeepslateSmokerBlockEntity::new,
+                BlockEntityType.Builder.create(DeepslateSmokerBlockEntity::new,
                         DecoBlocks.DEEPSLATE_SMOKER).build(null));
 
         BLACKSTONE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "blackstone_smoker_be"),
-                FabricBlockEntityTypeBuilder.create(BlackstoneSmokerBlockEntity::new,
+                BlockEntityType.Builder.create(BlackstoneSmokerBlockEntity::new,
                         DecoBlocks.BLACKSTONE_SMOKER).build(null));
+
+        TUFF_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "tuff_smoker_be"),
+                BlockEntityType.Builder.create(TuffSmokerBlockEntity::new,
+                        DecoBlocks.TUFF_SMOKER).build(null));
     }
 }

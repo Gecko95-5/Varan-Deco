@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "varan-deco:block/tuff_smoker_front_on",
+    "side": "varan-deco:block/tuff_smoker_side",
+    "top": "varan-deco:block/tuff_smoker_top",
+    "bottom": "varan-deco:block/tuff_smoker_bottom"
+  }
+}

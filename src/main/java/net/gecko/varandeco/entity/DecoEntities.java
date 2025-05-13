@@ -14,6 +14,6 @@ public class DecoEntities {
 
     public static final EntityType<SnowBrickProjectileEntity> SNOW_BRICK_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(VaranDeco.MOD_ID,"snow_brick_projectile"),
-            FabricEntityTypeBuilder.<SnowBrickProjectileEntity>create(SpawnGroup.MISC, SnowBrickProjectileEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+            EntityType.Builder.<SnowBrickProjectileEntity>create(SnowBrickProjectileEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.25f, 0.25f).build());
 }

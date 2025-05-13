@@ -50,7 +50,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON.asItem())
                 .add(DecoBlocks.COBBLESTONE_BUTTON.asItem())
                 .add(DecoBlocks.BLACKSTONE_BUTTON.asItem())
-                .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem());
+                .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem())
+                .add(DecoBlocks.TUFF_BUTTON.asItem())
+                .add(DecoBlocks.POLISHED_TUFF_BUTTON.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.METAL_BUTTONS)
                 .add(DecoBlocks.IRON_BUTTON.asItem())
@@ -169,15 +171,18 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())
                 .add(DecoBlocks.DEEPSLATE_FURNACE.asItem())
-                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem());
+                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem())
+                .add(DecoBlocks.TUFF_FURNACE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
                 .add(Blocks.STONE.asItem())
-                .add(Blocks.DEEPSLATE.asItem());
+                .add(Blocks.DEEPSLATE.asItem())
+                .add(Blocks.TUFF.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(Blocks.STONE.asItem())
-                .add(Blocks.DEEPSLATE.asItem());
+                .add(Blocks.DEEPSLATE.asItem())
+                .add(Blocks.TUFF.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.MOSAIC_WOOD)
                 .add(DecoBlocks.OAK_MOSAIC.asItem())
