@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "hanging_sign",
   "key": {
-    "#": {
-      "item": "minecraft:bamboo_mosaic"
-    },
-    "X": {
-      "item": "minecraft:chain"
-    }
+    "#": "minecraft:bamboo_mosaic",
+    "X": "minecraft:chain"
   },
   "pattern": [
     "X X",
@@ -17,6 +13,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:bamboo_mosaic_hanging_sign"
+    "id": "minecraft:bamboo_mosaic_hanging_sign"
   }
 }

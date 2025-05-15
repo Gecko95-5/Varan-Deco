@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:polished_stone"
-    }
+    "#": "minecraft:polished_stone"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:polished_stone_wall"
+    "id": "minecraft:polished_stone_wall"
   }
 }

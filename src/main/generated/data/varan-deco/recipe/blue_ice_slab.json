@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:blue_ice"
-    }
+    "#": "minecraft:blue_ice"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:blue_ice_slab"
+    "id": "minecraft:blue_ice_slab"
   }
 }

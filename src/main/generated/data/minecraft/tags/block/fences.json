@@ -1,6 +1,6 @@
 {
   "values": [
-    "varan-deco:red_nether_brick_fence",
-    "varan-deco:blue_nether_brick_fence"
+    "minecraft:red_nether_brick_fence",
+    "minecraft:blue_nether_brick_fence"
   ]
 }

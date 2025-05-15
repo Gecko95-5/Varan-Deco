@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:polished_stone"
-  },
+  "ingredient": "minecraft:polished_stone",
   "result": {
     "count": 1,
-    "id": "varan-deco:polished_stone_wall"
+    "id": "minecraft:polished_stone_wall"
   }
 }

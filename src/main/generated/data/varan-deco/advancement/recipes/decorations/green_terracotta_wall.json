@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:green_terracotta_wall"
+        "recipe": "minecraft:green_terracotta_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:green_terracotta_wall"
+      "minecraft:green_terracotta_wall"
     ]
   }
 }

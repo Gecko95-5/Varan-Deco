@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "varan-deco:block/smooth_deepslate",
-    "side": "varan-deco:block/smooth_deepslate_slab_side"
-  }
-}

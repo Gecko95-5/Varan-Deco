@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:soul_soilstone"
+            "items": "minecraft:soul_soilstone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:soul_soilstone_slab"
+        "recipe": "minecraft:soul_soilstone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:soul_soilstone_slab"
+      "minecraft:soul_soilstone_slab"
     ]
   }
 }

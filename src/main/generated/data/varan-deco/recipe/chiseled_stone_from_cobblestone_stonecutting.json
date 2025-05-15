@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:cobblestone"
-  },
+  "ingredient": "minecraft:cobblestone",
   "result": {
     "count": 1,
-    "id": "varan-deco:chiseled_stone"
+    "id": "minecraft:chiseled_stone"
   }
 }

@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:cactus_planks"
-    }
+    "#": "minecraft:cactus_planks"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:cactus_plank_slab"
+    "id": "minecraft:cactus_plank_slab"
   }
 }

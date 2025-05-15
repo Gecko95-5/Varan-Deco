@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "varan-deco:block/void_stone",
-    "side": "varan-deco:block/void_stone",
-    "top": "varan-deco:block/void_stone"
-  }
-}

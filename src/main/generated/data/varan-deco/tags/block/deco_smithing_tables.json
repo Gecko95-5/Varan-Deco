@@ -1,15 +1,15 @@
 {
   "values": [
-    "varan-deco:oak_smithing_table",
-    "varan-deco:spruce_smithing_table",
-    "varan-deco:birch_smithing_table",
-    "varan-deco:acacia_smithing_table",
-    "varan-deco:dark_oak_smithing_table",
-    "varan-deco:mangrove_smithing_table",
-    "varan-deco:crimson_smithing_table",
-    "varan-deco:warped_smithing_table",
-    "varan-deco:cactus_smithing_table",
-    "varan-deco:bamboo_smithing_table",
-    "varan-deco:cherry_smithing_table"
+    "minecraft:oak_smithing_table",
+    "minecraft:spruce_smithing_table",
+    "minecraft:birch_smithing_table",
+    "minecraft:acacia_smithing_table",
+    "minecraft:dark_oak_smithing_table",
+    "minecraft:mangrove_smithing_table",
+    "minecraft:crimson_smithing_table",
+    "minecraft:warped_smithing_table",
+    "minecraft:cactus_smithing_table",
+    "minecraft:bamboo_smithing_table",
+    "minecraft:cherry_smithing_table"
   ]
 }

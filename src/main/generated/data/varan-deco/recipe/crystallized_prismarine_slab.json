@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:crystallized_prismarine"
-    }
+    "#": "minecraft:crystallized_prismarine"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:crystallized_prismarine_slab"
+    "id": "minecraft:crystallized_prismarine_slab"
   }
 }

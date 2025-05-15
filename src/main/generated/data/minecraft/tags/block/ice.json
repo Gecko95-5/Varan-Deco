@@ -1,11 +1,11 @@
 {
   "values": [
-    "varan-deco:black_ice",
-    "varan-deco:packed_ice_stairs",
-    "varan-deco:packed_ice_slab",
-    "varan-deco:packed_ice_wall",
-    "varan-deco:blue_ice_stairs",
-    "varan-deco:blue_ice_slab",
-    "varan-deco:blue_ice_wall"
+    "minecraft:black_ice",
+    "minecraft:packed_ice_stairs",
+    "minecraft:packed_ice_slab",
+    "minecraft:packed_ice_wall",
+    "minecraft:blue_ice_stairs",
+    "minecraft:blue_ice_slab",
+    "minecraft:blue_ice_wall"
   ]
 }

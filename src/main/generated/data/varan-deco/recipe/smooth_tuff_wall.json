@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:smooth_tuff"
-    }
+    "#": "minecraft:smooth_tuff"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:smooth_tuff_wall"
+    "id": "minecraft:smooth_tuff_wall"
   }
 }

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:black_concrete_slab"
-    }
+    "#": "minecraft:black_concrete_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:black_concrete_pillar"
+    "id": "minecraft:black_concrete_pillar"
   }
 }

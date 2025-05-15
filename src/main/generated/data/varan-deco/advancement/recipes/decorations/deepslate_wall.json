@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:deepslate_wall"
+        "recipe": "minecraft:deepslate_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:deepslate_wall"
+      "minecraft:deepslate_wall"
     ]
   }
 }

@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:obsidian_bricks"
-    }
+    "#": "minecraft:obsidian_bricks"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:obsidian_brick_slab"
+    "id": "minecraft:obsidian_brick_slab"
   }
 }

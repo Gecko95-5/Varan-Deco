@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:obsidian"
-  },
+  "ingredient": "minecraft:obsidian",
   "result": {
     "count": 1,
-    "id": "varan-deco:obsidian_pillar"
+    "id": "minecraft:obsidian_pillar"
   }
 }

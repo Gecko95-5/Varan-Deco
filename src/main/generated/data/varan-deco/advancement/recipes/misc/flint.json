@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:flint_block"
+            "items": "minecraft:flint_block"
           }
         ]
       },

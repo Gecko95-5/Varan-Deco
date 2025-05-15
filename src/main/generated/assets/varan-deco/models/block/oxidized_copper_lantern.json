@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_lantern",
-  "textures": {
-    "lantern": "varan-deco:block/oxidized_copper_lantern"
-  }
-}

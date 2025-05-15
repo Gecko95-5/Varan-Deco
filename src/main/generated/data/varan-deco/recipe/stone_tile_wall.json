@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:stone_tiles"
-    }
+    "#": "minecraft:stone_tiles"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:stone_tile_wall"
+    "id": "minecraft:stone_tile_wall"
   }
 }

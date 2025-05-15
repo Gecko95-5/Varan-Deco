@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:yellow_orchid"
-    }
+    "minecraft:yellow_orchid"
   ],
   "result": {
     "count": 1,

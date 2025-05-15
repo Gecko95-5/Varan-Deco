@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:bubble_bricks"
-  },
+  "ingredient": "minecraft:bubble_bricks",
   "result": {
     "count": 1,
-    "id": "varan-deco:bubble_brick_slab"
+    "id": "minecraft:bubble_brick_slab"
   }
 }

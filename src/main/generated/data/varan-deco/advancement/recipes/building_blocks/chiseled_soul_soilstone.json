@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:soul_soilstone_slab"
+            "items": "minecraft:soul_soilstone_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:chiseled_soul_soilstone"
+        "recipe": "minecraft:chiseled_soul_soilstone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:chiseled_soul_soilstone"
+      "minecraft:chiseled_soul_soilstone"
     ]
   }
 }

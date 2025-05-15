@@ -5,16 +5,16 @@
     "#varan-deco:deco_ladders",
     "#varan-deco:deco_smithing_tables",
     "#varan-deco:deco_bookshelves",
-    "varan-deco:crimson_bookshelf",
-    "varan-deco:warped_bookshelf",
+    "minecraft:crimson_bookshelf",
+    "minecraft:warped_bookshelf",
     "#varan-deco:mosaic_wood",
-    "varan-deco:crimson_mosaic",
-    "varan-deco:warped_mosaic",
+    "minecraft:crimson_mosaic",
+    "minecraft:warped_mosaic",
     "#varan-deco:mosaic_stairs",
-    "varan-deco:crimson_mosaic_stairs",
-    "varan-deco:warped_mosaic_stairs",
+    "minecraft:crimson_mosaic_stairs",
+    "minecraft:warped_mosaic_stairs",
     "#varan-deco:mosaic_slab",
-    "varan-deco:crimson_mosaic_slab",
-    "varan-deco:warped_mosaic_slab"
+    "minecraft:crimson_mosaic_slab",
+    "minecraft:warped_mosaic_slab"
   ]
 }

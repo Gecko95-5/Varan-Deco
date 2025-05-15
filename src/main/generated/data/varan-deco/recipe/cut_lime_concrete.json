@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "minecraft:lime_concrete"
-    }
+    "S": "minecraft:lime_concrete"
   },
   "pattern": [
     "SS",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:cut_lime_concrete"
+    "id": "minecraft:cut_lime_concrete"
   }
 }

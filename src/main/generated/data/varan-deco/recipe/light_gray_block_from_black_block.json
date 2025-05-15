@@ -2,18 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:black_block"
-    },
-    {
-      "item": "varan-deco:white_block"
-    },
-    {
-      "item": "varan-deco:white_block"
-    }
+    "minecraft:black_block",
+    "minecraft:white_block",
+    "minecraft:white_block"
   ],
   "result": {
     "count": 3,
-    "id": "varan-deco:light_gray_block"
+    "id": "minecraft:light_gray_block"
   }
 }

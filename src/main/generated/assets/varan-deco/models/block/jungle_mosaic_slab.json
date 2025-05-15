@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "varan-deco:block/jungle_mosaic_temp",
-    "side": "varan-deco:block/jungle_mosaic_temp",
-    "top": "varan-deco:block/jungle_mosaic_temp"
-  }
-}

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:light_blue_terracotta_bricks"
+        "recipe": "minecraft:light_blue_terracotta_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:light_blue_terracotta_bricks"
+      "minecraft:light_blue_terracotta_bricks"
     ]
   }
 }

@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lime_terracotta"
-  },
+  "ingredient": "minecraft:lime_terracotta",
   "result": {
     "count": 1,
-    "id": "varan-deco:lime_terracotta_slab"
+    "id": "minecraft:lime_terracotta_slab"
   }
 }

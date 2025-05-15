@@ -17,46 +17,46 @@
             "seed": 2345,
             "states": [
               {
-                "Name": "varan-deco:yellow_tulip"
+                "Name": "minecraft:yellow_tulip"
               },
               {
-                "Name": "varan-deco:purple_tulip"
+                "Name": "minecraft:purple_tulip"
               },
               {
-                "Name": "varan-deco:magenta_tulip"
+                "Name": "minecraft:magenta_tulip"
               },
               {
-                "Name": "varan-deco:blue_tulip"
+                "Name": "minecraft:blue_tulip"
               },
               {
-                "Name": "varan-deco:barberton_daisy"
+                "Name": "minecraft:barberton_daisy"
               },
               {
-                "Name": "varan-deco:gerbera_daisy"
+                "Name": "minecraft:gerbera_daisy"
               },
               {
-                "Name": "varan-deco:white_orchid"
+                "Name": "minecraft:white_orchid"
               },
               {
-                "Name": "varan-deco:pink_orchid"
+                "Name": "minecraft:pink_orchid"
               },
               {
-                "Name": "varan-deco:yellow_orchid"
+                "Name": "minecraft:yellow_orchid"
               },
               {
                 "Name": "minecraft:blue_orchid"
               },
               {
-                "Name": "varan-deco:salmon_poppy"
+                "Name": "minecraft:salmon_poppy"
               },
               {
-                "Name": "varan-deco:rose"
+                "Name": "minecraft:rose"
               },
               {
-                "Name": "varan-deco:paeonia"
+                "Name": "minecraft:paeonia"
               },
               {
-                "Name": "varan-deco:lavender"
+                "Name": "minecraft:lavender"
               }
             ]
           }

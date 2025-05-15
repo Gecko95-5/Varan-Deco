@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:cut_soul_soilstone_bricks"
+            "items": "minecraft:cut_soul_soilstone_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:cut_soul_soilstone_brick_wall"
+        "recipe": "minecraft:cut_soul_soilstone_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:cut_soul_soilstone_brick_wall"
+      "minecraft:cut_soul_soilstone_brick_wall"
     ]
   }
 }

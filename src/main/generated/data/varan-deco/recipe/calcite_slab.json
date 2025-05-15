@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:calcite"
-    }
+    "#": "minecraft:calcite"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:calcite_slab"
+    "id": "minecraft:calcite_slab"
   }
 }

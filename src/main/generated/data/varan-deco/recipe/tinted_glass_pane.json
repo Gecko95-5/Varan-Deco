@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "stained_glass_pane",
   "key": {
-    "#": {
-      "item": "minecraft:tinted_glass"
-    }
+    "#": "minecraft:tinted_glass"
   },
   "pattern": [
     "###",
@@ -13,6 +11,6 @@
   ],
   "result": {
     "count": 16,
-    "id": "varan-deco:tinted_glass_pane"
+    "id": "minecraft:tinted_glass_pane"
   }
 }

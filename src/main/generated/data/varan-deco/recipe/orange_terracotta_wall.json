@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:orange_terracotta"
-    }
+    "#": "minecraft:orange_terracotta"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:orange_terracotta_wall"
+    "id": "minecraft:orange_terracotta_wall"
   }
 }

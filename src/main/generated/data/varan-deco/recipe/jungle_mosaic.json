@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:jungle_slab"
-    }
+    "#": "minecraft:jungle_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:jungle_mosaic"
+    "id": "minecraft:jungle_mosaic"
   }
 }

@@ -24,10 +24,10 @@
             "slow_scale": 0.5,
             "states": [
               {
-                "Name": "varan-deco:barberton_daisy"
+                "Name": "minecraft:barberton_daisy"
               },
               {
-                "Name": "varan-deco:gerbera_daisy"
+                "Name": "minecraft:gerbera_daisy"
               }
             ],
             "variety": [

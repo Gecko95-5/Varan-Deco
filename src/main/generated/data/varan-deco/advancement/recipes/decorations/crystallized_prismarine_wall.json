@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:crystallized_prismarine"
+            "items": "minecraft:crystallized_prismarine"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:crystallized_prismarine_wall"
+        "recipe": "minecraft:crystallized_prismarine_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:crystallized_prismarine_wall"
+      "minecraft:crystallized_prismarine_wall"
     ]
   }
 }

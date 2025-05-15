@@ -10,7 +10,7 @@ import net.minecraft.util.math.random.Random;
 
 public class OxidizableButtonBlock extends ButtonBlock implements Oxidizable {
     private final Oxidizable.OxidationLevel oxidationLevel;
-    public OxidizableButtonBlock(Oxidizable.OxidationLevel oxidationLevel, Settings settings, BlockSetType blockSetType, int pressTicks) {
+    public OxidizableButtonBlock(Oxidizable.OxidationLevel oxidationLevel, BlockSetType blockSetType, int pressTicks, Settings settings) {
         super(blockSetType, pressTicks, settings);
         this.oxidationLevel = oxidationLevel;
     }

@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:end_stone"
-  },
+  "ingredient": "minecraft:end_stone",
   "result": {
     "count": 1,
-    "id": "varan-deco:end_stone_stairs"
+    "id": "minecraft:end_stone_stairs"
   }
 }

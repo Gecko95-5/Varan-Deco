@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:yellow_tulip"
-    }
+    "minecraft:yellow_tulip"
   ],
   "result": {
     "count": 1,

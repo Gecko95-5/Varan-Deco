@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:packed_mud"
-    }
+    "#": "minecraft:packed_mud"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:packed_mud_wall"
+    "id": "minecraft:packed_mud_wall"
   }
 }

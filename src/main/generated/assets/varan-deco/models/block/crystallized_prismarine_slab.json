@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "varan-deco:block/crystallized_prismarine",
-    "side": "varan-deco:block/crystallized_prismarine",
-    "top": "varan-deco:block/crystallized_prismarine"
-  }
-}

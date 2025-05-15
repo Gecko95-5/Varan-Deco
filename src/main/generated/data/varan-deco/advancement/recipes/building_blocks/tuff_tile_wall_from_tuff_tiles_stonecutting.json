@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:tuff_tiles"
+            "items": "minecraft:tuff_tiles"
           }
         ]
       },

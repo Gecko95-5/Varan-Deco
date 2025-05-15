@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:cactus_plank_slab"
+            "items": "minecraft:cactus_plank_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:cactus_mosaic"
+        "recipe": "minecraft:cactus_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:cactus_mosaic"
+      "minecraft:cactus_mosaic"
     ]
   }
 }

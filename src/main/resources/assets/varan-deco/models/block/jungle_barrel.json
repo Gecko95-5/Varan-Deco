@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "varan-deco:block/jungle_barrel_bottom",
-    "side": "varan-deco:block/jungle_barrel_side",
-    "top": "varan-deco:block/jungle_barrel_top"
-  }
-}

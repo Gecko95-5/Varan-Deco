@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "varan-deco:block/mangrove_barrel_bottom",
-    "side": "varan-deco:block/mangrove_barrel_side",
-    "top": "varan-deco:block/mangrove_barrel_top_open"
-  }
-}

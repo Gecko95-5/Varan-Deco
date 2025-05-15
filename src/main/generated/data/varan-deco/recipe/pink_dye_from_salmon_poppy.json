@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:salmon_poppy"
-    }
+    "minecraft:salmon_poppy"
   ],
   "result": {
     "count": 1,

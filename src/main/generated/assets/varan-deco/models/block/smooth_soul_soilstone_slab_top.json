@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "varan-deco:block/smooth_soul_soilstone",
-    "side": "varan-deco:block/smooth_soul_soilstone",
-    "top": "varan-deco:block/smooth_soul_soilstone"
-  }
-}

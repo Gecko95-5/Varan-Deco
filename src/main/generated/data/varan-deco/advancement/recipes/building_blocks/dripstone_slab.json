@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:dripstone_slab"
+        "recipe": "minecraft:dripstone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:dripstone_slab"
+      "minecraft:dripstone_slab"
     ]
   }
 }

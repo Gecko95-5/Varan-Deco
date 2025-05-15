@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:white_terracotta_bricks"
-  },
+  "ingredient": "minecraft:white_terracotta_bricks",
   "result": {
     "count": 1,
-    "id": "varan-deco:white_terracotta_brick_slab"
+    "id": "minecraft:white_terracotta_brick_slab"
   }
 }

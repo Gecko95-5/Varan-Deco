@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "varan-deco:block/soul_soilstone_top",
-    "side": "varan-deco:block/cut_soul_soilstone",
-    "top": "varan-deco:block/soul_soilstone_top"
-  }
-}

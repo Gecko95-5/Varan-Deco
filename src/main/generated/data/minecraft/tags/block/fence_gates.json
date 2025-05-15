@@ -1,8 +1,8 @@
 {
   "values": [
-    "varan-deco:nether_brick_fence_gate",
-    "varan-deco:red_nether_brick_fence_gate",
-    "varan-deco:cactus_plank_fence_gate",
-    "varan-deco:wooden_fence_gate"
+    "minecraft:nether_brick_fence_gate",
+    "minecraft:red_nether_brick_fence_gate",
+    "minecraft:cactus_plank_fence_gate",
+    "minecraft:wooden_fence_gate"
   ]
 }

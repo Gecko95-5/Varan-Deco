@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:polished_blackstone_tiles"
-    }
+    "#": "minecraft:polished_blackstone_tiles"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:polished_blackstone_tile_slab"
+    "id": "minecraft:polished_blackstone_tile_slab"
   }
 }

@@ -1,8 +1,8 @@
 {
   "values": [
     "minecraft:furnace",
-    "varan-deco:deepslate_furnace",
-    "varan-deco:blackstone_furnace",
-    "varan-deco:tuff_furnace"
+    "minecraft:deepslate_furnace",
+    "minecraft:blackstone_furnace",
+    "minecraft:tuff_furnace"
   ]
 }

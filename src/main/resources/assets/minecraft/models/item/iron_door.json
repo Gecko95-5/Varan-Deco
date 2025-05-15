@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "varan-deco:item/iron_door_filled"
+    "layer0": "minecraft:item/iron_door_filled"
   }
 }

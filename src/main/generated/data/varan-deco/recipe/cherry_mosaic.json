@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:cherry_slab"
-    }
+    "#": "minecraft:cherry_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:cherry_mosaic"
+    "id": "minecraft:cherry_mosaic"
   }
 }

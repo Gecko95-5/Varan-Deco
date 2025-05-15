@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:iron_ingot"
-    },
-    "X": {
-      "item": "minecraft:light_gray_stained_glass"
-    }
+    "#": "minecraft:iron_ingot",
+    "X": "minecraft:light_gray_stained_glass"
   },
   "pattern": [
     " # ",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 2,
-    "id": "varan-deco:hardened_light_gray_stained_glass"
+    "id": "minecraft:hardened_light_gray_stained_glass"
   }
 }

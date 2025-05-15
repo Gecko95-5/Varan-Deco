@@ -24,22 +24,22 @@
             "slow_scale": 1.0,
             "states": [
               {
-                "Name": "varan-deco:black_tulip"
+                "Name": "minecraft:black_tulip"
               },
               {
-                "Name": "varan-deco:green_tulip"
+                "Name": "minecraft:green_tulip"
               },
               {
-                "Name": "varan-deco:cyan_tulip"
+                "Name": "minecraft:cyan_tulip"
               },
               {
-                "Name": "varan-deco:barberton_daisy"
+                "Name": "minecraft:barberton_daisy"
               },
               {
-                "Name": "varan-deco:gerbera_daisy"
+                "Name": "minecraft:gerbera_daisy"
               },
               {
-                "Name": "varan-deco:rose"
+                "Name": "minecraft:rose"
               }
             ],
             "variety": [

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:dark_prismarine"
-    }
+    "#": "minecraft:dark_prismarine"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:dark_prismarine_wall"
+    "id": "minecraft:dark_prismarine_wall"
   }
 }

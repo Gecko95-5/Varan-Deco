@@ -1,8 +1,8 @@
 {
   "values": [
-    "varan-deco:wooden_log",
-    "varan-deco:wooden_wood",
-    "varan-deco:stripped_wooden_log",
-    "varan-deco:stripped_wooden_wood"
+    "minecraft:wooden_log",
+    "minecraft:wooden_wood",
+    "minecraft:stripped_wooden_log",
+    "minecraft:stripped_wooden_wood"
   ]
 }

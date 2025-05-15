@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:cactus_mosaic"
-    }
+    "#": "minecraft:cactus_mosaic"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:cactus_mosaic_slab"
+    "id": "minecraft:cactus_mosaic_slab"
   }
 }

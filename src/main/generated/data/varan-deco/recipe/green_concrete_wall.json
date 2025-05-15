@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:green_concrete"
-    }
+    "#": "minecraft:green_concrete"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:green_concrete_wall"
+    "id": "minecraft:green_concrete_wall"
   }
 }

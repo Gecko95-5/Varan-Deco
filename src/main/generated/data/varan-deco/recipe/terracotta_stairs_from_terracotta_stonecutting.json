@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:terracotta"
-  },
+  "ingredient": "minecraft:terracotta",
   "result": {
     "count": 1,
-    "id": "varan-deco:terracotta_stairs"
+    "id": "minecraft:terracotta_stairs"
   }
 }

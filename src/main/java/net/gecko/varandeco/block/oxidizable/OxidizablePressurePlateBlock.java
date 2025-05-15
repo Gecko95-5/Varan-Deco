@@ -7,7 +7,7 @@ import net.minecraft.util.math.random.Random;
 
 public class OxidizablePressurePlateBlock extends WeightedPressurePlateBlock implements Oxidizable {
     private final Oxidizable.OxidationLevel oxidationLevel;
-    public OxidizablePressurePlateBlock( int weight,Oxidizable.OxidationLevel oxidationLevel, Settings settings, BlockSetType blockSetType) {
+    public OxidizablePressurePlateBlock( int weight,Oxidizable.OxidationLevel oxidationLevel, BlockSetType blockSetType, Settings settings) {
         super(weight, blockSetType, settings);
         this.oxidationLevel = oxidationLevel;
     }

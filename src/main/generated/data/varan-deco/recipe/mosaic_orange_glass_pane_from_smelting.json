@@ -3,10 +3,8 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
-  "ingredient": {
-    "item": "minecraft:orange_stained_glass_pane"
-  },
+  "ingredient": "minecraft:orange_stained_glass_pane",
   "result": {
-    "id": "varan-deco:mosaic_orange_stained_glass_pane"
+    "id": "minecraft:mosaic_orange_stained_glass_pane"
   }
 }

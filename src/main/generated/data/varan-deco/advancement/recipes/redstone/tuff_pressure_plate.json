@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:tuff_pressure_plate"
+        "recipe": "minecraft:tuff_pressure_plate"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:tuff_pressure_plate"
+      "minecraft:tuff_pressure_plate"
     ]
   }
 }

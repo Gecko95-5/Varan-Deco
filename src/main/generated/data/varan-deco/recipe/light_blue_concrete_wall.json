@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:light_blue_concrete"
-    }
+    "#": "minecraft:light_blue_concrete"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:light_blue_concrete_wall"
+    "id": "minecraft:light_blue_concrete_wall"
   }
 }

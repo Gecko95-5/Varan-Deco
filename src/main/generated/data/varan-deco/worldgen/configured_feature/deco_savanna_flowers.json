@@ -24,16 +24,16 @@
             "slow_scale": 0.5,
             "states": [
               {
-                "Name": "varan-deco:gerbera_daisy"
+                "Name": "minecraft:gerbera_daisy"
               },
               {
-                "Name": "varan-deco:blue_eyed_daisy"
+                "Name": "minecraft:blue_eyed_daisy"
               },
               {
-                "Name": "varan-deco:michaelmas_daisy"
+                "Name": "minecraft:michaelmas_daisy"
               },
               {
-                "Name": "varan-deco:california_poppy"
+                "Name": "minecraft:california_poppy"
               }
             ],
             "variety": [

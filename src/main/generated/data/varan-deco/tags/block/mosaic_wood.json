@@ -1,14 +1,14 @@
 {
   "values": [
-    "varan-deco:oak_mosaic",
-    "varan-deco:birch_mosaic",
-    "varan-deco:spruce_mosaic",
-    "varan-deco:jungle_mosaic",
-    "varan-deco:acacia_mosaic",
-    "varan-deco:dark_oak_mosaic",
-    "varan-deco:mangrove_mosaic",
-    "varan-deco:cherry_mosaic",
-    "varan-deco:cactus_mosaic",
-    "varan-deco:wooden_mosaic"
+    "minecraft:oak_mosaic",
+    "minecraft:birch_mosaic",
+    "minecraft:spruce_mosaic",
+    "minecraft:jungle_mosaic",
+    "minecraft:acacia_mosaic",
+    "minecraft:dark_oak_mosaic",
+    "minecraft:mangrove_mosaic",
+    "minecraft:cherry_mosaic",
+    "minecraft:cactus_mosaic",
+    "minecraft:wooden_mosaic"
   ]
 }

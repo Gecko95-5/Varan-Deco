@@ -1,15 +1,15 @@
 {
   "values": [
     "minecraft:ladder",
-    "varan-deco:birch_ladder",
-    "varan-deco:spruce_ladder",
-    "varan-deco:jungle_ladder",
-    "varan-deco:acacia_ladder",
-    "varan-deco:dark_oak_ladder",
-    "varan-deco:mangrove_ladder",
-    "varan-deco:cactus_ladder",
-    "varan-deco:wooden_ladder",
-    "varan-deco:bamboo_ladder",
-    "varan-deco:cherry_ladder"
+    "minecraft:birch_ladder",
+    "minecraft:spruce_ladder",
+    "minecraft:jungle_ladder",
+    "minecraft:acacia_ladder",
+    "minecraft:dark_oak_ladder",
+    "minecraft:mangrove_ladder",
+    "minecraft:cactus_ladder",
+    "minecraft:wooden_ladder",
+    "minecraft:bamboo_ladder",
+    "minecraft:cherry_ladder"
   ]
 }

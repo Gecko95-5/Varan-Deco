@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "hanging_sign",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_planks"
-    },
-    "X": {
-      "item": "minecraft:chain"
-    }
+    "#": "minecraft:crimson_planks",
+    "X": "minecraft:chain"
   },
   "pattern": [
     "X X",
@@ -17,6 +13,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:crimson_planks_hanging_sign"
+    "id": "minecraft:crimson_planks_hanging_sign"
   }
 }

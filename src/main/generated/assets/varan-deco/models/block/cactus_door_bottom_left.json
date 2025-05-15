@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_left",
-  "textures": {
-    "bottom": "varan-deco:block/cactus_door_bottom",
-    "top": "varan-deco:block/cactus_door_top"
-  }
-}

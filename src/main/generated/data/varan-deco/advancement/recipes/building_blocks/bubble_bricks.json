@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:bubble_block"
+            "items": "minecraft:bubble_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:bubble_bricks"
+        "recipe": "minecraft:bubble_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:bubble_bricks"
+      "minecraft:bubble_bricks"
     ]
   }
 }

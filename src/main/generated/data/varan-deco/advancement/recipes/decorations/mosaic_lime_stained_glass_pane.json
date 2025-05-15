@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:mosaic_lime_stained_glass"
+            "items": "minecraft:mosaic_lime_stained_glass"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:mosaic_lime_stained_glass_pane"
+        "recipe": "minecraft:mosaic_lime_stained_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:mosaic_lime_stained_glass_pane"
+      "minecraft:mosaic_lime_stained_glass_pane"
     ]
   }
 }

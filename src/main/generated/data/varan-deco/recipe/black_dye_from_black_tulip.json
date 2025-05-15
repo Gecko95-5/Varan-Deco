@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:black_tulip"
-    }
+    "minecraft:black_tulip"
   ],
   "result": {
     "count": 1,

@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "hanging_sign",
   "key": {
-    "#": {
-      "item": "varan-deco:cactus_mosaic"
-    },
-    "X": {
-      "item": "minecraft:chain"
-    }
+    "#": "minecraft:cactus_mosaic",
+    "X": "minecraft:chain"
   },
   "pattern": [
     "X X",
@@ -17,6 +13,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:cactus_mosaic_hanging_sign"
+    "id": "minecraft:cactus_mosaic_hanging_sign"
   }
 }

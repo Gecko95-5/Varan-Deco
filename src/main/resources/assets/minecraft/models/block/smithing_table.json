@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "down": "varan-deco:block/wooden_smithing_table_bottom",
-    "east": "varan-deco:block/wooden_smithing_table_side",
-    "north": "varan-deco:block/wooden_smithing_table_front",
-    "particle": "varan-deco:block/wooden_smithing_table_front",
-    "south": "varan-deco:block/wooden_smithing_table_front",
+    "down": "minecraft:block/wooden_smithing_table_bottom",
+    "east": "minecraft:block/wooden_smithing_table_side",
+    "north": "minecraft:block/wooden_smithing_table_front",
+    "particle": "minecraft:block/wooden_smithing_table_front",
+    "south": "minecraft:block/wooden_smithing_table_front",
     "up": "minecraft:block/smithing_table_top",
-    "west": "varan-deco:block/wooden_smithing_table_side"
+    "west": "minecraft:block/wooden_smithing_table_side"
   }
 }

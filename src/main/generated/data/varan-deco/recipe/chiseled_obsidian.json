@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "varan-deco:obsidian_pillar"
-    }
+    "S": "minecraft:obsidian_pillar"
   },
   "pattern": [
     "SS",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:chiseled_obsidian"
+    "id": "minecraft:chiseled_obsidian"
   }
 }

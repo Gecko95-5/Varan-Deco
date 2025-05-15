@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "varan-deco:block/mighty_lavender_crop_stage_2"
-  }
-}

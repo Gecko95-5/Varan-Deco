@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:cut_sandstone"
-    }
+    "#": "minecraft:cut_sandstone"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:cut_sandstone_wall"
+    "id": "minecraft:cut_sandstone_wall"
   }
 }

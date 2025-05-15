@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:obsidian_pillar"
+            "items": "minecraft:obsidian_pillar"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:chiseled_obsidian"
+        "recipe": "minecraft:chiseled_obsidian"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:chiseled_obsidian"
+      "minecraft:chiseled_obsidian"
     ]
   }
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "varan-deco:block/wooden_planks",
-    "side": "varan-deco:block/wooden_planks",
-    "top": "varan-deco:block/wooden_planks"
-  }
-}

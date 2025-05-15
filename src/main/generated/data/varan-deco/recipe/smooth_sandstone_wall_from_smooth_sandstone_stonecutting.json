@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:smooth_sandstone"
-  },
+  "ingredient": "minecraft:smooth_sandstone",
   "result": {
     "count": 1,
-    "id": "varan-deco:smooth_sandstone_wall"
+    "id": "minecraft:smooth_sandstone_wall"
   }
 }

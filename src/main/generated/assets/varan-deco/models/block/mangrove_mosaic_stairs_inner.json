@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "varan-deco:block/mangrove_mosaic",
-    "side": "varan-deco:block/mangrove_mosaic",
-    "top": "varan-deco:block/mangrove_mosaic"
-  }
-}

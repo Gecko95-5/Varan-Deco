@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:ancient_rose"
-    }
+    "minecraft:ancient_rose"
   ],
   "result": {
     "count": 1,

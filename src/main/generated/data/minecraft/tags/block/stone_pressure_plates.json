@@ -1,12 +1,12 @@
 {
   "values": [
-    "varan-deco:polished_deepslate_pressure_plate",
-    "varan-deco:deepslate_pressure_plate",
-    "varan-deco:cobbled_deepslate_pressure_plate",
-    "varan-deco:cobblestone_pressure_plate",
-    "varan-deco:blackstone_pressure_plate",
-    "varan-deco:polished_stone_pressure_plate",
-    "varan-deco:tuff_pressure_plate",
-    "varan-deco:polished_tuff_pressure_plate"
+    "minecraft:polished_deepslate_pressure_plate",
+    "minecraft:deepslate_pressure_plate",
+    "minecraft:cobbled_deepslate_pressure_plate",
+    "minecraft:cobblestone_pressure_plate",
+    "minecraft:blackstone_pressure_plate",
+    "minecraft:polished_stone_pressure_plate",
+    "minecraft:tuff_pressure_plate",
+    "minecraft:polished_tuff_pressure_plate"
   ]
 }

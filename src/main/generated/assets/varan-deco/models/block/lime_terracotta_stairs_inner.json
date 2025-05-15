@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "varan-deco:block/lime_terracotta_temp",
-    "side": "varan-deco:block/lime_terracotta_temp",
-    "top": "varan-deco:block/lime_terracotta_temp"
-  }
-}

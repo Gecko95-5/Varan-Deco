@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:calcite"
-  },
+  "ingredient": "minecraft:calcite",
   "result": {
     "count": 1,
-    "id": "varan-deco:calcite_wall"
+    "id": "minecraft:calcite_wall"
   }
 }

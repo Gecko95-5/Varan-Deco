@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:netherrack_slab"
+        "recipe": "minecraft:netherrack_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:netherrack_slab"
+      "minecraft:netherrack_slab"
     ]
   }
 }

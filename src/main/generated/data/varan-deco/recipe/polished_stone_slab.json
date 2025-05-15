@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:polished_stone"
-    }
+    "#": "minecraft:polished_stone"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:polished_stone_slab"
+    "id": "minecraft:polished_stone_slab"
   }
 }

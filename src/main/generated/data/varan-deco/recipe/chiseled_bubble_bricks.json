@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:bubble_brick_slab"
-    }
+    "#": "minecraft:bubble_brick_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:chiseled_bubble_bricks"
+    "id": "minecraft:chiseled_bubble_bricks"
   }
 }

@@ -2,18 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:pink_block"
-    },
-    {
-      "item": "varan-deco:red_block"
-    },
-    {
-      "item": "varan-deco:blue_block"
-    }
+    "minecraft:pink_block",
+    "minecraft:red_block",
+    "minecraft:blue_block"
   ],
   "result": {
     "count": 3,
-    "id": "varan-deco:magenta_block"
+    "id": "minecraft:magenta_block"
   }
 }

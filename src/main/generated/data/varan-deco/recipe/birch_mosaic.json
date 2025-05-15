@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:birch_slab"
-    }
+    "#": "minecraft:birch_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:birch_mosaic"
+    "id": "minecraft:birch_mosaic"
   }
 }

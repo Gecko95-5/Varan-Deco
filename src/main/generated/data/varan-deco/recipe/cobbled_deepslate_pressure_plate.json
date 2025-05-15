@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "minecraft:cobbled_deepslate"
-    }
+    "#": "minecraft:cobbled_deepslate"
   },
   "pattern": [
     "##"
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:cobbled_deepslate_pressure_plate"
+    "id": "minecraft:cobbled_deepslate_pressure_plate"
   }
 }

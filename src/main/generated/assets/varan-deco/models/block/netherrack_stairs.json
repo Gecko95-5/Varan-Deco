@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "varan-deco:block/netherrack_temp",
-    "side": "varan-deco:block/netherrack_temp",
-    "top": "varan-deco:block/netherrack_temp"
-  }
-}

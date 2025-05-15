@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:lavender"
-    }
+    "minecraft:lavender"
   ],
   "result": {
     "count": 1,

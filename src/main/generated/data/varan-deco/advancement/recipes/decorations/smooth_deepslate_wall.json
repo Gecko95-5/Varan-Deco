@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:smooth_deepslate"
+            "items": "minecraft:smooth_deepslate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:smooth_deepslate_wall"
+        "recipe": "minecraft:smooth_deepslate_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:smooth_deepslate_wall"
+      "minecraft:smooth_deepslate_wall"
     ]
   }
 }

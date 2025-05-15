@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:smooth_tuff"
-  },
+  "ingredient": "minecraft:smooth_tuff",
   "result": {
     "count": 1,
-    "id": "varan-deco:smooth_tuff_stairs"
+    "id": "minecraft:smooth_tuff_stairs"
   }
 }

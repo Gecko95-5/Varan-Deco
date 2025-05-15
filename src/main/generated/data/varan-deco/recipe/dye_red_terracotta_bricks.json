@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:terracotta_bricks"
-    },
-    "X": {
-      "item": "minecraft:red_dye"
-    }
+    "#": "minecraft:terracotta_bricks",
+    "X": "minecraft:red_dye"
   },
   "pattern": [
     "###",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:red_terracotta_bricks"
+    "id": "minecraft:red_terracotta_bricks"
   }
 }

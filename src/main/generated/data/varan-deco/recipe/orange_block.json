@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:orange_dye"
-    }
+    "#": "minecraft:orange_dye"
   },
   "pattern": [
     "###",
@@ -13,6 +11,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:orange_block"
+    "id": "minecraft:orange_block"
   }
 }

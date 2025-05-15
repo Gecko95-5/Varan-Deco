@@ -1,13 +1,13 @@
 {
   "values": [
-    "varan-deco:obsidian_stairs",
-    "varan-deco:obsidian_brick_stairs",
-    "varan-deco:obsidian_slab",
-    "varan-deco:obsidian_brick_slab",
-    "varan-deco:obsidian_wall",
-    "varan-deco:obsidian_brick_wall",
-    "varan-deco:obsidian_bricks",
-    "varan-deco:obsidian_pillar",
-    "varan-deco:chiseled_obsidian"
+    "minecraft:obsidian_stairs",
+    "minecraft:obsidian_brick_stairs",
+    "minecraft:obsidian_slab",
+    "minecraft:obsidian_brick_slab",
+    "minecraft:obsidian_wall",
+    "minecraft:obsidian_brick_wall",
+    "minecraft:obsidian_bricks",
+    "minecraft:obsidian_pillar",
+    "minecraft:chiseled_obsidian"
   ]
 }

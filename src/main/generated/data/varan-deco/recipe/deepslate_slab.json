@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:deepslate"
-    }
+    "#": "minecraft:deepslate"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:deepslate_slab"
+    "id": "minecraft:deepslate_slab"
   }
 }

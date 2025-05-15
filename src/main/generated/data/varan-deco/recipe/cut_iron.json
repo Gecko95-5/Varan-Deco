@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:iron_block"
-    }
+    "#": "minecraft:iron_block"
   },
   "pattern": [
     "##",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:cut_iron"
+    "id": "minecraft:cut_iron"
   }
 }

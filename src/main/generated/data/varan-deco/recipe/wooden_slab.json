@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:wooden_planks"
-    }
+    "#": "minecraft:wooden_planks"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:wooden_slab"
+    "id": "minecraft:wooden_slab"
   }
 }

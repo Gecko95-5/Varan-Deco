@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "varan-deco:block/crystallized_prismarine_bricks",
-    "side": "varan-deco:block/crystallized_prismarine_bricks",
-    "top": "varan-deco:block/crystallized_prismarine_bricks"
-  }
-}

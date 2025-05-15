@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:iron_block"
-  },
+  "ingredient": "minecraft:iron_block",
   "result": {
     "count": 1,
-    "id": "varan-deco:cut_iron"
+    "id": "minecraft:cut_iron"
   }
 }

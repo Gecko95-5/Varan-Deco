@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "varan-deco:block/wooden_log_top",
-    "side": "varan-deco:block/wooden_log"
-  }
-}

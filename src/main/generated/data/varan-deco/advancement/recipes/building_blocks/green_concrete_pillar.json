@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:green_concrete_slab"
+            "items": "minecraft:green_concrete_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:green_concrete_pillar"
+        "recipe": "minecraft:green_concrete_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:green_concrete_pillar"
+      "minecraft:green_concrete_pillar"
     ]
   }
 }

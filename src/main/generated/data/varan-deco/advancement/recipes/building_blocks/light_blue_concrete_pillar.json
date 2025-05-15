@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:light_blue_concrete_slab"
+            "items": "minecraft:light_blue_concrete_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:light_blue_concrete_pillar"
+        "recipe": "minecraft:light_blue_concrete_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:light_blue_concrete_pillar"
+      "minecraft:light_blue_concrete_pillar"
     ]
   }
 }

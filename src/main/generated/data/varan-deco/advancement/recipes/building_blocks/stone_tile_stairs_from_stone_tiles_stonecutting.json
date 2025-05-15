@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:stone_tiles"
+            "items": "minecraft:stone_tiles"
           }
         ]
       },

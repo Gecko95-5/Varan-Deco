@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:ice_bricks"
+            "items": "minecraft:ice_bricks"
           }
         ]
       },

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:cyan_tulip"
-    }
+    "minecraft:cyan_tulip"
   ],
   "result": {
     "count": 1,

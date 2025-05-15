@@ -1,20 +1,20 @@
 {
   "values": [
-    "varan-deco:copper_lantern",
-    "varan-deco:waxed_copper_lantern",
-    "varan-deco:exposed_copper_lantern",
-    "varan-deco:waxed_exposed_copper_lantern",
-    "varan-deco:weathered_copper_lantern",
-    "varan-deco:waxed_exposed_copper_lantern",
-    "varan-deco:oxidized_copper_lantern",
-    "varan-deco:waxed_oxidized_copper_lantern",
-    "varan-deco:copper_soul_lantern",
-    "varan-deco:waxed_copper_soul_lantern",
-    "varan-deco:exposed_copper_soul_lantern",
-    "varan-deco:waxed_exposed_copper_soul_lantern",
-    "varan-deco:weathered_copper_soul_lantern",
-    "varan-deco:waxed_exposed_copper_soul_lantern",
-    "varan-deco:oxidized_copper_soul_lantern",
-    "varan-deco:waxed_oxidized_copper_soul_lantern"
+    "minecraft:copper_lantern",
+    "minecraft:waxed_copper_lantern",
+    "minecraft:exposed_copper_lantern",
+    "minecraft:waxed_exposed_copper_lantern",
+    "minecraft:weathered_copper_lantern",
+    "minecraft:waxed_exposed_copper_lantern",
+    "minecraft:oxidized_copper_lantern",
+    "minecraft:waxed_oxidized_copper_lantern",
+    "minecraft:copper_soul_lantern",
+    "minecraft:waxed_copper_soul_lantern",
+    "minecraft:exposed_copper_soul_lantern",
+    "minecraft:waxed_exposed_copper_soul_lantern",
+    "minecraft:weathered_copper_soul_lantern",
+    "minecraft:waxed_exposed_copper_soul_lantern",
+    "minecraft:oxidized_copper_soul_lantern",
+    "minecraft:waxed_oxidized_copper_soul_lantern"
   ]
 }

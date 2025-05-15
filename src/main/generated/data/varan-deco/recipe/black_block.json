@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:black_dye"
-    }
+    "#": "minecraft:black_dye"
   },
   "pattern": [
     "###",
@@ -13,6 +11,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:black_block"
+    "id": "minecraft:black_block"
   }
 }

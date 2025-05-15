@@ -3,9 +3,7 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.35,
-  "ingredient": {
-    "item": "varan-deco:crystallized_prismarine"
-  },
+  "ingredient": "minecraft:crystallized_prismarine",
   "result": {
     "id": "minecraft:sea_lantern"
   }

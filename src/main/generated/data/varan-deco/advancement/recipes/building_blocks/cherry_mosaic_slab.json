@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:cherry_mosaic"
+            "items": "minecraft:cherry_mosaic"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:cherry_mosaic_slab"
+        "recipe": "minecraft:cherry_mosaic_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:cherry_mosaic_slab"
+      "minecraft:cherry_mosaic_slab"
     ]
   }
 }

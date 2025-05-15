@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:barberton_daisy"
-    }
+    "minecraft:barberton_daisy"
   ],
   "result": {
     "count": 1,

@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:blackstone"
-  },
+  "ingredient": "minecraft:blackstone",
   "result": {
     "count": 2,
-    "id": "varan-deco:polished_blackstone_tile_slab"
+    "id": "minecraft:polished_blackstone_tile_slab"
   }
 }

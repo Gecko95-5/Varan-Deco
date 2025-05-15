@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:light_blue_dye"
-    }
+    "#": "minecraft:light_blue_dye"
   },
   "pattern": [
     "###",
@@ -13,6 +11,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:light_blue_block"
+    "id": "minecraft:light_blue_block"
   }
 }

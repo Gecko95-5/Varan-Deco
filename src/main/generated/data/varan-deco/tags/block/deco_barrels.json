@@ -1,16 +1,16 @@
 {
   "values": [
-    "varan-deco:oak_barrel",
-    "varan-deco:spruce_barrel",
-    "varan-deco:birch_barrel",
-    "varan-deco:jungle_barrel",
-    "varan-deco:acacia_barrel",
-    "varan-deco:dark_oak_barrel",
-    "varan-deco:mangrove_barrel",
-    "varan-deco:crimson_barrel",
-    "varan-deco:warped_barrel",
-    "varan-deco:cactus_barrel",
-    "varan-deco:cherry_barrel",
-    "varan-deco:bamboo_barrel"
+    "minecraft:oak_barrel",
+    "minecraft:spruce_barrel",
+    "minecraft:birch_barrel",
+    "minecraft:jungle_barrel",
+    "minecraft:acacia_barrel",
+    "minecraft:dark_oak_barrel",
+    "minecraft:mangrove_barrel",
+    "minecraft:crimson_barrel",
+    "minecraft:warped_barrel",
+    "minecraft:cactus_barrel",
+    "minecraft:cherry_barrel",
+    "minecraft:bamboo_barrel"
   ]
 }

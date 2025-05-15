@@ -17,7 +17,7 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "varan-deco:wooden_leaves",
+        "Name": "minecraft:wooden_leaves",
         "Properties": {
           "distance": "7",
           "persistent": "false",
@@ -43,7 +43,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "varan-deco:wooden_log",
+        "Name": "minecraft:wooden_log",
         "Properties": {
           "axis": "y"
         }

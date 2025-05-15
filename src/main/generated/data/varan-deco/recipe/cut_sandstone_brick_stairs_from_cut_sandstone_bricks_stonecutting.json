@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:cut_sandstone_bricks"
-  },
+  "ingredient": "minecraft:cut_sandstone_bricks",
   "result": {
     "count": 1,
-    "id": "varan-deco:cut_sandstone_brick_stairs"
+    "id": "minecraft:cut_sandstone_brick_stairs"
   }
 }

@@ -4,6 +4,6 @@
     "front": "minecraft:block/furnace_front_on",
     "side": "minecraft:block/furnace_side",
     "top": "minecraft:block/furnace_top",
-    "bottom": "varan-deco:block/furnace_bottom"
+    "bottom": "minecraft:block/furnace_bottom"
   }
 }

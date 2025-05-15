@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "varan-deco:block/magenta_concrete_temp",
-    "side": "varan-deco:block/magenta_concrete_temp",
-    "top": "varan-deco:block/magenta_concrete_temp"
-  }
-}

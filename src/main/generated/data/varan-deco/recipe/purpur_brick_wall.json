@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:purpur_bricks"
-    }
+    "#": "minecraft:purpur_bricks"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:purpur_brick_wall"
+    "id": "minecraft:purpur_brick_wall"
   }
 }

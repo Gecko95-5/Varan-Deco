@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "varan-deco:block/smooth_blackstone",
-    "side": "varan-deco:block/smooth_blackstone",
-    "top": "varan-deco:block/smooth_blackstone"
-  }
-}

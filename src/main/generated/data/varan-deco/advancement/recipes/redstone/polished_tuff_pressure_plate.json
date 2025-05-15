@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:polished_tuff_pressure_plate"
+        "recipe": "minecraft:polished_tuff_pressure_plate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:polished_tuff_pressure_plate"
+      "minecraft:polished_tuff_pressure_plate"
     ]
   }
 }

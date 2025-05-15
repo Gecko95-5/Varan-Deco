@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:cut_gray_concrete"
-    }
+    "#": "minecraft:cut_gray_concrete"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:cut_gray_concrete_wall"
+    "id": "minecraft:cut_gray_concrete_wall"
   }
 }

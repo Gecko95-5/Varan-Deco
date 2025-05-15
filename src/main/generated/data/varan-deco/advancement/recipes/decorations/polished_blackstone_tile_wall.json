@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:polished_blackstone_tiles"
+            "items": "minecraft:polished_blackstone_tiles"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:polished_blackstone_tile_wall"
+        "recipe": "minecraft:polished_blackstone_tile_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:polished_blackstone_tile_wall"
+      "minecraft:polished_blackstone_tile_wall"
     ]
   }
 }

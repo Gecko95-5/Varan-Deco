@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:obsidian"
-    }
+    "#": "minecraft:obsidian"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:obsidian_wall"
+    "id": "minecraft:obsidian_wall"
   }
 }

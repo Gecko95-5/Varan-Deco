@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:stone_tiles"
+        "recipe": "minecraft:stone_tiles"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:stone_tiles"
+      "minecraft:stone_tiles"
     ]
   }
 }

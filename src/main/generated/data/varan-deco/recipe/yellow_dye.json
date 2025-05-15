@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:yellow_block"
-    }
+    "minecraft:yellow_block"
   ],
   "result": {
     "count": 9,

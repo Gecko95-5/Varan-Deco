@@ -1,6 +1,6 @@
 {
   "values": [
-    "varan-deco:cactus_plank_pressure_plate",
-    "varan-deco:wooden_pressure_plate"
+    "minecraft:cactus_plank_pressure_plate",
+    "minecraft:wooden_pressure_plate"
   ]
 }

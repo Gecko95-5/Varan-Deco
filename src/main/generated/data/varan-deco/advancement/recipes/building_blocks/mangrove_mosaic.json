@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:mangrove_mosaic"
+        "recipe": "minecraft:mangrove_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:mangrove_mosaic"
+      "minecraft:mangrove_mosaic"
     ]
   }
 }

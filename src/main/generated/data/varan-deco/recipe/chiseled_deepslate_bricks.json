@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:deepslate_brick_slab"
-    }
+    "#": "minecraft:deepslate_brick_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:chiseled_deepslate_bricks"
+    "id": "minecraft:chiseled_deepslate_bricks"
   }
 }

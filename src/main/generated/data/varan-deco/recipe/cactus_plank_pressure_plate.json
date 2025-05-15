@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "varan-deco:cactus_planks"
-    }
+    "#": "minecraft:cactus_planks"
   },
   "pattern": [
     "##"
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:cactus_plank_pressure_plate"
+    "id": "minecraft:cactus_plank_pressure_plate"
   }
 }

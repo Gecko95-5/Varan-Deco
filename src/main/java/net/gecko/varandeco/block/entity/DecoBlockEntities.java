@@ -3,6 +3,10 @@ package net.gecko.varandeco.block.entity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.gecko.varandeco.block.entity.stone.*;
+import net.gecko.varandeco.block.entity.wood.AcaciaBarrelBlockEntity;
+import net.gecko.varandeco.block.entity.wood.BirchBarrelBlockEntity;
+import net.gecko.varandeco.block.entity.wood.OakBarrelBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -27,6 +31,12 @@ public class DecoBlockEntities {
     public static BlockEntityType<BlackstoneSmokerBlockEntity> BLACKSTONE_SMOKER_BE;
 
     public static BlockEntityType<TuffSmokerBlockEntity> TUFF_SMOKER_BE;
+
+    public static BlockEntityType<AcaciaBarrelBlockEntity> ACACIA_BARREL_BE;
+
+    public static BlockEntityType<BirchBarrelBlockEntity> BIRCH_BARREL_BE;
+
+    public static BlockEntityType<OakBarrelBlockEntity> OAK_BARREL_BE;
 
     public static void registerBlockEntities(){
 
@@ -74,5 +84,20 @@ public class DecoBlockEntities {
                 Identifier.of(VaranDeco.MOD_ID, "tuff_smoker_be"),
                 FabricBlockEntityTypeBuilder.create(TuffSmokerBlockEntity::new,
                         DecoBlocks.TUFF_SMOKER).build());
+
+        ACACIA_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "acacia_barrel_be"),
+                FabricBlockEntityTypeBuilder.create(AcaciaBarrelBlockEntity::new,
+                        DecoBlocks.ACACIA_BARREL).build());
+
+        BIRCH_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "birch_barrel_be"),
+                FabricBlockEntityTypeBuilder.create(BirchBarrelBlockEntity::new,
+                        DecoBlocks.BIRCH_BARREL).build());
+
+        OAK_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "oak_barrel_be"),
+                FabricBlockEntityTypeBuilder.create(OakBarrelBlockEntity::new,
+                        DecoBlocks.OAK_BARREL).build());
     }
 }

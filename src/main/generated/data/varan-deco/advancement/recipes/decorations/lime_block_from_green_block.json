@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:green_block"
+            "items": "minecraft:green_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:white_block"
+            "items": "minecraft:white_block"
           }
         ]
       },

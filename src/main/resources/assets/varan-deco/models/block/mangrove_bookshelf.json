@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "minecraft:block/mangrove_planks",
-    "side": "varan-deco:block/mangrove_bookshelf"
-  }
-}

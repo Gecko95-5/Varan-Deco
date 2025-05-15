@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:cut_red_sandstone_bricks"
-    }
+    "#": "minecraft:cut_red_sandstone_bricks"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:cut_red_sandstone_brick_slab"
+    "id": "minecraft:cut_red_sandstone_brick_slab"
   }
 }

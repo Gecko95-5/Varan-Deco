@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "varan-deco:block/obsidian_bricks",
-    "side": "varan-deco:block/obsidian_bricks",
-    "top": "varan-deco:block/obsidian_bricks"
-  }
-}

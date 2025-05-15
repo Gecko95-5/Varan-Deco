@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:void_stone_brick_slab"
+        "recipe": "minecraft:void_stone_brick_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:void_stone_bricks"
+            "items": "minecraft:void_stone_bricks"
           }
         ]
       },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:void_stone_brick_slab"
+      "minecraft:void_stone_brick_slab"
     ]
   }
 }

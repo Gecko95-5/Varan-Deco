@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:smooth_sandstone"
-    }
+    "#": "minecraft:smooth_sandstone"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:smooth_sandstone_wall"
+    "id": "minecraft:smooth_sandstone_wall"
   }
 }

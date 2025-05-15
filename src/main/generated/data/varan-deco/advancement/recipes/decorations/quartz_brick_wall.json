@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:quartz_brick_wall"
+        "recipe": "minecraft:quartz_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:quartz_brick_wall"
+      "minecraft:quartz_brick_wall"
     ]
   }
 }

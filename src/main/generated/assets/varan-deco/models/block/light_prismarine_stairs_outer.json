@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "varan-deco:block/light_prismarine",
-    "side": "varan-deco:block/light_prismarine",
-    "top": "varan-deco:block/light_prismarine"
-  }
-}

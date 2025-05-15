@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:wither_rose_bush"
-    }
+    "minecraft:wither_rose_bush"
   ],
   "result": {
     "count": 4,

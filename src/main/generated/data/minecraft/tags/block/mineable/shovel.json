@@ -1,12 +1,12 @@
 {
   "values": [
-    "varan-deco:snow_stairs",
-    "varan-deco:snow_slab",
-    "varan-deco:snow_wall",
-    "varan-deco:snow_bricks",
-    "varan-deco:chiseled_snow_bricks",
-    "varan-deco:snow_brick_stairs",
-    "varan-deco:snow_brick_slab",
-    "varan-deco:snow_brick_wall"
+    "minecraft:snow_stairs",
+    "minecraft:snow_slab",
+    "minecraft:snow_wall",
+    "minecraft:snow_bricks",
+    "minecraft:chiseled_snow_bricks",
+    "minecraft:snow_brick_stairs",
+    "minecraft:snow_brick_slab",
+    "minecraft:snow_brick_wall"
   ]
 }

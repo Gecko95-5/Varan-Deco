@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "hanging_sign",
   "key": {
-    "#": {
-      "item": "minecraft:oak_planks"
-    },
-    "X": {
-      "item": "minecraft:chain"
-    }
+    "#": "minecraft:oak_planks",
+    "X": "minecraft:chain"
   },
   "pattern": [
     "X X",
@@ -17,6 +13,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:oak_planks_hanging_sign"
+    "id": "minecraft:oak_planks_hanging_sign"
   }
 }

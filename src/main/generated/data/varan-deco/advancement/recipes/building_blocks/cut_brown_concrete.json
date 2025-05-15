@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:cut_brown_concrete"
+        "recipe": "minecraft:cut_brown_concrete"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:cut_brown_concrete"
+      "minecraft:cut_brown_concrete"
     ]
   }
 }

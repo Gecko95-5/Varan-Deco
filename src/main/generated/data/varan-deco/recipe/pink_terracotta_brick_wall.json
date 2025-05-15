@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:pink_terracotta_bricks"
-    }
+    "#": "minecraft:pink_terracotta_bricks"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:pink_terracotta_brick_wall"
+    "id": "minecraft:pink_terracotta_brick_wall"
   }
 }

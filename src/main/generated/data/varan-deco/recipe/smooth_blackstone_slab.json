@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:smooth_blackstone"
-    }
+    "#": "minecraft:smooth_blackstone"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:smooth_blackstone_slab"
+    "id": "minecraft:smooth_blackstone_slab"
   }
 }

@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:brown_terracotta_bricks"
-    }
+    "#": "minecraft:brown_terracotta_bricks"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:brown_terracotta_brick_slab"
+    "id": "minecraft:brown_terracotta_brick_slab"
   }
 }

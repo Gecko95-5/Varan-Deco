@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "minecraft:cyan_terracotta"
-    }
+    "S": "minecraft:cyan_terracotta"
   },
   "pattern": [
     "SS",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:cyan_terracotta_bricks"
+    "id": "minecraft:cyan_terracotta_bricks"
   }
 }

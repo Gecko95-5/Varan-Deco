@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:netherrack"
-  },
+  "ingredient": "minecraft:netherrack",
   "result": {
     "count": 1,
-    "id": "varan-deco:netherrack_wall"
+    "id": "minecraft:netherrack_wall"
   }
 }

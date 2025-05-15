@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "varan-deco:block/soul_soilstone_top",
-    "side": "varan-deco:block/chiseled_soul_soilstone"
-  }
-}

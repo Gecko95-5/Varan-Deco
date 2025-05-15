@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "varan-deco:polished_stone"
-    }
+    "#": "minecraft:polished_stone"
   },
   "pattern": [
     "##"
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:polished_stone_pressure_plate"
+    "id": "minecraft:polished_stone_pressure_plate"
   }
 }

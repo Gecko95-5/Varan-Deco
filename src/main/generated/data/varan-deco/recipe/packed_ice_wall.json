@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:packed_ice"
-    }
+    "#": "minecraft:packed_ice"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:packed_ice_wall"
+    "id": "minecraft:packed_ice_wall"
   }
 }

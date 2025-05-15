@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:tinted_glass_pane"
+            "items": "minecraft:tinted_glass_pane"
           }
         ]
       },

@@ -1,6 +1,6 @@
 {
   "values": [
-    "varan-deco:cactus_trapdoor",
-    "varan-deco:wooden_trapdoor"
+    "minecraft:cactus_trapdoor",
+    "minecraft:wooden_trapdoor"
   ]
 }

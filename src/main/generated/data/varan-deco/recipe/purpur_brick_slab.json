@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:purpur_bricks"
-    }
+    "#": "minecraft:purpur_bricks"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:purpur_brick_slab"
+    "id": "minecraft:purpur_brick_slab"
   }
 }

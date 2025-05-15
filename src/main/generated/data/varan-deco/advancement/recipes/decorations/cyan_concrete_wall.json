@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:cyan_concrete_wall"
+        "recipe": "minecraft:cyan_concrete_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:cyan_concrete_wall"
+      "minecraft:cyan_concrete_wall"
     ]
   }
 }

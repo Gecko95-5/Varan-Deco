@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:cut_quartz"
-  },
+  "ingredient": "minecraft:cut_quartz",
   "result": {
     "count": 1,
-    "id": "varan-deco:cut_quartz_stairs"
+    "id": "minecraft:cut_quartz_stairs"
   }
 }

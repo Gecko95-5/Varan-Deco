@@ -1,6 +1,6 @@
 {
   "values": [
-    "varan-deco:cactus_door",
-    "varan-deco:wooden_door"
+    "minecraft:cactus_door",
+    "minecraft:wooden_door"
   ]
 }

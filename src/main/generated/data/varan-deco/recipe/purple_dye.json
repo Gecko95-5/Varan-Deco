@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:purple_block"
-    }
+    "minecraft:purple_block"
   ],
   "result": {
     "count": 9,

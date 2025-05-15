@@ -24,16 +24,16 @@
             "slow_scale": 0.5,
             "states": [
               {
-                "Name": "varan-deco:pink_orchid"
+                "Name": "minecraft:pink_orchid"
               },
               {
-                "Name": "varan-deco:white_orchid"
+                "Name": "minecraft:white_orchid"
               },
               {
-                "Name": "varan-deco:salmon_poppy"
+                "Name": "minecraft:salmon_poppy"
               },
               {
-                "Name": "varan-deco:lavender"
+                "Name": "minecraft:lavender"
               }
             ],
             "variety": [

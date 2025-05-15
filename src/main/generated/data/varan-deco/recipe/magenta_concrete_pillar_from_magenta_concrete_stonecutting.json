@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:magenta_concrete"
-  },
+  "ingredient": "minecraft:magenta_concrete",
   "result": {
     "count": 1,
-    "id": "varan-deco:magenta_concrete_pillar"
+    "id": "minecraft:magenta_concrete_pillar"
   }
 }

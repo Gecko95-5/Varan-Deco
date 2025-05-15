@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:chiseled_deepslate_bricks"
+        "recipe": "minecraft:chiseled_deepslate_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:chiseled_deepslate_bricks"
+      "minecraft:chiseled_deepslate_bricks"
     ]
   }
 }

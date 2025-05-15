@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:red_nether_brick_slab"
-    }
+    "#": "minecraft:red_nether_brick_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:chiseled_red_nether_bricks"
+    "id": "minecraft:chiseled_red_nether_bricks"
   }
 }

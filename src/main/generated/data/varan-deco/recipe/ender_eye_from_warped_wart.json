@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:warped_wart"
-    },
-    "B": {
-      "item": "minecraft:blaze_powder"
-    },
-    "F": {
-      "item": "minecraft:chorus_fruit"
-    }
+    "#": "minecraft:warped_wart",
+    "B": "minecraft:blaze_powder",
+    "F": "minecraft:chorus_fruit"
   },
   "pattern": [
     " # ",

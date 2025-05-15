@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:yellow_terracotta"
-    }
+    "#": "minecraft:yellow_terracotta"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:yellow_terracotta_slab"
+    "id": "minecraft:yellow_terracotta_slab"
   }
 }

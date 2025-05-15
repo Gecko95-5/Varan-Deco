@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:purple_terracotta"
-    }
+    "#": "minecraft:purple_terracotta"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:purple_terracotta_wall"
+    "id": "minecraft:purple_terracotta_wall"
   }
 }

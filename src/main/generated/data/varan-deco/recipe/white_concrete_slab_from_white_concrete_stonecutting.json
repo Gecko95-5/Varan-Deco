@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:white_concrete"
-  },
+  "ingredient": "minecraft:white_concrete",
   "result": {
     "count": 1,
-    "id": "varan-deco:white_concrete_slab"
+    "id": "minecraft:white_concrete_slab"
   }
 }

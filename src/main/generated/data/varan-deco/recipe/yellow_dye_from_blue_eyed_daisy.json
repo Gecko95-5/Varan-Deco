@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:blue_eyed_daisy"
-    }
+    "minecraft:blue_eyed_daisy"
   ],
   "result": {
     "count": 1,

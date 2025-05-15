@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:smooth_blackstone"
-    }
+    "#": "minecraft:smooth_blackstone"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:smooth_blackstone_wall"
+    "id": "minecraft:smooth_blackstone_wall"
   }
 }

@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:soul_soilstone"
-  },
+  "ingredient": "minecraft:soul_soilstone",
   "result": {
     "count": 1,
-    "id": "varan-deco:soul_soilstone_slab"
+    "id": "minecraft:soul_soilstone_slab"
   }
 }

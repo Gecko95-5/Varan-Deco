@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "stained_glass_pane",
   "key": {
-    "#": {
-      "item": "varan-deco:hardened_purple_stained_glass"
-    }
+    "#": "minecraft:hardened_purple_stained_glass"
   },
   "pattern": [
     "###",
@@ -13,6 +11,6 @@
   ],
   "result": {
     "count": 16,
-    "id": "varan-deco:hardened_purple_stained_glass_pane"
+    "id": "minecraft:hardened_purple_stained_glass_pane"
   }
 }

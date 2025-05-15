@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:cut_red_sandstone_bricks"
+            "items": "minecraft:cut_red_sandstone_bricks"
           }
         ]
       },

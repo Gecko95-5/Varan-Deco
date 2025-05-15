@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:cut_pink_concrete"
-  },
+  "ingredient": "minecraft:cut_pink_concrete",
   "result": {
     "count": 1,
-    "id": "varan-deco:cut_pink_concrete_stairs"
+    "id": "minecraft:cut_pink_concrete_stairs"
   }
 }

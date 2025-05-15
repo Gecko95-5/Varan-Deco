@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "varan-deco:hardened_glass_pane"
-    },
-    "X": {
-      "item": "minecraft:cyan_dye"
-    }
+    "#": "minecraft:hardened_glass_pane",
+    "X": "minecraft:cyan_dye"
   },
   "pattern": [
     "###",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 8,
-    "id": "varan-deco:hardened_cyan_stained_glass_pane"
+    "id": "minecraft:hardened_cyan_stained_glass_pane"
   }
 }

@@ -3,10 +3,8 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
-  "ingredient": {
-    "item": "minecraft:black_stained_glass_pane"
-  },
+  "ingredient": "minecraft:black_stained_glass_pane",
   "result": {
-    "id": "varan-deco:mosaic_black_stained_glass_pane"
+    "id": "minecraft:mosaic_black_stained_glass_pane"
   }
 }

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "varan-deco:white_orchid"
-    }
+    "minecraft:white_orchid"
   ],
   "result": {
     "count": 1,

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "minecraft:purple_terracotta"
-    }
+    "S": "minecraft:purple_terracotta"
   },
   "pattern": [
     "SS",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:purple_terracotta_bricks"
+    "id": "minecraft:purple_terracotta_bricks"
   }
 }

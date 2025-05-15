@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:warped_mosaic"
-    }
+    "#": "minecraft:warped_mosaic"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:warped_mosaic_slab"
+    "id": "minecraft:warped_mosaic_slab"
   }
 }

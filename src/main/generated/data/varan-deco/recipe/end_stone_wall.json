@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:end_stone"
-    }
+    "#": "minecraft:end_stone"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:end_stone_wall"
+    "id": "minecraft:end_stone_wall"
   }
 }

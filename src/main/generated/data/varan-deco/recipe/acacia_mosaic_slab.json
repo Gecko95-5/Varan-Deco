@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:acacia_mosaic"
-    }
+    "#": "minecraft:acacia_mosaic"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:acacia_mosaic_slab"
+    "id": "minecraft:acacia_mosaic_slab"
   }
 }

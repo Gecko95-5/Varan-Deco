@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "varan-deco:magma_bricks"
-  },
+  "ingredient": "minecraft:magma_bricks",
   "result": {
     "count": 1,
-    "id": "varan-deco:magma_brick_wall"
+    "id": "minecraft:magma_brick_wall"
   }
 }

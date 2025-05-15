@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:yellow_terracotta_slab"
+        "recipe": "minecraft:yellow_terracotta_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:yellow_terracotta_slab"
+      "minecraft:yellow_terracotta_slab"
     ]
   }
 }

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:dark_oak_slab"
-    }
+    "#": "minecraft:dark_oak_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:dark_oak_mosaic"
+    "id": "minecraft:dark_oak_mosaic"
   }
 }

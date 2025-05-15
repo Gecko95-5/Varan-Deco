@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:red_concrete"
-    }
+    "#": "minecraft:red_concrete"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:red_concrete_wall"
+    "id": "minecraft:red_concrete_wall"
   }
 }

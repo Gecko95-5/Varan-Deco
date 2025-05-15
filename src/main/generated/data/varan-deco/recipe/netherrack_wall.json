@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:netherrack"
-    }
+    "#": "minecraft:netherrack"
   },
   "pattern": [
     "###",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:netherrack_wall"
+    "id": "minecraft:netherrack_wall"
   }
 }

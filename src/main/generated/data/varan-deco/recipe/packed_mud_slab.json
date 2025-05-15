@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:packed_mud"
-    }
+    "#": "minecraft:packed_mud"
   },
   "pattern": [
     "###"
   ],
   "result": {
     "count": 6,
-    "id": "varan-deco:packed_mud_slab"
+    "id": "minecraft:packed_mud_slab"
   }
 }

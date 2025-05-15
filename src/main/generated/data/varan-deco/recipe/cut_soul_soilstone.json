@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "varan-deco:soul_soilstone"
-    }
+    "S": "minecraft:soul_soilstone"
   },
   "pattern": [
     "SS",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:cut_soul_soilstone"
+    "id": "minecraft:cut_soul_soilstone"
   }
 }

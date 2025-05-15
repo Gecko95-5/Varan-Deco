@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:light_gray_terracotta_slab"
+        "recipe": "minecraft:light_gray_terracotta_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:light_gray_terracotta_slab"
+      "minecraft:light_gray_terracotta_slab"
     ]
   }
 }

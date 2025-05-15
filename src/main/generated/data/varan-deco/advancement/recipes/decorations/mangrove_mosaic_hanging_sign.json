@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:mangrove_mosaic"
+            "items": "minecraft:mangrove_mosaic"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:mangrove_mosaic_hanging_sign"
+        "recipe": "minecraft:mangrove_mosaic_hanging_sign"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:mangrove_mosaic_hanging_sign"
+      "minecraft:mangrove_mosaic_hanging_sign"
     ]
   }
 }

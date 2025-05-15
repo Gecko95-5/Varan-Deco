@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:obsidian_slab"
-    }
+    "#": "minecraft:obsidian_slab"
   },
   "pattern": [
     "#",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "varan-deco:obsidian_pillar"
+    "id": "minecraft:obsidian_pillar"
   }
 }

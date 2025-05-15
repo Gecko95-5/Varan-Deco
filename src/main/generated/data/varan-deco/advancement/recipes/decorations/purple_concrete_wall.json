@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:purple_concrete_wall"
+        "recipe": "minecraft:purple_concrete_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:purple_concrete_wall"
+      "minecraft:purple_concrete_wall"
     ]
   }
 }

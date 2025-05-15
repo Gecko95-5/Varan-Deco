@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:light_prismarine"
+            "items": "minecraft:light_prismarine"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:light_prismarine_slab"
+        "recipe": "minecraft:light_prismarine_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:light_prismarine_slab"
+      "minecraft:light_prismarine_slab"
     ]
   }
 }

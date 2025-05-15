@@ -5,6 +5,9 @@ import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.gecko.varandeco.VaranDeco;
+import net.gecko.varandeco.block.barrels.AcaciaBarrelBlock;
+import net.gecko.varandeco.block.barrels.BirchBarrelBlock;
+import net.gecko.varandeco.block.barrels.OakBarrelBlock;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
@@ -15,22 +18,24 @@ import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
 
+import java.util.List;
 import java.util.function.Function;
 
 
@@ -482,7 +487,7 @@ public class DecoBlocks {
     public static final Block WOODEN_MOSAIC_SLAB = registerBlock("wooden_mosaic_slab",
             AbstractBlock.Settings.copy(DecoBlocks.WOODEN_MOSAIC),SlabBlock::new);
 
-    public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
+    public static final Block WARPED_WART_PLANT = registerBlock("warped_wart_plant",
             AbstractBlock.Settings.copy(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque(),
                     WarpedWartBlock::new);
 
@@ -928,116 +933,115 @@ public class DecoBlocks {
     public static final Block TUFF_TILE_SLAB = registerBlock("tuff_tile_slab",
             AbstractBlock.Settings.copy(DecoBlocks.TUFF_TILES),SlabBlock::new);
 
-    public static final Block WOODEN_SAPLING = registerBlock("wooden_sapling",
-            new SaplingBlock(DecoSaplingGenerators.WOODEN ,AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_WOODEN_SAPLING = registerBlockWithoutItem("potted_wooden_sapling",
-            WOODEN_SAPLING,Blocks.POTTED_OAK_SAPLING)));
+    public static final Block WOODEN_SAPLING = registerSapling("wooden_sapling",
+            DecoSaplingGenerators.WOODEN ,Blocks.OAK_SAPLING);
+    public static final Block POTTED_WOODEN_SAPLING = registerFlowerPot("potted_wooden_sapling",
+            WOODEN_SAPLING,Blocks.POTTED_OAK_SAPLING);
 
     public static final Block WOODEN_LEAVES = registerBlock("wooden_leaves",
             AbstractBlock.Settings.copy(Blocks.DARK_OAK_LEAVES), LeavesBlock::new);
 
-    public static final Block PUFFY_DANDELION = registerBlock("puffy_dandelion",
-            new PuffyDandelionBlock(StatusEffects.SATURATION, 3,AbstractBlock.Settings.copy(Blocks.DANDELION)));
+    public static final Block PUFFY_DANDELION = registerPuffyFlower("puffy_dandelion",
+            StatusEffects.SATURATION, 3, Blocks.DANDELION);
     public static final Block POTTED_PUFFY_DANDELION = registerFlowerPot("potted_puffy_dandelion",
             PUFFY_DANDELION,Blocks.POTTED_DANDELION);
 
-    public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block CALIFORNIA_POPPY = registerFlower("california_poppy",
+            StatusEffects.NIGHT_VISION, 7, Blocks.POPPY);
     public static final Block POTTED_CALIFORNIA_POPPY = registerFlowerPot("potted_california_poppy",
             CALIFORNIA_POPPY,Blocks.POTTED_POPPY);
-    public static final Block SALMON_POPPY = registerBlock("salmon_poppy",
-            new FlowerBlock(StatusEffects.BLINDNESS, 5,AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block SALMON_POPPY = registerFlower("salmon_poppy",
+            StatusEffects.BLINDNESS, 5, Blocks.POPPY);
     public static final Block POTTED_SALMON_POPPY = registerFlowerPot("potted_salmon_poppy",
             SALMON_POPPY,Blocks.POTTED_POPPY);
 
-    public static final Block YELLOW_ORCHID = registerBlock("yellow_orchid",
-            new FlowerBlock(StatusEffects.SATURATION, 5,AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
+    public static final Block YELLOW_ORCHID = registerFlower("yellow_orchid",
+            StatusEffects.SATURATION, 5, Blocks.BLUE_ORCHID);
     public static final Block POTTED_YELLOW_ORCHID = registerFlowerPot("potted_yellow_orchid",
             YELLOW_ORCHID,Blocks.POTTED_BLUE_ORCHID);
-    public static final Block WHITE_ORCHID = registerBlock("white_orchid",
-            new FlowerBlock(StatusEffects.GLOWING, 5,AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
+    public static final Block WHITE_ORCHID = registerFlower("white_orchid",
+            StatusEffects.GLOWING, 5, Blocks.BLUE_ORCHID);
     public static final Block POTTED_WHITE_ORCHID = registerFlowerPot("potted_white_orchid",
             WHITE_ORCHID,Blocks.POTTED_BLUE_ORCHID);
-    public static final Block PINK_ORCHID = registerBlock("pink_orchid",
-            new FlowerBlock(StatusEffects.SLOW_FALLING, 7,AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
+    public static final Block PINK_ORCHID = registerFlower("pink_orchid",
+            StatusEffects.SLOW_FALLING, 7, Blocks.BLUE_ORCHID);
     public static final Block POTTED_PINK_ORCHID = registerFlowerPot("potted_pink_orchid",
             PINK_ORCHID,Blocks.POTTED_BLUE_ORCHID);
 
-    public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block YELLOW_TULIP = registerFlower("yellow_tulip",
+            StatusEffects.WEAKNESS, 9, Blocks.RED_TULIP);
     public static final Block POTTED_YELLOW_TULIP = registerFlowerPot("potted_yellow_tulip",
             YELLOW_TULIP,Blocks.POTTED_RED_TULIP);
-    public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block PURPLE_TULIP = registerFlower("purple_tulip",
+            StatusEffects.WEAKNESS, 9, Blocks.RED_TULIP);
     public static final Block POTTED_PURPLE_TULIP = registerFlowerPot("potted_purple_tulip",
             PURPLE_TULIP,Blocks.POTTED_RED_TULIP);
-    public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block MAGENTA_TULIP = registerFlower("magenta_tulip",
+            StatusEffects.WEAKNESS, 9, Blocks.RED_TULIP);
     public static final Block POTTED_MAGENTA_TULIP = registerFlowerPot("potted_magenta_tulip",
             MAGENTA_TULIP,Blocks.POTTED_RED_TULIP);
-    public static final Block BLUE_TULIP = registerBlock("blue_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block BLUE_TULIP = registerFlower("blue_tulip",
+            StatusEffects.WEAKNESS, 9, Blocks.RED_TULIP);
     public static final Block POTTED_BLUE_TULIP = registerFlowerPot("potted_blue_tulip",
             BLUE_TULIP,Blocks.POTTED_RED_TULIP);
 
-    public static final Block BLACK_TULIP = registerBlock("black_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block BLACK_TULIP = registerFlower("black_tulip",
+            StatusEffects.WEAKNESS, 18, Blocks.RED_TULIP);
     public static final Block POTTED_BLACK_TULIP = registerFlowerPot("potted_black_tulip",
             BLACK_TULIP,Blocks.POTTED_RED_TULIP);
-    public static final Block GREEN_TULIP = registerBlock("green_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block GREEN_TULIP = registerFlower("green_tulip",
+            StatusEffects.WEAKNESS, 18, Blocks.RED_TULIP);
     public static final Block POTTED_GREEN_TULIP = registerFlowerPot("potted_green_tulip",
             GREEN_TULIP,Blocks.POTTED_RED_TULIP);
-    public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+    public static final Block CYAN_TULIP = registerFlower("cyan_tulip",
+            StatusEffects.WEAKNESS, 18, Blocks.RED_TULIP);
     public static final Block POTTED_CYAN_TULIP = registerFlowerPot("potted_cyan_tulip",
             CYAN_TULIP,Blocks.POTTED_RED_TULIP);
 
-    public static final Block BARBERTON_DAISY = registerBlock("barberton_daisy",
-            new FlowerBlock(StatusEffects.INSTANT_HEALTH, 1,AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)));
+    public static final Block BARBERTON_DAISY = registerFlower("barberton_daisy",
+            StatusEffects.INSTANT_HEALTH, 1, Blocks.OXEYE_DAISY);
     public static final Block POTTED_BARBERTON_DAISY = registerFlowerPot("potted_barberton_daisy",
             BARBERTON_DAISY,Blocks.POTTED_OXEYE_DAISY);
-    public static final Block BLUE_EYED_DAISY = registerBlock("blue_eyed_daisy",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)));
+    public static final Block BLUE_EYED_DAISY = registerFlower("blue_eyed_daisy",
+            StatusEffects.NIGHT_VISION, 7, Blocks.OXEYE_DAISY);
     public static final Block POTTED_BLUE_EYED_DAISY = registerFlowerPot("potted_blue_eyed_daisy",
             BLUE_EYED_DAISY,Blocks.POTTED_OXEYE_DAISY);
-    public static final Block GERBERA_DAISY = registerBlock("gerbera_daisy",
-            new FlowerBlock(StatusEffects.REGENERATION, 5,AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)));
+    public static final Block GERBERA_DAISY = registerFlower("gerbera_daisy",
+            StatusEffects.REGENERATION, 5, Blocks.OXEYE_DAISY);
     public static final Block POTTED_GERBERA_DAISY = registerFlowerPot("potted_gerbera_daisy",
             GERBERA_DAISY,Blocks.POTTED_OXEYE_DAISY);
-    public static final Block MICHAELMAS_DAISY = registerBlock("michaelmas_daisy",
-            new FlowerBlock(StatusEffects.RESISTANCE, 7,AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)));
+    public static final Block MICHAELMAS_DAISY = registerFlower("michaelmas_daisy",
+            StatusEffects.RESISTANCE, 7, Blocks.OXEYE_DAISY);
     public static final Block POTTED_MICHAELMAS_DAISY = registerFlowerPot("potted_michaelmas_daisy",
             MICHAELMAS_DAISY,Blocks.POTTED_OXEYE_DAISY);
 
-    public static final Block PAEONIA = registerBlock("paeonia",
-            new FlowerBlock(StatusEffects.SLOWNESS,7,AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block PAEONIA = registerFlower("paeonia",
+            StatusEffects.SLOWNESS,7, Blocks.POPPY);
     public static final Block POTTED_PAEONIA = registerFlowerPot("potted_paeonia",
             PAEONIA,Blocks.POTTED_POPPY);
 
-    public static final Block LAVENDER = registerBlock("lavender",
-            new FlowerBlock(StatusEffects.HASTE,5,AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block LAVENDER = registerFlower("lavender",
+            StatusEffects.HASTE,5, Blocks.POPPY);
     public static final Block POTTED_LAVENDER = registerFlowerPot("potted_lavender",
             LAVENDER,Blocks.POTTED_POPPY);
 
-    public static final Block ROSE = registerBlock("rose",
-            new FlowerBlock(StatusEffects.POISON, 4,AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block ROSE = registerFlower("rose",
+            StatusEffects.POISON, 4, Blocks.POPPY);
     public static final Block POTTED_ROSE = registerFlowerPot("potted_rose",
             ROSE,Blocks.POTTED_POPPY);
-    public static final Block ENDER_ROSE = registerBlock("ender_rose",
-            new EnderRoseBlock(StatusEffects.LEVITATION, 8.0F, AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block ENDER_ROSE = registerRoseFlower("ender_rose",
+            StatusEffects.LEVITATION, 8.0F, Blocks.POPPY);
     public static final Block POTTED_ENDER_ROSE = registerFlowerPot("potted_ender_rose",
             ENDER_ROSE,Blocks.POTTED_POPPY);
 
-    public static final Block ANCIENT_ROSE_CROP = registerBlockWithoutItem("ancient_rose_crop",
+    public static final Block ANCIENT_ROSE_CROP = registerBlock("ancient_rose_crop",
             AbstractBlock.Settings.copy(Blocks.TORCHFLOWER_CROP).nonOpaque(), AncientRoseBlock::new);
 
-    public static final Block MIGHTY_LAVENDER_CROP = registerBlockWithoutItem("mighty_lavender_crop",
-                    AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().ticksRandomly().breakInstantly()
-                            .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY), Block::new);
+    public static final Block MIGHTY_LAVENDER_CROP = registerBlock("mighty_lavender_crop",
+                    AbstractBlock.Settings.copy(Blocks.TORCHFLOWER_CROP), MightyLavenderCropBlock::new);
 
-    public static final Block ANCIENT_ROSE = registerBlock("ancient_rose",
-            new FlowerBlock(StatusEffects.POISON, 4,AbstractBlock.Settings.copy(Blocks.POPPY)));
+    public static final Block ANCIENT_ROSE = registerFlower("ancient_rose",
+            StatusEffects.POISON, 4, Blocks.POPPY);
     public static final Block POTTED_ANCIENT_ROSE = registerFlowerPot("potted_ancient_rose",
             ANCIENT_ROSE,Blocks.POTTED_POPPY);
 
@@ -1124,45 +1128,37 @@ public class DecoBlocks {
     public static final Block LIGHT_IRON_BARS = registerBlock("light_iron_bars",
             AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(2.5f,6.0f),PaneBlock::new);
 
-    public static final Block LIGHT_COPPER_BARS = registerBlock("light_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(DecoBlocks.LIGHT_IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block LIGHT_COPPER_BARS = registerOxidPane("light_copper_bars",
+            Oxidizable.OxidationLevel.UNAFFECTED,DecoBlocks.LIGHT_IRON_BARS);
     public static final Block WAXED_LIGHT_COPPER_BARS = registerBlock("waxed_light_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.LIGHT_COPPER_BARS),PaneBlock::new);
-    public static final Block EXPOSED_LIGHT_COPPER_BARS = registerBlock("exposed_light_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(DecoBlocks.LIGHT_IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_LIGHT_COPPER_BARS = registerOxidPane("exposed_light_copper_bars",
+            Oxidizable.OxidationLevel.EXPOSED,DecoBlocks.LIGHT_IRON_BARS);
     public static final Block WAXED_EXPOSED_LIGHT_COPPER_BARS = registerBlock("waxed_exposed_light_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_LIGHT_COPPER_BARS),PaneBlock::new);
-    public static final Block WEATHERED_LIGHT_COPPER_BARS = registerBlock("weathered_light_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(DecoBlocks.LIGHT_IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_LIGHT_COPPER_BARS = registerOxidPane("weathered_light_copper_bars",
+            Oxidizable.OxidationLevel.WEATHERED, DecoBlocks.LIGHT_IRON_BARS);
     public static final Block WAXED_WEATHERED_LIGHT_COPPER_BARS = registerBlock("waxed_weathered_light_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS),PaneBlock::new);
-    public static final Block OXIDIZED_LIGHT_COPPER_BARS = registerBlock("oxidized_light_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(DecoBlocks.LIGHT_IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_LIGHT_COPPER_BARS = registerOxidPane("oxidized_light_copper_bars",
+            Oxidizable.OxidationLevel.OXIDIZED, DecoBlocks.LIGHT_IRON_BARS);
     public static final Block WAXED_OXIDIZED_LIGHT_COPPER_BARS = registerBlock("waxed_oxidized_light_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS),PaneBlock::new);
 
-    public static final Block COPPER_BARS = registerBlock("copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(Blocks.IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block COPPER_BARS = registerOxidPane("copper_bars",
+            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.IRON_BARS);
     public static final Block WAXED_COPPER_BARS = registerBlock("waxed_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.COPPER_BARS),PaneBlock::new);
-    public static final Block EXPOSED_COPPER_BARS = registerBlock("exposed_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(Blocks.IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_BARS = registerOxidPane("exposed_copper_bars",
+            Oxidizable.OxidationLevel.EXPOSED,Blocks.IRON_BARS);
     public static final Block WAXED_EXPOSED_COPPER_BARS = registerBlock("waxed_exposed_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_BARS),PaneBlock::new);
-    public static final Block WEATHERED_COPPER_BARS = registerBlock("weathered_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(Blocks.IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_BARS = registerOxidPane("weathered_copper_bars",
+            Oxidizable.OxidationLevel.WEATHERED,Blocks.IRON_BARS);
     public static final Block WAXED_WEATHERED_COPPER_BARS = registerBlock("waxed_weathered_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_BARS),PaneBlock::new);
-    public static final Block OXIDIZED_COPPER_BARS = registerBlock("oxidized_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(Blocks.IRON_BARS)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_BARS = registerOxidPane("oxidized_copper_bars",
+            Oxidizable.OxidationLevel.OXIDIZED,Blocks.IRON_BARS);
     public static final Block WAXED_OXIDIZED_COPPER_BARS = registerBlock("waxed_oxidized_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_BARS),PaneBlock::new);
 
@@ -1170,45 +1166,37 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(10.0f,12.0f)
                     .mapColor(MapColor.IRON_GRAY),PaneBlock::new);
 
-    public static final Block HEAVY_COPPER_BARS = registerBlock("heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(DecoBlocks.HEAVY_IRON_BARS)
-                    .mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER)));
+    public static final Block HEAVY_COPPER_BARS = registerOxidPane("heavy_copper_bars",
+            Oxidizable.OxidationLevel.UNAFFECTED, DecoBlocks.HEAVY_IRON_BARS);
     public static final Block WAXED_HEAVY_COPPER_BARS = registerBlock("waxed_heavy_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.HEAVY_COPPER_BARS),PaneBlock::new);
-    public static final Block EXPOSED_HEAVY_COPPER_BARS = registerBlock("exposed_heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(DecoBlocks.HEAVY_IRON_BARS)
-                    .mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_HEAVY_COPPER_BARS = registerOxidPane("exposed_heavy_copper_bars",
+            Oxidizable.OxidationLevel.EXPOSED, DecoBlocks.HEAVY_IRON_BARS);
     public static final Block WAXED_EXPOSED_HEAVY_COPPER_BARS = registerBlock("waxed_exposed_heavy_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS),PaneBlock::new);
-    public static final Block WEATHERED_HEAVY_COPPER_BARS = registerBlock("weathered_heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(DecoBlocks.HEAVY_IRON_BARS)
-                    .mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_HEAVY_COPPER_BARS = registerOxidPane("weathered_heavy_copper_bars",
+            Oxidizable.OxidationLevel.WEATHERED, DecoBlocks.HEAVY_IRON_BARS);
     public static final Block WAXED_WEATHERED_HEAVY_COPPER_BARS = registerBlock("waxed_weathered_heavy_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS),PaneBlock::new);
-    public static final Block OXIDIZED_HEAVY_COPPER_BARS = registerBlock("oxidized_heavy_copper_bars",
-            new OxidizablePaneBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(DecoBlocks.HEAVY_IRON_BARS)
-                    .mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_HEAVY_COPPER_BARS = registerOxidPane("oxidized_heavy_copper_bars",
+            Oxidizable.OxidationLevel.OXIDIZED, DecoBlocks.HEAVY_IRON_BARS);
     public static final Block WAXED_OXIDIZED_HEAVY_COPPER_BARS = registerBlock("waxed_oxidized_heavy_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS),PaneBlock::new);
 
-    public static final Block COPPER_CHAIN = registerBlock("copper_chain",
-            new OxidizableChainBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(Blocks.CHAIN)
-                    .sounds(BlockSoundGroup.COPPER_GRATE)));
+    public static final Block COPPER_CHAIN = registerOxidChain("copper_chain",
+            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.CHAIN);
     public static final Block WAXED_COPPER_CHAIN = registerBlock("waxed_copper_chain",
             AbstractBlock.Settings.copy(DecoBlocks.COPPER_CHAIN),ChainBlock::new);
-    public static final Block EXPOSED_COPPER_CHAIN = registerBlock("exposed_copper_chain",
-            new OxidizableChainBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(Blocks.CHAIN)
-                    .sounds(BlockSoundGroup.COPPER_GRATE)));
+    public static final Block EXPOSED_COPPER_CHAIN = registerOxidChain("exposed_copper_chain",
+            Oxidizable.OxidationLevel.EXPOSED,Blocks.CHAIN);
     public static final Block WAXED_EXPOSED_COPPER_CHAIN = registerBlock("waxed_exposed_copper_chain",
             AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_CHAIN),ChainBlock::new);
-    public static final Block WEATHERED_COPPER_CHAIN = registerBlock("weathered_copper_chain",
-            new OxidizableChainBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(Blocks.CHAIN)
-                    .sounds(BlockSoundGroup.COPPER_GRATE)));
+    public static final Block WEATHERED_COPPER_CHAIN = registerOxidChain("weathered_copper_chain",
+            Oxidizable.OxidationLevel.WEATHERED,Blocks.CHAIN);
     public static final Block WAXED_WEATHERED_COPPER_CHAIN = registerBlock("waxed_weathered_copper_chain",
             AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_CHAIN),ChainBlock::new);
-    public static final Block OXIDIZED_COPPER_CHAIN = registerBlock("oxidized_copper_chain",
-            new OxidizableChainBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(Blocks.CHAIN)
-                    .sounds(BlockSoundGroup.COPPER_GRATE)));
+    public static final Block OXIDIZED_COPPER_CHAIN = registerOxidChain("oxidized_copper_chain",
+            Oxidizable.OxidationLevel.OXIDIZED,Blocks.CHAIN);
     public static final Block WAXED_OXIDIZED_COPPER_CHAIN = registerBlock("waxed_oxidized_copper_chain",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_CHAIN),ChainBlock::new);
 
@@ -1243,11 +1231,11 @@ public class DecoBlocks {
     public static final Block NETHERRACK_WALL = registerBlock("netherrack_wall",
             AbstractBlock.Settings.copy(Blocks.NETHERRACK),WallBlock::new);
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
+            AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE),WallBlock::new);
     public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
+            AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE),WallBlock::new);
     public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
+            AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE),WallBlock::new);
     public static final Block PACKED_MUD_WALL = registerBlock("packed_mud_wall",
             AbstractBlock.Settings.copy(Blocks.PACKED_MUD),WallBlock::new);
     public static final Block END_STONE_WALL = registerBlock("end_stone_wall",
@@ -1293,7 +1281,7 @@ public class DecoBlocks {
     public static final Block PACKED_ICE_WALL = registerBlock("packed_ice_wall",
             AbstractBlock.Settings.copy(Blocks.PACKED_ICE),WallBlock::new);
     public static final Block MAGMA_WALL = registerBlock("magma_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.MAGMA_BLOCK)));
+            AbstractBlock.Settings.copy(Blocks.MAGMA_BLOCK),MagmaWallBlock::new);
     public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
             AbstractBlock.Settings.copy(Blocks.WHITE_CONCRETE),WallBlock::new);
     public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
@@ -1440,11 +1428,11 @@ public class DecoBlocks {
     public static final Block CUT_RED_SANDSTONE_BRICK_WALL = registerBlock("cut_red_sandstone_brick_wall",
             AbstractBlock.Settings.copy(DecoBlocks.CUT_RED_SANDSTONE_BRICKS),WallBlock::new);
     public static final Block MAGMA_BRICK_WALL = registerBlock("magma_brick_wall",
-            new MagmaBrickWallBlock(AbstractBlock.Settings.copy(DecoBlocks.MAGMA_BRICKS)));
+            AbstractBlock.Settings.copy(DecoBlocks.MAGMA_BRICKS),MagmaBrickWallBlock::new);
     public static final Block BUBBLE_WALL = registerBlock("bubble_wall",
-            new BubbleWallBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK)));
+            AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK),BubbleWallBlock::new);
     public static final Block BUBBLE_BRICK_WALL = registerBlock("bubble_brick_wall",
-            new BubbleWallBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BRICKS)));
+            AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BRICKS),BubbleWallBlock::new);
     public static final Block BLUE_NETHER_BRICK_WALL = registerBlock("blue_nether_brick_wall",
             AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS),WallBlock::new);
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
@@ -1470,114 +1458,82 @@ public class DecoBlocks {
     public static final Block HARDENED_TINTED_GLASS_PANE = registerBlock("hardened_tinted_glass_pane",
             AbstractBlock.Settings.copy(DecoBlocks.TINTED_GLASS_PANE).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool(),TintedGlassPaneBlock::new);
-    public static final Block HARDENED_WHITE_STAINED_GLASS_PANE = registerBlock("hardened_white_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE,AbstractBlock.Settings.copy(Blocks.WHITE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_ORANGE_STAINED_GLASS_PANE = registerBlock("hardened_orange_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.ORANGE,AbstractBlock.Settings.copy(Blocks.ORANGE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_MAGENTA_STAINED_GLASS_PANE = registerBlock("hardened_magenta_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.MAGENTA,AbstractBlock.Settings.copy(Blocks.MAGENTA_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE = registerBlock("hardened_light_blue_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_YELLOW_STAINED_GLASS_PANE = registerBlock("hardened_yellow_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.YELLOW, AbstractBlock.Settings.copy(Blocks.YELLOW_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_LIME_STAINED_GLASS_PANE = registerBlock("hardened_lime_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIME, AbstractBlock.Settings.copy(Blocks.LIME_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_PINK_STAINED_GLASS_PANE = registerBlock("hardened_pink_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.PINK, AbstractBlock.Settings.copy(Blocks.PINK_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_GRAY_STAINED_GLASS_PANE = registerBlock("hardened_gray_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.GRAY, AbstractBlock.Settings.copy(Blocks.GRAY_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE = registerBlock("hardened_light_gray_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_CYAN_STAINED_GLASS_PANE = registerBlock("hardened_cyan_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.CYAN, AbstractBlock.Settings.copy(Blocks.CYAN_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_PURPLE_STAINED_GLASS_PANE = registerBlock("hardened_purple_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.PURPLE, AbstractBlock.Settings.copy(Blocks.PURPLE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_BLUE_STAINED_GLASS_PANE = registerBlock("hardened_blue_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BLUE, AbstractBlock.Settings.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_BROWN_STAINED_GLASS_PANE = registerBlock("hardened_brown_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BROWN, AbstractBlock.Settings.copy(Blocks.BROWN_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_GREEN_STAINED_GLASS_PANE = registerBlock("hardened_green_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.GREEN, AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_RED_STAINED_GLASS_PANE = registerBlock("hardened_red_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.RED, AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
-    public static final Block HARDENED_BLACK_STAINED_GLASS_PANE = registerBlock("hardened_black_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BLACK, AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool()));
+    public static final Block HARDENED_WHITE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_white_stained_glass_pane",
+            DyeColor.WHITE,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_ORANGE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_orange_stained_glass_pane",
+           DyeColor.ORANGE,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_MAGENTA_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_magenta_stained_glass_pane",
+           DyeColor.MAGENTA,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_light_blue_stained_glass_pane",
+           DyeColor.LIGHT_BLUE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_YELLOW_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_yellow_stained_glass_pane",
+           DyeColor.YELLOW, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_LIME_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_lime_stained_glass_pane",
+           DyeColor.LIME, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_PINK_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_pink_stained_glass_pane",
+           DyeColor.PINK, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_GRAY_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_gray_stained_glass_pane",
+           DyeColor.GRAY, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_light_gray_stained_glass_pane",
+           DyeColor.LIGHT_GRAY, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_CYAN_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_cyan_stained_glass_pane",
+           DyeColor.CYAN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_PURPLE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_purple_stained_glass_pane",
+           DyeColor.PURPLE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_BLUE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_blue_stained_glass_pane",
+           DyeColor.BLUE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_BROWN_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_brown_stained_glass_pane",
+           DyeColor.BROWN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_GREEN_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_green_stained_glass_pane",
+           DyeColor.GREEN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_RED_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_red_stained_glass_pane",
+           DyeColor.RED, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+    public static final Block HARDENED_BLACK_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_black_stained_glass_pane",
+           DyeColor.BLACK, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
 
-    public static final Block MOSAIC_WHITE_STAINED_GLASS_PANE = registerBlock("mosaic_white_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE,AbstractBlock.Settings.copy(Blocks.WHITE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_ORANGE_STAINED_GLASS_PANE = registerBlock("mosaic_orange_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.ORANGE,AbstractBlock.Settings.copy(Blocks.ORANGE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_MAGENTA_STAINED_GLASS_PANE = registerBlock("mosaic_magenta_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.MAGENTA,AbstractBlock.Settings.copy(Blocks.MAGENTA_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE = registerBlock("mosaic_light_blue_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_YELLOW_STAINED_GLASS_PANE = registerBlock("mosaic_yellow_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.YELLOW, AbstractBlock.Settings.copy(Blocks.YELLOW_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_LIME_STAINED_GLASS_PANE = registerBlock("mosaic_lime_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIME, AbstractBlock.Settings.copy(Blocks.LIME_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_PINK_STAINED_GLASS_PANE = registerBlock("mosaic_pink_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.PINK, AbstractBlock.Settings.copy(Blocks.PINK_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_GRAY_STAINED_GLASS_PANE = registerBlock("mosaic_gray_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.GRAY, AbstractBlock.Settings.copy(Blocks.GRAY_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE = registerBlock("mosaic_light_gray_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_CYAN_STAINED_GLASS_PANE = registerBlock("mosaic_cyan_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.CYAN, AbstractBlock.Settings.copy(Blocks.CYAN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_PURPLE_STAINED_GLASS_PANE = registerBlock("mosaic_purple_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.PURPLE, AbstractBlock.Settings.copy(Blocks.PURPLE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_BLUE_STAINED_GLASS_PANE = registerBlock("mosaic_blue_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BLUE, AbstractBlock.Settings.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_BROWN_STAINED_GLASS_PANE = registerBlock("mosaic_brown_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BROWN, AbstractBlock.Settings.copy(Blocks.BROWN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_GREEN_STAINED_GLASS_PANE = registerBlock("mosaic_green_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.GREEN, AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_RED_STAINED_GLASS_PANE = registerBlock("mosaic_red_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.RED, AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
-    public static final Block MOSAIC_BLACK_STAINED_GLASS_PANE = registerBlock("mosaic_black_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BLACK, AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+    public static final Block MOSAIC_WHITE_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_white_stained_glass_pane",
+           DyeColor.WHITE,Blocks.WHITE_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_ORANGE_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_orange_stained_glass_pane",
+           DyeColor.ORANGE,Blocks.ORANGE_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_MAGENTA_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_magenta_stained_glass_pane",
+           DyeColor.MAGENTA,Blocks.MAGENTA_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_light_blue_stained_glass_pane",
+           DyeColor.LIGHT_BLUE, Blocks.LIGHT_BLUE_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_YELLOW_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_yellow_stained_glass_pane",
+           DyeColor.YELLOW, Blocks.YELLOW_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_LIME_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_lime_stained_glass_pane",
+           DyeColor.LIME, Blocks.LIME_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_PINK_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_pink_stained_glass_pane",
+           DyeColor.PINK, Blocks.PINK_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_GRAY_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_gray_stained_glass_pane",
+           DyeColor.GRAY, Blocks.GRAY_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_light_gray_stained_glass_pane",
+           DyeColor.LIGHT_GRAY, Blocks.LIGHT_GRAY_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_CYAN_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_cyan_stained_glass_pane",
+           DyeColor.CYAN, Blocks.CYAN_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_PURPLE_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_purple_stained_glass_pane",
+           DyeColor.PURPLE, Blocks.PURPLE_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_BLUE_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_blue_stained_glass_pane",
+           DyeColor.BLUE, Blocks.BLUE_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_BROWN_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_brown_stained_glass_pane",
+           DyeColor.BROWN, Blocks.BROWN_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_GREEN_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_green_stained_glass_pane",
+           DyeColor.GREEN, Blocks.GREEN_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_RED_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_red_stained_glass_pane",
+           DyeColor.RED, Blocks.RED_STAINED_GLASS_PANE, 0.6f, 0.3f);
+    public static final Block MOSAIC_BLACK_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_black_stained_glass_pane",
+           DyeColor.BLACK, Blocks.BLACK_STAINED_GLASS_PANE, 0.6f, 0.3f);
 
     public static final Block OAK_BARREL = registerBlock("oak_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN), OakBarrelBlock::new);
     public static final Block SPRUCE_BARREL = registerBlock("spruce_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL),BarrelBlock::new);
     public static final Block BIRCH_BARREL = registerBlock("birch_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW), BirchBarrelBlock::new);
     public static final Block JUNGLE_BARREL = registerBlock("jungle_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN),BarrelBlock::new);
     public static final Block ACACIA_BARREL = registerBlock("acacia_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE), AcaciaBarrelBlock::new);
     public static final Block DARK_OAK_BARREL = registerBlock("dark_oak_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN),BarrelBlock::new);
     public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
@@ -1714,169 +1670,145 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffStonecutterBlock::new);
 
-    public static final Block COPPER_LANTERN = registerBlock("copper_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(Blocks.LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block COPPER_LANTERN = registerOxidLantern("copper_lantern",
+            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.LANTERN);
     public static final Block WAXED_COPPER_LANTERN = registerBlock("waxed_copper_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.COPPER_LANTERN),LanternBlock::new);
-    public static final Block EXPOSED_COPPER_LANTERN = registerBlock("exposed_copper_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(Blocks.LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_LANTERN = registerOxidLantern("exposed_copper_lantern",
+            Oxidizable.OxidationLevel.EXPOSED,Blocks.LANTERN);
     public static final Block WAXED_EXPOSED_COPPER_LANTERN = registerBlock("waxed_exposed_copper_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_LANTERN),LanternBlock::new);
-    public static final Block WEATHERED_COPPER_LANTERN = registerBlock("weathered_copper_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(Blocks.LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_LANTERN = registerOxidLantern("weathered_copper_lantern",
+            Oxidizable.OxidationLevel.WEATHERED,Blocks.LANTERN);
     public static final Block WAXED_WEATHERED_COPPER_LANTERN = registerBlock("waxed_weathered_copper_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_LANTERN),LanternBlock::new);
-    public static final Block OXIDIZED_COPPER_LANTERN = registerBlock("oxidized_copper_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(Blocks.LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_LANTERN = registerOxidLantern("oxidized_copper_lantern",
+            Oxidizable.OxidationLevel.OXIDIZED,Blocks.LANTERN);
     public static final Block WAXED_OXIDIZED_COPPER_LANTERN = registerBlock("waxed_oxidized_copper_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_LANTERN),LanternBlock::new);
 
-    public static final Block COPPER_SOUL_LANTERN = registerBlock("copper_soul_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(Blocks.SOUL_LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block COPPER_SOUL_LANTERN = registerOxidLantern("copper_soul_lantern",
+            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.SOUL_LANTERN);
     public static final Block WAXED_COPPER_SOUL_LANTERN = registerBlock("waxed_copper_soul_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.COPPER_SOUL_LANTERN),LanternBlock::new);
-    public static final Block EXPOSED_COPPER_SOUL_LANTERN = registerBlock("exposed_copper_soul_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(Blocks.SOUL_LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_SOUL_LANTERN = registerOxidLantern("exposed_copper_soul_lantern",
+            Oxidizable.OxidationLevel.EXPOSED,Blocks.SOUL_LANTERN);
     public static final Block WAXED_EXPOSED_COPPER_SOUL_LANTERN = registerBlock("waxed_exposed_copper_soul_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN),LanternBlock::new);
-    public static final Block WEATHERED_COPPER_SOUL_LANTERN = registerBlock("weathered_copper_soul_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(Blocks.SOUL_LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_SOUL_LANTERN = registerOxidLantern("weathered_copper_soul_lantern",
+            Oxidizable.OxidationLevel.WEATHERED,Blocks.SOUL_LANTERN);
     public static final Block WAXED_WEATHERED_COPPER_SOUL_LANTERN = registerBlock("waxed_weathered_copper_soul_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN),LanternBlock::new);
-    public static final Block OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("oxidized_copper_soul_lantern",
-            new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(Blocks.SOUL_LANTERN)
-                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_SOUL_LANTERN = registerOxidLantern("oxidized_copper_soul_lantern",
+            Oxidizable.OxidationLevel.OXIDIZED,Blocks.SOUL_LANTERN);
     public static final Block WAXED_OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("waxed_oxidized_copper_soul_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN),LanternBlock::new);
 
-    public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
-            new ButtonBlock(DecoBlockSets.DEEPSLATE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block COBBLED_DEEPSLATE_BUTTON = registerBlock("cobbled_deepslate_button",
-            new ButtonBlock(DecoBlockSets.DEEPSLATE, 20,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
-            new ButtonBlock(DecoBlockSets.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block COBBLESTONE_BUTTON = registerBlock("cobblestone_button",
-            new ButtonBlock(BlockSetType.STONE, 20,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block BLACKSTONE_BUTTON = registerBlock("blackstone_button",
-            new ButtonBlock(DecoBlockSets.BLACKSTONE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block POLISHED_STONE_BUTTON = registerBlock("polished_stone_button",
-            new ButtonBlock(BlockSetType.STONE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block TUFF_BUTTON = registerBlock("tuff_button",
-            new ButtonBlock(DecoBlockSets.TUFF, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block POLISHED_TUFF_BUTTON = registerBlock("polished_tuff_button",
-            new ButtonBlock(DecoBlockSets.POLISHED_TUFF, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
-            new ButtonBlock(DecoBlockSets.CACUTS, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
-    public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
-            new ButtonBlock(DecoBlockSets.WOODEN, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+    public static final Block DEEPSLATE_BUTTON = registerButton("deepslate_button",
+            DecoBlockSets.DEEPSLATE, 20,Blocks.STONE_BUTTON);
+    public static final Block COBBLED_DEEPSLATE_BUTTON = registerButton("cobbled_deepslate_button",
+            DecoBlockSets.DEEPSLATE, 20,Blocks.STONE_BUTTON);
+    public static final Block POLISHED_DEEPSLATE_BUTTON = registerButton("polished_deepslate_button",
+            DecoBlockSets.POLISHED_DEEPSLATE, 20,Blocks.STONE_BUTTON);
+    public static final Block COBBLESTONE_BUTTON = registerButton("cobblestone_button",
+            BlockSetType.STONE, 20,Blocks.STONE_BUTTON);
+    public static final Block BLACKSTONE_BUTTON = registerButton("blackstone_button",
+            DecoBlockSets.BLACKSTONE, 20,Blocks.STONE_BUTTON);
+    public static final Block POLISHED_STONE_BUTTON = registerButton("polished_stone_button",
+            BlockSetType.STONE, 20,Blocks.STONE_BUTTON);
+    public static final Block TUFF_BUTTON = registerButton("tuff_button",
+            DecoBlockSets.TUFF, 20,Blocks.STONE_BUTTON);
+    public static final Block POLISHED_TUFF_BUTTON = registerButton("polished_tuff_button",
+            DecoBlockSets.POLISHED_TUFF, 20,Blocks.STONE_BUTTON);
+    public static final Block CACTUS_PLANK_BUTTON = registerButton("cactus_plank_button",
+            DecoBlockSets.CACUTS, 30, Blocks.OAK_BUTTON);
+    public static final Block WOODEN_BUTTON = registerButton("wooden_button",
+            DecoBlockSets.WOODEN, 30, Blocks.OAK_BUTTON);
 
-    public static final Block IRON_BUTTON = registerBlock("iron_button",
-            new ButtonBlock(BlockSetType.IRON, 50, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block GOLD_BUTTON = registerBlock("gold_button",
-            new ButtonBlock(BlockSetType.GOLD, 1, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
+    public static final Block IRON_BUTTON = registerButton("iron_button",
+            BlockSetType.IRON, 50, Blocks.STONE_BUTTON);
+    public static final Block GOLD_BUTTON = registerButton("gold_button",
+            BlockSetType.GOLD, 1, Blocks.STONE_BUTTON);
 
-    public static final Block COPPER_BUTTON = registerBlock("copper_button",
-            new OxidizableButtonBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.COPPER, 10));
-    public static final Block WAXED_COPPER_BUTTON = registerBlock("waxed_copper_button",
-            new ButtonBlock(BlockSetType.COPPER, 10, AbstractBlock.Settings.copy(DecoBlocks.COPPER_BUTTON)));
-    public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button",
-            new OxidizableButtonBlock(Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.COPPER, 20));
-    public static final Block WAXED_EXPOSED_COPPER_BUTTON = registerBlock("waxed_exposed_copper_button",
-            new ButtonBlock(BlockSetType.COPPER, 20, AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_BUTTON)));
-    public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button",
-            new OxidizableButtonBlock(Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.COPPER, 30));
-    public static final Block WAXED_WEATHERED_COPPER_BUTTON = registerBlock("waxed_weathered_copper_button",
-            new ButtonBlock(BlockSetType.COPPER, 30, AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_BUTTON)));
-    public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button",
-            new OxidizableButtonBlock(Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)
-                    .sounds(BlockSoundGroup.COPPER), BlockSetType.COPPER, 40));
-    public static final Block WAXED_OXIDIZED_COPPER_BUTTON = registerBlock("waxed_oxidized_copper_button",
-            new ButtonBlock(BlockSetType.COPPER, 40, AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_BUTTON)));
+    public static final Block COPPER_BUTTON = registerOxidButton("copper_button",
+            Oxidizable.OxidationLevel.UNAFFECTED, BlockSetType.COPPER, 10, Blocks.STONE_BUTTON);
+    public static final Block WAXED_COPPER_BUTTON = registerButton("waxed_copper_button",
+            BlockSetType.COPPER, 10, DecoBlocks.COPPER_BUTTON);
+    public static final Block EXPOSED_COPPER_BUTTON = registerOxidButton("exposed_copper_button",
+            Oxidizable.OxidationLevel.EXPOSED,BlockSetType.COPPER, 20,Blocks.STONE_BUTTON);
+    public static final Block WAXED_EXPOSED_COPPER_BUTTON = registerButton("waxed_exposed_copper_button",
+            BlockSetType.COPPER, 20, DecoBlocks.EXPOSED_COPPER_BUTTON);
+    public static final Block WEATHERED_COPPER_BUTTON = registerOxidButton("weathered_copper_button",
+            Oxidizable.OxidationLevel.WEATHERED,BlockSetType.COPPER, 30,Blocks.STONE_BUTTON);
+    public static final Block WAXED_WEATHERED_COPPER_BUTTON = registerButton("waxed_weathered_copper_button",
+            BlockSetType.COPPER, 30, DecoBlocks.WEATHERED_COPPER_BUTTON);
+    public static final Block OXIDIZED_COPPER_BUTTON = registerOxidButton("oxidized_copper_button",
+            Oxidizable.OxidationLevel.OXIDIZED,BlockSetType.COPPER, 40,Blocks.STONE_BUTTON);
+    public static final Block WAXED_OXIDIZED_COPPER_BUTTON = registerButton("waxed_oxidized_copper_button",
+            BlockSetType.COPPER, 40, DecoBlocks.OXIDIZED_COPPER_BUTTON);
 
-    public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.DEEPSLATE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY)));
-    public static final Block COBBLED_DEEPSLATE_PRESSURE_PLATE = registerBlock("cobbled_deepslate_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.DEEPSLATE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
-    public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.POLISHED_DEEPSLATE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
-    public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate",
-            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
-    public static final Block BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.BLACKSTONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.BLACK)));
-    public static final Block POLISHED_STONE_PRESSURE_PLATE = registerBlock("polished_stone_pressure_plate",
-            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.STONE_GRAY)));
-    public static final Block TUFF_PRESSURE_PLATE = registerBlock("tuff_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.TUFF, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.TERRACOTTA_GRAY)));
-    public static final Block POLISHED_TUFF_PRESSURE_PLATE = registerBlock("polished_tuff_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.POLISHED_TUFF, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.TERRACOTTA_GRAY)));
+    public static final Block DEEPSLATE_PRESSURE_PLATE = registerPressurePlateBlock("deepslate_pressure_plate",
+            DecoBlockSets.DEEPSLATE, Blocks.DEEPSLATE);
+    public static final Block COBBLED_DEEPSLATE_PRESSURE_PLATE = registerPressurePlateBlock("cobbled_deepslate_pressure_plate",
+            DecoBlockSets.DEEPSLATE,Blocks.DEEPSLATE);
+    public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerPressurePlateBlock("polished_deepslate_pressure_plate",
+            DecoBlockSets.POLISHED_DEEPSLATE,Blocks.DEEPSLATE);
+    public static final Block COBBLESTONE_PRESSURE_PLATE = registerPressurePlateBlock("cobblestone_pressure_plate",
+            BlockSetType.STONE,Blocks.STONE_PRESSURE_PLATE);
+    public static final Block BLACKSTONE_PRESSURE_PLATE = registerPressurePlateBlock("blackstone_pressure_plate",
+            DecoBlockSets.BLACKSTONE,Blocks.BLACKSTONE);
+    public static final Block POLISHED_STONE_PRESSURE_PLATE = registerPressurePlateBlock("polished_stone_pressure_plate",
+            BlockSetType.STONE,Blocks.STONE_PRESSURE_PLATE);
+    public static final Block TUFF_PRESSURE_PLATE = registerPressurePlateBlock("tuff_pressure_plate",
+            DecoBlockSets.TUFF,Blocks.TUFF);
+    public static final Block POLISHED_TUFF_PRESSURE_PLATE = registerPressurePlateBlock("polished_tuff_pressure_plate",
+            DecoBlockSets.POLISHED_TUFF,Blocks.TUFF);
 
-    public static final Block COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("copper_weight_pressure_plate",
-            new OxidizablePressurePlateBlock(20, Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
-                    .sounds(BlockSoundGroup.COPPER),BlockSetType.COPPER));
-    public static final Block WAXED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(20,BlockSetType.COPPER,AbstractBlock.Settings.copy(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)));
-    public static final Block EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("exposed_copper_weight_pressure_plate",
-            new OxidizablePressurePlateBlock(50, Oxidizable.OxidationLevel.EXPOSED,AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
-                    .sounds(BlockSoundGroup.COPPER),BlockSetType.COPPER));
-    public static final Block WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_exposed_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(50,BlockSetType.COPPER,AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)));
-    public static final Block WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("weathered_copper_weight_pressure_plate",
-            new OxidizablePressurePlateBlock(70,Oxidizable.OxidationLevel.WEATHERED,AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
-                    .sounds(BlockSoundGroup.COPPER),BlockSetType.COPPER));
-    public static final Block WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_weathered_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(70,BlockSetType.COPPER,AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE)));
-    public static final Block OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("oxidized_copper_weight_pressure_plate",
-            new OxidizablePressurePlateBlock(100, Oxidizable.OxidationLevel.OXIDIZED,AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
-                    .sounds(BlockSoundGroup.COPPER),BlockSetType.COPPER));
-    public static final Block WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerBlock("waxed_oxidized_copper_weight_pressure_plate",
-            new WeightedPressurePlateBlock(100, BlockSetType.COPPER, AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)));
+    public static final Block COPPER_WEIGHT_PRESSURE_PLATE = registerOxidPressurePlateBlock("copper_weight_pressure_plate",
+            20, Oxidizable.OxidationLevel.UNAFFECTED,BlockSetType.COPPER,Blocks.COPPER_BLOCK);
+    public static final Block WAXED_COPPER_WEIGHT_PRESSURE_PLATE = registerWeightedPressurePlateBlock("waxed_copper_weight_pressure_plate",
+            20, BlockSetType.COPPER, DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE);
+    public static final Block EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerOxidPressurePlateBlock("exposed_copper_weight_pressure_plate",
+            50, Oxidizable.OxidationLevel.EXPOSED,BlockSetType.COPPER,Blocks.EXPOSED_COPPER);
+    public static final Block WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE = registerWeightedPressurePlateBlock("waxed_exposed_copper_weight_pressure_plate",
+            50,BlockSetType.COPPER, DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
+    public static final Block WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerOxidPressurePlateBlock("weathered_copper_weight_pressure_plate",
+            70,Oxidizable.OxidationLevel.WEATHERED,BlockSetType.COPPER,Blocks.WEATHERED_COPPER);
+    public static final Block WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE = registerWeightedPressurePlateBlock("waxed_weathered_copper_weight_pressure_plate",
+            70,BlockSetType.COPPER, DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
+    public static final Block OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerOxidPressurePlateBlock("oxidized_copper_weight_pressure_plate",
+            100, Oxidizable.OxidationLevel.OXIDIZED,BlockSetType.COPPER,Blocks.OXIDIZED_COPPER);
+    public static final Block WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE = registerWeightedPressurePlateBlock("waxed_oxidized_copper_weight_pressure_plate",
+            100, BlockSetType.COPPER,DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
 
-    public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.CACUTS,
-                    AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN)));
-    public static final Block WOODEN_PRESSURE_PLATE = registerBlock("wooden_pressure_plate",
-            new PressurePlateBlock(DecoBlockSets.WOODEN, AbstractBlock.Settings.copy(Blocks.SPRUCE_PRESSURE_PLATE)));
+    public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerPressurePlateBlock("cactus_plank_pressure_plate",
+            DecoBlockSets.CACUTS, Blocks.OAK_PRESSURE_PLATE);
+    public static final Block WOODEN_PRESSURE_PLATE = registerPressurePlateBlock("wooden_pressure_plate",
+            DecoBlockSets.WOODEN, Blocks.SPRUCE_PRESSURE_PLATE);
 
-    public static final Block GOLD_DOOR = registerBlock("gold_door",
-            new DoorBlock(BlockSetType.GOLD, AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK).nonOpaque()));
-    public static final Block CACTUS_DOOR = registerBlock("cactus_door",
-            new DoorBlock(BlockSetType.BIRCH, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()));
-    public static final Block WOODEN_DOOR = registerBlock("wooden_door",
-            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.BROWN).nonOpaque()));
-    public static final Block GOLD_TRAPDOOR = registerBlock("gold_trapdoor",
-            new TrapdoorBlock(BlockSetType.GOLD, AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK).nonOpaque()));
-    public static final Block CACTUS_TRAPDOOR = registerBlock("cactus_trapdoor",
-            new TrapdoorBlock(BlockSetType.BIRCH, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()));
-    public static final Block WOODEN_TRAPDOOR = registerBlock("wooden_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.BROWN).nonOpaque()));
+    public static final Block GOLD_DOOR = registerDoorBlock("gold_door",
+            BlockSetType.GOLD, Blocks.GOLD_BLOCK);
+    public static final Block CACTUS_DOOR = registerDoorBlock("cactus_door",
+            BlockSetType.BIRCH, Blocks.OAK_DOOR);
+    public static final Block WOODEN_DOOR = registerDoorBlock("wooden_door",
+            BlockSetType.OAK, Blocks.OAK_DOOR);
+    public static final Block GOLD_TRAPDOOR = registerTrapDoorBlock("gold_trapdoor",
+            BlockSetType.GOLD, Blocks.GOLD_BLOCK);
+    public static final Block CACTUS_TRAPDOOR = registerTrapDoorBlock("cactus_trapdoor",
+            BlockSetType.BIRCH, Blocks.OAK_TRAPDOOR);
+    public static final Block WOODEN_TRAPDOOR = registerTrapDoorBlock("wooden_trapdoor",
+            BlockSetType.OAK, Blocks.OAK_TRAPDOOR);
 
-    public static final Block CACTUS_PLANK_FENCE_GATE = registerBlock("cactus_plank_fence_gate",
-            new FenceGateBlock(WoodType.BIRCH, AbstractBlock.Settings.copy(DecoBlocks.CACTUS_PLANKS)));
-    public static final Block WOODEN_FENCE_GATE = registerBlock("wooden_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS)));
-    public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
-            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(Blocks.NETHER_BRICKS)));
-    public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
-            new FenceGateBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS)));
-    public static final Block BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("blue_nether_brick_fence_gate",
-            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
+    public static final Block CACTUS_PLANK_FENCE_GATE = registerFenceGateBlock("cactus_plank_fence_gate",
+            WoodType.BIRCH, DecoBlocks.CACTUS_PLANKS);
+    public static final Block WOODEN_FENCE_GATE = registerFenceGateBlock("wooden_fence_gate",
+            WoodType.OAK, DecoBlocks.WOODEN_PLANKS);
+    public static final Block NETHER_BRICK_FENCE_GATE = registerFenceGateBlock("nether_brick_fence_gate",
+            WoodType.SPRUCE, Blocks.NETHER_BRICKS);
+    public static final Block RED_NETHER_BRICK_FENCE_GATE = registerFenceGateBlock("red_nether_brick_fence_gate",
+            WoodType.MANGROVE, Blocks.RED_NETHER_BRICKS);
+    public static final Block BLUE_NETHER_BRICK_FENCE_GATE = registerFenceGateBlock("blue_nether_brick_fence_gate",
+            WoodType.SPRUCE, DecoBlocks.BLUE_NETHER_BRICKS);
 
     public static final Identifier CACTUS_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/cactus");
     public static final Identifier WOODEN_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/wooden");
@@ -1964,220 +1896,220 @@ public class DecoBlocks {
     public static final Identifier CACTUS_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_planks");
     public static final Identifier WOODEN_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/wooden_planks");
 
-    public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
-            new TerraformSignBlock(CACTUS_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_CACTUS_SIGN = registerBlockWithoutItem("wall_cactus_sign",
-            new TerraformWallSignBlock(CACTUS_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
+    public static final Block STANDING_CACTUS_SIGN = registerSign("standing_cactus_sign",
+            CACTUS_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_CACTUS_SIGN = registerWallSign("wall_cactus_sign",
+            CACTUS_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
 
-    public static final Block STANDING_WOODEN_SIGN = registerBlockWithoutItem("standing_wooden_sign",
-            new TerraformSignBlock(WOODEN_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_WOODEN_SIGN = registerBlockWithoutItem("wall_wooden_sign",
-            new TerraformWallSignBlock(WOODEN_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
+    public static final Block STANDING_WOODEN_SIGN = registerSign("standing_wooden_sign",
+            WOODEN_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_WOODEN_SIGN = registerWallSign("wall_wooden_sign",
+            WOODEN_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
 
-    public static final Block HANGING_WOODEN_SIGN = registerBlockWithoutItem("hanging_wooden_sign",
-            new TerraformHangingSignBlock(WOODEN_HANGING_SIGN_TEXTURE, WOODEN_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_WOODEN_SIGN = registerBlockWithoutItem("wall_hanging_wooden_sign",
-            new TerraformWallHangingSignBlock(WOODEN_HANGING_SIGN_TEXTURE, WOODEN_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_WOODEN_SIGN = registerHangingSign("hanging_wooden_sign",
+            WOODEN_HANGING_SIGN_TEXTURE, WOODEN_HANGING_SIGN_GUI, Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_WOODEN_SIGN = registerWallHangingSign("wall_hanging_wooden_sign",
+            WOODEN_HANGING_SIGN_TEXTURE, WOODEN_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
 
-    public static final Block STANDING_STRIPPED_OAK_SIGN = registerBlockWithoutItem("standing_stripped_oak_sign",
-            new TerraformSignBlock(STRIPPED_OAK_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_STRIPPED_OAK_SIGN = registerBlockWithoutItem("wall_stripped_oak_sign",
-            new TerraformWallSignBlock(STRIPPED_OAK_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_SPRUCE_SIGN = registerBlockWithoutItem("standing_stripped_spruce_sign",
-            new TerraformSignBlock(STRIPPED_SPRUCE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.SPRUCE_SIGN)));
-    public static final Block WALL_STRIPPED_SPRUCE_SIGN = registerBlockWithoutItem("wall_stripped_spruce_sign",
-            new TerraformWallSignBlock(STRIPPED_SPRUCE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.SPRUCE_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_BIRCH_SIGN = registerBlockWithoutItem("standing_stripped_birch_sign",
-            new TerraformSignBlock(STRIPPED_BIRCH_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.BIRCH_SIGN)));
-    public static final Block WALL_STRIPPED_BIRCH_SIGN = registerBlockWithoutItem("wall_stripped_birch_sign",
-            new TerraformWallSignBlock(STRIPPED_BIRCH_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.BIRCH_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_JUNGLE_SIGN = registerBlockWithoutItem("standing_stripped_jungle_sign",
-            new TerraformSignBlock(STRIPPED_JUNGLE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.JUNGLE_SIGN)));
-    public static final Block WALL_STRIPPED_JUNGLE_SIGN = registerBlockWithoutItem("wall_stripped_jungle_sign",
-            new TerraformWallSignBlock(STRIPPED_JUNGLE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.JUNGLE_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_ACACIA_SIGN = registerBlockWithoutItem("standing_stripped_acacia_sign",
-            new TerraformSignBlock(STRIPPED_ACACIA_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.ACACIA_SIGN)));
-    public static final Block WALL_STRIPPED_ACACIA_SIGN = registerBlockWithoutItem("wall_stripped_acacia_sign",
-            new TerraformWallSignBlock(STRIPPED_ACACIA_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.ACACIA_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_DARK_OAK_SIGN = registerBlockWithoutItem("standing_stripped_dark_oak_sign",
-            new TerraformSignBlock(STRIPPED_DARK_OAK_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.DARK_OAK_SIGN)));
-    public static final Block WALL_STRIPPED_DARK_OAK_SIGN = registerBlockWithoutItem("wall_stripped_dark_oak_sign",
-            new TerraformWallSignBlock(STRIPPED_DARK_OAK_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.DARK_OAK_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_MANGROVE_SIGN = registerBlockWithoutItem("standing_stripped_mangrove_sign",
-            new TerraformSignBlock(STRIPPED_MANGROVE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.MANGROVE_SIGN)));
-    public static final Block WALL_STRIPPED_MANGROVE_SIGN = registerBlockWithoutItem("wall_stripped_mangrove_sign",
-            new TerraformWallSignBlock(STRIPPED_MANGROVE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_CHERRY_SIGN = registerBlockWithoutItem("standing_stripped_cherry_sign",
-            new TerraformSignBlock(STRIPPED_CHERRY_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CHERRY_SIGN)));
-    public static final Block WALL_STRIPPED_CHERRY_SIGN = registerBlockWithoutItem("wall_stripped_cherry_sign",
-            new TerraformWallSignBlock(STRIPPED_CHERRY_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CHERRY_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_CRIMSON_SIGN = registerBlockWithoutItem("standing_stripped_crimson_sign",
-            new TerraformSignBlock(STRIPPED_CRIMSON_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CRIMSON_SIGN)));
-    public static final Block WALL_STRIPPED_CRIMSON_SIGN = registerBlockWithoutItem("wall_stripped_crimson_sign",
-            new TerraformWallSignBlock(STRIPPED_CRIMSON_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CRIMSON_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_WARPED_SIGN = registerBlockWithoutItem("standing_stripped_warped_sign",
-            new TerraformSignBlock(STRIPPED_WARPED_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.WARPED_SIGN)));
-    public static final Block WALL_STRIPPED_WARPED_SIGN = registerBlockWithoutItem("wall_stripped_warped_sign",
-            new TerraformWallSignBlock(STRIPPED_WARPED_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.WARPED_WALL_SIGN)));
-    public static final Block STANDING_STRIPPED_WOODEN_SIGN = registerBlockWithoutItem("standing_stripped_wooden_sign",
-            new TerraformSignBlock(STRIPPED_WOODEN_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_STRIPPED_WOODEN_SIGN = registerBlockWithoutItem("wall_stripped_wooden_sign",
-            new TerraformWallSignBlock(STRIPPED_WOODEN_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
+    public static final Block STANDING_STRIPPED_OAK_SIGN = registerSign("standing_stripped_oak_sign",
+            STRIPPED_OAK_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_STRIPPED_OAK_SIGN = registerWallSign("wall_stripped_oak_sign",
+            STRIPPED_OAK_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_SPRUCE_SIGN = registerSign("standing_stripped_spruce_sign",
+            STRIPPED_SPRUCE_SIGN_TEXTURE,Blocks.SPRUCE_SIGN);
+    public static final Block WALL_STRIPPED_SPRUCE_SIGN = registerWallSign("wall_stripped_spruce_sign",
+            STRIPPED_SPRUCE_SIGN_TEXTURE,Blocks.SPRUCE_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_BIRCH_SIGN = registerSign("standing_stripped_birch_sign",
+            STRIPPED_BIRCH_SIGN_TEXTURE,Blocks.BIRCH_SIGN);
+    public static final Block WALL_STRIPPED_BIRCH_SIGN = registerWallSign("wall_stripped_birch_sign",
+            STRIPPED_BIRCH_SIGN_TEXTURE,Blocks.BIRCH_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_JUNGLE_SIGN = registerSign("standing_stripped_jungle_sign",
+            STRIPPED_JUNGLE_SIGN_TEXTURE,Blocks.JUNGLE_SIGN);
+    public static final Block WALL_STRIPPED_JUNGLE_SIGN = registerWallSign("wall_stripped_jungle_sign",
+            STRIPPED_JUNGLE_SIGN_TEXTURE,Blocks.JUNGLE_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_ACACIA_SIGN = registerSign("standing_stripped_acacia_sign",
+            STRIPPED_ACACIA_SIGN_TEXTURE,Blocks.ACACIA_SIGN);
+    public static final Block WALL_STRIPPED_ACACIA_SIGN = registerWallSign("wall_stripped_acacia_sign",
+            STRIPPED_ACACIA_SIGN_TEXTURE,Blocks.ACACIA_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_DARK_OAK_SIGN = registerSign("standing_stripped_dark_oak_sign",
+            STRIPPED_DARK_OAK_SIGN_TEXTURE,Blocks.DARK_OAK_SIGN);
+    public static final Block WALL_STRIPPED_DARK_OAK_SIGN = registerWallSign("wall_stripped_dark_oak_sign",
+            STRIPPED_DARK_OAK_SIGN_TEXTURE,Blocks.DARK_OAK_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_MANGROVE_SIGN = registerSign("standing_stripped_mangrove_sign",
+            STRIPPED_MANGROVE_SIGN_TEXTURE,Blocks.MANGROVE_SIGN);
+    public static final Block WALL_STRIPPED_MANGROVE_SIGN = registerWallSign("wall_stripped_mangrove_sign",
+            STRIPPED_MANGROVE_SIGN_TEXTURE,Blocks.MANGROVE_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_CHERRY_SIGN = registerSign("standing_stripped_cherry_sign",
+            STRIPPED_CHERRY_SIGN_TEXTURE,Blocks.CHERRY_SIGN);
+    public static final Block WALL_STRIPPED_CHERRY_SIGN = registerWallSign("wall_stripped_cherry_sign",
+            STRIPPED_CHERRY_SIGN_TEXTURE,Blocks.CHERRY_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_CRIMSON_SIGN = registerSign("standing_stripped_crimson_sign",
+            STRIPPED_CRIMSON_SIGN_TEXTURE,Blocks.CRIMSON_SIGN);
+    public static final Block WALL_STRIPPED_CRIMSON_SIGN = registerWallSign("wall_stripped_crimson_sign",
+            STRIPPED_CRIMSON_SIGN_TEXTURE,Blocks.CRIMSON_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_WARPED_SIGN = registerSign("standing_stripped_warped_sign",
+            STRIPPED_WARPED_SIGN_TEXTURE,Blocks.WARPED_SIGN);
+    public static final Block WALL_STRIPPED_WARPED_SIGN = registerWallSign("wall_stripped_warped_sign",
+            STRIPPED_WARPED_SIGN_TEXTURE,Blocks.WARPED_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_WOODEN_SIGN = registerSign("standing_stripped_wooden_sign",
+            STRIPPED_WOODEN_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_STRIPPED_WOODEN_SIGN = registerWallSign("wall_stripped_wooden_sign",
+            STRIPPED_WOODEN_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
 
-    public static final Block STANDING_OAK_MOSAIC_SIGN = registerBlockWithoutItem("standing_oak_mosaic_sign",
-            new TerraformSignBlock(OAK_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_oak_mosaic_sign",
-            new TerraformWallSignBlock(OAK_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
-    public static final Block STANDING_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("standing_spruce_mosaic_sign",
-            new TerraformSignBlock(SPRUCE_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.SPRUCE_SIGN)));
-    public static final Block WALL_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("wall_spruce_mosaic_sign",
-            new TerraformWallSignBlock(SPRUCE_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.SPRUCE_WALL_SIGN)));
-    public static final Block STANDING_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("standing_birch_mosaic_sign",
-            new TerraformSignBlock(BIRCH_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.BIRCH_SIGN)));
-    public static final Block WALL_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("wall_birch_mosaic_sign",
-            new TerraformWallSignBlock(BIRCH_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.BIRCH_WALL_SIGN)));
-    public static final Block STANDING_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("standing_jungle_mosaic_sign",
-            new TerraformSignBlock(JUNGLE_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.JUNGLE_SIGN)));
-    public static final Block WALL_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("wall_jungle_mosaic_sign",
-            new TerraformWallSignBlock(JUNGLE_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.JUNGLE_WALL_SIGN)));
-    public static final Block STANDING_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("standing_acacia_mosaic_sign",
-            new TerraformSignBlock(ACACIA_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.ACACIA_SIGN)));
-    public static final Block WALL_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("wall_acacia_mosaic_sign",
-            new TerraformWallSignBlock(ACACIA_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.ACACIA_WALL_SIGN)));
-    public static final Block STANDING_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("standing_dark_oak_mosaic_sign",
-            new TerraformSignBlock(DARK_OAK_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.DARK_OAK_SIGN)));
-    public static final Block WALL_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_dark_oak_mosaic_sign",
-            new TerraformWallSignBlock(DARK_OAK_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.DARK_OAK_WALL_SIGN)));
-    public static final Block STANDING_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("standing_mangrove_mosaic_sign",
-            new TerraformSignBlock(MANGROVE_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.MANGROVE_SIGN)));
-    public static final Block WALL_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("wall_mangrove_mosaic_sign",
-            new TerraformWallSignBlock(MANGROVE_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_SIGN)));
-    public static final Block STANDING_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("standing_cherry_mosaic_sign",
-            new TerraformSignBlock(CHERRY_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CHERRY_SIGN)));
-    public static final Block WALL_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("wall_cherry_mosaic_sign",
-            new TerraformWallSignBlock(CHERRY_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CHERRY_WALL_SIGN)));
-    public static final Block STANDING_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("standing_bamboo_mosaic_sign",
-            new TerraformSignBlock(BAMBOO_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.BAMBOO_SIGN)));
-    public static final Block WALL_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("wall_bamboo_mosaic_sign",
-            new TerraformWallSignBlock(BAMBOO_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.BAMBOO_WALL_SIGN)));
-    public static final Block STANDING_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("standing_crimson_mosaic_sign",
-            new TerraformSignBlock(CRIMSON_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CRIMSON_SIGN)));
-    public static final Block WALL_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("wall_crimson_mosaic_sign",
-            new TerraformWallSignBlock(CRIMSON_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.CRIMSON_WALL_SIGN)));
-    public static final Block STANDING_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("standing_warped_mosaic_sign",
-            new TerraformSignBlock(WARPED_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.WARPED_SIGN)));
-    public static final Block WALL_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("wall_warped_mosaic_sign",
-            new TerraformWallSignBlock(WARPED_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.WARPED_WALL_SIGN)));
-    public static final Block STANDING_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("standing_cactus_mosaic_sign",
-            new TerraformSignBlock(CACTUS_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("wall_cactus_mosaic_sign",
-            new TerraformWallSignBlock(CACTUS_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
-    public static final Block STANDING_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("standing_wooden_mosaic_sign",
-            new TerraformSignBlock(WOODEN_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
-    public static final Block WALL_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("wall_wooden_mosaic_sign",
-            new TerraformWallSignBlock(WOODEN_MOSAIC_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
+    public static final Block STANDING_OAK_MOSAIC_SIGN = registerSign("standing_oak_mosaic_sign",
+            OAK_MOSAIC_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_OAK_MOSAIC_SIGN = registerWallSign("wall_oak_mosaic_sign",
+            OAK_MOSAIC_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
+    public static final Block STANDING_SPRUCE_MOSAIC_SIGN = registerSign("standing_spruce_mosaic_sign",
+            SPRUCE_MOSAIC_SIGN_TEXTURE,Blocks.SPRUCE_SIGN);
+    public static final Block WALL_SPRUCE_MOSAIC_SIGN = registerWallSign("wall_spruce_mosaic_sign",
+            SPRUCE_MOSAIC_SIGN_TEXTURE,Blocks.SPRUCE_WALL_SIGN);
+    public static final Block STANDING_BIRCH_MOSAIC_SIGN = registerSign("standing_birch_mosaic_sign",
+            BIRCH_MOSAIC_SIGN_TEXTURE,Blocks.BIRCH_SIGN);
+    public static final Block WALL_BIRCH_MOSAIC_SIGN = registerWallSign("wall_birch_mosaic_sign",
+            BIRCH_MOSAIC_SIGN_TEXTURE,Blocks.BIRCH_WALL_SIGN);
+    public static final Block STANDING_JUNGLE_MOSAIC_SIGN = registerSign("standing_jungle_mosaic_sign",
+            JUNGLE_MOSAIC_SIGN_TEXTURE,Blocks.JUNGLE_SIGN);
+    public static final Block WALL_JUNGLE_MOSAIC_SIGN = registerWallSign("wall_jungle_mosaic_sign",
+            JUNGLE_MOSAIC_SIGN_TEXTURE, Blocks.JUNGLE_WALL_SIGN);
+    public static final Block STANDING_ACACIA_MOSAIC_SIGN = registerSign("standing_acacia_mosaic_sign",
+            ACACIA_MOSAIC_SIGN_TEXTURE,Blocks.ACACIA_SIGN);
+    public static final Block WALL_ACACIA_MOSAIC_SIGN = registerWallSign("wall_acacia_mosaic_sign",
+            ACACIA_MOSAIC_SIGN_TEXTURE,Blocks.ACACIA_WALL_SIGN);
+    public static final Block STANDING_DARK_OAK_MOSAIC_SIGN = registerSign("standing_dark_oak_mosaic_sign",
+            DARK_OAK_MOSAIC_SIGN_TEXTURE,Blocks.DARK_OAK_SIGN);
+    public static final Block WALL_DARK_OAK_MOSAIC_SIGN = registerWallSign("wall_dark_oak_mosaic_sign",
+            DARK_OAK_MOSAIC_SIGN_TEXTURE,Blocks.DARK_OAK_WALL_SIGN);
+    public static final Block STANDING_MANGROVE_MOSAIC_SIGN = registerSign("standing_mangrove_mosaic_sign",
+            MANGROVE_MOSAIC_SIGN_TEXTURE,Blocks.MANGROVE_SIGN);
+    public static final Block WALL_MANGROVE_MOSAIC_SIGN = registerWallSign("wall_mangrove_mosaic_sign",
+            MANGROVE_MOSAIC_SIGN_TEXTURE,Blocks.MANGROVE_WALL_SIGN);
+    public static final Block STANDING_CHERRY_MOSAIC_SIGN = registerSign("standing_cherry_mosaic_sign",
+            CHERRY_MOSAIC_SIGN_TEXTURE,Blocks.CHERRY_SIGN);
+    public static final Block WALL_CHERRY_MOSAIC_SIGN = registerWallSign("wall_cherry_mosaic_sign",
+            CHERRY_MOSAIC_SIGN_TEXTURE,Blocks.CHERRY_WALL_SIGN);
+    public static final Block STANDING_BAMBOO_MOSAIC_SIGN = registerSign("standing_bamboo_mosaic_sign",
+            BAMBOO_MOSAIC_SIGN_TEXTURE,Blocks.BAMBOO_SIGN);
+    public static final Block WALL_BAMBOO_MOSAIC_SIGN = registerWallSign("wall_bamboo_mosaic_sign",
+            BAMBOO_MOSAIC_SIGN_TEXTURE,Blocks.BAMBOO_WALL_SIGN);
+    public static final Block STANDING_CRIMSON_MOSAIC_SIGN = registerSign("standing_crimson_mosaic_sign",
+            CRIMSON_MOSAIC_SIGN_TEXTURE,Blocks.CRIMSON_SIGN);
+    public static final Block WALL_CRIMSON_MOSAIC_SIGN = registerWallSign("wall_crimson_mosaic_sign",
+            CRIMSON_MOSAIC_SIGN_TEXTURE,Blocks.CRIMSON_WALL_SIGN);
+    public static final Block STANDING_WARPED_MOSAIC_SIGN = registerSign("standing_warped_mosaic_sign",
+            WARPED_MOSAIC_SIGN_TEXTURE,Blocks.WARPED_SIGN);
+    public static final Block WALL_WARPED_MOSAIC_SIGN = registerWallSign("wall_warped_mosaic_sign",
+            WARPED_MOSAIC_SIGN_TEXTURE,Blocks.WARPED_WALL_SIGN);
+    public static final Block STANDING_CACTUS_MOSAIC_SIGN = registerSign("standing_cactus_mosaic_sign",
+            CACTUS_MOSAIC_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_CACTUS_MOSAIC_SIGN = registerWallSign("wall_cactus_mosaic_sign",
+            CACTUS_MOSAIC_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
+    public static final Block STANDING_WOODEN_MOSAIC_SIGN = registerSign("standing_wooden_mosaic_sign",
+            WOODEN_MOSAIC_SIGN_TEXTURE,Blocks.OAK_SIGN);
+    public static final Block WALL_WOODEN_MOSAIC_SIGN = registerWallSign("wall_wooden_mosaic_sign",
+            WOODEN_MOSAIC_SIGN_TEXTURE,Blocks.OAK_WALL_SIGN);
 
-    public static final Block HANGING_OAK_MOSAIC_SIGN = registerBlockWithoutItem("hanging_oak_mosaic_sign",
-            new TerraformHangingSignBlock(OAK_MOSAIC_HANGING_SIGN_TEXTURE, OAK_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_oak_mosaic_sign",
-            new TerraformWallHangingSignBlock(OAK_MOSAIC_HANGING_SIGN_TEXTURE, OAK_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
-    public static final Block HANGING_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("hanging_spruce_mosaic_sign",
-            new TerraformHangingSignBlock(SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE, SPRUCE_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.SPRUCE_HANGING_SIGN)));
-    public static final Block WALL_HANGING_SPRUCE_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_spruce_mosaic_sign",
-            new TerraformWallHangingSignBlock(SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE, SPRUCE_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.SPRUCE_WALL_HANGING_SIGN)));
-    public static final Block HANGING_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("hanging_birch_mosaic_sign",
-            new TerraformHangingSignBlock(BIRCH_MOSAIC_HANGING_SIGN_TEXTURE, BIRCH_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.BIRCH_HANGING_SIGN)));
-    public static final Block WALL_HANGING_BIRCH_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_birch_mosaic_sign",
-            new TerraformWallHangingSignBlock(BIRCH_MOSAIC_HANGING_SIGN_TEXTURE, BIRCH_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.BIRCH_WALL_HANGING_SIGN)));
-    public static final Block HANGING_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("hanging_jungle_mosaic_sign",
-            new TerraformHangingSignBlock(JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE, JUNGLE_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.JUNGLE_HANGING_SIGN)));
-    public static final Block WALL_HANGING_JUNGLE_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_jungle_mosaic_sign",
-            new TerraformWallHangingSignBlock(JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE, JUNGLE_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.JUNGLE_WALL_HANGING_SIGN)));
-    public static final Block HANGING_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("hanging_acacia_mosaic_sign",
-            new TerraformHangingSignBlock(ACACIA_MOSAIC_HANGING_SIGN_TEXTURE, ACACIA_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.ACACIA_HANGING_SIGN)));
-    public static final Block WALL_HANGING_ACACIA_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_acacia_mosaic_sign",
-            new TerraformWallHangingSignBlock(ACACIA_MOSAIC_HANGING_SIGN_TEXTURE, ACACIA_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.ACACIA_WALL_HANGING_SIGN)));
-    public static final Block HANGING_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("hanging_dark_oak_mosaic_sign",
-            new TerraformHangingSignBlock(DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE, DARK_OAK_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.DARK_OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_DARK_OAK_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_dark_oak_mosaic_sign",
-            new TerraformWallHangingSignBlock(DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE, DARK_OAK_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.DARK_OAK_WALL_HANGING_SIGN)));
-    public static final Block HANGING_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("hanging_mangrove_mosaic_sign",
-            new TerraformHangingSignBlock(MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE, MANGROVE_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.MANGROVE_HANGING_SIGN)));
-    public static final Block WALL_HANGING_MANGROVE_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_mangrove_mosaic_sign",
-            new TerraformWallHangingSignBlock(MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE, MANGROVE_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_HANGING_SIGN)));
-    public static final Block HANGING_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("hanging_cherry_mosaic_sign",
-            new TerraformHangingSignBlock(CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CHERRY_HANGING_SIGN)));
-    public static final Block WALL_HANGING_CHERRY_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_cherry_mosaic_sign",
-            new TerraformWallHangingSignBlock(CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CHERRY_WALL_HANGING_SIGN)));
-    public static final Block HANGING_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("hanging_bamboo_mosaic_sign",
-            new TerraformHangingSignBlock(BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.BAMBOO_HANGING_SIGN)));
-    public static final Block WALL_HANGING_BAMBOO_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_bamboo_mosaic_sign",
-            new TerraformWallHangingSignBlock(BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.BAMBOO_WALL_HANGING_SIGN)));
-    public static final Block HANGING_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("hanging_crimson_mosaic_sign",
-            new TerraformHangingSignBlock(CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE, CRIMSON_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CRIMSON_HANGING_SIGN)));
-    public static final Block WALL_HANGING_CRIMSON_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_crimson_mosaic_sign",
-            new TerraformWallHangingSignBlock(CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE, CRIMSON_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CRIMSON_WALL_HANGING_SIGN)));
-    public static final Block HANGING_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("hanging_warped_mosaic_sign",
-            new TerraformHangingSignBlock(WARPED_MOSAIC_HANGING_SIGN_TEXTURE, WARPED_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.WARPED_HANGING_SIGN)));
-    public static final Block WALL_HANGING_WARPED_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_warped_mosaic_sign",
-            new TerraformWallHangingSignBlock(WARPED_MOSAIC_HANGING_SIGN_TEXTURE, WARPED_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.WARPED_WALL_HANGING_SIGN)));
-    public static final Block HANGING_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("hanging_cactus_mosaic_sign",
-            new TerraformHangingSignBlock(CACTUS_MOSAIC_HANGING_SIGN_TEXTURE, CACTUS_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_CACTUS_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_cactus_mosaic_sign",
-            new TerraformWallHangingSignBlock(CACTUS_MOSAIC_HANGING_SIGN_TEXTURE, CACTUS_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
-    public static final Block HANGING_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("hanging_wooden_mosaic_sign",
-            new TerraformHangingSignBlock(WOODEN_MOSAIC_HANGING_SIGN_TEXTURE, WOODEN_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_WOODEN_MOSAIC_SIGN = registerBlockWithoutItem("wall_hanging_wooden_mosaic_sign",
-            new TerraformWallHangingSignBlock(WOODEN_MOSAIC_HANGING_SIGN_TEXTURE, WOODEN_MOSAIC_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_OAK_MOSAIC_SIGN = registerHangingSign("hanging_oak_mosaic_sign",
+            OAK_MOSAIC_HANGING_SIGN_TEXTURE, OAK_MOSAIC_HANGING_SIGN_GUI,Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_OAK_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_oak_mosaic_sign",
+            OAK_MOSAIC_HANGING_SIGN_TEXTURE, OAK_MOSAIC_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
+    public static final Block HANGING_SPRUCE_MOSAIC_SIGN = registerHangingSign("hanging_spruce_mosaic_sign",
+            SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE, SPRUCE_MOSAIC_HANGING_SIGN_GUI,Blocks.SPRUCE_HANGING_SIGN);
+    public static final Block WALL_HANGING_SPRUCE_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_spruce_mosaic_sign",
+            SPRUCE_MOSAIC_HANGING_SIGN_TEXTURE, SPRUCE_MOSAIC_HANGING_SIGN_GUI,Blocks.SPRUCE_WALL_HANGING_SIGN);
+    public static final Block HANGING_BIRCH_MOSAIC_SIGN = registerHangingSign("hanging_birch_mosaic_sign",
+            BIRCH_MOSAIC_HANGING_SIGN_TEXTURE, BIRCH_MOSAIC_HANGING_SIGN_GUI,Blocks.BIRCH_HANGING_SIGN);
+    public static final Block WALL_HANGING_BIRCH_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_birch_mosaic_sign",
+            BIRCH_MOSAIC_HANGING_SIGN_TEXTURE, BIRCH_MOSAIC_HANGING_SIGN_GUI,Blocks.BIRCH_WALL_HANGING_SIGN);
+    public static final Block HANGING_JUNGLE_MOSAIC_SIGN = registerHangingSign("hanging_jungle_mosaic_sign",
+            JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE, JUNGLE_MOSAIC_HANGING_SIGN_GUI,Blocks.JUNGLE_HANGING_SIGN);
+    public static final Block WALL_HANGING_JUNGLE_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_jungle_mosaic_sign",
+            JUNGLE_MOSAIC_HANGING_SIGN_TEXTURE, JUNGLE_MOSAIC_HANGING_SIGN_GUI,Blocks.JUNGLE_WALL_HANGING_SIGN);
+    public static final Block HANGING_ACACIA_MOSAIC_SIGN = registerHangingSign("hanging_acacia_mosaic_sign",
+            ACACIA_MOSAIC_HANGING_SIGN_TEXTURE, ACACIA_MOSAIC_HANGING_SIGN_GUI,Blocks.ACACIA_HANGING_SIGN);
+    public static final Block WALL_HANGING_ACACIA_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_acacia_mosaic_sign",
+            ACACIA_MOSAIC_HANGING_SIGN_TEXTURE, ACACIA_MOSAIC_HANGING_SIGN_GUI,Blocks.ACACIA_WALL_HANGING_SIGN);
+    public static final Block HANGING_DARK_OAK_MOSAIC_SIGN = registerHangingSign("hanging_dark_oak_mosaic_sign",
+            DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE, DARK_OAK_MOSAIC_HANGING_SIGN_GUI,Blocks.DARK_OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_DARK_OAK_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_dark_oak_mosaic_sign",
+            DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE, DARK_OAK_MOSAIC_HANGING_SIGN_GUI,Blocks.DARK_OAK_WALL_HANGING_SIGN);
+    public static final Block HANGING_MANGROVE_MOSAIC_SIGN = registerHangingSign("hanging_mangrove_mosaic_sign",
+            MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE, MANGROVE_MOSAIC_HANGING_SIGN_GUI,Blocks.MANGROVE_HANGING_SIGN);
+    public static final Block WALL_HANGING_MANGROVE_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_mangrove_mosaic_sign",
+            MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE, MANGROVE_MOSAIC_HANGING_SIGN_GUI,Blocks.MANGROVE_WALL_HANGING_SIGN);
+    public static final Block HANGING_CHERRY_MOSAIC_SIGN = registerHangingSign("hanging_cherry_mosaic_sign",
+            CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI,Blocks.CHERRY_HANGING_SIGN);
+    public static final Block WALL_HANGING_CHERRY_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_cherry_mosaic_sign",
+            CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI,Blocks.CHERRY_WALL_HANGING_SIGN);
+    public static final Block HANGING_BAMBOO_MOSAIC_SIGN = registerHangingSign("hanging_bamboo_mosaic_sign",
+            BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI,Blocks.BAMBOO_HANGING_SIGN);
+    public static final Block WALL_HANGING_BAMBOO_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_bamboo_mosaic_sign",
+            BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI,Blocks.BAMBOO_WALL_HANGING_SIGN);
+    public static final Block HANGING_CRIMSON_MOSAIC_SIGN = registerHangingSign("hanging_crimson_mosaic_sign",
+            CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE, CRIMSON_MOSAIC_HANGING_SIGN_GUI,Blocks.CRIMSON_HANGING_SIGN);
+    public static final Block WALL_HANGING_CRIMSON_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_crimson_mosaic_sign",
+            CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE, CRIMSON_MOSAIC_HANGING_SIGN_GUI,Blocks.CRIMSON_WALL_HANGING_SIGN);
+    public static final Block HANGING_WARPED_MOSAIC_SIGN = registerHangingSign("hanging_warped_mosaic_sign",
+            WARPED_MOSAIC_HANGING_SIGN_TEXTURE, WARPED_MOSAIC_HANGING_SIGN_GUI,Blocks.WARPED_HANGING_SIGN);
+    public static final Block WALL_HANGING_WARPED_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_warped_mosaic_sign",
+            WARPED_MOSAIC_HANGING_SIGN_TEXTURE, WARPED_MOSAIC_HANGING_SIGN_GUI,Blocks.WARPED_WALL_HANGING_SIGN);
+    public static final Block HANGING_CACTUS_MOSAIC_SIGN = registerHangingSign("hanging_cactus_mosaic_sign",
+            CACTUS_MOSAIC_HANGING_SIGN_TEXTURE, CACTUS_MOSAIC_HANGING_SIGN_GUI,Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_CACTUS_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_cactus_mosaic_sign",
+            CACTUS_MOSAIC_HANGING_SIGN_TEXTURE, CACTUS_MOSAIC_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
+    public static final Block HANGING_WOODEN_MOSAIC_SIGN = registerHangingSign("hanging_wooden_mosaic_sign",
+            WOODEN_MOSAIC_HANGING_SIGN_TEXTURE, WOODEN_MOSAIC_HANGING_SIGN_GUI,Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_WOODEN_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_wooden_mosaic_sign",
+            WOODEN_MOSAIC_HANGING_SIGN_TEXTURE, WOODEN_MOSAIC_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
 
-    public static final Block HANGING_OAK_PLANKS_SIGN = registerBlockWithoutItem("hanging_oak_planks_sign",
-            new TerraformHangingSignBlock(OAK_PLANKS_HANGING_SIGN_TEXTURE, OAK_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_OAK_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_oak_planks_sign",
-            new TerraformWallHangingSignBlock(OAK_PLANKS_HANGING_SIGN_TEXTURE, OAK_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
-    public static final Block HANGING_SPRUCE_PLANKS_SIGN = registerBlockWithoutItem("hanging_spruce_planks_sign",
-            new TerraformHangingSignBlock(SPRUCE_PLANKS_HANGING_SIGN_TEXTURE, SPRUCE_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.SPRUCE_HANGING_SIGN)));
-    public static final Block WALL_HANGING_SPRUCE_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_spruce_planks_sign",
-            new TerraformWallHangingSignBlock(SPRUCE_PLANKS_HANGING_SIGN_TEXTURE, SPRUCE_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.SPRUCE_WALL_HANGING_SIGN)));
-    public static final Block HANGING_BIRCH_PLANKS_SIGN = registerBlockWithoutItem("hanging_birch_planks_sign",
-            new TerraformHangingSignBlock(BIRCH_PLANKS_HANGING_SIGN_TEXTURE, BIRCH_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.BIRCH_HANGING_SIGN)));
-    public static final Block WALL_HANGING_BIRCH_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_birch_planks_sign",
-            new TerraformWallHangingSignBlock(BIRCH_PLANKS_HANGING_SIGN_TEXTURE, BIRCH_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.BIRCH_WALL_HANGING_SIGN)));
-    public static final Block HANGING_JUNGLE_PLANKS_SIGN = registerBlockWithoutItem("hanging_jungle_planks_sign",
-            new TerraformHangingSignBlock(JUNGLE_PLANKS_HANGING_SIGN_TEXTURE, JUNGLE_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.JUNGLE_HANGING_SIGN)));
-    public static final Block WALL_HANGING_JUNGLE_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_jungle_planks_sign",
-            new TerraformWallHangingSignBlock(JUNGLE_PLANKS_HANGING_SIGN_TEXTURE, JUNGLE_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.JUNGLE_WALL_HANGING_SIGN)));
-    public static final Block HANGING_ACACIA_PLANKS_SIGN = registerBlockWithoutItem("hanging_acacia_planks_sign",
-            new TerraformHangingSignBlock(ACACIA_PLANKS_HANGING_SIGN_TEXTURE, ACACIA_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.ACACIA_HANGING_SIGN)));
-    public static final Block WALL_HANGING_ACACIA_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_acacia_planks_sign",
-            new TerraformWallHangingSignBlock(ACACIA_PLANKS_HANGING_SIGN_TEXTURE, ACACIA_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.ACACIA_WALL_HANGING_SIGN)));
-    public static final Block HANGING_DARK_OAK_PLANKS_SIGN = registerBlockWithoutItem("hanging_dark_oak_planks_sign",
-            new TerraformHangingSignBlock(DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE, DARK_OAK_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.DARK_OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_DARK_OAK_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_dark_oak_planks_sign",
-            new TerraformWallHangingSignBlock(DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE, DARK_OAK_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.DARK_OAK_WALL_HANGING_SIGN)));
-    public static final Block HANGING_MANGROVE_PLANKS_SIGN = registerBlockWithoutItem("hanging_mangrove_planks_sign",
-            new TerraformHangingSignBlock(MANGROVE_PLANKS_HANGING_SIGN_TEXTURE, MANGROVE_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.MANGROVE_HANGING_SIGN)));
-    public static final Block WALL_HANGING_MANGROVE_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_mangrove_planks_sign",
-            new TerraformWallHangingSignBlock(MANGROVE_PLANKS_HANGING_SIGN_TEXTURE, MANGROVE_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_HANGING_SIGN)));
-    public static final Block HANGING_CHERRY_PLANKS_SIGN = registerBlockWithoutItem("hanging_cherry_planks_sign",
-            new TerraformHangingSignBlock(CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CHERRY_HANGING_SIGN)));
-    public static final Block WALL_HANGING_CHERRY_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_cherry_planks_sign",
-            new TerraformWallHangingSignBlock(CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CHERRY_WALL_HANGING_SIGN)));
-    public static final Block HANGING_CRIMSON_PLANKS_SIGN = registerBlockWithoutItem("hanging_crimson_planks_sign",
-            new TerraformHangingSignBlock(CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CRIMSON_HANGING_SIGN)));
-    public static final Block WALL_HANGING_CRIMSON_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_crimson_planks_sign",
-            new TerraformWallHangingSignBlock(CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.CRIMSON_WALL_HANGING_SIGN)));
-    public static final Block HANGING_WARPED_PLANKS_SIGN = registerBlockWithoutItem("hanging_warped_planks_sign",
-            new TerraformHangingSignBlock(WARPED_PLANKS_HANGING_SIGN_TEXTURE, WARPED_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.WARPED_HANGING_SIGN)));
-    public static final Block WALL_HANGING_WARPED_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_warped_planks_sign",
-            new TerraformWallHangingSignBlock(WARPED_PLANKS_HANGING_SIGN_TEXTURE, WARPED_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.WARPED_WALL_HANGING_SIGN)));
-    public static final Block HANGING_CACTUS_PLANKS_SIGN = registerBlockWithoutItem("hanging_cactus_planks_sign",
-            new TerraformHangingSignBlock(CACTUS_PLANKS_HANGING_SIGN_TEXTURE, CACTUS_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_CACTUS_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_cactus_planks_sign",
-            new TerraformWallHangingSignBlock(CACTUS_PLANKS_HANGING_SIGN_TEXTURE, CACTUS_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
-    public static final Block HANGING_WOODEN_PLANKS_SIGN = registerBlockWithoutItem("hanging_wooden_planks_sign",
-            new TerraformHangingSignBlock(WOODEN_PLANKS_HANGING_SIGN_TEXTURE, WOODEN_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
-    public static final Block WALL_HANGING_WOODEN_PLANKS_SIGN = registerBlockWithoutItem("wall_hanging_wooden_planks_sign",
-            new TerraformWallHangingSignBlock(WOODEN_PLANKS_HANGING_SIGN_TEXTURE, WOODEN_PLANKS_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
+    public static final Block HANGING_OAK_PLANKS_SIGN = registerHangingSign("hanging_oak_planks_sign",
+            OAK_PLANKS_HANGING_SIGN_TEXTURE, OAK_PLANKS_HANGING_SIGN_GUI,Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_OAK_PLANKS_SIGN = registerWallHangingSign("wall_hanging_oak_planks_sign",
+            OAK_PLANKS_HANGING_SIGN_TEXTURE, OAK_PLANKS_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
+    public static final Block HANGING_SPRUCE_PLANKS_SIGN = registerHangingSign("hanging_spruce_planks_sign",
+            SPRUCE_PLANKS_HANGING_SIGN_TEXTURE, SPRUCE_PLANKS_HANGING_SIGN_GUI,Blocks.SPRUCE_HANGING_SIGN);
+    public static final Block WALL_HANGING_SPRUCE_PLANKS_SIGN = registerWallHangingSign("wall_hanging_spruce_planks_sign",
+            SPRUCE_PLANKS_HANGING_SIGN_TEXTURE, SPRUCE_PLANKS_HANGING_SIGN_GUI,Blocks.SPRUCE_WALL_HANGING_SIGN);
+    public static final Block HANGING_BIRCH_PLANKS_SIGN = registerHangingSign("hanging_birch_planks_sign",
+            BIRCH_PLANKS_HANGING_SIGN_TEXTURE, BIRCH_PLANKS_HANGING_SIGN_GUI,Blocks.BIRCH_HANGING_SIGN);
+    public static final Block WALL_HANGING_BIRCH_PLANKS_SIGN = registerWallHangingSign("wall_hanging_birch_planks_sign",
+            BIRCH_PLANKS_HANGING_SIGN_TEXTURE, BIRCH_PLANKS_HANGING_SIGN_GUI,Blocks.BIRCH_WALL_HANGING_SIGN);
+    public static final Block HANGING_JUNGLE_PLANKS_SIGN = registerHangingSign("hanging_jungle_planks_sign",
+            JUNGLE_PLANKS_HANGING_SIGN_TEXTURE, JUNGLE_PLANKS_HANGING_SIGN_GUI,Blocks.JUNGLE_HANGING_SIGN);
+    public static final Block WALL_HANGING_JUNGLE_PLANKS_SIGN = registerWallHangingSign("wall_hanging_jungle_planks_sign",
+            JUNGLE_PLANKS_HANGING_SIGN_TEXTURE, JUNGLE_PLANKS_HANGING_SIGN_GUI,Blocks.JUNGLE_WALL_HANGING_SIGN);
+    public static final Block HANGING_ACACIA_PLANKS_SIGN = registerHangingSign("hanging_acacia_planks_sign",
+            ACACIA_PLANKS_HANGING_SIGN_TEXTURE, ACACIA_PLANKS_HANGING_SIGN_GUI,Blocks.ACACIA_HANGING_SIGN);
+    public static final Block WALL_HANGING_ACACIA_PLANKS_SIGN = registerWallHangingSign("wall_hanging_acacia_planks_sign",
+            ACACIA_PLANKS_HANGING_SIGN_TEXTURE, ACACIA_PLANKS_HANGING_SIGN_GUI,Blocks.ACACIA_WALL_HANGING_SIGN);
+    public static final Block HANGING_DARK_OAK_PLANKS_SIGN = registerHangingSign("hanging_dark_oak_planks_sign",
+            DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE, DARK_OAK_PLANKS_HANGING_SIGN_GUI,Blocks.DARK_OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_DARK_OAK_PLANKS_SIGN = registerWallHangingSign("wall_hanging_dark_oak_planks_sign",
+            DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE, DARK_OAK_PLANKS_HANGING_SIGN_GUI,Blocks.DARK_OAK_WALL_HANGING_SIGN);
+    public static final Block HANGING_MANGROVE_PLANKS_SIGN = registerHangingSign("hanging_mangrove_planks_sign",
+            MANGROVE_PLANKS_HANGING_SIGN_TEXTURE, MANGROVE_PLANKS_HANGING_SIGN_GUI,Blocks.MANGROVE_HANGING_SIGN);
+    public static final Block WALL_HANGING_MANGROVE_PLANKS_SIGN = registerWallHangingSign("wall_hanging_mangrove_planks_sign",
+            MANGROVE_PLANKS_HANGING_SIGN_TEXTURE, MANGROVE_PLANKS_HANGING_SIGN_GUI,Blocks.MANGROVE_WALL_HANGING_SIGN);
+    public static final Block HANGING_CHERRY_PLANKS_SIGN = registerHangingSign("hanging_cherry_planks_sign",
+            CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI,Blocks.CHERRY_HANGING_SIGN);
+    public static final Block WALL_HANGING_CHERRY_PLANKS_SIGN = registerWallHangingSign("wall_hanging_cherry_planks_sign",
+            CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI,Blocks.CHERRY_WALL_HANGING_SIGN);
+    public static final Block HANGING_CRIMSON_PLANKS_SIGN = registerHangingSign("hanging_crimson_planks_sign",
+            CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI,Blocks.CRIMSON_HANGING_SIGN);
+    public static final Block WALL_HANGING_CRIMSON_PLANKS_SIGN = registerWallHangingSign("wall_hanging_crimson_planks_sign",
+            CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI,Blocks.CRIMSON_WALL_HANGING_SIGN);
+    public static final Block HANGING_WARPED_PLANKS_SIGN = registerHangingSign("hanging_warped_planks_sign",
+            WARPED_PLANKS_HANGING_SIGN_TEXTURE, WARPED_PLANKS_HANGING_SIGN_GUI,Blocks.WARPED_HANGING_SIGN);
+    public static final Block WALL_HANGING_WARPED_PLANKS_SIGN = registerWallHangingSign("wall_hanging_warped_planks_sign",
+            WARPED_PLANKS_HANGING_SIGN_TEXTURE, WARPED_PLANKS_HANGING_SIGN_GUI,Blocks.WARPED_WALL_HANGING_SIGN);
+    public static final Block HANGING_CACTUS_PLANKS_SIGN = registerHangingSign("hanging_cactus_planks_sign",
+            CACTUS_PLANKS_HANGING_SIGN_TEXTURE, CACTUS_PLANKS_HANGING_SIGN_GUI,Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_CACTUS_PLANKS_SIGN = registerWallHangingSign("wall_hanging_cactus_planks_sign",
+            CACTUS_PLANKS_HANGING_SIGN_TEXTURE, CACTUS_PLANKS_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
+    public static final Block HANGING_WOODEN_PLANKS_SIGN = registerHangingSign("hanging_wooden_planks_sign",
+            WOODEN_PLANKS_HANGING_SIGN_TEXTURE, WOODEN_PLANKS_HANGING_SIGN_GUI,Blocks.OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_WOODEN_PLANKS_SIGN = registerWallHangingSign("wall_hanging_wooden_planks_sign",
+            WOODEN_PLANKS_HANGING_SIGN_TEXTURE, WOODEN_PLANKS_HANGING_SIGN_GUI,Blocks.OAK_WALL_HANGING_SIGN);
 
     public static final Block STONE_TEMP = registerBlockTemp("stone_temp", Block::new);
     public static final Block SMOOTH_STONE_TEMP = registerBlockTemp("smooth_stone_temp", Block::new);
@@ -2342,27 +2274,13 @@ public class DecoBlocks {
             .sign(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN,DecoBlocks.WALL_WOODEN_MOSAIC_SIGN)
             .group("wooden_mosaic").build();
 
-    public static <T extends Block> T registerBlockWithoutItem(String name,AbstractBlock.Settings settings, Function<AbstractBlock.Settings, T> factory){
-        T block = factory.apply(settings.registryKey(getBlockKey(name)));
-        return Registry.register(Registries.BLOCK, getBlockKey(name), block);
-    }
     public static <T extends Block> T registerBlockTemp(String name, Function<AbstractBlock.Settings, T> factory){
         T block = factory.apply(AbstractBlock.Settings.create().dropsNothing().registryKey(getBlockKey(name)));
-        registerBlockItem(block);
         return Registry.register(Registries.BLOCK, getBlockKey(name), block);
-    }
-    public static BlockItem registerBlockItem(Block block){
-        String name = Registries.BLOCK.getId(block).getPath();
-        return Registry.register(Registries.ITEM, getItemKey(name),
-                new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey().registryKey(getItemKey(name))));
     }
     public static <T extends Block> T registerBlock(String name,AbstractBlock.Settings settings, Function<AbstractBlock.Settings, T> factory){
         T block = factory.apply(settings.registryKey(getBlockKey(name)));
-        registerBlockItem(block);
         return Registry.register(Registries.BLOCK, getBlockKey(name), block);
-    }
-    public static Block registerBlockNamed(String name, AbstractBlock.Settings settings){
-        return registerBlock(name, settings, Block::new);
     }
     public static <T extends Block> T registerSimpleWithoutItem(String name, T block){
         RegistryKey<Block> key = getBlockKey(name);
@@ -2370,7 +2288,6 @@ public class DecoBlocks {
     }
     public static <T extends Block> T registerSimple(String name, T block){
         RegistryKey<Block> key = getBlockKey(name);
-        registerBlockItem(block);
         return Registry.register(Registries.BLOCK, getBlockKey(name), block);
     }
     public static StairsBlock registerStairs(String name, Block block, Block copyBlock){
@@ -2394,11 +2311,97 @@ public class DecoBlocks {
                 AbstractBlock.Settings.copy(copyBlock).strength(strength).resistance(blastRes)
                         .registryKey(DecoBlocks.getBlockKey(name))));
     }
+    public static StainedGlassPaneBlock registerStainedGlassPane(String name, DyeColor color, Block copyBlock, float strength, float blastRes){
+        return registerSimple(name, new StainedGlassPaneBlock(color,
+                AbstractBlock.Settings.copy(copyBlock).strength(strength).resistance(blastRes)
+                        .registryKey(DecoBlocks.getBlockKey(name))));
+    }
     public static FlowerPotBlock registerFlowerPot(String name, Block content, Block copyBlock){
         return registerSimpleWithoutItem(name, new FlowerPotBlock(content,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
-
+    public static FlowerBlock registerFlower(String name, RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Block copyBlock){
+        return registerSimple(name,  new FlowerBlock(createStewEffectList(stewEffect, effectLengthInSeconds),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static PuffyDandelionBlock registerPuffyFlower(String name, RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Block copyBlock){
+        return registerSimple(name,  new PuffyDandelionBlock(stewEffect, effectLengthInSeconds,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static EnderRoseBlock registerRoseFlower(String name, RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Block copyBlock){
+        return registerSimple(name,  new EnderRoseBlock(createStewEffectList(stewEffect, effectLengthInSeconds),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static SaplingBlock registerSapling(String name, SaplingGenerator generator, Block copyBlock) {
+        return registerSimple(name, new SaplingBlock(generator,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizablePaneBlock registerOxidPane(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
+        return registerSimple(name, new OxidizablePaneBlock(oxidationLevel,
+                AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizableChainBlock registerOxidChain(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
+        return registerSimple(name, new OxidizableChainBlock(oxidationLevel,
+                AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER_GRATE).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizableLanternBlock registerOxidLantern(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
+        return registerSimple(name, new OxidizableLanternBlock(oxidationLevel,
+                AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static TerraformSignBlock registerSign(String name, Identifier texture, Block copyBlock) {
+        return registerSimpleWithoutItem(name, new TerraformSignBlock(texture,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static TerraformWallSignBlock registerWallSign(String name, Identifier texture, Block copyBlock) {
+        return registerSimpleWithoutItem(name, new TerraformWallSignBlock(texture,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static TerraformHangingSignBlock registerHangingSign(String name, Identifier texture, Identifier guiTexture, Block copyBlock) {
+        return registerSimpleWithoutItem(name, new TerraformHangingSignBlock(texture, guiTexture,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static TerraformWallHangingSignBlock registerWallHangingSign(String name, Identifier texture, Identifier guiTexture, Block copyBlock) {
+        return registerSimpleWithoutItem(name, new TerraformWallHangingSignBlock(texture, guiTexture,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static ButtonBlock registerButton(String name, BlockSetType blockSetType, int pressTicks, Block copyBlock) {
+        return registerSimple(name, new ButtonBlock(blockSetType, pressTicks,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizableButtonBlock registerOxidButton(String name, Oxidizable.OxidationLevel oxidationLevel, 
+                                                           BlockSetType blockSetType, int pressTicks, Block copyBlock) {
+        return registerSimple(name, new OxidizableButtonBlock(oxidationLevel, blockSetType, pressTicks,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static PressurePlateBlock registerPressurePlateBlock(String name, BlockSetType blockSetType, Block copyBlock) {
+        return registerSimple(name, new PressurePlateBlock(blockSetType,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static WeightedPressurePlateBlock registerWeightedPressurePlateBlock(String name, int weight, BlockSetType blockSetType, Block copyBlock) {
+        return registerSimple(name, new WeightedPressurePlateBlock(weight, blockSetType,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizablePressurePlateBlock registerOxidPressurePlateBlock(String name, int weight, Oxidizable.OxidationLevel oxidationLevel,
+                                                           BlockSetType blockSetType, Block copyBlock) {
+        return registerSimple(name, new OxidizablePressurePlateBlock(weight,oxidationLevel, blockSetType,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static DoorBlock registerDoorBlock(String name, BlockSetType blockSetType, Block copyBlock) {
+        return registerSimple(name, new DoorBlock(blockSetType,
+                AbstractBlock.Settings.copy(copyBlock).nonOpaque().registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static TrapdoorBlock registerTrapDoorBlock(String name, BlockSetType blockSetType, Block copyBlock) {
+        return registerSimple(name, new TrapdoorBlock(blockSetType,
+                AbstractBlock.Settings.copy(copyBlock).nonOpaque().registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static FenceGateBlock registerFenceGateBlock(String name, WoodType type, Block copyBlock) {
+        return registerSimple(name, new FenceGateBlock(type,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static SuspiciousStewEffectsComponent createStewEffectList(RegistryEntry<StatusEffect> effect, float effectLengthInSeconds) {
+        return new SuspiciousStewEffectsComponent(List.of(new SuspiciousStewEffectsComponent.StewEffect(effect, MathHelper.floor(effectLengthInSeconds * 20.0F))));
+    }
+    
     public static RegistryKey<Block> getBlockKey(String name){
         return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(name));
     }

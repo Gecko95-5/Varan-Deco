@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:acacia_mosaic"
+        "recipe": "minecraft:acacia_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:acacia_mosaic"
+      "minecraft:acacia_mosaic"
     ]
   }
 }

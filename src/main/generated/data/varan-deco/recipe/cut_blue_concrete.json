@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "minecraft:blue_concrete"
-    }
+    "S": "minecraft:blue_concrete"
   },
   "pattern": [
     "SS",
@@ -12,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:cut_blue_concrete"
+    "id": "minecraft:cut_blue_concrete"
   }
 }

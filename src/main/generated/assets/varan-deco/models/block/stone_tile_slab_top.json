@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "varan-deco:block/stone_tiles",
-    "side": "varan-deco:block/stone_tiles",
-    "top": "varan-deco:block/stone_tiles"
-  }
-}
