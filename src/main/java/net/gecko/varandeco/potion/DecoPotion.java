@@ -25,7 +25,8 @@ public class DecoPotion {
                     new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 1)));
 
     public static final RegistryEntry<Potion> LONG_WATER_BUBBLE_POTION  = registerPotion("long_bubble_potion",
-            new Potion(String.valueOf(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0)),
+            new Potion(String.valueOf(
+                    new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0)),
                     new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0)));
 
 

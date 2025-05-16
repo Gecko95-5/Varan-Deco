@@ -1,10 +1,10 @@
 {   "parent": "block/block",
     "textures": {
-        "particle": "varan-deco:block/deepslate_stonecutter_bottom",
-        "bottom": "varan-deco:block/deepslate_stonecutter_bottom",
-        "top": "varan-deco:block/deepslate_stonecutter_top",
-        "side": "varan-deco:block/deepslate_stonecutter_side",
-        "saw": "varan-deco:block/deepslate_stonecutter_saw"
+        "particle": "minecraft:block/deepslate_stonecutter_bottom",
+        "bottom": "minecraft:block/deepslate_stonecutter_bottom",
+        "top": "minecraft:block/deepslate_stonecutter_top",
+        "side": "minecraft:block/deepslate_stonecutter_side",
+        "saw": "minecraft:block/deepslate_stonecutter_saw"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

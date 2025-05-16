@@ -5,9 +5,7 @@ import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.gecko.varandeco.VaranDeco;
-import net.gecko.varandeco.block.barrels.AcaciaBarrelBlock;
-import net.gecko.varandeco.block.barrels.BirchBarrelBlock;
-import net.gecko.varandeco.block.barrels.OakBarrelBlock;
+import net.gecko.varandeco.block.barrels.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
@@ -1527,31 +1525,31 @@ public class DecoBlocks {
     public static final Block OAK_BARREL = registerBlock("oak_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN), OakBarrelBlock::new);
     public static final Block SPRUCE_BARREL = registerBlock("spruce_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL), SpruceBarrelBlock::new);
     public static final Block BIRCH_BARREL = registerBlock("birch_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW), BirchBarrelBlock::new);
     public static final Block JUNGLE_BARREL = registerBlock("jungle_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN), JungleBarrelBlock::new);
     public static final Block ACACIA_BARREL = registerBlock("acacia_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE), AcaciaBarrelBlock::new);
     public static final Block DARK_OAK_BARREL = registerBlock("dark_oak_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN),DarkOakBarrelBlock::new);
     public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED),MangroveBarrelBlock::new);
     public static final Block BAMBOO_BARREL = registerBlock("bamboo_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
-                    .sounds(BlockSoundGroup.BAMBOO_WOOD),BarrelBlock::new);
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD),BambooBarrelBlock::new);
     public static final Block CHERRY_BARREL = registerBlock("cherry_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
-                    .sounds(BlockSoundGroup.CHERRY_WOOD),BarrelBlock::new);
+                    .sounds(BlockSoundGroup.CHERRY_WOOD),CherryBarrelBlock::new);
     public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
-                    .sounds(BlockSoundGroup.NETHER_WOOD),BarrelBlock::new);
+                    .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonBarrelBlock::new);
     public static final Block WARPED_BARREL = registerBlock("warped_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
-                    .sounds(BlockSoundGroup.NETHER_WOOD),BarrelBlock::new);
+                    .sounds(BlockSoundGroup.NETHER_WOOD),WarpedBarrelBlock::new);
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),BarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),CactusBarrelBlock::new);
 
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);

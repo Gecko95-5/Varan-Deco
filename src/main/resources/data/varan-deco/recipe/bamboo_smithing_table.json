@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "@": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "@@",
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "minecraft:bamboo_smithing_table"
+  }
+}

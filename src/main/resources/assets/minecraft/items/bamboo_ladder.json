@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "minecraft:item/acacia_ladder"
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:item/bamboo_ladder"
   }
 }

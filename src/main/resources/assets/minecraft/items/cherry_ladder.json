@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "minecraft:block/cherry_ladder"
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:item/cherry_ladder"
   }
 }

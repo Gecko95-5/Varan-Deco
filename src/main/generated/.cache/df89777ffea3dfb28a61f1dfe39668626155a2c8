@@ -1,5 +1,7 @@
 // 1.21.4	-999999999-01-01T00:00:00	Varan-Deco/Tags for minecraft:item
+40e488ccd7c06f4b3ad7c4254aca54118a2ecdd0 data/minecraft/tags/item/boats.json
 ae6a5284b821cf8425822655673d64efabc01ed1 data/minecraft/tags/item/buttons.json
+2b2d7e76f701da7393a7c529be8c919fe6ec0fb7 data/minecraft/tags/item/chest_boats.json
 ccf0a9022a62726234e3ea4370b71450a2751b78 data/minecraft/tags/item/leaves.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data/minecraft/tags/item/logs_that_burn.json
 98d6c7883bc131eb9c73d20c441bfcf5dcdbc3e6 data/minecraft/tags/item/planks.json

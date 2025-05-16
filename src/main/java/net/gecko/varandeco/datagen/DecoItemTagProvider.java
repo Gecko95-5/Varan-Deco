@@ -184,6 +184,18 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Blocks.DEEPSLATE.asItem())
                 .add(Blocks.TUFF.asItem());
 
+        getOrCreateTagBuilder(ItemTags.BOATS)
+                .add(DecoItems.CACTUS_BOAT)
+                .add(DecoItems.WOODEN_BOAT)
+                .add(DecoItems.CRIMSON_BOAT)
+                .add(DecoItems.WARPED_BOAT);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
+                .add(DecoItems.CACTUS_CHEST_BOAT)
+                .add(DecoItems.WOODEN_CHEST_BOAT)
+                .add(DecoItems.CRIMSON_CHEST_BOAT)
+                .add(DecoItems.WARPED_CHEST_BOAT);
+
         getOrCreateTagBuilder(DecoTags.Items.MOSAIC_WOOD)
                 .add(DecoBlocks.OAK_MOSAIC.asItem())
                 .add(DecoBlocks.BIRCH_MOSAIC.asItem())
