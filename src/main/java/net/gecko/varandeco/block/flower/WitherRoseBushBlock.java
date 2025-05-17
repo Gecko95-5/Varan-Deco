@@ -1,6 +1,5 @@
-package net.gecko.varandeco.block.roses;
+package net.gecko.varandeco.block.flower;
 
-import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.TallFlowerBlock;

@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.custom;
+package net.gecko.varandeco.block.flower;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffect;
