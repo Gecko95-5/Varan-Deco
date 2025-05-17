@@ -941,8 +941,8 @@ public class DecoBlocks {
     public static final Block POTTED_WOODEN_SAPLING = registerFlowerPot("potted_wooden_sapling",
             WOODEN_SAPLING,Blocks.POTTED_OAK_SAPLING);
 
-    public static final Block WOODEN_LEAVES = registerBlock("wooden_leaves",
-            AbstractBlock.Settings.copy(Blocks.DARK_OAK_LEAVES), LeavesBlock::new);
+    public static final Block WOODEN_LEAVES = registerTintedLeaves("wooden_leaves",
+            0.01F,Blocks.DARK_OAK_LEAVES);
 
     public static final Block PUFFY_DANDELION = registerPuffyFlower("puffy_dandelion",
             StatusEffects.SATURATION, 3, Blocks.DANDELION);
@@ -2384,6 +2384,10 @@ public class DecoBlocks {
     public static OxidizablePaneBlock registerOxidPane(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
         return registerSimple(name, new OxidizablePaneBlock(oxidationLevel,
                 AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static TintedParticleLeavesBlock registerTintedLeaves(String name, float f,  Block copyBlock) {
+        return registerSimple(name, new TintedParticleLeavesBlock(f,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static OxidizableChainBlock registerOxidChain(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
         return registerSimple(name, new OxidizableChainBlock(oxidationLevel,

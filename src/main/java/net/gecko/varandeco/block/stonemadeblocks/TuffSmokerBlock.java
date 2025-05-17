@@ -57,10 +57,10 @@ public class TuffSmokerBlock extends AbstractFurnaceBlock {
 			double e = pos.getY();
 			double f = pos.getZ() + 0.5;
 			if (random.nextDouble() < 0.1) {
-				world.playSound(d, e, f, SoundEvents.BLOCK_SMOKER_SMOKE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+				world.playSoundClient(d, e, f, SoundEvents.BLOCK_SMOKER_SMOKE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
 			}
 
-			world.addParticle(ParticleTypes.SMOKE, d, e + 1.1, f, 0.0, 0.0, 0.0);
+			world.addParticleClient(ParticleTypes.SMOKE, d, e + 1.1, f, 0.0, 0.0, 0.0);
 		}
 	}
 }

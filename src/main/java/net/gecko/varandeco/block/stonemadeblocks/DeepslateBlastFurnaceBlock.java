@@ -58,7 +58,7 @@ public class DeepslateBlastFurnaceBlock extends AbstractFurnaceBlock {
 			double e = pos.getY();
 			double f = pos.getZ() + 0.5;
 			if (random.nextDouble() < 0.1) {
-				world.playSound(d, e, f, SoundEvents.BLOCK_BLASTFURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+				world.playSoundClient(d, e, f, SoundEvents.BLOCK_BLASTFURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
 			}
 
 			Direction direction = state.get(FACING);
@@ -68,7 +68,7 @@ public class DeepslateBlastFurnaceBlock extends AbstractFurnaceBlock {
 			double i = axis == Direction.Axis.X ? direction.getOffsetX() * 0.52 : h;
 			double j = random.nextDouble() * 9.0 / 16.0;
 			double k = axis == Direction.Axis.Z ? direction.getOffsetZ() * 0.52 : h;
-			world.addParticle(ParticleTypes.SMOKE, d + i, e + j, f + k, 0.0, 0.0, 0.0);
+			world.addParticleClient(ParticleTypes.SMOKE, d + i, e + j, f + k, 0.0, 0.0, 0.0);
 		}
 	}
 }

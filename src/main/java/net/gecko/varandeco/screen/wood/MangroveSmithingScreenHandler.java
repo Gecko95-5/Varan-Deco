@@ -75,7 +75,7 @@ public class MangroveSmithingScreenHandler extends ForgingScreenHandler {
 
 	@Override
 	protected void onTakeOutput(PlayerEntity player, ItemStack stack) {
-		stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
+		stack.onCraftByPlayer(player, stack.getCount());
 		this.output.unlockLastRecipe(player, this.getInputStacks());
 		this.decrementStack(0);
 		this.decrementStack(1);
@@ -138,7 +138,7 @@ public class MangroveSmithingScreenHandler extends ForgingScreenHandler {
 		if (this.templatePropertySet.canUse(stack) && !this.getSlot(0).hasStack()) {
 			return true;
 		} else {
-			return this.basePropertySet.canUse(stack) && !this.getSlot(1).hasStack() ? true : this.additionPropertySet.canUse(stack) && !this.getSlot(2).hasStack();
+			return this.basePropertySet.canUse(stack) && !this.getSlot(1).hasStack() || this.additionPropertySet.canUse(stack) && !this.getSlot(2).hasStack();
 		}
 	}
 

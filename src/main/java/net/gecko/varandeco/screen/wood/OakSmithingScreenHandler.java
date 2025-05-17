@@ -75,7 +75,7 @@ public class OakSmithingScreenHandler extends ForgingScreenHandler {
 
 	@Override
 	protected void onTakeOutput(PlayerEntity player, ItemStack stack) {
-		stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
+		stack.onCraftByPlayer(player, stack.getCount());
 		this.output.unlockLastRecipe(player, this.getInputStacks());
 		this.decrementStack(0);
 		this.decrementStack(1);

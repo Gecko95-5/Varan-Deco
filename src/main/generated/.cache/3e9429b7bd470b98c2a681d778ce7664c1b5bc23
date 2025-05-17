@@ -1,4 +1,4 @@
-// 1.21.4	-999999999-01-01T00:00:00	Varan-Deco/Model Definitions
+// 1.21.5	-999999999-01-01T00:00:00	Varan-Deco/Model Definitions
 8bae466b54ffb5dd79006b4c84a063409ed63930 assets/minecraft/blockstates/acacia_bookshelf.json
 28f4dc721b7c87dd7bab85badf9bd9f1afeaba58 assets/minecraft/blockstates/acacia_cartography_table.json
 9e6816e9890fd5208bc570a667da6323f8fbdf6b assets/minecraft/blockstates/acacia_crafting_table.json
@@ -1327,7 +1327,9 @@ a047ecfcfc68ab28fcf9b6005252ff72f1e88fc9 assets/minecraft/items/stripped_dark_oa
 8ba0cc6f2c9b937035ccf0ad39082ecc0f980591 assets/minecraft/items/stripped_pale_oak_sign.json
 d2bd895fd36f50ddc660cd3926631de26d97dd61 assets/minecraft/items/stripped_spruce_sign.json
 5a6c64ebda3a58567cc72e04db29ea353b11f411 assets/minecraft/items/stripped_warped_sign.json
+386bf087883633a7416a1fc9dcb94b9c0c9e9db5 assets/minecraft/items/stripped_wooden_log.json
 684e21144612285e2f2fb67745a0ca2b55e0528d assets/minecraft/items/stripped_wooden_sign.json
+44eb04883d3365d5d63bbbc801d751e1613ebdea assets/minecraft/items/stripped_wooden_wood.json
 10c269027c48c7b393ef8eba71ff27a365ba31a1 assets/minecraft/items/terracotta_brick_slab.json
 053e277e3399898267ee6c7a2b4ed0166d57f858 assets/minecraft/items/terracotta_brick_stairs.json
 ebd4eb63ab348265ad7a1bc535180c07c0f1dc9b assets/minecraft/items/terracotta_brick_wall.json
@@ -1374,6 +1376,7 @@ c7b3749e065492540c9121be89baf8f18aab52a8 assets/minecraft/items/white_terracotta
 b19ed874eed59ea6fb23289b089d2a333a907623 assets/minecraft/items/wooden_door.json
 6f2cd20987345de849424d664d7d703c0ad664c8 assets/minecraft/items/wooden_fence.json
 5442be2975a36747f8f76fa79df04f14ddafe216 assets/minecraft/items/wooden_hanging_sign.json
+7cc0676d4eecc1d3b84ec31f96c017401b6841ee assets/minecraft/items/wooden_log.json
 f825dd90a6d24b19a0550cc3c86e9088b02d4aee assets/minecraft/items/wooden_mosaic_hanging_sign.json
 03e059acb9e4121d888bd4051fffeb0672dc5722 assets/minecraft/items/wooden_mosaic_sign.json
 a77585989289129f770a15be32c4f6ddf2ddd580 assets/minecraft/items/wooden_mosaic_slab.json
@@ -1384,6 +1387,7 @@ b43b8eddf6f4df6ba2e0a8866daf6520a1ec59ee assets/minecraft/items/wooden_sapling.j
 5d085d7df7a9560f3593c7652ad73ced5550b94f assets/minecraft/items/wooden_slab.json
 3529a9798fd679dad2aa5f0fa3070b36534cdf3a assets/minecraft/items/wooden_stairs.json
 0366e05e59d47c95c63b5eea2522b8bc15e2c812 assets/minecraft/items/wooden_trapdoor.json
+dff168cdc49152f10e543c65d74a8d5cecd882f5 assets/minecraft/items/wooden_wood.json
 5aace009a032e484204e8974265e28fdde70dec9 assets/minecraft/items/yellow_concrete_slab.json
 dfeedd55fd847807a4894942a201d42eca6a61e1 assets/minecraft/items/yellow_concrete_stairs.json
 2f4ba0fe9bf676e426037b57a90970c6af87bb91 assets/minecraft/items/yellow_concrete_wall.json

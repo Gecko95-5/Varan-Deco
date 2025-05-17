@@ -245,8 +245,8 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
 
-        blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
-        blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
+        blockStateModelGenerator.createLogTexturePool(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
+        blockStateModelGenerator.createLogTexturePool(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
 
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);

@@ -6,6 +6,7 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.*;
 import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityCollisionHandler;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -53,7 +54,7 @@ public class EnderRoseBlock extends FlowerBlock {
 
         for (int i = 0; i < 3; i++) {
             if (random.nextBoolean()) {
-                world.addParticle(
+                world.addParticleClient(
                         ParticleTypes.PORTAL, d + random.nextDouble() / 5.0, pos.getY() + (0.5 - random.nextDouble()), e + random.nextDouble() / 5.0, 0.0, 0.0, 0.0
                 );
             }
@@ -61,7 +62,7 @@ public class EnderRoseBlock extends FlowerBlock {
     }
 
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
         if (world instanceof ServerWorld serverWorld
                 && world.getDifficulty() != Difficulty.PEACEFUL
                 && entity instanceof LivingEntity livingEntity

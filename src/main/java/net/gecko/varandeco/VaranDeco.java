@@ -3,6 +3,7 @@ package net.gecko.varandeco;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.*;
 import net.gecko.varandeco.block.DecoBlockSets;
 import net.gecko.varandeco.block.DecoBlocks;
@@ -34,7 +35,6 @@ public class VaranDeco implements ModInitializer {
 		DecoBlocks.registerDecoBlocks();
 		DecoBlockEntities.registerBlockEntities();
 		DecoWorldGeneration.generateWorldGen();
-		DecoCustomTrades.registerCustomTrades();
 		DecoPotion.registerPotions();
 		DecoFlammableBlocks.registerFlammableBlocks();
 		DecoStrippableBlocks.registerStrippables();

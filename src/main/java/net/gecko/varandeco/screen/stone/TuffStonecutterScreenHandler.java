@@ -70,7 +70,7 @@ public class TuffStonecutterScreenHandler  extends ScreenHandler {
 
 			@Override
 			public void onTakeItem(PlayerEntity player, ItemStack stack) {
-				stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
+				stack.onCraftByPlayer(player, stack.getCount());
 				TuffStonecutterScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
 				ItemStack itemStack = TuffStonecutterScreenHandler.this.inputSlot.takeStack(1);
 				if (!itemStack.isEmpty()) {
@@ -201,7 +201,7 @@ public class TuffStonecutterScreenHandler  extends ScreenHandler {
 			Item item = itemStack2.getItem();
 			itemStack = itemStack2.copy();
 			if (slot == 1) {
-				item.onCraftByPlayer(itemStack2, player.getWorld(), player);
+				item.onCraftByPlayer(itemStack2, player);
 				if (!this.insertItem(itemStack2, 2, 38, true)) {
 					return ItemStack.EMPTY;
 				}
