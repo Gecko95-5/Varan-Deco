@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:mangrove_planks"
-    },
-    "X": {
-      "item": "minecraft:book"
-    }
+    "#": "minecraft:mangrove_planks",
+    "X": "minecraft:book"
   },
   "pattern": [
     "###",
@@ -15,7 +11,7 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:mangrove_bookshelf"
+    "id": "minecraft:mangrove_bookshelf"
   },
   "show_notification": true
 }

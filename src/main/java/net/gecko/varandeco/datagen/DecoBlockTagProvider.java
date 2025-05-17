@@ -470,7 +470,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_MOSAIC)
                 .add(DecoBlocks.CHERRY_MOSAIC)
                 .add(DecoBlocks.CACTUS_MOSAIC)
-                .add(DecoBlocks.WOODEN_MOSAIC);
+                .add(DecoBlocks.WOODEN_MOSAIC)
+                .add(DecoBlocks.PALE_OAK_MOSAIC);
 
         getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_STAIRS)
                 .add(DecoBlocks.OAK_MOSAIC_STAIRS)
@@ -482,7 +483,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_MOSAIC_STAIRS)
                 .add(DecoBlocks.CHERRY_MOSAIC_STAIRS)
                 .add(DecoBlocks.CACTUS_MOSAIC_STAIRS)
-                .add(DecoBlocks.WOODEN_MOSAIC_STAIRS);
+                .add(DecoBlocks.WOODEN_MOSAIC_STAIRS)
+                .add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS);
 
         getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_SLABS)
                 .add(DecoBlocks.OAK_MOSAIC_SLAB)
@@ -494,7 +496,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_MOSAIC_SLAB)
                 .add(DecoBlocks.CHERRY_MOSAIC_SLAB)
                 .add(DecoBlocks.CACTUS_MOSAIC_SLAB)
-                .add(DecoBlocks.WOODEN_MOSAIC_SLAB);
+                .add(DecoBlocks.WOODEN_MOSAIC_SLAB)
+                .add(DecoBlocks.PALE_OAK_MOSAIC_SLAB);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .addTag(DecoTags.Blocks.WOODEN_LOGS);
@@ -602,18 +605,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OBSIDIAN_SLAB)
                 .add(DecoBlocks.OBSIDIAN_BRICK_SLAB)
                 .add(DecoBlocks.CUT_IRON_SLAB)
-                .add(DecoBlocks.OAK_MOSAIC_SLAB)
-                .add(DecoBlocks.BIRCH_MOSAIC_SLAB)
-                .add(DecoBlocks.SPRUCE_MOSAIC_SLAB)
-                .add(DecoBlocks.JUNGLE_MOSAIC_SLAB)
-                .add(DecoBlocks.ACACIA_MOSAIC_SLAB)
-                .add(DecoBlocks.DARK_OAK_MOSAIC_SLAB)
-                .add(DecoBlocks.MANGROVE_MOSAIC_SLAB)
-                .add(DecoBlocks.CHERRY_MOSAIC_SLAB)
                 .add(DecoBlocks.CRIMSON_MOSAIC_SLAB)
                 .add(DecoBlocks.WARPED_MOSAIC_SLAB)
-                .add(DecoBlocks.CACTUS_MOSAIC_SLAB)
-                .add(DecoBlocks.WOODEN_MOSAIC_SLAB)
                 .addTag(DecoTags.Blocks.MOSAIC_SLABS)
                 .add(DecoBlocks.CRIMSON_MOSAIC_SLAB)
                 .add(DecoBlocks.WARPED_MOSAIC_SLAB)
@@ -683,6 +676,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STANDING_STRIPPED_CRIMSON_SIGN)
                 .add(DecoBlocks.STANDING_STRIPPED_WARPED_SIGN)
                 .add(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN)
+                .add(DecoBlocks.STANDING_STRIPPED_PALE_OAK_SIGN)
                 .add(DecoBlocks.STANDING_OAK_MOSAIC_SIGN)
                 .add(DecoBlocks.STANDING_SPRUCE_MOSAIC_SIGN)
                 .add(DecoBlocks.STANDING_BIRCH_MOSAIC_SIGN)
@@ -695,7 +689,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STANDING_CRIMSON_MOSAIC_SIGN)
                 .add(DecoBlocks.STANDING_WARPED_MOSAIC_SIGN)
                 .add(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN)
-                .add(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN);
+                .add(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN)
+                .add(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
                 .add(DecoBlocks.WALL_CACTUS_SIGN)
@@ -711,6 +706,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN)
                 .add(DecoBlocks.WALL_STRIPPED_WARPED_SIGN)
                 .add(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN)
+                .add(DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN)
                 .add(DecoBlocks.WALL_OAK_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_BIRCH_MOSAIC_SIGN)
@@ -723,7 +719,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_CRIMSON_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_WARPED_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_CACTUS_MOSAIC_SIGN)
-                .add(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN);
+                .add(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN);
 
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
                 .add(DecoBlocks.HANGING_WOODEN_SIGN)
@@ -738,6 +735,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HANGING_BAMBOO_MOSAIC_SIGN)
                 .add(DecoBlocks.HANGING_CACTUS_MOSAIC_SIGN)
                 .add(DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN)
+                .add(DecoBlocks.HANGING_PALE_OAK_MOSAIC_SIGN)
                 .add(DecoBlocks.HANGING_CRIMSON_MOSAIC_SIGN)
                 .add(DecoBlocks.HANGING_WARPED_MOSAIC_SIGN)
                 .add(DecoBlocks.HANGING_OAK_PLANKS_SIGN)
@@ -750,6 +748,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HANGING_CHERRY_PLANKS_SIGN)
                 .add(DecoBlocks.HANGING_CACTUS_PLANKS_SIGN)
                 .add(DecoBlocks.HANGING_WOODEN_PLANKS_SIGN)
+                .add(DecoBlocks.HANGING_PALE_OAK_PLANKS_SIGN)
                 .add(DecoBlocks.HANGING_CRIMSON_PLANKS_SIGN)
                 .add(DecoBlocks.HANGING_WARPED_PLANKS_SIGN);
 
@@ -766,6 +765,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_HANGING_BAMBOO_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_HANGING_CACTUS_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN)
+                .add(DecoBlocks.WALL_HANGING_PALE_OAK_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_HANGING_CRIMSON_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_HANGING_WARPED_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN)
@@ -778,6 +778,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_HANGING_CHERRY_PLANKS_SIGN)
                 .add(DecoBlocks.WALL_HANGING_CACTUS_PLANKS_SIGN)
                 .add(DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN)
+                .add(DecoBlocks.WALL_HANGING_PALE_OAK_PLANKS_SIGN)
                 .add(DecoBlocks.WALL_HANGING_CRIMSON_PLANKS_SIGN)
                 .add(DecoBlocks.WALL_HANGING_WARPED_PLANKS_SIGN);
 
@@ -822,6 +823,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE)
                 .add(DecoBlocks.WOODEN_CRAFTING_TABLE)
                 .add(DecoBlocks.CHERRY_CRAFTING_TABLE)
+                .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE)
                 .add(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
@@ -835,6 +837,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_SMITHING_TABLE)
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE)
                 .add(DecoBlocks.BAMBOO_SMITHING_TABLE)
+                .add(DecoBlocks.PALE_OAK_SMITHING_TABLE)
                 .add(DecoBlocks.CHERRY_SMITHING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_STAIRS)
@@ -1059,7 +1062,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_BARREL)
                 .add(DecoBlocks.CACTUS_BARREL)
                 .add(DecoBlocks.CHERRY_BARREL)
-                .add(DecoBlocks.BAMBOO_BARREL);;
+                .add(DecoBlocks.BAMBOO_BARREL)
+                .add(DecoBlocks.PALE_OAK_BARREL);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_LADDERS)
                 .add(DecoBlocks.BIRCH_LADDER)
@@ -1073,7 +1077,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CACTUS_LADDER)
                 .add(DecoBlocks.WOODEN_LADDER)
                 .add(DecoBlocks.BAMBOO_LADDER)
-                .add(DecoBlocks.CHERRY_LADDER);
+                .add(DecoBlocks.CHERRY_LADDER)
+                .add(DecoBlocks.PALE_OAK_LADDER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_BOOKSHELVES)
                 .add(DecoBlocks.BIRCH_BOOKSHELF)
@@ -1099,7 +1104,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE)
-                .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
+                .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)

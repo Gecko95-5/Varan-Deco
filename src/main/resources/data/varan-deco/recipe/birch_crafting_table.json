@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:birch_planks"
-    }
+    "#": "minecraft:birch_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:birch_crafting_table"
+    "id": "minecraft:birch_crafting_table"
   }
 }

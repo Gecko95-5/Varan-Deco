@@ -22,7 +22,6 @@ import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -426,6 +425,8 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS), Block::new);
     public static final Block CHERRY_MOSAIC = registerBlock("cherry_mosaic",
             AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS), Block::new);
+    public static final Block PALE_OAK_MOSAIC = registerBlock("pale_oak_mosaic",
+            AbstractBlock.Settings.copy(Blocks.PALE_OAK_PLANKS), PillarBlock::new);
     public static final Block CRIMSON_MOSAIC = registerBlock("crimson_mosaic",
             AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS), PillarBlock::new);
     public static final Block WARPED_MOSAIC = registerBlock("warped_mosaic",
@@ -451,6 +452,8 @@ public class DecoBlocks {
             DecoBlocks.MANGROVE_MOSAIC,DecoBlocks.MANGROVE_MOSAIC);
     public static final Block CHERRY_MOSAIC_STAIRS = registerStairs("cherry_mosaic_stairs",
             DecoBlocks.CHERRY_MOSAIC,DecoBlocks.CHERRY_MOSAIC);
+    public static final Block PALE_OAK_MOSAIC_STAIRS = registerStairs("pale_oak_mosaic_stairs",
+            DecoBlocks.PALE_OAK_MOSAIC,DecoBlocks.PALE_OAK_MOSAIC);
     public static final Block CRIMSON_MOSAIC_STAIRS = registerStairs("crimson_mosaic_stairs",
             DecoBlocks.CRIMSON_MOSAIC,DecoBlocks.CRIMSON_MOSAIC);
     public static final Block WARPED_MOSAIC_STAIRS = registerStairs("warped_mosaic_stairs",
@@ -476,6 +479,8 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.MANGROVE_MOSAIC),SlabBlock::new);
     public static final Block CHERRY_MOSAIC_SLAB = registerBlock("cherry_mosaic_slab",
             AbstractBlock.Settings.copy(DecoBlocks.CHERRY_MOSAIC),SlabBlock::new);
+    public static final Block PALE_OAK_MOSAIC_SLAB = registerBlock("pale_oak_mosaic_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.PALE_OAK_MOSAIC),SlabBlock::new);
     public static final Block CRIMSON_MOSAIC_SLAB = registerBlock("crimson_mosaic_slab",
             AbstractBlock.Settings.copy(DecoBlocks.CRIMSON_MOSAIC),SlabBlock::new);
     public static final Block WARPED_MOSAIC_SLAB = registerBlock("warped_mosaic_slab",
@@ -1064,6 +1069,8 @@ public class DecoBlocks {
     public static final Block CHERRY_CRAFTING_TABLE = registerBlock("cherry_crafting_table",
             AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.CHERRY_WOOD),
                 CherryCraftingTableBlock::new);
+    public static final Block PALE_OAK_CRAFTING_TABLE = registerBlock("pale_oak_crafting_table",
+            AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.STONE_GRAY), PaleOakCraftingTableBlock::new);
     public static final Block CRIMSON_CRAFTING_TABLE = registerBlock("crimson_crafting_table",
             AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.DULL_PINK).sounds(BlockSoundGroup.NETHER_WOOD),
                 CrimsonCraftingTableBlock::new);
@@ -1109,6 +1116,8 @@ public class DecoBlocks {
     public static final Block CHERRY_LADDER = registerBlock("cherry_ladder",
             AbstractBlock.Settings.copy(Blocks.LADDER)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),LadderBlock::new);
+    public static final Block PALE_OAK_LADDER = registerBlock("pale_oak_ladder",
+            AbstractBlock.Settings.copy(Blocks.LADDER),LadderBlock::new);
     public static final Block CACTUS_LADDER = registerBlock("cactus_ladder",
             AbstractBlock.Settings.copy(Blocks.LADDER),LadderBlock::new);
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
@@ -1542,6 +1551,8 @@ public class DecoBlocks {
     public static final Block CHERRY_BARREL = registerBlock("cherry_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),CherryBarrelBlock::new);
+    public static final Block PALE_OAK_BARREL = registerBlock("pale_oak_barrel",
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OFF_WHITE) ,PaleOakBarrelBlock::new);
     public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
                     .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonBarrelBlock::new);
@@ -1569,6 +1580,8 @@ public class DecoBlocks {
     public static final Block CHERRY_BOOKSHELF = registerBlock("cherry_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.TERRACOTTA_WHITE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),Block::new);
+    public static final Block PALE_OAK_BOOKSHELF = registerBlock("pale_oak_bookshelf",
+            AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.OFF_WHITE),Block::new);
     public static final Block CRIMSON_BOOKSHELF = registerBlock("crimson_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.DULL_PINK)
                     .sounds(BlockSoundGroup.NETHER_WOOD),Block::new);
@@ -1620,6 +1633,8 @@ public class DecoBlocks {
     public static final Block BAMBOO_CARTOGRAPHY_TABLE = registerBlock("bamboo_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD),BambooCartographyTableBlock::new);
+    public static final Block PALE_OAK_CARTOGRAPHY_TABLE = registerBlock("pale_oak_cartography_table",
+            AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE) ,PaleOakCartographyTableBlock::new);
     public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerBlock("crimson_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonCartographyTableBlock::new);
@@ -1655,6 +1670,8 @@ public class DecoBlocks {
     public static final Block CHERRY_SMITHING_TABLE = registerBlock("cherry_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),CherrySmithingTableBlock::new);
+    public static final Block PALE_OAK_SMITHING_TABLE = registerBlock("pale_oak_smithing_table",
+            AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE) ,PaleOakSmithingTableBlock::new);
     public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),CactusSmithingTableBlock::new);
 
@@ -1822,6 +1839,7 @@ public class DecoBlocks {
     public static final Identifier STRIPPED_DARK_OAK_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_dark_oak");
     public static final Identifier STRIPPED_MANGROVE_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_mangrove");
     public static final Identifier STRIPPED_CHERRY_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_cherry");
+    public static final Identifier STRIPPED_PALE_OAK_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_pale_oak");
     public static final Identifier STRIPPED_CRIMSON_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_crimson");
     public static final Identifier STRIPPED_WARPED_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_warped");
     public static final Identifier STRIPPED_WOODEN_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/stripped_wooden");
@@ -1834,6 +1852,7 @@ public class DecoBlocks {
     public static final Identifier DARK_OAK_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/dark_oak_mosaic");
     public static final Identifier MANGROVE_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/mangrove_mosaic");
     public static final Identifier CHERRY_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/cherry_mosaic");
+    public static final Identifier PALE_OAK_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/pale_oak_mosaic");
     public static final Identifier BAMBOO_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/bamboo_mosaic");
     public static final Identifier CRIMSON_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/crimson_mosaic");
     public static final Identifier WARPED_MOSAIC_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/warped_mosaic");
@@ -1848,6 +1867,7 @@ public class DecoBlocks {
     public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_mosaic");
     public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_mosaic");
     public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_mosaic");
+    public static final Identifier PALE_OAK_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/pale_oak_mosaic");
     public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/bamboo_mosaic");
     public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_mosaic");
     public static final Identifier WARPED_MOSAIC_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/warped_mosaic");
@@ -1862,6 +1882,7 @@ public class DecoBlocks {
     public static final Identifier DARK_OAK_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_mosaic");
     public static final Identifier MANGROVE_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_mosaic");
     public static final Identifier CHERRY_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_mosaic");
+    public static final Identifier PALE_OAK_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/pale_oak_mosaic");
     public static final Identifier BAMBOO_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/bamboo_mosaic");
     public static final Identifier CRIMSON_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_mosaic");
     public static final Identifier WARPED_MOSAIC_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_mosaic");
@@ -1876,6 +1897,7 @@ public class DecoBlocks {
     public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/dark_oak_planks");
     public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/mangrove_planks");
     public static final Identifier CHERRY_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cherry_planks");
+    public static final Identifier PALE_OAK_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/pale_oak_planks");
     public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/crimson_planks");
     public static final Identifier WARPED_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/warped_planks");
     public static final Identifier CACTUS_PLANKS_HANGING_SIGN_TEXTURE = Identifier.of(VaranDeco.MOD_ID,"entity/signs/hanging/cactus_planks");
@@ -1889,6 +1911,7 @@ public class DecoBlocks {
     public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/dark_oak_planks");
     public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/mangrove_planks");
     public static final Identifier CHERRY_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cherry_planks");
+    public static final Identifier PALE_OAK_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/pale_oak_planks");
     public static final Identifier CRIMSON_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/crimson_planks");
     public static final Identifier WARPED_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/warped_planks");
     public static final Identifier CACTUS_PLANKS_HANGING_SIGN_GUI = Identifier.of(VaranDeco.MOD_ID,"textures/gui/hanging_signs/cactus_planks");
@@ -1941,6 +1964,10 @@ public class DecoBlocks {
             STRIPPED_CHERRY_SIGN_TEXTURE,Blocks.CHERRY_SIGN);
     public static final Block WALL_STRIPPED_CHERRY_SIGN = registerWallSign("wall_stripped_cherry_sign",
             STRIPPED_CHERRY_SIGN_TEXTURE,Blocks.CHERRY_WALL_SIGN);
+    public static final Block STANDING_STRIPPED_PALE_OAK_SIGN = registerSign("standing_stripped_pale_oak_sign",
+            STRIPPED_PALE_OAK_SIGN_TEXTURE,Blocks.PALE_OAK_SIGN);
+    public static final Block WALL_STRIPPED_PALE_OAK_SIGN = registerWallSign("wall_stripped_pale_oak_sign",
+            STRIPPED_PALE_OAK_SIGN_TEXTURE,Blocks.PALE_OAK_WALL_SIGN);
     public static final Block STANDING_STRIPPED_CRIMSON_SIGN = registerSign("standing_stripped_crimson_sign",
             STRIPPED_CRIMSON_SIGN_TEXTURE,Blocks.CRIMSON_SIGN);
     public static final Block WALL_STRIPPED_CRIMSON_SIGN = registerWallSign("wall_stripped_crimson_sign",
@@ -1986,6 +2013,10 @@ public class DecoBlocks {
             CHERRY_MOSAIC_SIGN_TEXTURE,Blocks.CHERRY_SIGN);
     public static final Block WALL_CHERRY_MOSAIC_SIGN = registerWallSign("wall_cherry_mosaic_sign",
             CHERRY_MOSAIC_SIGN_TEXTURE,Blocks.CHERRY_WALL_SIGN);
+    public static final Block STANDING_PALE_OAK_MOSAIC_SIGN = registerSign("standing_pale_oak_mosaic_sign",
+            PALE_OAK_MOSAIC_SIGN_TEXTURE,Blocks.PALE_OAK_SIGN);
+    public static final Block WALL_PALE_OAK_MOSAIC_SIGN = registerWallSign("wall_pale_oak_mosaic_sign",
+            PALE_OAK_MOSAIC_SIGN_TEXTURE,Blocks.PALE_OAK_WALL_SIGN);
     public static final Block STANDING_BAMBOO_MOSAIC_SIGN = registerSign("standing_bamboo_mosaic_sign",
             BAMBOO_MOSAIC_SIGN_TEXTURE,Blocks.BAMBOO_SIGN);
     public static final Block WALL_BAMBOO_MOSAIC_SIGN = registerWallSign("wall_bamboo_mosaic_sign",
@@ -2039,6 +2070,10 @@ public class DecoBlocks {
             CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI,Blocks.CHERRY_HANGING_SIGN);
     public static final Block WALL_HANGING_CHERRY_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_cherry_mosaic_sign",
             CHERRY_MOSAIC_HANGING_SIGN_TEXTURE, CHERRY_MOSAIC_HANGING_SIGN_GUI,Blocks.CHERRY_WALL_HANGING_SIGN);
+    public static final Block HANGING_PALE_OAK_MOSAIC_SIGN = registerHangingSign("hanging_pale_oak_mosaic_sign",
+            PALE_OAK_MOSAIC_HANGING_SIGN_TEXTURE, PALE_OAK_MOSAIC_HANGING_SIGN_GUI,Blocks.PALE_OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_PALE_OAK_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_pale_oak_mosaic_sign",
+            PALE_OAK_MOSAIC_HANGING_SIGN_TEXTURE, PALE_OAK_MOSAIC_HANGING_SIGN_GUI,Blocks.PALE_OAK_WALL_HANGING_SIGN);
     public static final Block HANGING_BAMBOO_MOSAIC_SIGN = registerHangingSign("hanging_bamboo_mosaic_sign",
             BAMBOO_MOSAIC_HANGING_SIGN_TEXTURE, BAMBOO_MOSAIC_HANGING_SIGN_GUI,Blocks.BAMBOO_HANGING_SIGN);
     public static final Block WALL_HANGING_BAMBOO_MOSAIC_SIGN = registerWallHangingSign("wall_hanging_bamboo_mosaic_sign",
@@ -2092,6 +2127,10 @@ public class DecoBlocks {
             CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI,Blocks.CHERRY_HANGING_SIGN);
     public static final Block WALL_HANGING_CHERRY_PLANKS_SIGN = registerWallHangingSign("wall_hanging_cherry_planks_sign",
             CHERRY_PLANKS_HANGING_SIGN_TEXTURE, CHERRY_PLANKS_HANGING_SIGN_GUI,Blocks.CHERRY_WALL_HANGING_SIGN);
+    public static final Block HANGING_PALE_OAK_PLANKS_SIGN = registerHangingSign("hanging_pale_oak_planks_sign",
+            PALE_OAK_PLANKS_HANGING_SIGN_TEXTURE, PALE_OAK_PLANKS_HANGING_SIGN_GUI,Blocks.PALE_OAK_HANGING_SIGN);
+    public static final Block WALL_HANGING_PALE_OAK_PLANKS_SIGN = registerWallHangingSign("wall_hanging_pale_oak_planks_sign",
+            PALE_OAK_PLANKS_HANGING_SIGN_TEXTURE, PALE_OAK_PLANKS_HANGING_SIGN_GUI,Blocks.PALE_OAK_WALL_HANGING_SIGN);
     public static final Block HANGING_CRIMSON_PLANKS_SIGN = registerHangingSign("hanging_crimson_planks_sign",
             CRIMSON_PLANKS_HANGING_SIGN_TEXTURE, CRIMSON_PLANKS_HANGING_SIGN_GUI,Blocks.CRIMSON_HANGING_SIGN);
     public static final Block WALL_HANGING_CRIMSON_PLANKS_SIGN = registerWallHangingSign("wall_hanging_crimson_planks_sign",
@@ -2183,12 +2222,14 @@ public class DecoBlocks {
     public static final Block STRIPPED_CRIMSON_TEMP = registerBlockTemp("stripped_crimson_temp",Block::new);
     public static final Block STRIPPED_WARPED_TEMP = registerBlockTemp("stripped_warped_temp",Block::new);
     public static final Block STRIPPED_WOODEN_TEMP = registerBlockTemp("stripped_wooden_temp",Block::new);
+    public static final Block STRIPPED_PALE_OAK_TEMP = registerBlockTemp("stripped_pale_oak_temp",Block::new);
     public static final Block BAMBOO_MOSAIC_TEMP = registerBlockTemp("bamboo_mosaic_temp",Block::new);
     public static final Block SPRUCE_MOSAIC_TEMP = registerBlockTemp("spruce_mosaic_temp",Block::new);
     public static final Block JUNGLE_MOSAIC_TEMP = registerBlockTemp("jungle_mosaic_temp",Block::new);
     public static final Block DARK_OAK_MOSAIC_TEMP = registerBlockTemp("dark_oak_mosaic_temp",Block::new);
     public static final Block CRIMSON_MOSAIC_TEMP = registerBlockTemp("crimson_mosaic_temp",Block::new);
     public static final Block CACTUS_MOSAIC_TEMP = registerBlockTemp("cactus_mosaic_temp",Block::new);
+    public static final Block PALE_OAK_MOSAIC_TEMP = registerBlockTemp("pale_oak_mosaic_temp",Block::new);
     public static final Block POLISHED_TUFF_TEMP = registerBlockTemp("polished_tuff_temp",Block::new);
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
@@ -2231,6 +2272,9 @@ public class DecoBlocks {
     public static final BlockFamily STRIPPED_WOODEN_FAMILY = BlockFamilies.register(DecoBlocks.STRIPPED_WOODEN_WOOD)
             .sign(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN,DecoBlocks.WALL_STRIPPED_WOODEN_SIGN)
             .group("stripped_wooden").build();
+    public static final BlockFamily STRIPPED_PALE_OAK_FAMILY = BlockFamilies.register(Blocks.STRIPPED_PALE_OAK_WOOD)
+            .sign(DecoBlocks.STANDING_STRIPPED_PALE_OAK_SIGN,DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN)
+            .group("stripped_pale_oak").build();
 
     public static final BlockFamily OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.OAK_MOSAIC)
             .sign(DecoBlocks.STANDING_OAK_MOSAIC_SIGN,DecoBlocks.WALL_OAK_MOSAIC_SIGN)
@@ -2271,6 +2315,9 @@ public class DecoBlocks {
     public static final BlockFamily WOODEN_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.WOODEN_MOSAIC)
             .sign(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN,DecoBlocks.WALL_WOODEN_MOSAIC_SIGN)
             .group("wooden_mosaic").build();
+    public static final BlockFamily PALE_OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.PALE_OAK_MOSAIC)
+            .sign(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN,DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN)
+            .group("pale_oak_mosaic").build();
 
     public static <T extends Block> T registerBlockTemp(String name, Function<AbstractBlock.Settings, T> factory){
         T block = factory.apply(AbstractBlock.Settings.create().dropsNothing().registryKey(getBlockKey(name)));
@@ -2402,10 +2449,6 @@ public class DecoBlocks {
     
     public static RegistryKey<Block> getBlockKey(String name){
         return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(name));
-    }
-
-    public static RegistryKey<Item> getItemKey(String name){
-        return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(name));
     }
     
     public static void registerDecoBlocks(){

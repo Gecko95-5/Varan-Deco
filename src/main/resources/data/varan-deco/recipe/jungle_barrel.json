@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "minecraft:jungle_planks"
-    },
-    "S": {
-      "item": "minecraft:jungle_slab"
-    }
+    "P": "minecraft:jungle_planks",
+    "S": "minecraft:jungle_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "varan-deco:jungle_barrel"
+    "id": "minecraft:jungle_barrel"
   }
 }

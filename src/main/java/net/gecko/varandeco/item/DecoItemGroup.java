@@ -61,6 +61,9 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CHERRY_MOSAIC.asItem());
                         entries.add(DecoBlocks.CHERRY_MOSAIC_STAIRS.asItem());
                         entries.add(DecoBlocks.CHERRY_MOSAIC_SLAB.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_MOSAIC.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_MOSAIC_SLAB.asItem());
                         entries.add(DecoBlocks.CRIMSON_MOSAIC.asItem());
                         entries.add(DecoBlocks.CRIMSON_MOSAIC_STAIRS.asItem());
                         entries.add(DecoBlocks.CRIMSON_MOSAIC_SLAB.asItem());
@@ -726,6 +729,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.CHERRY_CRAFTING_TABLE.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem());
@@ -742,6 +746,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem());
@@ -754,6 +759,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.MANGROVE_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.CHERRY_SMITHING_TABLE.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.BAMBOO_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.CRIMSON_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_SMITHING_TABLE.asItem());
@@ -799,6 +805,10 @@ public class DecoItemGroup {
                         entries.add(DecoItems.CHERRY_MOSAIC_SIGN);
                         entries.add(DecoItems.CHERRY_PLANKS_HANGING_SIGN);
                         entries.add(DecoItems.CHERRY_MOSAIC_HANGING_SIGN);
+                        entries.add(DecoItems.STRIPPED_PALE_OAK_SIGN);
+                        entries.add(DecoItems.PALE_OAK_MOSAIC_SIGN);
+                        entries.add(DecoItems.PALE_OAK_PLANKS_HANGING_SIGN);
+                        entries.add(DecoItems.PALE_OAK_MOSAIC_HANGING_SIGN);
                         entries.add(DecoItems.BAMBOO_MOSAIC_SIGN);
                         entries.add(DecoItems.BAMBOO_MOSAIC_HANGING_SIGN);
                         entries.add(DecoItems.STRIPPED_CRIMSON_SIGN);
@@ -826,6 +836,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_LADDER.asItem());
                         entries.add(DecoBlocks.MANGROVE_LADDER.asItem());
                         entries.add(DecoBlocks.CHERRY_LADDER.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_LADDER.asItem());
                         entries.add(DecoBlocks.BAMBOO_LADDER.asItem());
                         entries.add(DecoBlocks.CRIMSON_LADDER.asItem());
                         entries.add(DecoBlocks.WARPED_LADDER.asItem());
@@ -851,6 +862,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_BARREL.asItem());
                         entries.add(DecoBlocks.MANGROVE_BARREL.asItem());
                         entries.add(DecoBlocks.CHERRY_BARREL.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_BARREL.asItem());
                         entries.add(DecoBlocks.BAMBOO_BARREL.asItem());
                         entries.add(DecoBlocks.CRIMSON_BARREL.asItem());
                         entries.add(DecoBlocks.WARPED_BARREL.asItem());

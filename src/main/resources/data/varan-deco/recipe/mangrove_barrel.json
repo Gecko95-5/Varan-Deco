@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "minecraft:mangrove_planks"
-    },
-    "S": {
-      "item": "minecraft:mangrove_slab"
-    }
+    "P": "minecraft:mangrove_planks",
+    "S": "minecraft:mangrove_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "varan-deco:mangrove_barrel"
+    "id": "minecraft:mangrove_barrel"
   }
 }

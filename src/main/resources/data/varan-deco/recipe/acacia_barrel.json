@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "minecraft:acacia_planks"
-    },
-    "S": {
-      "item": "minecraft:acacia_slab"
-    }
+    "P": "minecraft:acacia_planks",
+    "S": "minecraft:acacia_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "minecraft:acacia_barrel"
+    "id": "minecraft:acacia_barrel"
   }
 }

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:cactus_planks"
-    },
-    "X": {
-      "item": "minecraft:book"
-    }
+    "#": "minecraft:cactus_planks",
+    "X": "minecraft:book"
   },
   "pattern": [
     "###",
@@ -15,7 +11,7 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:cactus_bookshelf"
+    "id": "minecraft:cactus_bookshelf"
   },
   "show_notification": true
 }

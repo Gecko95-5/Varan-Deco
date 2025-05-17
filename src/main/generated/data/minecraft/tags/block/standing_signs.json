@@ -13,6 +13,7 @@
     "minecraft:standing_stripped_crimson_sign",
     "minecraft:standing_stripped_warped_sign",
     "minecraft:standing_stripped_wooden_sign",
+    "minecraft:standing_stripped_pale_oak_sign",
     "minecraft:standing_oak_mosaic_sign",
     "minecraft:standing_spruce_mosaic_sign",
     "minecraft:standing_birch_mosaic_sign",
@@ -25,6 +26,7 @@
     "minecraft:standing_crimson_mosaic_sign",
     "minecraft:standing_warped_mosaic_sign",
     "minecraft:standing_cactus_mosaic_sign",
-    "minecraft:standing_wooden_mosaic_sign"
+    "minecraft:standing_wooden_mosaic_sign",
+    "minecraft:standing_pale_oak_mosaic_sign"
   ]
 }

@@ -2,19 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "minecraft:iron_ingot"
+    "#": "minecraft:iron_ingot",
+    "C": "#varan-deco:deco_crafting_tables",
+    "D": "minecraft:dropper",
+    "R": "minecraft:redstone"
     },
-    "C": {
-      "tag": "varan-deco:deco_crafting_tables"
-    },
-    "D": {
-      "item": "minecraft:dropper"
-    },
-    "R": {
-      "item": "minecraft:redstone"
-    }
-  },
   "pattern": [
     "###",
     "#C#",

@@ -3839,6 +3839,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRIMSON_MOSAIC, Blocks.CRIMSON_SLAB);
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WARPED_MOSAIC, Blocks.WARPED_SLAB);
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CACTUS_MOSAIC, DecoBlocks.CACTUS_PLANK_SLAB);
+                offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PALE_OAK_MOSAIC, Blocks.PALE_OAK_SLAB);
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WOODEN_MOSAIC, DecoBlocks.WOODEN_SLAB);
 
                 createStairsRecipe(DecoBlocks.OAK_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
@@ -3896,6 +3897,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_MOSAIC_STAIRS)+ "_recipe_create");
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CACTUS_MOSAIC_SLAB, DecoBlocks.CACTUS_MOSAIC);
 
+                createStairsRecipe(DecoBlocks.PALE_OAK_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.PALE_OAK_MOSAIC))
+                        .criterion(hasItem(DecoBlocks.PALE_OAK_MOSAIC),conditionsFromItem(DecoBlocks.PALE_OAK_MOSAIC))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_MOSAIC_STAIRS)+ "_recipe_create");
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PALE_OAK_MOSAIC_SLAB, DecoBlocks.PALE_OAK_MOSAIC);
+
                 createStairsRecipe(DecoBlocks.WOODEN_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_MOSAIC))
                         .criterion(hasItem(DecoBlocks.WOODEN_MOSAIC),conditionsFromItem(DecoBlocks.WOODEN_MOSAIC))
                         .offerTo(exporter, getRecipeName(DecoBlocks.WOODEN_MOSAIC_STAIRS)+ "_recipe_create");
@@ -3934,6 +3940,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createSignRecipe(DecoItems.STRIPPED_WOODEN_SIGN, Ingredient.ofItems(DecoBlocks.STRIPPED_WOODEN_LOG))
                         .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                         .offerTo(exporter, getRecipeName(DecoItems.STRIPPED_WOODEN_SIGN) + "_recipe_create");
+                createSignRecipe(DecoItems.STRIPPED_PALE_OAK_SIGN, Ingredient.ofItems(Blocks.STRIPPED_PALE_OAK_LOG))
+                        .criterion(hasItem(Blocks.STRIPPED_PALE_OAK_LOG),conditionsFromItem(Blocks.STRIPPED_PALE_OAK_LOG))
+                        .offerTo(exporter, getRecipeName(DecoItems.STRIPPED_PALE_OAK_SIGN) + "_recipe_create");
 
                 createSignRecipe(DecoItems.OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
                         .criterion(hasItem(DecoBlocks.OAK_MOSAIC),conditionsFromItem(DecoBlocks.OAK_MOSAIC))
@@ -3974,6 +3983,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createSignRecipe(DecoItems.CACTUS_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.CACTUS_MOSAIC))
                         .criterion(hasItem(DecoBlocks.CACTUS_MOSAIC),conditionsFromItem(DecoBlocks.CACTUS_MOSAIC))
                         .offerTo(exporter, getRecipeName(DecoItems.CACTUS_MOSAIC_SIGN) + "_recipe_create");
+                createSignRecipe(DecoItems.PALE_OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.PALE_OAK_MOSAIC))
+                        .criterion(hasItem(DecoBlocks.PALE_OAK_MOSAIC),conditionsFromItem(DecoBlocks.PALE_OAK_MOSAIC))
+                        .offerTo(exporter, getRecipeName(DecoItems.PALE_OAK_MOSAIC_SIGN) + "_recipe_create");
 
                 offerHangingSignRecipe(DecoItems.WOODEN_HANGING_SIGN, DecoBlocks.WOODEN_LOG);
 
@@ -3988,6 +4000,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerHangingSignRecipe(DecoItems.CRIMSON_PLANKS_HANGING_SIGN, Blocks.CRIMSON_PLANKS);
                 offerHangingSignRecipe(DecoItems.WARPED_PLANKS_HANGING_SIGN, Blocks.WARPED_PLANKS);
                 offerHangingSignRecipe(DecoItems.CACTUS_PLANKS_HANGING_SIGN, DecoBlocks.CACTUS_PLANKS);
+                offerHangingSignRecipe(DecoItems.PALE_OAK_PLANKS_HANGING_SIGN, Blocks.PALE_OAK_PLANKS);
                 offerHangingSignRecipe(DecoItems.WOODEN_PLANKS_HANGING_SIGN, DecoBlocks.WOODEN_PLANKS);
 
                 offerHangingSignRecipe(DecoItems.OAK_MOSAIC_HANGING_SIGN, DecoBlocks.OAK_MOSAIC);
@@ -4002,6 +4015,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerHangingSignRecipe(DecoItems.CRIMSON_MOSAIC_HANGING_SIGN, DecoBlocks.CRIMSON_MOSAIC);
                 offerHangingSignRecipe(DecoItems.WARPED_MOSAIC_HANGING_SIGN, DecoBlocks.WARPED_MOSAIC);
                 offerHangingSignRecipe(DecoItems.CACTUS_MOSAIC_HANGING_SIGN, DecoBlocks.CACTUS_MOSAIC);
+                offerHangingSignRecipe(DecoItems.PALE_OAK_MOSAIC_HANGING_SIGN, DecoBlocks.PALE_OAK_MOSAIC);
                 offerHangingSignRecipe(DecoItems.WOODEN_MOSAIC_HANGING_SIGN, DecoBlocks.WOODEN_MOSAIC);
 
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.WHITE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS,

@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "varan-deco:cactus_planks"
-    },
-    "S": {
-      "item": "varan-deco:cactus_plank_slab"
-    }
+    "P": "minecraft:cactus_planks",
+    "S": "minecraft:cactus_plank_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "varan-deco:cactus_barrel"
+    "id": "minecraft:cactus_barrel"
   }
 }

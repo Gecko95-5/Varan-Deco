@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "I": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "S": {
-      "item": "minecraft:prismarine"
-    }
+    "I": "minecraft:amethyst_shard",
+    "S": "minecraft:prismarine"
   },
   "pattern": [
     "SSS",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 8,
-    "item": "minecraft:dark_prismarine"
+    "id": "minecraft:dark_prismarine"
   }
 }

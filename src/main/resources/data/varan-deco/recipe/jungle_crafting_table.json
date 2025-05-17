@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:jungle_planks"
-    }
+    "#": "minecraft:jungle_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:jungle_crafting_table"
+    "id": "minecraft:jungle_crafting_table"
   }
 }

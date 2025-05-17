@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "minecraft:spruce_planks"
-    },
-    "S": {
-      "item": "minecraft:spruce_slab"
-    }
+    "P": "minecraft:spruce_planks",
+    "S": "minecraft:spruce_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "varan-deco:spruce_barrel"
+    "id": "minecraft:spruce_barrel"
   }
 }

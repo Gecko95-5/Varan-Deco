@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "minecraft:birch_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:birch_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "varan-deco:birch_ladder"
+    "id": "minecraft:birch_ladder"
   }
 }

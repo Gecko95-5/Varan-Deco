@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "minecraft:oak_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:oak_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +12,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "minecraft:ladder"
+    "id": "minecraft:ladder"
   }
 }

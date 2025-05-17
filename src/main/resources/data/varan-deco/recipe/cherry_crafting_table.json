@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:cherry_planks"
-    }
+    "#": "minecraft:cherry_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:cherry_crafting_table"
+    "id": "minecraft:cherry_crafting_table"
   }
 }

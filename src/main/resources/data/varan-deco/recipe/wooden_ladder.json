@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "varan-deco:wooden_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:wooden_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "varan-deco:wooden_ladder"
+    "id": "minecraft:wooden_ladder"
   }
 }

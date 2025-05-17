@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "minecraft:bamboo_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:bamboo_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "minecraft:bamboo_ladder"
+    "id": "minecraft:bamboo_ladder"
   }
 }

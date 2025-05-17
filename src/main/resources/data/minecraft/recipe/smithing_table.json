@@ -1,14 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
-    {
-      "tag": "varan-deco:deco_crafting_tables"
-    },
-    {
-      "tag": "varan-deco:deco_smithing_tables"
-    }
+      "#varan-deco:deco_crafting_tables",
+      "#varan-deco:deco_smithing_tables"
   ],
   "result": {
-    "item": "minecraft:smithing_table"
+    "id": "minecraft:smithing_table"
   }
 }

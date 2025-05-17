@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_planks"
-    },
-    "@": {
-      "item": "minecraft:paper"
-    }
+    "#": "minecraft:crimson_planks",
+    "@": "minecraft:paper"
   },
   "pattern": [
     "@@",
@@ -14,6 +10,6 @@
     "##"
   ],
   "result": {
-    "item": "varan-deco:crimson_cartography_table"
+    "id": "minecraft:crimson_cartography_table"
   }
 }

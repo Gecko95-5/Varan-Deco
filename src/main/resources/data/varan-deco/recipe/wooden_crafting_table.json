@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "varan-deco:wooden_planks"
-    }
+    "#": "minecraft:wooden_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:wooden_crafting_table"
+    "id": "minecraft:wooden_crafting_table"
   }
 }

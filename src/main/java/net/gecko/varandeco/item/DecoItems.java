@@ -63,6 +63,9 @@ public class DecoItems {
     public static final Item STRIPPED_WOODEN_SIGN = registerSignItem("stripped_wooden_sign",
             DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN, DecoBlocks.WALL_STRIPPED_WOODEN_SIGN,
                     SignItem::new);
+    public static final Item STRIPPED_PALE_OAK_SIGN = registerSignItem("stripped_pale_oak_sign",
+            DecoBlocks.STANDING_STRIPPED_PALE_OAK_SIGN, DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN,
+                    SignItem::new);
 
     public static final Item OAK_MOSAIC_SIGN = registerSignItem("oak_mosaic_sign",
             DecoBlocks.STANDING_OAK_MOSAIC_SIGN, DecoBlocks.WALL_OAK_MOSAIC_SIGN,
@@ -102,6 +105,9 @@ public class DecoItems {
                     SignItem::new);
     public static final Item WOODEN_MOSAIC_SIGN = registerSignItem("wooden_mosaic_sign",
             DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_WOODEN_MOSAIC_SIGN,
+                    SignItem::new);
+    public static final Item PALE_OAK_MOSAIC_SIGN = registerSignItem("pale_oak_mosaic_sign",
+            DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN, DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN,
                     SignItem::new);
 
     public static final Item WOODEN_HANGING_SIGN = registerHangingSignItem("wooden_hanging_sign",
@@ -146,6 +152,9 @@ public class DecoItems {
     public static final Item WOODEN_MOSAIC_HANGING_SIGN = registerHangingSignItem("wooden_mosaic_hanging_sign",
             DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN,
             HangingSignItem::new);
+    public static final Item PALE_OAK_MOSAIC_HANGING_SIGN = registerHangingSignItem("pale_oak_mosaic_hanging_sign",
+            DecoBlocks.HANGING_PALE_OAK_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_PALE_OAK_MOSAIC_SIGN,
+            HangingSignItem::new);
 
     public static final Item OAK_PLANKS_HANGING_SIGN = registerHangingSignItem("oak_planks_hanging_sign",
             DecoBlocks.HANGING_OAK_PLANKS_SIGN, DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN,
@@ -182,6 +191,9 @@ public class DecoItems {
             HangingSignItem::new);
     public static final Item WOODEN_PLANKS_HANGING_SIGN = registerHangingSignItem("wooden_planks_hanging_sign",
             DecoBlocks.HANGING_WOODEN_PLANKS_SIGN, DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN,
+            HangingSignItem::new);
+    public static final Item PALE_OAK_PLANKS_HANGING_SIGN = registerHangingSignItem("pale_oak_planks_hanging_sign",
+            DecoBlocks.HANGING_PALE_OAK_PLANKS_SIGN, DecoBlocks.WALL_HANGING_PALE_OAK_PLANKS_SIGN,
             HangingSignItem::new);
 
     public static final Item SNOW_BRICK = registerCooldownItem("snow_brick",16,1,
@@ -278,6 +290,9 @@ public class DecoItems {
     public static final Block WOODEN_MOSAIC = registerBlockItem (DecoBlocks.WOODEN_MOSAIC);
     public static final Block WOODEN_MOSAIC_STAIRS = registerBlockItem (DecoBlocks.WOODEN_MOSAIC_STAIRS);
     public static final Block WOODEN_MOSAIC_SLAB = registerBlockItem (DecoBlocks.WOODEN_MOSAIC_SLAB);
+    public static final Block PALE_OAK_MOSAIC = registerBlockItem (DecoBlocks.PALE_OAK_MOSAIC);
+    public static final Block PALE_OAK_MOSAIC_STAIRS = registerBlockItem (DecoBlocks.PALE_OAK_MOSAIC_STAIRS);
+    public static final Block PALE_OAK_MOSAIC_SLAB = registerBlockItem (DecoBlocks.PALE_OAK_MOSAIC_SLAB);
     public static final Block STONE_WALL = registerBlockItem (DecoBlocks.STONE_WALL);
     public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlockItem (DecoBlocks.COBBLESTONE_PRESSURE_PLATE);
     public static final Block COBBLESTONE_BUTTON = registerBlockItem (DecoBlocks.COBBLESTONE_BUTTON);
@@ -931,6 +946,7 @@ public class DecoItems {
     public static final Block DARK_OAK_CRAFTING_TABLE = registerBlockItem (DecoBlocks.DARK_OAK_CRAFTING_TABLE);
     public static final Block MANGROVE_CRAFTING_TABLE = registerBlockItem (DecoBlocks.MANGROVE_CRAFTING_TABLE);
     public static final Block CHERRY_CRAFTING_TABLE = registerBlockItem (DecoBlocks.CHERRY_CRAFTING_TABLE);
+    public static final Block PALE_OAK_CRAFTING_TABLE = registerBlockItem (DecoBlocks.PALE_OAK_CRAFTING_TABLE);
     public static final Block BAMBOO_CRAFTING_TABLE = registerBlockItem (DecoBlocks.BAMBOO_CRAFTING_TABLE);
     public static final Block CRIMSON_CRAFTING_TABLE = registerBlockItem (DecoBlocks.CRIMSON_CRAFTING_TABLE);
     public static final Block WARPED_CRAFTING_TABLE = registerBlockItem (DecoBlocks.WARPED_CRAFTING_TABLE);
@@ -948,6 +964,7 @@ public class DecoItems {
     public static final Block MANGROVE_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE);
     public static final Block CHERRY_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.CHERRY_CARTOGRAPHY_TABLE);
     public static final Block BAMBOO_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
+    public static final Block PALE_OAK_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE);
     public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE);
     public static final Block WARPED_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
     public static final Block CACTUS_CARTOGRAPHY_TABLE = registerBlockItem (DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
@@ -959,6 +976,7 @@ public class DecoItems {
     public static final Block DARK_OAK_SMITHING_TABLE = registerBlockItem (DecoBlocks.DARK_OAK_SMITHING_TABLE);
     public static final Block MANGROVE_SMITHING_TABLE = registerBlockItem (DecoBlocks.MANGROVE_SMITHING_TABLE);
     public static final Block CHERRY_SMITHING_TABLE = registerBlockItem (DecoBlocks.CHERRY_SMITHING_TABLE);
+    public static final Block PALE_OAK_SMITHING_TABLE = registerBlockItem (DecoBlocks.PALE_OAK_SMITHING_TABLE);
     public static final Block BAMBOO_SMITHING_TABLE = registerBlockItem (DecoBlocks.BAMBOO_SMITHING_TABLE);
     public static final Block CRIMSON_SMITHING_TABLE = registerBlockItem (DecoBlocks.CRIMSON_SMITHING_TABLE);
     public static final Block WARPED_SMITHING_TABLE = registerBlockItem (DecoBlocks.WARPED_SMITHING_TABLE);
@@ -979,6 +997,7 @@ public class DecoItems {
     public static final Block DARK_OAK_LADDER = registerBlockItem (DecoBlocks.DARK_OAK_LADDER);
     public static final Block MANGROVE_LADDER = registerBlockItem (DecoBlocks.MANGROVE_LADDER);
     public static final Block CHERRY_LADDER = registerBlockItem (DecoBlocks.CHERRY_LADDER);
+    public static final Block PALE_OAK_LADDER = registerBlockItem (DecoBlocks.PALE_OAK_LADDER);
     public static final Block BAMBOO_LADDER = registerBlockItem (DecoBlocks.BAMBOO_LADDER);
     public static final Block CRIMSON_LADDER = registerBlockItem (DecoBlocks.CRIMSON_LADDER);
     public static final Block WARPED_LADDER = registerBlockItem (DecoBlocks.WARPED_LADDER);
@@ -991,6 +1010,7 @@ public class DecoItems {
     public static final Block DARK_OAK_BOOKSHELF = registerBlockItem (DecoBlocks.DARK_OAK_BOOKSHELF);
     public static final Block MANGROVE_BOOKSHELF = registerBlockItem (DecoBlocks.MANGROVE_BOOKSHELF);
     public static final Block CHERRY_BOOKSHELF = registerBlockItem (DecoBlocks.CHERRY_BOOKSHELF);
+    public static final Block PALE_OAK_BOOKSHELF = registerBlockItem (DecoBlocks.PALE_OAK_BOOKSHELF);
     public static final Block BAMBOO_BOOKSHELF = registerBlockItem (DecoBlocks.BAMBOO_BOOKSHELF);
     public static final Block CRIMSON_BOOKSHELF = registerBlockItem (DecoBlocks.CRIMSON_BOOKSHELF);
     public static final Block WARPED_BOOKSHELF = registerBlockItem (DecoBlocks.WARPED_BOOKSHELF);
@@ -1004,6 +1024,7 @@ public class DecoItems {
     public static final Block DARK_OAK_BARREL = registerBlockItem (DecoBlocks.DARK_OAK_BARREL);
     public static final Block MANGROVE_BARREL = registerBlockItem (DecoBlocks.MANGROVE_BARREL);
     public static final Block CHERRY_BARREL = registerBlockItem (DecoBlocks.CHERRY_BARREL);
+    public static final Block PALE_OAK_BARREL = registerBlockItem (DecoBlocks.PALE_OAK_BARREL);
     public static final Block BAMBOO_BARREL = registerBlockItem (DecoBlocks.BAMBOO_BARREL);
     public static final Block CRIMSON_BARREL = registerBlockItem (DecoBlocks.CRIMSON_BARREL);
     public static final Block WARPED_BARREL = registerBlockItem (DecoBlocks.WARPED_BARREL);

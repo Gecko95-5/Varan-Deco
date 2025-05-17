@@ -2,12 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "group": "copper_ingot",
   "ingredients": [
-    {
-      "item": "minecraft:copper_ingot"
-    }
+      "minecraft:copper_ingot"
   ],
   "result": {
     "count": 9,
-    "item": "varan-deco:copper_nugget"
+    "id": "minecraft:copper_nugget"
   }
 }

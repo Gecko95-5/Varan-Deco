@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "minecraft:cherry_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:cherry_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "varan-deco:cherry_ladder"
+    "id": "minecraft:cherry_ladder"
   }
 }

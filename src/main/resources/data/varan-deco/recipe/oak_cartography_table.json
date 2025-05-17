@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:oak_planks"
-    },
-    "@": {
-      "item": "minecraft:paper"
-    }
+    "#": "minecraft:oak_planks",
+    "@": "minecraft:paper"
   },
   "pattern": [
     "@@",
@@ -14,6 +10,6 @@
     "##"
   ],
   "result": {
-    "item": "varan-deco:oak_cartography_table"
+    "id": "minecraft:oak_cartography_table"
   }
 }

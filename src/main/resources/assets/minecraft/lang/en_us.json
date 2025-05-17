@@ -31,5 +31,7 @@
   "block.minecraft.spruce_hanging_sign": "Stripped Spruce Hanging Sign",
   "block.minecraft.spruce_wall_hanging_sign": "Stripped Spruce Wall Hanging Sign",
   "block.minecraft.warped_hanging_sign": "Stripped Warped Hanging Sign",
-  "block.minecraft.warped_wall_hanging_sign": "Stripped Warped Wall Hanging Sign"
+  "block.minecraft.warped_wall_hanging_sign": "Stripped Warped Wall Hanging Sign",
+  "block.minecraft.pale_oak_hanging_sign": "Stripped Pale Oak Hanging Sign",
+  "block.minecraft.pale_oak_wall_hanging_sign": "Stripped Pale Oak Wall Hanging Sign"
 }

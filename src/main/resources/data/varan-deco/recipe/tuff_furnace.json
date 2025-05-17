@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:tuff"
-    }
+    "#": "minecraft:tuff"
   },
   "pattern": [
     "###",
@@ -11,6 +9,6 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:tuff_furnace"
+    "id": "minecraft:tuff_furnace"
   }
 }

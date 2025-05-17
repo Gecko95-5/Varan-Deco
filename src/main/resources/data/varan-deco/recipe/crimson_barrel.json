@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "minecraft:crimson_planks"
-    },
-    "S": {
-      "item": "minecraft:crimson_slab"
-    }
+    "P": "minecraft:crimson_planks",
+    "S": "minecraft:crimson_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "varan-deco:crimson_barrel"
+    "id": "minecraft:crimson_barrel"
   }
 }

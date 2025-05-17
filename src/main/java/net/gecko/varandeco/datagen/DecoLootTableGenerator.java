@@ -237,6 +237,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.JUNGLE_CRAFTING_TABLE);
         addDrop(DecoBlocks.ACACIA_CRAFTING_TABLE);
         addDrop(DecoBlocks.DARK_OAK_CRAFTING_TABLE);
+        addDrop(DecoBlocks.PALE_OAK_CRAFTING_TABLE);
         addDrop(DecoBlocks.MANGROVE_CRAFTING_TABLE);
         addDrop(DecoBlocks.CRIMSON_CRAFTING_TABLE);
         addDrop(DecoBlocks.WARPED_CRAFTING_TABLE);
@@ -250,6 +251,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.JUNGLE_BARREL);
         addDrop(DecoBlocks.ACACIA_BARREL);
         addDrop(DecoBlocks.DARK_OAK_BARREL);
+        addDrop(DecoBlocks.PALE_OAK_BARREL);
         addDrop(DecoBlocks.MANGROVE_BARREL);
         addDrop(DecoBlocks.CRIMSON_BARREL);
         addDrop(DecoBlocks.WARPED_BARREL);
@@ -262,6 +264,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.JUNGLE_LADDER);
         addDrop(DecoBlocks.ACACIA_LADDER);
         addDrop(DecoBlocks.DARK_OAK_LADDER);
+        addDrop(DecoBlocks.PALE_OAK_LADDER);
         addDrop(DecoBlocks.MANGROVE_LADDER);
         addDrop(DecoBlocks.CRIMSON_LADDER);
         addDrop(DecoBlocks.WARPED_LADDER);
@@ -274,6 +277,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.JUNGLE_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.ACACIA_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.DARK_OAK_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDrop(DecoBlocks.PALE_OAK_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.MANGROVE_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.CRIMSON_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
         addDrop(DecoBlocks.WARPED_BOOKSHELF, block -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
@@ -293,6 +297,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WARPED_MOSAIC);
         addDrop(DecoBlocks.CACTUS_MOSAIC);
         addDrop(DecoBlocks.WOODEN_MOSAIC);
+        addDrop(DecoBlocks.PALE_OAK_MOSAIC);
         
         addDrop(DecoBlocks.OAK_MOSAIC_STAIRS);
         addDrop(DecoBlocks.BIRCH_MOSAIC_STAIRS);
@@ -306,6 +311,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WARPED_MOSAIC_STAIRS);
         addDrop(DecoBlocks.CACTUS_MOSAIC_STAIRS);
         addDrop(DecoBlocks.WOODEN_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.PALE_OAK_MOSAIC_STAIRS);
         
         slabDrops(DecoBlocks.OAK_MOSAIC_SLAB);
         slabDrops(DecoBlocks.BIRCH_MOSAIC_SLAB);
@@ -319,6 +325,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         slabDrops(DecoBlocks.WARPED_MOSAIC_SLAB);
         slabDrops(DecoBlocks.CACTUS_MOSAIC_SLAB);
         slabDrops(DecoBlocks.WOODEN_MOSAIC_SLAB);
+        slabDrops(DecoBlocks.PALE_OAK_MOSAIC_SLAB);
                 
         addDrop(DecoBlocks.OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.SPRUCE_SMITHING_TABLE);
@@ -326,6 +333,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.JUNGLE_SMITHING_TABLE);
         addDrop(DecoBlocks.ACACIA_SMITHING_TABLE);
         addDrop(DecoBlocks.DARK_OAK_SMITHING_TABLE);
+        addDrop(DecoBlocks.PALE_OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.MANGROVE_SMITHING_TABLE);
         addDrop(DecoBlocks.CRIMSON_SMITHING_TABLE);
         addDrop(DecoBlocks.WARPED_SMITHING_TABLE);
@@ -339,6 +347,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE);
+        addDrop(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE);
         addDrop(DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
@@ -357,6 +366,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STANDING_STRIPPED_CRIMSON_SIGN);
         addDrop(DecoBlocks.STANDING_STRIPPED_WARPED_SIGN);
         addDrop(DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_PALE_OAK_SIGN);
         
         addDrop(DecoBlocks.STANDING_OAK_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_SPRUCE_MOSAIC_SIGN);
@@ -371,6 +381,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STANDING_WARPED_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN);
+        addDrop(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN);
         
         addDrop(DecoBlocks.WALL_STRIPPED_OAK_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN);
@@ -383,6 +394,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_WARPED_SIGN);
         addDrop(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN);
+        addDrop(DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN);
         
         addDrop(DecoBlocks.WALL_OAK_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN);
@@ -397,6 +409,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WALL_WARPED_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_CACTUS_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN);
 
         addDrop(DecoBlocks.HANGING_WOODEN_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_WOODEN_SIGN);
@@ -414,6 +427,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN);
         addDrop(DecoBlocks.HANGING_CRIMSON_MOSAIC_SIGN);
         addDrop(DecoBlocks.HANGING_WARPED_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_PALE_OAK_MOSAIC_SIGN);
         addDrop(DecoBlocks.HANGING_OAK_PLANKS_SIGN);
         addDrop(DecoBlocks.HANGING_SPRUCE_PLANKS_SIGN);
         addDrop(DecoBlocks.HANGING_BIRCH_PLANKS_SIGN);
@@ -426,6 +440,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HANGING_WOODEN_PLANKS_SIGN);
         addDrop(DecoBlocks.HANGING_CRIMSON_PLANKS_SIGN);
         addDrop(DecoBlocks.HANGING_WARPED_PLANKS_SIGN);
+        addDrop(DecoBlocks.HANGING_PALE_OAK_PLANKS_SIGN);
                         
         addDrop(DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_SPRUCE_MOSAIC_SIGN);
@@ -440,6 +455,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_CRIMSON_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_WARPED_MOSAIC_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_PALE_OAK_MOSAIC_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_SPRUCE_PLANKS_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_BIRCH_PLANKS_SIGN);
@@ -452,6 +468,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_CRIMSON_PLANKS_SIGN);
         addDrop(DecoBlocks.WALL_HANGING_WARPED_PLANKS_SIGN);
+        addDrop(DecoBlocks.WALL_HANGING_PALE_OAK_PLANKS_SIGN);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
         slabDrops(DecoBlocks.TERRACOTTA_SLAB);

@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "minecraft:warped_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:warped_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "varan-deco:warped_ladder"
+    "id": "minecraft:warped_ladder"
   }
 }

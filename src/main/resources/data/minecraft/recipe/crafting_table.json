@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:oak_planks"
-    }
+    "#": "minecraft:oak_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "minecraft:crafting_table"
+    "id": "minecraft:crafting_table"
   }
 }

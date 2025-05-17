@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:purpur_slab"
-    }
+    "#": "minecraft:purpur_slab"
   },
   "pattern": [
     "#",
     "#"
   ],
   "result": {
-    "item": "varan-deco:chiseled_purpur"
+    "id": "minecraft:chiseled_purpur"
   }
 }

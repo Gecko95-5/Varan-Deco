@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:blackstone"
-    }
+    "#": "minecraft:blackstone"
   },
   "pattern": [
     "###",
@@ -11,6 +9,6 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:blackstone_furnace"
+    "id": "minecraft:blackstone_furnace"
   }
 }

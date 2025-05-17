@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:smooth_purpur_slab"
-    }
+    "#": "minecraft:smooth_purpur_slab"
   },
   "pattern": [
     "#",
     "#"
   ],
   "result": {
-    "item": "minecraft:purpur_pillar"
+    "count": 2,
+    "id": "minecraft:purpur_pillar"
   }
 }

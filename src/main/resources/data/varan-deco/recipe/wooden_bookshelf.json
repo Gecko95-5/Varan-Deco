@@ -2,20 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "varan-deco:wooden_planks"
+    "#": "minecraft:wooden_planks",
+    "X": "minecraft:book"
     },
-    "X": {
-      "item": "minecraft:book"
-    }
-  },
   "pattern": [
     "###",
     "XXX",
     "###"
   ],
   "result": {
-    "item": "varan-deco:wooden_bookshelf"
+    "id": "minecraft:wooden_bookshelf"
   },
   "show_notification": true
 }

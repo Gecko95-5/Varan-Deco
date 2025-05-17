@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "S": {
-      "item": "minecraft:dark_oak_slab"
-    }
+    "#": "minecraft:stick",
+    "S": "minecraft:dark_oak_slab"
   },
   "pattern": [
     "# #",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "varan-deco:dark_oak_ladder"
+    "id": "minecraft:dark_oak_ladder"
   }
 }

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_planks"
-    },
-    "X": {
-      "item": "minecraft:book"
-    }
+    "#": "minecraft:crimson_planks",
+    "X": "minecraft:book"
   },
   "pattern": [
     "###",
@@ -15,7 +11,7 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:crimson_bookshelf"
+    "id": "minecraft:crimson_bookshelf"
   },
   "show_notification": true
 }

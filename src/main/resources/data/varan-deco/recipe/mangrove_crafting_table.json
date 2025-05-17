@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:mangrove_planks"
-    }
+    "#": "minecraft:mangrove_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:mangrove_crafting_table"
+    "id": "minecraft:mangrove_crafting_table"
   }
 }

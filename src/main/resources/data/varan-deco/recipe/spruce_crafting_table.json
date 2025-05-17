@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:spruce_planks"
-    }
+    "#": "minecraft:spruce_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:spruce_crafting_table"
+    "id": "minecraft:spruce_crafting_table"
   }
 }

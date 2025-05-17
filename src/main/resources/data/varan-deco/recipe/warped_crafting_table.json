@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:warped_planks"
-    }
+    "#": "minecraft:warped_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:warped_crafting_table"
+    "id": "minecraft:warped_crafting_table"
   }
 }

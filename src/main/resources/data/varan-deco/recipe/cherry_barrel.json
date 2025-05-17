@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
-      "item": "minecraft:cherry_planks"
-    },
-    "S": {
-      "item": "minecraft:cherry_slab"
-    }
+    "P": "minecraft:cherry_planks",
+    "S": "minecraft:cherry_slab"
   },
   "pattern": [
     "PSP",
@@ -14,6 +10,6 @@
     "PSP"
   ],
   "result": {
-    "item": "varan-deco:cherry_barrel"
+    "id": "minecraft:cherry_barrel"
   }
 }

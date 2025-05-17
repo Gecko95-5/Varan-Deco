@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:birch_planks"
-    },
-    "X": {
-      "item": "minecraft:book"
-    }
+    "#": "minecraft:birch_planks",
+    "X": "minecraft:book"
   },
   "pattern": [
     "###",
@@ -15,7 +11,7 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:birch_bookshelf"
+    "id": "minecraft:birch_bookshelf"
   },
   "show_notification": true
 }

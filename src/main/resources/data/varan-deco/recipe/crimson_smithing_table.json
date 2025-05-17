@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_planks"
-    },
-    "@": {
-      "item": "minecraft:iron_ingot"
-    }
+    "#": "minecraft:crimson_planks",
+    "@": "minecraft:iron_ingot"
   },
   "pattern": [
     "@@",
@@ -14,6 +10,6 @@
     "##"
   ],
   "result": {
-    "item": "varan-deco:crimson_smithing_table"
+    "id": "minecraft:crimson_smithing_table"
   }
 }

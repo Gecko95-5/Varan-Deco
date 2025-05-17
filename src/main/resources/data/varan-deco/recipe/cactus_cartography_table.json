@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "varan-deco:cactus_planks"
-    },
-    "@": {
-      "item": "minecraft:paper"
-    }
+    "#": "minecraft:cactus_planks",
+    "@": "minecraft:paper"
   },
   "pattern": [
     "@@",
@@ -14,6 +10,6 @@
     "##"
   ],
   "result": {
-    "item": "varan-deco:cactus_cartography_table"
+    "id": "minecraft:cactus_cartography_table"
   }
 }

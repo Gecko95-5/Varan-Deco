@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:cobbled_deepslate"
-    }
+    "#": "minecraft:cobbled_deepslate"
   },
   "pattern": [
     "###",
@@ -11,6 +9,6 @@
     "###"
   ],
   "result": {
-    "item": "varan-deco:deepslate_furnace"
+    "id": "minecraft:deepslate_furnace"
   }
 }

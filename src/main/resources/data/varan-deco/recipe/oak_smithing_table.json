@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:oak_planks"
-    },
-    "@": {
-      "item": "minecraft:iron_ingot"
-    }
+    "#": "minecraft:oak_planks",
+    "@": "minecraft:iron_ingot"
   },
   "pattern": [
     "@@",
@@ -14,6 +10,6 @@
     "##"
   ],
   "result": {
-    "item": "varan-deco:oak_smithing_table"
+    "id": "minecraft:oak_smithing_table"
   }
 }

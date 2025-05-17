@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_planks"
-    }
+    "#": "minecraft:crimson_planks"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "item": "varan-deco:crimson_crafting_table"
+    "id": "minecraft:crimson_crafting_table"
   }
 }
