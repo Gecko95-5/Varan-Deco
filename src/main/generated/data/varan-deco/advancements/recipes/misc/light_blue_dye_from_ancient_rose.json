@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nova_starflower": {
+    "has_ancient_rose": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:nova_starflower"
+              "varan-deco:ancient_rose"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nova_starflower"
+      "has_ancient_rose"
     ]
   ],
   "rewards": {

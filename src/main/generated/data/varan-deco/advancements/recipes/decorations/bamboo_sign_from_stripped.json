@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_orchid": {
+    "has_stripped_bamboo_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:pink_orchid"
+              "minecraft:stripped_bamboo_block"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_dye_from_pink_orchid"
+        "recipe": "minecraft:bamboo_sign_from_stripped"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pink_orchid"
+      "has_stripped_bamboo_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_dye_from_pink_orchid"
+      "minecraft:bamboo_sign_from_stripped"
     ]
   }
 }
