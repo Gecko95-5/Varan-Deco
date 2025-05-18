@@ -3358,8 +3358,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("white_dye_from_white_orchid"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
                 .input(DecoBlocks.PINK_ORCHID)
-                .criterion(hasItem(DecoBlocks.WHITE_ORCHID),
-                        conditionsFromItem(DecoBlocks.WHITE_ORCHID))
+                .criterion(hasItem(DecoBlocks.PINK_ORCHID),
+                        conditionsFromItem(DecoBlocks.PINK_ORCHID))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_orchid"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.YELLOW_DYE)
                 .input(DecoBlocks.YELLOW_ORCHID)
@@ -3913,6 +3913,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_WOODEN_SIGN)));
 
+        createSignRecipe(Items.BAMBOO_SIGN, Ingredient.ofItems(Items.STRIPPED_BAMBOO_BLOCK))
+                .criterion(hasItem(Items.STRIPPED_BAMBOO_BLOCK),conditionsFromItem(Items.STRIPPED_BAMBOO_BLOCK))
+                .offerTo(exporter, new Identifier("bamboo_sign_from_stripped"));
+
         createSignRecipe(DecoItems.OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
                 .criterion(hasItem(DecoBlocks.OAK_MOSAIC),conditionsFromItem(DecoBlocks.OAK_MOSAIC))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.OAK_MOSAIC_SIGN)));
@@ -4099,8 +4103,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LIGHT_BLUE_DYE)
                 .input(DecoBlocks.ANCIENT_ROSE)
-                .criterion(hasItem(DecoBlocks.NOVA_STARFLOWER),
-                        conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
+                .criterion(hasItem(DecoBlocks.ANCIENT_ROSE),
+                        conditionsFromItem(DecoBlocks.ANCIENT_ROSE))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_ancient_rose"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE,4)

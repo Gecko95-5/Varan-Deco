@@ -1,4 +1,4 @@
-// 1.20.2	2025-05-11T15:46:12.6910826	Varan-Deco/Block Loot Tables
+// 1.20.2	2025-05-18T17:48:57.6673175	Varan-Deco/Block Loot Tables
 a000080130b061e8932fee05057a0be62c2e5722 data\varan-deco\loot_tables\blocks\california_poppy.json
 b1605436dca25861b369553525c9f5d447284255 data\varan-deco\loot_tables\blocks\obsidian_stairs.json
 239df864ac05ef6129d88aba0e2a3154e157af49 data\varan-deco\loot_tables\blocks\deepslate_pressure_plate.json
@@ -70,8 +70,8 @@ c600ea65efde5767e4289cf16cb8a94a190040ab data\varan-deco\loot_tables\blocks\brow
 2f791eb7f038455dd2ab3b565713daee420a8d9c data\varan-deco\loot_tables\blocks\gray_concrete_wall.json
 59fe3197bbf5680fe840c09b7649c8ef9030b992 data\varan-deco\loot_tables\blocks\cyan_terracotta_bricks.json
 d94a34d068051e26dd30c3fe537cd1f5e01d86e8 data\varan-deco\loot_tables\blocks\spruce_ladder.json
-5c5b5eccdbdc591e6dfe9011df67540a1a0f68fc data\varan-deco\loot_tables\blocks\cactus_plank_button.json
 baca565118ea79dfc1258bc0a3ef1e9b54df1d7d data\varan-deco\loot_tables\blocks\standing_stripped_mangrove_sign.json
+5c5b5eccdbdc591e6dfe9011df67540a1a0f68fc data\varan-deco\loot_tables\blocks\cactus_plank_button.json
 3f9f5f72d04368e610cfc74f93be13af5a64c439 data\varan-deco\loot_tables\blocks\yellow_orchid.json
 1b49b98b36b56b922766afe86e5a631a3d8df73e data\varan-deco\loot_tables\blocks\light_iron_bars.json
 80a1e8453600047c44258ac7f011c884618cf8f1 data\varan-deco\loot_tables\blocks\hanging_wooden_sign.json
@@ -704,9 +704,9 @@ d429dd07fa7a50f43a3b0042e77eeb7d44b86a1c data\varan-deco\loot_tables\blocks\lime
 269f3ea2d630f14d2f327070b3b29fea56fe9677 data\varan-deco\loot_tables\blocks\birch_smithing_table.json
 c7f876d110b654e722fbf0811eea232076c6c509 data\varan-deco\loot_tables\blocks\hardened_brown_stained_glass.json
 3685e6e05aa58f4db867a1daf7c79c218d76c9e9 data\varan-deco\loot_tables\blocks\jungle_bookshelf.json
-75d7019d5ed27338a0287d393097f887a36709ee data\varan-deco\loot_tables\blocks\hardened_purple_stained_glass.json
 7b0ee97f112476b1fed2c00b02c7b3b97f3b5f24 data\varan-deco\loot_tables\blocks\standing_stripped_birch_sign.json
 26ade2d21557e430acc688a6ba3b0ef49cfaef0f data\varan-deco\loot_tables\blocks\magenta_tulip.json
+75d7019d5ed27338a0287d393097f887a36709ee data\varan-deco\loot_tables\blocks\hardened_purple_stained_glass.json
 7fad28ce1411f3a843ec8f9c2cb8e93ea801c7b0 data\minecraft\loot_tables\blocks\dark_oak_sign.json
 ec474b1fccdf7f05b16449dec064b8e3e35c87a1 data\varan-deco\loot_tables\blocks\cut_gray_concrete.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_tables\blocks\bubble_brick_wall.json

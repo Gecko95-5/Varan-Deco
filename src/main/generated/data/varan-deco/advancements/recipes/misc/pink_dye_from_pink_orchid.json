@@ -1,29 +1,29 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:pink_dye_from_pink_orchid"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_white_orchid": {
+    "has_pink_orchid": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:white_orchid"
+              "varan-deco:pink_orchid"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pink_dye_from_pink_orchid"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_white_orchid"
+      "has_pink_orchid"
     ]
   ],
   "rewards": {

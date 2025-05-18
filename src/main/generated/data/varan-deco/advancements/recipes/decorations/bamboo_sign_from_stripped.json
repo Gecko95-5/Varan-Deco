@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ancient_rose": {
+    "has_stripped_bamboo_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:ancient_rose"
+              "minecraft:stripped_bamboo_block"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:light_blue_dye_from_ancient_rose"
+        "recipe": "minecraft:bamboo_sign_from_stripped"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ancient_rose"
+      "has_stripped_bamboo_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:light_blue_dye_from_ancient_rose"
+      "minecraft:bamboo_sign_from_stripped"
     ]
   },
   "sends_telemetry_event": false
