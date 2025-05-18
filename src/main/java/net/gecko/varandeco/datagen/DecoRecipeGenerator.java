@@ -3362,8 +3362,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("white_dye_from_white_orchid"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
                 .input(DecoBlocks.PINK_ORCHID)
-                .criterion(hasItem(DecoBlocks.WHITE_ORCHID),
-                        conditionsFromItem(DecoBlocks.WHITE_ORCHID))
+                .criterion(hasItem(DecoBlocks.PINK_ORCHID),
+                        conditionsFromItem(DecoBlocks.PINK_ORCHID))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_orchid"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.YELLOW_DYE)
                 .input(DecoBlocks.YELLOW_ORCHID)

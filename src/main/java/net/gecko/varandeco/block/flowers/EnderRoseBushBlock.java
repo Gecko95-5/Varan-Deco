@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.roses;
+package net.gecko.varandeco.block.flowers;
 
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.BlockState;
@@ -6,7 +6,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.TallFlowerBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.math.BlockPos;
