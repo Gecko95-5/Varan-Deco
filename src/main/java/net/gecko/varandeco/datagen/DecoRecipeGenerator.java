@@ -3943,6 +3943,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createSignRecipe(DecoItems.STRIPPED_PALE_OAK_SIGN, Ingredient.ofItems(Blocks.STRIPPED_PALE_OAK_LOG))
                         .criterion(hasItem(Blocks.STRIPPED_PALE_OAK_LOG),conditionsFromItem(Blocks.STRIPPED_PALE_OAK_LOG))
                         .offerTo(exporter, getRecipeName(DecoItems.STRIPPED_PALE_OAK_SIGN) + "_recipe_create");
+                createSignRecipe(Items.BAMBOO_SIGN, Ingredient.ofItems(Blocks.STRIPPED_BAMBOO_BLOCK))
+                        .criterion(hasItem(Blocks.STRIPPED_BAMBOO_BLOCK),conditionsFromItem(Blocks.STRIPPED_BAMBOO_BLOCK))
+                        .offerTo(exporter, getRecipeName(Items.BAMBOO_SIGN) + "_stripped_bamboo_block");
 
                 createSignRecipe(DecoItems.OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
                         .criterion(hasItem(DecoBlocks.OAK_MOSAIC),conditionsFromItem(DecoBlocks.OAK_MOSAIC))

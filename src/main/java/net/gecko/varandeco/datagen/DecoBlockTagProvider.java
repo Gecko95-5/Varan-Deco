@@ -605,8 +605,6 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OBSIDIAN_SLAB)
                 .add(DecoBlocks.OBSIDIAN_BRICK_SLAB)
                 .add(DecoBlocks.CUT_IRON_SLAB)
-                .add(DecoBlocks.CRIMSON_MOSAIC_SLAB)
-                .add(DecoBlocks.WARPED_MOSAIC_SLAB)
                 .addTag(DecoTags.Blocks.MOSAIC_SLABS)
                 .add(DecoBlocks.CRIMSON_MOSAIC_SLAB)
                 .add(DecoBlocks.WARPED_MOSAIC_SLAB)

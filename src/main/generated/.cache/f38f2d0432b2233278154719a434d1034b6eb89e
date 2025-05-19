@@ -24,7 +24,7 @@ ba534b68a8b6997db1f0bded0aa2321c824d3213 data/minecraft/tags/block/piglin_repell
 6f44fdec71e126c89fbd59d86b55b9d938a83765 data/minecraft/tags/block/pressure_plates.json
 f35376a6bf06ba120e497430b3ab638b5b79f26a data/minecraft/tags/block/saplings.json
 c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replaceable.json
-e653823e4773a8f03a11837d213c957fa614a509 data/minecraft/tags/block/slabs.json
+a98d7a751c6c136eae818931bb6c9e17baff8039 data/minecraft/tags/block/slabs.json
 c69d810ef4b7eb7e13e8efc16754a9f75879e48c data/minecraft/tags/block/small_flowers.json
 73d66f372d8c4d1b45f3aa477fbb0a97cfa88b10 data/minecraft/tags/block/snaps_goat_horn.json
 6b24fd153da199d2a82df0bbee39891b76deb424 data/minecraft/tags/block/snow_layer_cannot_survive_on.json
