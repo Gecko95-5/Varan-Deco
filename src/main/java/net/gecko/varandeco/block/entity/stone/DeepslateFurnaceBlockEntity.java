@@ -1,5 +1,6 @@
-package net.gecko.varandeco.block.entity;
+package net.gecko.varandeco.block.entity.stone;
 
+import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -9,9 +10,9 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
-public class TuffFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
-	public TuffFurnaceBlockEntity(BlockPos pos, BlockState state) {
-		super(DecoBlockEntities.TUFF_FURNACE_BE, pos, state, RecipeType.SMELTING);
+public class DeepslateFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
+	public DeepslateFurnaceBlockEntity(BlockPos pos, BlockState state) {
+		super(DecoBlockEntities.DEEPSLATE_FURNACE_BE, pos, state, RecipeType.SMELTING);
 	}
 
 	@Override

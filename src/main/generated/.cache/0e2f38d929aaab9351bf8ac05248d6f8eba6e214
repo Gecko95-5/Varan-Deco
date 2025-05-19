@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-12T21:47:44.7833532	Varan-Deco/Block Loot Tables
+// 1.21.1	2025-05-19T16:20:50.7195596	Varan-Deco/Block Loot Tables
 393566651db8d1aba2cca8845a7b935bca6150b3 data\varan-deco\loot_table\blocks\tuff_smoker.json
 1d11565919ab6109d65b4a295f53283328f066cb data\varan-deco\loot_table\blocks\hanging_jungle_planks_sign.json
 ab3a1a027d1ee02e7e07fcbc568752994fa7a544 data\varan-deco\loot_table\blocks\acacia_ladder.json
@@ -232,8 +232,8 @@ ef76338799e8f8e4d90a17eb597a4e3378890971 data\minecraft\loot_table\blocks\birch_
 f0d5131ee58a56a0923027a691aa882f5a1f1ff4 data\varan-deco\loot_table\blocks\hanging_warped_mosaic_sign.json
 59fb1656e2402b130f8fe3c454d1840b2718e4eb data\varan-deco\loot_table\blocks\oxidized_copper_lantern.json
 48a8654155bdcb802a25274fcf76bd552523c86a data\varan-deco\loot_table\blocks\deepslate_blast_furnace.json
-171c6ff2d48a24f33328371ec4145f63b8a4910e data\varan-deco\loot_table\blocks\chiseled_bubble_bricks.json
 5b4ae505f885adce651e141f7699865e6f9c445d data\varan-deco\loot_table\blocks\warped_barrel.json
+171c6ff2d48a24f33328371ec4145f63b8a4910e data\varan-deco\loot_table\blocks\chiseled_bubble_bricks.json
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_table\blocks\cut_sandstone_bricks.json
 5bac71c7a8cbe32b7a7af86624d65531ddde4377 data\varan-deco\loot_table\blocks\cut_lime_concrete_stairs.json
 50eb2cf4186988976a7d5137303db86b9cc0f805 data\varan-deco\loot_table\blocks\mosaic_pink_stained_glass.json

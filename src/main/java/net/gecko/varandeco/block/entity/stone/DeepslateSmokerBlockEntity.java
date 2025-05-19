@@ -1,23 +1,24 @@
-package net.gecko.varandeco.block.entity;
+package net.gecko.varandeco.block.entity.stone;
 
+import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeType;
-import net.minecraft.screen.BlastFurnaceScreenHandler;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.SmokerScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
-public class BlackstoneBlastFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
-	public BlackstoneBlastFurnaceBlockEntity(BlockPos pos, BlockState state) {
-		super(DecoBlockEntities.BLACKSTONE_BLAST_FURNACE_BE, pos, state, RecipeType.BLASTING);
+public class DeepslateSmokerBlockEntity extends AbstractFurnaceBlockEntity {
+	public DeepslateSmokerBlockEntity(BlockPos pos, BlockState state) {
+		super(DecoBlockEntities.DEEPSLATE_SMOKER_BE, pos, state, RecipeType.SMOKING);
 	}
 
 	@Override
 	protected Text getContainerName() {
-		return Text.translatable("container.blast_furnace");
+		return Text.translatable("container.smoker");
 	}
 
 	@Override
@@ -27,6 +28,6 @@ public class BlackstoneBlastFurnaceBlockEntity extends AbstractFurnaceBlockEntit
 
 	@Override
 	protected ScreenHandler createScreenHandler(int syncId, PlayerInventory playerInventory) {
-		return new BlastFurnaceScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+		return new SmokerScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
 	}
 }

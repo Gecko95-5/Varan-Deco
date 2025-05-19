@@ -5,6 +5,7 @@ import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.gecko.varandeco.VaranDeco;
+import net.gecko.varandeco.block.barrel.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
@@ -105,7 +106,7 @@ public class DecoBlocks {
     public static final Block STONE_TILES = registerBlock("stone_tiles",
             new Block(AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool()));
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
-            new MagmaBrickBlock(AbstractBlock.Settings.copy(DecoBlocks.SNOW_BRICKS)));
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.SNOW_BRICKS)));
     public static final Block CHISELED_END_STONE = registerBlock("chiseled_end_stone",
             new Block(AbstractBlock.Settings.copy(Blocks.END_STONE)));
     public static final Block VOID_STONE = registerBlock("void_stone",
@@ -202,52 +203,52 @@ public class DecoBlocks {
 
     public static final Block MOSAIC_WHITE_STAINED_GLASS = registerBlock("mosaic_white_stained_glass",
             new StainedGlassBlock(DyeColor.WHITE, AbstractBlock.Settings.copy(Blocks.WHITE_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_ORANGE_STAINED_GLASS = registerBlock("mosaic_orange_stained_glass",
             new StainedGlassBlock(DyeColor.ORANGE, AbstractBlock.Settings.copy(Blocks.ORANGE_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_MAGENTA_STAINED_GLASS = registerBlock("mosaic_magenta_stained_glass",
             new StainedGlassBlock(DyeColor.MAGENTA, AbstractBlock.Settings.copy(Blocks.MAGENTA_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_LIGHT_BLUE_STAINED_GLASS = registerBlock("mosaic_light_blue_stained_glass",
             new StainedGlassBlock(DyeColor.LIGHT_BLUE, AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_YELLOW_STAINED_GLASS = registerBlock("mosaic_yellow_stained_glass",
             new StainedGlassBlock(DyeColor.YELLOW, AbstractBlock.Settings.copy(Blocks.YELLOW_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_LIME_STAINED_GLASS = registerBlock("mosaic_lime_stained_glass",
             new StainedGlassBlock(DyeColor.LIME, AbstractBlock.Settings.copy(Blocks.LIME_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_PINK_STAINED_GLASS = registerBlock("mosaic_pink_stained_glass",
             new StainedGlassBlock(DyeColor.PINK, AbstractBlock.Settings.copy(Blocks.PINK_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_GRAY_STAINED_GLASS = registerBlock("mosaic_gray_stained_glass",
             new StainedGlassBlock(DyeColor.GRAY, AbstractBlock.Settings.copy(Blocks.GRAY_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_LIGHT_GRAY_STAINED_GLASS = registerBlock("mosaic_light_gray_stained_glass",
             new StainedGlassBlock(DyeColor.LIGHT_GRAY, AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_CYAN_STAINED_GLASS = registerBlock("mosaic_cyan_stained_glass",
             new StainedGlassBlock(DyeColor.CYAN, AbstractBlock.Settings.copy(Blocks.CYAN_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_PURPLE_STAINED_GLASS = registerBlock("mosaic_purple_stained_glass",
             new StainedGlassBlock(DyeColor.PURPLE, AbstractBlock.Settings.copy(Blocks.PURPLE_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_BLUE_STAINED_GLASS = registerBlock("mosaic_blue_stained_glass",
             new StainedGlassBlock(DyeColor.BLUE, AbstractBlock.Settings.copy(Blocks.BLUE_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_BROWN_STAINED_GLASS = registerBlock("mosaic_brown_stained_glass",
             new StainedGlassBlock(DyeColor.BROWN, AbstractBlock.Settings.copy(Blocks.BROWN_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_GREEN_STAINED_GLASS = registerBlock("mosaic_green_stained_glass",
             new StainedGlassBlock(DyeColor.GREEN, AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_RED_STAINED_GLASS = registerBlock("mosaic_red_stained_glass",
             new StainedGlassBlock(DyeColor.RED, AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_BLACK_STAINED_GLASS = registerBlock("mosaic_black_stained_glass",
             new StainedGlassBlock(DyeColor.BLACK, AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
 
     public static final Block CUT_RED_SANDSTONE_BRICKS = registerBlock("cut_red_sandstone_bricks",
             new Block(AbstractBlock.Settings.create().strength(1.6f).requiresTool()));
@@ -266,7 +267,7 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.OFF_WHITE)
                     .luminance(state -> 5).sounds(BlockSoundGroup.GLASS)));
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
-            new MagmaBrickBlock(AbstractBlock.Settings.copy(Blocks.PACKED_ICE).strength(1.4f)));
+            new Block(AbstractBlock.Settings.copy(Blocks.PACKED_ICE).strength(1.4f)));
     public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
             new Block(AbstractBlock.Settings.create().strength(0.8f).requiresTool().mapColor(MapColor.BROWN)));
     public static final Block CHISELED_SOUL_SOILSTONE = registerBlock("chiseled_soul_soilstone",
@@ -685,7 +686,7 @@ public class DecoBlocks {
             new StairsBlock(DecoBlocks.CUT_QUARTZ.getDefaultState(),
                     AbstractBlock.Settings.copy(DecoBlocks.CUT_QUARTZ)));
     public static final Block ICE_BRICK_STAIRS = registerBlock("ice_brick_stairs",
-            new MagmaBrickStairBlock(DecoBlocks.ICE_BRICKS.getDefaultState(),
+            new StairsBlock(DecoBlocks.ICE_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.copy(DecoBlocks.ICE_BRICKS)));
     public static final Block CUT_WHITE_CONCRETE_STAIRS = registerBlock("cut_white_concrete_stairs",
             new StairsBlock(DecoBlocks.CUT_WHITE_CONCRETE.getDefaultState(),AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_CONCRETE)));
@@ -744,7 +745,7 @@ public class DecoBlocks {
             new StairsBlock(DecoBlocks.BLUE_NETHER_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
     public static final Block POLISHED_BLACKSTONE_TILE_STAIRS = registerBlock("polished_blackstone_tile_stairs",
-            new MagmaBrickStairBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES.getDefaultState(),
+            new StairsBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES.getDefaultState(),
                     AbstractBlock.Settings.copy(DecoBlocks.POLISHED_BLACKSTONE_TILES)));
     public static final Block TUFF_TILE_STAIRS = registerBlock("tuff_tile_stairs",
             new MagmaBrickStairBlock(DecoBlocks.TUFF_TILES.getDefaultState(),
@@ -914,7 +915,7 @@ public class DecoBlocks {
     public static final Block CUT_QUARTZ_SLAB = registerBlock("cut_quartz_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.CUT_QUARTZ)));
     public static final Block ICE_BRICK_SLAB = registerBlock("ice_brick_slab",
-            new MagmaBrickSlabBlock(AbstractBlock.Settings.copy(DecoBlocks.ICE_BRICKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.ICE_BRICKS)));
     public static final Block CUT_WHITE_CONCRETE_SLAB = registerBlock("cut_white_concrete_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_CONCRETE)));
     public static final Block CUT_ORANGE_CONCRETE_SLAB = registerBlock("cut_orange_concrete_slab",
@@ -964,7 +965,7 @@ public class DecoBlocks {
     public static final Block BLUE_NETHER_BRICK_SLAB = registerBlock("blue_nether_brick_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
-            new MagmaBrickSlabBlock(AbstractBlock.Settings.copy(DecoBlocks.POLISHED_BLACKSTONE_TILES)));
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.POLISHED_BLACKSTONE_TILES)));
     public static final Block TUFF_TILE_SLAB = registerBlock("tuff_tile_slab",
             new MagmaBrickSlabBlock(AbstractBlock.Settings.copy(DecoBlocks.TUFF_TILES)));
 
@@ -1292,11 +1293,11 @@ public class DecoBlocks {
     public static final Block NETHERRACK_WALL = registerBlock("netherrack_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.NETHERRACK)));
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
     public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
     public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
     public static final Block PACKED_MUD_WALL = registerBlock("packed_mud_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.PACKED_MUD)));
     public static final Block END_STONE_WALL = registerBlock("end_stone_wall",
@@ -1447,7 +1448,7 @@ public class DecoBlocks {
     public static final Block CUT_QUARTZ_WALL = registerBlock("cut_quartz_wall",
             new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.CUT_QUARTZ)));
     public static final Block ICE_BRICK_WALL = registerBlock("ice_brick_wall",
-            new MagmaWallBlock(AbstractBlock.Settings.copy(DecoBlocks.ICE_BRICKS)));
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.ICE_BRICKS)));
     public static final Block CUT_WHITE_CONCRETE_WALL = registerBlock("cut_white_concrete_wall",
             new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_CONCRETE)));
     public static final Block CUT_ORANGE_CONCRETE_WALL = registerBlock("cut_orange_concrete_wall",
@@ -1570,81 +1571,81 @@ public class DecoBlocks {
 
     public static final Block MOSAIC_WHITE_STAINED_GLASS_PANE = registerBlock("mosaic_white_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.WHITE,AbstractBlock.Settings.copy(Blocks.WHITE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_ORANGE_STAINED_GLASS_PANE = registerBlock("mosaic_orange_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.ORANGE,AbstractBlock.Settings.copy(Blocks.ORANGE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_MAGENTA_STAINED_GLASS_PANE = registerBlock("mosaic_magenta_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.MAGENTA,AbstractBlock.Settings.copy(Blocks.MAGENTA_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE = registerBlock("mosaic_light_blue_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_YELLOW_STAINED_GLASS_PANE = registerBlock("mosaic_yellow_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.YELLOW, AbstractBlock.Settings.copy(Blocks.YELLOW_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_LIME_STAINED_GLASS_PANE = registerBlock("mosaic_lime_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.LIME, AbstractBlock.Settings.copy(Blocks.LIME_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_PINK_STAINED_GLASS_PANE = registerBlock("mosaic_pink_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.PINK, AbstractBlock.Settings.copy(Blocks.PINK_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_GRAY_STAINED_GLASS_PANE = registerBlock("mosaic_gray_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.GRAY, AbstractBlock.Settings.copy(Blocks.GRAY_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE = registerBlock("mosaic_light_gray_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_CYAN_STAINED_GLASS_PANE = registerBlock("mosaic_cyan_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.CYAN, AbstractBlock.Settings.copy(Blocks.CYAN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_PURPLE_STAINED_GLASS_PANE = registerBlock("mosaic_purple_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.PURPLE, AbstractBlock.Settings.copy(Blocks.PURPLE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_BLUE_STAINED_GLASS_PANE = registerBlock("mosaic_blue_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.BLUE, AbstractBlock.Settings.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_BROWN_STAINED_GLASS_PANE = registerBlock("mosaic_brown_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.BROWN, AbstractBlock.Settings.copy(Blocks.BROWN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_GREEN_STAINED_GLASS_PANE = registerBlock("mosaic_green_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.GREEN, AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_RED_STAINED_GLASS_PANE = registerBlock("mosaic_red_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.RED, AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
     public static final Block MOSAIC_BLACK_STAINED_GLASS_PANE = registerBlock("mosaic_black_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.BLACK, AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS_PANE).strength(0.6F,0.3f)
-                    .nonOpaque().requiresTool()));
+                    .nonOpaque()));
 
     public static final Block OAK_BARREL = registerBlock("oak_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN)));
+            new OakBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN)));
     public static final Block SPRUCE_BARREL = registerBlock("spruce_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL)));
+            new SpruceBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL)));
     public static final Block BIRCH_BARREL = registerBlock("birch_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)));
+            new BirchBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)));
     public static final Block JUNGLE_BARREL = registerBlock("jungle_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN)));
+            new JungleBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN)));
     public static final Block ACACIA_BARREL = registerBlock("acacia_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE)));
+            new AcaciaBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE)));
     public static final Block DARK_OAK_BARREL = registerBlock("dark_oak_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN)));
+            new DarkOakBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN)));
     public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED)));
+            new MangroveBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED)));
     public static final Block BAMBOO_BARREL = registerBlock("bamboo_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
+            new BambooBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD)));
     public static final Block CHERRY_BARREL = registerBlock("cherry_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
+            new CherryBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD)));
     public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
+            new CrimsonBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
     public static final Block WARPED_BARREL = registerBlock("warped_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
+            new WarpedBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
+            new CactusBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
 
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
             new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));

@@ -1,8 +1,8 @@
-package net.gecko.varandeco.block.entity;
+package net.gecko.varandeco.block.entity.stone;
 
+import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeType;
@@ -11,9 +11,9 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
-public class DeepslateBlastFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
-	public DeepslateBlastFurnaceBlockEntity(BlockPos pos, BlockState state) {
-		super(DecoBlockEntities.DEEPSLATE_BLAST_FURNACE_BE, pos, state, RecipeType.BLASTING);
+public class BlackstoneBlastFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
+	public BlackstoneBlastFurnaceBlockEntity(BlockPos pos, BlockState state) {
+		super(DecoBlockEntities.BLACKSTONE_BLAST_FURNACE_BE, pos, state, RecipeType.BLASTING);
 	}
 
 	@Override

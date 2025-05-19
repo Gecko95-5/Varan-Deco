@@ -1,7 +1,7 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
 import com.mojang.serialization.MapCodec;
-import net.gecko.varandeco.block.entity.TuffBlastFurnaceBlockEntity;
+import net.gecko.varandeco.block.entity.stone.TuffBlastFurnaceBlockEntity;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.BlockState;
