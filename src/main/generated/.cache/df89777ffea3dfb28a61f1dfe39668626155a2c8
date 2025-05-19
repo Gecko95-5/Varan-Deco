@@ -1,8 +1,8 @@
-// 1.20.6	2025-05-11T19:52:13.1827534	Varan-Deco/Tags for minecraft:item
+// 1.20.6	2025-05-18T21:01:57.0352429	Varan-Deco/Tags for minecraft:item
 04146a1741164bbd11f595ecf468c4d27391d799 data\varan-deco\tags\items\deco_bookshelves.json
 d25a8b7ceaea55ff80e4398dd65212f50c297d93 data\minecraft\tags\items\stone_crafting_materials.json
-24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\items\wooden_slabs.json
 afd008caf2cf6818f50b4ab00adff62ab0565881 data\minecraft\tags\items\saplings.json
+24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\items\wooden_slabs.json
 ae6a5284b821cf8425822655673d64efabc01ed1 data\minecraft\tags\items\buttons.json
 2197ebe35a93d3b4a7499f1cbc24346cbbbe5c30 data\minecraft\tags\items\planks.json
 89547731e20e9c274f872adefd8870bce2a3bd17 data\varan-deco\tags\items\wooden_crafting_tables.json

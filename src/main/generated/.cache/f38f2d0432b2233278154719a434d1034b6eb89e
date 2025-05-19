@@ -1,4 +1,4 @@
-// 1.20.6	2025-05-11T19:52:13.1817559	Varan-Deco/Tags for minecraft:block
+// 1.20.6	2025-05-18T21:01:57.0342462	Varan-Deco/Tags for minecraft:block
 5a3a1abe180521d2238140f9056e1a70e46c931b data\varan-deco\tags\blocks\wooden_logs.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\blocks\mosaic_wood.json
 03ef4279577bffe623280b3c613d33bdc465dfde data\minecraft\tags\blocks\soul_fire_base_blocks.json
@@ -13,8 +13,8 @@ e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_button
 35f3d4a1a9d8f445c7edbe481f10498d5a26f20b data\varan-deco\tags\blocks\deco_furnaces.json
 1bf19cfa17ee03ee2ee225ba38fa012bba7b8ac3 data\varan-deco\tags\blocks\concrete_walls.json
 d6515b52704b9eb69d440373fb752855a2c5bbc0 data\varan-deco\tags\blocks\deco_cartography_tables.json
+0d811faa461af26ad41e41319dc7c6d35dc1389b data\minecraft\tags\blocks\slabs.json
 c3a59751e549cd10d82f1622b179fd68cbf9eaa8 data\varan-deco\tags\blocks\terracotta_walls.json
-f6b4de45162ac5844a8e68e8721482fe330220c8 data\minecraft\tags\blocks\slabs.json
 48d173da6e149532b3ef3104dec564ef3c2a1c57 data\minecraft\tags\blocks\standing_signs.json
 97245fa2968b79d411ec3b88ac33ec7ff0b48c3a data\minecraft\tags\blocks\needs_iron_tool.json
 9f173f7f2f0dbf9917d191ac8008a2642c8da095 data\minecraft\tags\blocks\wall_signs.json

@@ -3360,8 +3360,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("white_dye_from_white_orchid"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
                 .input(DecoBlocks.PINK_ORCHID)
-                .criterion(hasItem(DecoBlocks.WHITE_ORCHID),
-                        conditionsFromItem(DecoBlocks.WHITE_ORCHID))
+                .criterion(hasItem(DecoBlocks.PINK_ORCHID),
+                        conditionsFromItem(DecoBlocks.PINK_ORCHID))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_orchid"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.YELLOW_DYE)
                 .input(DecoBlocks.YELLOW_ORCHID)
@@ -3914,6 +3914,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         createSignRecipe(DecoItems.STRIPPED_WOODEN_SIGN, Ingredient.ofItems(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_WOODEN_SIGN)));
+        createSignRecipe(Items.BAMBOO_SIGN, Ingredient.ofItems(Items.STRIPPED_BAMBOO_BLOCK))
+                .criterion(hasItem(Items.STRIPPED_BAMBOO_BLOCK),conditionsFromItem(Items.STRIPPED_BAMBOO_BLOCK))
+                .offerTo(exporter, new Identifier("bamboo_sign_from_stripped"));
 
         createSignRecipe(DecoItems.OAK_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.OAK_MOSAIC))
                 .criterion(hasItem(DecoBlocks.OAK_MOSAIC),conditionsFromItem(DecoBlocks.OAK_MOSAIC))
