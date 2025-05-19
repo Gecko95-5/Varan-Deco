@@ -1238,17 +1238,17 @@
   "block.minecraft.oxidized_copper_soul_lantern": "Oxidized Copper Soul Lantern",
   "block.minecraft.waxed_oxidized_copper_soul_lantern": "Waxed Oxidized Copper Soul Lantern",
 
-  "block.minecraft.copper_weight_pressure_plate": "Copper Weight Pressure Plate",
-  "block.minecraft.waxed_copper_weight_pressure_plate": "Waxed Copper Weight Pressure Plate",
+  "block.minecraft.copper_weight_pressure_plate": "Copper Weighted Pressure Plate",
+  "block.minecraft.waxed_copper_weight_pressure_plate": "Waxed Copper Weighted Pressure Plate",
 
-  "block.minecraft.exposed_copper_weight_pressure_plate": "Exposed Copper Weight Pressure Plate",
-  "block.minecraft.waxed_exposed_copper_weight_pressure_plate": "Waxed Exposed Copper Weight Pressure Plate",
+  "block.minecraft.exposed_copper_weight_pressure_plate": "Exposed Copper Weighted Pressure Plate",
+  "block.minecraft.waxed_exposed_copper_weight_pressure_plate": "Waxed Exposed Copper Weighted Pressure Plate",
 
-  "block.minecraft.weathered_copper_weight_pressure_plate": "Weathered Copper Weight Pressure Plate",
-  "block.minecraft.waxed_weathered_copper_weight_pressure_plate": "Waxed Weathered Copper Weight Pressure Plate",
+  "block.minecraft.weathered_copper_weight_pressure_plate": "Weathered Copper Weighted Pressure Plate",
+  "block.minecraft.waxed_weathered_copper_weight_pressure_plate": "Waxed Weathered Copper Weighted Pressure Plate",
 
-  "block.minecraft.oxidized_copper_weight_pressure_plate": "Oxidized Copper Weight Pressure Plate",
-  "block.minecraft.waxed_oxidized_copper_weight_pressure_plate": "Waxed Oxidized Copper Weight Pressure Plate",
+  "block.minecraft.oxidized_copper_weight_pressure_plate": "Oxidized Copper Weighted Pressure Plate",
+  "block.minecraft.waxed_oxidized_copper_weight_pressure_plate": "Waxed Oxidized Copper Weighted Pressure Plate",
 
   "block.minecraft.white_block": "White Block",
   "block.minecraft.light_gray_block": "Light Gray Block",
@@ -1303,17 +1303,10 @@
   "block.minecraft.tuff_tile_slab": "Tuff Tile Slab",
   "block.minecraft.tuff_tile_wall": "Tuff Tile Wall",
 
-  "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
-  "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
-  "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
-
-  "item.minecraft.potion.effect.long_bubble_potion": "Water Bubble Potion",
-  "item.minecraft.splash_potion.effect.long_bubble_potion": "Splash Potion of The Water Bubble",
-  "item.minecraft.lingering_potion.effect.long_bubble_potion": "Lingering Potion of The Water Bubble",
-
-  "item.minecraft.potion.effect.strong_bubble_potion": "Water Bubble Potion",
-  "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
-  "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
+  "item.minecraft.potion.effect.water_bubble": "Water Bubble Potion",
+  "item.minecraft.splash_potion.effect.water_bubble": "Splash Potion of The Water Bubble",
+  "item.minecraft.lingering_potion.effect.water_bubble": "Lingering Potion of The Water Bubble",
+  "item.minecraft.tipped_arrow.effect.water_bubble": "Arrow of The Water Bubble",
 
   "itemgroup.varan_deco_blocks": "Varan Deco Blocks"
 }
