@@ -1,9 +1,7 @@
 package net.gecko.varandeco.entity;
 
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.entity.custom.SnowBrickProjectileEntity;
-import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;

@@ -1,10 +1,9 @@
 package net.gecko.varandeco;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.fabricmc.fabric.api.registry.*;
-import net.gecko.varandeco.block.DecoBlockSets;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.entity.DecoBoats;
@@ -19,7 +18,7 @@ import net.minecraft.potion.Potions;
 import net.minecraft.world.biome.FoliageColors;
 import org.slf4j.Logger;
 
-import static org.slf4j.LoggerFactory.*;
+import static org.slf4j.LoggerFactory.getLogger;
 
 public class VaranDeco implements ModInitializer {
 	public static final String MOD_ID = "varan-deco";
