@@ -7,7 +7,6 @@ import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
-import net.minecraft.tag.BlockTags;
 import net.minecraft.tag.ItemTags;
 
 public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {

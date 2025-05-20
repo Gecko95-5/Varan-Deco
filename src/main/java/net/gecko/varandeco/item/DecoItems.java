@@ -1,13 +1,10 @@
 package net.gecko.varandeco.item;
 
-import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.projectile.SnowBrickItem;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SignItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

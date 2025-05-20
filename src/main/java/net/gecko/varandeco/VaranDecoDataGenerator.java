@@ -3,7 +3,6 @@ package net.gecko.varandeco;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.gecko.varandeco.datagen.*;
-import net.minecraft.data.client.ModelProvider;
 
 public class VaranDecoDataGenerator implements DataGeneratorEntrypoint {
 	@Override

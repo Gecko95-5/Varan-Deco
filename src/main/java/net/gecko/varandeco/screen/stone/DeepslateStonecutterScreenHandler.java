@@ -2,7 +2,6 @@ package net.gecko.varandeco.screen.stone;
 
 import com.google.common.collect.Lists;
 import net.gecko.varandeco.block.DecoBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
