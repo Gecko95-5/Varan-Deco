@@ -1,7 +1,6 @@
 package net.gecko.varandeco.util;
 
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 
 import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_BUTTON;
