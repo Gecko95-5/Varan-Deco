@@ -1987,7 +1987,7 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICK_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICK_SLAB.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ICE_BRICK_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_ICE.asItem());;
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_ICE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_SLAB.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SNOW_WALL.asItem());
