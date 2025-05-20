@@ -2,7 +2,6 @@ package net.gecko.varandeco.block.flowers;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.*;
 import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.entity.Entity;

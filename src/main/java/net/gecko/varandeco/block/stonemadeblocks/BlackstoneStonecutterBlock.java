@@ -1,7 +1,6 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
 import net.gecko.varandeco.screen.stone.BlackstoneStonecutterScreenHandler;
-import net.gecko.varandeco.screen.stone.DeepslateStonecutterScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,7 +15,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;

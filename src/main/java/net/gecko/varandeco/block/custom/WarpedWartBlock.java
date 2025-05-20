@@ -4,7 +4,6 @@ import com.mojang.serialization.MapCodec;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
