@@ -8,9 +8,7 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.entity.DecoEntities;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
-import net.minecraft.client.util.SpriteIdentifier;
 
 public class VaranDecoClient implements ClientModInitializer {
     @Override

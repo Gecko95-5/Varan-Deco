@@ -11,8 +11,6 @@ import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
-import static net.gecko.varandeco.world.feature.DecoConfiguredFeatures.registerKey;
-
 public class DecoPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> DECO_FLOWER_FOREST_PLACED = registerKey("deco_flower_forest_flowers_placed");

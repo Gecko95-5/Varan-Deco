@@ -1,7 +1,6 @@
 package net.gecko.varandeco.item.projectile;
 
 import net.gecko.varandeco.entity.custom.SnowBrickProjectileEntity;
-import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.entity.projectile.thrown.SnowballEntity;
@@ -17,8 +16,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
-
-import static net.minecraft.item.SnowballItem.POWER;
 
 public class SnowBrickItem extends Item implements ProjectileItem {
     public static float POWER = 1.5F;

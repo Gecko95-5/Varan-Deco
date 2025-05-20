@@ -6,11 +6,10 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.data.*;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.Identifier;
-
-import java.util.function.Consumer;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TexturedModel;
 
 public class DecoModelProvider extends FabricModelProvider {
     public DecoModelProvider(FabricDataOutput output) {

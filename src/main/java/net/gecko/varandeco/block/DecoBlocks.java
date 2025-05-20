@@ -8,7 +8,9 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.barrels.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.*;
+import net.gecko.varandeco.block.custom.BlackIceBlock;
+import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
+import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
@@ -2318,6 +2320,8 @@ public class DecoBlocks {
     public static final BlockFamily PALE_OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.PALE_OAK_MOSAIC)
             .sign(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN,DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN)
             .group("pale_oak_mosaic").build();
+
+    //I had some inspiration The Mentor CodeLab
 
     public static <T extends Block> T registerBlockTemp(String name, Function<AbstractBlock.Settings, T> factory){
         T block = factory.apply(AbstractBlock.Settings.create().dropsNothing().registryKey(getBlockKey(name)));

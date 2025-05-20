@@ -15,8 +15,6 @@ import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 
 public class SnowBrickProjectileEntity extends ThrownItemEntity {

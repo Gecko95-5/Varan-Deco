@@ -2,7 +2,6 @@ package net.gecko.varandeco.screen.wood;
 
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
@@ -18,11 +17,9 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 public class AcaciaSmithingScreenHandler extends ForgingScreenHandler {
 	public static final int TEMPLATE_ID = 0;

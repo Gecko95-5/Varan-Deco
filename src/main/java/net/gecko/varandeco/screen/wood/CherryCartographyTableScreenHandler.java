@@ -1,7 +1,6 @@
 package net.gecko.varandeco.screen.wood;
 
 import net.gecko.varandeco.block.DecoBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.MapPostProcessingComponent;
 import net.minecraft.entity.player.PlayerEntity;
