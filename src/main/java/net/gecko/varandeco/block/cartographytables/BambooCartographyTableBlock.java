@@ -1,8 +1,6 @@
 package net.gecko.varandeco.block.cartographytables;
 
 import net.gecko.varandeco.screen.wood.BambooCartographyTableScreenHandler;
-import net.gecko.varandeco.screen.wood.BirchCartographyTableScreenHandler;
-import net.gecko.varandeco.screen.wood.CherryCartographyTableScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,7 +10,6 @@ import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

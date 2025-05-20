@@ -2,7 +2,10 @@ package net.gecko.varandeco.block.barrels;
 
 import com.mojang.serialization.MapCodec;
 import net.gecko.varandeco.block.entity.wood.AcaciaBarrelBlockEntity;
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.mob.PiglinBrain;
 import net.minecraft.entity.player.PlayerEntity;

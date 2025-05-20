@@ -4,8 +4,6 @@ import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.BarrelBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BarrelBlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.LootableContainerBlockEntity;
 import net.minecraft.block.entity.ViewerCountManager;
 import net.minecraft.entity.player.PlayerEntity;

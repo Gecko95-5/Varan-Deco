@@ -17,11 +17,9 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 public class DarkOakSmithingScreenHandler extends ForgingScreenHandler {
 	public static final int TEMPLATE_ID = 0;

@@ -1,6 +1,5 @@
 package net.gecko.varandeco.block.smithingtables;
 
-import net.gecko.varandeco.screen.wood.AcaciaSmithingScreenHandler;
 import net.gecko.varandeco.screen.wood.BambooSmithingScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CraftingTableBlock;
@@ -11,7 +10,6 @@ import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

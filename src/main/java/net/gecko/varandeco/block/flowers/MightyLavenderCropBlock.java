@@ -1,21 +1,19 @@
 package net.gecko.varandeco.block.flowers;
 
-import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.CropBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
-import net.minecraft.world.WorldView;
 
 public class MightyLavenderCropBlock extends CropBlock {
     public static final int field_42775 = 2;

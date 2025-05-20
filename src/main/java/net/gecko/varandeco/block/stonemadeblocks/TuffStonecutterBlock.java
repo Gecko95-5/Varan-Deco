@@ -1,6 +1,5 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
-import net.gecko.varandeco.screen.stone.BlackstoneStonecutterScreenHandler;
 import net.gecko.varandeco.screen.stone.TuffStonecutterScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;

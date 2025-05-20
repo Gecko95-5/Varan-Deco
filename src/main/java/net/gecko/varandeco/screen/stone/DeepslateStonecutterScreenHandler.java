@@ -1,8 +1,6 @@
 package net.gecko.varandeco.screen.stone;
 
-import com.google.common.collect.Lists;
 import net.gecko.varandeco.block.DecoBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
@@ -11,11 +9,13 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeEntry;
-import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.recipe.display.CuttingRecipeDisplay;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
-import net.minecraft.screen.*;
+import net.minecraft.screen.Property;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
+import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
