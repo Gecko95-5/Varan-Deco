@@ -1308,5 +1308,14 @@
   "item.minecraft.lingering_potion.effect.water_bubble": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.water_bubble": "Arrow of The Water Bubble",
 
+  "entity.varan-deco.cactus_boat": "Cactus Boat",
+  "entity.varan-deco.cactus_chest_boat": "Cactus Boat with Chest",
+  "entity.varan-deco.wooden_boat": "Wooden Boat",
+  "entity.varan-deco.wooden_chest_boat": "Wooden Boat with Chest",
+  "entity.varan-deco.crimson_boat": "Crimson Boat",
+  "entity.varan-deco.crimson_chest_boat": "Crimson Boat with Chest",
+  "entity.varan-deco.warped_boat": "Warped Boat",
+  "entity.varan-deco.warped_chest_boat": "Warped Boat with Chest",
+
   "itemgroup.varan_deco_blocks": "Varan Deco Blocks"
 }
