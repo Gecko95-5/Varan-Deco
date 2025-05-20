@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.gecko.varandeco.datagen.*;
 import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
 import net.gecko.varandeco.world.feature.DecoPlacedFeatures;
-import net.minecraft.data.client.ModelProvider;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
