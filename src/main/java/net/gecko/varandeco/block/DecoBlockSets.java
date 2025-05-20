@@ -1,6 +1,5 @@
 package net.gecko.varandeco.block;
 
-import com.mojang.serialization.Codec;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
 import net.minecraft.block.BlockSetType;
 import net.minecraft.sound.BlockSoundGroup;

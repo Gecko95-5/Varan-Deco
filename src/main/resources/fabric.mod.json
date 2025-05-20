@@ -2,17 +2,17 @@
 	"schemaVersion": 1,
 	"id": "varan-deco",
 	"version": "${version}",
-	"name": "Varan-Deco",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Variant Decoration",
+	"description": "This is an example description! Tell everyone what your mod is about!This Mod is about Blocks and they're Different Variants, including new and old blocks. thanks to Kaupenjoe for his Tutorials on Minecraft Modding",
 	"authors": [
-		"Me!"
+		"Gecko95.5"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Gecko95-5/Varan-Deco/tree/1.19.2"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/varan-deco/icon.png",
+	"license": "MIT",
+	"icon": "assets/varan-deco/icon/varan-deco_icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -30,7 +30,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.19.2",
+		"minecraft": "~1.19.4",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
