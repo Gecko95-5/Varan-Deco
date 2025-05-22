@@ -1,4 +1,4 @@
-// 1.19.2	2025-05-20T19:28:56.276235	Tags for minecraft:block
+// 1.19.2	2025-05-21T22:22:48.5539469	Tags for minecraft:block
 d407b9751f8dea4784116ff1c5a484adc2658aeb data\varan-deco\tags\blocks\wooden_logs.json
 d78cf4c95130bb4afe0fc7f9287d5a903d66cb2f data\minecraft\tags\blocks\soul_fire_base_blocks.json
 06c69477bb1e8e8e6923e98730aa504caa8d73a5 data\minecraft\tags\blocks\wooden_stairs.json
@@ -55,5 +55,5 @@ ca77bb1e80d4473489358c4a6701d9c168c04385 data\minecraft\tags\blocks\mineable\pic
 06bd1476079615f2c1cd225789179eab4b2fd9ef data\minecraft\tags\blocks\guarded_by_piglins.json
 d2ef2ba41887482d61b3004b1b2ce08efe095be3 data\minecraft\tags\blocks\fence_gates.json
 398e0c0539fac9101a474ca7e85d8af3f9833a63 data\minecraft\tags\blocks\wooden_slabs.json
-a65f2f58ea38a7f5e5ea6a5de782afe3aa3ab49a data\varan-deco\tags\blocks\deco_smithing_tables.json
+ccf2ad9d2d41eae42b1e6d13096f9bc1b2d22a4c data\varan-deco\tags\blocks\deco_smithing_tables.json
 37dafa9187c84471d26f39fd183af06e33662416 data\minecraft\tags\blocks\wooden_buttons.json

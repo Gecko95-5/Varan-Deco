@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tinted_glass_pane"
+        "recipe": "varan-deco:chiseled_void_stone"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tinted_glass": {
+    "has_void_stone_slab": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:tinted_glass"
+              "varan-deco:void_stone_slab"
             ]
           }
         ]
@@ -22,13 +22,13 @@
   },
   "requirements": [
     [
-      "has_tinted_glass",
+      "has_void_stone_slab",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tinted_glass_pane"
+      "varan-deco:chiseled_void_stone"
     ]
   }
 }

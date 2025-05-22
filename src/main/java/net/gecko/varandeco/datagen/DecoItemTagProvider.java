@@ -111,6 +111,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.SPRUCE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.BIRCH_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.ACACIA_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.JUNGLE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.DARK_OAK_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.MANGROVE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem());

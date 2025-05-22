@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:echo_shard"
+      "item": "varan-deco:void_stone_slab"
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "#",
+    "#"
   ],
   "result": {
-    "item": "varan-deco:echo_block"
+    "item": "varan-deco:chiseled_void_stone"
   }
 }
