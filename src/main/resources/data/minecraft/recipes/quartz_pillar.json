@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:smooth_quartz_slab"
+      "item": "minecraft:quartz_slab"
     }
   },
   "pattern": [
@@ -10,7 +10,6 @@
     "#"
   ],
   "result": {
-    "count": 2,
     "item": "minecraft:quartz_pillar"
   }
 }

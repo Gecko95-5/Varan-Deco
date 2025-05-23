@@ -727,7 +727,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.QUARTZ_BRICK_WALL, Items.QUARTZ_BLOCK);
         offerStonecuttingRecipe(exporter, DecoBlocks.QUARTZ_BRICK_WALL, Items.QUARTZ_BRICKS);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CUT_QUARTZ)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CUT_QUARTZ,4)
                 .pattern("#Q")
                 .pattern("Q#")
                 .input('#', Items.QUARTZ_BLOCK)
@@ -3116,7 +3116,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.OBSIDIAN_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, Items.OBSIDIAN);
 
-        offerPolishedStoneRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_OBSIDIAN,2)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.OBSIDIAN_SLAB)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.OBSIDIAN_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.OBSIDIAN_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_OBSIDIAN)));
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, Items.OBSIDIAN);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
 
