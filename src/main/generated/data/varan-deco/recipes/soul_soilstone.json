@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "S": {
+    "#": {
       "item": "minecraft:soul_soil"
     }
   },
   "pattern": [
-    "SS",
-    "SS"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 4,
     "item": "varan-deco:soul_soilstone"
   }
 }

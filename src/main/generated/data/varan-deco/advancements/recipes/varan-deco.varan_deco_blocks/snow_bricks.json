@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:snow_bricks"
+        "recipe": "minecraft:snow_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:snow_bricks"
+      "minecraft:snow_bricks"
     ]
   }
 }

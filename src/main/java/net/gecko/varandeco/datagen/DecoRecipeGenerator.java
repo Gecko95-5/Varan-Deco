@@ -151,7 +151,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerSlabRecipe(exporter, DecoBlocks.PACKED_MUD_SLAB, Items.PACKED_MUD);
         offerWallRecipe(exporter, DecoBlocks.PACKED_MUD_WALL, Items.PACKED_MUD);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.RED_NETHER_BRICK_FENCE)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.RED_NETHER_BRICK_FENCE,6)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.NETHER_BRICK)
@@ -320,7 +320,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SNOW_BRICK)));
 
-        offerPolishedStoneRecipe(exporter, DecoBlocks.SNOW_BRICKS, DecoItems.SNOW_BRICK);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SNOW_BRICKS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoItems.SNOW_BRICK)
+                .criterion(RecipeProvider.hasItem(DecoItems.SNOW_BRICK),
+                        RecipeProvider.conditionsFromItem(DecoItems.SNOW_BRICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SNOW_BRICKS)));
 
         createStairsRecipe(DecoBlocks.SNOW_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.SNOW_BRICKS))
                 .criterion(hasItem(DecoBlocks.SNOW_BRICKS),conditionsFromItem(DecoBlocks.SNOW_BRICKS))
@@ -342,7 +348,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.SNOW_BRICK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_SNOW_BRICKS)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.ICE_BRICKS)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.ICE_BRICKS,4)
                 .pattern("/#")
                 .pattern("#/")
                 .input('/', Items.BLUE_ICE)
@@ -460,7 +466,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, DecoBlocks.CACTUS_PLANK_SLAB, DecoBlocks.CACTUS_PLANKS);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_FENCE)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_FENCE,3)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.STICK)
@@ -638,8 +644,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BLOCK);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICKS);
-
-        offerPolishedStoneRecipe(exporter, DecoBlocks.SOUL_SOILSTONE, Items.SOUL_SOIL);
+        
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SOUL_SOILSTONE)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.SOUL_SOIL)
+                .criterion(RecipeProvider.hasItem(Items.SOUL_SOIL),
+                        RecipeProvider.conditionsFromItem(Items.SOUL_SOIL))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SOUL_SOILSTONE)));
 
         createStairsRecipe(DecoBlocks.SOUL_SOILSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE))
                 .criterion(hasItem(DecoBlocks.SOUL_SOILSTONE),conditionsFromItem(DecoBlocks.SOUL_SOILSTONE))
@@ -770,8 +782,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("cracked_red_nether_bricks_from_smelting"));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.BLUE_NETHER_BRICKS)
-                .pattern("#N")
                 .pattern("N#")
+                .pattern("#N")
                 .input('#', DecoItems.WARPED_WART)
                 .input('N', Items.NETHER_BRICK)
                 .criterion(RecipeProvider.hasItem(DecoItems.WARPED_WART),
@@ -791,7 +803,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.BLUE_NETHER_BRICK_WALL, DecoBlocks.BLUE_NETHER_BRICKS);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_NETHER_BRICK_WALL, DecoBlocks.BLUE_NETHER_BRICKS);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.BLUE_NETHER_BRICK_FENCE)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.BLUE_NETHER_BRICK_FENCE,6)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.NETHER_BRICK)
@@ -3768,7 +3780,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, DecoBlocks.WOODEN_SLAB, DecoBlocks.WOODEN_PLANKS);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_FENCE)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_FENCE,3)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.STICK)

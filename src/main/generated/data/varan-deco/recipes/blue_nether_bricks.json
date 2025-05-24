@@ -9,8 +9,8 @@
     }
   },
   "pattern": [
-    "#N",
-    "N#"
+    "N#",
+    "#N"
   ],
   "result": {
     "item": "varan-deco:blue_nether_bricks"

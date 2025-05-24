@@ -350,15 +350,15 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICKS));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_stairs"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_STAIRS));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_slab"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_slab"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_NETHER_BRICK_SLAB));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_wall"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_WALL));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_fence"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_fence"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_NETHER_BRICK_FENCE));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_bricks_fence_gate"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_fence_gate"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_blue_nether_bricks"),
