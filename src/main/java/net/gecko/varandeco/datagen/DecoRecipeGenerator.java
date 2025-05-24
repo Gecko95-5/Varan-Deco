@@ -522,7 +522,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.PRISMARINE_BRICK_WALL, Items.PRISMARINE_BRICKS);
         offerStonecuttingRecipe(exporter, DecoBlocks.PRISMARINE_BRICK_WALL, Items.PRISMARINE_BRICKS);
 
-        offerPolishedStoneRecipe(exporter, DecoBlocks.CRYSTALLIZED_PRISMARINE, Items.PRISMARINE_CRYSTALS);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRYSTALLIZED_PRISMARINE)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.PRISMARINE_CRYSTALS)
+                .criterion(RecipeProvider.hasItem(Items.PRISMARINE_CRYSTALS),
+                        RecipeProvider.conditionsFromItem(Items.PRISMARINE_CRYSTALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRYSTALLIZED_PRISMARINE)));
 
         createStairsRecipe(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS, Ingredient.ofItems(DecoBlocks.CRYSTALLIZED_PRISMARINE))
                 .criterion(hasItem(DecoBlocks.CRYSTALLIZED_PRISMARINE),conditionsFromItem(DecoBlocks.CRYSTALLIZED_PRISMARINE))
