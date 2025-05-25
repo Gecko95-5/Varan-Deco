@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:purpur_slab"
+      "item": "minecraft:quartz_slab"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "varan-deco:chiseled_purpur"
+    "item": "minecraft:chiseled_quartz_block"
   }
 }

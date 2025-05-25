@@ -114,6 +114,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.SPRUCE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.BIRCH_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.ACACIA_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.JUNGLE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.DARK_OAK_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.MANGROVE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem());
@@ -148,5 +149,28 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.COBBLESTONE_BUTTON.asItem())
                 .add(DecoBlocks.BLACKSTONE_BUTTON.asItem())
                 .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
+                .add(DecoBlocks.YELLOW_TULIP.asItem())
+                .add(DecoBlocks.PURPLE_TULIP.asItem())
+                .add(DecoBlocks.MAGENTA_TULIP.asItem())
+                .add(DecoBlocks.BLUE_TULIP.asItem())
+                .add(DecoBlocks.BLACK_TULIP.asItem())
+                .add(DecoBlocks.GREEN_TULIP.asItem())
+                .add(DecoBlocks.CYAN_TULIP.asItem())
+                .add(DecoBlocks.BARBERTON_DAISY.asItem())
+                .add(DecoBlocks.BLUE_EYED_DAISY.asItem())
+                .add(DecoBlocks.GERBERA_DAISY.asItem())
+                .add(DecoBlocks.MICHAELMAS_DAISY.asItem())
+                .add(DecoBlocks.PUFFY_DANDELION.asItem())
+                .add(DecoBlocks.CALIFORNIA_POPPY.asItem())
+                .add(DecoBlocks.SALMON_POPPY.asItem())
+                .add(DecoBlocks.YELLOW_ORCHID.asItem())
+                .add(DecoBlocks.WHITE_ORCHID.asItem())
+                .add(DecoBlocks.PINK_ORCHID.asItem())
+                .add(DecoBlocks.ROSE.asItem())
+                .add(DecoBlocks.ENDER_ROSE.asItem())
+                .add(DecoBlocks.PAEONIA.asItem())
+                .add(DecoBlocks.LAVENDER.asItem());
     }
 }

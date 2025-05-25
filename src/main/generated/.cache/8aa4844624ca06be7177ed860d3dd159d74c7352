@@ -1,24 +1,25 @@
-// 1.19.4	2025-05-18T15:51:16.6227591	Varan-Deco/Tags for minecraft:item
-0456f9ade0d54a2d3492bd0831684716a3ad0464 data\minecraft\tags\items\signs.json
-8bb7e464a7b81e9973674b931820d61efb924458 data\varan-deco\tags\items\deco_crafting_tables.json
+// 1.19.4	2025-05-24T23:56:37.8886877	Variant Decoration/Tags for minecraft:item
 d79bbb117b60f96f2bce8d44cb2686f10bf7606a data\minecraft\tags\items\stone_crafting_materials.json
 398e0c0539fac9101a474ca7e85d8af3f9833a63 data\minecraft\tags\items\wooden_slabs.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\items\saplings.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\items\buttons.json
 d6fd153e3ac88d06da79dd14f1c47f0086ccea4b data\minecraft\tags\items\planks.json
-2196c76944d2307ffd812fa1e832e05bec4f4f88 data\minecraft\tags\items\wooden_pressure_plates.json
 b48eec0c72503a69df702752a3236192cb14dce9 data\varan-deco\tags\items\wooden_crafting_tables.json
 863d9e314bb957a6153a8d7e038716749b4a48f6 data\minecraft\tags\items\logs_that_burn.json
-76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\items\leaves.json
+878c3afed6b33c80ce20e3dcace3f460fe9d548f data\minecraft\tags\items\small_flowers.json
 120bd2a2636bb38668fa1fb792d53006c3926b9e data\varan-deco\tags\items\wooden_logs.json
 8c46315632eab92ed12a2eb6233fa014958d5ae0 data\minecraft\tags\items\wooden_trapdoors.json
 237c0326dcbf2d09d20f73f829e2f4d12e4439b9 data\varan-deco\tags\items\deco_ladder.json
-4f6933cf78ad07c5bf4d2c1d1b627d012ac85a33 data\varan-deco\tags\items\deco_smithing_tables.json
-17a0621d55df6cce6110e3eec873d7e0d55bda23 data\minecraft\tags\items\wooden_doors.json
-a55be1a47675feff3f86c11c4011dc418cd820c4 data\varan-deco\tags\items\furnaces.json
 06c69477bb1e8e8e6923e98730aa504caa8d73a5 data\minecraft\tags\items\wooden_stairs.json
 26eab6f8be1a0dbc4ea606c87514a80e1140f0a1 data\minecraft\tags\items\wooden_fences.json
 5101d82c82abbdc2752038ab6c0e451b223a3c82 data\varan-deco\tags\items\deco_barrels.json
 37dafa9187c84471d26f39fd183af06e33662416 data\minecraft\tags\items\wooden_buttons.json
 1385632ea1bf98a8214b0edb03e31e0ee9450f59 data\varan-deco\tags\items\deco_cartography_tables.json
 d79bbb117b60f96f2bce8d44cb2686f10bf7606a data\minecraft\tags\items\stone_tool_materials.json
+0456f9ade0d54a2d3492bd0831684716a3ad0464 data\minecraft\tags\items\signs.json
+8bb7e464a7b81e9973674b931820d61efb924458 data\varan-deco\tags\items\deco_crafting_tables.json
+2196c76944d2307ffd812fa1e832e05bec4f4f88 data\minecraft\tags\items\wooden_pressure_plates.json
+76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\items\leaves.json
+af752991c4388b2128bdac457f2cdf36bd362ffd data\varan-deco\tags\items\deco_smithing_tables.json
+17a0621d55df6cce6110e3eec873d7e0d55bda23 data\minecraft\tags\items\wooden_doors.json
+a55be1a47675feff3f86c11c4011dc418cd820c4 data\varan-deco\tags\items\furnaces.json
