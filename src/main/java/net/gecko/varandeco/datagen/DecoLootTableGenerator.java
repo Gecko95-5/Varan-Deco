@@ -1051,7 +1051,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(
                 DecoBlocks.MIGHTY_LAVENDER_CROP,
                 this.applyExplosionDecay(
-                        Blocks.CARROTS,
+                        DecoBlocks.MIGHTY_LAVENDER_CROP,
                         LootTable.builder()
                                 .pool(LootPool.builder().with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER)))
                                 .pool(
