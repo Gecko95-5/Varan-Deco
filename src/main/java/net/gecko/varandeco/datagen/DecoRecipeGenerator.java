@@ -4187,5 +4187,15 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
                         conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MIGHTY_LAVENDER)));
+
+        offerBoatRecipe(exporter, DecoItems.CACTUS_BOAT, DecoBlocks.CACTUS_PLANKS);
+        offerBoatRecipe(exporter, DecoItems.WOODEN_BOAT, DecoBlocks.WOODEN_PLANKS);
+        offerBoatRecipe(exporter, DecoItems.CRIMSON_BOAT, Items.CRIMSON_PLANKS);
+        offerBoatRecipe(exporter, DecoItems.WARPED_BOAT, Items.WARPED_PLANKS);
+
+        offerChestBoatRecipe(exporter, DecoItems.CACTUS_CHEST_BOAT, DecoItems.CACTUS_BOAT);
+        offerChestBoatRecipe(exporter, DecoItems.WOODEN_CHEST_BOAT, DecoItems.WOODEN_BOAT);
+        offerChestBoatRecipe(exporter, DecoItems.CRIMSON_CHEST_BOAT, DecoItems.CRIMSON_BOAT);
+        offerChestBoatRecipe(exporter, DecoItems.WARPED_CHEST_BOAT, DecoItems.WARPED_BOAT);
     }
 }
