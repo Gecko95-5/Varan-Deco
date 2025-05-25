@@ -14,6 +14,8 @@ import net.minecraft.util.Identifier;
 public class DecoLootTableModifiers {
     private static final Identifier PUFFERFISH_ID =
             Identifier.of("minecraft", "entities/pufferfish");
+    private static final Identifier GUARDIAN_ID =
+            Identifier.of("minecraft", "entities/guardian");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registry) -> {
@@ -26,7 +28,15 @@ public class DecoLootTableModifiers {
 
                 tableBuilder.pool(poolBuilder.build());
             }
+            if (GUARDIAN_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .with(ItemEntry.builder(DecoItems.BUBBLE_ORB))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
+                tableBuilder.pool(poolBuilder.build());
+            }
             if (LootTables.SNIFFER_DIGGING_GAMEPLAY.equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(0.5f))
