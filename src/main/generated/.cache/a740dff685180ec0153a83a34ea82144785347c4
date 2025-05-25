@@ -1,4 +1,4 @@
-// 1.20.6	2025-05-25T18:25:18.726988	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2025-05-25T19:23:15.3913907	Variant Decoration/Tags for minecraft:block
 5a3a1abe180521d2238140f9056e1a70e46c931b data\varan-deco\tags\blocks\wooden_logs.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\blocks\mosaic_wood.json
 03ef4279577bffe623280b3c613d33bdc465dfde data\minecraft\tags\blocks\soul_fire_base_blocks.json
@@ -60,8 +60,8 @@ bd3de99181ca0e50d1e019f3e97b0501eebf0712 data\minecraft\tags\blocks\needs_diamon
 d8a7581710998460c0f7d6d38ad297f5fd462959 data\minecraft\tags\blocks\climbable.json
 c44464cbabba97237a9aff1f6111ef7a1799fae6 data\varan-deco\tags\blocks\deco_crafting_tables.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\blocks\logs_that_burn.json
-400cb820962bff0d92095c4b962722e603d0f232 data\minecraft\tags\blocks\guarded_by_piglins.json
 fa40edbc7feb525979035683d72a115cb7000840 data\minecraft\tags\blocks\mineable\pickaxe.json
+400cb820962bff0d92095c4b962722e603d0f232 data\minecraft\tags\blocks\guarded_by_piglins.json
 8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\blocks\fence_gates.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\blocks\wooden_slabs.json
 ad05f2c422c0cab6c52b855411109cf3bd03707d data\varan-deco\tags\blocks\deco_smithing_tables.json

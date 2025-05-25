@@ -235,6 +235,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ROSE.asItem())
                 .add(DecoBlocks.ENDER_ROSE.asItem())
                 .add(DecoBlocks.PAEONIA.asItem())
-                .add(DecoBlocks.LAVENDER.asItem());
+                .add(DecoBlocks.LAVENDER.asItem())
+                .add(DecoBlocks.ANCIENT_ROSE.asItem());
     }
 }
