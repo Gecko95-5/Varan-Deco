@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
-      "item": "varan-deco:smooth_purpur_slab"
+      "item": "varan-deco:void_stone_slab"
     }
   },
   "pattern": [
@@ -10,6 +11,7 @@
     "#"
   ],
   "result": {
-    "id": "minecraft:purpur_pillar"
+    "count": 1,
+    "id": "varan-deco:chiseled_void_stone"
   }
 }

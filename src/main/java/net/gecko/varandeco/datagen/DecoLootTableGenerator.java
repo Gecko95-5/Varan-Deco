@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.CarrotsBlock;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Items;
@@ -996,6 +995,10 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.OXIDIZED_COPPER_BUTTON);
         addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
 
+        addDrop(DecoBlocks.IRON_BUTTON);
+        addDrop(DecoBlocks.GOLD_BUTTON);
+
+
         addDrop(DecoBlocks.WHITE_BLOCK);
         addDrop(DecoBlocks.LIGHT_GRAY_BLOCK);
         addDrop(DecoBlocks.GRAY_BLOCK);
@@ -1052,7 +1055,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(
                 DecoBlocks.MIGHTY_LAVENDER_CROP,
                 this.applyExplosionDecay(
-                        Blocks.CARROTS,
+                        DecoBlocks.MIGHTY_LAVENDER_CROP,
                         LootTable.builder()
                                 .pool(LootPool.builder().with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER)))
                                 .pool(

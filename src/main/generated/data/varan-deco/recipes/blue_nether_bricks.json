@@ -10,8 +10,8 @@
     }
   },
   "pattern": [
-    "#N",
-    "N#"
+    "N#",
+    "#N"
   ],
   "result": {
     "count": 1,

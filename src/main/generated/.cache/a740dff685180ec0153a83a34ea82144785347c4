@@ -1,4 +1,4 @@
-// 1.20.6	2025-05-18T21:01:57.0342462	Varan-Deco/Tags for minecraft:block
+// 1.20.6	2025-05-25T18:25:18.726988	Variant Decoration/Tags for minecraft:block
 5a3a1abe180521d2238140f9056e1a70e46c931b data\varan-deco\tags\blocks\wooden_logs.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\blocks\mosaic_wood.json
 03ef4279577bffe623280b3c613d33bdc465dfde data\minecraft\tags\blocks\soul_fire_base_blocks.json
@@ -64,7 +64,7 @@ bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\blocks\logs_that_bu
 fa40edbc7feb525979035683d72a115cb7000840 data\minecraft\tags\blocks\mineable\pickaxe.json
 8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\blocks\fence_gates.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\blocks\wooden_slabs.json
-ac82f608144c8735c849869ca5edb8e570c8769c data\varan-deco\tags\blocks\deco_smithing_tables.json
+ad05f2c422c0cab6c52b855411109cf3bd03707d data\varan-deco\tags\blocks\deco_smithing_tables.json
 4d816e98a3b6dd160d6f01d9c6e722f8769ba53d data\minecraft\tags\blocks\wooden_buttons.json
 f66ea45ecb16a7a170500f3e1fcd08906b0754aa data\varan-deco\tags\blocks\mosaic_stairs.json
 04146a1741164bbd11f595ecf468c4d27391d799 data\varan-deco\tags\blocks\deco_bookshelves.json
