@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-19T16:20:50.7195596	Varan-Deco/Block Loot Tables
+// 1.21.1	2025-05-25T19:08:53.4633449	Variant Decoration/Block Loot Tables
 393566651db8d1aba2cca8845a7b935bca6150b3 data\varan-deco\loot_table\blocks\tuff_smoker.json
 1d11565919ab6109d65b4a295f53283328f066cb data\varan-deco\loot_table\blocks\hanging_jungle_planks_sign.json
 ab3a1a027d1ee02e7e07fcbc568752994fa7a544 data\varan-deco\loot_table\blocks\acacia_ladder.json
@@ -306,6 +306,7 @@ a458dfb943b8d2aa165d55d4410cac48a0e6382c data\varan-deco\loot_table\blocks\cyan_
 62a9b072b954ea7b8ca5e90e5d0e1d7287a9a299 data\varan-deco\loot_table\blocks\black_terracotta_bricks.json
 8a9a2063578dd2d4a9ebf1e71f93cacbd78692c5 data\varan-deco\loot_table\blocks\magma_brick_wall.json
 1b49b98b36b56b922766afe86e5a631a3d8df73e data\varan-deco\loot_table\blocks\light_iron_bars.json
+4d98ac904e4fcb114aacb18719872b562dee6c97 data\varan-deco\loot_table\blocks\iron_button.json
 49c020068ab51fdabcf0bd0dbd36babbd9c6550f data\varan-deco\loot_table\blocks\cut_light_gray_concrete.json
 3d5cca28c85300b14db89112889e555e5c814fb5 data\varan-deco\loot_table\blocks\light_blue_terracotta_wall.json
 e1c32f60c6c4bbbe9d23399f329ad36b3ba909b9 data\varan-deco\loot_table\blocks\wooden_fence.json
@@ -415,6 +416,7 @@ d55d461cbed7c0240185f1180528a246a93bc769 data\varan-deco\loot_table\blocks\lime_
 628b4b0ac8ed9ce7e6447f95059a4a250af43858 data\varan-deco\loot_table\blocks\void_stone_stairs.json
 a345ee746252d37d5eb24008307da5b5ee923e0b data\varan-deco\loot_table\blocks\dark_prismarine_wall.json
 94035ca94f2f2f7dcbc2d006fd670616e9624dcb data\varan-deco\loot_table\blocks\weathered_copper_weight_pressure_plate.json
+4a595c2dab2ccf139872162f58224d612a5389c5 data\varan-deco\loot_table\blocks\gold_button.json
 adb528570230bade89cecda2c0995b329d5fee46 data\varan-deco\loot_table\blocks\waxed_copper_button.json
 54fb8eb1ab5326c1098b1f32d86a7bbabef1757f data\varan-deco\loot_table\blocks\oxidized_copper_soul_lantern.json
 28c5c208bdd303df4239b1a27cb38ebeff871227 data\varan-deco\loot_table\blocks\cut_light_blue_concrete_stairs.json

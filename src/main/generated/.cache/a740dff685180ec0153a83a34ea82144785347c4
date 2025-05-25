@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-19T16:20:50.710582	Varan-Deco/Tags for minecraft:block
+// 1.21.1	2025-05-25T19:08:53.410487	Variant Decoration/Tags for minecraft:block
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\block\leaves.json
 d21b8ab5755b64163ee8d370b2c31e6685708a67 data\varan-deco\tags\block\mosaic_slab.json
 c44464cbabba97237a9aff1f6111ef7a1799fae6 data\varan-deco\tags\block\deco_crafting_tables.json
@@ -11,7 +11,7 @@ ae6a5284b821cf8425822655673d64efabc01ed1 data\minecraft\tags\block\buttons.json
 11c5f55bcd6ee59cfd17365050bf1baf91f40215 data\minecraft\tags\block\pressure_plates.json
 409c753d40b88201a9d56718a27dda18bf46e2f8 data\minecraft\tags\block\stone_buttons.json
 d8a7581710998460c0f7d6d38ad297f5fd462959 data\minecraft\tags\block\climbable.json
-ac82f608144c8735c849869ca5edb8e570c8769c data\varan-deco\tags\block\deco_smithing_tables.json
+ad05f2c422c0cab6c52b855411109cf3bd03707d data\varan-deco\tags\block\deco_smithing_tables.json
 47aec1ccc822721d1413e8deda13ec6e8e236f89 data\varan-deco\tags\block\terracotta_slabs.json
 cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
 b6feec2809938a12dd391f7839c7e47473d612f2 data\minecraft\tags\block\piglin_repellents.json
@@ -27,8 +27,8 @@ f3199dda8db6700e32857a275449973ba96ede8c data\varan-deco\tags\block\deco_barrels
 f66ea45ecb16a7a170500f3e1fcd08906b0754aa data\varan-deco\tags\block\mosaic_stairs.json
 0932a5c8eec9f1a32b4c33583d273bf4d90862ee data\minecraft\tags\block\flower_pots.json
 692cb5d8311888f6b281d48cbf95c5b944478bf1 data\minecraft\tags\block\tall_flowers.json
-3288372e37a15cd3bb7be817b7f2693f3e8fb52d data\minecraft\tags\block\mineable\pickaxe.json
 8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\block\fence_gates.json
+3288372e37a15cd3bb7be817b7f2693f3e8fb52d data\minecraft\tags\block\mineable\pickaxe.json
 c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\block\mineable\shovel.json
 5da2a7d30741d3686eb5b90ed7991370f4859f46 data\minecraft\tags\block\mineable\axe.json
 d59e4e47a69393d9d43b2301198f3c6b145639df data\varan-deco\tags\block\terracotta_stairs.json

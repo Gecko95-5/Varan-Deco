@@ -141,7 +141,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_MUD_SLAB, Items.PACKED_MUD);
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.PACKED_MUD_WALL, Items.PACKED_MUD);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, DecoBlocks.RED_NETHER_BRICK_FENCE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, DecoBlocks.RED_NETHER_BRICK_FENCE,6)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.NETHER_BRICK)
@@ -310,8 +310,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoItems.SNOW_BRICK)));
 
-        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_BRICKS, DecoItems.SNOW_BRICK);
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SNOW_BRICKS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoItems.SNOW_BRICK)
+                .criterion(hasItem(DecoItems.SNOW_BRICK),
+                        conditionsFromItem(DecoItems.SNOW_BRICK))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.SNOW_BRICKS)));
 
         createStairsRecipe(DecoBlocks.SNOW_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.SNOW_BRICKS))
                 .criterion(hasItem(DecoBlocks.SNOW_BRICKS),conditionsFromItem(DecoBlocks.SNOW_BRICKS))
@@ -333,7 +338,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoItems.SNOW_BRICK))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.CHISELED_SNOW_BRICKS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ICE_BRICKS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ICE_BRICKS,4)
                 .pattern("/#")
                 .pattern("#/")
                 .input('/', Items.BLUE_ICE)
@@ -451,7 +456,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CACTUS_PLANK_SLAB, DecoBlocks.CACTUS_PLANKS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_PLANK_FENCE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_PLANK_FENCE,3)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.STICK)
@@ -507,7 +512,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.PRISMARINE_BRICK_WALL, Items.PRISMARINE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PRISMARINE_BRICK_WALL, Items.PRISMARINE_BRICKS);
 
-        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRYSTALLIZED_PRISMARINE, Items.PRISMARINE_CRYSTALS);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRYSTALLIZED_PRISMARINE)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.PRISMARINE_CRYSTALS)
+                .criterion(hasItem(Items.PRISMARINE_CRYSTALS),
+                        conditionsFromItem(Items.PRISMARINE_CRYSTALS))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.CRYSTALLIZED_PRISMARINE)));
 
         createStairsRecipe(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS, Ingredient.ofItems(DecoBlocks.CRYSTALLIZED_PRISMARINE))
                 .criterion(hasItem(DecoBlocks.CRYSTALLIZED_PRISMARINE),conditionsFromItem(DecoBlocks.CRYSTALLIZED_PRISMARINE))
@@ -630,7 +641,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICKS);
 
-        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE, Items.SOUL_SOIL);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.SOUL_SOIL)
+                .criterion(hasItem(Items.SOUL_SOIL),
+                        conditionsFromItem(Items.SOUL_SOIL))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.SOUL_SOILSTONE)));
 
         createStairsRecipe(DecoBlocks.SOUL_SOILSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE))
                 .criterion(hasItem(DecoBlocks.SOUL_SOILSTONE),conditionsFromItem(DecoBlocks.SOUL_SOILSTONE))
@@ -718,7 +735,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.QUARTZ_BRICK_WALL, Items.QUARTZ_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.QUARTZ_BRICK_WALL, Items.QUARTZ_BRICKS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_QUARTZ)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_QUARTZ,4)
                 .pattern("#Q")
                 .pattern("Q#")
                 .input('#', Items.QUARTZ_BLOCK)
@@ -761,8 +778,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of("cracked_red_nether_bricks_from_smelting"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLUE_NETHER_BRICKS)
-                .pattern("#N")
                 .pattern("N#")
+                .pattern("#N")
                 .input('#', DecoItems.WARPED_WART)
                 .input('N', Items.NETHER_BRICK)
                 .criterion(hasItem(DecoItems.WARPED_WART),
@@ -782,7 +799,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.BLUE_NETHER_BRICK_WALL, DecoBlocks.BLUE_NETHER_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLUE_NETHER_BRICK_WALL, DecoBlocks.BLUE_NETHER_BRICKS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.BLUE_NETHER_BRICK_FENCE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.BLUE_NETHER_BRICK_FENCE,6)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.NETHER_BRICK)
@@ -1997,9 +2014,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GLASS_PANE),
                         conditionsFromItem(Items.GLASS_PANE))
                 .offerTo(exporter, Identifier.of("tinted_glass_pane_amethyst_shard"));
-        offerStainedGlassPaneRecipe(exporter, DecoBlocks.TINTED_GLASS_PANE, Blocks.TINTED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.TINTED_GLASS_PANE,16)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.TINTED_GLASS)
+                .criterion(hasItem(Items.TINTED_GLASS),
+                        conditionsFromItem(Items.TINTED_GLASS))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TINTED_GLASS_PANE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2013,7 +2037,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_GLASS_PANE, DecoBlocks.HARDENED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2025,7 +2049,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(Items.GLASS_PANE))
                 .offerTo(exporter, Identifier.of("hardened_glass_pane_iron_ingot"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_TINTED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_TINTED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2049,7 +2073,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_TINTED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_TINTED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_TINTED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2076,7 +2100,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_TINTED_GLASS_PANE, DecoBlocks.HARDENED_TINTED_GLASS);
 
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_WHITE_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_WHITE_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2100,7 +2124,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_WHITE_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2126,7 +2150,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_WHITE_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_ORANGE_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_ORANGE_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2150,7 +2174,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2176,7 +2200,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_ORANGE_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2200,7 +2224,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2226,7 +2250,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE, DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2250,7 +2274,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2276,7 +2300,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_YELLOW_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_YELLOW_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2300,7 +2324,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2326,7 +2350,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE, DecoBlocks.HARDENED_YELLOW_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIME_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIME_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2350,7 +2374,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_LIME_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2376,7 +2400,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE, DecoBlocks.HARDENED_LIME_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PINK_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PINK_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2400,7 +2424,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_PINK_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2426,7 +2450,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE, DecoBlocks.HARDENED_PINK_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GRAY_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GRAY_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2450,7 +2474,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_GRAY_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2476,7 +2500,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE, DecoBlocks.HARDENED_GRAY_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2500,7 +2524,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2526,7 +2550,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE, DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_CYAN_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_CYAN_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2550,7 +2574,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_CYAN_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2576,7 +2600,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE, DecoBlocks.HARDENED_CYAN_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PURPLE_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PURPLE_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2600,7 +2624,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2626,7 +2650,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_PURPLE_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLUE_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLUE_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2650,7 +2674,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_BLUE_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2676,7 +2700,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE, DecoBlocks.HARDENED_BLUE_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BROWN_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BROWN_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2700,7 +2724,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_BROWN_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2726,7 +2750,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE, DecoBlocks.HARDENED_BROWN_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GREEN_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GREEN_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2750,7 +2774,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_GREEN_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2776,7 +2800,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE, DecoBlocks.HARDENED_GREEN_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_RED_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_RED_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2800,7 +2824,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_RED_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2826,7 +2850,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE, DecoBlocks.HARDENED_RED_STAINED_GLASS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLACK_STAINED_GLASS,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLACK_STAINED_GLASS,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2850,7 +2874,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.HARDENED_BLACK_STAINED_GLASS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE,4)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -3086,6 +3110,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.VOID_STONE_BRICK_WALL, DecoBlocks.VOID_STONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.VOID_STONE_BRICK_WALL, DecoBlocks.VOID_STONE_BRICKS);
 
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_VOID_STONE, DecoBlocks.VOID_STONE_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_VOID_STONE, DecoBlocks.VOID_STONE);
+
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,Items.PRISMARINE_BRICKS, Items.PRISMARINE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,Items.PRISMARINE_BRICK_STAIRS, Items.PRISMARINE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,Items.PRISMARINE_BRICK_SLAB, Items.PRISMARINE);
@@ -3122,7 +3149,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.OBSIDIAN_SLAB);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.OBSIDIAN_PILLAR, Items.OBSIDIAN);
 
-        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_OBSIDIAN,2)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.OBSIDIAN_SLAB)
+                .criterion(hasItem(DecoBlocks.OBSIDIAN_SLAB),
+                        conditionsFromItem(DecoBlocks.OBSIDIAN_SLAB))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.CHISELED_OBSIDIAN)));
+
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_OBSIDIAN, Items.OBSIDIAN);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
 
@@ -3131,7 +3165,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC,Items.CHARCOAL,
                 RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHARCOAL_BLOCK);
 
-        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ECHO_BLOCK, Items.ECHO_SHARD);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ECHO_BLOCK)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.ECHO_SHARD)
+                .criterion(hasItem(Items.ECHO_SHARD),
+                        conditionsFromItem(Items.ECHO_SHARD))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.ECHO_BLOCK)));
 
         offerCutCopperRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CUT_IRON, Items.IRON_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON, Items.IRON_BLOCK);
@@ -3570,6 +3610,27 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.BLUE_BLOCK))
                 .offerTo(exporter, Identifier.of("cyan_block_from_green_block"));
 
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.CYAN_BLOCK,3)
+                .input(DecoBlocks.YELLOW_BLOCK)
+                .input(DecoBlocks.BLUE_BLOCK)
+                .input(DecoBlocks.BLUE_BLOCK)
+                .criterion(hasItem(DecoBlocks.YELLOW_BLOCK),
+                        conditionsFromItem(DecoBlocks.YELLOW_BLOCK))
+                .criterion(hasItem(DecoBlocks.BLUE_BLOCK),
+                        conditionsFromItem(DecoBlocks.BLUE_BLOCK))
+                .offerTo(exporter, Identifier.of("cyan_block_from_blue_block"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.CYAN_DYE,3)
+                .input(Items.YELLOW_DYE)
+                .input(Items.BLUE_DYE)
+                .input(Items.BLUE_DYE)
+                .criterion(hasItem(Items.YELLOW_DYE),
+                        conditionsFromItem(Items.YELLOW_DYE))
+                .criterion(hasItem(Items.BLUE_DYE),
+                        conditionsFromItem(Items.BLUE_DYE))
+                .offerTo(exporter, Identifier.of("cyan_dye_from_blue_dye"));
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_BLUE_BLOCK,2)
                 .input(DecoBlocks.BLUE_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
@@ -3745,7 +3806,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WOODEN_SLAB, DecoBlocks.WOODEN_PLANKS);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.WOODEN_FENCE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.WOODEN_FENCE,3)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.STICK)
@@ -4235,5 +4296,15 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_IRON, DecoBlocks.CUT_IRON_SLAB);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_IRON, Items.IRON_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_IRON, DecoBlocks.CUT_IRON);
+
+        offerBoatRecipe(exporter, DecoItems.CACTUS_BOAT, DecoBlocks.CACTUS_PLANKS);
+        offerBoatRecipe(exporter, DecoItems.WOODEN_BOAT, DecoBlocks.WOODEN_PLANKS);
+        offerBoatRecipe(exporter, DecoItems.CRIMSON_BOAT, Items.CRIMSON_PLANKS);
+        offerBoatRecipe(exporter, DecoItems.WARPED_BOAT, Items.WARPED_PLANKS);
+
+        offerChestBoatRecipe(exporter, DecoItems.CACTUS_CHEST_BOAT, DecoItems.CACTUS_BOAT);
+        offerChestBoatRecipe(exporter, DecoItems.WOODEN_CHEST_BOAT, DecoItems.WOODEN_BOAT);
+        offerChestBoatRecipe(exporter, DecoItems.CRIMSON_CHEST_BOAT, DecoItems.CRIMSON_BOAT);
+        offerChestBoatRecipe(exporter, DecoItems.WARPED_CHEST_BOAT, DecoItems.WARPED_BOAT);
     }
 }

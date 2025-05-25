@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_obsidian_pillar": {
+    "has_obsidian_slab": {
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:obsidian_pillar"
+            "items": "varan-deco:obsidian_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:chiseled_obsidian"
+        "recipe": "minecraft:chiseled_obsidian"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_obsidian_pillar"
+      "has_obsidian_slab"
     ]
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:chiseled_obsidian"
+      "minecraft:chiseled_obsidian"
     ]
   }
 }
