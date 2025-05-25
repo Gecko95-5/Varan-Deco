@@ -85,11 +85,13 @@
   "block.varan-deco.packed_mud_temp": "Non-Craftable Packed Mud",
   "block.varan-deco.nether_bricks_temp": "Non-Craftable Nether Bricks",
   "block.varan-deco.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
+  "block.varan-deco.sandstone_top_temp": "Smooth Sandstone Template",
+  "block.varan-deco.red_sandstone_top_temp": "Smooth Red Sandstone Template",
   "block.varan-deco.snow_temp": "Non-Craftable Snow",
   "block.varan-deco.packed_ice_temp": "Non-Craftable Packed Ice",
   "block.varan-deco.blue_ice_temp": "Non-Craftable Blue Ice",
   "block.varan-deco.dark_prismarine_temp": "Non-Craftable Dark Prismarine",
-  "block.varan-deco.prismarine_brick_temp": "Non-Craftable Prismarine Bricks",
+  "block.varan-deco.prismarine_bricks_temp": "Non-Craftable Prismarine Bricks",
   "block.varan-deco.quartz_temp": "Non-Craftable Quartz Block",
   "block.varan-deco.smooth_quartz_temp": "Non-Craftable Smooth Quartz Block",
   "block.varan-deco.quartz_bricks_temp": "Non-Craftable Quartz Bricks",
@@ -226,7 +228,7 @@
   "block.varan-deco.polished_blackstone_tile_wall": "Polished Blackstone Tile Wall",
 
   "block.varan-deco.polished_gilded_blackstone": "Polished Gilded Blackstone",
-  "block.varan-deco.chiseled_gilded_blackstone": "Chiseled Polished Glided Blackstone",
+  "block.varan-deco.chiseled_gilded_blackstone": "Chiseled Polished Gilded Blackstone",
 
   "block.varan-deco.snow_stairs": "Snow Stairs",
   "block.varan-deco.snow_slab": "Snow Slab",

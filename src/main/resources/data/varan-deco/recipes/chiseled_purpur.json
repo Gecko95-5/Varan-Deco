@@ -6,10 +6,11 @@
     }
   },
   "pattern": [
-    "#",
-    "#"
+    "##",
+    "##"
   ],
   "result": {
+    "count": 2,
     "item": "varan-deco:chiseled_purpur"
   }
 }

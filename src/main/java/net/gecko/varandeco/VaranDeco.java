@@ -37,6 +37,7 @@ public class VaranDeco implements ModInitializer {
 		DecoOxidizableBlocks.registerOxidizableBlocks();
 		DecoOxidizableBlocks.registerWaxableBlocks();
 		DecoLootTableModifiers.modifyLootTables();
+		DecoComposterRecipes.registerCompostableItems();
 
 		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
 						world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
@@ -53,6 +54,7 @@ public class VaranDeco implements ModInitializer {
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_WOOD,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_STAIRS,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_SLABS,150);
+
 
 
 		LOGGER.info("Hello Fabric world!");

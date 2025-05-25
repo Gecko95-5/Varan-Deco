@@ -1067,7 +1067,7 @@ public class DecoBlocks {
     );
 
     public static final Block ANCIENT_ROSE = registerBlock("ancient_rose",
-            new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)));
+            new FlowerBlock(StatusEffects.POISON, 12,FabricBlockSettings.copyOf(Blocks.POPPY)));
     public static final Block POTTED_ANCIENT_ROSE = registerBlockWithoutItem("potted_ancient_rose",
             new FlowerPotBlock(ANCIENT_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
