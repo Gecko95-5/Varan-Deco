@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:yellow_tulip",
+    "varan-deco:purple_tulip",
+    "varan-deco:magenta_tulip",
+    "varan-deco:blue_tulip",
+    "varan-deco:black_tulip",
+    "varan-deco:green_tulip",
+    "varan-deco:cyan_tulip",
+    "varan-deco:barberton_daisy",
+    "varan-deco:blue_eyed_daisy",
+    "varan-deco:gerbera_daisy",
+    "varan-deco:michaelmas_daisy",
+    "varan-deco:puffy_dandelion",
+    "varan-deco:california_poppy",
+    "varan-deco:salmon_poppy",
+    "varan-deco:yellow_orchid",
+    "varan-deco:white_orchid",
+    "varan-deco:pink_orchid",
+    "varan-deco:rose",
+    "varan-deco:ender_rose",
+    "varan-deco:paeonia",
+    "varan-deco:lavender"
+  ]
+}

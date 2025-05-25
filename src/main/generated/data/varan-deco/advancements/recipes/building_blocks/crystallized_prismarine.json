@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:crystallized_prismarine"
+        "recipe": "minecraft:crystallized_prismarine"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:crystallized_prismarine"
+      "minecraft:crystallized_prismarine"
     ]
   },
   "sends_telemetry_event": false

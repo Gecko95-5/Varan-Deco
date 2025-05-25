@@ -3,19 +3,15 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:quartz_block"
-    },
-    "Q": {
-      "item": "minecraft:quartz"
+      "item": "varan-deco:void_stone_slab"
     }
   },
   "pattern": [
-    "#Q",
-    "Q#"
+    "#",
+    "#"
   ],
   "result": {
-    "count": 4,
-    "item": "varan-deco:cut_quartz"
+    "item": "varan-deco:chiseled_void_stone"
   },
   "show_notification": true
 }
