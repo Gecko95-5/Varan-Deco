@@ -1,4 +1,4 @@
-// 1.20.4	2025-05-25T19:36:38.4756758	Variant Decoration/Recipes
+// 1.20.4	2025-05-25T23:32:19.8319163	Variant Decoration/Recipes
 1da38ab350195b07875f0e28de12ba9b9e60c0cf data\varan-deco\advancements\recipes\building_blocks\stone_tile_wall_from_stone_stonecutting.json
 baec4cf4333c4af3748e01f0598b59dae1d52faa data\varan-deco\advancements\recipes\building_blocks\polished_blackstone_tile_stairs_from_blackstone_stonecutting.json
 9c084a1d2efc7a8e599171c9d3da5662b9e905b6 data\varan-deco\advancements\recipes\building_blocks\dye_orange_terracotta_bricks.json
@@ -169,7 +169,7 @@ de7233aaced6024472ff66d947fa3dff304c286f data\varan-deco\recipes\black_terracott
 f096317f3d331159256425c8dad404d06a6d3114 data\varan-deco\advancements\recipes\building_blocks\tuff_stairs.json
 0a0572b862612942518e44fd89a100909666843e data\varan-deco\recipes\blackstone_blast_furnace.json
 634633a936a6ac056b023ffccfc081ae51dd195b data\varan-deco\recipes\cut_magenta_concrete_wall_from_cut_magenta_concrete_stonecutting.json
-e67ada059df040eafe363fb8cd8a19c090c15c13 data\varan-deco\recipes\tinted_glass_pane.json
+7495109d88800310c0c9b5dc2df517b974ac238f data\varan-deco\recipes\tinted_glass_pane.json
 c129eb39311fbd6d3fc2bbe161bdebe1c764474c data\varan-deco\recipes\light_gray_concrete_slab.json
 435e0c6a62baa649dd21fa28cde16a40f80dcfcd data\varan-deco\recipes\orange_terracotta_stairs_from_orange_terracotta_stonecutting.json
 924a536e894682e3debf75447b5ba2b644f8b85a data\varan-deco\advancements\recipes\building_blocks\cut_black_concrete_from_black_concrete_stonecutting.json
