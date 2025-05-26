@@ -831,6 +831,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ACACIA_SMITHING_TABLE)
                 .add(DecoBlocks.DARK_OAK_SMITHING_TABLE)
                 .add(DecoBlocks.MANGROVE_SMITHING_TABLE)
+                .add(DecoBlocks.JUNGLE_SMITHING_TABLE)
                 .add(DecoBlocks.CRIMSON_SMITHING_TABLE)
                 .add(DecoBlocks.WARPED_SMITHING_TABLE)
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE)

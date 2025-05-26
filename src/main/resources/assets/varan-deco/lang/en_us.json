@@ -89,11 +89,13 @@
   "block.minecraft.packed_mud_temp": "Non-Craftable Packed Mud",
   "block.minecraft.nether_bricks_temp": "Non-Craftable Nether Bricks",
   "block.minecraft.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
+  "block.varan-deco.sandstone_top_temp": "Smooth Sandstone Template",
+  "block.varan-deco.red_sandstone_top_temp": "Smooth Red Sandstone Template",
   "block.minecraft.snow_temp": "Non-Craftable Snow",
   "block.minecraft.packed_ice_temp": "Non-Craftable Packed Ice",
   "block.minecraft.blue_ice_temp": "Non-Craftable Blue Ice",
   "block.minecraft.dark_prismarine_temp": "Non-Craftable Dark Prismarine",
-  "block.minecraft.prismarine_brick_temp": "Non-Craftable Prismarine Bricks",
+  "block.minecraft.prismarine_bricks_temp": "Non-Craftable Prismarine Bricks",
   "block.minecraft.quartz_temp": "Non-Craftable Quartz Block",
   "block.minecraft.smooth_quartz_temp": "Non-Craftable Smooth Quartz Block",
   "block.minecraft.quartz_bricks_temp": "Non-Craftable Quartz Bricks",
@@ -229,7 +231,7 @@
   "block.minecraft.polished_blackstone_tile_wall": "Polished Blackstone Tile Wall",
 
   "block.minecraft.polished_gilded_blackstone": "Polished Gilded Blackstone",
-  "block.minecraft.chiseled_gilded_blackstone": "Chiseled Polished Glided Blackstone",
+  "block.minecraft.chiseled_gilded_blackstone": "Chiseled Polished Gilded Blackstone",
 
   "block.minecraft.chiseled_stone": "Chiseled Stone",
   "block.minecraft.chiseled_polished_blackstone_bricks": "Chiseled Polished Blackstone Bricks",

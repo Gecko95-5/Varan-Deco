@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_prismarine_crystals": {
+    "has_boat": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:prismarine_crystals"
+            "items": "#minecraft:boats"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crystallized_prismarine"
+        "recipe": "varan-deco:crimson_chest_boat"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_prismarine_crystals"
+      "has_boat"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:crystallized_prismarine"
+      "varan-deco:crimson_chest_boat"
     ]
   }
 }

@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": "minecraft:obsidian_pillar"
+    "#": "minecraft:void_stone_slab"
   },
   "pattern": [
-    "SS",
-    "SS"
+    "#",
+    "#"
   ],
   "result": {
-    "count": 4,
-    "id": "minecraft:chiseled_obsidian"
+    "count": 1,
+    "id": "minecraft:chiseled_void_stone"
   }
 }
