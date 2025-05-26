@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "varan-deco:warped_wart_plant",
+                  "block": "minecraft:warped_wart_plant",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "3"
@@ -28,7 +28,7 @@
             {
               "conditions": [
                 {
-                  "block": "varan-deco:warped_wart_plant",
+                  "block": "minecraft:warped_wart_plant",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "3"
@@ -43,7 +43,7 @@
               }
             }
           ],
-          "name": "varan-deco:warped_wart"
+          "name": "minecraft:warped_wart"
         }
       ],
       "functions": [

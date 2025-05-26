@@ -13,14 +13,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "varan-deco:mighty_lavender",
+              "block": "minecraft:red_sunflower",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "varan-deco:mighty_lavender"
+          "name": "minecraft:red_sunflower"
         }
       ],
       "rolls": 1.0

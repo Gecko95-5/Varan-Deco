@@ -13,14 +13,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "varan-deco:ender_rose_bush",
+              "block": "minecraft:nova_starflower",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "varan-deco:ender_rose_bush"
+          "name": "minecraft:nova_starflower"
         }
       ],
       "rolls": 1.0

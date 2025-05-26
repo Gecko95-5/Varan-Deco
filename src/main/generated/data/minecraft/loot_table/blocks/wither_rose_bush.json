@@ -13,14 +13,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "varan-deco:red_sunflower",
+              "block": "minecraft:wither_rose_bush",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "varan-deco:red_sunflower"
+          "name": "minecraft:wither_rose_bush"
         }
       ],
       "rolls": 1.0
