@@ -13,14 +13,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "varan-deco:wither_rose_bush",
+              "block": "minecraft:mighty_lavender",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "varan-deco:wither_rose_bush"
+          "name": "minecraft:mighty_lavender"
         }
       ],
       "rolls": 1.0
