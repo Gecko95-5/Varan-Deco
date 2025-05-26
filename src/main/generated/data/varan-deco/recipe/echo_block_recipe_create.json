@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": "minecraft:echo_shard"
+    "#": "minecraft:echo_shard"
   },
   "pattern": [
-    "SS",
-    "SS"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 4,
+    "count": 1,
     "id": "minecraft:echo_block"
   }
 }

@@ -34,7 +34,7 @@ public class VaranDeco implements ModInitializer {
 		DecoOxidizableBlocks.registerWaxableBlocks();
 		DecoLootTableModifiers.modifyLootTables();
 		DecoFuelRegistry.registerFuels();
-
+		DecoComposterRecipes.registerCompostableItems();
 
 		LOGGER.info("Hello Fabric world!");
 

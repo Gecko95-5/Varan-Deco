@@ -1,4 +1,4 @@
-// 1.21.5	-999999999-01-01T00:00:00	Varan-Deco/Tags for minecraft:block
+// 1.21.5	-999999999-01-01T00:00:00	Variant Decoration/Tags for minecraft:block
 ae6a5284b821cf8425822655673d64efabc01ed1 data/minecraft/tags/block/buttons.json
 2e9847a410690cb63af90804f9837b492b35b57a data/minecraft/tags/block/ceiling_hanging_signs.json
 61f77f306f27d73f89ff02b87b4fcc5ef9761b6e data/minecraft/tags/block/climbable.json
@@ -55,7 +55,7 @@ d52bde6a8e0a8aa3ed305b67aae5ece6e5e13af4 data/varan-deco/tags/block/deco_bookshe
 774f012747aefbd6539b29a75c0cd23dcb75d61e data/varan-deco/tags/block/deco_crafting_tables.json
 20180ba160a6b3e0166fc4d488299ace4d698fa4 data/varan-deco/tags/block/deco_furnaces.json
 a25cab36e3118cc86d86572cb0a9116580601f40 data/varan-deco/tags/block/deco_ladders.json
-94eef9513c2ef3f14d9d733d5eececc6d6f2477c data/varan-deco/tags/block/deco_smithing_tables.json
+c7f4bc99d411c1dcfe71b1663b87986368d2455a data/varan-deco/tags/block/deco_smithing_tables.json
 1e66f59e489446df8839a4757b45a9c5a312a778 data/varan-deco/tags/block/hardened_glass.json
 36c29a823eccba52c2052798f66a2026ae4dbf3c data/varan-deco/tags/block/hardened_glass_panes.json
 afcd3726811fa24892b4f80c8d7d8b470deb557a data/varan-deco/tags/block/metal_buttons.json

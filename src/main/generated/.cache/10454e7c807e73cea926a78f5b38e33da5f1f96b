@@ -1,4 +1,4 @@
-// 1.21.5	-999999999-01-01T00:00:00	Varan-Deco/Block Loot Tables
+// 1.21.5	-999999999-01-01T00:00:00	Variant Decoration/Block Loot Tables
 4cb8ffdd4c0b90d034b3f8622310e60559747ca5 data/minecraft/loot_table/blocks/acacia_barrel.json
 3466b427c09ba0220962790ba221d6dd7c6723ae data/minecraft/loot_table/blocks/acacia_bookshelf.json
 4478271754169a16051d14ad9f2389c48e424041 data/minecraft/loot_table/blocks/acacia_cartography_table.json
@@ -268,6 +268,7 @@ a237290f233b7383479d8ef38b50976ad5089177 data/minecraft/loot_table/blocks/expose
 de28918d644498903abfffc0e8e22a03212faa82 data/minecraft/loot_table/blocks/exposed_light_copper_bars.json
 4f62f9485dbd7f60fb6fcae946a6d5061ba45bae data/minecraft/loot_table/blocks/flint_block.json
 88571c15db9c2bff32d30fc213f37cf21cd1fa53 data/minecraft/loot_table/blocks/gerbera_daisy.json
+9196232a1be2d425676b08b1f08b86b28893a521 data/minecraft/loot_table/blocks/gold_button.json
 e0600ca2168432bab84ecfd57189ab639ed7bbdd data/minecraft/loot_table/blocks/gold_trapdoor.json
 35120d51dfdc9b2c470306fa605d3d8b3501caa0 data/minecraft/loot_table/blocks/gray_block.json
 1bb03c7c9875ada105021fdc0208424b95f19233 data/minecraft/loot_table/blocks/gray_concrete_pillar.json
@@ -357,6 +358,7 @@ f9bf511e1b3f225533faf114a5c0cb08d99415e7 data/minecraft/loot_table/blocks/harden
 f822bcc5c1ab81a17a1bf21524ce4a2edd716ad2 data/minecraft/loot_table/blocks/ice_brick_stairs.json
 a63d3944ed5e8a49b6e97fb68b9641445fb4ec27 data/minecraft/loot_table/blocks/ice_brick_wall.json
 04b978fda9e2eb4a2d8bc12df6d7fb883b63e6a8 data/minecraft/loot_table/blocks/ice_bricks.json
+0b547974e042209a7b0796dd01dca56dedb08bfb data/minecraft/loot_table/blocks/iron_button.json
 c1d360b09ab91653c5d02006fdcaa44ea3103744 data/minecraft/loot_table/blocks/iron_grate.json
 e9189938e6866b2c7c272bcf024c80fb1dcfcb48 data/minecraft/loot_table/blocks/jungle_barrel.json
 86f6a63d8ca05897f6a4fcfc5e9ee780e15f510a data/minecraft/loot_table/blocks/jungle_bookshelf.json

@@ -1,17 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "group": "stained_terracotta",
   "key": {
     "#": "#minecraft:logs_that_burn",
-    "X": "#minecraft:saplings"
+    "O" : "minecraft:oak_sapling",
+    "S": "minecraft:spruce_sapling",
+    "B": "minecraft:birch_sapling",
+    "J": "minecraft:jungle_sapling",
+    "A": "minecraft:acacia_sapling",
+    "D": "minecraft:dark_oak_sapling"
   },
   "pattern": [
+    "OSB",
     "###",
-    "#X#",
-    "###"
+    "JAD"
   ],
   "result": {
-    "count": 8,
-    "id": "minecraft:wooden_sapling"
+    "count": 3,
+    "id": "varan-deco:wooden_sapling"
   }
 }

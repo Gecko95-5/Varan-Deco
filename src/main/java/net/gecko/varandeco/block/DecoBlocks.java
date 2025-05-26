@@ -1046,7 +1046,7 @@ public class DecoBlocks {
                     AbstractBlock.Settings.copy(Blocks.TORCHFLOWER_CROP), MightyLavenderCropBlock::new);
 
     public static final Block ANCIENT_ROSE = registerFlower("ancient_rose",
-            StatusEffects.POISON, 4, Blocks.POPPY);
+            StatusEffects.POISON, 12, Blocks.POPPY);
     public static final Block POTTED_ANCIENT_ROSE = registerFlowerPot("potted_ancient_rose",
             ANCIENT_ROSE,Blocks.POTTED_POPPY);
 

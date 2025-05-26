@@ -1040,6 +1040,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.OXIDIZED_COPPER_BUTTON);
         addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
 
+        addDrop(DecoBlocks.IRON_BUTTON);
+        addDrop(DecoBlocks.GOLD_BUTTON);
+
         addDrop(DecoBlocks.WHITE_BLOCK);
         addDrop(DecoBlocks.LIGHT_GRAY_BLOCK);
         addDrop(DecoBlocks.GRAY_BLOCK);
