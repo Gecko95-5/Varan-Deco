@@ -4,8 +4,10 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.CarrotsBlock;
+import net.minecraft.block.NetherWartBlock;
+import net.minecraft.block.TallPlantBlock;
+import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Items;
@@ -15,7 +17,9 @@ import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -1078,19 +1082,23 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.ANCIENT_ROSE);
         pottedPlantDrops(DecoBlocks.POTTED_ANCIENT_ROSE);
 
+        addDrop(DecoBlocks.WITHER_ROSE_BUSH, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
+        addDrop(DecoBlocks.ENDER_ROSE_BUSH, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
+        addDrop(DecoBlocks.MIGHTY_LAVENDER, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
+        addDrop(DecoBlocks.NOVA_STARFLOWER, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
+        addDrop(DecoBlocks.RED_SUNFLOWER, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
 
-        addDrop(
-                DecoBlocks.MIGHTY_LAVENDER_CROP,
-                this.applyExplosionDecay(
-                        Blocks.CARROTS,
-                        LootTable.builder()
+        addDrop(DecoBlocks.WARPED_WART_PLANT, block -> LootTable.builder().pool(this.applyExplosionDecay(block, LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0F))
+            .with(ItemEntry.builder(DecoItems.WARPED_WART)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 4.0F))
+            .conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(NetherWartBlock.AGE, 3))))
+            .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))
+            .conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(NetherWartBlock.AGE, 3))))))));
+
+        addDrop(DecoBlocks.MIGHTY_LAVENDER_CROP, this.applyExplosionDecay(DecoBlocks.MIGHTY_LAVENDER_CROP, LootTable.builder()
                                 .pool(LootPool.builder().with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER)))
-                                .pool(
-                                        LootPool.builder()
-                                                .conditionally(builder3)
-                                                .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(impl.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3)))
-                                )
-                )
-        );
+                                .pool(LootPool.builder()
+                                .conditionally(builder3)
+                                .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(impl.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))));
     }
 }

@@ -1,12 +1,12 @@
-// 1.21.1	2025-05-25T19:08:53.4623479	Variant Decoration/Tags for minecraft:item
+// 1.21.1	2025-05-26T13:49:12.8619533	Variant Decoration/Tags for minecraft:item
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\item\mosaic_wood.json
 cf479badf8b82e7c8e0f9ed1c75279ae351ebc4b data\varan-deco\tags\item\wooden_logs.json
 4d816e98a3b6dd160d6f01d9c6e722f8769ba53d data\minecraft\tags\item\wooden_buttons.json
 3065ebae26f52abe701d64daf488377a61286a74 data\varan-deco\tags\item\deco_crafting_tables.json
 14abbe3875feb6015e70ddc3067799de7c2e4444 data\varan-deco\tags\item\furnaces.json
 d21b8ab5755b64163ee8d370b2c31e6685708a67 data\varan-deco\tags\item\mosaic_slab.json
-7541d5cddce1eaddd7a913723d5a197e2d31a515 data\minecraft\tags\item\wooden_fences.json
 9763737d89a6e4076fa86839610bececf09426fc data\varan-deco\tags\item\deco_cartography_tables.json
+7541d5cddce1eaddd7a913723d5a197e2d31a515 data\minecraft\tags\item\wooden_fences.json
 2197ebe35a93d3b4a7499f1cbc24346cbbbe5c30 data\minecraft\tags\item\planks.json
 04146a1741164bbd11f595ecf468c4d27391d799 data\varan-deco\tags\item\deco_bookshelves.json
 ae6a5284b821cf8425822655673d64efabc01ed1 data\minecraft\tags\item\buttons.json
@@ -17,8 +17,8 @@ f66ea45ecb16a7a170500f3e1fcd08906b0754aa data\varan-deco\tags\item\mosaic_stairs
 409c753d40b88201a9d56718a27dda18bf46e2f8 data\minecraft\tags\item\stone_buttons.json
 afd008caf2cf6818f50b4ab00adff62ab0565881 data\minecraft\tags\item\saplings.json
 ae7fac8445e5bad6e6418f89964f0b4cf5d586de data\varan-deco\tags\item\deco_ladder.json
-2b018600636c375ed3a7fdad297a7ababa516c73 data\varan-deco\tags\item\deco_smithing_tables.json
 89547731e20e9c274f872adefd8870bce2a3bd17 data\varan-deco\tags\item\wooden_crafting_tables.json
+2b018600636c375ed3a7fdad297a7ababa516c73 data\varan-deco\tags\item\deco_smithing_tables.json
 025052fea686bf99990352c0b7255a039c055dfd data\minecraft\tags\item\wooden_stairs.json
 b5b2d7b56bc75a72af5c76b422f51cc1c7baf077 data\minecraft\tags\item\wooden_pressure_plates.json
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\item\leaves.json

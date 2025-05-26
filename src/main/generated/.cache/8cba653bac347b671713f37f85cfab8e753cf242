@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-25T19:08:53.4424007	Variant Decoration/Recipes
+// 1.21.1	2025-05-26T13:49:12.8400145	Variant Decoration/Recipes
 8892a7630a259e61e05b7d5004738bef3043e628 data\varan-deco\advancement\recipes\building_blocks\dye_blue_terracotta_bricks.json
 076427adac33057929498d09eb40c7b8e79521fe data\varan-deco\advancement\recipes\building_blocks\purple_terracotta_brick_slab.json
 f8569c452f54466c1147ff7adb35af8bf7a979c5 data\varan-deco\recipe\warped_mosaic.json
@@ -1660,8 +1660,8 @@ ce204e4132b394b8e66ca6bbd8f326a9165ad88f data\varan-deco\recipe\white_terracotta
 d47fb20f46b3993068242fee26731b8e0c33d4d0 data\varan-deco\recipe\gray_concrete_slab_from_gray_concrete_stonecutting.json
 52c7dbf8095b21eb7226a6093bfe240c35c40c4b data\varan-deco\recipe\calcite_slab_from_calcite_stonecutting.json
 0f84f416d7b322abe9f5f08b1215376ffabf9076 data\varan-deco\advancement\recipes\building_blocks\tuff_tile_wall_from_tuff_tiles_stonecutting.json
-18462a2ba75d9bee07e7946446fe9ef4983c5536 data\varan-deco\advancement\recipes\decorations\hardened_purple_stained_glass_iron_ingot.json
 1b80af773244f9f2ee3c2c547629284f9e198d70 data\varan-deco\advancement\recipes\decorations\dyed_hardened_purple_stained_glass_pane.json
+18462a2ba75d9bee07e7946446fe9ef4983c5536 data\varan-deco\advancement\recipes\decorations\hardened_purple_stained_glass_iron_ingot.json
 9ad74bb1d21e0c96a9b7a00134df5c9ae992f2a9 data\varan-deco\recipe\birch_mosaic_sign.json
 904562bf065b8e44ac319ac601fb015fdf1857e8 data\varan-deco\advancement\recipes\building_blocks\cut_cyan_concrete_slab.json
 785898938d69eafdf8706e355f1713e5a4928f14 data\varan-deco\advancement\recipes\building_blocks\cut_white_concrete.json
