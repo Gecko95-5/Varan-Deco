@@ -2025,7 +2025,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.GLASS_PANE))
                 .offerTo(exporter, new Identifier("tinted_glass_pane_amethyst_shard"));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,16)
                 .pattern("###")
                 .pattern("###")
                 .input('#', Items.TINTED_GLASS)
