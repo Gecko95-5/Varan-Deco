@@ -287,7 +287,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ICE_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.ICE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.ICE_BRICK_WALL.asItem());
-                        entries.add(DecoBlocks.BLACK_ICE.asItem());;
+                        entries.add(DecoBlocks.BLACK_ICE.asItem());
                         entries.add(DecoBlocks.SNOW_STAIRS.asItem());
                         entries.add(DecoBlocks.SNOW_SLAB.asItem());
                         entries.add(DecoBlocks.SNOW_WALL.asItem());
@@ -849,6 +849,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.MANGROVE_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.CHERRY_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.BAMBOO_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.CRIMSON_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.WARPED_BOOKSHELF.asItem());
