@@ -3,7 +3,6 @@ package net.gecko.varandeco.item.projectile;
 import net.gecko.varandeco.entity.custom.SnowBrickProjectileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
-import net.minecraft.entity.projectile.thrown.SnowballEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ProjectileItem;
@@ -37,7 +36,7 @@ public class SnowBrickItem extends Item implements ProjectileItem {
                 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F)
         );
         if (world instanceof ServerWorld serverWorld) {
-            ProjectileEntity.spawnWithVelocity(SnowballEntity::new, serverWorld, itemStack, user, 0.0F, POWER, 1.0F);
+            ProjectileEntity.spawnWithVelocity(SnowBrickProjectileEntity::new, serverWorld, itemStack, user, 0.0F, POWER, 1.0F);
         }
 
         user.incrementStat(Stats.USED.getOrCreateStat(this));
