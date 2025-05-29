@@ -37,7 +37,7 @@ public class SnowBrickItem extends Item implements ProjectileItem {
                 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F)
         );
         if (world instanceof ServerWorld serverWorld) {
-            ProjectileEntity.spawnWithVelocity(SnowballEntity::new, serverWorld, itemStack, user, 0.0F, POWER, 1.0F);
+            ProjectileEntity.spawnWithVelocity(SnowBrickProjectileEntity::new, serverWorld, itemStack, user, 0.0F, POWER, 1.0F);
         }
 
         user.incrementStat(Stats.USED.getOrCreateStat(this));
