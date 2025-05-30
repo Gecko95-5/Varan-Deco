@@ -10,7 +10,6 @@ import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
@@ -38,6 +37,7 @@ public class VaranDeco implements ModInitializer {
 		DecoLootTableModifiers.modifyLootTables();
 		DecoFuelRegistry.registerFuels();
 		DecoComposterRecipes.registerCompostableItems();
+		DecoCustomTrades.registerCustomTrades();
 
 		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : -12012264,
 				DecoBlocks.WOODEN_LEAVES);
