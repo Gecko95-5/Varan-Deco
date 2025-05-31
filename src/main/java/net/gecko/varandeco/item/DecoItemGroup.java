@@ -284,7 +284,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ICE_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.ICE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.ICE_BRICK_WALL.asItem());
-                        entries.add(DecoBlocks.BLACK_ICE.asItem());;
+                        entries.add(DecoBlocks.BLACK_ICE.asItem());
                         entries.add(DecoBlocks.SNOW_STAIRS.asItem());
                         entries.add(DecoBlocks.SNOW_SLAB.asItem());
                         entries.add(DecoBlocks.SNOW_WALL.asItem());
@@ -503,12 +503,12 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.PURPLE_CONCRETE_STAIRS.asItem());
                         entries.add(DecoBlocks.PURPLE_CONCRETE_SLAB.asItem());
                         entries.add(DecoBlocks.PURPLE_CONCRETE_WALL.asItem());
-                        entries.add(DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
-                        entries.add(DecoBlocks.PINK_CONCRETE_SLAB.asItem());
-                        entries.add(DecoBlocks.PINK_CONCRETE_WALL.asItem());
                         entries.add(DecoBlocks.MAGENTA_CONCRETE_STAIRS.asItem());
                         entries.add(DecoBlocks.MAGENTA_CONCRETE_SLAB.asItem());
                         entries.add(DecoBlocks.MAGENTA_CONCRETE_WALL.asItem());
+                        entries.add(DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
+                        entries.add(DecoBlocks.PINK_CONCRETE_SLAB.asItem());
+                        entries.add(DecoBlocks.PINK_CONCRETE_WALL.asItem());
                         entries.add(DecoBlocks.CUT_WHITE_CONCRETE.asItem());
                         entries.add(DecoBlocks.CUT_WHITE_CONCRETE_STAIRS.asItem());
                         entries.add(DecoBlocks.CUT_WHITE_CONCRETE_SLAB.asItem());
