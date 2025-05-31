@@ -506,12 +506,12 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.PURPLE_CONCRETE_STAIRS.asItem());
                         entries.add(DecoBlocks.PURPLE_CONCRETE_SLAB.asItem());
                         entries.add(DecoBlocks.PURPLE_CONCRETE_WALL.asItem());
-                        entries.add(DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
-                        entries.add(DecoBlocks.PINK_CONCRETE_SLAB.asItem());
-                        entries.add(DecoBlocks.PINK_CONCRETE_WALL.asItem());
                         entries.add(DecoBlocks.MAGENTA_CONCRETE_STAIRS.asItem());
                         entries.add(DecoBlocks.MAGENTA_CONCRETE_SLAB.asItem());
                         entries.add(DecoBlocks.MAGENTA_CONCRETE_WALL.asItem());
+                        entries.add(DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
+                        entries.add(DecoBlocks.PINK_CONCRETE_SLAB.asItem());
+                        entries.add(DecoBlocks.PINK_CONCRETE_WALL.asItem());
                         entries.add(DecoBlocks.CUT_WHITE_CONCRETE.asItem());
                         entries.add(DecoBlocks.CUT_WHITE_CONCRETE_STAIRS.asItem());
                         entries.add(DecoBlocks.CUT_WHITE_CONCRETE_SLAB.asItem());
