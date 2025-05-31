@@ -2209,12 +2209,12 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_SLAB.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_CONCRETE_WALL.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_SLAB.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_SLAB.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_CONCRETE_WALL.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_STAIRS.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_SLAB.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_CONCRETE_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CUT_WHITE_CONCRETE_SLAB.asItem());
