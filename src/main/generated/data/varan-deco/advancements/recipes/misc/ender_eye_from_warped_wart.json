@@ -46,10 +46,10 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_warped_wart",
       "has_chorus_fruit",
-      "has_blaze_powder"
+      "has_blaze_powder",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

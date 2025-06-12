@@ -30,7 +30,7 @@ public class DeepslateFurnaceBlock extends AbstractFurnaceBlock {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return validateTicker(type, DecoBlockEntities.DEEPSLATE_FURNACE_BE, DeepslateFurnaceBlockEntity::tick);
+		return checkType(type, DecoBlockEntities.DEEPSLATE_FURNACE_BE, DeepslateFurnaceBlockEntity::tick);
 	}
 
 	@Override

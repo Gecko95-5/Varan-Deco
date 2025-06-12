@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_paeonia"
+      "has_paeonia",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

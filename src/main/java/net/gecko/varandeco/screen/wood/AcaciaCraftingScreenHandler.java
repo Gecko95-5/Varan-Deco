@@ -9,7 +9,10 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.RecipeInputInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
-import net.minecraft.recipe.*;
+import net.minecraft.recipe.CraftingRecipe;
+import net.minecraft.recipe.Recipe;
+import net.minecraft.recipe.RecipeMatcher;
+import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.book.RecipeBookCategory;
 import net.minecraft.screen.AbstractRecipeScreenHandler;
 import net.minecraft.screen.ScreenHandler;
@@ -22,7 +25,7 @@ import net.minecraft.world.World;
 
 import java.util.Optional;
 
-public class AcaciaCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingInventory> {
+public class AcaciaCraftingScreenHandler extends AbstractRecipeScreenHandler<RecipeInputInventory> {
     public static final int RESULT_ID = 0;
     private static final int INPUT_START = 1;
     private static final int INPUT_END = 10;
@@ -68,11 +71,10 @@ public class AcaciaCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
         if (!world.isClient) {
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
+            Optional<CraftingRecipe> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
             if (optional.isPresent()) {
-                RecipeEntry<CraftingRecipe> recipeEntry = (RecipeEntry<CraftingRecipe>)optional.get();
-                CraftingRecipe craftingRecipe = recipeEntry.value();
-                if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry)) {
+                CraftingRecipe craftingRecipe = optional.get();
+                if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, craftingRecipe)) {
                     ItemStack itemStack2 = craftingRecipe.craft(craftingInventory, world.getRegistryManager());
                     if (itemStack2.isItemEnabled(world.getEnabledFeatures())) {
                         itemStack = itemStack2;
@@ -103,10 +105,9 @@ public class AcaciaCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     }
 
     @Override
-    public boolean matches(RecipeEntry<? extends Recipe<CraftingInventory>> recipe) {
-        return recipe.value().matches((CraftingInventory) this.input, this.player.getWorld());
+    public boolean matches(Recipe<? super RecipeInputInventory> recipe) {
+        return recipe.matches(this.input, this.player.getWorld());
     }
-
 
 
     @Override

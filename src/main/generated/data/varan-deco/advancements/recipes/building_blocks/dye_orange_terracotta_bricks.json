@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_terracotta_bricks",
-      "has_orange_dye"
+      "has_orange_dye",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

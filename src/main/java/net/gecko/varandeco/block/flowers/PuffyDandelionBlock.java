@@ -14,9 +14,8 @@ public class PuffyDandelionBlock extends FlowerBlock implements Fertilizable {
         super(suspiciousStewEffect, effectDuration, settings);
     }
 
-
     @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
         return true;
     }
 

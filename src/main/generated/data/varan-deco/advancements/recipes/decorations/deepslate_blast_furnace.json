@@ -46,10 +46,10 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_iron_ingot",
       "has_deepslate_furnace",
-      "has_smooth_deepslate"
+      "has_smooth_deepslate",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

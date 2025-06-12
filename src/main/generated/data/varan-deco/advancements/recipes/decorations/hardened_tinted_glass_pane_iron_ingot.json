@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_iron_ingot",
-      "has_tinted_glass_pane"
+      "has_tinted_glass_pane",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

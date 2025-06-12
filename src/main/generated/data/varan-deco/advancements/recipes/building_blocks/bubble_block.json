@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_prismarine_shard",
-      "has_bubble_orb"
+      "has_bubble_orb",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

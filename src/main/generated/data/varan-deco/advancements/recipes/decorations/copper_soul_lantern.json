@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_soul_torch",
-      "has_copper_nugget"
+      "has_copper_nugget",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

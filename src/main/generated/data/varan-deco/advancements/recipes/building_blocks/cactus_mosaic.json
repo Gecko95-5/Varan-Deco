@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_cactus_plank_slab"
+      "has_cactus_plank_slab",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

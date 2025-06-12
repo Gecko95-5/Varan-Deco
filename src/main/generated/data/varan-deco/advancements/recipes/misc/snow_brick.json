@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_ice",
-      "has_snowball"
+      "has_snowball",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

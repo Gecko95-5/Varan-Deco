@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_nether_brick",
-      "has_red_nether_bricks"
+      "has_red_nether_bricks",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

@@ -5,7 +5,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.screen.ForgingScreenHandler;
@@ -18,6 +17,7 @@ import net.minecraft.world.WorldEvents;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.OptionalInt;
 
 public class BirchSmithingScreenHandler extends ForgingScreenHandler {
@@ -32,8 +32,8 @@ public class BirchSmithingScreenHandler extends ForgingScreenHandler {
 	public static final int SLOT_Y = 48;
 	private final World world;
 	@Nullable
-	private RecipeEntry<SmithingRecipe> currentRecipe;
-	private final List<RecipeEntry<SmithingRecipe>> recipes;
+	private SmithingRecipe currentRecipe;
+	private final List<SmithingRecipe> recipes;
 
 	public BirchSmithingScreenHandler(int syncId, PlayerInventory playerInventory) {
 		this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
@@ -48,9 +48,9 @@ public class BirchSmithingScreenHandler extends ForgingScreenHandler {
 	@Override
 	protected ForgingSlotsManager getForgingSlotsManager() {
 		return ForgingSlotsManager.create()
-				.input(0, 8, 48, stack -> this.recipes.stream().anyMatch(recipe -> ((SmithingRecipe)recipe.value()).testTemplate(stack)))
-				.input(1, 26, 48, stack -> this.recipes.stream().anyMatch(recipe -> ((SmithingRecipe)recipe.value()).testBase(stack)))
-				.input(2, 44, 48, stack -> this.recipes.stream().anyMatch(recipe -> ((SmithingRecipe)recipe.value()).testAddition(stack)))
+				.input(0, 8, 48, stack -> this.recipes.stream().anyMatch(recipe -> recipe.testTemplate(stack)))
+				.input(1, 26, 48, stack -> this.recipes.stream().anyMatch(smithingRecipe -> smithingRecipe.testBase(stack)))
+				.input(2, 44, 48, stack -> this.recipes.stream().anyMatch(smithingRecipe -> smithingRecipe.testAddition(stack)))
 				.output(3, 98, 48)
 				.build();
 	}
@@ -62,7 +62,7 @@ public class BirchSmithingScreenHandler extends ForgingScreenHandler {
 
 	@Override
 	protected boolean canTakeOutput(PlayerEntity player, boolean present) {
-		return this.currentRecipe != null && this.currentRecipe.value().matches(this.input, this.world);
+		return this.currentRecipe != null && this.currentRecipe.matches(this.input, this.world);
 	}
 
 	@Override
@@ -89,15 +89,15 @@ public class BirchSmithingScreenHandler extends ForgingScreenHandler {
 
 	@Override
 	public void updateResult() {
-		List<RecipeEntry<SmithingRecipe>> list = this.world.getRecipeManager().getAllMatches(RecipeType.SMITHING, this.input, this.world);
+		List<SmithingRecipe> list = this.world.getRecipeManager().getAllMatches(RecipeType.SMITHING, this.input, this.world);
 		if (list.isEmpty()) {
 			this.output.setStack(0, ItemStack.EMPTY);
 		} else {
-			RecipeEntry<SmithingRecipe> recipeEntry = (RecipeEntry<SmithingRecipe>)list.get(0);
-			ItemStack itemStack = recipeEntry.value().craft(this.input, this.world.getRegistryManager());
+			SmithingRecipe smithingRecipe = (SmithingRecipe) list.get(0);
+			ItemStack itemStack = smithingRecipe.craft(this.input, this.world.getRegistryManager());
 			if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
-				this.currentRecipe = recipeEntry;
-				this.output.setLastRecipe(recipeEntry);
+				this.currentRecipe = smithingRecipe;
+				this.output.setLastRecipe(smithingRecipe);
 				this.output.setStack(0, itemStack);
 			}
 		}
@@ -105,16 +105,22 @@ public class BirchSmithingScreenHandler extends ForgingScreenHandler {
 
 	@Override
 	public int getSlotFor(ItemStack stack) {
-		return this.getQuickMoveSlot(stack).orElse(0);
+		return (Integer) ((Optional) this.recipes
+				.stream()
+				.map(recipe -> getQuickMoveSlot(recipe, stack))
+				.filter(Optional::isPresent)
+				.findFirst()
+				.orElse(Optional.of(0)))
+				.get();
 	}
 
-	private static OptionalInt getQuickMoveSlot(SmithingRecipe recipe, ItemStack stack) {
+	private static Optional<Integer> getQuickMoveSlot(SmithingRecipe recipe, ItemStack stack) {
 		if (recipe.testTemplate(stack)) {
-			return OptionalInt.of(0);
+			return Optional.of(0);
 		} else if (recipe.testBase(stack)) {
-			return OptionalInt.of(1);
+			return Optional.of(1);
 		} else {
-			return recipe.testAddition(stack) ? OptionalInt.of(2) : OptionalInt.empty();
+			return recipe.testAddition(stack) ? Optional.of(2) : Optional.empty();
 		}
 	}
 
@@ -125,14 +131,6 @@ public class BirchSmithingScreenHandler extends ForgingScreenHandler {
 
 	@Override
 	public boolean isValidIngredient(ItemStack stack) {
-		return this.getQuickMoveSlot(stack).isPresent();
-	}
-
-	private OptionalInt getQuickMoveSlot(ItemStack stack) {
-		return this.recipes
-				.stream()
-				.flatMapToInt(recipe -> getQuickMoveSlot((SmithingRecipe)recipe.value(), stack).stream())
-				.filter(slot -> !this.getSlot(slot).hasStack())
-				.findFirst();
+		return this.recipes.stream().map(recipe -> getQuickMoveSlot(recipe, stack)).anyMatch(Optional::isPresent);
 	}
 }

@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_blue_eyed_daisy"
+      "has_blue_eyed_daisy",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

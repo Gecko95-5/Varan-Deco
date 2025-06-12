@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_light_gray_stained_glass_pane"
+      "has_light_gray_stained_glass_pane",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

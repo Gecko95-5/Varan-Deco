@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_ender_pearl",
-      "has_end_stone"
+      "has_end_stone",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_purple_tulip"
+      "has_purple_tulip",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

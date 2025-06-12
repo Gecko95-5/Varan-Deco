@@ -32,7 +32,7 @@ public class BlackstoneBlastFurnaceBlock extends AbstractFurnaceBlock {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return validateTicker(type, DecoBlockEntities.BLACKSTONE_BLAST_FURNACE_BE, BlackstoneBlastFurnaceBlockEntity::tick);
+		return checkType(type, DecoBlockEntities.BLACKSTONE_BLAST_FURNACE_BE, BlackstoneBlastFurnaceBlockEntity::tick);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ import net.minecraft.world.World;
 
 import java.util.Optional;
 
-public class JungleCraftingScreenHandler extends AbstractRecipeScreenHandler<CraftingInventory> {
+public class JungleCraftingScreenHandler extends AbstractRecipeScreenHandler<RecipeInputInventory> {
     public static final int RESULT_ID = 0;
     private static final int INPUT_START = 1;
     private static final int INPUT_END = 10;
@@ -68,11 +68,10 @@ public class JungleCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
         if (!world.isClient) {
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
+            Optional<CraftingRecipe> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingInventory, world);
             if (optional.isPresent()) {
-                RecipeEntry<CraftingRecipe> recipeEntry = (RecipeEntry<CraftingRecipe>)optional.get();
-                CraftingRecipe craftingRecipe = recipeEntry.value();
-                if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry)) {
+                CraftingRecipe craftingRecipe = optional.get();
+                if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, craftingRecipe)) {
                     ItemStack itemStack2 = craftingRecipe.craft(craftingInventory, world.getRegistryManager());
                     if (itemStack2.isItemEnabled(world.getEnabledFeatures())) {
                         itemStack = itemStack2;
@@ -103,10 +102,9 @@ public class JungleCraftingScreenHandler extends AbstractRecipeScreenHandler<Cra
     }
 
     @Override
-    public boolean matches(RecipeEntry<? extends Recipe<CraftingInventory>> recipe) {
-        return recipe.value().matches((CraftingInventory) this.input, this.player.getWorld());
+    public boolean matches(Recipe<? super RecipeInputInventory> recipe) {
+        return recipe.matches(this.input, this.player.getWorld());
     }
-
 
 
     @Override

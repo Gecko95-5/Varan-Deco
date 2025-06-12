@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_cut_quartz"
+      "has_cut_quartz",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

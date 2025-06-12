@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_green_block",
-      "has_blue_block"
+      "has_blue_block",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
