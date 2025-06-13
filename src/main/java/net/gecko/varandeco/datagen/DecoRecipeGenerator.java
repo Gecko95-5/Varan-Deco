@@ -3850,5 +3850,19 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),
                         RecipeProvider.conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD)));
+
+        offerWallRecipe(exporter, DecoBlocks.PURPUR_WALL, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_WALL, Items.PURPUR_BLOCK);
+
+        createStairsRecipe(DecoBlocks.SMOOTH_BASALT_STAIRS, Ingredient.ofItems(Items.SMOOTH_BASALT))
+                .criterion(hasItem(Items.SMOOTH_BASALT),conditionsFromItem(Items.SMOOTH_BASALT))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_BASALT_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_BASALT_STAIRS, Items.SMOOTH_BASALT);
+
+        offerSlabRecipe(exporter, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT,2);
+
+        offerWallRecipe(exporter, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
     }
 }

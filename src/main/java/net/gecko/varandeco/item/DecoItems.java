@@ -2,7 +2,8 @@ package net.gecko.varandeco.item;
 
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
-import net.gecko.varandeco.item.projectile.SnowBrickItem;
+import net.gecko.varandeco.item.custom.BubbleItem;
+import net.gecko.varandeco.item.custom.SnowBrickItem;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SignItem;
@@ -22,7 +23,7 @@ public class DecoItems {
             new SnowBrickItem(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS).maxCount(16)));
 
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",
-            new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
+            new BubbleItem(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
 
     public static final Item WARPED_WART = registerItem("warped_wart",
             new AliasedBlockItem(DecoBlocks.WARPED_WART_PLANT,new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
