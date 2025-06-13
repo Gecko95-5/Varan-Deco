@@ -5,15 +5,12 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.potion.PotionUtil;
-import net.minecraft.potion.Potions;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
@@ -28,12 +25,11 @@ public class BubbleItem extends Item {
         World world = context.getWorld();
         BlockPos blockPos = context.getBlockPos();
         PlayerEntity playerEntity = context.getPlayer();
-        Hand hand = context.getHand();
         ItemStack itemStack = context.getStack();
         BlockState blockState = world.getBlockState(blockPos);
         if (context.getSide() != Direction.DOWN && blockState.isIn(BlockTags.CONVERTABLE_TO_MUD)) {
             world.playSound(null, blockPos, SoundEvents.ENTITY_GENERIC_SPLASH, SoundCategory.PLAYERS, 1.0F, 1.0F);
-            playerEntity.setStackInHand(hand, ItemUsage.consumeHeldItem(world, playerEntity, hand).getValue());
+            playerEntity.setStackInHand(context.getHand(), ItemUsage.exchangeStack(itemStack, playerEntity, new ItemStack(Items.AIR)));
             playerEntity.incrementStat(Stats.USED.getOrCreateStat(itemStack.getItem()));
             if (!world.isClient) {
                 ServerWorld serverWorld = (ServerWorld)world;

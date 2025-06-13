@@ -1,4 +1,4 @@
-// 1.19.2	2025-06-13T01:17:02.7268201	minecraft:block Loot Table
+// 1.19.2	2025-06-13T17:30:15.9598225	minecraft:block Loot Table
 e719ceef0950a3b174b53af8d6825a84f432051d data\varan-deco\loot_tables\blocks\blue_concrete_slab.json
 a000080130b061e8932fee05057a0be62c2e5722 data\varan-deco\loot_tables\blocks\california_poppy.json
 b1605436dca25861b369553525c9f5d447284255 data\varan-deco\loot_tables\blocks\obsidian_stairs.json
@@ -222,7 +222,7 @@ ab3a1a027d1ee02e7e07fcbc568752994fa7a544 data\varan-deco\loot_tables\blocks\acac
 7ed4d1bbed17442d9be19ca3843c98cee8ec6f56 data\varan-deco\loot_tables\blocks\void_stone_slab.json
 59fb5efa52107e896c0735065bd8cdbc2e205c25 data\varan-deco\loot_tables\blocks\black_concrete_slab.json
 57ffcae144cc72a3cebc81bc33203580db6794a8 data\varan-deco\loot_tables\blocks\crimson_smithing_table.json
-1606cbb572a4edd93b9d8ccf48b22b04a44bf187 data\varan-deco\loot_tables\blocks\bubble_block.json
+fd485780668a8d90a43c1267eaa3d10b2060257c data\varan-deco\loot_tables\blocks\bubble_block.json
 e71ecbe22d52118bf099ebe54b3dbffcf3e5d32e data\varan-deco\loot_tables\blocks\light_blue_terracotta_slab.json
 0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_blue_eyed_daisy.json
 6b891770f3ed5268672f9ac6c26f36548877c5b5 data\varan-deco\loot_tables\blocks\wooden_sapling.json

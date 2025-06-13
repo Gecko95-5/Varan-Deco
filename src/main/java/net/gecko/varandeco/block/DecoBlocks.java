@@ -947,18 +947,18 @@ public class DecoBlocks {
             new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
 
     public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_CALIFORNIA_POPPY = registerBlockWithoutItem("potted_california_poppy",
             new FlowerPotBlock(CALIFORNIA_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
     public static final Block SALMON_POPPY = registerBlock("salmon_poppy",
-            new FlowerBlock(StatusEffects.BLINDNESS, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            new FlowerBlock(StatusEffects.WATER_BREATHING, 7,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_SALMON_POPPY = registerBlockWithoutItem("potted_salmon_poppy",
             new FlowerPotBlock(SALMON_POPPY,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block YELLOW_ORCHID = registerBlock("yellow_orchid",
-            new FlowerBlock(StatusEffects.SATURATION, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            new FlowerBlock(StatusEffects.INVISIBILITY, 7,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid",
             new FlowerPotBlock(YELLOW_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
@@ -974,38 +974,38 @@ public class DecoBlocks {
             new FlowerPotBlock(PINK_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
 
     public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_YELLOW_TULIP = registerBlockWithoutItem("potted_yellow_tulip",
             new FlowerPotBlock(YELLOW_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_PURPLE_TULIP = registerBlockWithoutItem("potted_purple_tulip",
             new FlowerPotBlock(PURPLE_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_MAGENTA_TULIP = registerBlockWithoutItem("potted_magenta_tulip",
             new FlowerPotBlock(MAGENTA_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block BLUE_TULIP = registerBlock("blue_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BLUE_TULIP = registerBlockWithoutItem("potted_blue_tulip",
             new FlowerPotBlock(BLUE_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
 
     public static final Block BLACK_TULIP = registerBlock("black_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 15,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BLACK_TULIP = registerBlockWithoutItem("potted_black_tulip",
             new FlowerPotBlock(BLACK_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block GREEN_TULIP = registerBlock("green_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 15,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_GREEN_TULIP = registerBlockWithoutItem("potted_green_tulip",
             new FlowerPotBlock(GREEN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
     public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
+            new FlowerBlock(StatusEffects.WEAKNESS, 15,FabricBlockSettings.copyOf(Blocks.RED_TULIP)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_CYAN_TULIP = registerBlockWithoutItem("potted_cyan_tulip",
             new FlowerPotBlock(CYAN_TULIP,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP)));
@@ -1016,7 +1016,7 @@ public class DecoBlocks {
     public static final Block POTTED_BARBERTON_DAISY = registerBlockWithoutItem("potted_barberton_daisy",
             new FlowerPotBlock(BARBERTON_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
     public static final Block BLUE_EYED_DAISY = registerBlock("blue_eyed_daisy",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+            new FlowerBlock(StatusEffects.NIGHT_VISION, 11,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_BLUE_EYED_DAISY = registerBlockWithoutItem("potted_blue_eyed_daisy",
             new FlowerPotBlock(BLUE_EYED_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
@@ -1044,7 +1044,7 @@ public class DecoBlocks {
             new FlowerPotBlock(LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block ROSE = registerBlock("rose",
-            new FlowerBlock(StatusEffects.POISON, 4,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            new FlowerBlock(StatusEffects.POISON, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
             new FlowerPotBlock(ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));

@@ -41,6 +41,7 @@ public class DecoComposterRecipes {
     }
     public static void registerCompostableItems(){
         ComposterItemsRecipes.registerCompostableItem(DecoItems.WARPED_WART,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoItems.LILAC_FLOWER,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ENDER_ROSE_BUSH,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WITHER_ROSE_BUSH,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.RED_SUNFLOWER,0.65F);

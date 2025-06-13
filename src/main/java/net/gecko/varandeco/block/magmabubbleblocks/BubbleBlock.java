@@ -27,7 +27,6 @@ public class BubbleBlock extends Block {
         super.onSteppedOn(world, pos, state, entity);
     }
 
-
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         BlockPos blockPos = pos.up();

@@ -264,7 +264,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_block"),
-                BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_BLOCK));
+                BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_BLOCK, DecoItems.BUBBLE_ORB,
+                        ConstantLootNumberProvider.create(2.0F)));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_slab"),

@@ -1,6 +1,7 @@
 package net.gecko.varandeco.world.feature;
 
 import net.minecraft.util.registry.RegistryEntry;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.*;
@@ -51,7 +52,7 @@ public class DecoPlacedFeatures {
             DecoConfiguredFeatures.DECO_SOULSAND, RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
 
     public static final RegistryEntry<PlacedFeature> DECO_RED_SUNFLOWER_PLACED = PlacedFeatures.register("deco_red_sunflower_placed",
-            DecoConfiguredFeatures.DECO_RED_SUNFLOWER, RarityFilterPlacementModifier.of(1), SquarePlacementModifier.of(),
+            DecoConfiguredFeatures.DECO_RED_SUNFLOWER, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
     public static final RegistryEntry<PlacedFeature> DECO_NOVA_STARFLOWER_PLACED = PlacedFeatures.register("deco_nova_starflower_placed",
@@ -61,6 +62,10 @@ public class DecoPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> DECO_PAEONIA_PLACED = PlacedFeatures.register("deco_paeonia_placed",
             DecoConfiguredFeatures.DECO_PAEONIA, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_BUBBLE_ORE_PLACED = PlacedFeatures.register("deco_bubble_ore_placed",
+            DecoConfiguredFeatures.DECO_BUBBLE_ORE, modifiersWithCount(1,
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(27), YOffset.fixed(47))));
 
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());

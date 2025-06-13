@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.dynamic.Range;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -118,7 +119,7 @@ public class DecoConfiguredFeatures {
             ConfiguredFeatures.register("deco_wooden_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new ForkingTrunkPlacer(5, 2, 2),
                     BlockStateProvider.of(DecoBlocks.WOODEN_LEAVES),
-                    new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4),
+                    new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 4),
                     new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DECO_FANCY_WOODEN_TREE =
@@ -136,6 +137,12 @@ public class DecoConfiguredFeatures {
                     new TwoLayersFeatureSize(1, 1, 2)).decorators
                             (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
                     .build());
+
+    public static final List<OreFeatureConfig.Target> DECO_BUBBLE_ORES = List.of(
+            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.GRAVEL), DecoBlocks.BUBBLE_BLOCK.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> DECO_BUBBLE_ORE =
+            ConfiguredFeatures.register("bubble_ore", Feature.ORE, new OreFeatureConfig(DECO_BUBBLE_ORES, 15));
 
     public static void registerConfiguredFeatures() {
         VaranDeco.LOGGER.debug("Registering the ModConfiguredFeatures for " + VaranDeco.MOD_ID);

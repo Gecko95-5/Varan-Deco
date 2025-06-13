@@ -7,6 +7,7 @@ import net.gecko.varandeco.item.custom.SnowBrickItem;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SignItem;
+import net.minecraft.item.StewItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -30,6 +31,13 @@ public class DecoItems {
 
     public static final Item COPPER_NUGGET = registerItem("copper_nugget",
             new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
+
+    public static final Item LILAC_FLOWER = registerItem("lilac_flower",
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
+
+    public static final Item LILAC_STEW = registerItem("lilac_stew",
+            new StewItem(new Item.Settings().food(DecoFoodComponents.LILAC_STEW).group(DecoItemGroup.VARAN_DECO_BLOCKS)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranDeco.MOD_ID, name),item);

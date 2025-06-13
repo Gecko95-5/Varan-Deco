@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-deco:lilac_flower"
+    }
+  ],
+  "result": {
+    "item": "minecraft:magenta_dye"
+  }
+}
