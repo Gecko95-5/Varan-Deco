@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:magma_cream"
+    },
+    "#": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "#I",
+    "I#"
+  ],
+  "result": {
+    "item": "minecraft:magma_block"
+  }
+}

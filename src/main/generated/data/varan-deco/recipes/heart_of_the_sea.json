@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "varan-deco:bubble_orb"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "show_notification": true
+}

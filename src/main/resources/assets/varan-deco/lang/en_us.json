@@ -5,6 +5,8 @@
   "item.varan-deco.bubble_orb": "Bubble Orb",
   "item.varan-deco.warped_wart": "Warped Wart",
   "item.varan-deco.copper_nugget": "Copper Nugget",
+  "item.varan-deco.lilac_flower": "Lilac Flower",
+  "item.varan-deco.lilac_stew": "Suspicious Stew",
 
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -70,6 +72,8 @@
   "block.varan-deco.cobblestone_temp": "Cobblestone Template",
   "block.varan-deco.blackstone_temp": "Blackstone Template",
   "block.varan-deco.polished_stone_temp": "Non-Craftable Polished Stone",
+  "block.varan-deco.purpur_temp": "Non-Craftable Purpur",
+  "block.varan-deco.smooth_basalt_temp": "Smooth Basalt Template",
 
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
@@ -957,6 +961,38 @@
 
   "block.varan-deco.wooden_door": "Wooden Door",
   "block.varan-deco.wooden_trapdoor": "Wooden Trapdoor",
+
+  "block.varan-deco.purpur_wall": "Purpur Wall",
+
+  "block.varan-deco.smooth_basalt_stairs": "Smooth Basalt Stairs",
+  "block.varan-deco.smooth_basalt_slab": "Smooth Basalt Slab",
+  "block.varan-deco.smooth_basalt_wall": "Smooth Basalt Wall",
+
+  "block.varan-deco.infested_polished_stone": "Infested Polished Stone",
+  "block.varan-deco.infested_stone_tiles": "Infested Stone Tiles",
+  "block.varan-deco.infested_cobbled_deepslate": "Infested Cobbled Deepslate",
+  "block.varan-deco.infested_polished_deepslate": "Infested Polished Deepslate",
+  "block.varan-deco.infested_deepslate_bricks": "Infested Deepslate Bricks",
+  "block.varan-deco.infested_deepslate_tiles": "Infested Deepslate Tiles",
+  "block.varan-deco.infested_cracked_deepslate_bricks": "Infested Cracked Deepslate Bricks",
+  "block.varan-deco.infested_cracked_deepslate_tiles": "Infested Cracked Deepslate Tiles",
+  "block.varan-deco.infested_mossy_cobblestone": "Infested Mossy Cobblestone",
+  "block.varan-deco.infested_chiseled_deepslate": "Infested Chiseled Deepslate",
+  "block.varan-deco.infested_calcite": "Infested Calcite",
+  "block.varan-deco.infested_dripstone_block": "Infested Dripstone Block",
+  "block.varan-deco.infested_tuff": "Infested Tuff",
+  "block.varan-deco.infested_granite": "Infested Granite",
+  "block.varan-deco.infested_polished_granite": "Infested Polished Granite",
+  "block.varan-deco.infested_diorite": "Infested Diorite",
+  "block.varan-deco.infested_polished_diorite": "Infested Polished Diorite",
+  "block.varan-deco.infested_andesite": "Infested Andesite",
+  "block.varan-deco.infested_polished_andesite": "Infested Polished Andesite",
+  "block.varan-deco.infested_blackstone": "Infested Blackstone",
+  "block.varan-deco.infested_polished_blackstone": "Infested Polished Blackstone",
+  "block.varan-deco.infested_polished_blackstone_bricks": "Infested Polished Blackstone Bricks",
+  "block.varan-deco.infested_polished_blackstone_tiles": "Infested Polished Blackstone Tiles",
+  "block.varan-deco.infested_cracked_polished_blackstone_bricks": "Infested Cracked Polished Blackstone Bricks",
+  "block.varan-deco.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",

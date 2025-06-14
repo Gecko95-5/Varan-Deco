@@ -5,10 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -3853,5 +3850,144 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),
                         conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD)));
+
+        offerWallRecipe(exporter,RecipeCategory.DECORATIONS, DecoBlocks.PURPUR_WALL, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PURPUR_WALL, Items.PURPUR_BLOCK);
+
+        createStairsRecipe(DecoBlocks.SMOOTH_BASALT_STAIRS, Ingredient.ofItems(Items.SMOOTH_BASALT))
+                .criterion(hasItem(Items.SMOOTH_BASALT),conditionsFromItem(Items.SMOOTH_BASALT))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_BASALT_STAIRS)));
+        offerStonecuttingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_STAIRS, Items.SMOOTH_BASALT);
+
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT);
+        offerStonecuttingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT,2);
+
+        offerWallRecipe(exporter,RecipeCategory.DECORATIONS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
+        offerStonecuttingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.HEART_OF_THE_SEA)
+                .pattern("###")
+                .pattern("#E#")
+                .pattern("###")
+                .input('E', Items.ENDER_EYE)
+                .input('#', DecoItems.BUBBLE_ORB)
+                .criterion(RecipeProvider.hasItem(Items.ENDER_EYE),
+                        RecipeProvider.conditionsFromItem(Items.ENDER_EYE))
+                .criterion(RecipeProvider.hasItem(DecoItems.BUBBLE_ORB),
+                        RecipeProvider.conditionsFromItem(DecoItems.BUBBLE_ORB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.HEART_OF_THE_SEA)));
+
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.BUBBLE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.TUBE_CORAL, RecipeCategory.DECORATIONS,Items.TUBE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BRAIN_CORAL, RecipeCategory.DECORATIONS,Items.BRAIN_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.FIRE_CORAL, RecipeCategory.DECORATIONS,Items.FIRE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.HORN_CORAL, RecipeCategory.DECORATIONS,Items.HORN_CORAL_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.DEAD_BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_BUBBLE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.DEAD_TUBE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_TUBE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.DEAD_BRAIN_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_BRAIN_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.DEAD_FIRE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_FIRE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.DEAD_HORN_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_HORN_CORAL_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BUBBLE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.BUBBLE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.BUBBLE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.BUBBLE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("bubble_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.TUBE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.TUBE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.TUBE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.TUBE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("tube_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BRAIN_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.BRAIN_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.BRAIN_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.BRAIN_CORAL_FAN))
+                .offerTo(exporter, new Identifier("brain_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.FIRE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.FIRE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.FIRE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.FIRE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("fire_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.HORN_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.HORN_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.HORN_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.HORN_CORAL_FAN))
+                .offerTo(exporter, new Identifier("horn_coral_from_fan"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.DEAD_BUBBLE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.DEAD_BUBBLE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.DEAD_BUBBLE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.DEAD_BUBBLE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("dead_bubble_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.DEAD_TUBE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.DEAD_TUBE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.DEAD_TUBE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.DEAD_TUBE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("dead_tube_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.DEAD_BRAIN_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.DEAD_BRAIN_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.DEAD_BRAIN_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.DEAD_BRAIN_CORAL_FAN))
+                .offerTo(exporter, new Identifier("dead_brain_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.DEAD_FIRE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.DEAD_FIRE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.DEAD_FIRE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.DEAD_FIRE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("dead_fire_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.DEAD_HORN_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.DEAD_HORN_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(Items.DEAD_HORN_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(Items.DEAD_HORN_CORAL_FAN))
+                .offerTo(exporter, new Identifier("dead_horn_coral_from_fan"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,Items.LILAC)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoItems.LILAC_FLOWER)
+                .criterion(RecipeProvider.hasItem(DecoItems.LILAC_FLOWER),
+                        RecipeProvider.conditionsFromItem(DecoItems.LILAC_FLOWER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.LILAC)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                .input(DecoItems.LILAC_FLOWER)
+                .criterion(RecipeProvider.hasItem(DecoItems.LILAC_FLOWER),
+                        RecipeProvider.conditionsFromItem(DecoItems.LILAC_FLOWER))
+                .offerTo(exporter, new Identifier("magenta_dye_from_lilac_flower"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DecoItems.LILAC_STEW)
+                .input(Items.BOWL)
+                .input(Items.BROWN_MUSHROOM)
+                .input(Items.RED_MUSHROOM)
+                .input(DecoItems.LILAC_FLOWER)
+                .criterion(RecipeProvider.hasItem(Items.BOWL),
+                        RecipeProvider.conditionsFromItem(Items.BOWL))
+                .criterion(RecipeProvider.hasItem(Items.BROWN_MUSHROOM),
+                        RecipeProvider.conditionsFromItem(Items.BROWN_MUSHROOM))
+                .criterion(RecipeProvider.hasItem(Items.RED_MUSHROOM),
+                        RecipeProvider.conditionsFromItem(Items.RED_MUSHROOM))
+                .criterion(RecipeProvider.hasItem(DecoItems.LILAC_FLOWER),
+                        RecipeProvider.conditionsFromItem(DecoItems.LILAC_FLOWER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.LILAC_STEW)));
     }
 }

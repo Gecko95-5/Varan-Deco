@@ -1,11 +1,14 @@
 package net.gecko.varandeco.world.feature;
 
 import net.gecko.varandeco.VaranDeco;
+import net.gecko.varandeco.block.DecoBlocks;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
 
@@ -26,6 +29,7 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_RED_SUNFLOWER_PLACED = registerKey("deco_red_sunflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_NOVA_STARFLOWER_PLACED = registerKey("deco_nova_starflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_PAEONIA_PLACED = registerKey("deco_paeonia_placed");
+    public static final RegistryKey<PlacedFeature> DECO_BUBBLE_PLACED = registerKey("deco_bubble_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -81,6 +85,9 @@ register(context,DECO_NOVA_STARFLOWER_PLACED, configuredFeatureRegistryEntryLook
 register(context,DECO_PAEONIA_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_PAEONIA_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+register(context,DECO_BUBBLE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_BLOCK),
+        SquarePlacementModifier.of(), PlacedFeatures.OCEAN_FLOOR_WG_HEIGHTMAP,
+        BlockFilterPlacementModifier.of(BlockPredicate.matchingFluids(Fluids.WATER)), BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

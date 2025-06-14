@@ -149,7 +149,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CHISELED_PRISMARINE_BRICKS);
         addDrop(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS);
 
-        addDrop(DecoBlocks.BUBBLE_BLOCK);
+        addDrop(DecoBlocks.BUBBLE_BLOCK, block -> this.drops(block, DecoItems.BUBBLE_ORB, ConstantLootNumberProvider.create(2.0F)));
         addDrop(DecoBlocks.BUBBLE_STAIRS);
         slabDrops(DecoBlocks.BUBBLE_SLAB);
         addDrop(DecoBlocks.BUBBLE_WALL);
@@ -809,5 +809,35 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.WOODEN_SAPLING);
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);
+        
+        addDrop(DecoBlocks.SMOOTH_BASALT_STAIRS);
+        slabDrops(DecoBlocks.SMOOTH_BASALT_SLAB);
+        addDrop(DecoBlocks.SMOOTH_BASALT_WALL);
+        addDrop(DecoBlocks.PURPUR_WALL);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_STONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_STONE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_COBBLED_DEEPSLATE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_DEEPSLATE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DEEPSLATE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DEEPSLATE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_MOSSY_COBBLESTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CHISELED_DEEPSLATE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CALCITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DRIPSTONE_BLOCK);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_TUFF);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_GRANITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_GRANITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DIORITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_DIORITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_ANDESITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_ANDESITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_BLACKSTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
     }
 }

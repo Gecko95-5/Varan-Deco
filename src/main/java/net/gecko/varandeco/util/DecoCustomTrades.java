@@ -2,9 +2,11 @@ package net.gecko.varandeco.util;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
+import net.minecraft.village.VillagerProfession;
 
 public class DecoCustomTrades {
     public static void registerCustomTrades() {
@@ -14,6 +16,13 @@ public class DecoCustomTrades {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
                             new ItemStack(DecoBlocks.PUFFY_DANDELION, 1),
+                            12, 0, 0.075f));});
+
+        TradeOfferHelper.registerWanderingTraderOffers(1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoItems.LILAC_FLOWER, 2),
                             12, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1,
@@ -246,5 +255,145 @@ public class DecoCustomTrades {
                             new ItemStack(Items.EMERALD, 12),
                             new ItemStack(DecoBlocks.BLACK_ICE, 1),
                             6, 0, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,2,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(Items.STONE_BRICKS,8),
+                            16, 5, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,2,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.STONE_TILES,8),
+                            16, 5, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.WHITE_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.GRAY_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.BLACK_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.BROWN_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.RED_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.ORANGE_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.YELLOW_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.LIME_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.GREEN_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.CYAN_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.BLUE_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.PURPLE_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.MAGENTA_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.PINK_TERRACOTTA_BRICKS),
+                            12, 15, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,5,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(Items.QUARTZ_BRICKS),
+                            12, 30, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON,5,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.CUT_QUARTZ),
+                            12, 30, 0.075f));});
     }
 }
