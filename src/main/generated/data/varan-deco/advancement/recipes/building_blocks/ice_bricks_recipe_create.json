@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ice_bricks_recipe_create"
+        "recipe": "varan-deco:ice_bricks_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ice_bricks_recipe_create"
+      "varan-deco:ice_bricks_recipe_create"
     ]
   }
 }

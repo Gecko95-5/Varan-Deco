@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:green_dye_from_2_dyes"
+        "recipe": "varan-deco:green_dye_from_2_dyes"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:green_dye_from_2_dyes"
+      "varan-deco:green_dye_from_2_dyes"
     ]
   }
 }

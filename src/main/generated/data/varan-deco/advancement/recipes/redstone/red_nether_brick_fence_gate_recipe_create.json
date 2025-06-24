@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:red_nether_brick_fence_gate_recipe_create"
+        "recipe": "varan-deco:red_nether_brick_fence_gate_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:red_nether_brick_fence_gate_recipe_create"
+      "varan-deco:red_nether_brick_fence_gate_recipe_create"
     ]
   }
 }

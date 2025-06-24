@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bubble_wall_from_bubble_block_stonecutting"
+        "recipe": "varan-deco:bubble_wall_from_bubble_block_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bubble_wall_from_bubble_block_stonecutting"
+      "varan-deco:bubble_wall_from_bubble_block_stonecutting"
     ]
   }
 }

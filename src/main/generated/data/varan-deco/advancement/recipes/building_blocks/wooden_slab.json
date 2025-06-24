@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wooden_slab"
+        "recipe": "varan-deco:wooden_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wooden_slab"
+      "varan-deco:wooden_slab"
     ]
   }
 }

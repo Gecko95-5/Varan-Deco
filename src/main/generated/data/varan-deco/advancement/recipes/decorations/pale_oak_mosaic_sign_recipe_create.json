@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pale_oak_mosaic_sign_recipe_create"
+        "recipe": "varan-deco:pale_oak_mosaic_sign_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pale_oak_mosaic_sign_recipe_create"
+      "varan-deco:pale_oak_mosaic_sign_recipe_create"
     ]
   }
 }

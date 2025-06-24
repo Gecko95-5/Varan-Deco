@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:orange_terracotta_bricks_dyed"
+        "recipe": "varan-deco:orange_terracotta_bricks_dyed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:orange_terracotta_bricks_dyed"
+      "varan-deco:orange_terracotta_bricks_dyed"
     ]
   }
 }

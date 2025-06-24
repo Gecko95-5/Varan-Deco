@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:yellow_dye_from_yellow_tulip"
+        "recipe": "varan-deco:yellow_dye_from_yellow_tulip"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:yellow_dye_from_yellow_tulip"
+      "varan-deco:yellow_dye_from_yellow_tulip"
     ]
   }
 }

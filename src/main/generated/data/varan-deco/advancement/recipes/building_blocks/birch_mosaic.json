@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:birch_mosaic"
+        "recipe": "varan-deco:birch_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:birch_mosaic"
+      "varan-deco:birch_mosaic"
     ]
   }
 }

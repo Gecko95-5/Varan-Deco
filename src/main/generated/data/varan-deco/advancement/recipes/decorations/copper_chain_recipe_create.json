@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copper_chain_recipe_create"
+        "recipe": "varan-deco:copper_chain_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copper_chain_recipe_create"
+      "varan-deco:copper_chain_recipe_create"
     ]
   }
 }
