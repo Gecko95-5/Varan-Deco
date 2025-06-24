@@ -1,6 +1,6 @@
-// 1.21.5	-999999999-01-01T00:00:00	Variant Decoration/Tags for minecraft:block
+// 1.21.6	-999999999-01-01T00:00:00	Variant Decoration/Tags for minecraft:block
 ae6a5284b821cf8425822655673d64efabc01ed1 data/minecraft/tags/block/buttons.json
-2e9847a410690cb63af90804f9837b492b35b57a data/minecraft/tags/block/ceiling_hanging_signs.json
+ec2c13a0c8eeffdaa789663b8ba7e8fef29f236a data/minecraft/tags/block/ceiling_hanging_signs.json
 61f77f306f27d73f89ff02b87b4fcc5ef9761b6e data/minecraft/tags/block/climbable.json
 11e6bd6294bc140d66b0c57c90aedb221dcb2609 data/minecraft/tags/block/enchantment_power_provider.json
 267d12e3740789afab0245b53182077dee0d9edf data/minecraft/tags/block/fence_gates.json
@@ -31,11 +31,11 @@ c69d810ef4b7eb7e13e8efc16754a9f75879e48c data/minecraft/tags/block/small_flowers
 36b9678175375b190c01ada1caf3541605d2656d data/minecraft/tags/block/soul_fire_base_blocks.json
 2c43e0c2d16910b784e78ef6cbccf93fbfa8c467 data/minecraft/tags/block/soul_speed_blocks.json
 16c1c93c6558c8470f4e7932cbbe503277851581 data/minecraft/tags/block/stairs.json
-7f266ee88afc3aa12c367c8e060b38fd0d6b7ce0 data/minecraft/tags/block/standing_signs.json
+4843820f248f993a0591ef4a50756ce12244981c data/minecraft/tags/block/standing_signs.json
 712395f93074e6107a7d3c3f9d6f1ae5f539be3b data/minecraft/tags/block/stone_buttons.json
 a4cd61e7c6cb5507d4221d1e56bb29013f7d0223 data/minecraft/tags/block/stone_pressure_plates.json
-84ed5c2953d9090be185878f4c6ba625ca851141 data/minecraft/tags/block/wall_hanging_signs.json
-ae7c4d21c0b1619e6fa638e59ed910023f8ccfe3 data/minecraft/tags/block/wall_signs.json
+69e22c90c8ea503c015e9422e811cb2993aac11c data/minecraft/tags/block/wall_hanging_signs.json
+d481cc8855cce862e5512e4722d6cbbbafe52439 data/minecraft/tags/block/wall_signs.json
 b7842b05c1552fde8e01d3b8c44ec5c5030865d7 data/minecraft/tags/block/walls.json
 ef186eff5c41076132293090ed41a5171dde12ff data/minecraft/tags/block/wooden_buttons.json
 2cde808b14a4068956d81ab2ffd649f34aadf6e5 data/minecraft/tags/block/wooden_doors.json

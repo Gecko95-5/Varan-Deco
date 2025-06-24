@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:blue_nether_bricks_recipe_create"
+        "recipe": "varan-deco:blue_nether_bricks_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:blue_nether_bricks_recipe_create"
+      "varan-deco:blue_nether_bricks_recipe_create"
     ]
   }
 }

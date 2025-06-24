@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ender_eye_from_warped_wart"
+        "recipe": "varan-deco:ender_eye_from_warped_wart"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ender_eye_from_warped_wart"
+      "varan-deco:ender_eye_from_warped_wart"
     ]
   }
 }

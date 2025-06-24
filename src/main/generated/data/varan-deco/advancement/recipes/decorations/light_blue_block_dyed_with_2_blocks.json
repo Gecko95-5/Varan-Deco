@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:light_blue_block_dyed_with_2_blocks"
+        "recipe": "varan-deco:light_blue_block_dyed_with_2_blocks"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:light_blue_block_dyed_with_2_blocks"
+      "varan-deco:light_blue_block_dyed_with_2_blocks"
     ]
   }
 }

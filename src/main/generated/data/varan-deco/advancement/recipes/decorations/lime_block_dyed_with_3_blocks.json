@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lime_block_dyed_with_3_blocks"
+        "recipe": "varan-deco:lime_block_dyed_with_3_blocks"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lime_block_dyed_with_3_blocks"
+      "varan-deco:lime_block_dyed_with_3_blocks"
     ]
   }
 }

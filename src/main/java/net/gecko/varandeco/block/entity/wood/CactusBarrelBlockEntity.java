@@ -11,13 +11,13 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.GenericContainerScreenHandler;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.storage.ReadView;
+import net.minecraft.storage.WriteView;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
@@ -60,19 +60,19 @@ public class CactusBarrelBlockEntity extends LootableContainerBlockEntity {
     }
 
     @Override
-    protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registries) {
-        super.writeNbt(nbt, registries);
-        if (!this.writeLootTable(nbt)) {
-            Inventories.writeNbt(nbt, this.inventory, registries);
+    protected void writeData(WriteView view) {
+        super.writeData(view);
+        if (!this.writeLootTable(view)) {
+            Inventories.writeData(view, this.inventory);
         }
     }
 
     @Override
-    protected void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registries) {
-        super.readNbt(nbt, registries);
+    protected void readData(ReadView view) {
+        super.readData(view);
         this.inventory = DefaultedList.ofSize(this.size(), ItemStack.EMPTY);
-        if (!this.readLootTable(nbt)) {
-            Inventories.readNbt(nbt, this.inventory, registries);
+        if (!this.readLootTable(view)) {
+            Inventories.readData(view, this.inventory);
         }
     }
 

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:warped_mosaic_hanging_sign"
+        "recipe": "varan-deco:warped_mosaic_hanging_sign"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:warped_mosaic_hanging_sign"
+      "varan-deco:warped_mosaic_hanging_sign"
     ]
   }
 }

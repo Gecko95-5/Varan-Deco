@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cut_iron"
+        "recipe": "varan-deco:cut_iron"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cut_iron"
+      "varan-deco:cut_iron"
     ]
   }
 }

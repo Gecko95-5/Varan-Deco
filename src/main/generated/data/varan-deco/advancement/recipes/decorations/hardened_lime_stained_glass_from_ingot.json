@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:hardened_lime_stained_glass_from_ingot"
+        "recipe": "varan-deco:hardened_lime_stained_glass_from_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:hardened_lime_stained_glass_from_ingot"
+      "varan-deco:hardened_lime_stained_glass_from_ingot"
     ]
   }
 }

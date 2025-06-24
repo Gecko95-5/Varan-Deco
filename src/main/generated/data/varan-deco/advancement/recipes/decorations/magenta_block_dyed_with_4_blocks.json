@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:magenta_block_dyed_with_4_blocks"
+        "recipe": "varan-deco:magenta_block_dyed_with_4_blocks"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:magenta_block_dyed_with_4_blocks"
+      "varan-deco:magenta_block_dyed_with_4_blocks"
     ]
   }
 }

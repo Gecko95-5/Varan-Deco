@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lime_dye"
+        "recipe": "varan-deco:lime_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lime_dye"
+      "varan-deco:lime_dye"
     ]
   }
 }

@@ -1857,7 +1857,7 @@ public class DecoBlocks {
     public static final Identifier STRIPPED_WOODEN_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_wooden_sign");
     public static final Identifier STRIPPED_WOODEN_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_wooden_wall_sign");
 
-    public static final Identifier OAK_MOSAIC_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_wall_sign");
+    public static final Identifier OAK_MOSAIC_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_sign");
     public static final Identifier OAK_MOSAIC_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_wall_sign");
     public static final Identifier SPRUCE_MOSAIC_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"spruce_mosaic_sign");
     public static final Identifier SPRUCE_MOSAIC_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"spruce_mosaic_wall_sign");
@@ -1925,7 +1925,7 @@ public class DecoBlocks {
     public static final Identifier JUNGLE_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"jungle_planks_wall_hanging_sign");
     public static final Identifier ACACIA_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"acacia_planks_hanging_sign");
     public static final Identifier ACACIA_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"acacia_planks_wall_hanging_sign");
-    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"dark_oak_planks_hanging_sign");;
+    public static final Identifier DARK_OAK_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"dark_oak_planks_hanging_sign");
     public static final Identifier DARK_OAK_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"dark_oak_planks_wall_hanging_sign");
     public static final Identifier MANGROVE_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"mangrove_planks_hanging_sign");
     public static final Identifier MANGROVE_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"mangrove_planks_wall_hanging_sign");
@@ -2122,167 +2122,167 @@ public class DecoBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN));
 
     public static final Block HANGING_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (OAK_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.OAK_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (OAK_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.OAK_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_SPRUCE_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (SPRUCE_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.SPRUCE_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_SPRUCE_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (SPRUCE_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.SPRUCE_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_BIRCH_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (BIRCH_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.BIRCH_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_BIRCH_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (BIRCH_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.BIRCH_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_JUNGLE_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (JUNGLE_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.JUNGLE_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_JUNGLE_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (JUNGLE_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.JUNGLE_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_ACACIA_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (ACACIA_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.ACACIA_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_ACACIA_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (ACACIA_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.ACACIA_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_DARK_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (DARK_OAK_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.DARK_OAK_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_DARK_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (DARK_OAK_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.DARK_OAK_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_MANGROVE_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (MANGROVE_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.MANGROVE_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_MANGROVE_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (MANGROVE_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.MANGROVE_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_CHERRY_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (CHERRY_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.CHERRY_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CHERRY_HANGING_SIGN));
     public static final Block WALL_HANGING_CHERRY_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (CHERRY_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.CHERRY_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CHERRY_WALL_HANGING_SIGN));
     public static final Block HANGING_PALE_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (PALE_OAK_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.PALE_OAK_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_PALE_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (PALE_OAK_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.PALE_OAK_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_BAMBOO_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (BAMBOO_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.BAMBOO_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.BAMBOO_HANGING_SIGN));
     public static final Block WALL_HANGING_BAMBOO_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (BAMBOO_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.BAMBOO_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.BAMBOO_WALL_HANGING_SIGN));
     public static final Block HANGING_CRIMSON_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (CRIMSON_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.CRIMSON_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CRIMSON_HANGING_SIGN));
     public static final Block WALL_HANGING_CRIMSON_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (CRIMSON_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.CRIMSON_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CRIMSON_WALL_HANGING_SIGN));
     public static final Block HANGING_WARPED_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (WARPED_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WARPED_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.WARPED_HANGING_SIGN));
     public static final Block WALL_HANGING_WARPED_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (WARPED_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WARPED_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.WARPED_WALL_HANGING_SIGN));
     public static final Block HANGING_CACTUS_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (CACTUS_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.CACTUS_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_CACTUS_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (CACTUS_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.CACTUS_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_WOODEN_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (WOODEN_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_WOODEN_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (WOODEN_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
 
     public static final Block HANGING_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (OAK_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.OAK_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (OAK_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.OAK_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_SPRUCE_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (SPRUCE_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.SPRUCE_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_SPRUCE_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (SPRUCE_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.SPRUCE_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_BIRCH_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (BIRCH_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.BIRCH_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_BIRCH_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (BIRCH_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.BIRCH_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_JUNGLE_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (JUNGLE_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.JUNGLE_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_JUNGLE_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (JUNGLE_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.JUNGLE_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_ACACIA_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (ACACIA_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.ACACIA_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_ACACIA_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (ACACIA_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.ACACIA_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_DARK_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (DARK_OAK_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.DARK_OAK_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_DARK_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (DARK_OAK_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.DARK_OAK_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_MANGROVE_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (MANGROVE_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.MANGROVE_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_MANGROVE_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (MANGROVE_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.MANGROVE_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_CHERRY_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (CHERRY_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.CHERRY_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CHERRY_HANGING_SIGN));
     public static final Block WALL_HANGING_CHERRY_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (CHERRY_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.CHERRY_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CHERRY_WALL_HANGING_SIGN));
     public static final Block HANGING_PALE_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (PALE_OAK_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.PALE_OAK_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_PALE_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (PALE_OAK_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.PALE_OAK_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_CRIMSON_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (CRIMSON_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.CRIMSON_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CRIMSON_HANGING_SIGN));
     public static final Block WALL_HANGING_CRIMSON_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (CRIMSON_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.CRIMSON_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.CRIMSON_WALL_HANGING_SIGN));
     public static final Block HANGING_WARPED_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+            (WARPED_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WARPED_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.WARPED_HANGING_SIGN));
     public static final Block WALL_HANGING_WARPED_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+            (WARPED_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WARPED_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.WARPED_WALL_HANGING_SIGN));
     public static final Block HANGING_CACTUS_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (CACTUS_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.CACTUS_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_CACTUS_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (CACTUS_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.CACTUS_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
     public static final Block HANGING_WOODEN_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (WOODEN_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_WOODEN_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
-            (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+            (WOODEN_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
 
     public static final Block STONE_TEMP = registerBlockTemp("stone_temp", Block::new);

@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:brown_dye_from_3_dyes"
+        "recipe": "varan-deco:brown_dye_from_3_dyes"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:brown_dye_from_3_dyes"
+      "varan-deco:brown_dye_from_3_dyes"
     ]
   }
 }

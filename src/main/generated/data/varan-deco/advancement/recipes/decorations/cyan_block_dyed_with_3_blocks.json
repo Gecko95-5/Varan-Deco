@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cyan_block_dyed_with_3_blocks"
+        "recipe": "varan-deco:cyan_block_dyed_with_3_blocks"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cyan_block_dyed_with_3_blocks"
+      "varan-deco:cyan_block_dyed_with_3_blocks"
     ]
   }
 }

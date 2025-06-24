@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:magenta_block"
+        "recipe": "varan-deco:magenta_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:magenta_block"
+      "varan-deco:magenta_block"
     ]
   }
 }

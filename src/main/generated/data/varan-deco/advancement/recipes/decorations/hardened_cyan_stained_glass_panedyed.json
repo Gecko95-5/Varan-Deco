@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:hardened_cyan_stained_glass_panedyed"
+        "recipe": "varan-deco:hardened_cyan_stained_glass_panedyed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:hardened_cyan_stained_glass_panedyed"
+      "varan-deco:hardened_cyan_stained_glass_panedyed"
     ]
   }
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sea_lantern_from_smelting"
+        "recipe": "varan-deco:sea_lantern_from_smelting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sea_lantern_from_smelting"
+      "varan-deco:sea_lantern_from_smelting"
     ]
   }
 }

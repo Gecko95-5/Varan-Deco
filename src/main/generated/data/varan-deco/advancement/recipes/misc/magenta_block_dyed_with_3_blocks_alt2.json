@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:magenta_block_dyed_with_3_blocks_alt2"
+        "recipe": "varan-deco:magenta_block_dyed_with_3_blocks_alt2"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:magenta_block_dyed_with_3_blocks_alt2"
+      "varan-deco:magenta_block_dyed_with_3_blocks_alt2"
     ]
   }
 }

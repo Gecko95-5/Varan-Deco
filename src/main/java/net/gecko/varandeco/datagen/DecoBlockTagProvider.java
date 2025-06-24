@@ -17,7 +17,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(DecoBlocks.POLISHED_STONE)
                 .add(DecoBlocks.POLISHED_STONE_STAIRS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -299,10 +299,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS)
                 .add(DecoBlocks.IRON_GRATE);
 
-        getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
+        valueLookupBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
 
-        getOrCreateTagBuilder(BlockTags.ICE)
+        valueLookupBuilder(BlockTags.ICE)
                 .add(DecoBlocks.BLACK_ICE)
                 .add(DecoBlocks.PACKED_ICE_STAIRS)
                 .add(DecoBlocks.PACKED_ICE_SLAB)
@@ -311,10 +311,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLUE_ICE_SLAB)
                 .add(DecoBlocks.BLUE_ICE_WALL);
 
-        getOrCreateTagBuilder(BlockTags.IMPERMEABLE)
+        valueLookupBuilder(BlockTags.IMPERMEABLE)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS);
 
-        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+        valueLookupBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(DecoBlocks.SNOW_STAIRS)
                 .add(DecoBlocks.SNOW_SLAB)
                 .add(DecoBlocks.SNOW_WALL)
@@ -324,10 +324,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.SNOW_BRICK_WALL);
 
-        getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
+        valueLookupBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
                 .add(DecoBlocks.WOODEN_LOG);
 
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+        valueLookupBuilder(BlockTags.AXE_MINEABLE)
                 .addTag(DecoTags.Blocks.DECO_CRAFTING_TABLES)
                 .addTag(DecoTags.Blocks.DECO_BARRELS)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
@@ -345,7 +345,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_MOSAIC_SLAB)
                 .add(DecoBlocks.WARPED_MOSAIC_SLAB);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+        valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS)
                 .add(Blocks.BLAST_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
@@ -369,12 +369,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.IRON_GRATE);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+        valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
                 .add(DecoBlocks.GOLD_DOOR)
                 .add(DecoBlocks.GOLD_TRAPDOOR);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+        valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(DecoBlocks.OBSIDIAN_STAIRS)
                 .add(DecoBlocks.OBSIDIAN_BRICK_STAIRS)
                 .add(DecoBlocks.OBSIDIAN_SLAB)
@@ -385,7 +385,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OBSIDIAN_PILLAR)
                 .add(DecoBlocks.CHISELED_OBSIDIAN);
 
-        getOrCreateTagBuilder(BlockTags.WALLS)
+        valueLookupBuilder(BlockTags.WALLS)
                 .add(DecoBlocks.POLISHED_STONE_WALL)
                 .add(DecoBlocks.POLISHED_ANDESITE_WALL)
                 .add(DecoBlocks.POLISHED_DIORITE_WALL)
@@ -442,25 +442,25 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OBSIDIAN_BRICK_WALL)
                 .add(DecoBlocks.TUFF_TILE_WALL);
 
-        getOrCreateTagBuilder(BlockTags.FENCES)
+        valueLookupBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
                 .add(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+        valueLookupBuilder(BlockTags.WOODEN_FENCES)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE)
                 .add(DecoBlocks.WOODEN_FENCE);
 
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+        valueLookupBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE_GATE)
                 .add(DecoBlocks.WOODEN_FENCE_GATE);
 
-        getOrCreateTagBuilder(BlockTags.PLANKS)
+        valueLookupBuilder(BlockTags.PLANKS)
                 .add(DecoBlocks.CACTUS_PLANKS)
                 .add(DecoBlocks.WOODEN_PLANKS);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_WOOD)
+        valueLookupBuilder(DecoTags.Blocks.MOSAIC_WOOD)
                 .add(DecoBlocks.OAK_MOSAIC)
                 .add(DecoBlocks.BIRCH_MOSAIC)
                 .add(DecoBlocks.SPRUCE_MOSAIC)
@@ -473,7 +473,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_MOSAIC)
                 .add(DecoBlocks.PALE_OAK_MOSAIC);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_STAIRS)
+        valueLookupBuilder(DecoTags.Blocks.MOSAIC_STAIRS)
                 .add(DecoBlocks.OAK_MOSAIC_STAIRS)
                 .add(DecoBlocks.BIRCH_MOSAIC_STAIRS)
                 .add(DecoBlocks.SPRUCE_MOSAIC_STAIRS)
@@ -486,7 +486,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_MOSAIC_STAIRS)
                 .add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_SLABS)
+        valueLookupBuilder(DecoTags.Blocks.MOSAIC_SLABS)
                 .add(DecoBlocks.OAK_MOSAIC_SLAB)
                 .add(DecoBlocks.BIRCH_MOSAIC_SLAB)
                 .add(DecoBlocks.SPRUCE_MOSAIC_SLAB)
@@ -499,19 +499,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_MOSAIC_SLAB)
                 .add(DecoBlocks.PALE_OAK_MOSAIC_SLAB);
 
-        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+        valueLookupBuilder(BlockTags.LOGS_THAT_BURN)
                 .addTag(DecoTags.Blocks.WOODEN_LOGS);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.WOODEN_LOGS)
+        valueLookupBuilder(DecoTags.Blocks.WOODEN_LOGS)
                 .add(DecoBlocks.WOODEN_WOOD)
                 .add(DecoBlocks.WOODEN_LOG)
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD)
                 .add(DecoBlocks.STRIPPED_WOODEN_LOG);
 
-        getOrCreateTagBuilder(BlockTags.BUTTONS)
+        valueLookupBuilder(BlockTags.BUTTONS)
                 .addTag(DecoTags.Blocks.METAL_BUTTONS);
 
-        getOrCreateTagBuilder(BlockTags.STAIRS)
+        valueLookupBuilder(BlockTags.STAIRS)
                 .add(DecoBlocks.POLISHED_STONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_STONE_STAIRS)
                 .add(DecoBlocks.DRIPSTONE_STAIRS)
@@ -562,7 +562,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_MOSAIC_STAIRS)
                 .add(DecoBlocks.TUFF_TILE_STAIRS);
 
-        getOrCreateTagBuilder(BlockTags.SLABS)
+        valueLookupBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
                 .add(DecoBlocks.DRIPSTONE_SLAB)
                 .add(DecoBlocks.CALCITE_SLAB)
@@ -610,23 +610,23 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_MOSAIC_SLAB)
                 .add(DecoBlocks.TUFF_TILE_SLAB);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+        valueLookupBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
                 .add(DecoBlocks.WOODEN_STAIRS);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+        valueLookupBuilder(BlockTags.WOODEN_SLABS)
                 .add(DecoBlocks.CACTUS_PLANK_SLAB)
                 .add(DecoBlocks.WOODEN_SLAB);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+        valueLookupBuilder(BlockTags.WOODEN_FENCES)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE)
                 .add(DecoBlocks.WOODEN_FENCE);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+        valueLookupBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(DecoBlocks.CACTUS_PLANK_BUTTON)
                 .add(DecoBlocks.WOODEN_BUTTON);
 
-        getOrCreateTagBuilder(BlockTags.STONE_BUTTONS)
+        valueLookupBuilder(BlockTags.STONE_BUTTONS)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
                 .add(DecoBlocks.DEEPSLATE_BUTTON)
                 .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
@@ -636,7 +636,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.TUFF_BUTTON)
                 .add(DecoBlocks.POLISHED_TUFF_BUTTON);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.METAL_BUTTONS)
+        valueLookupBuilder(DecoTags.Blocks.METAL_BUTTONS)
                 .add(DecoBlocks.IRON_BUTTON)
                 .add(DecoBlocks.GOLD_BUTTON)
                 .add(DecoBlocks.COPPER_BUTTON)
@@ -648,19 +648,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+        valueLookupBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)
                 .add(DecoBlocks.WOODEN_PRESSURE_PLATE);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+        valueLookupBuilder(BlockTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR)
                 .add(DecoBlocks.WOODEN_DOOR);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+        valueLookupBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(DecoBlocks.CACTUS_TRAPDOOR)
                 .add(DecoBlocks.WOODEN_TRAPDOOR);
 
-        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+        valueLookupBuilder(BlockTags.STANDING_SIGNS)
                 .add(DecoBlocks.STANDING_CACTUS_SIGN)
                 .add(DecoBlocks.STANDING_WOODEN_SIGN)
                 .add(DecoBlocks.STANDING_STRIPPED_OAK_SIGN)
@@ -690,7 +690,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN)
                 .add(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN);
 
-        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+        valueLookupBuilder(BlockTags.WALL_SIGNS)
                 .add(DecoBlocks.WALL_CACTUS_SIGN)
                 .add(DecoBlocks.WALL_WOODEN_SIGN)
                 .add(DecoBlocks.WALL_STRIPPED_OAK_SIGN)
@@ -720,7 +720,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN);
 
-        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+        valueLookupBuilder(BlockTags.CEILING_HANGING_SIGNS)
                 .add(DecoBlocks.HANGING_WOODEN_SIGN)
                 .add(DecoBlocks.HANGING_OAK_MOSAIC_SIGN)
                 .add(DecoBlocks.HANGING_SPRUCE_MOSAIC_SIGN)
@@ -750,7 +750,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HANGING_CRIMSON_PLANKS_SIGN)
                 .add(DecoBlocks.HANGING_WARPED_PLANKS_SIGN);
 
-        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+        valueLookupBuilder(BlockTags.WALL_HANGING_SIGNS)
                 .add(DecoBlocks.WALL_HANGING_WOODEN_SIGN)
                 .add(DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN)
                 .add(DecoBlocks.WALL_HANGING_SPRUCE_MOSAIC_SIGN)
@@ -780,17 +780,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_HANGING_CRIMSON_PLANKS_SIGN)
                 .add(DecoBlocks.WALL_HANGING_WARPED_PLANKS_SIGN);
 
-        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+        valueLookupBuilder(BlockTags.SAPLINGS)
                 .add(DecoBlocks.WOODEN_SAPLING);
 
-        getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
+        valueLookupBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE)
                 .add(DecoBlocks.CHISELED_SOUL_SOILSTONE)
                 .add(DecoBlocks.SMOOTH_SOUL_SOILSTONE)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS);
 
-        getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS)
+        valueLookupBuilder(BlockTags.SOUL_SPEED_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
                 .add(DecoBlocks.SOUL_SOILSTONE_STAIRS)
                 .add(DecoBlocks.SOUL_SOILSTONE_SLAB)
@@ -809,7 +809,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB)
                 .add(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_CRAFTING_TABLES)
+        valueLookupBuilder(DecoTags.Blocks.DECO_CRAFTING_TABLES)
                 .add(DecoBlocks.BIRCH_CRAFTING_TABLE)
                 .add(DecoBlocks.SPRUCE_CRAFTING_TABLE)
                 .add(DecoBlocks.JUNGLE_CRAFTING_TABLE)
@@ -824,7 +824,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE)
                 .add(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
+        valueLookupBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE)
                 .add(DecoBlocks.SPRUCE_SMITHING_TABLE)
                 .add(DecoBlocks.BIRCH_SMITHING_TABLE)
@@ -839,7 +839,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.PALE_OAK_SMITHING_TABLE)
                 .add(DecoBlocks.CHERRY_SMITHING_TABLE);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_STAIRS)
+        valueLookupBuilder(DecoTags.Blocks.TERRACOTTA_STAIRS)
                 .add(DecoBlocks.TERRACOTTA_STAIRS)
                 .add(DecoBlocks.BLACK_TERRACOTTA_STAIRS)
                 .add(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS)
@@ -875,7 +875,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_STAIRS)
                 .add(DecoBlocks.BROWN_TERRACOTTA_BRICK_STAIRS);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_SLABS)
+        valueLookupBuilder(DecoTags.Blocks.TERRACOTTA_SLABS)
                 .add(DecoBlocks.TERRACOTTA_SLAB)
                 .add(DecoBlocks.BLACK_TERRACOTTA_SLAB)
                 .add(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB)
@@ -911,7 +911,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_SLAB)
                 .add(DecoBlocks.BROWN_TERRACOTTA_BRICK_SLAB);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_WALLS)
+        valueLookupBuilder(DecoTags.Blocks.TERRACOTTA_WALLS)
                 .add(DecoBlocks.TERRACOTTA_WALL)
                 .add(DecoBlocks.BLACK_TERRACOTTA_WALL)
                 .add(DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL)
@@ -947,7 +947,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_WALL)
                 .add(DecoBlocks.BROWN_TERRACOTTA_BRICK_WALL);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.CONCRETE_STAIRS)
+        valueLookupBuilder(DecoTags.Blocks.CONCRETE_STAIRS)
                 .add(DecoBlocks.BLACK_CONCRETE_STAIRS)
                 .add(DecoBlocks.LIGHT_BLUE_CONCRETE_STAIRS)
                 .add(DecoBlocks.LIGHT_GRAY_CONCRETE_STAIRS)
@@ -981,7 +981,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_MAGENTA_CONCRETE_STAIRS)
                 .add(DecoBlocks.CUT_BROWN_CONCRETE_STAIRS);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.CONCRETE_SLABS)
+        valueLookupBuilder(DecoTags.Blocks.CONCRETE_SLABS)
                 .add(DecoBlocks.BLACK_CONCRETE_SLAB)
                 .add(DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB)
                 .add(DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB)
@@ -1015,7 +1015,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB)
                 .add(DecoBlocks.CUT_BROWN_CONCRETE_SLAB);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.CONCRETE_WALLS)
+        valueLookupBuilder(DecoTags.Blocks.CONCRETE_WALLS)
                 .add(DecoBlocks.BLACK_CONCRETE_WALL)
                 .add(DecoBlocks.LIGHT_BLUE_CONCRETE_WALL)
                 .add(DecoBlocks.LIGHT_GRAY_CONCRETE_WALL)
@@ -1049,7 +1049,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_MAGENTA_CONCRETE_WALL)
                 .add(DecoBlocks.CUT_BROWN_CONCRETE_WALL);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_BARRELS)
+        valueLookupBuilder(DecoTags.Blocks.DECO_BARRELS)
                 .add(DecoBlocks.OAK_BARREL)
                 .add(DecoBlocks.SPRUCE_BARREL)
                 .add(DecoBlocks.BIRCH_BARREL)
@@ -1064,7 +1064,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BAMBOO_BARREL)
                 .add(DecoBlocks.PALE_OAK_BARREL);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_LADDERS)
+        valueLookupBuilder(DecoTags.Blocks.DECO_LADDERS)
                 .add(DecoBlocks.BIRCH_LADDER)
                 .add(DecoBlocks.SPRUCE_LADDER)
                 .add(DecoBlocks.JUNGLE_LADDER)
@@ -1079,7 +1079,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CHERRY_LADDER)
                 .add(DecoBlocks.PALE_OAK_LADDER);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_BOOKSHELVES)
+        valueLookupBuilder(DecoTags.Blocks.DECO_BOOKSHELVES)
                 .add(DecoBlocks.BIRCH_BOOKSHELF)
                 .add(DecoBlocks.SPRUCE_BOOKSHELF)
                 .add(DecoBlocks.JUNGLE_BOOKSHELF)
@@ -1091,7 +1091,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BAMBOO_BOOKSHELF)
                 .add(DecoBlocks.CHERRY_BOOKSHELF);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_CARTOGRAPHY_TABLES)
+        valueLookupBuilder(DecoTags.Blocks.DECO_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE)
@@ -1106,7 +1106,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE);
 
-        getOrCreateTagBuilder(BlockTags.CLIMBABLE)
+        valueLookupBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
                 .add(Blocks.CHAIN)
                 .add(DecoBlocks.COPPER_CHAIN)
@@ -1118,7 +1118,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS)
+        valueLookupBuilder(DecoTags.Blocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_TINTED_GLASS)
                 .add(DecoBlocks.HARDENED_BLACK_STAINED_GLASS)
@@ -1139,7 +1139,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HARDENED_BROWN_STAINED_GLASS)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS_PANES);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS_PANES)
+        valueLookupBuilder(DecoTags.Blocks.HARDENED_GLASS_PANES)
                 .add(DecoBlocks.HARDENED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_TINTED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE)
@@ -1159,7 +1159,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE)
                 .add(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_GLASS)
+        valueLookupBuilder(DecoTags.Blocks.MOSAIC_GLASS)
                 .add(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS)
                 .add(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS)
                 .add(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS)
@@ -1178,7 +1178,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS)
                 .addTag(DecoTags.Blocks.MOSAIC_GLASS_PANES);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_GLASS_PANES)
+        valueLookupBuilder(DecoTags.Blocks.MOSAIC_GLASS_PANES)
                 .add(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE)
                 .add(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE)
                 .add(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE)
@@ -1196,7 +1196,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE)
                 .add(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
+        valueLookupBuilder(DecoTags.Blocks.DECO_FURNACES)
                 .add(DecoBlocks.DEEPSLATE_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_FURNACE)
                 .add(DecoBlocks.TUFF_FURNACE)
@@ -1207,7 +1207,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLACKSTONE_SMOKER)
                 .add(DecoBlocks.TUFF_SMOKER);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.COPPER_BARS)
+        valueLookupBuilder(DecoTags.Blocks.COPPER_BARS)
                 .add(DecoBlocks.HEAVY_COPPER_BARS)
                 .add(DecoBlocks.WAXED_HEAVY_COPPER_BARS)
                 .add(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)
@@ -1233,7 +1233,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_BARS)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
 
-        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
+        valueLookupBuilder(BlockTags.SMALL_FLOWERS)
                 .add(DecoBlocks.YELLOW_TULIP)
                 .add(DecoBlocks.PURPLE_TULIP)
                 .add(DecoBlocks.MAGENTA_TULIP)
@@ -1257,7 +1257,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LAVENDER)
                 .add(DecoBlocks.ANCIENT_ROSE);
 
-        getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
+        valueLookupBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
                 .add(DecoBlocks.POTTED_PURPLE_TULIP)
                 .add(DecoBlocks.POTTED_MAGENTA_TULIP)
@@ -1282,14 +1282,14 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_WOODEN_SAPLING)
                 .add(DecoBlocks.POTTED_ANCIENT_ROSE);
 
-        getOrCreateTagBuilder(BlockTags.FLOWERS)
+        valueLookupBuilder(BlockTags.FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)
                 .add(DecoBlocks.ENDER_ROSE_BUSH)
                 .add(DecoBlocks.RED_SUNFLOWER)
                 .add(DecoBlocks.NOVA_STARFLOWER)
                 .add(DecoBlocks.MIGHTY_LAVENDER);
 
-        getOrCreateTagBuilder(DecoTags.Blocks.COPPER_LANTERN)
+        valueLookupBuilder(DecoTags.Blocks.COPPER_LANTERN)
                 .add(DecoBlocks.COPPER_LANTERN)
                 .add(DecoBlocks.WAXED_COPPER_LANTERN)
                 .add(DecoBlocks.EXPOSED_COPPER_LANTERN)
@@ -1307,7 +1307,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
 
-        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+        valueLookupBuilder(BlockTags.PRESSURE_PLATES)
                 .add(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
@@ -1317,7 +1317,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
 
-        getOrCreateTagBuilder(BlockTags.STONE_PRESSURE_PLATES)
+        valueLookupBuilder(BlockTags.STONE_PRESSURE_PLATES)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
                 .add(DecoBlocks.DEEPSLATE_PRESSURE_PLATE)
                 .add(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE)
@@ -1327,10 +1327,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.TUFF_PRESSURE_PLATE)
                 .add(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE);
 
-        getOrCreateTagBuilder(BlockTags.LEAVES)
+        valueLookupBuilder(BlockTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES);
 
-        getOrCreateTagBuilder(BlockTags.PIGLIN_REPELLENTS)
+        valueLookupBuilder(BlockTags.PIGLIN_REPELLENTS)
                 .add(DecoBlocks.COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.WAXED_COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN)
@@ -1340,16 +1340,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
 
-        getOrCreateTagBuilder(BlockTags.SCULK_REPLACEABLE)
+        valueLookupBuilder(BlockTags.SCULK_REPLACEABLE)
                 .add(DecoBlocks.VOID_STONE);
 
-        getOrCreateTagBuilder(BlockTags.SNAPS_GOAT_HORN)
+        valueLookupBuilder(BlockTags.SNAPS_GOAT_HORN)
                 .addTag(BlockTags.PICKAXE_MINEABLE);
 
-        getOrCreateTagBuilder(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)
+        valueLookupBuilder(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)
                 .add(DecoBlocks.BLACK_ICE);
 
-        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
+        valueLookupBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
     }
 }

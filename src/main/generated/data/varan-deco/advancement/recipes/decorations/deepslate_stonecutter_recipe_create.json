@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:deepslate_stonecutter_recipe_create"
+        "recipe": "varan-deco:deepslate_stonecutter_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:deepslate_stonecutter_recipe_create"
+      "varan-deco:deepslate_stonecutter_recipe_create"
     ]
   }
 }
