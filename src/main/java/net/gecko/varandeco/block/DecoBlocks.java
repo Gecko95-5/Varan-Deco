@@ -95,9 +95,11 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.create().slipperiness(0.89F)
                     .strength(1.0f).resistance(0.7f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block POLISHED_STONE = registerBlock("polished_stone",
-            new Block(AbstractBlock.Settings.create().strength(2.5f).resistance(6.0f).requiresTool()));
+            new Block(AbstractBlock.Settings.create().strength(2.5f).resistance(6.0f).requiresTool()
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY)));
     public static final Block STONE_TILES = registerBlock("stone_tiles",
-            new Block(AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool()));
+            new Block(AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool()
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY)));
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
             new Block(AbstractBlock.Settings.copy(DecoBlocks.SNOW_BRICKS)));
     public static final Block CHISELED_END_STONE = registerBlock("chiseled_end_stone",
@@ -513,6 +515,8 @@ public class DecoBlocks {
             new StairsBlock(Blocks.SNOW_BLOCK.getDefaultState(),AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK)));
     public static final Block NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
             new StairsBlock(Blocks.NETHERRACK.getDefaultState(),AbstractBlock.Settings.copy(Blocks.NETHERRACK)));
+    public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
+            new StairsBlock(Blocks.SMOOTH_BASALT.getDefaultState(),AbstractBlock.Settings.copy(Blocks.SMOOTH_BASALT)));
     public static final Block PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
             new StairsBlock(Blocks.PACKED_MUD.getDefaultState(),AbstractBlock.Settings.copy(Blocks.PACKED_MUD)));
     public static final Block QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
@@ -746,6 +750,8 @@ public class DecoBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK)));
     public static final Block NETHERRACK_SLAB = registerBlock("netherrack_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.NETHERRACK)));
+    public static final Block SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_BASALT)));
     public static final Block PACKED_MUD_SLAB = registerBlock("packed_mud_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.PACKED_MUD)));
     public static final Block END_STONE_SLAB = registerBlock("end_stone_slab",
@@ -962,16 +968,16 @@ public class DecoBlocks {
             new FlowerPotBlock(PUFFY_DANDELION,AbstractBlock.Settings.copy(Blocks.POTTED_DANDELION)));
 
     public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 7,AbstractBlock.Settings.copy(Blocks.POPPY)));
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 5,AbstractBlock.Settings.copy(Blocks.POPPY)));
     public static final Block POTTED_CALIFORNIA_POPPY = registerBlockWithoutItem("potted_california_poppy",
             new FlowerPotBlock(CALIFORNIA_POPPY,AbstractBlock.Settings.copy(Blocks.POTTED_POPPY)));
     public static final Block SALMON_POPPY = registerBlock("salmon_poppy",
-            new FlowerBlock(StatusEffects.BLINDNESS, 5,AbstractBlock.Settings.copy(Blocks.POPPY)));
+            new FlowerBlock(StatusEffects.WATER_BREATHING, 7,AbstractBlock.Settings.copy(Blocks.POPPY)));
     public static final Block POTTED_SALMON_POPPY = registerBlockWithoutItem("potted_salmon_poppy",
             new FlowerPotBlock(SALMON_POPPY,AbstractBlock.Settings.copy(Blocks.POTTED_POPPY)));
 
     public static final Block YELLOW_ORCHID = registerBlock("yellow_orchid",
-            new FlowerBlock(StatusEffects.SATURATION, 5,AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
+            new FlowerBlock(StatusEffects.SATURATION, 7,AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
     public static final Block POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid",
             new FlowerPotBlock(YELLOW_ORCHID,AbstractBlock.Settings.copy(Blocks.POTTED_BLUE_ORCHID)));
     public static final Block WHITE_ORCHID = registerBlock("white_orchid",
@@ -984,32 +990,32 @@ public class DecoBlocks {
             new FlowerPotBlock(PINK_ORCHID,AbstractBlock.Settings.copy(Blocks.POTTED_BLUE_ORCHID)));
 
     public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_YELLOW_TULIP = registerBlockWithoutItem("potted_yellow_tulip",
             new FlowerPotBlock(YELLOW_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
     public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_PURPLE_TULIP = registerBlockWithoutItem("potted_purple_tulip",
             new FlowerPotBlock(PURPLE_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
     public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_MAGENTA_TULIP = registerBlockWithoutItem("potted_magenta_tulip",
             new FlowerPotBlock(MAGENTA_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
     public static final Block BLUE_TULIP = registerBlock("blue_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 9,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_BLUE_TULIP = registerBlockWithoutItem("potted_blue_tulip",
             new FlowerPotBlock(BLUE_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
 
     public static final Block BLACK_TULIP = registerBlock("black_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 15,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_BLACK_TULIP = registerBlockWithoutItem("potted_black_tulip",
             new FlowerPotBlock(BLACK_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
     public static final Block GREEN_TULIP = registerBlock("green_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 15,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_GREEN_TULIP = registerBlockWithoutItem("potted_green_tulip",
             new FlowerPotBlock(GREEN_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
     public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 18,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
+            new FlowerBlock(StatusEffects.WEAKNESS, 15,AbstractBlock.Settings.copy(Blocks.RED_TULIP)));
     public static final Block POTTED_CYAN_TULIP = registerBlockWithoutItem("potted_cyan_tulip",
             new FlowerPotBlock(CYAN_TULIP,AbstractBlock.Settings.copy(Blocks.POTTED_RED_TULIP)));
 
@@ -1041,11 +1047,11 @@ public class DecoBlocks {
             new FlowerPotBlock(LAVENDER,AbstractBlock.Settings.copy(Blocks.POTTED_POPPY)));
 
     public static final Block ROSE = registerBlock("rose",
-            new FlowerBlock(StatusEffects.POISON, 4,AbstractBlock.Settings.copy(Blocks.POPPY)));
+            new FlowerBlock(StatusEffects.POISON, 5,AbstractBlock.Settings.copy(Blocks.POPPY)));
     public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
             new FlowerPotBlock(ROSE,AbstractBlock.Settings.copy(Blocks.POTTED_POPPY)));
     public static final Block ENDER_ROSE = registerBlock("ender_rose",
-            new EnderRoseBlock(StatusEffects.LEVITATION, 8.0F, AbstractBlock.Settings.copy(Blocks.POPPY)));
+            new EnderRoseBlock(StatusEffects.LEVITATION, 8.0F,AbstractBlock.Settings.copy(Blocks.POPPY)));
     public static final Block POTTED_ENDER_ROSE = registerBlockWithoutItem("potted_ender_rose",
             new FlowerPotBlock(ENDER_ROSE,AbstractBlock.Settings.copy(Blocks.POTTED_POPPY)));
 
@@ -1141,14 +1147,93 @@ public class DecoBlocks {
             new FenceBlock(AbstractBlock.Settings.copy(DecoBlocks.CACTUS_PLANKS)));
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             new FenceBlock(AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS)));
+    
+    public static final Block INFESTED_POLISHED_STONE = registerBlock("infested_polished_stone",
+            new InfestedBlock(DecoBlocks.POLISHED_STONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)));
+    public static final Block INFESTED_STONE_TILES = registerBlock("infested_stone_tiles",
+            new InfestedBlock(DecoBlocks.STONE_TILES, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)));
+    public static final Block INFESTED_MOSSY_COBBLESTONE = registerBlock("infested_mossy_cobblestone",
+            new InfestedBlock(Blocks.MOSSY_COBBLESTONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)));
+
+    public static final Block INFESTED_COBBLED_DEEPSLATE = registerBlock("infested_cobbled_deepslate",
+            new InfestedBlock(Blocks.COBBLED_DEEPSLATE, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block INFESTED_POLISHED_DEEPSLATE = registerBlock("infested_polished_deepslate",
+            new InfestedBlock(Blocks.POLISHED_DEEPSLATE, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
+    public static final Block INFESTED_DEEPSLATE_BRICKS = registerBlock("infested_deepslate_bricks",
+            new InfestedBlock(Blocks.DEEPSLATE_BRICKS, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block INFESTED_DEEPSLATE_TILES = registerBlock("infested_deepslate_tiles",
+            new InfestedBlock(Blocks.DEEPSLATE_TILES, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block INFESTED_CRACKED_DEEPSLATE_BRICKS = registerBlock("infested_cracked_deepslate_bricks",
+            new InfestedBlock(Blocks.CRACKED_DEEPSLATE_BRICKS, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block INFESTED_CRACKED_DEEPSLATE_TILES = registerBlock("infested_cracked_deepslate_tiles",
+            new InfestedBlock(Blocks.CRACKED_DEEPSLATE_TILES, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block INFESTED_CHISELED_DEEPSLATE = registerBlock("infested_chiseled_deepslate",
+            new InfestedBlock(Blocks.CHISELED_DEEPSLATE, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+
+    public static final Block INFESTED_CALCITE = registerBlock("infested_calcite",
+            new InfestedBlock(Blocks.CALCITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE).sounds(BlockSoundGroup.CALCITE)));
+    public static final Block INFESTED_DRIPSTONE_BLOCK = registerBlock("infested_dripstone_block",
+            new InfestedBlock(Blocks.DRIPSTONE_BLOCK, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.TERRACOTTA_BROWN).sounds(BlockSoundGroup.TUFF)));
+    public static final Block INFESTED_TUFF = registerBlock("infested_tuff",
+            new InfestedBlock(Blocks.TUFF, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
+
+    public static final Block INFESTED_GRANITE = registerBlock("infested_granite",
+            new InfestedBlock(Blocks.GRANITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.DIRT_BROWN)));
+    public static final Block INFESTED_POLISHED_GRANITE = registerBlock("infested_polished_granite",
+            new InfestedBlock(Blocks.POLISHED_GRANITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.DIRT_BROWN)));
+
+    public static final Block INFESTED_DIORITE = registerBlock("infested_diorite",
+            new InfestedBlock(Blocks.DIORITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.OFF_WHITE)));
+    public static final Block INFESTED_POLISHED_DIORITE = registerBlock("infested_polished_diorite",
+            new InfestedBlock(Blocks.POLISHED_DIORITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.OFF_WHITE)));
+
+    public static final Block INFESTED_ANDESITE = registerBlock("infested_andesite",
+            new InfestedBlock(Blocks.DIORITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.STONE_GRAY)));
+    public static final Block INFESTED_POLISHED_ANDESITE = registerBlock("infested_polished_andesite",
+            new InfestedBlock(Blocks.POLISHED_ANDESITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.STONE_GRAY)));
+
+    public static final Block INFESTED_BLACKSTONE = registerBlock("infested_blackstone",
+            new InfestedBlock(Blocks.BLACKSTONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+    public static final Block INFESTED_POLISHED_BLACKSTONE = registerBlock("infested_polished_blackstone",
+            new InfestedBlock(Blocks.POLISHED_BLACKSTONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+    public static final Block INFESTED_POLISHED_BLACKSTONE_BRICKS = registerBlock("infested_polished_blackstone_bricks",
+            new InfestedBlock(Blocks.POLISHED_BLACKSTONE_BRICKS, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+    public static final Block INFESTED_POLISHED_BLACKSTONE_TILES = registerBlock("infested_polished_blackstone_tiles",
+            new InfestedBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+    public static final Block INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS = registerBlock("infested_cracked_polished_blackstone_bricks",
+            new InfestedBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+    public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE = registerBlock("infested_chiseled_polished_blackstone",
+            new InfestedBlock(Blocks.CHISELED_POLISHED_BLACKSTONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+    
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS)));
     public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",
             new FenceBlock(AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
 
     public static final Block LIGHT_IRON_BARS = registerBlock("light_iron_bars",
-            new PaneBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(2.5f,6.0f))
-            );
+            new PaneBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(2.5f,6.0f)));
 
     public static final Block LIGHT_COPPER_BARS = registerBlock("light_copper_bars",
             new OxidizablePaneBlock(Oxidizable.OxidationLevel.UNAFFECTED,AbstractBlock.Settings.copy(DecoBlocks.LIGHT_IRON_BARS)
@@ -1266,10 +1351,14 @@ public class DecoBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE)));
     public static final Block OBSIDIAN_WALL = registerBlock("obsidian_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.OBSIDIAN)));
+    public static final Block PURPUR_WALL = registerBlock("purpur_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.PURPUR_BLOCK)));
     public static final Block SNOW_WALL = registerBlock("snow_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK)));
     public static final Block NETHERRACK_WALL = registerBlock("netherrack_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.NETHERRACK)));
+    public static final Block SMOOTH_BASALT_WALL = registerBlock("smooth_basalt_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_BASALT)));
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
     public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall",
@@ -1776,7 +1865,8 @@ public class DecoBlocks {
     public static final Block COBBLED_DEEPSLATE_BUTTON = registerBlock("cobbled_deepslate_button",
             new ButtonBlock(DecoBlockSets.DEEPSLATE, 20,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
-            new ButtonBlock(DecoBlockSets.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
+            new ButtonBlock(DecoBlockSets.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)
+                    .sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
     public static final Block COBBLESTONE_BUTTON = registerBlock("cobblestone_button",
             new ButtonBlock(BlockSetType.STONE, 20,AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
     public static final Block BLACKSTONE_BUTTON = registerBlock("blackstone_button",
@@ -1822,7 +1912,7 @@ public class DecoBlocks {
                     .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             new PressurePlateBlock(DecoBlockSets.POLISHED_DEEPSLATE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
-                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
+                    .mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
     public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
     public static final Block BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
@@ -2344,6 +2434,10 @@ public class DecoBlocks {
     public static final Block CRIMSON_MOSAIC_TEMP = registerBlock("crimson_mosaic_temp",
             new Block(AbstractBlock.Settings.create().strength(0f)));
     public static final Block CACTUS_MOSAIC_TEMP = registerBlock("cactus_mosaic_temp",
+            new Block(AbstractBlock.Settings.create().strength(0f)));
+    public static final Block PURPUR_TEMP = registerBlock("purpur_temp",
+            new Block(AbstractBlock.Settings.create().strength(0f)));
+    public static final Block SMOOTH_BASALT_TEMP = registerBlock("smooth_basalt_temp",
             new Block(AbstractBlock.Settings.create().strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
