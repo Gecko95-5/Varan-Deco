@@ -12,6 +12,7 @@ import net.minecraft.util.dynamic.Range;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
@@ -20,6 +21,7 @@ import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider;
 import net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider;
+import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 import net.minecraft.world.gen.treedecorator.AlterGroundTreeDecorator;
 import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
@@ -61,6 +63,8 @@ public class DecoConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FANCY_WOODEN_TREE_KEY = registerKey("deco_fancy_wooden_tree");
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_MEGA_WOODEN_TREE_KEY = registerKey("deco_mega_wooden_tree");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_BUBBLE_BLOCK = registerKey("deco_bubble_block");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
@@ -158,6 +162,12 @@ public class DecoConfiguredFeatures {
                         new TwoLayersFeatureSize(1, 1, 2)).decorators
                                 (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
                         .build());
+
+        register(context,DECO_BUBBLE_BLOCK,Feature.DISK,
+                new DiskFeatureConfig(
+                        PredicatedStateProvider.of(DecoBlocks.BUBBLE_BLOCK),
+                        BlockPredicate.matchingBlocks(List.of(Blocks.GRAVEL, DecoBlocks.BUBBLE_BLOCK)),
+                        UniformIntProvider.create(1, 2), 1));
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(VaranDeco.MOD_ID, name));

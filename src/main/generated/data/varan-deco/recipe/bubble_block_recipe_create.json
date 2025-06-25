@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:prismarine_shard",
+    "#": "minecraft:cobblestone",
     "I": "minecraft:bubble_orb"
   },
   "pattern": [

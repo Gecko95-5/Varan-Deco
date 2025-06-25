@@ -1,9 +1,8 @@
-package net.gecko.varandeco.item.projectile;
+package net.gecko.varandeco.item.custom;
 
 import net.gecko.varandeco.entity.custom.SnowBrickProjectileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
-import net.minecraft.entity.projectile.thrown.SnowballEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ProjectileItem;
