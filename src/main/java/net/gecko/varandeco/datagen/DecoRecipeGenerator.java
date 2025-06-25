@@ -3990,5 +3990,28 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.LILAC_FLOWER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.LILAC_STEW)));
 
+        ShapedRecipeJsonBuilder.create(Items.TALL_GRASS)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.GRASS)
+                .criterion(RecipeProvider.hasItem(Items.GRASS),
+                        RecipeProvider.conditionsFromItem(Items.GRASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.TALL_GRASS)));
+
+        ShapedRecipeJsonBuilder.create(Items.LARGE_FERN)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.FERN)
+                .criterion(RecipeProvider.hasItem(Items.FERN),
+                        RecipeProvider.conditionsFromItem(Items.FERN))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.LARGE_FERN)));
+
+        ShapedRecipeJsonBuilder.create(Items.WARPED_ROOTS)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.NETHER_SPROUTS)
+                .criterion(RecipeProvider.hasItem(Items.NETHER_SPROUTS),
+                        RecipeProvider.conditionsFromItem(Items.NETHER_SPROUTS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.WARPED_ROOTS)));
     }
 }

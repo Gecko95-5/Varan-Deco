@@ -344,6 +344,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.SNOW_BRICK_WALL);
 
+        getOrCreateTagBuilder(BlockTags.SNOW)
+                .add(DecoBlocks.SNOW_STAIRS)
+                .add(DecoBlocks.SNOW_SLAB)
+                .add(DecoBlocks.SNOW_WALL)
+                .add(DecoBlocks.SNOW_BRICKS)
+                .add(DecoBlocks.CHISELED_SNOW_BRICKS)
+                .add(DecoBlocks.SNOW_BRICK_STAIRS)
+                .add(DecoBlocks.SNOW_BRICK_SLAB)
+                .add(DecoBlocks.SNOW_BRICK_WALL);
+
         getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
                 .add(DecoBlocks.WOODEN_LOG);
 
