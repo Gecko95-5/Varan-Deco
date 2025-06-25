@@ -150,7 +150,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CACTUS_TRAPDOOR);
 
         addDrop(DecoBlocks.STANDING_CACTUS_SIGN);
-        addDrop(DecoBlocks.WALL_CACTUS_SIGN);
 
         addDrop(DecoBlocks.PRISMARINE_BRICK_WALL);
         addDrop(DecoBlocks.DARK_PRISMARINE_WALL);
@@ -173,7 +172,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CHISELED_PRISMARINE_BRICKS);
         addDrop(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS);
 
-        addDrop(DecoBlocks.BUBBLE_BLOCK);
+        addDrop(DecoBlocks.BUBBLE_BLOCK, block -> this.drops(block, DecoItems.BUBBLE_ORB, ConstantLootNumberProvider.create(2.0F)));
         addDrop(DecoBlocks.BUBBLE_STAIRS);
         slabDrops(DecoBlocks.BUBBLE_SLAB);
         addDrop(DecoBlocks.BUBBLE_WALL);
@@ -370,35 +369,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STANDING_WARPED_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN);
-        
-        addDrop(DecoBlocks.WALL_STRIPPED_OAK_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_BIRCH_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_JUNGLE_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_ACACIA_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_DARK_OAK_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_CHERRY_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_MANGROVE_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_WARPED_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN);
-        
-        addDrop(DecoBlocks.WALL_OAK_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_SPRUCE_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_BIRCH_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_JUNGLE_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_ACACIA_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_DARK_OAK_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_CHERRY_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_MANGROVE_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_BAMBOO_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_CRIMSON_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_WARPED_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_CACTUS_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_WOODEN_MOSAIC_SIGN);
 
         addDrop(DecoBlocks.HANGING_WOODEN_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_WOODEN_SIGN);
         
         addDrop(DecoBlocks.HANGING_OAK_MOSAIC_SIGN);
         addDrop(DecoBlocks.HANGING_SPRUCE_MOSAIC_SIGN);
@@ -425,32 +397,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HANGING_WOODEN_PLANKS_SIGN);
         addDrop(DecoBlocks.HANGING_CRIMSON_PLANKS_SIGN);
         addDrop(DecoBlocks.HANGING_WARPED_PLANKS_SIGN);
-                        
-        addDrop(DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_SPRUCE_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_BIRCH_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_JUNGLE_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_ACACIA_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_DARK_OAK_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_MANGROVE_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_CHERRY_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_BAMBOO_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_CACTUS_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_CRIMSON_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_WARPED_MOSAIC_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_SPRUCE_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_BIRCH_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_JUNGLE_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_ACACIA_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_DARK_OAK_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_MANGROVE_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_CHERRY_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_CACTUS_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_CRIMSON_PLANKS_SIGN);
-        addDrop(DecoBlocks.WALL_HANGING_WARPED_PLANKS_SIGN);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
         slabDrops(DecoBlocks.TERRACOTTA_SLAB);
@@ -1067,7 +1013,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WOODEN_LADDER);
 
         addDrop(DecoBlocks.STANDING_WOODEN_SIGN);
-        addDrop(DecoBlocks.WALL_WOODEN_SIGN);
 
         addDrop(DecoBlocks.WOODEN_SAPLING);
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);
@@ -1076,6 +1021,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.ANCIENT_ROSE_CROP,
                 applyExplosionDecay(DecoBlocks.ANCIENT_ROSE_CROP,
                         LootTable.builder().pool(LootPool.builder().with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS)))));
+
         LootCondition.Builder builder3 = BlockStatePropertyLootCondition.builder(DecoBlocks.MIGHTY_LAVENDER_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(CarrotsBlock.AGE, 4));
 
@@ -1096,9 +1042,39 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
             .conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(NetherWartBlock.AGE, 3))))))));
 
         addDrop(DecoBlocks.MIGHTY_LAVENDER_CROP, this.applyExplosionDecay(DecoBlocks.MIGHTY_LAVENDER_CROP, LootTable.builder()
-                                .pool(LootPool.builder().with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER)))
-                                .pool(LootPool.builder()
-                                .conditionally(builder3)
-                                .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(impl.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))));
+                .pool(LootPool.builder().with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER)))
+                .pool(LootPool.builder()
+                        .conditionally(builder3)
+                        .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(impl.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))));
+
+        addDrop(DecoBlocks.SMOOTH_BASALT_STAIRS);
+        slabDrops(DecoBlocks.SMOOTH_BASALT_SLAB);
+        addDrop(DecoBlocks.SMOOTH_BASALT_WALL);
+        addDrop(DecoBlocks.PURPUR_WALL);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_STONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_STONE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_COBBLED_DEEPSLATE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_DEEPSLATE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DEEPSLATE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DEEPSLATE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_MOSSY_COBBLESTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CHISELED_DEEPSLATE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CALCITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DRIPSTONE_BLOCK);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_TUFF);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_GRANITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_GRANITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DIORITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_DIORITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_ANDESITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_ANDESITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_BLACKSTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
     }
 }

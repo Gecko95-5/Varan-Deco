@@ -45,6 +45,7 @@
     "#varan-deco:mosaic_slab",
     "varan-deco:crimson_mosaic_slab",
     "varan-deco:warped_mosaic_slab",
-    "varan-deco:tuff_tile_slab"
+    "varan-deco:tuff_tile_slab",
+    "varan-deco:smooth_basalt_slab"
   ]
 }
