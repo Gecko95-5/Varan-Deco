@@ -320,7 +320,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS)
                 .add(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES)
                 .add(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS)
-                .add(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);;
+                .add(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -338,6 +338,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.HARDENED_GLASS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(DecoBlocks.SNOW_STAIRS)
+                .add(DecoBlocks.SNOW_SLAB)
+                .add(DecoBlocks.SNOW_WALL)
+                .add(DecoBlocks.SNOW_BRICKS)
+                .add(DecoBlocks.CHISELED_SNOW_BRICKS)
+                .add(DecoBlocks.SNOW_BRICK_STAIRS)
+                .add(DecoBlocks.SNOW_BRICK_SLAB)
+                .add(DecoBlocks.SNOW_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.SNOW)
                 .add(DecoBlocks.SNOW_STAIRS)
                 .add(DecoBlocks.SNOW_SLAB)
                 .add(DecoBlocks.SNOW_WALL)

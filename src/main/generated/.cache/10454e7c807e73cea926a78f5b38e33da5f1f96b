@@ -1,4 +1,4 @@
-// 1.19.4	2025-06-13T20:53:11.8550392	Variant Decoration/Block Loot Tables
+// 1.19.4	2025-06-25T12:38:31.3072408	Variant Decoration/Block Loot Tables
 a000080130b061e8932fee05057a0be62c2e5722 data\varan-deco\loot_tables\blocks\california_poppy.json
 b1605436dca25861b369553525c9f5d447284255 data\varan-deco\loot_tables\blocks\obsidian_stairs.json
 239df864ac05ef6129d88aba0e2a3154e157af49 data\varan-deco\loot_tables\blocks\deepslate_pressure_plate.json
@@ -521,9 +521,9 @@ b3113060ceed3fa57ba8e267d47277b594a8e879 data\varan-deco\loot_tables\blocks\warp
 1ad447bffd80a87175a83a482fca69bfe5a396e9 data\varan-deco\loot_tables\blocks\light_gray_concrete_pillar.json
 628b4b0ac8ed9ce7e6447f95059a4a250af43858 data\varan-deco\loot_tables\blocks\void_stone_stairs.json
 fa0ae9de9c62ce9df2e189d9bdb503ae3fe01b97 data\varan-deco\loot_tables\blocks\cut_red_concrete.json
+7ed98b05469000eec78a79543d003e2dc5ab4bb3 data\varan-deco\loot_tables\blocks\calcite_wall.json
 c03743a78f227a81142a113474e15e2d0420fa93 data\varan-deco\loot_tables\blocks\lime_concrete_pillar.json
 e7716273923bc783c6c086f878c107d46a35a976 data\varan-deco\loot_tables\blocks\wooden_log.json
-7ed98b05469000eec78a79543d003e2dc5ab4bb3 data\varan-deco\loot_tables\blocks\calcite_wall.json
 ca072773516b82147fc0f4e31a1b5716cf27aedb data\varan-deco\loot_tables\blocks\birch_ladder.json
 ddd5ac6490ba239a3109b31b4dd93fc1e0c0a3f9 data\varan-deco\loot_tables\blocks\polished_stone_pressure_plate.json
 ad3ae147da89b8081946c740644c8d55d69dc282 data\varan-deco\loot_tables\blocks\warped_smithing_table.json

@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bubble_orb": {
+    "has_grass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:bubble_orb"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_cobblestone": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:cobblestone"
+              "minecraft:grass"
             ]
           }
         ]
@@ -27,21 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bubble_block"
+        "recipe": "minecraft:tall_grass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cobblestone",
-      "has_bubble_orb",
+      "has_grass",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bubble_block"
+      "minecraft:tall_grass"
     ]
   }
 }
