@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/inner_stairs",
   "textures": {
-    "bottom": "minecraft:block/sandstone_top",
+    "bottom": "varan-deco:block/cut_sandstone_bottom",
     "side": "minecraft:block/cut_sandstone",
     "top": "minecraft:block/sandstone_top"
   }
