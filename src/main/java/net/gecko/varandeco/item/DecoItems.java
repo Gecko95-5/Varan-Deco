@@ -4,11 +4,9 @@ import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
-import net.gecko.varandeco.item.projectile.SnowBrickItem;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.HangingSignItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SignItem;
+import net.gecko.varandeco.item.custom.BubbleItem;
+import net.gecko.varandeco.item.custom.SnowBrickItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -181,7 +179,7 @@ public class DecoItems {
             new SnowBrickItem(new Item.Settings().maxCount(16)));
 
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",
-            new Item(new Item.Settings()));
+            new BubbleItem(new Item.Settings()));
 
     public static final Item WARPED_WART = registerItem("warped_wart",
             new AliasedBlockItem(DecoBlocks.WARPED_WART_PLANT,new Item.Settings()));
@@ -194,6 +192,15 @@ public class DecoItems {
 
     public static final Item COPPER_NUGGET = registerItem("copper_nugget",
             new Item(new Item.Settings()));
+
+    public static final Item LILAC_FLOWER = registerItem("lilac_flower",
+            new Item(new Item.Settings()));
+
+    public static final Item LILAC_STEW = registerItem("lilac_stew",
+            new StewItem(new Item.Settings().food(DecoFoodComponents.LILAC_STEW)));
+
+    public static final Item MIGHTY_LAVENDER_STEW = registerItem("mighty_lavender_stew",
+            new StewItem(new Item.Settings().food(DecoFoodComponents.MIGHTY_LAVENDER_STEW)));
 
     public static final Item CACTUS_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
             DecoBoats.CACTUS_BOAT_KEY, false);
