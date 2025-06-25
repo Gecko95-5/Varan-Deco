@@ -610,10 +610,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BUBBLE_BLOCK)
                 .pattern("#I")
                 .pattern("I#")
-                .input('#', Items.PRISMARINE_SHARD)
+                .input('#', Items.COBBLESTONE)
                 .input('I', DecoItems.BUBBLE_ORB)
-                .criterion(hasItem(Items.PRISMARINE_SHARD),
-                        conditionsFromItem(Items.PRISMARINE_SHARD))
+                .criterion(hasItem(Items.COBBLESTONE),
+                        conditionsFromItem(Items.COBBLESTONE))
                 .criterion(hasItem(DecoItems.BUBBLE_ORB),
                         conditionsFromItem(DecoItems.BUBBLE_ORB))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BUBBLE_BLOCK)));
