@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:warped_mosaic_sign"
+          "name": "minecraft:stripped_warped_sign"
         }
       ],
       "rolls": 1.0

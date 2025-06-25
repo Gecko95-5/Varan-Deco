@@ -1,4 +1,5 @@
 // 1.21.5	-999999999-01-01T00:00:00	Variant Decoration/varan-deco
+ab8f1bed5c60bb66ee2960908eaac2bd576fe600 data/varan-deco/worldgen/configured_feature/deco_bubble_block.json
 65b2215010ddaf99bb64578c06da885a5457ed47 data/varan-deco/worldgen/configured_feature/deco_ender_flowers.json
 4e1fab21a5ad0929a409470fdcc9a9e78bcff049 data/varan-deco/worldgen/configured_feature/deco_fancy_wooden_tree.json
 74cf79fced524968a112c8e04ed39a0661d71d33 data/varan-deco/worldgen/configured_feature/deco_flower_forest.json
@@ -15,6 +16,7 @@ f7e3d7506e9fee3a3a2c75e527d58468a88a0c98 data/varan-deco/worldgen/configured_fea
 754dafb152131e972c11ab0dc01b07b941292b51 data/varan-deco/worldgen/configured_feature/deco_swamp_flower.json
 52593e0d8adbcd7dee27b8106ee31402fbb9251f data/varan-deco/worldgen/configured_feature/deco_wither_flower.json
 0c3234931ec764353fc7cf9cb087125b7e5c027e data/varan-deco/worldgen/configured_feature/deco_wooden_tree.json
+4b6f18871d03c73cac6dcbf0f5e18d70c400b088 data/varan-deco/worldgen/placed_feature/deco_bubble_placed.json
 9c3b5afe980131dd4a37557fa6344c5e03ceb8fc data/varan-deco/worldgen/placed_feature/deco_ender_placed.json
 733c53688e3b822ac6dd5866626cbe9717712115 data/varan-deco/worldgen/placed_feature/deco_flower_forest_flowers_placed.json
 bda4eabb987fd59e477e6b1c41bcbab61a01651f data/varan-deco/worldgen/placed_feature/deco_meadow_flowers_placed.json

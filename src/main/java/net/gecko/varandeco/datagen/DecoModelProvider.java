@@ -23,6 +23,7 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.ANCIENT_ROSE_SEEDS, Models.GENERATED);
 
         itemModelGenerator.register(DecoItems.MIGHTY_LAVENDER_FLOWER, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.LILAC_FLOWER, Models.HANDHELD);
 
         itemModelGenerator.register(DecoItems.CACTUS_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CACTUS_CHEST_BOAT, Models.GENERATED);
@@ -177,6 +178,11 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TUFF_TILES);
         BlockStateModelGenerator.BlockTexturePool smoothtuffpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_TUFF);
+
+        BlockStateModelGenerator.BlockTexturePool purpurpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PURPUR_TEMP);
+        BlockStateModelGenerator.BlockTexturePool smoothbasaltpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_BASALT_TEMP);
 
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
@@ -745,6 +751,12 @@ public class DecoModelProvider extends FabricModelProvider {
 
         polishedtuffpool.button(DecoBlocks.POLISHED_TUFF_BUTTON);
         polishedtuffpool.pressurePlate(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE);
+
+        purpurpool.wall(DecoBlocks.PURPUR_WALL);
+
+        smoothbasaltpool.stairs(DecoBlocks.SMOOTH_BASALT_STAIRS);
+        smoothbasaltpool.slab(DecoBlocks.SMOOTH_BASALT_SLAB);
+        smoothbasaltpool.wall(DecoBlocks.SMOOTH_BASALT_WALL);
 
         blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 
