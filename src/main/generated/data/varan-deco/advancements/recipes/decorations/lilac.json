@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lilac_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:lilac_flower"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:lilac"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lilac_flower"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:lilac"
+    ]
+  },
+  "sends_telemetry_event": false
+}
