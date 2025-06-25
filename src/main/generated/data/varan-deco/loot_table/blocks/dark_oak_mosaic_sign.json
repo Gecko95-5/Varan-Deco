@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:dark_oak_mosaic_sign"
+          "name": "minecraft:stripped_dark_oak_sign"
         }
       ],
       "rolls": 1.0

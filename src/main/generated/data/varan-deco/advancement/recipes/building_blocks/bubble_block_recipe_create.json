@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_prismarine_shard": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:prismarine_shard"
+            "items": "minecraft:cobblestone"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_prismarine_shard",
+      "has_cobblestone",
       "has_bubble_orb"
     ]
   ],

@@ -602,10 +602,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BUBBLE_BLOCK)
                         .pattern("#I")
                         .pattern("I#")
-                        .input('#', Items.PRISMARINE_SHARD)
+                        .input('#', Items.COBBLESTONE)
                         .input('I', DecoItems.BUBBLE_ORB)
-                        .criterion(hasItem(Items.PRISMARINE_SHARD),
-                                conditionsFromItem(Items.PRISMARINE_SHARD))
+                        .criterion(hasItem(Items.COBBLESTONE),
+                                conditionsFromItem(Items.COBBLESTONE))
                         .criterion(hasItem(DecoItems.BUBBLE_ORB),
                                 conditionsFromItem(DecoItems.BUBBLE_ORB))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BUBBLE_BLOCK) + "_recipe_create");
@@ -4321,6 +4321,130 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerChestBoatRecipe(DecoItems.WOODEN_CHEST_BOAT, DecoItems.WOODEN_BOAT);
                 offerChestBoatRecipe(DecoItems.CRIMSON_CHEST_BOAT, DecoItems.CRIMSON_BOAT);
                 offerChestBoatRecipe(DecoItems.WARPED_CHEST_BOAT, DecoItems.WARPED_BOAT);
+
+                offerWallRecipe(RecipeCategory.DECORATIONS, DecoBlocks.PURPUR_WALL, Items.PURPUR_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PURPUR_WALL, Items.PURPUR_BLOCK);
+
+                createStairsRecipe(DecoBlocks.SMOOTH_BASALT_STAIRS, Ingredient.ofItems(Items.SMOOTH_BASALT))
+                        .criterion(hasItem(Items.SMOOTH_BASALT),conditionsFromItem(Items.SMOOTH_BASALT))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.SMOOTH_BASALT_STAIRS) + "_recipe_create");
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_STAIRS, Items.SMOOTH_BASALT);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT,2);
+
+                offerWallRecipe(RecipeCategory.DECORATIONS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
+
+                createShaped(RecipeCategory.MISC,Items.HEART_OF_THE_SEA)
+                        .pattern("###")
+                        .pattern("#E#")
+                        .pattern("###")
+                        .input('E', Items.ENDER_EYE)
+                        .input('#', DecoItems.BUBBLE_ORB)
+                        .criterion(hasItem(Items.ENDER_EYE),
+                                conditionsFromItem(Items.ENDER_EYE))
+                        .criterion(hasItem(DecoItems.BUBBLE_ORB),
+                                conditionsFromItem(DecoItems.BUBBLE_ORB))
+                        .offerTo(exporter, getRecipeName(Items.HEART_OF_THE_SEA) + "_recipe_create");
+
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.BUBBLE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.TUBE_CORAL, RecipeCategory.DECORATIONS,Items.TUBE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BRAIN_CORAL, RecipeCategory.DECORATIONS,Items.BRAIN_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.FIRE_CORAL, RecipeCategory.DECORATIONS,Items.FIRE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.HORN_CORAL, RecipeCategory.DECORATIONS,Items.HORN_CORAL_BLOCK);
+
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_BUBBLE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_TUBE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_TUBE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_BRAIN_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_BRAIN_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_FIRE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_FIRE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_HORN_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_HORN_CORAL_BLOCK);
+
+                createShaped(RecipeCategory.MISC,Items.BUBBLE_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.BUBBLE_CORAL_FAN)
+                        .criterion(hasItem(Items.BUBBLE_CORAL_FAN),
+                                conditionsFromItem(Items.BUBBLE_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.BUBBLE_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.TUBE_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.TUBE_CORAL_FAN)
+                        .criterion(hasItem(Items.TUBE_CORAL_FAN),
+                                conditionsFromItem(Items.TUBE_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.TUBE_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.BRAIN_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.BRAIN_CORAL_FAN)
+                        .criterion(hasItem(Items.BRAIN_CORAL_FAN),
+                                conditionsFromItem(Items.BRAIN_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.BRAIN_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.FIRE_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.FIRE_CORAL_FAN)
+                        .criterion(hasItem(Items.FIRE_CORAL_FAN),
+                                conditionsFromItem(Items.FIRE_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.FIRE_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.HORN_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.HORN_CORAL_FAN)
+                        .criterion(hasItem(Items.HORN_CORAL_FAN),
+                                conditionsFromItem(Items.HORN_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.HORN_CORAL) + "_recipe_create");
+
+                createShaped(RecipeCategory.MISC,Items.DEAD_BUBBLE_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.DEAD_BUBBLE_CORAL_FAN)
+                        .criterion(hasItem(Items.DEAD_BUBBLE_CORAL_FAN),
+                                conditionsFromItem(Items.DEAD_BUBBLE_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.DEAD_BUBBLE_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.DEAD_TUBE_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.DEAD_TUBE_CORAL_FAN)
+                        .criterion(hasItem(Items.DEAD_TUBE_CORAL_FAN),
+                                conditionsFromItem(Items.DEAD_TUBE_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.DEAD_TUBE_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.DEAD_BRAIN_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.DEAD_BRAIN_CORAL_FAN)
+                        .criterion(hasItem(Items.DEAD_BRAIN_CORAL_FAN),
+                                conditionsFromItem(Items.DEAD_BRAIN_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.DEAD_BRAIN_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.DEAD_FIRE_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.DEAD_FIRE_CORAL_FAN)
+                        .criterion(hasItem(Items.DEAD_FIRE_CORAL_FAN),
+                                conditionsFromItem(Items.DEAD_FIRE_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.DEAD_FIRE_CORAL) + "_recipe_create");
+                createShaped(RecipeCategory.MISC,Items.DEAD_HORN_CORAL)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.DEAD_HORN_CORAL_FAN)
+                        .criterion(hasItem(Items.DEAD_HORN_CORAL_FAN),
+                                conditionsFromItem(Items.DEAD_HORN_CORAL_FAN))
+                        .offerTo(exporter, getRecipeName(Items.DEAD_HORN_CORAL) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,Items.LILAC)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', DecoItems.LILAC_FLOWER)
+                        .criterion(hasItem(DecoItems.LILAC_FLOWER),
+                                conditionsFromItem(DecoItems.LILAC_FLOWER))
+                        .offerTo(exporter, getRecipeName(Items.LILAC) + "_recipe_create");
+
+                createShapeless(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                        .input(DecoItems.LILAC_FLOWER)
+                        .criterion(hasItem(DecoItems.LILAC_FLOWER),
+                                conditionsFromItem(DecoItems.LILAC_FLOWER))
+                        .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "lilac_flower");
             }
         };
     }

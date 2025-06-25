@@ -54,6 +54,8 @@
     "minecraft:void_stone_brick_wall",
     "minecraft:obsidian_wall",
     "minecraft:obsidian_brick_wall",
-    "minecraft:tuff_tile_wall"
+    "minecraft:tuff_tile_wall",
+    "minecraft:purpur_wall",
+    "minecraft:smooth_basalt_wall"
   ]
 }
