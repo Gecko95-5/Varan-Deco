@@ -380,63 +380,63 @@ public class DecoCustomTrades {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.SPRUCE_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.BIRCH_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.JUNGLE_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.ACACIA_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.DARK_OAK_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.MANGROVE_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.BAMBOO_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.CHERRY_BOOKSHELF),
                             15, 1, 0.075f));});
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD,9),
+                            new TradedItem(Items.EMERALD,9),
                             new ItemStack(DecoBlocks.CACTUS_BOOKSHELF),
                             15, 1, 0.075f));});
     }
