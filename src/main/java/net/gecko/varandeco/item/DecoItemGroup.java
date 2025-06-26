@@ -867,6 +867,7 @@ public class DecoItemGroup {
                         entries.add(DecoItems.SNOW_BRICK);
                         entries.add(DecoItems.ANCIENT_ROSE_SEEDS);
                         entries.add(DecoItems.MIGHTY_LAVENDER_FLOWER);
+                        entries.add(DecoItems.MIGHTY_LAVENDER_FLOWER);
                         entries.add(DecoItems.WARPED_WART);
                         entries.add(DecoItems.BUBBLE_ORB);
                     }).build());
