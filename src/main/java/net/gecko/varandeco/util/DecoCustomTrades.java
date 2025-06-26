@@ -21,109 +21,109 @@ public class DecoCustomTrades {
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD),
-                            new ItemStack(DecoItems.LILAC_FLOWER, 2),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoItems.LILAC_FLOWER, 2),
+                    12, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.SALMON_POPPY, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.SALMON_POPPY, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.CALIFORNIA_POPPY, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.CALIFORNIA_POPPY, 1),
+                    12, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.BLACK_TULIP, 1),
-                            7, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.BLACK_TULIP, 1),
+                    7, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.BLUE_TULIP, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.BLUE_TULIP, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.CYAN_TULIP, 1),
-                            7, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.CYAN_TULIP, 1),
+                    7, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.YELLOW_TULIP, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.YELLOW_TULIP, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.PURPLE_TULIP, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.PURPLE_TULIP, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.MAGENTA_TULIP, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.MAGENTA_TULIP, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.GREEN_TULIP, 1),
-                            7, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.GREEN_TULIP, 1),
+                    7, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.BARBERTON_DAISY, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.BARBERTON_DAISY, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.BLUE_EYED_DAISY, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.BLUE_EYED_DAISY, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.GERBERA_DAISY, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.GERBERA_DAISY, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.MICHAELMAS_DAISY, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.MICHAELMAS_DAISY, 1),
+                    12, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.YELLOW_ORCHID, 1),
-                            8, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.YELLOW_ORCHID, 1),
+                    8, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.WHITE_ORCHID, 1),
-                            6, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.WHITE_ORCHID, 1),
+                    6, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.PINK_ORCHID, 1),
-                            6, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.PINK_ORCHID, 1),
+                    6, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.ROSE, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.ROSE, 1),
+                    12, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.PAEONIA, 1),
-                            12, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.PAEONIA, 1),
+                    12, 0, 0.075f));});
         TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                            new ItemStack(DecoBlocks.LAVENDER, 1),
-                            9, 0, 0.075f));});
+                    new ItemStack(DecoBlocks.LAVENDER, 1),
+                    9, 0, 0.075f));});
 
         TradeOfferHelper.registerWanderingTraderOffers(2,
                 factories -> {
@@ -376,6 +376,68 @@ public class DecoCustomTrades {
                             new TradedItem(Items.EMERALD),
                             new ItemStack(DecoBlocks.CUT_QUARTZ),
                             12, 30, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.SPRUCE_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.BIRCH_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.JUNGLE_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.ACACIA_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.DARK_OAK_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.MANGROVE_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.BAMBOO_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.CHERRY_BOOKSHELF),
+                            15, 1, 0.075f));});
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD,9),
+                            new ItemStack(DecoBlocks.CACTUS_BOOKSHELF),
+                            15, 1, 0.075f));});
     }
 }
-
