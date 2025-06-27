@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_blackstone"
+          "name": "minecraft:blackstone"
         }
       ],
       "rolls": 1.0

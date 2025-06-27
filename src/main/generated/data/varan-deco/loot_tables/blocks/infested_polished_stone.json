@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_polished_stone"
+          "name": "varan-deco:polished_stone"
         }
       ],
       "rolls": 1.0
