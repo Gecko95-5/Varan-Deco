@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_diorite"
+          "name": "minecraft:diorite"
         }
       ],
       "rolls": 1.0

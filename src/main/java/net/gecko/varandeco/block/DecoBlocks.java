@@ -1195,6 +1195,13 @@ public class DecoBlocks {
     public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE = registerInfestedBlock("infested_chiseled_polished_blackstone",
             Blocks.CHISELED_POLISHED_BLACKSTONE,Blocks.CHISELED_POLISHED_BLACKSTONE,0.75f,0.75f);
 
+    public static final Block INFESTED_CHISELED_STONE = registerInfestedBlock("infested_chiseled_stone",
+            DecoBlocks.CHISELED_STONE,DecoBlocks.CHISELED_STONE,1.25f,0.75f);
+    public static final Block INFESTED_CHISELED_DEEPSLATE_BRICKS = registerInfestedBlock("infested_chiseled_deepslate_bricks",
+            DecoBlocks.CHISELED_DEEPSLATE_BRICKS,DecoBlocks.CHISELED_DEEPSLATE_BRICKS,1.75f,0.75f);
+    public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE_BRICKS = registerInfestedBlock("infested_chiseled_polished_blackstone_bricks",
+            DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS,DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS,0.75f,0.75f);
+
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS),FenceBlock::new);
     public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",

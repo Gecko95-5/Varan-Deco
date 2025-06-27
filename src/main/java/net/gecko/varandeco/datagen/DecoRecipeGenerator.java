@@ -4445,6 +4445,30 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoItems.LILAC_FLOWER),
                                 conditionsFromItem(DecoItems.LILAC_FLOWER))
                         .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "lilac_flower");
+                
+                createShaped(RecipeCategory.MISC,Items.TALL_GRASS)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.SHORT_GRASS)
+                        .criterion(hasItem(Items.SHORT_GRASS),
+                                conditionsFromItem(Items.SHORT_GRASS))
+                        .offerTo(exporter, getRecipeName(Items.TALL_GRASS) + "_recipe_create");
+
+                createShaped(RecipeCategory.MISC,Items.LARGE_FERN)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.FERN)
+                        .criterion(hasItem(Items.FERN),
+                                conditionsFromItem(Items.FERN))
+                        .offerTo(exporter, getRecipeName(Items.LARGE_FERN) + "_recipe_create");
+
+                createShaped(RecipeCategory.MISC,Items.WARPED_ROOTS)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.NETHER_SPROUTS)
+                        .criterion(hasItem(Items.NETHER_SPROUTS),
+                                conditionsFromItem(Items.NETHER_SPROUTS))
+                        .offerTo(exporter, getRecipeName(Items.WARPED_ROOTS) + "_recipe_create");
             }
         };
     }

@@ -308,6 +308,10 @@
     "minecraft:infested_polished_blackstone_bricks",
     "minecraft:infested_polished_blackstone_tiles",
     "minecraft:infested_cracked_polished_blackstone_bricks",
-    "minecraft:infested_chiseled_polished_blackstone"
+    "minecraft:infested_chiseled_polished_blackstone",
+    "minecraft:infested_chiseled_polished_blackstone",
+    "minecraft:infested_chiseled_stone",
+    "minecraft:infested_chiseled_polished_blackstone_bricks",
+    "minecraft:infested_chiseled_deepslate_bricks"
   ]
 }

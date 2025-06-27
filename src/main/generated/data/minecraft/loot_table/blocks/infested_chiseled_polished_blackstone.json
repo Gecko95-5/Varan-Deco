@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_chiseled_polished_blackstone"
+          "name": "minecraft:chiseled_polished_blackstone"
         }
       ],
       "rolls": 1.0

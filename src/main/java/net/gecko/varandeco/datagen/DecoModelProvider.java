@@ -39,9 +39,6 @@ public class DecoModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.POLISHED_GLIDED_BLACKSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
-
-
-
         BlockStateModelGenerator.BlockTexturePool andesitepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_ANDESITE_TEMP);
         BlockStateModelGenerator.BlockTexturePool dioritepool =
@@ -183,6 +180,35 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PURPUR_TEMP);
         BlockStateModelGenerator.BlockTexturePool smoothbasaltpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_BASALT_TEMP);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_STONE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_COBBLED_DEEPSLATE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_DEEPSLATE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_DEEPSLATE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_DEEPSLATE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_MOSSY_COBBLESTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CHISELED_DEEPSLATE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CALCITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_DRIPSTONE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_TUFF);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_GRANITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_GRANITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_DIORITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_DIORITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_ANDESITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_ANDESITE);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.INFESTED_BLACKSTONE, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_BLACKSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.INFESTED_CHISELED_STONE, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CHISELED_DEEPSLATE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE_BRICKS);
 
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);

@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_calcite"
+          "name": "minecraft:calcite"
         }
       ],
       "rolls": 1.0
