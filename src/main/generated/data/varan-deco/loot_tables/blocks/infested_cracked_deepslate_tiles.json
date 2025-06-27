@@ -21,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_cracked_deepslate_tiles"
+          "name": "minecraft:cracked_deepslate_tiles"
         }
       ],
       "rolls": 1.0
