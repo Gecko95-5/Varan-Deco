@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_stone_tiles"
+          "name": "minecraft:stone_tiles"
         }
       ],
       "rolls": 1.0

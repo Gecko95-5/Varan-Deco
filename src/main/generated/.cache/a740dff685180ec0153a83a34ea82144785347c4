@@ -13,7 +13,7 @@ e679dfca792e4ebae644965689391497d194529c data/minecraft/tags/block/ice.json
 ccf0a9022a62726234e3ea4370b71450a2751b78 data/minecraft/tags/block/leaves.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data/minecraft/tags/block/logs_that_burn.json
 515c3f25a6ae3b468160cf07c485fb0041f35ac9 data/minecraft/tags/block/mineable/axe.json
-55d4d44c0f068aa7520b049abed0944fa067fb46 data/minecraft/tags/block/mineable/pickaxe.json
+3d0454898198ce158d1d07af71e8e871746ae4b3 data/minecraft/tags/block/mineable/pickaxe.json
 f6a0de04ab191adb7a3c79e312b9bc6ac680fc6b data/minecraft/tags/block/mineable/shovel.json
 e1039261b2bddfde7fb1628e57265c791fbff0d3 data/minecraft/tags/block/needs_diamond_tool.json
 1cacc62da857912151190c57354789c44a3c0305 data/minecraft/tags/block/needs_iron_tool.json

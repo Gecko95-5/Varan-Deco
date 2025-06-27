@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_polished_granite"
+          "name": "minecraft:polished_granite"
         }
       ],
       "rolls": 1.0

@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_deepslate_tiles"
+          "name": "minecraft:deepslate_tiles"
         }
       ],
       "rolls": 1.0
