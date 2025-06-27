@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_dripstone_block"
+          "name": "minecraft:dripstone_block"
         }
       ],
       "rolls": 1.0

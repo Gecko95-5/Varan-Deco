@@ -45,6 +45,7 @@
     "#varan-deco:mosaic_slab",
     "minecraft:crimson_mosaic_slab",
     "minecraft:warped_mosaic_slab",
-    "minecraft:tuff_tile_slab"
+    "minecraft:tuff_tile_slab",
+    "minecraft:smooth_basalt_slab"
   ]
 }

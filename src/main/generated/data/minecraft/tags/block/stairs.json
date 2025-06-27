@@ -48,6 +48,7 @@
     "#varan-deco:mosaic_stairs",
     "minecraft:crimson_mosaic_stairs",
     "minecraft:warped_mosaic_stairs",
-    "minecraft:tuff_tile_stairs"
+    "minecraft:tuff_tile_stairs",
+    "minecraft:smooth_basalt_stairs"
   ]
 }

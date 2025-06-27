@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:infested_cracked_polished_blackstone_bricks"
+          "name": "minecraft:cracked_polished_blackstone_bricks"
         }
       ],
       "rolls": 1.0
