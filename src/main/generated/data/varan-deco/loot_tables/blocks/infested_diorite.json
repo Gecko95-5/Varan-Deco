@@ -21,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_diorite"
+          "name": "minecraft:diorite"
         }
       ],
       "rolls": 1.0

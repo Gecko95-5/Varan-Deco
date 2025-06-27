@@ -21,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_polished_andesite"
+          "name": "minecraft:polished_andesite"
         }
       ],
       "rolls": 1.0

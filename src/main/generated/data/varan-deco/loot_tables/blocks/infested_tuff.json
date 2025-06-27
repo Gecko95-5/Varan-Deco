@@ -21,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_tuff"
+          "name": "minecraft:tuff"
         }
       ],
       "rolls": 1.0
