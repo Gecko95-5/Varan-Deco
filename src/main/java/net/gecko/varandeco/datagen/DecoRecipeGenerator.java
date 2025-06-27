@@ -4351,5 +4351,29 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
                         conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.MIGHTY_LAVENDER_STEW)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.TALL_GRASS)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.SHORT_GRASS)
+                .criterion(hasItem(Items.SHORT_GRASS),
+                        conditionsFromItem(Items.SHORT_GRASS))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.TALL_GRASS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LARGE_FERN)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.FERN)
+                .criterion(hasItem(Items.FERN),
+                        conditionsFromItem(Items.FERN))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.LARGE_FERN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.WARPED_ROOTS)
+                .pattern("#")
+                .pattern("#")
+                .input('#', Items.NETHER_SPROUTS)
+                .criterion(hasItem(Items.NETHER_SPROUTS),
+                        conditionsFromItem(Items.NETHER_SPROUTS))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.WARPED_ROOTS)));
     }
 }
