@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:blackstone"
+          "name": "varan-deco:chiseled_stone"
         }
       ],
       "rolls": 1.0

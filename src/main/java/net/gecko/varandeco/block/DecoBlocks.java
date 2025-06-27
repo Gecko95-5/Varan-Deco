@@ -1208,10 +1208,10 @@ public class DecoBlocks {
                     .mapColor(MapColor.TERRACOTTA_WHITE).sounds(BlockSoundGroup.CALCITE)));
     public static final Block INFESTED_DRIPSTONE_BLOCK = registerBlock("infested_dripstone_block",
             new InfestedBlock(Blocks.DRIPSTONE_BLOCK, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
-                    .mapColor(MapColor.TERRACOTTA_BROWN).sounds(BlockSoundGroup.TUFF)));
+                    .mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
     public static final Block INFESTED_TUFF = registerBlock("infested_tuff",
             new InfestedBlock(Blocks.TUFF, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
-                    .mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
+                    .mapColor(MapColor.TERRACOTTA_BROWN).sounds(BlockSoundGroup.TUFF)));
 
     public static final Block INFESTED_GRANITE = registerBlock("infested_granite",
             new InfestedBlock(Blocks.GRANITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
@@ -1228,7 +1228,7 @@ public class DecoBlocks {
                     .mapColor(MapColor.OFF_WHITE)));
 
     public static final Block INFESTED_ANDESITE = registerBlock("infested_andesite",
-            new InfestedBlock(Blocks.DIORITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+            new InfestedBlock(Blocks.ANDESITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
                     .mapColor(MapColor.STONE_GRAY)));
     public static final Block INFESTED_POLISHED_ANDESITE = registerBlock("infested_polished_andesite",
             new InfestedBlock(Blocks.POLISHED_ANDESITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
@@ -1251,6 +1251,15 @@ public class DecoBlocks {
                     .mapColor(MapColor.BLACK)));
     public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE = registerBlock("infested_chiseled_polished_blackstone",
             new InfestedBlock(Blocks.CHISELED_POLISHED_BLACKSTONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+                    .mapColor(MapColor.BLACK)));
+
+    public static final Block INFESTED_CHISELED_STONE = registerBlock("infested_chiseled_stone",
+            new InfestedBlock(DecoBlocks.CHISELED_STONE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)));
+    public static final Block INFESTED_CHISELED_DEEPSLATE_BRICKS = registerBlock("infested_chiseled_deepslate_bricks",
+            new InfestedBlock(DecoBlocks.CHISELED_DEEPSLATE_BRICKS, AbstractBlock.Settings.copy(Blocks.INFESTED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE_BRICKS = registerBlock("infested_chiseled_polished_blackstone_bricks",
+            new InfestedBlock(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
                     .mapColor(MapColor.BLACK)));
 
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",

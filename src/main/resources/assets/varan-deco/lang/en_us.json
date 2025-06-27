@@ -1318,6 +1318,9 @@
   "block.varan-deco.infested_polished_blackstone_tiles": "Infested Polished Blackstone Tiles",
   "block.varan-deco.infested_cracked_polished_blackstone_bricks": "Infested Cracked Polished Blackstone Bricks",
   "block.varan-deco.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
+  "block.varan-deco.infested_chiseled_stone": "Infested Chiseled Stone",
+  "block.varan-deco.infested_chiseled_deepslate_bricks": "Infested Chiseled Deepslate Bricks",
+  "block.varan-deco.infested_chiseled_polished_blackstone_bricks": "Infested Chiseled Polished Blackstone Bricks",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",

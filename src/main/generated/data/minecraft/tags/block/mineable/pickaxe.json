@@ -308,6 +308,9 @@
     "varan-deco:infested_polished_blackstone_bricks",
     "varan-deco:infested_polished_blackstone_tiles",
     "varan-deco:infested_cracked_polished_blackstone_bricks",
-    "varan-deco:infested_chiseled_polished_blackstone"
+    "varan-deco:infested_chiseled_polished_blackstone",
+    "varan-deco:infested_chiseled_stone",
+    "varan-deco:infested_chiseled_deepslate_bricks",
+    "varan-deco:infested_chiseled_polished_blackstone_bricks"
   ]
 }

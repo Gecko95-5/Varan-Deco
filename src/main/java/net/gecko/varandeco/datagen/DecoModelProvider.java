@@ -187,6 +187,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParented(DecoBlocks.POLISHED_BLACKSTONE_TILES, DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES);
         blockStateModelGenerator.registerParented(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.CHISELED_POLISHED_BLACKSTONE, DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CHISELED_STONE, DecoBlocks.INFESTED_CHISELED_STONE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CHISELED_DEEPSLATE_BRICKS, DecoBlocks.INFESTED_CHISELED_DEEPSLATE_BRICKS);
+        blockStateModelGenerator.registerParented(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS, DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE_BRICKS);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);

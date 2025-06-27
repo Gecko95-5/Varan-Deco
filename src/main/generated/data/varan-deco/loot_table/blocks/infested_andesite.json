@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_andesite"
+          "name": "minecraft:andesite"
         }
       ],
       "rolls": 1.0

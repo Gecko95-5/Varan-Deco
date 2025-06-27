@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_stone_tiles"
+          "name": "varan-deco:stone_tiles"
         }
       ],
       "rolls": 1.0
