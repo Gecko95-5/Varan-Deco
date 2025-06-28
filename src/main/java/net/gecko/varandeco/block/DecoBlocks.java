@@ -1112,48 +1112,6 @@ public class DecoBlocks {
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
-    public static final Block INFESTED_POLISHED_STONE = registerBlock("infested_polished_stone",
-            new InfestedBlock(DecoBlocks.POLISHED_STONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_STONE_TILES = registerBlock("infested_stone_tiles",
-            new InfestedBlock(DecoBlocks.STONE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_MOSSY_COBBLESTONE = registerBlock("infested_mossy_cobblestone",
-            new InfestedBlock(Blocks.MOSSY_COBBLESTONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-
-    public static final Block INFESTED_COBBLED_DEEPSLATE = registerBlock("infested_cobbled_deepslate",
-            new InfestedBlock(Blocks.COBBLED_DEEPSLATE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_POLISHED_DEEPSLATE = registerBlock("infested_polished_deepslate",
-            new InfestedBlock(Blocks.POLISHED_DEEPSLATE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_DEEPSLATE_BRICKS = registerBlock("infested_deepslate_bricks",
-            new InfestedBlock(Blocks.DEEPSLATE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_DEEPSLATE_TILES = registerBlock("infested_deepslate_tiles",
-            new InfestedBlock(Blocks.DEEPSLATE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_CRACKED_DEEPSLATE_BRICKS = registerBlock("infested_cracked_deepslate_bricks",
-            new InfestedBlock(Blocks.CRACKED_DEEPSLATE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_CRACKED_DEEPSLATE_TILES = registerBlock("infested_cracked_deepslate_tiles",
-            new InfestedBlock(Blocks.CRACKED_DEEPSLATE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_CHISELED_DEEPSLATE = registerBlock("infested_chiseled_deepslate",
-            new InfestedBlock(Blocks.CHISELED_DEEPSLATE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-
-    public static final Block INFESTED_CALCITE = registerBlock("infested_calcite",
-            new InfestedBlock(Blocks.CALCITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_DRIPSTONE_BLOCK = registerBlock("infested_dripstone_block",
-            new InfestedBlock(Blocks.DRIPSTONE_BLOCK, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_TUFF = registerBlock("infested_tuff",
-            new InfestedBlock(Blocks.TUFF, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-
     public static final Block INFESTED_GRANITE = registerBlock("infested_granite",
             new InfestedBlock(Blocks.GRANITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1169,10 +1127,55 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block INFESTED_ANDESITE = registerBlock("infested_andesite",
-            new InfestedBlock(Blocks.DIORITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            new InfestedBlock(Blocks.ANDESITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block INFESTED_POLISHED_ANDESITE = registerBlock("infested_polished_andesite",
             new InfestedBlock(Blocks.POLISHED_ANDESITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block INFESTED_COBBLED_DEEPSLATE = registerBlock("infested_cobbled_deepslate",
+            new InfestedBlock(Blocks.COBBLED_DEEPSLATE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_POLISHED_DEEPSLATE = registerBlock("infested_polished_deepslate",
+            new InfestedBlock(Blocks.POLISHED_DEEPSLATE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block INFESTED_CALCITE = registerBlock("infested_calcite",
+            new InfestedBlock(Blocks.CALCITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_TUFF = registerBlock("infested_tuff",
+            new InfestedBlock(Blocks.TUFF, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_DRIPSTONE_BLOCK = registerBlock("infested_dripstone_block",
+            new InfestedBlock(Blocks.DRIPSTONE_BLOCK, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block INFESTED_POLISHED_STONE = registerBlock("infested_polished_stone",
+            new InfestedBlock(DecoBlocks.POLISHED_STONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block INFESTED_MOSSY_COBBLESTONE = registerBlock("infested_mossy_cobblestone",
+            new InfestedBlock(Blocks.MOSSY_COBBLESTONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block INFESTED_STONE_TILES = registerBlock("infested_stone_tiles",
+            new InfestedBlock(DecoBlocks.STONE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block INFESTED_DEEPSLATE_BRICKS = registerBlock("infested_deepslate_bricks",
+            new InfestedBlock(Blocks.DEEPSLATE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_CRACKED_DEEPSLATE_BRICKS = registerBlock("infested_cracked_deepslate_bricks",
+            new InfestedBlock(Blocks.CRACKED_DEEPSLATE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_DEEPSLATE_TILES = registerBlock("infested_deepslate_tiles",
+            new InfestedBlock(Blocks.DEEPSLATE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_CRACKED_DEEPSLATE_TILES = registerBlock("infested_cracked_deepslate_tiles",
+            new InfestedBlock(Blocks.CRACKED_DEEPSLATE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_CHISELED_DEEPSLATE = registerBlock("infested_chiseled_deepslate",
+            new InfestedBlock(Blocks.CHISELED_DEEPSLATE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block INFESTED_BLACKSTONE = registerBlock("infested_blackstone",
@@ -1181,17 +1184,17 @@ public class DecoBlocks {
     public static final Block INFESTED_POLISHED_BLACKSTONE = registerBlock("infested_polished_blackstone",
             new InfestedBlock(Blocks.POLISHED_BLACKSTONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE = registerBlock("infested_chiseled_polished_blackstone",
+            new InfestedBlock(Blocks.CHISELED_POLISHED_BLACKSTONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block INFESTED_POLISHED_BLACKSTONE_BRICKS = registerBlock("infested_polished_blackstone_bricks",
             new InfestedBlock(Blocks.POLISHED_BLACKSTONE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_POLISHED_BLACKSTONE_TILES = registerBlock("infested_polished_blackstone_tiles",
-            new InfestedBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS = registerBlock("infested_cracked_polished_blackstone_bricks",
             new InfestedBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE = registerBlock("infested_chiseled_polished_blackstone",
-            new InfestedBlock(Blocks.CHISELED_POLISHED_BLACKSTONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
+    public static final Block INFESTED_POLISHED_BLACKSTONE_TILES = registerBlock("infested_polished_blackstone_tiles",
+            new InfestedBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block LIGHT_IRON_BARS = registerBlock("light_iron_bars",
