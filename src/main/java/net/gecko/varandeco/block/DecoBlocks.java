@@ -1029,7 +1029,7 @@ public class DecoBlocks {
             new InfestedBlock(Blocks.POLISHED_DIORITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
 
     public static final Block INFESTED_ANDESITE = registerBlock("infested_andesite",
-            new InfestedBlock(Blocks.DIORITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
+            new InfestedBlock(Blocks.ANDESITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
     public static final Block INFESTED_POLISHED_ANDESITE = registerBlock("infested_polished_andesite",
             new InfestedBlock(Blocks.POLISHED_ANDESITE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
 
@@ -2523,31 +2523,31 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CRIMSON_BARREL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WARPED_BARREL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CACTUS_BARREL.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_MOSSY_COBBLESTONE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_STONE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_STONE_TILES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_COBBLED_DEEPSLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_DEEPSLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DEEPSLATE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DEEPSLATE_TILES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_MOSSY_COBBLESTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CHISELED_DEEPSLATE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CALCITE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DRIPSTONE_BLOCK.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_TUFF.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_GRANITE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_GRANITE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DIORITE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_DIORITE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_ANDESITE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_ANDESITE.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_COBBLED_DEEPSLATE.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CHISELED_DEEPSLATE.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_DEEPSLATE.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DEEPSLATE_BRICKS.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DEEPSLATE_TILES.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_BLACKSTONE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_BLACKSTONE.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_CALCITE.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_TUFF.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.INFESTED_DRIPSTONE_BLOCK.asItem());
     }
 
     public static void addToItemGroup(ItemGroup group, Item item) {
