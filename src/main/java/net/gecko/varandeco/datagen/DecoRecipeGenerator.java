@@ -4469,6 +4469,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.NETHER_SPROUTS),
                                 conditionsFromItem(Items.NETHER_SPROUTS))
                         .offerTo(exporter, getRecipeName(Items.WARPED_ROOTS) + "_recipe_create");
+
+                createShaped(RecipeCategory.MISC,Items.TALL_DRY_GRASS)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.SHORT_DRY_GRASS)
+                        .criterion(hasItem(Items.SHORT_DRY_GRASS),
+                                conditionsFromItem(Items.SHORT_DRY_GRASS))
+                        .offerTo(exporter, getRecipeName(Items.TALL_DRY_GRASS) + "_recipe_create");
             }
         };
     }
