@@ -1182,10 +1182,10 @@ public class DecoBlocks {
                     .mapColor(MapColor.TERRACOTTA_WHITE).sounds(BlockSoundGroup.CALCITE)));
     public static final Block INFESTED_DRIPSTONE_BLOCK = registerBlock("infested_dripstone_block",
             new InfestedBlock(Blocks.DRIPSTONE_BLOCK, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
-                    .mapColor(MapColor.TERRACOTTA_BROWN).sounds(BlockSoundGroup.TUFF)));
+                    .mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
     public static final Block INFESTED_TUFF = registerBlock("infested_tuff",
             new InfestedBlock(Blocks.TUFF, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
-                    .mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
+                    .mapColor(MapColor.TERRACOTTA_BROWN).sounds(BlockSoundGroup.TUFF)));
 
     public static final Block INFESTED_GRANITE = registerBlock("infested_granite",
             new InfestedBlock(Blocks.GRANITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
@@ -1202,7 +1202,7 @@ public class DecoBlocks {
                     .mapColor(MapColor.OFF_WHITE)));
 
     public static final Block INFESTED_ANDESITE = registerBlock("infested_andesite",
-            new InfestedBlock(Blocks.DIORITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
+            new InfestedBlock(Blocks.ANDESITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
                     .mapColor(MapColor.STONE_GRAY)));
     public static final Block INFESTED_POLISHED_ANDESITE = registerBlock("infested_polished_andesite",
             new InfestedBlock(Blocks.POLISHED_ANDESITE, AbstractBlock.Settings.copy(Blocks.INFESTED_COBBLESTONE)
