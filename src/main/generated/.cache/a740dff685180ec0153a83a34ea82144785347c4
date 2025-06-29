@@ -1,4 +1,4 @@
-// 1.20.6	2025-06-27T20:42:44.6095121	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2025-06-28T22:16:29.3448609	Variant Decoration/Tags for minecraft:block
 5a3a1abe180521d2238140f9056e1a70e46c931b data\varan-deco\tags\blocks\wooden_logs.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\blocks\mosaic_wood.json
 03ef4279577bffe623280b3c613d33bdc465dfde data\minecraft\tags\blocks\soul_fire_base_blocks.json
@@ -13,8 +13,8 @@ e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_button
 35f3d4a1a9d8f445c7edbe481f10498d5a26f20b data\varan-deco\tags\blocks\deco_furnaces.json
 1bf19cfa17ee03ee2ee225ba38fa012bba7b8ac3 data\varan-deco\tags\blocks\concrete_walls.json
 d6515b52704b9eb69d440373fb752855a2c5bbc0 data\varan-deco\tags\blocks\deco_cartography_tables.json
-c3a59751e549cd10d82f1622b179fd68cbf9eaa8 data\varan-deco\tags\blocks\terracotta_walls.json
 6683219a5e59c1bac4e84c9789537662d36af3a2 data\minecraft\tags\blocks\slabs.json
+c3a59751e549cd10d82f1622b179fd68cbf9eaa8 data\varan-deco\tags\blocks\terracotta_walls.json
 48d173da6e149532b3ef3104dec564ef3c2a1c57 data\minecraft\tags\blocks\standing_signs.json
 97245fa2968b79d411ec3b88ac33ec7ff0b48c3a data\minecraft\tags\blocks\needs_iron_tool.json
 9f173f7f2f0dbf9917d191ac8008a2642c8da095 data\minecraft\tags\blocks\wall_signs.json
@@ -53,8 +53,8 @@ d21b8ab5755b64163ee8d370b2c31e6685708a67 data\varan-deco\tags\blocks\mosaic_slab
 1dcc609f2b53cc6b57fcea6684ca9219a90d60c3 data\minecraft\tags\blocks\sculk_replaceable.json
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\blocks\leaves.json
 cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\blocks\ice.json
-bd3de99181ca0e50d1e019f3e97b0501eebf0712 data\minecraft\tags\blocks\needs_diamond_tool.json
 ceb5b39050a7d67e05359478b15e7a03fcc2ae58 data\minecraft\tags\blocks\needs_stone_tool.json
+bd3de99181ca0e50d1e019f3e97b0501eebf0712 data\minecraft\tags\blocks\needs_diamond_tool.json
 11c5f55bcd6ee59cfd17365050bf1baf91f40215 data\minecraft\tags\blocks\pressure_plates.json
 4fbba9d42dfaeb2384efe9c4147ed15ba7cea169 data\minecraft\tags\blocks\soul_speed_blocks.json
 1ceb31ff318282c7b51f8398f0ab2986ef590ffd data\varan-deco\tags\blocks\concrete_slabs.json

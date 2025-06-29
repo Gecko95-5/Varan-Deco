@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "varan-deco:deco_crafting_tables"
+    },
+    {
+      "tag": "varan-deco:deco_barrels"
+    }
+  ],
+  "result": {
+    "id": "minecraft:barrel"
+  }
+}
