@@ -4377,5 +4377,20 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHER_SPROUTS),
                         conditionsFromItem(Items.NETHER_SPROUTS))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.WARPED_ROOTS)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DecoItems.PINK_PETALS_STEW)
+                .input(Items.BOWL)
+                .input(Items.BROWN_MUSHROOM)
+                .input(Items.RED_MUSHROOM)
+                .input(Items.PINK_PETALS)
+                .criterion(hasItem(Items.BOWL),
+                        conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(Items.BROWN_MUSHROOM),
+                        conditionsFromItem(Items.BROWN_MUSHROOM))
+                .criterion(hasItem(Items.RED_MUSHROOM),
+                        conditionsFromItem(Items.RED_MUSHROOM))
+                .criterion(hasItem(Items.PINK_PETALS),
+                        conditionsFromItem(Items.PINK_PETALS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.PINK_PETALS_STEW)));
     }
 }
