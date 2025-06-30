@@ -202,6 +202,9 @@ public class DecoItems {
     public static final Item MIGHTY_LAVENDER_STEW = registerItem("mighty_lavender_stew",
             new StewItem(new Item.Settings().food(DecoFoodComponents.MIGHTY_LAVENDER_STEW)));
 
+    public static final Item PINK_PETALS_STEW = registerItem("pink_petals_stew",
+            new StewItem(new Item.Settings().food(DecoFoodComponents.PINK_PETALS_STEW)));
+
     public static final Item CACTUS_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
             DecoBoats.CACTUS_BOAT_KEY, false);
     public static final Item CACTUS_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_CHEST_BOAT_ID,

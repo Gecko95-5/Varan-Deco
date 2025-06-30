@@ -1,4 +1,4 @@
-// 1.20.4	2025-06-27T20:32:54.7150006	Variant Decoration/Block Loot Tables
+// 1.20.4	2025-06-30T18:24:58.4569685	Variant Decoration/Block Loot Tables
 a000080130b061e8932fee05057a0be62c2e5722 data\varan-deco\loot_tables\blocks\california_poppy.json
 b1605436dca25861b369553525c9f5d447284255 data\varan-deco\loot_tables\blocks\obsidian_stairs.json
 239df864ac05ef6129d88aba0e2a3154e157af49 data\varan-deco\loot_tables\blocks\deepslate_pressure_plate.json
@@ -454,8 +454,8 @@ afd6ae457629909eeca73d287b6bbb7567ae45a4 data\varan-deco\loot_tables\blocks\birc
 f74c6696196adfd8474a0408714edbe0a01b84b4 data\varan-deco\loot_tables\blocks\cut_white_concrete.json
 9d671bcb7e1e805a0d4f3b91adb0ff088123a47f data\varan-deco\loot_tables\blocks\weathered_copper_button.json
 b7a861c511f904bbf17d6ac62a944363500e1974 data\varan-deco\loot_tables\blocks\wooden_wood.json
-8e5f80080c03a91a28110bba006903fd83a9c197 data\varan-deco\loot_tables\blocks\cut_black_concrete_stairs.json
 73faa887a4d54f39a8ca7c33a375089e73d59ee0 data\varan-deco\loot_tables\blocks\infested_tuff.json
+8e5f80080c03a91a28110bba006903fd83a9c197 data\varan-deco\loot_tables\blocks\cut_black_concrete_stairs.json
 7d7f3dc2c7e1361257fb0ae968811b2db8caffe9 data\varan-deco\loot_tables\blocks\mosaic_blue_stained_glass_pane.json
 aa1551212cd94cc803c4f0ec8cb612b8d5fc285c data\varan-deco\loot_tables\blocks\light_blue_concrete_pillar.json
 a589a8374e82f3c53de4722f83027965baf31fb3 data\varan-deco\loot_tables\blocks\standing_stripped_spruce_sign.json
