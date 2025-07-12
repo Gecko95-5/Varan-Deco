@@ -1,7 +1,6 @@
 package net.gecko.varandeco;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
@@ -12,10 +11,8 @@ import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
-import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
-import net.minecraft.world.biome.FoliageColors;
 import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
@@ -41,11 +38,6 @@ public class VaranDeco implements ModInitializer {
 		DecoOxidizableBlocks.registerWaxableBlocks();
 		DecoLootTableModifiers.modifyLootTables();
 		DecoComposterRecipes.registerCompostableItems();
-
-		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
-						world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
-				DecoBlocks.WOODEN_LEAVES);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
