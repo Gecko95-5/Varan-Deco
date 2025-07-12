@@ -39,11 +39,6 @@ public class VaranDeco implements ModInitializer {
 		DecoLootTableModifiers.modifyLootTables();
 		DecoComposterRecipes.registerCompostableItems();
 
-		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
-						world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
-				DecoBlocks.WOODEN_LEAVES);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
-
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_LADDER,300);
