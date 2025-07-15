@@ -6,9 +6,10 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.item.custom.BubbleItem;
 import net.gecko.varandeco.item.custom.SnowBrickItem;
-import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 
 public class DecoItems {
@@ -224,6 +225,9 @@ public class DecoItems {
             DecoBoats.WARPED_BOAT_KEY, false);
     public static final Item WARPED_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_CHEST_BOAT_ID,
             DecoBoats.WARPED_BOAT_KEY, true);
+
+    public static final Item TALL_SEAGRASS = registerItem("tall_seagrass",
+            new TallBlockItem(Blocks.TALL_SEAGRASS,new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(VaranDeco.MOD_ID, name),item);

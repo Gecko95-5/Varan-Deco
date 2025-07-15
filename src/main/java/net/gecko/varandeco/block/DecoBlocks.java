@@ -377,7 +377,7 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK)));
     public static final Block BLACK_ICE = registerBlock("black_ice",
             new BlackIceBlock(AbstractBlock.Settings.create().slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
+                    .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
                     .mapColor(MapColor.BLACK).pistonBehavior(PistonBehavior.BLOCK)));
     public static final Block WHITE_BLOCK = registerBlock("white_block",
             new Block(AbstractBlock.Settings.create().resistance(0.5f)

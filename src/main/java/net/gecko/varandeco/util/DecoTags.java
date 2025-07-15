@@ -126,6 +126,9 @@ public class DecoTags {
         public static final TagKey<Item> MOSAIC_SLABS =
                 createTag("mosaic_slab");
 
+        public static final TagKey<Item> CAN_MINE_BLACK_ICE =
+                createTag("can_mine_black_ice");
+
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), Identifier.of(VaranDeco.MOD_ID, name));
         }
