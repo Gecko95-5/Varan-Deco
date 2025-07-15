@@ -369,9 +369,8 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILES = registerBlock("polished_blackstone_tiles",
             new Block(FabricBlockSettings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK)));
     public static final Block BLACK_ICE = registerBlock("black_ice",
-            new BlackIceBlock(FabricBlockSettings.create().slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
-                    .mapColor(MapColor.BLACK).pistonBehavior(PistonBehavior.BLOCK)));
+            new BlackIceBlock(FabricBlockSettings.create().mapColor(MapColor.BLACK).slipperiness(1.18F)
+                    .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)));
     public static final Block WHITE_BLOCK = registerBlock("white_block",
             new Block(FabricBlockSettings.create().resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE).mapColor(DyeColor.WHITE)));
@@ -1149,7 +1148,7 @@ public class DecoBlocks {
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
-    
+
     public static final Block INFESTED_POLISHED_STONE = registerBlock("infested_polished_stone",
             new InfestedBlock(DecoBlocks.POLISHED_STONE, FabricBlockSettings.copyOf(Blocks.INFESTED_COBBLESTONE)));
     public static final Block INFESTED_STONE_TILES = registerBlock("infested_stone_tiles",
@@ -2559,7 +2558,7 @@ public class DecoBlocks {
         return Registry.register(Registries.ITEM, new Identifier(VaranDeco.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
-    
+
     public static void registerDecoBlocks(){
         VaranDeco.LOGGER.debug("Registering Blocks for " + VaranDeco.MOD_ID);
     }

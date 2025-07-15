@@ -1122,6 +1122,7 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
         itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DecoItems.ANCIENT_ROSE_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.TALL_SEAGRASS, Models.GENERATED);
 
         itemModelGenerator.register(DecoItems.MIGHTY_LAVENDER_FLOWER, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.LILAC_FLOWER, Models.HANDHELD);
