@@ -352,7 +352,7 @@ public class DecoBlocks {
             AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK),Block::new);
     public static final Block BLACK_ICE = registerBlock("black_ice",
             AbstractBlock.Settings.create().slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
+                    .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
                     .mapColor(MapColor.BLACK).pistonBehavior(PistonBehavior.BLOCK), BlackIceBlock::new);
     public static final Block WHITE_BLOCK = registerBlock("white_block",
             AbstractBlock.Settings.create().resistance(0.5f)
@@ -2626,7 +2626,7 @@ public class DecoBlocks {
         return registerSimple(name, new ButtonBlock(blockSetType, pressTicks,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
-    public static OxidizableButtonBlock registerOxidButton(String name, Oxidizable.OxidationLevel oxidationLevel, 
+    public static OxidizableButtonBlock registerOxidButton(String name, Oxidizable.OxidationLevel oxidationLevel,
                                                            BlockSetType blockSetType, int pressTicks, Block copyBlock) {
         return registerSimple(name, new OxidizableButtonBlock(oxidationLevel, blockSetType, pressTicks,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
@@ -2666,7 +2666,7 @@ public class DecoBlocks {
     public static SuspiciousStewEffectsComponent createStewEffectList(RegistryEntry<StatusEffect> effect, float effectLengthInSeconds) {
         return new SuspiciousStewEffectsComponent(List.of(new SuspiciousStewEffectsComponent.StewEffect(effect, MathHelper.floor(effectLengthInSeconds * 20.0F))));
     }
-    
+
     public static RegistryKey<Block> getBlockKey(String name){
         return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(name));
     }

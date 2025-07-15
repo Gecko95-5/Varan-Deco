@@ -257,17 +257,21 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.GILDED_BLACKSTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.POLISHED_GLIDED_BLACKSTONE) + "_recipe_create");
 
-                createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_GLIDED_BLACKSTONE)
-                        .pattern("###")
-                        .pattern("#C#")
-                        .pattern("###")
-                        .input('C', Items.CHISELED_POLISHED_BLACKSTONE)
-                        .input('#', DecoBlocks.POLISHED_GLIDED_BLACKSTONE)
-                        .criterion(hasItem(Items.CHISELED_POLISHED_BLACKSTONE),
-                                conditionsFromItem(Items.CHISELED_POLISHED_BLACKSTONE))
-                        .criterion(hasItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE),
-                                conditionsFromItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.CHISELED_GLIDED_BLACKSTONE) + "_recipe_create");
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_GLIDED_BLACKSTONE, Items.GILDED_BLACKSTONE);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_GLIDED_BLACKSTONE,4)
+                .pattern(" # ")
+                .pattern("#C#")
+                .pattern(" # ")
+                .input('C', Items.CHISELED_POLISHED_BLACKSTONE)
+                .input('#', DecoBlocks.POLISHED_GLIDED_BLACKSTONE)
+                .criterion(hasItem(Items.CHISELED_POLISHED_BLACKSTONE),
+                        conditionsFromItem(Items.CHISELED_POLISHED_BLACKSTONE))
+                .criterion(hasItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE),
+                        conditionsFromItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE))
+                .offerTo(exporter, getRecipeName(DecoBlocks.CHISELED_GLIDED_BLACKSTONE) + "_recipe_create");
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_GLIDED_BLACKSTONE, Items.GILDED_BLACKSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_GLIDED_BLACKSTONE, DecoBlocks.POLISHED_GLIDED_BLACKSTONE);
 
                 createStairsRecipe(DecoBlocks.SNOW_STAIRS, Ingredient.ofItems(Items.SNOW_BLOCK))
                         .criterion(hasItem(Items.SNOW_BLOCK),conditionsFromItem(Items.SNOW_BLOCK))
@@ -3305,23 +3309,33 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoItems.COPPER_NUGGET))
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_COPPER_BARS) + "_recipe_create");
 
-                offerPressurePlateRecipe(DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
+        offerPressurePlateRecipe(DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.DEEPSLATE_BUTTON)
                         .input(Items.DEEPSLATE)
                         .criterion(hasItem(Items.DEEPSLATE),
                                 conditionsFromItem(Items.DEEPSLATE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DEEPSLATE_BUTTON) + "_recipe_create");
+                offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.DEEPSLATE_BUTTON, Items.DEEPSLATE);
 
-                offerPressurePlateRecipe(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
+        offerPressurePlateRecipe(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
                         .input(Items.COBBLED_DEEPSLATE)
                         .criterion(hasItem(Items.COBBLED_DEEPSLATE),
                                 conditionsFromItem(Items.COBBLED_DEEPSLATE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COBBLED_DEEPSLATE_BUTTON) + "_recipe_create");
+                offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLED_DEEPSLATE_BUTTON, Items.COBBLED_DEEPSLATE);
+                offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_DEEPSLATE_BUTTON, Items.COBBLED_DEEPSLATE);
 
-                offerPressurePlateRecipe(DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
+        offerPressurePlateRecipe(DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, Items.COBBLESTONE);
+
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.STONE_PRESSURE_PLATE, Items.STONE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.COBBLESTONE_BUTTON)
                         .input(Items.COBBLESTONE)
@@ -3329,7 +3343,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.COBBLESTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COBBLESTONE_BUTTON) + "_recipe_create");
 
-                offerPressurePlateRecipe(DecoBlocks.BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLESTONE_BUTTON, Items.COBBLESTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_BUTTON, Items.COBBLESTONE);
+
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.STONE_BUTTON, Items.STONE);
+
+        offerPressurePlateRecipe(DecoBlocks.BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
+
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_PRESSURE_PLATE, Items.POLISHED_BLACKSTONE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.BLACKSTONE_BUTTON)
                         .input(Items.BLACKSTONE)
@@ -3337,13 +3360,20 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.BLACKSTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLACKSTONE_BUTTON) + "_recipe_create");
 
-                offerPressurePlateRecipe(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.BLACKSTONE_BUTTON, Items.BLACKSTONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_BUTTON, Items.BLACKSTONE);
+
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_BUTTON, Items.POLISHED_BLACKSTONE);
+
+        offerPressurePlateRecipe(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
+        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.POLISHED_STONE_BUTTON)
                         .input(DecoBlocks.POLISHED_STONE)
                         .criterion(hasItem(DecoBlocks.POLISHED_STONE),
                                 conditionsFromItem(DecoBlocks.POLISHED_STONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.POLISHED_STONE_BUTTON) + "_recipe_create");
+                offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_BUTTON, DecoBlocks.POLISHED_STONE);
 
                 createShapeless(RecipeCategory.MISC,Items.YELLOW_DYE)
                         .input(DecoBlocks.YELLOW_TULIP)
@@ -4445,7 +4475,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoItems.LILAC_FLOWER),
                                 conditionsFromItem(DecoItems.LILAC_FLOWER))
                         .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "lilac_flower");
-                
+
                 createShaped(RecipeCategory.MISC,Items.TALL_GRASS)
                         .pattern("#")
                         .pattern("#")
@@ -4477,6 +4507,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.SHORT_DRY_GRASS),
                                 conditionsFromItem(Items.SHORT_DRY_GRASS))
                         .offerTo(exporter, getRecipeName(Items.TALL_DRY_GRASS) + "_recipe_create");
+
+                        createShaped(RecipeCategory.MISC, DecoItems.TALL_SEAGRASS)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.SEAGRASS)
+                        .criterion(hasItem(Items.SEAGRASS),
+                                conditionsFromItem(Items.SEAGRASS))
+                        .offerTo(exporter, getRecipeName(DecoItems.TALL_SEAGRASS) + "_recipe_create");
             }
         };
     }

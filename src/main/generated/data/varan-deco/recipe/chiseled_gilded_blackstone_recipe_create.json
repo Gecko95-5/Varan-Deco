@@ -6,12 +6,12 @@
     "C": "minecraft:chiseled_polished_blackstone"
   },
   "pattern": [
-    "###",
+    " # ",
     "#C#",
-    "###"
+    " # "
   ],
   "result": {
-    "count": 1,
+    "count": 4,
     "id": "minecraft:chiseled_gilded_blackstone"
   }
 }
