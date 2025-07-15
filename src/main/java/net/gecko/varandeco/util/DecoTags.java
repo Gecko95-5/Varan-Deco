@@ -90,6 +90,9 @@ public class DecoTags {
         public static final TagKey<Item> WOODEN_LOGS =
                 createTag("wooden_logs");
 
+        public static final TagKey<Item> CAN_MINE_BLACK_ICE =
+                createTag("can_mine_black_ice");
+
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));
         }

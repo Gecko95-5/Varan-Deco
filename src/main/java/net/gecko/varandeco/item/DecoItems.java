@@ -5,9 +5,10 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.custom.BubbleItem;
 import net.gecko.varandeco.item.custom.SnowBrickItem;
-import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 
 public class DecoItems {
@@ -37,6 +38,9 @@ public class DecoItems {
     public static final Item LILAC_STEW = registerItem("lilac_stew",
             new StewItem(new Item.Settings().food(DecoFoodComponents.LILAC_STEW)));
 
+    public static final Item TALL_SEAGRASS = registerItem("tall_seagrass",
+            new TallBlockItem(Blocks.TALL_SEAGRASS,new Item.Settings()));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(VaranDeco.MOD_ID, name),item);
     }
@@ -48,6 +52,7 @@ public class DecoItems {
         addToItemGroup(DecoItemGroup.VARAN_DECO, WARPED_WART);
         addToItemGroup(DecoItemGroup.VARAN_DECO, COPPER_NUGGET);
         addToItemGroup(DecoItemGroup.VARAN_DECO, LILAC_FLOWER);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, TALL_SEAGRASS);
     }
 
     public static void addToItemGroup(ItemGroup group, Item item) {

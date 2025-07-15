@@ -6,6 +6,7 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;

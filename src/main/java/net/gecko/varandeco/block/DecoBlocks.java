@@ -320,7 +320,7 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).strength(1.5f).resistance(6.0f).requiresTool()));
     public static final Block BLACK_ICE = registerBlock("black_ice",
             new BlackIceBlock(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.BLACK).slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)));
+                    .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)));
     public static final Block WHITE_BLOCK = registerBlock("white_block",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.WHITE).resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
@@ -988,7 +988,7 @@ public class DecoBlocks {
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
-    
+
     public static final Block INFESTED_POLISHED_STONE = registerBlock("infested_polished_stone",
             new InfestedBlock(DecoBlocks.POLISHED_STONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
     public static final Block INFESTED_STONE_TILES = registerBlock("infested_stone_tiles",
@@ -1045,7 +1045,7 @@ public class DecoBlocks {
             new InfestedBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
     public static final Block INFESTED_CHISELED_POLISHED_BLACKSTONE = registerBlock("infested_chiseled_polished_blackstone",
             new InfestedBlock(Blocks.CHISELED_POLISHED_BLACKSTONE, AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT)));
-    
+
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)));
     public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",
@@ -2553,7 +2553,7 @@ public class DecoBlocks {
     public static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
-    
+
     public static void registerDecoBlocks(){
         VaranDeco.LOGGER.debug("Registering Blocks for " + VaranDeco.MOD_ID);
         addBlocksToItemGroups();
