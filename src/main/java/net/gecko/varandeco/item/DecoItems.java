@@ -8,6 +8,7 @@ import net.gecko.varandeco.item.custom.BubbleItem;
 import net.gecko.varandeco.item.custom.SnowBrickItem;
 import net.gecko.varandeco.util.interfaces.HangingSignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.SignRegisterFunction;
+import net.gecko.varandeco.util.interfaces.TallPlantItemRegisterFunction;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.HangingSignItem;
@@ -17,13 +18,15 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
 public class DecoItems {
 
-    public static final Item CACTUS_SIGN = registerSignItem("cactus_sign", 
+    public static final Item CACTUS_SIGN = registerSignItem("cactus_sign",
             DecoBlocks.STANDING_CACTUS_SIGN, DecoBlocks.WALL_CACTUS_SIGN, SignItem::new);
     public static final Item WOODEN_SIGN = registerSignItem("wooden_sign",
             DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN, SignItem::new);
@@ -213,6 +216,8 @@ public class DecoItems {
 
     public static final Item COPPER_NUGGET = registerItem("copper_nugget", 64, Item::new);
 
+    public static final Item TALL_SEAGRASS = registerTallItem("tall_seagrass", Blocks.TALL_SEAGRASS, TallBlockItem::new);
+
     public static final Item CACTUS_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
             false, false);
     public static final Item CACTUS_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
@@ -232,7 +237,7 @@ public class DecoItems {
             false,false);
     public static final Item WARPED_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_BOAT_ID,
             true, false);
-                        
+
     //I had some inspiration The Mentor CodeLab
 
     public static RegistryKey<Item> getItemKey(String name){
@@ -242,17 +247,22 @@ public class DecoItems {
         T item = factory.apply(new Item.Settings().registryKey(getItemKey(name)).maxCount(stackCount));
         return Registry.register(Registries.ITEM, getItemKey(name), item);
     }
+    public static <T extends Item> T registerTallItem(String name, Block tallPlantBlock,
+                                                      TallPlantItemRegisterFunction<Item.Settings, T> factory){
+        T item = factory.apply(tallPlantBlock, new Item.Settings().maxCount(64).registryKey(getItemKey(name)));
+        return Registry.register(Registries.ITEM,getItemKey(name),item);
+    }
     public static <T extends Item> T registerCooldownItem(String name, int stackCount, int cooldownUse,
                                                   Function<Item.Settings, T> factory){
         T item = factory.apply(new Item.Settings().registryKey(getItemKey(name)).maxCount(stackCount).useCooldown(cooldownUse));
         return Registry.register(Registries.ITEM, getItemKey(name), item);
     }
-    public static <T extends Item> T registerSignItem(String name, Block standingBlock, Block wallBlock, 
+    public static <T extends Item> T registerSignItem(String name, Block standingBlock, Block wallBlock,
                                                       SignRegisterFunction<Item.Settings, T> factory){
         T item = factory.apply(standingBlock, wallBlock, new Item.Settings().maxCount(16).registryKey(getItemKey(name)));
         return Registry.register(Registries.ITEM,getItemKey(name),item);
     }
-    public static <T extends Item> T registerHangingSignItem(String name, Block hangingSign, Block wallHangingSign, 
+    public static <T extends Item> T registerHangingSignItem(String name, Block hangingSign, Block wallHangingSign,
                                                              HangingSignRegisterFunction<Item.Settings, T> factory){
         T item = factory.apply(hangingSign, wallHangingSign, new Item.Settings().maxCount(16).registryKey(getItemKey(name)));
         return Registry.register(Registries.ITEM,getItemKey(name),item);
