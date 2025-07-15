@@ -4,10 +4,8 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.custom.BubbleItem;
 import net.gecko.varandeco.item.custom.SnowBrickItem;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SignItem;
-import net.minecraft.item.StewItem;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -38,6 +36,8 @@ public class DecoItems {
     public static final Item LILAC_STEW = registerItem("lilac_stew",
             new StewItem(new Item.Settings().food(DecoFoodComponents.LILAC_STEW).group(DecoItemGroup.VARAN_DECO_BLOCKS)));
 
+    public static final Item TALL_SEAGRASS = registerItem("tall_seagrass",
+            new TallBlockItem(Blocks.TALL_SEAGRASS,new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranDeco.MOD_ID, name),item);

@@ -9,11 +9,12 @@
     }
   },
   "pattern": [
-    "###",
+    " # ",
     "#C#",
-    "###"
+    " # "
   ],
   "result": {
+    "count": 4,
     "item": "varan-deco:chiseled_gilded_blackstone"
   }
 }

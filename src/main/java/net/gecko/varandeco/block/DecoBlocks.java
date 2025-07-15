@@ -325,7 +325,7 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BLACK_ICE = registerBlock("black_ice",
             new BlackIceBlock(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.BLACK).slipperiness(1.18F)
-                    .strength(5.6f).requiresTool().sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)),
+                    .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WHITE_BLOCK = registerBlock("white_block",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.WHITE).resistance(0.5f)
