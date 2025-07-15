@@ -43,6 +43,7 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoItems.WARPED_WART,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoItems.ANCIENT_ROSE_SEEDS,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoItems.MIGHTY_LAVENDER_FLOWER,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoItems.TALL_SEAGRASS,0.5F);
         ComposterItemsRecipes.registerCompostableItem(DecoItems.LILAC_FLOWER,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ENDER_ROSE_BUSH,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WITHER_ROSE_BUSH,0.65F);
