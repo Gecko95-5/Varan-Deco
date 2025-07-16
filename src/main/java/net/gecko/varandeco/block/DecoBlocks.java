@@ -8,9 +8,10 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.barrels.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.BlackIceBlock;
+import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
@@ -23,6 +24,7 @@ import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -39,6 +41,9 @@ import net.minecraft.util.math.MathHelper;
 import java.util.List;
 import java.util.function.Function;
 
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.world.BlockView;
 
 public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
@@ -375,6 +380,10 @@ public class DecoBlocks {
             AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK),Block::new);
     public static final Block CRACKED_POLISHED_BLACKSTONE_TILES = registerBlock("cracked_polished_blackstone_tiles",
             AbstractBlock.Settings.copy(DecoBlocks.POLISHED_BLACKSTONE_TILES),Block::new);
+    public static final Block FRAGILE_ICE = registerBlock("fragile_ice",
+            AbstractBlock.Settings.create().mapColor(MapColor.PALE_PURPLE).slipperiness(0.98F)
+                    .breakInstantly().sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    .allowsSpawning(DecoBlocks::never).resistance(0.1f).pistonBehavior(PistonBehavior.DESTROY), FragileIceBlock::new);
     public static final Block BLACK_ICE = registerBlock("black_ice",
             AbstractBlock.Settings.create().slipperiness(1.18F)
                     .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)
@@ -2486,6 +2495,18 @@ public class DecoBlocks {
             .sign(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN,DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN)
             .group("pale_oak_mosaic").build();
 
+    public static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
+        return new PillarBlock(
+                AbstractBlock.Settings.create()
+                        .mapColor(state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
+                        .instrument(NoteBlockInstrument.BASS)
+                        .strength(2.0F)
+                        .sounds(BlockSoundGroup.WOOD)
+                        .burnable()
+        );
+    }	private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+        return false;
+    }
     //I had some inspiration The Mentor CodeLab
 
     public static <T extends Block> T registerBlockTemp(String name, Function<AbstractBlock.Settings, T> factory){
