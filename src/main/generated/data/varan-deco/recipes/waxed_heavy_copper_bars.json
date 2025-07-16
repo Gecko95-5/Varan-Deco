@@ -3,12 +3,12 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:waxed_copper_block"
+      "item": "varan-deco:waxed_copper_bars"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "count": 16,

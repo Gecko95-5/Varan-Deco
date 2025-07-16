@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_oxidized_copper": {
+    "has_oxidized_copper_bars": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:oxidized_copper"
+              "varan-deco:oxidized_copper_bars"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oxidized_copper"
+      "has_oxidized_copper_bars"
     ]
   ],
   "rewards": {

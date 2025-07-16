@@ -1,21 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
       "item": "minecraft:snowball"
     },
-    "I": {
-      "item": "minecraft:ice"
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "minecraft:snowball"
     }
-  },
-  "pattern": [
-    "###",
-    "#I#",
-    "###"
   ],
   "result": {
-    "count": 8,
     "item": "varan-deco:snow_brick"
   }
 }
