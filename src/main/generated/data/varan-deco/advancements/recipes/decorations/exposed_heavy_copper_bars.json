@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_exposed_copper": {
+    "has_exposed_copper_bars": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:exposed_copper"
+              "varan-deco:exposed_copper_bars"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_exposed_copper"
+      "has_exposed_copper_bars"
     ]
   ],
   "rewards": {
