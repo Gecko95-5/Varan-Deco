@@ -1427,7 +1427,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS)
                 .add(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE)
                 .add(DecoBlocks.INFESTED_CRACKED_STONE_TILES)
-                .add(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES);
+                .add(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES)
+                .add(DecoBlocks.INFESTED_CHISELED_STONE)
+                .add(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE_BRICKS)
+                .add(DecoBlocks.INFESTED_CHISELED_DEEPSLATE_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
                 .add(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)

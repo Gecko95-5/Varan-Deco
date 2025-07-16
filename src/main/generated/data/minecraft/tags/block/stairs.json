@@ -49,6 +49,15 @@
     "minecraft:crimson_mosaic_stairs",
     "minecraft:warped_mosaic_stairs",
     "minecraft:tuff_tile_stairs",
-    "minecraft:smooth_basalt_stairs"
+    "minecraft:smooth_basalt_stairs",
+    "minecraft:cobbled_sandstone_stairs",
+    "minecraft:cobbled_red_sandstone_stairs",
+    "minecraft:cobbled_soul_soilstone_stairs",
+    "minecraft:polished_sandstone_stairs",
+    "minecraft:polished_red_sandstone_stairs",
+    "minecraft:polished_soul_soilstone_stairs",
+    "minecraft:sandstone_brick_stairs",
+    "minecraft:red_sandstone_brick_stairs",
+    "minecraft:soul_soilstone_brick_stairs"
   ]
 }

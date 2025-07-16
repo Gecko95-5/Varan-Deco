@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:exposed_copper"
+    "#": "minecraft:exposed_copper_bars"
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
+    "count": 1,
     "id": "minecraft:exposed_heavy_copper_bars"
   }
 }
