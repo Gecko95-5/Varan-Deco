@@ -9,9 +9,10 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.BlackIceBlock;
+import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
@@ -23,6 +24,7 @@ import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -31,7 +33,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.world.BlockView;
 
 public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
@@ -390,6 +394,10 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.create().strength(1.5f).resistance(6.0f).requiresTool().mapColor(MapColor.BLACK)));
     public static final Block CRACKED_POLISHED_BLACKSTONE_TILES = registerBlock("cracked_polished_blackstone_tiles",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)));
+    public static final Block FRAGILE_ICE = registerBlock("fragile_ice",
+            new FragileIceBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_PURPLE).slipperiness(0.98F)
+                    .breakInstantly().sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    .allowsSpawning(DecoBlocks::never).resistance(0.1f).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block BLACK_ICE = registerBlock("black_ice",
             new BlackIceBlock(FabricBlockSettings.create().mapColor(MapColor.BLACK).slipperiness(1.18F)
                     .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)));
@@ -2618,6 +2626,8 @@ public class DecoBlocks {
                         .sounds(BlockSoundGroup.WOOD)
                         .burnable()
         );
+    }	private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+        return false;
     }
 
     private static Block registerBlockWithoutItem(String name, Block block) {

@@ -3,6 +3,7 @@ package net.gecko.varandeco.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
@@ -238,5 +239,10 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.PAEONIA.asItem())
                 .add(DecoBlocks.LAVENDER.asItem())
                 .add(DecoBlocks.ANCIENT_ROSE.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.WATER_ITEMS)
+                .add(Items.WATER_BUCKET)
+                .add(DecoItems.BUBBLE_ORB);
+
     }
 }

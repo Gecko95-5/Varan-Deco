@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:cobbled_red_sandstone"
+  },
+  "result": "varan-deco:red_sandstone_brick_stairs"
+}
