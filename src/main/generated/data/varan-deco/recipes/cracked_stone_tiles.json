@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:stone_tiles"
+  },
+  "result": "varan-deco:cracked_stone_tiles"
+}

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "varan-deco:block/soul_soilstone_bottom",
+    "bottom": "varan-deco:block/cobbled_soul_soilstone",
     "side": "varan-deco:block/soul_soilstone",
     "top": "varan-deco:block/soul_soilstone_top"
   }

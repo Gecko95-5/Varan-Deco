@@ -3,15 +3,14 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:weathered_copper"
+      "item": "varan-deco:weathered_copper_bars"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
     "item": "varan-deco:weathered_heavy_copper_bars"
   },
   "show_notification": true

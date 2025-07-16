@@ -39,6 +39,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STONE_TILE_STAIRS);
         slabDrops(DecoBlocks.STONE_TILE_SLAB);
         addDrop(DecoBlocks.STONE_TILE_WALL);
+        addDrop(DecoBlocks.CRACKED_STONE_TILES);
 
         addDrop(DecoBlocks.PACKED_MUD_STAIRS);
         slabDrops(DecoBlocks.PACKED_MUD_SLAB);
@@ -66,6 +67,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS);
         slabDrops(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB);
         addDrop(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL);
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
 
         addDropWithSilkTouch(DecoBlocks.POLISHED_GLIDED_BLACKSTONE);
         addDropWithSilkTouch(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
@@ -839,5 +841,47 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES);
         addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
         addDropWithSilkTouch(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_STONE_TILES, DecoBlocks.CRACKED_STONE_TILES);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+
+        addDrop(DecoBlocks.DEEPSLATE_GRINDSTONE);
+        addDrop(DecoBlocks.BLACKSTONE_GRINDSTONE);
+
+        addDrop(DecoBlocks.COBBLED_SANDSTONE);
+        addDrop(DecoBlocks.COBBLED_RED_SANDSTONE);
+        addDrop(DecoBlocks.COBBLED_SOUL_SOILSTONE);
+        addDrop(DecoBlocks.POLISHED_SANDSTONE);
+        addDrop(DecoBlocks.POLISHED_RED_SANDSTONE);
+        addDrop(DecoBlocks.POLISHED_SOUL_SOILSTONE);
+        addDrop(DecoBlocks.SANDSTONE_BRICKS);
+        addDrop(DecoBlocks.RED_SANDSTONE_BRICKS);
+        addDrop(DecoBlocks.SOUL_SOILSTONE_BRICKS);
+        addDrop(DecoBlocks.COBBLED_SANDSTONE_STAIRS);
+        slabDrops(DecoBlocks.COBBLED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.COBBLED_SANDSTONE_WALL);
+        addDrop(DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS);
+        slabDrops(DecoBlocks.COBBLED_RED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.COBBLED_RED_SANDSTONE_WALL);
+        addDrop(DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS);
+        slabDrops(DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL);
+        addDrop(DecoBlocks.POLISHED_SANDSTONE_STAIRS);
+        slabDrops(DecoBlocks.POLISHED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_SANDSTONE_WALL);
+        addDrop(DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS);
+        slabDrops(DecoBlocks.POLISHED_RED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_RED_SANDSTONE_WALL);
+        addDrop(DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS);
+        slabDrops(DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL);
+        addDrop(DecoBlocks.SANDSTONE_BRICK_STAIRS);
+        slabDrops(DecoBlocks.SANDSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.SANDSTONE_BRICK_WALL);
+        addDrop(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS);
+        slabDrops(DecoBlocks.RED_SANDSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.RED_SANDSTONE_BRICK_WALL);
+        addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS);
+        slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
     }
 }
