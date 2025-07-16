@@ -56,6 +56,15 @@
     "minecraft:obsidian_brick_wall",
     "minecraft:tuff_tile_wall",
     "minecraft:purpur_wall",
-    "minecraft:smooth_basalt_wall"
+    "minecraft:smooth_basalt_wall",
+    "minecraft:cobbled_sandstone_wall",
+    "minecraft:cobbled_red_sandstone_wall",
+    "minecraft:cobbled_soul_soilstone_wall",
+    "minecraft:polished_sandstone_wall",
+    "minecraft:polished_red_sandstone_wall",
+    "minecraft:polished_soul_soilstone_wall",
+    "minecraft:sandstone_brick_wall",
+    "minecraft:red_sandstone_brick_wall",
+    "minecraft:soul_soilstone_brick_wall"
   ]
 }
