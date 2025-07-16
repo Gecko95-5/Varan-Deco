@@ -182,6 +182,9 @@ public class DecoItems {
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",
             new BubbleItem(new Item.Settings()));
 
+    public static final Item ICE_SHARD = registerItem("ice_shard",
+            new Item(new Item.Settings()));
+
     public static final Item WARPED_WART = registerItem("warped_wart",
             new AliasedBlockItem(DecoBlocks.WARPED_WART_PLANT,new Item.Settings()));
 

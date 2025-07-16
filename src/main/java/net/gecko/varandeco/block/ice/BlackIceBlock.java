@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.custom;
+package net.gecko.varandeco.block.ice;
 
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Block;

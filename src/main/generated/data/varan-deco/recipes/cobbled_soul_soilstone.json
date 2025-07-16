@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "varan-deco:soul_soilstone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:cobbled_soul_soilstone"
+  }
+}

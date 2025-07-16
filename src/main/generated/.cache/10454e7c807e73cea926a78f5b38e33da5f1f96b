@@ -1,4 +1,4 @@
-// 1.20.6	2025-07-20T13:27:12.6172778	Variant Decoration/Block Loot Tables
+// 1.20.6	2025-07-20T13:41:51.516984	Variant Decoration/Block Loot Tables
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -183,9 +183,9 @@ b8add334ffca7e0d82954836b46cfad8d729d280 data\varan-deco\loot_tables\blocks\sand
 3821be9b969686d3ca0299f81c5d1e65344df382 data\varan-deco\loot_tables\blocks\standing_stripped_warped_sign.json
 ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_red_sandstone_bricks.json
 710553ad30244d1e184c707c155d770032e55610 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_stairs.json
-ab46cb89ddd897fbf35d57f4370a31876178e5da data\varan-deco\loot_tables\blocks\cut_orange_concrete_stairs.json
 e71e9abc40539483d0074b56d9edf01cd9777527 data\varan-deco\loot_tables\blocks\waxed_weathered_light_copper_bars.json
 bad91e54c975fb557b58460d22d3414d68498e41 data\varan-deco\loot_tables\blocks\waxed_light_copper_bars.json
+ab46cb89ddd897fbf35d57f4370a31876178e5da data\varan-deco\loot_tables\blocks\cut_orange_concrete_stairs.json
 31cf5f1cb54674cb3f98fe92d271bbdb5f693944 data\varan-deco\loot_tables\blocks\cut_brown_concrete.json
 d68c8fa930f6ef65649b754fbfc7c53f03ed6430 data\varan-deco\loot_tables\blocks\cut_red_sandstone_brick_wall.json
 0fa4faebc4499ac1a634863328ce181ff53bd539 data\varan-deco\loot_tables\blocks\hardened_red_stained_glass_pane.json
@@ -412,9 +412,9 @@ f4726a99dbb62922e39d2106b53cc57723963bda data\varan-deco\loot_tables\blocks\dark
 e149098bec041beb4f3e67964ad46743bb11e511 data\varan-deco\loot_tables\blocks\orange_concrete_pillar.json
 f77422e7500b269fcccaff563899d211c7837847 data\varan-deco\loot_tables\blocks\hardened_lime_stained_glass.json
 17c50f095e69d7c7acc940c598d42e78b1367e47 data\varan-deco\loot_tables\blocks\ancient_rose.json
+bec345021ee4a7b08577f620a91a4fef12939dd7 data\varan-deco\loot_tables\blocks\chiseled_prismarine_bricks.json
 fe914651009d3faf004c4f59caefc9f2a84faf85 data\varan-deco\loot_tables\blocks\spruce_barrel.json
 4bf51600207d274a546e1929299bfe24aa65e6ac data\varan-deco\loot_tables\blocks\gerbera_daisy.json
-bec345021ee4a7b08577f620a91a4fef12939dd7 data\varan-deco\loot_tables\blocks\chiseled_prismarine_bricks.json
 6e3adf23cda0b22ad9afd7442654b09fcafa1144 data\varan-deco\loot_tables\blocks\hanging_mangrove_mosaic_sign.json
 8081cd7e33e14edfb30e5a49919b82400ddc5d18 data\varan-deco\loot_tables\blocks\cobbled_deepslate_button.json
 20dc769931d2420bc09b56a05be421e818f488a0 data\varan-deco\loot_tables\blocks\stone_tile_wall.json
@@ -537,10 +537,11 @@ a986f3ec0514e13415c75f3b1782324226454de3 data\varan-deco\loot_tables\blocks\void
 db747b94656d93237b2d0da838c7e1dd0e305a49 data\varan-deco\loot_tables\blocks\hardened_green_stained_glass_pane.json
 d8d4968728455bc68d1e9eb83a7179553034365a data\varan-deco\loot_tables\blocks\cactus_smithing_table.json
 cac6d6725e1cde5285e1fb38eb95953eed128dcc data\varan-deco\loot_tables\blocks\obsidian_bricks.json
+5451b4926c8fb941a56548c8f5ec6c3392786897 data\varan-deco\loot_tables\blocks\fragile_ice.json
 0dc4cc4f0080463fc9c9faaf112ee437dbfc0b9e data\varan-deco\loot_tables\blocks\mosaic_light_blue_stained_glass.json
 02c6cfd0fef14af831eb1855620941f5321307c5 data\varan-deco\loot_tables\blocks\red_sandstone_brick_wall.json
-f648957d9cad9d4bf21dbe734b456701210265bf data\varan-deco\loot_tables\blocks\wooden_trapdoor.json
 4d82b71bd8496200278c6d9cd39c94c1bcbea6af data\varan-deco\loot_tables\blocks\red_concrete_stairs.json
+f648957d9cad9d4bf21dbe734b456701210265bf data\varan-deco\loot_tables\blocks\wooden_trapdoor.json
 0289e58a903361744a77e669b63c033012878914 data\varan-deco\loot_tables\blocks\brown_block.json
 0f087e780aa2b9bf29cf533188d277e06d3ee99c data\varan-deco\loot_tables\blocks\purpur_brick_wall.json
 5c68d076566f899ebf514c0f92b5d8b8827f3490 data\varan-deco\loot_tables\blocks\birch_mosaic.json

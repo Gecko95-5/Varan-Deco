@@ -17,6 +17,10 @@ import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.util.Identifier;
+
+import java.util.function.BiConsumer;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -1078,5 +1082,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS);
         slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.FRAGILE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                        UniformLootNumberProvider.create(0.0F, 3.0f)));
     }
 }
