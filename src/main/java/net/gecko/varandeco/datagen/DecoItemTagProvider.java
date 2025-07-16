@@ -173,5 +173,10 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ENDER_ROSE.asItem())
                 .add(DecoBlocks.PAEONIA.asItem())
                 .add(DecoBlocks.LAVENDER.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.WATER_ITEMS)
+                .add(Items.WATER_BUCKET)
+                .add(DecoItems.BUBBLE_ORB);
+
     }
 }

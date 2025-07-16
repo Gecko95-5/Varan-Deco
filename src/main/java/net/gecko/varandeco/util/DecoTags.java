@@ -93,6 +93,9 @@ public class DecoTags {
         public static final TagKey<Item> WOODEN_LOGS =
                 createTag("wooden_logs");
 
+        public static final TagKey<Item> WATER_ITEMS =
+                createTag("water_items");
+
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));
         }

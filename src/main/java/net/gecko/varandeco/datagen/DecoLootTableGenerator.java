@@ -5,6 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.util.Identifier;
+
+import java.util.function.BiConsumer;
 
 public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
     public DecoLootTableGenerator(FabricDataOutput dataOutput) {
@@ -811,7 +815,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.WOODEN_SAPLING);
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);
-        
+
         addDrop(DecoBlocks.SMOOTH_BASALT_STAIRS);
         slabDrops(DecoBlocks.SMOOTH_BASALT_SLAB);
         addDrop(DecoBlocks.SMOOTH_BASALT_WALL);
@@ -883,5 +887,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS);
         slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.FRAGILE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                        UniformLootNumberProvider.create(0.0F, 3.0f)));
     }
 }

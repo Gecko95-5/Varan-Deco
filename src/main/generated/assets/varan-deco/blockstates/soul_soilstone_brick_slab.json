@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/soul_soilstone_brick_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/soul_soilstone_bricks"
+    },
+    "type=top": {
+      "model": "varan-deco:block/soul_soilstone_brick_slab_top"
+    }
+  }
+}

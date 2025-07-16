@@ -8,9 +8,10 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.BlackIceBlock;
+import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.magmabubbleblocks.*;
 import net.gecko.varandeco.block.oxidizable.OxidizableChainBlock;
@@ -24,6 +25,7 @@ import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -33,7 +35,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.world.BlockView;
 
 public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
@@ -340,6 +344,10 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).strength(1.5f).resistance(6.0f).requiresTool()));
     public static final Block CRACKED_POLISHED_BLACKSTONE_TILES = registerBlock("cracked_polished_blackstone_tiles",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)));
+    public static final Block FRAGILE_ICE = registerBlock("fragile_ice",
+            new FragileIceBlock(FabricBlockSettings.of(Material.ICE).slipperiness(0.98F)
+                    .breakInstantly().sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    .allowsSpawning(DecoBlocks::never).resistance(0.1f)));
     public static final Block BLACK_ICE = registerBlock("black_ice",
             new BlackIceBlock(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.BLACK).slipperiness(1.18F)
                     .strength(5.6f).sounds(BlockSoundGroup.STONE).velocityMultiplier(0.9F)));
@@ -1334,7 +1342,7 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)));
     public static final Block CUT_SANDSTONE_BRICK_WALL = registerBlock("cut_sandstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)));
-    public static final Block COBBLED_SANDSTONE_WALL = registerBlock("cobbled_sandstone_stairs",
+    public static final Block COBBLED_SANDSTONE_WALL = registerBlock("cobbled_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.COBBLED_SANDSTONE)));
     public static final Block POLISHED_SANDSTONE_WALL = registerBlock("polished_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_SANDSTONE)));
@@ -1398,7 +1406,7 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_SOUL_SOILSTONE)));
     public static final Block CUT_SOUL_SOILSTONE_BRICK_WALL = registerBlock("cut_soul_soilstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS)));
-    public static final Block COBBLED_SOUL_SOILSTONE_WALL = registerBlock("cobbled_soul_soilstone_stairs",
+    public static final Block COBBLED_SOUL_SOILSTONE_WALL = registerBlock("cobbled_soul_soilstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.COBBLED_SOUL_SOILSTONE)));
     public static final Block POLISHED_SOUL_SOILSTONE_WALL = registerBlock("polished_soul_soilstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_SOUL_SOILSTONE)));
@@ -1448,7 +1456,7 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.LIGHT_PRISMARINE)));
     public static final Block CUT_RED_SANDSTONE_BRICK_WALL = registerBlock("cut_red_sandstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)));
-    public static final Block COBBLED_RED_SANDSTONE_WALL = registerBlock("cobbled_red_sandstone_stairs",
+    public static final Block COBBLED_RED_SANDSTONE_WALL = registerBlock("cobbled_red_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.COBBLED_RED_SANDSTONE)));
     public static final Block POLISHED_RED_SANDSTONE_WALL = registerBlock("polished_red_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_RED_SANDSTONE)));
@@ -1922,6 +1930,8 @@ public class DecoBlocks {
                         .strength(2.0F)
                         .sounds(BlockSoundGroup.WOOD)
         );
+    }	private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+        return false;
     }
 
     private static Block registerBlockWithoutItem(String name, Block block) {
