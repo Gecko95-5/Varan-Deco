@@ -9,6 +9,7 @@
   "item.varan-deco.mighty_lavender_flower": "Mighty Lavender Flower",
   "item.varan-deco.lilac_flower": "Lilac Flower",
   "item.varan-deco.lilac_stew": "Suspicious Stew",
+  "item.varan-deco.ice_shard": "Ice Shard",
   "item.varan-deco.mighty_lavender_stew": "Suspicious Stew",
   "item.varan-deco.pink_petals_stew": "Suspicious Stew",
 
@@ -282,6 +283,36 @@
   "block.varan-deco.cut_red_sandstone_brick_slab": "Cut Red Sandstone Brick Slab",
   "block.varan-deco.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall",
 
+  "block.varan-deco.cobbled_sandstone": "Cobbled Sandstone",
+  "block.varan-deco.cobbled_sandstone_stairs": "Cobbled Sandstone Stairs",
+  "block.varan-deco.cobbled_sandstone_slab": "Cobbled Sandstone Slab",
+  "block.varan-deco.cobbled_sandstone_wall": "Cobbled Sandstone Wall",
+
+  "block.varan-deco.cobbled_red_sandstone": "Cobbled Red Sandstone",
+  "block.varan-deco.cobbled_red_sandstone_stairs": "Cobbled Red Sandstone Stairs",
+  "block.varan-deco.cobbled_red_sandstone_slab": "Cobbled Red Sandstone Slab",
+  "block.varan-deco.cobbled_red_sandstone_wall": "Cobbled Red Sandstone Wall",
+
+  "block.varan-deco.polished_sandstone": "Polished Sandstone",
+  "block.varan-deco.polished_sandstone_stairs": "Polished Sandstone Stairs",
+  "block.varan-deco.polished_sandstone_slab": "Polished Sandstone Slab",
+  "block.varan-deco.polished_sandstone_wall": "Polished Sandstone Wall",
+
+  "block.varan-deco.polished_red_sandstone": "Polished Red Sandstone",
+  "block.varan-deco.polished_red_sandstone_stairs": "Polished Red Sandstone Stairs",
+  "block.varan-deco.polished_red_sandstone_slab": "Polished Red Sandstone Slab",
+  "block.varan-deco.polished_red_sandstone_wall": "Polished Red Sandstone Wall",
+
+  "block.varan-deco.sandstone_bricks": "Sandstone Bricks",
+  "block.varan-deco.sandstone_brick_stairs": "Sandstone Brick Stairs",
+  "block.varan-deco.sandstone_brick_slab": "Sandstone Brick Slab",
+  "block.varan-deco.sandstone_brick_wall": "Sandstone Brick Wall",
+
+  "block.varan-deco.red_sandstone_bricks": "Red Sandstone Bricks",
+  "block.varan-deco.red_sandstone_brick_stairs": "Red Sandstone Brick Stairs",
+  "block.varan-deco.red_sandstone_brick_slab": "Red Sandstone Brick Slab",
+  "block.varan-deco.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
+
   "block.varan-deco.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.varan-deco.dark_prismarine_wall": "Dark Prismarine Wall",
 
@@ -322,6 +353,21 @@
   "block.varan-deco.smooth_soul_soilstone_stairs": "Smooth Soul Soilstone Stairs",
   "block.varan-deco.smooth_soul_soilstone_slab": "Smooth Soul Soilstone Slab",
   "block.varan-deco.smooth_soul_soilstone_wall": "Smooth Soul Soilstone Wall",
+
+  "block.varan-deco.cobbled_soul_soilstone": "Cobbled Soul Soilstone",
+  "block.varan-deco.cobbled_soul_soilstone_stairs": "Cobbled Soul Soilstone Stairs",
+  "block.varan-deco.cobbled_soul_soilstone_slab": "Cobbled Soul Soilstone Slab",
+  "block.varan-deco.cobbled_soul_soilstone_wall": "Cobbled Soul Soilstone Wall",
+
+  "block.varan-deco.polished_soul_soilstone": "Polished Soul Soilstone",
+  "block.varan-deco.polished_soul_soilstone_stairs": "Polished Soul Soilstone Stairs",
+  "block.varan-deco.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
+  "block.varan-deco.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
+
+  "block.varan-deco.soul_soilstone_bricks": "Soul Soilstone Bricks",
+  "block.varan-deco.soul_soilstone_brick_stairs": "Soul Soilstone Brick Stairs",
+  "block.varan-deco.soul_soilstone_brick_slab": "Soul Soilstone Brick Slab",
+  "block.varan-deco.soul_soilstone_brick_wall": "Soul Soilstone Brick Wall",
 
   "block.varan-deco.quartz_wall": "Quartz Wall",
   "block.varan-deco.smooth_quartz_wall": "Smooth Quartz Wall",
@@ -1276,6 +1322,8 @@
   "block.varan-deco.smooth_basalt_stairs": "Smooth Basalt Stairs",
   "block.varan-deco.smooth_basalt_slab": "Smooth Basalt Slab",
   "block.varan-deco.smooth_basalt_wall": "Smooth Basalt Wall",
+
+  "block.varan-deco.fragile_ice": "Fragile Ice",
 
   "block.varan-deco.infested_polished_stone": "Infested Polished Stone",
   "block.varan-deco.infested_stone_tiles": "Infested Stone Tiles",
