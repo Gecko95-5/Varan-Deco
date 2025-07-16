@@ -6,6 +6,7 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.data.server.BlockLootTableGenerator;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
@@ -64,6 +65,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stone_tiles"),
                 BlockLootTableGenerator.drops(DecoBlocks.STONE_TILES));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_tiles"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_STONE_TILES));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stone_tile_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.STONE_TILE_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stone_tile_slab"),
@@ -112,6 +115,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_blackstone_tiles"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_BLACKSTONE_TILES));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_tiles"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_blackstone_tile_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_blackstone_tile_slab"),
@@ -358,7 +363,7 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_WALL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_fence"),
-                BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_NETHER_BRICK_FENCE));
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_FENCE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_fence_gate"),
                 BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE));
 
@@ -1516,56 +1521,139 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.PURPUR_WALL));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_stone"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_STONE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_STONE, DecoBlocks.POLISHED_STONE));
         
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_stone_tiles"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_STONE_TILES));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_STONE_TILES, DecoBlocks.STONE_TILES));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_cobbled_deepslate"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_COBBLED_DEEPSLATE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_COBBLED_DEEPSLATE, Items.COBBLED_DEEPSLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_deepslate"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_DEEPSLATE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_DEEPSLATE, Items.POLISHED_DEEPSLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_deepslate_bricks"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_DEEPSLATE_BRICKS));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_DEEPSLATE_BRICKS, Items.DEEPSLATE_BRICKS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_deepslate_tiles"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_DEEPSLATE_TILES));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_DEEPSLATE_TILES, Items.DEEPSLATE_TILES));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_cracked_deepslate_bricks"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS, Items.CRACKED_DEEPSLATE_BRICKS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_cracked_deepslate_tiles"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES, Items.CRACKED_DEEPSLATE_TILES));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_mossy_cobblestone"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_MOSSY_COBBLESTONE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_MOSSY_COBBLESTONE, Items.MOSSY_COBBLESTONE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_chiseled_deepslate"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_CHISELED_DEEPSLATE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CHISELED_DEEPSLATE, Items.CHISELED_DEEPSLATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_calcite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_CALCITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CALCITE, Items.CALCITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_dripstone_block"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_DRIPSTONE_BLOCK));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_DRIPSTONE_BLOCK, Items.DRIPSTONE_BLOCK));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_tuff"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_TUFF));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_TUFF, Items.TUFF));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_granite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_GRANITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_GRANITE, Items.GRANITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_granite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_GRANITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_GRANITE, Items.POLISHED_GRANITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_diorite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_DIORITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_DIORITE, Items.DIORITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_diorite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_DIORITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_DIORITE, Items.POLISHED_DIORITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_andesite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_ANDESITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_ANDESITE, Items.ANDESITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_andesite"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_ANDESITE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_ANDESITE, Items.POLISHED_ANDESITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_blackstone"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_BLACKSTONE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_BLACKSTONE, Items.BLACKSTONE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_blackstone"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_BLACKSTONE, Items.POLISHED_BLACKSTONE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_blackstone_bricks"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS, Items.POLISHED_BLACKSTONE_BRICKS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_polished_blackstone_tiles"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES, DecoBlocks.POLISHED_BLACKSTONE_TILES));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_cracked_polished_blackstone_bricks"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS, Items.CRACKED_POLISHED_BLACKSTONE_BRICKS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_chiseled_polished_blackstone"),
-                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE));
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE, Items.CHISELED_POLISHED_BLACKSTONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_cracked_stone_tiles"),
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CRACKED_STONE_TILES, DecoBlocks.CRACKED_STONE_TILES));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_cracked_polished_blackstone_tiles"),
+                BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/deepslate_grindstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEEPSLATE_GRINDSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blackstone_grindstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACKSTONE_GRINDSTONE));
+        
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_sandstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_SANDSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_red_sandstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_RED_SANDSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_soul_soilstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_SOUL_SOILSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_sandstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_SANDSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_red_sandstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_RED_SANDSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_soul_soilstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_SOUL_SOILSTONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sandstone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.SANDSTONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sandstone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_SANDSTONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/soul_soilstone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.SOUL_SOILSTONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_sandstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_SANDSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_sandstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COBBLED_SANDSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_sandstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_SANDSTONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_red_sandstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_red_sandstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COBBLED_RED_SANDSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_red_sandstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_RED_SANDSTONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_soul_soilstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_soul_soilstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cobbled_soul_soilstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_sandstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_SANDSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_sandstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_SANDSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_sandstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_SANDSTONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_red_sandstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_red_sandstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_RED_SANDSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_red_sandstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_RED_SANDSTONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_soul_soilstone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_soul_soilstone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_soul_soilstone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sandstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SANDSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sandstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SANDSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sandstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SANDSTONE_BRICK_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sandstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sandstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.RED_SANDSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sandstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_SANDSTONE_BRICK_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/soul_soilstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/soul_soilstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/soul_soilstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL));
     }
 }

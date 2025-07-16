@@ -2,15 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:oxidized_copper"
+      "item": "varan-deco:oxidized_copper_bars"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
     "item": "varan-deco:oxidized_heavy_copper_bars"
   }
 }

@@ -2,15 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:copper_block"
+      "item": "varan-deco:copper_bars"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
     "item": "varan-deco:heavy_copper_bars"
   }
 }

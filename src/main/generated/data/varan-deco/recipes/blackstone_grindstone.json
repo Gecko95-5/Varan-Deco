@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "-": {
+      "item": "minecraft:blackstone_slab"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "I-I",
+    "# #"
+  ],
+  "result": {
+    "item": "varan-deco:blackstone_grindstone"
+  }
+}

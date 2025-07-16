@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_waxed_oxidized_copper": {
+    "has_waxed_oxidized_copper_bars": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:waxed_oxidized_copper"
+              "varan-deco:waxed_oxidized_copper_bars"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_waxed_oxidized_copper",
+      "has_waxed_oxidized_copper_bars",
       "has_the_recipe"
     ]
   ],

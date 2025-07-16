@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Consumer;
@@ -311,14 +312,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.BLUE_ICE_WALL, Items.BLUE_ICE);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_ICE_WALL, Items.BLUE_ICE);
 
-        ShapedRecipeJsonBuilder.create(DecoItems.SNOW_BRICK,8)
-                .pattern("###")
-                .pattern("#I#")
-                .pattern("###")
-                .input('I', Items.ICE)
-                .input('#', Items.SNOWBALL)
-                .criterion(RecipeProvider.hasItem(Items.ICE),
-                        RecipeProvider.conditionsFromItem(Items.ICE))
+        ShapelessRecipeJsonBuilder.create(DecoItems.SNOW_BRICK)
+                .input(Items.SNOWBALL)
+                .input(Items.SNOWBALL)
+                .input(Items.SNOWBALL)
                 .criterion(RecipeProvider.hasItem(Items.SNOWBALL),
                         RecipeProvider.conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SNOW_BRICK)));
@@ -3179,12 +3176,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.IRON_NUGGET))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.LIGHT_IRON_BARS)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.HEAVY_IRON_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.IRON_BLOCK)
-                .criterion(RecipeProvider.hasItem(Items.IRON_BLOCK),
-                        RecipeProvider.conditionsFromItem(Items.IRON_BLOCK))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HEAVY_IRON_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.IRON_BARS)
+                .criterion(RecipeProvider.hasItem(Items.IRON_BARS),
+                        RecipeProvider.conditionsFromItem(Items.IRON_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HEAVY_IRON_BARS)));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.GOLD_DOOR,3)
@@ -3211,64 +3208,64 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.POLISHED_DEEPSLATE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.COPPER_BLOCK)
-                .criterion(RecipeProvider.hasItem(Items.COPPER_BLOCK),
-                        RecipeProvider.conditionsFromItem(Items.COPPER_BLOCK))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HEAVY_COPPER_BARS)));
         ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.WAXED_COPPER_BLOCK)
-                .criterion(RecipeProvider.hasItem(Items.WAXED_COPPER_BLOCK),
-                        RecipeProvider.conditionsFromItem(Items.WAXED_COPPER_BLOCK))
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WAXED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WAXED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WAXED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_HEAVY_COPPER_BARS)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.EXPOSED_COPPER)
-                .criterion(RecipeProvider.hasItem(Items.EXPOSED_COPPER),
-                        RecipeProvider.conditionsFromItem(Items.EXPOSED_COPPER))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.EXPOSED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.EXPOSED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.EXPOSED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)));
-        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.WAXED_EXPOSED_COPPER)
-                .criterion(RecipeProvider.hasItem(Items.WAXED_EXPOSED_COPPER),
-                        RecipeProvider.conditionsFromItem(Items.WAXED_EXPOSED_COPPER))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WAXED_EXPOSED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WAXED_EXPOSED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WAXED_EXPOSED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.WEATHERED_COPPER)
-                .criterion(RecipeProvider.hasItem(Items.WEATHERED_COPPER),
-                        RecipeProvider.conditionsFromItem(Items.WEATHERED_COPPER))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WEATHERED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WEATHERED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WEATHERED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)));
-        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.WAXED_WEATHERED_COPPER)
-                .criterion(RecipeProvider.hasItem(Items.WAXED_WEATHERED_COPPER),
-                        RecipeProvider.conditionsFromItem(Items.WAXED_WEATHERED_COPPER))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WAXED_WEATHERED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WAXED_WEATHERED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WAXED_WEATHERED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.OXIDIZED_COPPER)
-                .criterion(RecipeProvider.hasItem(Items.OXIDIZED_COPPER),
-                        RecipeProvider.conditionsFromItem(Items.OXIDIZED_COPPER))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.OXIDIZED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.OXIDIZED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.OXIDIZED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)));
-        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS,16)
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.WAXED_OXIDIZED_COPPER)
-                .criterion(RecipeProvider.hasItem(Items.WAXED_OXIDIZED_COPPER),
-                        RecipeProvider.conditionsFromItem(Items.WAXED_OXIDIZED_COPPER))
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WAXED_OXIDIZED_COPPER_BARS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.COPPER_BARS,16)
@@ -4051,5 +4048,33 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.SEAGRASS),
                         RecipeProvider.conditionsFromItem(Items.SEAGRASS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.TALL_SEAGRASS)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.STONE_TILES), DecoBlocks.CRACKED_STONE_TILES,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.STONE_TILES), conditionsFromItem(DecoBlocks.STONE_TILES))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_STONE_TILES)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.POLISHED_BLACKSTONE_TILES), DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.POLISHED_BLACKSTONE_TILES), conditionsFromItem(DecoBlocks.POLISHED_BLACKSTONE_TILES))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_GRINDSTONE)
+                .pattern("I-I")
+                .pattern("# #")
+                .input('I', Items.STICK)
+                .input('-', DecoBlocks.DEEPSLATE_SLAB)
+                .input('#', ItemTags.PLANKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.DEEPSLATE_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.DEEPSLATE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.DEEPSLATE_GRINDSTONE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.BLACKSTONE_GRINDSTONE)
+                .pattern("I-I")
+                .pattern("# #")
+                .input('I', Items.STICK)
+                .input('-', Items.BLACKSTONE_SLAB)
+                .input('#', ItemTags.PLANKS)
+                .criterion(RecipeProvider.hasItem(Items.BLACKSTONE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.BLACKSTONE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BLACKSTONE_GRINDSTONE)));
     }
 }
