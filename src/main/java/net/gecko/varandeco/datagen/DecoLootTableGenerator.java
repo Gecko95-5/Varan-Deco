@@ -10,6 +10,7 @@ import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 import java.util.function.BiConsumer;
@@ -1655,5 +1656,9 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/soul_soilstone_brick_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/fragile_ice"),
+                BlockLootTableGenerator.drops(DecoBlocks.FRAGILE_ICE, DecoItems.ICE_SHARD,
+                        UniformLootNumberProvider.create(0.0F, 3.0f)));
     }
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:ice_shard"
+    },
+    "W": {
+      "tag": "varan-deco:water_items"
+    }
+  },
+  "pattern": [
+    "###",
+    "#W#",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:ice"
+  }
+}

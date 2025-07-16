@@ -8,6 +8,7 @@ import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.tag.ItemTags;
 
 public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
@@ -170,5 +171,10 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ENDER_ROSE.asItem())
                 .add(DecoBlocks.PAEONIA.asItem())
                 .add(DecoBlocks.LAVENDER.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.WATER_ITEMS)
+                .add(Items.WATER_BUCKET)
+                .add(DecoItems.BUBBLE_ORB);
+
     }
 }
