@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:waxed_oxidized_copper"
+    "#": "minecraft:waxed_oxidized_copper_bars"
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
+    "count": 1,
     "id": "minecraft:waxed_oxidized_heavy_copper_bars"
   }
 }

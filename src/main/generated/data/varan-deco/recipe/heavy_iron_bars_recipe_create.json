@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:iron_block"
+    "#": "minecraft:iron_bars"
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
+    "count": 1,
     "id": "minecraft:heavy_iron_bars"
   }
 }

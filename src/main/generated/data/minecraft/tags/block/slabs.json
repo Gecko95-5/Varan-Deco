@@ -46,6 +46,15 @@
     "minecraft:crimson_mosaic_slab",
     "minecraft:warped_mosaic_slab",
     "minecraft:tuff_tile_slab",
-    "minecraft:smooth_basalt_slab"
+    "minecraft:smooth_basalt_slab",
+    "minecraft:cobbled_sandstone_slab",
+    "minecraft:cobbled_red_sandstone_slab",
+    "minecraft:cobbled_soul_soilstone_slab",
+    "minecraft:polised_sandstone_slab",
+    "minecraft:polised_red_sandstone_slab",
+    "minecraft:polised_soul_soilstone_slab",
+    "minecraft:sandstone_brick_slab",
+    "minecraft:red_sandstone_brick_slab",
+    "minecraft:soul_soilstone_brick_slab"
   ]
 }

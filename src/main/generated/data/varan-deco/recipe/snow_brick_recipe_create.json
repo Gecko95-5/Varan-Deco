@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": "minecraft:snowball",
-    "I": "minecraft:ice"
-  },
-  "pattern": [
-    "###",
-    "#I#",
-    "###"
+  "ingredients": [
+    "minecraft:snowball",
+    "minecraft:snowball",
+    "minecraft:snowball"
   ],
   "result": {
-    "count": 8,
+    "count": 1,
     "id": "minecraft:snow_brick"
   }
 }
