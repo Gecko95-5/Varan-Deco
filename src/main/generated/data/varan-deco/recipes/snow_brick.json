@@ -9,6 +9,9 @@
     },
     {
       "item": "minecraft:snowball"
+    },
+    {
+      "item": "varan-deco:ice_shard"
     }
   ],
   "result": {

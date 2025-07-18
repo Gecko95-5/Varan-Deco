@@ -4,14 +4,17 @@
     "#": {
       "item": "varan-deco:bubble_orb"
     },
+    "C": {
+      "item": "minecraft:prismarine_crystals"
+    },
     "E": {
       "item": "minecraft:ender_eye"
     }
   },
   "pattern": [
-    "###",
-    "#E#",
-    "###"
+    "#C#",
+    "CEC",
+    "#C#"
   ],
   "result": {
     "item": "minecraft:heart_of_the_sea"
