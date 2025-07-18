@@ -11,7 +11,6 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
-import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
@@ -319,6 +318,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.SNOWBALL)
                 .input(Items.SNOWBALL)
                 .input(Items.SNOWBALL)
+                .input(DecoItems.ICE_SHARD)
                 .criterion(hasItem(Items.SNOWBALL),
                         conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.SNOW_BRICK)));
@@ -616,8 +616,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("I#")
                 .input('#', Items.COBBLESTONE)
                 .input('I', DecoItems.BUBBLE_ORB)
-                .criterion(hasItem(Items.COBBLESTONE),
-                        conditionsFromItem(Items.COBBLESTONE))
                 .criterion(hasItem(DecoItems.BUBBLE_ORB),
                         conditionsFromItem(DecoItems.BUBBLE_ORB))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BUBBLE_BLOCK)));
@@ -4243,15 +4241,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.HEART_OF_THE_SEA)
-                .pattern("###")
-                .pattern("#E#")
-                .pattern("###")
+                .pattern("#C#")
+                .pattern("CEC")
+                .pattern("#C#")
                 .input('E', Items.ENDER_EYE)
+                .input('C', Items.PRISMARINE_CRYSTALS)
                 .input('#', DecoItems.BUBBLE_ORB)
                 .criterion(hasItem(Items.ENDER_EYE),
                         conditionsFromItem(Items.ENDER_EYE))
-                .criterion(hasItem(DecoItems.BUBBLE_ORB),
-                        conditionsFromItem(DecoItems.BUBBLE_ORB))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.HEART_OF_THE_SEA)));
 
         offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.BUBBLE_CORAL_BLOCK);
