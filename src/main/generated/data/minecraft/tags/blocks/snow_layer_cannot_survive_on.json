@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-    "varan-deco:black_ice"
+    "varan-deco:black_ice",
+    "varan-deco:bubble_elevator_block_bubble",
+    "varan-deco:bubble_elevator_block_magma",
+    "varan-deco:magma_bricks",
+    "varan-deco:bubble_block",
+    "varan-deco:bubble_bricks",
+    "varan-deco:chiseled_bubble_bricks",
+    "varan-deco:chiseled_magma_bricks",
+    "minecraft:magma_block",
+    "varan-deco:fragile_ice"
   ]
 }

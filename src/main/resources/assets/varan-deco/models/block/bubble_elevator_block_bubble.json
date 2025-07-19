@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/copper_block",
+    "east": "varan-deco:block/bubble_elevator_block_bubble_side",
+    "north": "varan-deco:block/bubble_elevator_block_bubble_front",
+    "particle": "varan-deco:block/bubble_block",
+    "south": "varan-deco:block/bubble_elevator_block_bubble_side",
+    "up": "varan-deco:block/bubble_elevator_block_bubble_top",
+    "west": "varan-deco:block/bubble_elevator_block_bubble_side"
+  }
+}

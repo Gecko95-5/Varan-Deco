@@ -330,7 +330,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_WALL)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
-                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -405,7 +407,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
                 .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
@@ -1440,7 +1444,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(BlockTags.PICKAXE_MINEABLE);
 
         getOrCreateTagBuilder(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)
-                .add(DecoBlocks.BLACK_ICE);
+                .add(DecoBlocks.BLACK_ICE)
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA)
+                .add(DecoBlocks.MAGMA_BRICKS)
+                .add(DecoBlocks.BUBBLE_BLOCK)
+                .add(DecoBlocks.BUBBLE_BRICKS)
+                .add(DecoBlocks.CHISELED_BUBBLE_BRICKS)
+                .add(DecoBlocks.CHISELED_MAGMA_BRICKS)
+                .add(Blocks.MAGMA_BLOCK)
+                .add(DecoBlocks.FRAGILE_ICE);
 
         getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
