@@ -277,6 +277,8 @@
     "varan-deco:tuff_tile_stairs",
     "varan-deco:tuff_tile_slab",
     "varan-deco:tuff_tile_wall",
+    "varan-deco:cracked_tuff_tiles",
+    "varan-deco:cracked_tuff_bricks",
     "varan-deco:chiseled_stone",
     "varan-deco:chiseled_deepslate_bricks",
     "varan-deco:chiseled_polished_blackstone_bricks",
@@ -289,6 +291,7 @@
     "#varan-deco:infested_blocks",
     "varan-deco:deepslate_grindstone",
     "varan-deco:blackstone_grindstone",
+    "varan-deco:tuff_grindstone",
     "varan-deco:cobbled_sandstone",
     "varan-deco:cobbled_red_sandstone",
     "varan-deco:cobbled_soul_soilstone",
@@ -329,6 +332,9 @@
     "varan-deco:infested_chiseled_deepslate_bricks",
     "varan-deco:infested_chiseled_polished_blackstone_bricks",
     "varan-deco:bubble_elevator_block_bubble",
-    "varan-deco:bubble_elevator_block_magma"
+    "varan-deco:bubble_elevator_block_magma",
+    "varan-deco:chiseled_polished_sandstone",
+    "varan-deco:chiseled_polished_red_sandstone",
+    "varan-deco:chiseled_polished_soul_soilstone"
   ]
 }

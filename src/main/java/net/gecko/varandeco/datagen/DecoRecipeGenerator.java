@@ -4807,5 +4807,41 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.MAGMA_BLOCK),
                         conditionsFromItem(Items.MAGMA_BLOCK))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)));
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.POLISHED_SANDSTONE_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SANDSTONE, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.COBBLED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.POLISHED_SANDSTONE);
+
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, DecoBlocks.COBBLED_RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, DecoBlocks.POLISHED_RED_SANDSTONE);
+
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.TUFF_TILES), RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRACKED_TUFF_TILES,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.TUFF_TILES), conditionsFromItem(DecoBlocks.TUFF_TILES))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.CRACKED_TUFF_TILES)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Blocks.TUFF_BRICKS), RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRACKED_TUFF_BRICKS,
+                        0.1f, 200).criterion(hasItem(Blocks.TUFF_BRICKS), conditionsFromItem(Blocks.TUFF_BRICKS))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.CRACKED_TUFF_BRICKS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.TUFF_GRINDSTONE)
+                .pattern("I-I")
+                .pattern("# #")
+                .input('I', Items.STICK)
+                .input('-', Items.TUFF_SLAB)
+                .input('#', ItemTags.PLANKS)
+                .criterion(hasItem(Items.TUFF_SLAB),
+                        conditionsFromItem(Items.TUFF_SLAB))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TUFF_GRINDSTONE)));
+
     }
 }

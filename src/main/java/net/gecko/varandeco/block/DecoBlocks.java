@@ -83,6 +83,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_SANDSTONE).strength(1.6f)));
     public static final Block COBBLED_SANDSTONE = registerBlock("cobbled_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.SANDSTONE)));
+    public static final Block CHISELED_POLISHED_SANDSTONE = registerBlock("chiseled_polished_sandstone",
+            new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_SANDSTONE)));
     public static final Block POLISHED_SANDSTONE = registerBlock("polished_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_SANDSTONE)));
     public static final Block SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
@@ -270,6 +272,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE).strength(1.6f)));
     public static final Block COBBLED_RED_SANDSTONE = registerBlock("cobbled_red_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_SANDSTONE)));
+    public static final Block CHISELED_POLISHED_RED_SANDSTONE = registerBlock("chiseled_polished_red_sandstone",
+            new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_RED_SANDSTONE)));
     public static final Block POLISHED_RED_SANDSTONE = registerBlock("polished_red_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
     public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
@@ -302,6 +306,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(DecoBlocks.CUT_SOUL_SOILSTONE).strength(1.6f)));
     public static final Block COBBLED_SOUL_SOILSTONE = registerBlock("cobbled_soul_soilstone",
             new Block(AbstractBlock.Settings.copy(DecoBlocks.SOUL_SOILSTONE)));
+    public static final Block CHISELED_POLISHED_SOUL_SOILSTONE = registerBlock("chiseled_polished_soul_soilstone",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.CHISELED_SOUL_SOILSTONE)));
     public static final Block POLISHED_SOUL_SOILSTONE = registerBlock("polished_soul_soilstone",
             new Block(AbstractBlock.Settings.copy(DecoBlocks.CUT_SOUL_SOILSTONE)));
     public static final Block SOUL_SOILSTONE_BRICKS = registerBlock("soul_soilstone_bricks",
@@ -314,7 +320,7 @@ public class DecoBlocks {
     public static final Block BUBBLE_BLOCK = registerBlock("bubble_block",
             new BubbleBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE).strength(0.5F,25.0f)
                     .mapColor(MapColor.BLUE).postProcess(DecoBlocks::always).ticksRandomly()
-                    .emissiveLighting(DecoBlocks::always)));
+                    .emissiveLighting(DecoBlocks::always).luminance(state -> 1)));
     public static final Block BUBBLE_BRICKS = registerBlock("bubble_bricks",
             new BubbleBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK).strength(1.5F)
                     .mapColor(MapColor.STONE_GRAY)));
@@ -461,6 +467,10 @@ public class DecoBlocks {
     public static final Block TUFF_TILES = registerBlock("tuff_tiles",
             new Block(AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool()
                     .mapColor(MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
+    public static final Block CRACKED_TUFF_TILES = registerBlock("cracked_tuff_tiles",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.TUFF_TILES)));
+    public static final Block CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.TUFF_BRICKS)));
     public static final Block CHISELED_STONE = registerBlock("chiseled_stone",
             new Block(AbstractBlock.Settings.copy(DecoBlocks.POLISHED_STONE)));
     public static final Block CHISELED_POLISHED_BLACKSTONE_BRICKS = registerBlock("chiseled_polished_blackstone_bricks",
@@ -1920,6 +1930,8 @@ public class DecoBlocks {
                     .mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block BLACKSTONE_GRINDSTONE = registerBlock("blackstone_grindstone",
             new BlackstoneGrindstoneBlock(AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.BLACK)));
+    public static final Block TUFF_GRINDSTONE = registerBlock("tuff_grindstone",
+            new TuffGrindstoneBlock(AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.TERRACOTTA_GRAY)));
 
     public static final Block OAK_SMITHING_TABLE = registerBlock("oak_smithing_table",
             new OakSmithingTableBlock(AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE)));

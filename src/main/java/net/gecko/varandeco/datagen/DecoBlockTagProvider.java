@@ -295,6 +295,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.TUFF_TILE_STAIRS)
                 .add(DecoBlocks.TUFF_TILE_SLAB)
                 .add(DecoBlocks.TUFF_TILE_WALL)
+                .add(DecoBlocks.CRACKED_TUFF_TILES)
+                .add(DecoBlocks.CRACKED_TUFF_BRICKS)
                 .add(DecoBlocks.CHISELED_STONE)
                 .add(DecoBlocks.CHISELED_DEEPSLATE_BRICKS)
                 .add(DecoBlocks.CHISELED_POLISHED_BLACKSTONE_BRICKS)
@@ -307,6 +309,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.INFESTED_BLOCKS)
                 .add(DecoBlocks.DEEPSLATE_GRINDSTONE)
                 .add(DecoBlocks.BLACKSTONE_GRINDSTONE)
+                .add(DecoBlocks.TUFF_GRINDSTONE)
                 .add(DecoBlocks.COBBLED_SANDSTONE)
                 .add(DecoBlocks.COBBLED_RED_SANDSTONE)
                 .add(DecoBlocks.COBBLED_SOUL_SOILSTONE)
@@ -347,7 +350,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.INFESTED_CHISELED_DEEPSLATE_BRICKS)
                 .add(DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE_BRICKS)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
-                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA)
+                .add(DecoBlocks.CHISELED_POLISHED_SANDSTONE)
+                .add(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE)
+                .add(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);

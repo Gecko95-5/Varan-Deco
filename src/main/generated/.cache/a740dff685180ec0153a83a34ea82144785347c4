@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-20T15:46:10.4409382	Variant Decoration/Tags for minecraft:block
+// 1.21.1	2025-07-20T18:54:02.1872158	Variant Decoration/Tags for minecraft:block
 cae0d58389e28a967e8a214401c3032338afaebe data\minecraft\tags\block\soul_speed_blocks.json
 ad05f2c422c0cab6c52b855411109cf3bd03707d data\varan-deco\tags\block\deco_smithing_tables.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\block\wooden_slabs.json
@@ -19,7 +19,7 @@ b38abf222ff2cc3d5574a8f02060740c15f82605 data\varan-deco\tags\block\concrete_sta
 48d173da6e149532b3ef3104dec564ef3c2a1c57 data\minecraft\tags\block\standing_signs.json
 c3a59751e549cd10d82f1622b179fd68cbf9eaa8 data\varan-deco\tags\block\terracotta_walls.json
 deefc678f9a695a29da397a6a577e00733ae7c0b data\minecraft\tags\block\stone_pressure_plates.json
-5830466760202c82b5dc8b3d47adeb048a2d27dd data\minecraft\tags\block\mineable\pickaxe.json
+0f4077591c98a9878cfc9cfb123aa1e5c221839f data\minecraft\tags\block\mineable\pickaxe.json
 11c5f55bcd6ee59cfd17365050bf1baf91f40215 data\minecraft\tags\block\pressure_plates.json
 3b3f66b9f1192884709a6829b454edd2643bbedb data\minecraft\tags\block\overworld_natural_logs.json
 d59e4e47a69393d9d43b2301198f3c6b145639df data\varan-deco\tags\block\terracotta_stairs.json

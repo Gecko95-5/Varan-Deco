@@ -300,11 +300,13 @@
   "block.varan-deco.polished_sandstone_stairs": "Polished Sandstone Stairs",
   "block.varan-deco.polished_sandstone_slab": "Polished Sandstone Slab",
   "block.varan-deco.polished_sandstone_wall": "Polished Sandstone Wall",
+  "block.varan-deco.chiseled_polished_sandstone": "Chiseled Polished Sandstone",
 
   "block.varan-deco.polished_red_sandstone": "Polished Red Sandstone",
   "block.varan-deco.polished_red_sandstone_stairs": "Polished Red Sandstone Stairs",
   "block.varan-deco.polished_red_sandstone_slab": "Polished Red Sandstone Slab",
   "block.varan-deco.polished_red_sandstone_wall": "Polished Red Sandstone Wall",
+  "block.varan-deco.chiseled_polished_red_sandstone": "Chiseled Polished Red Sandstone",
 
   "block.varan-deco.sandstone_bricks": "Polished Sandstone Bricks",
   "block.varan-deco.sandstone_brick_stairs": "Polished Sandstone Brick Stairs",
@@ -366,6 +368,7 @@
   "block.varan-deco.polished_soul_soilstone_stairs": "Polished Soul Soilstone Stairs",
   "block.varan-deco.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
   "block.varan-deco.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
+  "block.varan-deco.chiseled_polished_soul_soilstone": "Chiseled Polished Soul Soilstone",
 
   "block.varan-deco.soul_soilstone_bricks": "Polished Soul Soilstone Bricks",
   "block.varan-deco.soul_soilstone_brick_stairs": "Polished Soul Soilstone Brick Stairs",
@@ -1056,6 +1059,7 @@
 
   "block.varan-deco.deepslate_grindstone": "Deepslate Grindstone",
   "block.varan-deco.blackstone_grindstone": "Blackstone Grindstone",
+  "block.varan-deco.tuff_grindstone": "Tuff Grindstone",
 
   "block.varan-deco.deepslate_stairs": "Deepslate Stairs",
   "block.varan-deco.deepslate_slab": "Deepslate Slab",
@@ -1338,6 +1342,9 @@
   "block.varan-deco.tuff_tile_stairs": "Tuff Tile Stairs",
   "block.varan-deco.tuff_tile_slab": "Tuff Tile Slab",
   "block.varan-deco.tuff_tile_wall": "Tuff Tile Wall",
+  "block.varan-deco.cracked_tuff_tiles": "Cracked Tuff Tiles",
+
+  "block.varan-deco.cracked_tuff_bricks": "Cracked Tuff Bricks",
 
   "block.varan-deco.purpur_wall": "Purpur Wall",
 
