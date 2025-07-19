@@ -1,5 +1,14 @@
 {
   "values": [
-    "minecraft:black_ice"
+    "minecraft:black_ice",
+    "minecraft:bubble_elevator_block_bubble",
+    "minecraft:bubble_elevator_block_magma",
+    "minecraft:magma_bricks",
+    "minecraft:bubble_block",
+    "minecraft:bubble_bricks",
+    "minecraft:chiseled_bubble_bricks",
+    "minecraft:chiseled_magma_bricks",
+    "minecraft:magma_block",
+    "minecraft:fragile_ice"
   ]
 }

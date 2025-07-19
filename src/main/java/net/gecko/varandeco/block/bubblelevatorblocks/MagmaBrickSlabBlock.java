@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.magmabubbleblocks;
+package net.gecko.varandeco.block.bubblelevatorblocks;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;

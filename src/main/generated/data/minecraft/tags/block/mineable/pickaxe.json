@@ -327,6 +327,8 @@
     "minecraft:soul_soilstone_brick_wall",
     "minecraft:infested_chiseled_stone",
     "minecraft:infested_chiseled_polished_blackstone_bricks",
-    "minecraft:infested_chiseled_deepslate_bricks"
+    "minecraft:infested_chiseled_deepslate_bricks",
+    "minecraft:bubble_elevator_block_bubble",
+    "minecraft:bubble_elevator_block_magma"
   ]
 }
