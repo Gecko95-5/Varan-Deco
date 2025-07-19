@@ -1,35 +1,52 @@
-package net.gecko.varandeco.block.magmabubbleblocks;
+package net.gecko.varandeco.block.bubblelevatorblocks;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.BubbleColumnBlock;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 
-public class MagmaBrickBlock extends Block {
+public class BubbleBlock extends Block {
 
-    public MagmaBrickBlock(AbstractBlock.Settings settings) {
+    public BubbleBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
-            entity.damage(world.getDamageSources().hotFloor(),0.5F);
+        if (!entity.bypassesSteppingEffects()) {
+            entity.extinguish();
         }
 
         super.onSteppedOn(world, pos, state, entity);
     }
 
+
+    @Override
+    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        BubbleColumnBlock.update(world, pos.up(), state);
+    }
+
+    @Override
+    public BlockState getStateForNeighborUpdate(
+            BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos
+    ) {
+        if (direction == Direction.UP && neighborState.isOf(Blocks.WATER)) {
+            world.scheduleBlockTick(pos, this, 20);
+        }
+
+        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+    }
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
@@ -40,5 +57,10 @@ public class MagmaBrickBlock extends Block {
             );
             world.spawnParticles(ParticleTypes.LARGE_SMOKE, blockPos.getX() + 0.5, blockPos.getY() + 0.25, blockPos.getZ() + 0.5, 8, 0.5, 0.25, 0.5, 0.0);
         }
+    }
+
+    @Override
+    public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
+        world.scheduleBlockTick(pos, this, 20);
     }
 }
