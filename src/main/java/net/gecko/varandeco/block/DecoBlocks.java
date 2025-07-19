@@ -13,7 +13,7 @@ import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.flowers.*;
-import net.gecko.varandeco.block.magmabubbleblocks.*;
+import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
@@ -313,7 +313,8 @@ public class DecoBlocks {
             new MagmaBrickBlock(AbstractBlock.Settings.copy(DecoBlocks.MAGMA_BRICKS)));
     public static final Block BUBBLE_BLOCK = registerBlock("bubble_block",
             new BubbleBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE).strength(0.5F,25.0f)
-                    .mapColor(MapColor.BLUE)));
+                    .mapColor(MapColor.BLUE).postProcess(DecoBlocks::always).ticksRandomly()
+                    .emissiveLighting(DecoBlocks::always)));
     public static final Block BUBBLE_BRICKS = registerBlock("bubble_bricks",
             new BubbleBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK).strength(1.5F)
                     .mapColor(MapColor.STONE_GRAY)));
@@ -2001,6 +2002,16 @@ public class DecoBlocks {
     public static final Block WAXED_OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("waxed_oxidized_copper_soul_lantern",
             new LanternBlock(AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)));
 
+    public static final Block BUBBLE_ELEVATOR_BLOCK_BUBBLE = registerBlock("bubble_elevator_block_bubble",
+            new BubbleElevatorBubbleBlock(AbstractBlock.Settings.copy(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
+                    .mapColor(MapColor.BLUE).postProcess(DecoBlocks::always).ticksRandomly()
+                    .emissiveLighting(DecoBlocks::always).luminance(state -> 3)));
+
+    public static final Block BUBBLE_ELEVATOR_BLOCK_MAGMA = registerBlockWithoutItem("bubble_elevator_block_magma",
+            new BubbleElevatorMagmaBlock(AbstractBlock.Settings.copy(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
+                    .mapColor(MapColor.DARK_RED).postProcess(DecoBlocks::always).ticksRandomly()
+                    .emissiveLighting(DecoBlocks::always).luminance(state -> 3)));
+
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
             new ButtonBlock(DecoBlockSets.DEEPSLATE, 20, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
     public static final Block COBBLED_DEEPSLATE_BUTTON = registerBlock("cobbled_deepslate_button",
@@ -2683,6 +2694,9 @@ public class DecoBlocks {
         );
     }	private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return false;
+    }
+    private static boolean always(BlockState state, BlockView world, BlockPos pos) {
+        return true;
     }
 
     private static Block registerBlockWithoutItem(String name, Block block) {

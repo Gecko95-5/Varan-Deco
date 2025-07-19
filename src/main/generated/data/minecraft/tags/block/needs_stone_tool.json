@@ -21,6 +21,8 @@
     "varan-deco:waxed_exposed_copper_chain",
     "varan-deco:oxidized_copper_chain",
     "varan-deco:waxed_oxidized_copper_chain",
-    "varan-deco:iron_grate"
+    "varan-deco:iron_grate",
+    "varan-deco:bubble_elevator_block_bubble",
+    "varan-deco:bubble_elevator_block_magma"
   ]
 }

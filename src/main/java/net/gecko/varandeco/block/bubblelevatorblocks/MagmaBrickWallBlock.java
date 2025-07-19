@@ -1,17 +1,16 @@
-package net.gecko.varandeco.block.magmabubbleblocks;
+package net.gecko.varandeco.block.bubblelevatorblocks;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class MagmaBrickStairBlock extends StairsBlock {
-    public MagmaBrickStairBlock(BlockState baseBlockState, Settings settings) {
-        super(baseBlockState, settings);
+public class MagmaBrickWallBlock extends WallBlock {
+    public MagmaBrickWallBlock(Settings settings) {
+        super(settings);
     }
-
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity) {

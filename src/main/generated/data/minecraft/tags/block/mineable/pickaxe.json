@@ -327,6 +327,8 @@
     "varan-deco:soul_soilstone_brick_wall",
     "varan-deco:infested_chiseled_stone",
     "varan-deco:infested_chiseled_deepslate_bricks",
-    "varan-deco:infested_chiseled_polished_blackstone_bricks"
+    "varan-deco:infested_chiseled_polished_blackstone_bricks",
+    "varan-deco:bubble_elevator_block_bubble",
+    "varan-deco:bubble_elevator_block_magma"
   ]
 }
