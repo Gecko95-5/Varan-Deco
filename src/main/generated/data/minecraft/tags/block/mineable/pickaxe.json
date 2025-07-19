@@ -278,6 +278,8 @@
     "minecraft:tuff_tile_stairs",
     "minecraft:tuff_tile_slab",
     "minecraft:tuff_tile_wall",
+    "minecraft:cracked_tuff_tiles",
+    "minecraft:cracked_tuff_bricks",
     "minecraft:chiseled_stone",
     "minecraft:chiseled_deepslate_bricks",
     "minecraft:chiseled_polished_blackstone_bricks",
@@ -289,6 +291,7 @@
     "#varan-deco:infested_blocks",
     "minecraft:deepslate_grindstone",
     "minecraft:blackstone_grindstone",
+    "minecraft:tuff_grindstone",
     "minecraft:cobbled_sandstone",
     "minecraft:cobbled_red_sandstone",
     "minecraft:cobbled_soul_soilstone",
@@ -329,6 +332,9 @@
     "minecraft:infested_chiseled_polished_blackstone_bricks",
     "minecraft:infested_chiseled_deepslate_bricks",
     "minecraft:bubble_elevator_block_bubble",
-    "minecraft:bubble_elevator_block_magma"
+    "minecraft:bubble_elevator_block_magma",
+    "minecraft:chiseled_polished_sandstone",
+    "minecraft:chiseled_polished_red_sandstone",
+    "minecraft:chiseled_polished_soul_soilstone"
   ]
 }
