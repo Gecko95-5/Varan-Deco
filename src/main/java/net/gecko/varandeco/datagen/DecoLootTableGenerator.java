@@ -1660,5 +1660,10 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/fragile_ice"),
                 BlockLootTableGenerator.drops(DecoBlocks.FRAGILE_ICE, DecoItems.ICE_SHARD,
                         UniformLootNumberProvider.create(0.0F, 3.0f)));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_elevator_block_magma"),
+                BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_elevator_block_bubble"),
+                BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE));
     }
 }

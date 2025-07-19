@@ -45,12 +45,6 @@ public class DecoPlacedFeatures {
             DecoConfiguredFeatures.DECO_ENDER, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
-    public static final RegistryEntry<PlacedFeature> DECO_WITHER_PLACED = PlacedFeatures.register("deco_wither_placed",
-            DecoConfiguredFeatures.DECO_WITHER, RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
-
-    public static final RegistryEntry<PlacedFeature> DECO_SOULSAND_PLACED = PlacedFeatures.register("deco_soulsand_placed",
-            DecoConfiguredFeatures.DECO_SOULSAND, RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
-
     public static final RegistryEntry<PlacedFeature> DECO_RED_SUNFLOWER_PLACED = PlacedFeatures.register("deco_red_sunflower_placed",
             DecoConfiguredFeatures.DECO_RED_SUNFLOWER, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());

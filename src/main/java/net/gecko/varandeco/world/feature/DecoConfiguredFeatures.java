@@ -92,18 +92,6 @@ public class DecoConfiguredFeatures {
             "deco_ender_flowers", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
                     PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.ENDER_ROSE)))));
 
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_WITHER = ConfiguredFeatures.register(
-            "deco_wither_flowers", Feature.RANDOM_PATCH, new RandomPatchFeatureConfig(64, 6, 2,
-                    PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.WITHER_ROSE)))));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_SOULSAND = ConfiguredFeatures.register(
-            "deco_soulsand_flowers", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(32,
-                    PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                    new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
-                            new DoublePerlinNoiseSampler.NoiseParameters(-20, 2.0),
-                            0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
-                            0.005F, List.of(Blocks.NETHER_WART.getDefaultState(), DecoBlocks.WARPED_WART_PLANT.getDefaultState()))))));
-
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_RED_SUNFLOWER = ConfiguredFeatures.register(
             "deco_red_sunflower", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
                     new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.RED_SUNFLOWER))));
