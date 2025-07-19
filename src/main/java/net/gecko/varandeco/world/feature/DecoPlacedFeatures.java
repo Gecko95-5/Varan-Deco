@@ -1,7 +1,6 @@
 package net.gecko.varandeco.world.feature;
 
 import net.gecko.varandeco.VaranDeco;
-import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -26,7 +25,7 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_ENDER_PLACED = registerKey("deco_ender_placed");
     public static final RegistryKey<PlacedFeature> DECO_RED_SUNFLOWER_PLACED = registerKey("deco_red_sunflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_NOVA_STARFLOWER_PLACED = registerKey("deco_nova_starflower_placed");
-    public static final RegistryKey<PlacedFeature> DECO_PAEONIA_PLACED = registerKey("deco_paeonia_placed");
+    public static final RegistryKey<PlacedFeature> DECO_BIRCH_PLACED = registerKey("deco_birch_placed");
     public static final RegistryKey<PlacedFeature> DECO_BUBBLE_PLACED = registerKey("deco_bubble_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -67,16 +66,17 @@ register(context,DECO_ENDER_PLACED, configuredFeatureRegistryEntryLookup.getOrTh
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 register(context,DECO_RED_SUNFLOWER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
-                DecoConfiguredFeatures.DECO_RED_SUNFLOWER_KEY), RarityFilterPlacementModifier.of(1), SquarePlacementModifier.of(),
+                DecoConfiguredFeatures.DECO_RED_SUNFLOWER_KEY), RarityFilterPlacementModifier.of(128), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 register(context,DECO_NOVA_STARFLOWER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_NOVA_STARFLOWER_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
-register(context,DECO_PAEONIA_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
-                DecoConfiguredFeatures.DECO_PAEONIA_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+register(context, DECO_BIRCH_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_BIRCH_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
 register(context,DECO_BUBBLE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_BLOCK),
         SquarePlacementModifier.of(), PlacedFeatures.OCEAN_FLOOR_WG_HEIGHTMAP,
         BlockFilterPlacementModifier.of(BlockPredicate.matchingFluids(Fluids.WATER)), BiomePlacementModifier.of());
