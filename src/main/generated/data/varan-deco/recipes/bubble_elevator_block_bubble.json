@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_block"
+    },
+    "/": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "varan-deco:bubble_block"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "X": {
+      "item": "varan-deco:copper_bars"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "BPM",
+    "#/#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:bubble_elevator_block_bubble"
+  }
+}

@@ -1085,5 +1085,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.FRAGILE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                         UniformLootNumberProvider.create(0.0F, 3.0f)));
+
+
+        addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
+        addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
     }
 }
