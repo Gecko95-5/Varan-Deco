@@ -1,13 +1,13 @@
-package net.gecko.varandeco.block.magmabubbleblocks;
+package net.gecko.varandeco.block.bubblelevatorblocks;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.WallBlock;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class BubbleWallBlock extends WallBlock {
-    public BubbleWallBlock(Settings settings) {
+public class BubbleSlabBlock extends SlabBlock {
+    public BubbleSlabBlock(Settings settings) {
         super(settings);
     }
     @Override

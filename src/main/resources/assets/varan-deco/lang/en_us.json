@@ -309,15 +309,15 @@
   "block.minecraft.polished_red_sandstone_slab": "Polished Red Sandstone Slab",
   "block.minecraft.polished_red_sandstone_wall": "Polished Red Sandstone Wall",
 
-  "block.minecraft.sandstone_bricks": "Sandstone Bricks",
-  "block.minecraft.sandstone_brick_stairs": "Sandstone Brick Stairs",
-  "block.minecraft.sandstone_brick_slab": "Sandstone Brick Slab",
-  "block.minecraft.sandstone_brick_wall": "Sandstone Brick Wall",
+  "block.minecraft.sandstone_bricks": "Polished Sandstone Bricks",
+  "block.minecraft.sandstone_brick_stairs": "Polished Sandstone Brick Stairs",
+  "block.minecraft.sandstone_brick_slab": "Polished Sandstone Brick Slab",
+  "block.minecraft.sandstone_brick_wall": "Polished Sandstone Brick Wall",
 
-  "block.minecraft.red_sandstone_bricks": "Red Sandstone Bricks",
-  "block.minecraft.red_sandstone_brick_stairs": "Red Sandstone Brick Stairs",
-  "block.minecraft.red_sandstone_brick_slab": "Red Sandstone Brick Slab",
-  "block.minecraft.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
+  "block.minecraft.red_sandstone_bricks": "Polished Red Sandstone Bricks",
+  "block.minecraft.red_sandstone_brick_stairs": "Polished Red Sandstone Brick Stairs",
+  "block.minecraft.red_sandstone_brick_slab": "Polished Red Sandstone Brick Slab",
+  "block.minecraft.red_sandstone_brick_wall": "Polished Red Sandstone Brick Wall",
 
 
   "block.minecraft.prismarine_brick_wall": "Prismarine Brick Wall",
@@ -371,10 +371,10 @@
   "block.minecraft.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
   "block.minecraft.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
 
-  "block.minecraft.soul_soilstone_bricks": "Soul Soilstone Bricks",
-  "block.minecraft.soul_soilstone_brick_stairs": "Soul Soilstone Brick Stairs",
-  "block.minecraft.soul_soilstone_brick_slab": "Soul Soilstone Brick Slab",
-  "block.minecraft.soul_soilstone_brick_wall": "Soul Soilstone Brick Wall",
+  "block.minecraft.soul_soilstone_bricks": "Polished Soul Soilstone Bricks",
+  "block.minecraft.soul_soilstone_brick_stairs": "Polished Soul Soilstone Brick Stairs",
+  "block.minecraft.soul_soilstone_brick_slab": "Polished Soul Soilstone Brick Slab",
+  "block.minecraft.soul_soilstone_brick_wall": "Polished Soul Soilstone Brick Wall",
 
   "block.minecraft.quartz_wall": "Quartz Wall",
   "block.minecraft.smooth_quartz_wall": "Smooth Quartz Wall",
@@ -1366,7 +1366,7 @@
   "block.minecraft.smooth_basalt_slab": "Smooth Basalt Slab",
   "block.minecraft.smooth_basalt_wall": "Smooth Basalt Wall",
 
-  "block.varan-deco.fragile_ice": "Fragile Ice",
+  "block.minecraft.fragile_ice": "Fragile Ice",
 
   "block.minecraft.infested_polished_stone": "Infested Polished Stone",
   "block.minecraft.infested_stone_tiles": "Infested Stone Tiles",
@@ -1398,6 +1398,9 @@
   "block.minecraft.infested_chiseled_stone": "Infested Chiseled Stone",
   "block.minecraft.infested_chiseled_deepslate_bricks": "Infested Chiseled Deepslate Bricks",
   "block.minecraft.infested_chiseled_polished_blackstone_bricks": "Infested Chiseled Polished Blackstone Bricks",
+
+  "block.minecraft.bubble_elevator_block_magma": "Bubble Elevator Block",
+  "block.minecraft.bubble_elevator_block_bubble": "Bubble Elevator Block",
 
   "item.minecraft.potion.effect.water_bubble": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.water_bubble": "Splash Potion of The Water Bubble",

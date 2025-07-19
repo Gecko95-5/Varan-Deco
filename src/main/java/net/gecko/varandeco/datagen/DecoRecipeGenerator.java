@@ -4762,6 +4762,23 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoItems.ICE_SHARD),
                         conditionsFromItem(DecoItems.ICE_SHARD))
                 .offerTo(exporter, getRecipeName(Items.ICE) + "_recipe_create");
+
+
+                createShaped(RecipeCategory.REDSTONE,DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
+                        .pattern("#X#")
+                        .pattern("BPM")
+                        .pattern("#/#")
+                        .input('#', Items.COPPER_BLOCK)
+                        .input('X', DecoBlocks.COPPER_BARS)
+                        .input('/', Items.COPPER_INGOT)
+                        .input('B', DecoBlocks.BUBBLE_BLOCK)
+                        .input('P', Items.PISTON)
+                        .input('M', Items.MAGMA_BLOCK)
+                        .criterion(hasItem(DecoBlocks.BUBBLE_BLOCK),
+                                conditionsFromItem(DecoBlocks.BUBBLE_BLOCK))
+                        .criterion(hasItem(Items.MAGMA_BLOCK),
+                                conditionsFromItem(Items.MAGMA_BLOCK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE) + "_recipe_create");
             }
         };
     }
