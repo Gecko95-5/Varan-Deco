@@ -24,8 +24,6 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_RIVER_PLACED = registerKey("deco_river_flowers_placed");
     public static final RegistryKey<PlacedFeature> DECO_ROSE_PLACED = registerKey("deco_rose_placed");
     public static final RegistryKey<PlacedFeature> DECO_ENDER_PLACED = registerKey("deco_ender_placed");
-    public static final RegistryKey<PlacedFeature> DECO_WITHER_PLACED = registerKey("deco_wither_placed");
-    public static final RegistryKey<PlacedFeature> DECO_SOULSAND_PLACED = registerKey("deco_soulsand_placed");
     public static final RegistryKey<PlacedFeature> DECO_RED_SUNFLOWER_PLACED = registerKey("deco_red_sunflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_NOVA_STARFLOWER_PLACED = registerKey("deco_nova_starflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_PAEONIA_PLACED = registerKey("deco_paeonia_placed");
@@ -67,12 +65,6 @@ register(context,DECO_ROSE_PLACED, configuredFeatureRegistryEntryLookup.getOrThr
 register(context,DECO_ENDER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_ENDER_KEY), RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
-
-register(context,DECO_WITHER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
-                DecoConfiguredFeatures.DECO_WITHER_KEY), RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
-
-register(context,DECO_SOULSAND_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
-                DecoConfiguredFeatures.DECO_SOULSAND_KEY), RarityFilterPlacementModifier.of(32), BiomePlacementModifier.of());
 
 register(context,DECO_RED_SUNFLOWER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_RED_SUNFLOWER_KEY), RarityFilterPlacementModifier.of(1), SquarePlacementModifier.of(),

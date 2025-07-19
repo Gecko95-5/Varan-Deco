@@ -4302,5 +4302,21 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoItems.ICE_SHARD),
                         RecipeProvider.conditionsFromItem(DecoItems.ICE_SHARD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.ICE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
+                .pattern("#X#")
+                .pattern("BPM")
+                .pattern("#/#")
+                .input('#', Items.COPPER_BLOCK)
+                .input('X', DecoBlocks.COPPER_BARS)
+                .input('/', Items.COPPER_INGOT)
+                .input('B', DecoBlocks.BUBBLE_BLOCK)
+                .input('P', Items.PISTON)
+                .input('M', Items.MAGMA_BLOCK)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BUBBLE_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BUBBLE_BLOCK))
+                .criterion(RecipeProvider.hasItem(Items.MAGMA_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.MAGMA_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)));
     }
 }

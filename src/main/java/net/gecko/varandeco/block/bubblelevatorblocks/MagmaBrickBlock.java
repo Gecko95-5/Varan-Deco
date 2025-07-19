@@ -1,8 +1,11 @@
-package net.gecko.varandeco.block.magmabubbleblocks;
+package net.gecko.varandeco.block.bubblelevatorblocks;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
@@ -12,16 +15,16 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class BubbleBlock extends Block {
+public class MagmaBrickBlock extends Block {
 
-    public BubbleBlock(Settings settings) {
+    public MagmaBrickBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects()) {
-            entity.extinguish();
+        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
+            entity.damage(world.getDamageSources().hotFloor(),0.5F);
         }
 
         super.onSteppedOn(world, pos, state, entity);
@@ -35,7 +38,7 @@ public class BubbleBlock extends Block {
             world.playSound(
                     null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.5F, 2.6F + (world.random.nextFloat() - world.random.nextFloat()) * 0.8F
             );
-            world.spawnParticles(ParticleTypes.BUBBLE, blockPos.getX() + 0.5, blockPos.getY() + 0.25, blockPos.getZ() + 0.5, 8, 0.5, 0.25, 0.5, 0.0);
+            world.spawnParticles(ParticleTypes.LARGE_SMOKE, blockPos.getX() + 0.5, blockPos.getY() + 0.25, blockPos.getZ() + 0.5, 8, 0.5, 0.25, 0.5, 0.0);
         }
     }
 }
