@@ -1,6 +1,6 @@
-// 1.20.6	2025-07-20T13:55:47.4213495	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2025-07-20T14:05:28.4655746	Variant Decoration/Tags for minecraft:block
 9834d4813129845b093976fce476955eae313149 data\varan-deco\tags\blocks\infested_blocks.json
-6d50c10b572c258be4cc44450b24c83d5597c71b data\minecraft\tags\blocks\mineable\pickaxe.json
+402d16673a35587be0911b1dd7f5a3c33efa3f81 data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
 47c9aea14bbbce74166b342316553300e7f89b1a data\minecraft\tags\blocks\slabs.json
 2197ebe35a93d3b4a7499f1cbc24346cbbbe5c30 data\minecraft\tags\blocks\planks.json

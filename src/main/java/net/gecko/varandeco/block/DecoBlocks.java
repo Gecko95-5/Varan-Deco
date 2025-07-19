@@ -77,6 +77,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_SANDSTONE).strength(1.6f)));
     public static final Block COBBLED_SANDSTONE = registerBlock("cobbled_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.SANDSTONE)));
+    public static final Block CHISELED_POLISHED_SANDSTONE = registerBlock("chiseled_polished_sandstone",
+            new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_SANDSTONE)));
     public static final Block POLISHED_SANDSTONE = registerBlock("polished_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_SANDSTONE)));
     public static final Block SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
@@ -261,6 +263,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE).strength(1.6f)));
     public static final Block COBBLED_RED_SANDSTONE = registerBlock("cobbled_red_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_SANDSTONE)));
+    public static final Block CHISELED_POLISHED_RED_SANDSTONE = registerBlock("chiseled_polished_red_sandstone",
+            new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_RED_SANDSTONE)));
     public static final Block POLISHED_RED_SANDSTONE = registerBlock("polished_red_sandstone",
             new Block(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE)));
     public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
@@ -293,6 +297,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(DecoBlocks.CUT_SOUL_SOILSTONE).strength(1.6f)));
     public static final Block COBBLED_SOUL_SOILSTONE = registerBlock("cobbled_soul_soilstone",
             new Block(AbstractBlock.Settings.copy(DecoBlocks.SOUL_SOILSTONE)));
+    public static final Block CHISELED_POLISHED_SOUL_SOILSTONE = registerBlock("chiseled_polished_soul_soilstone",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.CHISELED_SOUL_SOILSTONE)));
     public static final Block POLISHED_SOUL_SOILSTONE = registerBlock("polished_soul_soilstone",
             new Block(AbstractBlock.Settings.copy(DecoBlocks.CUT_SOUL_SOILSTONE)));
     public static final Block SOUL_SOILSTONE_BRICKS = registerBlock("soul_soilstone_bricks",
@@ -305,7 +311,7 @@ public class DecoBlocks {
     public static final Block BUBBLE_BLOCK = registerBlock("bubble_block",
             new BubbleBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE).strength(0.5F,25.0f)
                     .mapColor(MapColor.BLUE).postProcess(DecoBlocks::always).ticksRandomly()
-                    .emissiveLighting(DecoBlocks::always)));
+                    .emissiveLighting(DecoBlocks::always).luminance(state -> 1)));
     public static final Block BUBBLE_BRICKS = registerBlock("bubble_bricks",
             new BubbleBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK).strength(1.5F)
                     .mapColor(MapColor.STONE_GRAY)));
