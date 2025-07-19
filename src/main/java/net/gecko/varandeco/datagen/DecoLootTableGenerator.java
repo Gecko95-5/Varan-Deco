@@ -1151,6 +1151,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.DEEPSLATE_GRINDSTONE);
         addDrop(DecoBlocks.BLACKSTONE_GRINDSTONE);
+        addDrop(DecoBlocks.TUFF_GRINDSTONE);
 
         addDrop(DecoBlocks.COBBLED_SANDSTONE);
         addDrop(DecoBlocks.COBBLED_RED_SANDSTONE);
@@ -1195,5 +1196,12 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
         addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
+
+        addDrop(DecoBlocks.CHISELED_POLISHED_SANDSTONE);
+        addDrop(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE);
+        addDrop(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
+
+        addDrop(DecoBlocks.CRACKED_TUFF_TILES);
+        addDrop(DecoBlocks.CRACKED_TUFF_BRICKS);
     }
 }

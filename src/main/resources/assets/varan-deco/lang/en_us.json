@@ -303,11 +303,13 @@
   "block.minecraft.polished_sandstone_stairs": "Polished Sandstone Stairs",
   "block.minecraft.polished_sandstone_slab": "Polished Sandstone Slab",
   "block.minecraft.polished_sandstone_wall": "Polished Sandstone Wall",
+  "block.minecraft.chiseled_polished_sandstone": "Chiseled Polished Sandstone",
 
   "block.minecraft.polished_red_sandstone": "Polished Red Sandstone",
   "block.minecraft.polished_red_sandstone_stairs": "Polished Red Sandstone Stairs",
   "block.minecraft.polished_red_sandstone_slab": "Polished Red Sandstone Slab",
   "block.minecraft.polished_red_sandstone_wall": "Polished Red Sandstone Wall",
+  "block.minecraft.chiseled_polished_red_sandstone": "Chiseled Polished Red Sandstone",
 
   "block.minecraft.sandstone_bricks": "Polished Sandstone Bricks",
   "block.minecraft.sandstone_brick_stairs": "Polished Sandstone Brick Stairs",
@@ -370,6 +372,7 @@
   "block.minecraft.polished_soul_soilstone_stairs": "Polished Soul Soilstone Stairs",
   "block.minecraft.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
   "block.minecraft.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
+  "block.minecraft.chiseled_polished_soul_soilstone": "Chiseled Polished Soul Soilstone",
 
   "block.minecraft.soul_soilstone_bricks": "Polished Soul Soilstone Bricks",
   "block.minecraft.soul_soilstone_brick_stairs": "Polished Soul Soilstone Brick Stairs",
@@ -1077,6 +1080,7 @@
 
   "block.minecraft.deepslate_grindstone": "Deepslate Grindstone",
   "block.minecraft.blackstone_grindstone": "Blackstone Grindstone",
+  "block.minecraft.tuff_grindstone": "Tuff Grindstone",
 
   "block.minecraft.deepslate_stairs": "Deepslate Stairs",
   "block.minecraft.deepslate_slab": "Deepslate Slab",
@@ -1359,6 +1363,9 @@
   "block.minecraft.tuff_tile_stairs": "Tuff Tile Stairs",
   "block.minecraft.tuff_tile_slab": "Tuff Tile Slab",
   "block.minecraft.tuff_tile_wall": "Tuff Tile Wall",
+  "block.minecraft.cracked_tuff_tiles": "Cracked Tuff Tiles",
+
+  "block.minecraft.cracked_tuff_bricks": "Cracked Tuff Bricks",
 
   "block.minecraft.purpur_wall": "Purpur Wall",
 
