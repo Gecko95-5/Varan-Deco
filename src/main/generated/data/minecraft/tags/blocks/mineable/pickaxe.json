@@ -316,6 +316,9 @@
     "varan-deco:soul_soilstone_brick_slab",
     "varan-deco:soul_soilstone_brick_wall",
     "varan-deco:bubble_elevator_block_bubble",
-    "varan-deco:bubble_elevator_block_magma"
+    "varan-deco:bubble_elevator_block_magma",
+    "varan-deco:chiseled_polished_sandstone",
+    "varan-deco:chiseled_polished_red_sandstone",
+    "varan-deco:chiseled_polished_soul_soilstone"
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polised_soul_soilstone_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:polised_soul_soilstone_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "varan-deco:chiseled_polished_soul_soilstone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_polised_soul_soilstone_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "varan-deco:chiseled_polished_soul_soilstone"
+    ]
+  },
+  "sends_telemetry_event": false
+}
