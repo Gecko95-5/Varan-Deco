@@ -80,6 +80,8 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLED_SANDSTONE = registerBlock("cobbled_sandstone",
             new Block(FabricBlockSettings.copyOf(Blocks.SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_POLISHED_SANDSTONE = registerBlock("chiseled_polished_sandstone",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_SANDSTONE = registerBlock("polished_sandstone",
             new Block(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
@@ -216,6 +218,8 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLED_RED_SANDSTONE = registerBlock("cobbled_red_sandstone",
             new Block(FabricBlockSettings.copyOf(Blocks.RED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_POLISHED_RED_SANDSTONE = registerBlock("chiseled_polished_red_sandstone",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_RED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_RED_SANDSTONE = registerBlock("polished_red_sandstone",
             new Block(FabricBlockSettings.copyOf(Blocks.CUT_RED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
@@ -249,6 +253,8 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(DecoBlocks.CUT_SOUL_SOILSTONE).strength(1.6f)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLED_SOUL_SOILSTONE = registerBlock("cobbled_soul_soilstone",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_POLISHED_SOUL_SOILSTONE = registerBlock("chiseled_polished_soul_soilstone",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.CHISELED_SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_SOUL_SOILSTONE = registerBlock("polished_soul_soilstone",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.CUT_SOUL_SOILSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SOUL_SOILSTONE_BRICKS = registerBlock("soul_soilstone_bricks",
@@ -261,7 +267,7 @@ public class DecoBlocks {
     public static final Block BUBBLE_BLOCK = registerBlock("bubble_block",
             new BubbleBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(0.5F,25.0f)
                     .mapColor(MapColor.BLUE).postProcess(DecoBlocks::always).ticksRandomly()
-                    .emissiveLighting(DecoBlocks::always)), DecoItemGroup.VARAN_DECO_BLOCKS);
+                    .emissiveLighting(DecoBlocks::always).luminance(state -> 1)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BUBBLE_BRICKS = registerBlock("bubble_bricks",
             new BubbleBlock(FabricBlockSettings.copyOf(DecoBlocks.BUBBLE_BLOCK).strength(1.5F)
                     .mapColor(MapColor.STONE_GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);

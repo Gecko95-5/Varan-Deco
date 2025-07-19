@@ -53,6 +53,16 @@ public class DecoConfiguredFeatures {
                                             DecoBlocks.BARBERTON_DAISY.getDefaultState(), DecoBlocks.GERBERA_DAISY.getDefaultState(),
                                             DecoBlocks.ROSE.getDefaultState()))))));
 
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_BIRCH =
+            ConfiguredFeatures.register("deco_birch_flowers", Feature.FLOWER,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(96, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
+                                    new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
+                                    1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
+                                    1.0F, List.of(DecoBlocks.LAVENDER.getDefaultState(),
+                                            DecoBlocks.PAEONIA.getDefaultState(), DecoBlocks.WHITE_ORCHID.getDefaultState(),
+                                                DecoBlocks.GERBERA_DAISY.getDefaultState()))))));
+
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_PLAINS =
             ConfiguredFeatures.register("deco_plains_flowers", Feature.FLOWER,
                     ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
@@ -98,10 +108,6 @@ public class DecoConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_NOVA_STARFLOWER = ConfiguredFeatures.register(
             "deco_nova_starflower", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
                     new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.NOVA_STARFLOWER))));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_PAEONIA = ConfiguredFeatures.register(
-            "deco_paeonia", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
-                    PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.PAEONIA)))));
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DECO_WOODEN_TREE =
             ConfiguredFeatures.register("deco_wooden_tree", Feature.TREE, new TreeFeatureConfig.Builder(

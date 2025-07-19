@@ -335,7 +335,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
-                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA)
+                .add(DecoBlocks.CHISELED_POLISHED_SANDSTONE)
+                .add(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE)
+                .add(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);

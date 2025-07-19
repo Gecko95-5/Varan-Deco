@@ -90,9 +90,8 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_NOVA_STARFLOWER_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BIRCH_FOREST),
-                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PAEONIA_PLACED.getKey().get());
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BIRCH_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST),
-                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PAEONIA_PLACED.getKey().get());
-
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BIRCH_PLACED.getKey().get());
     }
 }
