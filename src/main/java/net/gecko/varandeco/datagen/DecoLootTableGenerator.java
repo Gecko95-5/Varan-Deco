@@ -1084,5 +1084,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
         addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
+
+        addDrop(DecoBlocks.CHISELED_POLISHED_SANDSTONE);
+        addDrop(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE);
+        addDrop(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
     }
 }

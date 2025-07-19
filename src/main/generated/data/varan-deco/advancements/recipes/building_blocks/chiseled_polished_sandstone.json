@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bubble_block": {
+    "has_polised_sandstone_slab": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:bubble_block"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_magma_block": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:magma_block"
+              "varan-deco:polised_sandstone_slab"
             ]
           }
         ]
@@ -27,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bubble_elevator_block_bubble"
+        "recipe": "varan-deco:chiseled_polished_sandstone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,13 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bubble_block",
-      "has_magma_block"
+      "has_polised_sandstone_slab"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bubble_elevator_block_bubble"
+      "varan-deco:chiseled_polished_sandstone"
     ]
   },
   "sends_telemetry_event": false
