@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_block"
+    },
+    "/": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "varan-deco:bubble_block"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "X": {
+      "item": "varan-deco:copper_bars"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "BPM",
+    "#/#"
+  ],
+  "result": {
+    "item": "varan-deco:bubble_elevator_block_bubble"
+  }
+}
