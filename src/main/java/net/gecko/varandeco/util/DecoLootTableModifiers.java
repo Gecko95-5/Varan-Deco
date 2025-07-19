@@ -17,6 +17,10 @@ public class DecoLootTableModifiers {
             new Identifier("minecraft", "entities/guardian");
     private static final Identifier DIGGING_ID =
             new Identifier("minecraft", "gameplay/sniffer_digging");
+    private static final Identifier ENDERMAN_ID =
+            new Identifier("minecraft", "entities/enderman");
+    private static final Identifier FORTRESS_ID =
+            new Identifier("minecraft", "chests/nether_bridge");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -44,6 +48,24 @@ public class DecoLootTableModifiers {
                         .with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS))
                         .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (ENDERMAN_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(DecoItems.WARPED_WART))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (FORTRESS_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(DecoItems.WARPED_WART))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }

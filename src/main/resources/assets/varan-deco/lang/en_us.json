@@ -303,15 +303,15 @@
   "block.varan-deco.polished_red_sandstone_slab": "Polished Red Sandstone Slab",
   "block.varan-deco.polished_red_sandstone_wall": "Polished Red Sandstone Wall",
 
-  "block.varan-deco.sandstone_bricks": "Sandstone Bricks",
-  "block.varan-deco.sandstone_brick_stairs": "Sandstone Brick Stairs",
-  "block.varan-deco.sandstone_brick_slab": "Sandstone Brick Slab",
-  "block.varan-deco.sandstone_brick_wall": "Sandstone Brick Wall",
+  "block.varan-deco.sandstone_bricks": "Polished Sandstone Bricks",
+  "block.varan-deco.sandstone_brick_stairs": "Polished Sandstone Brick Stairs",
+  "block.varan-deco.sandstone_brick_slab": "Polished Sandstone Brick Slab",
+  "block.varan-deco.sandstone_brick_wall": "Polished Sandstone Brick Wall",
 
-  "block.varan-deco.red_sandstone_bricks": "Red Sandstone Bricks",
-  "block.varan-deco.red_sandstone_brick_stairs": "Red Sandstone Brick Stairs",
-  "block.varan-deco.red_sandstone_brick_slab": "Red Sandstone Brick Slab",
-  "block.varan-deco.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
+  "block.varan-deco.red_sandstone_bricks": "Polished Red Sandstone Bricks",
+  "block.varan-deco.red_sandstone_brick_stairs": "Polished Red Sandstone Brick Stairs",
+  "block.varan-deco.red_sandstone_brick_slab": "Polished Red Sandstone Brick Slab",
+  "block.varan-deco.red_sandstone_brick_wall": "Polished Red Sandstone Brick Wall",
 
   "block.varan-deco.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.varan-deco.dark_prismarine_wall": "Dark Prismarine Wall",
@@ -364,10 +364,10 @@
   "block.varan-deco.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
   "block.varan-deco.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
 
-  "block.varan-deco.soul_soilstone_bricks": "Soul Soilstone Bricks",
-  "block.varan-deco.soul_soilstone_brick_stairs": "Soul Soilstone Brick Stairs",
-  "block.varan-deco.soul_soilstone_brick_slab": "Soul Soilstone Brick Slab",
-  "block.varan-deco.soul_soilstone_brick_wall": "Soul Soilstone Brick Wall",
+  "block.varan-deco.soul_soilstone_bricks": "Polished Soul Soilstone Bricks",
+  "block.varan-deco.soul_soilstone_brick_stairs": "Polished Soul Soilstone Brick Stairs",
+  "block.varan-deco.soul_soilstone_brick_slab": "Polished Soul Soilstone Brick Slab",
+  "block.varan-deco.soul_soilstone_brick_wall": "Polished Soul Soilstone Brick Wall",
 
   "block.varan-deco.quartz_wall": "Quartz Wall",
   "block.varan-deco.smooth_quartz_wall": "Smooth Quartz Wall",
@@ -1352,6 +1352,9 @@
   "block.varan-deco.infested_cracked_polished_blackstone_bricks": "Infested Cracked Polished Blackstone Bricks",
   "block.varan-deco.infested_cracked_polished_blackstone_tiles": "Infested Cracked Polished Blackstone Tiles",
   "block.varan-deco.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
+
+  "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
+  "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",

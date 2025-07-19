@@ -3,7 +3,8 @@
 	"package": "net.gecko.varandeco.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"MiningToolItemMixin"
+		"MiningToolItemMixin",
+		"BubbleColumnBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
