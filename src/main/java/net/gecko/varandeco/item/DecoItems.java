@@ -52,10 +52,11 @@ public class DecoItems {
         addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_SIGN);
         addToItemGroup(DecoItemGroup.VARAN_DECO, SNOW_BRICK);
         addToItemGroup(DecoItemGroup.VARAN_DECO, BUBBLE_ORB);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, ICE_SHARD);
         addToItemGroup(DecoItemGroup.VARAN_DECO, WARPED_WART);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, TALL_SEAGRASS);
         addToItemGroup(DecoItemGroup.VARAN_DECO, COPPER_NUGGET);
         addToItemGroup(DecoItemGroup.VARAN_DECO, LILAC_FLOWER);
-        addToItemGroup(DecoItemGroup.VARAN_DECO, TALL_SEAGRASS);
     }
 
     public static void addToItemGroup(ItemGroup group, Item item) {
