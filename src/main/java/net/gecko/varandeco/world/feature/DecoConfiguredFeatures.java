@@ -125,16 +125,6 @@ public class DecoConfiguredFeatures {
         register(context, DECO_ENDER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
                         PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.ENDER_ROSE)))));
 
-        register(context, DECO_WITHER_KEY, Feature.RANDOM_PATCH, new RandomPatchFeatureConfig(64, 6, 2,
-                        PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.WITHER_ROSE)))));
-
-        register(context, DECO_SOULSAND_KEY, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(32,
-                        PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                                new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
-                                        new DoublePerlinNoiseSampler.NoiseParameters(-20, 2.0),
-                                        0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
-                                        0.005F, List.of(Blocks.NETHER_WART.getDefaultState(), DecoBlocks.WARPED_WART_PLANT.getDefaultState()))))));
-
         register(context, DECO_RED_SUNFLOWER_KEY, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.RED_SUNFLOWER))));
         register(context, DECO_NOVA_STARFLOWER_KEY, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,

@@ -13,11 +13,11 @@ e679dfca792e4ebae644965689391497d194529c data/minecraft/tags/block/ice.json
 ccf0a9022a62726234e3ea4370b71450a2751b78 data/minecraft/tags/block/leaves.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data/minecraft/tags/block/logs_that_burn.json
 515c3f25a6ae3b468160cf07c485fb0041f35ac9 data/minecraft/tags/block/mineable/axe.json
-d0b54a35e256e3791745d5e2a09db283caf2503c data/minecraft/tags/block/mineable/pickaxe.json
+90db2300d4d2580c39db2983c6931d53cd2268e4 data/minecraft/tags/block/mineable/pickaxe.json
 f6a0de04ab191adb7a3c79e312b9bc6ac680fc6b data/minecraft/tags/block/mineable/shovel.json
 e1039261b2bddfde7fb1628e57265c791fbff0d3 data/minecraft/tags/block/needs_diamond_tool.json
 1cacc62da857912151190c57354789c44a3c0305 data/minecraft/tags/block/needs_iron_tool.json
-7dbf5cdf5a99fdd5942d3008ca79b987956de486 data/minecraft/tags/block/needs_stone_tool.json
+107f0a4f722743a18e52536f527f413712c4bbbc data/minecraft/tags/block/needs_stone_tool.json
 1c77ac8607ab83662889c1ed8d1f22a1a3a1d0e4 data/minecraft/tags/block/overworld_natural_logs.json
 ba534b68a8b6997db1f0bded0aa2321c824d3213 data/minecraft/tags/block/piglin_repellents.json
 98d6c7883bc131eb9c73d20c441bfcf5dcdbc3e6 data/minecraft/tags/block/planks.json
@@ -28,7 +28,7 @@ c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replace
 c69d810ef4b7eb7e13e8efc16754a9f75879e48c data/minecraft/tags/block/small_flowers.json
 73d66f372d8c4d1b45f3aa477fbb0a97cfa88b10 data/minecraft/tags/block/snaps_goat_horn.json
 2b1cf933b140a1bf229504c154469b32bc03f95d data/minecraft/tags/block/snow.json
-6b24fd153da199d2a82df0bbee39891b76deb424 data/minecraft/tags/block/snow_layer_cannot_survive_on.json
+928a8afc8dfa756732a3df21326b4498f9abb89f data/minecraft/tags/block/snow_layer_cannot_survive_on.json
 480de690cd1892b86a135e05c14396023409b9ab data/minecraft/tags/block/soul_fire_base_blocks.json
 9fb08aff9d101822f0d455b675484d961135d32a data/minecraft/tags/block/soul_speed_blocks.json
 356fc7e9b7760d0384f5277076f8640c5645b345 data/minecraft/tags/block/stairs.json
