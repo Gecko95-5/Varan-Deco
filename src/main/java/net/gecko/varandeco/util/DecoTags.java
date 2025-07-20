@@ -82,6 +82,9 @@ public class DecoTags {
         public static final TagKey<Block> MOSAIC_SLABS =
                 createTag("mosaic_slab");
 
+        public static final TagKey<Block> INFESTED_BLOCKS =
+                createTag("infested_blocks");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registries.BLOCK.getKey(), Identifier.of(VaranDeco.MOD_ID, name));
         }
