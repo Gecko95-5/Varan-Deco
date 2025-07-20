@@ -191,6 +191,7 @@
   "block.minecraft.polished_stone_wall": "Polished Stone Wall",
 
   "block.minecraft.stone_tiles": "Stone Tiles",
+  "block.minecraft.cracked_stone_tiles": "Cracked Stone Tiles",
   "block.minecraft.stone_tile_stairs": "Stone Tile Stairs",
   "block.minecraft.stone_tile_slab": "Stone Tile Slab",
   "block.minecraft.stone_tile_wall": "Stone Tile Wall",
@@ -229,6 +230,7 @@
   "block.minecraft.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
 
   "block.minecraft.polished_blackstone_tiles": "Polished Blackstone Tiles",
+  "block.minecraft.cracked_polished_blackstone_tiles": "Cracked Polished Blackstone Tiles",
   "block.minecraft.polished_blackstone_tile_stairs": "Polished Blackstone Tile Stairs",
   "block.minecraft.polished_blackstone_tile_slab": "Polished Blackstone Tile Slab",
   "block.minecraft.polished_blackstone_tile_wall": "Polished Blackstone Tile Wall",
@@ -1026,6 +1028,9 @@
   "block.minecraft.blackstone_stonecutter": "Blackstone Stonecutter",
   "block.minecraft.tuff_stonecutter": "Tuff Stonecutter",
 
+  "block.minecraft.deepslate_grindstone": "Deepslate Grindstone",
+  "block.minecraft.blackstone_grindstone": "Blackstone Grindstone",
+
   "block.minecraft.deepslate_stairs": "Deepslate Stairs",
   "block.minecraft.deepslate_slab": "Deepslate Slab",
   "block.minecraft.deepslate_wall": "Deepslate Wall",
@@ -1316,6 +1321,7 @@
 
   "block.minecraft.infested_polished_stone": "Infested Polished Stone",
   "block.minecraft.infested_stone_tiles": "Infested Stone Tiles",
+  "block.minecraft.infested_cracked_stone_tiles": "Infested Cracked Stone Tiles",
   "block.minecraft.infested_cobbled_deepslate": "Infested Cobbled Deepslate",
   "block.minecraft.infested_polished_deepslate": "Infested Polished Deepslate",
   "block.minecraft.infested_deepslate_bricks": "Infested Deepslate Bricks",
@@ -1338,6 +1344,7 @@
   "block.minecraft.infested_polished_blackstone_bricks": "Infested Polished Blackstone Bricks",
   "block.minecraft.infested_polished_blackstone_tiles": "Infested Polished Blackstone Tiles",
   "block.minecraft.infested_cracked_polished_blackstone_bricks": "Infested Cracked Polished Blackstone Bricks",
+  "block.minecraft.infested_cracked_polished_blackstone_tiles": "Infested Cracked Polished Blackstone Tiles",
   "block.minecraft.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
   "block.minecraft.infested_chiseled_stone": "Infested Chiseled Stone",
   "block.minecraft.infested_chiseled_deepslate_bricks": "Infested Chiseled Deepslate Bricks",
