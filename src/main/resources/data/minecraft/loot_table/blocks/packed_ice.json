@@ -39,7 +39,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "varan-deco:ice_shard"
+          "name": "minecraft:ice_shard"
         }
       ],
       "rolls": 1.0

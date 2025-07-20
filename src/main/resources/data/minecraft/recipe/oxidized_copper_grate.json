@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:iron_block",
-    "X": "minecraft:light_iron_bars"
+    "#":"minecraft:oxidized_copper",
+    "X":"minecraft:oxidized_light_copper_bars"
   },
   "pattern": [
     " X ",
@@ -11,7 +11,7 @@
     " X "
   ],
   "result": {
-    "count": 1,
-    "id": "minecraft:iron_grate"
+    "count": 4,
+    "id": "minecraft:oxidized_copper_grate"
   }
 }

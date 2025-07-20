@@ -1906,12 +1906,12 @@ public class DecoBlocks {
 
     public static final Block BUBBLE_ELEVATOR_BLOCK_BUBBLE = registerBlock("bubble_elevator_block_bubble",
             AbstractBlock.Settings.copy(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
-                    .mapColor(MapColor.BLUE).postProcess(DecoBlocks::always).ticksRandomly()
+                    .mapColor(MapColor.BLUE).sounds(BlockSoundGroup.COPPER_BULB).postProcess(DecoBlocks::always).ticksRandomly()
                     .emissiveLighting(DecoBlocks::always).luminance(state -> 3),BubbleElevatorBubbleBlock::new);
 
     public static final Block BUBBLE_ELEVATOR_BLOCK_MAGMA = registerBlockWithoutItem("bubble_elevator_block_magma",
             AbstractBlock.Settings.copy(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
-                    .mapColor(MapColor.DARK_RED).postProcess(DecoBlocks::always).ticksRandomly()
+                    .mapColor(MapColor.DARK_RED).sounds(BlockSoundGroup.COPPER_BULB).postProcess(DecoBlocks::always).ticksRandomly()
                     .emissiveLighting(DecoBlocks::always).luminance(state -> 3),BubbleElevatorMagmaBlock::new);
 
     public static final Block DEEPSLATE_BUTTON = registerButton("deepslate_button",
