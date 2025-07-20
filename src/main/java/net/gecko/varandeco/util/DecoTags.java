@@ -132,6 +132,9 @@ public class DecoTags {
         public static final TagKey<Item> SAPLINGSs =
                 createTag("saplings");
 
+        public static final TagKey<Item> WATER_ITEMS =
+                createTag("water_items");
+
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), Identifier.of(VaranDeco.MOD_ID, name));
         }
