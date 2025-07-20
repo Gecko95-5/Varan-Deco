@@ -11,7 +11,6 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
-import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -4310,11 +4309,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,Items.CHISELED_DEEPSLATE, Items.POLISHED_DEEPSLATE);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.IRON_GRATE)
-                .pattern(" # ")
-                .pattern("# #")
-                .pattern(" # ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.IRON_GRATE,4)
+                .pattern(" X ")
+                .pattern("X#X")
+                .pattern(" X ")
                 .input('#', Items.IRON_BLOCK)
+                .input('X', DecoBlocks.LIGHT_IRON_BARS)
                 .criterion(hasItem(Items.IRON_BLOCK),
                         conditionsFromItem(Items.IRON_BLOCK))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.IRON_GRATE)));

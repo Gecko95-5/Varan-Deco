@@ -3,10 +3,10 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:waxed_oxidized_copper"
     },
     "X": {
-      "item": "varan-deco:light_iron_bars"
+      "item": "varan-deco:waxed_oxidized_light_copper_bars"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:iron_grate"
+    "id": "minecraft:waxed_oxidized_copper_grate"
   }
 }
