@@ -949,6 +949,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES.asItem());
                         entries.add(DecoBlocks.INFESTED_CALCITE.asItem());
                         entries.add(DecoBlocks.INFESTED_DRIPSTONE_BLOCK.asItem());
+                        entries.add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE.asItem());
                         entries.add(DecoItems.CACTUS_BOAT);
                         entries.add(DecoItems.CACTUS_CHEST_BOAT);
                         entries.add(DecoItems.WOODEN_BOAT);
