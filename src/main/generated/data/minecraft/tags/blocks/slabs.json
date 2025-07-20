@@ -45,6 +45,15 @@
     "#varan-deco:mosaic_slab",
     "varan-deco:crimson_mosaic_slab",
     "varan-deco:warped_mosaic_slab",
-    "varan-deco:smooth_basalt_slab"
+    "varan-deco:smooth_basalt_slab",
+    "varan-deco:cobbled_sandstone_slab",
+    "varan-deco:cobbled_red_sandstone_slab",
+    "varan-deco:cobbled_soul_soilstone_slab",
+    "varan-deco:polised_sandstone_slab",
+    "varan-deco:polised_red_sandstone_slab",
+    "varan-deco:polised_soul_soilstone_slab",
+    "varan-deco:sandstone_brick_slab",
+    "varan-deco:red_sandstone_brick_slab",
+    "varan-deco:soul_soilstone_brick_slab"
   ]
 }

@@ -48,6 +48,15 @@
     "#varan-deco:mosaic_stairs",
     "varan-deco:crimson_mosaic_stairs",
     "varan-deco:warped_mosaic_stairs",
-    "varan-deco:smooth_basalt_stairs"
+    "varan-deco:smooth_basalt_stairs",
+    "varan-deco:cobbled_sandstone_stairs",
+    "varan-deco:cobbled_red_sandstone_stairs",
+    "varan-deco:cobbled_soul_soilstone_stairs",
+    "varan-deco:polished_sandstone_stairs",
+    "varan-deco:polished_red_sandstone_stairs",
+    "varan-deco:polished_soul_soilstone_stairs",
+    "varan-deco:sandstone_brick_stairs",
+    "varan-deco:red_sandstone_brick_stairs",
+    "varan-deco:soul_soilstone_brick_stairs"
   ]
 }
