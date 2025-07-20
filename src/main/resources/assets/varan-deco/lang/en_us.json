@@ -6,6 +6,7 @@
   "item.minecraft.warped_wart": "Warped Wart",
   "item.minecraft.copper_nugget": "Copper Nugget",
   "item.minecraft.lilac_flower": "Lilac Flower",
+  "item.minecraft.ice_shard": "Ice Shard",
   "item.minecraft.ancient_rose_seeds": "Ancient Rose Seeds",
   "item.minecraft.mighty_lavender_flower": "Mighty Lavender Flower",
 
@@ -288,6 +289,37 @@
   "block.minecraft.cut_red_sandstone_brick_slab": "Cut Red Sandstone Brick Slab",
   "block.minecraft.cut_red_sandstone_brick_wall": "Cut Red Sandstone Brick Wall",
 
+  "block.minecraft.cobbled_sandstone": "Cobbled Sandstone",
+  "block.minecraft.cobbled_sandstone_stairs": "Cobbled Sandstone Stairs",
+  "block.minecraft.cobbled_sandstone_slab": "Cobbled Sandstone Slab",
+  "block.minecraft.cobbled_sandstone_wall": "Cobbled Sandstone Wall",
+
+  "block.minecraft.cobbled_red_sandstone": "Cobbled Red Sandstone",
+  "block.minecraft.cobbled_red_sandstone_stairs": "Cobbled Red Sandstone Stairs",
+  "block.minecraft.cobbled_red_sandstone_slab": "Cobbled Red Sandstone Slab",
+  "block.minecraft.cobbled_red_sandstone_wall": "Cobbled Red Sandstone Wall",
+
+  "block.minecraft.polished_sandstone": "Polished Sandstone",
+  "block.minecraft.polished_sandstone_stairs": "Polished Sandstone Stairs",
+  "block.minecraft.polished_sandstone_slab": "Polished Sandstone Slab",
+  "block.minecraft.polished_sandstone_wall": "Polished Sandstone Wall",
+
+  "block.minecraft.polished_red_sandstone": "Polished Red Sandstone",
+  "block.minecraft.polished_red_sandstone_stairs": "Polished Red Sandstone Stairs",
+  "block.minecraft.polished_red_sandstone_slab": "Polished Red Sandstone Slab",
+  "block.minecraft.polished_red_sandstone_wall": "Polished Red Sandstone Wall",
+
+  "block.minecraft.sandstone_bricks": "Sandstone Bricks",
+  "block.minecraft.sandstone_brick_stairs": "Sandstone Brick Stairs",
+  "block.minecraft.sandstone_brick_slab": "Sandstone Brick Slab",
+  "block.minecraft.sandstone_brick_wall": "Sandstone Brick Wall",
+
+  "block.minecraft.red_sandstone_bricks": "Red Sandstone Bricks",
+  "block.minecraft.red_sandstone_brick_stairs": "Red Sandstone Brick Stairs",
+  "block.minecraft.red_sandstone_brick_slab": "Red Sandstone Brick Slab",
+  "block.minecraft.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
+
+
   "block.minecraft.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.minecraft.dark_prismarine_wall": "Dark Prismarine Wall",
 
@@ -328,6 +360,21 @@
   "block.minecraft.smooth_soul_soilstone_stairs": "Smooth Soul Soilstone Stairs",
   "block.minecraft.smooth_soul_soilstone_slab": "Smooth Soul Soilstone Slab",
   "block.minecraft.smooth_soul_soilstone_wall": "Smooth Soul Soilstone Wall",
+
+  "block.minecraft.cobbled_soul_soilstone": "Cobbled Soul Soilstone",
+  "block.minecraft.cobbled_soul_soilstone_stairs": "Cobbled Soul Soilstone Stairs",
+  "block.minecraft.cobbled_soul_soilstone_slab": "Cobbled Soul Soilstone Slab",
+  "block.minecraft.cobbled_soul_soilstone_wall": "Cobbled Soul Soilstone Wall",
+
+  "block.minecraft.polished_soul_soilstone": "Polished Soul Soilstone",
+  "block.minecraft.polished_soul_soilstone_stairs": "Polished Soul Soilstone Stairs",
+  "block.minecraft.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
+  "block.minecraft.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
+
+  "block.minecraft.soul_soilstone_bricks": "Soul Soilstone Bricks",
+  "block.minecraft.soul_soilstone_brick_stairs": "Soul Soilstone Brick Stairs",
+  "block.minecraft.soul_soilstone_brick_slab": "Soul Soilstone Brick Slab",
+  "block.minecraft.soul_soilstone_brick_wall": "Soul Soilstone Brick Wall",
 
   "block.minecraft.quartz_wall": "Quartz Wall",
   "block.minecraft.smooth_quartz_wall": "Smooth Quartz Wall",
@@ -1318,6 +1365,8 @@
   "block.minecraft.smooth_basalt_stairs": "Smooth Basalt Stairs",
   "block.minecraft.smooth_basalt_slab": "Smooth Basalt Slab",
   "block.minecraft.smooth_basalt_wall": "Smooth Basalt Wall",
+
+  "block.varan-deco.fragile_ice": "Fragile Ice",
 
   "block.minecraft.infested_polished_stone": "Infested Polished Stone",
   "block.minecraft.infested_stone_tiles": "Infested Stone Tiles",

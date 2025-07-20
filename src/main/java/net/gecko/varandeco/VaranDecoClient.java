@@ -241,6 +241,8 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MIGHTY_LAVENDER_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MIGHTY_LAVENDER, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FRAGILE_ICE, RenderLayer.getTranslucent());
+
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CRIMSON_BOAT_ID);

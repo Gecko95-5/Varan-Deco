@@ -4,6 +4,9 @@
     "minecraft:cut_soul_soilstone",
     "minecraft:chiseled_soul_soilstone",
     "minecraft:smooth_soul_soilstone",
-    "minecraft:cut_soul_soilstone_bricks"
+    "minecraft:cut_soul_soilstone_bricks",
+    "minecraft:cobbled_soul_soilstone",
+    "minecraft:polished_soul_soilstone",
+    "minecraft:soul_soilstone_bricks"
   ]
 }
