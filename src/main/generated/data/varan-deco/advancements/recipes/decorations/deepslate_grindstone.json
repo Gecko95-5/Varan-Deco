@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:deepslate_slab"
-            ]
+            "items": "varan-deco:deepslate_slab"
           }
         ]
       },

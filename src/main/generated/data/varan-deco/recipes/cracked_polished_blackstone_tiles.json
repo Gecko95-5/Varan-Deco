@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "varan-deco:polished_blackstone_tiles"
   },
-  "result": "varan-deco:cracked_polished_blackstone_tiles"
+  "result": {
+    "id": "varan-deco:cracked_polished_blackstone_tiles"
+  }
 }

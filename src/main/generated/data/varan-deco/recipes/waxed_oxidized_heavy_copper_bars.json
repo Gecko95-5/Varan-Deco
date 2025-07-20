@@ -3,15 +3,15 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:waxed_oxidized_copper"
+      "item": "varan-deco:waxed_oxidized_copper_bars"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "count": 16,
+    "count": 1,
     "id": "varan-deco:waxed_oxidized_heavy_copper_bars"
   }
 }

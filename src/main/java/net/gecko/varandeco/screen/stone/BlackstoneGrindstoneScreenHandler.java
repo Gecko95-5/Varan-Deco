@@ -1,7 +1,10 @@
 package net.gecko.varandeco.screen.stone;
 
+import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Blocks;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.ExperienceOrbEntity;
@@ -13,6 +16,7 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.world.ServerWorld;
@@ -26,13 +30,13 @@ import java.util.stream.Collectors;
 
 public class BlackstoneGrindstoneScreenHandler extends ScreenHandler {
 	public static final int field_30793 = 35;
-	public static final int field_30794 = 0;
-	public static final int field_30795 = 1;
-	public static final int field_30796 = 2;
-	private static final int field_30797 = 3;
-	private static final int field_30798 = 30;
-	private static final int field_30799 = 30;
-	private static final int field_30800 = 39;
+	public static final int INPUT_1_ID = 0;
+	public static final int INPUT_2_ID = 1;
+	public static final int OUTPUT_ID = 2;
+	private static final int INVENTORY_START = 3;
+	private static final int INVENTORY_END = 30;
+	private static final int HOTBAR_START = 30;
+	private static final int HOTBAR_END = 39;
 	private final Inventory result = new CraftingResultInventory();
 	final Inventory input = new SimpleInventory(2) {
 		@Override
@@ -53,13 +57,13 @@ public class BlackstoneGrindstoneScreenHandler extends ScreenHandler {
 		this.addSlot(new Slot(this.input, 0, 49, 19) {
 			@Override
 			public boolean canInsert(ItemStack stack) {
-				return stack.isDamageable() || stack.isOf(Items.ENCHANTED_BOOK) || stack.hasEnchantments();
+				return stack.isDamageable() || EnchantmentHelper.hasEnchantments(stack);
 			}
 		});
 		this.addSlot(new Slot(this.input, 1, 49, 40) {
 			@Override
 			public boolean canInsert(ItemStack stack) {
-				return stack.isDamageable() || stack.isOf(Items.ENCHANTED_BOOK) || stack.hasEnchantments();
+				return stack.isDamageable() || EnchantmentHelper.hasEnchantments(stack);
 			}
 		});
 		this.addSlot(new Slot(this.result, 2, 129, 34) {
@@ -95,13 +99,13 @@ public class BlackstoneGrindstoneScreenHandler extends ScreenHandler {
 
 			private int getExperience(ItemStack stack) {
 				int i = 0;
-				Map<Enchantment, Integer> map = EnchantmentHelper.get(stack);
+				ItemEnchantmentsComponent itemEnchantmentsComponent = EnchantmentHelper.getEnchantments(stack);
 
-				for (Entry<Enchantment, Integer> entry : map.entrySet()) {
-					Enchantment enchantment = (Enchantment)entry.getKey();
-					Integer integer = (Integer)entry.getValue();
+				for (Object2IntMap.Entry<RegistryEntry<Enchantment>> entry : itemEnchantmentsComponent.getEnchantmentsMap()) {
+					Enchantment enchantment = (Enchantment)((RegistryEntry)entry.getKey()).value();
+					int j = entry.getIntValue();
 					if (!enchantment.isCursed()) {
-						i += enchantment.getMinPower(integer);
+						i += enchantment.getMinPower(j);
 					}
 				}
 
@@ -129,102 +133,84 @@ public class BlackstoneGrindstoneScreenHandler extends ScreenHandler {
 	}
 
 	private void updateResult() {
-		ItemStack itemStack = this.input.getStack(0);
-		ItemStack itemStack2 = this.input.getStack(1);
-		boolean bl = !itemStack.isEmpty() || !itemStack2.isEmpty();
-		boolean bl2 = !itemStack.isEmpty() && !itemStack2.isEmpty();
-		if (!bl) {
-			this.result.setStack(0, ItemStack.EMPTY);
-		} else {
-			boolean bl3 = !itemStack.isEmpty() && !itemStack.isOf(Items.ENCHANTED_BOOK) && !itemStack.hasEnchantments()
-					|| !itemStack2.isEmpty() && !itemStack2.isOf(Items.ENCHANTED_BOOK) && !itemStack2.hasEnchantments();
-			if (itemStack.getCount() > 1 || itemStack2.getCount() > 1 || !bl2 && bl3) {
-				this.result.setStack(0, ItemStack.EMPTY);
-				this.sendContentUpdates();
-				return;
-			}
-
-			int i = 1;
-			int m;
-			ItemStack itemStack3;
-			if (bl2) {
-				if (!itemStack.isOf(itemStack2.getItem())) {
-					this.result.setStack(0, ItemStack.EMPTY);
-					this.sendContentUpdates();
-					return;
-				}
-
-				Item item = itemStack.getItem();
-				int j = item.getMaxDamage() - itemStack.getDamage();
-				int k = item.getMaxDamage() - itemStack2.getDamage();
-				int l = j + k + item.getMaxDamage() * 5 / 100;
-				m = Math.max(item.getMaxDamage() - l, 0);
-				itemStack3 = this.transferEnchantments(itemStack, itemStack2);
-				if (!itemStack3.isDamageable()) {
-					if (!ItemStack.areEqual(itemStack, itemStack2)) {
-						this.result.setStack(0, ItemStack.EMPTY);
-						this.sendContentUpdates();
-						return;
-					}
-
-					i = 2;
-				}
-			} else {
-				boolean bl4 = !itemStack.isEmpty();
-				m = bl4 ? itemStack.getDamage() : itemStack2.getDamage();
-				itemStack3 = bl4 ? itemStack : itemStack2;
-			}
-
-			this.result.setStack(0, this.grind(itemStack3, m, i));
-		}
-
+		this.result.setStack(0, this.getOutputStack(this.input.getStack(0), this.input.getStack(1)));
 		this.sendContentUpdates();
 	}
 
-	private ItemStack transferEnchantments(ItemStack target, ItemStack source) {
-		ItemStack itemStack = target.copy();
-		Map<Enchantment, Integer> map = EnchantmentHelper.get(source);
-
-		for (Entry<Enchantment, Integer> entry : map.entrySet()) {
-			Enchantment enchantment = (Enchantment)entry.getKey();
-			if (!enchantment.isCursed() || EnchantmentHelper.getLevel(enchantment, itemStack) == 0) {
-				itemStack.addEnchantment(enchantment, (Integer)entry.getValue());
+	private ItemStack getOutputStack(ItemStack firstInput, ItemStack secondInput) {
+		boolean bl = !firstInput.isEmpty() || !secondInput.isEmpty();
+		if (!bl) {
+			return ItemStack.EMPTY;
+		} else if (firstInput.getCount() <= 1 && secondInput.getCount() <= 1) {
+			boolean bl2 = !firstInput.isEmpty() && !secondInput.isEmpty();
+			if (!bl2) {
+				ItemStack itemStack = !firstInput.isEmpty() ? firstInput : secondInput;
+				return !EnchantmentHelper.hasEnchantments(itemStack) ? ItemStack.EMPTY : this.grind(itemStack.copy());
+			} else {
+				return this.combineItems(firstInput, secondInput);
 			}
+		} else {
+			return ItemStack.EMPTY;
 		}
-
-		return itemStack;
 	}
 
-	private ItemStack grind(ItemStack item, int damage, int amount) {
-		ItemStack itemStack = item.copy();
-		itemStack.removeSubNbt("Enchantments");
-		itemStack.removeSubNbt("StoredEnchantments");
-		if (damage > 0) {
-			itemStack.setDamage(damage);
+	private ItemStack combineItems(ItemStack firstInput, ItemStack secondInput) {
+		if (!firstInput.isOf(secondInput.getItem())) {
+			return ItemStack.EMPTY;
 		} else {
-			itemStack.removeSubNbt("Damage");
-		}
+			int i = Math.max(firstInput.getMaxDamage(), secondInput.getMaxDamage());
+			int j = firstInput.getMaxDamage() - firstInput.getDamage();
+			int k = secondInput.getMaxDamage() - secondInput.getDamage();
+			int l = j + k + i * 5 / 100;
+			int m = 1;
+			if (!firstInput.isDamageable()) {
+				if (firstInput.getMaxCount() < 2 || !ItemStack.areEqual(firstInput, secondInput)) {
+					return ItemStack.EMPTY;
+				}
 
-		itemStack.setCount(amount);
-		Map<Enchantment, Integer> map = (Map<Enchantment, Integer>)EnchantmentHelper.get(item)
-				.entrySet()
-				.stream()
-				.filter(entry -> ((Enchantment)entry.getKey()).isCursed())
-				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
-		EnchantmentHelper.set(map, itemStack);
-		itemStack.setRepairCost(0);
-		if (itemStack.isOf(Items.ENCHANTED_BOOK) && map.size() == 0) {
-			itemStack = new ItemStack(Items.BOOK);
-			if (item.hasCustomName()) {
-				itemStack.setCustomName(item.getName());
+				m = 2;
 			}
+
+			ItemStack itemStack = firstInput.copyWithCount(m);
+			if (itemStack.isDamageable()) {
+				itemStack.set(DataComponentTypes.MAX_DAMAGE, i);
+				itemStack.setDamage(Math.max(i - l, 0));
+			}
+
+			this.transferEnchantments(itemStack, secondInput);
+			return this.grind(itemStack);
+		}
+	}
+
+	private void transferEnchantments(ItemStack target, ItemStack source) {
+		EnchantmentHelper.apply(target, components -> {
+			ItemEnchantmentsComponent itemEnchantmentsComponent = EnchantmentHelper.getEnchantments(source);
+
+			for (Object2IntMap.Entry<RegistryEntry<Enchantment>> entry : itemEnchantmentsComponent.getEnchantmentsMap()) {
+				Enchantment enchantment = (Enchantment)((RegistryEntry)entry.getKey()).value();
+				if (!enchantment.isCursed() || components.getLevel(enchantment) == 0) {
+					components.add(enchantment, entry.getIntValue());
+				}
+			}
+		});
+	}
+
+	private ItemStack grind(ItemStack item) {
+		ItemEnchantmentsComponent itemEnchantmentsComponent = EnchantmentHelper.apply(
+				item, components -> components.remove(enchantment -> !((Enchantment)enchantment.value()).isCursed())
+		);
+		if (item.isOf(Items.ENCHANTED_BOOK) && itemEnchantmentsComponent.isEmpty()) {
+			item = item.copyComponentsToNewStack(Items.BOOK, item.getCount());
 		}
 
-		for (int i = 0; i < map.size(); i++) {
-			itemStack.setRepairCost(AnvilScreenHandler.getNextCost(itemStack.getRepairCost()));
+		int i = 0;
+
+		for (int j = 0; j < itemEnchantmentsComponent.getSize(); j++) {
+			i = AnvilScreenHandler.getNextCost(i);
 		}
 
-		return itemStack;
+		item.set(DataComponentTypes.REPAIR_COST, i);
+		return item;
 	}
 
 	@Override
