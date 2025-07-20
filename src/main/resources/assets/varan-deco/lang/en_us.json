@@ -188,6 +188,7 @@
   "block.varan-deco.polished_stone_wall": "Polished Stone Wall",
 
   "block.varan-deco.stone_tiles": "Stone Tiles",
+  "block.varan-deco.cracked_stone_tiles": "Cracked Stone Tiles",
   "block.varan-deco.stone_tile_stairs": "Stone Tile Stairs",
   "block.varan-deco.stone_tile_slab": "Stone Tile Slab",
   "block.varan-deco.stone_tile_wall": "Stone Tile Wall",
@@ -226,6 +227,7 @@
   "block.varan-deco.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
 
   "block.varan-deco.polished_blackstone_tiles": "Polished Blackstone Tiles",
+  "block.varan-deco.cracked_polished_blackstone_tiles": "Cracked Polished Blackstone Tiles",
   "block.varan-deco.polished_blackstone_tile_stairs": "Polished Blackstone Tile Stairs",
   "block.varan-deco.polished_blackstone_tile_slab": "Polished Blackstone Tile Slab",
   "block.varan-deco.polished_blackstone_tile_wall": "Polished Blackstone Tile Wall",
@@ -1006,6 +1008,9 @@
   "block.varan-deco.blackstone_stonecutter": "Blackstone Stonecutter",
   "block.varan-deco.tuff_stonecutter": "Tuff Stonecutter",
 
+  "block.varan-deco.deepslate_grindstone": "Deepslate Grindstone",
+  "block.varan-deco.blackstone_grindstone": "Blackstone Grindstone",
+
   "block.varan-deco.deepslate_stairs": "Deepslate Stairs",
   "block.varan-deco.deepslate_slab": "Deepslate Slab",
   "block.varan-deco.deepslate_wall": "Deepslate Wall",
@@ -1296,6 +1301,7 @@
 
   "block.varan-deco.infested_polished_stone": "Infested Polished Stone",
   "block.varan-deco.infested_stone_tiles": "Infested Stone Tiles",
+  "block.varan-deco.infested_cracked_stone_tiles": "Infested Cracked Stone Tiles",
   "block.varan-deco.infested_cobbled_deepslate": "Infested Cobbled Deepslate",
   "block.varan-deco.infested_polished_deepslate": "Infested Polished Deepslate",
   "block.varan-deco.infested_deepslate_bricks": "Infested Deepslate Bricks",
@@ -1318,6 +1324,7 @@
   "block.varan-deco.infested_polished_blackstone_bricks": "Infested Polished Blackstone Bricks",
   "block.varan-deco.infested_polished_blackstone_tiles": "Infested Polished Blackstone Tiles",
   "block.varan-deco.infested_cracked_polished_blackstone_bricks": "Infested Cracked Polished Blackstone Bricks",
+  "block.varan-deco.infested_cracked_polished_blackstone_tiles": "Infested Cracked Polished Blackstone Tiles",
   "block.varan-deco.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
   "block.varan-deco.infested_chiseled_stone": "Infested Chiseled Stone",
   "block.varan-deco.infested_chiseled_deepslate_bricks": "Infested Chiseled Deepslate Bricks",
