@@ -1,6 +1,6 @@
-// 1.21.1	2025-07-20T15:23:19.7549799	Variant Decoration/Tags for minecraft:block
-4fbba9d42dfaeb2384efe9c4147ed15ba7cea169 data\minecraft\tags\block\soul_speed_blocks.json
+// 1.21.1	2025-07-20T15:39:55.1621606	Variant Decoration/Tags for minecraft:block
 ad05f2c422c0cab6c52b855411109cf3bd03707d data\varan-deco\tags\block\deco_smithing_tables.json
+cae0d58389e28a967e8a214401c3032338afaebe data\minecraft\tags\block\soul_speed_blocks.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\block\wooden_slabs.json
 cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
 2519c42e5f61a57d319ae243beca1b74abce7c18 data\minecraft\tags\block\fences.json
@@ -49,7 +49,7 @@ e3b091b8a2c6b00557e0655539e4fc096058249e data\minecraft\tags\block\snow_layer_ca
 980cd00b4e8661689190c97886982c40fc9b91b1 data\minecraft\tags\block\stairs.json
 e2fdc41429f4e6b1aefe56c0989b2619f2700942 data\minecraft\tags\block\wooden_trapdoors.json
 ae6a5284b821cf8425822655673d64efabc01ed1 data\minecraft\tags\block\buttons.json
-03ef4279577bffe623280b3c613d33bdc465dfde data\minecraft\tags\block\soul_fire_base_blocks.json
+6f6b93acaefecb075e61cf0d9a193bd8204bd91c data\minecraft\tags\block\soul_fire_base_blocks.json
 97245fa2968b79d411ec3b88ac33ec7ff0b48c3a data\minecraft\tags\block\needs_iron_tool.json
 c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\block\mineable\shovel.json
 c95cd79fbc39fa3f8254e035280b7f55d9679d46 data\varan-deco\tags\block\deco_furnaces.json
@@ -59,8 +59,8 @@ c95cd79fbc39fa3f8254e035280b7f55d9679d46 data\varan-deco\tags\block\deco_furnace
 8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\block\fence_gates.json
 b6feec2809938a12dd391f7839c7e47473d612f2 data\minecraft\tags\block\piglin_repellents.json
 b64cc946ba3853777e624f2a42ce351ced564b4d data\minecraft\tags\block\slabs.json
-d1e3e87be0713f490b99ba103ff28cbadb5518f6 data\varan-deco\tags\block\deco_ladders.json
 18c6dcd7316622a4c3e33307df5dcab4d12690e8 data\varan-deco\tags\block\mosaic_glass_panes.json
+d1e3e87be0713f490b99ba103ff28cbadb5518f6 data\varan-deco\tags\block\deco_ladders.json
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\block\leaves.json
 1d8fb37b59d6da58833ab6c42e1752c0aa7df625 data\minecraft\tags\block\impermeable.json
 bd3de99181ca0e50d1e019f3e97b0501eebf0712 data\minecraft\tags\block\needs_diamond_tool.json
