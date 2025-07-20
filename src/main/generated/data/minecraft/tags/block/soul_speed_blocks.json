@@ -16,6 +16,18 @@
     "minecraft:cut_soul_soilstone_bricks",
     "minecraft:cut_soul_soilstone_brick_stairs",
     "minecraft:cut_soul_soilstone_brick_slab",
-    "minecraft:cut_soul_soilstone_brick_wall"
+    "minecraft:cut_soul_soilstone_brick_wall",
+    "minecraft:cobbled_soul_soilstone",
+    "minecraft:polished_soul_soilstone",
+    "minecraft:soul_soilstone_bricks",
+    "minecraft:cobbled_soul_soilstone_stairs",
+    "minecraft:cobbled_soul_soilstone_slab",
+    "minecraft:cobbled_soul_soilstone_wall",
+    "minecraft:polished_soul_soilstone_stairs",
+    "minecraft:polised_soul_soilstone_slab",
+    "minecraft:polished_soul_soilstone_wall",
+    "minecraft:soul_soilstone_brick_stairs",
+    "minecraft:soul_soilstone_brick_slab",
+    "minecraft:soul_soilstone_brick_wall"
   ]
 }

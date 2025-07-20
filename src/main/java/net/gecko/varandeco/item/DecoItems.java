@@ -202,6 +202,7 @@ public class DecoItems {
 
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",64, BubbleItem::new);
 
+    public static final Item ICE_SHARD = registerItem("ice_shard",64, Item::new);
 
     public static final Item WARPED_WART = registerItem("warped_wart",
             64, createBlockItemWithUniqueName(DecoBlocks.WARPED_WART_PLANT));
