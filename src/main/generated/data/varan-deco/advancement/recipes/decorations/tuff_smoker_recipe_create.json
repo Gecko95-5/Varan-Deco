@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tuff_stonecutter_recipe_create"
+        "recipe": "minecraft:tuff_smoker_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tuff": {
+    "has_tuff_furnace": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:tuff"
+            "items": "minecraft:tuff_furnace"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_tuff"
+      "has_tuff_furnace"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tuff_stonecutter_recipe_create"
+      "minecraft:tuff_smoker_recipe_create"
     ]
   }
 }
