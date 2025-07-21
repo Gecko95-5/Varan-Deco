@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_prismarine": {
+    "has_blackstone_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:prismarine"
-            ]
+            "items": "varan-deco:blackstone_furnace"
           }
         ]
       },
@@ -15,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dark_prismarine"
+        "recipe": "minecraft:blackstone_smoker"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_prismarine",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_blackstone_furnace"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dark_prismarine"
+      "minecraft:blackstone_smoker"
     ]
   }
 }
