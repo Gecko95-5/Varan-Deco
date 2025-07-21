@@ -1,11 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "tag": "minecraft:logs"
     },
     "X": {
-      "item": "varan-deco:blackstone_furnace"
+      "item": "varan-deco:deepslate_furnace"
     }
   },
   "pattern": [
@@ -14,6 +15,7 @@
     " # "
   ],
   "result": {
-    "item": "varan-deco:blackstone_smoker"
-  }
+    "item": "varan-deco:deepslate_smoker"
+  },
+  "show_notification": true
 }

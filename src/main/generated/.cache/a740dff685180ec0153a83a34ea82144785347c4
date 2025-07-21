@@ -1,4 +1,4 @@
-// 1.20.2	2025-07-20T10:18:51.3542369	Variant Decoration/Tags for minecraft:block
+// 1.20.2	2025-07-22T10:01:15.1611235	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 d8ab0084a49732972b21faab258d1cf83f8411e1 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
@@ -67,6 +67,6 @@ de55858f598551ea44df4edc40d23a7830d0016d data\minecraft\tags\blocks\overworld_na
 140e3edf27b5690e2ba63df7e62c06180494d237 data\minecraft\tags\blocks\climbable.json
 93599c2951db6e2cf855e73cf53ad32bd6bd0765 data\minecraft\tags\blocks\standing_signs.json
 b2af68f8535008b591b68f01b41f0f1f514b9a11 data\minecraft\tags\blocks\stone_pressure_plates.json
-68b93b9776678611b08e5205fb987588c44970a5 data\minecraft\tags\blocks\flower_pots.json
 863d9e314bb957a6153a8d7e038716749b4a48f6 data\minecraft\tags\blocks\logs_that_burn.json
+68b93b9776678611b08e5205fb987588c44970a5 data\minecraft\tags\blocks\flower_pots.json
 2196c76944d2307ffd812fa1e832e05bec4f4f88 data\minecraft\tags\blocks\wooden_pressure_plates.json

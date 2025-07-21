@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_smooth_deepslate": {
+    "has_blackstone_furnace": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:smooth_deepslate"
+              "varan-deco:blackstone_furnace"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:deepslate_blast_furnace"
+        "recipe": "minecraft:blackstone_smoker"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_smooth_deepslate"
+      "has_blackstone_furnace"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:deepslate_blast_furnace"
+      "minecraft:blackstone_smoker"
     ]
   },
   "sends_telemetry_event": false
