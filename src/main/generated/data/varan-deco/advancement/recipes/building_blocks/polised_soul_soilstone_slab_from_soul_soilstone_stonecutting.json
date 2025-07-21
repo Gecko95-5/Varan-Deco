@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polised_soul_soilstone_slab_from_soul_soilstone_stonecutting"
+        "recipe": "varan-deco:polised_soul_soilstone_slab_from_soul_soilstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polised_soul_soilstone_slab_from_soul_soilstone_stonecutting"
+      "varan-deco:polised_soul_soilstone_slab_from_soul_soilstone_stonecutting"
     ]
   }
 }

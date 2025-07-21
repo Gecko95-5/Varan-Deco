@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cobbled_sandstone_slab_from_sandstone_stonecutting"
+        "recipe": "varan-deco:cobbled_sandstone_slab_from_sandstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cobbled_sandstone_slab_from_sandstone_stonecutting"
+      "varan-deco:cobbled_sandstone_slab_from_sandstone_stonecutting"
     ]
   }
 }
