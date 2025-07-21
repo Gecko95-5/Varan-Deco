@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_smooth_blackstone": {
+    "has_blackstone_furnace": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:smooth_blackstone"
+            "items": "minecraft:blackstone_furnace"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:blackstone_blast_furnace_recipe_create"
+        "recipe": "minecraft:blackstone_smoker_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_smooth_blackstone"
+      "has_blackstone_furnace"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:blackstone_blast_furnace_recipe_create"
+      "minecraft:blackstone_smoker_recipe_create"
     ]
   }
 }

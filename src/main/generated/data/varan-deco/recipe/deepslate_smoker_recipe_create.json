@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": "#minecraft:logs",
-    "X": "minecraft:blackstone_furnace"
+    "X": "minecraft:deepslate_furnace"
   },
   "pattern": [
     " # ",
@@ -10,6 +11,7 @@
     " # "
   ],
   "result": {
-    "id": "minecraft:blackstone_smoker"
+    "count": 1,
+    "id": "minecraft:deepslate_smoker"
   }
 }
