@@ -2938,10 +2938,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('I', Items.IRON_INGOT)
                 .input('X', DecoBlocks.DEEPSLATE_FURNACE)
                 .input('#', DecoBlocks.SMOOTH_DEEPSLATE)
-                .criterion(hasItem(Items.IRON_INGOT),
-                        conditionsFromItem(Items.IRON_INGOT))
-                .criterion(hasItem(DecoBlocks.DEEPSLATE_FURNACE),
-                        conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
                 .criterion(hasItem(DecoBlocks.SMOOTH_DEEPSLATE),
                         conditionsFromItem(DecoBlocks.SMOOTH_DEEPSLATE))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.DEEPSLATE_BLAST_FURNACE)));
@@ -2953,10 +2949,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('I', Items.IRON_INGOT)
                 .input('X', DecoBlocks.BLACKSTONE_FURNACE)
                 .input('#', DecoBlocks.SMOOTH_BLACKSTONE)
-                .criterion(hasItem(Items.IRON_INGOT),
-                        conditionsFromItem(Items.IRON_INGOT))
-                .criterion(hasItem(DecoBlocks.BLACKSTONE_FURNACE),
-                        conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
                 .criterion(hasItem(DecoBlocks.SMOOTH_BLACKSTONE),
                         conditionsFromItem(DecoBlocks.SMOOTH_BLACKSTONE))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.BLACKSTONE_BLAST_FURNACE)));
@@ -2968,21 +2960,45 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('I', Items.IRON_INGOT)
                 .input('X', DecoBlocks.TUFF_FURNACE)
                 .input('#', DecoBlocks.SMOOTH_TUFF)
-                .criterion(hasItem(Items.IRON_INGOT),
-                        conditionsFromItem(Items.IRON_INGOT))
-                .criterion(hasItem(DecoBlocks.TUFF_FURNACE),
-                        conditionsFromItem(DecoBlocks.TUFF_FURNACE))
                 .criterion(hasItem(DecoBlocks.SMOOTH_TUFF),
                         conditionsFromItem(DecoBlocks.SMOOTH_TUFF))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TUFF_BLAST_FURNACE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_SMOKER)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', ItemTags.LOGS)
+                .input('X', DecoBlocks.DEEPSLATE_FURNACE)
+                .criterion(hasItem(DecoBlocks.DEEPSLATE_FURNACE),
+                        conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.DEEPSLATE_SMOKER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.BLACKSTONE_SMOKER)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', ItemTags.LOGS)
+                .input('X', DecoBlocks.BLACKSTONE_FURNACE)
+                .criterion(hasItem(DecoBlocks.BLACKSTONE_FURNACE),
+                        conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.BLACKSTONE_SMOKER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.TUFF_SMOKER)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', ItemTags.LOGS)
+                .input('X', DecoBlocks.TUFF_FURNACE)
+                .criterion(hasItem(DecoBlocks.TUFF_FURNACE),
+                        conditionsFromItem(DecoBlocks.TUFF_FURNACE))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TUFF_SMOKER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_STONECUTTER)
                 .pattern(" I ")
                 .pattern("###")
                 .input('I', Items.IRON_INGOT)
                 .input('#', Items.DEEPSLATE)
-                .criterion(hasItem(Items.IRON_INGOT),
-                        conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.DEEPSLATE),
                         conditionsFromItem(Items.DEEPSLATE))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.DEEPSLATE_STONECUTTER)));
@@ -2992,8 +3008,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .input('I', Items.IRON_INGOT)
                 .input('#', Items.BLACKSTONE)
-                .criterion(hasItem(Items.IRON_INGOT),
-                        conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.BLACKSTONE),
                         conditionsFromItem(Items.BLACKSTONE))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.BLACKSTONE_STONECUTTER)));
@@ -3003,8 +3017,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .input('I', Items.IRON_INGOT)
                 .input('#', Items.TUFF)
-                .criterion(hasItem(Items.IRON_INGOT),
-                        conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.TUFF),
                         conditionsFromItem(Items.TUFF))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TUFF_STONECUTTER)));
