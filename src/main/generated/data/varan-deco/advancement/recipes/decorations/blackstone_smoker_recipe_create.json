@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blackstone": {
+    "has_blackstone_furnace": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blackstone"
+            "items": "minecraft:blackstone_furnace"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:blackstone_stonecutter_recipe_create"
+        "recipe": "varan-deco:blackstone_smoker_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_blackstone"
+      "has_blackstone_furnace"
     ]
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:blackstone_stonecutter_recipe_create"
+      "varan-deco:blackstone_smoker_recipe_create"
     ]
   }
 }

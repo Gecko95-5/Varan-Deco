@@ -2936,81 +2936,93 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_BLACKSTONE_WALL, DecoBlocks.SMOOTH_BLACKSTONE);
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_BLAST_FURNACE)
-                        .pattern("III")
-                        .pattern("IXI")
-                        .pattern("###")
-                        .input('I', Items.IRON_INGOT)
-                        .input('X', DecoBlocks.DEEPSLATE_FURNACE)
-                        .input('#', DecoBlocks.SMOOTH_DEEPSLATE)
-                        .criterion(hasItem(Items.IRON_INGOT),
-                                conditionsFromItem(Items.IRON_INGOT))
-                        .criterion(hasItem(DecoBlocks.DEEPSLATE_FURNACE),
-                                conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
-                        .criterion(hasItem(DecoBlocks.SMOOTH_DEEPSLATE),
-                                conditionsFromItem(DecoBlocks.SMOOTH_DEEPSLATE))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.DEEPSLATE_BLAST_FURNACE) + "_recipe_create");
+                .pattern("III")
+                .pattern("IXI")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('X', DecoBlocks.DEEPSLATE_FURNACE)
+                .input('#', DecoBlocks.SMOOTH_DEEPSLATE)
+                .criterion(hasItem(DecoBlocks.SMOOTH_DEEPSLATE),
+                        conditionsFromItem(DecoBlocks.SMOOTH_DEEPSLATE))
+                .offerTo(exporter, getRecipeName(DecoBlocks.DEEPSLATE_BLAST_FURNACE) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BLACKSTONE_BLAST_FURNACE)
-                        .pattern("III")
-                        .pattern("IXI")
-                        .pattern("###")
-                        .input('I', Items.IRON_INGOT)
-                        .input('X', DecoBlocks.BLACKSTONE_FURNACE)
-                        .input('#', DecoBlocks.SMOOTH_BLACKSTONE)
-                        .criterion(hasItem(Items.IRON_INGOT),
-                                conditionsFromItem(Items.IRON_INGOT))
-                        .criterion(hasItem(DecoBlocks.BLACKSTONE_FURNACE),
-                                conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
-                        .criterion(hasItem(DecoBlocks.SMOOTH_BLACKSTONE),
-                                conditionsFromItem(DecoBlocks.SMOOTH_BLACKSTONE))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.BLACKSTONE_BLAST_FURNACE) + "_recipe_create");
+                .pattern("III")
+                .pattern("IXI")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('X', DecoBlocks.BLACKSTONE_FURNACE)
+                .input('#', DecoBlocks.SMOOTH_BLACKSTONE)
+                .criterion(hasItem(DecoBlocks.SMOOTH_BLACKSTONE),
+                        conditionsFromItem(DecoBlocks.SMOOTH_BLACKSTONE))
+                .offerTo(exporter, getRecipeName(DecoBlocks.BLACKSTONE_BLAST_FURNACE) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.TUFF_BLAST_FURNACE)
-                        .pattern("III")
-                        .pattern("IXI")
-                        .pattern("###")
-                        .input('I', Items.IRON_INGOT)
-                        .input('X', DecoBlocks.TUFF_FURNACE)
-                        .input('#', DecoBlocks.SMOOTH_TUFF)
-                        .criterion(hasItem(Items.IRON_INGOT),
-                                conditionsFromItem(Items.IRON_INGOT))
-                        .criterion(hasItem(DecoBlocks.TUFF_FURNACE),
-                                conditionsFromItem(DecoBlocks.TUFF_FURNACE))
-                        .criterion(hasItem(DecoBlocks.SMOOTH_TUFF),
-                                conditionsFromItem(DecoBlocks.SMOOTH_TUFF))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.TUFF_BLAST_FURNACE) + "_recipe_create");
+                .pattern("III")
+                .pattern("IXI")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('X', DecoBlocks.TUFF_FURNACE)
+                .input('#', DecoBlocks.SMOOTH_TUFF)
+                .criterion(hasItem(DecoBlocks.SMOOTH_TUFF),
+                        conditionsFromItem(DecoBlocks.SMOOTH_TUFF))
+                .offerTo(exporter, getRecipeName(DecoBlocks.TUFF_BLAST_FURNACE) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_SMOKER)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', ItemTags.LOGS)
+                .input('X', DecoBlocks.DEEPSLATE_FURNACE)
+                .criterion(hasItem(DecoBlocks.DEEPSLATE_FURNACE),
+                        conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
+                .offerTo(exporter, getRecipeName(DecoBlocks.DEEPSLATE_SMOKER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BLACKSTONE_SMOKER)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', ItemTags.LOGS)
+                .input('X', DecoBlocks.BLACKSTONE_FURNACE)
+                .criterion(hasItem(DecoBlocks.BLACKSTONE_FURNACE),
+                        conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
+                .offerTo(exporter, getRecipeName(DecoBlocks.BLACKSTONE_SMOKER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.TUFF_SMOKER)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', ItemTags.LOGS)
+                .input('X', DecoBlocks.TUFF_FURNACE)
+                .criterion(hasItem(DecoBlocks.TUFF_FURNACE),
+                        conditionsFromItem(DecoBlocks.TUFF_FURNACE))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.TUFF_SMOKER) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_STONECUTTER)
-                        .pattern(" I ")
-                        .pattern("###")
-                        .input('I', Items.IRON_INGOT)
-                        .input('#', Items.DEEPSLATE)
-                        .criterion(hasItem(Items.IRON_INGOT),
-                                conditionsFromItem(Items.IRON_INGOT))
-                        .criterion(hasItem(Items.DEEPSLATE),
-                                conditionsFromItem(Items.DEEPSLATE))
+                .pattern(" I ")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('#', Items.DEEPSLATE)
+                .criterion(hasItem(Items.DEEPSLATE),
+                        conditionsFromItem(Items.DEEPSLATE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DEEPSLATE_STONECUTTER) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BLACKSTONE_STONECUTTER)
-                        .pattern(" I ")
-                        .pattern("###")
-                        .input('I', Items.IRON_INGOT)
-                        .input('#', Items.BLACKSTONE)
-                        .criterion(hasItem(Items.IRON_INGOT),
-                                conditionsFromItem(Items.IRON_INGOT))
-                        .criterion(hasItem(Items.BLACKSTONE),
-                                conditionsFromItem(Items.BLACKSTONE))
+                .pattern(" I ")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('#', Items.BLACKSTONE)
+                .criterion(hasItem(Items.BLACKSTONE),
+                        conditionsFromItem(Items.BLACKSTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLACKSTONE_STONECUTTER) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.TUFF_STONECUTTER)
-                        .pattern(" I ")
-                        .pattern("###")
-                        .input('I', Items.IRON_INGOT)
-                        .input('#', Items.TUFF)
-                        .criterion(hasItem(Items.IRON_INGOT),
-                                conditionsFromItem(Items.IRON_INGOT))
-                        .criterion(hasItem(Items.TUFF),
-                                conditionsFromItem(Items.TUFF))
+                .pattern(" I ")
+                .pattern("###")
+                .input('I', Items.IRON_INGOT)
+                .input('#', Items.TUFF)
+                .criterion(hasItem(Items.TUFF),
+                        conditionsFromItem(Items.TUFF))
                         .offerTo(exporter, getRecipeName(DecoBlocks.TUFF_STONECUTTER) + "_recipe_create");
 
                 createStairsRecipe(DecoBlocks.DEEPSLATE_STAIRS, Ingredient.ofItems(Items.DEEPSLATE))
