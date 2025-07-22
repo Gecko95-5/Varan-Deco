@@ -1,133 +1,133 @@
 {
-  "parent": "varan-deco:husbandry/obtain_a_flower",
+  "parent": "minecraft:adventure/sleep_in_bed",
   "criteria": {
-    "red": {
+    "stone_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:red_tulip"
-            ]
+            "items":
+              "minecraft:furnace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "white": {
+    "deepslate_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:white_tulip"
-            ]
+            "items":
+              "varan-deco:deepslate_furnace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "pink": {
+    "blackstone_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:pink_tulip"
-            ]
+            "items":
+              "varan-deco:blackstone_furnace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "orange": {
+    "tuff_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:orange_tulip"
-            ]
+            "items":
+              "varan-deco:tuff_furnace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "yellow": {
+    "stone_smoker": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:yellow_tulip"
-            ]
+            "items":
+              "minecraft:smoker"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "blue": {
+    "deepslate_smoker": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blue_tulip"
-            ]
+            "items":
+              "varan-deco:deepslate_smoker"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "purple": {
+    "blackstone_smoker": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:purple_tulip"
-            ]
+            "items":
+              "varan-deco:blackstone_smoker"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "magenta": {
+    "tuff_smoker": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:magenta_tulip"
-            ]
+            "items":
+              "varan-deco:tuff_smoker"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "black": {
+    "stone_blast_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:black_tulip"
-            ]
+            "items":
+              "minecraft:blast_furnace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "cyan": {
+    "deepslate_blast_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cyan_tulip"
-            ]
+            "items":
+              "varan-deco:deepslate_blast_furnace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "green": {
+    "blackstone_blast_furnace": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:green_tulip"
-            ]
+            "items":
+              "varan-deco:blackstone_blast_furnace"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "tuff_blast_furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items":
+            "varan-deco:tuff_blast_furnace"
           }
         ]
       },
@@ -136,49 +136,52 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Collect all the Different type of Tulips",
+    "description": "Obtain all the Smelting Blocks",
     "frame": "challenge",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:black_tulip"
+      "id": "varan-deco:blackstone_blast_furnace"
     },
     "show_toast": true,
-    "title": "The Tulip Gardener"
+    "title": "Smelting a Million"
   },
   "requirements": [
     [
-      "red"
+      "stone_furnace"
     ],
     [
-      "white"
+      "deepslate_furnace"
     ],
     [
-      "pink"
+      "blackstone_furnace"
     ],
     [
-      "orange"
+      "tuff_furnace"
     ],
     [
-      "blue"
+      "stone_smoker"
     ],
     [
-      "purple"
+      "deepslate_smoker"
     ],
     [
-      "magenta"
+      "blackstone_smoker"
     ],
     [
-      "yellow"
+      "tuff_smoker"
     ],
     [
-      "cyan"
+      "stone_blast_furnace"
     ],
     [
-      "black"
+      "deepslate_blast_furnace"
     ],
     [
-      "green"
+      "blackstone_blast_furnace"
+    ],
+    [
+      "tuff_blast_furnace"
     ]
   ]
 }

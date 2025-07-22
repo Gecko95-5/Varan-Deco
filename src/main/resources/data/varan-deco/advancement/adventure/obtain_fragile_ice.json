@@ -1,13 +1,12 @@
 {
-  "parent": "varan-deco:adventure/obtain_bubble_orb",
+  "parent": "minecraft:adventure/root",
   "criteria": {
-    "elevator": {
+    "ice": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:bubble_elevator_block_bubble"
-            ]
+            "items":
+              "varan-deco:fragile_ice"
           }
         ]
       },
@@ -16,19 +15,20 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Craft the Bubble Elevator Block",
+    "description": "Obtain a Fragile Ice Block, Try not to Step on it",
     "frame": "task",
     "hidden": true,
     "icon": {
       "count": 1,
-      "id": "varan-deco:bubble_elevator_block_bubble"
+      "id": "varan-deco:fragile_ice"
     },
     "show_toast": true,
-    "title": "The Best Two in One"
+    "title": "More Fragile than Glass"
   },
   "requirements": [
     [
-      "elevator"
+      "ice"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

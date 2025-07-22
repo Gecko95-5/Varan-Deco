@@ -1,13 +1,12 @@
 {
-  "parent": "minecraft:adventure/root",
+  "parent": "varan-deco:adventure/obtain_fragile_ice",
   "criteria": {
-    "orb": {
+    "ice": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:bubble_orb"
-            ]
+            "items":
+              "varan-deco:black_ice"
           }
         ]
       },
@@ -16,19 +15,20 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain a Bubble Orb",
+    "description": "Crafted a very Dense Block of Ice",
     "frame": "task",
-    "hidden": false,
+    "hidden": true,
     "icon": {
       "count": 1,
-      "id": "varan-deco:bubble_orb"
+      "id": "varan-deco:black_ice"
     },
     "show_toast": true,
-    "title": "The Orb found in the Ocean Depths"
+    "title": "To Dangerous to Be Place"
   },
   "requirements": [
     [
-      "orb"
+      "ice"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

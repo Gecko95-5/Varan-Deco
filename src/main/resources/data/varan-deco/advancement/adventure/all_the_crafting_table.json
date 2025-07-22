@@ -1,146 +1,144 @@
 {
   "parent": "minecraft:adventure/sleep_in_bed",
   "criteria": {
-    "stone_furnace": {
+    "oak": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:furnace"
-            ]
+            "items":
+              "minecraft:crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "deepslate_furnace": {
+    "spruce": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:deepslate_furnace"
-            ]
+            "items":
+              "varan-deco:spruce_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "blackstone_furnace": {
+    "birch": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blackstone_furnace"
-            ]
+            "items":
+              "varan-deco:birch_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "tuff_furnace": {
+    "jungle": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:tuff_furnace"
-            ]
+            "items":
+              "varan-deco:jungle_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stone_smoker": {
+    "acacia": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:smoker"
-            ]
+            "items":
+              "varan-deco:acacia_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "deepslate_smoker": {
+    "dark_oak": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:deepslate_smoker"
-            ]
+            "items":
+              "varan-deco:dark_oak_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "blackstone_smoker": {
+    "mangrove": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blackstone_smoker"
-            ]
+            "items":
+              "varan-deco:mangrove_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "tuff_smoker": {
+    "cherry": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:tuff_smoker"
-            ]
+            "items":
+              "varan-deco:cherry_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stone_blast_furnace": {
+    "bamboo": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:blast_furnace"
-            ]
+            "items":
+              "varan-deco:bamboo_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "deepslate_blast_furnace": {
+    "crimson": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:deepslate_blast_furnace"
-            ]
+            "items":
+              "varan-deco:crimson_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "blackstone_blast_furnace": {
+    "warped": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:blackstone_blast_furnace"
-            ]
+            "items":
+              "varan-deco:warped_crafting_table"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    }
-  },
-    "tuff_blast_furnace": {
+    },
+    "cactus": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:tuff_blast_furnace"
-            ]
+            "items":
+              "varan-deco:cactus_crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "wooden": {
+      "conditions": {
+        "items": [
+          {
+            "items":
+              "varan-deco:wooden_crafting_table"
           }
         ]
       },
@@ -149,52 +147,56 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain all the Smelting Blocks",
+    "description": "Obtain all Different Types of Crafting Table",
     "frame": "challenge",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:blackstone_blast_furnace"
+      "id": "varan-deco:wooden_crafting_table"
     },
     "show_toast": true,
-    "title": "Smelting a Million"
+    "title": "The Crafting Collector"
   },
   "requirements": [
     [
-      "stone_furnace"
+      "oak"
     ],
     [
-      "deepslate_furnace"
+      "spruce"
     ],
     [
-      "blackstone_furnace"
-    ],,
-    [
-      "tuff_furnace"
+      "birch"
     ],
     [
-      "stone_smoker"
+      "jungle"
     ],
     [
-      "deepslate_smoker"
+      "dark_oak"
     ],
     [
-      "blackstone_smoker"
+      "mangrove"
     ],
     [
-      "tuff_smoker"
+      "crimson"
     ],
     [
-      "stone_blast_furnace"
+      "acacia"
     ],
     [
-      "deepslate_blast_furnace"
+      "cactus"
     ],
     [
-      "blackstone_blast_furnace"
+      "warped"
     ],
     [
-      "tuff_blast_furnace"
+      "wooden"
+    ],
+    [
+      "bamboo"
+    ],
+    [
+      "cherry"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

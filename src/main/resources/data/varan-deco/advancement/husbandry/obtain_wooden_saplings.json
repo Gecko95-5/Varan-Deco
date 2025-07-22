@@ -1,13 +1,12 @@
 {
-  "parent": "minecraft:adventure/root",
+  "parent": "varan-deco:husbandry/obtain_a_flower",
   "criteria": {
-    "ice": {
+    "orb": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:fragile_ice"
-            ]
+            "items":
+              "varan-deco:wooden_sapling"
           }
         ]
       },
@@ -16,19 +15,19 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain a Fragile Ice Block, Try not to Step on it",
+    "description": "Obtain a Wooden Saplings",
     "frame": "task",
-    "hidden": true,
+    "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:fragile_ice"
+      "id": "varan-deco:wooden_sapling"
     },
     "show_toast": true,
-    "title": "More Fragile than Glass"
+    "title": "The Wood of Woods"
   },
   "requirements": [
     [
-      "ice"
+      "orb"
     ]
   ]
 }

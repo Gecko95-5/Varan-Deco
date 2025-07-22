@@ -1,133 +1,122 @@
 {
-  "parent": "minecraft:adventure/sleep_in_bed",
+  "parent": "varan-deco:husbandry/obtain_a_flower",
   "criteria": {
-    "oak": {
+    "red": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:crafting_table"
-            ]
+            "items": 
+              "minecraft:red_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "spruce": {
+    "white": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:spruce_crafting_table"
-            ]
+            "items":
+              "minecraft:white_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "birch": {
+    "pink": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:birch_crafting_table"
-            ]
+            "items":
+              "minecraft:pink_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "jungle": {
+    "orange": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:jungle_crafting_table"
-            ]
+            "items":
+              "minecraft:orange_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "acacia": {
+    "yellow": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:acacia_crafting_table"
-            ]
+            "items":
+              "varan-deco:yellow_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "dark_oak": {
+    "blue": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:dark_oak_crafting_table"
-            ]
+            "items":
+              "varan-deco:blue_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "mangrove": {
+    "purple": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:mangrove_crafting_table"
-            ]
+            "items":
+              "varan-deco:purple_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "crimson": {
+    "magenta": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:crimson_crafting_table"
-            ]
+            "items":
+              "varan-deco:magenta_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "warped": {
+    "black": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:warped_crafting_table"
-            ]
+            "items":
+              "varan-deco:black_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "cactus": {
+    "cyan": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:cactus_crafting_table"
-            ]
+            "items":
+              "varan-deco:cyan_tulip"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "wooden": {
+    "green": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:wooden_crafting_table"
-            ]
+            "items":
+              "varan-deco:green_tulip"
           }
         ]
       },
@@ -136,49 +125,49 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain all Different Types of Crafting Table",
+    "description": "Collect all the Different type of Tulips",
     "frame": "challenge",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:wooden_crafting_table"
+      "id": "varan-deco:black_tulip"
     },
     "show_toast": true,
-    "title": "The Crafting Collector"
+    "title": "The Tulip Gardener"
   },
   "requirements": [
     [
-      "oak"
+      "red"
     ],
     [
-      "spruce"
+      "white"
     ],
     [
-      "birch"
+      "pink"
     ],
     [
-      "jungle"
+      "orange"
     ],
     [
-      "dark_oak"
+      "blue"
     ],
     [
-      "mangrove"
+      "purple"
     ],
     [
-      "crimson"
+      "magenta"
     ],
     [
-      "acacia"
+      "yellow"
     ],
     [
-      "cactus"
+      "cyan"
     ],
     [
-      "warped"
+      "black"
     ],
     [
-      "wooden"
+      "green"
     ]
   ]
 }

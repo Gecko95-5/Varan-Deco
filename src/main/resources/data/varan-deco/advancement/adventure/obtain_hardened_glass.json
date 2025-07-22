@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-deco:hardened_glass"
-            ]
+            "items": "varan-deco:hardened_glass"
           }
         ]
       },
@@ -15,20 +13,17 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
     "description": "Crafted Hardened Glass",
-    "frame": "task",
-    "hidden": false,
     "icon": {
       "count": 1,
       "id": "varan-deco:hardened_glass"
     },
-    "show_toast": true,
     "title": "As Tough as Obsidian"
   },
   "requirements": [
     [
       "glass"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }
