@@ -1125,6 +1125,18 @@ public class DecoBlocks {
     public static final Block POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
             new FlowerPotBlock(LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
+    public static final Block BLUE_HIBISCUS = registerBlock("blue_hibiscus",
+            new FlowerBlock(StatusEffects.ABSORPTION,7,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BLUE_HIBISCUS = registerBlockWithoutItem("potted_blue_hibiscus",
+            new FlowerPotBlock(BLUE_HIBISCUS,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block BROMELIAD = registerBlock("bromeliad",
+            new FlowerBlock(StatusEffects.HUNGER,5,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BROMELIAD = registerBlockWithoutItem("potted_bromeliad",
+            new FlowerPotBlock(BROMELIAD,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
     public static final Block ROSE = registerBlock("rose",
             new FlowerBlock(StatusEffects.POISON, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);

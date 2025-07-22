@@ -1,4 +1,4 @@
-// 1.19.2	2025-07-21T14:07:25.2398071	minecraft:block Loot Table
+// 1.19.2	2025-07-21T19:21:54.5823148	minecraft:block Loot Table
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
@@ -104,6 +104,7 @@ b00bab4cfcf526c29ed22e22a4c800af6c9bf53e data\varan-deco\loot_tables\blocks\cut_
 af4e26b53e53b0a8f17d6319d43818fd9284570d data\varan-deco\loot_tables\blocks\ice_brick_stairs.json
 0f4c2aee8233d629c761c09a7696840593046d60 data\varan-deco\loot_tables\blocks\cut_red_sandstone_brick_slab.json
 0364de6d23c94e21db21b9d91f00e858f5195195 data\varan-deco\loot_tables\blocks\green_concrete_slab.json
+0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_blue_hibiscus.json
 d43282cff2c4a00dd32b31b5b16ea264e17a8fc3 data\varan-deco\loot_tables\blocks\cactus_ladder.json
 6b1696abf77b313eb8d4ec56b04b58f9027b559d data\varan-deco\loot_tables\blocks\polished_deepslate_button.json
 55f4ff7f9edb6dda02990b4cadd71648213e39d8 data\varan-deco\loot_tables\blocks\polished_red_sandstone_stairs.json
@@ -476,6 +477,7 @@ e23608cbb7d4539c38e2216008df4483540d7caf data\varan-deco\loot_tables\blocks\blac
 ac892b17adad733e32e6595997b34c4e5a0494bc data\varan-deco\loot_tables\blocks\white_concrete_pillar.json
 fde6856a7f8fa68312cf81497bad88b3dce8d439 data\varan-deco\loot_tables\blocks\lime_concrete_slab.json
 5fc95e0c22d2b8a642190a32a25bea2a5649b337 data\varan-deco\loot_tables\blocks\cut_green_concrete_slab.json
+8a897698403d9e6da566c395b5a313ab91822cb2 data\varan-deco\loot_tables\blocks\blue_hibiscus.json
 412b5038e5a1c5b220b93a418978e515a03237b2 data\varan-deco\loot_tables\blocks\brown_terracotta_wall.json
 0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_pink_orchid.json
 943ff378bd6bc5c0753756ebf9055c4fa7f7a391 data\varan-deco\loot_tables\blocks\smooth_blackstone_slab.json

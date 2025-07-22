@@ -4345,5 +4345,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
+        ShapelessRecipeJsonBuilder.create(Items.BLUE_DYE)
+                .input(DecoBlocks.BLUE_HIBISCUS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_HIBISCUS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
+                .offerTo(exporter, new Identifier("blue_dye_from_blue_hibiscus"));
+
     }
 }

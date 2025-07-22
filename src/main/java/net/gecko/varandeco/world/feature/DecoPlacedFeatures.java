@@ -53,8 +53,20 @@ public class DecoPlacedFeatures {
             DecoConfiguredFeatures.DECO_NOVA_STARFLOWER, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
-    public static final RegistryEntry<PlacedFeature> DECO_BIRCH_PLACED = PlacedFeatures.register("deco_paeonia_placed",
+    public static final RegistryEntry<PlacedFeature> DECO_BIRCH_PLACED = PlacedFeatures.register("deco_birch_placed",
             DecoConfiguredFeatures.DECO_BIRCH, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_JUNGLE_PLACED = PlacedFeatures.register("deco_jungle_placed",
+            DecoConfiguredFeatures.DECO_JUNGLE, RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_BAMBOO_JUNGLE_PLACED = PlacedFeatures.register("deco_bamboo_jungle_placed",
+            DecoConfiguredFeatures.DECO_JUNGLE, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_MESA_PLACED = PlacedFeatures.register("deco_mesa_placed",
+            DecoConfiguredFeatures.DECO_MESA, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
     public static final RegistryEntry<PlacedFeature> DECO_BUBBLE_ORE_PLACED = PlacedFeatures.register("deco_bubble_ore_placed",

@@ -93,5 +93,16 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BIRCH_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BIRCH_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_JUNGLE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SPARSE_JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_JUNGLE_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BAMBOO_JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BAMBOO_JUNGLE_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WOODED_BADLANDS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_MESA_PLACED.getKey().get());
     }
 }
