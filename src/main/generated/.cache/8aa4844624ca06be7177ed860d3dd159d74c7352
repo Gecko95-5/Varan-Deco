@@ -1,9 +1,9 @@
-// 1.20.6	2025-07-22T12:03:44.7318029	Variant Decoration/Tags for minecraft:item
+// 1.20.6	2025-07-22T12:06:07.2852828	Variant Decoration/Tags for minecraft:item
 ebdb9ef7cafcd557fd8112a54fe8bcb67b0d4bd1 data\minecraft\tags\items\wooden_doors.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\items\wooden_slabs.json
 d354adef3c799c0b2fcf00696e47f1671c0c4361 data\varan-deco\tags\items\deco_barrels.json
-2197ebe35a93d3b4a7499f1cbc24346cbbbe5c30 data\minecraft\tags\items\planks.json
 d25a8b7ceaea55ff80e4398dd65212f50c297d93 data\minecraft\tags\items\stone_tool_materials.json
+2197ebe35a93d3b4a7499f1cbc24346cbbbe5c30 data\minecraft\tags\items\planks.json
 4d816e98a3b6dd160d6f01d9c6e722f8769ba53d data\minecraft\tags\items\wooden_buttons.json
 025052fea686bf99990352c0b7255a039c055dfd data\minecraft\tags\items\wooden_stairs.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\items\mosaic_wood.json
