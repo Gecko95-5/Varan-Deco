@@ -1,4 +1,4 @@
-// 1.20.6	2025-07-22T12:06:07.236415	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2025-07-22T12:33:12.8967624	Variant Decoration/Tags for minecraft:block
 9834d4813129845b093976fce476955eae313149 data\varan-deco\tags\blocks\infested_blocks.json
 402d16673a35587be0911b1dd7f5a3c33efa3f81 data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
@@ -16,8 +16,8 @@ c44464cbabba97237a9aff1f6111ef7a1799fae6 data\varan-deco\tags\blocks\deco_crafti
 cae0d58389e28a967e8a214401c3032338afaebe data\minecraft\tags\blocks\soul_speed_blocks.json
 47aec1ccc822721d1413e8deda13ec6e8e236f89 data\varan-deco\tags\blocks\terracotta_slabs.json
 b38abf222ff2cc3d5574a8f02060740c15f82605 data\varan-deco\tags\blocks\concrete_stairs.json
-c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\blocks\mineable\shovel.json
 837d200e3292991afd864ab8754066fbf228e918 data\minecraft\tags\blocks\wooden_fences.json
+c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\blocks\mineable\shovel.json
 2519c42e5f61a57d319ae243beca1b74abce7c18 data\minecraft\tags\blocks\fences.json
 b6feec2809938a12dd391f7839c7e47473d612f2 data\minecraft\tags\blocks\piglin_repellents.json
 9e34a85ac8004c9abd4ab69e4c179641ac7a585f data\varan-deco\tags\blocks\mosaic_glass.json

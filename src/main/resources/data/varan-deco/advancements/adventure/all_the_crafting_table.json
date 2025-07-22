@@ -85,6 +85,30 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "cherry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:cherry_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bamboo": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:bamboo_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "crimson": {
       "conditions": {
         "items": [
@@ -179,6 +203,12 @@
     ],
     [
       "wooden"
+    ],
+    [
+      "bamboo"
+    ],
+    [
+      "cherry"
     ]
   ]
 }

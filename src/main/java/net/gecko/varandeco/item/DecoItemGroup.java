@@ -728,6 +728,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.MICHAELMAS_DAISY.asItem());
                         entries.add(DecoBlocks.PAEONIA.asItem());
                         entries.add(DecoBlocks.LAVENDER.asItem());
+                        entries.add(DecoBlocks.BLUE_HIBISCUS.asItem());
+                        entries.add(DecoBlocks.BROMELIAD.asItem());
                         entries.add(DecoBlocks.ROSE.asItem());
                         entries.add(DecoBlocks.ENDER_ROSE.asItem());
                         entries.add(DecoBlocks.ANCIENT_ROSE.asItem());
