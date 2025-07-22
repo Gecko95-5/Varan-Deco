@@ -1,0 +1,184 @@
+{
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "criteria": {
+    "oak": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "spruce": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:spruce_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "birch": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:birch_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "jungle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:jungle_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "acacia": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:acacia_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dark_oak": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:dark_oak_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mangrove": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:mangrove_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "crimson": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:crimson_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "warped": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:warped_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cactus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:cactus_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "wooden": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:wooden_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Obtain all Different Types of Crafting Table",
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "varan-deco:wooden_crafting_table"
+    },
+    "show_toast": true,
+    "title": "The Crafting Collector"
+  },
+  "requirements": [
+    [
+      "oak"
+    ],
+    [
+      "spruce"
+    ],
+    [
+      "birch"
+    ],
+    [
+      "jungle"
+    ],
+    [
+      "dark_oak"
+    ],
+    [
+      "mangrove"
+    ],
+    [
+      "crimson"
+    ],
+    [
+      "acacia"
+    ],
+    [
+      "cactus"
+    ],
+    [
+      "warped"
+    ],
+    [
+      "wooden"
+    ]
+  ]
+}

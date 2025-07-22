@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:hardened_glass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Crafted Hardened Glass",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "varan-deco:hardened_glass"
+    },
+    "show_toast": true,
+    "title": "As Tough as Obsidian"
+  },
+  "requirements": [
+    [
+      "glass"
+    ]
+  ]
+}
