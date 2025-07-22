@@ -54,6 +54,10 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_BIRCH_KEY = registerKey("deco_birch");
 
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_JUNGLE_KEY = registerKey("deco_jungle");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_MESA_KEY = registerKey("deco_mesa");
+
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_WOODEN_TREE_KEY = registerKey("deco_wooden_tree");
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FANCY_WOODEN_TREE_KEY = registerKey("deco_fancy_wooden_tree");
@@ -103,6 +107,23 @@ public class DecoConfiguredFeatures {
                                         0.005F, List.of(DecoBlocks.GERBERA_DAISY.getDefaultState(),
                                         DecoBlocks.BLUE_EYED_DAISY.getDefaultState(), DecoBlocks.MICHAELMAS_DAISY.getDefaultState(),
                                         DecoBlocks.CALIFORNIA_POPPY.getDefaultState()))))));
+
+        register(context, DECO_JUNGLE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
+                                new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
+                                0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
+                                0.005F, List.of(DecoBlocks.BLUE_HIBISCUS.getDefaultState(),
+                                DecoBlocks.MICHAELMAS_DAISY.getDefaultState(), DecoBlocks.SALMON_POPPY.getDefaultState(),
+                                DecoBlocks.BROMELIAD.getDefaultState()))))));
+
+        register(context, DECO_MESA_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(16, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
+                                new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
+                                0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
+                                0.005F, List.of(DecoBlocks.ROSE.getDefaultState(),
+                                DecoBlocks.CALIFORNIA_POPPY.getDefaultState(), DecoBlocks.BARBERTON_DAISY.getDefaultState()))))));
 
         register(context, DECO_SWAMP_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
                         PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.YELLOW_ORCHID)))));
