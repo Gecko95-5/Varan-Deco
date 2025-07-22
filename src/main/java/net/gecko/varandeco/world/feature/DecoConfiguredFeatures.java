@@ -71,7 +71,7 @@ public class DecoConfiguredFeatures {
                                     1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
                                     1.0F, List.of(DecoBlocks.BLUE_HIBISCUS.getDefaultState(),
                                     DecoBlocks.MICHAELMAS_DAISY.getDefaultState(), DecoBlocks.SALMON_POPPY.getDefaultState(),
-                                    DecoBlocks.BLUE_EYED_DAISY.getDefaultState()))))));
+                                    DecoBlocks.BROMELIAD.getDefaultState()))))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_PLAINS =
             ConfiguredFeatures.register("deco_plains_flowers", Feature.FLOWER,
@@ -98,7 +98,7 @@ public class DecoConfiguredFeatures {
                                     new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                     0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
                                     0.005F, List.of(DecoBlocks.ROSE.getDefaultState(),
-                                    DecoBlocks.BLUE_EYED_DAISY.getDefaultState(), DecoBlocks.CALIFORNIA_POPPY.getDefaultState()))))));
+                                    DecoBlocks.BARBERTON_DAISY.getDefaultState(), DecoBlocks.CALIFORNIA_POPPY.getDefaultState()))))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_SWAMP = ConfiguredFeatures.register(
             "deco_swamp_flower", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
