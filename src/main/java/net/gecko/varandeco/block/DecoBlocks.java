@@ -995,6 +995,16 @@ public class DecoBlocks {
     public static final Block POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
             new FlowerPotBlock(LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
+    public static final Block BLUE_HIBISCUS = registerBlock("blue_hibiscus",
+            new FlowerBlock(StatusEffects.ABSORPTION,7,FabricBlockSettings.copyOf(Blocks.POPPY)));
+    public static final Block POTTED_BLUE_HIBISCUS = registerBlockWithoutItem("potted_blue_hibiscus",
+            new FlowerPotBlock(BLUE_HIBISCUS,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block BROMELIAD = registerBlock("bromeliad",
+            new FlowerBlock(StatusEffects.HUNGER,5,FabricBlockSettings.copyOf(Blocks.POPPY)));
+    public static final Block POTTED_BROMELIAD = registerBlockWithoutItem("potted_bromeliad",
+            new FlowerPotBlock(BROMELIAD,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
     public static final Block ROSE = registerBlock("rose",
             new FlowerBlock(StatusEffects.POISON, 5,FabricBlockSettings.copyOf(Blocks.POPPY)));
     public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
@@ -2601,6 +2611,8 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MICHAELMAS_DAISY.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PAEONIA.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LAVENDER.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROMELIAD.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLUE_HIBISCUS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ROSE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.ENDER_ROSE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.RED_SUNFLOWER.asItem());
