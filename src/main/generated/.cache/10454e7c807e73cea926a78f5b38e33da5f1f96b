@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-22T14:37:35.6265852	Variant Decoration/Block Loot Tables
+// 1.21.1	2025-07-22T17:57:50.4212272	Variant Decoration/Block Loot Tables
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_table\blocks\packed_ice_stairs.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_table\blocks\bubble_brick_wall.json
 787be6c5c61b6fd58e635c3443bfc888449fe275 data\varan-deco\loot_table\blocks\smooth_deepslate.json
@@ -666,8 +666,8 @@ af4e26b53e53b0a8f17d6319d43818fd9284570d data\varan-deco\loot_table\blocks\ice_b
 6b891770f3ed5268672f9ac6c26f36548877c5b5 data\varan-deco\loot_table\blocks\wooden_sapling.json
 2a6e978b725fd047ab74a7a52fdebec368066546 data\varan-deco\loot_table\blocks\birch_cartography_table.json
 c2b8279f7d8728bbed6776fc33aefe2a47532bf2 data\varan-deco\loot_table\blocks\hardened_brown_stained_glass_pane.json
-9b6cd92958aa9827eb59fb2690f80a88eb40fc35 data\varan-deco\loot_table\blocks\exposed_copper_lantern.json
 26310b76b7284976fdadbd2fe8589b0c7c1243b5 data\varan-deco\loot_table\blocks\mosaic_cyan_stained_glass.json
+9b6cd92958aa9827eb59fb2690f80a88eb40fc35 data\varan-deco\loot_table\blocks\exposed_copper_lantern.json
 77bde1254b27002abd1bd4b896a6fc3210be0ed4 data\varan-deco\loot_table\blocks\smooth_blackstone.json
 9defbc800fad7550da384388720d441a8ad074fb data\varan-deco\loot_table\blocks\cut_pink_concrete.json
 0a7929e8eedfa749b07a7853fc3ee00e40125aea data\varan-deco\loot_table\blocks\cut_red_concrete_wall.json
@@ -751,8 +751,8 @@ caf3c67a2d66da2146afc89e91ade7d43c221757 data\varan-deco\loot_table\blocks\lime_
 a000080130b061e8932fee05057a0be62c2e5722 data\varan-deco\loot_table\blocks\california_poppy.json
 a4db567b3b40a6c6c979fb1c80a6ef31ae3dbbb7 data\varan-deco\loot_table\blocks\cyan_concrete_wall.json
 fd951165a169286a9bfb24afa92a73beb4cef22b data\varan-deco\loot_table\blocks\cut_black_concrete_wall.json
-8d6ea19c51b2b688f200a689a50f2b6ab06f16b7 data\varan-deco\loot_table\blocks\chiseled_snow_bricks.json
 8514812d121f7d2198323259f7cc8dca51d3822d data\varan-deco\loot_table\blocks\chiseled_stone.json
+8d6ea19c51b2b688f200a689a50f2b6ab06f16b7 data\varan-deco\loot_table\blocks\chiseled_snow_bricks.json
 393566651db8d1aba2cca8845a7b935bca6150b3 data\varan-deco\loot_table\blocks\tuff_smoker.json
 94035ca94f2f2f7dcbc2d006fd670616e9624dcb data\varan-deco\loot_table\blocks\weathered_copper_weight_pressure_plate.json
 6d801f8acb211a242913f6fe4e755ffac2091de4 data\varan-deco\loot_table\blocks\cut_cyan_concrete.json
