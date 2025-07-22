@@ -38,6 +38,9 @@ public class DecoComposterRecipes {
         ComposterRecipes.registerCompostableBlock(DecoBlocks.LAVENDER);
 
         ComposterRecipes.registerCompostableBlock(DecoBlocks.ANCIENT_ROSE);
+
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.BLUE_HIBISCUS);
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.BROMELIAD);
     }
     public static void registerCompostableItems(){
         ComposterItemsRecipes.registerCompostableItem(DecoItems.WARPED_WART,0.65F);
