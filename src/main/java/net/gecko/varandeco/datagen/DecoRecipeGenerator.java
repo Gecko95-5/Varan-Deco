@@ -4739,6 +4739,5 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.BROMELIAD),
                         conditionsFromItem(DecoBlocks.BROMELIAD))
                 .offerTo(exporter, new Identifier("magenta_dye_from_bromeliad"));
-
     }
 }

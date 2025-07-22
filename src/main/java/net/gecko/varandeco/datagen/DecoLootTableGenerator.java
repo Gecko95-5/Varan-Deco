@@ -18,9 +18,6 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.util.Identifier;
-
-import java.util.function.BiConsumer;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -1098,5 +1095,16 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CHISELED_POLISHED_SANDSTONE);
         addDrop(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE);
         addDrop(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
+
+        addDrop(Blocks.MAGMA_BLOCK, block -> this.drops(block, Items.MAGMA_CREAM, ConstantLootNumberProvider.create(2.0F)));
+
+        addDrop(Blocks.ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(3.0F, 6.0f)));
+
+        addDrop(Blocks.PACKED_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(6.0F, 9.0f)));
+
+        addDrop(Blocks.BLUE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(9.0F, 12.0f)));
     }
 }
