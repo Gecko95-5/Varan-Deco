@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:husbandry/obtain_a_flower",
+  "criteria": {
+    "orb": {
+      "conditions": {
+        "items": [
+          {
+            "items":
+              "minecraft:wooden_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Obtain a Wooden Saplings",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wooden_sapling"
+    },
+    "show_toast": true,
+    "title": "The Wood of Woods"
+  },
+  "requirements": [
+    [
+      "orb"
+    ]
+  ]
+}

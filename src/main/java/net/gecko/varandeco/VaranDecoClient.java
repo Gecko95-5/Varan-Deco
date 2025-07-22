@@ -10,6 +10,7 @@ import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.entity.DecoEntities;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.BlockRenderLayer;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 
 public class VaranDecoClient implements ClientModInitializer {
@@ -81,6 +82,12 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.WOODEN_TRAPDOOR, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WOODEN_LEAVES, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WARPED_WART_PLANT, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.BLUE_HIBISCUS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_BLUE_HIBISCUS, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.BROMELIAD, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_BROMELIAD, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.BIRCH_LADDER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.SPRUCE_LADDER, BlockRenderLayer.CUTOUT);

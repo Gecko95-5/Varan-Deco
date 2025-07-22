@@ -93,6 +93,5 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BIRCH_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_BIRCH_PLACED);
-
     }
 }
