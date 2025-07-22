@@ -4,6 +4,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
+import net.gecko.varandeco.util.DecoTags;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
@@ -132,7 +135,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CACTUS_TRAPDOOR);
 
         addDrop(DecoBlocks.STANDING_CACTUS_SIGN);
-        addDrop(DecoBlocks.WALL_CACTUS_SIGN);
 
         addDrop(DecoBlocks.PRISMARINE_BRICK_WALL);
         addDrop(DecoBlocks.DARK_PRISMARINE_WALL);
@@ -816,7 +818,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WOODEN_LADDER);
 
         addDrop(DecoBlocks.STANDING_WOODEN_SIGN);
-        addDrop(DecoBlocks.WALL_WOODEN_SIGN);
 
         addDrop(DecoBlocks.WOODEN_SAPLING);
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);
@@ -903,5 +904,16 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CHISELED_POLISHED_SANDSTONE);
         addDrop(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE);
         addDrop(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
+
+        addDrop(Blocks.MAGMA_BLOCK, block -> this.drops(block, Items.MAGMA_CREAM, ConstantLootNumberProvider.create(2.0F)));
+
+        addDrop(Blocks.ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(3.0F, 6.0f)));
+
+        addDrop(Blocks.PACKED_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(6.0F, 9.0f)));
+
+        addDrop(Blocks.BLUE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(9.0F, 12.0f)));
     }
 }
