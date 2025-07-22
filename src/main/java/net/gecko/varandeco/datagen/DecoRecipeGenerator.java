@@ -4351,5 +4351,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
                 .offerTo(exporter, new Identifier("blue_dye_from_blue_hibiscus"));
 
+        ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
+                .input(DecoBlocks.BROMELIAD)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BROMELIAD),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BROMELIAD))
+                .offerTo(exporter, new Identifier("magenta_dye_from_bromeliad"));
     }
 }
