@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "ice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:fragile_ice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Obtain a Fragile Ice Block, Try not to Step on it",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "varan-deco:fragile_ice"
+    },
+    "show_toast": true,
+    "title": "More Fragile than Glass"
+  },
+  "requirements": [
+    [
+      "ice"
+    ]
+  ]
+}

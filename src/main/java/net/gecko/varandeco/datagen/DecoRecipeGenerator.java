@@ -4721,5 +4721,17 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BLUE_DYE)
+                .input(DecoBlocks.BLUE_HIBISCUS)
+                .criterion(hasItem(DecoBlocks.BLUE_HIBISCUS),
+                        conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
+                .offerTo(exporter, new Identifier("blue_dye_from_blue_hibiscus"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                .input(DecoBlocks.BROMELIAD)
+                .criterion(hasItem(DecoBlocks.BROMELIAD),
+                        conditionsFromItem(DecoBlocks.BROMELIAD))
+                .offerTo(exporter, new Identifier("magenta_dye_from_bromeliad"));
+
     }
 }

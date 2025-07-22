@@ -1,4 +1,4 @@
-// 1.20.2	2025-07-22T10:01:15.1611235	Variant Decoration/Tags for minecraft:block
+// 1.20.2	2025-07-22T10:08:23.6235595	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 d8ab0084a49732972b21faab258d1cf83f8411e1 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
@@ -32,7 +32,7 @@ af21746945355608410b01dc4277942f3433ed39 data\minecraft\tags\blocks\soul_fire_ba
 e046e51fcd5aaa12a439b58fda789f82ac46a458 data\varan-deco\tags\blocks\deco_barrels.json
 901e6676b20908bb597dbceb75f04a37a2fd2bab data\minecraft\tags\blocks\enchantment_power_provider.json
 2c24fea5bef56f3b68adcc1750f5979c1eadb6b1 data\varan-deco\tags\blocks\deco_cartography_tables.json
-992b9329502f91fd5dc176bdf4ecf569319ca6c2 data\minecraft\tags\blocks\small_flowers.json
+c0b1478c0d8d2e1846715d21f2dc49d218bf2457 data\minecraft\tags\blocks\small_flowers.json
 8c4cb19bfc777642595087793f46ff47086e1a38 data\varan-deco\tags\blocks\hardened_glass_panes.json
 4c523c00b85600a6a7122e54a266da885e6f4d4d data\varan-deco\tags\blocks\metal_buttons.json
 e6daf194a7895a22069bfc6bdfb4854b75d5e6a9 data\varan-deco\tags\blocks\concrete_walls.json
@@ -68,5 +68,5 @@ de55858f598551ea44df4edc40d23a7830d0016d data\minecraft\tags\blocks\overworld_na
 93599c2951db6e2cf855e73cf53ad32bd6bd0765 data\minecraft\tags\blocks\standing_signs.json
 b2af68f8535008b591b68f01b41f0f1f514b9a11 data\minecraft\tags\blocks\stone_pressure_plates.json
 863d9e314bb957a6153a8d7e038716749b4a48f6 data\minecraft\tags\blocks\logs_that_burn.json
-68b93b9776678611b08e5205fb987588c44970a5 data\minecraft\tags\blocks\flower_pots.json
+230a6e0fd689e7ce51dd09aafbc58aa6155256c1 data\minecraft\tags\blocks\flower_pots.json
 2196c76944d2307ffd812fa1e832e05bec4f4f88 data\minecraft\tags\blocks\wooden_pressure_plates.json
