@@ -1,4 +1,4 @@
-// 1.20.2	2025-07-22T10:36:22.5552441	Variant Decoration/Recipes
+// 1.20.2	2025-07-22T10:45:29.9094458	Variant Decoration/Recipes
 df2bed8353e412d96a5057b23f4451a19370f7fe data\varan-deco\recipes\lime_terracotta_brick_wall_from_lime_terracotta_bricks_stonecutting.json
 4a732553afd8234dfe2e287fb05fc9fea0005ff6 data\varan-deco\advancements\recipes\building_blocks\cyan_concrete_slab.json
 a8682d3ce9e2af7f0b56d41454b79bc8d69deeb1 data\varan-deco\recipes\yellow_terracotta_wall_from_yellow_terracotta_stonecutting.json
@@ -176,8 +176,8 @@ c4256169bfbad17b31c57ec3b9c4a1ad647ee114 data\varan-deco\advancements\recipes\bu
 37ee9c999d8e16d8fd1729aa5b826c9316aa85f9 data\varan-deco\advancements\recipes\decorations\light_gray_block_from_gray_block.json
 800fbfda982daf09bae251864746e9a45d126cf4 data\varan-deco\advancements\recipes\building_blocks\dye_white_terracotta_bricks.json
 c684c362331543bbc16c066e3711c25102c98fa3 data\varan-deco\recipes\red_terracotta_stairs.json
-a2a24913066668bb4e57c2bb0e21651f94f89c21 data\varan-deco\recipes\mosaic_lime_stained_glass_pane.json
 eb3764afe03001f8dcd8e0aa10424913f0d1f8df data\varan-deco\advancements\recipes\transportation\wooden_boat.json
+a2a24913066668bb4e57c2bb0e21651f94f89c21 data\varan-deco\recipes\mosaic_lime_stained_glass_pane.json
 1b04e8923979bbccab06f76eb700d401a2b057e4 data\varan-deco\advancements\recipes\building_blocks\cut_green_concrete_slab_from_cut_green_concrete_stonecutting.json
 c30766a12befb15c4c38401284a0b5a6d301bdce data\varan-deco\advancements\recipes\building_blocks\mosaic_pink_stained_glass.json
 7388f1020778eb8dada0de32169c6d5f38504f5c data\varan-deco\advancements\recipes\building_blocks\polished_blackstone_tile_slab.json
