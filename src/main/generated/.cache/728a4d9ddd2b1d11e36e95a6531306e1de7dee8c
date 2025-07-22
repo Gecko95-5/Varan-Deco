@@ -1,4 +1,4 @@
-// 1.19.2	2025-07-21T19:21:54.5823148	minecraft:block Loot Table
+// 1.19.2	2025-07-21T21:59:08.2381669	minecraft:block Loot Table
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
@@ -152,6 +152,7 @@ fe3632de46bba4f711020cb2119153bd452ccc6f data\varan-deco\loot_tables\blocks\cobb
 2118873a0a7d27a37abe5043a32566f6af2ab0cd data\varan-deco\loot_tables\blocks\orange_block.json
 77a02b35d4ab114c33e9f760195ae4e4431674c9 data\varan-deco\loot_tables\blocks\infested_cracked_deepslate_bricks.json
 c7f876d110b654e722fbf0811eea232076c6c509 data\varan-deco\loot_tables\blocks\hardened_brown_stained_glass.json
+0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_bromeliad.json
 dfdc50ce06ac473b1f72b475a164e15813d22e85 data\varan-deco\loot_tables\blocks\infested_cracked_stone_tiles.json
 ad554fad02c4951767d1ddba78df1f07518e1845 data\varan-deco\loot_tables\blocks\blue_terracotta_brick_stairs.json
 b4f59374f65e84ad99afbfe5f30d35de6b025911 data\varan-deco\loot_tables\blocks\lime_terracotta_brick_slab.json
@@ -321,6 +322,7 @@ c2b8279f7d8728bbed6776fc33aefe2a47532bf2 data\varan-deco\loot_tables\blocks\hard
 0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_blue_eyed_daisy.json
 3a280703bfcb3d5e467169b186ac616079955398 data\varan-deco\loot_tables\blocks\cut_blue_concrete_slab.json
 a83ed420baf803639ad0dcbd48098f8fca800290 data\varan-deco\loot_tables\blocks\cut_quartz_slab.json
+053a3bcceff3c50d550d9ba832d20f04d470ecc0 data\varan-deco\loot_tables\blocks\bromeliad.json
 aa1551212cd94cc803c4f0ec8cb612b8d5fc285c data\varan-deco\loot_tables\blocks\light_blue_concrete_pillar.json
 8b07d7a16b28c767724813fd442772b944fadd03 data\varan-deco\loot_tables\blocks\polished_stone_stairs.json
 b463ac866f09401b876fb79216830c014acfcd82 data\varan-deco\loot_tables\blocks\magenta_terracotta_brick_wall.json
