@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:bubble_orb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Obtain a Bubble Orb",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "varan-deco:bubble_orb"
+    },
+    "show_toast": true,
+    "title": "The Orb found in the Ocean Depths"
+  },
+  "requirements": [
+    [
+      "orb"
+    ]
+  ]
+}

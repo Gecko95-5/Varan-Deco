@@ -2963,27 +2963,27 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(DecoBlocks.SMOOTH_BLACKSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACKSTONE_BLAST_FURNACE)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_SMOKER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_SMOKER)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
                 .input('#', ItemTags.LOGS)
                 .input('X', DecoBlocks.DEEPSLATE_FURNACE)
-                .criterion(RecipeProvider.hasItem(DecoBlocks.DEEPSLATE_FURNACE),
-                        RecipeProvider.conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
+                .criterion(hasItem(DecoBlocks.DEEPSLATE_FURNACE),
+                        conditionsFromItem(DecoBlocks.DEEPSLATE_FURNACE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DEEPSLATE_SMOKER)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.BLACKSTONE_SMOKER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.BLACKSTONE_SMOKER)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
                 .input('#', ItemTags.LOGS)
                 .input('X', DecoBlocks.BLACKSTONE_FURNACE)
-                .criterion(RecipeProvider.hasItem(DecoBlocks.BLACKSTONE_FURNACE),
-                        RecipeProvider.conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
+                .criterion(hasItem(DecoBlocks.BLACKSTONE_FURNACE),
+                        conditionsFromItem(DecoBlocks.BLACKSTONE_FURNACE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACKSTONE_SMOKER)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.DEEPSLATE_STONECUTTER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.DEEPSLATE_STONECUTTER)
                 .pattern(" I ")
                 .pattern("###")
                 .input('I', Items.IRON_INGOT)
@@ -4722,6 +4722,18 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BLUE_DYE)
+                .input(DecoBlocks.BLUE_HIBISCUS)
+                .criterion(hasItem(DecoBlocks.BLUE_HIBISCUS),
+                        conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
+                .offerTo(exporter, new Identifier("blue_dye_from_blue_hibiscus"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                .input(DecoBlocks.BROMELIAD)
+                .criterion(hasItem(DecoBlocks.BROMELIAD),
+                        conditionsFromItem(DecoBlocks.BROMELIAD))
+                .offerTo(exporter, new Identifier("magenta_dye_from_bromeliad"));
 
     }
 }
