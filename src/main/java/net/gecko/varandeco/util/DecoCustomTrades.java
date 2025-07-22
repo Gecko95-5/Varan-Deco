@@ -33,6 +33,17 @@ public class DecoCustomTrades {
             factories.addOffersToPool(Identifier.of("sell_common_items"),
                     (entity, random) -> new TradeOffer(
                             new TradedItem(Items.EMERALD, 1),
+                            new ItemStack(DecoBlocks.BLUE_HIBISCUS),
+                            12, 0, 0.075f));
+        factories.addOffersToPool(Identifier.of("sell_common_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 1),
+                            new ItemStack(DecoBlocks.BROMELIAD, 1),
+                            12, 0, 0.075f));
+
+            factories.addOffersToPool(Identifier.of("sell_common_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 1),
                             new ItemStack(DecoBlocks.CALIFORNIA_POPPY, 1),
                             12, 0, 0.075f));
 
@@ -214,6 +225,11 @@ public class DecoCustomTrades {
 
 
         TradeOfferHelper.registerWanderingTraderOffers(factories -> {
+            factories.addOffersToPool(Identifier.of("sell_special_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 3),
+                            new ItemStack(DecoItems.BUBBLE_ORB, 1),
+                            8, 0, 0.075f));
             factories.addOffersToPool(Identifier.of("sell_special_items"),
                     (entity, random) -> new TradeOffer(
                             new TradedItem(Items.EMERALD, 10),
