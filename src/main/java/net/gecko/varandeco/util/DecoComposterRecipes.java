@@ -40,5 +40,7 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.PAEONIA,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.LAVENDER,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ANCIENT_ROSE,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BROMELIAD,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BLUE_HIBISCUS,0.65F);
     }
 }
