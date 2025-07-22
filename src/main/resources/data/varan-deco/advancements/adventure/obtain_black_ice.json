@@ -1,0 +1,33 @@
+{
+  "parent": "varan-deco:adventure/obtain_fragile_ice",
+  "criteria": {
+    "ice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:black_ice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Crafted a very Dense Block of Ice",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "varan-deco:black_ice"
+    },
+    "show_toast": true,
+    "title": "To Dangerous to Be Place"
+  },
+  "requirements": [
+    [
+      "ice"
+    ]
+  ]
+}
