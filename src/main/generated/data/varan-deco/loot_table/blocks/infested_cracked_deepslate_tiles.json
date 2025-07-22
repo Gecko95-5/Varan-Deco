@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:chiseled_deepslate_bricks"
+          "name": "minecraft:cracked_deepslate_tiles"
         }
       ],
       "rolls": 1.0

@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-22T13:00:05.9397468	Variant Decoration/Block Loot Tables
+// 1.21.1	2025-07-22T14:18:13.8814003	Variant Decoration/Block Loot Tables
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_table\blocks\packed_ice_stairs.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_table\blocks\bubble_brick_wall.json
 787be6c5c61b6fd58e635c3443bfc888449fe275 data\varan-deco\loot_table\blocks\smooth_deepslate.json
@@ -692,6 +692,7 @@ bfeccb12516b6cf71c2bf36548d875a8b5a45432 data\varan-deco\loot_table\blocks\oxidi
 ca072773516b82147fc0f4e31a1b5716cf27aedb data\varan-deco\loot_table\blocks\birch_ladder.json
 534271593157443ce681335709495b5e6304e8f5 data\varan-deco\loot_table\blocks\cyan_terracotta_brick_stairs.json
 8b07d7a16b28c767724813fd442772b944fadd03 data\varan-deco\loot_table\blocks\polished_stone_stairs.json
+8a897698403d9e6da566c395b5a313ab91822cb2 data\varan-deco\loot_table\blocks\blue_hibiscus.json
 9e747bb89bfd3335d83899148c47e7d244361560 data\varan-deco\loot_table\blocks\cactus_bookshelf.json
 89afc2b98dd41517e764d2788c10610c1489a920 data\varan-deco\loot_table\blocks\green_concrete_pillar.json
 432eb30112e472bc11ee8f0fc6b05acd5eb91505 data\varan-deco\loot_table\blocks\wooden_mosaic.json
@@ -728,6 +729,7 @@ b7977737b6d92ffd9ea6614c6078b0df69fe8ddc data\varan-deco\loot_table\blocks\oak_s
 b463ac866f09401b876fb79216830c014acfcd82 data\varan-deco\loot_table\blocks\magenta_terracotta_brick_wall.json
 7fad28ce1411f3a843ec8f9c2cb8e93ea801c7b0 data\varan-deco\loot_table\blocks\standing_dark_oak_mosaic_sign.json
 2059b5ffa0885a3041d749cdc6450645a1f84e09 data\varan-deco\loot_table\blocks\yellow_terracotta_wall.json
+053a3bcceff3c50d550d9ba832d20f04d470ecc0 data\varan-deco\loot_table\blocks\bromeliad.json
 6319e157098c2a9d7131ddbebb6477716ea6330b data\varan-deco\loot_table\blocks\standing_cherry_mosaic_sign.json
 0af3193dc54be717736197fb320b3c3637203286 data\varan-deco\loot_table\blocks\hanging_cactus_planks_sign.json
 b1f60a9d8955fa7322edeb54a89fc2ec2339bf4f data\varan-deco\loot_table\blocks\crystallized_prismarine.json

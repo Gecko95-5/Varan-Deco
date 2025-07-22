@@ -4855,5 +4855,17 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(Items.TUFF_SLAB))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.TUFF_GRINDSTONE)));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BLUE_DYE)
+                .input(DecoBlocks.BLUE_HIBISCUS)
+                .criterion(hasItem(DecoBlocks.BLUE_HIBISCUS),
+                        conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
+                .offerTo(exporter, Identifier.of("blue_dye_from_blue_hibiscus"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                .input(DecoBlocks.BROMELIAD)
+                .criterion(hasItem(DecoBlocks.BROMELIAD),
+                        conditionsFromItem(DecoBlocks.BROMELIAD))
+                .offerTo(exporter, Identifier.of("magenta_dye_from_bromeliad"));
+
     }
 }
