@@ -4835,6 +4835,18 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.TUFF_SLAB),
                                 conditionsFromItem(Items.TUFF_SLAB))
                         .offerTo(exporter, getRecipeName(DecoBlocks.TUFF_GRINDSTONE) + "_recipe_create");
+
+                createShapeless(RecipeCategory.MISC,Items.BLUE_DYE)
+                        .input(DecoBlocks.BLUE_HIBISCUS)
+                        .criterion(hasItem(DecoBlocks.BLUE_HIBISCUS),
+                                conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
+                        .offerTo(exporter, getRecipeName(Items.BLUE_DYE) + "_from_blue_hibiscus");
+
+                createShapeless(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                        .input(DecoBlocks.BROMELIAD)
+                        .criterion(hasItem(DecoBlocks.BROMELIAD),
+                                conditionsFromItem(DecoBlocks.BROMELIAD))
+                        .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "_from_bromeliad");
             }
         };
     }

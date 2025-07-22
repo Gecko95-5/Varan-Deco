@@ -1117,6 +1117,16 @@ public class DecoBlocks {
     public static final Block POTTED_LAVENDER = registerFlowerPot("potted_lavender",
             LAVENDER,Blocks.POTTED_POPPY);
 
+    public static final Block BLUE_HIBISCUS = registerFlower("blue_hibiscus",
+                StatusEffects.ABSORPTION,7, Blocks.POPPY);
+    public static final Block POTTED_BLUE_HIBISCUS = registerFlowerPot("potted_blue_hibiscus",
+            BLUE_HIBISCUS,Blocks.POTTED_POPPY);
+
+    public static final Block BROMELIAD = registerFlower("bromeliad",
+            StatusEffects.HUNGER,5, Blocks.POPPY);
+    public static final Block POTTED_BROMELIAD = registerFlowerPot("potted_bromeliad",
+            BROMELIAD,Blocks.POTTED_POPPY);
+
     public static final Block ROSE = registerFlower("rose",
             StatusEffects.POISON, 5, Blocks.POPPY);
     public static final Block POTTED_ROSE = registerFlowerPot("potted_rose",
