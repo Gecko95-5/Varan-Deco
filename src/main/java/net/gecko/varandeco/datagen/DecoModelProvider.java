@@ -307,6 +307,12 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.LAVENDER, DecoBlocks.POTTED_LAVENDER,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.BLUE_HIBISCUS, DecoBlocks.POTTED_BLUE_HIBISCUS,
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
+
+        blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.BROMELIAD, DecoBlocks.POTTED_BROMELIAD,
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
+
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.WOODEN_SAPLING, DecoBlocks.POTTED_WOODEN_SAPLING,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
 

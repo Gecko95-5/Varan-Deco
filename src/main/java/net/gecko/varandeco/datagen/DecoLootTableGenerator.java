@@ -992,6 +992,11 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.LAVENDER);
         pottedPlantDrops(DecoBlocks.POTTED_LAVENDER);
 
+        addDrop(DecoBlocks.BLUE_HIBISCUS);
+        pottedPlantDrops(DecoBlocks.POTTED_BLUE_HIBISCUS);
+        addDrop(DecoBlocks.BROMELIAD);
+        pottedPlantDrops(DecoBlocks.POTTED_BROMELIAD);
+
         addDrop(DecoBlocks.COPPER_CHAIN);
         addDrop(DecoBlocks.WAXED_COPPER_CHAIN);
         addDrop(DecoBlocks.EXPOSED_COPPER_CHAIN);
