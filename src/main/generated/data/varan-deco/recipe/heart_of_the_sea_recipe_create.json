@@ -3,12 +3,13 @@
   "category": "misc",
   "key": {
     "#": "minecraft:bubble_orb",
+    "C": "minecraft:prismarine_crystals",
     "E": "minecraft:ender_eye"
   },
   "pattern": [
-    "###",
-    "#E#",
-    "###"
+    "#C#",
+    "CEC",
+    "#C#"
   ],
   "result": {
     "count": 1,
