@@ -1,4 +1,4 @@
-// 1.20.4	2025-07-22T11:18:37.4970122	Variant Decoration/Tags for minecraft:block
+// 1.20.4	2025-07-23T11:05:35.5757538	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 d8ab0084a49732972b21faab258d1cf83f8411e1 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
@@ -38,8 +38,8 @@ c0b1478c0d8d2e1846715d21f2dc49d218bf2457 data\minecraft\tags\blocks\small_flower
 e6daf194a7895a22069bfc6bdfb4854b75d5e6a9 data\varan-deco\tags\blocks\concrete_walls.json
 e591282ced778af788b0a9719f4a10cdbd82af3d data\minecraft\tags\blocks\buttons.json
 4a20838df37a13d7c417f730ddf620bfa0c5141b data\minecraft\tags\blocks\stairs.json
-99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
 ac53701d329aeca1c7adbae27837f62ec46ec9d8 data\minecraft\tags\blocks\snaps_goat_horn.json
+99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
 3f28d8e617b7b6a89b3f1fcfee90f501fcff6ee9 data\minecraft\tags\blocks\snow_layer_cannot_survive_on.json
 bf31a55bcbde339f03a9a935df8cf27c3d2a4556 data\varan-deco\tags\blocks\deco_bookshelves.json
 58718a803d37bac48796b814244ac55c62975cbe data\varan-deco\tags\blocks\mosaic_stairs.json
