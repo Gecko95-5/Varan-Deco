@@ -1,4 +1,4 @@
-// 1.20.4	2025-07-23T11:55:43.6103495	Variant Decoration/Block Loot Tables
+// 1.20.4	2025-07-23T11:05:35.6336169	Variant Decoration/Block Loot Tables
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -39,8 +39,8 @@ f0b78d7d90d1f14c4dd63c1cedea4d30eb162d04 data\varan-deco\loot_tables\blocks\chis
 990618641a4b66b925e17b9f21775a70d34e2fb0 data\varan-deco\loot_tables\blocks\cut_red_sandstone_wall.json
 43ba1a86d8e91d4c8039767d78c0241dedfcc887 data\varan-deco\loot_tables\blocks\birch_mosaic_stairs.json
 73faa887a4d54f39a8ca7c33a375089e73d59ee0 data\varan-deco\loot_tables\blocks\infested_tuff.json
-33d23e853e040944441b54c5b8de93ca9dd20e77 data\varan-deco\loot_tables\blocks\magenta_terracotta_wall.json
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_tables\blocks\packed_ice_stairs.json
+33d23e853e040944441b54c5b8de93ca9dd20e77 data\varan-deco\loot_tables\blocks\magenta_terracotta_wall.json
 547c16529ec70b2e99a8f19e92734bdb56025255 data\varan-deco\loot_tables\blocks\cut_pink_concrete_stairs.json
 beed471e7357715a099f00493b38b0961becff49 data\varan-deco\loot_tables\blocks\mosaic_purple_stained_glass_pane.json
 ad5b341b96965d0e78ddb567f083ec314c6871eb data\varan-deco\loot_tables\blocks\blue_concrete_stairs.json
