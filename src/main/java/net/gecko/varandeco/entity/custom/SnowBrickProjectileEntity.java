@@ -18,7 +18,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 
 public class SnowBrickProjectileEntity extends ThrownItemEntity {
-    public SnowBrickProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+    public SnowBrickProjectileEntity(EntityType<? extends SnowBrickProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
