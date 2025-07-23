@@ -197,7 +197,7 @@ public class DecoItems {
             DecoBlocks.HANGING_PALE_OAK_PLANKS_SIGN, DecoBlocks.WALL_HANGING_PALE_OAK_PLANKS_SIGN,
             HangingSignItem::new);
 
-    public static final Item SNOW_BRICK = registerItem("snow_brick",16, SnowBrickItem::new);
+    public static final Item SNOW_BRICK = registerCooldownItem("snow_brick",16, 1, SnowBrickItem::new);
 
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",64, BubbleItem::new);
 
@@ -245,6 +245,11 @@ public class DecoItems {
     }
     public static <T extends Item> T registerItem(String name, int stackCount, Function<Item.Settings, T> factory){
         T item = factory.apply(new Item.Settings().registryKey(getItemKey(name)).maxCount(stackCount));
+        return Registry.register(Registries.ITEM, getItemKey(name), item);
+    }
+    public static <T extends Item> T registerCooldownItem(String name, int stackCount, int cooldownUse,
+                                                          Function<Item.Settings, T> factory){
+        T item = factory.apply(new Item.Settings().registryKey(getItemKey(name)).maxCount(stackCount).useCooldown(cooldownUse));
         return Registry.register(Registries.ITEM, getItemKey(name), item);
     }
     public static <T extends Item> T registerTallItem(String name, Block tallPlantBlock,
