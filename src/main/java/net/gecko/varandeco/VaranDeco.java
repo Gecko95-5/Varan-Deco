@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.entity.DecoBoats;
+import net.gecko.varandeco.entity.DecoEntities;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
@@ -36,6 +37,7 @@ public class VaranDeco implements ModInitializer {
 		DecoLootTableModifiers.modifyLootTables();
 		DecoComposterRecipes.registerCompostableBlocks();
 		DecoComposterRecipes.registerCompostableItems();
+		DecoEntities.registerDecoEntities();
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
