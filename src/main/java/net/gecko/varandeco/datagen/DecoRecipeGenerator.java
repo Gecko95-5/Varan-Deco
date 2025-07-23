@@ -11,11 +11,9 @@ import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -4379,11 +4377,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
 
                 createShaped(RecipeCategory.MISC,Items.HEART_OF_THE_SEA)
-                        .pattern("###")
-                        .pattern("#E#")
-                        .pattern("###")
+                        .pattern("#C#")
+                        .pattern("CEC")
+                        .pattern("#C#")
                         .input('E', Items.ENDER_EYE)
                         .input('#', DecoItems.BUBBLE_ORB)
+                        .input('C', Items.PRISMARINE_CRYSTALS)
                         .criterion(hasItem(Items.ENDER_EYE),
                                 conditionsFromItem(Items.ENDER_EYE))
                         .criterion(hasItem(DecoItems.BUBBLE_ORB),
