@@ -11,7 +11,6 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
-import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
@@ -4248,15 +4247,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.HEART_OF_THE_SEA)
-                .pattern("###")
-                .pattern("#E#")
-                .pattern("###")
+                .pattern("#C#")
+                .pattern("CEC")
+                .pattern("#C#")
                 .input('E', Items.ENDER_EYE)
                 .input('#', DecoItems.BUBBLE_ORB)
+                .input('C', Items.PRISMARINE_CRYSTALS)
                 .criterion(hasItem(Items.ENDER_EYE),
                         conditionsFromItem(Items.ENDER_EYE))
-                .criterion(hasItem(DecoItems.BUBBLE_ORB),
-                        conditionsFromItem(DecoItems.BUBBLE_ORB))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.HEART_OF_THE_SEA)));
 
         offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.BUBBLE_CORAL_BLOCK);

@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bubble_orb": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "varan-deco:bubble_orb"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_ender_eye": {
       "conditions": {
         "items": [
@@ -35,8 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ender_eye",
-      "has_bubble_orb"
+      "has_ender_eye"
     ]
   ],
   "rewards": {
