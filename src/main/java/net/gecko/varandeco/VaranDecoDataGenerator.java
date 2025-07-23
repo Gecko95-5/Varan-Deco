@@ -12,5 +12,6 @@ public class VaranDecoDataGenerator implements DataGeneratorEntrypoint {
 		fabricDataGenerator.addProvider(DecoModelProvider::new);
 		fabricDataGenerator.addProvider(DecoBlockTagProvider::new);
 		fabricDataGenerator.addProvider(DecoItemTagProvider::new);
+        fabricDataGenerator.addProvider(DecoEntityTagProvider::new);
 	}
 }
