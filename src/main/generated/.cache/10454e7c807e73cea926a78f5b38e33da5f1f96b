@@ -1,4 +1,4 @@
-// 1.20.2	2025-07-23T11:14:49.3654972	Variant Decoration/Block Loot Tables
+// 1.20.2	2025-07-23T13:08:03.5353533	Variant Decoration/Block Loot Tables
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -80,8 +80,8 @@ aa758be3f29dc7226a5fcdc5a076525921af944e data\varan-deco\loot_tables\blocks\red_
 8ade811c546eaf27ac9d09c4b44fc200742e56e4 data\varan-deco\loot_tables\blocks\terracotta_bricks.json
 68ab1a93ea6079f08c0feadace1104c6e7acedd1 data\varan-deco\loot_tables\blocks\bubble_elevator_block_bubble.json
 9f0fe3236ea625a56e9622f472f6f4dfa46a97f3 data\varan-deco\loot_tables\blocks\cyan_block.json
-a22a4e0a620f6ba30d0872f95df4981c645f9d53 data\varan-deco\loot_tables\blocks\crimson_barrel.json
 9cf2a39277deb2d81e1974e9664ad27f2a1e21bb data\varan-deco\loot_tables\blocks\acacia_cartography_table.json
+a22a4e0a620f6ba30d0872f95df4981c645f9d53 data\varan-deco\loot_tables\blocks\crimson_barrel.json
 ef2ae809e7d8e4cc505dda9dc4f83f15205067eb data\varan-deco\loot_tables\blocks\cut_magenta_concrete_wall.json
 b1605436dca25861b369553525c9f5d447284255 data\varan-deco\loot_tables\blocks\obsidian_stairs.json
 01e71a93854bda28504eafd7c5dddb2774d2854f data\varan-deco\loot_tables\blocks\soul_soilstone_brick_stairs.json
@@ -118,8 +118,8 @@ b3ccde414b85d4014550e7f1f0a77b11c3443753 data\varan-deco\loot_tables\blocks\gree
 c027410ebf9dd30f288284239999d8adab3b85e5 data\varan-deco\loot_tables\blocks\smooth_blackstone_stairs.json
 1b49b98b36b56b922766afe86e5a631a3d8df73e data\varan-deco\loot_tables\blocks\light_iron_bars.json
 ca11c1c8ded4ae43a25a39952daf5b12004ca0db data\varan-deco\loot_tables\blocks\crimson_cartography_table.json
-c26e97835ecdb357fbdd8c02412defce5c1e7c64 data\varan-deco\loot_tables\blocks\tinted_glass_pane.json
 34e4176ed4c97f96cd372ffc520f08419e7dc87f data\varan-deco\loot_tables\blocks\infested_mossy_cobblestone.json
+c26e97835ecdb357fbdd8c02412defce5c1e7c64 data\varan-deco\loot_tables\blocks\tinted_glass_pane.json
 9ee25cf807b41cb4399dc2581df549783d844669 data\varan-deco\loot_tables\blocks\bamboo_barrel.json
 805edbdcaf7612afea973fd9721cfece79c2e1b8 data\varan-deco\loot_tables\blocks\void_stone_brick_wall.json
 05054130380a90a45483a3073a9649b2d0eb05ea data\varan-deco\loot_tables\blocks\blue_nether_brick_stairs.json
@@ -134,8 +134,8 @@ b774b6a9b0d884516b63cfbc1c118f03c95733ca data\varan-deco\loot_tables\blocks\magm
 9b6cd92958aa9827eb59fb2690f80a88eb40fc35 data\varan-deco\loot_tables\blocks\exposed_copper_lantern.json
 bfeccb12516b6cf71c2bf36548d875a8b5a45432 data\varan-deco\loot_tables\blocks\oxidized_copper_weight_pressure_plate.json
 bfa851d13cf4e3862dd0765634e2cc3f43b52b7a data\varan-deco\loot_tables\blocks\mosaic_yellow_stained_glass_pane.json
-138d0c1734d7d4e89c6d4294d1d9e469c67eb18b data\varan-deco\loot_tables\blocks\mosaic_light_gray_stained_glass.json
 eb1556fe83a6f3863eeaadcbbd65863eb061a633 data\varan-deco\loot_tables\blocks\cut_yellow_concrete_stairs.json
+138d0c1734d7d4e89c6d4294d1d9e469c67eb18b data\varan-deco\loot_tables\blocks\mosaic_light_gray_stained_glass.json
 ec51c8bbe8fceb809778004030190986d9795828 data\varan-deco\loot_tables\blocks\mangrove_bookshelf.json
 7eff3c0c606bc886b83630f6ff7cfccce326a472 data\varan-deco\loot_tables\blocks\bamboo_ladder.json
 510693989a947c4776fde471efbb0fb1dd6f7bb7 data\varan-deco\loot_tables\blocks\hanging_bamboo_mosaic_sign.json
@@ -186,8 +186,8 @@ b8add334ffca7e0d82954836b46cfad8d729d280 data\varan-deco\loot_tables\blocks\sand
 ee6899ec608ec2aef5b6bda099e89f601660bdfa data\varan-deco\loot_tables\blocks\cut_red_sandstone_bricks.json
 710553ad30244d1e184c707c155d770032e55610 data\varan-deco\loot_tables\blocks\polished_blackstone_tile_stairs.json
 e71e9abc40539483d0074b56d9edf01cd9777527 data\varan-deco\loot_tables\blocks\waxed_weathered_light_copper_bars.json
-bad91e54c975fb557b58460d22d3414d68498e41 data\varan-deco\loot_tables\blocks\waxed_light_copper_bars.json
 ab46cb89ddd897fbf35d57f4370a31876178e5da data\varan-deco\loot_tables\blocks\cut_orange_concrete_stairs.json
+bad91e54c975fb557b58460d22d3414d68498e41 data\varan-deco\loot_tables\blocks\waxed_light_copper_bars.json
 31cf5f1cb54674cb3f98fe92d271bbdb5f693944 data\varan-deco\loot_tables\blocks\cut_brown_concrete.json
 d68c8fa930f6ef65649b754fbfc7c53f03ed6430 data\varan-deco\loot_tables\blocks\cut_red_sandstone_brick_wall.json
 0fa4faebc4499ac1a634863328ce181ff53bd539 data\varan-deco\loot_tables\blocks\hardened_red_stained_glass_pane.json
