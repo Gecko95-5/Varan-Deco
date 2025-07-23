@@ -1,4 +1,4 @@
-// 1.20.2	2025-07-22T10:45:29.8775317	Variant Decoration/Tags for minecraft:block
+// 1.20.2	2025-07-23T11:14:49.292692	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 d8ab0084a49732972b21faab258d1cf83f8411e1 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
@@ -26,8 +26,8 @@ b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\mineable\sho
 332eb60c55eb85d57ede45ef150ae9b2ce6808fb data\varan-deco\tags\blocks\deco_furnaces.json
 ca1d598fa5af74603a9f239a12af868b1121f955 data\varan-deco\tags\blocks\mosaic_glass_panes.json
 77149906f28bbfa882a4b48cc980cf58201ae52b data\minecraft\tags\blocks\snow.json
-af21746945355608410b01dc4277942f3433ed39 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 05b6b3246d08228d79b173478b5a9b0cfb3265ee data\varan-deco\tags\blocks\concrete_slabs.json
+af21746945355608410b01dc4277942f3433ed39 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 398e0c0539fac9101a474ca7e85d8af3f9833a63 data\minecraft\tags\blocks\wooden_slabs.json
 e046e51fcd5aaa12a439b58fda789f82ac46a458 data\varan-deco\tags\blocks\deco_barrels.json
 901e6676b20908bb597dbceb75f04a37a2fd2bab data\minecraft\tags\blocks\enchantment_power_provider.json
@@ -38,8 +38,8 @@ c0b1478c0d8d2e1846715d21f2dc49d218bf2457 data\minecraft\tags\blocks\small_flower
 e6daf194a7895a22069bfc6bdfb4854b75d5e6a9 data\varan-deco\tags\blocks\concrete_walls.json
 e591282ced778af788b0a9719f4a10cdbd82af3d data\minecraft\tags\blocks\buttons.json
 4a20838df37a13d7c417f730ddf620bfa0c5141b data\minecraft\tags\blocks\stairs.json
-99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
 ac53701d329aeca1c7adbae27837f62ec46ec9d8 data\minecraft\tags\blocks\snaps_goat_horn.json
+99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
 3f28d8e617b7b6a89b3f1fcfee90f501fcff6ee9 data\minecraft\tags\blocks\snow_layer_cannot_survive_on.json
 bf31a55bcbde339f03a9a935df8cf27c3d2a4556 data\varan-deco\tags\blocks\deco_bookshelves.json
 58718a803d37bac48796b814244ac55c62975cbe data\varan-deco\tags\blocks\mosaic_stairs.json
