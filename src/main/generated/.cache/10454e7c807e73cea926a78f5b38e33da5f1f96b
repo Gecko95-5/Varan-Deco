@@ -1,4 +1,4 @@
-// 1.19.4	2025-07-23T13:19:57.1572662	Variant Decoration/Block Loot Tables
+// 1.19.4	2025-07-23T13:26:53.5766738	Variant Decoration/Block Loot Tables
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -269,8 +269,8 @@ aa1551212cd94cc803c4f0ec8cb612b8d5fc285c data\varan-deco\loot_tables\blocks\ligh
 b463ac866f09401b876fb79216830c014acfcd82 data\varan-deco\loot_tables\blocks\magenta_terracotta_brick_wall.json
 75d7019d5ed27338a0287d393097f887a36709ee data\varan-deco\loot_tables\blocks\hardened_purple_stained_glass.json
 ec474b1fccdf7f05b16449dec064b8e3e35c87a1 data\varan-deco\loot_tables\blocks\cut_gray_concrete.json
-61148014bc4854ce0e286e37d6ac8672c227528c data\varan-deco\loot_tables\blocks\magenta_concrete_stairs.json
 b0b2c0d00e19cf1e5ef1fc7279b2bb2adba8fc76 data\varan-deco\loot_tables\blocks\nether_brick_fence_gate.json
+61148014bc4854ce0e286e37d6ac8672c227528c data\varan-deco\loot_tables\blocks\magenta_concrete_stairs.json
 d2396d7652505914204b820009c98f2ea00dee95 data\varan-deco\loot_tables\blocks\spruce_cartography_table.json
 b24de5294d040a685cef3453e65016ff2ff25332 data\varan-deco\loot_tables\blocks\oxidized_copper_bars.json
 dba1f6745753eb79935e5a2d43a64a245ed333da data\varan-deco\loot_tables\blocks\oxidized_copper_chain.json

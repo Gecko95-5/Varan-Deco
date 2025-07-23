@@ -1,10 +1,10 @@
-// 1.19.4	2025-07-23T13:19:57.105404	Variant Decoration/Tags for minecraft:block
+// 1.19.4	2025-07-23T13:26:53.5038668	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 b74bc63d40c939ed036c2a4de2ad87134080227b data\minecraft\tags\blocks\mineable\pickaxe.json
 2c57b598a7a87acfdc88d1be61b148b6d4f24682 data\minecraft\tags\blocks\slabs.json
 d6fd153e3ac88d06da79dd14f1c47f0086ccea4b data\minecraft\tags\blocks\planks.json
-3938e4bd40d437e271abf8ac18de0697705cc696 data\minecraft\tags\blocks\sculk_replaceable.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
+3938e4bd40d437e271abf8ac18de0697705cc696 data\minecraft\tags\blocks\sculk_replaceable.json
 445c83b680a97564f62a728d354d365fddf12242 data\minecraft\tags\blocks\needs_stone_tool.json
 0f8f8c6e84586269b8ee68133aa35affcfb95535 data\varan-deco\tags\blocks\copper_lantern.json
 70478a3d7ff9941417b5fe1000f00f9d0be3121a data\varan-deco\tags\blocks\deco_smithing_tables.json
