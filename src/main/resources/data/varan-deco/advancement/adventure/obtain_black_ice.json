@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/obtain_fragile_ice",
+  "parent": "varan-deco:adventure/obtain_fragile_ice",
   "criteria": {
     "ice": {
       "conditions": {

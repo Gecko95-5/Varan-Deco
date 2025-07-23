@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husbandry/obtain_a_flower",
+  "parent": "varan-deco:husbandry/obtain_a_flower",
   "criteria": {
     "red": {
       "conditions": {

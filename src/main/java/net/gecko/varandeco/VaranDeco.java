@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
+import net.gecko.varandeco.entity.DecoEntities;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
@@ -36,6 +37,7 @@ public class VaranDeco implements ModInitializer {
 		DecoLootTableModifiers.modifyLootTables();
 		DecoFuelRegistry.registerFuels();
 		DecoComposterRecipes.registerCompostableItems();
+        DecoEntities.registerDecoEntities();
 
 		LOGGER.info("Hello Fabric world!");
 
