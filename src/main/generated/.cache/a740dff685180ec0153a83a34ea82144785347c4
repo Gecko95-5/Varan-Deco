@@ -1,4 +1,4 @@
-// 1.20.6	2025-07-23T10:58:27.2495797	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2025-07-23T12:05:53.3179036	Variant Decoration/Tags for minecraft:block
 9834d4813129845b093976fce476955eae313149 data\varan-deco\tags\blocks\infested_blocks.json
 402d16673a35587be0911b1dd7f5a3c33efa3f81 data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
@@ -26,8 +26,8 @@ d1e3e87be0713f490b99ba103ff28cbadb5518f6 data\varan-deco\tags\blocks\deco_ladder
 35f3d4a1a9d8f445c7edbe481f10498d5a26f20b data\varan-deco\tags\blocks\deco_furnaces.json
 18c6dcd7316622a4c3e33307df5dcab4d12690e8 data\varan-deco\tags\blocks\mosaic_glass_panes.json
 800d8430476079cdaa10108567a5286dd9337e94 data\minecraft\tags\blocks\snow.json
-6f6b93acaefecb075e61cf0d9a193bd8204bd91c data\minecraft\tags\blocks\soul_fire_base_blocks.json
 1ceb31ff318282c7b51f8398f0ab2986ef590ffd data\varan-deco\tags\blocks\concrete_slabs.json
+6f6b93acaefecb075e61cf0d9a193bd8204bd91c data\minecraft\tags\blocks\soul_fire_base_blocks.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\blocks\wooden_slabs.json
 f3199dda8db6700e32857a275449973ba96ede8c data\varan-deco\tags\blocks\deco_barrels.json
 11e6bd6294bc140d66b0c57c90aedb221dcb2609 data\minecraft\tags\blocks\enchantment_power_provider.json
@@ -46,8 +46,8 @@ f66ea45ecb16a7a170500f3e1fcd08906b0754aa data\varan-deco\tags\blocks\mosaic_stai
 400cb820962bff0d92095c4b962722e603d0f232 data\minecraft\tags\blocks\guarded_by_piglins.json
 d59e4e47a69393d9d43b2301198f3c6b145639df data\varan-deco\tags\blocks\terracotta_stairs.json
 bd3de99181ca0e50d1e019f3e97b0501eebf0712 data\minecraft\tags\blocks\needs_diamond_tool.json
-8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\blocks\fence_gates.json
 321f0653fdecd73898edf65d4ae2da7f2110a673 data\minecraft\tags\blocks\walls.json
+8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\blocks\fence_gates.json
 5a3a1abe180521d2238140f9056e1a70e46c931b data\varan-deco\tags\blocks\wooden_logs.json
 afd008caf2cf6818f50b4ab00adff62ab0565881 data\minecraft\tags\blocks\saplings.json
 9ac9aee9ef355df80b2deea4a49d18b38f65210a data\minecraft\tags\blocks\wooden_doors.json
