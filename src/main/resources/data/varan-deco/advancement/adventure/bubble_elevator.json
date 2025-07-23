@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/obtain_bubble_orb",
+  "parent": "varan-deco:adventure/obtain_bubble_orb",
   "criteria": {
     "elevator": {
       "conditions": {

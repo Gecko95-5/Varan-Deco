@@ -10,7 +10,6 @@ import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.entity.DecoEntities;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.BlockRenderLayer;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 
 public class VaranDecoClient implements ClientModInitializer {

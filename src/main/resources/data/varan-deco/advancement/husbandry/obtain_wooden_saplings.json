@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husbandry/obtain_a_flower",
+  "parent": "varan-deco:husbandry/obtain_a_flower",
   "criteria": {
     "orb": {
       "conditions": {
@@ -14,15 +14,11 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
     "description": "Obtain a Wooden Saplings",
-    "frame": "task",
-    "hidden": false,
     "icon": {
       "count": 1,
       "id": "minecraft:wooden_sapling"
     },
-    "show_toast": true,
     "title": "The Wood of Woods"
   },
   "requirements": [
