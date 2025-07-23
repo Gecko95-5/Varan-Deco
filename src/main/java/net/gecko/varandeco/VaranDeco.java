@@ -1,17 +1,15 @@
 package net.gecko.varandeco;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
+import net.gecko.varandeco.entity.DecoEntities;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
-import net.minecraft.client.color.world.BiomeColors;
-import net.minecraft.client.color.world.FoliageColors;
 import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
@@ -24,7 +22,6 @@ public class VaranDeco implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		DecoItemGroup.registerItemGroup();
-
 		DecoItems.registerDecoItems();
 		DecoBlocks.registerDecoBlocks();
 		DecoBlockEntities.registerBlockEntities();
@@ -38,6 +35,7 @@ public class VaranDeco implements ModInitializer {
 		DecoLootTableModifiers.modifyLootTables();
 		DecoComposterRecipes.registerCompostableBlocks();
 		DecoComposterRecipes.registerCompostableItems();
+		DecoEntities.registerDecoEntities();
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);

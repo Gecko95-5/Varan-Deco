@@ -18,7 +18,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 
 public class SnowBrickProjectileEntity extends ThrownItemEntity {
-    public SnowBrickProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+    public SnowBrickProjectileEntity(EntityType<? extends SnowBrickProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -33,7 +33,7 @@ public class SnowBrickProjectileEntity extends ThrownItemEntity {
 
     private ParticleEffect getParticleParameters() {
         ItemStack itemStack = this.getItem();
-        return (ParticleEffect)(itemStack.isEmpty() ? ParticleTypes.ITEM_SNOWBALL : new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack));
+        return itemStack.isEmpty() ? ParticleTypes.ITEM_SNOWBALL : new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack);
     }
 
     @Override
