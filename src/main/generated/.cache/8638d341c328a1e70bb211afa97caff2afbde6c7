@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-22T17:57:50.3558898	Variant Decoration/varan-deco
+// 1.21.1	2025-07-23T10:53:13.0779305	Variant Decoration/varan-deco
 4b6f18871d03c73cac6dcbf0f5e18d70c400b088 data\varan-deco\worldgen\placed_feature\deco_bubble_placed.json
 f95dbbd7f05a2fad47438a30cd00ffc411238ef1 data\varan-deco\worldgen\placed_feature\deco_jungle_placed.json
 bda4eabb987fd59e477e6b1c41bcbab61a01651f data\varan-deco\worldgen\placed_feature\deco_meadow_flowers_placed.json
@@ -29,5 +29,5 @@ ba8bc38d6de4eeb0326680f5ba77186fdf8f1a57 data\varan-deco\worldgen\configured_fea
 1f7ba2cfb70ddcbd804418a622129b67cd58c8b3 data\varan-deco\worldgen\configured_feature\deco_red_sunflower.json
 315fde654a45b87ffa9776b97b43123df1711bbc data\varan-deco\worldgen\placed_feature\deco_river_flowers_placed.json
 bc4bd241780dfff0190f690e98f66fa382bdffa2 data\varan-deco\worldgen\placed_feature\deco_plains_flowers_placed.json
-e965cb459ab20defccdf4ab068c391b9655dcd18 data\varan-deco\worldgen\placed_feature\deco_nova_starflower_placed.json
 99d80005adc483a784a86734ae6ae30ed912e589 data\varan-deco\worldgen\configured_feature\deco_river_flowers.json
+e965cb459ab20defccdf4ab068c391b9655dcd18 data\varan-deco\worldgen\placed_feature\deco_nova_starflower_placed.json

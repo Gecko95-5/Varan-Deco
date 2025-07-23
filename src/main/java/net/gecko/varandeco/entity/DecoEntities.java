@@ -14,4 +14,8 @@ public class DecoEntities {
             Identifier.of(VaranDeco.MOD_ID,"snow_brick_projectile"),
             EntityType.Builder.<SnowBrickProjectileEntity>create(SnowBrickProjectileEntity::new, SpawnGroup.MISC)
                     .dimensions(0.25f, 0.25f).build());
+
+    public static void registerDecoEntities(){
+        VaranDeco.LOGGER.info("Registering Deco Entities for " + VaranDeco.MOD_ID);
+    }
 }

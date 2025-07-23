@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:waxed_copper"
+      "item": "minecraft:waxed_copper_block"
     },
     "X": {
       "item": "varan-deco:waxed_light_copper_bars"
