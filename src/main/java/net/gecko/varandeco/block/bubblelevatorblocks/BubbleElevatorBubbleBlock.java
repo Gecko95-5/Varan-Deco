@@ -14,9 +14,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.block.WireOrientation;
 import net.minecraft.world.tick.ScheduledTickView;
+import org.jetbrains.annotations.Nullable;
 
 public class BubbleElevatorBubbleBlock extends Block {
 
@@ -45,6 +46,14 @@ public class BubbleElevatorBubbleBlock extends Block {
         }
 
         return super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
+    }
+
+    @Override
+    protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, @Nullable WireOrientation wireOrientation, boolean notify) {
+        if (world.isReceivingRedstonePower(pos) || world.isReceivingRedstonePower(pos.up())) {
+            world.scheduleBlockTick(pos, this, 4);
+            world.setBlockState(pos, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA.getDefaultState(), Block.NOTIFY_LISTENERS);
+        }
     }
 
     @Override
