@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polised_soul_soilstone_slab": {
+    "has_polished_soul_soilstone_slab": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:polised_soul_soilstone_slab"
+              "varan-deco:polished_soul_soilstone_slab"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_polised_soul_soilstone_slab",
+      "has_polished_soul_soilstone_slab",
       "has_the_recipe"
     ]
   ],

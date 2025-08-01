@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "varan-deco:block/polised_soul_soilstone_slab"
+      "model": "varan-deco:block/polished_soul_soilstone_slab"
     },
     "type=double": {
       "model": "varan-deco:block/polished_soul_soilstone"
     },
     "type=top": {
-      "model": "varan-deco:block/polised_soul_soilstone_slab_top"
+      "model": "varan-deco:block/polished_soul_soilstone_slab_top"
     }
   }
 }
