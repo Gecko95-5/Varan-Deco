@@ -13,7 +13,7 @@ e679dfca792e4ebae644965689391497d194529c data/minecraft/tags/block/ice.json
 ccf0a9022a62726234e3ea4370b71450a2751b78 data/minecraft/tags/block/leaves.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data/minecraft/tags/block/logs_that_burn.json
 515c3f25a6ae3b468160cf07c485fb0041f35ac9 data/minecraft/tags/block/mineable/axe.json
-63905537af21e0a4efbdebf81456d546d6842c01 data/minecraft/tags/block/mineable/pickaxe.json
+3b33f45cfa1cb310008a8f87e495efe2166ab283 data/minecraft/tags/block/mineable/pickaxe.json
 f6a0de04ab191adb7a3c79e312b9bc6ac680fc6b data/minecraft/tags/block/mineable/shovel.json
 e1039261b2bddfde7fb1628e57265c791fbff0d3 data/minecraft/tags/block/needs_diamond_tool.json
 1cacc62da857912151190c57354789c44a3c0305 data/minecraft/tags/block/needs_iron_tool.json
@@ -24,13 +24,13 @@ ba534b68a8b6997db1f0bded0aa2321c824d3213 data/minecraft/tags/block/piglin_repell
 6f44fdec71e126c89fbd59d86b55b9d938a83765 data/minecraft/tags/block/pressure_plates.json
 f35376a6bf06ba120e497430b3ab638b5b79f26a data/minecraft/tags/block/saplings.json
 c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replaceable.json
-3595a5b17483e521d7daf5901c8b0efa50ce0ecc data/minecraft/tags/block/slabs.json
+77c2f92bc923e2f36191264e05e93f5ddcfc434e data/minecraft/tags/block/slabs.json
 8ca4a0569436274167594f5b43b39e7016a8875d data/minecraft/tags/block/small_flowers.json
 73d66f372d8c4d1b45f3aa477fbb0a97cfa88b10 data/minecraft/tags/block/snaps_goat_horn.json
 2b1cf933b140a1bf229504c154469b32bc03f95d data/minecraft/tags/block/snow.json
 928a8afc8dfa756732a3df21326b4498f9abb89f data/minecraft/tags/block/snow_layer_cannot_survive_on.json
 480de690cd1892b86a135e05c14396023409b9ab data/minecraft/tags/block/soul_fire_base_blocks.json
-9fb08aff9d101822f0d455b675484d961135d32a data/minecraft/tags/block/soul_speed_blocks.json
+f2fb186f7b236213990ba0d2d5dae80164daca34 data/minecraft/tags/block/soul_speed_blocks.json
 356fc7e9b7760d0384f5277076f8640c5645b345 data/minecraft/tags/block/stairs.json
 4843820f248f993a0591ef4a50756ce12244981c data/minecraft/tags/block/standing_signs.json
 712395f93074e6107a7d3c3f9d6f1ae5f539be3b data/minecraft/tags/block/stone_buttons.json

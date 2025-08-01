@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_soul_soilstone": {
+    "has_polished_soul_soilstone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:soul_soilstone"
+            "items": "minecraft:polished_soul_soilstone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:polised_soul_soilstone_slab_from_soul_soilstone_stonecutting"
+        "recipe": "varan-deco:polished_soul_soilstone_slab_from_polished_soul_soilstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_soul_soilstone"
+      "has_polished_soul_soilstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:polised_soul_soilstone_slab_from_soul_soilstone_stonecutting"
+      "varan-deco:polished_soul_soilstone_slab_from_polished_soul_soilstone_stonecutting"
     ]
   }
 }

@@ -7,6 +7,7 @@
   "item.minecraft.copper_nugget": "Copper Nugget",
   "item.minecraft.lilac_flower": "Lilac Flower",
   "item.minecraft.ice_shard": "Ice Shard",
+  "item.minecraft.tall_seagrass": "Tall Seagrass",
   "item.minecraft.ancient_rose_seeds": "Ancient Rose Seeds",
   "item.minecraft.mighty_lavender_flower": "Mighty Lavender Flower",
 
@@ -1268,9 +1269,6 @@
 
   "block.minecraft.bromeliad": "Bromeliad",
   "block.minecraft.potted_bromeliad": "Potted Bromeliad",
-
-  "block.minecraft.copper_chain": "Copper Chain",
-  "block.minecraft.waxed_copper_chain": "Waxed Copper Chain",
 
   "block.minecraft.copper_chain": "Copper Chain",
   "block.minecraft.waxed_copper_chain": "Waxed Copper Chain",
