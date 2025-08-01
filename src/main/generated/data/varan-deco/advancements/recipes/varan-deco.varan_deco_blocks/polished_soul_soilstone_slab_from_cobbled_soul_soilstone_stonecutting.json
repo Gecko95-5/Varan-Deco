@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polised_soul_soilstone_slab_from_cobbled_soul_soilstone_stonecutting"
+        "recipe": "minecraft:polished_soul_soilstone_slab_from_cobbled_soul_soilstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polised_soul_soilstone_slab_from_cobbled_soul_soilstone_stonecutting"
+      "minecraft:polished_soul_soilstone_slab_from_cobbled_soul_soilstone_stonecutting"
     ]
   }
 }

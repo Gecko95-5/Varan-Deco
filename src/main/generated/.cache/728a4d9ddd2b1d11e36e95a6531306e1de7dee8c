@@ -1,4 +1,4 @@
-// 1.19.2	2025-07-23T13:33:53.6246583	minecraft:block Loot Table
+// 1.19.2	2025-08-01T16:13:04.2756096	minecraft:block Loot Table
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
@@ -267,7 +267,7 @@ bff04e75c69990dfd5d5f42335395e5468361600 data\varan-deco\loot_tables\blocks\cobb
 28c5c208bdd303df4239b1a27cb38ebeff871227 data\varan-deco\loot_tables\blocks\cut_light_blue_concrete_stairs.json
 62e77da3aaed0b4318566873a3058c24317c2306 data\varan-deco\loot_tables\blocks\green_terracotta_brick_stairs.json
 d7de36f58c9a4952b9e91d7ccb8c198c2705defc data\varan-deco\loot_tables\blocks\polished_sandstone_slab.json
-ea87b031c12e9a6ba0ca5d2f21ac6ba97f9a7bfe data\varan-deco\loot_tables\blocks\polished_soul_soilstone_slab.json
+b4db096e5651cda5cda844895b9fda3c3fcd6e4d data\varan-deco\loot_tables\blocks\polished_soul_soilstone_slab.json
 62f702f4d58af44d721530e05de733d42da4ad24 data\varan-deco\loot_tables\blocks\dark_oak_crafting_table.json
 e1c32f60c6c4bbbe9d23399f329ad36b3ba909b9 data\varan-deco\loot_tables\blocks\wooden_fence.json
 cb004ee8ad1865047c813cb8194c6d0f3a9339f3 data\varan-deco\loot_tables\blocks\blue_terracotta_bricks.json
