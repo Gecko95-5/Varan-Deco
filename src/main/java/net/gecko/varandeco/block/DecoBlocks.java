@@ -958,7 +958,7 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS),SlabBlock::new);
     public static final Block COBBLED_SOUL_SOILSTONE_SLAB = registerBlock("cobbled_soul_soilstone_slab",
             AbstractBlock.Settings.copy(DecoBlocks.COBBLED_SOUL_SOILSTONE),SlabBlock::new);
-    public static final Block POLISHED_SOUL_SOILSTONE_SLAB = registerBlock("polised_soul_soilstone_slab",
+    public static final Block POLISHED_SOUL_SOILSTONE_SLAB = registerBlock("polished_soul_soilstone_slab",
             AbstractBlock.Settings.copy(DecoBlocks.POLISHED_SOUL_SOILSTONE),SlabBlock::new);
     public static final Block SOUL_SOILSTONE_BRICK_SLAB = registerBlock("soul_soilstone_brick_slab",
             AbstractBlock.Settings.copy(DecoBlocks.SOUL_SOILSTONE_BRICKS),SlabBlock::new);
@@ -2529,16 +2529,7 @@ public class DecoBlocks {
             .sign(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN,DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN)
             .group("pale_oak_mosaic").build();
 
-    public static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
-        return new PillarBlock(
-                AbstractBlock.Settings.create()
-                        .mapColor(state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
-                        .instrument(NoteBlockInstrument.BASS)
-                        .strength(2.0F)
-                        .sounds(BlockSoundGroup.WOOD)
-                        .burnable()
-        );
-    }	private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+    private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return false;
     }
     private static boolean always(BlockState state, BlockView world, BlockPos pos) {
