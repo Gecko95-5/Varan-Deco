@@ -24,7 +24,10 @@ public class BubbleBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects()) {
+        if (!entity.bypassesSteppingEffects() && entity.isOnFire()) {
+            if (entity.isPlayer()) {
+                entity.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH, 1.0f, 1.0f);
+            }
             entity.extinguish();
         }
 

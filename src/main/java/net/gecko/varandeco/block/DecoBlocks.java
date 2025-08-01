@@ -987,7 +987,7 @@ public class DecoBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS)));
     public static final Block COBBLED_SOUL_SOILSTONE_SLAB = registerBlock("cobbled_soul_soilstone_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.COBBLED_SOUL_SOILSTONE)));
-    public static final Block POLISHED_SOUL_SOILSTONE_SLAB = registerBlock("polised_soul_soilstone_slab",
+    public static final Block POLISHED_SOUL_SOILSTONE_SLAB = registerBlock("polished_soul_soilstone_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.POLISHED_SOUL_SOILSTONE)));
     public static final Block SOUL_SOILSTONE_BRICK_SLAB = registerBlock("soul_soilstone_brick_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.SOUL_SOILSTONE_BRICKS)));
