@@ -16,6 +16,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldEvents;
 import org.jetbrains.annotations.Nullable;
 
 public class BlackIceBlock extends Block {
@@ -27,6 +28,7 @@ public class BlackIceBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (entity.isOnFire()) {
+            world.syncWorldEvent(WorldEvents.LAVA_EXTINGUISHED, pos, 0);
         entity.extinguish();
         entity.damage(world.getDamageSources().freeze(), 5.0F);
     }
