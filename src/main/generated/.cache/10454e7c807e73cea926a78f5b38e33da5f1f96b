@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-23T13:13:29.496499	Variant Decoration/Block Loot Tables
+// 1.20.1	2025-08-01T16:06:38.7221484	Variant Decoration/Block Loot Tables
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -418,8 +418,8 @@ e149098bec041beb4f3e67964ad46743bb11e511 data\varan-deco\loot_tables\blocks\oran
 f77422e7500b269fcccaff563899d211c7837847 data\varan-deco\loot_tables\blocks\hardened_lime_stained_glass.json
 17c50f095e69d7c7acc940c598d42e78b1367e47 data\varan-deco\loot_tables\blocks\ancient_rose.json
 bec345021ee4a7b08577f620a91a4fef12939dd7 data\varan-deco\loot_tables\blocks\chiseled_prismarine_bricks.json
-4bf51600207d274a546e1929299bfe24aa65e6ac data\varan-deco\loot_tables\blocks\gerbera_daisy.json
 fe914651009d3faf004c4f59caefc9f2a84faf85 data\varan-deco\loot_tables\blocks\spruce_barrel.json
+4bf51600207d274a546e1929299bfe24aa65e6ac data\varan-deco\loot_tables\blocks\gerbera_daisy.json
 6e3adf23cda0b22ad9afd7442654b09fcafa1144 data\varan-deco\loot_tables\blocks\hanging_mangrove_mosaic_sign.json
 8081cd7e33e14edfb30e5a49919b82400ddc5d18 data\varan-deco\loot_tables\blocks\cobbled_deepslate_button.json
 20dc769931d2420bc09b56a05be421e818f488a0 data\varan-deco\loot_tables\blocks\stone_tile_wall.json
@@ -620,8 +620,8 @@ e12b4111db6da94f5f3dea1b595452b986a4ddf7 data\varan-deco\loot_tables\blocks\stan
 7b0ee97f112476b1fed2c00b02c7b3b97f3b5f24 data\varan-deco\loot_tables\blocks\standing_stripped_birch_sign.json
 5f671ebe889566021c030ef5616eb1f677aa51d9 data\varan-deco\loot_tables\blocks\mosaic_cyan_stained_glass.json
 f74c6696196adfd8474a0408714edbe0a01b84b4 data\varan-deco\loot_tables\blocks\cut_white_concrete.json
-cc82a05b8be1a1c3f1b8608a671a5c150576d35b data\varan-deco\loot_tables\blocks\black_block.json
 61c029a3b000fda5da8d118ea8bd9ad5b8b85aa7 data\varan-deco\loot_tables\blocks\mighty_lavender_crop.json
+cc82a05b8be1a1c3f1b8608a671a5c150576d35b data\varan-deco\loot_tables\blocks\black_block.json
 7fa6f8b3f0f5d37f30d5ac1c2316b0961635c3b7 data\varan-deco\loot_tables\blocks\yellow_block.json
 5ec3e82b6634fd4269987e0d94d6141d6f19d531 data\varan-deco\loot_tables\blocks\lime_terracotta_brick_stairs.json
 e1fdcd17f684918fee1af854371dab900003009e data\varan-deco\loot_tables\blocks\hanging_warped_planks_sign.json
