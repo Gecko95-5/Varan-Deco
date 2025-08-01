@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:polised_soul_soilstone_slab"
+    "#": "minecraft:polished_soul_soilstone_slab"
   },
   "pattern": [
     "#",
