@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-01T17:43:30.5050803	Variant Decoration/Block Loot Tables
+// 1.21.1	2025-08-02T10:50:45.1863232	Variant Decoration/Block Loot Tables
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_table\blocks\packed_ice_stairs.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_table\blocks\bubble_brick_wall.json
 787be6c5c61b6fd58e635c3443bfc888449fe275 data\varan-deco\loot_table\blocks\smooth_deepslate.json
@@ -647,8 +647,8 @@ ada77d675e54c6814c6b8cc475bbb6d938b476d0 data\varan-deco\loot_table\blocks\chise
 463727248aa8b42867be6b0b6cb25a353909e88a data\varan-deco\loot_table\blocks\waxed_weathered_copper_lantern.json
 01aad7231e69fc38544b139f49324af958ea2e01 data\varan-deco\loot_table\blocks\cut_white_concrete_stairs.json
 e7d5d450d1a587c03b0404155497dacdfd80ef5b data\varan-deco\loot_table\blocks\blackstone_button.json
-26009de880942d537880bafcf1ff0bd17be1849c data\varan-deco\loot_table\blocks\standing_mangrove_mosaic_sign.json
 df715ed5805afeb24af9dd8f4f74285e33252271 data\varan-deco\loot_table\blocks\oxidized_copper_button.json
+26009de880942d537880bafcf1ff0bd17be1849c data\varan-deco\loot_table\blocks\standing_mangrove_mosaic_sign.json
 1f9a6a9a5ca22610b5bf8bcc08a0c816a247524c data\varan-deco\loot_table\blocks\mosaic_purple_stained_glass_pane.json
 95693b2f12d0d37bb3a221c175fa3397c3951d31 data\varan-deco\loot_table\blocks\mosaic_purple_stained_glass.json
 cd73d761d8fe082d5026b92d110e4b5ee7bbb50e data\varan-deco\loot_table\blocks\black_ice.json

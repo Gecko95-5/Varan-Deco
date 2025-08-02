@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-01T17:43:30.4293953	Variant Decoration/Tags for minecraft:block
+// 1.21.1	2025-08-02T10:50:45.1224932	Variant Decoration/Tags for minecraft:block
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\block\soul_speed_blocks.json
 ad05f2c422c0cab6c52b855411109cf3bd03707d data\varan-deco\tags\block\deco_smithing_tables.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\block\wooden_slabs.json
@@ -11,15 +11,15 @@ cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
 35645c86a60b38a61c9ff91a75d5f2cc929eda3c data\minecraft\tags\block\ceiling_hanging_signs.json
 1ceb31ff318282c7b51f8398f0ab2986ef590ffd data\varan-deco\tags\block\concrete_slabs.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\block\mosaic_wood.json
-837d200e3292991afd864ab8754066fbf228e918 data\minecraft\tags\block\wooden_fences.json
 2197ebe35a93d3b4a7499f1cbc24346cbbbe5c30 data\minecraft\tags\block\planks.json
+837d200e3292991afd864ab8754066fbf228e918 data\minecraft\tags\block\wooden_fences.json
 2e45ddd4d2a27b370199d9f7d35c5b994d9e3814 data\minecraft\tags\block\small_flowers.json
 5badd77a890c0a25cf700280748e26be0c0ef917 data\varan-deco\tags\block\metal_buttons.json
 b38abf222ff2cc3d5574a8f02060740c15f82605 data\varan-deco\tags\block\concrete_stairs.json
 48d173da6e149532b3ef3104dec564ef3c2a1c57 data\minecraft\tags\block\standing_signs.json
 c3a59751e549cd10d82f1622b179fd68cbf9eaa8 data\varan-deco\tags\block\terracotta_walls.json
 deefc678f9a695a29da397a6a577e00733ae7c0b data\minecraft\tags\block\stone_pressure_plates.json
-2dfd381db526b8f822b6bcd135132ff4ab019ebc data\minecraft\tags\block\mineable\pickaxe.json
+526de1127fe4a3633c01b5566c5782dae037f25e data\minecraft\tags\block\mineable\pickaxe.json
 11c5f55bcd6ee59cfd17365050bf1baf91f40215 data\minecraft\tags\block\pressure_plates.json
 3b3f66b9f1192884709a6829b454edd2643bbedb data\minecraft\tags\block\overworld_natural_logs.json
 d59e4e47a69393d9d43b2301198f3c6b145639df data\varan-deco\tags\block\terracotta_stairs.json
@@ -58,7 +58,7 @@ c95cd79fbc39fa3f8254e035280b7f55d9679d46 data\varan-deco\tags\block\deco_furnace
 9f173f7f2f0dbf9917d191ac8008a2642c8da095 data\minecraft\tags\block\wall_signs.json
 8a1a8f47868a81db09256e7be03ed3f434aa0d6c data\minecraft\tags\block\fence_gates.json
 b6feec2809938a12dd391f7839c7e47473d612f2 data\minecraft\tags\block\piglin_repellents.json
-f73e2f6f134fc49621478e960de523a4200c76f6 data\minecraft\tags\block\slabs.json
+a9b4cb9b89700b87eaad67bf15e101e93dd148a9 data\minecraft\tags\block\slabs.json
 d1e3e87be0713f490b99ba103ff28cbadb5518f6 data\varan-deco\tags\block\deco_ladders.json
 18c6dcd7316622a4c3e33307df5dcab4d12690e8 data\varan-deco\tags\block\mosaic_glass_panes.json
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\block\leaves.json
