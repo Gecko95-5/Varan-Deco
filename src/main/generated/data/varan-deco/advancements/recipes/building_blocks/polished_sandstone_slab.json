@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polised_sandstone_slab_from_polished_sandstone_stonecutting"
+        "recipe": "varan-deco:polished_sandstone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polised_sandstone_slab_from_polished_sandstone_stonecutting"
+      "varan-deco:polished_sandstone_slab"
     ]
   }
 }
