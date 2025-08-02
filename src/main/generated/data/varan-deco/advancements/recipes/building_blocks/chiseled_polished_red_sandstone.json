@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polised_red_sandstone_slab": {
+    "has_polished_red_sandstone_slab": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:polised_red_sandstone_slab"
+              "varan-deco:polished_red_sandstone_slab"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_polised_red_sandstone_slab",
+      "has_polished_red_sandstone_slab",
       "has_the_recipe"
     ]
   ],
