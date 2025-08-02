@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobbled_red_sandstone": {
+    "has_polished_sandstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:cobbled_red_sandstone"
+              "varan-deco:polished_sandstone"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polised_red_sandstone_slab_from_cobbled_red_sandstone_stonecutting"
+        "recipe": "minecraft:polished_sandstone_slab_from_polished_sandstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cobbled_red_sandstone"
+      "has_polished_sandstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polised_red_sandstone_slab_from_cobbled_red_sandstone_stonecutting"
+      "minecraft:polished_sandstone_slab_from_polished_sandstone_stonecutting"
     ]
   },
   "sends_telemetry_event": false
