@@ -1,7 +1,7 @@
-// 1.19.4	2025-08-01T15:52:27.1639643	Variant Decoration/Tags for minecraft:block
+// 1.19.4	2025-08-02T10:18:06.251994	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
-6ea47ac4bc6c49d79d96e1a96010798eb56ca3f9 data\minecraft\tags\blocks\mineable\pickaxe.json
-0332b8a0455f132a2062db20676bda1669f979eb data\minecraft\tags\blocks\slabs.json
+645d446e4a34d42d4d313420e0ad681a12bfa0d7 data\minecraft\tags\blocks\mineable\pickaxe.json
+16c2d3c1c7b4a832465192719a255add0f450334 data\minecraft\tags\blocks\slabs.json
 d6fd153e3ac88d06da79dd14f1c47f0086ccea4b data\minecraft\tags\blocks\planks.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
 3938e4bd40d437e271abf8ac18de0697705cc696 data\minecraft\tags\blocks\sculk_replaceable.json
@@ -50,8 +50,8 @@ c64f70d00b51bb88bd96886d64de69d759602615 data\minecraft\tags\blocks\mineable\axe
 23335b12335a2353dfb57661b65bd272167c5aa8 data\minecraft\tags\blocks\wall_signs.json
 6574be471f5fb0acf4490d26d2b7935e1c6ee039 data\minecraft\tags\blocks\impermeable.json
 cbf93640cebf24672ca5bb426f54d8c728f6a423 data\varan-deco\tags\blocks\copper_bars.json
-39a7ca8403897f1fb565bbb61058d9264d1b4ceb data\varan-deco\tags\blocks\terracotta_walls.json
 de55858f598551ea44df4edc40d23a7830d0016d data\minecraft\tags\blocks\overworld_natural_logs.json
+39a7ca8403897f1fb565bbb61058d9264d1b4ceb data\varan-deco\tags\blocks\terracotta_walls.json
 37dafa9187c84471d26f39fd183af06e33662416 data\minecraft\tags\blocks\wooden_buttons.json
 140e3edf27b5690e2ba63df7e62c06180494d237 data\minecraft\tags\blocks\climbable.json
 b9772ac57635fe270404856855ea12b3d912b03b data\minecraft\tags\blocks\standing_signs.json
