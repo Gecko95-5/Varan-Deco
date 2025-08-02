@@ -885,7 +885,7 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLED_SANDSTONE_SLAB = registerBlock("cobbled_sandstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.COBBLED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POLISHED_SANDSTONE_SLAB = registerBlock("polised_sandstone_slab",
+    public static final Block POLISHED_SANDSTONE_SLAB = registerBlock("polished_sandstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -999,7 +999,7 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_RED_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COBBLED_RED_SANDSTONE_SLAB = registerBlock("cobbled_red_sandstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.COBBLED_RED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block POLISHED_RED_SANDSTONE_SLAB = registerBlock("polised_red_sandstone_slab",
+    public static final Block POLISHED_RED_SANDSTONE_SLAB = registerBlock("polished_red_sandstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_RED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RED_SANDSTONE_BRICK_SLAB = registerBlock("red_sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.RED_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);

@@ -1,7 +1,7 @@
-// 1.19.2	2025-08-01T16:13:04.2955562	Tags for minecraft:block
+// 1.19.2	2025-08-02T10:04:16.772832	Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
-04070497445d87528d513b76aaecba155284b914 data\minecraft\tags\blocks\mineable\pickaxe.json
-0332b8a0455f132a2062db20676bda1669f979eb data\minecraft\tags\blocks\slabs.json
+a3fd9bfcd193e86c11b70d5a63dd53d9fc79f1e1 data\minecraft\tags\blocks\mineable\pickaxe.json
+16c2d3c1c7b4a832465192719a255add0f450334 data\minecraft\tags\blocks\slabs.json
 d6fd153e3ac88d06da79dd14f1c47f0086ccea4b data\minecraft\tags\blocks\planks.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
 3938e4bd40d437e271abf8ac18de0697705cc696 data\minecraft\tags\blocks\sculk_replaceable.json
