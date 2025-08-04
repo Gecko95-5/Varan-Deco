@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_prismarine_crystals": {
+    "has_crystallized_prismarine_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:prismarine_crystals"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_prismarine_shard": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:prismarine_shard"
+              "varan-deco:crystallized_prismarine_bricks"
             ]
           }
         ]
@@ -35,8 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_prismarine_crystals",
-      "has_prismarine_shard"
+      "has_crystallized_prismarine_bricks"
     ]
   ],
   "rewards": {
