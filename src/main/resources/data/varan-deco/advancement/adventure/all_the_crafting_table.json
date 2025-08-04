@@ -5,8 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "minecraft:crafting_table"
+            ]
           }
         ]
       },
@@ -16,8 +17,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:spruce_crafting_table"
+            ]
           }
         ]
       },
@@ -27,8 +29,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:birch_crafting_table"
+            ]
           }
         ]
       },
@@ -38,8 +41,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:jungle_crafting_table"
+            ]
           }
         ]
       },
@@ -49,8 +53,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:acacia_crafting_table"
+            ]
           }
         ]
       },
@@ -60,8 +65,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:dark_oak_crafting_table"
+            ]
           }
         ]
       },
@@ -71,8 +77,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:mangrove_crafting_table"
+            ]
           }
         ]
       },
@@ -82,8 +89,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:cherry_crafting_table"
+            ]
           }
         ]
       },
@@ -93,8 +101,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:bamboo_crafting_table"
+            ]
           }
         ]
       },
@@ -104,8 +113,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:crimson_crafting_table"
+            ]
           }
         ]
       },
@@ -115,8 +125,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:warped_crafting_table"
+            ]
           }
         ]
       },
@@ -126,8 +137,9 @@
       "conditions": {
         "items": [
           {
-            "items":
+            "items": [
               "varan-deco:cactus_crafting_table"
+            ]
           }
         ]
       },
@@ -137,8 +149,9 @@
       "conditions": {
         "items": [
           {
-            "items":
-              "varan-deco:wooden_crafting_table"
+            "items": [
+              "varan-deco:oak_crafting_table"
+            ]
           }
         ]
       },
@@ -152,7 +165,7 @@
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:wooden_crafting_table"
+      "id": "minecraft:crafting_table"
     },
     "show_toast": true,
     "title": "The Crafting Collector"
@@ -197,6 +210,5 @@
     [
       "cherry"
     ]
-  ],
-  "sends_telemetry_event": true
+  ]
 }

@@ -1,6 +1,7 @@
 package net.gecko.varandeco.block.barrel;
 
 import com.mojang.serialization.MapCodec;
+import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
 import net.gecko.varandeco.block.entity.wood.CherryBarrelBlockEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
@@ -28,15 +29,9 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class CherryBarrelBlock extends BlockWithEntity {
-	public static final MapCodec<CherryBarrelBlock> CODEC = createCodec(CherryBarrelBlock::new);
+public class CherryBarrelBlock extends NonStationBarrelBlock {
 	public static final DirectionProperty FACING = Properties.FACING;
 	public static final BooleanProperty OPEN = Properties.OPEN;
-
-	@Override
-	public MapCodec<CherryBarrelBlock> getCodec() {
-		return CODEC;
-	}
 
 	public CherryBarrelBlock(Settings settings) {
 		super(settings);

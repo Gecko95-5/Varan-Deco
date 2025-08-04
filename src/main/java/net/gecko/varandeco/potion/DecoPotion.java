@@ -12,16 +12,16 @@ import net.minecraft.util.Identifier;
 public class DecoPotion {
 
     public static final RegistryEntry<Potion> WATER_BUBBLE_POTION = registerPotion("bubble_potion",
-            new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0),
-                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0)));
+            new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0),
+                    new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0)));
 
     public static final RegistryEntry<Potion> STRONG_WATER_BUBBLE_POTION = registerPotion("strong_bubble_potion",
-            new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 900, 0),
-                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 1)));
+            new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 0),
+                    new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 900, 0)));
 
     public static final RegistryEntry<Potion> LONG_WATER_BUBBLE_POTION  = registerPotion("long_bubble_potion",
-            new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0),
-                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0)));
+            new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0),
+                    new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0)));
 
 
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {

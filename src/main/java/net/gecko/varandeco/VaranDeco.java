@@ -42,11 +42,11 @@ public class VaranDeco implements ModInitializer {
 		DecoEntities.registerDecoEntities();
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CRAFTING_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_LADDER,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_CARTOGRAPHY_TABLES,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_SMITHING_TABLES,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_BARRELS,300);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES,300);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_SMITHING_TABLES,300);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_BARRELS,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_BOOKSHELVES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_WOOD,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_STAIRS,300);
@@ -55,9 +55,10 @@ public class VaranDeco implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-			builder.registerPotionRecipe(Potions.AWKWARD, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+			builder.registerPotionRecipe(Potions.WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+			builder.registerPotionRecipe(Potions.LONG_WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.LONG_WATER_BUBBLE_POTION);
 			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
-			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE, DecoPotion.STRONG_WATER_BUBBLE_POTION);
+			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_WATER_BUBBLE_POTION);
 			builder.registerPotionRecipe(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
 		});
 	}

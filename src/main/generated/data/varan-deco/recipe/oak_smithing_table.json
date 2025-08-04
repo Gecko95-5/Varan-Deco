@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_smithing_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:oak_smithing_table"
+  }
+}
