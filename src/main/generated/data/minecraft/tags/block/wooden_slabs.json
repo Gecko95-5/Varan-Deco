@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:cactus_plank_slab",
-    "minecraft:wooden_slab"
+    "minecraft:wooden_slab",
+    "minecraft:driftwood_slab"
   ]
 }

@@ -322,8 +322,15 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
 
+        BlockStateModelGenerator.BlockTexturePool driftwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DRIFTWOOD_PLANKS);
+
         blockStateModelGenerator.createLogTexturePool(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
         blockStateModelGenerator.createLogTexturePool(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
+
+        blockStateModelGenerator.createLogTexturePool(DecoBlocks.DRIFTWOOD_LOG).log(DecoBlocks.DRIFTWOOD_LOG).wood(DecoBlocks.DRIFTWOOD);
+        blockStateModelGenerator.createLogTexturePool(DecoBlocks.DRIED_DRIFTWOOD_LOG).log(DecoBlocks.DRIED_DRIFTWOOD_LOG).wood(DecoBlocks.DRIED_DRIFTWOOD);
+        blockStateModelGenerator.createLogTexturePool(DecoBlocks.STRIPPED_DRIFTWOOD_LOG).log(DecoBlocks.STRIPPED_DRIFTWOOD_LOG).wood(DecoBlocks.STRIPPED_DRIFTWOOD);
 
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
@@ -512,7 +519,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CRAFTING_TABLE);
-        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
@@ -526,7 +533,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_BOOKSHELF);
 
@@ -582,6 +589,9 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.DRIFTWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.DRIFTWOOD_TRAPDOOR);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.GOLD_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.GOLD_TRAPDOOR);
@@ -707,6 +717,13 @@ public class DecoModelProvider extends FabricModelProvider {
         woodenpool.button(DecoBlocks.WOODEN_BUTTON);
         woodenpool.pressurePlate(DecoBlocks.WOODEN_PRESSURE_PLATE);
         woodenpool.fenceGate(DecoBlocks.WOODEN_FENCE_GATE);
+
+        driftwoodpool.stairs(DecoBlocks.DRIFTWOOD_STAIRS);
+        driftwoodpool.slab(DecoBlocks.DRIFTWOOD_SLAB);
+        driftwoodpool.fence(DecoBlocks.DRIFTWOOD_FENCE);
+        driftwoodpool.button(DecoBlocks.DRIFTWOOD_BUTTON);
+        driftwoodpool.pressurePlate(DecoBlocks.DRIFTWOOD_PRESSURE_PLATE);
+        driftwoodpool.fenceGate(DecoBlocks.DRIFTWOOD_FENCE_GATE);
 
         bluenetherpool.stairs(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
         bluenetherpool.slab(DecoBlocks.BLUE_NETHER_BRICK_SLAB);

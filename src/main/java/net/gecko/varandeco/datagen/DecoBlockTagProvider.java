@@ -535,7 +535,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(DecoBlocks.CACTUS_PLANKS)
-                .add(DecoBlocks.WOODEN_PLANKS);
+                .add(DecoBlocks.WOODEN_PLANKS)
+                .add(DecoBlocks.DRIFTWOOD_PLANKS);
 
         getOrCreateTagBuilder(DecoTags.Blocks.MOSAIC_WOOD)
                 .add(DecoBlocks.OAK_MOSAIC)
@@ -576,14 +577,32 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_MOSAIC_SLAB)
                 .add(DecoBlocks.PALE_OAK_MOSAIC_SLAB);
 
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .addTag(DecoTags.Blocks.WET_DRIFTWOOD_LOGS);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .addTag(DecoTags.Blocks.WOODEN_LOGS);
+                .addTag(DecoTags.Blocks.WOODEN_LOGS)
+                .addTag(DecoTags.Blocks.DRIED_DRIFTWOOD_LOGS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.DRIFTWOOD_LOGS)
+                .addTag(DecoTags.Blocks.DRIED_DRIFTWOOD_LOGS)
+                .addTag(DecoTags.Blocks.WET_DRIFTWOOD_LOGS);
 
         getOrCreateTagBuilder(DecoTags.Blocks.WOODEN_LOGS)
                 .add(DecoBlocks.WOODEN_WOOD)
                 .add(DecoBlocks.WOODEN_LOG)
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD)
                 .add(DecoBlocks.STRIPPED_WOODEN_LOG);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.WET_DRIFTWOOD_LOGS)
+                .add(DecoBlocks.DRIFTWOOD_LOG)
+                .add(DecoBlocks.DRIFTWOOD);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.DRIED_DRIFTWOOD_LOGS)
+                .add(DecoBlocks.DRIED_DRIFTWOOD_LOG)
+                .add(DecoBlocks.DRIED_DRIFTWOOD)
+                .add(DecoBlocks.STRIPPED_DRIFTWOOD_LOG)
+                .add(DecoBlocks.STRIPPED_DRIFTWOOD);
 
         getOrCreateTagBuilder(BlockTags.BUTTONS)
                 .addTag(DecoTags.Blocks.METAL_BUTTONS);
@@ -709,19 +728,23 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
-                .add(DecoBlocks.WOODEN_STAIRS);
+                .add(DecoBlocks.WOODEN_STAIRS)
+                .add(DecoBlocks.DRIFTWOOD_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(DecoBlocks.CACTUS_PLANK_SLAB)
-                .add(DecoBlocks.WOODEN_SLAB);
+                .add(DecoBlocks.WOODEN_SLAB)
+                .add(DecoBlocks.DRIFTWOOD_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE)
-                .add(DecoBlocks.WOODEN_FENCE);
+                .add(DecoBlocks.WOODEN_FENCE)
+                .add(DecoBlocks.DRIFTWOOD_FENCE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(DecoBlocks.CACTUS_PLANK_BUTTON)
-                .add(DecoBlocks.WOODEN_BUTTON);
+                .add(DecoBlocks.WOODEN_BUTTON)
+                .add(DecoBlocks.DRIFTWOOD_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.STONE_BUTTONS)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
@@ -747,15 +770,18 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)
-                .add(DecoBlocks.WOODEN_PRESSURE_PLATE);
+                .add(DecoBlocks.WOODEN_PRESSURE_PLATE)
+                .add(DecoBlocks.DRIFTWOOD_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR)
-                .add(DecoBlocks.WOODEN_DOOR);
+                .add(DecoBlocks.WOODEN_DOOR)
+                .add(DecoBlocks.DRIFTWOOD_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(DecoBlocks.CACTUS_TRAPDOOR)
-                .add(DecoBlocks.WOODEN_TRAPDOOR);
+                .add(DecoBlocks.WOODEN_TRAPDOOR)
+                .add(DecoBlocks.DRIFTWOOD_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
                 .add(DecoBlocks.STANDING_CACTUS_SIGN)
@@ -931,7 +957,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE)
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE)
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE)
-                .add(DecoBlocks.WOODEN_CRAFTING_TABLE)
+                .add(DecoBlocks.OAK_CRAFTING_TABLE)
                 .add(DecoBlocks.CHERRY_CRAFTING_TABLE)
                 .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE)
                 .add(DecoBlocks.BAMBOO_CRAFTING_TABLE);
@@ -1199,7 +1225,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DARK_OAK_BOOKSHELF)
                 .add(DecoBlocks.MANGROVE_BOOKSHELF)
                 .add(DecoBlocks.CACTUS_BOOKSHELF)
-                .add(DecoBlocks.WOODEN_BOOKSHELF)
+                .add(DecoBlocks.OAK_BOOKSHELF)
                 .add(DecoBlocks.BAMBOO_BOOKSHELF)
                 .add(DecoBlocks.CHERRY_BOOKSHELF);
 

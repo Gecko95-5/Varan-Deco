@@ -31,6 +31,15 @@ public class DecoTags {
         public static final TagKey<Block> WOODEN_LOGS =
                 createTag("wooden_logs");
 
+        public static final TagKey<Block> DRIFTWOOD_LOGS =
+                createTag("driftwood_logs");
+
+        public static final TagKey<Block> WET_DRIFTWOOD_LOGS =
+                createTag("wet_driftwood_logs");
+
+        public static final TagKey<Block> DRIED_DRIFTWOOD_LOGS =
+                createTag("dried_driftwood_logs");
+
         public static final TagKey<Block> TERRACOTTA_STAIRS =
                 createTag("terracotta_stairs");
 
@@ -102,11 +111,32 @@ public class DecoTags {
         public static final TagKey<Item> DECO_BOOKSHELVES =
                 createTag("deco_bookshelves");
 
-        public static final TagKey<Item> WOODED_CRAFTING_TABLES =
-                createTag("wooden_crafting_tables");
-
         public static final TagKey<Item> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
+
+        public static final TagKey<Item> WOODEN_SMITHING_TABLES =
+                createTag("wooden_smithing_tables");
+
+        public static final TagKey<Item> WOODEN_BARRELS =
+                createTag("wooden_barrels");
+
+        public static final TagKey<Item> WOODEN_CRAFTING_TABLES =
+                createTag("wooden_crafting_tables");
+
+        public static final TagKey<Item> WOODEN_BOOKSHELVES =
+                createTag("wooden_bookshelves");
+
+        public static final TagKey<Item> WOODEN_CARTOGRAPHY_TABLES =
+                createTag("wooden_cartography_tables");
+
+        public static final TagKey<Item> DRIFTWOOD_LOGS =
+                createTag("driftwood_logs");
+
+        public static final TagKey<Item> WET_DRIFTWOOD_LOGS =
+                createTag("wet_driftwood_logs");
+
+        public static final TagKey<Item> DRIED_DRIFTWOOD_LOGS =
+                createTag("dried_driftwood_logs");
 
         public static final TagKey<Item> DECO_LADDER =
                 createTag("deco_ladder");

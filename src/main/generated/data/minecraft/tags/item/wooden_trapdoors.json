@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:cactus_trapdoor"
+    "minecraft:cactus_trapdoor",
+    "minecraft:wooden_trapdoor",
+    "minecraft:driftwood_trapdoor"
   ]
 }

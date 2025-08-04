@@ -1077,7 +1077,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         doorDrops(DecoBlocks.WOODEN_DOOR);
         addDrop(DecoBlocks.WOODEN_TRAPDOOR);
 
-        addDrop(DecoBlocks.WOODEN_CRAFTING_TABLE);
+        addDrop(DecoBlocks.OAK_CRAFTING_TABLE);
         addDrop(DecoBlocks.WOODEN_LADDER);
 
         addDrop(DecoBlocks.STANDING_WOODEN_SIGN);
@@ -1216,5 +1216,23 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(Blocks.BLUE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                 UniformLootNumberProvider.create(9.0F, 12.0f)));
+
+        addDrop(DecoBlocks.DRIFTWOOD_LOG);
+        addDrop(DecoBlocks.DRIED_DRIFTWOOD_LOG);
+        addDrop(DecoBlocks.DRIFTWOOD);
+        addDrop(DecoBlocks.DRIED_DRIFTWOOD);
+        addDrop(DecoBlocks.STRIPPED_DRIFTWOOD_LOG);
+        addDrop(DecoBlocks.STRIPPED_DRIFTWOOD);
+
+        addDrop(DecoBlocks.DRIFTWOOD_PLANKS);
+        addDrop(DecoBlocks.DRIFTWOOD_STAIRS);
+        slabDrops(DecoBlocks.DRIFTWOOD_SLAB);
+        addDrop(DecoBlocks.DRIFTWOOD_FENCE);
+        addDrop(DecoBlocks.DRIFTWOOD_FENCE_GATE);
+        addDrop(DecoBlocks.DRIFTWOOD_PRESSURE_PLATE);
+        addDrop(DecoBlocks.DRIFTWOOD_BUTTON);
+
+        doorDrops(DecoBlocks.DRIFTWOOD_DOOR);
+        addDrop(DecoBlocks.DRIFTWOOD_TRAPDOOR);
     }
 }

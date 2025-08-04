@@ -10,16 +10,12 @@ import net.gecko.varandeco.util.interfaces.HangingSignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.SignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.TallPlantItemRegisterFunction;
 import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.HangingSignItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SignItem;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
@@ -268,7 +264,6 @@ public class DecoItems {
         T item = factory.apply(hangingSign, wallHangingSign, new Item.Settings().maxCount(16).registryKey(getItemKey(name)));
         return Registry.register(Registries.ITEM,getItemKey(name),item);
     }
-
     private static Function<Item.Settings, Item> createBlockItemWithUniqueName(Block block) {
         return settings -> new BlockItem(block, settings.useItemPrefixedTranslationKey());
     }
