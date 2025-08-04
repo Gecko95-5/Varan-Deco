@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hardened_glass_panes",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "varan-deco:tinted_glass_pane"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "id": "varan-deco:hardened_tinted_glass_pane"
+  }
+}

@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.cartographytables;
 
+import net.gecko.varandeco.block.custom.NonStationBlock;
 import net.gecko.varandeco.screen.wood.BambooCartographyTableScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -15,7 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class BambooCartographyTableBlock extends Block {
+public class BambooCartographyTableBlock extends NonStationBlock {
 	private static final Text TITLE = Text.translatable("container.cartography_table");
 
 	public BambooCartographyTableBlock(Settings settings) {

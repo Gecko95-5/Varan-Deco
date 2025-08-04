@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_crafting_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_crafting_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:bamboo_crafting_table"
+  }
+}

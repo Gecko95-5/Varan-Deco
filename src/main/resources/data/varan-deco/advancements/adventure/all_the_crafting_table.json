@@ -150,7 +150,7 @@
         "items": [
           {
             "items": [
-              "varan-deco:wooden_crafting_table"
+              "varan-deco:oak_crafting_table"
             ]
           }
         ]
@@ -165,7 +165,7 @@
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:wooden_crafting_table"
+      "id": "minecraft:crafting_table"
     },
     "show_toast": true,
     "title": "The Crafting Collector"

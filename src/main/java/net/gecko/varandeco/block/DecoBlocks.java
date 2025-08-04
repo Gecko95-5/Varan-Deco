@@ -8,6 +8,7 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
+import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
@@ -273,16 +274,16 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.DIAMOND_BLUE)));
     public static final Block CRYSTALLIZED_PRISMARINE = registerBlock("crystallized_prismarine",
             new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS)));
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS)));
     public static final Block CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("crystallized_prismarine_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS)));
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS)));
     public static final Block CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("chiseled_crystallized_prismarine_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS)));
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS)));
     public static final Block LIGHT_PRISMARINE = registerBlock("light_prismarine",
             new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.OFF_WHITE)
-                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS)));
+                    .luminance(state -> 10).sounds(BlockSoundGroup.GLASS)));
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.PACKED_ICE).strength(1.4f)));
     public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
@@ -1161,6 +1162,8 @@ public class DecoBlocks {
     public static final Block MIGHTY_LAVENDER = registerBlock("mighty_lavender",
             new MightyLavenderBlock(AbstractBlock.Settings.copy(Blocks.PEONY)));
 
+    public static final Block OAK_CRAFTING_TABLE = registerBlock("oak_crafting_table",
+            new OakCraftingTableBlock(AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.OAK_TAN)));
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             new SpruceCraftingTableBlock(AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
@@ -1187,8 +1190,6 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
     public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
             new CactusCraftingTableBlock(AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN)));
-    public static final Block WOODEN_CRAFTING_TABLE = registerBlock("wooden_crafting_table",
-            new WoodenCraftingTableBlock(AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.TERRACOTTA_BROWN)));
 
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             new DeepslateFurnaceBlock(AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -1788,34 +1789,36 @@ public class DecoBlocks {
                     .nonOpaque()));
 
     public static final Block OAK_BARREL = registerBlock("oak_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN)));
     public static final Block SPRUCE_BARREL = registerBlock("spruce_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL)));
     public static final Block BIRCH_BARREL = registerBlock("birch_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)));
     public static final Block JUNGLE_BARREL = registerBlock("jungle_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN)));
     public static final Block ACACIA_BARREL = registerBlock("acacia_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE)));
     public static final Block DARK_OAK_BARREL = registerBlock("dark_oak_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN)));
     public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED)));
     public static final Block BAMBOO_BARREL = registerBlock("bamboo_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD)));
     public static final Block CHERRY_BARREL = registerBlock("cherry_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD)));
     public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
-                    .sounds(BlockSoundGroup.NETHER_WOOD)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WARPED_BARREL = registerBlock("warped_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
-                    .sounds(BlockSoundGroup.NETHER_WOOD)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
+                    .sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
+            new NonStationBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)));
 
+    public static final Block OAK_BOOKSHELF = registerBlock("oak_bookshelf",
+            new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
             new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));
     public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
@@ -1842,8 +1845,6 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_WOOD)));
     public static final Block CACTUS_BOOKSHELF = registerBlock("cactus_bookshelf",
             new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.PALE_GREEN)));
-    public static final Block WOODEN_BOOKSHELF = registerBlock("wooden_bookshelf",
-            new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN)));
 
     public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
             new DeepslateSmokerBlock(AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)

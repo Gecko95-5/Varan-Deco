@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hardened_glass",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:cyan_stained_glass"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "id": "varan-deco:hardened_cyan_stained_glass"
+  }
+}

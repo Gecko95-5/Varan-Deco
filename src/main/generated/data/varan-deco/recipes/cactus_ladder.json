@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_ladder",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "varan-deco:cactus_plank_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#S#",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:cactus_ladder"
+  }
+}
