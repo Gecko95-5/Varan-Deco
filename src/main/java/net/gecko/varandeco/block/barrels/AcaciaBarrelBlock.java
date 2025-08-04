@@ -1,6 +1,7 @@
 package net.gecko.varandeco.block.barrels;
 
 import com.mojang.serialization.MapCodec;
+import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
 import net.gecko.varandeco.block.entity.wood.AcaciaBarrelBlockEntity;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -28,15 +29,9 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class AcaciaBarrelBlock extends BlockWithEntity {
-    public static final MapCodec<AcaciaBarrelBlock> CODEC = createCodec(AcaciaBarrelBlock::new);
+public class AcaciaBarrelBlock extends NonStationBarrelBlock {
     public static final EnumProperty<Direction> FACING = Properties.FACING;
     public static final BooleanProperty OPEN = Properties.OPEN;
-
-    @Override
-    public MapCodec<AcaciaBarrelBlock> getCodec() {
-        return CODEC;
-    }
 
     public AcaciaBarrelBlock(AbstractBlock.Settings settings) {
         super(settings);

@@ -23,6 +23,9 @@ public class BubbleWallBlock extends WallBlock {
             }
             entity.extinguish();
         }
+        if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
+            entity.setAir(300);
+        }
 
         super.onSteppedOn(world, pos, state, entity);
     }

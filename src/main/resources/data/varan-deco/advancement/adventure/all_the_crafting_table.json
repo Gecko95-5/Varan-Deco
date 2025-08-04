@@ -149,7 +149,7 @@
         "items": [
           {
             "items":
-              "minecraft:wooden_crafting_table"
+              "minecraft:oak_crafting_table"
           }
         ]
       },
@@ -163,7 +163,7 @@
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "minecraft:wooden_crafting_table"
+      "id": "minecraft:crafting_table"
     },
     "show_toast": true,
     "title": "The Crafting Collector"
@@ -211,6 +211,5 @@
     [
       "pale_oak"
     ]
-  ],
-  "sends_telemetry_event": true
+  ]
 }

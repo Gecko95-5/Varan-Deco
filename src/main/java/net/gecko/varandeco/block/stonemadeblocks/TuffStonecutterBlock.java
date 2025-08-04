@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
+import net.gecko.varandeco.block.custom.NonStationBlock;
 import net.gecko.varandeco.screen.stone.TuffStonecutterScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
@@ -23,7 +24,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class TuffStonecutterBlock extends Block {
+public class TuffStonecutterBlock extends NonStationBlock {
 	private static final Text TITLE = Text.translatable("container.stonecutter");
 	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
 	protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 9.0, 16.0);

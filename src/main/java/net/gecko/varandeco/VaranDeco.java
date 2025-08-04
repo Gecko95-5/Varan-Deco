@@ -42,9 +42,10 @@ public class VaranDeco implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-			builder.registerPotionRecipe(Potions.AWKWARD, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+			builder.registerPotionRecipe(Potions.WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+			builder.registerPotionRecipe(Potions.LONG_WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.LONG_WATER_BUBBLE_POTION);
 			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
-			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE, DecoPotion.STRONG_WATER_BUBBLE_POTION);
+			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_WATER_BUBBLE_POTION);
 			builder.registerPotionRecipe(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
 		});
 	}

@@ -18,6 +18,8 @@ import net.minecraft.registry.tag.ItemTags;
 import java.util.concurrent.CompletableFuture;
 
 public class DecoRecipeGenerator extends FabricRecipeProvider {
+
+
     public DecoRecipeGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
@@ -580,29 +582,25 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_PRISMARINE_WALL, DecoBlocks.LIGHT_PRISMARINE);
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_PRISMARINE_BRICKS)
-                        .pattern("###")
+                        .pattern(" # ")
                         .pattern("#I#")
-                        .pattern("###")
-                        .input('#', Items.PRISMARINE_SHARD)
-                        .input('I', Items.PRISMARINE_CRYSTALS)
-                        .criterion(hasItem(Items.PRISMARINE_SHARD),
-                                conditionsFromItem(Items.PRISMARINE_SHARD))
-                        .criterion(hasItem(Items.PRISMARINE_CRYSTALS),
-                                conditionsFromItem(Items.PRISMARINE_CRYSTALS))
+                        .pattern(" # ")
+                        .input('#', Items.PRISMARINE_BRICKS)
+                        .input('I', DecoBlocks.CRYSTALLIZED_PRISMARINE)
+                        .criterion(hasItem(Items.PRISMARINE_BRICKS),
+                                conditionsFromItem(Items.PRISMARINE_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CHISELED_PRISMARINE_BRICKS) + "_recipe_create");
                 createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS)
-                        .pattern("###")
+                        .pattern(" # ")
                         .pattern("#I#")
-                        .pattern("###")
-                        .input('#', Items.PRISMARINE_CRYSTALS)
-                        .input('I', Items.PRISMARINE_SHARD)
-                        .criterion(hasItem(Items.PRISMARINE_CRYSTALS),
-                                conditionsFromItem(Items.PRISMARINE_CRYSTALS))
-                        .criterion(hasItem(Items.PRISMARINE_SHARD),
-                                conditionsFromItem(Items.PRISMARINE_SHARD))
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS)
+                        .input('I', Items.PRISMARINE)
+                        .criterion(hasItem(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS),
+                                conditionsFromItem(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS) + "_recipe_create");
 
-                createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BUBBLE_BLOCK)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.BUBBLE_BLOCK)
                 .pattern("#I")
                 .pattern("I#")
                 .input('#', Items.COBBLESTONE)
@@ -682,7 +680,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE_SLAB);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE);
 
-                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE),RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_SOUL_SOILSTONE,
+                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_SOUL_SOILSTONE,
                                 0.1f, 200).criterion(hasItem(DecoBlocks.SOUL_SOILSTONE), conditionsFromItem(DecoBlocks.SOUL_SOILSTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.SMOOTH_SOUL_SOILSTONE)+ "_recipe_create");
 
@@ -775,7 +773,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_RED_NETHER_BRICKS, Items.RED_NETHER_BRICK_SLAB);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_RED_NETHER_BRICKS, Items.RED_NETHER_BRICKS);
 
-                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRACKED_RED_NETHER_BRICKS,
+                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_NETHER_BRICKS),RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICKS,
                                 0.1f, 200).criterion(hasItem(Items.RED_NETHER_BRICKS), conditionsFromItem(Items.RED_NETHER_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CRACKED_RED_NETHER_BRICKS) + "_recipe_create");
 
@@ -1229,7 +1227,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.WHITE_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.WHITE_DYE),
                                 conditionsFromItem(Items.WHITE_DYE))
@@ -1243,7 +1242,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.LIGHT_GRAY_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.LIGHT_GRAY_DYE),
                                 conditionsFromItem(Items.LIGHT_GRAY_DYE))
@@ -1257,7 +1257,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.GRAY_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.GRAY_DYE),
                                 conditionsFromItem(Items.GRAY_DYE))
@@ -1271,7 +1272,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.BLACK_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.BLACK_DYE),
                                 conditionsFromItem(Items.BLACK_DYE))
@@ -1285,7 +1287,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.BROWN_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.BROWN_DYE),
                                 conditionsFromItem(Items.BROWN_DYE))
@@ -1299,7 +1302,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.RED_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.RED_DYE),
                                 conditionsFromItem(Items.RED_DYE))
@@ -1313,7 +1317,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.ORANGE_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.ORANGE_DYE),
                                 conditionsFromItem(Items.ORANGE_DYE))
@@ -1327,7 +1332,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.YELLOW_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.YELLOW_DYE),
                                 conditionsFromItem(Items.YELLOW_DYE))
@@ -1341,7 +1347,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.LIME_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.LIME_DYE),
                                 conditionsFromItem(Items.LIME_DYE))
@@ -1355,7 +1362,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.GREEN_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.GREEN_DYE),
                                 conditionsFromItem(Items.GREEN_DYE))
@@ -1369,7 +1377,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.CYAN_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.CYAN_DYE),
                                 conditionsFromItem(Items.CYAN_DYE))
@@ -1383,7 +1392,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.LIGHT_BLUE_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.LIGHT_BLUE_DYE),
                                 conditionsFromItem(Items.LIGHT_BLUE_DYE))
@@ -1397,7 +1407,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.BLUE_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.BLUE_DYE),
                                 conditionsFromItem(Items.BLUE_DYE))
@@ -1411,7 +1422,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.PURPLE_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.PURPLE_DYE),
                                 conditionsFromItem(Items.PURPLE_DYE))
@@ -1425,7 +1437,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.MAGENTA_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.MAGENTA_DYE),
                                 conditionsFromItem(Items.MAGENTA_DYE))
@@ -1439,7 +1452,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', DecoBlocks.TERRACOTTA_BRICKS)
                         .input('X', Items.PINK_DYE)
-                        .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
+                        .group("terracotta_bricks")
+                .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
                         .criterion(hasItem(Items.PINK_DYE),
                                 conditionsFromItem(Items.PINK_DYE))
@@ -2011,7 +2025,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern(" # ")
                         .input('#', Items.AMETHYST_SHARD)
                         .input('X', Items.GLASS_PANE)
-                        .criterion(hasItem(Items.AMETHYST_SHARD),
+                        .group("tinted_glass_pane")
+                .criterion(hasItem(Items.AMETHYST_SHARD),
                                 conditionsFromItem(Items.AMETHYST_SHARD))
                         .criterion(hasItem(Items.GLASS_PANE),
                                 conditionsFromItem(Items.GLASS_PANE))
@@ -2020,11 +2035,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.TINTED_GLASS_PANE,16)
                         .pattern("###")
                         .pattern("###")
+                        .group("tinted_glass_pane")
                         .input('#', Items.TINTED_GLASS)
                         .criterion(hasItem(Items.TINTED_GLASS),
                                 conditionsFromItem(Items.TINTED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.TINTED_GLASS_PANE)+ "_recipe_create");
-
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_GLASS,4)
                         .pattern(" # ")
@@ -3319,7 +3334,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_COPPER_BARS) + "_recipe_create");
 
         offerPressurePlateRecipe(DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.DEEPSLATE_BUTTON)
                         .input(Items.DEEPSLATE)
@@ -3329,8 +3344,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.DEEPSLATE_BUTTON, Items.DEEPSLATE);
 
         offerPressurePlateRecipe(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Items.COBBLED_DEEPSLATE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
                         .input(Items.COBBLED_DEEPSLATE)
@@ -3341,10 +3356,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_DEEPSLATE_BUTTON, Items.COBBLED_DEEPSLATE);
 
         offerPressurePlateRecipe(DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, Items.COBBLESTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLESTONE_PRESSURE_PLATE, Items.COBBLESTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, Items.COBBLESTONE);
 
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.STONE_PRESSURE_PLATE, Items.STONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,Items.STONE_PRESSURE_PLATE, Items.STONE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.COBBLESTONE_BUTTON)
                         .input(Items.COBBLESTONE)
@@ -3352,16 +3367,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.COBBLESTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COBBLESTONE_BUTTON) + "_recipe_create");
 
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.COBBLESTONE_BUTTON, Items.COBBLESTONE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_BUTTON, Items.COBBLESTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLESTONE_BUTTON, Items.COBBLESTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_STONE_BUTTON, Items.COBBLESTONE);
 
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.STONE_BUTTON, Items.STONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,Items.STONE_BUTTON, Items.STONE);
 
         offerPressurePlateRecipe(DecoBlocks.BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
         offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
         offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_PRESSURE_PLATE, Items.BLACKSTONE);
 
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_PRESSURE_PLATE, Items.POLISHED_BLACKSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,Items.POLISHED_BLACKSTONE_PRESSURE_PLATE, Items.POLISHED_BLACKSTONE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.BLACKSTONE_BUTTON)
                         .input(Items.BLACKSTONE)
@@ -3369,13 +3384,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.BLACKSTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLACKSTONE_BUTTON) + "_recipe_create");
 
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.BLACKSTONE_BUTTON, Items.BLACKSTONE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_BUTTON, Items.BLACKSTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLACKSTONE_BUTTON, Items.BLACKSTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,Items.POLISHED_BLACKSTONE_BUTTON, Items.BLACKSTONE);
 
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, Items.POLISHED_BLACKSTONE_BUTTON, Items.POLISHED_BLACKSTONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,Items.POLISHED_BLACKSTONE_BUTTON, Items.POLISHED_BLACKSTONE);
 
         offerPressurePlateRecipe(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
-        offerStonecuttingRecipe(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
+        offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_STONE_PRESSURE_PLATE, DecoBlocks.POLISHED_STONE);
 
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.POLISHED_STONE_BUTTON)
                         .input(DecoBlocks.POLISHED_STONE)
@@ -3579,24 +3594,24 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
                 offerPressurePlateRecipe(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Items.COPPER_INGOT);
 
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.WHITE_DYE, RecipeCategory.DECORATIONS,DecoBlocks.WHITE_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE, RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_GRAY_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.GRAY_DYE,RecipeCategory.DECORATIONS,DecoBlocks.GRAY_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BLACK_DYE, RecipeCategory.DECORATIONS,DecoBlocks.BLACK_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BROWN_DYE, RecipeCategory.DECORATIONS,DecoBlocks.BROWN_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.RED_DYE, RecipeCategory.DECORATIONS,DecoBlocks.RED_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.ORANGE_DYE, RecipeCategory.DECORATIONS,DecoBlocks.ORANGE_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.YELLOW_DYE, RecipeCategory.DECORATIONS,DecoBlocks.YELLOW_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.LIME_DYE, RecipeCategory.DECORATIONS,DecoBlocks.LIME_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.GREEN_DYE,RecipeCategory.DECORATIONS,DecoBlocks.GREEN_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.CYAN_DYE,RecipeCategory.DECORATIONS,DecoBlocks.CYAN_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.LIGHT_BLUE_DYE, RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_BLUE_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BLUE_DYE, RecipeCategory.DECORATIONS,DecoBlocks.BLUE_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.PURPLE_DYE, RecipeCategory.DECORATIONS,DecoBlocks.PURPLE_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.MAGENTA_DYE, RecipeCategory.DECORATIONS,DecoBlocks.MAGENTA_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.PINK_DYE, RecipeCategory.DECORATIONS,DecoBlocks.PINK_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.WHITE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WHITE_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_GRAY_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.GRAY_DYE,RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GRAY_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BLACK_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLACK_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BROWN_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BROWN_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.RED_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.ORANGE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ORANGE_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.YELLOW_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.YELLOW_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.LIME_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIME_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.GREEN_DYE,RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GREEN_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.CYAN_DYE,RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CYAN_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.LIGHT_BLUE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_BLUE_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BLUE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLUE_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.PURPLE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPLE_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.MAGENTA_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.MAGENTA_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.PINK_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PINK_BLOCK);
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_GRAY_BLOCK,3)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.LIGHT_GRAY_BLOCK,3)
                         .input(DecoBlocks.BLACK_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
@@ -3606,7 +3621,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_GRAY_BLOCK) + "_dyed_with_3_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_GRAY_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.LIGHT_GRAY_BLOCK,2)
                         .input(DecoBlocks.GRAY_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .criterion(hasItem(DecoBlocks.GRAY_BLOCK),
@@ -3615,7 +3630,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_GRAY_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.GRAY_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.GRAY_BLOCK,2)
                         .input(DecoBlocks.BLACK_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .criterion(hasItem(DecoBlocks.BLACK_BLOCK),
@@ -3624,7 +3639,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.GRAY_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.ORANGE_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.ORANGE_BLOCK,2)
                         .input(DecoBlocks.YELLOW_BLOCK)
                         .input(DecoBlocks.RED_BLOCK)
                         .criterion(hasItem(DecoBlocks.YELLOW_BLOCK),
@@ -3633,7 +3648,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.RED_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.ORANGE_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.LIME_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.LIME_BLOCK,2)
                         .input(DecoBlocks.GREEN_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .criterion(hasItem(DecoBlocks.GREEN_BLOCK),
@@ -3642,7 +3657,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIME_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.CYAN_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.CYAN_BLOCK,2)
                         .input(DecoBlocks.GREEN_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
                         .criterion(hasItem(DecoBlocks.GREEN_BLOCK),
@@ -3651,7 +3666,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.BLUE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CYAN_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.CYAN_BLOCK,3)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.CYAN_BLOCK,3)
                         .input(DecoBlocks.YELLOW_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
@@ -3671,7 +3686,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.BLUE_DYE))
                         .offerTo(exporter, getRecipeName(Items.CYAN_DYE) + "_from_3_dyes");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_BLUE_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.LIGHT_BLUE_BLOCK,2)
                         .input(DecoBlocks.BLUE_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .criterion(hasItem(DecoBlocks.BLUE_BLOCK),
@@ -3680,7 +3695,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_BLUE_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.PURPLE_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.PURPLE_BLOCK,2)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
                         .criterion(hasItem(DecoBlocks.RED_BLOCK),
@@ -3689,7 +3704,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.BLUE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.PURPLE_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.MAGENTA_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.MAGENTA_BLOCK,2)
                         .input(DecoBlocks.PINK_BLOCK)
                         .input(DecoBlocks.PURPLE_BLOCK)
                         .criterion(hasItem(DecoBlocks.PINK_BLOCK),
@@ -3698,7 +3713,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.PURPLE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MAGENTA_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.MAGENTA_BLOCK,3)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.MAGENTA_BLOCK,3)
                         .input(DecoBlocks.PINK_BLOCK)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
@@ -3710,7 +3725,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.BLUE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MAGENTA_BLOCK) + "_dyed_with_3_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.MAGENTA_BLOCK,3)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.MAGENTA_BLOCK,3)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.PURPLE_BLOCK)
@@ -3722,7 +3737,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.PURPLE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MAGENTA_BLOCK) + "_dyed_with_3_blocks_alt");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.MAGENTA_BLOCK,4)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.MAGENTA_BLOCK,4)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.RED_BLOCK)
@@ -3747,7 +3762,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.PURPLE_DYE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MAGENTA_BLOCK) + "_dyed_with_3_blocks_alt2");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.PINK_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.PINK_BLOCK,2)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .criterion(hasItem(DecoBlocks.RED_BLOCK),
@@ -3756,7 +3771,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.PINK_BLOCK) + "_dyed_with_2_blocks");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.BROWN_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.BROWN_BLOCK,2)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.GREEN_BLOCK)
                         .criterion(hasItem(DecoBlocks.RED_BLOCK),
@@ -3774,7 +3789,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.GREEN_DYE))
                         .offerTo(exporter, getRecipeName(Items.BROWN_DYE) + "_from_2_dyes");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.BROWN_BLOCK,3)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.BROWN_BLOCK,3)
                         .input(DecoBlocks.RED_BLOCK)
                         .input(DecoBlocks.YELLOW_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
@@ -3798,7 +3813,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.BLUE_DYE))
                         .offerTo(exporter, getRecipeName(Items.BROWN_DYE) + "_from_3_dyes");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.GREEN_BLOCK,2)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.GREEN_BLOCK,2)
                         .input(DecoBlocks.BLUE_BLOCK)
                         .input(DecoBlocks.YELLOW_BLOCK)
                         .criterion(hasItem(DecoBlocks.BLUE_BLOCK),
@@ -3816,7 +3831,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.YELLOW_DYE))
                         .offerTo(exporter, getRecipeName(Items.GREEN_DYE) + "_from_2_dyes");
 
-                createShapeless(RecipeCategory.DECORATIONS,DecoBlocks.LIME_BLOCK,3)
+                createShapeless(RecipeCategory.MISC,DecoBlocks.LIME_BLOCK,3)
                         .input(DecoBlocks.WHITE_BLOCK)
                         .input(DecoBlocks.YELLOW_BLOCK)
                         .input(DecoBlocks.BLUE_BLOCK)
@@ -3844,7 +3859,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.WOODEN_STAIRS)+ "_recipe_create");
 
-                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WOODEN_SLAB, DecoBlocks.WOODEN_PLANKS);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WOODEN_SLAB, DecoBlocks.WOODEN_PLANKS);
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WOODEN_FENCE,3)
                         .pattern("#/#")
@@ -4368,13 +4383,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createStairsRecipe(DecoBlocks.SMOOTH_BASALT_STAIRS, Ingredient.ofItems(Items.SMOOTH_BASALT))
                         .criterion(hasItem(Items.SMOOTH_BASALT),conditionsFromItem(Items.SMOOTH_BASALT))
                         .offerTo(exporter, getRecipeName(DecoBlocks.SMOOTH_BASALT_STAIRS) + "_recipe_create");
-                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_STAIRS, Items.SMOOTH_BASALT);
+                offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_BASALT_STAIRS, Items.SMOOTH_BASALT);
 
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT);
-                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT,2);
+                offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_BASALT_SLAB, Items.SMOOTH_BASALT,2);
 
                 offerWallRecipe(RecipeCategory.DECORATIONS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
-                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
+                offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_BASALT_WALL, Items.SMOOTH_BASALT);
 
                 createShaped(RecipeCategory.MISC,Items.HEART_OF_THE_SEA)
                         .pattern("#C#")
@@ -4389,17 +4404,17 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoItems.BUBBLE_ORB))
                         .offerTo(exporter, getRecipeName(Items.HEART_OF_THE_SEA) + "_recipe_create");
 
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.BUBBLE_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.TUBE_CORAL, RecipeCategory.DECORATIONS,Items.TUBE_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BRAIN_CORAL, RecipeCategory.DECORATIONS,Items.BRAIN_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.FIRE_CORAL, RecipeCategory.DECORATIONS,Items.FIRE_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.HORN_CORAL, RecipeCategory.DECORATIONS,Items.HORN_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BUBBLE_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.BUBBLE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.TUBE_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.TUBE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.BRAIN_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.BRAIN_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.FIRE_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.FIRE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.HORN_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.HORN_CORAL_BLOCK);
 
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_BUBBLE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_BUBBLE_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_TUBE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_TUBE_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_BRAIN_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_BRAIN_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_FIRE_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_FIRE_CORAL_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_HORN_CORAL, RecipeCategory.DECORATIONS,Items.DEAD_HORN_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_BUBBLE_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.DEAD_BUBBLE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_TUBE_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.DEAD_TUBE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_BRAIN_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.DEAD_BRAIN_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_FIRE_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.DEAD_FIRE_CORAL_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC,Items.DEAD_HORN_CORAL, RecipeCategory.BUILDING_BLOCKS,Items.DEAD_HORN_CORAL_BLOCK);
 
                 createShaped(RecipeCategory.MISC,Items.BUBBLE_CORAL)
                         .pattern("#")
@@ -4511,7 +4526,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.NETHER_SPROUTS))
                         .offerTo(exporter, getRecipeName(Items.WARPED_ROOTS) + "_recipe_create");
 
-                        createShaped(RecipeCategory.MISC, DecoItems.TALL_SEAGRASS)
+                        createShaped(RecipeCategory.MISC,DecoItems.TALL_SEAGRASS)
                         .pattern("#")
                         .pattern("#")
                         .input('#', Items.SEAGRASS)
@@ -4566,8 +4581,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SANDSTONE_SLAB, DecoBlocks.COBBLED_SANDSTONE,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_SANDSTONE_WALL, Items.SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SANDSTONE_WALL, Items.SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
 
         offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SANDSTONE, DecoBlocks.COBBLED_SANDSTONE);
 
@@ -4587,9 +4602,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SANDSTONE_SLAB, DecoBlocks.POLISHED_SANDSTONE,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SANDSTONE_WALL, Items.SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.POLISHED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SANDSTONE_WALL, Items.SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.POLISHED_SANDSTONE);
 
         offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SANDSTONE_BRICKS, DecoBlocks.POLISHED_SANDSTONE);
 
@@ -4612,10 +4627,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SANDSTONE_BRICK_SLAB, DecoBlocks.SANDSTONE_BRICKS,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SANDSTONE_BRICK_WALL, Items.SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.COBBLED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.SANDSTONE_BRICKS);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SANDSTONE_BRICK_WALL, Items.SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.COBBLED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.SANDSTONE_BRICKS);
 
                         createShapeless(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_RED_SANDSTONE)
                 .input(Items.RED_SANDSTONE)
@@ -4636,8 +4651,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_RED_SANDSTONE_SLAB, DecoBlocks.COBBLED_RED_SANDSTONE,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
 
         offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_RED_SANDSTONE, DecoBlocks.COBBLED_RED_SANDSTONE);
 
@@ -4657,9 +4672,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, DecoBlocks.POLISHED_RED_SANDSTONE,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
 
         offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_SANDSTONE_BRICKS, DecoBlocks.POLISHED_RED_SANDSTONE);
 
@@ -4682,10 +4697,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_SANDSTONE_BRICK_SLAB, DecoBlocks.RED_SANDSTONE_BRICKS,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, Items.RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.RED_SANDSTONE_BRICKS);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.RED_SANDSTONE_BRICKS);
 
                         createShapeless(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SOUL_SOILSTONE)
                 .input(DecoBlocks.SOUL_SOILSTONE)
@@ -4706,8 +4721,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB, DecoBlocks.COBBLED_SOUL_SOILSTONE,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
 
         offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
 
@@ -4727,9 +4742,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, DecoBlocks.POLISHED_SOUL_SOILSTONE,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
         offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE_BRICKS, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
@@ -4752,10 +4767,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.SOUL_SOILSTONE_BRICKS,2);
 
         offerWallRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(RecipeCategory.DECORATIONS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE_BRICKS);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
+        offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE_BRICKS);
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.FRAGILE_ICE)
                 .pattern("##")
@@ -4838,6 +4853,887 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.BROMELIAD),
                                 conditionsFromItem(DecoBlocks.BROMELIAD))
                         .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "_from_bromeliad");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.OAK_PLANKS),
+                                conditionsFromItem(Items.OAK_PLANKS))
+                        .offerTo(exporter,getRecipeName(DecoBlocks.OAK_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.SPRUCE_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.SPRUCE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.SPRUCE_PLANKS),
+                                conditionsFromItem(Items.SPRUCE_PLANKS))
+                        .offerTo(exporter,getRecipeName(DecoBlocks.SPRUCE_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BIRCH_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BIRCH_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.BIRCH_PLANKS),
+                                conditionsFromItem(Items.BIRCH_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.JUNGLE_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.JUNGLE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.JUNGLE_PLANKS),
+                                conditionsFromItem(Items.JUNGLE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.ACACIA_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.ACACIA_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.ACACIA_PLANKS),
+                                conditionsFromItem(Items.ACACIA_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DARK_OAK_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.DARK_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.DARK_OAK_PLANKS),
+                                conditionsFromItem(Items.DARK_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.MANGROVE_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.MANGROVE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.MANGROVE_PLANKS),
+                                conditionsFromItem(Items.MANGROVE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CHERRY_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CHERRY_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.CHERRY_PLANKS),
+                                conditionsFromItem(Items.CHERRY_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.PALE_OAK_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.PALE_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.PALE_OAK_PLANKS),
+                                conditionsFromItem(Items.PALE_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BAMBOO_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BAMBOO_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.BAMBOO_PLANKS),
+                                conditionsFromItem(Items.BAMBOO_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CRIMSON_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CRIMSON_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.CRIMSON_PLANKS),
+                                conditionsFromItem(Items.CRIMSON_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WARPED_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.WARPED_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(Items.WARPED_PLANKS),
+                                conditionsFromItem(Items.WARPED_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.CACTUS_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
+                                conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_CRAFTING_TABLE) + "_recipe_create");
+
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.OAK_PLANKS),
+                                conditionsFromItem(Items.OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.OAK_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.SPRUCE_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.SPRUCE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.SPRUCE_PLANKS),
+                                conditionsFromItem(Items.SPRUCE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.SPRUCE_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BIRCH_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BIRCH_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.BIRCH_PLANKS),
+                                conditionsFromItem(Items.BIRCH_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.JUNGLE_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.JUNGLE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.JUNGLE_PLANKS),
+                                conditionsFromItem(Items.JUNGLE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.ACACIA_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.ACACIA_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.ACACIA_PLANKS),
+                                conditionsFromItem(Items.ACACIA_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DARK_OAK_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.DARK_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.DARK_OAK_PLANKS),
+                                conditionsFromItem(Items.DARK_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.MANGROVE_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.MANGROVE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.MANGROVE_PLANKS),
+                                conditionsFromItem(Items.MANGROVE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CHERRY_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CHERRY_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.CHERRY_PLANKS),
+                                conditionsFromItem(Items.CHERRY_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.PALE_OAK_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.PALE_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.PALE_OAK_PLANKS),
+                                conditionsFromItem(Items.PALE_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BAMBOO_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BAMBOO_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.BAMBOO_PLANKS),
+                                conditionsFromItem(Items.BAMBOO_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CRIMSON_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CRIMSON_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.CRIMSON_PLANKS),
+                                conditionsFromItem(Items.CRIMSON_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WARPED_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.WARPED_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(Items.WARPED_PLANKS),
+                                conditionsFromItem(Items.WARPED_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.CACTUS_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
+                                conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_BARREL) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.OAK_PLANKS),
+                                conditionsFromItem(Items.OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.OAK_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.SPRUCE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.SPRUCE_PLANKS),
+                                conditionsFromItem(Items.SPRUCE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BIRCH_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BIRCH_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.BIRCH_PLANKS),
+                                conditionsFromItem(Items.BIRCH_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.JUNGLE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.JUNGLE_PLANKS),
+                                conditionsFromItem(Items.JUNGLE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.ACACIA_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.ACACIA_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.ACACIA_PLANKS),
+                                conditionsFromItem(Items.ACACIA_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.DARK_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.DARK_OAK_PLANKS),
+                                conditionsFromItem(Items.DARK_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.MANGROVE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.MANGROVE_PLANKS),
+                                conditionsFromItem(Items.MANGROVE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CHERRY_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CHERRY_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.CHERRY_PLANKS),
+                                conditionsFromItem(Items.CHERRY_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.PALE_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.PALE_OAK_PLANKS),
+                                conditionsFromItem(Items.PALE_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BAMBOO_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.BAMBOO_PLANKS),
+                                conditionsFromItem(Items.BAMBOO_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CRIMSON_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.CRIMSON_PLANKS),
+                                conditionsFromItem(Items.CRIMSON_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WARPED_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.WARPED_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(Items.WARPED_PLANKS),
+                                conditionsFromItem(Items.WARPED_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.CACTUS_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
+                                conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.OAK_PLANKS),
+                                conditionsFromItem(Items.OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.OAK_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.SPRUCE_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.SPRUCE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.SPRUCE_PLANKS),
+                                conditionsFromItem(Items.SPRUCE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.SPRUCE_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BIRCH_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BIRCH_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.BIRCH_PLANKS),
+                                conditionsFromItem(Items.BIRCH_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.JUNGLE_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.JUNGLE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.JUNGLE_PLANKS),
+                                conditionsFromItem(Items.JUNGLE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.ACACIA_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.ACACIA_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.ACACIA_PLANKS),
+                                conditionsFromItem(Items.ACACIA_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DARK_OAK_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.DARK_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.DARK_OAK_PLANKS),
+                                conditionsFromItem(Items.DARK_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.MANGROVE_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.MANGROVE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.MANGROVE_PLANKS),
+                                conditionsFromItem(Items.MANGROVE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CHERRY_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CHERRY_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.CHERRY_PLANKS),
+                                conditionsFromItem(Items.CHERRY_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.PALE_OAK_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.PALE_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.PALE_OAK_PLANKS),
+                                conditionsFromItem(Items.PALE_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BAMBOO_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BAMBOO_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.BAMBOO_PLANKS),
+                                conditionsFromItem(Items.BAMBOO_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CRIMSON_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CRIMSON_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.CRIMSON_PLANKS),
+                                conditionsFromItem(Items.CRIMSON_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WARPED_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.WARPED_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.WARPED_PLANKS),
+                                conditionsFromItem(Items.WARPED_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.CACTUS_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
+                                conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_SMITHING_TABLE) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.OAK_PLANKS),
+                                conditionsFromItem(Items.OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.OAK_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.SPRUCE_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.SPRUCE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.SPRUCE_PLANKS),
+                                conditionsFromItem(Items.SPRUCE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.SPRUCE_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BIRCH_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BIRCH_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.BIRCH_PLANKS),
+                                conditionsFromItem(Items.BIRCH_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.JUNGLE_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.JUNGLE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.JUNGLE_PLANKS),
+                                conditionsFromItem(Items.JUNGLE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.ACACIA_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.ACACIA_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.ACACIA_PLANKS),
+                                conditionsFromItem(Items.ACACIA_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DARK_OAK_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.DARK_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.DARK_OAK_PLANKS),
+                                conditionsFromItem(Items.DARK_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.MANGROVE_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.MANGROVE_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.MANGROVE_PLANKS),
+                                conditionsFromItem(Items.MANGROVE_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CHERRY_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CHERRY_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.CHERRY_PLANKS),
+                                conditionsFromItem(Items.CHERRY_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.PALE_OAK_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.PALE_OAK_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.PALE_OAK_PLANKS),
+                                conditionsFromItem(Items.PALE_OAK_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.BAMBOO_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.BAMBOO_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.BAMBOO_PLANKS),
+                                conditionsFromItem(Items.BAMBOO_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CRIMSON_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.CRIMSON_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.CRIMSON_PLANKS),
+                                conditionsFromItem(Items.CRIMSON_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WARPED_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', Items.WARPED_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(Items.WARPED_PLANKS),
+                                conditionsFromItem(Items.WARPED_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.CACTUS_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.CACTUS_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
+                                conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_BOOKSHELF) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,Items.CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.WOODEN_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
+                                conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                        .offerTo(exporter, getRecipeName(Items.CRAFTING_TABLE) + "_with_wooden_planks");
+
+                createShaped(RecipeCategory.DECORATIONS,Items.BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.WOODEN_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
+                                conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                        .offerTo(exporter, getRecipeName(Items.BARREL) + "_with_wooden_planks");
+
+                createShaped(RecipeCategory.DECORATIONS,Items.CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.WOODEN_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
+                                conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                        .offerTo(exporter, getRecipeName(Items.CARTOGRAPHY_TABLE) + "_with_wooden_planks");
+
+                createShaped(RecipeCategory.DECORATIONS,Items.SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.WOODEN_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
+                                conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                        .offerTo(exporter, getRecipeName(Items.SMITHING_TABLE) + "_with_wooden_planks");
+
+                createShaped(RecipeCategory.DECORATIONS,Items.BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.WOODEN_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_bookshelves")
+                        .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
+                                conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                        .offerTo(exporter, getRecipeName(Items.BOOKSHELF) + "_with_wooden_planks");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.SPRUCE_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.SPRUCE_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.SPRUCE_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.BIRCH_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.BIRCH_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.JUNGLE_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.JUNGLE_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.ACACIA_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.ACACIA_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.DARK_OAK_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.DARK_OAK_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.MANGROVE_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.MANGROVE_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.BAMBOO_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.BAMBOO_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CHERRY_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.CHERRY_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.PALE_OAK_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.PALE_OAK_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CRIMSON_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.CRIMSON_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WARPED_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', Items.WARPED_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CACTUS_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', DecoBlocks.CACTUS_PLANK_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WOODEN_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', DecoBlocks.WOODEN_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.WOODEN_LADDER) + "_recipe_create");
+
+                createShaped(RecipeCategory.MISC,DecoBlocks.WOODEN_SAPLING)
+                        .pattern("OSB")
+                        .pattern("###")
+                        .pattern("JAD")
+                        .input('#', ItemTags.LOGS_THAT_BURN)
+                        .input('O', Items.OAK_SAPLING)
+                        .input('S', Items.SPRUCE_SAPLING)
+                        .input('B', Items.BIRCH_SAPLING)
+                        .input('J', Items.JUNGLE_SAPLING)
+                        .input('A', Items.ACACIA_SAPLING)
+                        .input('D', Items.DARK_OAK_SAPLING)
+                        .criterion("has_saplings", conditionsFromTag(ItemTags.SAPLINGS))
+                        .offerTo(exporter, (getRecipeName(DecoBlocks.WOODEN_SAPLING) + "_recipe_create"));
+
+                createShapeless(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WOODEN_PLANKS)
+                        .input(DecoTags.Items.WOODEN_LOGS)
+                        .criterion("has_logs", conditionsFromTag(DecoTags.Items.WOODEN_LOGS))
+                        .offerTo(exporter,(getRecipeName(DecoBlocks.WOODEN_PLANKS) + "_recipe_create"));
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_PURPUR,2)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.PURPUR_SLAB)
+                        .criterion(hasItem(Items.PURPUR_SLAB),
+                                conditionsFromItem(Items.PURPUR_SLAB))
+                        .offerTo(exporter,(getRecipeName(DecoBlocks.CHISELED_PURPUR) + "_recipe_create"));
             }
         };
     }

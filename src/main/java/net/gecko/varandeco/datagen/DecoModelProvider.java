@@ -512,7 +512,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CRAFTING_TABLE);
-        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
@@ -526,7 +526,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_BOOKSHELF);
 

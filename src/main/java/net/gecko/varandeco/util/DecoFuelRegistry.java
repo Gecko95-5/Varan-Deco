@@ -7,7 +7,7 @@ public class DecoFuelRegistry {
     public static void registerFuels() {
         FuelRegistryEvents.BUILD.register((builder, context) -> {
             builder.add(DecoBlocks.CHARCOAL_BLOCK,16000);
-            builder.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
+            builder.add(DecoTags.Items.WOODEN_CRAFTING_TABLES,300);
             builder.add(DecoTags.Items.DECO_LADDER,300);
             builder.add(DecoTags.Items.DECO_CARTOGRAPHY_TABLES,300);
             builder.add(DecoTags.Items.DECO_SMITHING_TABLES,300);

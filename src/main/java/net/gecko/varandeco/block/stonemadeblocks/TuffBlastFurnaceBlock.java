@@ -9,18 +9,26 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
 public class TuffBlastFurnaceBlock extends AbstractFurnaceBlock {
+	private static final Formatting FORMATTING = Formatting.RED;
+	private static final Text TEXT = Text.literal("This Block is not able to be used by Villagers").formatted(FORMATTING);
 	public static final MapCodec<TuffBlastFurnaceBlock> CODEC = createCodec(TuffBlastFurnaceBlock::new);
 
 	@Override
@@ -54,7 +62,7 @@ public class TuffBlastFurnaceBlock extends AbstractFurnaceBlock {
 
 	@Override
 	public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-		if ((Boolean)state.get(LIT)) {
+		if (state.get(LIT)) {
 			double d = pos.getX() + 0.5;
 			double e = pos.getY();
 			double f = pos.getZ() + 0.5;
@@ -64,12 +72,16 @@ public class TuffBlastFurnaceBlock extends AbstractFurnaceBlock {
 
 			Direction direction = state.get(FACING);
 			Direction.Axis axis = direction.getAxis();
-			double g = 0.52;
-			double h = random.nextDouble() * 0.6 - 0.3;
+            double h = random.nextDouble() * 0.6 - 0.3;
 			double i = axis == Direction.Axis.X ? direction.getOffsetX() * 0.52 : h;
 			double j = random.nextDouble() * 9.0 / 16.0;
 			double k = axis == Direction.Axis.Z ? direction.getOffsetZ() * 0.52 : h;
 			world.addParticle(ParticleTypes.SMOKE, d + i, e + j, f + k, 0.0, 0.0, 0.0);
 		}
+	}
+	@Override
+	public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, net.minecraft.item.tooltip.TooltipType options) {
+		tooltip.add(TEXT);
+		super.appendTooltip(stack, context, tooltip, options);
 	}
 }

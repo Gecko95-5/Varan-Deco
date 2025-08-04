@@ -259,16 +259,16 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.DIAMOND_BLUE), Block::new);
     public static final Block CRYSTALLIZED_PRISMARINE = registerBlock("crystallized_prismarine",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("crystallized_prismarine_bricks",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("chiseled_crystallized_prismarine_bricks",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block LIGHT_PRISMARINE = registerBlock("light_prismarine",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.OFF_WHITE)
-                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 10).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
             AbstractBlock.Settings.copy(Blocks.PACKED_ICE).strength(1.4f), Block::new);
     public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
@@ -1147,6 +1147,8 @@ public class DecoBlocks {
     public static final Block MIGHTY_LAVENDER = registerBlock("mighty_lavender",
             AbstractBlock.Settings.copy(Blocks.PEONY), MightyLavenderBlock::new);
 
+    public static final Block OAK_CRAFTING_TABLE = registerBlock("oak_crafting_table",
+            AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.OAK_TAN), OakCraftingTableBlock::new);
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN), SpruceCraftingTableBlock::new);
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
@@ -1175,8 +1177,6 @@ public class DecoBlocks {
                 WarpedCraftingTableBlock::new);
     public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
             AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN), CactusCraftingTableBlock::new);
-    public static final Block WOODEN_CRAFTING_TABLE = registerBlock("wooden_crafting_table",
-            AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.TERRACOTTA_BROWN), WoodenCraftingTableBlock::new);
 
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -1749,6 +1749,8 @@ public class DecoBlocks {
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),CactusBarrelBlock::new);
 
+    public static final Block OAK_BOOKSHELF = registerBlock("oak_bookshelf",
+            AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
     public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
@@ -1777,8 +1779,6 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_WOOD),Block::new);
     public static final Block CACTUS_BOOKSHELF = registerBlock("cactus_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.PALE_GREEN),Block::new);
-    public static final Block WOODEN_BOOKSHELF = registerBlock("wooden_bookshelf",
-            AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
 
     public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -1837,7 +1837,8 @@ public class DecoBlocks {
     public static final Block BLACKSTONE_GRINDSTONE = registerBlock("blackstone_grindstone",
             AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.BLACK),BlackstoneGrindstoneBlock::new);
     public static final Block TUFF_GRINDSTONE = registerBlock("tuff_grindstone",
-            AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.TERRACOTTA_GRAY),TuffGrindstoneBlock::new);
+            AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.TERRACOTTA_GRAY)
+            .sounds(BlockSoundGroup.TUFF),TuffGrindstoneBlock::new);
 
     public static final Block OAK_SMITHING_TABLE = registerBlock("oak_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),OakSmithingTableBlock::new);

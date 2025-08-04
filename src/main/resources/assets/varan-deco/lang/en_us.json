@@ -419,7 +419,7 @@
   "block.minecraft.crimson_crafting_table": "Crimson Crafting Table",
   "block.minecraft.warped_crafting_table": "Warped Crafting Table",
   "block.minecraft.cactus_crafting_table": "Cactus Crafting Table",
-  "block.minecraft.wooden_crafting_table": "Wooden Crafting Table",
+  "block.minecraft.oak_crafting_table": "Oak Crafting Table",
 
   "block.minecraft.oak_barrel": "Oak Barrel",
   "block.minecraft.spruce_barrel": "Spruce Barrel",
@@ -486,7 +486,7 @@
   "block.minecraft.crimson_bookshelf": "Crimson Bookshelf",
   "block.minecraft.warped_bookshelf": "Warped Bookshelf",
   "block.minecraft.cactus_bookshelf": "Cactus Bookshelf",
-  "block.minecraft.wooden_bookshelf": "Wooden Bookshelf",
+  "block.minecraft.oak_bookshelf": "Oak Bookshelf",
   "block.minecraft.cherry_bookshelf": "Cherry Bookshelf",
   "block.minecraft.bamboo_bookshelf": "Bamboo Bookshelf",
   "block.minecraft.pale_oak_bookshelf": "Pale Oak Bookshelf",

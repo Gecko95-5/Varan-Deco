@@ -93,9 +93,33 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Blocks.CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem())
-                .addTag(DecoTags.Items.WOODED_CRAFTING_TABLES);
+                .addTag(DecoTags.Items.WOODEN_CRAFTING_TABLES);
 
-        getOrCreateTagBuilder(DecoTags.Items.WOODED_CRAFTING_TABLES)
+        getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELVES)
+                .add(Blocks.BOOKSHELF.asItem())
+                .add(DecoBlocks.CRIMSON_BOOKSHELF.asItem())
+                .add(DecoBlocks.WARPED_BOOKSHELF.asItem())
+                .addTag(DecoTags.Items.WOODEN_BOOKSHELVES);
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_BARRELS)
+                .add(Blocks.BARREL.asItem())
+                .add(DecoBlocks.CRIMSON_BARREL.asItem())
+                .add(DecoBlocks.WARPED_BARREL.asItem())
+                .addTag(DecoTags.Items.WOODEN_BARRELS);
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                .add(Blocks.CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem())
+                .addTag(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES);
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_SMITHING_TABLES)
+                .add(Blocks.SMITHING_TABLE.asItem())
+                .add(DecoBlocks.CRIMSON_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.WARPED_SMITHING_TABLE.asItem())
+                .addTag(DecoTags.Items.WOODEN_SMITHING_TABLES);
+
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_CRAFTING_TABLES)
                 .add(DecoBlocks.BIRCH_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.SPRUCE_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.JUNGLE_CRAFTING_TABLE.asItem())
@@ -103,10 +127,10 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CHERRY_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE.asItem());
+                .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE.asItem());;
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_LADDER)
                 .add(Blocks.LADDER.asItem())
@@ -122,7 +146,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CHERRY_LADDER.asItem())
                 .add(DecoBlocks.PALE_OAK_LADDER.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE.asItem())
@@ -135,7 +159,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELVES)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELVES)
                 .add(DecoBlocks.BIRCH_BOOKSHELF.asItem())
                 .add(DecoBlocks.SPRUCE_BOOKSHELF.asItem())
                 .add(DecoBlocks.JUNGLE_BOOKSHELF.asItem())
@@ -143,12 +167,12 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.DARK_OAK_BOOKSHELF.asItem())
                 .add(DecoBlocks.MANGROVE_BOOKSHELF.asItem())
                 .add(DecoBlocks.CACTUS_BOOKSHELF.asItem())
-                .add(DecoBlocks.WOODEN_BOOKSHELF.asItem())
+                .add(DecoBlocks.OAK_BOOKSHELF.asItem())
                 .add(DecoBlocks.BAMBOO_BOOKSHELF.asItem())
                 .add(DecoBlocks.CHERRY_BOOKSHELF.asItem())
                 .add(DecoBlocks.PALE_OAK_BOOKSHELF.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_SMITHING_TABLES)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.SPRUCE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.BIRCH_SMITHING_TABLE.asItem())
@@ -161,7 +185,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CHERRY_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.PALE_OAK_SMITHING_TABLE.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_BARRELS)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_BARRELS)
                 .add(DecoBlocks.OAK_BARREL.asItem())
                 .add(DecoBlocks.SPRUCE_BARREL.asItem())
                 .add(DecoBlocks.BIRCH_BARREL.asItem())

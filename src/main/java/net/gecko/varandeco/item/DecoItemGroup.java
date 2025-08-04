@@ -773,6 +773,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN.asItem());
                         entries.add(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN.asItem());
                         entries.add(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN.asItem());
+                        entries.add(DecoBlocks.OAK_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.SPRUCE_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.BIRCH_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.JUNGLE_CRAFTING_TABLE.asItem());
@@ -785,7 +786,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
-                        entries.add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_STONECUTTER.asItem());
                         entries.add(DecoBlocks.TUFF_STONECUTTER.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_STONECUTTER.asItem());
@@ -896,6 +896,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_LADDER.asItem());
                         entries.add(DecoBlocks.CACTUS_LADDER.asItem());
                         entries.add(DecoBlocks.WOODEN_LADDER.asItem());
+                        entries.add(DecoBlocks.OAK_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.SPRUCE_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.BIRCH_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.JUNGLE_BOOKSHELF.asItem());
@@ -908,7 +909,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CRIMSON_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.WARPED_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.CACTUS_BOOKSHELF.asItem());
-                        entries.add(DecoBlocks.WOODEN_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.OAK_BARREL.asItem());
                         entries.add(DecoBlocks.SPRUCE_BARREL.asItem());
                         entries.add(DecoBlocks.BIRCH_BARREL.asItem());

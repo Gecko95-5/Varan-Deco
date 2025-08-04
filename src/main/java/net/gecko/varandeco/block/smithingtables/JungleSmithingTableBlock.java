@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.smithingtables;
 
+import net.gecko.varandeco.block.custom.NonStationCraftingTableBlock;
 import net.gecko.varandeco.screen.wood.JungleSmithingScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CraftingTableBlock;
@@ -14,7 +15,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class JungleSmithingTableBlock extends CraftingTableBlock {
+public class JungleSmithingTableBlock extends NonStationCraftingTableBlock {
 	private static final Text SCREEN_TITLE = Text.translatable("container.upgrade");
 
 	public JungleSmithingTableBlock(Settings settings) {
