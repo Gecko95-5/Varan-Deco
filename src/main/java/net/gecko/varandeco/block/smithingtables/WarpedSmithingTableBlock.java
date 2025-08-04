@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.smithingtables;
 
+import net.gecko.varandeco.block.custom.NonStationCraftingTableBlock;
 import net.gecko.varandeco.screen.wood.WarpedSmithingScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CraftingTableBlock;
@@ -15,7 +16,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class WarpedSmithingTableBlock extends CraftingTableBlock {
+public class WarpedSmithingTableBlock extends NonStationCraftingTableBlock {
 	private static final Text SCREEN_TITLE = Text.translatable("container.upgrade");
 
 	public WarpedSmithingTableBlock(Settings settings) {

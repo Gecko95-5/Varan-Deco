@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_bookshelves",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_bookshelves"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:bamboo_bookshelf"
+  },
+  "show_notification": true
+}

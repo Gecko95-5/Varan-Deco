@@ -1,7 +1,10 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
 import net.gecko.varandeco.screen.stone.BlackstoneGrindstoneScreenHandler;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.enums.WallMountLocation;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,7 +27,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
-public class BlackstoneGrindstoneBlock extends WallMountedBlock {
+public class BlackstoneGrindstoneBlock extends NonStationGrindstoneBlock {
 	public static final VoxelShape WEST_FLOOR_LEG = Block.createCuboidShape(2.0, 0.0, 6.0, 4.0, 7.0, 10.0);
 	public static final VoxelShape EAST_FLOOR_LEG = Block.createCuboidShape(12.0, 0.0, 6.0, 14.0, 7.0, 10.0);
 	public static final VoxelShape WEST_FLOOR_HINGE = Block.createCuboidShape(2.0, 7.0, 5.0, 4.0, 13.0, 11.0);

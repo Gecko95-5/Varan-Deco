@@ -20,6 +20,9 @@ public class BubbleStairBlock extends StairsBlock {
             }
             entity.extinguish();
         }
+        if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
+            entity.setAir(300);
+        }
 
         super.onSteppedOn(world, pos, state, entity);
     }
