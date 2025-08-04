@@ -1507,7 +1507,7 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WOODEN_TRAPDOOR));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_crafting_table"),
-                BlockLootTableGenerator.drops(DecoBlocks.WOODEN_CRAFTING_TABLE));
+                BlockLootTableGenerator.drops(DecoBlocks.OAK_CRAFTING_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_ladder"),
                 BlockLootTableGenerator.drops(DecoBlocks.WOODEN_LADDER));
 

@@ -20,17 +20,17 @@ public class DecoPotion {
 
     public static Potion registerBubblePotion(String name) {
         return Registry.register(Registry.POTION, new Identifier(VaranDeco.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0),
-                        new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0)));
+                new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0),
+                        new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0)));
     }    public static Potion registerStrongBubblePotion(String name) {
         return Registry.register(Registry.POTION, new Identifier(VaranDeco.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 900, 0),
-                        new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 1)));
+                new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 0),
+                        new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 900, 0)));
     }
     public static Potion registerLongBubblePotion(String name) {
         return Registry.register(Registry.POTION, new Identifier(VaranDeco.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0),
-                        new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0)));
+                new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0),
+                        new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0)));
     }
     public static void registerPotions(){
         WATER_BUBBLE_POTION = registerBubblePotion("bubble_potion");
@@ -41,9 +41,10 @@ public class DecoPotion {
     }
 
     private static void registerPotionRecipes(){
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+        BrewingRecipeRegistry.registerPotionRecipe(Potions.WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+        BrewingRecipeRegistry.registerPotionRecipe(Potions.LONG_WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.LONG_WATER_BUBBLE_POTION);
         BrewingRecipeRegistry.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE, DecoPotion.STRONG_WATER_BUBBLE_POTION);
+        BrewingRecipeRegistry.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_WATER_BUBBLE_POTION);
         BrewingRecipeRegistry.registerPotionRecipe(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
     }
 }

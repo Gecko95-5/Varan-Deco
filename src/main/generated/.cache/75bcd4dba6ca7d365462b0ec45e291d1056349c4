@@ -1,4 +1,4 @@
-// 1.19.2	2025-08-02T10:04:16.772832	Tags for minecraft:block
+// 1.19.2	2025-08-04T20:32:57.2297582	Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 a3fd9bfcd193e86c11b70d5a63dd53d9fc79f1e1 data\minecraft\tags\blocks\mineable\pickaxe.json
 16c2d3c1c7b4a832465192719a255add0f450334 data\minecraft\tags\blocks\slabs.json
@@ -9,7 +9,7 @@ d6fd153e3ac88d06da79dd14f1c47f0086ccea4b data\minecraft\tags\blocks\planks.json
 0f8f8c6e84586269b8ee68133aa35affcfb95535 data\varan-deco\tags\blocks\copper_lantern.json
 ccf2ad9d2d41eae42b1e6d13096f9bc1b2d22a4c data\varan-deco\tags\blocks\deco_smithing_tables.json
 d533ac9bae31073b1976290d95395a4093bba6c2 data\varan-deco\tags\blocks\hardened_glass.json
-e9e59be639be375f3a9c549b99055ead23e331a3 data\varan-deco\tags\blocks\deco_crafting_tables.json
+77fe494c7e3c01691e2b0932c3fca89732af21b6 data\varan-deco\tags\blocks\deco_crafting_tables.json
 c8671ab38e8dff3b7bee1836b246dd635caf0123 data\minecraft\tags\blocks\soul_speed_blocks.json
 70ce753d64106b85eb9922928a70dc5e78030078 data\varan-deco\tags\blocks\terracotta_slabs.json
 ee8e6bd3bb9a2d4060230c8113a0e6d81ac6dd7b data\varan-deco\tags\blocks\concrete_stairs.json

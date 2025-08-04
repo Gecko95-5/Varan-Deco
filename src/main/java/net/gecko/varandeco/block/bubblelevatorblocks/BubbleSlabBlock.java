@@ -19,6 +19,9 @@ public class BubbleSlabBlock extends SlabBlock {
             }
             entity.extinguish();
         }
+        if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
+            entity.setAir(20);
+        }
 
         super.onSteppedOn(world, pos, state, entity);
     }

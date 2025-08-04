@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:wooden_crafting_table"
+          "name": "varan-deco:oak_crafting_table"
         }
       ],
       "rolls": 1.0

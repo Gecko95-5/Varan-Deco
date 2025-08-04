@@ -311,6 +311,7 @@
   "block.varan-deco.chiseled_blue_nether_bricks": "Chiseled Blue Nether Bricks",
   "block.varan-deco.cracked_blue_nether_bricks": "Cracked Blue Nether Bricks",
 
+  "block.varan-deco.oak_crafting_table": "Oak Crafting Table",
   "block.varan-deco.spruce_crafting_table": "Spruce Crafting Table",
   "block.varan-deco.birch_crafting_table": "Birch Crafting Table",
   "block.varan-deco.jungle_crafting_table": "Jungle Crafting Table",
@@ -320,7 +321,6 @@
   "block.varan-deco.crimson_crafting_table": "Crimson Crafting Table",
   "block.varan-deco.warped_crafting_table": "Warped Crafting Table",
   "block.varan-deco.cactus_crafting_table": "Cactus Crafting Table",
-  "block.varan-deco.wooden_crafting_table": "Wooden Crafting Table",
 
   "block.varan-deco.oak_barrel": "Oak Barrel",
   "block.varan-deco.spruce_barrel": "Spruce Barrel",

@@ -1,7 +1,7 @@
 package net.gecko.varandeco.block.cartographytables;
 
+import net.gecko.varandeco.block.custom.NonStationBlock;
 import net.gecko.varandeco.screen.wood.JungleCartographyTableScreenHandler;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -16,7 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class JungleCartographyTableBlock extends Block {
+public class JungleCartographyTableBlock extends NonStationBlock {
 	private static final Text TITLE = Text.translatable("container.cartography_table");
 
 	public JungleCartographyTableBlock(Settings settings) {

@@ -5,6 +5,8 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.structure.rule.TagMatchRuleTest;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.dynamic.Range;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -65,7 +67,7 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_JUNGLE =
             ConfiguredFeatures.register("deco_jungle_flowers", Feature.FLOWER,
-                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(96, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                             new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
                                     new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                     1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
@@ -152,7 +154,7 @@ public class DecoConfiguredFeatures {
                     .build());
 
     public static final List<OreFeatureConfig.Target> DECO_BUBBLE_ORES = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.GRAVEL), DecoBlocks.BUBBLE_BLOCK.getDefaultState()));
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD), DecoBlocks.BUBBLE_BLOCK.getDefaultState()));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> DECO_BUBBLE_ORE =
             ConfiguredFeatures.register("bubble_ore", Feature.ORE, new OreFeatureConfig(DECO_BUBBLE_ORES, 15));

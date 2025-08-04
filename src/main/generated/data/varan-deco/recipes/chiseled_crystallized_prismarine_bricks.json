@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:prismarine_crystals"
+      "item": "varan-deco:crystallized_prismarine_bricks"
     },
     "I": {
-      "item": "minecraft:prismarine_shard"
+      "item": "minecraft:prismarine"
     }
   },
   "pattern": [
-    "###",
+    " # ",
     "#I#",
-    "###"
+    " # "
   ],
   "result": {
     "item": "varan-deco:chiseled_crystallized_prismarine_bricks"

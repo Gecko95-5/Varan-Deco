@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_smithing_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:mangrove_smithing_table"
+  }
+}

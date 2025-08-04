@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "tinted_glass_pane",
   "key": {
     "#": {
       "item": "minecraft:amethyst_shard"
