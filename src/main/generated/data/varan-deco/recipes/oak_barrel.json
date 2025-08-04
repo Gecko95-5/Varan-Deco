@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_barrels",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_barrels"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:oak_barrel"
+  }
+}

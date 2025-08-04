@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_ladder",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:dark_oak_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#S#",
+    "# #"
+  ],
+  "result": {
+    "item": "varan-deco:dark_oak_ladder"
+  }
+}

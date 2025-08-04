@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "varan-deco:wooden_logs"
+    }
+  ],
+  "result": {
+    "item": "varan-deco:wooden_planks"
+  }
+}

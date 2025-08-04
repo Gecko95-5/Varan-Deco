@@ -1,0 +1,32 @@
+package net.gecko.varandeco.block.stonemadeblocks;
+
+import com.mojang.serialization.MapCodec;
+import net.minecraft.block.WallMountedBlock;
+import net.minecraft.client.item.TooltipContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
+import net.minecraft.world.BlockView;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
+public class NonStationGrindstoneBlock extends WallMountedBlock {
+    public static final MapCodec<NonStationGrindstoneBlock> CODEC = createCodec(NonStationGrindstoneBlock::new);
+
+    private static final Formatting FORMATTING = Formatting.RED;
+    private static final Text TEXT = Text.literal("This Block is not able to be used by Villagers").formatted(FORMATTING);
+    public NonStationGrindstoneBlock(Settings settings) {
+        super(settings);
+    }
+    @Override
+    public MapCodec<NonStationGrindstoneBlock> getCodec() {
+        return CODEC;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+        tooltip.add(TEXT);
+        super.appendTooltip(stack, world, tooltip, options);
+    }
+}

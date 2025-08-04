@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_bookshelves",
+  "key": {
+    "#": {
+      "item": "varan-deco:cactus_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_bookshelves"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:cactus_bookshelf"
+  }
+}

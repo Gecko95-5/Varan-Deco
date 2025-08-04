@@ -8,19 +8,28 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
 public class DeepslateBlastFurnaceBlock extends AbstractFurnaceBlock {
+    private static final Formatting FORMATTING = Formatting.RED;
+    private static final Text TEXT = Text.literal("This Block is not able to be used by Villagers").formatted(FORMATTING);
 	public static final MapCodec<DeepslateBlastFurnaceBlock> CODEC = createCodec(DeepslateBlastFurnaceBlock::new);
 
 	@Override
@@ -70,5 +79,10 @@ public class DeepslateBlastFurnaceBlock extends AbstractFurnaceBlock {
 			double k = axis == Direction.Axis.Z ? direction.getOffsetZ() * 0.52 : h;
 			world.addParticle(ParticleTypes.SMOKE, d + i, e + j, f + k, 0.0, 0.0, 0.0);
 		}
+	}
+	@Override
+	public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+		tooltip.add(TEXT);
+		super.appendTooltip(stack, world, tooltip, options);
 	}
 }

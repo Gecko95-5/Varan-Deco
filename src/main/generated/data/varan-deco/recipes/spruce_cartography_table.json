@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_cartography_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_cartography_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:spruce_cartography_table"
+  }
+}

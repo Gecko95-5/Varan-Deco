@@ -982,7 +982,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         doorDrops(DecoBlocks.WOODEN_DOOR);
         addDrop(DecoBlocks.WOODEN_TRAPDOOR);
 
-        addDrop(DecoBlocks.WOODEN_CRAFTING_TABLE);
+        addDrop(DecoBlocks.OAK_CRAFTING_TABLE);
         addDrop(DecoBlocks.WOODEN_LADDER);
 
         addDrop(DecoBlocks.STANDING_WOODEN_SIGN);

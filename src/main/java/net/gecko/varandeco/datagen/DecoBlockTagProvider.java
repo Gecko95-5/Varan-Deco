@@ -894,7 +894,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE)
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE)
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE)
-                .add(DecoBlocks.WOODEN_CRAFTING_TABLE)
+                .add(DecoBlocks.OAK_CRAFTING_TABLE)
                 .add(DecoBlocks.CHERRY_CRAFTING_TABLE)
                 .add(DecoBlocks.BAMBOO_CRAFTING_TABLE);
 
@@ -1158,7 +1158,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DARK_OAK_BOOKSHELF)
                 .add(DecoBlocks.MANGROVE_BOOKSHELF)
                 .add(DecoBlocks.CACTUS_BOOKSHELF)
-                .add(DecoBlocks.WOODEN_BOOKSHELF)
+                .add(DecoBlocks.OAK_BOOKSHELF)
                 .add(DecoBlocks.BAMBOO_BOOKSHELF)
                 .add(DecoBlocks.CHERRY_BOOKSHELF);
 
