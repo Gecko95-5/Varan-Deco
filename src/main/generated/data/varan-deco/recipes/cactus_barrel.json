@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_barrels",
+  "key": {
+    "#": {
+      "item": "varan-deco:cactus_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_barrels"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:cactus_barrel"
+  },
+  "show_notification": true
+}

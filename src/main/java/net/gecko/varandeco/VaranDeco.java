@@ -38,11 +38,11 @@ public class VaranDeco implements ModInitializer {
 		DecoEntities.registerDecoEntities();
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODED_CRAFTING_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CRAFTING_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_LADDER,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_CARTOGRAPHY_TABLES,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_SMITHING_TABLES,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_BARRELS,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_SMITHING_TABLES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_BARRELS,300);
 
 		LOGGER.info("Hello Fabric world!");
 	}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_cartography_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:birch_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_cartography_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:birch_cartography_table"
+  },
+  "show_notification": true
+}

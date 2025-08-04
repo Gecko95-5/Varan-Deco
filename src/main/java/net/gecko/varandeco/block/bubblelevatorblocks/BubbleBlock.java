@@ -5,6 +5,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BubbleColumnBlock;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
@@ -30,10 +31,20 @@ public class BubbleBlock extends Block {
             }
             entity.extinguish();
         }
+        if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
+            entity.setAir(300);
+        }
 
         super.onSteppedOn(world, pos, state, entity);
     }
 
+    @Override
+    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        if (player.isSubmergedInWater()) {
+            player.setAir(300);
+        }
+        super.onBreak(world, pos, state, player);
+    }
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {

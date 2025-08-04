@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_ladder",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:warped_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#S#",
+    "# #"
+  ],
+  "result": {
+    "item": "varan-deco:warped_ladder"
+  },
+  "show_notification": true
+}

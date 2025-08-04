@@ -6,7 +6,6 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -77,9 +76,27 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Blocks.CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem())
-                .addTag(DecoTags.Items.WOODED_CRAFTING_TABLES);
+                .addTag(DecoTags.Items.WOODEN_CRAFTING_TABLES);
 
-        getOrCreateTagBuilder(DecoTags.Items.WOODED_CRAFTING_TABLES)
+        getOrCreateTagBuilder(DecoTags.Items.DECO_BARRELS)
+                .add(Blocks.BARREL.asItem())
+                .add(DecoBlocks.CRIMSON_BARREL.asItem())
+                .add(DecoBlocks.WARPED_BARREL.asItem())
+                .addTag(DecoTags.Items.WOODEN_BARRELS);
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                .add(Blocks.CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem())
+                .addTag(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES);
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_SMITHING_TABLES)
+                .add(Blocks.SMITHING_TABLE.asItem())
+                .add(DecoBlocks.CRIMSON_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.WARPED_SMITHING_TABLE.asItem())
+                .addTag(DecoTags.Items.WOODEN_SMITHING_TABLES);
+
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_CRAFTING_TABLES)
                 .add(DecoBlocks.BIRCH_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.SPRUCE_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.JUNGLE_CRAFTING_TABLE.asItem())
@@ -87,7 +104,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.DARK_OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.MANGROVE_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.WOODEN_CRAFTING_TABLE.asItem());
+                .add(DecoBlocks.OAK_CRAFTING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_LADDER)
                 .add(Blocks.LADDER.asItem())
@@ -100,7 +117,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_LADDER.asItem())
                 .add(DecoBlocks.WOODEN_LADDER.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.SPRUCE_CARTOGRAPHY_TABLE.asItem())
@@ -110,7 +127,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_SMITHING_TABLES)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.SPRUCE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.BIRCH_SMITHING_TABLE.asItem())
@@ -120,7 +137,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MANGROVE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem());
 
-        getOrCreateTagBuilder(DecoTags.Items.DECO_BARRELS)
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_BARRELS)
                 .add(DecoBlocks.OAK_BARREL.asItem())
                 .add(DecoBlocks.SPRUCE_BARREL.asItem())
                 .add(DecoBlocks.BIRCH_BARREL.asItem())
