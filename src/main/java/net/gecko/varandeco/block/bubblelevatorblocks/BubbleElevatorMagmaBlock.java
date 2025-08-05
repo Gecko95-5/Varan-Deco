@@ -32,13 +32,6 @@ public class BubbleElevatorMagmaBlock extends Block {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        world.setBlockState(pos, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE.getDefaultState(), Block.NOTIFY_ALL);
-        return super.onUse(state, world, pos, player, hand, hit);
-    }
-
-
-    @Override
     public BlockState getStateForNeighborUpdate(
             BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos
     ) {
@@ -66,6 +59,7 @@ public class BubbleElevatorMagmaBlock extends Block {
             return;
         }
         if (world.isReceivingRedstonePower(pos)) {
+            world.playSound(null, pos, SoundEvents.BLOCK_PISTON_EXTEND, SoundCategory.BLOCKS, 0.5F, world.random.nextFloat() * 0.25F + 0.6F);
             world.setBlockState(pos, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE.getDefaultState(), Block.NOTIFY_ALL);
         }
     }

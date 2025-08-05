@@ -35,7 +35,7 @@ public class BubbleBlock extends Block {
             entity.extinguish();
         }
         if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
-            entity.setAir(20);
+            entity.setAir(300);
         }
 
         super.onSteppedOn(world, pos, state, entity);
@@ -44,7 +44,7 @@ public class BubbleBlock extends Block {
     @Override
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         if (player.isSubmergedInWater()) {
-            player.setAir(20);
+            player.setAir(300);
         }
         super.onBreak(world, pos, state, player);
     }
