@@ -11,9 +11,6 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.tag.FluidTags;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
@@ -43,8 +40,9 @@ public class BubbleBlock extends Block {
 
     @Override
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        int air = player.getMaxAir();
         if (player.isSubmergedInWater()) {
-            player.setAir(300);
+            player.setAir(air + 40);
         }
         super.onBreak(world, pos, state, player);
     }
