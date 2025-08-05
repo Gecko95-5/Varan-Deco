@@ -40,8 +40,9 @@ public class BubbleBlock extends Block {
 
     @Override
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        int air = player.getMaxAir();
         if (player.isSubmergedInWater()) {
-            player.setAir(300);
+            player.setAir(air + 40);
         }
         super.onBreak(world, pos, state, player);
     }
