@@ -2,6 +2,7 @@
   "values": [
     "minecraft:wall_cactus_sign",
     "minecraft:wall_wooden_sign",
+    "minecraft:wall_driftwood_sign",
     "minecraft:wall_stripped_oak_sign",
     "minecraft:wall_stripped_spruce_sign",
     "minecraft:wall_stripped_birch_sign",
@@ -14,6 +15,7 @@
     "minecraft:wall_stripped_warped_sign",
     "minecraft:wall_stripped_wooden_sign",
     "minecraft:wall_stripped_pale_oak_sign",
+    "minecraft:wall_stripped_driftwood_sign",
     "minecraft:wall_oak_mosaic_sign",
     "minecraft:wall_spruce_mosaic_sign",
     "minecraft:wall_birch_mosaic_sign",
@@ -27,6 +29,7 @@
     "minecraft:wall_warped_mosaic_sign",
     "minecraft:wall_cactus_mosaic_sign",
     "minecraft:wall_wooden_mosaic_sign",
-    "minecraft:wall_pale_oak_mosaic_sign"
+    "minecraft:wall_pale_oak_mosaic_sign",
+    "minecraft:wall_driftwood_mosaic_sign"
   ]
 }

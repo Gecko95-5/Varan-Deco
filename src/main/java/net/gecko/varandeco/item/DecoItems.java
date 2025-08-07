@@ -26,6 +26,8 @@ public class DecoItems {
             DecoBlocks.STANDING_CACTUS_SIGN, DecoBlocks.WALL_CACTUS_SIGN, SignItem::new);
     public static final Item WOODEN_SIGN = registerSignItem("wooden_sign",
             DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN, SignItem::new);
+    public static final Item DRIFTWOOD_SIGN = registerSignItem("driftwood_sign",
+            DecoBlocks.STANDING_DRIFTWOOD_SIGN, DecoBlocks.WALL_DRIFTWOOD_SIGN, SignItem::new);
 
     public static final Item STRIPPED_OAK_SIGN = registerSignItem("stripped_oak_sign",
             DecoBlocks.STANDING_STRIPPED_OAK_SIGN, DecoBlocks.WALL_STRIPPED_OAK_SIGN,
@@ -62,6 +64,9 @@ public class DecoItems {
                     SignItem::new);
     public static final Item STRIPPED_PALE_OAK_SIGN = registerSignItem("stripped_pale_oak_sign",
             DecoBlocks.STANDING_STRIPPED_PALE_OAK_SIGN, DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN,
+                    SignItem::new);
+    public static final Item STRIPPED_DRIFTWOOD_SIGN = registerSignItem("stripped_driftwood_sign",
+            DecoBlocks.STANDING_STRIPPED_DRIFTWOOD_SIGN, DecoBlocks.WALL_STRIPPED_DRIFTWOOD_SIGN,
                     SignItem::new);
 
     public static final Item OAK_MOSAIC_SIGN = registerSignItem("oak_mosaic_sign",
@@ -106,9 +111,15 @@ public class DecoItems {
     public static final Item PALE_OAK_MOSAIC_SIGN = registerSignItem("pale_oak_mosaic_sign",
             DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN, DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN,
                     SignItem::new);
+    public static final Item DRIFTWOOD_MOSAIC_SIGN = registerSignItem("driftwood_mosaic_sign",
+            DecoBlocks.STANDING_DRIFTWOOD_MOSAIC_SIGN, DecoBlocks.WALL_DRIFTWOOD_MOSAIC_SIGN,
+                    SignItem::new);
 
     public static final Item WOODEN_HANGING_SIGN = registerHangingSignItem("wooden_hanging_sign",
             DecoBlocks.WALL_HANGING_WOODEN_SIGN, DecoBlocks.HANGING_WOODEN_SIGN, HangingSignItem::new);
+
+    public static final Item DRIFTWOOD_HANGING_SIGN = registerHangingSignItem("driftwood_hanging_sign",
+            DecoBlocks.WALL_HANGING_DRIFTWOOD_SIGN, DecoBlocks.HANGING_DRIFTWOOD_SIGN, HangingSignItem::new);
 
     public static final Item OAK_MOSAIC_HANGING_SIGN = registerHangingSignItem("oak_mosaic_hanging_sign",
             DecoBlocks.HANGING_OAK_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN,
@@ -152,6 +163,9 @@ public class DecoItems {
     public static final Item PALE_OAK_MOSAIC_HANGING_SIGN = registerHangingSignItem("pale_oak_mosaic_hanging_sign",
             DecoBlocks.HANGING_PALE_OAK_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_PALE_OAK_MOSAIC_SIGN,
             HangingSignItem::new);
+    public static final Item DRIFTWOOD_MOSAIC_HANGING_SIGN = registerHangingSignItem("driftwood_mosaic_hanging_sign",
+            DecoBlocks.HANGING_DRIFTWOOD_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_DRIFTWOOD_MOSAIC_SIGN,
+            HangingSignItem::new);
 
     public static final Item OAK_PLANKS_HANGING_SIGN = registerHangingSignItem("oak_planks_hanging_sign",
             DecoBlocks.HANGING_OAK_PLANKS_SIGN, DecoBlocks.WALL_HANGING_OAK_PLANKS_SIGN,
@@ -191,6 +205,9 @@ public class DecoItems {
             HangingSignItem::new);
     public static final Item PALE_OAK_PLANKS_HANGING_SIGN = registerHangingSignItem("pale_oak_planks_hanging_sign",
             DecoBlocks.HANGING_PALE_OAK_PLANKS_SIGN, DecoBlocks.WALL_HANGING_PALE_OAK_PLANKS_SIGN,
+            HangingSignItem::new);
+    public static final Item DRIFTWOOD_PLANKS_HANGING_SIGN = registerHangingSignItem("driftwood_planks_hanging_sign",
+            DecoBlocks.HANGING_DRIFTWOOD_PLANKS_SIGN, DecoBlocks.WALL_HANGING_DRIFTWOOD_PLANKS_SIGN,
             HangingSignItem::new);
 
     public static final Item SNOW_BRICK = registerCooldownItem("snow_brick",16,1,
@@ -234,6 +251,11 @@ public class DecoItems {
             false,false);
     public static final Item WARPED_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_BOAT_ID,
             true, false);
+
+    public static final Item DRIFTWOOD_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DRIFTWOOD_RAFT_ID,
+            false,true);
+    public static final Item DRIFTWOOD_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DRIFTWOOD_RAFT_ID,
+            true, true);
 
     //I had some inspiration The Mentor CodeLab
 

@@ -10,7 +10,7 @@ import net.minecraft.data.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -4992,6 +4992,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_CRAFTING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_CRAFTING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.DRIFTWOOD_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CRAFTING_TABLES)
+                        .group("wooden_crafting_tables")
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),
+                                conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_CRAFTING_TABLE) + "_recipe_create");
 
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_BARREL)
@@ -5124,6 +5134,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_BARREL) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_BARREL)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.DRIFTWOOD_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BARRELS)
+                        .group("wooden_barrels")
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),
+                                conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_BARREL) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_CARTOGRAPHY_TABLE)
                         .pattern(" # ")
@@ -5255,6 +5275,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_CARTOGRAPHY_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.DRIFTWOOD_PLANKS)
+                        .input('$', DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
+                        .group("wooden_cartography_tables")
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),
+                                conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_CARTOGRAPHY_TABLE) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_SMITHING_TABLE)
                         .pattern(" # ")
@@ -5386,6 +5416,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_SMITHING_TABLE) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_SMITHING_TABLE)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.DRIFTWOOD_PLANKS)
+                        .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),
+                                conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_SMITHING_TABLE) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OAK_BOOKSHELF)
                         .pattern(" # ")
@@ -5517,6 +5557,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_BOOKSHELF) + "_recipe_create");
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_BOOKSHELF)
+                        .pattern(" # ")
+                        .pattern("#$#")
+                        .pattern(" # ")
+                        .input('#', DecoBlocks.DRIFTWOOD_PLANKS)
+                        .input('$', DecoTags.Items.DECO_BOOKSHELVES)
+                        .group("wooden_smithing_tables")
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),
+                                conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_BOOKSHELF) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,Items.CRAFTING_TABLE)
                         .pattern(" # ")
@@ -5705,6 +5755,17 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_LADDER) + "_recipe_create");
 
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.DRIFTWOOD_LADDER)
+                        .input('#', Items.STICK)
+                        .input('S', DecoBlocks.DRIFTWOOD_SLAB)
+                        .pattern("# #")
+                        .pattern("#S#")
+                        .pattern("# #")
+                        .group("wooden_ladder")
+                        .criterion(hasItem(Items.STICK),
+                                conditionsFromItem(Items.STICK))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_LADDER) + "_recipe_create");
+
                 createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WOODEN_LADDER)
                         .input('#', Items.STICK)
                         .input('S', DecoBlocks.WOODEN_SLAB)
@@ -5821,6 +5882,41 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),
                                 conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_TRAPDOOR) + "_recipe_create");
+
+                offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.DRIFTWOOD_MOSAIC, DecoBlocks.DRIFTWOOD_SLAB);
+
+                createStairsRecipe(DecoBlocks.DRIFTWOOD_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.DRIFTWOOD_MOSAIC))
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_MOSAIC),conditionsFromItem(DecoBlocks.DRIFTWOOD_MOSAIC))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_MOSAIC_STAIRS)+ "_recipe_create");
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.DRIFTWOOD_MOSAIC_SLAB, DecoBlocks.DRIFTWOOD_MOSAIC);
+
+                createSignRecipe(DecoItems.DRIFTWOOD_SIGN, Ingredient.ofItems(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_PLANKS),conditionsFromItem(DecoBlocks.DRIFTWOOD_PLANKS))
+                        .offerTo(exporter, getRecipeName(DecoItems.DRIFTWOOD_SIGN) + "_recipe_create");
+
+                offerHangingSignRecipe(DecoItems.DRIFTWOOD_HANGING_SIGN, DecoBlocks.STRIPPED_DRIFTWOOD_LOG);
+
+                offerHangingSignRecipe(DecoItems.DRIFTWOOD_PLANKS_HANGING_SIGN, DecoBlocks.DRIFTWOOD_PLANKS);
+
+                offerHangingSignRecipe(DecoItems.DRIFTWOOD_MOSAIC_HANGING_SIGN, DecoBlocks.DRIFTWOOD_MOSAIC);
+
+                createSignRecipe(DecoItems.DRIFTWOOD_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.DRIFTWOOD_MOSAIC))
+                        .criterion(hasItem(DecoBlocks.DRIFTWOOD_MOSAIC),conditionsFromItem(DecoBlocks.DRIFTWOOD_MOSAIC))
+                        .offerTo(exporter, getRecipeName(DecoItems.DRIFTWOOD_MOSAIC_SIGN) + "_recipe_create");
+                createSignRecipe(DecoItems.STRIPPED_DRIFTWOOD_SIGN, Ingredient.ofItems(DecoBlocks.STRIPPED_DRIFTWOOD_LOG))
+                        .criterion(hasItem(DecoBlocks.STRIPPED_DRIFTWOOD_LOG),conditionsFromItem(DecoBlocks.STRIPPED_DRIFTWOOD_LOG))
+                        .offerTo(exporter, getRecipeName(DecoItems.STRIPPED_DRIFTWOOD_SIGN) + "_recipe_create");
+
+                offerBoatRecipe(DecoItems.DRIFTWOOD_RAFT, DecoBlocks.DRIFTWOOD_PLANKS);
+                offerChestBoatRecipe(DecoItems.DRIFTWOOD_CHEST_RAFT, DecoItems.DRIFTWOOD_RAFT);
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.KELP_LEAVES)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.KELP)
+                        .criterion(hasItem(Items.KELP),
+                                conditionsFromItem(Items.KELP))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.KELP_LEAVES) + "_recipe_create");
             }
         };
     }

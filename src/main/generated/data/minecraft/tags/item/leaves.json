@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:wooden_leaves"
+    "minecraft:wooden_leaves",
+    "minecraft:kelp_leaves",
+    "minecraft:dead_kelp_leaves"
   ]
 }

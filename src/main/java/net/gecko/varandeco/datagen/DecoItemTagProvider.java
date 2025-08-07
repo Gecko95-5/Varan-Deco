@@ -115,7 +115,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.WOODEN_SAPLING.asItem());
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
-                .add(DecoBlocks.WOODEN_LEAVES.asItem());
+                .add(DecoBlocks.WOODEN_LEAVES.asItem())
+                .add(DecoBlocks.KELP_LEAVES.asItem())
+                .add(DecoBlocks.DEAD_KELP_LEAVES.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_CRAFTING_TABLES)
                 .add(Blocks.CRAFTING_TABLE.asItem())
@@ -158,7 +160,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CHERRY_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE.asItem());;
+                .add(DecoBlocks.PALE_OAK_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.DRIFTWOOD_CRAFTING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_LADDER)
                 .add(Blocks.LADDER.asItem())
@@ -172,7 +175,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.WOODEN_LADDER.asItem())
                 .add(DecoBlocks.BAMBOO_LADDER.asItem())
                 .add(DecoBlocks.CHERRY_LADDER.asItem())
-                .add(DecoBlocks.PALE_OAK_LADDER.asItem());
+                .add(DecoBlocks.PALE_OAK_LADDER.asItem())
+                .add(DecoBlocks.DRIFTWOOD_LADDER.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem())
@@ -185,7 +189,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE.asItem())
-                .add(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE.asItem());
+                .add(DecoBlocks.PALE_OAK_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.DRIFTWOOD_CARTOGRAPHY_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELVES)
                 .add(DecoBlocks.BIRCH_BOOKSHELF.asItem())
@@ -198,7 +203,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.OAK_BOOKSHELF.asItem())
                 .add(DecoBlocks.BAMBOO_BOOKSHELF.asItem())
                 .add(DecoBlocks.CHERRY_BOOKSHELF.asItem())
-                .add(DecoBlocks.PALE_OAK_BOOKSHELF.asItem());
+                .add(DecoBlocks.PALE_OAK_BOOKSHELF.asItem())
+                .add(DecoBlocks.DRIFTWOOD_BOOKSHELF.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE.asItem())
@@ -211,7 +217,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.BAMBOO_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.CHERRY_SMITHING_TABLE.asItem())
-                .add(DecoBlocks.PALE_OAK_SMITHING_TABLE.asItem());
+                .add(DecoBlocks.PALE_OAK_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.DRIFTWOOD_SMITHING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BARRELS)
                 .add(DecoBlocks.OAK_BARREL.asItem())
@@ -224,7 +231,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_BARREL.asItem())
                 .add(DecoBlocks.CHERRY_BARREL.asItem())
                 .add(DecoBlocks.BAMBOO_BARREL.asItem())
-                .add(DecoBlocks.PALE_OAK_BARREL.asItem());
+                .add(DecoBlocks.PALE_OAK_BARREL.asItem())
+                .add(DecoBlocks.DRIFTWOOD_BARREL.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())
@@ -246,13 +254,15 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoItems.CACTUS_BOAT)
                 .add(DecoItems.WOODEN_BOAT)
                 .add(DecoItems.CRIMSON_BOAT)
-                .add(DecoItems.WARPED_BOAT);
+                .add(DecoItems.WARPED_BOAT)
+                .add(DecoItems.DRIFTWOOD_RAFT);
 
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
                 .add(DecoItems.CACTUS_CHEST_BOAT)
                 .add(DecoItems.WOODEN_CHEST_BOAT)
                 .add(DecoItems.CRIMSON_CHEST_BOAT)
-                .add(DecoItems.WARPED_CHEST_BOAT);
+                .add(DecoItems.WARPED_CHEST_BOAT)
+                .add(DecoItems.DRIFTWOOD_CHEST_RAFT);
 
         getOrCreateTagBuilder(DecoTags.Items.MOSAIC_WOOD)
                 .add(DecoBlocks.OAK_MOSAIC.asItem())
@@ -265,7 +275,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CHERRY_MOSAIC.asItem())
                 .add(DecoBlocks.CACTUS_MOSAIC.asItem())
                 .add(DecoBlocks.WOODEN_MOSAIC.asItem())
-                .add(DecoBlocks.PALE_OAK_MOSAIC.asItem());
+                .add(DecoBlocks.PALE_OAK_MOSAIC.asItem())
+                .add(DecoBlocks.DRIFTWOOD_MOSAIC.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.MOSAIC_STAIRS)
                 .add(DecoBlocks.OAK_MOSAIC_STAIRS.asItem())
@@ -278,7 +289,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CHERRY_MOSAIC_STAIRS.asItem())
                 .add(DecoBlocks.CACTUS_MOSAIC_STAIRS.asItem())
                 .add(DecoBlocks.WOODEN_MOSAIC_STAIRS.asItem())
-                .add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS.asItem());
+                .add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS.asItem())
+                .add(DecoBlocks.DRIFTWOOD_MOSAIC_STAIRS.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.MOSAIC_SLABS)
                 .add(DecoBlocks.OAK_MOSAIC_SLAB.asItem())
@@ -291,7 +303,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CHERRY_MOSAIC_SLAB.asItem())
                 .add(DecoBlocks.CACTUS_MOSAIC_SLAB.asItem())
                 .add(DecoBlocks.WOODEN_MOSAIC_SLAB.asItem())
-                .add(DecoBlocks.PALE_OAK_MOSAIC_SLAB.asItem());
+                .add(DecoBlocks.PALE_OAK_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.DRIFTWOOD_MOSAIC_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(DecoBlocks.YELLOW_TULIP.asItem())

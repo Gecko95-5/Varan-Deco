@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:wall_hanging_wooden_sign",
+    "minecraft:wall_hanging_driftwood_sign",
     "minecraft:wall_hanging_oak_mosaic_sign",
     "minecraft:wall_hanging_spruce_mosaic_sign",
     "minecraft:wall_hanging_birch_mosaic_sign",
@@ -15,6 +16,7 @@
     "minecraft:wall_hanging_pale_oak_mosaic_sign",
     "minecraft:wall_hanging_crimson_mosaic_sign",
     "minecraft:wall_hanging_warped_mosaic_sign",
+    "minecraft:wall_hanging_driftwood_mosaic_sign",
     "minecraft:wall_hanging_oak_planks_sign",
     "minecraft:wall_hanging_spruce_planks_sign",
     "minecraft:wall_hanging_birch_planks_sign",
@@ -27,6 +29,7 @@
     "minecraft:wall_hanging_wooden_planks_sign",
     "minecraft:wall_hanging_pale_oak_planks_sign",
     "minecraft:wall_hanging_crimson_planks_sign",
-    "minecraft:wall_hanging_warped_planks_sign"
+    "minecraft:wall_hanging_warped_planks_sign",
+    "minecraft:wall_hanging_driftwood_planks_sign"
   ]
 }
