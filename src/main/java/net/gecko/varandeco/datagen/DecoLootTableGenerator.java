@@ -768,6 +768,8 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
                         (UniformLootNumberProvider.create(1.0F, 3.0F))))));
         addDrop(DecoBlocks.DEAD_KELP_LEAVES, this::dropsWithShears);
 
+        addDrop(DecoBlocks.DRIFTWOOD_SPROUT);
+
         addDrop(DecoBlocks.DEEPSLATE_FURNACE);
 
         addDrop(DecoBlocks.SMOOTH_BLACKSTONE);

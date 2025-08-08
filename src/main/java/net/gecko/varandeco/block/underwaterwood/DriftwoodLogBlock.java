@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.custom;
+package net.gecko.varandeco.block.underwaterwood;
 
 import com.mojang.serialization.MapCodec;
 import net.gecko.varandeco.block.DecoBlocks;
@@ -14,19 +14,19 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
-public class DriftwoodBlock extends PillarBlock {
-    public static final MapCodec<DriftwoodBlock> CODEC = createCodec(DriftwoodBlock::new);
-    public DriftwoodBlock(Settings settings) {
+public class DriftwoodLogBlock extends PillarBlock {
+    public static final MapCodec<DriftwoodLogBlock> CODEC = createCodec(DriftwoodLogBlock::new);
+    public DriftwoodLogBlock(Settings settings) {
         super(settings);
     }
     @Override
-    public MapCodec<DriftwoodBlock> getCodec() {
+    public MapCodec<DriftwoodLogBlock> getCodec() {
         return CODEC;
     }
     @Override
     protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         if (world.getDimension().ultrawarm()) {
-            world.setBlockState(pos, DecoBlocks.DRIED_DRIFTWOOD.getDefaultState().with(DriftwoodBlock.AXIS, state.get(DriftwoodBlock.AXIS)), Block.NOTIFY_ALL);
+            world.setBlockState(pos, DecoBlocks.DRIED_DRIFTWOOD_LOG.getDefaultState().with(DriftwoodLogBlock.AXIS, state.get(DriftwoodLogBlock.AXIS)), Block.NOTIFY_ALL);
             world.syncWorldEvent(WorldEvents.WET_SPONGE_DRIES_OUT, pos, 0);
             world.playSound(null, pos, SoundEvents.BLOCK_WET_SPONGE_DRIES, SoundCategory.BLOCKS, 1.0F, (1.0F + world.getRandom().nextFloat() * 0.2F) * 0.7F);
         }

@@ -527,6 +527,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CACTUS_PLANK_FENCE)
                 .add(DecoBlocks.WOODEN_FENCE);
 
+        getOrCreateTagBuilder(BlockTags.UNDERWATER_BONEMEALS)
+                .add(DecoBlocks.DRIFTWOOD_SPROUT);
+
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE)

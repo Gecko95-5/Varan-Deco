@@ -5917,6 +5917,39 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.KELP),
                                 conditionsFromItem(Items.KELP))
                         .offerTo(exporter, getRecipeName(DecoBlocks.KELP_LEAVES) + "_recipe_create");
+
+                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
+                                0.1f, 200).criterion(hasItem(DecoBlocks.KELP_LEAVES), conditionsFromItem(DecoBlocks.KELP_LEAVES))
+                        .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_smelting_kelp_leaves");
+
+                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.DEAD_KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
+                                0.1f, 200).criterion(hasItem(DecoBlocks.DEAD_KELP_LEAVES), conditionsFromItem(DecoBlocks.DEAD_KELP_LEAVES))
+                        .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_smelting_dead_kelp_leaves");
+
+                CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(DecoBlocks.KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
+                                0.1f, 100).criterion(hasItem(DecoBlocks.KELP_LEAVES), conditionsFromItem(DecoBlocks.KELP_LEAVES))
+                        .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_smoking_kelp_leaves");
+
+                CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(DecoBlocks.DEAD_KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
+                                0.1f, 100).criterion(hasItem(DecoBlocks.DEAD_KELP_LEAVES), conditionsFromItem(DecoBlocks.DEAD_KELP_LEAVES))
+                        .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_smoking_dead_kelp_leaves");
+
+                CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(DecoBlocks.KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
+                                0.1f, 100).criterion(hasItem(DecoBlocks.KELP_LEAVES), conditionsFromItem(DecoBlocks.KELP_LEAVES))
+                        .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_campfire_cooking_kelp_leaves");
+
+                CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(DecoBlocks.DEAD_KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
+                                0.1f, 100).criterion(hasItem(DecoBlocks.DEAD_KELP_LEAVES), conditionsFromItem(DecoBlocks.DEAD_KELP_LEAVES))
+                        .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_campfire_cooking_dead_kelp_leaves");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_SPROUT)
+                        .pattern(" / ")
+                        .pattern("/#/")
+                        .input('/', Items.KELP)
+                        .input('#', DecoTags.Items.WET_DRIFTWOOD_LOGS)
+                        .criterion(hasItem(Items.KELP),
+                                conditionsFromItem(Items.KELP))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_SPROUT) + "_recipe_create");
             }
         };
     }

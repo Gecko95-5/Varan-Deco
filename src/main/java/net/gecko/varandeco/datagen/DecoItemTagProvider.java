@@ -115,9 +115,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.WOODEN_SAPLING.asItem());
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
-                .add(DecoBlocks.WOODEN_LEAVES.asItem())
-                .add(DecoBlocks.KELP_LEAVES.asItem())
-                .add(DecoBlocks.DEAD_KELP_LEAVES.asItem());
+                .add(DecoBlocks.WOODEN_LEAVES.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_CRAFTING_TABLES)
                 .add(Blocks.CRAFTING_TABLE.asItem())

@@ -3,6 +3,7 @@ package net.gecko.varandeco.world.gen;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.gecko.varandeco.world.feature.DecoPlacedFeatures;
+import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 
@@ -22,5 +23,11 @@ public class DecoMiscGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_DEEP_BUBBLE_ORE_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_FROZEN_OCEAN),
                 GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_DEEP_BUBBLE_ORE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_OCEAN),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_FALLEN_DRIFTWOOD_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIED_FALLEN_DRIFTWOOD_PLACED);
     }
 }

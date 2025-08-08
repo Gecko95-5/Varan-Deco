@@ -1,12 +1,16 @@
 package net.gecko.varandeco.world.feature;
 
 import net.gecko.varandeco.VaranDeco;
+import net.gecko.varandeco.block.DecoBlocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
@@ -32,6 +36,8 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_MESA_PLACED = registerKey("deco_mesa_placed");
     public static final RegistryKey<PlacedFeature> DECO_BUBBLE_ORE_PLACED = registerKey("deco_bubble_ore_placed");
     public static final RegistryKey<PlacedFeature> DECO_DEEP_BUBBLE_ORE_PLACED = registerKey("deco_deep_bubble_ore_placed");
+    public static final RegistryKey<PlacedFeature> DECO_FALLEN_DRIFTWOOD_PLACED = registerKey("deco_fallen_driftwood_placed");
+    public static final RegistryKey<PlacedFeature> DECO_DRIED_FALLEN_DRIFTWOOD_PLACED = registerKey("deco_dried_fallen_driftwood_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -101,6 +107,14 @@ register(context,DECO_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.ge
 register(context,DECO_DEEP_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_ORE),
         OrePlacement.modifiersWithCount(5,
                 HeightRangePlacementModifier.uniform(YOffset.fixed(8), YOffset.fixed(45))));
+
+register(context, DECO_DRIED_FALLEN_DRIFTWOOD_PLACED,configuredFeatureRegistryEntryLookup.getOrThrow
+        (DecoConfiguredFeatures.DECO_FALLEN_DRIED_DRIFTWOOD_KEY), BlockFilterPlacementModifier.of
+        (BlockPredicate.wouldSurvive(Blocks.CACTUS.getDefaultState(), BlockPos.ORIGIN)));
+
+register(context, DECO_FALLEN_DRIFTWOOD_PLACED,configuredFeatureRegistryEntryLookup.getOrThrow
+                (DecoConfiguredFeatures.DECO_FALLEN_DRIFTWOOD_KEY),RarityFilterPlacementModifier.of(32),
+        BlockFilterPlacementModifier.of(BlockPredicate.wouldSurvive(DecoBlocks.DRIFTWOOD_SPROUT.getDefaultState(), BlockPos.ORIGIN)));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

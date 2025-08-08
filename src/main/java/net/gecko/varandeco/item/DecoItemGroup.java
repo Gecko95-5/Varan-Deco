@@ -745,6 +745,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.PINK_BLOCK.asItem());
                         entries.add(DecoBlocks.WOODEN_LEAVES.asItem());
                         entries.add(DecoBlocks.WOODEN_SAPLING.asItem());
+                        entries.add(DecoBlocks.DRIFTWOOD_SPROUT.asItem());
                         entries.add(DecoItems.TALL_SEAGRASS.asItem());
                         entries.add(DecoBlocks.KELP_LEAVES.asItem());
                         entries.add(DecoBlocks.DEAD_KELP_LEAVES.asItem());

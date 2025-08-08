@@ -107,6 +107,7 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.KELP_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEAD_KELP_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DRIFTWOOD_SPROUT, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HEAVY_IRON_BARS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.LIGHT_IRON_BARS, RenderLayer.getCutout());

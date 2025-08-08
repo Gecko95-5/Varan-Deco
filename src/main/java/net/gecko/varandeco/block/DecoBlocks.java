@@ -16,6 +16,10 @@ import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
+import net.gecko.varandeco.block.underwaterwood.DriftwoodBlock;
+import net.gecko.varandeco.block.underwaterwood.DriftwoodLogBlock;
+import net.gecko.varandeco.block.underwaterwood.DriftwoodSproutBlock;
+import net.gecko.varandeco.block.underwaterwood.KelpLeafBlock;
 import net.gecko.varandeco.item.custom.NonStationBlockItem;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
@@ -84,7 +88,7 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
     public static final Block DRIFTWOOD_LOG = registerBlock("driftwood_log",
             AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).strength(4.0f,2.0f)
-                    .sounds(BlockSoundGroup.CHERRY_WOOD),DriftwoodLogBlock::new);
+                    .sounds(BlockSoundGroup.CHERRY_WOOD), DriftwoodLogBlock::new);
     public static final Block DRIED_DRIFTWOOD_LOG = registerBlock("dried_driftwood_log",
             AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
@@ -1064,6 +1068,10 @@ public class DecoBlocks {
     public static final Block DEAD_KELP_LEAVES = registerBlock("dead_kelp_leaves",
             AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).sounds(BlockSoundGroup.HANGING_ROOTS)
                     .mapColor(MapColor.LIGHT_GRAY).nonOpaque(), GrateBlock::new);
+
+    public static final Block DRIFTWOOD_SPROUT = registerBlock("driftwood_sprout",
+            AbstractBlock.Settings.create().mapColor(MapColor.WATER_BLUE).noCollision().breakInstantly()
+                    .sounds(BlockSoundGroup.WET_GRASS).pistonBehavior(PistonBehavior.DESTROY), DriftwoodSproutBlock::new);
 
     public static final Block PUFFY_DANDELION = registerPuffyFlower("puffy_dandelion",
             StatusEffects.SATURATION, 3, Blocks.DANDELION);

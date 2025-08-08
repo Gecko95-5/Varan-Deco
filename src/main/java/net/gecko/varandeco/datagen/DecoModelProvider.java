@@ -318,6 +318,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.WOODEN_SAPLING, DecoBlocks.POTTED_WOODEN_SAPLING,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
 
+        blockStateModelGenerator.registerTintableCrossBlockState(DecoBlocks.DRIFTWOOD_SPROUT,
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
+
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.ANCIENT_ROSE, DecoBlocks.POTTED_ANCIENT_ROSE,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
 
