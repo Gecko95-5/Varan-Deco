@@ -28,6 +28,18 @@ public class DecoFlammableBlocks {
         registry.add(DecoBlocks.WOODEN_FENCE_GATE,5,20);
         registry.add(DecoBlocks.WOODEN_LEAVES,30, 60);
 
+        registry.add(DecoBlocks.DRIFTWOOD_PLANKS,5,20);
+        registry.add(DecoBlocks.DRIED_DRIFTWOOD_LOG,5,5);
+        registry.add(DecoBlocks.STRIPPED_DRIFTWOOD_LOG,5,5);
+        registry.add(DecoBlocks.DRIED_DRIFTWOOD,5,5);
+        registry.add(DecoBlocks.STRIPPED_DRIFTWOOD,5,5);
+
+        registry.add(DecoBlocks.DRIFTWOOD_STAIRS,5,20);
+        registry.add(DecoBlocks.DRIFTWOOD_SLAB,5,20);
+        registry.add(DecoBlocks.DRIFTWOOD_FENCE,5,20);
+        registry.add(DecoBlocks.DRIFTWOOD_FENCE_GATE,5,20);
+        registry.add(DecoBlocks.DEAD_KELP_LEAVES,30, 60);
+
         registry.add(DecoBlocks.YELLOW_TULIP,60, 100);
         registry.add(DecoBlocks.PURPLE_TULIP,60, 100);
         registry.add(DecoBlocks.MAGENTA_TULIP,60, 100);
@@ -70,5 +82,6 @@ public class DecoFlammableBlocks {
         registry.add(DecoTags.Blocks.MOSAIC_SLABS,5,20);
         registry.add(DecoTags.Blocks.MOSAIC_STAIRS,5,20);
 
+        registry.add(DecoBlocks.DRIED_LEAVES, 60, 100);
     }
 }

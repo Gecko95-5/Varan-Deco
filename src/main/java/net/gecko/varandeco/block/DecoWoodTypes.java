@@ -2,13 +2,13 @@ package net.gecko.varandeco.block;
 
 import com.terraformersmc.terraform.sign.api.block.TerraformSignBlockHelper;
 import net.gecko.varandeco.VaranDeco;
-import net.minecraft.block.SignBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.util.Identifier;
 
 public class DecoWoodTypes {
     public static WoodType CACTUS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"cactus"));
     public static WoodType WOODEN_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"wooden"));
+    public static WoodType DRIFTWOOD_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"driftwood"));
 
     public static WoodType STRIPPED_OAK_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_oak"));
     public static WoodType STRIPPED_SPRUCE_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_spruce"));
@@ -22,6 +22,7 @@ public class DecoWoodTypes {
     public static WoodType STRIPPED_CRIMSON_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_crimson"));
     public static WoodType STRIPPED_WARPED_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_warped"));
     public static WoodType STRIPPED_WOODEN_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_wooden"));
+    public static WoodType STRIPPED_DRIFTWOOD_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_driftwood"));
 
     public static WoodType OAK_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"oak_mosaic"));
     public static WoodType SPRUCE_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"spruce_mosaic"));
@@ -37,6 +38,7 @@ public class DecoWoodTypes {
     public static WoodType WARPED_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"warped_mosaic"));
     public static WoodType CACTUS_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"cactus_mosaic"));
     public static WoodType WOODEN_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"wooden_mosaic"));
+    public static WoodType DRIFTWOOD_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"driftwood_mosaic"));
 
     public static WoodType OAK_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"oak_planks"));
     public static WoodType SPRUCE_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"spruce_planks"));
@@ -51,4 +53,5 @@ public class DecoWoodTypes {
     public static WoodType WARPED_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"warped_planks"));
     public static WoodType CACTUS_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"cactus_planks"));
     public static WoodType WOODEN_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"wooden_planks"));
+    public static WoodType DRIFTWOOD_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"driftwood_planks"));
 }

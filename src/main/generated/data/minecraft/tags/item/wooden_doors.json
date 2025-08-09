@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:cactus_door"
+    "minecraft:cactus_door",
+    "minecraft:wooden_door",
+    "minecraft:driftwood_door"
   ]
 }

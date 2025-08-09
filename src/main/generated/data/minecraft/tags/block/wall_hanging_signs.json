@@ -1,6 +1,7 @@
 {
   "values": [
     "varan-deco:wooden_wall_hanging_sign",
+    "varan-deco:driftwood_wall_hanging_sign",
     "varan-deco:oak_mosaic_wall_hanging_sign",
     "varan-deco:spruce_mosaic_wall_hanging_sign",
     "varan-deco:birch_mosaic_wall_hanging_sign",
@@ -15,6 +16,7 @@
     "varan-deco:pale_oak_mosaic_wall_hanging_sign",
     "varan-deco:crimson_mosaic_wall_hanging_sign",
     "varan-deco:warped_mosaic_wall_hanging_sign",
+    "varan-deco:driftwood_mosaic_wall_hanging_sign",
     "varan-deco:oak_planks_wall_hanging_sign",
     "varan-deco:spruce_planks_wall_hanging_sign",
     "varan-deco:birch_planks_wall_hanging_sign",
@@ -27,6 +29,7 @@
     "varan-deco:wooden_planks_wall_hanging_sign",
     "varan-deco:pale_oak_planks_wall_hanging_sign",
     "varan-deco:crimson_planks_wall_hanging_sign",
-    "varan-deco:warped_planks_wall_hanging_sign"
+    "varan-deco:warped_planks_wall_hanging_sign",
+    "varan-deco:driftwood_planks_wall_hanging_sign"
   ]
 }

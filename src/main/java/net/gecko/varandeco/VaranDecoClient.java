@@ -79,6 +79,8 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.CACTUS_TRAPDOOR, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WOODEN_DOOR, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WOODEN_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRIFTWOOD_DOOR, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRIFTWOOD_TRAPDOOR, BlockRenderLayer.TRANSLUCENT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WOODEN_LEAVES, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WARPED_WART_PLANT, BlockRenderLayer.CUTOUT);
 
@@ -101,6 +103,14 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.BAMBOO_LADDER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.CHERRY_LADDER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.PALE_OAK_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRIFTWOOD_LADDER, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.KELP_LEAVES, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DEAD_KELP_LEAVES, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRIFTWOOD_SPROUT, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRIFTWOOD_SAPLING, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRIED_LEAVES, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.HEAVY_IRON_BARS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.LIGHT_IRON_BARS, BlockRenderLayer.CUTOUT);
@@ -253,8 +263,12 @@ public class VaranDecoClient implements ClientModInitializer {
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CRIMSON_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WARPED_BOAT_ID);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.DRIFTWOOD_RAFT_ID);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : -12012264,
                 DecoBlocks.WOODEN_LEAVES);
+
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getDryFoliageColor(world, pos) : -10732494,
+                DecoBlocks.DRIED_LEAVES);
     }
 }

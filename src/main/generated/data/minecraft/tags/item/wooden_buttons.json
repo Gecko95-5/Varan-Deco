@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:cactus_plank_button",
-    "minecraft:wooden_button"
+    "minecraft:wooden_button",
+    "minecraft:driftwood_button"
   ]
 }

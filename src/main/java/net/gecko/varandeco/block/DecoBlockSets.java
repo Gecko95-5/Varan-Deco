@@ -62,6 +62,7 @@ public record DecoBlockSets(
 
     public static final BlockSetType CACUTS = registerBlockSets(new BlockSetType("cactus"));
     public static final BlockSetType WOODEN = registerBlockSets(new BlockSetType("wooden"));
+    public static final BlockSetType DRIFTWOOD = registerBlockSets(new BlockSetType("driftwood"));
 
     private static BlockSetType registerBlockSets(BlockSetType blockSetType) {
         VALUES.put(blockSetType.name(), blockSetType);

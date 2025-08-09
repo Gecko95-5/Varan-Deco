@@ -1,15 +1,8 @@
 {
   "values": [
-    "minecraft:birch_bookshelf",
-    "minecraft:spruce_bookshelf",
-    "minecraft:jungle_bookshelf",
-    "minecraft:acacia_bookshelf",
-    "minecraft:dark_oak_bookshelf",
-    "minecraft:mangrove_bookshelf",
-    "minecraft:cactus_bookshelf",
-    "minecraft:wooden_bookshelf",
-    "minecraft:bamboo_bookshelf",
-    "minecraft:cherry_bookshelf",
-    "minecraft:pale_oak_bookshelf"
+    "minecraft:bookshelf",
+    "minecraft:crimson_bookshelf",
+    "minecraft:warped_bookshelf",
+    "#varan-deco:wooden_bookshelves"
   ]
 }

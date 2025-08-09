@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "tinted_glass_pane",
   "key": {
     "#": "minecraft:copper_ingot"
   },

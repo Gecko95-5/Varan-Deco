@@ -2,6 +2,7 @@
   "item.minecraft.snow_brick": "Snow Brick",
   "item.minecraft.cactus_sign": "Cactus Sign",
   "item.minecraft.wooden_sign": "Wooden Sign",
+  "item.minecraft.driftwood_sign": "Driftwood Sign",
   "item.minecraft.bubble_orb": "Bubble Orb",
   "item.minecraft.warped_wart": "Warped Wart",
   "item.minecraft.copper_nugget": "Copper Nugget",
@@ -19,6 +20,8 @@
   "item.varan-deco.crimson_chest_boat": "Crimson Boat with Chest",
   "item.varan-deco.warped_boat": "Warped Boat",
   "item.varan-deco.warped_chest_boat": "Warped Boat with Chest",
+  "item.varan-deco.driftwood_raft": "Driftwood Raft",
+  "item.varan-deco.driftwood_chest_raft": "Driftwood Raft with Chest",
 
   "item.minecraft.stripped_oak_sign": "Stripped Oak Sign",
   "item.minecraft.stripped_spruce_sign": "Stripped Spruce Sign",
@@ -32,6 +35,7 @@
   "item.minecraft.stripped_warped_sign": "Stripped Warped Sign",
   "item.minecraft.stripped_wooden_sign": "Stripped Wooden Sign",
   "item.minecraft.stripped_pale_oak_sign": "Stripped Pale Oak Sign",
+  "item.minecraft.stripped_driftwood_sign": "Stripped Driftwood Sign",
 
   "item.minecraft.oak_mosaic_sign": "Oak Mosaic Sign",
   "item.minecraft.spruce_mosaic_sign": "Spruce Mosaic Sign",
@@ -47,8 +51,10 @@
   "item.minecraft.cactus_mosaic_sign": "Cactus Mosaic Sign",
   "item.minecraft.wooden_mosaic_sign": "Wooden Mosaic Sign",
   "item.minecraft.pale_oak_mosaic_sign": "Pale Oak Mosaic Sign",
+  "item.minecraft.driftwood_mosaic_sign": "Driftwood Mosaic Sign",
 
   "item.minecraft.wooden_hanging_sign": "Stripped Wooden Hanging Sign",
+  "item.minecraft.driftwood_hanging_sign": "Stripped Driftwood Hanging Sign",
 
   "item.minecraft.oak_mosaic_hanging_sign": "Oak Mosaic Hanging Sign",
   "item.minecraft.spruce_mosaic_hanging_sign": "Spruce Mosaic Hanging Sign",
@@ -64,6 +70,7 @@
   "item.minecraft.cactus_mosaic_hanging_sign": "Cactus Mosaic Hanging Sign",
   "item.minecraft.wooden_mosaic_hanging_sign": "Wooden Mosaic Hanging Sign",
   "item.minecraft.pale_oak_mosaic_hanging_sign": "Pale Oak Mosaic Hanging Sign",
+  "item.minecraft.driftwood_mosaic_hanging_sign": "Driftwood Mosaic Hanging Sign",
 
   "item.minecraft.oak_planks_hanging_sign": "Oak Hanging Sign",
   "item.minecraft.spruce_planks_hanging_sign": "Spruce Hanging Sign",
@@ -78,6 +85,7 @@
   "item.minecraft.cactus_planks_hanging_sign": "Cactus Hanging Sign",
   "item.minecraft.wooden_planks_hanging_sign": "Wooden Hanging Sign",
   "item.minecraft.pale_oak_planks_hanging_sign": "Pale Oak Hanging Sign",
+  "item.minecraft.driftwood_planks_hanging_sign": "Driftwood Hanging Sign",
 
   "block.minecraft.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.minecraft.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -322,7 +330,6 @@
   "block.minecraft.red_sandstone_brick_slab": "Polished Red Sandstone Brick Slab",
   "block.minecraft.red_sandstone_brick_wall": "Polished Red Sandstone Brick Wall",
 
-
   "block.minecraft.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.minecraft.dark_prismarine_wall": "Dark Prismarine Wall",
 
@@ -419,7 +426,8 @@
   "block.minecraft.crimson_crafting_table": "Crimson Crafting Table",
   "block.minecraft.warped_crafting_table": "Warped Crafting Table",
   "block.minecraft.cactus_crafting_table": "Cactus Crafting Table",
-  "block.minecraft.wooden_crafting_table": "Wooden Crafting Table",
+  "block.minecraft.oak_crafting_table": "Oak Crafting Table",
+  "block.minecraft.driftwood_crafting_table": "Driftwood Crafting Table",
 
   "block.minecraft.oak_barrel": "Oak Barrel",
   "block.minecraft.spruce_barrel": "Spruce Barrel",
@@ -434,6 +442,7 @@
   "block.minecraft.crimson_barrel": "Crimson Barrel",
   "block.minecraft.warped_barrel": "Warped Barrel",
   "block.minecraft.cactus_barrel": "Cactus Barrel",
+  "block.minecraft.driftwood_barrel": "Driftwood Barrel",
 
   "block.minecraft.spruce_ladder": "Spruce Ladder",
   "block.minecraft.birch_ladder": "Birch Ladder",
@@ -448,6 +457,7 @@
   "block.minecraft.cherry_ladder": "Cherry Ladder",
   "block.minecraft.bamboo_ladder": "Bamboo Ladder",
   "block.minecraft.pale_oak_ladder": "Pale Oak Ladder",
+  "block.minecraft.driftwood_ladder": "Driftwood Ladder",
 
   "block.minecraft.oak_smithing_table": "Oak Smithing Table",
   "block.minecraft.spruce_smithing_table": "Spruce Smithing Table",
@@ -462,6 +472,7 @@
   "block.minecraft.cherry_smithing_table": "Cherry Smithing Table",
   "block.minecraft.bamboo_smithing_table": "Bamboo Smithing Table",
   "block.minecraft.pale_oak_smithing_table": "Pale Oak Smithing Table",
+  "block.minecraft.driftwood_smithing_table": "Driftwood Smithing Table",
 
   "block.minecraft.oak_cartography_table": "Oak Cartography Table",
   "block.minecraft.birch_cartography_table": "Birch Cartography Table",
@@ -476,6 +487,7 @@
   "block.minecraft.cherry_cartography_table": "Cherry Cartography Table",
   "block.minecraft.bamboo_cartography_table": "Bamboo Cartography Table",
   "block.minecraft.pale_oak_cartography_table": "Pale Oak Cartography Table",
+  "block.minecraft.driftwood_cartography_table": "Driftwood Cartography Table",
 
   "block.minecraft.spruce_bookshelf": "Spruce Bookshelf",
   "block.minecraft.birch_bookshelf": "Birch Bookshelf",
@@ -486,10 +498,11 @@
   "block.minecraft.crimson_bookshelf": "Crimson Bookshelf",
   "block.minecraft.warped_bookshelf": "Warped Bookshelf",
   "block.minecraft.cactus_bookshelf": "Cactus Bookshelf",
-  "block.minecraft.wooden_bookshelf": "Wooden Bookshelf",
+  "block.minecraft.oak_bookshelf": "Oak Bookshelf",
   "block.minecraft.cherry_bookshelf": "Cherry Bookshelf",
   "block.minecraft.bamboo_bookshelf": "Bamboo Bookshelf",
   "block.minecraft.pale_oak_bookshelf": "Pale Oak Bookshelf",
+  "block.minecraft.driftwood_bookshelf": "Driftwood Bookshelf",
 
   "block.minecraft.oak_mosaic": "Oak Mosaic",
   "block.minecraft.spruce_mosaic": "Spruce Mosaic",
@@ -504,6 +517,7 @@
   "block.minecraft.wooden_mosaic": "Wooden Mosaic",
   "block.minecraft.cherry_mosaic": "Cherry Mosaic",
   "block.minecraft.pale_oak_mosaic": "Pale Oak Mosaic",
+  "block.minecraft.driftwood_mosaic": "Driftwood Mosaic",
 
   "block.minecraft.oak_mosaic_stairs": "Oak Mosaic Stairs",
   "block.minecraft.spruce_mosaic_stairs": "Spruce Mosaic Stairs",
@@ -518,6 +532,7 @@
   "block.minecraft.wooden_mosaic_stairs": "Wooden Mosaic Stairs",
   "block.minecraft.cherry_mosaic_stairs": "Cherry Mosaic Stairs",
   "block.minecraft.pale_oak_mosaic_stairs": "Pale Oak Mosaic Stairs",
+  "block.minecraft.driftwood_mosaic_stairs": "Driftwood Mosaic Stairs",
 
   "block.minecraft.oak_mosaic_slab": "Oak Mosaic Slab",
   "block.minecraft.spruce_mosaic_slab": "Spruce Mosaic Slab",
@@ -532,6 +547,7 @@
   "block.minecraft.wooden_mosaic_slab": "Wooden Mosaic Slab",
   "block.minecraft.cherry_mosaic_slab": "Cherry Mosaic Slab",
   "block.minecraft.pale_oak_mosaic_slab": "Pale Oak Mosaic Slab",
+  "block.minecraft.driftwood_mosaic_slab": "Driftwood Mosaic Slab",
 
   "block.minecraft.standing_stripped_oak_sign": "Stripped Oak Sign",
   "block.minecraft.wall_stripped_oak_sign": "Stripped Oak Wall Sign",
@@ -557,6 +573,8 @@
   "block.minecraft.wall_stripped_wooden_sign": "Stripped Wooden Wall Sign",
   "block.minecraft.standing_stripped_pale_oak_sign": "Stripped Pale Oak Sign",
   "block.minecraft.wall_stripped_pale_oak_sign": "Stripped Pale Oak Wall Sign",
+  "block.minecraft.standing_stripped_driftwood_sign": "Stripped Driftwood Sign",
+  "block.minecraft.wall_stripped_driftwood_sign": "Stripped Driftwood Wall Sign",
 
   "block.minecraft.standing_oak_mosaic_sign": "Oak Mosaic Sign",
   "block.minecraft.wall_oak_mosaic_sign": "Oak Mosaic Wall Sign",
@@ -586,9 +604,14 @@
   "block.minecraft.wall_wooden_mosaic_sign": "Wooden Mosaic Wall Sign",
   "block.minecraft.standing_pale_oak_mosaic_sign": "Pale Oak Mosaic Sign",
   "block.minecraft.wall_pale_oak_mosaic_sign": "Pale Oak Mosaic Wall Sign",
+  "block.minecraft.standing_driftwood_mosaic_sign": "Driftwood Mosaic Sign",
+  "block.minecraft.wall_driftwood_mosaic_sign": "Driftwood Mosaic Wall Sign",
 
   "block.minecraft.hanging_wooden_sign": "Stripped Wooden Hanging Sign",
   "block.minecraft.wall_hanging_wooden_sign": "Stripped Wooden Wall Hanging Sign",
+
+  "block.minecraft.hanging_driftwood_sign": "Stripped Driftwood Hanging Sign",
+  "block.minecraft.wall_hanging_driftwood_sign": "Stripped Driftwood Wall Hanging Sign",
 
   "block.minecraft.hanging_oak_mosaic_sign": "Oak Mosaic Hanging Sign",
   "block.minecraft.hanging_spruce_mosaic_sign": "Spruce Mosaic Hanging Sign",
@@ -604,6 +627,7 @@
   "block.minecraft.hanging_cactus_mosaic_sign": "Cactus Mosaic Hanging Sign",
   "block.minecraft.hanging_wooden_mosaic_sign": "Wooden Mosaic Hanging Sign",
   "block.minecraft.hanging_pale_oak_mosaic_sign": "Pale Oak Mosaic Hanging Sign",
+  "block.minecraft.hanging_driftwood_mosaic_sign": "Driftwood Mosaic Hanging Sign",
 
   "block.minecraft.wall_hanging_oak_mosaic_sign": "Oak Mosaic Wall Hanging Sign",
   "block.minecraft.wall_hanging_spruce_mosaic_sign": "Spruce Mosaic Wall Hanging Sign",
@@ -619,6 +643,7 @@
   "block.minecraft.wall_hanging_cactus_mosaic_sign": "Cactus Mosaic Wall Hanging Sign",
   "block.minecraft.wall_hanging_wooden_mosaic_sign": "Wooden Mosaic Wall Hanging Sign",
   "block.minecraft.wall_hanging_pale_oak_mosaic_sign": "Pale Oak Mosaic Wall Hanging Sign",
+  "block.minecraft.wall_hanging_driftwood_mosaic_sign": "Driftwood Mosaic Wall Hanging Sign",
 
   "block.minecraft.hanging_oak_planks_sign": "Oak Hanging Sign",
   "block.minecraft.hanging_spruce_planks_sign": "Spruce Hanging Sign",
@@ -633,6 +658,7 @@
   "block.minecraft.hanging_cactus_planks_sign": "Cactus Hanging Sign",
   "block.minecraft.hanging_wooden_planks_sign": "Wooden Hanging Sign",
   "block.minecraft.hanging_pale_oak_planks_sign": "Pale Oak Hanging Sign",
+  "block.minecraft.hanging_driftwood_planks_sign": "Driftwood Hanging Sign",
 
   "block.minecraft.wall_hanging_oak_planks_sign": "Oak Wall Hanging Sign",
   "block.minecraft.wall_hanging_spruce_planks_sign": "Spruce Wall Hanging Sign",
@@ -647,6 +673,7 @@
   "block.minecraft.wall_hanging_cactus_planks_sign": "Cactus Wall Hanging Sign",
   "block.minecraft.wall_hanging_wooden_planks_sign": "Wooden Wall Hanging Sign",
   "block.minecraft.wall_hanging_pale_oak_planks_sign": "Pale Oak Wall Hanging Sign",
+  "block.minecraft.wall_hanging_driftwood_planks_sign": "Driftwood Wall Hanging Sign",
 
   "block.minecraft.cactus_planks": "Cactus Planks",
   "block.minecraft.cactus_plank_stairs": "Cactus Stairs",
@@ -1354,6 +1381,31 @@
   "block.minecraft.standing_wooden_sign": "Wooden Sign",
   "block.minecraft.wall_wooden_sign": "Wooden Wall Sign",
 
+  "block.minecraft.driftwood_planks": "Driftwood Planks",
+  "block.minecraft.driftwood_stairs": "Driftwood Stairs",
+  "block.minecraft.driftwood_slab": "Driftwood Slab",
+  "block.minecraft.driftwood_fence": "Driftwood Fence",
+  "block.minecraft.driftwood_fence_gate": "Driftwood Fence Gate",
+  "block.minecraft.driftwood_button": "Driftwood Button",
+  "block.minecraft.driftwood_pressure_plate": "Driftwood Pressure Plate",
+  "block.minecraft.driftwood_door": "Driftwood Door",
+  "block.minecraft.driftwood_trapdoor": "Driftwood Trapdoor",
+  "block.minecraft.driftwood_log": "Driftwood Log",
+  "block.minecraft.driftwood": "Driftwood",
+  "block.minecraft.dried_driftwood_log": "Dried Driftwood Log",
+  "block.minecraft.dried_driftwood": "Dried Driftwood",
+  "block.minecraft.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.minecraft.stripped_driftwood": "Stripped Driftwood",
+  "block.minecraft.standing_driftwood_sign": "Driftwood Sign",
+  "block.minecraft.wall_driftwood_sign": "Driftwood Wall Sign",
+  "block.minecraft.driftwood_sprout": "Driftwood Sprout",
+  "block.minecraft.driftwood_sapling": "Driftwood Sapling",
+
+  "block.minecraft.kelp_leaves": "Kelp Leaves",
+  "block.minecraft.dead_kelp_leaves": "Dead Kelp Leaves",
+
+  "block.minecraft.dried_leaves": "Dried Leaves",
+
   "block.minecraft.iron_button": "Iron Button",
   "block.minecraft.gold_button": "Gold Button",
 
@@ -1429,6 +1481,8 @@
   "entity.varan-deco.crimson_chest_boat": "Crimson Boat with Chest",
   "entity.varan-deco.warped_boat": "Warped Boat",
   "entity.varan-deco.warped_chest_boat": "Warped Boat with Chest",
+  "entity.varan-deco.driftwood_raft": "Driftwood Raft",
+  "entity.varan-deco.driftwood_chest_raft": "Driftwood Raft with Chest",
 
   "itemgroup.varan_deco_blocks": "Variant Decoration"
 }

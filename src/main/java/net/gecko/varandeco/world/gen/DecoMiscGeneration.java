@@ -10,11 +10,24 @@ import net.minecraft.world.gen.GenerationStep;
 public class DecoMiscGeneration {
 
     public static void generateMiscellaneous() {
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OCEAN),
+                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_BUBBLE_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.COLD_OCEAN),
+                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_BUBBLE_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FROZEN_OCEAN),
+                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_BUBBLE_ORE_PLACED);
+
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_OCEAN),
-                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_BUBBLE_PLACED);
+                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_DEEP_BUBBLE_ORE_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_COLD_OCEAN),
-                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_BUBBLE_PLACED);
+                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_DEEP_BUBBLE_ORE_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_FROZEN_OCEAN),
-                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_BUBBLE_PLACED);
+                GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_DEEP_BUBBLE_ORE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_OCEAN),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_FALLEN_DRIFTWOOD_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIED_FALLEN_DRIFTWOOD_PLACED);
     }
 }

@@ -138,6 +138,16 @@ public class DecoCustomTrades {
                             new TradedItem(Items.EMERALD, 1),
                             new ItemStack(DecoBlocks.LAVENDER, 1),
                             9, 0, 0.075f));
+            factories.addOffersToPool(Identifier.of("sell_common_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 5),
+                            new ItemStack(DecoBlocks.DRIFTWOOD_SAPLING, 1),
+                            8, 0, 0.075f));
+            factories.addOffersToPool(Identifier.of("sell_common_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 3),
+                            new ItemStack(DecoBlocks.DRIFTWOOD_SPROUT, 2),
+                            12, 0, 0.075f));
     });
 
         TradeOfferHelper.registerWanderingTraderOffers(factories -> {
@@ -220,6 +230,16 @@ public class DecoCustomTrades {
                     (entity, random) -> new TradeOffer(
                             new TradedItem(Items.EMERALD, 3),
                             new ItemStack(DecoBlocks.CYAN_BLOCK, 1),
+                            4, 0, 0.075f));
+            factories.addOffersToPool(Identifier.of("sell_special_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 1),
+                            new ItemStack(DecoBlocks.DRIFTWOOD_LOG, 8),
+                            4, 0, 0.075f));
+            factories.addOffersToPool(Identifier.of("sell_special_items"),
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 1),
+                            new ItemStack(DecoBlocks.DRIED_DRIFTWOOD_LOG, 4),
                             4, 0, 0.075f));
         });
 

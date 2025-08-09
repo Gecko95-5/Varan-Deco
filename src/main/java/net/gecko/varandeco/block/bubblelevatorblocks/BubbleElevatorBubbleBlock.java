@@ -51,6 +51,7 @@ public class BubbleElevatorBubbleBlock extends Block {
     @Override
     protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, @Nullable WireOrientation wireOrientation, boolean notify) {
         if (world.isReceivingRedstonePower(pos) || world.isReceivingRedstonePower(pos.up())) {
+            world.playSound(null, pos, SoundEvents.BLOCK_PISTON_EXTEND, SoundCategory.BLOCKS, 0.5F, world.random.nextFloat() * 0.25F + 0.6F);
             world.scheduleBlockTick(pos, this, 4);
             world.setBlockState(pos, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA.getDefaultState(), Block.NOTIFY_LISTENERS);
         }

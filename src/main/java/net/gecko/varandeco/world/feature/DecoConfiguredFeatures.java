@@ -3,16 +3,21 @@ package net.gecko.varandeco.world.feature;
 import com.google.common.collect.ImmutableList;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.Pool;
 import net.minecraft.util.dynamic.Range;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
-import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
@@ -21,8 +26,9 @@ import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider;
 import net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider;
-import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
+import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.treedecorator.AlterGroundTreeDecorator;
+import net.minecraft.world.gen.treedecorator.AttachedToLogsTreeDecorator;
 import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
@@ -64,10 +70,20 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_MEGA_WOODEN_TREE_KEY = registerKey("deco_mega_wooden_tree");
 
-    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_BUBBLE_BLOCK = registerKey("deco_bubble_block");
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FALLEN_DRIFTWOOD_KEY = registerKey("deco_fallen_driftwood");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_DRIFTWOOD_TREE_KEY = registerKey("deco_driftwood_tree");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FALLEN_DRIED_DRIFTWOOD_KEY = registerKey("deco_fallen_dried_driftwood");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_BUBBLE_ORE = registerKey("deco_bubble_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+        RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
+
+        List<OreFeatureConfig.Target> overworldBubbleOre =
+                List.of(OreFeatureConfig.createTarget(stoneReplacebles, DecoBlocks.BUBBLE_BLOCK.getDefaultState()));
 
         register(context, DECO_FLOWER_FOREST_KEY, Feature.FLOWER,
                 ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
@@ -109,7 +125,7 @@ public class DecoConfiguredFeatures {
                                         DecoBlocks.CALIFORNIA_POPPY.getDefaultState()))))));
 
         register(context, DECO_JUNGLE_KEY, Feature.FLOWER,
-                ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(96, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
                                 new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                 0.5F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
@@ -174,11 +190,31 @@ public class DecoConfiguredFeatures {
                                 (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
                         .build());
 
-        register(context,DECO_BUBBLE_BLOCK,Feature.DISK,
-                new DiskFeatureConfig(
-                        PredicatedStateProvider.of(DecoBlocks.BUBBLE_BLOCK),
-                        BlockPredicate.matchingBlocks(List.of(Blocks.GRAVEL, DecoBlocks.BUBBLE_BLOCK)),
-                        UniformIntProvider.create(1, 2), 1));
+        register(context, DECO_DRIFTWOOD_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG), new StraightTrunkPlacer(5, 2, 2),
+                BlockStateProvider.of(DecoBlocks.KELP_LEAVES),
+                new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
+
+        register(context, DECO_BUBBLE_ORE, Feature.ORE, new OreFeatureConfig(overworldBubbleOre, 5));
+
+        register(context, DECO_FALLEN_DRIED_DRIFTWOOD_KEY, Feature.FALLEN_TREE, fallenDriedDriftwood().build());
+        register(context, DECO_FALLEN_DRIFTWOOD_KEY, Feature.FALLEN_TREE, fallenDriftwood().build());
+    }
+    private static FallenTreeFeatureConfig.Builder fallenDriedDriftwood() {
+        return driedFallen();
+    }
+    private static FallenTreeFeatureConfig.Builder fallenDriftwood() {
+        return underwaterFallen();
+    }
+    private static FallenTreeFeatureConfig.Builder driedFallen() {
+        return new FallenTreeFeatureConfig.Builder(BlockStateProvider.of(DecoBlocks.DRIED_DRIFTWOOD_LOG), UniformIntProvider.create(4, 8))
+                .logDecorators(ImmutableList.of(new AttachedToLogsTreeDecorator(0.5F,
+                                        new WeightedBlockStateProvider(Pool.<BlockState>builder()
+                                                .add(Blocks.MOSS_CARPET.getDefaultState(), 2)), List.of(Direction.UP))));
+    }
+    private static FallenTreeFeatureConfig.Builder underwaterFallen() {
+        return new FallenTreeFeatureConfig.Builder(BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG), UniformIntProvider.create(3, 8));
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(VaranDeco.MOD_ID, name));

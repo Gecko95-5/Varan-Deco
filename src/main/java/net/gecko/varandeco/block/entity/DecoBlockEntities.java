@@ -56,6 +56,8 @@ public class DecoBlockEntities {
 
     public static BlockEntityType<PaleOakBarrelBlockEntity> PALE_OAK_BARREL_BE;
 
+    public static BlockEntityType<DriftwoodBarrelBlockEntity> DRIFTWOOD_BARREL_BE;
+
     public static void registerBlockEntities(){
 
         DEEPSLATE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
@@ -167,5 +169,10 @@ public class DecoBlockEntities {
                 Identifier.of(VaranDeco.MOD_ID, "pale_oak_barrel_be"),
                 FabricBlockEntityTypeBuilder.create(PaleOakBarrelBlockEntity::new,
                         DecoBlocks.PALE_OAK_BARREL).build());
+
+        DRIFTWOOD_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "driftwood_barrel_be"),
+                FabricBlockEntityTypeBuilder.create(DriftwoodBarrelBlockEntity::new,
+                        DecoBlocks.DRIFTWOOD_BARREL).build());
     }
 }

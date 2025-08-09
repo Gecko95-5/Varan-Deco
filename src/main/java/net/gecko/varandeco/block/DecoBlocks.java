@@ -6,14 +6,15 @@ import net.gecko.varandeco.block.barrels.*;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
-import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
+import net.gecko.varandeco.block.underwaterwood.*;
+import net.gecko.varandeco.item.custom.NonStationBlockItem;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -47,6 +48,9 @@ public class DecoBlocks {
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
             AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD), Block::new);
+    public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks",
+            AbstractBlock.Settings.create().strength(2.0f,3.0f)
+                    .sounds(BlockSoundGroup.WOOD).mapColor(MapColor.DARK_GREEN), Block::new);
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
             AbstractBlock.Settings.create().requiresTool()
                     .strength(5.0F, 6.0F).sounds(BlockSoundGroup.WOOD).mapColor(MapColor.SPRUCE_BROWN), Block::new);
@@ -70,13 +74,29 @@ public class DecoBlocks {
     public static final Block WOODEN_LOG = registerBlock("wooden_log",
             AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
-    public static final Block STRIPPED_WOODEN_LOG = registerBlock("stripped_wooden_log",
-            AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(2.0f,2.0f)
-                    .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
     public static final Block STRIPPED_WOODEN_WOOD = registerBlock("stripped_wooden_wood",
             AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
     public static final Block WOODEN_WOOD = registerBlock("wooden_wood",
+            AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
+    public static final Block DRIFTWOOD_LOG = registerBlock("driftwood_log",
+            AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).strength(4.0f,2.0f)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD), DriftwoodLogBlock::new);
+    public static final Block DRIED_DRIFTWOOD_LOG = registerBlock("dried_driftwood_log",
+            AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
+    public static final Block DRIFTWOOD = registerBlock("driftwood",
+            AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE).strength(4.0f,2.0f)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD), DriftwoodBlock::new);
+    public static final Block DRIED_DRIFTWOOD = registerBlock("dried_driftwood",
+            AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
+    public static final Block STRIPPED_DRIFTWOOD_LOG = registerBlock("stripped_driftwood_log",
+            AbstractBlock.Settings.copy(DecoBlocks.DRIED_DRIFTWOOD_LOG),PillarBlock::new);
+    public static final Block STRIPPED_DRIFTWOOD = registerBlock("stripped_driftwood",
+            AbstractBlock.Settings.copy(DecoBlocks.DRIED_DRIFTWOOD_LOG),PillarBlock::new);
+    public static final Block STRIPPED_WOODEN_LOG = registerBlock("stripped_wooden_log",
             AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD),PillarBlock::new);
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
@@ -256,16 +276,16 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.DIAMOND_BLUE), Block::new);
     public static final Block CRYSTALLIZED_PRISMARINE = registerBlock("crystallized_prismarine",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("crystallized_prismarine_bricks",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS = registerBlock("chiseled_crystallized_prismarine_bricks",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.BRIGHT_TEAL)
-                    .luminance(state -> 3).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block LIGHT_PRISMARINE = registerBlock("light_prismarine",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.OFF_WHITE)
-                    .luminance(state -> 5).sounds(BlockSoundGroup.GLASS), Block::new);
+                    .luminance(state -> 10).sounds(BlockSoundGroup.GLASS), Block::new);
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
             AbstractBlock.Settings.copy(Blocks.PACKED_ICE).strength(1.4f), Block::new);
     public static final Block SOUL_SOILSTONE = registerBlock("soul_soilstone",
@@ -476,6 +496,8 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS), Block::new);
     public static final Block CACTUS_MOSAIC = registerBlock("cactus_mosaic",
             AbstractBlock.Settings.copy(DecoBlocks.CACTUS_PLANKS), PillarBlock::new);
+    public static final Block DRIFTWOOD_MOSAIC = registerBlock("driftwood_mosaic",
+            AbstractBlock.Settings.copy(DecoBlocks.DRIFTWOOD_PLANKS), PillarBlock::new);
     public static final Block WOODEN_MOSAIC = registerBlock("wooden_mosaic",
             AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS), Block::new);
 
@@ -503,6 +525,8 @@ public class DecoBlocks {
             DecoBlocks.WARPED_MOSAIC,DecoBlocks.WARPED_MOSAIC);
     public static final Block CACTUS_MOSAIC_STAIRS = registerStairs("cactus_mosaic_stairs",
             DecoBlocks.CACTUS_MOSAIC,DecoBlocks.CACTUS_MOSAIC);
+    public static final Block DRIFTWOOD_MOSAIC_STAIRS = registerStairs("driftwood_mosaic_stairs",
+            DecoBlocks.DRIFTWOOD_MOSAIC,DecoBlocks.DRIFTWOOD_MOSAIC);
     public static final Block WOODEN_MOSAIC_STAIRS = registerStairs("wooden_mosaic_stairs",
             DecoBlocks.WOODEN_MOSAIC,DecoBlocks.WOODEN_MOSAIC);
 
@@ -530,6 +554,8 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.WARPED_MOSAIC),SlabBlock::new);
     public static final Block CACTUS_MOSAIC_SLAB = registerBlock("cactus_mosaic_slab",
             AbstractBlock.Settings.copy(DecoBlocks.CACTUS_MOSAIC),SlabBlock::new);
+    public static final Block DRIFTWOOD_MOSAIC_SLAB = registerBlock("driftwood_mosaic_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.DRIFTWOOD_MOSAIC),SlabBlock::new);
     public static final Block WOODEN_MOSAIC_SLAB = registerBlock("wooden_mosaic_slab",
             AbstractBlock.Settings.copy(DecoBlocks.WOODEN_MOSAIC),SlabBlock::new);
 
@@ -644,6 +670,8 @@ public class DecoBlocks {
             DecoBlocks.CACTUS_PLANKS,DecoBlocks.CACTUS_PLANKS);
     public static final Block WOODEN_STAIRS = registerStairs("wooden_stairs",
             DecoBlocks.WOODEN_PLANKS,DecoBlocks.WOODEN_PLANKS);
+    public static final Block DRIFTWOOD_STAIRS = registerStairs("driftwood_stairs",
+            DecoBlocks.DRIFTWOOD_PLANKS,DecoBlocks.DRIFTWOOD_PLANKS);
     public static final Block CUT_SANDSTONE_BRICK_STAIRS = registerStairs("cut_sandstone_brick_stairs",
             DecoBlocks.CUT_SANDSTONE_BRICKS,DecoBlocks.CUT_SANDSTONE_BRICKS);
     public static final Block COBBLED_SANDSTONE_STAIRS = registerStairs("cobbled_sandstone_stairs",
@@ -882,6 +910,8 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.CACTUS_PLANKS),SlabBlock::new);
     public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
             AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS),SlabBlock::new);
+    public static final Block DRIFTWOOD_SLAB = registerBlock("driftwood_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.DRIFTWOOD_PLANKS),SlabBlock::new);
     public static final Block CUT_SANDSTONE_BRICK_SLAB = registerBlock("cut_sandstone_brick_slab",
             AbstractBlock.Settings.copy(DecoBlocks.CUT_SANDSTONE_BRICKS),SlabBlock::new);
     public static final Block COBBLED_SANDSTONE_SLAB = registerBlock("cobbled_sandstone_slab",
@@ -1026,6 +1056,22 @@ public class DecoBlocks {
 
     public static final Block WOODEN_LEAVES = registerTintedLeaves("wooden_leaves",
             0.01F,Blocks.DARK_OAK_LEAVES);
+    public static final Block DRIED_LEAVES = registerBlock("dried_leaves",
+            AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).mapColor(MapColor.BROWN)
+                    .sounds(BlockSoundGroup.LEAF_LITTER).pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque().breakInstantly().noCollision(), DriedLeafBlock::new);
+    public static final Block KELP_LEAVES = registerBlock("kelp_leaves",
+            AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).sounds(BlockSoundGroup.WET_GRASS)
+                    .mapColor(MapColor.LIME).nonOpaque(), KelpLeafBlock::new);
+    public static final Block DEAD_KELP_LEAVES = registerBlock("dead_kelp_leaves",
+            AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).sounds(BlockSoundGroup.HANGING_ROOTS)
+                    .mapColor(MapColor.LIGHT_GRAY).nonOpaque(), AbstractKelpLeafBlock::new);
+
+    public static final Block DRIFTWOOD_SPROUT = registerBlock("driftwood_sprout",
+            AbstractBlock.Settings.create().mapColor(MapColor.WATER_BLUE).noCollision().breakInstantly()
+                    .sounds(BlockSoundGroup.WET_GRASS).pistonBehavior(PistonBehavior.DESTROY), DriftwoodSproutBlock::new);
+    public static final Block DRIFTWOOD_SAPLING = registerDriftwoodSapling("driftwood_sapling",
+            DecoSaplingGenerators.DRIFTWOOD ,DecoBlocks.DRIFTWOOD_SPROUT);
 
     public static final Block PUFFY_DANDELION = registerPuffyFlower("puffy_dandelion",
             StatusEffects.SATURATION, 3, Blocks.DANDELION);
@@ -1144,6 +1190,8 @@ public class DecoBlocks {
     public static final Block MIGHTY_LAVENDER = registerBlock("mighty_lavender",
             AbstractBlock.Settings.copy(Blocks.PEONY), MightyLavenderBlock::new);
 
+    public static final Block OAK_CRAFTING_TABLE = registerBlock("oak_crafting_table",
+            AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.OAK_TAN), OakCraftingTableBlock::new);
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
             AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN), SpruceCraftingTableBlock::new);
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
@@ -1172,8 +1220,8 @@ public class DecoBlocks {
                 WarpedCraftingTableBlock::new);
     public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
             AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN), CactusCraftingTableBlock::new);
-    public static final Block WOODEN_CRAFTING_TABLE = registerBlock("wooden_crafting_table",
-            AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.TERRACOTTA_BROWN), WoodenCraftingTableBlock::new);
+    public static final Block DRIFTWOOD_CRAFTING_TABLE = registerBlock("driftwood_crafting_table",
+            AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).mapColor(MapColor.LIGHT_BLUE), DriftwoodCraftingTableBlock::new);
 
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -1215,11 +1263,15 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.LADDER),LadderBlock::new);
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
             AbstractBlock.Settings.copy(Blocks.LADDER),LadderBlock::new);
+    public static final Block DRIFTWOOD_LADDER = registerBlock("driftwood_ladder",
+            AbstractBlock.Settings.copy(Blocks.LADDER),LadderBlock::new);
 
     public static final Block CACTUS_PLANK_FENCE = registerBlock("cactus_plank_fence",
             AbstractBlock.Settings.copy(DecoBlocks.CACTUS_PLANKS),FenceBlock::new);
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS),FenceBlock::new);
+    public static final Block DRIFTWOOD_FENCE = registerBlock("driftwood_fence",
+            AbstractBlock.Settings.copy(DecoBlocks.DRIFTWOOD_PLANKS),FenceBlock::new);
 
     public static final Block INFESTED_POLISHED_STONE = registerInfestedBlock("infested_polished_stone",
             DecoBlocks.POLISHED_STONE,DecoBlocks.POLISHED_STONE,1.25f,0.75f);
@@ -1715,37 +1767,41 @@ public class DecoBlocks {
     public static final Block MOSAIC_BLACK_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_black_stained_glass_pane",
            DyeColor.BLACK, Blocks.BLACK_STAINED_GLASS_PANE, 0.6f, 0.3f);
 
-    public static final Block OAK_BARREL = registerBlock("oak_barrel",
+    public static final Block OAK_BARREL = registerNonStationBlock("oak_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN), OakBarrelBlock::new);
-    public static final Block SPRUCE_BARREL = registerBlock("spruce_barrel",
+    public static final Block SPRUCE_BARREL = registerNonStationBlock("spruce_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL), SpruceBarrelBlock::new);
-    public static final Block BIRCH_BARREL = registerBlock("birch_barrel",
+    public static final Block BIRCH_BARREL = registerNonStationBlock("birch_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW), BirchBarrelBlock::new);
-    public static final Block JUNGLE_BARREL = registerBlock("jungle_barrel",
+    public static final Block JUNGLE_BARREL = registerNonStationBlock("jungle_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN), JungleBarrelBlock::new);
-    public static final Block ACACIA_BARREL = registerBlock("acacia_barrel",
+    public static final Block ACACIA_BARREL = registerNonStationBlock("acacia_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE), AcaciaBarrelBlock::new);
-    public static final Block DARK_OAK_BARREL = registerBlock("dark_oak_barrel",
+    public static final Block DARK_OAK_BARREL = registerNonStationBlock("dark_oak_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN),DarkOakBarrelBlock::new);
-    public static final Block MANGROVE_BARREL = registerBlock("mangrove_barrel",
+    public static final Block MANGROVE_BARREL = registerNonStationBlock("mangrove_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED),MangroveBarrelBlock::new);
-    public static final Block BAMBOO_BARREL = registerBlock("bamboo_barrel",
+    public static final Block BAMBOO_BARREL = registerNonStationBlock("bamboo_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD),BambooBarrelBlock::new);
-    public static final Block CHERRY_BARREL = registerBlock("cherry_barrel",
+    public static final Block CHERRY_BARREL = registerNonStationBlock("cherry_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),CherryBarrelBlock::new);
-    public static final Block PALE_OAK_BARREL = registerBlock("pale_oak_barrel",
+    public static final Block PALE_OAK_BARREL = registerNonStationBlock("pale_oak_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OFF_WHITE) ,PaleOakBarrelBlock::new);
-    public static final Block CRIMSON_BARREL = registerBlock("crimson_barrel",
+    public static final Block CRIMSON_BARREL = registerNonStationBlock("crimson_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
                     .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonBarrelBlock::new);
-    public static final Block WARPED_BARREL = registerBlock("warped_barrel",
+    public static final Block WARPED_BARREL = registerNonStationBlock("warped_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
                     .sounds(BlockSoundGroup.NETHER_WOOD),WarpedBarrelBlock::new);
-    public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
+    public static final Block CACTUS_BARREL = registerNonStationBlock("cactus_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),CactusBarrelBlock::new);
+    public static final Block DRIFTWOOD_BARREL = registerNonStationBlock("driftwood_barrel",
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_GREEN),DriftwoodBarrelBlock::new);
 
+    public static final Block OAK_BOOKSHELF = registerBlock("oak_bookshelf",
+            AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
     public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
@@ -1774,106 +1830,111 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_WOOD),Block::new);
     public static final Block CACTUS_BOOKSHELF = registerBlock("cactus_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.PALE_GREEN),Block::new);
-    public static final Block WOODEN_BOOKSHELF = registerBlock("wooden_bookshelf",
-            AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
+    public static final Block DRIFTWOOD_BOOKSHELF = registerBlock("driftwood_bookshelf",
+            AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.DARK_GREEN),Block::new);
 
-    public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
+    public static final Block DEEPSLATE_SMOKER = registerNonStationBlock("deepslate_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
                     .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE),DeepslateSmokerBlock::new);
-    public static final Block BLACKSTONE_SMOKER = registerBlock("blackstone_smoker",
+    public static final Block BLACKSTONE_SMOKER = registerNonStationBlock("blackstone_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.BLACK)
                     .strength(3.0f),BlackstoneSmokerBlock::new);
-    public static final Block TUFF_SMOKER = registerBlock("tuff_smoker",
+    public static final Block TUFF_SMOKER = registerNonStationBlock("tuff_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.TERRACOTTA_GRAY)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffSmokerBlock::new);
 
-    public static final Block DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
+    public static final Block DEEPSLATE_BLAST_FURNACE = registerNonStationBlock("deepslate_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
                     .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE_BRICKS),DeepslateBlastFurnaceBlock::new);
-    public static final Block BLACKSTONE_BLAST_FURNACE = registerBlock("blackstone_blast_furnace",
+    public static final Block BLACKSTONE_BLAST_FURNACE = registerNonStationBlock("blackstone_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.BLACK)
                     .strength(3.0f),BlackstoneBlastFurnaceBlock::new);
-    public static final Block TUFF_BLAST_FURNACE = registerBlock("tuff_blast_furnace",
+    public static final Block TUFF_BLAST_FURNACE = registerNonStationBlock("tuff_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.TERRACOTTA_GRAY)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF_BRICKS),TuffBlastFurnaceBlock::new);
 
-    public static final Block OAK_CARTOGRAPHY_TABLE = registerBlock("oak_cartography_table",
+    public static final Block OAK_CARTOGRAPHY_TABLE = registerNonStationBlock("oak_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),OakCartographyTableBlock::new);
-    public static final Block BIRCH_CARTOGRAPHY_TABLE = registerBlock("birch_cartography_table",
+    public static final Block BIRCH_CARTOGRAPHY_TABLE = registerNonStationBlock("birch_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),BirchCartographyTableBlock::new);
-    public static final Block SPRUCE_CARTOGRAPHY_TABLE = registerBlock("spruce_cartography_table",
+    public static final Block SPRUCE_CARTOGRAPHY_TABLE = registerNonStationBlock("spruce_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),SpruceCartographyTableBlock::new);
-    public static final Block JUNGLE_CARTOGRAPHY_TABLE = registerBlock("jungle_cartography_table",
+    public static final Block JUNGLE_CARTOGRAPHY_TABLE = registerNonStationBlock("jungle_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),JungleCartographyTableBlock::new);
-    public static final Block ACACIA_CARTOGRAPHY_TABLE = registerBlock("acacia_cartography_table",
+    public static final Block ACACIA_CARTOGRAPHY_TABLE = registerNonStationBlock("acacia_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),AcaciaCartographyTableBlock::new);
-    public static final Block DARK_OAK_CARTOGRAPHY_TABLE = registerBlock("dark_oak_cartography_table",
+    public static final Block DARK_OAK_CARTOGRAPHY_TABLE = registerNonStationBlock("dark_oak_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),DarkOakCartographyTableBlock::new);
-    public static final Block MANGROVE_CARTOGRAPHY_TABLE = registerBlock("mangrove_cartography_table",
+    public static final Block MANGROVE_CARTOGRAPHY_TABLE = registerNonStationBlock("mangrove_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),MangroveCartographyTableBlock::new);
-    public static final Block CHERRY_CARTOGRAPHY_TABLE = registerBlock("cherry_cartography_table",
+    public static final Block CHERRY_CARTOGRAPHY_TABLE = registerNonStationBlock("cherry_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),CherryCartographyTableBlock::new);
-    public static final Block BAMBOO_CARTOGRAPHY_TABLE = registerBlock("bamboo_cartography_table",
+    public static final Block BAMBOO_CARTOGRAPHY_TABLE = registerNonStationBlock("bamboo_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD),BambooCartographyTableBlock::new);
-    public static final Block PALE_OAK_CARTOGRAPHY_TABLE = registerBlock("pale_oak_cartography_table",
+    public static final Block PALE_OAK_CARTOGRAPHY_TABLE = registerNonStationBlock("pale_oak_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE) ,PaleOakCartographyTableBlock::new);
-    public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerBlock("crimson_cartography_table",
+    public static final Block CRIMSON_CARTOGRAPHY_TABLE = registerNonStationBlock("crimson_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonCartographyTableBlock::new);
-    public static final Block WARPED_CARTOGRAPHY_TABLE = registerBlock("warped_cartography_table",
+    public static final Block WARPED_CARTOGRAPHY_TABLE = registerNonStationBlock("warped_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD),WarpedCartographyTableBlock::new);
-    public static final Block CACTUS_CARTOGRAPHY_TABLE = registerBlock("cactus_cartography_table",
+    public static final Block CACTUS_CARTOGRAPHY_TABLE = registerNonStationBlock("cactus_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),CactusCartographyTableBlock::new);
+    public static final Block DRIFTWOOD_CARTOGRAPHY_TABLE = registerNonStationBlock("driftwood_cartography_table",
+            AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),DriftwoodCartographyTableBlock::new);
 
-    public static final Block DEEPSLATE_GRINDSTONE = registerBlock("deepslate_grindstone",
+    public static final Block DEEPSLATE_GRINDSTONE = registerNonStationBlock("deepslate_grindstone",
             AbstractBlock.Settings.copy(Blocks.GRINDSTONE).sounds(BlockSoundGroup.DEEPSLATE)
                     .mapColor(MapColor.DEEPSLATE_GRAY),DeepslateGrindstoneBlock::new);
-    public static final Block BLACKSTONE_GRINDSTONE = registerBlock("blackstone_grindstone",
+    public static final Block BLACKSTONE_GRINDSTONE = registerNonStationBlock("blackstone_grindstone",
             AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.BLACK),BlackstoneGrindstoneBlock::new);
-    public static final Block TUFF_GRINDSTONE = registerBlock("tuff_grindstone",
-            AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.TERRACOTTA_GRAY),TuffGrindstoneBlock::new);
+    public static final Block TUFF_GRINDSTONE = registerNonStationBlock("tuff_grindstone",
+            AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.TERRACOTTA_GRAY)
+            .sounds(BlockSoundGroup.TUFF),TuffGrindstoneBlock::new);
 
-    public static final Block OAK_SMITHING_TABLE = registerBlock("oak_smithing_table",
+    public static final Block OAK_SMITHING_TABLE = registerNonStationBlock("oak_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),OakSmithingTableBlock::new);
-    public static final Block SPRUCE_SMITHING_TABLE = registerBlock("spruce_smithing_table",
+    public static final Block SPRUCE_SMITHING_TABLE = registerNonStationBlock("spruce_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),SpruceSmithingTableBlock::new);
-    public static final Block BIRCH_SMITHING_TABLE = registerBlock("birch_smithing_table",
+    public static final Block BIRCH_SMITHING_TABLE = registerNonStationBlock("birch_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),BirchSmithingTableBlock::new);
-    public static final Block JUNGLE_SMITHING_TABLE = registerBlock("jungle_smithing_table",
+    public static final Block JUNGLE_SMITHING_TABLE = registerNonStationBlock("jungle_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),JungleSmithingTableBlock::new);
-    public static final Block ACACIA_SMITHING_TABLE = registerBlock("acacia_smithing_table",
+    public static final Block ACACIA_SMITHING_TABLE = registerNonStationBlock("acacia_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),AcaciaSmithingTableBlock::new);
-    public static final Block DARK_OAK_SMITHING_TABLE = registerBlock("dark_oak_smithing_table",
+    public static final Block DARK_OAK_SMITHING_TABLE = registerNonStationBlock("dark_oak_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),DarkOakSmithingTableBlock::new);
-    public static final Block MANGROVE_SMITHING_TABLE = registerBlock("mangrove_smithing_table",
+    public static final Block MANGROVE_SMITHING_TABLE = registerNonStationBlock("mangrove_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),MangroveSmithingTableBlock::new);
-    public static final Block CRIMSON_SMITHING_TABLE = registerBlock("crimson_smithing_table",
+    public static final Block CRIMSON_SMITHING_TABLE = registerNonStationBlock("crimson_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonSmithingTableBlock::new);
-    public static final Block WARPED_SMITHING_TABLE = registerBlock("warped_smithing_table",
+    public static final Block WARPED_SMITHING_TABLE = registerNonStationBlock("warped_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE)
                     .sounds(BlockSoundGroup.NETHER_WOOD),WarpedSmithingTableBlock::new);
-    public static final Block BAMBOO_SMITHING_TABLE = registerBlock("bamboo_smithing_table",
+    public static final Block BAMBOO_SMITHING_TABLE = registerNonStationBlock("bamboo_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD),BambooSmithingTableBlock::new);
-    public static final Block CHERRY_SMITHING_TABLE = registerBlock("cherry_smithing_table",
+    public static final Block CHERRY_SMITHING_TABLE = registerNonStationBlock("cherry_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE)
                     .sounds(BlockSoundGroup.CHERRY_WOOD),CherrySmithingTableBlock::new);
-    public static final Block PALE_OAK_SMITHING_TABLE = registerBlock("pale_oak_smithing_table",
+    public static final Block PALE_OAK_SMITHING_TABLE = registerNonStationBlock("pale_oak_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE) ,PaleOakSmithingTableBlock::new);
-    public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
+    public static final Block CACTUS_SMITHING_TABLE = registerNonStationBlock("cactus_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),CactusSmithingTableBlock::new);
+    public static final Block DRIFTWOOD_SMITHING_TABLE = registerNonStationBlock("driftwood_smithing_table",
+            AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),DriftwoodSmithingTableBlock::new);
 
-    public static final Block DEEPSLATE_STONECUTTER = registerBlock("deepslate_stonecutter",
+    public static final Block DEEPSLATE_STONECUTTER = registerNonStationBlock("deepslate_stonecutter",
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.DEEPSLATE_GRAY)
                     .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE),DeepslateStonecutterBlock::new);
-    public static final Block BLACKSTONE_STONECUTTER = registerBlock("blackstone_stonecutter",
+    public static final Block BLACKSTONE_STONECUTTER = registerNonStationBlock("blackstone_stonecutter",
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f),BlackstoneStonecutterBlock::new);
-    public static final Block TUFF_STONECUTTER = registerBlock("tuff_stonecutter",
+    public static final Block TUFF_STONECUTTER = registerNonStationBlock("tuff_stonecutter",
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffStonecutterBlock::new);
 
@@ -1941,6 +2002,8 @@ public class DecoBlocks {
             DecoBlockSets.CACUTS, 30, Blocks.OAK_BUTTON);
     public static final Block WOODEN_BUTTON = registerButton("wooden_button",
             DecoBlockSets.WOODEN, 30, Blocks.OAK_BUTTON);
+    public static final Block DRIFTWOOD_BUTTON = registerButton("driftwood_button",
+            DecoBlockSets.DRIFTWOOD, 30, Blocks.OAK_BUTTON);
 
     public static final Block IRON_BUTTON = registerButton("iron_button",
             BlockSetType.IRON, 50, Blocks.STONE_BUTTON);
@@ -2002,6 +2065,8 @@ public class DecoBlocks {
             DecoBlockSets.CACUTS, Blocks.OAK_PRESSURE_PLATE);
     public static final Block WOODEN_PRESSURE_PLATE = registerPressurePlateBlock("wooden_pressure_plate",
             DecoBlockSets.WOODEN, Blocks.SPRUCE_PRESSURE_PLATE);
+    public static final Block DRIFTWOOD_PRESSURE_PLATE = registerPressurePlateBlock("driftwood_pressure_plate",
+            DecoBlockSets.DRIFTWOOD, Blocks.SPRUCE_PRESSURE_PLATE);
 
     public static final Block GOLD_DOOR = registerDoorBlock("gold_door",
             BlockSetType.GOLD, Blocks.GOLD_BLOCK);
@@ -2009,17 +2074,23 @@ public class DecoBlocks {
             BlockSetType.BIRCH, Blocks.OAK_DOOR);
     public static final Block WOODEN_DOOR = registerDoorBlock("wooden_door",
             BlockSetType.OAK, Blocks.OAK_DOOR);
+    public static final Block DRIFTWOOD_DOOR = registerDoorBlock("driftwood_door",
+            BlockSetType.OAK, Blocks.OAK_DOOR);
     public static final Block GOLD_TRAPDOOR = registerTrapDoorBlock("gold_trapdoor",
             BlockSetType.GOLD, Blocks.GOLD_BLOCK);
     public static final Block CACTUS_TRAPDOOR = registerTrapDoorBlock("cactus_trapdoor",
             BlockSetType.BIRCH, Blocks.OAK_TRAPDOOR);
     public static final Block WOODEN_TRAPDOOR = registerTrapDoorBlock("wooden_trapdoor",
             BlockSetType.OAK, Blocks.OAK_TRAPDOOR);
+    public static final Block DRIFTWOOD_TRAPDOOR = registerTrapDoorBlock("driftwood_trapdoor",
+            BlockSetType.OAK, Blocks.OAK_TRAPDOOR);
 
     public static final Block CACTUS_PLANK_FENCE_GATE = registerFenceGateBlock("cactus_plank_fence_gate",
             WoodType.BIRCH, DecoBlocks.CACTUS_PLANKS);
     public static final Block WOODEN_FENCE_GATE = registerFenceGateBlock("wooden_fence_gate",
             WoodType.OAK, DecoBlocks.WOODEN_PLANKS);
+    public static final Block DRIFTWOOD_FENCE_GATE = registerFenceGateBlock("driftwood_fence_gate",
+            WoodType.OAK, DecoBlocks.DRIFTWOOD_PLANKS);
     public static final Block NETHER_BRICK_FENCE_GATE = registerFenceGateBlock("nether_brick_fence_gate",
             WoodType.SPRUCE, Blocks.NETHER_BRICKS);
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerFenceGateBlock("red_nether_brick_fence_gate",
@@ -2031,9 +2102,13 @@ public class DecoBlocks {
     public static final Identifier CACTUS_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"cactus_wall_sign");
     public static final Identifier WOODEN_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_sign");
     public static final Identifier WOODEN_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_wall_sign");
+    public static final Identifier DRIFTWOOD_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_sign");
+    public static final Identifier DRIFTWOOD_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_wall_sign");
 
     public static final Identifier WOODEN_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_hanging_sign");
     public static final Identifier WOODEN_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_wall_hanging_sign");
+    public static final Identifier DRIFTWOOD_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_hanging_sign");
+    public static final Identifier DRIFTWOOD_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_wall_hanging_sign");
 
     public static final Identifier STRIPPED_OAK_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_oak_sign");
     public static final Identifier STRIPPED_OAK_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_oak_wall_sign");
@@ -2059,6 +2134,8 @@ public class DecoBlocks {
     public static final Identifier STRIPPED_WARPED_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_warped_wall_sign");
     public static final Identifier STRIPPED_WOODEN_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_wooden_sign");
     public static final Identifier STRIPPED_WOODEN_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_wooden_wall_sign");
+    public static final Identifier STRIPPED_DRIFTWOOD_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_driftwood_sign");
+    public static final Identifier STRIPPED_DRIFTWOOD_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"stripped_driftwood_wall_sign");
 
     public static final Identifier OAK_MOSAIC_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_sign");
     public static final Identifier OAK_MOSAIC_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_wall_sign");
@@ -2088,6 +2165,8 @@ public class DecoBlocks {
     public static final Identifier CACTUS_MOSAIC_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"cactus_mosaic_wall_sign");
     public static final Identifier WOODEN_MOSAIC_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_mosaic_sign");
     public static final Identifier WOODEN_MOSAIC_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_mosaic_wall_sign");
+    public static final Identifier DRIFTWOOD_MOSAIC_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_mosaic_sign");
+    public static final Identifier DRIFTWOOD_MOSAIC_WALL_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_mosaic_wall_sign");
 
     public static final Identifier OAK_MOSAIC_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_hanging_sign");
     public static final Identifier OAK_MOSAIC_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_mosaic_wall_hanging_sign");
@@ -2117,6 +2196,8 @@ public class DecoBlocks {
     public static final Identifier CACTUS_MOSAIC_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"cactus_mosaic_wall_hanging_sign");
     public static final Identifier WOODEN_MOSAIC_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_mosaic_hanging_sign");
     public static final Identifier WOODEN_MOSAIC_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_mosaic_wall_hanging_sign");
+    public static final Identifier DRIFTWOOD_MOSAIC_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_mosaic_hanging_sign");
+    public static final Identifier DRIFTWOOD_MOSAIC_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_mosaic_wall_hanging_sign");
 
     public static final Identifier OAK_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_planks_hanging_sign");
     public static final Identifier OAK_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"oak_planks_wall_hanging_sign");
@@ -2144,6 +2225,8 @@ public class DecoBlocks {
     public static final Identifier CACTUS_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"cactus_planks_wall_hanging_sign");
     public static final Identifier WOODEN_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_planks_hanging_sign");
     public static final Identifier WOODEN_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"wooden_planks_wall_hanging_sign");
+    public static final Identifier DRIFTWOOD_PLANKS_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_planks_hanging_sign");
+    public static final Identifier DRIFTWOOD_PLANKS_WALL_HANGING_SIGN_ID = Identifier.of(VaranDeco.MOD_ID,"driftwood_planks_wall_hanging_sign");
 
     public static final SignBlock STANDING_CACTUS_SIGN = TerraformSignBlockHelper.registerSignBlock
             (CACTUS_SIGN_ID,settings -> new SignBlock(DecoWoodTypes.CACTUS_TYPE, settings),
@@ -2157,13 +2240,27 @@ public class DecoBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_SIGN));
     public static final WallSignBlock WALL_WOODEN_SIGN = TerraformSignBlockHelper.registerSignBlock
             (WOODEN_WALL_SIGN_ID,settings -> new WallSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
-                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN).lootTable(STANDING_CACTUS_SIGN.getLootTableKey()));
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN).lootTable(STANDING_WOODEN_SIGN.getLootTableKey()));
+
+    public static final SignBlock STANDING_DRIFTWOOD_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_SIGN_ID,settings -> new SignBlock(DecoWoodTypes.DRIFTWOOD_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_SIGN));
+    public static final WallSignBlock WALL_DRIFTWOOD_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_WALL_SIGN_ID,settings -> new WallSignBlock(DecoWoodTypes.DRIFTWOOD_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN).lootTable(STANDING_DRIFTWOOD_SIGN.getLootTableKey()));
 
     public static final HangingSignBlock HANGING_WOODEN_SIGN = TerraformSignBlockHelper.registerSignBlock
             (WOODEN_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final WallHangingSignBlock WALL_HANGING_WOODEN_SIGN = TerraformSignBlockHelper.registerSignBlock
             (WOODEN_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+
+    public static final HangingSignBlock HANGING_DRIFTWOOD_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.DRIFTWOOD_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+    public static final WallHangingSignBlock WALL_HANGING_DRIFTWOOD_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.DRIFTWOOD_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
 
     public static final Block STANDING_STRIPPED_OAK_SIGN = TerraformSignBlockHelper.registerSignBlock
@@ -2237,6 +2334,12 @@ public class DecoBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_SIGN));
     public static final Block WALL_STRIPPED_WOODEN_SIGN = TerraformSignBlockHelper.registerSignBlock
             (STRIPPED_WOODEN_WALL_SIGN_ID,settings -> new WallSignBlock(DecoWoodTypes.STRIPPED_WOODEN_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN));
+    public static final Block STANDING_STRIPPED_DRIFTWOOD_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (STRIPPED_DRIFTWOOD_SIGN_ID,settings -> new SignBlock(DecoWoodTypes.STRIPPED_DRIFTWOOD_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_SIGN));
+    public static final Block WALL_STRIPPED_DRIFTWOOD_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (STRIPPED_DRIFTWOOD_WALL_SIGN_ID,settings -> new WallSignBlock(DecoWoodTypes.STRIPPED_DRIFTWOOD_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN));
 
     public static final Block STANDING_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
@@ -2323,6 +2426,12 @@ public class DecoBlocks {
     public static final Block WALL_WOODEN_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
             (WOODEN_MOSAIC_WALL_SIGN_ID,settings -> new WallSignBlock(DecoWoodTypes.WOODEN_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN));
+    public static final Block STANDING_DRIFTWOOD_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_MOSAIC_SIGN_ID,settings -> new SignBlock(DecoWoodTypes.DRIFTWOOD_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_SIGN));
+    public static final Block WALL_DRIFTWOOD_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_MOSAIC_WALL_SIGN_ID,settings -> new WallSignBlock(DecoWoodTypes.DRIFTWOOD_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN));
 
     public static final Block HANGING_OAK_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
             (OAK_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.OAK_MOSAIC_TYPE, settings),
@@ -2408,6 +2517,12 @@ public class DecoBlocks {
     public static final Block WALL_HANGING_WOODEN_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
             (WOODEN_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_MOSAIC_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+    public static final Block HANGING_DRIFTWOOD_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_MOSAIC_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.DRIFTWOOD_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+    public static final Block WALL_HANGING_DRIFTWOOD_MOSAIC_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_MOSAIC_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.DRIFTWOOD_MOSAIC_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
 
     public static final Block HANGING_OAK_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
             (OAK_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.OAK_PLANKS_TYPE, settings),
@@ -2486,6 +2601,12 @@ public class DecoBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
     public static final Block WALL_HANGING_WOODEN_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
             (WOODEN_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.WOODEN_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
+    public static final Block HANGING_DRIFTWOOD_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_PLANKS_HANGING_SIGN_ID,settings -> new HangingSignBlock(DecoWoodTypes.DRIFTWOOD_PLANKS_TYPE, settings),
+                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN));
+    public static final Block WALL_HANGING_DRIFTWOOD_PLANKS_SIGN = TerraformSignBlockHelper.registerSignBlock
+            (DRIFTWOOD_PLANKS_WALL_HANGING_SIGN_ID,settings -> new WallHangingSignBlock(DecoWoodTypes.DRIFTWOOD_PLANKS_TYPE, settings),
                     AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN));
 
     public static final Block STONE_TEMP = registerBlockTemp("stone_temp", Block::new);
@@ -2570,9 +2691,11 @@ public class DecoBlocks {
     public static final Block CRIMSON_MOSAIC_TEMP = registerBlockTemp("crimson_mosaic_temp",Block::new);
     public static final Block CACTUS_MOSAIC_TEMP = registerBlockTemp("cactus_mosaic_temp",Block::new);
     public static final Block PALE_OAK_MOSAIC_TEMP = registerBlockTemp("pale_oak_mosaic_temp",Block::new);
+    public static final Block DRIFTWOOD_MOSAIC_TEMP = registerBlockTemp("driftwood_mosaic_temp",Block::new);
     public static final Block POLISHED_TUFF_TEMP = registerBlockTemp("polished_tuff_temp",Block::new);
     public static final Block PURPUR_TEMP = registerBlockTemp("purpur_temp",Block::new);
     public static final Block SMOOTH_BASALT_TEMP = registerBlockTemp("smooth_basalt_temp",Block::new);
+    public static final Block STRIPPED_DRIFTWOOD_TEMP = registerBlockTemp("stripped_driftwood_temp",Block::new);
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
@@ -2580,6 +2703,9 @@ public class DecoBlocks {
     public static final BlockFamily WOODEN_FAMILY = BlockFamilies.register(DecoBlocks.WOODEN_PLANKS)
             .sign(DecoBlocks.STANDING_WOODEN_SIGN,DecoBlocks.WALL_WOODEN_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
+    public static final BlockFamily DRIFTWOOD_FAMILY = BlockFamilies.register(DecoBlocks.DRIFTWOOD_PLANKS)
+            .sign(DecoBlocks.STANDING_DRIFTWOOD_SIGN,DecoBlocks.WALL_DRIFTWOOD_SIGN)
+            .group("driftwood").unlockCriterionName("has_planks").build();
 
     public static final BlockFamily STRIPPED_OAK_FAMILY = BlockFamilies.register(Blocks.STRIPPED_OAK_WOOD)
             .sign(DecoBlocks.STANDING_STRIPPED_OAK_SIGN,DecoBlocks.WALL_STRIPPED_OAK_SIGN)
@@ -2617,6 +2743,9 @@ public class DecoBlocks {
     public static final BlockFamily STRIPPED_PALE_OAK_FAMILY = BlockFamilies.register(Blocks.STRIPPED_PALE_OAK_WOOD)
             .sign(DecoBlocks.STANDING_STRIPPED_PALE_OAK_SIGN,DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN)
             .group("stripped_pale_oak").build();
+    public static final BlockFamily STRIPPED_DRIFTWOOD_FAMILY = BlockFamilies.register(DecoBlocks.STRIPPED_DRIFTWOOD)
+            .sign(DecoBlocks.STANDING_STRIPPED_DRIFTWOOD_SIGN,DecoBlocks.WALL_STRIPPED_DRIFTWOOD_SIGN)
+            .group("stripped_driftwood").build();
 
     public static final BlockFamily OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.OAK_MOSAIC)
             .sign(DecoBlocks.STANDING_OAK_MOSAIC_SIGN,DecoBlocks.WALL_OAK_MOSAIC_SIGN)
@@ -2660,6 +2789,9 @@ public class DecoBlocks {
     public static final BlockFamily PALE_OAK_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.PALE_OAK_MOSAIC)
             .sign(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN,DecoBlocks.WALL_PALE_OAK_MOSAIC_SIGN)
             .group("pale_oak_mosaic").build();
+    public static final BlockFamily DRIFTWOOD_MOSAIC_FAMILY = BlockFamilies.register(DecoBlocks.DRIFTWOOD_MOSAIC)
+            .sign(DecoBlocks.STANDING_DRIFTWOOD_MOSAIC_SIGN,DecoBlocks.WALL_DRIFTWOOD_MOSAIC_SIGN)
+            .group("driftwood_mosaic").build();
 
     private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return false;
@@ -2676,6 +2808,11 @@ public class DecoBlocks {
     public static <T extends Block> T registerBlock(String name,AbstractBlock.Settings settings, Function<AbstractBlock.Settings, T> factory){
         T block = factory.apply(settings.registryKey(getBlockKey(name)));
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, getBlockKey(name), block);
+    }
+    public static <T extends Block> T registerNonStationBlock(String name,AbstractBlock.Settings settings, Function<AbstractBlock.Settings, T> factory){
+        T block = factory.apply(settings.registryKey(getBlockKey(name)));
+        registerNonStationBlockItem(name, block);
         return Registry.register(Registries.BLOCK, getBlockKey(name), block);
     }
     public static <T extends Block> T registerBlockWithoutItem(String name,AbstractBlock.Settings settings, Function<AbstractBlock.Settings, T> factory){
@@ -2742,6 +2879,10 @@ public class DecoBlocks {
         return registerSimple(name, new SaplingBlock(generator,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
+    public static DriftwoodSaplingBlock registerDriftwoodSapling(String name, SaplingGenerator generator, Block copyBlock) {
+        return registerSimple(name, new DriftwoodSaplingBlock(generator,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name)).ticksRandomly()));
+    }
     public static OxidizablePaneBlock registerOxidPane(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
         return registerSimple(name, new OxidizablePaneBlock(oxidationLevel,
                 AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER).registryKey(DecoBlocks.getBlockKey(name))));
@@ -2796,6 +2937,11 @@ public class DecoBlocks {
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(name),
                 new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(name)))));
+    }
+    private static void registerNonStationBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(name),
+                new NonStationBlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
                         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(name)))));
     }
 

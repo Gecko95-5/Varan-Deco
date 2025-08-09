@@ -18,6 +18,11 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.MIGHTY_LAVENDER,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WOODEN_SAPLING,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WOODEN_LEAVES,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.KELP_LEAVES,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DEAD_KELP_LEAVES,0.15F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DRIFTWOOD_SAPLING,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DRIFTWOOD_SPROUT,0.15F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DRIED_LEAVES,0.6F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.YELLOW_TULIP,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.PURPLE_TULIP,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.MAGENTA_TULIP,0.65F);

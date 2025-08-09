@@ -2,6 +2,7 @@
   "values": [
     "varan-deco:cactus_wall_sign",
     "varan-deco:wooden_wall_sign",
+    "varan-deco:driftwood_wall_sign",
     "varan-deco:stripped_oak_wall_sign",
     "varan-deco:stripped_spruce_wall_sign",
     "varan-deco:stripped_birch_wall_sign",
@@ -14,6 +15,7 @@
     "varan-deco:stripped_warped_wall_sign",
     "varan-deco:stripped_wooden_wall_sign",
     "varan-deco:stripped_pale_oak_wall_sign",
+    "varan-deco:stripped_driftwood_wall_sign",
     "varan-deco:oak_mosaic_wall_sign",
     "varan-deco:spruce_mosaic_wall_sign",
     "varan-deco:birch_mosaic_wall_sign",
@@ -27,6 +29,7 @@
     "varan-deco:warped_mosaic_wall_sign",
     "varan-deco:cactus_mosaic_wall_sign",
     "varan-deco:wooden_mosaic_wall_sign",
-    "varan-deco:pale_oak_mosaic_wall_sign"
+    "varan-deco:pale_oak_mosaic_wall_sign",
+    "varan-deco:driftwood_mosaic_wall_sign"
   ]
 }
