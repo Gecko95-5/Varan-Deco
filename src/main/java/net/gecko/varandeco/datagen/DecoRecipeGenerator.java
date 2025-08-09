@@ -5935,11 +5935,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_smoking_dead_kelp_leaves");
 
                 CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(DecoBlocks.KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
-                                0.1f, 100).criterion(hasItem(DecoBlocks.KELP_LEAVES), conditionsFromItem(DecoBlocks.KELP_LEAVES))
+                                0.1f, 600).criterion(hasItem(DecoBlocks.KELP_LEAVES), conditionsFromItem(DecoBlocks.KELP_LEAVES))
                         .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_campfire_cooking_kelp_leaves");
 
                 CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(DecoBlocks.DEAD_KELP_LEAVES),RecipeCategory.FOOD, Items.DRIED_KELP,
-                                0.1f, 100).criterion(hasItem(DecoBlocks.DEAD_KELP_LEAVES), conditionsFromItem(DecoBlocks.DEAD_KELP_LEAVES))
+                                0.1f, 600).criterion(hasItem(DecoBlocks.DEAD_KELP_LEAVES), conditionsFromItem(DecoBlocks.DEAD_KELP_LEAVES))
                         .offerTo(exporter, getRecipeName(Items.DRIED_KELP)+ "_from_campfire_cooking_dead_kelp_leaves");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIFTWOOD_SPROUT)
@@ -5950,6 +5950,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.KELP),
                                 conditionsFromItem(Items.KELP))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_SPROUT) + "_recipe_create");
+
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIED_LEAVES)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.LEAF_LITTER)
+                        .criterion(hasItem(Items.LEAF_LITTER),
+                                conditionsFromItem(Items.LEAF_LITTER))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.DRIED_LEAVES) + "_recipe_create");
             }
         };
     }

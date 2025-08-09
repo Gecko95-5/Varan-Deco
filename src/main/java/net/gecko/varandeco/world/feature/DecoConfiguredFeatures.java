@@ -72,6 +72,8 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FALLEN_DRIFTWOOD_KEY = registerKey("deco_fallen_driftwood");
 
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_DRIFTWOOD_TREE_KEY = registerKey("deco_driftwood_tree");
+
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FALLEN_DRIED_DRIFTWOOD_KEY = registerKey("deco_fallen_dried_driftwood");
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_BUBBLE_ORE = registerKey("deco_bubble_ore");
@@ -187,6 +189,12 @@ public class DecoConfiguredFeatures {
                         new TwoLayersFeatureSize(1, 1, 2)).decorators
                                 (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
                         .build());
+
+        register(context, DECO_DRIFTWOOD_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG), new StraightTrunkPlacer(5, 2, 2),
+                BlockStateProvider.of(DecoBlocks.KELP_LEAVES),
+                new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
         register(context, DECO_BUBBLE_ORE, Feature.ORE, new OreFeatureConfig(overworldBubbleOre, 5));
 

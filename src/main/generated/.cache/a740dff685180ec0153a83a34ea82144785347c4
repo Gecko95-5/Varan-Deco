@@ -10,7 +10,7 @@ c608b9004fc975aad28fc76a0c4062a9d2aca9cf data/minecraft/tags/block/flower_pots.j
 400cb820962bff0d92095c4b962722e603d0f232 data/minecraft/tags/block/guarded_by_piglins.json
 e679dfca792e4ebae644965689391497d194529c data/minecraft/tags/block/ice.json
 1d8fb37b59d6da58833ab6c42e1752c0aa7df625 data/minecraft/tags/block/impermeable.json
-ceddb3c465b025e31209304ef798b5fc6be7c7f0 data/minecraft/tags/block/leaves.json
+eedf18ecf898a1522b18f68b73d1b31427ec2ebc data/minecraft/tags/block/leaves.json
 bca3193a178670643eb7951bcbf62df66a82b9a0 data/minecraft/tags/block/logs.json
 112f54edac636b7f3e31ec3980c565cb269c14eb data/minecraft/tags/block/logs_that_burn.json
 515c3f25a6ae3b468160cf07c485fb0041f35ac9 data/minecraft/tags/block/mineable/axe.json
@@ -23,7 +23,7 @@ e1039261b2bddfde7fb1628e57265c791fbff0d3 data/minecraft/tags/block/needs_diamond
 ba534b68a8b6997db1f0bded0aa2321c824d3213 data/minecraft/tags/block/piglin_repellents.json
 b2ac5ae80fc733879410956726a434be3c783b9a data/minecraft/tags/block/planks.json
 6f44fdec71e126c89fbd59d86b55b9d938a83765 data/minecraft/tags/block/pressure_plates.json
-f35376a6bf06ba120e497430b3ab638b5b79f26a data/minecraft/tags/block/saplings.json
+b7e6a540240367fd515f5eebf5b116893a889e97 data/minecraft/tags/block/saplings.json
 c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replaceable.json
 3819b845b8b5f717c9490b4439db5c0f12f1f032 data/minecraft/tags/block/slabs.json
 8ca4a0569436274167594f5b43b39e7016a8875d data/minecraft/tags/block/small_flowers.json
@@ -36,7 +36,7 @@ f2fb186f7b236213990ba0d2d5dae80164daca34 data/minecraft/tags/block/soul_speed_bl
 f9eb8cbfe3af18d094f3bf78f58fed1fefeae5e4 data/minecraft/tags/block/standing_signs.json
 712395f93074e6107a7d3c3f9d6f1ae5f539be3b data/minecraft/tags/block/stone_buttons.json
 a4cd61e7c6cb5507d4221d1e56bb29013f7d0223 data/minecraft/tags/block/stone_pressure_plates.json
-0485644f541265df0bf49cfad88fb5debcde77fe data/minecraft/tags/block/underwater_bonemeals.json
+b03e40a40d6dc36e4ab08accaa9f9034044b5498 data/minecraft/tags/block/underwater_bonemeals.json
 8214e6b5ba920b8ce6ffaa9214c46e03e2fdd7d8 data/minecraft/tags/block/wall_hanging_signs.json
 4690990ff99f4a1a0022c14aeb926317532203df data/minecraft/tags/block/wall_signs.json
 2275dc23e288e537da7b9728e667cb7ca8b6f65f data/minecraft/tags/block/walls.json

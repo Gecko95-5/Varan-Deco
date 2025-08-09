@@ -108,6 +108,9 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.KELP_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEAD_KELP_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DRIFTWOOD_SPROUT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DRIFTWOOD_SAPLING, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DRIED_LEAVES, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HEAVY_IRON_BARS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.LIGHT_IRON_BARS, RenderLayer.getCutout());
@@ -264,5 +267,8 @@ public class VaranDecoClient implements ClientModInitializer {
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : -12012264,
                 DecoBlocks.WOODEN_LEAVES);
+
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getDryFoliageColor(world, pos) : -10732494,
+                DecoBlocks.DRIED_LEAVES);
     }
 }

@@ -14,4 +14,12 @@ public class DecoSaplingGenerators {
                     Optional.of(DecoConfiguredFeatures.DECO_FANCY_WOODEN_TREE_KEY),
                     Optional.empty(),
                     Optional.empty());
+
+    public static final SaplingGenerator DRIFTWOOD =
+            new SaplingGenerator("driftwood", 0f, Optional.empty(),
+                    Optional.empty(),
+                    Optional.of(DecoConfiguredFeatures.DECO_DRIFTWOOD_TREE_KEY),
+                    Optional.empty(),
+                    Optional.empty(),
+                    Optional.empty());
 }

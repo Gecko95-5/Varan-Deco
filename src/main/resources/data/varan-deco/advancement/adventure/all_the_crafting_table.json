@@ -154,6 +154,17 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "driftwood": {
+      "conditions": {
+        "items": [
+          {
+            "items":
+              "minecraft:driftwood_crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -210,6 +221,9 @@
     ],
     [
       "pale_oak"
+    ],
+    [
+      "driftwood"
     ]
   ]
 }

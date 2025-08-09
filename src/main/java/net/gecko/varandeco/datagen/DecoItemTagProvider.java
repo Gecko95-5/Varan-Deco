@@ -112,7 +112,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.DRIFTWOOD_TRAPDOOR.asItem());
 
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
-                .add(DecoBlocks.WOODEN_SAPLING.asItem());
+                .add(DecoBlocks.WOODEN_SAPLING.asItem())
+                .add(DecoBlocks.DRIFTWOOD_SAPLING.asItem());
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES.asItem());

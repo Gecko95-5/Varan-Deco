@@ -1399,9 +1399,12 @@
   "block.minecraft.standing_driftwood_sign": "Driftwood Sign",
   "block.minecraft.wall_driftwood_sign": "Driftwood Wall Sign",
   "block.minecraft.driftwood_sprout": "Driftwood Sprout",
+  "block.minecraft.driftwood_sapling": "Driftwood Sapling",
 
   "block.minecraft.kelp_leaves": "Kelp Leaves",
   "block.minecraft.dead_kelp_leaves": "Dead Kelp Leaves",
+
+  "block.minecraft.dried_leaves": "Dried Leaves",
 
   "block.minecraft.iron_button": "Iron Button",
   "block.minecraft.gold_button": "Gold Button",

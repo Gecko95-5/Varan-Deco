@@ -528,7 +528,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_FENCE);
 
         getOrCreateTagBuilder(BlockTags.UNDERWATER_BONEMEALS)
-                .add(DecoBlocks.DRIFTWOOD_SPROUT);
+                .add(DecoBlocks.DRIFTWOOD_SPROUT)
+                .add(DecoBlocks.DRIFTWOOD_SAPLING);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
@@ -922,7 +923,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WALL_HANGING_DRIFTWOOD_PLANKS_SIGN);
 
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
-                .add(DecoBlocks.WOODEN_SAPLING);
+                .add(DecoBlocks.WOODEN_SAPLING)
+                .add(DecoBlocks.DRIFTWOOD_SAPLING);
 
         getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
@@ -1533,7 +1535,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES)
                 .add(DecoBlocks.KELP_LEAVES)
-                .add(DecoBlocks.DEAD_KELP_LEAVES);
+                .add(DecoBlocks.DEAD_KELP_LEAVES)
+                .add(DecoBlocks.DRIED_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.PIGLIN_REPELLENTS)
                 .add(DecoBlocks.COPPER_SOUL_LANTERN)

@@ -11,14 +11,12 @@ import net.minecraft.block.TallPlantBlock;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
@@ -26,7 +24,6 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -768,7 +765,12 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
                         (UniformLootNumberProvider.create(1.0F, 3.0F))))));
         addDrop(DecoBlocks.DEAD_KELP_LEAVES, this::dropsWithShears);
 
+        this.addDrop(DecoBlocks.DRIED_LEAVES, block -> this.dropsWithShears(block, this.applyExplosionDecay(
+                block, ItemEntry.builder(Items.LEAF_LITTER).apply(SetCountLootFunction.builder
+                        (UniformLootNumberProvider.create(1.0F, 3.0F))))));
+
         addDrop(DecoBlocks.DRIFTWOOD_SPROUT);
+        addDrop(DecoBlocks.DRIFTWOOD_SAPLING);
 
         addDrop(DecoBlocks.DEEPSLATE_FURNACE);
 

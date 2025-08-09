@@ -2,6 +2,7 @@
   "values": [
     "minecraft:wooden_leaves",
     "minecraft:kelp_leaves",
-    "minecraft:dead_kelp_leaves"
+    "minecraft:dead_kelp_leaves",
+    "minecraft:dried_leaves"
   ]
 }

@@ -1,7 +1,7 @@
 package net.gecko.varandeco.block.underwaterwood;
 
 import com.mojang.serialization.MapCodec;
-import net.gecko.varandeco.block.DecoBlocks;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
@@ -15,7 +15,6 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -23,20 +22,9 @@ import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 import org.jetbrains.annotations.Nullable;
 
-public class DriftwoodSproutBlock extends PlantBlock implements Fertilizable, FluidFillable {
-    public static final MapCodec<DriftwoodSproutBlock> CODEC = createCodec(DriftwoodSproutBlock::new);
-    private static final VoxelShape SHAPE = Block.createColumnShape(8.0, 0.0, 8.0);
-    public DriftwoodSproutBlock(Settings settings) {
-        super(settings);
-    }
-
-    @Override
-    protected MapCodec<? extends DriftwoodSproutBlock> getCodec() {
-        return CODEC;
-    }
-    @Override
-    protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+public class DriftwoodSaplingBlock extends SaplingBlock implements Fertilizable, FluidFillable {
+    public DriftwoodSaplingBlock(SaplingGenerator generator, Settings settings) {
+        super(generator, settings);
     }
     @Nullable
     @Override
@@ -66,20 +54,6 @@ public class DriftwoodSproutBlock extends PlantBlock implements Fertilizable, Fl
         }
 
         return blockState;
-    }
-    @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
-        return true;
-    }
-
-    @Override
-    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
-        return true;
-    }
-
-    @Override
-    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        world.setBlockState(pos, DecoBlocks.DRIFTWOOD_SAPLING.getDefaultState(), Block.NOTIFY_ALL);
     }
     @Override
     protected FluidState getFluidState(BlockState state) {

@@ -16,6 +16,7 @@ public class DecoFuelRegistry {
             builder.add(DecoTags.Items.MOSAIC_WOOD,300);
             builder.add(DecoTags.Items.MOSAIC_STAIRS,300);
             builder.add(DecoTags.Items.MOSAIC_SLABS,150);
+            builder.add(DecoBlocks.DRIED_LEAVES,400);
         });
     }
 }

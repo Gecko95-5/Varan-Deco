@@ -18,7 +18,7 @@ import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 import org.jetbrains.annotations.Nullable;
 
-public class KelpLeafBlock extends GrateBlock {
+public class KelpLeafBlock extends AbstractKelpLeafBlock {
     public static final MapCodec<KelpLeafBlock> CODEC = createCodec(KelpLeafBlock::new);
     public KelpLeafBlock(Settings settings) {
         super(settings);

@@ -16,10 +16,7 @@ import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
-import net.gecko.varandeco.block.underwaterwood.DriftwoodBlock;
-import net.gecko.varandeco.block.underwaterwood.DriftwoodLogBlock;
-import net.gecko.varandeco.block.underwaterwood.DriftwoodSproutBlock;
-import net.gecko.varandeco.block.underwaterwood.KelpLeafBlock;
+import net.gecko.varandeco.block.underwaterwood.*;
 import net.gecko.varandeco.item.custom.NonStationBlockItem;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
@@ -1062,16 +1059,22 @@ public class DecoBlocks {
 
     public static final Block WOODEN_LEAVES = registerTintedLeaves("wooden_leaves",
             0.01F,Blocks.DARK_OAK_LEAVES);
+    public static final Block DRIED_LEAVES = registerBlock("dried_leaves",
+            AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).mapColor(MapColor.BROWN)
+                    .sounds(BlockSoundGroup.LEAF_LITTER).pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque().breakInstantly().noCollision(), DriedLeafBlock::new);
     public static final Block KELP_LEAVES = registerBlock("kelp_leaves",
             AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).sounds(BlockSoundGroup.WET_GRASS)
                     .mapColor(MapColor.LIME).nonOpaque(), KelpLeafBlock::new);
     public static final Block DEAD_KELP_LEAVES = registerBlock("dead_kelp_leaves",
             AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES).sounds(BlockSoundGroup.HANGING_ROOTS)
-                    .mapColor(MapColor.LIGHT_GRAY).nonOpaque(), GrateBlock::new);
+                    .mapColor(MapColor.LIGHT_GRAY).nonOpaque(), AbstractKelpLeafBlock::new);
 
     public static final Block DRIFTWOOD_SPROUT = registerBlock("driftwood_sprout",
             AbstractBlock.Settings.create().mapColor(MapColor.WATER_BLUE).noCollision().breakInstantly()
                     .sounds(BlockSoundGroup.WET_GRASS).pistonBehavior(PistonBehavior.DESTROY), DriftwoodSproutBlock::new);
+    public static final Block DRIFTWOOD_SAPLING = registerDriftwoodSapling("driftwood_sapling",
+            DecoSaplingGenerators.DRIFTWOOD ,DecoBlocks.DRIFTWOOD_SPROUT);
 
     public static final Block PUFFY_DANDELION = registerPuffyFlower("puffy_dandelion",
             StatusEffects.SATURATION, 3, Blocks.DANDELION);
@@ -2725,6 +2728,10 @@ public class DecoBlocks {
     public static SaplingBlock registerSapling(String name, SaplingGenerator generator, Block copyBlock) {
         return registerSimple(name, new SaplingBlock(generator,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static DriftwoodSaplingBlock registerDriftwoodSapling(String name, SaplingGenerator generator, Block copyBlock) {
+        return registerSimple(name, new DriftwoodSaplingBlock(generator,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name)).ticksRandomly()));
     }
     public static OxidizablePaneBlock registerOxidPane(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
         return registerSimple(name, new OxidizablePaneBlock(oxidationLevel,

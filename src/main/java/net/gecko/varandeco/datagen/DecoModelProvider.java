@@ -321,6 +321,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockState(DecoBlocks.DRIFTWOOD_SPROUT,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
 
+        blockStateModelGenerator.registerTintableCrossBlockState(DecoBlocks.DRIFTWOOD_SAPLING,
+                BlockStateModelGenerator.CrossType.NOT_TINTED);
+
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.ANCIENT_ROSE, DecoBlocks.POTTED_ANCIENT_ROSE,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
 
@@ -559,6 +562,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.DRIFTWOOD_BOOKSHELF);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_LEAVES);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.DRIED_LEAVES);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.KELP_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.DEAD_KELP_LEAVES);
