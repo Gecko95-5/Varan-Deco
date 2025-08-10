@@ -3,6 +3,7 @@ package net.gecko.varandeco.world.feature;
 import com.google.common.collect.ImmutableList;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.gecko.varandeco.world.feature.tree.custom.DriftwoodTreePlacer;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
@@ -22,6 +23,7 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
 import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
+import net.minecraft.world.gen.foliage.PineFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider;
@@ -191,9 +193,9 @@ public class DecoConfiguredFeatures {
                         .build());
 
         register(context, DECO_DRIFTWOOD_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG), new StraightTrunkPlacer(5, 2, 2),
+                BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG), new DriftwoodTreePlacer(5, 2, 2),
                 BlockStateProvider.of(DecoBlocks.KELP_LEAVES),
-                new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
+                new PineFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
                 new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
         register(context, DECO_BUBBLE_ORE, Feature.ORE, new OreFeatureConfig(overworldBubbleOre, 5));

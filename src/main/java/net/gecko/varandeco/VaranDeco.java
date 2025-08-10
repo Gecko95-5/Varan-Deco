@@ -9,6 +9,7 @@ import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
+import net.gecko.varandeco.world.feature.tree.DecoTruckPlacerType;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
@@ -38,6 +39,7 @@ public class VaranDeco implements ModInitializer {
 		DecoComposterRecipes.registerCompostableItems();
 		DecoCustomTrades.registerCustomTrades();
 		DecoEntities.registerDecoEntities();
+		DecoTruckPlacerType.register();
 
 		LOGGER.info("Hello Fabric world!");
 
