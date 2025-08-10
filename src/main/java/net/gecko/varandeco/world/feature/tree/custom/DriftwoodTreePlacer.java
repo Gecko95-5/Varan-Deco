@@ -57,26 +57,44 @@ public class DriftwoodTreePlacer extends TrunkPlacer {
                             .get(random, startPos.up(i).offset(Direction.WEST, x))));
                 }
             }
+            if (i == 0){
+                for (int x = 1; x == 1; x++) {
+                    replacer.accept(startPos.up(i).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                            .get(random, startPos.up(i).offset(Direction.NORTH, x))));
+                }
+                for (int x = 1; x == 1; x++) {
+                    replacer.accept(startPos.up(i).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                            .get(random, startPos.up(i).offset(Direction.SOUTH, x))));
+                }
+                for (int x = 1; x == 1; x++) {
+                    replacer.accept(startPos.up(i).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                            .get(random, startPos.up(i).offset(Direction.EAST, x))));
+                }
+                for (int x = 1; x == 1; x++) {
+                    replacer.accept(startPos.up(i).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                            .get(random, startPos.up(i).offset(Direction.WEST, x))));
+                }
+            }
             if (i == 1){
-                if(random.nextFloat() > 0.25f) {
+                if(random.nextFloat() > 0.5f) {
                     for (int x = 1; x == 1; x++) {
                         replacer.accept(startPos.up(i).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
                                 .get(random, startPos.up(i).offset(Direction.NORTH, x))));
                     }
                 }
-                if(random.nextFloat() > 0.25f) {
+                if(random.nextFloat() > 0.5f) {
                     for (int x = 1; x == 1; x++) {
                         replacer.accept(startPos.up(i).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
                                 .get(random, startPos.up(i).offset(Direction.SOUTH, x))));
                     }
                 }
-                if(random.nextFloat() > 0.25f) {
+                if(random.nextFloat() > 0.5f) {
                     for (int x = 1; x == 1; x++) {
                         replacer.accept(startPos.up(i).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
                                 .get(random, startPos.up(i).offset(Direction.EAST, x))));
                     }
                 }
-                if(random.nextFloat() > 0.25f) {
+                if(random.nextFloat() > 0.5f) {
                     for (int x = 1; x == 1; x++) {
                         replacer.accept(startPos.up(i).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
                                 .get(random, startPos.up(i).offset(Direction.WEST, x))));

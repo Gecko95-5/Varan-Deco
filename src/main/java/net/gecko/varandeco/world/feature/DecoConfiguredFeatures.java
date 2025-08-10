@@ -23,7 +23,6 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
 import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
-import net.minecraft.world.gen.foliage.PineFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider;
@@ -195,8 +194,9 @@ public class DecoConfiguredFeatures {
         register(context, DECO_DRIFTWOOD_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG), new DriftwoodTreePlacer(5, 2, 2),
                 BlockStateProvider.of(DecoBlocks.KELP_LEAVES),
-                new PineFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
-                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
+                new SpruceFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(4), UniformIntProvider.create(3, 4)),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).decorators
+                (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(DecoBlocks.DRIFTWOOD_LOG)))).build());
 
         register(context, DECO_BUBBLE_ORE, Feature.ORE, new OreFeatureConfig(overworldBubbleOre, 5));
 
