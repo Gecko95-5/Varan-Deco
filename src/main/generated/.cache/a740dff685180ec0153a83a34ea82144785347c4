@@ -30,7 +30,7 @@ c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replace
 73d66f372d8c4d1b45f3aa477fbb0a97cfa88b10 data/minecraft/tags/block/snaps_goat_horn.json
 2b1cf933b140a1bf229504c154469b32bc03f95d data/minecraft/tags/block/snow.json
 928a8afc8dfa756732a3df21326b4498f9abb89f data/minecraft/tags/block/snow_layer_cannot_survive_on.json
-480de690cd1892b86a135e05c14396023409b9ab data/minecraft/tags/block/soul_fire_base_blocks.json
+f2fb186f7b236213990ba0d2d5dae80164daca34 data/minecraft/tags/block/soul_fire_base_blocks.json
 f2fb186f7b236213990ba0d2d5dae80164daca34 data/minecraft/tags/block/soul_speed_blocks.json
 356fc7e9b7760d0384f5277076f8640c5645b345 data/minecraft/tags/block/stairs.json
 974e083ac39c297f7757f02f6eeef886c29fed12 data/minecraft/tags/block/standing_signs.json

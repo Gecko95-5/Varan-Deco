@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "pink_dye",
   "ingredients": [
     "minecraft:mighty_lavender_flower"
   ],
