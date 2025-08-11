@@ -1,6 +1,7 @@
 package net.gecko.varandeco.util;
 
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTables;
@@ -14,13 +15,14 @@ import net.minecraft.util.Identifier;
 public class DecoLootTableModifiers {
     private static final Identifier PUFFERFISH_ID =
             Identifier.of("minecraft", "entities/pufferfish");
-
     private static final Identifier GUARDIAN_ID =
             Identifier.of("minecraft", "entities/guardian");
     private static final Identifier ENDERMAN_ID =
             Identifier.of("minecraft", "entities/enderman");
     private static final Identifier FORTRESS_ID =
             Identifier.of("minecraft", "chests/nether_bridge");
+    private static final Identifier SHIPWRECK_SUPPLY_ID =
+            Identifier.of("minecraft", "chests/shipwreck_supply");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registry) -> {
@@ -66,6 +68,15 @@ public class DecoLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.5f))
                         .with(ItemEntry.builder(DecoItems.WARPED_WART))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (SHIPWRECK_SUPPLY_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(UniformLootNumberProvider.create(1.0f,2.0f))
+                        .with(ItemEntry.builder(DecoBlocks.DRIFTWOOD_LOG)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 6.0f))).build());
+
 
                 tableBuilder.pool(poolBuilder.build());
             }

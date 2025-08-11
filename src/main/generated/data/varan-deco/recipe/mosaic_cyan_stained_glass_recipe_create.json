@@ -3,6 +3,7 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
+  "group": "mosaic_glass",
   "ingredient": "minecraft:cyan_stained_glass",
   "result": {
     "id": "minecraft:mosaic_cyan_stained_glass"
