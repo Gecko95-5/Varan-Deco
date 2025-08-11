@@ -1,4 +1,4 @@
-// 1.20.6	2025-08-05T11:28:43.412394	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2025-08-11T13:34:17.2670581	Variant Decoration/Tags for minecraft:block
 9834d4813129845b093976fce476955eae313149 data\varan-deco\tags\blocks\infested_blocks.json
 8db78155aaa66e68da0e52978198a43f91c78c1f data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
@@ -16,8 +16,8 @@ e8066fe24ecc3bc026c854f7c53c7ded974bc5ca data\varan-deco\tags\blocks\deco_crafti
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\blocks\soul_speed_blocks.json
 47aec1ccc822721d1413e8deda13ec6e8e236f89 data\varan-deco\tags\blocks\terracotta_slabs.json
 b38abf222ff2cc3d5574a8f02060740c15f82605 data\varan-deco\tags\blocks\concrete_stairs.json
-c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\blocks\mineable\shovel.json
 837d200e3292991afd864ab8754066fbf228e918 data\minecraft\tags\blocks\wooden_fences.json
+c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\blocks\mineable\shovel.json
 2519c42e5f61a57d319ae243beca1b74abce7c18 data\minecraft\tags\blocks\fences.json
 b6feec2809938a12dd391f7839c7e47473d612f2 data\minecraft\tags\blocks\piglin_repellents.json
 9e34a85ac8004c9abd4ab69e4c179641ac7a585f data\varan-deco\tags\blocks\mosaic_glass.json
@@ -26,8 +26,8 @@ d1e3e87be0713f490b99ba103ff28cbadb5518f6 data\varan-deco\tags\blocks\deco_ladder
 35f3d4a1a9d8f445c7edbe481f10498d5a26f20b data\varan-deco\tags\blocks\deco_furnaces.json
 18c6dcd7316622a4c3e33307df5dcab4d12690e8 data\varan-deco\tags\blocks\mosaic_glass_panes.json
 800d8430476079cdaa10108567a5286dd9337e94 data\minecraft\tags\blocks\snow.json
-6f6b93acaefecb075e61cf0d9a193bd8204bd91c data\minecraft\tags\blocks\soul_fire_base_blocks.json
 1ceb31ff318282c7b51f8398f0ab2986ef590ffd data\varan-deco\tags\blocks\concrete_slabs.json
+01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\blocks\wooden_slabs.json
 f3199dda8db6700e32857a275449973ba96ede8c data\varan-deco\tags\blocks\deco_barrels.json
 11e6bd6294bc140d66b0c57c90aedb221dcb2609 data\minecraft\tags\blocks\enchantment_power_provider.json
