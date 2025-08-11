@@ -151,8 +151,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#/#")
                         .input('/', Items.NETHER_BRICK)
                         .input('#', Items.RED_NETHER_BRICKS)
-                        .criterion(hasItem(Items.NETHER_BRICK),
-                                conditionsFromItem(Items.NETHER_BRICK))
                         .criterion(hasItem(Items.RED_NETHER_BRICKS),
                                 conditionsFromItem(Items.RED_NETHER_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.RED_NETHER_BRICK_FENCE) + "_recipe_create");
@@ -162,8 +160,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("/#/")
                         .input('/', Items.NETHER_BRICK)
                         .input('#', Items.NETHER_BRICKS)
-                        .criterion(hasItem(Items.NETHER_BRICK),
-                                conditionsFromItem(Items.NETHER_BRICK))
                         .criterion(hasItem(Items.NETHER_BRICKS),
                                 conditionsFromItem(Items.NETHER_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.NETHER_BRICK_FENCE_GATE) + "_recipe_create");
@@ -173,8 +169,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("/#/")
                         .input('/', Items.NETHER_BRICK)
                         .input('#', Items.RED_NETHER_BRICKS)
-                        .criterion(hasItem(Items.NETHER_BRICK),
-                                conditionsFromItem(Items.NETHER_BRICK))
                         .criterion(hasItem(Items.RED_NETHER_BRICKS),
                                 conditionsFromItem(Items.RED_NETHER_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE) + "_recipe_create");
@@ -255,8 +249,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#P")
                         .input('P', Items.POLISHED_BLACKSTONE)
                         .input('#', Items.GILDED_BLACKSTONE)
-                        .criterion(hasItem(Items.POLISHED_BLACKSTONE),
-                                conditionsFromItem(Items.POLISHED_BLACKSTONE))
                         .criterion(hasItem(Items.GILDED_BLACKSTONE),
                                 conditionsFromItem(Items.GILDED_BLACKSTONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.POLISHED_GLIDED_BLACKSTONE) + "_recipe_create");
@@ -269,8 +261,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" # ")
                 .input('C', Items.CHISELED_POLISHED_BLACKSTONE)
                 .input('#', DecoBlocks.POLISHED_GLIDED_BLACKSTONE)
-                .criterion(hasItem(Items.CHISELED_POLISHED_BLACKSTONE),
-                        conditionsFromItem(Items.CHISELED_POLISHED_BLACKSTONE))
                 .criterion(hasItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE),
                         conditionsFromItem(DecoBlocks.POLISHED_GLIDED_BLACKSTONE))
                 .offerTo(exporter, getRecipeName(DecoBlocks.CHISELED_GLIDED_BLACKSTONE) + "_recipe_create");
@@ -338,8 +328,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('S', Items.SNOWBALL)
                         .input('#', DecoItems.SNOW_BRICK)
-                        .criterion(hasItem(Items.SNOWBALL),
-                                conditionsFromItem(Items.SNOWBALL))
                         .criterion(hasItem(DecoItems.SNOW_BRICK),
                                 conditionsFromItem(DecoItems.SNOW_BRICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CHISELED_SNOW_BRICKS) + "_recipe_create");
@@ -349,8 +337,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#/")
                         .input('/', Items.BLUE_ICE)
                         .input('#', Items.PACKED_ICE)
-                        .criterion(hasItem(Items.BLUE_ICE),
-                                conditionsFromItem(Items.BLUE_ICE))
                         .criterion(hasItem(Items.PACKED_ICE),
                                 conditionsFromItem(Items.PACKED_ICE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.ICE_BRICKS) + "_recipe_create");
@@ -378,8 +364,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input('#', Items.PACKED_ICE)
                         .criterion(hasItem(Items.BLUE_ICE),
                                 conditionsFromItem(Items.BLUE_ICE))
-                        .criterion(hasItem(Items.PACKED_ICE),
-                                conditionsFromItem(Items.PACKED_ICE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLACK_ICE) + "_recipe_create");
 
                 createStairsRecipe(DecoBlocks.CUT_SANDSTONE_STAIRS, Ingredient.ofItems(Items.CUT_SANDSTONE))
@@ -467,8 +451,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#/#")
                         .input('/', Items.STICK)
                         .input('#', DecoBlocks.CACTUS_PLANKS)
-                        .criterion(hasItem(Items.STICK),
-                                conditionsFromItem(Items.STICK))
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_PLANK_FENCE) + "_recipe_create");
@@ -478,8 +460,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("/#/")
                         .input('/', Items.STICK)
                         .input('#', DecoBlocks.CACTUS_PLANKS)
-                        .criterion(hasItem(Items.STICK),
-                                conditionsFromItem(Items.STICK))
                         .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),
                                 conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_PLANK_FENCE_GATE) + "_recipe_create");
@@ -644,9 +624,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createShaped(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SOUL_SOILSTONE)
                         .pattern("##")
                         .pattern("##")
-                        .input('#', Items.SOUL_SOIL)
-                        .criterion(hasItem(Items.SOUL_SOIL),
-                                conditionsFromItem(Items.SOUL_SOIL))
+                        .input('#', ItemTags.SOUL_FIRE_BASE_BLOCKS)
+                        .criterion("has_soul_blocks", conditionsFromTag(ItemTags.SOUL_FIRE_BASE_BLOCKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.SOUL_SOILSTONE) + "_recipe_create");
 
                 createStairsRecipe(DecoBlocks.SOUL_SOILSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE))
@@ -742,8 +721,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input('Q', Items.QUARTZ)
                         .criterion(hasItem(Items.QUARTZ_BLOCK),
                                 conditionsFromItem(Items.QUARTZ_BLOCK))
-                        .criterion(hasItem(Items.QUARTZ),
-                                conditionsFromItem(Items.QUARTZ))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CUT_QUARTZ) + "_recipe_create");
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_QUARTZ, Items.QUARTZ_BLOCK);
 
@@ -784,8 +761,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input('N', Items.NETHER_BRICK)
                         .criterion(hasItem(DecoItems.WARPED_WART),
                                 conditionsFromItem(DecoItems.WARPED_WART))
-                        .criterion(hasItem(Items.NETHER_BRICK),
-                                conditionsFromItem(Items.NETHER_BRICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLUE_NETHER_BRICKS) + "_recipe_create");
 
                 createStairsRecipe(DecoBlocks.BLUE_NETHER_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICKS))
@@ -804,8 +779,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#/#")
                         .input('/', Items.NETHER_BRICK)
                         .input('#', DecoBlocks.BLUE_NETHER_BRICKS)
-                        .criterion(hasItem(Items.NETHER_BRICK),
-                                conditionsFromItem(Items.NETHER_BRICK))
                         .criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICKS),
                                 conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLUE_NETHER_BRICK_FENCE) + "_recipe_create");
@@ -815,8 +788,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("/#/")
                         .input('/', Items.NETHER_BRICK)
                         .input('#', DecoBlocks.BLUE_NETHER_BRICKS)
-                        .criterion(hasItem(Items.NETHER_BRICK),
-                                conditionsFromItem(Items.NETHER_BRICK))
                         .criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICKS),
                                 conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE) + "_recipe_create");
@@ -834,8 +805,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern(" # ")
                         .input('#', DecoItems.WARPED_WART)
                         .input('F', Items.CHORUS_FRUIT)
-                        .criterion(hasItem(DecoItems.WARPED_WART),
-                                conditionsFromItem(DecoItems.WARPED_WART))
                         .criterion(hasItem(Items.CHORUS_FRUIT),
                                 conditionsFromItem(Items.CHORUS_FRUIT))
                         .offerTo(exporter, getRecipeName(Items.ENDER_PEARL) + "_recipe_create");
@@ -847,12 +816,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input('#', DecoItems.WARPED_WART)
                         .input('F', Items.CHORUS_FRUIT)
                         .input('B', Items.BLAZE_POWDER)
-                        .criterion(hasItem(DecoItems.WARPED_WART),
-                                conditionsFromItem(DecoItems.WARPED_WART))
                         .criterion(hasItem(Items.CHORUS_FRUIT),
                                 conditionsFromItem(Items.CHORUS_FRUIT))
-                        .criterion(hasItem(Items.BLAZE_POWDER),
-                                conditionsFromItem(Items.BLAZE_POWDER))
                         .offerTo(exporter, getRecipeName(Items.ENDER_EYE)+ "_from_warped_wart");
 
                 createStairsRecipe(DecoBlocks.TERRACOTTA_STAIRS, Ingredient.ofItems(Items.TERRACOTTA))
@@ -1230,8 +1195,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.WHITE_DYE),
-                                conditionsFromItem(Items.WHITE_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.WHITE_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WHITE_TERRACOTTA_BRICKS, Items.WHITE_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WHITE_TERRACOTTA_BRICKS, Items.WHITE_TERRACOTTA);
@@ -1245,8 +1209,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.LIGHT_GRAY_DYE),
-                                conditionsFromItem(Items.LIGHT_GRAY_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS, Items.LIGHT_GRAY_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS, Items.LIGHT_GRAY_TERRACOTTA);
@@ -1260,8 +1223,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.GRAY_DYE),
-                                conditionsFromItem(Items.GRAY_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.GRAY_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GRAY_TERRACOTTA_BRICKS, Items.GRAY_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GRAY_TERRACOTTA_BRICKS, Items.GRAY_TERRACOTTA);
@@ -1275,8 +1237,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.BLACK_DYE),
-                                conditionsFromItem(Items.BLACK_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLACK_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLACK_TERRACOTTA_BRICKS, Items.BLACK_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLACK_TERRACOTTA_BRICKS, Items.BLACK_TERRACOTTA);
@@ -1290,8 +1251,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.BROWN_DYE),
-                                conditionsFromItem(Items.BROWN_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.BROWN_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BROWN_TERRACOTTA_BRICKS, Items.BROWN_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BROWN_TERRACOTTA_BRICKS, Items.BROWN_TERRACOTTA);
@@ -1305,8 +1265,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.RED_DYE),
-                                conditionsFromItem(Items.RED_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.RED_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_TERRACOTTA_BRICKS, Items.RED_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_TERRACOTTA_BRICKS, Items.RED_TERRACOTTA);
@@ -1320,8 +1279,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.ORANGE_DYE),
-                                conditionsFromItem(Items.ORANGE_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.ORANGE_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ORANGE_TERRACOTTA_BRICKS, Items.ORANGE_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ORANGE_TERRACOTTA_BRICKS, Items.ORANGE_TERRACOTTA);
@@ -1335,8 +1293,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.YELLOW_DYE),
-                                conditionsFromItem(Items.YELLOW_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.YELLOW_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.YELLOW_TERRACOTTA_BRICKS, Items.YELLOW_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.YELLOW_TERRACOTTA_BRICKS, Items.YELLOW_TERRACOTTA);
@@ -1350,8 +1307,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.LIME_DYE),
-                                conditionsFromItem(Items.LIME_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIME_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIME_TERRACOTTA_BRICKS, Items.LIME_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIME_TERRACOTTA_BRICKS, Items.LIME_TERRACOTTA);
@@ -1365,8 +1321,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.GREEN_DYE),
-                                conditionsFromItem(Items.GREEN_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.GREEN_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GREEN_TERRACOTTA_BRICKS, Items.GREEN_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GREEN_TERRACOTTA_BRICKS, Items.GREEN_TERRACOTTA);
@@ -1380,8 +1335,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.CYAN_DYE),
-                                conditionsFromItem(Items.CYAN_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.CYAN_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CYAN_TERRACOTTA_BRICKS, Items.CYAN_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CYAN_TERRACOTTA_BRICKS, Items.CYAN_TERRACOTTA);
@@ -1395,8 +1349,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.LIGHT_BLUE_DYE),
-                                conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS, Items.LIGHT_BLUE_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS, Items.LIGHT_BLUE_TERRACOTTA);
@@ -1410,8 +1363,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.BLUE_DYE),
-                                conditionsFromItem(Items.BLUE_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.BLUE_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLUE_TERRACOTTA_BRICKS, Items.BLUE_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLUE_TERRACOTTA_BRICKS, Items.BLUE_TERRACOTTA);
@@ -1425,8 +1377,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.PURPLE_DYE),
-                                conditionsFromItem(Items.PURPLE_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.PURPLE_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPLE_TERRACOTTA_BRICKS, Items.PURPLE_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPLE_TERRACOTTA_BRICKS, Items.PURPLE_TERRACOTTA);
@@ -1440,8 +1391,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.MAGENTA_DYE),
-                                conditionsFromItem(Items.MAGENTA_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.MAGENTA_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.MAGENTA_TERRACOTTA_BRICKS, Items.MAGENTA_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.MAGENTA_TERRACOTTA_BRICKS, Items.MAGENTA_TERRACOTTA);
@@ -1455,8 +1405,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("terracotta_bricks")
                 .criterion(hasItem(DecoBlocks.TERRACOTTA_BRICKS),
                                 conditionsFromItem(DecoBlocks.TERRACOTTA_BRICKS))
-                        .criterion(hasItem(Items.PINK_DYE),
-                                conditionsFromItem(Items.PINK_DYE))
+                        .group("terracotta_bricks")
                         .offerTo(exporter, getRecipeName(DecoBlocks.PINK_TERRACOTTA_BRICKS)+ "_dyed");
                 offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PINK_TERRACOTTA_BRICKS, Items.PINK_TERRACOTTA);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PINK_TERRACOTTA_BRICKS, Items.PINK_TERRACOTTA);
@@ -2028,8 +1977,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .group("tinted_glass_pane")
                 .criterion(hasItem(Items.AMETHYST_SHARD),
                                 conditionsFromItem(Items.AMETHYST_SHARD))
-                        .criterion(hasItem(Items.GLASS_PANE),
-                                conditionsFromItem(Items.GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.TINTED_GLASS_PANE)+ "_from_glass_pane");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.TINTED_GLASS_PANE,16)
@@ -2085,10 +2032,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern(" # ")
                         .input('#', Items.AMETHYST_SHARD)
                         .input('X', DecoBlocks.HARDENED_GLASS)
+                        .group("hardened_glass")
                         .criterion(hasItem(Items.AMETHYST_SHARD),
                                 conditionsFromItem(Items.AMETHYST_SHARD))
-                        .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
-                                conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_TINTED_GLASS) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.HARDENED_TINTED_GLASS_PANE,4)
@@ -2111,8 +2057,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input('X', DecoBlocks.HARDENED_GLASS_PANE)
                         .criterion(hasItem(Items.AMETHYST_SHARD),
                                 conditionsFromItem(Items.AMETHYST_SHARD))
-                        .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
-                                conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
+                        .group("hardened_glass_pane")
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_TINTED_GLASS_PANE)+ "_from_amethyst");
 
                 offerStainedGlassPaneRecipe(DecoBlocks.HARDENED_TINTED_GLASS_PANE, DecoBlocks.HARDENED_TINTED_GLASS);
@@ -2136,8 +2081,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.WHITE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.WHITE_DYE),
-                                conditionsFromItem(Items.WHITE_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_WHITE_STAINED_GLASS) + "_recipe_create");
@@ -2160,8 +2104,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.WHITE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.WHITE_DYE),
-                                conditionsFromItem(Items.WHITE_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE)+ "_dyed");
@@ -2186,8 +2129,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.ORANGE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.ORANGE_DYE),
-                                conditionsFromItem(Items.ORANGE_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS) + "_recipe_create");
@@ -2210,8 +2152,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.ORANGE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.ORANGE_DYE),
-                                conditionsFromItem(Items.ORANGE_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_ORANGE_STAINED_GLASS_PANE)+ "_dyed");
@@ -2236,8 +2177,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.MAGENTA_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.MAGENTA_DYE),
-                                conditionsFromItem(Items.MAGENTA_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS) + "_recipe_create");
@@ -2260,8 +2200,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.MAGENTA_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.MAGENTA_DYE),
-                                conditionsFromItem(Items.MAGENTA_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_MAGENTA_STAINED_GLASS_PANE)+ "_dyed");
@@ -2286,8 +2225,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.LIGHT_BLUE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.LIGHT_BLUE_DYE),
-                                conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS) + "_recipe_create");
@@ -2310,8 +2248,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.LIGHT_BLUE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.LIGHT_BLUE_DYE),
-                                conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE)+ "_dyed");
@@ -2336,8 +2273,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.YELLOW_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.YELLOW_DYE),
-                                conditionsFromItem(Items.YELLOW_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS) + "_recipe_create");
@@ -2360,8 +2296,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.YELLOW_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.YELLOW_DYE),
-                                conditionsFromItem(Items.YELLOW_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_YELLOW_STAINED_GLASS_PANE)+ "_dyed");
@@ -2386,8 +2321,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.LIME_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.LIME_DYE),
-                                conditionsFromItem(Items.LIME_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_LIME_STAINED_GLASS) + "_recipe_create");
@@ -2410,8 +2344,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.LIME_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.LIME_DYE),
-                                conditionsFromItem(Items.LIME_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_LIME_STAINED_GLASS_PANE)+ "_dyed");
@@ -2436,8 +2369,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.PINK_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.PINK_DYE),
-                                conditionsFromItem(Items.PINK_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_PINK_STAINED_GLASS) + "_recipe_create");
@@ -2460,8 +2392,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.PINK_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.PINK_DYE),
-                                conditionsFromItem(Items.PINK_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_PINK_STAINED_GLASS_PANE)+ "_dyed");
@@ -2486,8 +2417,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.GRAY_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.GRAY_DYE),
-                                conditionsFromItem(Items.GRAY_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_GRAY_STAINED_GLASS) + "_recipe_create");
@@ -2510,8 +2440,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.GRAY_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.GRAY_DYE),
-                                conditionsFromItem(Items.GRAY_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_GRAY_STAINED_GLASS_PANE)+ "_dyed");
@@ -2536,8 +2465,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.LIGHT_GRAY_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.LIGHT_GRAY_DYE),
-                                conditionsFromItem(Items.LIGHT_GRAY_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS) + "_recipe_create");
@@ -2560,8 +2488,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.LIGHT_GRAY_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.LIGHT_GRAY_DYE),
-                                conditionsFromItem(Items.LIGHT_GRAY_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_LIGHT_GRAY_STAINED_GLASS)+ "_dyed");
@@ -2586,8 +2513,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.CYAN_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.CYAN_DYE),
-                                conditionsFromItem(Items.CYAN_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_CYAN_STAINED_GLASS) + "_recipe_create");
@@ -2610,8 +2536,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.CYAN_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.CYAN_DYE),
-                                conditionsFromItem(Items.CYAN_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_CYAN_STAINED_GLASS_PANE)+ "_dyed");
@@ -2636,8 +2561,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.PURPLE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.PURPLE_DYE),
-                                conditionsFromItem(Items.PURPLE_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS) + "_recipe_create");
@@ -2660,8 +2584,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.PURPLE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.PURPLE_DYE),
-                                conditionsFromItem(Items.PURPLE_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_PURPLE_STAINED_GLASS_PANE)+ "_dyed");
@@ -2686,8 +2609,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.BLUE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.BLUE_DYE),
-                                conditionsFromItem(Items.BLUE_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_BLUE_STAINED_GLASS) + "_recipe_create");
@@ -2710,8 +2632,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.BLUE_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.BLUE_DYE),
-                                conditionsFromItem(Items.BLUE_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_BLUE_STAINED_GLASS_PANE)+ "_dyed");
@@ -2736,8 +2657,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.BROWN_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.BROWN_DYE),
-                                conditionsFromItem(Items.BROWN_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_BROWN_STAINED_GLASS) + "_recipe_create");
@@ -2760,8 +2680,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.BROWN_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.BROWN_DYE),
-                                conditionsFromItem(Items.BROWN_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_BROWN_STAINED_GLASS_PANE)+ "_dyed");
@@ -2786,8 +2705,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.GREEN_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.GREEN_DYE),
-                                conditionsFromItem(Items.GREEN_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_GREEN_STAINED_GLASS) + "_recipe_create");
@@ -2810,8 +2728,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.GREEN_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.GREEN_DYE),
-                                conditionsFromItem(Items.GREEN_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_GREEN_STAINED_GLASS_PANE)+ "_dyed");
@@ -2836,8 +2753,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.RED_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.RED_DYE),
-                                conditionsFromItem(Items.RED_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_RED_STAINED_GLASS) + "_recipe_create");
@@ -2860,8 +2776,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.RED_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.RED_DYE),
-                                conditionsFromItem(Items.RED_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_RED_STAINED_GLASS_PANE)+ "_dyed");
@@ -2886,8 +2801,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.BLACK_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS)
-                        .criterion(hasItem(Items.BLACK_DYE),
-                                conditionsFromItem(Items.BLACK_DYE))
+                        .group("hardened_glass")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_BLACK_STAINED_GLASS) + "_recipe_create");
@@ -2910,8 +2824,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.BLACK_DYE)
                         .input('#', DecoBlocks.HARDENED_GLASS_PANE)
-                        .criterion(hasItem(Items.BLACK_DYE),
-                                conditionsFromItem(Items.BLACK_DYE))
+                        .group("hardened_glass_pane")
                         .criterion(hasItem(DecoBlocks.HARDENED_GLASS_PANE),
                                 conditionsFromItem(DecoBlocks.HARDENED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HARDENED_BLACK_STAINED_GLASS_PANE)+ "_dyed");
@@ -3106,8 +3019,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.ENDER_PEARL)
                         .input('#', Items.END_STONE)
-                        .criterion(hasItem(Items.ENDER_PEARL),
-                                conditionsFromItem(Items.ENDER_PEARL))
                         .criterion(hasItem(Items.END_STONE),
                                 conditionsFromItem(Items.END_STONE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.VOID_STONE) + "_recipe_create");
@@ -3401,105 +3312,125 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC,Items.YELLOW_DYE)
                         .input(DecoBlocks.YELLOW_TULIP)
-                        .criterion(hasItem(DecoBlocks.YELLOW_TULIP),
+                        .group("yellow_dye")
+                .criterion(hasItem(DecoBlocks.YELLOW_TULIP),
                                 conditionsFromItem(DecoBlocks.YELLOW_TULIP))
                         .offerTo(exporter, getRecipeName(Items.YELLOW_DYE) + "_from_yellow_tulip");
                 createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE)
                         .input(DecoBlocks.PURPLE_TULIP)
+                .group("purple_dye")
                         .criterion(hasItem(DecoBlocks.PURPLE_TULIP),
                                 conditionsFromItem(DecoBlocks.PURPLE_TULIP))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_purple_tulip");
                 createShapeless(RecipeCategory.MISC,Items.MAGENTA_DYE)
                         .input(DecoBlocks.MAGENTA_TULIP)
+                .group("magenta_dye")
                         .criterion(hasItem(DecoBlocks.MAGENTA_TULIP),
                                 conditionsFromItem(DecoBlocks.MAGENTA_TULIP))
                         .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "_from_magenta_tulip");
                 createShapeless(RecipeCategory.MISC,Items.BLACK_DYE)
                         .input(DecoBlocks.BLACK_TULIP)
-                        .criterion(hasItem(DecoBlocks.BLACK_TULIP),
+                        .group("black_dye")
+                .criterion(hasItem(DecoBlocks.BLACK_TULIP),
                                 conditionsFromItem(DecoBlocks.BLACK_TULIP))
                         .offerTo(exporter, getRecipeName(Items.BLACK_DYE) + "_from_black_tulip");
                 createShapeless(RecipeCategory.MISC,Items.LIME_DYE)
                         .input(DecoBlocks.GREEN_TULIP)
-                        .criterion(hasItem(DecoBlocks.GREEN_TULIP),
+                        .group("lime_dye")
+                .criterion(hasItem(DecoBlocks.GREEN_TULIP),
                                 conditionsFromItem(DecoBlocks.GREEN_TULIP))
                         .offerTo(exporter, getRecipeName(Items.LIME_DYE) + "_from_lime_tulip");
                 createShapeless(RecipeCategory.MISC,Items.LIGHT_BLUE_DYE)
                         .input(DecoBlocks.BLUE_TULIP)
-                        .criterion(hasItem(DecoBlocks.BLUE_TULIP),
+                        .group("light_blue_dye")
+                .criterion(hasItem(DecoBlocks.BLUE_TULIP),
                                 conditionsFromItem(DecoBlocks.BLUE_TULIP))
                         .offerTo(exporter, getRecipeName(Items.LIGHT_BLUE_DYE) + "_from_blue_tulip");
                 createShapeless(RecipeCategory.MISC,Items.CYAN_DYE)
                         .input(DecoBlocks.CYAN_TULIP)
+                .group("cyan_dye")
                         .criterion(hasItem(DecoBlocks.CYAN_TULIP),
                                 conditionsFromItem(DecoBlocks.CYAN_TULIP))
                         .offerTo(exporter, getRecipeName(Items.CYAN_DYE) + "_from_cyan_tulip");
 
                 createShapeless(RecipeCategory.MISC,Items.RED_DYE)
                         .input(DecoBlocks.BARBERTON_DAISY)
-                        .criterion(hasItem(DecoBlocks.BARBERTON_DAISY),
+                        .group("red_dye")
+                .criterion(hasItem(DecoBlocks.BARBERTON_DAISY),
                                 conditionsFromItem(DecoBlocks.BARBERTON_DAISY))
                         .offerTo(exporter, getRecipeName(Items.RED_DYE) + "_from_barberton_daisy");
                 createShapeless(RecipeCategory.MISC,Items.YELLOW_DYE)
                         .input(DecoBlocks.BLUE_EYED_DAISY)
+                .group("yellow_dye")
                         .criterion(hasItem(DecoBlocks.BLUE_EYED_DAISY),
                                 conditionsFromItem(DecoBlocks.BLUE_EYED_DAISY))
                         .offerTo(exporter, getRecipeName(Items.YELLOW_DYE) + "_from_blue_eyed_daisy");
                 createShapeless(RecipeCategory.MISC,Items.PINK_DYE)
                         .input(DecoBlocks.GERBERA_DAISY)
+                .group("pink_dye")
                         .criterion(hasItem(DecoBlocks.GERBERA_DAISY),
                                 conditionsFromItem(DecoBlocks.GERBERA_DAISY))
                         .offerTo(exporter, getRecipeName(Items.PINK_DYE) + "_from_gerbera_daisy");
                 createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE)
                         .input(DecoBlocks.MICHAELMAS_DAISY)
+                .group("purple_dye")
                         .criterion(hasItem(DecoBlocks.MICHAELMAS_DAISY),
                                 conditionsFromItem(DecoBlocks.MICHAELMAS_DAISY))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_michaelmas_daisy");
 
                 createShapeless(RecipeCategory.MISC,Items.ORANGE_DYE)
                         .input(DecoBlocks.CALIFORNIA_POPPY)
-                        .criterion(hasItem(DecoBlocks.CALIFORNIA_POPPY),
+                        .group("orange_dye")
+                .criterion(hasItem(DecoBlocks.CALIFORNIA_POPPY),
                                 conditionsFromItem(DecoBlocks.CALIFORNIA_POPPY))
                         .offerTo(exporter, getRecipeName(Items.ORANGE_DYE) + "_from_california_poppy");
                 createShapeless(RecipeCategory.MISC,Items.PINK_DYE)
                         .input(DecoBlocks.SALMON_POPPY)
+                .group("pink_dye")
                         .criterion(hasItem(DecoBlocks.SALMON_POPPY),
                                 conditionsFromItem(DecoBlocks.SALMON_POPPY))
                         .offerTo(exporter, getRecipeName(Items.PINK_DYE) + "_from_salmon_poppy");
 
                 createShapeless(RecipeCategory.MISC,Items.WHITE_DYE)
                         .input(DecoBlocks.WHITE_ORCHID)
-                        .criterion(hasItem(DecoBlocks.WHITE_ORCHID),
+                        .group("white_dye")
+                .criterion(hasItem(DecoBlocks.WHITE_ORCHID),
                                 conditionsFromItem(DecoBlocks.WHITE_ORCHID))
                         .offerTo(exporter, getRecipeName(Items.WHITE_DYE) + "_from_white_orchid");
                 createShapeless(RecipeCategory.MISC,Items.PINK_DYE)
                         .input(DecoBlocks.PINK_ORCHID)
-                        .criterion(hasItem(DecoBlocks.PINK_ORCHID),
+                        .group("pink_dye")
+                .criterion(hasItem(DecoBlocks.PINK_ORCHID),
                                 conditionsFromItem(DecoBlocks.PINK_ORCHID))
                         .offerTo(exporter, getRecipeName(Items.PINK_DYE) + "_from_pink_orchid");
                 createShapeless(RecipeCategory.MISC,Items.YELLOW_DYE)
                         .input(DecoBlocks.YELLOW_ORCHID)
+                .group("yellow_dye")
                         .criterion(hasItem(DecoBlocks.YELLOW_ORCHID),
                                 conditionsFromItem(DecoBlocks.YELLOW_ORCHID))
                         .offerTo(exporter, getRecipeName(Items.YELLOW_DYE) + "_from_yellow_orchid");
 
                 createShapeless(RecipeCategory.MISC,Items.RED_DYE)
                         .input(DecoBlocks.ROSE)
-                        .criterion(hasItem(DecoBlocks.ROSE),
+                        .group("red_dye")
+                .criterion(hasItem(DecoBlocks.ROSE),
                                 conditionsFromItem(DecoBlocks.ROSE))
                         .offerTo(exporter, getRecipeName(Items.RED_DYE) + "_from_rose");
                 createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE)
                         .input(DecoBlocks.ENDER_ROSE)
+                .group("purple_dye")
                         .criterion(hasItem(DecoBlocks.ENDER_ROSE),
                                 conditionsFromItem(DecoBlocks.ENDER_ROSE))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_ender_rose");
                 createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE,4)
                         .input(DecoBlocks.ENDER_ROSE_BUSH)
+                .group("purple_dye")
                         .criterion(hasItem(DecoBlocks.ENDER_ROSE_BUSH),
                                 conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_ender_rose_bush");
                 createShapeless(RecipeCategory.MISC,Items.BLACK_DYE,4)
                         .input(DecoBlocks.WITHER_ROSE_BUSH)
+                .group("black_dye")
                         .criterion(hasItem(DecoBlocks.WITHER_ROSE_BUSH),
                                 conditionsFromItem(DecoBlocks.WITHER_ROSE_BUSH))
                         .offerTo(exporter, getRecipeName(Items.BLACK_DYE) + "_from_wither_rose_bush");
@@ -3528,19 +3459,22 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC,Items.RED_DYE,2)
                         .input(DecoBlocks.RED_SUNFLOWER)
-                        .criterion(hasItem(DecoBlocks.RED_SUNFLOWER),
+                        .group("red_dye")
+                .criterion(hasItem(DecoBlocks.RED_SUNFLOWER),
                                 conditionsFromItem(DecoBlocks.RED_SUNFLOWER))
                         .offerTo(exporter, getRecipeName(Items.RED_DYE) + "_from_red_sunflower");
 
                 createShapeless(RecipeCategory.MISC,Items.WHITE_DYE,2)
                         .input(DecoBlocks.NOVA_STARFLOWER)
-                        .criterion(hasItem(DecoBlocks.NOVA_STARFLOWER),
+                        .group("white_dye")
+                .criterion(hasItem(DecoBlocks.NOVA_STARFLOWER),
                                 conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
                         .offerTo(exporter, getRecipeName(Items.WHITE_DYE) + "_from_nova_starflower");
 
                 createShapeless(RecipeCategory.MISC,Items.PINK_DYE)
                         .input(DecoBlocks.PAEONIA)
-                        .criterion(hasItem(DecoBlocks.PAEONIA),
+                        .group("pink_dye")
+                .criterion(hasItem(DecoBlocks.PAEONIA),
                                 conditionsFromItem(DecoBlocks.PAEONIA))
                         .offerTo(exporter, getRecipeName(Items.PINK_DYE) + "_from_paeonia");
                 createShaped(RecipeCategory.DECORATIONS,Items.PEONY)
@@ -3553,7 +3487,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE)
                         .input(DecoBlocks.LAVENDER)
-                        .criterion(hasItem(DecoBlocks.LAVENDER),
+                        .group("purple_dye")
+                .criterion(hasItem(DecoBlocks.LAVENDER),
                                 conditionsFromItem(DecoBlocks.LAVENDER))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_lavender");
 
@@ -3563,8 +3498,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.TORCH)
                         .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(Items.TORCH),
-                                conditionsFromItem(Items.TORCH))
                         .criterion(hasItem(DecoItems.COPPER_NUGGET),
                                 conditionsFromItem(DecoItems.COPPER_NUGGET))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_LANTERN) + "_recipe_create");
@@ -3574,8 +3507,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("###")
                         .input('X', Items.SOUL_TORCH)
                         .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(Items.SOUL_TORCH),
-                                conditionsFromItem(Items.SOUL_TORCH))
                         .criterion(hasItem(DecoItems.COPPER_NUGGET),
                                 conditionsFromItem(DecoItems.COPPER_NUGGET))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_SOUL_LANTERN) + "_recipe_create");
@@ -3586,8 +3517,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#")
                         .input('X', Items.COPPER_INGOT)
                         .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(Items.COPPER_INGOT),
-                                conditionsFromItem(Items.COPPER_INGOT))
                         .criterion(hasItem(DecoItems.COPPER_NUGGET),
                                 conditionsFromItem(DecoItems.COPPER_NUGGET))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_CHAIN) + "_recipe_create");
@@ -3866,8 +3795,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("#/#")
                         .input('/', Items.STICK)
                         .input('#', DecoBlocks.WOODEN_PLANKS)
-                        .criterion(hasItem(Items.STICK),
-                                conditionsFromItem(Items.STICK))
                         .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
                                 conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.WOODEN_FENCE) + "_recipe_create");
@@ -3877,8 +3804,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("/#/")
                         .input('/', Items.STICK)
                         .input('#', DecoBlocks.WOODEN_PLANKS)
-                        .criterion(hasItem(Items.STICK),
-                                conditionsFromItem(Items.STICK))
                         .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),
                                 conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.WOODEN_FENCE_GATE) + "_recipe_create");
@@ -4136,101 +4061,133 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 offerHangingSignRecipe(DecoItems.WOODEN_MOSAIC_HANGING_SIGN, DecoBlocks.WOODEN_MOSAIC);
 
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.WHITE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.WHITE_STAINED_GLASS), conditionsFromItem(Items.WHITE_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.WHITE_STAINED_GLASS), conditionsFromItem(Items.WHITE_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_GRAY_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.LIGHT_GRAY_STAINED_GLASS), conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.LIGHT_GRAY_STAINED_GLASS), conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GRAY_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.GRAY_STAINED_GLASS), conditionsFromItem(Items.GRAY_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.GRAY_STAINED_GLASS), conditionsFromItem(Items.GRAY_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLACK_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.BLACK_STAINED_GLASS), conditionsFromItem(Items.BLACK_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.BLACK_STAINED_GLASS), conditionsFromItem(Items.BLACK_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BROWN_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.BROWN_STAINED_GLASS), conditionsFromItem(Items.BROWN_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.BROWN_STAINED_GLASS), conditionsFromItem(Items.BROWN_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_RED_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.RED_STAINED_GLASS), conditionsFromItem(Items.RED_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.RED_STAINED_GLASS), conditionsFromItem(Items.RED_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_RED_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.ORANGE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.ORANGE_STAINED_GLASS), conditionsFromItem(Items.ORANGE_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.ORANGE_STAINED_GLASS), conditionsFromItem(Items.ORANGE_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.YELLOW_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.YELLOW_STAINED_GLASS), conditionsFromItem(Items.YELLOW_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.YELLOW_STAINED_GLASS), conditionsFromItem(Items.YELLOW_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIME_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.LIME_STAINED_GLASS), conditionsFromItem(Items.LIME_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.LIME_STAINED_GLASS), conditionsFromItem(Items.LIME_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_LIME_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GREEN_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.GREEN_STAINED_GLASS), conditionsFromItem(Items.GREEN_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.GREEN_STAINED_GLASS), conditionsFromItem(Items.GREEN_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.CYAN_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.CYAN_STAINED_GLASS), conditionsFromItem(Items.CYAN_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.CYAN_STAINED_GLASS), conditionsFromItem(Items.CYAN_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_BLUE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.LIGHT_BLUE_STAINED_GLASS), conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.LIGHT_BLUE_STAINED_GLASS), conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLUE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.BLUE_STAINED_GLASS), conditionsFromItem(Items.BLUE_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.BLUE_STAINED_GLASS), conditionsFromItem(Items.BLUE_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PURPLE_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.PURPLE_STAINED_GLASS), conditionsFromItem(Items.PURPLE_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.PURPLE_STAINED_GLASS), conditionsFromItem(Items.PURPLE_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.MAGENTA_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.MAGENTA_STAINED_GLASS), conditionsFromItem(Items.MAGENTA_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.MAGENTA_STAINED_GLASS), conditionsFromItem(Items.MAGENTA_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS) + "_recipe_create");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PINK_STAINED_GLASS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS,
-                                0.1f, 200).criterion(hasItem(Items.PINK_STAINED_GLASS), conditionsFromItem(Items.PINK_STAINED_GLASS))
+                                0.1f, 200).group("mosaic_glass")
+                .criterion(hasItem(Items.PINK_STAINED_GLASS), conditionsFromItem(Items.PINK_STAINED_GLASS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_PINK_STAINED_GLASS) + "_recipe_create");
 
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.WHITE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.WHITE_STAINED_GLASS_PANE), conditionsFromItem(Items.WHITE_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.WHITE_STAINED_GLASS_PANE), conditionsFromItem(Items.WHITE_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_GRAY_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.LIGHT_GRAY_STAINED_GLASS_PANE), conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.LIGHT_GRAY_STAINED_GLASS_PANE), conditionsFromItem(Items.LIGHT_GRAY_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_LIGHT_GRAY_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GRAY_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.GRAY_STAINED_GLASS_PANE), conditionsFromItem(Items.GRAY_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.GRAY_STAINED_GLASS_PANE), conditionsFromItem(Items.GRAY_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_GRAY_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLACK_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.BLACK_STAINED_GLASS_PANE), conditionsFromItem(Items.BLACK_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.BLACK_STAINED_GLASS_PANE), conditionsFromItem(Items.BLACK_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_BLACK_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BROWN_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.BROWN_STAINED_GLASS_PANE), conditionsFromItem(Items.BROWN_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.BROWN_STAINED_GLASS_PANE), conditionsFromItem(Items.BROWN_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_BROWN_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.RED_STAINED_GLASS_PANE), conditionsFromItem(Items.RED_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.RED_STAINED_GLASS_PANE), conditionsFromItem(Items.RED_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_RED_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.ORANGE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.ORANGE_STAINED_GLASS_PANE), conditionsFromItem(Items.ORANGE_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.ORANGE_STAINED_GLASS_PANE), conditionsFromItem(Items.ORANGE_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_ORANGE_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.YELLOW_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.YELLOW_STAINED_GLASS_PANE), conditionsFromItem(Items.YELLOW_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.YELLOW_STAINED_GLASS_PANE), conditionsFromItem(Items.YELLOW_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_YELLOW_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIME_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.LIME_STAINED_GLASS_PANE), conditionsFromItem(Items.LIME_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.LIME_STAINED_GLASS_PANE), conditionsFromItem(Items.LIME_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_LIME_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GREEN_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.GREEN_STAINED_GLASS_PANE), conditionsFromItem(Items.GREEN_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.GREEN_STAINED_GLASS_PANE), conditionsFromItem(Items.GREEN_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.CYAN_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.CYAN_STAINED_GLASS_PANE), conditionsFromItem(Items.CYAN_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.CYAN_STAINED_GLASS_PANE), conditionsFromItem(Items.CYAN_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_CYAN_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LIGHT_BLUE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.LIGHT_BLUE_STAINED_GLASS_PANE), conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.LIGHT_BLUE_STAINED_GLASS_PANE), conditionsFromItem(Items.LIGHT_BLUE_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_LIGHT_BLUE_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BLUE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.BLUE_STAINED_GLASS_PANE), conditionsFromItem(Items.BLUE_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.BLUE_STAINED_GLASS_PANE), conditionsFromItem(Items.BLUE_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PURPLE_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.PURPLE_STAINED_GLASS_PANE), conditionsFromItem(Items.PURPLE_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.PURPLE_STAINED_GLASS_PANE), conditionsFromItem(Items.PURPLE_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.MAGENTA_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.MAGENTA_STAINED_GLASS_PANE), conditionsFromItem(Items.MAGENTA_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.MAGENTA_STAINED_GLASS_PANE), conditionsFromItem(Items.MAGENTA_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE)+ "_from_smelting");
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PINK_STAINED_GLASS_PANE), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE,
-                                0.1f, 200).criterion(hasItem(Items.PINK_STAINED_GLASS_PANE), conditionsFromItem(Items.PINK_STAINED_GLASS_PANE))
+                                0.1f, 200).group("mosaic_glass_pane")
+                .criterion(hasItem(Items.PINK_STAINED_GLASS_PANE), conditionsFromItem(Items.PINK_STAINED_GLASS_PANE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE)+ "_from_smelting");
 
                 offerStainedGlassPaneRecipe(DecoBlocks.MOSAIC_WHITE_STAINED_GLASS_PANE, DecoBlocks.MOSAIC_WHITE_STAINED_GLASS);
@@ -4252,19 +4209,22 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC,Items.LIGHT_BLUE_DYE)
                         .input(DecoBlocks.ANCIENT_ROSE)
-                        .criterion(hasItem(DecoBlocks.ANCIENT_ROSE),
+                        .group("light_blue_dye")
+                .criterion(hasItem(DecoBlocks.ANCIENT_ROSE),
                                 conditionsFromItem(DecoBlocks.ANCIENT_ROSE))
                         .offerTo(exporter, getRecipeName(Items.LIGHT_BLUE_DYE)+ "_from_ancient_rose");
 
                 createShapeless(RecipeCategory.MISC,Items.PINK_DYE,4)
                         .input(DecoBlocks.MIGHTY_LAVENDER)
-                        .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
+                        .group("pink_dye_dye")
+                .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
                                 conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
                         .offerTo(exporter, getRecipeName(Items.PINK_DYE)+ "_from_mighty_lavender");
 
                 createShapeless(RecipeCategory.MISC,Items.PINK_DYE)
                         .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
-                        .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
+                        .group("pink_dye_dye")
+                .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
                                 conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
                         .offerTo(exporter, getRecipeName(Items.PINK_DYE)+ "_from_mighty_lavender_flower");
 
@@ -4844,13 +4804,15 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC,Items.BLUE_DYE)
                         .input(DecoBlocks.BLUE_HIBISCUS)
-                        .criterion(hasItem(DecoBlocks.BLUE_HIBISCUS),
+                        .group("blue_dye")
+                .criterion(hasItem(DecoBlocks.BLUE_HIBISCUS),
                                 conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
                         .offerTo(exporter, getRecipeName(Items.BLUE_DYE) + "_from_blue_hibiscus");
 
                 createShapeless(RecipeCategory.MISC,Items.MAGENTA_DYE)
                         .input(DecoBlocks.BROMELIAD)
-                        .criterion(hasItem(DecoBlocks.BROMELIAD),
+                        .group("magenta_dye")
+                .criterion(hasItem(DecoBlocks.BROMELIAD),
                                 conditionsFromItem(DecoBlocks.BROMELIAD))
                         .offerTo(exporter, getRecipeName(Items.MAGENTA_DYE) + "_from_bromeliad");
 

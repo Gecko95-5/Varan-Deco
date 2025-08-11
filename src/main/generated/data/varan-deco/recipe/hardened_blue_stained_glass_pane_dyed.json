@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "hardened_glass_pane",
   "key": {
     "#": "minecraft:hardened_glass_pane",
     "X": "minecraft:blue_dye"

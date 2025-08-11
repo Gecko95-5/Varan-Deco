@@ -24,7 +24,6 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -384,19 +383,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN);
         addDrop(DecoBlocks.STANDING_PALE_OAK_MOSAIC_SIGN);
-
-        addDrop(DecoBlocks.WALL_STRIPPED_OAK_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_SPRUCE_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_BIRCH_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_JUNGLE_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_ACACIA_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_DARK_OAK_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_CHERRY_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_MANGROVE_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_CRIMSON_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_WARPED_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_WOODEN_SIGN);
-        addDrop(DecoBlocks.WALL_STRIPPED_PALE_OAK_SIGN);
 
         addDrop(DecoBlocks.HANGING_WOODEN_SIGN);
 
@@ -1081,7 +1067,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.WOODEN_LADDER);
 
         addDrop(DecoBlocks.STANDING_WOODEN_SIGN);
-        addDrop(DecoBlocks.WALL_WOODEN_SIGN);
 
         addDrop(DecoBlocks.WOODEN_SAPLING);
         pottedPlantDrops(DecoBlocks.POTTED_WOODEN_SAPLING);

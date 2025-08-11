@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "hardened_glass",
   "key": {
     "#": "minecraft:hardened_glass",
     "X": "minecraft:magenta_dye"
