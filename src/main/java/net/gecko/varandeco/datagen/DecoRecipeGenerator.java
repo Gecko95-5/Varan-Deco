@@ -2908,105 +2908,125 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
                 .input(DecoBlocks.YELLOW_TULIP)
+                .group("yellow_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_TULIP))
                 .offerTo(exporter, new Identifier("yellow_dye_from_yellow_tulip"));
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.PURPLE_TULIP)
+                .group("purple_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PURPLE_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PURPLE_TULIP))
                 .offerTo(exporter, new Identifier("purple_dye_from_purple_tulip"));
         ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
                 .input(DecoBlocks.MAGENTA_TULIP)
+                .group("magenta_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.MAGENTA_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.MAGENTA_TULIP))
                 .offerTo(exporter, new Identifier("magenta_dye_from_magenta_tulip"));
         ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE)
                 .input(DecoBlocks.BLACK_TULIP)
+                .group("black_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLACK_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLACK_TULIP))
                 .offerTo(exporter, new Identifier("black_dye_from_black_tulip"));
         ShapelessRecipeJsonBuilder.create(Items.LIME_DYE)
                 .input(DecoBlocks.GREEN_TULIP)
+                .group("lime_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GREEN_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GREEN_TULIP))
                 .offerTo(exporter, new Identifier("lime_dye_from_green_tulip"));
         ShapelessRecipeJsonBuilder.create(Items.LIGHT_BLUE_DYE)
                 .input(DecoBlocks.BLUE_TULIP)
+                .group("light_blue_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_TULIP))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_blue_tulip"));
         ShapelessRecipeJsonBuilder.create(Items.CYAN_DYE)
                 .input(DecoBlocks.CYAN_TULIP)
+                .group("cyan_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CYAN_TULIP),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CYAN_TULIP))
                 .offerTo(exporter, new Identifier("cyan_dye_from_cyan_tulip"));
 
         ShapelessRecipeJsonBuilder.create(Items.RED_DYE)
                 .input(DecoBlocks.BARBERTON_DAISY)
+                .group("red_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BARBERTON_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BARBERTON_DAISY))
                 .offerTo(exporter, new Identifier("red_dye_from_barberton_daisy"));
         ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
                 .input(DecoBlocks.BLUE_EYED_DAISY)
+                .group("yellow_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_EYED_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_EYED_DAISY))
                 .offerTo(exporter, new Identifier("yellow_dye_from_blue_eyed_daisy"));
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.GERBERA_DAISY)
+                .group("pink_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GERBERA_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GERBERA_DAISY))
                 .offerTo(exporter, new Identifier("pink_dye_from_gerbera_daisy"));
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.MICHAELMAS_DAISY)
+                .group("purple_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.MICHAELMAS_DAISY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.MICHAELMAS_DAISY))
                 .offerTo(exporter, new Identifier("purple_dye_from_michaelmas_daisy"));
 
         ShapelessRecipeJsonBuilder.create(Items.ORANGE_DYE)
                 .input(DecoBlocks.CALIFORNIA_POPPY)
+                .group("orange_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CALIFORNIA_POPPY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CALIFORNIA_POPPY))
                 .offerTo(exporter, new Identifier("orange_dye_from_california_poppy"));
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.SALMON_POPPY)
+                .group("pink_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.SALMON_POPPY),
                         RecipeProvider.conditionsFromItem(DecoBlocks.SALMON_POPPY))
                 .offerTo(exporter, new Identifier("pink_dye_from_salmon_poppy"));
 
         ShapelessRecipeJsonBuilder.create(Items.WHITE_DYE)
                 .input(DecoBlocks.WHITE_ORCHID)
+                .group("white_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_ORCHID),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_ORCHID))
                 .offerTo(exporter, new Identifier("white_dye_from_white_orchid"));
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.PINK_ORCHID)
+                .group("pink_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PINK_ORCHID),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PINK_ORCHID))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_orchid"));
         ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
                 .input(DecoBlocks.YELLOW_ORCHID)
+                .group("yellow_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_ORCHID),
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_ORCHID))
                 .offerTo(exporter, new Identifier("yellow_dye_from_yellow_orchid"));
 
         ShapelessRecipeJsonBuilder.create(Items.RED_DYE)
                 .input(DecoBlocks.ROSE)
+                .group("red_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
                 .offerTo(exporter, new Identifier("red_dye_from_rose"));
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.ENDER_ROSE)
+                .group("purple_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
                 .offerTo(exporter, new Identifier("purple_dye_from_ender_rose"));
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE,4)
                 .input(DecoBlocks.ENDER_ROSE_BUSH)
+                .group("purple_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE_BUSH),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
                 .offerTo(exporter, new Identifier("purple_dye_from_ender_rose_bush"));
         ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE,4)
                 .input(DecoBlocks.WITHER_ROSE_BUSH)
+                .group("black_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WITHER_ROSE_BUSH),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WITHER_ROSE_BUSH))
                 .offerTo(exporter, new Identifier("black_dye_from_wither_rose_bush"));
@@ -3035,18 +3055,21 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(Items.RED_DYE,2)
                 .input(DecoBlocks.RED_SUNFLOWER)
+                .group("red_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_SUNFLOWER),
                         RecipeProvider.conditionsFromItem(DecoBlocks.RED_SUNFLOWER))
                 .offerTo(exporter, new Identifier("red_dye_from_red_sunflower"));
 
         ShapelessRecipeJsonBuilder.create(Items.WHITE_DYE,2)
                 .input(DecoBlocks.NOVA_STARFLOWER)
+                .group("white_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.NOVA_STARFLOWER),
                         RecipeProvider.conditionsFromItem(DecoBlocks.NOVA_STARFLOWER))
                 .offerTo(exporter, new Identifier("white_dye_from_nova_starflower"));
 
         ShapelessRecipeJsonBuilder.create(Items.PINK_DYE)
                 .input(DecoBlocks.PAEONIA)
+                .group("pink_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PAEONIA),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PAEONIA))
                 .offerTo(exporter, new Identifier("pink_dye_from_paeonia"));
@@ -3060,6 +3083,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
                 .input(DecoBlocks.LAVENDER)
+                .group("purple_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.LAVENDER),
                         RecipeProvider.conditionsFromItem(DecoBlocks.LAVENDER))
                 .offerTo(exporter, new Identifier("purple_dye_from_lavender"));
@@ -3542,6 +3566,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
                 .input(DecoItems.LILAC_FLOWER)
+                .group("magenta_dye")
                 .criterion(RecipeProvider.hasItem(DecoItems.LILAC_FLOWER),
                         RecipeProvider.conditionsFromItem(DecoItems.LILAC_FLOWER))
                 .offerTo(exporter, new Identifier("magenta_dye_from_lilac_flower"));
@@ -3878,12 +3903,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(Items.BLUE_DYE)
                 .input(DecoBlocks.BLUE_HIBISCUS)
+                .group("blue_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_HIBISCUS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_HIBISCUS))
                 .offerTo(exporter, new Identifier("blue_dye_from_blue_hibiscus"));
 
         ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
                 .input(DecoBlocks.BROMELIAD)
+                .group("magenta_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BROMELIAD),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BROMELIAD))
                 .offerTo(exporter, new Identifier("magenta_dye_from_bromeliad"));
