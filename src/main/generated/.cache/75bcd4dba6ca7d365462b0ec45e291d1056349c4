@@ -1,4 +1,4 @@
-// 1.19.2	2025-08-04T20:32:57.2297582	Tags for minecraft:block
+// 1.19.2	2025-08-11T00:40:25.612967	Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 a3fd9bfcd193e86c11b70d5a63dd53d9fc79f1e1 data\minecraft\tags\blocks\mineable\pickaxe.json
 16c2d3c1c7b4a832465192719a255add0f450334 data\minecraft\tags\blocks\slabs.json
@@ -21,7 +21,7 @@ cd865db909162a177ff535d90f4f4a90654286bb data\minecraft\tags\blocks\wooden_fence
 d5215dbdf854ce23217198a6674cd55d4948cefa data\varan-deco\tags\blocks\deco_ladders.json
 332eb60c55eb85d57ede45ef150ae9b2ce6808fb data\varan-deco\tags\blocks\deco_furnaces.json
 b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\snow.json
-af21746945355608410b01dc4277942f3433ed39 data\minecraft\tags\blocks\soul_fire_base_blocks.json
+c8671ab38e8dff3b7bee1836b246dd635caf0123 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 05b6b3246d08228d79b173478b5a9b0cfb3265ee data\varan-deco\tags\blocks\concrete_slabs.json
 398e0c0539fac9101a474ca7e85d8af3f9833a63 data\minecraft\tags\blocks\wooden_slabs.json
 77593e4afb66ed1d4700872e557b404f97c2d19c data\varan-deco\tags\blocks\deco_barrels.json

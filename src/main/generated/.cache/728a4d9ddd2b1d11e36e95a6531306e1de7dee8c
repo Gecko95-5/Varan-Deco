@@ -1,4 +1,4 @@
-// 1.19.2	2025-08-04T20:32:57.2317509	minecraft:block Loot Table
+// 1.19.2	2025-08-11T00:40:25.5180076	minecraft:block Loot Table
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
@@ -317,7 +317,6 @@ c2b8279f7d8728bbed6776fc33aefe2a47532bf2 data\varan-deco\loot_tables\blocks\hard
 1e84892c6e461d86499ba60030fd96711ceed8c0 data\varan-deco\loot_tables\blocks\light_blue_terracotta_stairs.json
 3d3e5bf63847d8b2dbb67611af6f4ff0745aec22 data\varan-deco\loot_tables\blocks\white_terracotta_stairs.json
 75f6e761c4cc72569df78cf8b6c2ad4093b6aeb8 data\varan-deco\loot_tables\blocks\brown_concrete_slab.json
-0ac361e005621ee80f3d4b439e2704f461b3ac29 data\varan-deco\loot_tables\blocks\wooden_crafting_table.json
 2ab3f5c10e873d4da99051fec57125ed75ae0c5e data\varan-deco\loot_tables\blocks\cactus_barrel.json
 0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_blue_eyed_daisy.json
 3a280703bfcb3d5e467169b186ac616079955398 data\varan-deco\loot_tables\blocks\cut_blue_concrete_slab.json
@@ -541,6 +540,7 @@ fa0ae9de9c62ce9df2e189d9bdb503ae3fe01b97 data\varan-deco\loot_tables\blocks\cut_
 60e289381775030734c8d0de1af80d90a4c54e4d data\varan-deco\loot_tables\blocks\yellow_concrete_slab.json
 6bf909cbe32ccedba8011cbc7ff11cb6e6d5bcc7 data\varan-deco\loot_tables\blocks\red_sandstone_bricks.json
 2f29ccda4d90b0bf2a47ac390840c256f28c92bf data\varan-deco\loot_tables\blocks\waxed_oxidized_copper_chain.json
+0ac361e005621ee80f3d4b439e2704f461b3ac29 data\varan-deco\loot_tables\blocks\oak_crafting_table.json
 b892378e25c2e0bc499a2fe0b584f3bb5d2c0150 data\varan-deco\loot_tables\blocks\hardened_light_gray_stained_glass_pane.json
 4b5afbfd82d6ffa4d21d3694adc38f74b2ee68b1 data\varan-deco\loot_tables\blocks\red_terracotta_stairs.json
 861003e816f1a405f4c71ccb9af96fc65a310dd7 data\varan-deco\loot_tables\blocks\lime_terracotta_slab.json
