@@ -16,23 +16,12 @@
         "recipe": "minecraft:dye_white_terracotta_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_white_dye": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:white_dye"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_terracotta_bricks",
-      "has_white_dye"
+      "has_terracotta_bricks"
     ]
   ],
   "rewards": {

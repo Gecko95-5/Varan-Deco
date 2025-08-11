@@ -24,7 +24,6 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
 import java.util.concurrent.CompletableFuture;
 
