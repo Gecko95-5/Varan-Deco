@@ -47,7 +47,7 @@ public class VaranDeco implements ModInitializer {
         FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES,300);
         FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_SMITHING_TABLES,300);
         FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_BARRELS,300);
-		FuelRegistry.INSTANCE.add(DecoTags.Items.DECO_BOOKSHELVES,300);
+		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_BOOKSHELVES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_WOOD,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_STAIRS,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.MOSAIC_SLABS,150);
