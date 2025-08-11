@@ -18,23 +18,10 @@
         "recipe": "minecraft:dyed_hardened_white_stained_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_white_dye": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:white_dye"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_white_dye",
       "has_hardened_glass_pane",
       "has_the_recipe"
     ]

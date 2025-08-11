@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "blue_dye",
   "ingredients": [
     {
       "item": "varan-deco:blue_hibiscus"
