@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "white_dye",
   "ingredients": [
     {
       "item": "varan-deco:white_orchid"
