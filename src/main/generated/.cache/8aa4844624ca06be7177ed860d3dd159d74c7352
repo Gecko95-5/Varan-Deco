@@ -1,4 +1,4 @@
-// 1.20.6	2025-08-11T13:34:17.3288965	Variant Decoration/Tags for minecraft:item
+// 1.20.6	2025-08-11T23:11:30.4293964	Variant Decoration/Tags for minecraft:item
 ebdb9ef7cafcd557fd8112a54fe8bcb67b0d4bd1 data\minecraft\tags\items\wooden_doors.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\items\wooden_slabs.json
 150f1ed14f4948f5618b565af300e295e885d388 data\varan-deco\tags\items\wooden_bookshelves.json
@@ -10,8 +10,8 @@ d25a8b7ceaea55ff80e4398dd65212f50c297d93 data\minecraft\tags\items\stone_tool_ma
 4d816e98a3b6dd160d6f01d9c6e722f8769ba53d data\minecraft\tags\items\wooden_buttons.json
 abdcdfb523c9e47140d70798c2b6cf65b17e7406 data\varan-deco\tags\items\mosaic_wood.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\items\logs_that_burn.json
-5badd77a890c0a25cf700280748e26be0c0ef917 data\varan-deco\tags\items\metal_buttons.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\items\stone_buttons.json
+5badd77a890c0a25cf700280748e26be0c0ef917 data\varan-deco\tags\items\metal_buttons.json
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\items\leaves.json
 75c75bbfe6f66cbff734e27fa20b7495e76095ac data\varan-deco\tags\items\deco_cartography_tables.json
 54b23a26573115f73038bf16d483084193e7671b data\varan-deco\tags\items\water_items.json

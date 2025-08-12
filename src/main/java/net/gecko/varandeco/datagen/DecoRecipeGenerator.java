@@ -3816,14 +3816,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE,4)
                 .input(DecoBlocks.MIGHTY_LAVENDER)
-                .group("pink_dye_dye")
+                .group("pink_dye")
                 .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
                         conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
                 .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
                 .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
-                .group("pink_dye_dye")
+                .group("pink_dye")
                 .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
                         conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
                 .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender_flower"));
