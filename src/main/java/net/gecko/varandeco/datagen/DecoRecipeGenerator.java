@@ -5788,7 +5788,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.STRIPPED_DRIFTWOOD_LOG))
                         .offerTo(exporter, getRecipeName(DecoBlocks.STRIPPED_DRIFTWOOD) + "_recipe_create");
 
-                createShapeless(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.DRIFTWOOD_PLANKS)
+                createShapeless(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.DRIFTWOOD_PLANKS,4)
                         .input(DecoTags.Items.DRIFTWOOD_LOGS)
                         .criterion("has_logs", conditionsFromTag(DecoTags.Items.DRIFTWOOD_LOGS))
                         .offerTo(exporter,(getRecipeName(DecoBlocks.DRIFTWOOD_PLANKS) + "_recipe_create"));
@@ -5909,8 +5909,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .pattern("/#/")
                         .input('/', Items.KELP)
                         .input('#', DecoTags.Items.WET_DRIFTWOOD_LOGS)
-                        .criterion(hasItem(Items.KELP),
-                                conditionsFromItem(Items.KELP))
+                        .criterion("has_logs", conditionsFromTag(DecoTags.Items.WET_DRIFTWOOD_LOGS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_SPROUT) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.DRIED_LEAVES)
