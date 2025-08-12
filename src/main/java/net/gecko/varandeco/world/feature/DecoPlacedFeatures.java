@@ -113,7 +113,7 @@ register(context, DECO_DRIED_FALLEN_DRIFTWOOD_PLACED,configuredFeatureRegistryEn
         (BlockPredicate.wouldSurvive(Blocks.CACTUS.getDefaultState(), BlockPos.ORIGIN)));
 
 register(context, DECO_FALLEN_DRIFTWOOD_PLACED,configuredFeatureRegistryEntryLookup.getOrThrow
-                (DecoConfiguredFeatures.DECO_FALLEN_DRIFTWOOD_KEY),RarityFilterPlacementModifier.of(32),
+                (DecoConfiguredFeatures.DECO_FALLEN_DRIFTWOOD_KEY),RarityFilterPlacementModifier.of(96),
         BlockFilterPlacementModifier.of(BlockPredicate.wouldSurvive(DecoBlocks.DRIFTWOOD_SPROUT.getDefaultState(), BlockPos.ORIGIN)));
     }
 
