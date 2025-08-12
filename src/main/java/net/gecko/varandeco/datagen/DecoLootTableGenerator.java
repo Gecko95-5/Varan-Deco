@@ -37,7 +37,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
         addDrop(DecoBlocks.POLISHED_STONE);
         addDrop(DecoBlocks.POLISHED_STONE_STAIRS);
-        slabDrops(DecoBlocks.POLISHED_STONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_STONE_SLAB, slabDrops(DecoBlocks.POLISHED_STONE_SLAB));
         addDrop(DecoBlocks.POLISHED_STONE_WALL);
 
         addDrop(DecoBlocks.STONE_WALL);
@@ -49,25 +49,25 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.SMOOTH_STONE_WALL);
 
         addDrop(DecoBlocks.DRIPSTONE_STAIRS);
-        slabDrops(DecoBlocks.DRIPSTONE_SLAB);
+        addDrop(DecoBlocks.DRIPSTONE_SLAB, slabDrops(DecoBlocks.DRIPSTONE_SLAB));
         addDrop(DecoBlocks.DRIPSTONE_WALL);
         addDrop(DecoBlocks.CALCITE_STAIRS);
-        slabDrops(DecoBlocks.CALCITE_SLAB);
+        addDrop(DecoBlocks.CALCITE_SLAB, slabDrops(DecoBlocks.CALCITE_SLAB));
         addDrop(DecoBlocks.CALCITE_WALL);
 
         addDrop(DecoBlocks.STONE_TILES);
         addDrop(DecoBlocks.STONE_TILE_STAIRS);
-        slabDrops(DecoBlocks.STONE_TILE_SLAB);
+        addDrop(DecoBlocks.STONE_TILE_SLAB, slabDrops(DecoBlocks.STONE_TILE_SLAB));
         addDrop(DecoBlocks.STONE_TILE_WALL);
         addDrop(DecoBlocks.CRACKED_STONE_TILES);
 
         addDrop(DecoBlocks.TUFF_TILES);
         addDrop(DecoBlocks.TUFF_TILE_STAIRS);
-        slabDrops(DecoBlocks.TUFF_TILE_SLAB);
+        addDrop(DecoBlocks.TUFF_TILE_SLAB, slabDrops(DecoBlocks.TUFF_TILE_SLAB));
         addDrop(DecoBlocks.TUFF_TILE_WALL);
 
         addDrop(DecoBlocks.PACKED_MUD_STAIRS);
-        slabDrops(DecoBlocks.PACKED_MUD_SLAB);
+        addDrop(DecoBlocks.PACKED_MUD_SLAB, slabDrops(DecoBlocks.PACKED_MUD_SLAB));
         addDrop(DecoBlocks.PACKED_MUD_WALL);
 
         addDrop(DecoBlocks.RED_NETHER_BRICK_FENCE);
@@ -75,22 +75,22 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE);
 
         addDrop(DecoBlocks.NETHERRACK_STAIRS);
-        slabDrops(DecoBlocks.NETHERRACK_SLAB);
+        addDrop(DecoBlocks.NETHERRACK_SLAB, slabDrops(DecoBlocks.NETHERRACK_SLAB));
         addDrop(DecoBlocks.NETHERRACK_WALL);
 
         addDrop(DecoBlocks.MAGMA_STAIRS);
-        slabDrops(DecoBlocks.MAGMA_SLAB);
+        addDrop(DecoBlocks.MAGMA_SLAB, slabDrops(DecoBlocks.MAGMA_SLAB));
         addDrop(DecoBlocks.MAGMA_WALL);
 
         addDrop(DecoBlocks.MAGMA_BRICKS);
         addDrop(DecoBlocks.CHISELED_MAGMA_BRICKS);
         addDrop(DecoBlocks.MAGMA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.MAGMA_BRICK_SLAB);
+        addDrop(DecoBlocks.MAGMA_BRICK_SLAB, slabDrops(DecoBlocks.MAGMA_BRICK_SLAB));
         addDrop(DecoBlocks.MAGMA_BRICK_WALL);
 
         addDrop(DecoBlocks.POLISHED_BLACKSTONE_TILES);
         addDrop(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS);
-        slabDrops(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB);
+        addDrop(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB, slabDrops(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB));
         addDrop(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL);
         addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
 
@@ -98,26 +98,26 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(DecoBlocks.CHISELED_GLIDED_BLACKSTONE);
 
         addDrop(DecoBlocks.SNOW_STAIRS);
-        slabDrops(DecoBlocks.SNOW_SLAB);
+        addDrop(DecoBlocks.SNOW_SLAB, slabDrops(DecoBlocks.SNOW_SLAB));
         addDrop(DecoBlocks.SNOW_WALL);
 
         addDrop(DecoBlocks.PACKED_ICE_STAIRS);
-        slabDrops(DecoBlocks.PACKED_ICE_SLAB);
+        addDrop(DecoBlocks.PACKED_ICE_SLAB, slabDrops(DecoBlocks.PACKED_ICE_SLAB));
         addDrop(DecoBlocks.PACKED_ICE_WALL);
 
         addDrop(DecoBlocks.BLUE_ICE_STAIRS);
-        slabDrops(DecoBlocks.BLUE_ICE_SLAB);
+        addDrop(DecoBlocks.BLUE_ICE_SLAB, slabDrops(DecoBlocks.BLUE_ICE_SLAB));
         addDrop(DecoBlocks.BLUE_ICE_WALL);
 
         addDrop(DecoBlocks.SNOW_BRICKS, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(4.0F)));
         addDrop(DecoBlocks.CHISELED_SNOW_BRICKS, block -> this.drops(block, DecoItems.SNOW_BRICK, ConstantLootNumberProvider.create(8.0F)));
         addDrop(DecoBlocks.SNOW_BRICK_STAIRS);
-        slabDrops(DecoBlocks.SNOW_BRICK_SLAB);
+        addDrop(DecoBlocks.SNOW_BRICK_SLAB, slabDrops(DecoBlocks.SNOW_BRICK_SLAB));
         addDrop(DecoBlocks.SNOW_BRICK_WALL);
 
         addDrop(DecoBlocks.ICE_BRICKS);
         addDrop(DecoBlocks.ICE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.ICE_BRICK_SLAB);
+        addDrop(DecoBlocks.ICE_BRICK_SLAB, slabDrops(DecoBlocks.ICE_BRICK_SLAB));
         addDrop(DecoBlocks.ICE_BRICK_WALL);
 
         addDropWithSilkTouch(DecoBlocks.BLACK_ICE);
@@ -133,23 +133,23 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.CUT_SANDSTONE_BRICKS);
         addDrop(DecoBlocks.CUT_SANDSTONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB, slabDrops(DecoBlocks.CUT_SANDSTONE_BRICK_SLAB));
         addDrop(DecoBlocks.CUT_SANDSTONE_BRICK_WALL);
 
         addDrop(DecoBlocks.CUT_RED_SANDSTONE_BRICKS);
         addDrop(DecoBlocks.CUT_RED_SANDSTONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB, slabDrops(DecoBlocks.CUT_RED_SANDSTONE_BRICK_SLAB));
         addDrop(DecoBlocks.CUT_RED_SANDSTONE_BRICK_WALL);
 
         addDrop(DecoBlocks.CACTUS_PLANKS);
         addDrop(DecoBlocks.CACTUS_PLANK_STAIRS);
-        slabDrops(DecoBlocks.CACTUS_PLANK_SLAB);
+        addDrop(DecoBlocks.CACTUS_PLANK_SLAB, slabDrops(DecoBlocks.CACTUS_PLANK_SLAB));
         addDrop(DecoBlocks.CACTUS_PLANK_FENCE);
         addDrop(DecoBlocks.CACTUS_PLANK_FENCE_GATE);
         addDrop(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE);
         addDrop(DecoBlocks.CACTUS_PLANK_BUTTON);
 
-        doorDrops(DecoBlocks.CACTUS_DOOR);
+        addDrop(DecoBlocks.CACTUS_DOOR, doorDrops(DecoBlocks.CACTUS_DOOR));
         addDrop(DecoBlocks.CACTUS_TRAPDOOR);
 
         addDrop(DecoBlocks.STANDING_CACTUS_SIGN);
@@ -159,17 +159,17 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE);
         addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_STAIRS);
-        slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB);
+        addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB, slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_SLAB));
         addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_WALL);
 
         addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICKS);
         addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB);
+        addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB, slabDrops(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB));
         addDrop(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_WALL);
 
         addDrop(DecoBlocks.LIGHT_PRISMARINE);
         addDrop(DecoBlocks.LIGHT_PRISMARINE_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_PRISMARINE_SLAB);
+        addDrop(DecoBlocks.LIGHT_PRISMARINE_SLAB, slabDrops(DecoBlocks.LIGHT_PRISMARINE_SLAB));
         addDrop(DecoBlocks.LIGHT_PRISMARINE_WALL);
 
         addDrop(DecoBlocks.CHISELED_PRISMARINE_BRICKS);
@@ -177,47 +177,47 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.BUBBLE_BLOCK, block -> this.drops(block, DecoItems.BUBBLE_ORB, ConstantLootNumberProvider.create(2.0F)));
         addDrop(DecoBlocks.BUBBLE_STAIRS);
-        slabDrops(DecoBlocks.BUBBLE_SLAB);
+        addDrop(DecoBlocks.BUBBLE_SLAB, slabDrops(DecoBlocks.BUBBLE_SLAB));
         addDrop(DecoBlocks.BUBBLE_WALL);
 
         addDrop(DecoBlocks.BUBBLE_BRICKS);
         addDrop(DecoBlocks.BUBBLE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.BUBBLE_BRICK_SLAB);
+        addDrop(DecoBlocks.BUBBLE_BRICK_SLAB, slabDrops(DecoBlocks.BUBBLE_BRICK_SLAB));
         addDrop(DecoBlocks.BUBBLE_BRICK_WALL);
         addDrop(DecoBlocks.CHISELED_BUBBLE_BRICKS);
 
         addDrop(DecoBlocks.SOUL_SOILSTONE);
         addDrop(DecoBlocks.SOUL_SOILSTONE_STAIRS);
-        slabDrops(DecoBlocks.SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.SOUL_SOILSTONE_SLAB, slabDrops(DecoBlocks.SOUL_SOILSTONE_SLAB));
         addDrop(DecoBlocks.SOUL_SOILSTONE_WALL);
 
         addDrop(DecoBlocks.CUT_SOUL_SOILSTONE);
         addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_STAIRS);
-        slabDrops(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB, slabDrops(DecoBlocks.CUT_SOUL_SOILSTONE_SLAB));
         addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_WALL);
 
         addDrop(DecoBlocks.CHISELED_SOUL_SOILSTONE);
 
         addDrop(DecoBlocks.SMOOTH_SOUL_SOILSTONE);
         addDrop(DecoBlocks.SMOOTH_SOUL_SOILSTONE_STAIRS);
-        slabDrops(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB, slabDrops(DecoBlocks.SMOOTH_SOUL_SOILSTONE_SLAB));
         addDrop(DecoBlocks.SMOOTH_SOUL_SOILSTONE_WALL);
 
         addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS);
         addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB, slabDrops(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_SLAB));
         addDrop(DecoBlocks.CUT_SOUL_SOILSTONE_BRICK_WALL);
 
         addDrop(DecoBlocks.QUARTZ_WALL);
         addDrop(DecoBlocks.SMOOTH_QUARTZ_WALL);
 
         addDrop(DecoBlocks.QUARTZ_BRICK_STAIRS);
-        slabDrops(DecoBlocks.QUARTZ_BRICK_SLAB);
+        addDrop(DecoBlocks.QUARTZ_BRICK_SLAB, slabDrops(DecoBlocks.QUARTZ_BRICK_SLAB));
         addDrop(DecoBlocks.QUARTZ_BRICK_WALL);
 
         addDrop(DecoBlocks.CUT_QUARTZ);
         addDrop(DecoBlocks.CUT_QUARTZ_STAIRS);
-        slabDrops(DecoBlocks.CUT_QUARTZ_SLAB);
+        addDrop(DecoBlocks.CUT_QUARTZ_SLAB, slabDrops(DecoBlocks.CUT_QUARTZ_SLAB));
         addDrop(DecoBlocks.CUT_QUARTZ_WALL);
 
         addDrop(DecoBlocks.CHISELED_RED_NETHER_BRICKS);
@@ -225,9 +225,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.BLUE_NETHER_BRICKS);
         addDrop(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
-        slabDrops(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
+        addDrop(DecoBlocks.BLUE_NETHER_BRICK_SLAB, slabDrops(DecoBlocks.BLUE_NETHER_BRICK_SLAB));
         addDrop(DecoBlocks.BLUE_NETHER_BRICK_WALL);
-        slabDrops(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
+        addDrop(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
         addDrop(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
 
         addDrop(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS);
@@ -320,20 +320,20 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.PALE_OAK_MOSAIC_STAIRS);
         addDrop(DecoBlocks.DRIFTWOOD_MOSAIC_STAIRS);
 
-        slabDrops(DecoBlocks.OAK_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.BIRCH_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.SPRUCE_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.JUNGLE_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.ACACIA_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.DARK_OAK_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.MANGROVE_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.CHERRY_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.CRIMSON_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.WARPED_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.CACTUS_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.WOODEN_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.PALE_OAK_MOSAIC_SLAB);
-        slabDrops(DecoBlocks.DRIFTWOOD_MOSAIC_SLAB);
+        addDrop(DecoBlocks.OAK_MOSAIC_SLAB, slabDrops(DecoBlocks.OAK_MOSAIC_SLAB));
+        addDrop(DecoBlocks.BIRCH_MOSAIC_SLAB, slabDrops(DecoBlocks.BIRCH_MOSAIC_SLAB));
+        addDrop(DecoBlocks.SPRUCE_MOSAIC_SLAB, slabDrops(DecoBlocks.SPRUCE_MOSAIC_SLAB));
+        addDrop(DecoBlocks.JUNGLE_MOSAIC_SLAB, slabDrops(DecoBlocks.JUNGLE_MOSAIC_SLAB));
+        addDrop(DecoBlocks.ACACIA_MOSAIC_SLAB, slabDrops(DecoBlocks.ACACIA_MOSAIC_SLAB));
+        addDrop(DecoBlocks.DARK_OAK_MOSAIC_SLAB, slabDrops(DecoBlocks.DARK_OAK_MOSAIC_SLAB));
+        addDrop(DecoBlocks.MANGROVE_MOSAIC_SLAB, slabDrops(DecoBlocks.MANGROVE_MOSAIC_SLAB));
+        addDrop(DecoBlocks.CHERRY_MOSAIC_SLAB, slabDrops(DecoBlocks.CHERRY_MOSAIC_SLAB));
+        addDrop(DecoBlocks.CRIMSON_MOSAIC_SLAB, slabDrops(DecoBlocks.CRIMSON_MOSAIC_SLAB));
+        addDrop(DecoBlocks.WARPED_MOSAIC_SLAB, slabDrops(DecoBlocks.WARPED_MOSAIC_SLAB));
+        addDrop(DecoBlocks.CACTUS_MOSAIC_SLAB, slabDrops(DecoBlocks.CACTUS_MOSAIC_SLAB));
+        addDrop(DecoBlocks.WOODEN_MOSAIC_SLAB, slabDrops(DecoBlocks.WOODEN_MOSAIC_SLAB));
+        addDrop(DecoBlocks.PALE_OAK_MOSAIC_SLAB, slabDrops(DecoBlocks.PALE_OAK_MOSAIC_SLAB));
+        addDrop(DecoBlocks.DRIFTWOOD_MOSAIC_SLAB, slabDrops(DecoBlocks.DRIFTWOOD_MOSAIC_SLAB));
 
         addDrop(DecoBlocks.OAK_SMITHING_TABLE);
         addDrop(DecoBlocks.SPRUCE_SMITHING_TABLE);
@@ -429,105 +429,105 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HANGING_DRIFTWOOD_PLANKS_SIGN);
 
         addDrop(DecoBlocks.TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.TERRACOTTA_SLAB, slabDrops(DecoBlocks.TERRACOTTA_SLAB));
         addDrop(DecoBlocks.TERRACOTTA_WALL);
 
         addDrop(DecoBlocks.WHITE_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.WHITE_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.WHITE_TERRACOTTA_SLAB, slabDrops(DecoBlocks.WHITE_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.WHITE_TERRACOTTA_WALL);
         addDrop(DecoBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, slabDrops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.LIGHT_GRAY_TERRACOTTA_WALL);
         addDrop(DecoBlocks.GRAY_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.GRAY_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.GRAY_TERRACOTTA_SLAB, slabDrops(DecoBlocks.GRAY_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.GRAY_TERRACOTTA_WALL);
         addDrop(DecoBlocks.BLACK_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.BLACK_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.BLACK_TERRACOTTA_SLAB, slabDrops(DecoBlocks.BLACK_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.BLACK_TERRACOTTA_WALL);
         addDrop(DecoBlocks.BROWN_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.BROWN_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.BROWN_TERRACOTTA_SLAB, slabDrops(DecoBlocks.BROWN_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.BROWN_TERRACOTTA_WALL);
         addDrop(DecoBlocks.RED_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.RED_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.RED_TERRACOTTA_SLAB, slabDrops(DecoBlocks.RED_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.RED_TERRACOTTA_WALL);
         addDrop(DecoBlocks.ORANGE_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.ORANGE_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.ORANGE_TERRACOTTA_SLAB, slabDrops(DecoBlocks.ORANGE_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.ORANGE_TERRACOTTA_WALL);
         addDrop(DecoBlocks.YELLOW_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.YELLOW_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.YELLOW_TERRACOTTA_SLAB, slabDrops(DecoBlocks.YELLOW_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.YELLOW_TERRACOTTA_WALL);
         addDrop(DecoBlocks.LIME_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.LIME_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.LIME_TERRACOTTA_SLAB, slabDrops(DecoBlocks.LIME_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.LIME_TERRACOTTA_WALL);
         addDrop(DecoBlocks.GREEN_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.GREEN_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.GREEN_TERRACOTTA_SLAB, slabDrops(DecoBlocks.GREEN_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.GREEN_TERRACOTTA_WALL);
         addDrop(DecoBlocks.CYAN_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.CYAN_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.CYAN_TERRACOTTA_SLAB, slabDrops(DecoBlocks.CYAN_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.CYAN_TERRACOTTA_WALL);
         addDrop(DecoBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB, slabDrops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.LIGHT_BLUE_TERRACOTTA_WALL);
         addDrop(DecoBlocks.BLUE_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.BLUE_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.BLUE_TERRACOTTA_SLAB, slabDrops(DecoBlocks.BLUE_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.BLUE_TERRACOTTA_WALL);
         addDrop(DecoBlocks.PURPLE_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.PURPLE_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.PURPLE_TERRACOTTA_SLAB, slabDrops(DecoBlocks.PURPLE_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.PURPLE_TERRACOTTA_WALL);
         addDrop(DecoBlocks.MAGENTA_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.MAGENTA_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.MAGENTA_TERRACOTTA_SLAB, slabDrops(DecoBlocks.MAGENTA_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.MAGENTA_TERRACOTTA_WALL);
         addDrop(DecoBlocks.PINK_TERRACOTTA_STAIRS);
-        slabDrops(DecoBlocks.PINK_TERRACOTTA_SLAB);
+        addDrop(DecoBlocks.PINK_TERRACOTTA_SLAB, slabDrops(DecoBlocks.PINK_TERRACOTTA_SLAB));
         addDrop(DecoBlocks.PINK_TERRACOTTA_WALL);
 
         addDrop(DecoBlocks.WHITE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.WHITE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.WHITE_CONCRETE_SLAB, slabDrops(DecoBlocks.WHITE_CONCRETE_SLAB));
         addDrop(DecoBlocks.WHITE_CONCRETE_WALL);
         addDrop(DecoBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+        addDrop(DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB));
         addDrop(DecoBlocks.LIGHT_GRAY_CONCRETE_WALL);
         addDrop(DecoBlocks.GRAY_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.GRAY_CONCRETE_SLAB);
+        addDrop(DecoBlocks.GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.GRAY_CONCRETE_SLAB));
         addDrop(DecoBlocks.GRAY_CONCRETE_WALL);
         addDrop(DecoBlocks.BLACK_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.BLACK_CONCRETE_SLAB);
+        addDrop(DecoBlocks.BLACK_CONCRETE_SLAB, slabDrops(DecoBlocks.BLACK_CONCRETE_SLAB));
         addDrop(DecoBlocks.BLACK_CONCRETE_WALL);
         addDrop(DecoBlocks.BROWN_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.BROWN_CONCRETE_SLAB);
+        addDrop(DecoBlocks.BROWN_CONCRETE_SLAB, slabDrops(DecoBlocks.BROWN_CONCRETE_SLAB));
         addDrop(DecoBlocks.BROWN_CONCRETE_WALL);
         addDrop(DecoBlocks.RED_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.RED_CONCRETE_SLAB);
+        addDrop(DecoBlocks.RED_CONCRETE_SLAB, slabDrops(DecoBlocks.RED_CONCRETE_SLAB));
         addDrop(DecoBlocks.RED_CONCRETE_WALL);
         addDrop(DecoBlocks.ORANGE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.ORANGE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.ORANGE_CONCRETE_SLAB, slabDrops(DecoBlocks.ORANGE_CONCRETE_SLAB));
         addDrop(DecoBlocks.ORANGE_CONCRETE_WALL);
         addDrop(DecoBlocks.YELLOW_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.YELLOW_CONCRETE_SLAB);
+        addDrop(DecoBlocks.YELLOW_CONCRETE_SLAB, slabDrops(DecoBlocks.YELLOW_CONCRETE_SLAB));
         addDrop(DecoBlocks.YELLOW_CONCRETE_WALL);
         addDrop(DecoBlocks.LIME_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.LIME_CONCRETE_SLAB);
+        addDrop(DecoBlocks.LIME_CONCRETE_SLAB, slabDrops(DecoBlocks.LIME_CONCRETE_SLAB));
         addDrop(DecoBlocks.LIME_CONCRETE_WALL);
         addDrop(DecoBlocks.GREEN_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.GREEN_CONCRETE_SLAB);
+        addDrop(DecoBlocks.GREEN_CONCRETE_SLAB, slabDrops(DecoBlocks.GREEN_CONCRETE_SLAB));
         addDrop(DecoBlocks.GREEN_CONCRETE_WALL);
         addDrop(DecoBlocks.CYAN_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CYAN_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CYAN_CONCRETE_SLAB, slabDrops(DecoBlocks.CYAN_CONCRETE_SLAB));
         addDrop(DecoBlocks.CYAN_CONCRETE_WALL);
         addDrop(DecoBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB));
         addDrop(DecoBlocks.LIGHT_BLUE_CONCRETE_WALL);
         addDrop(DecoBlocks.BLUE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.BLUE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.BLUE_CONCRETE_SLAB));
         addDrop(DecoBlocks.BLUE_CONCRETE_WALL);
         addDrop(DecoBlocks.PURPLE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.PURPLE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.PURPLE_CONCRETE_SLAB, slabDrops(DecoBlocks.PURPLE_CONCRETE_SLAB));
         addDrop(DecoBlocks.PURPLE_CONCRETE_WALL);
         addDrop(DecoBlocks.MAGENTA_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.MAGENTA_CONCRETE_SLAB);
+        addDrop(DecoBlocks.MAGENTA_CONCRETE_SLAB, slabDrops(DecoBlocks.MAGENTA_CONCRETE_SLAB));
         addDrop(DecoBlocks.MAGENTA_CONCRETE_WALL);
         addDrop(DecoBlocks.PINK_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.PINK_CONCRETE_SLAB);
+        addDrop(DecoBlocks.PINK_CONCRETE_SLAB, slabDrops(DecoBlocks.PINK_CONCRETE_SLAB));
         addDrop(DecoBlocks.PINK_CONCRETE_WALL);
 
         addDrop(DecoBlocks.TERRACOTTA_BRICKS);
@@ -566,101 +566,101 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CUT_PINK_CONCRETE);
 
         addDrop(DecoBlocks.WHITE_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.WHITE_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.WHITE_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.WHITE_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.WHITE_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.GRAY_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.GRAY_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.GRAY_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.GRAY_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.GRAY_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.BLACK_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.BLACK_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.BLACK_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.BLACK_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.BLACK_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.BROWN_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.BROWN_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.BROWN_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.BROWN_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.BROWN_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.RED_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.RED_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.RED_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.RED_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.RED_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.ORANGE_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.ORANGE_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.ORANGE_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.ORANGE_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.ORANGE_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.YELLOW_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.YELLOW_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.YELLOW_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.YELLOW_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.YELLOW_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.LIME_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.LIME_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.LIME_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.LIME_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.LIME_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.GREEN_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.GREEN_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.GREEN_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.GREEN_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.GREEN_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.CYAN_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.CYAN_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.CYAN_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.CYAN_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.CYAN_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.BLUE_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.BLUE_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.BLUE_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.BLUE_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.BLUE_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.PURPLE_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.PURPLE_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.PURPLE_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.PURPLE_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.PURPLE_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.MAGENTA_TERRACOTTA_BRICK_WALL);
         addDrop(DecoBlocks.PINK_TERRACOTTA_BRICK_STAIRS);
-        slabDrops(DecoBlocks.PINK_TERRACOTTA_BRICK_SLAB);
+        addDrop(DecoBlocks.PINK_TERRACOTTA_BRICK_SLAB, slabDrops(DecoBlocks.PINK_TERRACOTTA_BRICK_SLAB));
         addDrop(DecoBlocks.PINK_TERRACOTTA_BRICK_WALL);
 
         addDrop(DecoBlocks.CUT_WHITE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_WHITE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_WHITE_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_WHITE_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_WHITE_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_GRAY_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_GRAY_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_GRAY_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_GRAY_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_BLACK_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_BLACK_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_BLACK_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_BLACK_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_BLACK_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_BROWN_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_BROWN_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_BROWN_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_BROWN_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_BROWN_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_RED_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_RED_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_RED_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_RED_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_RED_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_ORANGE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_ORANGE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_ORANGE_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_ORANGE_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_ORANGE_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_YELLOW_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_YELLOW_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_YELLOW_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_YELLOW_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_YELLOW_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_LIME_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_LIME_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_LIME_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_LIME_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_LIME_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_GREEN_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_GREEN_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_GREEN_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_GREEN_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_GREEN_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_CYAN_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_CYAN_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_CYAN_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_CYAN_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_CYAN_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_BLUE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_BLUE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_BLUE_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_BLUE_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_PURPLE_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_PURPLE_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_PURPLE_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_PURPLE_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_PURPLE_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_MAGENTA_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_MAGENTA_CONCRETE_WALL);
         addDrop(DecoBlocks.CUT_PINK_CONCRETE_STAIRS);
-        slabDrops(DecoBlocks.CUT_PINK_CONCRETE_SLAB);
+        addDrop(DecoBlocks.CUT_PINK_CONCRETE_SLAB, slabDrops(DecoBlocks.CUT_PINK_CONCRETE_SLAB));
         addDrop(DecoBlocks.CUT_PINK_CONCRETE_WALL);
 
         addDrop(DecoBlocks.WHITE_CONCRETE_PILLAR);
@@ -757,7 +757,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.SMOOTH_DEEPSLATE);
         addDrop(DecoBlocks.SMOOTH_DEEPSLATE_STAIRS);
-        slabDrops(DecoBlocks.SMOOTH_DEEPSLATE_SLAB);
+        addDrop(DecoBlocks.SMOOTH_DEEPSLATE_SLAB, slabDrops(DecoBlocks.SMOOTH_DEEPSLATE_SLAB));
         addDrop(DecoBlocks.SMOOTH_DEEPSLATE_WALL);
 
         this.addDrop(DecoBlocks.KELP_LEAVES, block -> this.dropsWithShears(block, this.applyExplosionDecay(
@@ -776,14 +776,14 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.SMOOTH_BLACKSTONE);
         addDrop(DecoBlocks.SMOOTH_BLACKSTONE_STAIRS);
-        slabDrops(DecoBlocks.SMOOTH_BLACKSTONE_SLAB);
+        addDrop(DecoBlocks.SMOOTH_BLACKSTONE_SLAB, slabDrops(DecoBlocks.SMOOTH_BLACKSTONE_SLAB));
         addDrop(DecoBlocks.SMOOTH_BLACKSTONE_WALL);
 
         addDrop(DecoBlocks.BLACKSTONE_FURNACE);
 
         addDrop(DecoBlocks.SMOOTH_TUFF);
         addDrop(DecoBlocks.SMOOTH_TUFF_STAIRS);
-        slabDrops(DecoBlocks.SMOOTH_TUFF_SLAB);
+        addDrop(DecoBlocks.SMOOTH_TUFF_SLAB, slabDrops(DecoBlocks.SMOOTH_TUFF_SLAB));
         addDrop(DecoBlocks.SMOOTH_TUFF_WALL);
 
         addDrop(DecoBlocks.TUFF_FURNACE);
@@ -801,48 +801,48 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.TUFF_STONECUTTER);
 
         addDrop(DecoBlocks.DEEPSLATE_STAIRS);
-        slabDrops(DecoBlocks.DEEPSLATE_SLAB);
+        addDrop(DecoBlocks.DEEPSLATE_SLAB, slabDrops(DecoBlocks.DEEPSLATE_SLAB));
         addDrop(DecoBlocks.DEEPSLATE_WALL);
 
         addDrop(DecoBlocks.CHISELED_BRICKS);
 
         addDrop(DecoBlocks.END_STONE_STAIRS);
-        slabDrops(DecoBlocks.END_STONE_SLAB);
+        addDrop(DecoBlocks.END_STONE_SLAB, slabDrops(DecoBlocks.END_STONE_SLAB));
         addDrop(DecoBlocks.END_STONE_WALL);
 
         addDrop(DecoBlocks.CHISELED_END_STONE);
 
         addDrop(DecoBlocks.SMOOTH_PURPUR);
         addDrop(DecoBlocks.SMOOTH_PURPUR_STAIRS);
-        slabDrops(DecoBlocks.SMOOTH_PURPUR_SLAB);
+        addDrop(DecoBlocks.SMOOTH_PURPUR_SLAB, slabDrops(DecoBlocks.SMOOTH_PURPUR_SLAB));
         addDrop(DecoBlocks.SMOOTH_PURPUR_WALL);
 
         addDrop(DecoBlocks.PURPUR_BRICKS);
         addDrop(DecoBlocks.PURPUR_BRICK_STAIRS);
-        slabDrops(DecoBlocks.PURPUR_BRICK_SLAB);
+        addDrop(DecoBlocks.PURPUR_BRICK_SLAB, slabDrops(DecoBlocks.PURPUR_BRICK_SLAB));
         addDrop(DecoBlocks.PURPUR_BRICK_WALL);
 
         addDrop(DecoBlocks.CHISELED_PURPUR);
 
         addDrop(DecoBlocks.VOID_STONE);
         addDrop(DecoBlocks.VOID_STONE_STAIRS);
-        slabDrops(DecoBlocks.VOID_STONE_SLAB);
+        addDrop(DecoBlocks.VOID_STONE_SLAB, slabDrops(DecoBlocks.VOID_STONE_SLAB));
         addDrop(DecoBlocks.VOID_STONE_WALL);
 
         addDrop(DecoBlocks.VOID_STONE_BRICKS);
         addDrop(DecoBlocks.VOID_STONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.VOID_STONE_BRICK_SLAB);
+        addDrop(DecoBlocks.VOID_STONE_BRICK_SLAB, slabDrops(DecoBlocks.VOID_STONE_BRICK_SLAB));
         addDrop(DecoBlocks.VOID_STONE_BRICK_WALL);
 
         addDrop(DecoBlocks.CHISELED_VOID_STONE);
 
         addDrop(DecoBlocks.OBSIDIAN_STAIRS);
-        slabDrops(DecoBlocks.OBSIDIAN_SLAB);
+        addDrop(DecoBlocks.OBSIDIAN_SLAB, slabDrops(DecoBlocks.OBSIDIAN_SLAB));
         addDrop(DecoBlocks.OBSIDIAN_WALL);
 
         addDrop(DecoBlocks.OBSIDIAN_BRICKS);
         addDrop(DecoBlocks.OBSIDIAN_BRICK_STAIRS);
-        slabDrops(DecoBlocks.OBSIDIAN_BRICK_SLAB);
+        addDrop(DecoBlocks.OBSIDIAN_BRICK_SLAB, slabDrops(DecoBlocks.OBSIDIAN_BRICK_SLAB));
         addDrop(DecoBlocks.OBSIDIAN_BRICK_WALL);
 
         addDrop(DecoBlocks.OBSIDIAN_PILLAR);
@@ -854,12 +854,12 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.CUT_IRON);
         addDrop(DecoBlocks.CUT_IRON_STAIRS);
-        slabDrops(DecoBlocks.CUT_IRON_SLAB);
+        addDrop(DecoBlocks.CUT_IRON_SLAB, slabDrops(DecoBlocks.CUT_IRON_SLAB));
 
         addDrop(DecoBlocks.LIGHT_IRON_BARS);
         addDrop(DecoBlocks.HEAVY_IRON_BARS);
 
-        doorDrops(DecoBlocks.GOLD_DOOR);
+        addDrop(DecoBlocks.GOLD_DOOR, doorDrops(DecoBlocks.GOLD_DOOR));
         addDrop(DecoBlocks.GOLD_TRAPDOOR);
 
         addDrop(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
@@ -1076,7 +1076,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.WOODEN_PLANKS);
         addDrop(DecoBlocks.WOODEN_STAIRS);
-        slabDrops(DecoBlocks.WOODEN_SLAB);
+        addDrop(DecoBlocks.WOODEN_SLAB, slabDrops(DecoBlocks.WOODEN_SLAB));
         addDrop(DecoBlocks.WOODEN_FENCE);
         addDrop(DecoBlocks.WOODEN_FENCE_GATE);
         addDrop(DecoBlocks.WOODEN_PRESSURE_PLATE);
@@ -1087,7 +1087,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.STRIPPED_WOODEN_LOG);
         addDrop(DecoBlocks.STRIPPED_WOODEN_WOOD);
 
-        doorDrops(DecoBlocks.WOODEN_DOOR);
+        addDrop(DecoBlocks.WOODEN_DOOR, doorDrops(DecoBlocks.WOODEN_DOOR));
         addDrop(DecoBlocks.WOODEN_TRAPDOOR);
 
         addDrop(DecoBlocks.OAK_CRAFTING_TABLE);
@@ -1130,7 +1130,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
                         .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER).apply(ApplyBonusLootFunction.binomialWithBonusCount(impl.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))));
 
         addDrop(DecoBlocks.SMOOTH_BASALT_STAIRS);
-        slabDrops(DecoBlocks.SMOOTH_BASALT_SLAB);
+        addDrop(DecoBlocks.SMOOTH_BASALT_SLAB, slabDrops(DecoBlocks.SMOOTH_BASALT_SLAB));
         addDrop(DecoBlocks.SMOOTH_BASALT_WALL);
         addDrop(DecoBlocks.PURPUR_WALL);
 
@@ -1179,36 +1179,35 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.RED_SANDSTONE_BRICKS);
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICKS);
         addDrop(DecoBlocks.COBBLED_SANDSTONE_STAIRS);
-        slabDrops(DecoBlocks.COBBLED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.COBBLED_SANDSTONE_SLAB, slabDrops(DecoBlocks.COBBLED_SANDSTONE_SLAB));
         addDrop(DecoBlocks.COBBLED_SANDSTONE_WALL);
         addDrop(DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS);
-        slabDrops(DecoBlocks.COBBLED_RED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.COBBLED_RED_SANDSTONE_SLAB, slabDrops(DecoBlocks.COBBLED_RED_SANDSTONE_SLAB));
         addDrop(DecoBlocks.COBBLED_RED_SANDSTONE_WALL);
         addDrop(DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS);
-        slabDrops(DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB, slabDrops(DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB));
         addDrop(DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL);
         addDrop(DecoBlocks.POLISHED_SANDSTONE_STAIRS);
-        slabDrops(DecoBlocks.POLISHED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_SANDSTONE_SLAB, slabDrops(DecoBlocks.POLISHED_SANDSTONE_SLAB));
         addDrop(DecoBlocks.POLISHED_SANDSTONE_WALL);
         addDrop(DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS);
-        slabDrops(DecoBlocks.POLISHED_RED_SANDSTONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, slabDrops(DecoBlocks.POLISHED_RED_SANDSTONE_SLAB));
         addDrop(DecoBlocks.POLISHED_RED_SANDSTONE_WALL);
         addDrop(DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS);
-        slabDrops(DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB);
+        addDrop(DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, slabDrops(DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB));
         addDrop(DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL);
         addDrop(DecoBlocks.SANDSTONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.SANDSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.SANDSTONE_BRICK_SLAB, slabDrops(DecoBlocks.SANDSTONE_BRICK_SLAB));
         addDrop(DecoBlocks.SANDSTONE_BRICK_WALL);
         addDrop(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.RED_SANDSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.RED_SANDSTONE_BRICK_SLAB, slabDrops(DecoBlocks.RED_SANDSTONE_BRICK_SLAB));
         addDrop(DecoBlocks.RED_SANDSTONE_BRICK_WALL);
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS);
-        slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
+        addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, slabDrops(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB));
         addDrop(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
 
         addDrop(DecoBlocks.FRAGILE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                         UniformLootNumberProvider.create(0.0F, 3.0f)));
-
 
         addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
         addDrop(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA, DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
@@ -1240,13 +1239,13 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.DRIFTWOOD_PLANKS);
         addDrop(DecoBlocks.DRIFTWOOD_STAIRS);
-        slabDrops(DecoBlocks.DRIFTWOOD_SLAB);
+        addDrop(DecoBlocks.DRIFTWOOD_SLAB, slabDrops(DecoBlocks.DRIFTWOOD_SLAB));
         addDrop(DecoBlocks.DRIFTWOOD_FENCE);
         addDrop(DecoBlocks.DRIFTWOOD_FENCE_GATE);
         addDrop(DecoBlocks.DRIFTWOOD_PRESSURE_PLATE);
         addDrop(DecoBlocks.DRIFTWOOD_BUTTON);
 
-        doorDrops(DecoBlocks.DRIFTWOOD_DOOR);
+        addDrop(DecoBlocks.DRIFTWOOD_DOOR, doorDrops(DecoBlocks.DRIFTWOOD_DOOR));
         addDrop(DecoBlocks.DRIFTWOOD_TRAPDOOR);
     }
 }
