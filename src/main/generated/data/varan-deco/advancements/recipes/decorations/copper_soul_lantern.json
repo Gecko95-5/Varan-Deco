@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_soul_torch": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:soul_torch"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:copper_soul_lantern"
@@ -35,7 +23,6 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_soul_torch",
       "has_copper_nugget"
     ]
   ],

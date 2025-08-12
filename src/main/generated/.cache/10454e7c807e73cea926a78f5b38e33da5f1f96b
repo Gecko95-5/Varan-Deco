@@ -1,4 +1,4 @@
-// 1.20.4	2025-08-05T10:33:22.5613095	Variant Decoration/Block Loot Tables
+// 1.20.4	2025-08-11T23:05:15.8867542	Variant Decoration/Block Loot Tables
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -583,8 +583,8 @@ a2b0e06019eb0cdf5a0f75bad903dd2d22c329b6 data\varan-deco\loot_tables\blocks\pack
 1d11565919ab6109d65b4a295f53283328f066cb data\varan-deco\loot_tables\blocks\hanging_jungle_planks_sign.json
 1f9da825dc4ec503d938fd0574242efa1ff4619a data\varan-deco\loot_tables\blocks\cut_soul_soilstone.json
 a345ee746252d37d5eb24008307da5b5ee923e0b data\varan-deco\loot_tables\blocks\dark_prismarine_wall.json
-58258a4d41315bc4fff90059e5751b1db007983c data\varan-deco\loot_tables\blocks\magenta_concrete_pillar.json
 06c1b7382579f92045310da18c0ce1e80e91f3ac data\varan-deco\loot_tables\blocks\cut_soul_soilstone_wall.json
+58258a4d41315bc4fff90059e5751b1db007983c data\varan-deco\loot_tables\blocks\magenta_concrete_pillar.json
 f1f46eb8057803f2b1db479f5cb12b7cbc303a12 data\varan-deco\loot_tables\blocks\mangrove_smithing_table.json
 b1cd16be83b8fd92b05e8fd2def61fa3d4ce3f0d data\varan-deco\loot_tables\blocks\dark_oak_mosaic_stairs.json
 ee10ece65f38395a6ded3978352abba00f732161 data\varan-deco\loot_tables\blocks\blackstone_pressure_plate.json

@@ -18,24 +18,11 @@
         "recipe": "minecraft:ender_pearl"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_warped_wart": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "varan-deco:warped_wart"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_warped_wart",
       "has_chorus_fruit"
     ]
   ],
