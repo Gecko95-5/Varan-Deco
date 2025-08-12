@@ -2,10 +2,6 @@
   "feature": "varan-deco:deco_fallen_driftwood",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 96
-    },
-    {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:would_survive",

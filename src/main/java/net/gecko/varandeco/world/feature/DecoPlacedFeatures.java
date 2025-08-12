@@ -2,9 +2,7 @@ package net.gecko.varandeco.world.feature;
 
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.fluid.Fluids;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -113,7 +111,7 @@ register(context, DECO_DRIED_FALLEN_DRIFTWOOD_PLACED,configuredFeatureRegistryEn
         (BlockPredicate.wouldSurvive(Blocks.CACTUS.getDefaultState(), BlockPos.ORIGIN)));
 
 register(context, DECO_FALLEN_DRIFTWOOD_PLACED,configuredFeatureRegistryEntryLookup.getOrThrow
-                (DecoConfiguredFeatures.DECO_FALLEN_DRIFTWOOD_KEY),RarityFilterPlacementModifier.of(96),
+                (DecoConfiguredFeatures.DECO_FALLEN_DRIFTWOOD_KEY),
         BlockFilterPlacementModifier.of(BlockPredicate.wouldSurvive(DecoBlocks.DRIFTWOOD_SPROUT.getDefaultState(), BlockPos.ORIGIN)));
     }
 
