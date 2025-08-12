@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_soul_soil": {
+    "has_soul_blocks": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:soul_soil"
-            ]
+            "tag": "minecraft:soul_fire_base_blocks"
           }
         ]
       },
@@ -23,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_soul_soil"
+      "has_soul_blocks"
     ]
   ],
   "rewards": {
