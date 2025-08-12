@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-11T23:15:32.9466239	Variant Decoration/Block Loot Tables
+// 1.21.1	2025-08-12T16:15:33.902818	Variant Decoration/Block Loot Tables
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_table\blocks\packed_ice_stairs.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_table\blocks\bubble_brick_wall.json
 787be6c5c61b6fd58e635c3443bfc888449fe275 data\varan-deco\loot_table\blocks\smooth_deepslate.json
@@ -510,8 +510,8 @@ c7e723de8662dc43cca86fca76b3ca25f003fa82 data\varan-deco\loot_table\blocks\chise
 4171af170f27a87ba7f62c9574539ec13e95aa28 data\varan-deco\loot_table\blocks\bubble_brick_stairs.json
 667f7669ea8ba6f83d30a1ffaa1f875750cd5a47 data\varan-deco\loot_table\blocks\hanging_cherry_planks_sign.json
 5786da588152dc6b543c170a426e7149eb3b32bd data\varan-deco\loot_table\blocks\hardened_yellow_stained_glass_pane.json
-f554874fbe1386b0e80c3713e1c81a16ce304de9 data\varan-deco\loot_table\blocks\bubble_block.json
 bec345021ee4a7b08577f620a91a4fef12939dd7 data\varan-deco\loot_table\blocks\chiseled_prismarine_bricks.json
+f554874fbe1386b0e80c3713e1c81a16ce304de9 data\varan-deco\loot_table\blocks\bubble_block.json
 899f06bd9a7333ec6f59d55cb9f700b35c6999ff data\varan-deco\loot_table\blocks\tuff_pressure_plate.json
 67d75c4d0c6e84edd1face429edf3627e1440c43 data\varan-deco\loot_table\blocks\wooden_pressure_plate.json
 ed61d8618f9c26ce408069722cb9afee03fa6aeb data\varan-deco\loot_table\blocks\spruce_crafting_table.json
