@@ -2593,21 +2593,25 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.SMOOTH_PURPUR_WALL, DecoBlocks.SMOOTH_PURPUR);
         offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_PURPUR_WALL, DecoBlocks.SMOOTH_PURPUR);
 
-        offerPolishedStoneRecipe(exporter, DecoBlocks.PURPUR_BRICKS, Items.PURPUR_BLOCK);
+        offerPolishedStoneRecipe(exporter, DecoBlocks.PURPUR_BRICKS, DecoBlocks.POLISHED_PURPUR);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICKS, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICKS, DecoBlocks.POLISHED_PURPUR);
 
         createStairsRecipe(DecoBlocks.PURPUR_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.PURPUR_BRICKS))
                 .criterion(hasItem(DecoBlocks.PURPUR_BRICKS),conditionsFromItem(DecoBlocks.PURPUR_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PURPUR_BRICK_STAIRS)));
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_STAIRS, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_STAIRS, DecoBlocks.POLISHED_PURPUR);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_STAIRS, DecoBlocks.PURPUR_BRICKS);
 
         offerSlabRecipe(exporter, DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.PURPUR_BRICKS);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_SLAB, Items.PURPUR_BLOCK,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.POLISHED_PURPUR,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.PURPUR_BRICKS,2);
 
         offerWallRecipe(exporter, DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.PURPUR_BRICKS);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_WALL, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.POLISHED_PURPUR);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.PURPUR_BRICKS);
 
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_PURPUR, Items.PURPUR_BLOCK);
@@ -4040,9 +4044,26 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.PURPUR_SLAB),
                         RecipeProvider.conditionsFromItem(Items.PURPUR_SLAB))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_PURPUR)));
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.POLISHED_PURPUR, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR, Items.PURPUR_BLOCK);
+
+        createStairsRecipe(DecoBlocks.POLISHED_PURPUR_STAIRS, Ingredient.ofItems(DecoBlocks.POLISHED_PURPUR))
+                .criterion(hasItem(DecoBlocks.POLISHED_PURPUR),conditionsFromItem(DecoBlocks.POLISHED_PURPUR))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.POLISHED_PURPUR_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR_STAIRS, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR_STAIRS, DecoBlocks.POLISHED_PURPUR);
+
+        offerSlabRecipe(exporter, DecoBlocks.POLISHED_PURPUR_SLAB, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR_SLAB, Items.PURPUR_BLOCK,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR_SLAB, DecoBlocks.POLISHED_PURPUR,2);
+
+        offerWallRecipe(exporter, DecoBlocks.POLISHED_PURPUR_WALL, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR_WALL, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_PURPUR_WALL, DecoBlocks.POLISHED_PURPUR);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
-        ShapedRecipeJsonBuilder.create(output)
+        ShapedRecipeJsonBuilder.create(output,3)
                 .input('#', Items.STICK)
                 .input('S', woodInput)
                 .pattern("# #")

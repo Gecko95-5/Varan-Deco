@@ -172,6 +172,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool soulsoilstonebrickspool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SOUL_SOILSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool polipurpurpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_PURPUR);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
@@ -595,6 +597,10 @@ public class DecoModelProvider extends FabricModelProvider {
         soulsoilstonebrickspool.stairs(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS);
         soulsoilstonebrickspool.slab(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
         soulsoilstonebrickspool.wall(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+
+        polipurpurpool.stairs(DecoBlocks.POLISHED_PURPUR_STAIRS);
+        polipurpurpool.slab(DecoBlocks.POLISHED_PURPUR_SLAB);
+        polipurpurpool.wall(DecoBlocks.POLISHED_PURPUR_WALL);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);

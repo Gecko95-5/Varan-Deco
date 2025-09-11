@@ -1682,5 +1682,14 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_polished_soul_soilstone"),
                 BlockLootTableGenerator.drops(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_purpur"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_PURPUR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_purpur_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_PURPUR_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_purpur_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_PURPUR_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_purpur_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_PURPUR_WALL));
     }
 }
