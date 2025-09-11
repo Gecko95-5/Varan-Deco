@@ -342,7 +342,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA)
                 .add(DecoBlocks.CHISELED_POLISHED_SANDSTONE)
                 .add(DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE)
-                .add(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
+                .add(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE)
+                .add(DecoBlocks.POLISHED_PURPUR)
+                .add(DecoBlocks.POLISHED_PURPUR_STAIRS)
+                .add(DecoBlocks.POLISHED_PURPUR_SLAB)
+                .add(DecoBlocks.POLISHED_PURPUR_WALL);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -492,7 +496,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL)
                 .add(DecoBlocks.SANDSTONE_BRICK_WALL)
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_WALL)
-                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
+                .add(DecoBlocks.POLISHED_PURPUR_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -576,7 +581,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS)
                 .add(DecoBlocks.SANDSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS)
-                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS);
+                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.POLISHED_PURPUR_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -630,7 +636,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB)
                 .add(DecoBlocks.SANDSTONE_BRICK_SLAB)
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_SLAB)
-                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
+                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
+                .add(DecoBlocks.POLISHED_PURPUR_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)

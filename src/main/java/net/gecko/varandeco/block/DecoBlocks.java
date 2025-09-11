@@ -107,6 +107,8 @@ public class DecoBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).mapColor(MapColor.PURPLE)));
     public static final Block CHISELED_PURPUR = registerBlock("chiseled_purpur",
             new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK)));
+    public static final Block POLISHED_PURPUR = registerBlock("polished_purpur",
+            new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK)));
     public static final Block PURPUR_BRICKS = registerBlock("purpur_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK)));
     public static final Block SNOW_BRICKS = registerBlock("snow_bricks",
@@ -539,6 +541,8 @@ public class DecoBlocks {
             new StairsBlock(DecoBlocks.SMOOTH_BLACKSTONE.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_BLACKSTONE)));
     public static final Block OBSIDIAN_BRICK_STAIRS = registerBlock("obsidian_brick_stairs",
             new StairsBlock(DecoBlocks.OBSIDIAN_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.OBSIDIAN_BRICKS)));
+    public static final Block POLISHED_PURPUR_STAIRS = registerBlock("polished_purpur_stairs",
+            new StairsBlock(DecoBlocks.POLISHED_PURPUR.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.POLISHED_PURPUR)));
     public static final Block PURPUR_BRICK_STAIRS = registerBlock("purpur_brick_stairs",
             new StairsBlock(DecoBlocks.PURPUR_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.PURPUR_BRICKS)));
     public static final Block SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
@@ -790,6 +794,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_BLACKSTONE)));
     public static final Block OBSIDIAN_BRICK_SLAB = registerBlock("obsidian_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.OBSIDIAN_BRICKS)));
+    public static final Block POLISHED_PURPUR_SLAB = registerBlock("polished_purpur_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_PURPUR)));
     public static final Block PURPUR_BRICK_SLAB = registerBlock("purpur_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.PURPUR_BRICKS)));
     public static final Block SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
@@ -1379,6 +1385,8 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_BLACKSTONE)));
     public static final Block OBSIDIAN_BRICK_WALL = registerBlock("obsidian_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.OBSIDIAN_BRICKS)));
+    public static final Block POLISHED_PURPUR_WALL = registerBlock("polished_purpur_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_PURPUR)));
     public static final Block PURPUR_BRICK_WALL = registerBlock("purpur_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.PURPUR_BRICKS)));
     public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
@@ -2196,6 +2204,10 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.VOID_STONE_BRICK_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO, PURPUR_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO, CHISELED_PURPUR.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO, POLISHED_PURPUR.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_PURPUR_STAIRS.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_PURPUR_SLAB.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.POLISHED_PURPUR_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO, PURPUR_BRICKS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPUR_BRICK_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPUR_BRICK_SLAB.asItem());

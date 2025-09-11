@@ -911,5 +911,10 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(Blocks.BLUE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                 UniformLootNumberProvider.create(9.0F, 12.0f)));
+
+        addDrop(DecoBlocks.POLISHED_PURPUR);
+        addDrop(DecoBlocks.POLISHED_PURPUR_STAIRS);
+        addDrop(DecoBlocks.POLISHED_PURPUR_SLAB, slabDrops(DecoBlocks.POLISHED_PURPUR_SLAB));
+        addDrop(DecoBlocks.POLISHED_PURPUR_WALL);
     }
 }
