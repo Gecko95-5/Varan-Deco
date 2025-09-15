@@ -12,6 +12,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Consumer;
 
@@ -623,7 +624,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICK_SLAB);
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BLOCK);
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICKS);
-        
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.SOUL_SOILSTONE)
                 .pattern("##")
                 .pattern("##")
@@ -2606,22 +2607,26 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.SMOOTH_PURPUR_WALL, DecoBlocks.SMOOTH_PURPUR);
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_PURPUR_WALL, DecoBlocks.SMOOTH_PURPUR);
 
-        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICKS, Items.PURPUR_BLOCK);
-        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICKS, Items.PURPUR_BLOCK);
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICKS, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PURPUR_BRICKS, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICKS, DecoBlocks.POLISHED_PURPUR);
 
         createStairsRecipe(DecoBlocks.PURPUR_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.PURPUR_BRICKS))
                 .criterion(hasItem(DecoBlocks.PURPUR_BRICKS),conditionsFromItem(DecoBlocks.PURPUR_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PURPUR_BRICK_STAIRS)));
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_STAIRS, Items.PURPUR_BLOCK);
-        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_STAIRS, DecoBlocks.PURPUR_BRICKS);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_STAIRS, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PURPUR_BRICK_STAIRS, DecoBlocks.PURPUR_BRICKS);
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.PURPUR_BRICKS);
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_SLAB, Items.PURPUR_BLOCK,2);
-        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.PURPUR_BRICKS,2);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.POLISHED_PURPUR,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PURPUR_BRICK_SLAB, DecoBlocks.PURPUR_BRICKS,2);
 
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.PURPUR_BRICKS);
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_WALL, Items.PURPUR_BLOCK);
-        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.PURPUR_BRICKS);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PURPUR_BRICK_WALL, DecoBlocks.PURPUR_BRICKS);
 
         offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_PURPUR, Items.PURPUR_BLOCK);
 
@@ -3132,27 +3137,75 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerPressurePlateRecipe(exporter, DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Items.COPPER_INGOT);
 
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.WHITE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WHITE_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.LIGHT_GRAY_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_GRAY_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.GRAY_DYE,RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GRAY_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BLACK_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLACK_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BROWN_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BROWN_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.RED_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.RED_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.ORANGE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ORANGE_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.YELLOW_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.YELLOW_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.LIME_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIME_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.GREEN_DYE,RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GREEN_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.CYAN_DYE,RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CYAN_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.LIGHT_BLUE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.LIGHT_BLUE_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.BLUE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BLUE_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.PURPLE_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PURPLE_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.MAGENTA_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.MAGENTA_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,Items.PINK_DYE, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PINK_BLOCK);
+        offerReversibleCompactingFourRecipes(exporter,Items.WHITE_DYE, DecoBlocks.WHITE_BLOCK,
+                "white_block","white_block",
+                "white_dye","white_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.LIGHT_GRAY_DYE, DecoBlocks.LIGHT_GRAY_BLOCK,
+                "light_gray_block","light_gray_block",
+                "light_gray_dye","light_gray_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.GRAY_DYE, DecoBlocks.GRAY_BLOCK,
+                "gray_block","gray_block",
+                "gray_dye","gray_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.BLACK_DYE, DecoBlocks.BLACK_BLOCK,
+                "black_block","black_block",
+                "black_dye","black_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.BROWN_DYE, DecoBlocks.BROWN_BLOCK,
+                "brown_block","brown_block",
+                "brown_dye","brown_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.RED_DYE, DecoBlocks.RED_BLOCK,
+                "red_block","red_block",
+                "red_dye","red_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.ORANGE_DYE, DecoBlocks.ORANGE_BLOCK,
+                "orange_block","orange_block",
+                "orange_dye","orange_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.YELLOW_DYE, DecoBlocks.YELLOW_BLOCK,
+                "yellow_block","yellow_block",
+                "yellow_dye","yellow_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.LIME_DYE, DecoBlocks.LIME_BLOCK,
+                "lime_block","lime_block",
+                "lime_dye","lime_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.GREEN_DYE, DecoBlocks.GREEN_BLOCK,
+                "green_block","green_block",
+                "green_dye","green_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.CYAN_DYE, DecoBlocks.CYAN_BLOCK,
+                "cyan_block","cyan_block",
+                "cyan_dye","cyan_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.LIGHT_BLUE_DYE, DecoBlocks.LIGHT_BLUE_BLOCK,
+                "light_blue_block","light_blue_block",
+                "light_blue_dye","light_blue_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.BLUE_DYE, DecoBlocks.BLUE_BLOCK,
+                "blue_block","blue_block",
+                "blue_dye","blue_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.PURPLE_DYE, DecoBlocks.PURPLE_BLOCK,
+                "purple_block","purple_block",
+                "purple_dye","purple_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.MAGENTA_DYE, DecoBlocks.MAGENTA_BLOCK,
+                "magenta_block","magenta_block",
+                "magenta_dye","magenta_dye");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.PINK_DYE, DecoBlocks.PINK_BLOCK,
+                "pink_block","pink_block",
+                "pink_dye","pink_dye");
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.LIGHT_GRAY_BLOCK,3)
                 .input(DecoBlocks.BLACK_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
+                .group("light_gray_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLACK_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLACK_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
@@ -3162,6 +3215,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.LIGHT_GRAY_BLOCK,2)
                 .input(DecoBlocks.GRAY_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
+                .group("light_gray_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GRAY_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GRAY_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
@@ -3171,6 +3225,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.GRAY_BLOCK,2)
                 .input(DecoBlocks.BLACK_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
+                .group("gray_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLACK_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLACK_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
@@ -3180,6 +3235,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.ORANGE_BLOCK,2)
                 .input(DecoBlocks.YELLOW_BLOCK)
                 .input(DecoBlocks.RED_BLOCK)
+                .group("orange_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
@@ -3189,6 +3245,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.LIME_BLOCK,2)
                 .input(DecoBlocks.GREEN_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
+                .group("lime_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GREEN_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GREEN_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
@@ -3198,6 +3255,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.CYAN_BLOCK,2)
                 .input(DecoBlocks.GREEN_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("cyan_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GREEN_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.GREEN_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_BLOCK),
@@ -3208,6 +3266,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(DecoBlocks.YELLOW_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("cyan_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_BLOCK),
@@ -3228,6 +3287,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.LIGHT_BLUE_BLOCK,2)
                 .input(DecoBlocks.BLUE_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
+                .group("light_blue_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
@@ -3237,6 +3297,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.PURPLE_BLOCK,2)
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("purple_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.RED_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_BLOCK),
@@ -3246,6 +3307,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.MAGENTA_BLOCK,2)
                 .input(DecoBlocks.PINK_BLOCK)
                 .input(DecoBlocks.PURPLE_BLOCK)
+                .group("magenta_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PINK_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PINK_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PURPLE_BLOCK),
@@ -3256,6 +3318,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(DecoBlocks.PINK_BLOCK)
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("magenta_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PINK_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PINK_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
@@ -3268,6 +3331,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(DecoBlocks.WHITE_BLOCK)
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.PURPLE_BLOCK)
+                .group("magenta_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
@@ -3281,6 +3345,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("magenta_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
@@ -3305,6 +3370,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.PINK_BLOCK,2)
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.WHITE_BLOCK)
+                .group("pink_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.RED_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
@@ -3314,6 +3380,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.BROWN_BLOCK,2)
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.GREEN_BLOCK)
+                .group("brown_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.RED_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.GREEN_BLOCK),
@@ -3334,6 +3401,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(DecoBlocks.RED_BLOCK)
                 .input(DecoBlocks.YELLOW_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("brown_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.RED_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.RED_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_BLOCK),
@@ -3358,6 +3426,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,DecoBlocks.GREEN_BLOCK,2)
                 .input(DecoBlocks.BLUE_BLOCK)
                 .input(DecoBlocks.YELLOW_BLOCK)
+                .group("green_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_BLOCK),
@@ -3367,6 +3436,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.GREEN_DYE,2)
                 .input(Items.BLUE_DYE)
                 .input(Items.YELLOW_DYE)
+                .group("green_dye")
                 .criterion(RecipeProvider.hasItem(Items.BLUE_DYE),
                         RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
                 .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
@@ -3378,6 +3448,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(DecoBlocks.WHITE_BLOCK)
                 .input(DecoBlocks.YELLOW_BLOCK)
                 .input(DecoBlocks.BLUE_BLOCK)
+                .group("lime_block")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WHITE_BLOCK),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WHITE_BLOCK))
                 .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_BLOCK),
@@ -3390,6 +3461,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.WHITE_DYE)
                 .input(Items.YELLOW_DYE)
                 .input(Items.BLUE_DYE)
+                .group("lime_dye")
                 .criterion(RecipeProvider.hasItem(Items.WHITE_DYE),
                         RecipeProvider.conditionsFromItem(Items.WHITE_DYE))
                 .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
@@ -4059,6 +4131,69 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.PURPUR_SLAB),
                         RecipeProvider.conditionsFromItem(Items.PURPUR_SLAB))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_PURPUR)));
+
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR, Items.PURPUR_BLOCK);
+
+        createStairsRecipe(DecoBlocks.POLISHED_PURPUR_STAIRS, Ingredient.ofItems(DecoBlocks.POLISHED_PURPUR))
+                .criterion(hasItem(DecoBlocks.POLISHED_PURPUR),conditionsFromItem(DecoBlocks.POLISHED_PURPUR))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.POLISHED_PURPUR_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_STAIRS, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_STAIRS, DecoBlocks.POLISHED_PURPUR);
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_SLAB, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_SLAB, Items.PURPUR_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_SLAB, DecoBlocks.POLISHED_PURPUR,2);
+
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.POLISHED_PURPUR_WALL, DecoBlocks.POLISHED_PURPUR);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_WALL, Items.PURPUR_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.POLISHED_PURPUR_WALL, DecoBlocks.POLISHED_PURPUR);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, DecoItems.PASSTOL,4)
+                .pattern("S#")
+                .pattern("#S")
+                .input('#', Items.BONE_MEAL)
+                .input('S', DecoTags.Items.MUSHROOMS)
+                .criterion("has_mushrooms", conditionsFromTag(DecoTags.Items.MUSHROOMS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.PASSTOL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, DecoItems.SHADDOL,4)
+                .pattern("S#")
+                .pattern("#S")
+                .input('#', Items.INK_SAC)
+                .input('S', DecoTags.Items.MUSHROOMS)
+                .criterion("has_mushrooms", conditionsFromTag(DecoTags.Items.MUSHROOMS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SHADDOL)));
+
+        offerPastelBLockRecipe(exporter, DecoBlocks.LIGHT_GRAY_BLOCK, DecoBlocks.PASTEL_LIGHT_GRAY_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.GRAY_BLOCK, DecoBlocks.PASTEL_GRAY_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.BROWN_BLOCK, DecoBlocks.PASTEL_BROWN_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.RED_BLOCK, DecoBlocks.PASTEL_RED_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.ORANGE_BLOCK, DecoBlocks.PASTEL_ORANGE_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.YELLOW_BLOCK, DecoBlocks.PASTEL_YELLOW_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.LIME_BLOCK, DecoBlocks.PASTEL_LIME_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.GREEN_BLOCK, DecoBlocks.PASTEL_GREEN_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.CYAN_BLOCK, DecoBlocks.PASTEL_CYAN_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.LIGHT_BLUE_BLOCK, DecoBlocks.PASTEL_LIGHT_BLUE_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.BLUE_BLOCK, DecoBlocks.PASTEL_BLUE_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.PURPLE_BLOCK, DecoBlocks.PASTEL_PURPLE_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.MAGENTA_BLOCK, DecoBlocks.PASTEL_MAGENTA_BLOCK);
+        offerPastelBLockRecipe(exporter, DecoBlocks.PINK_BLOCK, DecoBlocks.PASTEL_PINK_BLOCK);
+
+        offerShadedBLockRecipe(exporter, DecoBlocks.LIGHT_GRAY_BLOCK, DecoBlocks.SHADED_LIGHT_GRAY_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.GRAY_BLOCK, DecoBlocks.SHADED_GRAY_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.BROWN_BLOCK, DecoBlocks.SHADED_BROWN_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.RED_BLOCK, DecoBlocks.SHADED_RED_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.ORANGE_BLOCK, DecoBlocks.SHADED_ORANGE_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.YELLOW_BLOCK, DecoBlocks.SHADED_YELLOW_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.LIME_BLOCK, DecoBlocks.SHADED_LIME_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.GREEN_BLOCK, DecoBlocks.SHADED_GREEN_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.CYAN_BLOCK, DecoBlocks.SHADED_CYAN_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.LIGHT_BLUE_BLOCK, DecoBlocks.SHADED_LIGHT_BLUE_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.BLUE_BLOCK, DecoBlocks.SHADED_BLUE_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.PURPLE_BLOCK, DecoBlocks.SHADED_PURPLE_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.MAGENTA_BLOCK, DecoBlocks.SHADED_MAGENTA_BLOCK);
+        offerShadedBLockRecipe(exporter, DecoBlocks.PINK_BLOCK, DecoBlocks.SHADED_PINK_BLOCK);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)
@@ -4145,5 +4280,49 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                     .group("hardened_glass_panes")
                     .criterion("has_iron_ingot", conditionsFromItem(Items.IRON_INGOT))
                     .offerTo(exporter, convertBetween(output, glassPaneInput));
+    }
+    public static void offerReversibleCompactingFourRecipes(
+            Consumer<RecipeJsonProvider> exporter,
+            ItemConvertible input,
+            ItemConvertible compacted,
+            String compactingRecipeName,
+            @Nullable String compactingRecipeGroup,
+            String reverseRecipeName,
+            @Nullable String reverseRecipeGroup
+    ) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,input, 4)
+                .input(compacted)
+                .group(reverseRecipeGroup)
+                .criterion(hasItem(compacted), conditionsFromItem(compacted))
+                .offerTo(exporter, new Identifier(reverseRecipeName));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,compacted)
+                .input('#', input)
+                .pattern("##")
+                .pattern("##")
+                .group(compactingRecipeGroup)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(compactingRecipeName));
+    }
+    public static void offerPastelBLockRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible dyeBlockInput, ItemConvertible output) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,output, 8)
+                .input('X', DecoItems.PASSTOL)
+                .input('#', dyeBlockInput)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .group("pastel_blocks")
+                .criterion("has_passtol", conditionsFromItem(DecoItems.PASSTOL))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
+    }
+    public static void offerShadedBLockRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible dyeBlockInput, ItemConvertible output) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,output, 8)
+                .input('X', DecoItems.SHADDOL)
+                .input('#', dyeBlockInput)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .group("shaded_blocks")
+                .criterion("has_shaddol", conditionsFromItem(DecoItems.SHADDOL))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
     }
 }

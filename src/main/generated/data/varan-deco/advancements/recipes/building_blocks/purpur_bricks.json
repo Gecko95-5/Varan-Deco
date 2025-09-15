@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_purpur_block": {
+    "has_polished_purpur": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:purpur_block"
+              "varan-deco:polished_purpur"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_purpur_block",
+      "has_polished_purpur",
       "has_the_recipe"
     ]
   ],

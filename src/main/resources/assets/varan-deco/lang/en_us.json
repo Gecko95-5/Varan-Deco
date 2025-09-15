@@ -9,6 +9,9 @@
   "item.varan-deco.lilac_stew": "Suspicious Stew",
   "item.varan-deco.ice_shard": "Ice Shard",
 
+  "item.varan-deco.passtol": "Passtol",
+  "item.varan-deco.shaddol": "Shaddol",
+
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
   "block.varan-deco.polished_granite_temp": "Non-Craftable Polished Granite",
@@ -782,6 +785,11 @@
   "block.varan-deco.purpur_brick_slab": "Purpur Brick Slab",
   "block.varan-deco.purpur_brick_wall": "Purpur Brick Wall",
 
+  "block.varan-deco.polished_purpur": "Polished Purpur",
+  "block.varan-deco.polished_purpur_stairs": "Polished Purpur Stairs",
+  "block.varan-deco.polished_purpur_slab": "Polished Purpur Slab",
+  "block.varan-deco.polished_purpur_wall": "Polished Purpur Wall",
+
   "block.varan-deco.chiseled_purpur": "Chiseled Purpur",
 
   "block.varan-deco.void_stone": "Void Stone",
@@ -1001,6 +1009,36 @@
   "block.varan-deco.purple_block": "Purple Block",
   "block.varan-deco.magenta_block": "Magenta Block",
   "block.varan-deco.pink_block": "Pink Block",
+
+  "block.varan-deco.pastel_light_gray_block": "Pastel Light Gray Block",
+  "block.varan-deco.pastel_gray_block": "Pastel Gray Block",
+  "block.varan-deco.pastel_brown_block": "Pastel Brown Block",
+  "block.varan-deco.pastel_red_block": "Pastel Red Block",
+  "block.varan-deco.pastel_orange_block": "Pastel Orange Block",
+  "block.varan-deco.pastel_yellow_block": "Pastel Yellow Block",
+  "block.varan-deco.pastel_lime_block": "Pastel Lime Block",
+  "block.varan-deco.pastel_green_block": "Pastel Green Block",
+  "block.varan-deco.pastel_cyan_block": "Pastel Cyan Block",
+  "block.varan-deco.pastel_light_blue_block": "Pastel Light Blue Block",
+  "block.varan-deco.pastel_blue_block": "Pastel Blue Block",
+  "block.varan-deco.pastel_purple_block": "Pastel Purple Block",
+  "block.varan-deco.pastel_magenta_block": "Pastel Magenta Block",
+  "block.varan-deco.pastel_pink_block": "Pastel Pink Block",
+
+  "block.varan-deco.shaded_light_gray_block": "Shaded Light Gray Block",
+  "block.varan-deco.shaded_gray_block": "Shaded Gray Block",
+  "block.varan-deco.shaded_brown_block": "Shaded Brown Block",
+  "block.varan-deco.shaded_red_block": "Shaded Red Block",
+  "block.varan-deco.shaded_orange_block": "Shaded Orange Block",
+  "block.varan-deco.shaded_yellow_block": "Shaded Yellow Block",
+  "block.varan-deco.shaded_lime_block": "Shaded Lime Block",
+  "block.varan-deco.shaded_green_block": "Shaded Green Block",
+  "block.varan-deco.shaded_cyan_block": "Shaded Cyan Block",
+  "block.varan-deco.shaded_light_blue_block": "Shaded Light Blue Block",
+  "block.varan-deco.shaded_blue_block": "Shaded Blue Block",
+  "block.varan-deco.shaded_purple_block": "Shaded Purple Block",
+  "block.varan-deco.shaded_magenta_block": "Shaded Magenta Block",
+  "block.varan-deco.shaded_pink_block": "Shaded Pink Block",
 
   "block.varan-deco.wooden_planks": "Wooden Planks",
   "block.varan-deco.wooden_stairs": "Wooden Stairs",

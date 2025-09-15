@@ -772,6 +772,35 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN);
         addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
 
+        addDrop(DecoBlocks.PASTEL_LIGHT_GRAY_BLOCK);
+        addDrop(DecoBlocks.PASTEL_GRAY_BLOCK);
+        addDrop(DecoBlocks.PASTEL_BROWN_BLOCK);
+        addDrop(DecoBlocks.PASTEL_RED_BLOCK);
+        addDrop(DecoBlocks.PASTEL_ORANGE_BLOCK);
+        addDrop(DecoBlocks.PASTEL_YELLOW_BLOCK);
+        addDrop(DecoBlocks.PASTEL_LIME_BLOCK);
+        addDrop(DecoBlocks.PASTEL_GREEN_BLOCK);
+        addDrop(DecoBlocks.PASTEL_CYAN_BLOCK);
+        addDrop(DecoBlocks.PASTEL_LIGHT_BLUE_BLOCK);
+        addDrop(DecoBlocks.PASTEL_BLUE_BLOCK);
+        addDrop(DecoBlocks.PASTEL_PURPLE_BLOCK);
+        addDrop(DecoBlocks.PASTEL_MAGENTA_BLOCK);
+        addDrop(DecoBlocks.PASTEL_PINK_BLOCK);
+        addDrop(DecoBlocks.SHADED_LIGHT_GRAY_BLOCK);
+        addDrop(DecoBlocks.SHADED_GRAY_BLOCK);
+        addDrop(DecoBlocks.SHADED_BROWN_BLOCK);
+        addDrop(DecoBlocks.SHADED_RED_BLOCK);
+        addDrop(DecoBlocks.SHADED_ORANGE_BLOCK);
+        addDrop(DecoBlocks.SHADED_YELLOW_BLOCK);
+        addDrop(DecoBlocks.SHADED_LIME_BLOCK);
+        addDrop(DecoBlocks.SHADED_GREEN_BLOCK);
+        addDrop(DecoBlocks.SHADED_CYAN_BLOCK);
+        addDrop(DecoBlocks.SHADED_LIGHT_BLUE_BLOCK);
+        addDrop(DecoBlocks.SHADED_BLUE_BLOCK);
+        addDrop(DecoBlocks.SHADED_PURPLE_BLOCK);
+        addDrop(DecoBlocks.SHADED_MAGENTA_BLOCK);
+        addDrop(DecoBlocks.SHADED_PINK_BLOCK);
+
         addDrop(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE);
         addDrop(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE);
         addDrop(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
@@ -915,5 +944,10 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(Blocks.BLUE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                 UniformLootNumberProvider.create(9.0F, 12.0f)));
+
+        addDrop(DecoBlocks.POLISHED_PURPUR);
+        addDrop(DecoBlocks.POLISHED_PURPUR_STAIRS);
+        addDrop(DecoBlocks.POLISHED_PURPUR_SLAB, slabDrops(DecoBlocks.POLISHED_PURPUR_SLAB));
+        addDrop(DecoBlocks.POLISHED_PURPUR_WALL);
     }
 }

@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "pink_dye",
   "ingredients": [
     {
       "item": "varan-deco:pink_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:pink_dye"
   }
 }
