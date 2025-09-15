@@ -197,5 +197,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.WATER_BUCKET)
                 .add(DecoItems.BUBBLE_ORB);
 
+        getOrCreateTagBuilder(DecoTags.Items.MUSHROOMS)
+                .add(Items.RED_MUSHROOM.asItem())
+                .add(Items.BROWN_MUSHROOM.asItem());
     }
 }

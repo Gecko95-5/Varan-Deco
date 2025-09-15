@@ -364,6 +364,36 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MAGENTA_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_LIGHT_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_BROWN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_RED_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_ORANGE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_YELLOW_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_LIME_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_GREEN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_CYAN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_LIGHT_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_PURPLE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_MAGENTA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_PINK_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_LIGHT_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_BROWN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_RED_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_ORANGE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_YELLOW_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_LIME_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_GREEN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_CYAN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_LIGHT_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_PURPLE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_MAGENTA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_PINK_BLOCK);
+
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
 
@@ -991,6 +1021,9 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.ICE_SHARD, Models.GENERATED);
         itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DecoItems.TALL_SEAGRASS, Models.GENERATED);
+
+        itemModelGenerator.register(DecoItems.PASSTOL, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.SHADDOL, Models.GENERATED);
 
         itemModelGenerator.register(DecoItems.LILAC_FLOWER, Models.HANDHELD);
     }

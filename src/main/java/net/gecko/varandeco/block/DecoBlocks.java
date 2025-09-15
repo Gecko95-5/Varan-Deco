@@ -413,6 +413,92 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLACK).resistance(0.5f)
                     .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
 
+    public static final Block PASTEL_ORANGE_BLOCK = registerBlock("pastel_orange_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.ORANGE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_MAGENTA_BLOCK = registerBlock("pastel_magenta_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.MAGENTA).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_LIGHT_BLUE_BLOCK = registerBlock("pastel_light_blue_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_BLUE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_YELLOW_BLOCK = registerBlock("pastel_yellow_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.YELLOW).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_LIME_BLOCK = registerBlock("pastel_lime_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIME).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_PINK_BLOCK = registerBlock("pastel_pink_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PINK).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_GRAY_BLOCK = registerBlock("pastel_gray_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GRAY).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_LIGHT_GRAY_BLOCK = registerBlock("pastel_light_gray_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_GRAY).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_CYAN_BLOCK = registerBlock("pastel_cyan_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.CYAN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_PURPLE_BLOCK = registerBlock("pastel_purple_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PURPLE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_BLUE_BLOCK = registerBlock("pastel_blue_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLUE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_BROWN_BLOCK = registerBlock("pastel_brown_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BROWN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_GREEN_BLOCK = registerBlock("pastel_green_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GREEN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block PASTEL_RED_BLOCK = registerBlock("pastel_red_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.RED).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+
+    public static final Block SHADED_ORANGE_BLOCK = registerBlock("shaded_orange_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.ORANGE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_MAGENTA_BLOCK = registerBlock("shaded_magenta_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.MAGENTA).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_LIGHT_BLUE_BLOCK = registerBlock("shaded_light_blue_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_BLUE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_YELLOW_BLOCK = registerBlock("shaded_yellow_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.YELLOW).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_LIME_BLOCK = registerBlock("shaded_lime_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIME).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_PINK_BLOCK = registerBlock("shaded_pink_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PINK).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_GRAY_BLOCK = registerBlock("shaded_gray_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GRAY).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_LIGHT_GRAY_BLOCK = registerBlock("shaded_light_gray_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.LIGHT_GRAY).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_CYAN_BLOCK = registerBlock("shaded_cyan_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.CYAN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_PURPLE_BLOCK = registerBlock("shaded_purple_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.PURPLE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_BLUE_BLOCK = registerBlock("shaded_blue_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BLUE).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_BROWN_BLOCK = registerBlock("shaded_brown_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.BROWN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_GREEN_BLOCK = registerBlock("shaded_green_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.GREEN).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+    public static final Block SHADED_RED_BLOCK = registerBlock("shaded_red_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT, DyeColor.RED).resistance(0.5f)
+                    .breakInstantly().sounds(BlockSoundGroup.CANDLE)));
+
     public static final Block WARPED_WART_PLANT = registerBlockWithoutItem("warped_wart_plant",
             new WarpedWartBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART).mapColor(MapColor.BRIGHT_TEAL).nonOpaque()));
 
@@ -2009,6 +2095,26 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block SMOOTH_BASALT_TEMP = registerBlockWithoutItem("smooth_basalt_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_ACACIA_TEMP = registerBlockWithoutItem("stripped_acacia_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_BRICH_TEMP = registerBlockWithoutItem("stripped_birch_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_CRIMSON_TEMP = registerBlockWithoutItem("stripped_crimson_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_DARK_OAK_TEMP = registerBlockWithoutItem("stripped_dark_oak_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_JUNGLE_TEMP = registerBlockWithoutItem("stripped_jungle_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_MANGROVE_TEMP = registerBlockWithoutItem("stripped_mangrove_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_OAK_TEMP = registerBlockWithoutItem("stripped_oak_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_SPRUCE_TEMP = registerBlockWithoutItem("stripped_spruce_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_WARPED_TEMP = registerBlockWithoutItem("stripped_warped_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block STRIPPED_WOODEN_TEMP = registerBlockWithoutItem("stripped_wooden_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
@@ -2660,6 +2766,34 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PURPLE_BLOCK.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.MAGENTA_BLOCK.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PINK_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_LIGHT_GRAY_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_GRAY_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_BROWN_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_RED_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_ORANGE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_YELLOW_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_LIME_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_GREEN_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_CYAN_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_LIGHT_BLUE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_BLUE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_PURPLE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_MAGENTA_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PASTEL_PINK_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_LIGHT_GRAY_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_GRAY_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_BROWN_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_RED_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_ORANGE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_YELLOW_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_LIME_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_GREEN_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_CYAN_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_LIGHT_BLUE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_BLUE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_PURPLE_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_MAGENTA_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SHADED_PINK_BLOCK.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_LEAVES.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WOODEN_SAPLING.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.PUFFY_DANDELION.asItem());

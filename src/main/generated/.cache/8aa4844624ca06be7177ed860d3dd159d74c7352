@@ -1,4 +1,4 @@
-// 1.19.3	2026-01-07T22:29:25.8421948	Variant Decoration/Tags for minecraft:item
+// 1.19.3	2026-01-08T00:22:02.3113515	Variant Decoration/Tags for minecraft:item
 17a0621d55df6cce6110e3eec873d7e0d55bda23 data\minecraft\tags\items\wooden_doors.json
 398e0c0539fac9101a474ca7e85d8af3f9833a63 data\minecraft\tags\items\wooden_slabs.json
 5101d82c82abbdc2752038ab6c0e451b223a3c82 data\varan-deco\tags\items\wooden_barrels.json
@@ -14,6 +14,7 @@ d20afe93463340f8c0f45560157bdffbf1d0282a data\varan-deco\tags\items\water_items.
 26eab6f8be1a0dbc4ea606c87514a80e1140f0a1 data\minecraft\tags\items\wooden_fences.json
 2196c76944d2307ffd812fa1e832e05bec4f4f88 data\minecraft\tags\items\wooden_pressure_plates.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\items\buttons.json
+caa65214e42ad067ce1935d9b7d48e0a9feb9e73 data\varan-deco\tags\items\mushrooms.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\items\saplings.json
 a55be1a47675feff3f86c11c4011dc418cd820c4 data\varan-deco\tags\items\furnaces.json
 af752991c4388b2128bdac457f2cdf36bd362ffd data\varan-deco\tags\items\wooden_smithing_tables.json
