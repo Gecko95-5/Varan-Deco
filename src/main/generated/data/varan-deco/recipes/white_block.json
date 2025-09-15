@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "white_block",
   "key": {
     "#": {
       "item": "minecraft:white_dye"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "item": "varan-deco:white_block"

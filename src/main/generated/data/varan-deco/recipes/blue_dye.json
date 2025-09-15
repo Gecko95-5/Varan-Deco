@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "blue_dye",
   "ingredients": [
     {
       "item": "varan-deco:blue_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:blue_dye"
   }
 }

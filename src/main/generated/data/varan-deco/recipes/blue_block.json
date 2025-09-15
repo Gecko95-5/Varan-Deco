@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "blue_block",
   "key": {
     "#": {
       "item": "minecraft:blue_dye"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "item": "varan-deco:blue_block"

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "orange_block",
   "ingredients": [
     {
       "item": "varan-deco:yellow_block"

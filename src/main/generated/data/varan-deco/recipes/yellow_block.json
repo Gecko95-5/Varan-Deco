@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "yellow_block",
   "key": {
     "#": {
       "item": "minecraft:yellow_dye"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "item": "varan-deco:yellow_block"

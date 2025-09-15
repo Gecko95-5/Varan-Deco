@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "pink_block",
   "ingredients": [
     {
       "item": "varan-deco:red_block"

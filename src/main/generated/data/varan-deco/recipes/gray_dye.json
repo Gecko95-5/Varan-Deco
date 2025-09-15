@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "gray_dye",
   "ingredients": [
     {
       "item": "varan-deco:gray_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:gray_dye"
   }
 }

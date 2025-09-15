@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "cyan_dye",
   "ingredients": [
     {
       "item": "varan-deco:cyan_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:cyan_dye"
   }
 }

@@ -64,6 +64,9 @@ public class DecoTags {
         public static final TagKey<Block> INFESTED_BLOCKS =
                 createTag("infested_blocks");
 
+        public static final TagKey<Block> DYE_BLOCKS =
+                createTag("dye_blocks");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(VaranDeco.MOD_ID, name));
         }
@@ -104,6 +107,9 @@ public class DecoTags {
 
         public static final TagKey<Item> WATER_ITEMS =
                 createTag("water_items");
+
+        public static final TagKey<Item> MUSHROOMS =
+                createTag("mushrooms");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registry.ITEM_KEY, new Identifier(VaranDeco.MOD_ID, name));

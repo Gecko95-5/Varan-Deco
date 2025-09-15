@@ -1477,6 +1477,63 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_block"),
                 BlockLootTableGenerator.drops(DecoBlocks.PINK_BLOCK));
 
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_light_gray_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_LIGHT_GRAY_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_gray_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_GRAY_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_brown_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_BROWN_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_red_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_RED_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_orange_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_ORANGE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_yellow_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_YELLOW_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_lime_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_LIME_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_green_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_GREEN_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_cyan_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_CYAN_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_light_blue_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_LIGHT_BLUE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_blue_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_BLUE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_purple_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_PURPLE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_magenta_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_MAGENTA_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pastel_pink_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.PASTEL_PINK_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_light_gray_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_LIGHT_GRAY_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_gray_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_GRAY_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_brown_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_BROWN_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_red_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_RED_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_orange_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_ORANGE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_yellow_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_YELLOW_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_lime_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_LIME_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_green_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_GREEN_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_cyan_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_CYAN_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_light_blue_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_LIGHT_BLUE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_blue_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_BLUE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_purple_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_PURPLE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_magenta_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_MAGENTA_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shaded_pink_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHADED_PINK_BLOCK));
+
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_planks"),
                 BlockLootTableGenerator.drops(DecoBlocks.WOODEN_PLANKS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wooden_stairs"),

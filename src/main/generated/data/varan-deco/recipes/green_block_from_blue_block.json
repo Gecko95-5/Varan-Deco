@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "green_block",
   "ingredients": [
     {
       "item": "varan-deco:blue_block"
