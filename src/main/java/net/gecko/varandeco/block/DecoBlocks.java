@@ -518,6 +518,63 @@ public class DecoBlocks {
     public static final Block DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
             new StairsBlock(Blocks.DRIPSTONE_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block OAK_WOOD_STAIRS = registerBlock("oak_wood_stairs",
+            new StairsBlock(Blocks.OAK_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_WOOD_STAIRS = registerBlock("spruce_wood_stairs",
+            new StairsBlock(Blocks.SPRUCE_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.SPRUCE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_WOOD_STAIRS = registerBlock("birch_wood_stairs",
+            new StairsBlock(Blocks.BIRCH_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BIRCH_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_WOOD_STAIRS = registerBlock("jungle_wood_stairs",
+            new StairsBlock(Blocks.JUNGLE_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.JUNGLE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_WOOD_STAIRS = registerBlock("acacia_wood_stairs",
+            new StairsBlock(Blocks.ACACIA_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.ACACIA_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_WOOD_STAIRS = registerBlock("dark_oak_wood_stairs",
+            new StairsBlock(Blocks.DARK_OAK_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.DARK_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_WOOD_STAIRS = registerBlock("mangrove_wood_stairs",
+            new StairsBlock(Blocks.MANGROVE_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.MANGROVE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_HYPHAE_STAIRS = registerBlock("crimson_hyphae_stairs",
+            new StairsBlock(Blocks.CRIMSON_HYPHAE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CRIMSON_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_HYPHAE_STAIRS = registerBlock("warped_hyphae_stairs",
+            new StairsBlock(Blocks.WARPED_HYPHAE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WARPED_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block STRIPPED_OAK_WOOD_STAIRS = registerBlock("stripped_oak_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_OAK_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_SPRUCE_WOOD_STAIRS = registerBlock("stripped_spruce_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_SPRUCE_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_SPRUCE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_BIRCH_WOOD_STAIRS = registerBlock("stripped_birch_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_BIRCH_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_JUNGLE_WOOD_STAIRS = registerBlock("stripped_jungle_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_JUNGLE_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_ACACIA_WOOD_STAIRS = registerBlock("stripped_acacia_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_ACACIA_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_ACACIA_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_DARK_OAK_WOOD_STAIRS = registerBlock("stripped_dark_oak_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_DARK_OAK_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_DARK_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_MANGROVE_WOOD_STAIRS = registerBlock("stripped_mangrove_wood_stairs",
+            new StairsBlock(Blocks.STRIPPED_MANGROVE_WOOD.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_MANGROVE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_CRIMSON_HYPHAE_STAIRS = registerBlock("stripped_crimson_hyphae_stairs",
+            new StairsBlock(Blocks.STRIPPED_CRIMSON_HYPHAE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_CRIMSON_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_WARPED_HYPHAE_STAIRS = registerBlock("stripped_warped_hyphae_stairs",
+            new StairsBlock(Blocks.STRIPPED_WARPED_HYPHAE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STRIPPED_WARPED_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -545,6 +602,7 @@ public class DecoBlocks {
     public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
             new StairsBlock(Blocks.END_STONE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.END_STONE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
             new StairsBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -653,6 +711,7 @@ public class DecoBlocks {
     public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
             new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block BLUE_ICE_STAIRS = registerBlock("blue_ice_stairs",
             new StairsBlock(Blocks.BLUE_ICE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLUE_ICE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2204,6 +2263,26 @@ public class DecoBlocks {
     public static final Block PURPUR_TEMP = registerBlockWithoutItem("purpur_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block SMOOTH_BASALT_TEMP = registerBlockWithoutItem("smooth_basalt_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block ACACIA_WOOD_TEMP = registerBlockWithoutItem("acacia_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block BRICH_WOOD_TEMP = registerBlockWithoutItem("birch_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block CRIMSON_WOOD_TEMP = registerBlockWithoutItem("crimson_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block DARK_OAK_WOOD_TEMP = registerBlockWithoutItem("dark_oak_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block JUNGLE_WOOD_TEMP = registerBlockWithoutItem("jungle_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block MANGROVE_WOOD_TEMP = registerBlockWithoutItem("mangrove_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block OAK_WOOD_TEMP = registerBlockWithoutItem("oak_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block SPRUCE_WOOD_TEMP = registerBlockWithoutItem("spruce_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block WARPED_WOOD_TEMP = registerBlockWithoutItem("warped_wood_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block WOODEN_WOOD_TEMP = registerBlockWithoutItem("wooden_wood_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block STRIPPED_ACACIA_TEMP = registerBlockWithoutItem("stripped_acacia_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
