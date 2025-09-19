@@ -938,6 +938,63 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.TUFF)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block DRIPSTONE_SLAB = registerBlock("dripstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block OAK_WOOD_SLAB = registerBlock("oak_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_WOOD_SLAB = registerBlock("spruce_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_WOOD_SLAB = registerBlock("birch_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_WOOD_SLAB = registerBlock("jungle_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_WOOD_SLAB = registerBlock("acacia_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_WOOD_SLAB = registerBlock("dark_oak_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_WOOD_SLAB = registerBlock("mangrove_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_HYPHAE_SLAB = registerBlock("crimson_hyphae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_HYPHAE_SLAB = registerBlock("warped_hyphae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.WARPED_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block STRIPPED_OAK_WOOD_SLAB = registerBlock("stripped_oak_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_SPRUCE_WOOD_SLAB = registerBlock("stripped_spruce_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_SPRUCE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_BIRCH_WOOD_SLAB = registerBlock("stripped_birch_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_JUNGLE_WOOD_SLAB = registerBlock("stripped_jungle_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_ACACIA_WOOD_SLAB = registerBlock("stripped_acacia_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_ACACIA_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_DARK_OAK_WOOD_SLAB = registerBlock("stripped_dark_oak_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_DARK_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_MANGROVE_WOOD_SLAB = registerBlock("stripped_mangrove_wood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_MANGROVE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_CRIMSON_HYPHAE_SLAB = registerBlock("stripped_crimson_hyphae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CRIMSON_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_WARPED_HYPHAE_SLAB = registerBlock("stripped_warped_hyphae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_WARPED_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block OBSIDIAN_SLAB = registerBlock("obsidian_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SNOW_SLAB = registerBlock("snow_slab",
@@ -1564,6 +1621,63 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.TUFF)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block DRIPSTONE_WALL = registerBlock("dripstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block OAK_WOOD_WALL = registerBlock("oak_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_WOOD_WALL = registerBlock("spruce_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_WOOD_WALL = registerBlock("birch_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_WOOD_WALL = registerBlock("jungle_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_WOOD_WALL = registerBlock("acacia_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_WOOD_WALL = registerBlock("dark_oak_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_WOOD_WALL = registerBlock("mangrove_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_HYPHAE_WALL = registerBlock("crimson_hyphae_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_HYPHAE_WALL = registerBlock("warped_hyphae_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.WARPED_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block STRIPPED_OAK_WOOD_WALL = registerBlock("stripped_oak_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_SPRUCE_WOOD_WALL = registerBlock("stripped_spruce_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_SPRUCE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_BIRCH_WOOD_WALL = registerBlock("stripped_birch_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_JUNGLE_WOOD_WALL = registerBlock("stripped_jungle_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_ACACIA_WOOD_WALL = registerBlock("stripped_acacia_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_ACACIA_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_DARK_OAK_WOOD_WALL = registerBlock("stripped_dark_oak_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_DARK_OAK_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_MANGROVE_WOOD_WALL = registerBlock("stripped_mangrove_wood_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_MANGROVE_WOOD)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_CRIMSON_HYPHAE_WALL = registerBlock("stripped_crimson_hyphae_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CRIMSON_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_WARPED_HYPHAE_WALL = registerBlock("stripped_warped_hyphae_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_WARPED_HYPHAE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_QUARTZ_WALL = registerBlock("smooth_quartz_wall",
@@ -1692,7 +1806,7 @@ public class DecoBlocks {
     public static final Block OBSIDIAN_BRICK_WALL = registerBlock("obsidian_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.OBSIDIAN_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_PURPUR_WALL = registerBlock("polished_purpur_wall",
-            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_PURPUR)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_PURPUR)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PURPUR_BRICK_WALL = registerBlock("purpur_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.PURPUR_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
