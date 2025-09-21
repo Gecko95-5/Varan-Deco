@@ -1748,5 +1748,122 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_PURPUR_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_purpur_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_PURPUR_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.OAK_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.OAK_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.OAK_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_oak_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_OAK_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_oak_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_OAK_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_oak_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_OAK_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SPRUCE_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SPRUCE_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SPRUCE_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_spruce_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_SPRUCE_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_spruce_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_SPRUCE_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_spruce_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_SPRUCE_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BIRCH_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_birch_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_BIRCH_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_birch_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_BIRCH_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_birch_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_BIRCH_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.JUNGLE_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.JUNGLE_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.JUNGLE_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_jungle_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_JUNGLE_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_jungle_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_JUNGLE_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_jungle_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_JUNGLE_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acacia_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.ACACIA_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acacia_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.ACACIA_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acacia_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.ACACIA_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_acacia_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_ACACIA_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_acacia_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_ACACIA_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_acacia_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_ACACIA_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DARK_OAK_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_dark_oak_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_dark_oak_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_dark_oak_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_DARK_OAK_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MANGROVE_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_WOOD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_mangrove_wood_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_mangrove_wood_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_mangrove_wood_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_MANGROVE_WOOD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_hyphae_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_HYPHAE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_hyphae_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRIMSON_HYPHAE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_hyphae_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_HYPHAE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_crimson_hyphae_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_crimson_hyphae_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_crimson_hyphae_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_hyphae_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_HYPHAE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_hyphae_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WARPED_HYPHAE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_hyphae_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_HYPHAE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_warped_hyphae_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_warped_hyphae_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/stripped_warped_hyphae_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL));
     }
 }

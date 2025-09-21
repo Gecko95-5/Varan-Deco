@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:oak_wood_wall",
+    "varan-deco:spruce_wood_wall",
+    "varan-deco:birch_wood_wall",
+    "varan-deco:jungle_wood_wall",
+    "varan-deco:acacia_wood_wall",
+    "varan-deco:dark_oak_wood_wall",
+    "varan-deco:mangrove_wood_wall",
+    "varan-deco:crimson_hyphae_wall",
+    "varan-deco:warped_hyphae_wall",
+    "varan-deco:stripped_oak_wood_wall",
+    "varan-deco:stripped_spruce_wood_wall",
+    "varan-deco:stripped_birch_wood_wall",
+    "varan-deco:stripped_jungle_wood_wall",
+    "varan-deco:stripped_acacia_wood_wall",
+    "varan-deco:stripped_dark_oak_wood_wall",
+    "varan-deco:stripped_mangrove_wood_wall",
+    "varan-deco:stripped_crimson_hyphae_wall",
+    "varan-deco:stripped_warped_hyphae_wall"
+  ]
+}

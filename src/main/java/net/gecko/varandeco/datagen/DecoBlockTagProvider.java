@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
 import net.minecraft.tag.BlockTags;
 
 public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -494,7 +493,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SANDSTONE_BRICK_WALL)
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_WALL)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
-                .add(DecoBlocks.POLISHED_PURPUR_WALL);
+                .add(DecoBlocks.POLISHED_PURPUR_WALL)
+                .addTag(DecoTags.Blocks.LOG_WALLS);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -579,7 +579,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SANDSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)
-                .add(DecoBlocks.POLISHED_PURPUR_STAIRS);
+                .add(DecoBlocks.POLISHED_PURPUR_STAIRS)
+                .addTag(DecoTags.Blocks.LOG_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -634,7 +635,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SANDSTONE_BRICK_SLAB)
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_SLAB)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
-                .add(DecoBlocks.POLISHED_PURPUR_SLAB);
+                .add(DecoBlocks.POLISHED_PURPUR_SLAB)
+                .addTag(DecoTags.Blocks.LOG_SLABS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1305,5 +1307,65 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SHADED_PURPLE_BLOCK)
                 .add(DecoBlocks.SHADED_MAGENTA_BLOCK)
                 .add(DecoBlocks.SHADED_PINK_BLOCK);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.LOG_STAIRS)
+                .add(DecoBlocks.OAK_WOOD_STAIRS)
+                .add(DecoBlocks.SPRUCE_WOOD_STAIRS)
+                .add(DecoBlocks.BIRCH_WOOD_STAIRS)
+                .add(DecoBlocks.JUNGLE_WOOD_STAIRS)
+                .add(DecoBlocks.ACACIA_WOOD_STAIRS)
+                .add(DecoBlocks.DARK_OAK_WOOD_STAIRS)
+                .add(DecoBlocks.MANGROVE_WOOD_STAIRS)
+                .add(DecoBlocks.CRIMSON_HYPHAE_STAIRS)
+                .add(DecoBlocks.WARPED_HYPHAE_STAIRS)
+                .add(DecoBlocks.STRIPPED_OAK_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_SPRUCE_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_BIRCH_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_JUNGLE_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_ACACIA_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS)
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.LOG_SLABS)
+                .add(DecoBlocks.OAK_WOOD_SLAB)
+                .add(DecoBlocks.SPRUCE_WOOD_SLAB)
+                .add(DecoBlocks.BIRCH_WOOD_SLAB)
+                .add(DecoBlocks.JUNGLE_WOOD_SLAB)
+                .add(DecoBlocks.ACACIA_WOOD_SLAB)
+                .add(DecoBlocks.DARK_OAK_WOOD_SLAB)
+                .add(DecoBlocks.MANGROVE_WOOD_SLAB)
+                .add(DecoBlocks.CRIMSON_HYPHAE_SLAB)
+                .add(DecoBlocks.WARPED_HYPHAE_SLAB)
+                .add(DecoBlocks.STRIPPED_OAK_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_SPRUCE_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_BIRCH_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_JUNGLE_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_ACACIA_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB)
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.LOG_WALLS)
+                .add(DecoBlocks.OAK_WOOD_WALL)
+                .add(DecoBlocks.SPRUCE_WOOD_WALL)
+                .add(DecoBlocks.BIRCH_WOOD_WALL)
+                .add(DecoBlocks.JUNGLE_WOOD_WALL)
+                .add(DecoBlocks.ACACIA_WOOD_WALL)
+                .add(DecoBlocks.DARK_OAK_WOOD_WALL)
+                .add(DecoBlocks.MANGROVE_WOOD_WALL)
+                .add(DecoBlocks.CRIMSON_HYPHAE_WALL)
+                .add(DecoBlocks.WARPED_HYPHAE_WALL)
+                .add(DecoBlocks.STRIPPED_OAK_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_SPRUCE_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_BIRCH_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_JUNGLE_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_ACACIA_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_DARK_OAK_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_MANGROVE_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL)
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL);
     }
 }

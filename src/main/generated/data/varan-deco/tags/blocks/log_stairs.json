@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:oak_wood_stairs",
+    "varan-deco:spruce_wood_stairs",
+    "varan-deco:birch_wood_stairs",
+    "varan-deco:jungle_wood_stairs",
+    "varan-deco:acacia_wood_stairs",
+    "varan-deco:dark_oak_wood_stairs",
+    "varan-deco:mangrove_wood_stairs",
+    "varan-deco:crimson_hyphae_stairs",
+    "varan-deco:warped_hyphae_stairs",
+    "varan-deco:stripped_oak_wood_stairs",
+    "varan-deco:stripped_spruce_wood_stairs",
+    "varan-deco:stripped_birch_wood_stairs",
+    "varan-deco:stripped_jungle_wood_stairs",
+    "varan-deco:stripped_acacia_wood_stairs",
+    "varan-deco:stripped_dark_oak_wood_stairs",
+    "varan-deco:stripped_mangrove_wood_stairs",
+    "varan-deco:stripped_crimson_hyphae_stairs",
+    "varan-deco:stripped_warped_hyphae_stairs"
+  ]
+}
