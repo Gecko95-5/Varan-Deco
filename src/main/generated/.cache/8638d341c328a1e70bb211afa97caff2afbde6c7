@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-12T21:17:24.0736096	Variant Decoration/varan-deco
+// 1.21.1	2025-09-25T22:59:36.3266894	Variant Decoration/varan-deco
 04c3fd02de0a331ca062f18585dd0dc97f4d87b2 data\varan-deco\worldgen\placed_feature\deco_sparse_jungle_placed.json
 8de908d4c7467414f96640449f9c4352adf23883 data\varan-deco\worldgen\configured_feature\deco_bubble_ore.json
 f95dbbd7f05a2fad47438a30cd00ffc411238ef1 data\varan-deco\worldgen\placed_feature\deco_jungle_placed.json
@@ -6,8 +6,8 @@ bda4eabb987fd59e477e6b1c41bcbab61a01651f data\varan-deco\worldgen\placed_feature
 d8ee4022b081918e35b117792c77d2a2e389d3d0 data\varan-deco\worldgen\placed_feature\deco_swamp_flowers_placed.json
 33161b8699879ccb40fbb5ff5d692214e907c2cf data\varan-deco\worldgen\placed_feature\deco_rose_placed.json
 fcf8d750387b1ec0227552fb955d56c60586f807 data\varan-deco\worldgen\configured_feature\deco_savanna_flowers.json
-9c3b5afe980131dd4a37557fa6344c5e03ceb8fc data\varan-deco\worldgen\placed_feature\deco_ender_placed.json
 d46ec744afb48f4b6b2532cc8fe6adc7328beaed data\varan-deco\worldgen\placed_feature\deco_bubble_ore_placed.json
+9c3b5afe980131dd4a37557fa6344c5e03ceb8fc data\varan-deco\worldgen\placed_feature\deco_ender_placed.json
 79f483d7412e8a0fecbbceda2d9688c20dd29c71 data\varan-deco\worldgen\placed_feature\deco_birch_placed.json
 0d69fc542bc624111312efd9b24c83a1a264c0f9 data\varan-deco\worldgen\placed_feature\deco_red_sunflower_placed.json
 039fde10905fb9c67a2a6949458ea0ad2c4d899c data\varan-deco\worldgen\configured_feature\deco_mesa.json
@@ -15,8 +15,8 @@ ecd6207ae237fbe7395a2d3253b8b6d3a63b7a4c data\varan-deco\worldgen\placed_feature
 af35076b45a2e1c51da1acdf6185714a7b30aeee data\varan-deco\worldgen\configured_feature\deco_swamp_flower.json
 b660ad576173fe00e4e356351743b46b9d4e3d08 data\varan-deco\worldgen\configured_feature\deco_birch.json
 bfc4094cb318addb4221bbc372a55543e5f8109e data\varan-deco\worldgen\configured_feature\deco_rose_flower.json
-cb772205c580f69df07bcdf05f311087d9cd689c data\varan-deco\worldgen\configured_feature\deco_mega_wooden_tree.json
 0e1e9e7e543f41c4ae07652c21e7e256f7dd1903 data\varan-deco\worldgen\configured_feature\deco_ender_flowers.json
+cb772205c580f69df07bcdf05f311087d9cd689c data\varan-deco\worldgen\configured_feature\deco_mega_wooden_tree.json
 05571e4a867fb9e9bf7d386cf605b88f998ea534 data\varan-deco\worldgen\configured_feature\deco_jungle.json
 1258eefb9a45057da61f223aa594ddd680bcc137 data\varan-deco\worldgen\placed_feature\deco_deep_bubble_ore_placed.json
 94669f48630ca6ac7759101fb074dc2f5c1793cd data\varan-deco\worldgen\configured_feature\deco_fancy_wooden_tree.json
