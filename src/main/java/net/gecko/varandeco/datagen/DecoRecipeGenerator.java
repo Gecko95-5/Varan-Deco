@@ -3609,7 +3609,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input(Items.YELLOW_DYE)
                         .input(Items.BLUE_DYE)
                         .input(Items.BLUE_DYE)
-                        .criterion(hasItem(Items.YELLOW_DYE),
+                        .group("cyan_dye")
+                .criterion(hasItem(Items.YELLOW_DYE),
                                 conditionsFromItem(Items.YELLOW_DYE))
                         .criterion(hasItem(Items.BLUE_DYE),
                                 conditionsFromItem(Items.BLUE_DYE))
@@ -3683,7 +3684,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input(Items.WHITE_DYE)
                         .input(Items.RED_DYE)
                         .input(Items.PURPLE_DYE)
-                        .criterion(hasItem(Items.WHITE_DYE),
+                        .group("magenta_dye")
+                .criterion(hasItem(Items.WHITE_DYE),
                                 conditionsFromItem(Items.WHITE_DYE))
                         .criterion(hasItem(Items.RED_DYE),
                                 conditionsFromItem(Items.RED_DYE))
@@ -3712,7 +3714,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 createShapeless(RecipeCategory.MISC,Items.BROWN_DYE,2)
                         .input(Items.RED_DYE)
                         .input(Items.GREEN_DYE)
-                        .criterion(hasItem(Items.RED_DYE),
+                        .group("brown_dye")
+                .criterion(hasItem(Items.RED_DYE),
                                 conditionsFromItem(Items.RED_DYE))
                         .criterion(hasItem(Items.GREEN_DYE),
                                 conditionsFromItem(Items.GREEN_DYE))
@@ -3734,7 +3737,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .input(Items.RED_DYE)
                         .input(Items.YELLOW_DYE)
                         .input(Items.BLUE_DYE)
-                        .criterion(hasItem(Items.RED_DYE),
+                        .group("brown_dye")
+                .criterion(hasItem(Items.RED_DYE),
                                 conditionsFromItem(Items.RED_DYE))
                         .criterion(hasItem(Items.YELLOW_DYE),
                                 conditionsFromItem(Items.YELLOW_DYE))
@@ -3758,7 +3762,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.BLUE_DYE))
                         .criterion(hasItem(Items.YELLOW_DYE),
                                 conditionsFromItem(Items.YELLOW_DYE))
-                        .offerTo(exporter, getRecipeName(Items.GREEN_DYE) + "_from_2_dyes");
+                        .group("green_dye")
+                .offerTo(exporter, getRecipeName(Items.GREEN_DYE) + "_from_2_dyes");
 
                 createShapeless(RecipeCategory.MISC,DecoBlocks.LIME_BLOCK,3)
                         .input(DecoBlocks.WHITE_BLOCK)
@@ -3782,7 +3787,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.YELLOW_DYE))
                         .criterion(hasItem(Items.BLUE_DYE),
                                 conditionsFromItem(Items.BLUE_DYE))
-                        .offerTo(exporter, getRecipeName(Items.LIME_DYE) + "_from_3_dyes");
+                        .group("lime_dye")
+                .offerTo(exporter, getRecipeName(Items.LIME_DYE) + "_from_3_dyes");
 
                 createStairsRecipe(DecoBlocks.WOODEN_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_PLANKS))
                         .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
@@ -4486,14 +4492,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.NETHER_SPROUTS))
                         .offerTo(exporter, getRecipeName(Items.WARPED_ROOTS) + "_recipe_create");
 
-                createShaped(RecipeCategory.MISC,Items.TALL_DRY_GRASS)
-                        .pattern("#")
-                        .pattern("#")
-                        .input('#', Items.SHORT_DRY_GRASS)
-                        .criterion(hasItem(Items.SHORT_DRY_GRASS),
-                                conditionsFromItem(Items.SHORT_DRY_GRASS))
-                        .offerTo(exporter, getRecipeName(Items.TALL_DRY_GRASS) + "_recipe_create");
-
                         createShaped(RecipeCategory.MISC,DecoItems.TALL_SEAGRASS)
                         .pattern("#")
                         .pattern("#")
@@ -4501,6 +4499,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.SEAGRASS),
                                 conditionsFromItem(Items.SEAGRASS))
                         .offerTo(exporter, getRecipeName(DecoItems.TALL_SEAGRASS) + "_recipe_create");
+
+                createShaped(RecipeCategory.MISC,Items.TALL_DRY_GRASS)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.SHORT_DRY_GRASS)
+                        .criterion(hasItem(Items.SHORT_DRY_GRASS),
+                                conditionsFromItem(Items.SHORT_DRY_GRASS))
+                        .offerTo(exporter, getRecipeName(Items.TALL_DRY_GRASS) + "_recipe_create");
 
                 CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.STONE_TILES), RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRACKED_STONE_TILES,
                                 0.1f, 200).criterion(hasItem(DecoBlocks.STONE_TILES), conditionsFromItem(DecoBlocks.STONE_TILES))
@@ -5585,7 +5591,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                         .offerTo(exporter, getRecipeName(Items.BOOKSHELF) + "_with_wooden_planks");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.SPRUCE_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.SPRUCE_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.SPRUCE_SLAB)
                         .pattern("# #")
@@ -5596,7 +5602,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.SPRUCE_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.BIRCH_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.BIRCH_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.BIRCH_SLAB)
                         .pattern("# #")
@@ -5607,7 +5613,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BIRCH_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.JUNGLE_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.JUNGLE_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.JUNGLE_SLAB)
                         .pattern("# #")
@@ -5618,7 +5624,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.JUNGLE_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.ACACIA_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.ACACIA_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.ACACIA_SLAB)
                         .pattern("# #")
@@ -5629,7 +5635,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.ACACIA_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.DARK_OAK_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.DARK_OAK_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.DARK_OAK_SLAB)
                         .pattern("# #")
@@ -5640,7 +5646,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DARK_OAK_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.MANGROVE_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.MANGROVE_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.MANGROVE_SLAB)
                         .pattern("# #")
@@ -5651,7 +5657,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.MANGROVE_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.BAMBOO_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.BAMBOO_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.BAMBOO_SLAB)
                         .pattern("# #")
@@ -5662,7 +5668,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.BAMBOO_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CHERRY_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CHERRY_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.CHERRY_SLAB)
                         .pattern("# #")
@@ -5673,7 +5679,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CHERRY_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.PALE_OAK_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.PALE_OAK_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.PALE_OAK_SLAB)
                         .pattern("# #")
@@ -5684,7 +5690,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CRIMSON_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CRIMSON_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.CRIMSON_SLAB)
                         .pattern("# #")
@@ -5695,7 +5701,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CRIMSON_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WARPED_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WARPED_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', Items.WARPED_SLAB)
                         .pattern("# #")
@@ -5706,7 +5712,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.WARPED_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CACTUS_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.CACTUS_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', DecoBlocks.CACTUS_PLANK_SLAB)
                         .pattern("# #")
@@ -5717,7 +5723,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CACTUS_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.DRIFTWOOD_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.DRIFTWOOD_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', DecoBlocks.DRIFTWOOD_SLAB)
                         .pattern("# #")
@@ -5728,7 +5734,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.STICK))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DRIFTWOOD_LADDER) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WOODEN_LADDER)
+                createShaped(RecipeCategory.DECORATIONS, DecoBlocks.WOODEN_LADDER,3)
                         .input('#', Items.STICK)
                         .input('S', DecoBlocks.WOODEN_SLAB)
                         .pattern("# #")
