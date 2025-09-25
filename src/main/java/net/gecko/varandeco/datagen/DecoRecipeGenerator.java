@@ -3205,6 +3205,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.YELLOW_DYE)
                 .input(Items.BLUE_DYE)
                 .input(Items.BLUE_DYE)
+                .group("cyan_dye")
                 .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
                         RecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
                 .criterion(RecipeProvider.hasItem(Items.BLUE_DYE),
@@ -3279,6 +3280,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.WHITE_DYE)
                 .input(Items.RED_DYE)
                 .input(Items.PURPLE_DYE)
+                .group("magenta_dye")
                 .criterion(RecipeProvider.hasItem(Items.WHITE_DYE),
                         RecipeProvider.conditionsFromItem(Items.WHITE_DYE))
                 .criterion(RecipeProvider.hasItem(Items.RED_DYE),
@@ -3308,6 +3310,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(Items.BROWN_DYE,2)
                 .input(Items.RED_DYE)
                 .input(Items.GREEN_DYE)
+                .group("brown_dye")
                 .criterion(RecipeProvider.hasItem(Items.RED_DYE),
                         RecipeProvider.conditionsFromItem(Items.RED_DYE))
                 .criterion(RecipeProvider.hasItem(Items.GREEN_DYE),
@@ -3330,6 +3333,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.RED_DYE)
                 .input(Items.YELLOW_DYE)
                 .input(Items.BLUE_DYE)
+                .group("brown_dye")
                 .criterion(RecipeProvider.hasItem(Items.RED_DYE),
                         RecipeProvider.conditionsFromItem(Items.RED_DYE))
                 .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
@@ -3354,6 +3358,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
                 .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
                         RecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .group("green_dye")
                 .offerTo(exporter, new Identifier("green_dye_from_blue_dye"));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.LIME_BLOCK,3)
@@ -3378,6 +3383,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
                 .criterion(RecipeProvider.hasItem(Items.BLUE_DYE),
                         RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+                .group("lime_dye")
                 .offerTo(exporter, new Identifier("lime_dye_from_yellow_dye"));
 
         createStairsRecipe(DecoBlocks.WOODEN_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_PLANKS))
@@ -4042,7 +4048,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_PURPUR)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
-        ShapedRecipeJsonBuilder.create(output)
+        ShapedRecipeJsonBuilder.create(output,3)
                 .input('#', Items.STICK)
                 .input('S', woodInput)
                 .pattern("# #")
