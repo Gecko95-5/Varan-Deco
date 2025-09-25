@@ -324,6 +324,10 @@
     "varan-deco:bubble_elevator_block_magma",
     "varan-deco:chiseled_polished_sandstone",
     "varan-deco:chiseled_polished_red_sandstone",
-    "varan-deco:chiseled_polished_soul_soilstone"
+    "varan-deco:chiseled_polished_soul_soilstone",
+    "varan-deco:polished_purpur",
+    "varan-deco:polished_purpur_stairs",
+    "varan-deco:polished_purpur_slab",
+    "varan-deco:polished_purpur_wall"
   ]
 }

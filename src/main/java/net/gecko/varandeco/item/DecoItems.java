@@ -19,7 +19,13 @@ public class DecoItems {
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
 
     public static final Item SNOW_BRICK = registerItem("snow_brick",
-            new SnowBrickItem(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS).maxCount(16)));
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS).maxCount(16)));
+
+    public static final Item PASSTOL = registerItem("passtol",
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
+
+    public static final Item SHADDOL = registerItem("shaddol",
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));
 
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",
             new BubbleItem(new Item.Settings().group(DecoItemGroup.VARAN_DECO_BLOCKS)));

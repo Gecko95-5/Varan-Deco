@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "orange_dye",
   "ingredients": [
     {
       "item": "varan-deco:orange_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:orange_dye"
   }
 }

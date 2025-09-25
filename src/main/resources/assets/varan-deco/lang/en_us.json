@@ -9,6 +9,9 @@
   "item.varan-deco.lilac_stew": "Suspicious Stew",
   "item.varan-deco.ice_shard": "Ice Shard",
 
+  "item.varan-deco.passtol": "Passtol",
+  "item.varan-deco.shaddol": "Shaddol",
+
   "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
   "block.varan-deco.polished_granite_temp": "Non-Craftable Polished Granite",
@@ -782,6 +785,11 @@
   "block.varan-deco.purpur_brick_slab": "Purpur Brick Slab",
   "block.varan-deco.purpur_brick_wall": "Purpur Brick Wall",
 
+  "block.varan-deco.polished_purpur": "Polished Purpur",
+  "block.varan-deco.polished_purpur_stairs": "Polished Purpur Stairs",
+  "block.varan-deco.polished_purpur_slab": "Polished Purpur Slab",
+  "block.varan-deco.polished_purpur_wall": "Polished Purpur Wall",
+
   "block.varan-deco.chiseled_purpur": "Chiseled Purpur",
 
   "block.varan-deco.void_stone": "Void Stone",
@@ -1002,6 +1010,36 @@
   "block.varan-deco.magenta_block": "Magenta Block",
   "block.varan-deco.pink_block": "Pink Block",
 
+  "block.varan-deco.pastel_light_gray_block": "Pastel Light Gray Block",
+  "block.varan-deco.pastel_gray_block": "Pastel Gray Block",
+  "block.varan-deco.pastel_brown_block": "Pastel Brown Block",
+  "block.varan-deco.pastel_red_block": "Pastel Red Block",
+  "block.varan-deco.pastel_orange_block": "Pastel Orange Block",
+  "block.varan-deco.pastel_yellow_block": "Pastel Yellow Block",
+  "block.varan-deco.pastel_lime_block": "Pastel Lime Block",
+  "block.varan-deco.pastel_green_block": "Pastel Green Block",
+  "block.varan-deco.pastel_cyan_block": "Pastel Cyan Block",
+  "block.varan-deco.pastel_light_blue_block": "Pastel Light Blue Block",
+  "block.varan-deco.pastel_blue_block": "Pastel Blue Block",
+  "block.varan-deco.pastel_purple_block": "Pastel Purple Block",
+  "block.varan-deco.pastel_magenta_block": "Pastel Magenta Block",
+  "block.varan-deco.pastel_pink_block": "Pastel Pink Block",
+
+  "block.varan-deco.shaded_light_gray_block": "Shaded Light Gray Block",
+  "block.varan-deco.shaded_gray_block": "Shaded Gray Block",
+  "block.varan-deco.shaded_brown_block": "Shaded Brown Block",
+  "block.varan-deco.shaded_red_block": "Shaded Red Block",
+  "block.varan-deco.shaded_orange_block": "Shaded Orange Block",
+  "block.varan-deco.shaded_yellow_block": "Shaded Yellow Block",
+  "block.varan-deco.shaded_lime_block": "Shaded Lime Block",
+  "block.varan-deco.shaded_green_block": "Shaded Green Block",
+  "block.varan-deco.shaded_cyan_block": "Shaded Cyan Block",
+  "block.varan-deco.shaded_light_blue_block": "Shaded Light Blue Block",
+  "block.varan-deco.shaded_blue_block": "Shaded Blue Block",
+  "block.varan-deco.shaded_purple_block": "Shaded Purple Block",
+  "block.varan-deco.shaded_magenta_block": "Shaded Magenta Block",
+  "block.varan-deco.shaded_pink_block": "Shaded Pink Block",
+
   "block.varan-deco.wooden_planks": "Wooden Planks",
   "block.varan-deco.wooden_stairs": "Wooden Stairs",
   "block.varan-deco.wooden_slab": "Wooden Slab",
@@ -1057,6 +1095,86 @@
   "block.varan-deco.infested_cracked_polished_blackstone_bricks": "Infested Cracked Polished Blackstone Bricks",
   "block.varan-deco.infested_cracked_polished_blackstone_tiles": "Infested Cracked Polished Blackstone Tiles",
   "block.varan-deco.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
+
+  "block.varan-deco.oak_wood_stairs": "Oak Wood Stairs",
+  "block.varan-deco.oak_wood_slab": "Oak Wood Slab",
+  "block.varan-deco.oak_wood_wall": "Oak Wood Wall",
+
+  "block.varan-deco.spruce_wood_stairs": "Spruce Wood Stairs",
+  "block.varan-deco.spruce_wood_slab": "Spruce Wood Slab",
+  "block.varan-deco.spruce_wood_wall": "Spruce Wood Wall",
+
+  "block.varan-deco.birch_wood_stairs": "Birch Wood Stairs",
+  "block.varan-deco.birch_wood_slab": "Birch Wood Slab",
+  "block.varan-deco.birch_wood_wall": "Birch Wood Wall",
+
+  "block.varan-deco.jungle_wood_stairs": "Jungle Wood Stairs",
+  "block.varan-deco.jungle_wood_slab": "Jungle Wood Slab",
+  "block.varan-deco.jungle_wood_wall": "Jungle Wood Wall",
+
+  "block.varan-deco.acacia_wood_stairs": "Acacia Wood Stairs",
+  "block.varan-deco.acacia_wood_slab": "Acacia Wood Slab",
+  "block.varan-deco.acacia_wood_wall": "Acacia Wood Wall",
+
+  "block.varan-deco.dark_oak_wood_stairs": "Dark Oak Wood Stairs",
+  "block.varan-deco.dark_oak_wood_slab": "Dark Oak Wood Slab",
+  "block.varan-deco.dark_oak_wood_wall": "Dark Oak Wood Wall",
+
+  "block.varan-deco.mangrove_wood_stairs": "Mangrove Wood Stairs",
+  "block.varan-deco.mangrove_wood_slab": "Mangrove Wood Slab",
+  "block.varan-deco.mangrove_wood_wall": "Mangrove Wood Wall",
+
+  "block.varan-deco.crimson_hyphae_stairs": "Crimson Hyphae Stairs",
+  "block.varan-deco.crimson_hyphae_slab": "Crimson Hyphae Slab",
+  "block.varan-deco.crimson_hyphae_wall": "Crimson Hyphae Wall",
+
+  "block.varan-deco.warped_hyphae_stairs": "Warped Hyphae Stairs",
+  "block.varan-deco.warped_hyphae_slab": "Warped Hyphae Slab",
+  "block.varan-deco.warped_hyphae_wall": "Warped Hyphae Wall",
+
+  "block.varan-deco.stripped_oak_wood_stairs": "Stripped Oak Wood Stairs",
+  "block.varan-deco.stripped_oak_wood_slab": "Stripped Oak Wood Slab",
+  "block.varan-deco.stripped_oak_wood_wall": "Stripped Oak Wood Wall",
+
+  "block.varan-deco.stripped_spruce_wood_stairs": "Stripped Spruce Wood Stairs",
+  "block.varan-deco.stripped_spruce_wood_slab": "Stripped Spruce Wood Slab",
+  "block.varan-deco.stripped_spruce_wood_wall": "Stripped Spruce Wood Wall",
+
+  "block.varan-deco.stripped_birch_wood_stairs": "Stripped Birch Wood Stairs",
+  "block.varan-deco.stripped_birch_wood_slab": "Stripped Birch Wood Slab",
+  "block.varan-deco.stripped_birch_wood_wall": "Stripped Birch Wood Wall",
+
+  "block.varan-deco.stripped_jungle_wood_stairs": "Stripped Jungle Wood Stairs",
+  "block.varan-deco.stripped_jungle_wood_slab": "Stripped Jungle Wood Slab",
+  "block.varan-deco.stripped_jungle_wood_wall": "Stripped Jungle Wood Wall",
+
+  "block.varan-deco.stripped_acacia_wood_stairs": "Stripped Acacia Wood Stairs",
+  "block.varan-deco.stripped_acacia_wood_slab": "Stripped Acacia Wood Slab",
+  "block.varan-deco.stripped_acacia_wood_wall": "Stripped Acacia Wood Wall",
+
+  "block.varan-deco.stripped_dark_oak_wood_stairs": "Stripped Dark Oak Wood Stairs",
+  "block.varan-deco.stripped_dark_oak_wood_slab": "Stripped Dark Oak Wood Slab",
+  "block.varan-deco.stripped_dark_oak_wood_wall": "Stripped Dark Oak Wood Wall",
+
+  "block.varan-deco.stripped_mangrove_wood_stairs": "Stripped Mangrove Wood Stairs",
+  "block.varan-deco.stripped_mangrove_wood_slab": "Stripped Mangrove Wood Slab",
+  "block.varan-deco.stripped_mangrove_wood_wall": "Stripped Mangrove Wood Wall",
+
+  "block.varan-deco.stripped_crimson_hyphae_stairs": "Stripped Crimson Hyphae Stairs",
+  "block.varan-deco.stripped_crimson_hyphae_slab": "Stripped Crimson Hyphae Slab",
+  "block.varan-deco.stripped_crimson_hyphae_wall": "Stripped Crimson Hyphae Wall",
+
+  "block.varan-deco.stripped_warped_hyphae_stairs": "Stripped Warped Hyphae Stairs",
+  "block.varan-deco.stripped_warped_hyphae_slab": "Stripped Warped Hyphae Slab",
+  "block.varan-deco.stripped_warped_hyphae_wall": "Stripped Warped Hyphae Wall",
+
+  "block.varan-deco.wooden_wood_stairs": "Wooden Wood Stairs",
+  "block.varan-deco.wooden_wood_slab": "Wooden Wood Slab",
+  "block.varan-deco.wooden_wood_wall": "Wooden Wood Wall",
+
+  "block.varan-deco.stripped_wooden_wood_stairs": "Stripped Wooden Wood Stairs",
+  "block.varan-deco.stripped_wooden_wood_slab": "Stripped Wooden Wood Slab",
+  "block.varan-deco.stripped_wooden_wood_wall": "Stripped Wooden Wood Wall",
 
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
