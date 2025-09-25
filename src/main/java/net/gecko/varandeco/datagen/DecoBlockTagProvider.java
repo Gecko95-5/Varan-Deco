@@ -1326,7 +1326,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS)
                 .add(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS)
                 .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS)
-                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS);
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS)
+                .add(DecoBlocks.WOODEN_WOOD_STAIRS)
+                .add(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS);
 
         getOrCreateTagBuilder(DecoTags.Blocks.LOG_SLABS)
                 .add(DecoBlocks.OAK_WOOD_SLAB)
@@ -1346,7 +1348,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB)
                 .add(DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB)
                 .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB)
-                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB);
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB)
+                .add(DecoBlocks.WOODEN_WOOD_SLAB)
+                .add(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB);
 
         getOrCreateTagBuilder(DecoTags.Blocks.LOG_WALLS)
                 .add(DecoBlocks.OAK_WOOD_WALL)
@@ -1366,6 +1370,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STRIPPED_DARK_OAK_WOOD_WALL)
                 .add(DecoBlocks.STRIPPED_MANGROVE_WOOD_WALL)
                 .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL)
-                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL);
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL)
+                .add(DecoBlocks.WOODEN_WOOD_WALL)
+                .add(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
     }
 }

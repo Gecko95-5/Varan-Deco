@@ -213,6 +213,12 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool strippedwarpedhyphaepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WARPED_TEMP);
 
+        BlockStateModelGenerator.BlockTexturePool woodenwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_WOOD_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool strippedwoodenwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WOODEN_TEMP);
+
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
 
@@ -741,6 +747,14 @@ public class DecoModelProvider extends FabricModelProvider {
         strippedwarpedhyphaepool.stairs(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS);
         strippedwarpedhyphaepool.slab(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB);
         strippedwarpedhyphaepool.wall(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL);
+
+        woodenwoodpool.stairs(DecoBlocks.WOODEN_WOOD_STAIRS);
+        woodenwoodpool.slab(DecoBlocks.WOODEN_WOOD_SLAB);
+        woodenwoodpool.wall(DecoBlocks.WOODEN_WOOD_WALL);
+
+        strippedwoodenwoodpool.stairs(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS);
+        strippedwoodenwoodpool.slab(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB);
+        strippedwoodenwoodpool.wall(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);

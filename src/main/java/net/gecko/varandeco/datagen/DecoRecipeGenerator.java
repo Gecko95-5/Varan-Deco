@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.util.DecoTags;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipeProvider;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
@@ -4179,6 +4180,167 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerShadedBLockRecipe(exporter, DecoBlocks.PURPLE_BLOCK, DecoBlocks.SHADED_PURPLE_BLOCK);
         offerShadedBLockRecipe(exporter, DecoBlocks.MAGENTA_BLOCK, DecoBlocks.SHADED_MAGENTA_BLOCK);
         offerShadedBLockRecipe(exporter, DecoBlocks.PINK_BLOCK, DecoBlocks.SHADED_PINK_BLOCK);
+
+        createStairsRecipe(DecoBlocks.OAK_WOOD_STAIRS, Ingredient.ofItems(Blocks.OAK_WOOD))
+                .criterion(hasItem(Blocks.OAK_WOOD),conditionsFromItem(Blocks.OAK_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.OAK_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.OAK_WOOD_SLAB, Blocks.OAK_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.OAK_WOOD_WALL, Blocks.OAK_WOOD);
+
+        createStairsRecipe(DecoBlocks.SPRUCE_WOOD_STAIRS, Ingredient.ofItems(Blocks.SPRUCE_WOOD))
+                .criterion(hasItem(Blocks.SPRUCE_WOOD),conditionsFromItem(Blocks.SPRUCE_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SPRUCE_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.SPRUCE_WOOD_SLAB, Blocks.SPRUCE_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.SPRUCE_WOOD_WALL, Blocks.SPRUCE_WOOD);
+
+        createStairsRecipe(DecoBlocks.BIRCH_WOOD_STAIRS, Ingredient.ofItems(Blocks.BIRCH_WOOD))
+                .criterion(hasItem(Blocks.BIRCH_WOOD),conditionsFromItem(Blocks.BIRCH_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BIRCH_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.BIRCH_WOOD_SLAB, Blocks.BIRCH_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.BIRCH_WOOD_WALL, Blocks.BIRCH_WOOD);
+
+        createStairsRecipe(DecoBlocks.JUNGLE_WOOD_STAIRS, Ingredient.ofItems(Blocks.JUNGLE_WOOD))
+                .criterion(hasItem(Blocks.JUNGLE_WOOD),conditionsFromItem(Blocks.JUNGLE_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.JUNGLE_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.JUNGLE_WOOD_SLAB, Blocks.JUNGLE_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.JUNGLE_WOOD_WALL, Blocks.JUNGLE_WOOD);
+
+        createStairsRecipe(DecoBlocks.ACACIA_WOOD_STAIRS, Ingredient.ofItems(Blocks.ACACIA_WOOD))
+                .criterion(hasItem(Blocks.ACACIA_WOOD),conditionsFromItem(Blocks.ACACIA_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.ACACIA_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.ACACIA_WOOD_SLAB, Blocks.ACACIA_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.ACACIA_WOOD_WALL, Blocks.ACACIA_WOOD);
+
+        createStairsRecipe(DecoBlocks.DARK_OAK_WOOD_STAIRS, Ingredient.ofItems(Blocks.DARK_OAK_WOOD))
+                .criterion(hasItem(Blocks.DARK_OAK_WOOD),conditionsFromItem(Blocks.DARK_OAK_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DARK_OAK_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.DARK_OAK_WOOD_SLAB, Blocks.DARK_OAK_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.DARK_OAK_WOOD_WALL, Blocks.DARK_OAK_WOOD);
+
+        createStairsRecipe(DecoBlocks.MANGROVE_WOOD_STAIRS, Ingredient.ofItems(Blocks.MANGROVE_WOOD))
+                .criterion(hasItem(Blocks.MANGROVE_WOOD),conditionsFromItem(Blocks.MANGROVE_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MANGROVE_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.MANGROVE_WOOD_SLAB, Blocks.MANGROVE_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.MANGROVE_WOOD_WALL, Blocks.MANGROVE_WOOD);
+
+        createStairsRecipe(DecoBlocks.CRIMSON_HYPHAE_STAIRS, Ingredient.ofItems(Blocks.CRIMSON_HYPHAE))
+                .criterion(hasItem(Blocks.CRIMSON_HYPHAE),conditionsFromItem(Blocks.CRIMSON_HYPHAE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRIMSON_HYPHAE_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.CRIMSON_HYPHAE_SLAB, Blocks.CRIMSON_HYPHAE);
+
+        offerWallRecipe(exporter, DecoBlocks.CRIMSON_HYPHAE_WALL, Blocks.CRIMSON_HYPHAE);
+
+        createStairsRecipe(DecoBlocks.WARPED_HYPHAE_STAIRS, Ingredient.ofItems(Blocks.WARPED_HYPHAE))
+                .criterion(hasItem(Blocks.WARPED_HYPHAE),conditionsFromItem(Blocks.WARPED_HYPHAE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WARPED_HYPHAE_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.WARPED_HYPHAE_SLAB, Blocks.WARPED_HYPHAE);
+
+        offerWallRecipe(exporter, DecoBlocks.WARPED_HYPHAE_WALL, Blocks.WARPED_HYPHAE);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_OAK_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_OAK_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_OAK_WOOD),conditionsFromItem(Blocks.STRIPPED_OAK_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_OAK_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_OAK_WOOD_SLAB, Blocks.STRIPPED_OAK_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_OAK_WOOD_WALL, Blocks.STRIPPED_OAK_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_SPRUCE_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_SPRUCE_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_SPRUCE_WOOD),conditionsFromItem(Blocks.STRIPPED_SPRUCE_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_SPRUCE_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_SPRUCE_WOOD_SLAB, Blocks.STRIPPED_SPRUCE_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_SPRUCE_WOOD_WALL, Blocks.STRIPPED_SPRUCE_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_BIRCH_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_BIRCH_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_BIRCH_WOOD),conditionsFromItem(Blocks.STRIPPED_BIRCH_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_BIRCH_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_BIRCH_WOOD_SLAB, Blocks.STRIPPED_BIRCH_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_BIRCH_WOOD_WALL, Blocks.STRIPPED_BIRCH_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_JUNGLE_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_JUNGLE_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_JUNGLE_WOOD),conditionsFromItem(Blocks.STRIPPED_JUNGLE_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_JUNGLE_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_JUNGLE_WOOD_SLAB, Blocks.STRIPPED_JUNGLE_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_JUNGLE_WOOD_WALL, Blocks.STRIPPED_JUNGLE_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_ACACIA_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_ACACIA_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_ACACIA_WOOD),conditionsFromItem(Blocks.STRIPPED_ACACIA_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_ACACIA_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_ACACIA_WOOD_SLAB, Blocks.STRIPPED_ACACIA_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_ACACIA_WOOD_WALL, Blocks.STRIPPED_ACACIA_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_DARK_OAK_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_DARK_OAK_WOOD),conditionsFromItem(Blocks.STRIPPED_DARK_OAK_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, Blocks.STRIPPED_DARK_OAK_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_DARK_OAK_WOOD_WALL, Blocks.STRIPPED_DARK_OAK_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_MANGROVE_WOOD))
+                .criterion(hasItem(Blocks.STRIPPED_MANGROVE_WOOD),conditionsFromItem(Blocks.STRIPPED_MANGROVE_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB, Blocks.STRIPPED_MANGROVE_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_MANGROVE_WOOD_WALL, Blocks.STRIPPED_MANGROVE_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_CRIMSON_HYPHAE))
+                .criterion(hasItem(Blocks.STRIPPED_CRIMSON_HYPHAE),conditionsFromItem(Blocks.STRIPPED_CRIMSON_HYPHAE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB, Blocks.STRIPPED_CRIMSON_HYPHAE);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL, Blocks.STRIPPED_CRIMSON_HYPHAE);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS, Ingredient.ofItems(Blocks.STRIPPED_WARPED_HYPHAE))
+                .criterion(hasItem(Blocks.STRIPPED_WARPED_HYPHAE),conditionsFromItem(Blocks.STRIPPED_WARPED_HYPHAE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB, Blocks.STRIPPED_WARPED_HYPHAE);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL, Blocks.STRIPPED_WARPED_HYPHAE);
+
+        createStairsRecipe(DecoBlocks.WOODEN_WOOD_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_WOOD))
+                .criterion(hasItem(DecoBlocks.WOODEN_WOOD),conditionsFromItem(DecoBlocks.WOODEN_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WOODEN_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.WOODEN_WOOD_SLAB, DecoBlocks.WOODEN_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.WOODEN_WOOD_WALL, DecoBlocks.WOODEN_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS, Ingredient.ofItems(DecoBlocks.STRIPPED_WOODEN_WOOD))
+                .criterion(hasItem(DecoBlocks.STRIPPED_WOODEN_WOOD),conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB, DecoBlocks.STRIPPED_WOODEN_WOOD);
+
+        offerWallRecipe(exporter, DecoBlocks.STRIPPED_WOODEN_WOOD_WALL, DecoBlocks.STRIPPED_WOODEN_WOOD);
+
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
