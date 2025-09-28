@@ -3115,16 +3115,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .offerTo(exporter, getRecipeName(DecoBlocks.ECHO_BLOCK)+ "_recipe_create");
 
                 offerCutCopperRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CUT_IRON, Items.IRON_BLOCK);
-                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON, Items.IRON_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON, Items.IRON_BLOCK,4);
 
                 createStairsRecipe(DecoBlocks.CUT_IRON_STAIRS, Ingredient.ofItems(DecoBlocks.CUT_IRON))
                         .criterion(hasItem(DecoBlocks.CUT_IRON),conditionsFromItem(DecoBlocks.CUT_IRON))
                         .offerTo(exporter, getRecipeName(DecoBlocks.CUT_IRON_STAIRS)+ "_recipe_create");
-                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON_STAIRS, Items.IRON_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON_STAIRS, Items.IRON_BLOCK,4);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON_STAIRS, DecoBlocks.CUT_IRON);
 
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CUT_IRON_SLAB, DecoBlocks.CUT_IRON);
-                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON_SLAB, Items.IRON_BLOCK,2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON_SLAB, Items.IRON_BLOCK,8);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CUT_IRON_SLAB, DecoBlocks.CUT_IRON,2);
 
 
@@ -3175,7 +3175,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.COPPER_BARS),
                         conditionsFromItem(DecoBlocks.COPPER_BARS))
                         .offerTo(exporter, getRecipeName(DecoBlocks.HEAVY_COPPER_BARS) + "_recipe_create");
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_HEAVY_COPPER_BARS,16)
+                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_HEAVY_COPPER_BARS)
                 .pattern("##")
                 .pattern("##")
                 .input('#', DecoBlocks.WAXED_COPPER_BARS)
