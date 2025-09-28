@@ -1204,18 +1204,6 @@
   "block.minecraft.oxidized_light_copper_bars": "Oxidized Light Copper Bars",
   "block.minecraft.waxed_oxidized_light_copper_bars": "Waxed Oxidized Light Copper Bars",
 
-  "block.minecraft.copper_bars": "Copper Bars",
-  "block.minecraft.waxed_copper_bars": "Waxed Copper Bars",
-
-  "block.minecraft.exposed_copper_bars": "Exposed Copper Bars",
-  "block.minecraft.waxed_exposed_copper_bars": "Waxed Exposed Copper Bars",
-
-  "block.minecraft.weathered_copper_bars": "Weathered Copper Bars",
-  "block.minecraft.waxed_weathered_copper_bars": "Waxed Weathered Copper Bars",
-
-  "block.minecraft.oxidized_copper_bars": "Oxidized Copper Bars",
-  "block.minecraft.waxed_oxidized_copper_bars": "Waxed Oxidized Copper Bars",
-
   "block.minecraft.deepslate_button": "Deepslate Button",
   "block.minecraft.deepslate_pressure_plate": "Deepslate Pressure Plate",
 
@@ -1296,30 +1284,6 @@
 
   "block.minecraft.bromeliad": "Bromeliad",
   "block.minecraft.potted_bromeliad": "Potted Bromeliad",
-
-  "block.minecraft.copper_chain": "Copper Chain",
-  "block.minecraft.waxed_copper_chain": "Waxed Copper Chain",
-
-  "block.minecraft.exposed_copper_chain": "Exposed Copper Chain",
-  "block.minecraft.waxed_exposed_copper_chain": "Waxed Exposed Copper Chain",
-
-  "block.minecraft.weathered_copper_chain": "Weathered Copper Chain",
-  "block.minecraft.waxed_weathered_copper_chain": "Waxed Weathered Copper Chain",
-
-  "block.minecraft.oxidized_copper_chain": "Oxidized Copper Chain",
-  "block.minecraft.waxed_oxidized_copper_chain": "Waxed Oxidized Copper Chain",
-
-  "block.minecraft.copper_lantern": "Copper Lantern",
-  "block.minecraft.waxed_copper_lantern": "Waxed Copper Lantern",
-
-  "block.minecraft.exposed_copper_lantern": "Exposed Copper Lantern",
-  "block.minecraft.waxed_exposed_copper_lantern": "Waxed Exposed Copper Lantern",
-
-  "block.minecraft.weathered_copper_lantern": "Weathered Copper Lantern",
-  "block.minecraft.waxed_weathered_copper_lantern": "Waxed Weathered Copper Lantern",
-
-  "block.minecraft.oxidized_copper_lantern": "Oxidized Copper Lantern",
-  "block.minecraft.waxed_oxidized_copper_lantern": "Waxed Oxidized Copper Lantern",
 
   "block.minecraft.copper_soul_lantern": "Copper Soul Lantern",
   "block.minecraft.waxed_copper_soul_lantern": "Waxed Copper Soul Lantern",

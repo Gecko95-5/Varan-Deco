@@ -3175,7 +3175,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 //                 .criterion(hasItem(DecoBlocks.COPPER_BARS),
 //                         conditionsFromItem(DecoBlocks.COPPER_BARS))
 //                         .offerTo(exporter, getRecipeName(DecoBlocks.HEAVY_COPPER_BARS) + "_recipe_create");
-//                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_HEAVY_COPPER_BARS,16)
+//                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_HEAVY_COPPER_BARS)
 //                 .pattern("##")
 //                 .pattern("##")
 //                 .input('#', DecoBlocks.WAXED_COPPER_BARS)
@@ -3228,13 +3228,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 //                        conditionsFromItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS))
 //                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_COPPER_BARS,16)
-                        .pattern("###")
-                        .pattern("###")
-                        .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
-                                conditionsFromItem(DecoItems.COPPER_NUGGET))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_COPPER_BARS,16)
+//                        .pattern("###")
+//                        .pattern("###")
+//                        .input('#', DecoItems.COPPER_NUGGET)
+//                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
+//                                conditionsFromItem(DecoItems.COPPER_NUGGET))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.LIGHT_COPPER_BARS) + "_recipe_create");
 
         offerPressurePlateRecipe(DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
         offerStonecuttingRecipe(  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.DEEPSLATE_PRESSURE_PLATE, Items.DEEPSLATE);
@@ -3484,15 +3484,15 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.LAVENDER))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_lavender");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.COPPER_SOUL_LANTERN)
-                        .pattern("###")
-                        .pattern("#X#")
-                        .pattern("###")
-                        .input('X', Items.SOUL_TORCH)
-                        .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
-                                conditionsFromItem(DecoItems.COPPER_NUGGET))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_SOUL_LANTERN) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.COPPER_SOUL_LANTERN)
+//                        .pattern("###")
+//                        .pattern("#X#")
+//                        .pattern("###")
+//                        .input('X', Items.SOUL_TORCH)
+//                        .input('#', DecoItems.COPPER_NUGGET)
+//                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
+//                                conditionsFromItem(DecoItems.COPPER_NUGGET))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_SOUL_LANTERN) + "_recipe_create");
 
                 offerPressurePlateRecipe(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Items.COPPER_INGOT);
 
@@ -3830,11 +3830,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                         .offerTo(exporter, getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD) + "_recipe_create");
 
-                createShapeless(RecipeCategory.REDSTONE,DecoBlocks.COPPER_BUTTON)
-                        .input(DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
-                                conditionsFromItem(DecoItems.COPPER_NUGGET))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_BUTTON) + "_recipe_create");
+//                createShapeless(RecipeCategory.REDSTONE,DecoBlocks.COPPER_BUTTON)
+//                        .input(DecoItems.COPPER_NUGGET)
+//                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
+//                                conditionsFromItem(DecoItems.COPPER_NUGGET))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_BUTTON) + "_recipe_create");
                 createShapeless(RecipeCategory.REDSTONE,DecoBlocks.IRON_BUTTON)
                         .input(Items.IRON_NUGGET)
                         .criterion(hasItem(Items.IRON_NUGGET),

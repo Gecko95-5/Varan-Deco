@@ -227,8 +227,6 @@ public class DecoItems {
 
     public static final Item LILAC_FLOWER = registerItem("lilac_flower",64, Item::new);
 
-    public static final Item COPPER_NUGGET = registerItem("copper_nugget", 64, Item::new);
-
     public static final Item TALL_SEAGRASS = registerTallItem("tall_seagrass", Blocks.TALL_SEAGRASS, TallBlockItem::new);
 
     public static final Item CACTUS_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,

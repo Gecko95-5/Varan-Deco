@@ -19,7 +19,6 @@ public class DecoModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
-        itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DecoItems.ANCIENT_ROSE_SEEDS, Models.GENERATED);
         itemModelGenerator.register(DecoItems.TALL_SEAGRASS, Models.GENERATED);
 

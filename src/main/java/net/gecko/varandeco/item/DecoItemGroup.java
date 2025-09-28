@@ -974,7 +974,6 @@ public class DecoItemGroup {
                         entries.add(DecoItems.CRIMSON_CHEST_BOAT);
                         entries.add(DecoItems.WARPED_BOAT);
                         entries.add(DecoItems.WARPED_CHEST_BOAT);
-                        entries.add(DecoItems.COPPER_NUGGET);
                         entries.add(DecoItems.SNOW_BRICK);
                         entries.add(DecoItems.ANCIENT_ROSE_SEEDS);
                         entries.add(DecoItems.MIGHTY_LAVENDER_FLOWER);
