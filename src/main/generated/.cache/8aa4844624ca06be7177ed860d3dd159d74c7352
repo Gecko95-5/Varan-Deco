@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-25T22:59:36.4064781	Variant Decoration/Tags for minecraft:item
+// 1.21.1	2025-09-28T21:34:53.146932	Variant Decoration/Tags for minecraft:item
 b5b2d7b56bc75a72af5c76b422f51cc1c7baf077 data\minecraft\tags\item\wooden_pressure_plates.json
 d354adef3c799c0b2fcf00696e47f1671c0c4361 data\varan-deco\tags\item\wooden_barrels.json
 f5089aa78df959f0775b3d7f050e9767837cde94 data\minecraft\tags\item\stone_tool_materials.json
@@ -31,5 +31,5 @@ afd008caf2cf6818f50b4ab00adff62ab0565881 data\minecraft\tags\item\saplings.json
 025052fea686bf99990352c0b7255a039c055dfd data\minecraft\tags\item\wooden_stairs.json
 ae6a5284b821cf8425822655673d64efabc01ed1 data\minecraft\tags\item\buttons.json
 7541d5cddce1eaddd7a913723d5a197e2d31a515 data\minecraft\tags\item\wooden_fences.json
-75c75bbfe6f66cbff734e27fa20b7495e76095ac data\varan-deco\tags\item\deco_cartography_tables.json
 24b331b73ecbd3e240de068cc9d4dcbb4c5befd1 data\minecraft\tags\item\wooden_slabs.json
+75c75bbfe6f66cbff734e27fa20b7495e76095ac data\varan-deco\tags\item\deco_cartography_tables.json
