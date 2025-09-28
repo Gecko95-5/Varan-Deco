@@ -1,7 +1,7 @@
 // 1.21.7	-999999999-01-01T00:00:00	Variant Decoration/Tags for minecraft:block
 ae6a5284b821cf8425822655673d64efabc01ed1 data/minecraft/tags/block/buttons.json
 1ee36b416a238238384232f0522b3ed805641d16 data/minecraft/tags/block/ceiling_hanging_signs.json
-61f77f306f27d73f89ff02b87b4fcc5ef9761b6e data/minecraft/tags/block/climbable.json
+638a3e78df248b950c3adeba24c2b709d175fa04 data/minecraft/tags/block/climbable.json
 11e6bd6294bc140d66b0c57c90aedb221dcb2609 data/minecraft/tags/block/enchantment_power_provider.json
 267d12e3740789afab0245b53182077dee0d9edf data/minecraft/tags/block/fence_gates.json
 2f90a52dacd4c4d4355007caa0fa55be6ceb43a5 data/minecraft/tags/block/fences.json
@@ -14,11 +14,11 @@ eedf18ecf898a1522b18f68b73d1b31427ec2ebc data/minecraft/tags/block/leaves.json
 bca3193a178670643eb7951bcbf62df66a82b9a0 data/minecraft/tags/block/logs.json
 112f54edac636b7f3e31ec3980c565cb269c14eb data/minecraft/tags/block/logs_that_burn.json
 515c3f25a6ae3b468160cf07c485fb0041f35ac9 data/minecraft/tags/block/mineable/axe.json
-5520be6fd643404952369e80c44afd65e8f02c32 data/minecraft/tags/block/mineable/pickaxe.json
+bad9f9cf54247d78a5e35352816d37e290d131c1 data/minecraft/tags/block/mineable/pickaxe.json
 f6a0de04ab191adb7a3c79e312b9bc6ac680fc6b data/minecraft/tags/block/mineable/shovel.json
 e1039261b2bddfde7fb1628e57265c791fbff0d3 data/minecraft/tags/block/needs_diamond_tool.json
 1cacc62da857912151190c57354789c44a3c0305 data/minecraft/tags/block/needs_iron_tool.json
-107f0a4f722743a18e52536f527f413712c4bbbc data/minecraft/tags/block/needs_stone_tool.json
+a406688ca7e8818493d8a0a6b764979ae83438a8 data/minecraft/tags/block/needs_stone_tool.json
 1c77ac8607ab83662889c1ed8d1f22a1a3a1d0e4 data/minecraft/tags/block/overworld_natural_logs.json
 ba534b68a8b6997db1f0bded0aa2321c824d3213 data/minecraft/tags/block/piglin_repellents.json
 b2ac5ae80fc733879410956726a434be3c783b9a data/minecraft/tags/block/planks.json
@@ -50,8 +50,8 @@ d842dddc0b88f38fa6598d3ca8e4bad53e98d62e data/minecraft/tags/block/wooden_stairs
 1be4682411fdc4d13e69bf9d1832a9a302550843 data/varan-deco/tags/block/concrete_slabs.json
 850bfa701904cd339da1a286efa82350e6f8d250 data/varan-deco/tags/block/concrete_stairs.json
 d9ca8868b0916195ba35f87a4189c800fc2159f5 data/varan-deco/tags/block/concrete_walls.json
-b558c57b5e015b1907aa6198896bdba126fcf519 data/varan-deco/tags/block/copper_bars.json
-bd373325f5aa4384d690e65a31b6432e323c96a5 data/varan-deco/tags/block/copper_lantern.json
+1898f017bbd8f5238ef1119d912e3d09f28de78a data/varan-deco/tags/block/copper_bars.json
+ba534b68a8b6997db1f0bded0aa2321c824d3213 data/varan-deco/tags/block/copper_lantern.json
 4728238dc00f3b17b162caa10dfaba991f5a2e0d data/varan-deco/tags/block/deco_barrels.json
 a17005e224f7bea2e71385aec8de695103883470 data/varan-deco/tags/block/deco_bookshelves.json
 d426fc63e005689b8a837a7e5fc04b6371a7e0ee data/varan-deco/tags/block/deco_cartography_tables.json

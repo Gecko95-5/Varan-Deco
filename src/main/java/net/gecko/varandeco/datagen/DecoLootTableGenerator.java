@@ -883,15 +883,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS);
         addDrop(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS);
 
-        addDrop(DecoBlocks.COPPER_BARS);
-        addDrop(DecoBlocks.WAXED_COPPER_BARS);
-        addDrop(DecoBlocks.EXPOSED_COPPER_BARS);
-        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_BARS);
-        addDrop(DecoBlocks.WEATHERED_COPPER_BARS);
-        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_BARS);
-        addDrop(DecoBlocks.OXIDIZED_COPPER_BARS);
-        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
-
         addDrop(DecoBlocks.DEEPSLATE_PRESSURE_PLATE);
         addDrop(DecoBlocks.DEEPSLATE_BUTTON);
 
@@ -1006,24 +997,6 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         pottedPlantDrops(DecoBlocks.POTTED_BLUE_HIBISCUS);
         addDrop(DecoBlocks.BROMELIAD);
         pottedPlantDrops(DecoBlocks.POTTED_BROMELIAD);
-
-        addDrop(DecoBlocks.COPPER_CHAIN);
-        addDrop(DecoBlocks.WAXED_COPPER_CHAIN);
-        addDrop(DecoBlocks.EXPOSED_COPPER_CHAIN);
-        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN);
-        addDrop(DecoBlocks.WEATHERED_COPPER_CHAIN);
-        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN);
-        addDrop(DecoBlocks.OXIDIZED_COPPER_CHAIN);
-        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
-
-        addDrop(DecoBlocks.COPPER_LANTERN);
-        addDrop(DecoBlocks.WAXED_COPPER_LANTERN);
-        addDrop(DecoBlocks.EXPOSED_COPPER_LANTERN);
-        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN);
-        addDrop(DecoBlocks.WEATHERED_COPPER_LANTERN);
-        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN);
-        addDrop(DecoBlocks.OXIDIZED_COPPER_LANTERN);
-        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
 
         addDrop(DecoBlocks.COPPER_SOUL_LANTERN);
         addDrop(DecoBlocks.WAXED_COPPER_SOUL_LANTERN);

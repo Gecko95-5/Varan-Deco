@@ -133,33 +133,6 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS, BlockRenderLayer.CUTOUT);
 
-        BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WEATHERED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS, BlockRenderLayer.CUTOUT);
-
-        BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WEATHERED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN, BlockRenderLayer.CUTOUT);
-
-        BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WEATHERED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_SOUL_LANTERN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_SOUL_LANTERN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN, BlockRenderLayer.CUTOUT);

@@ -3168,73 +3168,65 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(Items.POLISHED_DEEPSLATE))
                         .offerTo(exporter, getRecipeName(DecoBlocks.POLISHED_DEEPSLATE_BUTTON) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.HEAVY_COPPER_BARS) + "_recipe_create");
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_HEAVY_COPPER_BARS,16)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.WAXED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.WAXED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.WAXED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_HEAVY_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.HEAVY_COPPER_BARS)
+//                 .pattern("##")
+//                 .pattern("##")
+//                 .input('#', DecoBlocks.COPPER_BARS)
+//                 .criterion(hasItem(DecoBlocks.COPPER_BARS),
+//                         conditionsFromItem(DecoBlocks.COPPER_BARS))
+//                         .offerTo(exporter, getRecipeName(DecoBlocks.HEAVY_COPPER_BARS) + "_recipe_create");
+//                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_HEAVY_COPPER_BARS,16)
+//                 .pattern("##")
+//                 .pattern("##")
+//                 .input('#', DecoBlocks.WAXED_COPPER_BARS)
+//                 .criterion(hasItem(DecoBlocks.WAXED_COPPER_BARS),
+//                         conditionsFromItem(DecoBlocks.WAXED_COPPER_BARS))
+//                         .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_HEAVY_COPPER_BARS) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.EXPOSED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.EXPOSED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.EXPOSED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS) + "_recipe_create");
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.WAXED_EXPOSED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.WAXED_EXPOSED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.WAXED_EXPOSED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.EXPOSED_HEAVY_COPPER_BARS)
+//                .pattern("##")
+//                .pattern("##")
+//                .input('#', DecoBlocks.EXPOSED_COPPER_BARS)
+//                .criterion(hasItem(DecoBlocks.EXPOSED_COPPER_BARS),
+//                        conditionsFromItem(DecoBlocks.EXPOSED_COPPER_BARS))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.EXPOSED_HEAVY_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS)
+//                .pattern("##")
+//                .pattern("##")
+//                .input('#', DecoBlocks.WAXED_EXPOSED_COPPER_BARS)
+//                .criterion(hasItem(DecoBlocks.WAXED_EXPOSED_COPPER_BARS),
+//                        conditionsFromItem(DecoBlocks.WAXED_EXPOSED_COPPER_BARS))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_EXPOSED_HEAVY_COPPER_BARS) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.WEATHERED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.WEATHERED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.WEATHERED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS) + "_recipe_create");
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.WAXED_WEATHERED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.WAXED_WEATHERED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.WAXED_WEATHERED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WEATHERED_HEAVY_COPPER_BARS)
+//                .pattern("##")
+//                .pattern("##")
+//                .input('#', DecoBlocks.WEATHERED_COPPER_BARS)
+//                .criterion(hasItem(DecoBlocks.WEATHERED_COPPER_BARS),
+//                        conditionsFromItem(DecoBlocks.WEATHERED_COPPER_BARS))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.WEATHERED_HEAVY_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS)
+//                .pattern("##")
+//                .pattern("##")
+//                .input('#', DecoBlocks.WAXED_WEATHERED_COPPER_BARS)
+//                .criterion(hasItem(DecoBlocks.WAXED_WEATHERED_COPPER_BARS),
+//                        conditionsFromItem(DecoBlocks.WAXED_WEATHERED_COPPER_BARS))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_WEATHERED_HEAVY_COPPER_BARS) + "_recipe_create");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.OXIDIZED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.OXIDIZED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.OXIDIZED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS) + "_recipe_create");
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.WAXED_OXIDIZED_COPPER_BARS)
-                .criterion(hasItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS),
-                        conditionsFromItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS) + "_recipe_create");
-
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.COPPER_BARS,16)
-                        .pattern("###")
-                        .pattern("###")
-                        .input('#', Items.COPPER_INGOT)
-                        .criterion(hasItem(Items.COPPER_INGOT),
-                                conditionsFromItem(Items.COPPER_INGOT))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS)
+//                .pattern("##")
+//                .pattern("##")
+//                .input('#', DecoBlocks.OXIDIZED_COPPER_BARS)
+//                .criterion(hasItem(DecoBlocks.OXIDIZED_COPPER_BARS),
+//                        conditionsFromItem(DecoBlocks.OXIDIZED_COPPER_BARS))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS) + "_recipe_create");
+//                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS)
+//                .pattern("##")
+//                .pattern("##")
+//                .input('#', DecoBlocks.WAXED_OXIDIZED_COPPER_BARS)
+//                .criterion(hasItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS),
+//                        conditionsFromItem(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.WAXED_OXIDIZED_HEAVY_COPPER_BARS) + "_recipe_create");
 
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.LIGHT_COPPER_BARS,16)
                         .pattern("###")
@@ -3492,15 +3484,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                                 conditionsFromItem(DecoBlocks.LAVENDER))
                         .offerTo(exporter, getRecipeName(Items.PURPLE_DYE) + "_from_lavender");
 
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.COPPER_LANTERN)
-                        .pattern("###")
-                        .pattern("#X#")
-                        .pattern("###")
-                        .input('X', Items.TORCH)
-                        .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
-                                conditionsFromItem(DecoItems.COPPER_NUGGET))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_LANTERN) + "_recipe_create");
                 createShaped(RecipeCategory.DECORATIONS,DecoBlocks.COPPER_SOUL_LANTERN)
                         .pattern("###")
                         .pattern("#X#")
@@ -3510,16 +3493,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(DecoItems.COPPER_NUGGET),
                                 conditionsFromItem(DecoItems.COPPER_NUGGET))
                         .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_SOUL_LANTERN) + "_recipe_create");
-
-                createShaped(RecipeCategory.DECORATIONS,DecoBlocks.COPPER_CHAIN)
-                        .pattern("#")
-                        .pattern("X")
-                        .pattern("#")
-                        .input('X', Items.COPPER_INGOT)
-                        .input('#', DecoItems.COPPER_NUGGET)
-                        .criterion(hasItem(DecoItems.COPPER_NUGGET),
-                                conditionsFromItem(DecoItems.COPPER_NUGGET))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.COPPER_CHAIN) + "_recipe_create");
 
                 offerPressurePlateRecipe(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Items.COPPER_INGOT);
 
@@ -4765,21 +4738,21 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, getRecipeName(Items.ICE) + "_recipe_create");
 
 
-                createShaped(RecipeCategory.REDSTONE,DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
-                        .pattern("#X#")
-                        .pattern("BPM")
-                        .pattern("#/#")
-                        .input('#', Items.COPPER_BLOCK)
-                        .input('X', DecoBlocks.COPPER_BARS)
-                        .input('/', Items.COPPER_INGOT)
-                        .input('B', DecoBlocks.BUBBLE_BLOCK)
-                        .input('P', Items.PISTON)
-                        .input('M', Items.MAGMA_BLOCK)
-                        .criterion(hasItem(DecoBlocks.BUBBLE_BLOCK),
-                                conditionsFromItem(DecoBlocks.BUBBLE_BLOCK))
-                        .criterion(hasItem(Items.MAGMA_BLOCK),
-                                conditionsFromItem(Items.MAGMA_BLOCK))
-                        .offerTo(exporter, getRecipeName(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE) + "_recipe_create");
+//                createShaped(RecipeCategory.REDSTONE,DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
+//                        .pattern("#X#")
+//                        .pattern("BPM")
+//                        .pattern("#/#")
+//                        .input('#', Items.COPPER_BLOCK)
+//                        .input('X', DecoBlocks.COPPER_BARS)
+//                        .input('/', Items.COPPER_INGOT)
+//                        .input('B', DecoBlocks.BUBBLE_BLOCK)
+//                        .input('P', Items.PISTON)
+//                        .input('M', Items.MAGMA_BLOCK)
+//                        .criterion(hasItem(DecoBlocks.BUBBLE_BLOCK),
+//                                conditionsFromItem(DecoBlocks.BUBBLE_BLOCK))
+//                        .criterion(hasItem(Items.MAGMA_BLOCK),
+//                                conditionsFromItem(Items.MAGMA_BLOCK))
+//                        .offerTo(exporter, getRecipeName(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE) + "_recipe_create");
 
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.POLISHED_SANDSTONE_SLAB);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_POLISHED_SANDSTONE, Items.SANDSTONE);

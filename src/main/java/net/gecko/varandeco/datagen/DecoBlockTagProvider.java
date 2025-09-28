@@ -275,14 +275,6 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE)
                 .addTag(DecoTags.Blocks.COPPER_BARS)
                 .addTag(DecoTags.Blocks.COPPER_LANTERN)
-                .add(DecoBlocks.COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_COPPER_CHAIN)
-                .add(DecoBlocks.EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE)
                 .add(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE)
@@ -423,14 +415,6 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.IRON_BARS)
                 .add(DecoBlocks.HEAVY_IRON_BARS)
                 .addTag(DecoTags.Blocks.COPPER_BARS)
-                .add(DecoBlocks.COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_COPPER_CHAIN)
-                .add(DecoBlocks.EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.IRON_GRATE)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
@@ -1293,15 +1277,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         valueLookupBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
-                .add(Blocks.CHAIN)
-                .add(DecoBlocks.COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_COPPER_CHAIN)
-                .add(DecoBlocks.EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
-                .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+                .add(Blocks.CHAIN);
 
         valueLookupBuilder(DecoTags.Blocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_GLASS)
@@ -1408,15 +1384,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_LIGHT_COPPER_BARS)
                 .add(DecoBlocks.WAXED_WEATHERED_LIGHT_COPPER_BARS)
                 .add(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS)
-                .add(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS)
-                .add(DecoBlocks.COPPER_BARS)
-                .add(DecoBlocks.WAXED_COPPER_BARS)
-                .add(DecoBlocks.EXPOSED_COPPER_BARS)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_BARS)
-                .add(DecoBlocks.WEATHERED_COPPER_BARS)
-                .add(DecoBlocks.WAXED_WEATHERED_COPPER_BARS)
-                .add(DecoBlocks.OXIDIZED_COPPER_BARS)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_BARS);
+                .add(DecoBlocks.WAXED_OXIDIZED_LIGHT_COPPER_BARS);
 
         valueLookupBuilder(BlockTags.SMALL_FLOWERS)
                 .add(DecoBlocks.YELLOW_TULIP)
@@ -1478,14 +1446,6 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MIGHTY_LAVENDER);
 
         valueLookupBuilder(DecoTags.Blocks.COPPER_LANTERN)
-                .add(DecoBlocks.COPPER_LANTERN)
-                .add(DecoBlocks.WAXED_COPPER_LANTERN)
-                .add(DecoBlocks.EXPOSED_COPPER_LANTERN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN)
-                .add(DecoBlocks.WEATHERED_COPPER_LANTERN)
-                .add(DecoBlocks.WAXED_EXPOSED_COPPER_LANTERN)
-                .add(DecoBlocks.OXIDIZED_COPPER_LANTERN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_LANTERN)
                 .add(DecoBlocks.COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.WAXED_COPPER_SOUL_LANTERN)
                 .add(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN)

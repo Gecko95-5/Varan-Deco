@@ -1366,23 +1366,6 @@ public class DecoBlocks {
     public static final Block WAXED_OXIDIZED_LIGHT_COPPER_BARS = registerBlock("waxed_oxidized_light_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_LIGHT_COPPER_BARS),PaneBlock::new);
 
-    public static final Block COPPER_BARS = registerOxidPane("copper_bars",
-            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.IRON_BARS);
-    public static final Block WAXED_COPPER_BARS = registerBlock("waxed_copper_bars",
-            AbstractBlock.Settings.copy(DecoBlocks.COPPER_BARS),PaneBlock::new);
-    public static final Block EXPOSED_COPPER_BARS = registerOxidPane("exposed_copper_bars",
-            Oxidizable.OxidationLevel.EXPOSED,Blocks.IRON_BARS);
-    public static final Block WAXED_EXPOSED_COPPER_BARS = registerBlock("waxed_exposed_copper_bars",
-            AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_BARS),PaneBlock::new);
-    public static final Block WEATHERED_COPPER_BARS = registerOxidPane("weathered_copper_bars",
-            Oxidizable.OxidationLevel.WEATHERED,Blocks.IRON_BARS);
-    public static final Block WAXED_WEATHERED_COPPER_BARS = registerBlock("waxed_weathered_copper_bars",
-            AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_BARS),PaneBlock::new);
-    public static final Block OXIDIZED_COPPER_BARS = registerOxidPane("oxidized_copper_bars",
-            Oxidizable.OxidationLevel.OXIDIZED,Blocks.IRON_BARS);
-    public static final Block WAXED_OXIDIZED_COPPER_BARS = registerBlock("waxed_oxidized_copper_bars",
-            AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_BARS),PaneBlock::new);
-
     public static final Block HEAVY_IRON_BARS = registerBlock("heavy_iron_bars",
             AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(10.0f,12.0f)
                     .mapColor(MapColor.IRON_GRAY),PaneBlock::new);
@@ -1403,23 +1386,6 @@ public class DecoBlocks {
             Oxidizable.OxidationLevel.OXIDIZED, DecoBlocks.HEAVY_IRON_BARS);
     public static final Block WAXED_OXIDIZED_HEAVY_COPPER_BARS = registerBlock("waxed_oxidized_heavy_copper_bars",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_HEAVY_COPPER_BARS),PaneBlock::new);
-
-    public static final Block COPPER_CHAIN = registerOxidChain("copper_chain",
-            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.CHAIN);
-    public static final Block WAXED_COPPER_CHAIN = registerBlock("waxed_copper_chain",
-            AbstractBlock.Settings.copy(DecoBlocks.COPPER_CHAIN),ChainBlock::new);
-    public static final Block EXPOSED_COPPER_CHAIN = registerOxidChain("exposed_copper_chain",
-            Oxidizable.OxidationLevel.EXPOSED,Blocks.CHAIN);
-    public static final Block WAXED_EXPOSED_COPPER_CHAIN = registerBlock("waxed_exposed_copper_chain",
-            AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_CHAIN),ChainBlock::new);
-    public static final Block WEATHERED_COPPER_CHAIN = registerOxidChain("weathered_copper_chain",
-            Oxidizable.OxidationLevel.WEATHERED,Blocks.CHAIN);
-    public static final Block WAXED_WEATHERED_COPPER_CHAIN = registerBlock("waxed_weathered_copper_chain",
-            AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_CHAIN),ChainBlock::new);
-    public static final Block OXIDIZED_COPPER_CHAIN = registerOxidChain("oxidized_copper_chain",
-            Oxidizable.OxidationLevel.OXIDIZED,Blocks.CHAIN);
-    public static final Block WAXED_OXIDIZED_COPPER_CHAIN = registerBlock("waxed_oxidized_copper_chain",
-            AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_CHAIN),ChainBlock::new);
 
     public static final Block STONE_WALL = registerBlock("stone_wall",
             AbstractBlock.Settings.copy(Blocks.STONE),WallBlock::new);
@@ -1937,23 +1903,6 @@ public class DecoBlocks {
     public static final Block TUFF_STONECUTTER = registerNonStationBlock("tuff_stonecutter",
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffStonecutterBlock::new);
-
-    public static final Block COPPER_LANTERN = registerOxidLantern("copper_lantern",
-            Oxidizable.OxidationLevel.UNAFFECTED,Blocks.LANTERN);
-    public static final Block WAXED_COPPER_LANTERN = registerBlock("waxed_copper_lantern",
-            AbstractBlock.Settings.copy(DecoBlocks.COPPER_LANTERN),LanternBlock::new);
-    public static final Block EXPOSED_COPPER_LANTERN = registerOxidLantern("exposed_copper_lantern",
-            Oxidizable.OxidationLevel.EXPOSED,Blocks.LANTERN);
-    public static final Block WAXED_EXPOSED_COPPER_LANTERN = registerBlock("waxed_exposed_copper_lantern",
-            AbstractBlock.Settings.copy(DecoBlocks.EXPOSED_COPPER_LANTERN),LanternBlock::new);
-    public static final Block WEATHERED_COPPER_LANTERN = registerOxidLantern("weathered_copper_lantern",
-            Oxidizable.OxidationLevel.WEATHERED,Blocks.LANTERN);
-    public static final Block WAXED_WEATHERED_COPPER_LANTERN = registerBlock("waxed_weathered_copper_lantern",
-            AbstractBlock.Settings.copy(DecoBlocks.WEATHERED_COPPER_LANTERN),LanternBlock::new);
-    public static final Block OXIDIZED_COPPER_LANTERN = registerOxidLantern("oxidized_copper_lantern",
-            Oxidizable.OxidationLevel.OXIDIZED,Blocks.LANTERN);
-    public static final Block WAXED_OXIDIZED_COPPER_LANTERN = registerBlock("waxed_oxidized_copper_lantern",
-            AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_LANTERN),LanternBlock::new);
 
     public static final Block COPPER_SOUL_LANTERN = registerOxidLantern("copper_soul_lantern",
             Oxidizable.OxidationLevel.UNAFFECTED,Blocks.SOUL_LANTERN);
@@ -2890,10 +2839,6 @@ public class DecoBlocks {
     public static TintedParticleLeavesBlock registerTintedLeaves(String name, float f,  Block copyBlock) {
         return registerSimple(name, new TintedParticleLeavesBlock(f,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
-    }
-    public static OxidizableChainBlock registerOxidChain(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
-        return registerSimple(name, new OxidizableChainBlock(oxidationLevel,
-                AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER_GRATE).registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static OxidizableLanternBlock registerOxidLantern(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
         return registerSimple(name, new OxidizableLanternBlock(oxidationLevel,
