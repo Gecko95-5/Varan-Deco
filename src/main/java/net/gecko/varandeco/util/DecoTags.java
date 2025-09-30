@@ -3,9 +3,9 @@ package net.gecko.varandeco.util;
 import net.gecko.varandeco.VaranDeco;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class DecoTags {
     public static class Blocks {
@@ -65,7 +65,7 @@ public class DecoTags {
                 createTag("infested_blocks");
 
         private static TagKey<Block> createTag(String name){
-            return TagKey.of(Registry.BLOCK_KEY, new Identifier(VaranDeco.MOD_ID, name));
+            return TagKey.of(Registries.BLOCK.getKey(), new Identifier(VaranDeco.MOD_ID, name));
         }
     }
     public static class Items {
@@ -106,7 +106,7 @@ public class DecoTags {
                 createTag("water_items");
 
         private static TagKey<Item> createTag(String name){
-            return TagKey.of(Registry.ITEM_KEY, new Identifier(VaranDeco.MOD_ID, name));
+            return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));
         }
     }
 }

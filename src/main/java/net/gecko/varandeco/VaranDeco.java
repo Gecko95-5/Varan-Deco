@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.gecko.varandeco.entity.DecoEntities;
+import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
@@ -21,10 +22,10 @@ public class VaranDeco implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		DecoItemGroup.registerItemGroup();
 		DecoItems.registerDecoItems();
 		DecoBlocks.registerDecoBlocks();
 		DecoBlockEntities.registerBlockEntities();
-		DecoConfiguredFeatures.registerConfiguredFeatures();
 		DecoWorldGeneration.generateWorldGen();
 		DecoCustomTrades.registerCustomTrades();
 		DecoPotion.registerPotions();

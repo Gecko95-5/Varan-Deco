@@ -5,14 +5,19 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Oxidizable;
 import net.minecraft.block.WeightedPressurePlateBlock;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 
 public class OxidizablePressurePlateBlock extends WeightedPressurePlateBlock implements Oxidizable {
     private final Oxidizable.OxidationLevel oxidationLevel;
-    public OxidizablePressurePlateBlock(Oxidizable.OxidationLevel oxidationLevel,int weight, AbstractBlock.Settings settings) {
-        super(weight, settings);
+    private final SoundEvent depressSound;
+    private final SoundEvent pressSound;
+    public OxidizablePressurePlateBlock(Oxidizable.OxidationLevel oxidationLevel, int weight, AbstractBlock.Settings settings, SoundEvent depressSound, SoundEvent pressSound) {
+        super(weight, settings, depressSound, pressSound);
         this.oxidationLevel = oxidationLevel;
+        this.depressSound = depressSound;
+        this.pressSound = pressSound;
     }
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {

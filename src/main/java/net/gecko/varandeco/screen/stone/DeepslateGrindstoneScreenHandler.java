@@ -100,8 +100,8 @@ public class DeepslateGrindstoneScreenHandler extends ScreenHandler {
 				Map<Enchantment, Integer> map = EnchantmentHelper.get(stack);
 
 				for (Entry<Enchantment, Integer> entry : map.entrySet()) {
-					Enchantment enchantment = entry.getKey();
-					Integer integer = entry.getValue();
+					Enchantment enchantment = (Enchantment)entry.getKey();
+					Integer integer = (Integer)entry.getValue();
 					if (!enchantment.isCursed()) {
 						i += enchantment.getMinPower(integer);
 					}
@@ -139,7 +139,7 @@ public class DeepslateGrindstoneScreenHandler extends ScreenHandler {
 			this.result.setStack(0, ItemStack.EMPTY);
 		} else {
 			boolean bl3 = !itemStack.isEmpty() && !itemStack.isOf(Items.ENCHANTED_BOOK) && !itemStack.hasEnchantments()
-				|| !itemStack2.isEmpty() && !itemStack2.isOf(Items.ENCHANTED_BOOK) && !itemStack2.hasEnchantments();
+					|| !itemStack2.isEmpty() && !itemStack2.isOf(Items.ENCHANTED_BOOK) && !itemStack2.hasEnchantments();
 			if (itemStack.getCount() > 1 || itemStack2.getCount() > 1 || !bl2 && bl3) {
 				this.result.setStack(0, ItemStack.EMPTY);
 				this.sendContentUpdates();
@@ -188,9 +188,9 @@ public class DeepslateGrindstoneScreenHandler extends ScreenHandler {
 		Map<Enchantment, Integer> map = EnchantmentHelper.get(source);
 
 		for (Entry<Enchantment, Integer> entry : map.entrySet()) {
-			Enchantment enchantment = entry.getKey();
+			Enchantment enchantment = (Enchantment)entry.getKey();
 			if (!enchantment.isCursed() || EnchantmentHelper.getLevel(enchantment, itemStack) == 0) {
-				itemStack.addEnchantment(enchantment, entry.getValue());
+				itemStack.addEnchantment(enchantment, (Integer)entry.getValue());
 			}
 		}
 
@@ -208,11 +208,11 @@ public class DeepslateGrindstoneScreenHandler extends ScreenHandler {
 		}
 
 		itemStack.setCount(amount);
-		Map<Enchantment, Integer> map = EnchantmentHelper.get(item)
-			.entrySet()
-			.stream()
-			.filter(entry -> entry.getKey().isCursed())
-			.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
+		Map<Enchantment, Integer> map = (Map<Enchantment, Integer>)EnchantmentHelper.get(item)
+				.entrySet()
+				.stream()
+				.filter(entry -> ((Enchantment)entry.getKey()).isCursed())
+				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 		EnchantmentHelper.set(map, itemStack);
 		itemStack.setRepairCost(0);
 		if (itemStack.isOf(Items.ENCHANTED_BOOK) && map.size() == 0) {
@@ -241,27 +241,27 @@ public class DeepslateGrindstoneScreenHandler extends ScreenHandler {
 	}
 
 	@Override
-	public ItemStack transferSlot(PlayerEntity player, int index) {
+	public ItemStack quickMove(PlayerEntity player, int slot) {
 		ItemStack itemStack = ItemStack.EMPTY;
-		Slot slot = this.slots.get(index);
-		if (slot != null && slot.hasStack()) {
-			ItemStack itemStack2 = slot.getStack();
+		Slot slot2 = this.slots.get(slot);
+		if (slot2 != null && slot2.hasStack()) {
+			ItemStack itemStack2 = slot2.getStack();
 			itemStack = itemStack2.copy();
 			ItemStack itemStack3 = this.input.getStack(0);
 			ItemStack itemStack4 = this.input.getStack(1);
-			if (index == 2) {
+			if (slot == 2) {
 				if (!this.insertItem(itemStack2, 3, 39, true)) {
 					return ItemStack.EMPTY;
 				}
 
-				slot.onQuickTransfer(itemStack2, itemStack);
-			} else if (index != 0 && index != 1) {
+				slot2.onQuickTransfer(itemStack2, itemStack);
+			} else if (slot != 0 && slot != 1) {
 				if (!itemStack3.isEmpty() && !itemStack4.isEmpty()) {
-					if (index >= 3 && index < 30) {
+					if (slot >= 3 && slot < 30) {
 						if (!this.insertItem(itemStack2, 30, 39, false)) {
 							return ItemStack.EMPTY;
 						}
-					} else if (index >= 30 && index < 39 && !this.insertItem(itemStack2, 3, 30, false)) {
+					} else if (slot >= 30 && slot < 39 && !this.insertItem(itemStack2, 3, 30, false)) {
 						return ItemStack.EMPTY;
 					}
 				} else if (!this.insertItem(itemStack2, 0, 2, false)) {
@@ -272,16 +272,16 @@ public class DeepslateGrindstoneScreenHandler extends ScreenHandler {
 			}
 
 			if (itemStack2.isEmpty()) {
-				slot.setStack(ItemStack.EMPTY);
+				slot2.setStack(ItemStack.EMPTY);
 			} else {
-				slot.markDirty();
+				slot2.markDirty();
 			}
 
 			if (itemStack2.getCount() == itemStack.getCount()) {
 				return ItemStack.EMPTY;
 			}
 
-			slot.onTakeItem(player, itemStack2);
+			slot2.onTakeItem(player, itemStack2);
 		}
 
 		return itemStack;

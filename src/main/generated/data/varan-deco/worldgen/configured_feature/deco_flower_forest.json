@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_provider",
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.020833334,
+            "seed": 2345,
+            "states": [
+              {
+                "Name": "varan-deco:yellow_tulip"
+              },
+              {
+                "Name": "varan-deco:purple_tulip"
+              },
+              {
+                "Name": "varan-deco:magenta_tulip"
+              },
+              {
+                "Name": "varan-deco:blue_tulip"
+              },
+              {
+                "Name": "varan-deco:barberton_daisy"
+              },
+              {
+                "Name": "varan-deco:gerbera_daisy"
+              },
+              {
+                "Name": "varan-deco:white_orchid"
+              },
+              {
+                "Name": "varan-deco:pink_orchid"
+              },
+              {
+                "Name": "varan-deco:yellow_orchid"
+              },
+              {
+                "Name": "minecraft:blue_orchid"
+              },
+              {
+                "Name": "varan-deco:salmon_poppy"
+              },
+              {
+                "Name": "varan-deco:rose"
+              },
+              {
+                "Name": "varan-deco:paeonia"
+              },
+              {
+                "Name": "varan-deco:lavender"
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

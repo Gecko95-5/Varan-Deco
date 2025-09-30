@@ -8,8 +8,9 @@ import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.recipe.BrewingRecipeRegistry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class DecoPotion {
 
@@ -19,16 +20,16 @@ public class DecoPotion {
 
 
     public static Potion registerBubblePotion(String name) {
-        return Registry.register(Registry.POTION, new Identifier(VaranDeco.MOD_ID, name),
+        return Registry.register(Registries.POTION, new Identifier(VaranDeco.MOD_ID, name),
                 new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1800, 0),
                         new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1800, 0)));
     }    public static Potion registerStrongBubblePotion(String name) {
-        return Registry.register(Registry.POTION, new Identifier(VaranDeco.MOD_ID, name),
+        return Registry.register(Registries.POTION, new Identifier(VaranDeco.MOD_ID, name),
                 new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 900, 0),
                         new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 900, 0)));
     }
     public static Potion registerLongBubblePotion(String name) {
-        return Registry.register(Registry.POTION, new Identifier(VaranDeco.MOD_ID, name),
+        return Registry.register(Registries.POTION, new Identifier(VaranDeco.MOD_ID, name),
                 new Potion(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 4800, 0),
                         new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0)));
     }

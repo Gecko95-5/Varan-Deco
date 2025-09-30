@@ -50,10 +50,7 @@ public class SnowBrickProjectileEntity extends ThrownItemEntity {
         }
     }
 
-    @Override
-    public Packet<?> createSpawnPacket() {
-        return new EntitySpawnS2CPacket(this);
-    }
+
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);

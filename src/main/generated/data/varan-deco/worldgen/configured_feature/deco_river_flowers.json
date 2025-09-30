@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:dual_noise_provider",
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": -3
+            },
+            "scale": 0.005,
+            "seed": 2345,
+            "slow_noise": {
+              "amplitudes": [
+                2.0
+              ],
+              "firstOctave": -20
+            },
+            "slow_scale": 0.5,
+            "states": [
+              {
+                "Name": "varan-deco:pink_orchid"
+              },
+              {
+                "Name": "varan-deco:white_orchid"
+              },
+              {
+                "Name": "varan-deco:salmon_poppy"
+              },
+              {
+                "Name": "varan-deco:lavender"
+              }
+            ],
+            "variety": [
+              1,
+              3
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 32,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

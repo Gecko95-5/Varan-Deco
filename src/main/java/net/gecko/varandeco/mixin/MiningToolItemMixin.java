@@ -1,12 +1,14 @@
 package net.gecko.varandeco.mixin;
 
 import net.fabricmc.yarn.constants.MiningLevels;
-import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.*;
-import net.minecraft.tag.BlockTags;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.MiningToolItem;
+import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;

@@ -5,11 +5,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.projectile.ProjectileEntity;
-import net.minecraft.tag.EntityTypeTags;
-import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.registry.tag.EntityTypeTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
