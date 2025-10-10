@@ -113,10 +113,12 @@ public class DecoBlocks {
                     .strength(1.0f).resistance(0.7f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block POLISHED_STONE = registerBlock("polished_stone",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2.5f).resistance(6.0f).requiresTool()));
+    //This Block 's textures reference is made by this company https://3rdstreetinn.com/collections/interlocking-slate-tiles
     public static final Block STONE_TILES = registerBlock("stone_tiles",
             new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f).resistance(6.0f).requiresTool()));
     public static final Block CRACKED_STONE_TILES = registerBlock("cracked_stone_tiles",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)));
+
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)));
     public static final Block CHISELED_END_STONE = registerBlock("chiseled_end_stone",
