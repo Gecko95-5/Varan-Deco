@@ -6,11 +6,16 @@ import net.gecko.varandeco.block.barrels.*;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.*;
+import net.gecko.varandeco.block.custom.DriedLeafBlock;
+import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
+import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
-import net.gecko.varandeco.block.oxidizable.*;
+import net.gecko.varandeco.block.oxidizable.OxidizableButtonBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizableLanternBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizablePaneBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizablePressurePlateBlock;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.underwaterwood.*;
@@ -144,9 +149,12 @@ public class DecoBlocks {
     public static final Block POLISHED_STONE = registerBlock("polished_stone",
             AbstractBlock.Settings.create().strength(2.5f).resistance(6.0f).requiresTool()
                     .mapColor(MapColor.STONE_GRAY), Block::new);
+
+    //This Block 's textures reference is made by this company https://3rdstreetinn.com/collections/interlocking-slate-tiles
     public static final Block STONE_TILES = registerBlock("stone_tiles",
             AbstractBlock.Settings.create().strength(1.5f).resistance(6.0f).requiresTool()
                     .mapColor(MapColor.STONE_GRAY), Block::new);
+
     public static final Block CRACKED_STONE_TILES = registerBlock("cracked_stone_tiles",
             AbstractBlock.Settings.copy(DecoBlocks.STONE_TILES), Block::new);
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
