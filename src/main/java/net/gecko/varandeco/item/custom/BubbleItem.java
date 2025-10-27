@@ -29,7 +29,7 @@ public class BubbleItem extends Item {
         if (context.getSide() != Direction.DOWN && blockState.isIn(BlockTags.CONVERTABLE_TO_MUD)) {
             itemStack.decrement(1);
             world.playSound(null, blockPos, SoundEvents.ENTITY_GENERIC_SPLASH, SoundCategory.PLAYERS, 1.0F, 1.0F);
-            if (!world.isClient) {
+            if (!world.isClient()) {
                 ServerWorld serverWorld = (ServerWorld)world;
 
                 for (int i = 0; i < 5; i++) {

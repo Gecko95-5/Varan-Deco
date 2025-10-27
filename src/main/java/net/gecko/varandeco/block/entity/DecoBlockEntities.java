@@ -60,6 +60,7 @@ public class DecoBlockEntities {
 
     public static void registerBlockEntities(){
 
+
         DEEPSLATE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(DeepslateFurnaceBlockEntity::new,

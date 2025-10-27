@@ -42,7 +42,7 @@ public class CherrySmithingScreenHandler extends ForgingScreenHandler {
 	}
 
 	public CherrySmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-		this(syncId, playerInventory, context, playerInventory.player.getWorld());
+		this(syncId, playerInventory, context, playerInventory.player.getEntityWorld());
 	}
 
 	private CherrySmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context, World world) {

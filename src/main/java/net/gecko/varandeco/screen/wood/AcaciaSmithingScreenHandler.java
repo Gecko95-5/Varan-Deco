@@ -42,7 +42,7 @@ public class AcaciaSmithingScreenHandler extends ForgingScreenHandler {
 	}
 
 	public AcaciaSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-		this(syncId, playerInventory, context, playerInventory.player.getWorld());
+		this(syncId, playerInventory, context, playerInventory.player.getEntityWorld());
 	}
 
 	private AcaciaSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context, World world) {

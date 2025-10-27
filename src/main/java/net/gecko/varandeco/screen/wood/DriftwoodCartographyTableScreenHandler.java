@@ -65,7 +65,7 @@ public class DriftwoodCartographyTableScreenHandler extends ScreenHandler {
 			public void onTakeItem(PlayerEntity player, ItemStack stack) {
 				DriftwoodCartographyTableScreenHandler.this.slots.get(0).takeStack(1);
 				DriftwoodCartographyTableScreenHandler.this.slots.get(1).takeStack(1);
-				stack.getItem().onCraft(stack, player.getWorld());
+				stack.getItem().onCraft(stack, player.getEntityWorld());
 				context.run((world, pos) -> {
 					long l = world.getTime();
 					if (DriftwoodCartographyTableScreenHandler.this.lastTakeResultTime != l) {
@@ -152,7 +152,7 @@ public class DriftwoodCartographyTableScreenHandler extends ScreenHandler {
 			ItemStack itemStack2 = slot2.getStack();
 			itemStack = itemStack2.copy();
 			if (slot == 2) {
-				itemStack2.getItem().onCraft(itemStack2, player.getWorld());
+				itemStack2.getItem().onCraft(itemStack2, player.getEntityWorld());
 				if (!this.insertItem(itemStack2, 3, 39, true)) {
 					return ItemStack.EMPTY;
 				}

@@ -57,7 +57,7 @@ public class BlackstoneStonecutterScreenHandler extends ScreenHandler {
 	public BlackstoneStonecutterScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
 		super(ScreenHandlerType.STONECUTTER, syncId);
 		this.context = context;
-		this.world = playerInventory.player.getWorld();
+		this.world = playerInventory.player.getEntityWorld();
 		this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 33));
 		this.outputSlot = this.addSlot(new Slot(this.output, 1, 143, 33) {
 			@Override

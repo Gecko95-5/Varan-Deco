@@ -251,6 +251,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CRACKED_STONE_TILES);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES);
 
+        blockStateModelGenerator.registerShelf(DecoBlocks.DRIFTWOOD_SHELF, DecoBlocks.STRIPPED_DRIFTWOOD);
+        blockStateModelGenerator.registerShelf(DecoBlocks.WOODEN_SHELF, DecoBlocks.STRIPPED_WOODEN_WOOD);
+
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlantAndItem(DecoBlocks.PURPLE_TULIP, DecoBlocks.POTTED_PURPLE_TULIP,

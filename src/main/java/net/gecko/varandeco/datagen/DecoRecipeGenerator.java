@@ -5898,6 +5898,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .criterion(hasItem(Items.LEAF_LITTER),
                                 conditionsFromItem(Items.LEAF_LITTER))
                         .offerTo(exporter, getRecipeName(DecoBlocks.DRIED_LEAVES) + "_recipe_create");
+
+                offerShelfRecipe(DecoBlocks.DRIFTWOOD_SHELF, DecoBlocks.STRIPPED_DRIFTWOOD);
+                offerShelfRecipe(DecoBlocks.WOODEN_SHELF, DecoBlocks.STRIPPED_WOODEN_WOOD);
             }
         };
     }

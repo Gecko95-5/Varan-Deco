@@ -42,7 +42,7 @@ public class PaleOakSmithingScreenHandler extends ForgingScreenHandler {
 	}
 
 	public PaleOakSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-		this(syncId, playerInventory, context, playerInventory.player.getWorld());
+		this(syncId, playerInventory, context, playerInventory.player.getEntityWorld());
 	}
 
 	private PaleOakSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context, World world) {

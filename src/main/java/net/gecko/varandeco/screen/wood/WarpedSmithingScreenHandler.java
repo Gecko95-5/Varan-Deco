@@ -42,7 +42,7 @@ public class WarpedSmithingScreenHandler extends ForgingScreenHandler {
 	}
 
 	public WarpedSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-		this(syncId, playerInventory, context, playerInventory.player.getWorld());
+		this(syncId, playerInventory, context, playerInventory.player.getEntityWorld());
 	}
 
 	private WarpedSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context, World world) {

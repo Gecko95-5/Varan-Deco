@@ -19,8 +19,9 @@ public class DriedLeafBlock extends Block {
     public MapCodec<DriedLeafBlock> getCodec() {
         return CODEC;
     }
+
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean bl) {
         Vec3d vec3d = new Vec3d(0.9, 0.9F, 0.9);
 
         entity.slowMovement(state, vec3d);

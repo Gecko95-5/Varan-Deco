@@ -7,6 +7,7 @@ import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -1277,7 +1278,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         valueLookupBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
-                .add(Blocks.CHAIN);
+                .add(Blocks.IRON_CHAIN)
+                .add(Blocks.COPPER_CHAINS.getAll());
 
         valueLookupBuilder(DecoTags.Blocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_GLASS)
@@ -1549,5 +1551,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         valueLookupBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
+
+        valueLookupBuilder(BlockTags.WOODEN_SHELVES)
+                .add(DecoBlocks.DRIFTWOOD_SHELF)
+                .add(DecoBlocks.WOODEN_SHELF);
     }
 }

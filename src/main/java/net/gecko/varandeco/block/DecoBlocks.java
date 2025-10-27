@@ -13,8 +13,6 @@ import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.OxidizableButtonBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizableLanternBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizablePaneBlock;
 import net.gecko.varandeco.block.oxidizable.OxidizablePressurePlateBlock;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
@@ -1939,6 +1937,11 @@ public class DecoBlocks {
                     .mapColor(MapColor.DARK_RED).sounds(BlockSoundGroup.COPPER_BULB).postProcess(DecoBlocks::always).ticksRandomly()
                     .emissiveLighting(DecoBlocks::always).luminance(state -> 3),BubbleElevatorMagmaBlock::new);
 
+    public static final Block DRIFTWOOD_SHELF = registerBlock("driftwood_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF),ShelfBlock::new);
+    public static final Block WOODEN_SHELF = registerBlock("wooden_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF),ShelfBlock::new);
+
     public static final Block DEEPSLATE_BUTTON = registerButton("deepslate_button",
             DecoBlockSets.DEEPSLATE, 20,Blocks.STONE_BUTTON);
     public static final Block COBBLED_DEEPSLATE_BUTTON = registerButton("cobbled_deepslate_button",
@@ -2850,7 +2853,7 @@ public class DecoBlocks {
     }
     public static OxidizableLanternBlock registerOxidLantern(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock) {
         return registerSimple(name, new OxidizableLanternBlock(oxidationLevel,
-                AbstractBlock.Settings.copy(copyBlock).sounds(BlockSoundGroup.COPPER).registryKey(DecoBlocks.getBlockKey(name))));
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static ButtonBlock registerButton(String name, BlockSetType blockSetType, int pressTicks, Block copyBlock) {
         return registerSimple(name, new ButtonBlock(blockSetType, pressTicks,

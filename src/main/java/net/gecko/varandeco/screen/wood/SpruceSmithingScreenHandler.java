@@ -42,7 +42,7 @@ public class SpruceSmithingScreenHandler extends ForgingScreenHandler {
 	}
 
 	public SpruceSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-		this(syncId, playerInventory, context, playerInventory.player.getWorld());
+		this(syncId, playerInventory, context, playerInventory.player.getEntityWorld());
 	}
 
 	private SpruceSmithingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context, World world) {
