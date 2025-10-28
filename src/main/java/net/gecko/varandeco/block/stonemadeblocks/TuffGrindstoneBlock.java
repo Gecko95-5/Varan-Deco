@@ -1,7 +1,6 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
 import com.mojang.serialization.MapCodec;
-import net.gecko.varandeco.screen.stone.DeepslateGrindstoneScreenHandler;
 import net.gecko.varandeco.screen.stone.TuffGrindstoneScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.BlockFace;

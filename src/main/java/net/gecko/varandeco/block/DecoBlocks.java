@@ -6,9 +6,7 @@ import net.gecko.varandeco.block.barrels.*;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.DriedLeafBlock;
-import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
-import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.flowers.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
@@ -1936,11 +1934,6 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
                     .mapColor(MapColor.DARK_RED).sounds(BlockSoundGroup.COPPER_BULB).postProcess(DecoBlocks::always).ticksRandomly()
                     .emissiveLighting(DecoBlocks::always).luminance(state -> 3),BubbleElevatorMagmaBlock::new);
-
-    public static final Block DRIFTWOOD_SHELF = registerBlock("driftwood_shelf",
-            AbstractBlock.Settings.copy(Blocks.OAK_SHELF),ShelfBlock::new);
-    public static final Block WOODEN_SHELF = registerBlock("wooden_shelf",
-            AbstractBlock.Settings.copy(Blocks.OAK_SHELF),ShelfBlock::new);
 
     public static final Block DEEPSLATE_BUTTON = registerButton("deepslate_button",
             DecoBlockSets.DEEPSLATE, 20,Blocks.STONE_BUTTON);

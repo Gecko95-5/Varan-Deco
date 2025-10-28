@@ -919,8 +919,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.CACTUS_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.DRIFTWOOD_BOOKSHELF.asItem());
-                        entries.add(DecoBlocks.DRIFTWOOD_SHELF.asItem());
-                        entries.add(DecoBlocks.WOODEN_SHELF.asItem());
                         entries.add(DecoBlocks.OAK_BARREL.asItem());
                         entries.add(DecoBlocks.SPRUCE_BARREL.asItem());
                         entries.add(DecoBlocks.BIRCH_BARREL.asItem());

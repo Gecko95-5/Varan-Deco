@@ -1551,9 +1551,5 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         valueLookupBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .addTag(DecoTags.Blocks.DECO_BOOKSHELVES);
-
-        valueLookupBuilder(BlockTags.WOODEN_SHELVES)
-                .add(DecoBlocks.DRIFTWOOD_SHELF)
-                .add(DecoBlocks.WOODEN_SHELF);
     }
 }
