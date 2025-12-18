@@ -342,7 +342,20 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_PURPUR)
                 .add(DecoBlocks.POLISHED_PURPUR_STAIRS)
                 .add(DecoBlocks.POLISHED_PURPUR_SLAB)
-                .add(DecoBlocks.POLISHED_PURPUR_WALL);
+                .add(DecoBlocks.POLISHED_PURPUR_WALL)
+                .add(DecoBlocks.PACKED_NETHERRACK)
+                .add(DecoBlocks.NETHERRACK_BRICKS)
+                .add(DecoBlocks.CHISELED_ICE_BRICKS)
+                .add(DecoBlocks.CHISELED_MUD_BRICKS)
+                .add(DecoBlocks.CHISELED_NETHERRACK_BRICKS)
+                .add(DecoBlocks.PACKED_NETHERRACK_STAIRS)
+                .add(DecoBlocks.PACKED_NETHERRACK_SLAB)
+                .add(DecoBlocks.PACKED_NETHERRACK_WALL)
+                .add(DecoBlocks.NETHERRACK_BRICK_STAIRS)
+                .add(DecoBlocks.NETHERRACK_BRICK_SLAB)
+                .add(DecoBlocks.NETHERRACK_BRICK_WALL)
+                .add(DecoBlocks.SMOOTH_GLOWSTONE)
+                .add(DecoBlocks.BASALT_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -494,7 +507,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_WALL)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
                 .add(DecoBlocks.POLISHED_PURPUR_WALL)
-                .addTag(DecoTags.Blocks.LOG_WALLS);
+                .addTag(DecoTags.Blocks.LOG_WALLS)
+                .add(DecoBlocks.PACKED_NETHERRACK_WALL)
+                .add(DecoBlocks.NETHERRACK_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -580,7 +595,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.POLISHED_PURPUR_STAIRS)
-                .addTag(DecoTags.Blocks.LOG_STAIRS);
+                .addTag(DecoTags.Blocks.LOG_STAIRS)
+                .add(DecoBlocks.PACKED_NETHERRACK_STAIRS)
+                .add(DecoBlocks.NETHERRACK_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -636,7 +653,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.RED_SANDSTONE_BRICK_SLAB)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
                 .add(DecoBlocks.POLISHED_PURPUR_SLAB)
-                .addTag(DecoTags.Blocks.LOG_SLABS);
+                .addTag(DecoTags.Blocks.LOG_SLABS)
+                .add(DecoBlocks.PACKED_NETHERRACK_SLAB)
+                .add(DecoBlocks.NETHERRACK_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -660,11 +679,33 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR)
-                .add(DecoBlocks.WOODEN_DOOR);
+                .add(DecoBlocks.WOODEN_DOOR)
+                .add(DecoBlocks.OAK_PALLET_DOOR)
+                .add(DecoBlocks.SPRUCE_PALLET_DOOR)
+                .add(DecoBlocks.BIRCH_PALLET_DOOR)
+                .add(DecoBlocks.JUNGLE_PALLET_DOOR)
+                .add(DecoBlocks.ACACIA_PALLET_DOOR)
+                .add(DecoBlocks.DARK_OAK_PALLET_DOOR)
+                .add(DecoBlocks.MANGROVE_PALLET_DOOR)
+                .add(DecoBlocks.CRIMSON_PALLET_DOOR)
+                .add(DecoBlocks.WARPED_PALLET_DOOR)
+                .add(DecoBlocks.CACTUS_PALLET_DOOR)
+                .add(DecoBlocks.WOODEN_PALLET_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(DecoBlocks.CACTUS_TRAPDOOR)
-                .add(DecoBlocks.WOODEN_TRAPDOOR);
+                .add(DecoBlocks.WOODEN_TRAPDOOR)
+                .add(DecoBlocks.OAK_PALLET_TRAPDOOR)
+                .add(DecoBlocks.SPRUCE_PALLET_TRAPDOOR)
+                .add(DecoBlocks.BIRCH_PALLET_TRAPDOOR)
+                .add(DecoBlocks.JUNGLE_PALLET_TRAPDOOR)
+                .add(DecoBlocks.ACACIA_PALLET_TRAPDOOR)
+                .add(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR)
+                .add(DecoBlocks.MANGROVE_PALLET_TRAPDOOR)
+                .add(DecoBlocks.CRIMSON_PALLET_TRAPDOOR)
+                .add(DecoBlocks.WARPED_PALLET_TRAPDOOR)
+                .add(DecoBlocks.CACTUS_PALLET_TRAPDOOR)
+                .add(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
                 .add(DecoBlocks.STANDING_CACTUS_SIGN)
@@ -1373,5 +1414,23 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL)
                 .add(DecoBlocks.WOODEN_WOOD_WALL)
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.COLOURED_LAMPS)
+                .add(DecoBlocks.WHITE_LAMP)
+                .add(DecoBlocks.LIGHT_GRAY_LAMP)
+                .add(DecoBlocks.GRAY_LAMP)
+                .add(DecoBlocks.BLACK_LAMP)
+                .add(DecoBlocks.BROWN_LAMP)
+                .add(DecoBlocks.RED_LAMP)
+                .add(DecoBlocks.ORANGE_LAMP)
+                .add(DecoBlocks.YELLOW_LAMP)
+                .add(DecoBlocks.LIME_LAMP)
+                .add(DecoBlocks.GREEN_LAMP)
+                .add(DecoBlocks.CYAN_LAMP)
+                .add(DecoBlocks.LIGHT_BLUE_LAMP)
+                .add(DecoBlocks.BLUE_LAMP)
+                .add(DecoBlocks.PURPLE_LAMP)
+                .add(DecoBlocks.MAGENTA_LAMP)
+                .add(DecoBlocks.PINK_LAMP);
     }
 }

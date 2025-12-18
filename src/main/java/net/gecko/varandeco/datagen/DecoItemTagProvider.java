@@ -50,10 +50,34 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
-                .add(DecoBlocks.CACTUS_DOOR.asItem());
+                .add(DecoBlocks.CACTUS_DOOR.asItem())
+                .add(DecoBlocks.WOODEN_DOOR.asItem())
+                .add(DecoBlocks.OAK_PALLET_DOOR.asItem())
+                .add(DecoBlocks.SPRUCE_PALLET_DOOR.asItem())
+                .add(DecoBlocks.BIRCH_PALLET_DOOR.asItem())
+                .add(DecoBlocks.JUNGLE_PALLET_DOOR.asItem())
+                .add(DecoBlocks.ACACIA_PALLET_DOOR.asItem())
+                .add(DecoBlocks.DARK_OAK_PALLET_DOOR.asItem())
+                .add(DecoBlocks.MANGROVE_PALLET_DOOR.asItem())
+                .add(DecoBlocks.CRIMSON_PALLET_DOOR.asItem())
+                .add(DecoBlocks.WARPED_PALLET_DOOR.asItem())
+                .add(DecoBlocks.CACTUS_PALLET_DOOR.asItem())
+                .add(DecoBlocks.WOODEN_PALLET_DOOR.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
-                .add(DecoBlocks.CACTUS_TRAPDOOR.asItem());
+                .add(DecoBlocks.CACTUS_TRAPDOOR.asItem())
+                .add(DecoBlocks.WOODEN_TRAPDOOR.asItem())
+                .add(DecoBlocks.OAK_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.SPRUCE_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.BIRCH_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.JUNGLE_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.ACACIA_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.MANGROVE_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.CRIMSON_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.WARPED_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.CACTUS_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.WOODEN_PALLET_TRAPDOOR.asItem());
 
         getOrCreateTagBuilder(ItemTags.SIGNS)
                 .add(DecoBlocks.STANDING_CACTUS_SIGN.asItem())
@@ -197,5 +221,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(DecoTags.Items.MUSHROOMS)
                 .add(Items.RED_MUSHROOM.asItem())
                 .add(Items.BROWN_MUSHROOM.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.SOUL_GROUND_BLOCKS)
+                .add(Items.SOUL_SAND.asItem())
+                .add(Items.SOUL_SOIL.asItem());
     }
 }

@@ -2,6 +2,17 @@
   "replace": false,
   "values": [
     "varan-deco:cactus_trapdoor",
-    "varan-deco:wooden_trapdoor"
+    "varan-deco:wooden_trapdoor",
+    "varan-deco:oak_pallet_trapdoor",
+    "varan-deco:spruce_pallet_trapdoor",
+    "varan-deco:birch_pallet_trapdoor",
+    "varan-deco:jungle_pallet_trapdoor",
+    "varan-deco:acacia_pallet_trapdoor",
+    "varan-deco:dark_oak_pallet_trapdoor",
+    "varan-deco:mangrove_pallet_trapdoor",
+    "varan-deco:crimson_pallet_trapdoor",
+    "varan-deco:warped_pallet_trapdoor",
+    "varan-deco:cactus_pallet_trapdoor",
+    "varan-deco:wooden_pallet_trapdoor"
   ]
 }

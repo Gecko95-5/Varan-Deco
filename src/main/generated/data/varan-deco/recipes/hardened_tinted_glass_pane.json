@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stained_glass_pane",
+  "group": "hardened_glass_pane",
   "key": {
     "#": {
       "item": "varan-deco:hardened_tinted_glass"
@@ -11,7 +11,7 @@
     "###"
   ],
   "result": {
-    "count": 16,
+    "count": 18,
     "item": "varan-deco:hardened_tinted_glass_pane"
   }
 }

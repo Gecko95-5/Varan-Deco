@@ -7,9 +7,7 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
-import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
-import net.gecko.varandeco.block.custom.WarpedWartBlock;
+import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.flower.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
@@ -39,7 +37,10 @@ import net.minecraft.world.BlockView;
 
 public class DecoBlocks {
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
-            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(2.0f,3.0f)
+            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(1.0f,1.5f)
+                    .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_PLANKS = registerBlock("mushroom_planks",
+            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_YELLOW).strength(1.0f,1.5f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
             new Block(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,3.0f)
@@ -122,6 +123,44 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_NETHERRACK_BRICKS = registerBlock("chiseled_netherrack_bricks",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BASALT_BRICKS = registerBlock("basalt_bricks",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_BASALT)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SMOOTH_GLOWSTONE = registerBlock("smooth_glowstone",
+            new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).strength(0.6f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block WHITE_LAMP = registerBlock("white_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor. WHITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ORANGE_LAMP = registerBlock("orange_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.ORANGE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MAGENTA_LAMP = registerBlock("magenta_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.MAGENTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_BLUE_LAMP = registerBlock("light_blue_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.LIGHT_BLUE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block YELLOW_LAMP = registerBlock("yellow_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIME_LAMP = registerBlock("lime_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.LIME)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PINK_LAMP = registerBlock("pink_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GRAY_LAMP = registerBlock("gray_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LIGHT_GRAY_LAMP = registerBlock("light_gray_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.LIGHT_GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CYAN_LAMP = registerBlock("cyan_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.CYAN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PURPLE_LAMP = registerBlock("purple_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.PURPLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLUE_LAMP = registerBlock("blue_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.BLUE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BROWN_LAMP = registerBlock("brown_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GREEN_LAMP = registerBlock("green_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block RED_LAMP = registerBlock("red_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.RED)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BLACK_LAMP = registerBlock("black_lamp",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_GLOWSTONE).mapColor(DyeColor.BLACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block POLISHED_STONE = registerBlock("polished_stone",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2.5f).resistance(6.0f).requiresTool()),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -131,7 +170,6 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRACKED_STONE_TILES = registerBlock("cracked_stone_tiles",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
-    
     public static final Block CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_END_STONE = registerBlock("chiseled_end_stone",
@@ -744,6 +782,9 @@ public class DecoBlocks {
     public static final Block CACTUS_PLANK_STAIRS = registerBlock("cactus_plank_stairs",
             new StairsBlock(DecoBlocks.CACTUS_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_STAIRS = registerBlock("mushroom_stairs",
+            new StairsBlock(DecoBlocks.MUSHROOM_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_STAIRS = registerBlock("wooden_stairs",
             new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1119,6 +1160,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_SLAB = registerBlock("cactus_plank_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_SLAB = registerBlock("mushroom_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_SLAB = registerBlock("cut_sandstone_brick_slab",
@@ -1447,8 +1490,17 @@ public class DecoBlocks {
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block PACKED_CACTUS = registerBlock("packed_cactus",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_WOOD).strength(0.4F).sounds(BlockSoundGroup.WOOL)
+                    .mapColor(MapColor.GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block STRIPPED_CACTUS = registerBlock("stripped_cactus",
+            new PillarBlock(FabricBlockSettings.copyOf(DecoBlocks.PACKED_CACTUS).mapColor(MapColor.PALE_GREEN)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block CACTUS_PLANK_FENCE = registerBlock("cactus_plank_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_FENCE = registerBlock("mushroom_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
@@ -2206,6 +2258,8 @@ public class DecoBlocks {
             new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANK_BUTTON = registerBlock("cactus_plank_button",
             new WoodenButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_BUTTON = registerBlock("mushroom_button",
+            new WoodenButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
             new WoodenButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
@@ -2252,6 +2306,9 @@ public class DecoBlocks {
     public static final Block CACTUS_PLANK_PRESSURE_PLATE = registerBlock("cactus_plank_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_PRESSURE_PLATE = registerBlock("mushroom_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_PRESSURE_PLATE = registerBlock("wooden_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2260,17 +2317,72 @@ public class DecoBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_DOOR = registerBlock("mushroom_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_YELLOW).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_DOOR = registerBlock("wooden_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.BROWN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block OAK_PALLET_DOOR = registerBlock("oak_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_PALLET_DOOR = registerBlock("spruce_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_PALLET_DOOR = registerBlock("birch_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_PALLET_DOOR = registerBlock("jungle_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_PALLET_DOOR = registerBlock("acacia_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_PALLET_DOOR = registerBlock("dark_oak_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_PALLET_DOOR = registerBlock("mangrove_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_PALLET_DOOR = registerBlock("crimson_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_PALLET_DOOR = registerBlock("warped_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block CACTUS_PALLET_DOOR = registerBlock("cactus_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_PALLET_DOOR = registerBlock("wooden_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block GOLD_TRAPDOOR = registerBlock("gold_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_TRAPDOOR = registerBlock("cactus_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_TRAPDOOR = registerBlock("mushroom_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_YELLOW).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_TRAPDOOR = registerBlock("wooden_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.BROWN).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block OAK_PALLET_TRAPDOOR = registerBlock("oak_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_PALLET_TRAPDOOR = registerBlock("spruce_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_PALLET_TRAPDOOR = registerBlock("birch_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_PALLET_TRAPDOOR = registerBlock("jungle_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_PALLET_TRAPDOOR = registerBlock("acacia_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_PALLET_TRAPDOOR = registerBlock("dark_oak_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_PALLET_TRAPDOOR = registerBlock("mangrove_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_PALLET_TRAPDOOR = registerBlock("crimson_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_PALLET_TRAPDOOR = registerBlock("warped_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block CACTUS_PALLET_TRAPDOOR = registerBlock("cactus_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WOODEN_PALLET_TRAPDOOR = registerBlock("wooden_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block CACTUS_PLANK_FENCE_GATE = registerBlock("cactus_plank_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_FENCE_GATE = registerBlock("mushroom_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_FENCE_GATE = registerBlock("wooden_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",

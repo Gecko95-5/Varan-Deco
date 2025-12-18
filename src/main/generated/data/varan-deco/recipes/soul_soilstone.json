@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "tag": "minecraft:soul_fire_base_blocks"
+      "tag": "varan-deco:soul_ground_blocks"
     }
   },
   "pattern": [

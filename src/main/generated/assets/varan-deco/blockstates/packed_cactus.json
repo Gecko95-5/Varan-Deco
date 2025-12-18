@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "varan-deco:block/packed_cactus",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "varan-deco:block/packed_cactus"
+    },
+    "axis=z": {
+      "model": "varan-deco:block/packed_cactus",
+      "x": 90
+    }
+  }
+}

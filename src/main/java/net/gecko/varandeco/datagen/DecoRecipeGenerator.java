@@ -628,12 +628,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BLOCK);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BRICKS, DecoBlocks.BUBBLE_BRICKS);
-        
+
         ShapedRecipeJsonBuilder.create(DecoBlocks.SOUL_SOILSTONE)
                 .pattern("##")
                 .pattern("##")
-                .input('#', ItemTags.SOUL_FIRE_BASE_BLOCKS)
-                .criterion("has_soul_blocks", conditionsFromTag(ItemTags.SOUL_FIRE_BASE_BLOCKS))
+                .input('#', DecoTags.Items.SOUL_GROUND_BLOCKS)
+                .criterion("has_soul_blocks", conditionsFromTag(DecoTags.Items.SOUL_GROUND_BLOCKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SOUL_SOILSTONE)));
 
         createStairsRecipe(DecoBlocks.SOUL_SOILSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE))
@@ -1021,7 +1021,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_CONCRETE_STAIRS, Items.WHITE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.WHITE_CONCRETE_SLAB, Items.WHITE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_CONCRETE_SLAB, Items.WHITE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_CONCRETE_SLAB, Items.WHITE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.WHITE_CONCRETE_WALL, Items.WHITE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_CONCRETE_WALL, Items.WHITE_CONCRETE);
@@ -1032,7 +1032,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_CONCRETE_STAIRS, Items.BLACK_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.BLACK_CONCRETE_SLAB, Items.BLACK_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_CONCRETE_SLAB, Items.BLACK_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_CONCRETE_SLAB, Items.BLACK_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.BLACK_CONCRETE_WALL, Items.BLACK_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_CONCRETE_WALL, Items.BLACK_CONCRETE);
@@ -1043,7 +1043,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_CONCRETE_STAIRS, Items.GRAY_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.GRAY_CONCRETE_SLAB, Items.GRAY_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_CONCRETE_SLAB, Items.GRAY_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_CONCRETE_SLAB, Items.GRAY_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.GRAY_CONCRETE_WALL, Items.GRAY_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_CONCRETE_WALL, Items.GRAY_CONCRETE);
@@ -1054,7 +1054,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_STAIRS, Items.LIGHT_GRAY_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB, Items.LIGHT_GRAY_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB, Items.LIGHT_GRAY_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB, Items.LIGHT_GRAY_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_WALL, Items.LIGHT_GRAY_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_WALL, Items.LIGHT_GRAY_CONCRETE);
@@ -1065,7 +1065,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_CONCRETE_STAIRS, Items.BROWN_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.BROWN_CONCRETE_SLAB, Items.BROWN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_CONCRETE_SLAB, Items.BROWN_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_CONCRETE_SLAB, Items.BROWN_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.BROWN_CONCRETE_WALL, Items.BROWN_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_CONCRETE_WALL, Items.BROWN_CONCRETE);
@@ -1076,7 +1076,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_CONCRETE_STAIRS, Items.RED_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.RED_CONCRETE_SLAB, Items.RED_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.RED_CONCRETE_SLAB, Items.RED_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_CONCRETE_SLAB, Items.RED_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.RED_CONCRETE_WALL, Items.RED_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_CONCRETE_WALL, Items.RED_CONCRETE);
@@ -1087,7 +1087,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_STAIRS, Items.ORANGE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_SLAB, Items.ORANGE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_SLAB, Items.ORANGE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_SLAB, Items.ORANGE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_WALL, Items.ORANGE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_WALL, Items.ORANGE_CONCRETE);
@@ -1098,7 +1098,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_STAIRS, Items.YELLOW_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_SLAB, Items.YELLOW_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_SLAB, Items.YELLOW_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_SLAB, Items.YELLOW_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_WALL, Items.YELLOW_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_WALL, Items.YELLOW_CONCRETE);
@@ -1109,7 +1109,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.LIME_CONCRETE_STAIRS, Items.LIME_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.LIME_CONCRETE_SLAB, Items.LIME_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.LIME_CONCRETE_SLAB, Items.LIME_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LIME_CONCRETE_SLAB, Items.LIME_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.LIME_CONCRETE_WALL, Items.LIME_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.LIME_CONCRETE_WALL, Items.LIME_CONCRETE);
@@ -1120,7 +1120,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_CONCRETE_STAIRS, Items.GREEN_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.GREEN_CONCRETE_SLAB, Items.GREEN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_CONCRETE_SLAB, Items.GREEN_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_CONCRETE_SLAB, Items.GREEN_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.GREEN_CONCRETE_WALL, Items.GREEN_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_CONCRETE_WALL, Items.GREEN_CONCRETE);
@@ -1131,7 +1131,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_CONCRETE_STAIRS, Items.CYAN_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CYAN_CONCRETE_SLAB, Items.CYAN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_CONCRETE_SLAB, Items.CYAN_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_CONCRETE_SLAB, Items.CYAN_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CYAN_CONCRETE_WALL, Items.CYAN_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_CONCRETE_WALL, Items.CYAN_CONCRETE);
@@ -1142,7 +1142,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_CONCRETE_STAIRS, Items.BLUE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.BLUE_CONCRETE_SLAB, Items.BLUE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_CONCRETE_SLAB, Items.BLUE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_CONCRETE_SLAB, Items.BLUE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.BLUE_CONCRETE_WALL, Items.BLUE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_CONCRETE_WALL, Items.BLUE_CONCRETE);
@@ -1164,7 +1164,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_STAIRS, Items.PURPLE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_SLAB, Items.PURPLE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_SLAB, Items.PURPLE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_SLAB, Items.PURPLE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_WALL, Items.PURPLE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_WALL, Items.PURPLE_CONCRETE);
@@ -1175,7 +1175,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_STAIRS, Items.MAGENTA_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_SLAB, Items.MAGENTA_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_SLAB, Items.MAGENTA_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_SLAB, Items.MAGENTA_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_WALL, Items.MAGENTA_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_WALL, Items.MAGENTA_CONCRETE);
@@ -1186,7 +1186,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_STAIRS, Items.PINK_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.PINK_CONCRETE_SLAB, Items.PINK_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_SLAB, Items.PINK_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_SLAB, Items.PINK_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.PINK_CONCRETE_WALL, Items.PINK_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_WALL, Items.PINK_CONCRETE);
@@ -1695,8 +1695,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_STAIRS, DecoBlocks.CUT_WHITE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_SLAB, DecoBlocks.CUT_WHITE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_SLAB, Items.WHITE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_SLAB, DecoBlocks.CUT_WHITE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_SLAB, Items.WHITE_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_SLAB, DecoBlocks.CUT_WHITE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_WALL, DecoBlocks.CUT_WHITE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_WHITE_CONCRETE_WALL, Items.WHITE_CONCRETE);
@@ -1709,8 +1709,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_STAIRS, DecoBlocks.CUT_BLACK_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_SLAB, DecoBlocks.CUT_BLACK_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_SLAB, Items.BLACK_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_SLAB, DecoBlocks.CUT_BLACK_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_SLAB, Items.BLACK_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_SLAB, DecoBlocks.CUT_BLACK_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_WALL, DecoBlocks.CUT_BLACK_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLACK_CONCRETE_WALL, Items.BLACK_CONCRETE);
@@ -1723,8 +1723,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_STAIRS, DecoBlocks.CUT_GRAY_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_SLAB, DecoBlocks.CUT_GRAY_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_SLAB, Items.GRAY_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_SLAB, DecoBlocks.CUT_GRAY_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_SLAB, Items.GRAY_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_SLAB, DecoBlocks.CUT_GRAY_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_WALL, DecoBlocks.CUT_GRAY_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GRAY_CONCRETE_WALL, Items.GRAY_CONCRETE);
@@ -1737,8 +1737,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_STAIRS, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, Items.LIGHT_GRAY_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, Items.LIGHT_GRAY_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_WALL, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE_WALL, Items.LIGHT_GRAY_CONCRETE);
@@ -1751,8 +1751,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_STAIRS, DecoBlocks.CUT_BROWN_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_SLAB, DecoBlocks.CUT_BROWN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_SLAB, Items.BROWN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_SLAB, DecoBlocks.CUT_BROWN_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_SLAB, Items.BROWN_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_SLAB, DecoBlocks.CUT_BROWN_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_WALL, DecoBlocks.CUT_BROWN_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BROWN_CONCRETE_WALL, Items.BROWN_CONCRETE);
@@ -1765,8 +1765,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_STAIRS, DecoBlocks.CUT_RED_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_SLAB, DecoBlocks.CUT_RED_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_SLAB, Items.RED_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_SLAB, DecoBlocks.CUT_RED_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_SLAB, Items.RED_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_SLAB, DecoBlocks.CUT_RED_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_WALL, DecoBlocks.CUT_RED_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_RED_CONCRETE_WALL, Items.RED_CONCRETE);
@@ -1779,12 +1779,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_STAIRS, DecoBlocks.CUT_ORANGE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_SLAB, DecoBlocks.CUT_ORANGE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_SLAB, Items.ORANGE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_SLAB, DecoBlocks.CUT_ORANGE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_SLAB, Items.ORANGE_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_SLAB, DecoBlocks.CUT_ORANGE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_WALL, DecoBlocks.CUT_ORANGE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_WALL, Items.ORANGE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_WALL, DecoBlocks.CUT_ORANGE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_WALL, Items.ORANGE_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_ORANGE_CONCRETE_WALL, DecoBlocks.CUT_ORANGE_CONCRETE,2);
 
         createStairsRecipe(DecoBlocks.CUT_YELLOW_CONCRETE_STAIRS, Ingredient.ofItems(DecoBlocks.CUT_YELLOW_CONCRETE))
                 .criterion(hasItem(DecoBlocks.CUT_YELLOW_CONCRETE),conditionsFromItem(DecoBlocks.CUT_YELLOW_CONCRETE))
@@ -1793,8 +1793,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_STAIRS, DecoBlocks.CUT_YELLOW_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_SLAB, DecoBlocks.CUT_YELLOW_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_SLAB, Items.YELLOW_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_SLAB, DecoBlocks.CUT_YELLOW_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_SLAB, Items.YELLOW_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_SLAB, DecoBlocks.CUT_YELLOW_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_WALL, DecoBlocks.CUT_YELLOW_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_YELLOW_CONCRETE_WALL, Items.YELLOW_CONCRETE);
@@ -1807,8 +1807,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_STAIRS, DecoBlocks.CUT_LIME_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_SLAB, DecoBlocks.CUT_LIME_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_SLAB, Items.LIME_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_SLAB, DecoBlocks.CUT_LIME_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_SLAB, Items.LIME_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_SLAB, DecoBlocks.CUT_LIME_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_WALL, DecoBlocks.CUT_LIME_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIME_CONCRETE_WALL, Items.LIME_CONCRETE);
@@ -1821,8 +1821,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_STAIRS, DecoBlocks.CUT_GREEN_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_SLAB, DecoBlocks.CUT_GREEN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_SLAB, Items.GREEN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_SLAB, DecoBlocks.CUT_GREEN_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_SLAB, Items.GREEN_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_SLAB, DecoBlocks.CUT_GREEN_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_WALL, DecoBlocks.CUT_GREEN_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_GREEN_CONCRETE_WALL, Items.GREEN_CONCRETE);
@@ -1835,8 +1835,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_STAIRS, DecoBlocks.CUT_CYAN_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_SLAB, DecoBlocks.CUT_CYAN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_SLAB, Items.CYAN_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_SLAB, DecoBlocks.CUT_CYAN_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_SLAB, Items.CYAN_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_SLAB, DecoBlocks.CUT_CYAN_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_WALL, DecoBlocks.CUT_CYAN_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_CYAN_CONCRETE_WALL, Items.CYAN_CONCRETE);
@@ -1849,8 +1849,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_STAIRS, DecoBlocks.CUT_BLUE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_SLAB, DecoBlocks.CUT_BLUE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_SLAB, Items.BLUE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_SLAB, DecoBlocks.CUT_BLUE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_SLAB, Items.BLUE_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_SLAB, DecoBlocks.CUT_BLUE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_WALL, DecoBlocks.CUT_BLUE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_BLUE_CONCRETE_WALL, Items.BLUE_CONCRETE);
@@ -1863,8 +1863,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_STAIRS, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, Items.LIGHT_BLUE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, Items.LIGHT_BLUE_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_WALL, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LIGHT_BLUE_CONCRETE_WALL, Items.LIGHT_BLUE_CONCRETE);
@@ -1877,8 +1877,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_STAIRS, DecoBlocks.CUT_PURPLE_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_SLAB, DecoBlocks.CUT_PURPLE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_SLAB, Items.PURPLE_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_SLAB, DecoBlocks.CUT_PURPLE_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_SLAB, Items.PURPLE_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_SLAB, DecoBlocks.CUT_PURPLE_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_WALL, DecoBlocks.CUT_PURPLE_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PURPLE_CONCRETE_WALL, Items.PURPLE_CONCRETE);
@@ -1891,8 +1891,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_STAIRS, DecoBlocks.CUT_MAGENTA_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB, DecoBlocks.CUT_MAGENTA_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB, Items.MAGENTA_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB, DecoBlocks.CUT_MAGENTA_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB, Items.MAGENTA_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_SLAB, DecoBlocks.CUT_MAGENTA_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_WALL, DecoBlocks.CUT_MAGENTA_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_MAGENTA_CONCRETE_WALL, Items.MAGENTA_CONCRETE);
@@ -1905,8 +1905,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_STAIRS, DecoBlocks.CUT_PINK_CONCRETE);
 
         offerSlabRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_SLAB, DecoBlocks.CUT_PINK_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_SLAB, Items.PINK_CONCRETE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_SLAB, DecoBlocks.CUT_PINK_CONCRETE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_SLAB, Items.PINK_CONCRETE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_SLAB, DecoBlocks.CUT_PINK_CONCRETE,2);
 
         offerWallRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_WALL, DecoBlocks.CUT_PINK_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_WALL, Items.PINK_CONCRETE);
@@ -1960,7 +1960,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, DecoBlocks.PINK_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, Items.PINK_CONCRETE);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,6)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -1971,7 +1971,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier("tinted_glass_pane_amethyst_shard"));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,16)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,18)
                 .pattern("###")
                 .pattern("###")
                 .input('#', Items.TINTED_GLASS)
@@ -2001,7 +2001,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerHardenedGlassPaneRecipe(exporter,DecoBlocks.HARDENED_TINTED_GLASS_PANE, DecoBlocks.TINTED_GLASS_PANE);
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_TINTED_GLASS_PANE,2)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_TINTED_GLASS_PANE,6)
                 .pattern(" # ")
                 .pattern("#X#")
                 .pattern(" # ")
@@ -2012,7 +2012,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier("hardened_tinted_glass_pane_amethyst_shard"));
 
-        offerStainedGlassPaneRecipe(exporter, DecoBlocks.HARDENED_TINTED_GLASS_PANE, DecoBlocks.HARDENED_TINTED_GLASS);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_TINTED_GLASS_PANE,18)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.HARDENED_TINTED_GLASS)
+                .group("hardened_glass_pane")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_TINTED_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_TINTED_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_TINTED_GLASS_PANE)));
 
         offerHardenedGlassRecipe(exporter,DecoBlocks.HARDENED_WHITE_STAINED_GLASS, Items.WHITE_STAINED_GLASS);
 
@@ -4343,6 +4350,335 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, DecoBlocks.STRIPPED_WOODEN_WOOD_WALL, DecoBlocks.STRIPPED_WOODEN_WOOD);
 
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_NETHERRACK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.NETHERRACK)
+                .criterion(RecipeProvider.hasItem(Items.NETHERRACK),
+                        RecipeProvider.conditionsFromItem(Items.NETHERRACK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PACKED_NETHERRACK)));
+
+        createStairsRecipe(DecoBlocks.PACKED_NETHERRACK_STAIRS, Ingredient.ofItems(DecoBlocks.PACKED_NETHERRACK))
+                .criterion(hasItem(DecoBlocks.PACKED_NETHERRACK),conditionsFromItem(DecoBlocks.PACKED_NETHERRACK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PACKED_NETHERRACK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.PACKED_NETHERRACK_STAIRS, DecoBlocks.PACKED_NETHERRACK);
+
+        offerSlabRecipe(exporter, DecoBlocks.PACKED_NETHERRACK_SLAB, DecoBlocks.PACKED_NETHERRACK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PACKED_NETHERRACK_SLAB, DecoBlocks.PACKED_NETHERRACK,2);
+
+        offerWallRecipe(exporter, DecoBlocks.PACKED_NETHERRACK_WALL, DecoBlocks.PACKED_NETHERRACK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.PACKED_NETHERRACK_WALL, DecoBlocks.PACKED_NETHERRACK);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.NETHERRACK_BRICKS, DecoBlocks.PACKED_NETHERRACK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICKS, DecoBlocks.PACKED_NETHERRACK);
+
+        createStairsRecipe(DecoBlocks.NETHERRACK_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.NETHERRACK_BRICKS))
+                .criterion(hasItem(DecoBlocks.NETHERRACK_BRICKS),conditionsFromItem(DecoBlocks.NETHERRACK_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.NETHERRACK_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_STAIRS, DecoBlocks.PACKED_NETHERRACK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_STAIRS, DecoBlocks.NETHERRACK_BRICKS);
+
+        offerSlabRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_SLAB, DecoBlocks.NETHERRACK_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_SLAB, DecoBlocks.PACKED_NETHERRACK,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_SLAB, DecoBlocks.NETHERRACK_BRICKS,2);
+
+        offerWallRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_WALL, DecoBlocks.NETHERRACK_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_WALL, DecoBlocks.PACKED_NETHERRACK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.NETHERRACK_BRICK_WALL, DecoBlocks.NETHERRACK_BRICKS);
+
+        offerChiseledBlockRecipe(exporter,DecoBlocks.CHISELED_MUD_BRICKS, Items.MUD_BRICK_SLAB);
+
+        offerChiseledBlockRecipe(exporter,DecoBlocks.CHISELED_ICE_BRICKS, DecoBlocks.ICE_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_ICE_BRICKS, Items.BLUE_ICE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_ICE_BRICKS, DecoBlocks.ICE_BRICKS);
+
+        offerChiseledBlockRecipe(exporter,DecoBlocks.CHISELED_NETHERRACK_BRICKS, DecoBlocks.NETHERRACK_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_NETHERRACK_BRICKS, DecoBlocks.PACKED_NETHERRACK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_NETHERRACK_BRICKS, DecoBlocks.NETHERRACK_BRICKS);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.BASALT_BRICKS, Items.POLISHED_BASALT);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BASALT_BRICKS, Items.BASALT);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BASALT_BRICKS, Items.POLISHED_BASALT);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.GLOWSTONE), DecoBlocks.SMOOTH_GLOWSTONE,
+                        0.35f, 200).criterion(hasItem(Items.GLOWSTONE), conditionsFromItem(Items.GLOWSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_GLOWSTONE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_CACTUS,4)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.CACTUS)
+                .criterion(RecipeProvider.hasItem(Items.CACTUS),
+                        RecipeProvider.conditionsFromItem(Items.CACTUS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PACKED_CACTUS)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANKS,2)
+                .input(DecoBlocks.PACKED_CACTUS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.PACKED_CACTUS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.PACKED_CACTUS))
+                .offerTo(exporter, new Identifier("cactus_planks_form_packed_cactus"));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANKS,2)
+                .input(DecoBlocks.STRIPPED_CACTUS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.STRIPPED_CACTUS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.STRIPPED_CACTUS))
+                .offerTo(exporter, new Identifier("cactus_planks_form_stripped_cactus"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.OAK_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.OAK_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.OAK_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.OAK_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.OAK_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.OAK_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.OAK_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.OAK_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.OAK_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.OAK_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.BIRCH_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.BIRCH_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.BIRCH_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.BIRCH_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BIRCH_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.BIRCH_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.BIRCH_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.BIRCH_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.BIRCH_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BIRCH_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SPRUCE_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.SPRUCE_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.SPRUCE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.SPRUCE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SPRUCE_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SPRUCE_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.SPRUCE_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.SPRUCE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.SPRUCE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SPRUCE_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.JUNGLE_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.JUNGLE_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.JUNGLE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.JUNGLE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.JUNGLE_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.JUNGLE_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.JUNGLE_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.JUNGLE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.JUNGLE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.JUNGLE_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.ACACIA_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.ACACIA_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.ACACIA_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.ACACIA_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.ACACIA_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.ACACIA_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.ACACIA_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.ACACIA_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.ACACIA_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.ACACIA_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.DARK_OAK_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.DARK_OAK_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.DARK_OAK_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.DARK_OAK_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.DARK_OAK_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.DARK_OAK_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.DARK_OAK_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.DARK_OAK_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MANGROVE_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.MANGROVE_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.MANGROVE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.MANGROVE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MANGROVE_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MANGROVE_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.MANGROVE_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.MANGROVE_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.MANGROVE_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MANGROVE_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRIMSON_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.CRIMSON_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.CRIMSON_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.CRIMSON_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRIMSON_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRIMSON_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.CRIMSON_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.CRIMSON_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.CRIMSON_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRIMSON_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WARPED_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.WARPED_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.WARPED_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.WARPED_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WARPED_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WARPED_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.WARPED_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.WARPED_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.WARPED_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WARPED_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.CACTUS_PLANK_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANK_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANK_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.CACTUS_PLANK_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANK_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANK_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.WOODEN_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.WOODEN_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_PALLET_TRAPDOOR)));
+
+        offerLampRecipe(exporter,DecoBlocks.WHITE_LAMP, Items.WHITE_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.LIGHT_GRAY_LAMP, Items.LIGHT_GRAY_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.GRAY_LAMP, Items.GRAY_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.BLACK_LAMP, Items.BLACK_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.BROWN_LAMP, Items.BROWN_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.RED_LAMP, Items.RED_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.ORANGE_LAMP, Items.ORANGE_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.YELLOW_LAMP, Items.YELLOW_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.LIME_LAMP, Items.LIME_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.GREEN_LAMP, Items.GREEN_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.CYAN_LAMP, Items.CYAN_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.LIGHT_BLUE_LAMP, Items.LIGHT_BLUE_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.BLUE_LAMP, Items.BLUE_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.PURPLE_LAMP, Items.PURPLE_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.MAGENTA_LAMP, Items.MAGENTA_STAINED_GLASS_PANE);
+
+        offerLampRecipe(exporter,DecoBlocks.PINK_LAMP, Items.PINK_STAINED_GLASS_PANE);
+
+        ShapedRecipeJsonBuilder.create(Items.BROWN_MUSHROOM_BLOCK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.BROWN_MUSHROOM)
+                .criterion(RecipeProvider.hasItem(Items.BROWN_MUSHROOM),
+                        RecipeProvider.conditionsFromItem(Items.BROWN_MUSHROOM))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.BROWN_MUSHROOM_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(Items.RED_MUSHROOM_BLOCK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.RED_MUSHROOM)
+                .criterion(RecipeProvider.hasItem(Items.RED_MUSHROOM),
+                        RecipeProvider.conditionsFromItem(Items.RED_MUSHROOM))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.RED_MUSHROOM_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(Items.MUSHROOM_STEM)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoTags.Items.MUSHROOMS)
+                .criterion("has_mushrooms", conditionsFromTag(DecoTags.Items.MUSHROOMS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.MUSHROOM_STEM)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
@@ -4420,7 +4756,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
     }
 
         public static void offerHardenedGlassPaneRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible glassPaneInput) {
-            ShapedRecipeJsonBuilder.create(output, 4)
+            ShapedRecipeJsonBuilder.create(output, 8)
                     .input('#', Items.IRON_INGOT)
                     .input('X', glassPaneInput)
                     .pattern(" # ")
@@ -4472,6 +4808,18 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .group("shaded_blocks")
                 .criterion("has_shaddol", conditionsFromItem(DecoItems.SHADDOL))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
+    }
+    public static void offerLampRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible paneInput) {
+        ShapedRecipeJsonBuilder.create(output)
+                .input('#', paneInput)
+                .input('$', DecoBlocks.SMOOTH_GLOWSTONE)
+                .pattern(" # ")
+                .pattern("#$#")
+                .pattern(" # ")
+                .group("coloured_lamp")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SMOOTH_GLOWSTONE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SMOOTH_GLOWSTONE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
     }
 }

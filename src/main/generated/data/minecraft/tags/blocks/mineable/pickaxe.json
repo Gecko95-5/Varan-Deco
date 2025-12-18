@@ -328,6 +328,19 @@
     "varan-deco:polished_purpur",
     "varan-deco:polished_purpur_stairs",
     "varan-deco:polished_purpur_slab",
-    "varan-deco:polished_purpur_wall"
+    "varan-deco:polished_purpur_wall",
+    "varan-deco:packed_netherrack",
+    "varan-deco:netherrack_bricks",
+    "varan-deco:chiseled_ice_bricks",
+    "varan-deco:chiseled_mud_bricks",
+    "varan-deco:chiseled_netherrack_bricks",
+    "varan-deco:packed_netherracke_stairs",
+    "varan-deco:packed_netherracke_slab",
+    "varan-deco:packed_netherracke_wall",
+    "varan-deco:netherrack_brick_stairs",
+    "varan-deco:netherrack_brick_slab",
+    "varan-deco:netherrack_brick_wall",
+    "varan-deco:smooth_glowstone",
+    "varan-deco:basalt_bricks"
   ]
 }

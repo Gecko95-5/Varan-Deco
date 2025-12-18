@@ -219,6 +219,18 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool strippedwoodenwoodpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WOODEN_TEMP);
 
+        BlockStateModelGenerator.BlockTexturePool packednetherrackpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PACKED_NETHERRACK);
+        BlockStateModelGenerator.BlockTexturePool netherrackbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.NETHERRACK_BRICKS);
+
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_ICE_BRICKS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_MUD_BRICKS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_NETHERRACK_BRICKS, TexturedModel.CUBE_COLUMN);
+
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.PACKED_CACTUS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.STRIPPED_CACTUS, TexturedModel.CUBE_COLUMN);
+
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
 
@@ -436,6 +448,27 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_MAGENTA_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_PINK_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SMOOTH_GLOWSTONE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GRAY_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLACK_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BROWN_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.RED_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ORANGE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.YELLOW_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIME_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GREEN_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CYAN_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_BLUE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLUE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PURPLE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MAGENTA_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_LAMP);
+
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
+
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
 
@@ -444,6 +477,30 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(DecoBlocks.GOLD_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.GOLD_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.OAK_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.SPRUCE_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.BIRCH_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.JUNGLE_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.ACACIA_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.DARK_OAK_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.MANGROVE_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.CRIMSON_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.WARPED_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_PALLET_DOOR);
+
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.OAK_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.SPRUCE_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.BIRCH_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.JUNGLE_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.ACACIA_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.MANGROVE_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.CRIMSON_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.WARPED_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -755,6 +812,14 @@ public class DecoModelProvider extends FabricModelProvider {
         strippedwoodenwoodpool.stairs(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS);
         strippedwoodenwoodpool.slab(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB);
         strippedwoodenwoodpool.wall(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
+
+        packednetherrackpool.stairs(DecoBlocks.PACKED_NETHERRACK_STAIRS);
+        packednetherrackpool.slab(DecoBlocks.PACKED_NETHERRACK_SLAB);
+        packednetherrackpool.wall(DecoBlocks.PACKED_NETHERRACK_WALL);
+
+        netherrackbrickpool.stairs(DecoBlocks.NETHERRACK_BRICK_STAIRS);
+        netherrackbrickpool.slab(DecoBlocks.NETHERRACK_BRICK_SLAB);
+        netherrackbrickpool.wall(DecoBlocks.NETHERRACK_BRICK_WALL);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);

@@ -54,6 +54,8 @@
     "varan-deco:red_sandstone_brick_slab",
     "varan-deco:soul_soilstone_brick_slab",
     "varan-deco:polished_purpur_slab",
-    "#varan-deco:log_slabs"
+    "#varan-deco:log_slabs",
+    "varan-deco:packed_netherracke_slab",
+    "varan-deco:netherrack_brick_slab"
   ]
 }
