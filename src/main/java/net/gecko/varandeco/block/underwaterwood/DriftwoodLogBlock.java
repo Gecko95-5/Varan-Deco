@@ -13,6 +13,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
+import net.minecraft.world.attribute.EnvironmentAttributes;
 
 public class DriftwoodLogBlock extends PillarBlock {
     public static final MapCodec<DriftwoodLogBlock> CODEC = createCodec(DriftwoodLogBlock::new);
@@ -25,7 +26,7 @@ public class DriftwoodLogBlock extends PillarBlock {
     }
     @Override
     protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
-        if (world.getDimension().ultrawarm()) {
+        if ((world.getEnvironmentAttributes().getAttributeValue(EnvironmentAttributes.WATER_EVAPORATES_GAMEPLAY, pos))) {
             world.setBlockState(pos, DecoBlocks.DRIED_DRIFTWOOD_LOG.getDefaultState().with(DriftwoodLogBlock.AXIS, state.get(DriftwoodLogBlock.AXIS)), Block.NOTIFY_ALL);
             world.syncWorldEvent(WorldEvents.WET_SPONGE_DRIES_OUT, pos, 0);
             world.playSound(null, pos, SoundEvents.BLOCK_WET_SPONGE_DRIES, SoundCategory.BLOCKS, 1.0F, (1.0F + world.getRandom().nextFloat() * 0.2F) * 0.7F);
