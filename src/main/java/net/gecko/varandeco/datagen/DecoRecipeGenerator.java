@@ -444,21 +444,30 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANKS,2)
                 .input(Items.CACTUS)
+                .group("planks")
                 .criterion(RecipeProvider.hasItem(Items.CACTUS),
                         RecipeProvider.conditionsFromItem(Items.CACTUS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANKS)));
 
         createStairsRecipe(DecoBlocks.CACTUS_PLANK_STAIRS, Ingredient.ofItems(DecoBlocks.CACTUS_PLANKS))
+                .group("wooden_stairs")
                 .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CACTUS_PLANK_STAIRS)));
 
-        offerSlabRecipe(exporter, DecoBlocks.CACTUS_PLANK_SLAB, DecoBlocks.CACTUS_PLANKS);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_SLAB,6)
+                .pattern("###")
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_slab")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_SLAB)));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_FENCE,3)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.STICK)
                 .input('#', DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_fence")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_FENCE)));
@@ -468,14 +477,22 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("/#/")
                 .input('/', Items.STICK)
                 .input('#', DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_fence_fence")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_FENCE_GATE)));
 
-        offerPressurePlateRecipe(exporter, DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE, DecoBlocks.CACTUS_PLANKS);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)
+                .pattern("##")
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_pressure_plate")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANK_BUTTON)
                 .input(DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_button")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_PLANK_BUTTON)));
@@ -485,6 +502,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("##")
                 .pattern("##")
                 .input('#', DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_door")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_DOOR)));
@@ -492,11 +510,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .input('#', DecoBlocks.CACTUS_PLANKS)
+                .group("wooden_trapdoor")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CACTUS_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CACTUS_TRAPDOOR)));
 
         createSignRecipe(DecoItems.CACTUS_SIGN, Ingredient.ofItems(DecoBlocks.CACTUS_PLANKS))
+                .group("wooden_sign")
                 .criterion(hasItem(DecoBlocks.CACTUS_PLANKS),conditionsFromItem(DecoBlocks.CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.CACTUS_SIGN)));
 
@@ -3467,16 +3487,24 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("lime_dye_from_yellow_dye"));
 
         createStairsRecipe(DecoBlocks.WOODEN_STAIRS, Ingredient.ofItems(DecoBlocks.WOODEN_PLANKS))
+                .group("wooden_stairs")
                 .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WOODEN_STAIRS)));
 
-        offerSlabRecipe(exporter, DecoBlocks.WOODEN_SLAB, DecoBlocks.WOODEN_PLANKS);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_SLAB,6)
+                .pattern("###")
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_slab")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_SLAB)));
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_FENCE,3)
                 .pattern("#/#")
                 .pattern("#/#")
                 .input('/', Items.STICK)
                 .input('#', DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_fence")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_FENCE)));
@@ -3486,14 +3514,22 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("/#/")
                 .input('/', Items.STICK)
                 .input('#', DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_fence_gate")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_FENCE_GATE)));
 
-        offerPressurePlateRecipe(exporter, DecoBlocks.WOODEN_PRESSURE_PLATE, DecoBlocks.WOODEN_PLANKS);
+        ShapedRecipeJsonBuilder.create(DecoBlocks.WOODEN_PRESSURE_PLATE)
+                .pattern("##")
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_pressure_plate")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_PRESSURE_PLATE)));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.WOODEN_BUTTON)
                 .input(DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_button")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_BUTTON)));
@@ -3503,6 +3539,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("##")
                 .pattern("##")
                 .input('#', DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_door")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_DOOR)));
@@ -3510,11 +3547,13 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .input('#', DecoBlocks.WOODEN_PLANKS)
+                .group("wooden_trapdoor")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_PLANKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_TRAPDOOR)));
 
         createSignRecipe(DecoItems.WOODEN_SIGN, Ingredient.ofItems(DecoBlocks.WOODEN_PLANKS))
+                .group("wooden_sign")
                 .criterion(hasItem(DecoBlocks.WOODEN_PLANKS),conditionsFromItem(DecoBlocks.WOODEN_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.WOODEN_SIGN)));
 
@@ -3522,6 +3561,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("##")
                 .pattern("##")
                 .input('#', DecoBlocks.WOODEN_LOG)
+                .group("bark")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.WOODEN_LOG),
                         RecipeProvider.conditionsFromItem(DecoBlocks.WOODEN_LOG))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_WOOD)));
@@ -3529,6 +3569,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("##")
                 .pattern("##")
                 .input('#', DecoBlocks.STRIPPED_WOODEN_LOG)
+                .group("bark")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.STRIPPED_WOODEN_LOG),
                         RecipeProvider.conditionsFromItem(DecoBlocks.STRIPPED_WOODEN_LOG))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.STRIPPED_WOODEN_WOOD)));
@@ -4114,7 +4155,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_saplings", conditionsFromTag(ItemTags.SAPLINGS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_SAPLING)));
 
-        ShapelessRecipeJsonBuilder.create(DecoBlocks.WOODEN_PLANKS)
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.WOODEN_PLANKS,4)
                 .input(DecoTags.Items.WOODEN_LOGS)
                 .criterion("has_logs", conditionsFromTag(DecoTags.Items.WOODEN_LOGS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.WOODEN_PLANKS)));
@@ -4415,12 +4456,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANKS,2)
                 .input(DecoBlocks.PACKED_CACTUS)
+                .group("cactus_planks")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.PACKED_CACTUS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.PACKED_CACTUS))
                 .offerTo(exporter, new Identifier("cactus_planks_form_packed_cactus"));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.CACTUS_PLANKS,2)
                 .input(DecoBlocks.STRIPPED_CACTUS)
+                .group("cactus_planks")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.STRIPPED_CACTUS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.STRIPPED_CACTUS))
                 .offerTo(exporter, new Identifier("cactus_planks_form_stripped_cactus"));
@@ -4660,6 +4703,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .input('#', Items.BROWN_MUSHROOM)
+                .group("giant_mushroom_blocks")
                 .criterion(RecipeProvider.hasItem(Items.BROWN_MUSHROOM),
                         RecipeProvider.conditionsFromItem(Items.BROWN_MUSHROOM))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.BROWN_MUSHROOM_BLOCK)));
@@ -4669,6 +4713,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .input('#', Items.RED_MUSHROOM)
+                .group("giant_mushroom_blocks")
                 .criterion(RecipeProvider.hasItem(Items.RED_MUSHROOM),
                         RecipeProvider.conditionsFromItem(Items.RED_MUSHROOM))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.RED_MUSHROOM_BLOCK)));
@@ -4679,6 +4724,116 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoTags.Items.MUSHROOMS)
                 .criterion("has_mushrooms", conditionsFromTag(DecoTags.Items.MUSHROOMS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.MUSHROOM_STEM)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_PLANKS,4)
+                .input(DecoTags.Items.GIANT_MUSHROOM_BLOCKS)
+                .group("planks")
+                .criterion("has_logs", conditionsFromTag(DecoTags.Items.GIANT_MUSHROOM_BLOCKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_PLANKS)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_PLANKS,2)
+                .input(Items.MUSHROOM_STEM)
+                .group("planks")
+                .criterion(RecipeProvider.hasItem(Items.MUSHROOM_STEM),
+                        RecipeProvider.conditionsFromItem(Items.MUSHROOM_STEM))
+                .offerTo(exporter, new Identifier("mushroom_planks_form_stem"));
+
+        createStairsRecipe(DecoBlocks.MUSHROOM_STAIRS, Ingredient.ofItems(DecoBlocks.MUSHROOM_PLANKS))
+                .group("wooden_stairs")
+                .criterion(hasItem(DecoBlocks.MUSHROOM_PLANKS),conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MUSHROOM_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_SLAB,6)
+                .pattern("###")
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_slab")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_FENCE,3)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.STICK)
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_fence")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.STICK)
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_fence_fence")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_PRESSURE_PLATE)
+                .pattern("##")
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_pressure_plate")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_PRESSURE_PLATE)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_BUTTON)
+                .input(DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_button")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_door")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .group("wooden_trapdoor")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_PLANKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_TRAPDOOR)));
+
+        createSignRecipe(DecoItems.MUSHROOM_SIGN, Ingredient.ofItems(DecoBlocks.MUSHROOM_PLANKS))
+                .group("wooden_sign")
+                .criterion(hasItem(DecoBlocks.MUSHROOM_PLANKS),conditionsFromItem(DecoBlocks.MUSHROOM_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.MUSHROOM_SIGN)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.MUSHROOM_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.MUSHROOM_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MUSHROOM_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MUSHROOM_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR)));
+
+        offerCraftingTableVariantRecipe(exporter, DecoBlocks.MUSHROOM_CRAFTING_TABLE, DecoBlocks.MUSHROOM_PLANKS);
+        offerBarrelVariantRecipe(exporter, DecoBlocks.MUSHROOM_BARREL, DecoBlocks.MUSHROOM_PLANKS);
+        offerCartographyTableVariantRecipe(exporter, DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE, DecoBlocks.MUSHROOM_PLANKS);
+        offerSmithingTableVariantRecipe(exporter, DecoBlocks.MUSHROOM_SMITHING_TABLE, DecoBlocks.MUSHROOM_PLANKS);
+        offerLadderVariantRecipe(exporter, DecoBlocks.MUSHROOM_LADDER, DecoBlocks.MUSHROOM_SLAB);
+
+        offerNoteBlockVariantRecipe(exporter, DecoBlocks.MUSHROOM_NOTE_BLOCK, DecoBlocks.MUSHROOM_PLANKS);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
@@ -4735,6 +4890,18 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(output)
                 .input('#', woodInput)
                 .input('$', DecoTags.Items.DECO_SMITHING_TABLES)
+                .pattern(" # ")
+                .pattern("#$#")
+                .pattern(" # ")
+                .group("wooden_smithing_tables")
+                .criterion(RecipeProvider.hasItem(woodInput),
+                        RecipeProvider.conditionsFromItem(woodInput))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
+    }
+    public static void offerNoteBlockVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
+        ShapedRecipeJsonBuilder.create(output)
+                .input('#', woodInput)
+                .input('$', DecoTags.Items.DECO_NOTE_BLOCKS)
                 .pattern(" # ")
                 .pattern("#$#")
                 .pattern(" # ")

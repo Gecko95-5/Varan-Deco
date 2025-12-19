@@ -1,6 +1,7 @@
 {
   "item.varan-deco.snow_brick": "Snow Brick",
   "item.varan-deco.cactus_sign": "Cactus Sign",
+  "item.varan-deco.mushroom_sign": "Mushroom Sign",
   "item.varan-deco.wooden_sign": "Wooden Sign",
   "item.varan-deco.bubble_orb": "Bubble Orb",
   "item.varan-deco.warped_wart": "Warped Wart",
@@ -324,6 +325,7 @@
   "block.varan-deco.crimson_crafting_table": "Crimson Crafting Table",
   "block.varan-deco.warped_crafting_table": "Warped Crafting Table",
   "block.varan-deco.cactus_crafting_table": "Cactus Crafting Table",
+  "block.varan-deco.mushroom_crafting_table": "Mushroom Crafting Table",
 
   "block.varan-deco.oak_barrel": "Oak Barrel",
   "block.varan-deco.spruce_barrel": "Spruce Barrel",
@@ -335,6 +337,7 @@
   "block.varan-deco.crimson_barrel": "Crimson Barrel",
   "block.varan-deco.warped_barrel": "Warped Barrel",
   "block.varan-deco.cactus_barrel": "Cactus Barrel",
+  "block.varan-deco.mushroom_barrel": "Mushroom Barrel",
 
   "block.varan-deco.spruce_ladder": "Spruce Ladder",
   "block.varan-deco.birch_ladder": "Birch Ladder",
@@ -346,6 +349,7 @@
   "block.varan-deco.warped_ladder": "Warped Ladder",
   "block.varan-deco.cactus_ladder": "Cactus Ladder",
   "block.varan-deco.wooden_ladder": "Wooden Ladder",
+  "block.varan-deco.mushroom_ladder": "Mushroom Ladder",
 
   "block.varan-deco.oak_smithing_table": "Oak Smithing Table",
   "block.varan-deco.spruce_smithing_table": "Spruce Smithing Table",
@@ -357,6 +361,7 @@
   "block.varan-deco.crimson_smithing_table": "Crimson Smithing Table",
   "block.varan-deco.warped_smithing_table": "Warped Smithing Table",
   "block.varan-deco.cactus_smithing_table": "Cactus Smithing Table",
+  "block.varan-deco.mushroom_smithing_table": "Mushroom Smithing Table",
 
   "block.varan-deco.oak_cartography_table": "Oak Cartography Table",
   "block.varan-deco.birch_cartography_table": "Birch Cartography Table",
@@ -368,6 +373,7 @@
   "block.varan-deco.crimson_cartography_table": "Crimson Cartography Table",
   "block.varan-deco.warped_cartography_table": "Warped Cartography Table",
   "block.varan-deco.cactus_cartography_table": "Cactus Cartography Table",
+  "block.varan-deco.mushroom_cartography_table": "Mushroom Cartography Table",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
   "block.varan-deco.cactus_plank_stairs": "Cactus Stairs",
@@ -1172,6 +1178,11 @@
   "block.varan-deco.wooden_wood_slab": "Wooden Wood Slab",
   "block.varan-deco.wooden_wood_wall": "Wooden Wood Wall",
 
+  "block.varan-deco.stripped_wooden_wood_stairs": "Stripped Wooden Wood Stairs",
+  "block.varan-deco.stripped_wooden_wood_slab": "Stripped Wooden Wood Slab",
+  "block.varan-deco.stripped_wooden_wood_wall": "Stripped Wooden Wood Wall",
+
+
   "block.varan-deco.packed_netherrack": "Packed Netherrack",
   "block.varan-deco.packed_netherrack_stairs": "Packed Netherrack Stairs",
   "block.varan-deco.packed_netherrack_slab": "Packed Netherrack Slab",
@@ -1216,9 +1227,41 @@
   "block.varan-deco.cactus_pallet_trapdoor": "Cactus Pallet Trapdoor",
   "block.varan-deco.wooden_pallet_trapdoor": "Wooden Pallet Trapdoor",
 
-  "block.varan-deco.stripped_wooden_wood_stairs": "Stripped Wooden Wood Stairs",
-  "block.varan-deco.stripped_wooden_wood_slab": "Stripped Wooden Wood Slab",
-  "block.varan-deco.stripped_wooden_wood_wall": "Stripped Wooden Wood Wall",
+  "block.varan-deco.white_lamp": "White Lamp",
+  "block.varan-deco.light_gray_lamp": "Light Gray Lamp",
+  "block.varan-deco.gray_lamp": "Gray Lamp",
+  "block.varan-deco.black_lamp": "Black Lamp",
+  "block.varan-deco.brown_lamp": "Brown Lamp",
+  "block.varan-deco.red_lamp": "Red Lamp",
+  "block.varan-deco.orange_lamp": "Orange Lamp",
+  "block.varan-deco.yellow_lamp": "Yellow Lamp",
+  "block.varan-deco.lime_lamp": "Lime Lamp",
+  "block.varan-deco.green_lamp": "Green Lamp",
+  "block.varan-deco.cyan_lamp": "Cyan Lamp",
+  "block.varan-deco.light_blue_lamp": "Light Blue Lamp",
+  "block.varan-deco.blue_lamp": "Blue Lamp",
+  "block.varan-deco.purple_lamp": "Purple Lamp",
+  "block.varan-deco.magenta_lamp": "Magenta Lamp",
+  "block.varan-deco.pink_lamp": "Pink Lamp",
+
+  "block.varan-deco.mushroom_planks": "Mushroom Planks",
+  "block.varan-deco.mushroom_stairs": "Mushroom Stairs",
+  "block.varan-deco.mushroom_slab": "Mushroom Slab",
+  "block.varan-deco.mushroom_fence": "Mushroom Fence",
+  "block.varan-deco.mushroom_fence_gate": "Mushroom Fence Gate",
+  "block.varan-deco.mushroom_button": "Mushroom Button",
+  "block.varan-deco.mushroom_pressure_plate": "Mushroom Pressure Plate",
+
+  "block.varan-deco.mushroom_door": "Mushroom Door",
+  "block.varan-deco.mushroom_trapdoor": "Mushroom Trapdoor",
+
+  "block.varan-deco.mushroom_pallet_door": "Mushroom Pallet Door",
+  "block.varan-deco.mushroom_pallet_trapdoor": "Mushroom Pallet Trapdoor",
+
+  "block.varan-deco.standing_mushroom_sign": "Mushroom Sign",
+  "block.varan-deco.wall_mushroom_sign": "Mushroom Wall Sign",
+
+  "block.varan-deco.mushroom_note_block": "Mushroom Note Block",
 
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",

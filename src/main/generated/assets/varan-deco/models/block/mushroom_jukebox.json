@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "varan-deco:block/mushroom_jukebox_side",
+    "top": "varan-deco:block/mushroom_jukebox_top"
+  }
+}

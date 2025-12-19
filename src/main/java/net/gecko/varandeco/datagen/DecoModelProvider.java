@@ -334,6 +334,9 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
 
+        BlockStateModelGenerator.BlockTexturePool mushroompool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MUSHROOM_PLANKS);
+
         blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
         blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
 
@@ -376,6 +379,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_CRAFTING_TABLE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_LEAVES);
 
@@ -389,6 +393,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_SMITHING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_SMITHING_TABLE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE);
@@ -400,6 +405,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_BLOCK);
@@ -467,10 +473,15 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MAGENTA_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_LAMP);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MUSHROOM_NOTE_BLOCK);
+
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.MUSHROOM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.MUSHROOM_TRAPDOOR);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_TRAPDOOR);
@@ -488,6 +499,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(DecoBlocks.CRIMSON_PALLET_DOOR);
         blockStateModelGenerator.registerDoor(DecoBlocks.WARPED_PALLET_DOOR);
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.MUSHROOM_PALLET_DOOR);
         blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_PALLET_DOOR);
 
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.OAK_PALLET_TRAPDOOR);
@@ -500,6 +512,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CRIMSON_PALLET_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WARPED_PALLET_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
@@ -626,6 +639,13 @@ public class DecoModelProvider extends FabricModelProvider {
         woodenpool.button(DecoBlocks.WOODEN_BUTTON);
         woodenpool.pressurePlate(DecoBlocks.WOODEN_PRESSURE_PLATE);
         woodenpool.fenceGate(DecoBlocks.WOODEN_FENCE_GATE);
+
+        mushroompool.stairs(DecoBlocks.MUSHROOM_STAIRS);
+        mushroompool.slab(DecoBlocks.MUSHROOM_SLAB);
+        mushroompool.fence(DecoBlocks.MUSHROOM_FENCE);
+        mushroompool.button(DecoBlocks.MUSHROOM_BUTTON);
+        mushroompool.pressurePlate(DecoBlocks.MUSHROOM_PRESSURE_PLATE);
+        mushroompool.fenceGate(DecoBlocks.MUSHROOM_FENCE_GATE);
 
        bluenetherpool.stairs(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
        bluenetherpool.slab(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
@@ -823,6 +843,7 @@ public class DecoModelProvider extends FabricModelProvider {
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
+       mushroompool.family(DecoBlocks.MUSHROOM_FAMILY);
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 

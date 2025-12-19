@@ -25,6 +25,9 @@ public class DecoTags {
         public static final TagKey<Block> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
 
+        public static final TagKey<Block> DECO_NOTE_BLOCKS =
+                createTag("deco_note_blocks");
+
         public static final TagKey<Block> WOODEN_LOGS =
                 createTag("wooden_logs");
 
@@ -96,6 +99,12 @@ public class DecoTags {
         public static final TagKey<Item> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
 
+        public static final TagKey<Item> DECO_NOTE_BLOCKS =
+                createTag("deco_note_blocks");
+
+        public static final TagKey<Item> DECO_JUKEBOX =
+                createTag("deco_jukebox");
+
         public static final TagKey<Item> WOODEN_SMITHING_TABLES =
                 createTag("wooden_smithing_tables");
 
@@ -107,6 +116,9 @@ public class DecoTags {
 
         public static final TagKey<Item> WOODEN_CARTOGRAPHY_TABLES =
                 createTag("wooden_cartography_tables");
+
+        public static final TagKey<Item> WOODEN_NOTE_BLOCKS =
+                createTag("wooden_note_blocks");
 
         public static final TagKey<Item> DECO_LADDER =
                 createTag("deco_ladder");
@@ -122,6 +134,9 @@ public class DecoTags {
 
         public static final TagKey<Item> MUSHROOMS =
                 createTag("mushrooms");
+
+        public static final TagKey<Item> GIANT_MUSHROOM_BLOCKS =
+                createTag("giant_mushroom_blocks");
 
         public static final TagKey<Item> SOUL_GROUND_BLOCKS =
                 createTag("soul_ground_blocks");

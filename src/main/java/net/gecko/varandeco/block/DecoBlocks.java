@@ -7,7 +7,9 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.custom.*;
+import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
+import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
+import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.flower.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
@@ -118,11 +120,10 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PACKED_NETHERRACK = registerBlock("packed_netherrack",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(3.2F,1.0f)),
-            DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block NETHERRACK_BRICKS = registerBlock("netherrack_bricks",
+            DecoItemGroup.VARAN_DECO_BLOCKS);    public static final Block NETHERRACK_BRICKS = registerBlock("netherrack_bricks",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_NETHERRACK_BRICKS = registerBlock("chiseled_netherrack_bricks",
-            new Block(FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.NETHERRACK_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BASALT_BRICKS = registerBlock("basalt_bricks",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_BASALT)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_GLOWSTONE = registerBlock("smooth_glowstone",
@@ -821,7 +822,7 @@ public class DecoBlocks {
     public static final Block SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
             new StairsBlock(DecoBlocks.SNOW_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block PACKED_NETHERRACK_STAIRS = registerBlock("packed_netherracke_stairs",
+    public static final Block PACKED_NETHERRACK_STAIRS = registerBlock("packed_netherrack_stairs",
             new StairsBlock(DecoBlocks.PACKED_NETHERRACK.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block NETHERRACK_BRICK_STAIRS = registerBlock("netherrack_brick_stairs",
@@ -1186,7 +1187,7 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.PURPUR_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block PACKED_NETHERRACK_SLAB = registerBlock("packed_netherracke_slab",
+    public static final Block PACKED_NETHERRACK_SLAB = registerBlock("packed_netherrack_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block NETHERRACK_BRICK_SLAB = registerBlock("netherrack_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.NETHERRACK_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1438,19 +1439,26 @@ public class DecoBlocks {
             new FlowerPotBlock(ENDER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block OAK_CRAFTING_TABLE = registerBlock("oak_crafting_table",
-            new OakCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.OAK_TAN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new OakCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.OAK_TAN)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
-            new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new SpruceCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.SPRUCE_BROWN)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
-            new BirchCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new BirchCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.PALE_YELLOW)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block JUNGLE_CRAFTING_TABLE = registerBlock("jungle_crafting_table",
-            new JungleCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DIRT_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new JungleCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DIRT_BROWN)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block ACACIA_CRAFTING_TABLE = registerBlock("acacia_crafting_table",
-            new AcaciaCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new AcaciaCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.GRAY)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block DARK_OAK_CRAFTING_TABLE = registerBlock("dark_oak_crafting_table",
-            new DarkOakCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new DarkOakCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.BROWN)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MANGROVE_CRAFTING_TABLE = registerBlock("mangrove_crafting_table",
-            new MangroveCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.RED)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new MangroveCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.RED)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRIMSON_CRAFTING_TABLE = registerBlock("crimson_crafting_table",
             new CrimsonCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DULL_PINK)
                     .sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1458,7 +1466,11 @@ public class DecoBlocks {
             new WarpedCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.TEAL)
                     .sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_CRAFTING_TABLE = registerBlock("cactus_crafting_table",
-            new CactusCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new CactusCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.DARK_GREEN)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_CRAFTING_TABLE = registerBlock("mushroom_crafting_table",
+            new MushroomCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).mapColor(MapColor.OFF_WHITE)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             new DeepslateFurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -1486,6 +1498,8 @@ public class DecoBlocks {
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)
                     .sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_LADDER = registerBlock("cactus_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_LADDER = registerBlock("mushroom_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1904,7 +1918,7 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.PURPUR_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
-    public static final Block PACKED_NETHERRACK_WALL = registerBlock("packed_netherracke_wall",
+    public static final Block PACKED_NETHERRACK_WALL = registerBlock("packed_netherrack_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.PACKED_NETHERRACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block NETHERRACK_BRICK_WALL = registerBlock("netherrack_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.NETHERRACK_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2114,6 +2128,8 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new NonStationBarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_BARREL = registerBlock("mushroom_barrel",
+            new NonStationBarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
             new DeepslateSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -2151,6 +2167,8 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_CARTOGRAPHY_TABLE = registerBlock("cactus_cartography_table",
             new CactusCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_CARTOGRAPHY_TABLE = registerBlock("mushroom_cartography_table",
+            new MushroomCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_GRINDSTONE = registerBlock("deepslate_grindstone",
             new DeepslateGrindstoneBlock(FabricBlockSettings.copyOf(Blocks.GRINDSTONE).sounds(BlockSoundGroup.DEEPSLATE)
@@ -2181,6 +2199,8 @@ public class DecoBlocks {
                     .sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_SMITHING_TABLE = registerBlock("cactus_smithing_table",
             new CactusSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_SMITHING_TABLE = registerBlock("mushroom_smithing_table",
+            new MushroomSmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_STONECUTTER = registerBlock("deepslate_stonecutter",
             new DeepslateStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -2240,6 +2260,9 @@ public class DecoBlocks {
             new BubbleElevatorMagmaBlock(FabricBlockSettings.copyOf(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
                     .mapColor(MapColor.DARK_RED).postProcess(DecoBlocks::always).ticksRandomly()
                     .emissiveLighting(DecoBlocks::always).luminance(state -> 3)));
+
+    public static final Block MUSHROOM_NOTE_BLOCK = registerBlock("mushroom_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
             new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)),
@@ -2343,6 +2366,8 @@ public class DecoBlocks {
 
     public static final Block CACTUS_PALLET_DOOR = registerBlock("cactus_pallet_door",
             new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_PALLET_DOOR = registerBlock("mushroom_pallet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_PALLET_DOOR = registerBlock("wooden_pallet_door",
             new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
 
@@ -2376,6 +2401,8 @@ public class DecoBlocks {
 
     public static final Block CACTUS_PALLET_TRAPDOOR = registerBlock("cactus_pallet_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_PALLET_TRAPDOOR = registerBlock("mushroom_pallet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_PALLET_TRAPDOOR = registerBlock("wooden_pallet_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
 
@@ -2393,12 +2420,18 @@ public class DecoBlocks {
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Identifier CACTUS_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/cactus");
+    public static final Identifier MUSHROOM_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/mushroom");
     public static final Identifier WOODEN_SIGN_TEXTURE = new Identifier(VaranDeco.MOD_ID,"entity/signs/wooden");
 
     public static final Block STANDING_CACTUS_SIGN = registerBlockWithoutItem("standing_cactus_sign",
             new TerraformSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
     public static final Block WALL_CACTUS_SIGN = registerBlockWithoutItem("wall_cactus_sign",
             new TerraformWallSignBlock(CACTUS_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+
+    public static final Block STANDING_MUSHROOM_SIGN = registerBlockWithoutItem("standing_mushroom_sign",
+            new TerraformSignBlock(MUSHROOM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_MUSHROOM_SIGN = registerBlockWithoutItem("wall_mushroom_sign",
+            new TerraformWallSignBlock(MUSHROOM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
 
     public static final Block STANDING_WOODEN_SIGN = registerBlockWithoutItem("standing_wooden_sign",
             new TerraformSignBlock(WOODEN_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
@@ -2578,6 +2611,9 @@ public class DecoBlocks {
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+    public static final BlockFamily MUSHROOM_FAMILY = BlockFamilies.register(DecoBlocks.MUSHROOM_PLANKS)
+            .sign(DecoBlocks.STANDING_MUSHROOM_SIGN,DecoBlocks.WALL_MUSHROOM_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
     public static final BlockFamily WOODEN_FAMILY = BlockFamilies.register(DecoBlocks.WOODEN_PLANKS)
             .sign(DecoBlocks.STANDING_WOODEN_SIGN,DecoBlocks.WALL_WOODEN_SIGN)

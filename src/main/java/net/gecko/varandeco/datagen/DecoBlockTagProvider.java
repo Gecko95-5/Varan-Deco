@@ -517,16 +517,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE)
+                .add(DecoBlocks.MUSHROOM_FENCE)
                 .add(DecoBlocks.WOODEN_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(DecoBlocks.NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE_GATE)
+                .add(DecoBlocks.MUSHROOM_FENCE_GATE)
                 .add(DecoBlocks.WOODEN_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(DecoBlocks.CACTUS_PLANKS)
+                .add(DecoBlocks.MUSHROOM_PLANKS)
                 .add(DecoBlocks.WOODEN_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
@@ -659,26 +662,27 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
+                .add(DecoBlocks.MUSHROOM_STAIRS)
                 .add(DecoBlocks.WOODEN_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(DecoBlocks.CACTUS_PLANK_SLAB)
+                .add(DecoBlocks.MUSHROOM_SLAB)
                 .add(DecoBlocks.WOODEN_SLAB);
-
-        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
-                .add(DecoBlocks.CACTUS_PLANK_FENCE)
-                .add(DecoBlocks.WOODEN_FENCE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(DecoBlocks.CACTUS_PLANK_BUTTON)
+                .add(DecoBlocks.MUSHROOM_BUTTON)
                 .add(DecoBlocks.WOODEN_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE)
+                .add(DecoBlocks.MUSHROOM_PRESSURE_PLATE)
                 .add(DecoBlocks.WOODEN_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR)
+                .add(DecoBlocks.MUSHROOM_DOOR)
                 .add(DecoBlocks.WOODEN_DOOR)
                 .add(DecoBlocks.OAK_PALLET_DOOR)
                 .add(DecoBlocks.SPRUCE_PALLET_DOOR)
@@ -690,10 +694,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_PALLET_DOOR)
                 .add(DecoBlocks.WARPED_PALLET_DOOR)
                 .add(DecoBlocks.CACTUS_PALLET_DOOR)
+                .add(DecoBlocks.MUSHROOM_PALLET_DOOR)
                 .add(DecoBlocks.WOODEN_PALLET_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(DecoBlocks.CACTUS_TRAPDOOR)
+                .add(DecoBlocks.MUSHROOM_TRAPDOOR)
                 .add(DecoBlocks.WOODEN_TRAPDOOR)
                 .add(DecoBlocks.OAK_PALLET_TRAPDOOR)
                 .add(DecoBlocks.SPRUCE_PALLET_TRAPDOOR)
@@ -705,14 +711,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_PALLET_TRAPDOOR)
                 .add(DecoBlocks.WARPED_PALLET_TRAPDOOR)
                 .add(DecoBlocks.CACTUS_PALLET_TRAPDOOR)
+                .add(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR)
                 .add(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
                 .add(DecoBlocks.STANDING_CACTUS_SIGN)
+                .add(DecoBlocks.STANDING_MUSHROOM_SIGN)
                 .add(DecoBlocks.STANDING_WOODEN_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
                 .add(DecoBlocks.WALL_CACTUS_SIGN)
+                .add(DecoBlocks.WALL_MUSHROOM_SIGN)
                 .add(DecoBlocks.WALL_WOODEN_SIGN);
 
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
@@ -790,6 +799,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE)
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE)
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE)
+                .add(DecoBlocks.MUSHROOM_CRAFTING_TABLE)
                 .add(DecoBlocks.OAK_CRAFTING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_SMITHING_TABLES)
@@ -802,7 +812,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_SMITHING_TABLE)
                 .add(DecoBlocks.CRIMSON_SMITHING_TABLE)
                 .add(DecoBlocks.WARPED_SMITHING_TABLE)
-                .add(DecoBlocks.CACTUS_SMITHING_TABLE);
+                .add(DecoBlocks.CACTUS_SMITHING_TABLE)
+                .add(DecoBlocks.MUSHROOM_SMITHING_TABLE);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.DECO_NOTE_BLOCKS)
+                .add(DecoBlocks.MUSHROOM_NOTE_BLOCK);
 
         getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_STAIRS)
                 .add(DecoBlocks.TERRACOTTA_STAIRS)
@@ -1024,7 +1038,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_BARREL)
                 .add(DecoBlocks.CRIMSON_BARREL)
                 .add(DecoBlocks.WARPED_BARREL)
-                .add(DecoBlocks.CACTUS_BARREL);
+                .add(DecoBlocks.CACTUS_BARREL)
+                .add(DecoBlocks.MUSHROOM_BARREL);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_LADDERS)
                 .add(DecoBlocks.BIRCH_LADDER)
@@ -1036,6 +1051,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_LADDER)
                 .add(DecoBlocks.WARPED_LADDER)
                 .add(DecoBlocks.CACTUS_LADDER)
+                .add(DecoBlocks.MUSHROOM_LADDER)
                 .add(DecoBlocks.WOODEN_LADDER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_CARTOGRAPHY_TABLES)
@@ -1048,7 +1064,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE)
                 .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE)
-                .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
+                .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE)
+                .add(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)

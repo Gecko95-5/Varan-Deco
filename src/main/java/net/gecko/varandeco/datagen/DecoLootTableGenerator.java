@@ -391,6 +391,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WARPED_CRAFTING_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_crafting_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_CRAFTING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_crafting_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_CRAFTING_TABLE));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_barrel"),
                 BlockLootTableGenerator.drops(DecoBlocks.OAK_BARREL));
@@ -412,6 +414,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WARPED_BARREL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_barrel"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_BARREL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_barrel"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_BARREL));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_ladder"),
                 BlockLootTableGenerator.drops(DecoBlocks.BIRCH_LADDER));
@@ -431,6 +435,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WARPED_LADDER));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_ladder"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_LADDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_LADDER));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_smithing_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.OAK_SMITHING_TABLE));
@@ -452,6 +458,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WARPED_SMITHING_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_smithing_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_SMITHING_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_smithing_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_SMITHING_TABLE));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_cartography_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.OAK_CARTOGRAPHY_TABLE));
@@ -473,6 +481,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.WARPED_CARTOGRAPHY_TABLE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_cartography_table"),
                 BlockLootTableGenerator.drops(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_cartography_table"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/terracotta_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.TERRACOTTA_STAIRS));
@@ -1992,5 +2002,38 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_LAMP, DecoBlocks.SMOOTH_GLOWSTONE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_lamp"),
                 BlockLootTableGenerator.drops(DecoBlocks.PINK_LAMP, DecoBlocks.SMOOTH_GLOWSTONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_planks"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_PLANKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MUSHROOM_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_fence"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_FENCE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_FENCE_GATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_pressure_plate"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_PRESSURE_PLATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_button"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_BUTTON));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_door"),
+                BlockLootTableGenerator.doorDrops(DecoBlocks.MUSHROOM_DOOR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_trapdoor"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_TRAPDOOR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_pallet_door"),
+                BlockLootTableGenerator.doorDrops(DecoBlocks.MUSHROOM_PALLET_DOOR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_pallet_trapdoor"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/standing_mushroom_sign"),
+                BlockLootTableGenerator.drops(DecoItems.MUSHROOM_SIGN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/wall_mushroom_sign"),
+                BlockLootTableGenerator.drops(DecoItems.MUSHROOM_SIGN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_NOTE_BLOCK));
     }
 }
