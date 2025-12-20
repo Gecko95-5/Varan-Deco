@@ -2035,5 +2035,45 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mushroom_note_block"),
                 BlockLootTableGenerator.drops(DecoBlocks.MUSHROOM_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oak_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.OAK_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/spruce_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.SPRUCE_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/birch_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.BIRCH_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jungle_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.JUNGLE_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dark_oak_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.DARK_OAK_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/acaica_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.ACACIA_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mangrove_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.MANGROVE_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_NOTE_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cactus_note_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.CACTUS_NOTE_BLOCK));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_calcite"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_CALCITE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_calcite"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_CALCITE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/calcite_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CALCITE_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_andesite"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_ANDESITE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/andesite_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.ANDESITE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_granite"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_GRANITE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/granite_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRANITE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_diorite"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_DIORITE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/diorite_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.DIORITE_BRICKS));
     }
 }

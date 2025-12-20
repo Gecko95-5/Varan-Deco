@@ -1262,6 +1262,29 @@
   "block.varan-deco.wall_mushroom_sign": "Mushroom Wall Sign",
 
   "block.varan-deco.mushroom_note_block": "Mushroom Note Block",
+  "block.varan-deco.oak_note_block": "Oak Note Block",
+  "block.varan-deco.spruce_note_block": "Spruce Note Block",
+  "block.varan-deco.birch_note_block": "Birch Note Block",
+  "block.varan-deco.jungle_note_block": "Jungle Note Block",
+  "block.varan-deco.acacia_note_block": "Acacia Note Block",
+  "block.varan-deco.dark_oak_note_block": "Dark Oak Note Block",
+  "block.varan-deco.mangrove_note_block": "Mangrove Note Block",
+  "block.varan-deco.crimson_note_block": "Crimson Note Block",
+  "block.varan-deco.warped_note_block": "Warped Note Block",
+  "block.varan-deco.cactus_note_block": "Cactus Note Block",
+
+  "block.varan-deco.polished_calcite": "Polished Calcite",
+  "block.varan-deco.cut_calcite": "Cut Calcite",
+  "block.varan-deco.calcite_bricks": "Calcite Bricks",
+
+  "block.varan-deco.cut_granite": "Cut Granite",
+  "block.varan-deco.granite_bricks": "Granite Bricks",
+
+  "block.varan-deco.cut_diorite": "Cut Diorite",
+  "block.varan-deco.diorite_bricks": "Diorite Bricks",
+
+  "block.varan-deco.cut_andesite": "Cut Andesite",
+  "block.varan-deco.andesite_bricks": "Andesite Bricks",
 
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",

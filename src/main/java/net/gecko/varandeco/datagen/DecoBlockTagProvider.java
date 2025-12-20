@@ -355,7 +355,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.NETHERRACK_BRICK_SLAB)
                 .add(DecoBlocks.NETHERRACK_BRICK_WALL)
                 .add(DecoBlocks.SMOOTH_GLOWSTONE)
-                .add(DecoBlocks.BASALT_BRICKS);
+                .add(DecoBlocks.BASALT_BRICKS)
+                .forceAddTag(DecoTags.Blocks.COLOURED_LAMPS)
+                .add(DecoBlocks.POLISHED_CALCITE)
+                .add(DecoBlocks.CUT_CALCITE)
+                .add(DecoBlocks.CALCITE_BRICKS)
+                .add(DecoBlocks.CUT_DIORITE)
+                .add(DecoBlocks.DIORITE_BRICKS)
+                .add(DecoBlocks.CUT_GRANITE)
+                .add(DecoBlocks.GRANITE_BRICKS)
+                .add(DecoBlocks.CUT_ANDESITE)
+                .add(DecoBlocks.ANDESITE_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -816,7 +826,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.MUSHROOM_SMITHING_TABLE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_NOTE_BLOCKS)
-                .add(DecoBlocks.MUSHROOM_NOTE_BLOCK);
+                .add(DecoBlocks.MUSHROOM_NOTE_BLOCK)
+                .add(DecoBlocks.OAK_NOTE_BLOCK)
+                .add(DecoBlocks.SPRUCE_NOTE_BLOCK)
+                .add(DecoBlocks.BIRCH_NOTE_BLOCK)
+                .add(DecoBlocks.JUNGLE_NOTE_BLOCK)
+                .add(DecoBlocks.DARK_OAK_NOTE_BLOCK)
+                .add(DecoBlocks.ACACIA_NOTE_BLOCK)
+                .add(DecoBlocks.MANGROVE_NOTE_BLOCK)
+                .add(DecoBlocks.CRIMSON_NOTE_BLOCK)
+                .add(DecoBlocks.WARPED_NOTE_BLOCK)
+                .add(DecoBlocks.CACTUS_NOTE_BLOCK);
 
         getOrCreateTagBuilder(DecoTags.Blocks.TERRACOTTA_STAIRS)
                 .add(DecoBlocks.TERRACOTTA_STAIRS)

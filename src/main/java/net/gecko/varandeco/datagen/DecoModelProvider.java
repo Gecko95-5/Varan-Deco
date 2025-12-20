@@ -474,6 +474,26 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_LAMP);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MUSHROOM_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.OAK_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SPRUCE_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BIRCH_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.JUNGLE_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.DARK_OAK_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ACACIA_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MANGROVE_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRIMSON_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WARPED_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CACTUS_NOTE_BLOCK);
+        
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.POLISHED_CALCITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_CALCITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CALCITE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_DIORITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.DIORITE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_GRANITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GRANITE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_ANDESITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ANDESITE_BRICKS);
 
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
 

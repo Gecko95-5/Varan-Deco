@@ -187,7 +187,17 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_BARREL.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_NOTE_BLOCKS)
-                .add(DecoBlocks.MUSHROOM_NOTE_BLOCK.asItem());
+                .add(DecoBlocks.MUSHROOM_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.OAK_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.SPRUCE_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.BIRCH_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.JUNGLE_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.DARK_OAK_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.ACACIA_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.MANGROVE_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.CRIMSON_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.WARPED_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.CACTUS_NOTE_BLOCK.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())

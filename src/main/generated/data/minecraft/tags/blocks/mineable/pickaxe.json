@@ -341,6 +341,16 @@
     "varan-deco:netherrack_brick_slab",
     "varan-deco:netherrack_brick_wall",
     "varan-deco:smooth_glowstone",
-    "varan-deco:basalt_bricks"
+    "varan-deco:basalt_bricks",
+    "#varan-deco:coloured_lamps",
+    "varan-deco:polished_calcite",
+    "varan-deco:cut_calcite",
+    "varan-deco:calcite_bricks",
+    "varan-deco:cut_diorite",
+    "varan-deco:diorite_bricks",
+    "varan-deco:cut_granite",
+    "varan-deco:granite_bricks",
+    "varan-deco:cut_andesite",
+    "varan-deco:andesite_bricks"
   ]
 }

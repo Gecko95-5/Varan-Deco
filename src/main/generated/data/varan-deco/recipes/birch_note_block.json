@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:birch_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_note_blocks"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:birch_note_block"
+  }
+}

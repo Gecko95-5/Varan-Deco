@@ -38,11 +38,34 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
 public class DecoBlocks {
+    public static final Block CUT_GRANITE = registerBlock("cut_granite",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GRANITE_BRICKS = registerBlock("granite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_DIORITE = registerBlock("cut_diorite",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_DIORITE)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DIORITE_BRICKS = registerBlock("diorite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_DIORITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_ANDESITE = registerBlock("cut_andesite",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_ANDESITE)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ANDESITE_BRICKS = registerBlock("andesite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_ANDESITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POLISHED_CALCITE = registerBlock("polished_calcite",
+            new Block(FabricBlockSettings.copyOf(Blocks.CALCITE).strength(1.0F)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_CALCITE = registerBlock("cut_calcite",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_CALCITE)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_CALCITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
             new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(1.0f,1.5f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MUSHROOM_PLANKS = registerBlock("mushroom_planks",
-            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_YELLOW).strength(1.0f,1.5f)
+            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.RAW_IRON_PINK).strength(1.0f,1.5f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
             new Block(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,3.0f)
@@ -769,7 +792,6 @@ public class DecoBlocks {
     public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
             new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
-
     public static final Block BLUE_ICE_STAIRS = registerBlock("blue_ice_stairs",
             new StairsBlock(Blocks.BLUE_ICE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLUE_ICE)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2129,7 +2151,7 @@ public class DecoBlocks {
     public static final Block CACTUS_BARREL = registerBlock("cactus_barrel",
             new NonStationBarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MUSHROOM_BARREL = registerBlock("mushroom_barrel",
-            new NonStationBarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new NonStationBarrelBlock(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.RAW_IRON_PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
             new DeepslateSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -2261,8 +2283,28 @@ public class DecoBlocks {
                     .mapColor(MapColor.DARK_RED).postProcess(DecoBlocks::always).ticksRandomly()
                     .emissiveLighting(DecoBlocks::always).luminance(state -> 3)));
 
-    public static final Block MUSHROOM_NOTE_BLOCK = registerBlock("mushroom_note_block",
+    public static final Block OAK_NOTE_BLOCK = registerBlock("oak_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.OAK_TAN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SPRUCE_NOTE_BLOCK = registerBlock("spruce_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.SPRUCE_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block BIRCH_NOTE_BLOCK = registerBlock("birch_note_block",
             new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.PALE_YELLOW)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JUNGLE_NOTE_BLOCK = registerBlock("jungle_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DIRT_BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ACACIA_NOTE_BLOCK = registerBlock("acacia_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.ORANGE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block DARK_OAK_NOTE_BLOCK = registerBlock("dark_oak_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.BROWN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MANGROVE_NOTE_BLOCK = registerBlock("mangrove_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.RED)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CRIMSON_NOTE_BLOCK = registerBlock("crimson_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DULL_PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WARPED_NOTE_BLOCK = registerBlock("warped_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DARK_AQUA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CACTUS_NOTE_BLOCK = registerBlock("cactus_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block MUSHROOM_NOTE_BLOCK = registerBlock("mushroom_note_block",
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.RAW_IRON_PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
             new StoneButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON).sounds(BlockSoundGroup.DEEPSLATE)),
