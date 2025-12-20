@@ -945,5 +945,181 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.POLISHED_PURPUR_STAIRS);
         addDrop(DecoBlocks.POLISHED_PURPUR_SLAB, slabDrops(DecoBlocks.POLISHED_PURPUR_SLAB));
         addDrop(DecoBlocks.POLISHED_PURPUR_WALL);
+
+        addDrop(DecoBlocks.OAK_WOOD_STAIRS);
+        addDrop(DecoBlocks.OAK_WOOD_SLAB, slabDrops(DecoBlocks.OAK_WOOD_SLAB));
+        addDrop(DecoBlocks.OAK_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_OAK_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_OAK_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_OAK_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_OAK_WOOD_WALL);
+
+        addDrop(DecoBlocks.SPRUCE_WOOD_STAIRS);
+        addDrop(DecoBlocks.SPRUCE_WOOD_SLAB, slabDrops(DecoBlocks.SPRUCE_WOOD_SLAB));
+        addDrop(DecoBlocks.SPRUCE_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_SPRUCE_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_SPRUCE_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_SPRUCE_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_SPRUCE_WOOD_WALL);
+
+        addDrop(DecoBlocks.BIRCH_WOOD_STAIRS);
+        addDrop(DecoBlocks.BIRCH_WOOD_SLAB, slabDrops(DecoBlocks.BIRCH_WOOD_SLAB));
+        addDrop(DecoBlocks.BIRCH_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_BIRCH_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_BIRCH_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_BIRCH_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_BIRCH_WOOD_WALL);
+
+        addDrop(DecoBlocks.JUNGLE_WOOD_STAIRS);
+        addDrop(DecoBlocks.JUNGLE_WOOD_SLAB, slabDrops(DecoBlocks.JUNGLE_WOOD_SLAB));
+        addDrop(DecoBlocks.JUNGLE_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_JUNGLE_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_JUNGLE_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_JUNGLE_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_JUNGLE_WOOD_WALL);
+
+        addDrop(DecoBlocks.ACACIA_WOOD_STAIRS);
+        addDrop(DecoBlocks.ACACIA_WOOD_SLAB, slabDrops(DecoBlocks.ACACIA_WOOD_SLAB));
+        addDrop(DecoBlocks.ACACIA_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_ACACIA_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_ACACIA_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_ACACIA_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_ACACIA_WOOD_WALL);
+
+        addDrop(DecoBlocks.DARK_OAK_WOOD_STAIRS);
+        addDrop(DecoBlocks.DARK_OAK_WOOD_SLAB, slabDrops(DecoBlocks.DARK_OAK_WOOD_SLAB));
+        addDrop(DecoBlocks.DARK_OAK_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_DARK_OAK_WOOD_WALL);
+
+        addDrop(DecoBlocks.MANGROVE_WOOD_STAIRS);
+        addDrop(DecoBlocks.MANGROVE_WOOD_SLAB, slabDrops(DecoBlocks.MANGROVE_WOOD_SLAB));
+        addDrop(DecoBlocks.MANGROVE_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_MANGROVE_WOOD_WALL);
+
+        addDrop(DecoBlocks.CRIMSON_HYPHAE_STAIRS);
+        addDrop(DecoBlocks.CRIMSON_HYPHAE_SLAB, slabDrops(DecoBlocks.CRIMSON_HYPHAE_SLAB));
+        addDrop(DecoBlocks.CRIMSON_HYPHAE_WALL);
+        addDrop(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB, slabDrops(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB));
+        addDrop(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL);
+
+        addDrop(DecoBlocks.WARPED_HYPHAE_STAIRS);
+        addDrop(DecoBlocks.WARPED_HYPHAE_SLAB, slabDrops(DecoBlocks.WARPED_HYPHAE_SLAB));
+        addDrop(DecoBlocks.WARPED_HYPHAE_WALL);
+        addDrop(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB, slabDrops(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB));
+        addDrop(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL);
+
+        addDrop(DecoBlocks.WOODEN_WOOD_STAIRS);
+        addDrop(DecoBlocks.WOODEN_WOOD_SLAB, slabDrops(DecoBlocks.WOODEN_WOOD_SLAB));
+        addDrop(DecoBlocks.WOODEN_WOOD_WALL);
+        addDrop(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
+
+        addDrop(DecoBlocks.PACKED_NETHERRACK);
+        addDrop(DecoBlocks.PACKED_NETHERRACK_STAIRS);
+        addDrop(DecoBlocks.PACKED_NETHERRACK_SLAB, slabDrops(DecoBlocks.PACKED_NETHERRACK_SLAB));
+        addDrop(DecoBlocks.PACKED_NETHERRACK_WALL);
+
+        addDrop(DecoBlocks.NETHERRACK_BRICKS);
+        addDrop(DecoBlocks.NETHERRACK_BRICK_STAIRS);
+        addDrop(DecoBlocks.NETHERRACK_BRICK_SLAB, slabDrops(DecoBlocks.NETHERRACK_BRICK_SLAB));
+        addDrop(DecoBlocks.NETHERRACK_BRICK_WALL);
+
+        addDrop(DecoBlocks.CHISELED_MUD_BRICKS);
+        addDrop(DecoBlocks.CHISELED_NETHERRACK_BRICKS);
+        addDrop(DecoBlocks.CHISELED_ICE_BRICKS);
+
+        addDrop(DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.BASALT_BRICKS);
+
+        addDrop(DecoBlocks.PACKED_CACTUS);
+        addDrop(DecoBlocks.STRIPPED_CACTUS);
+
+        addDrop(DecoBlocks.OAK_PALLET_DOOR, doorDrops(DecoBlocks.OAK_PALLET_DOOR));
+        addDrop(DecoBlocks.SPRUCE_PALLET_DOOR, doorDrops(DecoBlocks.SPRUCE_PALLET_DOOR));
+        addDrop(DecoBlocks.BIRCH_PALLET_DOOR, doorDrops(DecoBlocks.BIRCH_PALLET_DOOR));
+        addDrop(DecoBlocks.JUNGLE_PALLET_DOOR, doorDrops(DecoBlocks.JUNGLE_PALLET_DOOR));
+        addDrop(DecoBlocks.ACACIA_PALLET_DOOR, doorDrops(DecoBlocks.ACACIA_PALLET_DOOR));
+        addDrop(DecoBlocks.DARK_OAK_PALLET_DOOR, doorDrops(DecoBlocks.DARK_OAK_PALLET_DOOR));
+        addDrop(DecoBlocks.MANGROVE_PALLET_DOOR, doorDrops(DecoBlocks.MANGROVE_PALLET_DOOR));
+        addDrop(DecoBlocks.CRIMSON_PALLET_DOOR, doorDrops(DecoBlocks.CRIMSON_PALLET_DOOR));
+        addDrop(DecoBlocks.WARPED_PALLET_DOOR, doorDrops(DecoBlocks.WARPED_PALLET_DOOR));
+        addDrop(DecoBlocks.CACTUS_PALLET_DOOR, doorDrops(DecoBlocks.CACTUS_PALLET_DOOR));
+        addDrop(DecoBlocks.WOODEN_PALLET_DOOR, doorDrops(DecoBlocks.WOODEN_PALLET_DOOR));
+
+        addDrop(DecoBlocks.OAK_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.SPRUCE_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.BIRCH_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.JUNGLE_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.ACACIA_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.MANGROVE_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.CRIMSON_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.WARPED_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.CACTUS_PALLET_TRAPDOOR);
+        addDrop(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
+
+        addDrop(DecoBlocks.WHITE_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.LIGHT_GRAY_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.GRAY_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.BLACK_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.BROWN_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.RED_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.ORANGE_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.YELLOW_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.LIME_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.GREEN_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.CYAN_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.LIGHT_BLUE_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.BLUE_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.PURPLE_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.MAGENTA_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+        addDrop(DecoBlocks.PINK_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
+
+        addDrop(DecoBlocks.MUSHROOM_PLANKS);
+        addDrop(DecoBlocks.MUSHROOM_STAIRS);
+        addDrop(DecoBlocks.MUSHROOM_SLAB, slabDrops(DecoBlocks.MUSHROOM_SLAB));
+        addDrop(DecoBlocks.MUSHROOM_FENCE);
+        addDrop(DecoBlocks.MUSHROOM_FENCE_GATE);
+        addDrop(DecoBlocks.MUSHROOM_PRESSURE_PLATE);
+        addDrop(DecoBlocks.MUSHROOM_BUTTON);
+
+        addDrop(DecoBlocks.MUSHROOM_DOOR, doorDrops(DecoBlocks.MUSHROOM_DOOR));
+        addDrop(DecoBlocks.MUSHROOM_TRAPDOOR);
+
+        addDrop(DecoBlocks.MUSHROOM_PALLET_DOOR, doorDrops(DecoBlocks.MUSHROOM_PALLET_DOOR));
+        addDrop(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR);
+
+        addDrop(DecoBlocks.STANDING_MUSHROOM_SIGN);
+
+        addDrop(DecoBlocks.MUSHROOM_CRAFTING_TABLE);
+        addDrop(DecoBlocks.MUSHROOM_BARREL);
+        addDrop(DecoBlocks.MUSHROOM_LADDER);
+        addDrop(DecoBlocks.MUSHROOM_SMITHING_TABLE);
+        addDrop(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE);
+        addDrop(DecoBlocks.MUSHROOM_NOTE_BLOCK);
+        
+        addDrop(DecoBlocks.OAK_NOTE_BLOCK);
+        addDrop(DecoBlocks.SPRUCE_NOTE_BLOCK);
+        addDrop(DecoBlocks.BIRCH_NOTE_BLOCK);
+        addDrop(DecoBlocks.JUNGLE_NOTE_BLOCK);
+        addDrop(DecoBlocks.DARK_OAK_NOTE_BLOCK);
+        addDrop(DecoBlocks.ACACIA_NOTE_BLOCK);
+        addDrop(DecoBlocks.MANGROVE_NOTE_BLOCK);
+        addDrop(DecoBlocks.CRIMSON_NOTE_BLOCK);
+        addDrop(DecoBlocks.WARPED_NOTE_BLOCK);
+        addDrop(DecoBlocks.CACTUS_NOTE_BLOCK);
+
+        addDrop(DecoBlocks.POLISHED_CALCITE);
+        addDrop(DecoBlocks.CUT_CALCITE);
+        addDrop(DecoBlocks.CALCITE_BRICKS);
+
+        addDrop(DecoBlocks.CUT_ANDESITE);
+        addDrop(DecoBlocks.ANDESITE_BRICKS);
+        addDrop(DecoBlocks.CUT_GRANITE);
+        addDrop(DecoBlocks.GRANITE_BRICKS);
+        addDrop(DecoBlocks.CUT_DIORITE);
+        addDrop(DecoBlocks.DIORITE_BRICKS);
     }
 }
