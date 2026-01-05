@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:blackstone_slab"
+  },
+  "result": "varan-deco:smooth_blackstone_slab"
+}

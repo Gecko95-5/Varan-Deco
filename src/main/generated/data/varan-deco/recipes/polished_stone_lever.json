@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lever",
+  "key": {
+    "#": {
+      "item": "varan-deco:polished_stone"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/",
+    "#"
+  ],
+  "result": {
+    "item": "varan-deco:polished_stone_lever"
+  }
+}

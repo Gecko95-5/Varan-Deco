@@ -73,6 +73,9 @@ public class DecoTags {
         public static final TagKey<Block> COLOURED_LAMPS =
                 createTag("coloured_lamps");
 
+        public static final TagKey<Block> LEVERS =
+                createTag("levers");
+
         public static final TagKey<Block> LOG_STAIRS =
                 createTag("log_stairs");
 

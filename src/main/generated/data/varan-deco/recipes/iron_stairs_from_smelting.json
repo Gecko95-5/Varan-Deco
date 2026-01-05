@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:raw_iron_stairs"
+  },
+  "result": "varan-deco:iron_stairs"
+}

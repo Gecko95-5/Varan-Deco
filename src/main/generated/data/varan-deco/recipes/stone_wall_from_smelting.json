@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:cobblestone_wall"
+  },
+  "result": "varan-deco:stone_wall"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lever",
+  "key": {
+    "#": {
+      "item": "minecraft:blackstone"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/",
+    "#"
+  ],
+  "result": {
+    "item": "varan-deco:blackstone_lever"
+  }
+}

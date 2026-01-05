@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:cobbled_deepslate_stairs"
+  },
+  "result": "varan-deco:deepslate_stairs"
+}

@@ -172,8 +172,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool soulsoilstonebrickspool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SOUL_SOILSTONE_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool polipurpurpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_PURPUR);
+        BlockStateModelGenerator.BlockTexturePool cutpurpurpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_PURPUR);
 
         BlockStateModelGenerator.BlockTexturePool oakwoodpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OAK_WOOD_TEMP);
@@ -484,16 +484,48 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRIMSON_NOTE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WARPED_NOTE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CACTUS_NOTE_BLOCK);
-        
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.POLISHED_CALCITE);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_CALCITE);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CALCITE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_DIORITE);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.DIORITE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_GRANITE);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GRANITE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CUT_ANDESITE);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ANDESITE_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool policalcpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_CALCITE);
+        BlockStateModelGenerator.BlockTexturePool cutcalcpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_CALCITE);
+        BlockStateModelGenerator.BlockTexturePool calcbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CALCITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutdiorpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_DIORITE);
+        BlockStateModelGenerator.BlockTexturePool diorbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DIORITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutgranpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_GRANITE);
+        BlockStateModelGenerator.BlockTexturePool granbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GRANITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutandespool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_ANDESITE);
+        BlockStateModelGenerator.BlockTexturePool andesbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ANDESITE_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool cutgoldpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_GOLD);
+
+        BlockStateModelGenerator.BlockTexturePool goldpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GOLD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rawgoldpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RAW_GOLD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool ironpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.IRON_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rawironpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RAW_IRON_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool copperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rawcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RAW_COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool expcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.EXPOSED_COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool weathcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WEATHERED_COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool oxidcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OXIDIZED_COPPER_TEMP);
 
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
 
@@ -769,9 +801,9 @@ public class DecoModelProvider extends FabricModelProvider {
         soulsoilstonebrickspool.slab(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
         soulsoilstonebrickspool.wall(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
 
-        polipurpurpool.stairs(DecoBlocks.POLISHED_PURPUR_STAIRS);
-        polipurpurpool.slab(DecoBlocks.POLISHED_PURPUR_SLAB);
-        polipurpurpool.wall(DecoBlocks.POLISHED_PURPUR_WALL);
+        cutpurpurpool.stairs(DecoBlocks.CUT_PURPUR_STAIRS);
+        cutpurpurpool.slab(DecoBlocks.CUT_PURPUR_SLAB);
+        cutpurpurpool.wall(DecoBlocks.CUT_PURPUR_WALL);
 
         oakwoodpool.stairs(DecoBlocks.OAK_WOOD_STAIRS);
         oakwoodpool.slab(DecoBlocks.OAK_WOOD_SLAB);
@@ -860,6 +892,77 @@ public class DecoModelProvider extends FabricModelProvider {
         netherrackbrickpool.stairs(DecoBlocks.NETHERRACK_BRICK_STAIRS);
         netherrackbrickpool.slab(DecoBlocks.NETHERRACK_BRICK_SLAB);
         netherrackbrickpool.wall(DecoBlocks.NETHERRACK_BRICK_WALL);
+
+        policalcpool.stairs(DecoBlocks.POLISHED_CALCITE_STAIRS);
+        policalcpool.slab(DecoBlocks.POLISHED_CALCITE_SLAB);
+        policalcpool.wall(DecoBlocks.POLISHED_CALCITE_WALL);
+
+        cutcalcpool.stairs(DecoBlocks.CUT_CALCITE_STAIRS);
+        cutcalcpool.slab(DecoBlocks.CUT_CALCITE_SLAB);
+        cutcalcpool.wall(DecoBlocks.CUT_CALCITE_WALL);
+
+        calcbrickpool.stairs(DecoBlocks.CALCITE_BRICK_STAIRS);
+        calcbrickpool.slab(DecoBlocks.CALCITE_BRICK_SLAB);
+        calcbrickpool.wall(DecoBlocks.CALCITE_BRICK_WALL);
+
+        cutandespool.stairs(DecoBlocks.CUT_ANDESITE_STAIRS);
+        cutandespool.slab(DecoBlocks.CUT_ANDESITE_SLAB);
+        cutandespool.wall(DecoBlocks.CUT_ANDESITE_WALL);
+
+        andesbrickpool.stairs(DecoBlocks.ANDESITE_BRICK_STAIRS);
+        andesbrickpool.slab(DecoBlocks.ANDESITE_BRICK_SLAB);
+        andesbrickpool.wall(DecoBlocks.ANDESITE_BRICK_WALL);
+
+        cutdiorpool.stairs(DecoBlocks.CUT_DIORITE_STAIRS);
+        cutdiorpool.slab(DecoBlocks.CUT_DIORITE_SLAB);
+        cutdiorpool.wall(DecoBlocks.CUT_DIORITE_WALL);
+
+        diorbrickpool.stairs(DecoBlocks.DIORITE_BRICK_STAIRS);
+        diorbrickpool.slab(DecoBlocks.DIORITE_BRICK_SLAB);
+        diorbrickpool.wall(DecoBlocks.DIORITE_BRICK_WALL);
+
+        cutgranpool.stairs(DecoBlocks.CUT_GRANITE_STAIRS);
+        cutgranpool.slab(DecoBlocks.CUT_GRANITE_SLAB);
+        cutgranpool.wall(DecoBlocks.CUT_GRANITE_WALL);
+
+        granbrickpool.stairs(DecoBlocks.GRANITE_BRICK_STAIRS);
+        granbrickpool.slab(DecoBlocks.GRANITE_BRICK_SLAB);
+        granbrickpool.wall(DecoBlocks.GRANITE_BRICK_WALL);
+
+        cutgoldpool.stairs(DecoBlocks.CUT_GOLD_STAIRS);
+        cutgoldpool.slab(DecoBlocks.CUT_GOLD_SLAB);
+
+        ironpool.stairs(DecoBlocks.IRON_STAIRS);
+        ironpool.slab(DecoBlocks.IRON_SLAB);
+        rawironpool.stairs(DecoBlocks.RAW_IRON_STAIRS);
+        rawironpool.slab(DecoBlocks.RAW_IRON_SLAB);
+
+        goldpool.stairs(DecoBlocks.GOLD_STAIRS);
+        goldpool.slab(DecoBlocks.GOLD_SLAB);
+        rawgoldpool.stairs(DecoBlocks.RAW_GOLD_STAIRS);
+        rawgoldpool.slab(DecoBlocks.RAW_GOLD_SLAB);
+
+        copperpool.stairs(DecoBlocks.COPPER_STAIRS);
+        copperpool.slab(DecoBlocks.COPPER_SLAB);
+        rawcopperpool.stairs(DecoBlocks.RAW_COPPER_STAIRS);
+        rawcopperpool.slab(DecoBlocks.RAW_COPPER_SLAB);
+        copperpool.stairs(DecoBlocks.WAXED_COPPER_STAIRS);
+        copperpool.slab(DecoBlocks.WAXED_COPPER_SLAB);
+
+        expcopperpool.stairs(DecoBlocks.EXPOSED_COPPER_STAIRS);
+        expcopperpool.slab(DecoBlocks.EXPOSED_COPPER_SLAB);
+        expcopperpool.stairs(DecoBlocks.WAXED_EXPOSED_COPPER_STAIRS);
+        expcopperpool.slab(DecoBlocks.WAXED_EXPOSED_COPPER_SLAB);
+
+        weathcopperpool.stairs(DecoBlocks.WEATHERED_COPPER_STAIRS);
+        weathcopperpool.slab(DecoBlocks.WEATHERED_COPPER_SLAB);
+        weathcopperpool.stairs(DecoBlocks.WAXED_WEATHERED_COPPER_STAIRS);
+        weathcopperpool.slab(DecoBlocks.WAXED_WEATHERED_COPPER_SLAB);
+
+        oxidcopperpool.stairs(DecoBlocks.OXIDIZED_COPPER_STAIRS);
+        oxidcopperpool.slab(DecoBlocks.OXIDIZED_COPPER_SLAB);
+        oxidcopperpool.stairs(DecoBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
+        oxidcopperpool.slab(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
