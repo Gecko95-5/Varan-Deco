@@ -1409,6 +1409,24 @@
   "block.varan-deco.chiseled_magma_block": "Chiseled Magma Block",
   "block.varan-deco.chiseled_bubble_block": "Chiseled Bubble Block",
 
+  "block.varan-deco.polished_end_stone": "Polished End Stone",
+  "block.varan-deco.polished_end_stone_stairs": "Polished End Stone Stairs",
+  "block.varan-deco.polished_end_stone_slab": "Polished End Stone Slab",
+  "block.varan-deco.polished_end_stone_wall": "Polished End Stone Wall",
+
+  "block.varan-deco.smooth_end_stone": "Smooth End Stone",
+  "block.varan-deco.smooth_end_stone_stairs": "Smooth End Stone Stairs",
+  "block.varan-deco.smooth_end_stone_slab": "Smooth End Stone Slab",
+  "block.varan-deco.smooth_end_stone_wall": "Smooth End Stone Wall",
+
+  "block.varan-deco.end_stone_tiles": "End Stone Tiles",
+  "block.varan-deco.end_stone_tile_stairs": "End Stone Tile Stairs",
+  "block.varan-deco.end_stone_tile_slab": "End Stone Tile Slab",
+  "block.varan-deco.end_stone_tile_wall": "End Stone Tile Wall",
+
+  "block.varan-deco.cracked_end_stone_tiles": "Cracked End Stone Tiles",
+  "block.varan-deco.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 

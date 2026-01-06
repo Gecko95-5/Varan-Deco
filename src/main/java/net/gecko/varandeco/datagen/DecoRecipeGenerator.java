@@ -2604,9 +2604,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.END_STONE_WALL, Items.END_STONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.END_STONE_WALL, Items.END_STONE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_END_STONE, DecoBlocks.END_STONE_SLAB);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_END_STONE, Items.END_STONE);
-
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PURPUR_BLOCK), DecoBlocks.SMOOTH_PURPUR,
                         0.1f, 200).criterion(hasItem(Items.PURPUR_BLOCK), conditionsFromItem(Items.PURPUR_BLOCK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SMOOTH_PURPUR)));
