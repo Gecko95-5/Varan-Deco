@@ -62,8 +62,8 @@ public class DecoConfiguredFeatures {
                                     new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                     1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
                                     1.0F, List.of(DecoBlocks.LAVENDER.getDefaultState(),
-                                            DecoBlocks.PAEONIA.getDefaultState(), DecoBlocks.WHITE_ORCHID.getDefaultState(),
-                                                DecoBlocks.GERBERA_DAISY.getDefaultState()))))));
+                                            DecoBlocks.PAEONIA.getDefaultState(), DecoBlocks.NIGHTSHADE.getDefaultState(),
+                                                DecoBlocks.BUTTERCUP.getDefaultState()))))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_JUNGLE =
             ConfiguredFeatures.register("deco_jungle_flowers", Feature.FLOWER,
@@ -119,9 +119,13 @@ public class DecoConfiguredFeatures {
             "deco_rose", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
                     PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.ROSE)))));
 
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_ENDER = ConfiguredFeatures.register(
-            "deco_ender_flowers", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
-                    PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.ENDER_ROSE)))));
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_ENDER =
+            ConfiguredFeatures.register("deco_ender_flowers", Feature.FLOWER,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
+                                    new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
+                                    1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
+                                    1.0F, List.of(DecoBlocks.ENDER_ROSE.getDefaultState(), DecoBlocks.ENDERSHADE.getDefaultState()))))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_RED_SUNFLOWER = ConfiguredFeatures.register(
             "deco_red_sunflower", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,

@@ -78,6 +78,9 @@
     "varan-deco:cut_granite_wall",
     "varan-deco:granite_brick_wall",
     "varan-deco:cut_andesite_wall",
-    "varan-deco:andesite_brick_wall"
+    "varan-deco:andesite_brick_wall",
+    "varan-deco:sanded_obsidian_wall",
+    "varan-deco:smooth_obsidian_wall",
+    "varan-deco:cut_obsidian_wall"
   ]
 }

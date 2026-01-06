@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:obsidian_slab"
+  },
+  "result": "varan-deco:smooth_obsidian_slab"
+}

@@ -82,6 +82,9 @@
     "varan-deco:waxed_exposed_copper_stairs",
     "varan-deco:waxed_weathered_copper_stairs",
     "varan-deco:waxed_oxidized_copper_stairs",
-    "varan-deco:gold_stairs"
+    "varan-deco:gold_stairs",
+    "varan-deco:sanded_obsidian_stairs",
+    "varan-deco:smooth_obsidian_stairs",
+    "varan-deco:cut_obsidian_stairs"
   ]
 }

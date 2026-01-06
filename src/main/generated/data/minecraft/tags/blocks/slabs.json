@@ -79,6 +79,9 @@
     "varan-deco:waxed_copper_slab",
     "varan-deco:waxed_exposed_copper_slab",
     "varan-deco:waxed_weathered_copper_slab",
-    "varan-deco:waxed_oxidized_copper_slab"
+    "varan-deco:waxed_oxidized_copper_slab",
+    "varan-deco:sanded_obsidian_slab",
+    "varan-deco:smooth_obsidian_slab",
+    "varan-deco:cut_obsidian_slab"
   ]
 }

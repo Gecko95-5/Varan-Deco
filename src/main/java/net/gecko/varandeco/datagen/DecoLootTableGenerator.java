@@ -2231,5 +2231,83 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.GOLD_BARS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/heavy_gold_bars"),
                 BlockLootTableGenerator.drops(DecoBlocks.HEAVY_GOLD_BARS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sanded_obsidian"),
+                BlockLootTableGenerator.drops(DecoBlocks.SANDED_OBSIDIAN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sanded_obsidian_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SANDED_OBSIDIAN_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sanded_obsidian_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SANDED_OBSIDIAN_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sanded_obsidian_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SANDED_OBSIDIAN_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_obsidian"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_OBSIDIAN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_obsidian_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_obsidian_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_OBSIDIAN_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_obsidian_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_OBSIDIAN_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_obsidian"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_OBSIDIAN));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_obsidian_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_OBSIDIAN_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_obsidian_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_OBSIDIAN_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_obsidian_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_OBSIDIAN_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_magma_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_MAGMA_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_bubble_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_BUBBLE_BLOCK));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/butter_cup"),
+                BlockLootTableGenerator.drops(DecoBlocks.BUTTERCUP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_butter_cup"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_BUTTERCUP));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/nightshade"),
+                BlockLootTableGenerator.drops(DecoBlocks.NIGHTSHADE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_nightshade"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_NIGHTSHADE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/endershade"),
+                BlockLootTableGenerator.drops(DecoBlocks.ENDERSHADE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_endershade"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_ENDERSHADE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_END_STONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_end_stone"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_END_STONE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_tiles"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_TILES));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_tiles"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_END_STONE_TILES));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_END_STONE_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_END_STONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_end_stone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_END_STONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_tile_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_TILE_STAIRS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_END_STONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_end_stone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_END_STONE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_tile_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.END_STONE_TILE_SLAB));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.POLISHED_END_STONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_end_stone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_END_STONE_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_tile_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_TILE_WALL));
     }
 }

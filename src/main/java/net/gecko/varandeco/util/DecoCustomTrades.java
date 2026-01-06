@@ -31,6 +31,19 @@ public class DecoCustomTrades {
                             12, 0, 0.075f)));
 
         TradeOfferHelper.registerWanderingTraderOffers(1,
+                factories -> factories.add((entity, random) -> new TradeOffer(
+                        new ItemStack(Items.EMERALD),
+                        new ItemStack(DecoBlocks.NIGHTSHADE),
+                        12, 0, 0.075f)));
+
+        TradeOfferHelper.registerWanderingTraderOffers(1,
+                factories ->
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD),
+                            new ItemStack(DecoBlocks.BUTTERCUP),
+                            12, 0, 0.075f)));
+
+        TradeOfferHelper.registerWanderingTraderOffers(1,
                 factories -> 
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD),

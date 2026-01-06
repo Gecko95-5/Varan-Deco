@@ -800,10 +800,10 @@
   "block.varan-deco.purpur_brick_slab": "Purpur Brick Slab",
   "block.varan-deco.purpur_brick_wall": "Purpur Brick Wall",
 
-  "block.varan-deco.polished_purpur": "Polished Purpur",
-  "block.varan-deco.polished_purpur_stairs": "Polished Purpur Stairs",
-  "block.varan-deco.polished_purpur_slab": "Polished Purpur Slab",
-  "block.varan-deco.polished_purpur_wall": "Polished Purpur Wall",
+  "block.varan-deco.cut_purpur": "Cut Purpur",
+  "block.varan-deco.cut_purpur_stairs": "Cut Purpur Stairs",
+  "block.varan-deco.cut_purpur_slab": "Cut Purpur Slab",
+  "block.varan-deco.cut_purpur_wall": "Cut Purpur Wall",
 
   "block.varan-deco.chiseled_purpur": "Chiseled Purpur",
 
@@ -968,6 +968,14 @@
 
   "block.varan-deco.bromeliad": "Bromeliad",
   "block.varan-deco.potted_bromeliad": "Potted Bromeliad",
+
+  "block.varan-deco.buttercup": "Buttercup",
+  "block.varan-deco.potted_buttercup": "Potted Buttercup",
+
+  "block.varan-deco.nightshade": "Nightshade",
+  "block.varan-deco.potted_nightshade": "Potted Nightshade",
+  "block.varan-deco.endershade": "Endershade",
+  "block.varan-deco.potted_endershade": "Potted Endershade",
 
   "block.varan-deco.copper_chain": "Copper Chain",
   "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
@@ -1382,6 +1390,24 @@
   "block.varan-deco.gold_bars": "Golden Bars",
   "block.varan-deco.light_gold_bars": "Light Golden Bars",
   "block.varan-deco.heavy_gold_bars": "Heavy Golden Bars",
+
+  "block.varan-deco.sanded_obsidian": "Sanded Obsidian",
+  "block.varan-deco.sanded_obsidian_stairs": "Sanded Obsidian Stairs",
+  "block.varan-deco.sanded_obsidian_slab": "Sanded Obsidian Slab",
+  "block.varan-deco.sanded_obsidian_wall": "Sanded Obsidian Wall",
+
+  "block.varan-deco.smooth_obsidian": "Smooth Obsidian",
+  "block.varan-deco.smooth_obsidian_stairs": "Smooth Obsidian Stairs",
+  "block.varan-deco.smooth_obsidian_slab": "Smooth Obsidian Slab",
+  "block.varan-deco.smooth_obsidian_wall": "Smooth Obsidian Wall",
+
+  "block.varan-deco.cut_obsidian": "Cut Obsidian",
+  "block.varan-deco.cut_obsidian_stairs": "Cut Obsidian Stairs",
+  "block.varan-deco.cut_obsidian_slab": "Cut Obsidian Slab",
+  "block.varan-deco.cut_obsidian_wall": "Cut Obsidian Wall",
+
+  "block.varan-deco.chiseled_magma_block": "Chiseled Magma Block",
+  "block.varan-deco.chiseled_bubble_block": "Chiseled Bubble Block",
 
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",

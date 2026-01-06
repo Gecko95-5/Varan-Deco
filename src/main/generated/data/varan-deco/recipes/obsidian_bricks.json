@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "S": {
-      "item": "minecraft:obsidian"
+      "item": "varan-deco:sanded_obsidian"
     }
   },
   "pattern": [

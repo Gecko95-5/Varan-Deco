@@ -2698,25 +2698,25 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.OBSIDIAN_WALL, Items.OBSIDIAN);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_WALL, Items.OBSIDIAN);
 
-        offerPolishedStoneRecipe(exporter, DecoBlocks.OBSIDIAN_BRICKS, Items.OBSIDIAN);
-        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICKS, Items.OBSIDIAN);
+        offerPolishedStoneRecipe(exporter, DecoBlocks.OBSIDIAN_BRICKS, DecoBlocks.SANDED_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICKS, DecoBlocks.SANDED_OBSIDIAN);
 
         createStairsRecipe(DecoBlocks.OBSIDIAN_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.OBSIDIAN_BRICKS))
                 .criterion(hasItem(DecoBlocks.OBSIDIAN_BRICKS),conditionsFromItem(DecoBlocks.OBSIDIAN_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.OBSIDIAN_BRICK_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_STAIRS, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_STAIRS, DecoBlocks.SANDED_OBSIDIAN);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_STAIRS, DecoBlocks.OBSIDIAN_BRICKS);
 
         offerSlabRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, DecoBlocks.OBSIDIAN_BRICKS);
-        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, Items.OBSIDIAN,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, DecoBlocks.SANDED_OBSIDIAN,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_SLAB, DecoBlocks.OBSIDIAN_BRICKS,2);
 
         offerWallRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.OBSIDIAN_BRICKS);
-        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.SANDED_OBSIDIAN);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.OBSIDIAN_BRICKS);
 
         offerChiseledBlockRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.OBSIDIAN_SLAB);
-        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, Items.OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.SANDED_OBSIDIAN);
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_OBSIDIAN,2)
                 .pattern("##")
@@ -2726,7 +2726,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.OBSIDIAN_SLAB))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_OBSIDIAN)));
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, Items.OBSIDIAN);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_OBSIDIAN, DecoBlocks.OBSIDIAN_PILLAR);
 
         offerReversibleCompactingRecipes(exporter, Items.FLINT, DecoBlocks.FLINT_BLOCK);
         offerReversibleCompactingRecipes(exporter, Items.CHARCOAL,DecoBlocks.CHARCOAL_BLOCK);
@@ -5393,6 +5392,97 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.GOLD_NUGGET),
                         RecipeProvider.conditionsFromItem(Items.GOLD_NUGGET))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.LIGHT_GOLD_BARS)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.SANDED_OBSIDIAN)
+                .input(ItemTags.SAND)
+                .input(Items.OBSIDIAN)
+                .criterion(RecipeProvider.hasItem(Items.OBSIDIAN),
+                        RecipeProvider.conditionsFromItem(Items.OBSIDIAN))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SANDED_OBSIDIAN)));
+
+        createStairsRecipe(DecoBlocks.SANDED_OBSIDIAN_STAIRS, Ingredient.ofItems(DecoBlocks.SANDED_OBSIDIAN))
+                .criterion(hasItem(DecoBlocks.SANDED_OBSIDIAN),conditionsFromItem(DecoBlocks.SANDED_OBSIDIAN))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SANDED_OBSIDIAN_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDED_OBSIDIAN_STAIRS, DecoBlocks.SANDED_OBSIDIAN);
+
+        offerSlabRecipe(exporter, DecoBlocks.SANDED_OBSIDIAN_SLAB, DecoBlocks.SANDED_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDED_OBSIDIAN_SLAB, DecoBlocks.SANDED_OBSIDIAN,2);
+
+        offerWallRecipe(exporter, DecoBlocks.SANDED_OBSIDIAN_WALL, DecoBlocks.SANDED_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDED_OBSIDIAN_WALL, DecoBlocks.SANDED_OBSIDIAN);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.OBSIDIAN), DecoBlocks.SMOOTH_OBSIDIAN,
+                        0.1f, 200).criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SMOOTH_OBSIDIAN)));
+        
+        createStairsRecipe(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS, Ingredient.ofItems(DecoBlocks.SMOOTH_OBSIDIAN))
+                .criterion(hasItem(DecoBlocks.SMOOTH_OBSIDIAN),conditionsFromItem(DecoBlocks.SMOOTH_OBSIDIAN))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_OBSIDIAN_STAIRS, DecoBlocks.SMOOTH_OBSIDIAN);
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.OBSIDIAN_STAIRS), DecoBlocks.SMOOTH_OBSIDIAN_STAIRS,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.OBSIDIAN_STAIRS), conditionsFromItem(DecoBlocks.OBSIDIAN_STAIRS))
+                .offerTo(exporter, new Identifier("smooth_obsidian_stairs_from_smelting"));
+
+        offerSlabRecipe(exporter, DecoBlocks.SMOOTH_OBSIDIAN_SLAB, DecoBlocks.SMOOTH_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_OBSIDIAN_SLAB, DecoBlocks.SMOOTH_OBSIDIAN,2);
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.OBSIDIAN_SLAB), DecoBlocks.SMOOTH_OBSIDIAN_SLAB,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.OBSIDIAN_SLAB), conditionsFromItem(DecoBlocks.OBSIDIAN_SLAB))
+                .offerTo(exporter, new Identifier("smooth_obsidian_slab_from_smelting"));
+
+        offerWallRecipe(exporter, DecoBlocks.SMOOTH_OBSIDIAN_WALL, DecoBlocks.SMOOTH_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_OBSIDIAN_WALL, DecoBlocks.SMOOTH_OBSIDIAN);
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.OBSIDIAN_WALL), DecoBlocks.SMOOTH_OBSIDIAN_WALL,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.OBSIDIAN_WALL), conditionsFromItem(DecoBlocks.OBSIDIAN_WALL))
+                .offerTo(exporter, new Identifier("smooth_obsidian_wall_from_smelting"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CUT_OBSIDIAN,4)
+                .pattern("#O")
+                .pattern("O#")
+                .input('#', DecoBlocks.SANDED_OBSIDIAN)
+                .input('O', Items.OBSIDIAN)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SANDED_OBSIDIAN),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SANDED_OBSIDIAN))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CUT_OBSIDIAN)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN, DecoBlocks.SANDED_OBSIDIAN);
+
+        createStairsRecipe(DecoBlocks.CUT_OBSIDIAN_STAIRS, Ingredient.ofItems(DecoBlocks.CUT_OBSIDIAN))
+                .criterion(hasItem(DecoBlocks.CUT_OBSIDIAN),conditionsFromItem(DecoBlocks.CUT_OBSIDIAN))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CUT_OBSIDIAN_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_STAIRS, DecoBlocks.SANDED_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_STAIRS, DecoBlocks.CUT_OBSIDIAN);
+
+        offerSlabRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_SLAB, DecoBlocks.CUT_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_SLAB, DecoBlocks.SANDED_OBSIDIAN,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_SLAB, DecoBlocks.CUT_OBSIDIAN,2);
+
+        offerWallRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_WALL, DecoBlocks.CUT_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_WALL, DecoBlocks.SANDED_OBSIDIAN);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_OBSIDIAN_WALL, DecoBlocks.CUT_OBSIDIAN);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_MAGMA_BLOCK, DecoBlocks.MAGMA_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_MAGMA_BLOCK, DecoBlocks.MAGMA_SLAB);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BLOCK, DecoBlocks.BUBBLE_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BUBBLE_BLOCK, DecoBlocks.BUBBLE_SLAB);
+
+        ShapelessRecipeJsonBuilder.create(Items.YELLOW_DYE)
+                .input(DecoBlocks.BUTTERCUP)
+                .group("yellow_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BUTTERCUP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BUTTERCUP))
+                .offerTo(exporter, new Identifier("yellow_dye_from_buttercup"));
+        ShapelessRecipeJsonBuilder.create(Items.LIME_DYE)
+                .input(DecoBlocks.NIGHTSHADE)
+                .group("lime_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.NIGHTSHADE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.NIGHTSHADE))
+                .offerTo(exporter, new Identifier("lime_dye_from_bromeliad"));
+        ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE)
+                .input(DecoBlocks.ENDERSHADE)
+                .group("black_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDERSHADE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDERSHADE))
+                .offerTo(exporter, new Identifier("black_dye_from_endershade"));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

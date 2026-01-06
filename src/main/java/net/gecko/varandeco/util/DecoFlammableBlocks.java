@@ -60,6 +60,14 @@ public class DecoFlammableBlocks {
 
         registry.add(DecoBlocks.PAEONIA,60, 100);
         registry.add(DecoBlocks.LAVENDER,60, 100);
+
+        registry.add(DecoBlocks.BROMELIAD,60, 100);
+        registry.add(DecoBlocks.BLUE_HIBISCUS,60, 100);
+
+        registry.add(DecoBlocks.BUTTERCUP,60, 100);
+
+        registry.add(DecoBlocks.NIGHTSHADE,60, 100);
+        registry.add(DecoBlocks.ENDERSHADE,60, 100);
         
     }
 }

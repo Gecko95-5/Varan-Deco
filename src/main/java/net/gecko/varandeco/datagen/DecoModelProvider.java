@@ -175,6 +175,13 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool cutpurpurpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_PURPUR);
 
+        BlockStateModelGenerator.BlockTexturePool sandobsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SANDED_OBSIDIAN);
+        BlockStateModelGenerator.BlockTexturePool smobsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_OBSIDIAN);
+        BlockStateModelGenerator.BlockTexturePool cutobsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_OBSIDIAN);
+
         BlockStateModelGenerator.BlockTexturePool oakwoodpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OAK_WOOD_TEMP);
         BlockStateModelGenerator.BlockTexturePool sprucewoodpool =
@@ -331,11 +338,22 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.WOODEN_SAPLING, DecoBlocks.POTTED_WOODEN_SAPLING,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.BUTTERCUP, DecoBlocks.POTTED_BUTTERCUP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.NIGHTSHADE, DecoBlocks.POTTED_NIGHTSHADE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ENDERSHADE, DecoBlocks.POTTED_ENDERSHADE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
 
         BlockStateModelGenerator.BlockTexturePool mushroompool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MUSHROOM_PLANKS);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_MAGMA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_BUBBLE_BLOCK);
 
         blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
         blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
@@ -963,6 +981,18 @@ public class DecoModelProvider extends FabricModelProvider {
         oxidcopperpool.slab(DecoBlocks.OXIDIZED_COPPER_SLAB);
         oxidcopperpool.stairs(DecoBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
         oxidcopperpool.slab(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
+
+        sandobsidianpool.stairs(DecoBlocks.SANDED_OBSIDIAN_STAIRS);
+        sandobsidianpool.slab(DecoBlocks.SANDED_OBSIDIAN_SLAB);
+        sandobsidianpool.wall(DecoBlocks.SANDED_OBSIDIAN_WALL);
+
+        smobsidianpool.stairs(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS);
+        smobsidianpool.slab(DecoBlocks.SMOOTH_OBSIDIAN_SLAB);
+        smobsidianpool.wall(DecoBlocks.SMOOTH_OBSIDIAN_WALL);
+
+        cutobsidianpool.stairs(DecoBlocks.CUT_OBSIDIAN_STAIRS);
+        cutobsidianpool.slab(DecoBlocks.CUT_OBSIDIAN_SLAB);
+        cutobsidianpool.wall(DecoBlocks.CUT_OBSIDIAN_WALL);
 
        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);

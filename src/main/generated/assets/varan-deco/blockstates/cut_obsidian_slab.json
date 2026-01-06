@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/cut_obsidian_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/cut_obsidian"
+    },
+    "type=top": {
+      "model": "varan-deco:block/cut_obsidian_slab_top"
+    }
+  }
+}

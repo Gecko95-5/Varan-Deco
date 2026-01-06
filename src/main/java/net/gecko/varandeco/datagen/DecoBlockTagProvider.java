@@ -424,7 +424,35 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB)
                 .add(DecoBlocks.LIGHT_GOLD_BARS)
                 .add(DecoBlocks.GOLD_BARS)
-                .add(DecoBlocks.HEAVY_GOLD_BARS);
+                .add(DecoBlocks.HEAVY_GOLD_BARS)
+                .add(DecoBlocks.SANDED_OBSIDIAN)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN)
+                .add(DecoBlocks.CUT_OBSIDIAN)
+                .add(DecoBlocks.SANDED_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SANDED_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_SLAB)
+                .add(DecoBlocks.CUT_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SANDED_OBSIDIAN_WALL)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
+                .add(DecoBlocks.CUT_OBSIDIAN_WALL)
+                .add(DecoBlocks.CHISELED_MAGMA_BLOCK)
+                .add(DecoBlocks.CHISELED_BUBBLE_BLOCK)
+                .add(DecoBlocks.POLISHED_END_STONE)
+                .add(DecoBlocks.SMOOTH_END_STONE)
+                .add(DecoBlocks.END_STONE_TILES)
+                .add(DecoBlocks.CRACKED_END_STONE_TILES)
+                .add(DecoBlocks.CRACKED_END_STONE_BRICKS)
+                .add(DecoBlocks.POLISHED_END_STONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_END_STONE_STAIRS)
+                .add(DecoBlocks.END_STONE_TILE_STAIRS)
+                .add(DecoBlocks.POLISHED_END_STONE_SLAB)
+                .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
+                .add(DecoBlocks.END_STONE_TILE_SLAB)
+                .add(DecoBlocks.POLISHED_END_STONE_WALL)
+                .add(DecoBlocks.SMOOTH_END_STONE_WALL)
+                .add(DecoBlocks.END_STONE_TILE_WALL);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -539,7 +567,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OBSIDIAN_BRICK_WALL)
                 .add(DecoBlocks.OBSIDIAN_BRICKS)
                 .add(DecoBlocks.OBSIDIAN_PILLAR)
-                .add(DecoBlocks.CHISELED_OBSIDIAN);
+                .add(DecoBlocks.CHISELED_OBSIDIAN)
+                .add(DecoBlocks.SANDED_OBSIDIAN)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN)
+                .add(DecoBlocks.CUT_OBSIDIAN)
+                .add(DecoBlocks.SANDED_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SANDED_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_SLAB)
+                .add(DecoBlocks.CUT_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SANDED_OBSIDIAN_WALL)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
+                .add(DecoBlocks.CUT_OBSIDIAN_WALL);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(DecoBlocks.POLISHED_STONE_WALL)
@@ -619,7 +659,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_GRANITE_WALL)
                 .add(DecoBlocks.GRANITE_BRICK_WALL)
                 .add(DecoBlocks.CUT_ANDESITE_WALL)
-                .add(DecoBlocks.ANDESITE_BRICK_WALL);
+                .add(DecoBlocks.ANDESITE_BRICK_WALL)
+                .add(DecoBlocks.SANDED_OBSIDIAN_WALL)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
+                .add(DecoBlocks.CUT_OBSIDIAN_WALL)
+                .add(DecoBlocks.POLISHED_END_STONE_WALL)
+                .add(DecoBlocks.SMOOTH_END_STONE_WALL)
+                .add(DecoBlocks.END_STONE_TILE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -733,7 +779,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_STAIRS)
                 .add(DecoBlocks.WAXED_WEATHERED_COPPER_STAIRS)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_STAIRS)
-                .add(DecoBlocks.GOLD_STAIRS);
+                .add(DecoBlocks.GOLD_STAIRS)
+                .add(DecoBlocks.SANDED_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.POLISHED_END_STONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_END_STONE_STAIRS)
+                .add(DecoBlocks.END_STONE_TILE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -814,7 +866,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_COPPER_SLAB)
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_SLAB)
                 .add(DecoBlocks.WAXED_WEATHERED_COPPER_SLAB)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB)
+                .add(DecoBlocks.SANDED_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_SLAB)
+                .add(DecoBlocks.CUT_OBSIDIAN_SLAB)
+                .add(DecoBlocks.POLISHED_END_STONE_SLAB)
+                .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
+                .add(DecoBlocks.END_STONE_TILE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1343,7 +1401,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.PAEONIA)
                 .add(DecoBlocks.LAVENDER)
                 .add(DecoBlocks.BLUE_HIBISCUS)
-                .add(DecoBlocks.BROMELIAD);
+                .add(DecoBlocks.BROMELIAD)
+                .add(DecoBlocks.BUTTERCUP)
+                .add(DecoBlocks.NIGHTSHADE)
+                .add(DecoBlocks.ENDERSHADE);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -1368,7 +1429,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_PAEONIA)
                 .add(DecoBlocks.POTTED_LAVENDER)
                 .add(DecoBlocks.POTTED_WOODEN_SAPLING)
-                .add(DecoBlocks.POTTED_BLUE_HIBISCUS);
+                .add(DecoBlocks.POTTED_BLUE_HIBISCUS)
+                .add(DecoBlocks.POTTED_BUTTERCUP)
+                .add(DecoBlocks.POTTED_NIGHTSHADE)
+                .add(DecoBlocks.POTTED_ENDERSHADE);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)
@@ -1483,6 +1547,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BUBBLE_BRICKS)
                 .add(DecoBlocks.CHISELED_BUBBLE_BRICKS)
                 .add(DecoBlocks.CHISELED_MAGMA_BRICKS)
+                .add(DecoBlocks.CHISELED_BUBBLE_BLOCK)
+                .add(DecoBlocks.CHISELED_MAGMA_BLOCK)
                 .add(Blocks.MAGMA_BLOCK)
                 .add(DecoBlocks.FRAGILE_ICE);
 
