@@ -545,6 +545,17 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool oxidcopperpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OXIDIZED_COPPER_TEMP);
 
+        BlockStateModelGenerator.BlockTexturePool poliendstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_END_STONE);
+        BlockStateModelGenerator.BlockTexturePool smoothendstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_END_STONE);
+        BlockStateModelGenerator.BlockTexturePool endstonetilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.END_STONE_TILES);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_TILES);
+
+
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
@@ -731,6 +742,8 @@ public class DecoModelProvider extends FabricModelProvider {
         endstonepool.stairs(DecoBlocks.END_STONE_STAIRS);
         endstonepool.slab(DecoBlocks.END_STONE_SLAB);
         endstonepool.wall(DecoBlocks.END_STONE_WALL);
+        endstonepool.button(DecoBlocks.END_STONE_BUTTON);
+        endstonepool.pressurePlate(DecoBlocks.END_STONE_PRESSURE_PLATE);
 
         smoothpurpurpool.stairs(DecoBlocks.SMOOTH_PURPUR_STAIRS);
         smoothpurpurpool.slab(DecoBlocks.SMOOTH_PURPUR_SLAB);
@@ -994,7 +1007,19 @@ public class DecoModelProvider extends FabricModelProvider {
         cutobsidianpool.slab(DecoBlocks.CUT_OBSIDIAN_SLAB);
         cutobsidianpool.wall(DecoBlocks.CUT_OBSIDIAN_WALL);
 
-       cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
+        poliendstonepool.stairs(DecoBlocks.POLISHED_END_STONE_STAIRS);
+        poliendstonepool.slab(DecoBlocks.POLISHED_END_STONE_SLAB);
+        poliendstonepool.wall(DecoBlocks.POLISHED_END_STONE_WALL);
+        poliendstonepool.pressurePlate(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE);
+        poliendstonepool.button(DecoBlocks.POLISHED_END_STONE_BUTTON);
+
+        smoothendstonepool.stairs(DecoBlocks.SMOOTH_END_STONE_STAIRS);
+        smoothendstonepool.wall(DecoBlocks.SMOOTH_END_STONE_WALL);
+        endstonetilepool.stairs(DecoBlocks.END_STONE_TILE_STAIRS);
+        endstonetilepool.slab(DecoBlocks.END_STONE_TILE_SLAB);
+        endstonetilepool.wall(DecoBlocks.END_STONE_TILE_WALL);
+
+        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
        mushroompool.family(DecoBlocks.MUSHROOM_FAMILY);
 

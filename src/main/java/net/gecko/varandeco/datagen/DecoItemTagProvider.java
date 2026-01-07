@@ -206,11 +206,13 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
                 .add(Blocks.STONE.asItem())
-                .add(Blocks.DEEPSLATE.asItem());
+                .add(Blocks.DEEPSLATE.asItem())
+                .add(Blocks.END_STONE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(Blocks.STONE.asItem())
-                .add(Blocks.DEEPSLATE.asItem());
+                .add(Blocks.DEEPSLATE.asItem())
+                .add(Blocks.END_STONE.asItem());
 
         getOrCreateTagBuilder(ItemTags.BUTTONS)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON.asItem())
@@ -218,7 +220,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON.asItem())
                 .add(DecoBlocks.COBBLESTONE_BUTTON.asItem())
                 .add(DecoBlocks.BLACKSTONE_BUTTON.asItem())
-                .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem());
+                .add(DecoBlocks.POLISHED_STONE_BUTTON.asItem())
+                .add(DecoBlocks.END_STONE_BUTTON.asItem())
+                .add(DecoBlocks.POLISHED_END_STONE_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(DecoBlocks.YELLOW_TULIP.asItem())

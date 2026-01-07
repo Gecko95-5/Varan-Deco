@@ -1427,6 +1427,14 @@
   "block.varan-deco.cracked_end_stone_tiles": "Cracked End Stone Tiles",
   "block.varan-deco.cracked_end_stone_bricks": "Cracked End Stone Bricks",
 
+  "block.varan-deco.polished_end_stone_button": "Polished End Stone Button",
+  "block.varan-deco.polished_end_stone_pressure_plate": "Polished End Stone Pressure Plate",
+  "block.varan-deco.polished_end_stone_lever": "Polished End Stone Lever",
+
+  "block.varan-deco.end_stone_button": "End Stone Button",
+  "block.varan-deco.end_stone_pressure_plate": "End Stone Pressure Plate",
+  "block.varan-deco.end_stone_lever": "End Stone Lever",
+
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 

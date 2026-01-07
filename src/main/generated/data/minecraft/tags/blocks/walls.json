@@ -81,6 +81,9 @@
     "varan-deco:andesite_brick_wall",
     "varan-deco:sanded_obsidian_wall",
     "varan-deco:smooth_obsidian_wall",
-    "varan-deco:cut_obsidian_wall"
+    "varan-deco:cut_obsidian_wall",
+    "varan-deco:polished_end_stone_wall",
+    "varan-deco:smooth_end_stone_wall",
+    "varan-deco:end_stone_tile_wall"
   ]
 }

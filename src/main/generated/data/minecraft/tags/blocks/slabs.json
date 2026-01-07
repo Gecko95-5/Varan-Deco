@@ -82,6 +82,9 @@
     "varan-deco:waxed_oxidized_copper_slab",
     "varan-deco:sanded_obsidian_slab",
     "varan-deco:smooth_obsidian_slab",
-    "varan-deco:cut_obsidian_slab"
+    "varan-deco:cut_obsidian_slab",
+    "varan-deco:polished_end_stone_slab",
+    "varan-deco:smooth_end_stone_slab",
+    "varan-deco:end_stone_tile_slab"
   ]
 }

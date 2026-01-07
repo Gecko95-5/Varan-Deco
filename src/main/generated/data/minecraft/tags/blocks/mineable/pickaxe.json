@@ -424,6 +424,24 @@
     "varan-deco:smooth_obsidian_wall",
     "varan-deco:cut_obsidian_wall",
     "varan-deco:chiseled_magma_block",
-    "varan-deco:chiseled_bubble_block"
+    "varan-deco:chiseled_bubble_block",
+    "varan-deco:polished_end_stone",
+    "varan-deco:smooth_end_stone",
+    "varan-deco:end_stone_tiles",
+    "varan-deco:cracked_end_stone_tiles",
+    "varan-deco:cracked_end_stone_bricks",
+    "varan-deco:polished_end_stone_stairs",
+    "varan-deco:smooth_end_stone_stairs",
+    "varan-deco:end_stone_tile_stairs",
+    "varan-deco:polished_end_stone_slab",
+    "varan-deco:smooth_end_stone_slab",
+    "varan-deco:end_stone_tile_slab",
+    "varan-deco:polished_end_stone_wall",
+    "varan-deco:smooth_end_stone_wall",
+    "varan-deco:end_stone_tile_wall",
+    "varan-deco:end_stone_pressure_plate",
+    "varan-deco:polished_end_stone_pressure_plate",
+    "varan-deco:end_stone_button",
+    "varan-deco:polished_end_stone_button"
   ]
 }

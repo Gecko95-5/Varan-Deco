@@ -438,7 +438,25 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
                 .add(DecoBlocks.CUT_OBSIDIAN_WALL)
                 .add(DecoBlocks.CHISELED_MAGMA_BLOCK)
-                .add(DecoBlocks.CHISELED_BUBBLE_BLOCK);
+                .add(DecoBlocks.CHISELED_BUBBLE_BLOCK)
+                .add(DecoBlocks.POLISHED_END_STONE)
+                .add(DecoBlocks.SMOOTH_END_STONE)
+                .add(DecoBlocks.END_STONE_TILES)
+                .add(DecoBlocks.CRACKED_END_STONE_TILES)
+                .add(DecoBlocks.CRACKED_END_STONE_BRICKS)
+                .add(DecoBlocks.POLISHED_END_STONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_END_STONE_STAIRS)
+                .add(DecoBlocks.END_STONE_TILE_STAIRS)
+                .add(DecoBlocks.POLISHED_END_STONE_SLAB)
+                .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
+                .add(DecoBlocks.END_STONE_TILE_SLAB)
+                .add(DecoBlocks.POLISHED_END_STONE_WALL)
+                .add(DecoBlocks.SMOOTH_END_STONE_WALL)
+                .add(DecoBlocks.END_STONE_TILE_WALL)
+                .add(DecoBlocks.END_STONE_PRESSURE_PLATE)
+                .add(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE)
+                .add(DecoBlocks.END_STONE_BUTTON)
+                .add(DecoBlocks.POLISHED_END_STONE_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -648,7 +666,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ANDESITE_BRICK_WALL)
                 .add(DecoBlocks.SANDED_OBSIDIAN_WALL)
                 .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
-                .add(DecoBlocks.CUT_OBSIDIAN_WALL);
+                .add(DecoBlocks.CUT_OBSIDIAN_WALL)
+                .add(DecoBlocks.POLISHED_END_STONE_WALL)
+                .add(DecoBlocks.SMOOTH_END_STONE_WALL)
+                .add(DecoBlocks.END_STONE_TILE_WALL);;
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -765,7 +786,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.GOLD_STAIRS)
                 .add(DecoBlocks.SANDED_OBSIDIAN_STAIRS)
                 .add(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)
-                .add(DecoBlocks.CUT_OBSIDIAN_STAIRS);
+                .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.POLISHED_END_STONE_STAIRS)
+                .add(DecoBlocks.SMOOTH_END_STONE_STAIRS)
+                .add(DecoBlocks.END_STONE_TILE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -849,7 +873,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB)
                 .add(DecoBlocks.SANDED_OBSIDIAN_SLAB)
                 .add(DecoBlocks.SMOOTH_OBSIDIAN_SLAB)
-                .add(DecoBlocks.CUT_OBSIDIAN_SLAB);
+                .add(DecoBlocks.CUT_OBSIDIAN_SLAB)
+                .add(DecoBlocks.POLISHED_END_STONE_SLAB)
+                .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
+                .add(DecoBlocks.END_STONE_TILE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1486,7 +1513,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.COBBLED_DEEPSLATE_PRESSURE_PLATE)
                 .add(DecoBlocks.COBBLESTONE_PRESSURE_PLATE)
                 .add(DecoBlocks.BLACKSTONE_PRESSURE_PLATE)
-                .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE);
+                .add(DecoBlocks.POLISHED_STONE_PRESSURE_PLATE)
+                .add(DecoBlocks.END_STONE_PRESSURE_PLATE)
+                .add(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.BUTTONS)
                 .add(DecoBlocks.POLISHED_DEEPSLATE_BUTTON)
@@ -1494,7 +1523,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.COBBLED_DEEPSLATE_BUTTON)
                 .add(DecoBlocks.COBBLESTONE_BUTTON)
                 .add(DecoBlocks.BLACKSTONE_BUTTON)
-                .add(DecoBlocks.POLISHED_STONE_BUTTON);
+                .add(DecoBlocks.POLISHED_STONE_BUTTON)
+                .add(DecoBlocks.END_STONE_BUTTON)
+                .add(DecoBlocks.POLISHED_END_STONE_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(DecoBlocks.WOODEN_LEAVES);
@@ -1667,6 +1698,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_STONE_LEVER)
                 .add(DecoBlocks.COBBLED_DEEPSLATE_LEVER)
                 .add(DecoBlocks.BLACKSTONE_LEVER)
-                .add(DecoBlocks.POLISHED_BLACKSTONE_LEVER);
+                .add(DecoBlocks.POLISHED_BLACKSTONE_LEVER)
+                .add(DecoBlocks.END_STONE_LEVER)
+                .add(DecoBlocks.POLISHED_END_STONE_LEVER);
     }
 }
