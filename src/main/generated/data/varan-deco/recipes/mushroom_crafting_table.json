@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_crafting_tables",
+  "key": {
+    "#": {
+      "item": "varan-deco:mushroom_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_crafting_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:mushroom_crafting_table"
+  }
+}

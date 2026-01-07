@@ -3,6 +3,16 @@
   "values": [
     "varan-deco:black_ice",
     "varan-deco:gold_door",
-    "varan-deco:gold_trapdoor"
+    "varan-deco:gold_trapdoor",
+    "varan-deco:cut_gold",
+    "varan-deco:cut_gold_stairs",
+    "varan-deco:cut_gold_slab",
+    "varan-deco:gold_stairs",
+    "varan-deco:gold_slab",
+    "varan-deco:raw_gold_stairs",
+    "varan-deco:raw_gold_slab",
+    "varan-deco:light_gold_bars",
+    "varan-deco:gold_bars",
+    "varan-deco:heavy_gold_bars"
   ]
 }

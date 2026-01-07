@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:polished_purpur"
-  },
-  "result": "varan-deco:purpur_bricks"
-}

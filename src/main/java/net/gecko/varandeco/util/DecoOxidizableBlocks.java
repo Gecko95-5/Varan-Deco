@@ -3,6 +3,7 @@ package net.gecko.varandeco.util;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 
+import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_STAIRS;
 import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE;
 
 public class DecoOxidizableBlocks {
@@ -34,6 +35,14 @@ public class DecoOxidizableBlocks {
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_STAIRS, DecoBlocks.EXPOSED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_STAIRS, DecoBlocks.WEATHERED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_STAIRS, DecoBlocks.OXIDIZED_COPPER_STAIRS);
+
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_SLAB, DecoBlocks.EXPOSED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_SLAB, DecoBlocks.WEATHERED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_SLAB, DecoBlocks.OXIDIZED_COPPER_SLAB);
 
     }
     public static void registerWaxableBlocks(){
@@ -71,5 +80,15 @@ public class DecoOxidizableBlocks {
         OxidizableBlocksRegistry.registerWaxableBlockPair(EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
+
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_STAIRS, DecoBlocks.WAXED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_STAIRS, DecoBlocks.WAXED_EXPOSED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_STAIRS, DecoBlocks.WAXED_WEATHERED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_STAIRS, DecoBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
+
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_SLAB, DecoBlocks.WAXED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_SLAB, DecoBlocks.WAXED_EXPOSED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_SLAB, DecoBlocks.WAXED_WEATHERED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_SLAB, DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
     }
 }
