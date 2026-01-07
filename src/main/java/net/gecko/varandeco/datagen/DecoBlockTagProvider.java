@@ -545,7 +545,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
-                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
+                .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA)
+                .add(DecoBlocks.END_STONE_BLAST_FURNACE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
@@ -876,7 +877,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_OBSIDIAN_SLAB)
                 .add(DecoBlocks.POLISHED_END_STONE_SLAB)
                 .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
-                .add(DecoBlocks.END_STONE_TILE_SLAB);
+                .add(DecoBlocks.END_STONE_TILE_SLAB)
+                .add(DecoBlocks.END_STONE_STONECUTTER)
+                .add(DecoBlocks.END_STONE_GRINDSTONE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1351,10 +1354,13 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_FURNACES)
                 .add(DecoBlocks.DEEPSLATE_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_FURNACE)
+                .add(DecoBlocks.END_STONE_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_BLAST_FURNACE)
                 .add(DecoBlocks.BLACKSTONE_BLAST_FURNACE)
+                .add(DecoBlocks.END_STONE_BLAST_FURNACE)
                 .add(DecoBlocks.DEEPSLATE_SMOKER)
-                .add(DecoBlocks.BLACKSTONE_SMOKER);
+                .add(DecoBlocks.BLACKSTONE_SMOKER)
+                .add(DecoBlocks.END_STONE_SMOKER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.COPPER_BARS)
                 .add(DecoBlocks.HEAVY_COPPER_BARS)

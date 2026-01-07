@@ -1,12 +1,12 @@
-// 1.19.2	2026-01-06T19:03:16.877626	Tags for minecraft:block
+// 1.19.2	2026-01-07T19:05:45.9180452	Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 3aed7447a1e18c9876324cee68bd2a40ed1b5969 data\minecraft\tags\blocks\mineable\pickaxe.json
-130b68de54598b1addcf1f6369310323b37c18e6 data\minecraft\tags\blocks\slabs.json
+c826f921a6a7b83f859dfd3ece406bce6f0f7eb0 data\minecraft\tags\blocks\slabs.json
 2d1e488e3fe3f9d35929e1a7ad1d1b20ab0667b0 data\varan-deco\tags\blocks\deco_note_blocks.json
 80f7ecbb5778c8b0cc624eb7d99e5dadfb31bba8 data\minecraft\tags\blocks\planks.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
 3938e4bd40d437e271abf8ac18de0697705cc696 data\minecraft\tags\blocks\sculk_replaceable.json
-65e354af7724375fb3567092770cf0466e7b88b4 data\minecraft\tags\blocks\needs_stone_tool.json
+dcfe5bdc4ab35c9ac6c9823896acda79ac63d4bf data\minecraft\tags\blocks\needs_stone_tool.json
 0f8f8c6e84586269b8ee68133aa35affcfb95535 data\varan-deco\tags\blocks\copper_lantern.json
 bd4d9138c95450b620fc8d5b8798885a64c941e1 data\varan-deco\tags\blocks\deco_smithing_tables.json
 d533ac9bae31073b1976290d95395a4093bba6c2 data\varan-deco\tags\blocks\hardened_glass.json
@@ -21,7 +21,7 @@ f1059881e175844fb1e917a40d5fe831c2ebfcc2 data\minecraft\tags\blocks\wooden_fence
 367933ae77380e4e6b88adc1b6458353cb5c2859 data\minecraft\tags\blocks\piglin_repellents.json
 bc3c00e25c3517e4af9143ef47a4cd4fd19644f1 data\minecraft\tags\blocks\wooden_stairs.json
 58a956a824d88147c5424bef3e865a95542d31c8 data\varan-deco\tags\blocks\deco_ladders.json
-332eb60c55eb85d57ede45ef150ae9b2ce6808fb data\varan-deco\tags\blocks\deco_furnaces.json
+5f57cd2951eaf6b68ff2ea5e67f90cb6684a0450 data\varan-deco\tags\blocks\deco_furnaces.json
 b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\snow.json
 c8671ab38e8dff3b7bee1836b246dd635caf0123 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 05b6b3246d08228d79b173478b5a9b0cfb3265ee data\varan-deco\tags\blocks\concrete_slabs.json

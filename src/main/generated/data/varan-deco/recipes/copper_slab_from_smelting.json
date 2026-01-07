@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:raw_copper_slab"
+  },
+  "result": "varan-deco:copper_slab"
+}

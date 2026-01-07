@@ -1693,6 +1693,9 @@ public class DecoBlocks {
     public static final Block BLACKSTONE_FURNACE = registerBlock("blackstone_furnace",
             new BlackstoneFurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).mapColor(MapColor.BLACK)
                     .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block END_STONE_FURNACE = registerBlock("end_stone_furnace",
+            new EndstoneFurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).mapColor(MapColor.PALE_YELLOW)
+                    .strength(4.5f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block SPRUCE_LADDER = registerBlock("spruce_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2394,6 +2397,9 @@ public class DecoBlocks {
     public static final Block BLACKSTONE_SMOKER = registerBlock("blackstone_smoker",
             new BlackstoneSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.BLACK)
                     .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block END_STONE_SMOKER = registerBlock("end_stone_smoker",
+            new EndstoneSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.PALE_YELLOW)
+                    .strength(4.5f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
             new DeepslateBlastFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
@@ -2401,6 +2407,9 @@ public class DecoBlocks {
     public static final Block BLACKSTONE_BLAST_FURNACE = registerBlock("blackstone_blast_furnace",
             new BlackstoneBlastFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE).mapColor(MapColor.BLACK)
                     .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block END_STONE_BLAST_FURNACE = registerBlock("end_stone_blast_furnace",
+            new EndstoneBlastFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE).mapColor(MapColor.PALE_YELLOW)
+                    .strength(4.5f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block OAK_CARTOGRAPHY_TABLE = registerBlock("oak_cartography_table",
             new OakCartographyTableBlock(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2432,6 +2441,9 @@ public class DecoBlocks {
                     .mapColor(MapColor.DEEPSLATE_GRAY)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BLACKSTONE_GRINDSTONE = registerBlock("blackstone_grindstone",
             new BlackstoneGrindstoneBlock(FabricBlockSettings.copyOf(Blocks.GRINDSTONE).mapColor(MapColor.BLACK)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block END_STONE_GRINDSTONE = registerBlock("end_stone_grindstone",
+            new EndstoneGrindstoneBlock(FabricBlockSettings.copyOf(Blocks.GRINDSTONE).mapColor(MapColor.PALE_YELLOW)),
                 DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block OAK_SMITHING_TABLE = registerBlock("oak_smithing_table",
@@ -2465,6 +2477,9 @@ public class DecoBlocks {
     public static final Block BLACKSTONE_STONECUTTER = registerBlock("blackstone_stonecutter",
             new BlackstoneStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block END_STONE_STONECUTTER = registerBlock("end_stone_stonecutter",
+            new EndstoneStonecutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.PALE_YELLOW)
+                    .strength(4.5f)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block COPPER_LANTERN = registerBlock("copper_lantern",
             new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.LANTERN)

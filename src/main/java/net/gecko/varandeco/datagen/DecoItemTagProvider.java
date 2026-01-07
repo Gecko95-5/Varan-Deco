@@ -202,7 +202,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())
                 .add(DecoBlocks.DEEPSLATE_FURNACE.asItem())
-                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem());
+                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem())
+                .add(DecoBlocks.END_STONE_FURNACE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
                 .add(Blocks.STONE.asItem())
@@ -267,5 +268,23 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(DecoTags.Items.SOUL_GROUND_BLOCKS)
                 .add(Items.SOUL_SAND.asItem())
                 .add(Items.SOUL_SOIL.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.COLOURED_LAMPS)
+                .add(DecoBlocks.WHITE_LAMP.asItem())
+                .add(DecoBlocks.LIGHT_GRAY_LAMP.asItem())
+                .add(DecoBlocks.GRAY_LAMP.asItem())
+                .add(DecoBlocks.BLACK_LAMP.asItem())
+                .add(DecoBlocks.BROWN_LAMP.asItem())
+                .add(DecoBlocks.RED_LAMP.asItem())
+                .add(DecoBlocks.ORANGE_LAMP.asItem())
+                .add(DecoBlocks.YELLOW_LAMP.asItem())
+                .add(DecoBlocks.LIME_LAMP.asItem())
+                .add(DecoBlocks.GREEN_LAMP.asItem())
+                .add(DecoBlocks.CYAN_LAMP.asItem())
+                .add(DecoBlocks.LIGHT_BLUE_LAMP.asItem())
+                .add(DecoBlocks.BLUE_LAMP.asItem())
+                .add(DecoBlocks.PURPLE_LAMP.asItem())
+                .add(DecoBlocks.MAGENTA_LAMP.asItem())
+                .add(DecoBlocks.PINK_LAMP.asItem());;
     }
 }

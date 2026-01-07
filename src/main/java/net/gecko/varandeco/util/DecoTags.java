@@ -105,9 +105,6 @@ public class DecoTags {
         public static final TagKey<Item> DECO_NOTE_BLOCKS =
                 createTag("deco_note_blocks");
 
-        public static final TagKey<Item> DECO_JUKEBOX =
-                createTag("deco_jukebox");
-
         public static final TagKey<Item> WOODEN_SMITHING_TABLES =
                 createTag("wooden_smithing_tables");
 
@@ -143,6 +140,9 @@ public class DecoTags {
 
         public static final TagKey<Item> SOUL_GROUND_BLOCKS =
                 createTag("soul_ground_blocks");
+
+        public static final TagKey<Item> COLOURED_LAMPS =
+                createTag("coloured_lamps");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registry.ITEM_KEY, new Identifier(VaranDeco.MOD_ID, name));

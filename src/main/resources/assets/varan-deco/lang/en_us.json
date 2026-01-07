@@ -1435,6 +1435,12 @@
   "block.varan-deco.end_stone_pressure_plate": "End Stone Pressure Plate",
   "block.varan-deco.end_stone_lever": "End Stone Lever",
 
+  "block.varan-deco.end_stone_furnace": "End Stone Furnace",
+  "block.varan-deco.end_stone_blast_furnace": "End Stone Blast Furnace",
+  "block.varan-deco.end_stone_smoker": "End Stone Smoker",
+  "block.varan-deco.end_stone_stonecutter": "End Stone Stonecutter",
+  "block.varan-deco.end_stone_grindstone": "End Stone Grindstone",
+
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 

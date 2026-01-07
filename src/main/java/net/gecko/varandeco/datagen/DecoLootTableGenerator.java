@@ -2304,7 +2304,6 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_tile_slab"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.END_STONE_TILE_SLAB));
 
-
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_END_STONE_WALL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_end_stone_wall"),
@@ -2325,5 +2324,16 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_END_STONE_BUTTON));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone_lever"),
                 BlockLootTableGenerator.drops(DecoBlocks.POLISHED_END_STONE_LEVER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_furnace"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_FURNACE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_blast_furnace"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_BLAST_FURNACE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_smoker"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_SMOKER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_stonecutter"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_STONECUTTER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_grindstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.END_STONE_GRINDSTONE));
     }
 }
