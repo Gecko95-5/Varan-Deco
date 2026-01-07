@@ -5,11 +5,10 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.item.custom.BubbleItem;
-import net.gecko.varandeco.item.custom.SnowBrickItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class DecoItems {
@@ -17,6 +16,9 @@ public class DecoItems {
     public static final Item CACTUS_SIGN = registerItem("cactus_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_CACTUS_SIGN, DecoBlocks.WALL_CACTUS_SIGN));
+    public static final Item MUSHROOM_SIGN = registerItem("mushroom_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_MUSHROOM_SIGN, DecoBlocks.WALL_MUSHROOM_SIGN));
     public static final Item WOODEN_SIGN = registerItem("wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
@@ -177,7 +179,13 @@ public class DecoItems {
                     new Item.Settings().maxCount(16)));
 
     public static final Item SNOW_BRICK = registerItem("snow_brick",
-            new SnowBrickItem(new Item.Settings().maxCount(16)));
+            new Item(new Item.Settings().maxCount(16)));
+
+    public static final Item PASSTOL = registerItem("passtol",
+            new Item(new Item.Settings()));
+
+    public static final Item SHADDOL = registerItem("shaddol",
+            new Item(new Item.Settings()));
 
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",
             new BubbleItem(new Item.Settings()));

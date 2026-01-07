@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/cut_purpur_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/cut_purpur"
+    },
+    "type=top": {
+      "model": "varan-deco:block/cut_purpur_slab_top"
+    }
+  }
+}

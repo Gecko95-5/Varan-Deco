@@ -21,26 +21,32 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(DecoBlocks.CACTUS_PLANKS.asItem())
+                .add(DecoBlocks.MUSHROOM_PLANKS.asItem())
                 .add(DecoBlocks.WOODEN_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS.asItem())
+                .add(DecoBlocks.MUSHROOM_STAIRS.asItem())
                 .add(DecoBlocks.WOODEN_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
                 .add(DecoBlocks.CACTUS_PLANK_SLAB.asItem())
+                .add(DecoBlocks.MUSHROOM_SLAB.asItem())
                 .add(DecoBlocks.WOODEN_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE.asItem())
+                .add(DecoBlocks.MUSHROOM_FENCE.asItem())
                 .add(DecoBlocks.WOODEN_FENCE.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
                 .add(DecoBlocks.CACTUS_PLANK_BUTTON.asItem())
+                .add(DecoBlocks.MUSHROOM_BUTTON.asItem())
                 .add(DecoBlocks.WOODEN_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem())
+                .add(DecoBlocks.MUSHROOM_PRESSURE_PLATE.asItem())
                 .add(DecoBlocks.WOODEN_PRESSURE_PLATE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
@@ -76,10 +82,34 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
-                .add(DecoBlocks.CACTUS_DOOR.asItem());
+                .add(DecoBlocks.CACTUS_DOOR.asItem())
+                .add(DecoBlocks.MUSHROOM_DOOR.asItem())
+                .add(DecoBlocks.WOODEN_DOOR.asItem())
+                .add(DecoBlocks.OAK_PALLET_DOOR.asItem())
+                .add(DecoBlocks.SPRUCE_PALLET_DOOR.asItem())
+                .add(DecoBlocks.BIRCH_PALLET_DOOR.asItem())
+                .add(DecoBlocks.JUNGLE_PALLET_DOOR.asItem())
+                .add(DecoBlocks.ACACIA_PALLET_DOOR.asItem())
+                .add(DecoBlocks.DARK_OAK_PALLET_DOOR.asItem())
+                .add(DecoBlocks.MANGROVE_PALLET_DOOR.asItem())
+                .add(DecoBlocks.CACTUS_PALLET_DOOR.asItem())
+                .add(DecoBlocks.MUSHROOM_PALLET_DOOR.asItem())
+                .add(DecoBlocks.WOODEN_PALLET_DOOR.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
-                .add(DecoBlocks.CACTUS_TRAPDOOR.asItem());
+                .add(DecoBlocks.CACTUS_TRAPDOOR.asItem())
+                .add(DecoBlocks.MUSHROOM_TRAPDOOR.asItem())
+                .add(DecoBlocks.WOODEN_TRAPDOOR.asItem())
+                .add(DecoBlocks.OAK_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.SPRUCE_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.BIRCH_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.JUNGLE_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.ACACIA_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.MANGROVE_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.CACTUS_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR.asItem())
+                .add(DecoBlocks.WOODEN_PALLET_TRAPDOOR.asItem());
 
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
                 .add(DecoBlocks.WOODEN_SAPLING.asItem());
@@ -127,7 +157,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.OAK_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CHERRY_CRAFTING_TABLE.asItem())
-                .add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem());;
+                .add(DecoBlocks.BAMBOO_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.MUSHROOM_CRAFTING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_LADDER)
                 .add(Blocks.LADDER.asItem())
@@ -139,8 +170,13 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MANGROVE_LADDER.asItem())
                 .add(DecoBlocks.CACTUS_LADDER.asItem())
                 .add(DecoBlocks.WOODEN_LADDER.asItem())
+                .add(DecoBlocks.MUSHROOM_LADDER.asItem())
                 .add(DecoBlocks.BAMBOO_LADDER.asItem())
                 .add(DecoBlocks.CHERRY_LADDER.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_NOTE_BLOCKS)
+                .add(Blocks.NOTE_BLOCK.asItem())
+                .addTag(DecoTags.Items.WOODEN_NOTE_BLOCKS);
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES)
                 .add(DecoBlocks.OAK_CARTOGRAPHY_TABLE.asItem())
@@ -152,7 +188,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MANGROVE_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE.asItem())
-                .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE.asItem());
+                .add(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELVES)
                 .add(DecoBlocks.BIRCH_BOOKSHELF.asItem())
@@ -176,7 +213,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.JUNGLE_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.BAMBOO_SMITHING_TABLE.asItem())
-                .add(DecoBlocks.CHERRY_SMITHING_TABLE.asItem());
+                .add(DecoBlocks.CHERRY_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.MUSHROOM_SMITHING_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BARRELS)
                 .add(DecoBlocks.OAK_BARREL.asItem())
@@ -186,22 +224,39 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.ACACIA_BARREL.asItem())
                 .add(DecoBlocks.DARK_OAK_BARREL.asItem())
                 .add(DecoBlocks.MANGROVE_BARREL.asItem())
+                .add(DecoBlocks.MUSHROOM_BARREL.asItem())
                 .add(DecoBlocks.CACTUS_BARREL.asItem())
                 .add(DecoBlocks.CHERRY_BARREL.asItem())
                 .add(DecoBlocks.BAMBOO_BARREL.asItem());
 
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_NOTE_BLOCKS)
+                .add(DecoBlocks.MUSHROOM_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.OAK_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.SPRUCE_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.BIRCH_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.JUNGLE_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.DARK_OAK_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.ACACIA_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.MANGROVE_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.CRIMSON_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.WARPED_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.CACTUS_NOTE_BLOCK.asItem());
+
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())
                 .add(DecoBlocks.DEEPSLATE_FURNACE.asItem())
-                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem());
+                .add(DecoBlocks.BLACKSTONE_FURNACE.asItem())
+                .add(DecoBlocks.END_STONE_FURNACE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
                 .add(Blocks.STONE.asItem())
-                .add(Blocks.DEEPSLATE.asItem());
+                .add(Blocks.DEEPSLATE.asItem())
+                .add(Blocks.END_STONE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(Blocks.STONE.asItem())
-                .add(Blocks.DEEPSLATE.asItem());
+                .add(Blocks.DEEPSLATE.asItem())
+                .add(Blocks.END_STONE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.MOSAIC_WOOD)
                 .add(DecoBlocks.OAK_MOSAIC.asItem())
@@ -237,7 +292,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MANGROVE_MOSAIC_SLAB.asItem())
                 .add(DecoBlocks.CHERRY_MOSAIC_SLAB.asItem())
                 .add(DecoBlocks.CACTUS_MOSAIC_SLAB.asItem())
-                .add(DecoBlocks.WOODEN_MOSAIC_SLAB.asItem());
+                .add(DecoBlocks.WOODEN_MOSAIC_SLAB.asItem())
+                .add(DecoBlocks.END_STONE_BUTTON.asItem())
+                .add(DecoBlocks.POLISHED_END_STONE_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(DecoBlocks.YELLOW_TULIP.asItem())
@@ -263,11 +320,43 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.LAVENDER.asItem())
                 .add(DecoBlocks.ANCIENT_ROSE.asItem())
                 .add(DecoBlocks.BLUE_HIBISCUS.asItem())
-                .add(DecoBlocks.BROMELIAD.asItem());
+                .add(DecoBlocks.BROMELIAD.asItem())
+                .add(DecoBlocks.NIGHTSHADE.asItem())
+                .add(DecoBlocks.ENDERSHADE.asItem())
+                .add(DecoBlocks.BUTTERCUP.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WATER_ITEMS)
                 .add(Items.WATER_BUCKET)
                 .add(DecoItems.BUBBLE_ORB);
 
+        getOrCreateTagBuilder(DecoTags.Items.MUSHROOMS)
+                .add(Items.RED_MUSHROOM.asItem())
+                .add(Items.BROWN_MUSHROOM.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.GIANT_MUSHROOM_BLOCKS)
+                .add(Items.RED_MUSHROOM_BLOCK.asItem())
+                .add(Items.BROWN_MUSHROOM_BLOCK.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.SOUL_GROUND_BLOCKS)
+                .add(Items.SOUL_SAND.asItem())
+                .add(Items.SOUL_SOIL.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.COLOURED_LAMPS)
+                .add(DecoBlocks.WHITE_LAMP.asItem())
+                .add(DecoBlocks.LIGHT_GRAY_LAMP.asItem())
+                .add(DecoBlocks.GRAY_LAMP.asItem())
+                .add(DecoBlocks.BLACK_LAMP.asItem())
+                .add(DecoBlocks.BROWN_LAMP.asItem())
+                .add(DecoBlocks.RED_LAMP.asItem())
+                .add(DecoBlocks.ORANGE_LAMP.asItem())
+                .add(DecoBlocks.YELLOW_LAMP.asItem())
+                .add(DecoBlocks.LIME_LAMP.asItem())
+                .add(DecoBlocks.GREEN_LAMP.asItem())
+                .add(DecoBlocks.CYAN_LAMP.asItem())
+                .add(DecoBlocks.LIGHT_BLUE_LAMP.asItem())
+                .add(DecoBlocks.BLUE_LAMP.asItem())
+                .add(DecoBlocks.PURPLE_LAMP.asItem())
+                .add(DecoBlocks.MAGENTA_LAMP.asItem())
+                .add(DecoBlocks.PINK_LAMP.asItem());;
     }
 }

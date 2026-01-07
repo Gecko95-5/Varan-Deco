@@ -172,6 +172,73 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RED_SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool soulsoilstonebrickspool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SOUL_SOILSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutpurpurpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_PURPUR);
+
+        BlockStateModelGenerator.BlockTexturePool sandobsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SANDED_OBSIDIAN);
+        BlockStateModelGenerator.BlockTexturePool smobsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_OBSIDIAN);
+        BlockStateModelGenerator.BlockTexturePool cutobsidianpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_OBSIDIAN);
+
+        BlockStateModelGenerator.BlockTexturePool oakwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OAK_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool sprucewoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SPRUCE_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool birchwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BIRCH_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool junglewoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.JUNGLE_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool acaciawoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ACACIA_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool darkoakwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DARK_OAK_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool mangrovewoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MANGROVE_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool crimsonhyphaepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRIMSON_WOOD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool warpedhyphaepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WARPED_WOOD_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool strippedoakwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_OAK_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedsprucewoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_SPRUCE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedbirchwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_BIRCH_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedjunglewoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_JUNGLE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedacaciawoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_ACACIA_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippeddarkoakwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_DARK_OAK_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedmangrovewoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_MANGROVE_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedcrimsonhyphaepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_CRIMSON_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedwarpedhyphaepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WARPED_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedcherrywoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_CHERRY_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool woodenwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_WOOD_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool strippedwoodenwoodpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WOODEN_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool packednetherrackpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PACKED_NETHERRACK);
+        BlockStateModelGenerator.BlockTexturePool netherrackbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.NETHERRACK_BRICKS);
+
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_ICE_BRICKS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_MUD_BRICKS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_NETHERRACK_BRICKS, TexturedModel.CUBE_COLUMN);
+
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.PACKED_CACTUS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.STRIPPED_CACTUS, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE);
@@ -279,8 +346,22 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ANCIENT_ROSE, DecoBlocks.POTTED_ANCIENT_ROSE,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.BUTTERCUP, DecoBlocks.POTTED_BUTTERCUP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.NIGHTSHADE, DecoBlocks.POTTED_NIGHTSHADE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ENDERSHADE, DecoBlocks.POTTED_ENDERSHADE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
+
+        BlockStateModelGenerator.BlockTexturePool mushroompool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MUSHROOM_PLANKS);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_MAGMA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_BUBBLE_BLOCK);
 
         blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
         blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
@@ -325,28 +406,6 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.CRIMSON_MOSAIC, TexturedModel.CUBE_ALL);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.CACTUS_MOSAIC, TexturedModel.CUBE_ALL);
 
-        BlockStateModelGenerator.BlockTexturePool oakstrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_OAK_TEMP);
-        BlockStateModelGenerator.BlockTexturePool birchstrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_BIRCH_TEMP);
-        BlockStateModelGenerator.BlockTexturePool sprucestrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_SPRUCE_TEMP);
-        BlockStateModelGenerator.BlockTexturePool junglestrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_JUNGLE_TEMP);
-        BlockStateModelGenerator.BlockTexturePool acaciastrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_ACACIA_TEMP);
-        BlockStateModelGenerator.BlockTexturePool darkoakstrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_DARK_OAK_TEMP);
-        BlockStateModelGenerator.BlockTexturePool mangrovestrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_MANGROVE_TEMP);
-        BlockStateModelGenerator.BlockTexturePool cherrystrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_CHERRY_TEMP);
-        BlockStateModelGenerator.BlockTexturePool crimsonstrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_CRIMSON_TEMP);
-        BlockStateModelGenerator.BlockTexturePool warpedstrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WARPED_TEMP);
-        BlockStateModelGenerator.BlockTexturePool woodenstrippedpool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WOODEN_TEMP);
         BlockStateModelGenerator.BlockTexturePool bamboomosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BAMBOO_MOSAIC_TEMP);
 
@@ -405,17 +464,17 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(DecoBlocks.WOODEN_MOSAIC, DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN,
                 DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN);
 
-        oakstrippedpool.family(DecoBlocks.STRIPPED_OAK_FAMILY);
-        sprucestrippedpool.family(DecoBlocks.STRIPPED_SPRUCE_FAMILY);
-        birchstrippedpool.family(DecoBlocks.STRIPPED_BIRCH_FAMILY);
-        junglestrippedpool.family(DecoBlocks.STRIPPED_JUNGLE_FAMILY);
-        acaciastrippedpool.family(DecoBlocks.STRIPPED_ACACIA_FAMILY);
-        darkoakstrippedpool.family(DecoBlocks.STRIPPED_DARK_OAK_FAMILY);
-        mangrovestrippedpool.family(DecoBlocks.STRIPPED_MANGROVE_FAMILY);
-        cherrystrippedpool.family(DecoBlocks.STRIPPED_CHERRY_FAMILY);
-        crimsonstrippedpool.family(DecoBlocks.STRIPPED_CRIMSON_FAMILY);
-        warpedstrippedpool.family(DecoBlocks.STRIPPED_WARPED_FAMILY);
-        woodenstrippedpool.family(DecoBlocks.STRIPPED_WOODEN_FAMILY);
+        strippedoakwoodpool.family(DecoBlocks.STRIPPED_OAK_FAMILY);
+        strippedsprucewoodpool.family(DecoBlocks.STRIPPED_SPRUCE_FAMILY);
+        strippedbirchwoodpool.family(DecoBlocks.STRIPPED_BIRCH_FAMILY);
+        strippedjunglewoodpool.family(DecoBlocks.STRIPPED_JUNGLE_FAMILY);
+        strippedacaciawoodpool.family(DecoBlocks.STRIPPED_ACACIA_FAMILY);
+        strippeddarkoakwoodpool.family(DecoBlocks.STRIPPED_DARK_OAK_FAMILY);
+        strippedmangrovewoodpool.family(DecoBlocks.STRIPPED_MANGROVE_FAMILY);
+        strippedcherrywoodpool.family(DecoBlocks.STRIPPED_CHERRY_FAMILY);
+        strippedcrimsonhyphaepool.family(DecoBlocks.STRIPPED_CRIMSON_FAMILY);
+        strippedwarpedhyphaepool.family(DecoBlocks.STRIPPED_WARPED_FAMILY);
+        strippedwoodenwoodpool.family(DecoBlocks.STRIPPED_WOODEN_FAMILY);
 
         oakmosaicpool.family(DecoBlocks.OAK_MOSAIC_FAMILY);
         sprucemosaicpool.family(DecoBlocks.SPRUCE_MOSAIC_FAMILY);
@@ -463,6 +522,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_CRAFTING_TABLE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_BOOKSHELF);
@@ -489,6 +549,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CRIMSON_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WARPED_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_SMITHING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_SMITHING_TABLE);
 
@@ -504,6 +565,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_BLOCK);
@@ -522,14 +584,159 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MAGENTA_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_LIGHT_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_BROWN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_RED_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_ORANGE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_YELLOW_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_LIME_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_GREEN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_CYAN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_LIGHT_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_PURPLE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_MAGENTA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PASTEL_PINK_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_LIGHT_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_GRAY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_BROWN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_RED_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_ORANGE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_YELLOW_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_LIME_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_GREEN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_CYAN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_LIGHT_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_BLUE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_PURPLE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_MAGENTA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SHADED_PINK_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SMOOTH_GLOWSTONE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GRAY_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLACK_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BROWN_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.RED_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ORANGE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.YELLOW_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIME_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GREEN_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CYAN_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_BLUE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLUE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PURPLE_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MAGENTA_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.PINK_LAMP);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MUSHROOM_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.OAK_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SPRUCE_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BIRCH_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.JUNGLE_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.DARK_OAK_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ACACIA_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.MANGROVE_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRIMSON_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WARPED_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CACTUS_NOTE_BLOCK);
+
+        BlockStateModelGenerator.BlockTexturePool policalcpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_CALCITE);
+        BlockStateModelGenerator.BlockTexturePool cutcalcpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_CALCITE);
+        BlockStateModelGenerator.BlockTexturePool calcbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CALCITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutdiorpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_DIORITE);
+        BlockStateModelGenerator.BlockTexturePool diorbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DIORITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutgranpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_GRANITE);
+        BlockStateModelGenerator.BlockTexturePool granbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GRANITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cutandespool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_ANDESITE);
+        BlockStateModelGenerator.BlockTexturePool andesbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ANDESITE_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool cutgoldpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_GOLD);
+
+        BlockStateModelGenerator.BlockTexturePool goldpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GOLD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rawgoldpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RAW_GOLD_TEMP);
+        BlockStateModelGenerator.BlockTexturePool ironpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.IRON_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rawironpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RAW_IRON_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool copperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool rawcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.RAW_COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool expcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.EXPOSED_COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool weathcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WEATHERED_COPPER_TEMP);
+        BlockStateModelGenerator.BlockTexturePool oxidcopperpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OXIDIZED_COPPER_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool poliendstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_END_STONE);
+        BlockStateModelGenerator.BlockTexturePool smoothendstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_END_STONE);
+        BlockStateModelGenerator.BlockTexturePool endstonetilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.END_STONE_TILES);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_TILES);
+
+
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
+
         blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.MUSHROOM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.MUSHROOM_TRAPDOOR);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_TRAPDOOR);
 
         blockStateModelGenerator.registerDoor(DecoBlocks.GOLD_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.GOLD_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.OAK_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.SPRUCE_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.BIRCH_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.JUNGLE_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.ACACIA_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.DARK_OAK_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.MANGROVE_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.CRIMSON_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.WARPED_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.CACTUS_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.MUSHROOM_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_PALLET_DOOR);
+
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.OAK_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.SPRUCE_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.BIRCH_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.JUNGLE_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.ACACIA_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.DARK_OAK_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.MANGROVE_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.CRIMSON_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.WARPED_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.CACTUS_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.MUSHROOM_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -656,6 +863,13 @@ public class DecoModelProvider extends FabricModelProvider {
         woodenpool.pressurePlate(DecoBlocks.WOODEN_PRESSURE_PLATE);
         woodenpool.fenceGate(DecoBlocks.WOODEN_FENCE_GATE);
 
+        mushroompool.stairs(DecoBlocks.MUSHROOM_STAIRS);
+        mushroompool.slab(DecoBlocks.MUSHROOM_SLAB);
+        mushroompool.fence(DecoBlocks.MUSHROOM_FENCE);
+        mushroompool.button(DecoBlocks.MUSHROOM_BUTTON);
+        mushroompool.pressurePlate(DecoBlocks.MUSHROOM_PRESSURE_PLATE);
+        mushroompool.fenceGate(DecoBlocks.MUSHROOM_FENCE_GATE);
+
        bluenetherpool.stairs(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
        bluenetherpool.slab(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
        bluenetherpool.fence(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
@@ -670,6 +884,8 @@ public class DecoModelProvider extends FabricModelProvider {
         endstonepool.stairs(DecoBlocks.END_STONE_STAIRS);
         endstonepool.slab(DecoBlocks.END_STONE_SLAB);
         endstonepool.wall(DecoBlocks.END_STONE_WALL);
+        endstonepool.button(DecoBlocks.END_STONE_BUTTON);
+        endstonepool.pressurePlate(DecoBlocks.END_STONE_PRESSURE_PLATE);
 
         smoothpurpurpool.stairs(DecoBlocks.SMOOTH_PURPUR_STAIRS);
         smoothpurpurpool.slab(DecoBlocks.SMOOTH_PURPUR_SLAB);
@@ -794,8 +1010,196 @@ public class DecoModelProvider extends FabricModelProvider {
         soulsoilstonebrickspool.slab(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB);
         soulsoilstonebrickspool.wall(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
 
-       cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
+        cutpurpurpool.stairs(DecoBlocks.CUT_PURPUR_STAIRS);
+        cutpurpurpool.slab(DecoBlocks.CUT_PURPUR_SLAB);
+        cutpurpurpool.wall(DecoBlocks.CUT_PURPUR_WALL);
+
+        oakwoodpool.stairs(DecoBlocks.OAK_WOOD_STAIRS);
+        oakwoodpool.slab(DecoBlocks.OAK_WOOD_SLAB);
+        oakwoodpool.wall(DecoBlocks.OAK_WOOD_WALL);
+
+        sprucewoodpool.stairs(DecoBlocks.SPRUCE_WOOD_STAIRS);
+        sprucewoodpool.slab(DecoBlocks.SPRUCE_WOOD_SLAB);
+        sprucewoodpool.wall(DecoBlocks.SPRUCE_WOOD_WALL);
+
+        birchwoodpool.stairs(DecoBlocks.BIRCH_WOOD_STAIRS);
+        birchwoodpool.slab(DecoBlocks.BIRCH_WOOD_SLAB);
+        birchwoodpool.wall(DecoBlocks.BIRCH_WOOD_WALL);
+
+        junglewoodpool.stairs(DecoBlocks.JUNGLE_WOOD_STAIRS);
+        junglewoodpool.slab(DecoBlocks.JUNGLE_WOOD_SLAB);
+        junglewoodpool.wall(DecoBlocks.JUNGLE_WOOD_WALL);
+
+        acaciawoodpool.stairs(DecoBlocks.ACACIA_WOOD_STAIRS);
+        acaciawoodpool.slab(DecoBlocks.ACACIA_WOOD_SLAB);
+        acaciawoodpool.wall(DecoBlocks.ACACIA_WOOD_WALL);
+
+        darkoakwoodpool.stairs(DecoBlocks.DARK_OAK_WOOD_STAIRS);
+        darkoakwoodpool.slab(DecoBlocks.DARK_OAK_WOOD_SLAB);
+        darkoakwoodpool.wall(DecoBlocks.DARK_OAK_WOOD_WALL);
+
+        mangrovewoodpool.stairs(DecoBlocks.MANGROVE_WOOD_STAIRS);
+        mangrovewoodpool.slab(DecoBlocks.MANGROVE_WOOD_SLAB);
+        mangrovewoodpool.wall(DecoBlocks.MANGROVE_WOOD_WALL);
+
+        crimsonhyphaepool.stairs(DecoBlocks.CRIMSON_HYPHAE_STAIRS);
+        crimsonhyphaepool.slab(DecoBlocks.CRIMSON_HYPHAE_SLAB);
+        crimsonhyphaepool.wall(DecoBlocks.CRIMSON_HYPHAE_WALL);
+
+        warpedhyphaepool.stairs(DecoBlocks.WARPED_HYPHAE_STAIRS);
+        warpedhyphaepool.slab(DecoBlocks.WARPED_HYPHAE_SLAB);
+        warpedhyphaepool.wall(DecoBlocks.WARPED_HYPHAE_WALL);
+
+        strippedoakwoodpool.stairs(DecoBlocks.STRIPPED_OAK_WOOD_STAIRS);
+        strippedoakwoodpool.slab(DecoBlocks.STRIPPED_OAK_WOOD_SLAB);
+        strippedoakwoodpool.wall(DecoBlocks.STRIPPED_OAK_WOOD_WALL);
+
+        strippedsprucewoodpool.stairs(DecoBlocks.STRIPPED_SPRUCE_WOOD_STAIRS);
+        strippedsprucewoodpool.slab(DecoBlocks.STRIPPED_SPRUCE_WOOD_SLAB);
+        strippedsprucewoodpool.wall(DecoBlocks.STRIPPED_SPRUCE_WOOD_WALL);
+
+        strippedbirchwoodpool.stairs(DecoBlocks.STRIPPED_BIRCH_WOOD_STAIRS);
+        strippedbirchwoodpool.slab(DecoBlocks.STRIPPED_BIRCH_WOOD_SLAB);
+        strippedbirchwoodpool.wall(DecoBlocks.STRIPPED_BIRCH_WOOD_WALL);
+
+        strippedjunglewoodpool.stairs(DecoBlocks.STRIPPED_JUNGLE_WOOD_STAIRS);
+        strippedjunglewoodpool.slab(DecoBlocks.STRIPPED_JUNGLE_WOOD_SLAB);
+        strippedjunglewoodpool.wall(DecoBlocks.STRIPPED_JUNGLE_WOOD_WALL);
+
+        strippedacaciawoodpool.stairs(DecoBlocks.STRIPPED_ACACIA_WOOD_STAIRS);
+        strippedacaciawoodpool.slab(DecoBlocks.STRIPPED_ACACIA_WOOD_SLAB);
+        strippedacaciawoodpool.wall(DecoBlocks.STRIPPED_ACACIA_WOOD_WALL);
+
+        strippeddarkoakwoodpool.stairs(DecoBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS);
+        strippeddarkoakwoodpool.slab(DecoBlocks.STRIPPED_DARK_OAK_WOOD_SLAB);
+        strippeddarkoakwoodpool.wall(DecoBlocks.STRIPPED_DARK_OAK_WOOD_WALL);
+
+        strippedmangrovewoodpool.stairs(DecoBlocks.STRIPPED_MANGROVE_WOOD_STAIRS);
+        strippedmangrovewoodpool.slab(DecoBlocks.STRIPPED_MANGROVE_WOOD_SLAB);
+        strippedmangrovewoodpool.wall(DecoBlocks.STRIPPED_MANGROVE_WOOD_WALL);
+
+        strippedcrimsonhyphaepool.stairs(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS);
+        strippedcrimsonhyphaepool.slab(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB);
+        strippedcrimsonhyphaepool.wall(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL);
+
+        strippedwarpedhyphaepool.stairs(DecoBlocks.STRIPPED_WARPED_HYPHAE_STAIRS);
+        strippedwarpedhyphaepool.slab(DecoBlocks.STRIPPED_WARPED_HYPHAE_SLAB);
+        strippedwarpedhyphaepool.wall(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL);
+
+        woodenwoodpool.stairs(DecoBlocks.WOODEN_WOOD_STAIRS);
+        woodenwoodpool.slab(DecoBlocks.WOODEN_WOOD_SLAB);
+        woodenwoodpool.wall(DecoBlocks.WOODEN_WOOD_WALL);
+
+        strippedwoodenwoodpool.stairs(DecoBlocks.STRIPPED_WOODEN_WOOD_STAIRS);
+        strippedwoodenwoodpool.slab(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB);
+        strippedwoodenwoodpool.wall(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
+
+        packednetherrackpool.stairs(DecoBlocks.PACKED_NETHERRACK_STAIRS);
+        packednetherrackpool.slab(DecoBlocks.PACKED_NETHERRACK_SLAB);
+        packednetherrackpool.wall(DecoBlocks.PACKED_NETHERRACK_WALL);
+
+        netherrackbrickpool.stairs(DecoBlocks.NETHERRACK_BRICK_STAIRS);
+        netherrackbrickpool.slab(DecoBlocks.NETHERRACK_BRICK_SLAB);
+        netherrackbrickpool.wall(DecoBlocks.NETHERRACK_BRICK_WALL);
+
+        policalcpool.stairs(DecoBlocks.POLISHED_CALCITE_STAIRS);
+        policalcpool.slab(DecoBlocks.POLISHED_CALCITE_SLAB);
+        policalcpool.wall(DecoBlocks.POLISHED_CALCITE_WALL);
+
+        cutcalcpool.stairs(DecoBlocks.CUT_CALCITE_STAIRS);
+        cutcalcpool.slab(DecoBlocks.CUT_CALCITE_SLAB);
+        cutcalcpool.wall(DecoBlocks.CUT_CALCITE_WALL);
+
+        calcbrickpool.stairs(DecoBlocks.CALCITE_BRICK_STAIRS);
+        calcbrickpool.slab(DecoBlocks.CALCITE_BRICK_SLAB);
+        calcbrickpool.wall(DecoBlocks.CALCITE_BRICK_WALL);
+
+        cutandespool.stairs(DecoBlocks.CUT_ANDESITE_STAIRS);
+        cutandespool.slab(DecoBlocks.CUT_ANDESITE_SLAB);
+        cutandespool.wall(DecoBlocks.CUT_ANDESITE_WALL);
+
+        andesbrickpool.stairs(DecoBlocks.ANDESITE_BRICK_STAIRS);
+        andesbrickpool.slab(DecoBlocks.ANDESITE_BRICK_SLAB);
+        andesbrickpool.wall(DecoBlocks.ANDESITE_BRICK_WALL);
+
+        cutdiorpool.stairs(DecoBlocks.CUT_DIORITE_STAIRS);
+        cutdiorpool.slab(DecoBlocks.CUT_DIORITE_SLAB);
+        cutdiorpool.wall(DecoBlocks.CUT_DIORITE_WALL);
+
+        diorbrickpool.stairs(DecoBlocks.DIORITE_BRICK_STAIRS);
+        diorbrickpool.slab(DecoBlocks.DIORITE_BRICK_SLAB);
+        diorbrickpool.wall(DecoBlocks.DIORITE_BRICK_WALL);
+
+        cutgranpool.stairs(DecoBlocks.CUT_GRANITE_STAIRS);
+        cutgranpool.slab(DecoBlocks.CUT_GRANITE_SLAB);
+        cutgranpool.wall(DecoBlocks.CUT_GRANITE_WALL);
+
+        granbrickpool.stairs(DecoBlocks.GRANITE_BRICK_STAIRS);
+        granbrickpool.slab(DecoBlocks.GRANITE_BRICK_SLAB);
+        granbrickpool.wall(DecoBlocks.GRANITE_BRICK_WALL);
+
+        cutgoldpool.stairs(DecoBlocks.CUT_GOLD_STAIRS);
+        cutgoldpool.slab(DecoBlocks.CUT_GOLD_SLAB);
+
+        ironpool.stairs(DecoBlocks.IRON_STAIRS);
+        ironpool.slab(DecoBlocks.IRON_SLAB);
+        rawironpool.stairs(DecoBlocks.RAW_IRON_STAIRS);
+        rawironpool.slab(DecoBlocks.RAW_IRON_SLAB);
+
+        goldpool.stairs(DecoBlocks.GOLD_STAIRS);
+        goldpool.slab(DecoBlocks.GOLD_SLAB);
+        rawgoldpool.stairs(DecoBlocks.RAW_GOLD_STAIRS);
+        rawgoldpool.slab(DecoBlocks.RAW_GOLD_SLAB);
+
+        copperpool.stairs(DecoBlocks.COPPER_STAIRS);
+        copperpool.slab(DecoBlocks.COPPER_SLAB);
+        rawcopperpool.stairs(DecoBlocks.RAW_COPPER_STAIRS);
+        rawcopperpool.slab(DecoBlocks.RAW_COPPER_SLAB);
+        copperpool.stairs(DecoBlocks.WAXED_COPPER_STAIRS);
+        copperpool.slab(DecoBlocks.WAXED_COPPER_SLAB);
+
+        expcopperpool.stairs(DecoBlocks.EXPOSED_COPPER_STAIRS);
+        expcopperpool.slab(DecoBlocks.EXPOSED_COPPER_SLAB);
+        expcopperpool.stairs(DecoBlocks.WAXED_EXPOSED_COPPER_STAIRS);
+        expcopperpool.slab(DecoBlocks.WAXED_EXPOSED_COPPER_SLAB);
+
+        weathcopperpool.stairs(DecoBlocks.WEATHERED_COPPER_STAIRS);
+        weathcopperpool.slab(DecoBlocks.WEATHERED_COPPER_SLAB);
+        weathcopperpool.stairs(DecoBlocks.WAXED_WEATHERED_COPPER_STAIRS);
+        weathcopperpool.slab(DecoBlocks.WAXED_WEATHERED_COPPER_SLAB);
+
+        oxidcopperpool.stairs(DecoBlocks.OXIDIZED_COPPER_STAIRS);
+        oxidcopperpool.slab(DecoBlocks.OXIDIZED_COPPER_SLAB);
+        oxidcopperpool.stairs(DecoBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
+        oxidcopperpool.slab(DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
+
+        sandobsidianpool.stairs(DecoBlocks.SANDED_OBSIDIAN_STAIRS);
+        sandobsidianpool.slab(DecoBlocks.SANDED_OBSIDIAN_SLAB);
+        sandobsidianpool.wall(DecoBlocks.SANDED_OBSIDIAN_WALL);
+
+        smobsidianpool.stairs(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS);
+        smobsidianpool.slab(DecoBlocks.SMOOTH_OBSIDIAN_SLAB);
+        smobsidianpool.wall(DecoBlocks.SMOOTH_OBSIDIAN_WALL);
+
+        cutobsidianpool.stairs(DecoBlocks.CUT_OBSIDIAN_STAIRS);
+        cutobsidianpool.slab(DecoBlocks.CUT_OBSIDIAN_SLAB);
+        cutobsidianpool.wall(DecoBlocks.CUT_OBSIDIAN_WALL);
+
+        poliendstonepool.stairs(DecoBlocks.POLISHED_END_STONE_STAIRS);
+        poliendstonepool.slab(DecoBlocks.POLISHED_END_STONE_SLAB);
+        poliendstonepool.wall(DecoBlocks.POLISHED_END_STONE_WALL);
+        poliendstonepool.pressurePlate(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE);
+        poliendstonepool.button(DecoBlocks.POLISHED_END_STONE_BUTTON);
+
+        smoothendstonepool.stairs(DecoBlocks.SMOOTH_END_STONE_STAIRS);
+        smoothendstonepool.wall(DecoBlocks.SMOOTH_END_STONE_WALL);
+        endstonetilepool.stairs(DecoBlocks.END_STONE_TILE_STAIRS);
+        endstonetilepool.slab(DecoBlocks.END_STONE_TILE_SLAB);
+        endstonetilepool.wall(DecoBlocks.END_STONE_TILE_WALL);
+
+        cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
+       mushroompool.family(DecoBlocks.MUSHROOM_FAMILY);
 
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
@@ -1203,6 +1607,9 @@ public class DecoModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(DecoItems.MIGHTY_LAVENDER_FLOWER, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.LILAC_FLOWER, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.PASSTOL, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.SHADDOL, Models.GENERATED);
 
         itemModelGenerator.register(DecoItems.CACTUS_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CACTUS_CHEST_BOAT, Models.GENERATED);

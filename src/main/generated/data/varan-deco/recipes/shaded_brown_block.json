@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shaded_blocks",
+  "key": {
+    "#": {
+      "item": "varan-deco:brown_block"
+    },
+    "X": {
+      "item": "varan-deco:shaddol"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "varan-deco:shaded_brown_block"
+  },
+  "show_notification": true
+}

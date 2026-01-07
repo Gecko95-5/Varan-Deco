@@ -65,6 +65,25 @@
     "varan-deco:polished_soul_soilstone_wall",
     "varan-deco:sandstone_brick_wall",
     "varan-deco:red_sandstone_brick_wall",
-    "varan-deco:soul_soilstone_brick_wall"
+    "varan-deco:soul_soilstone_brick_wall",
+    "varan-deco:cut_purpur_wall",
+    "#varan-deco:log_walls",
+    "varan-deco:packed_netherrack_wall",
+    "varan-deco:netherrack_brick_wall",
+    "varan-deco:polished_calcite_wall",
+    "varan-deco:cut_calcite_wall",
+    "varan-deco:calcite_brick_wall",
+    "varan-deco:cut_diorite_wall",
+    "varan-deco:diorite_brick_wall",
+    "varan-deco:cut_granite_wall",
+    "varan-deco:granite_brick_wall",
+    "varan-deco:cut_andesite_wall",
+    "varan-deco:andesite_brick_wall",
+    "varan-deco:sanded_obsidian_wall",
+    "varan-deco:smooth_obsidian_wall",
+    "varan-deco:cut_obsidian_wall",
+    "varan-deco:polished_end_stone_wall",
+    "varan-deco:smooth_end_stone_wall",
+    "varan-deco:end_stone_tile_wall"
   ]
 }

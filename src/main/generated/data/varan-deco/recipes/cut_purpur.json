@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:purpur_block"
+    },
+    "P": {
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  },
+  "pattern": [
+    "#P",
+    "P#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:cut_purpur"
+  },
+  "show_notification": true
+}

@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "varan-deco:block/light_iron_bars",
-        "bars": "varan-deco:block/light_iron_bars",
+        "particle": "varan-deco:block/light_iron_bars_edge",
+        "bars": "varan-deco:block/light_iron_bars_edge",
         "edge": "varan-deco:block/light_iron_bars_edge"
     },
     "elements": [

@@ -28,6 +28,9 @@ public class DecoTags {
         public static final TagKey<Block> DECO_BOOKSHELVES =
                 createTag("deco_bookshelves");
 
+        public static final TagKey<Block> DECO_NOTE_BLOCKS =
+                createTag("deco_note_blocks");
+
         public static final TagKey<Block> WOODEN_LOGS =
                 createTag("wooden_logs");
 
@@ -85,6 +88,24 @@ public class DecoTags {
         public static final TagKey<Block> INFESTED_BLOCKS =
                 createTag("infested_blocks");
 
+        public static final TagKey<Block> DYE_BLOCKS =
+                createTag("dye_blocks");
+
+        public static final TagKey<Block> COLOURED_LAMPS =
+                createTag("coloured_lamps");
+
+        public static final TagKey<Block> LEVERS =
+                createTag("levers");
+
+        public static final TagKey<Block> LOG_STAIRS =
+                createTag("log_stairs");
+
+        public static final TagKey<Block> LOG_SLABS =
+                createTag("log_slabs");
+
+        public static final TagKey<Block> LOG_WALLS =
+                createTag("log_walls");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registries.BLOCK.getKey(), new Identifier(VaranDeco.MOD_ID, name));
         }
@@ -105,6 +126,9 @@ public class DecoTags {
         public static final TagKey<Item> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");
 
+        public static final TagKey<Item> DECO_NOTE_BLOCKS =
+                createTag("deco_note_blocks");
+
         public static final TagKey<Item> WOODEN_SMITHING_TABLES =
                 createTag("wooden_smithing_tables");
 
@@ -119,6 +143,9 @@ public class DecoTags {
 
         public static final TagKey<Item> WOODEN_CARTOGRAPHY_TABLES =
                 createTag("wooden_cartography_tables");
+
+        public static final TagKey<Item> WOODEN_NOTE_BLOCKS =
+                createTag("wooden_note_blocks");
 
         public static final TagKey<Item> DECO_LADDER =
                 createTag("deco_ladder");
@@ -143,6 +170,18 @@ public class DecoTags {
 
         public static final TagKey<Item> WATER_ITEMS =
                 createTag("water_items");
+
+        public static final TagKey<Item> MUSHROOMS =
+                createTag("mushrooms");
+
+        public static final TagKey<Item> GIANT_MUSHROOM_BLOCKS =
+                createTag("giant_mushroom_blocks");
+
+        public static final TagKey<Item> SOUL_GROUND_BLOCKS =
+                createTag("soul_ground_blocks");
+
+        public static final TagKey<Item> COLOURED_LAMPS =
+                createTag("coloured_lamps");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));
