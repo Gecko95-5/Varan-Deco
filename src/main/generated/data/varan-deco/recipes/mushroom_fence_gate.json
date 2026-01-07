@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_fence_fence",
+  "key": {
+    "#": {
+      "item": "varan-deco:mushroom_planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "varan-deco:mushroom_fence_gate"
+  },
+  "show_notification": true
+}

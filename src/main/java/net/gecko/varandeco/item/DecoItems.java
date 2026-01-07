@@ -16,6 +16,9 @@ public class DecoItems {
     public static final Item CACTUS_SIGN = registerItem("cactus_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_CACTUS_SIGN, DecoBlocks.WALL_CACTUS_SIGN));
+    public static final Item MUSHROOM_SIGN = registerItem("mushroom_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_MUSHROOM_SIGN, DecoBlocks.WALL_MUSHROOM_SIGN));
     public static final Item WOODEN_SIGN = registerItem("wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
@@ -55,6 +58,7 @@ public class DecoItems {
     }
     public static void addItemsToItemGroups() {
         addToItemGroup(DecoItemGroup.VARAN_DECO, CACTUS_SIGN);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, MUSHROOM_SIGN);
         addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_SIGN);
         addToItemGroup(DecoItemGroup.VARAN_DECO, SNOW_BRICK);
         addToItemGroup(DecoItemGroup.VARAN_DECO, BUBBLE_ORB);

@@ -24,15 +24,6 @@
             "slow_scale": 1.0,
             "states": [
               {
-                "Name": "varan-deco:black_tulip"
-              },
-              {
-                "Name": "varan-deco:green_tulip"
-              },
-              {
-                "Name": "varan-deco:cyan_tulip"
-              },
-              {
                 "Name": "varan-deco:barberton_daisy"
               },
               {
