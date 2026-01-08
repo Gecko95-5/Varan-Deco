@@ -1459,5 +1459,8 @@
   "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.strong_bubble_potion": "Arrow of The Water Bubble",
 
-  "itemGroup.varan-deco.varan_deco_blocks": "Variant Decoration"
+  "itemGroup.varan-deco.varan_deco_blocks": "Variant Decoration - Building Blocks",
+  "itemGroup.varan-deco.varan_deco_decoration": "Variant Decoration - Decoration Blocks",
+  "itemGroup.varan-deco.varan_deco_redstone": "Variant Decoration - Redstone",
+  "itemGroup.varan-deco.varan_deco_items": "Variant Decoration - Items"
 }
