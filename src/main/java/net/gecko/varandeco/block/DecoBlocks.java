@@ -2570,9 +2570,10 @@ public class DecoBlocks {
     public static final Block MANGROVE_NOTE_BLOCK = registerBlock("mangrove_note_block",
             new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.RED)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRIMSON_NOTE_BLOCK = registerBlock("crimson_note_block",
-            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DULL_PINK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DULL_PINK).sounds(BlockSoundGroup.NETHER_STEM)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WARPED_NOTE_BLOCK = registerBlock("warped_note_block",
-            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DARK_AQUA)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.NETHER_STEM)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_NOTE_BLOCK = registerBlock("cactus_note_block",
             new NoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK).mapColor(MapColor.PALE_GREEN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MUSHROOM_NOTE_BLOCK = registerBlock("mushroom_note_block",
