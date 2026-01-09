@@ -2331,10 +2331,6 @@ public class DecoBlocks {
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
                     30, true,SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF,
                     SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON));
-    public static final Block MUSHROOM_BUTTON = registerBlock("mushroom_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
-                    30, true,SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF,
-                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON));
     public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
                     30, true,SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF,
@@ -2415,11 +2411,6 @@ public class DecoBlocks {
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_YELLOW),
                     SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF,
                     SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_ON));
-    public static final Block MUSHROOM_PRESSURE_PLATE = registerBlock("mushroom_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_YELLOW),
-                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF,
-                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_ON));
     public static final Block WOODEN_PRESSURE_PLATE = registerBlock("wooden_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE),
@@ -2432,10 +2423,6 @@ public class DecoBlocks {
                     SoundEvents.BLOCK_IRON_DOOR_OPEN));
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(),
-                    SoundEvents.BLOCK_WOODEN_DOOR_CLOSE,
-                    SoundEvents.BLOCK_WOODEN_DOOR_OPEN));
-    public static final Block MUSHROOM_DOOR = registerBlock("mushroom_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_YELLOW).nonOpaque(),
                     SoundEvents.BLOCK_WOODEN_DOOR_CLOSE,
                     SoundEvents.BLOCK_WOODEN_DOOR_OPEN));
     public static final Block MUSHROOM_DOOR = registerBlock("mushroom_door",
@@ -2798,9 +2785,6 @@ public class DecoBlocks {
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
-            .group("wooden").unlockCriterionName("has_planks").build();
-    public static final BlockFamily MUSHROOM_FAMILY = BlockFamilies.register(DecoBlocks.MUSHROOM_PLANKS)
-            .sign(DecoBlocks.STANDING_MUSHROOM_SIGN,DecoBlocks.WALL_MUSHROOM_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
     public static final BlockFamily MUSHROOM_FAMILY = BlockFamilies.register(DecoBlocks.MUSHROOM_PLANKS)
             .sign(DecoBlocks.STANDING_MUSHROOM_SIGN,DecoBlocks.WALL_MUSHROOM_SIGN)
@@ -3366,7 +3350,7 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_GLOWSTONE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_LAMP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_LAMP.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_LAMP.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_LAMP.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_LAMP.asItem());
