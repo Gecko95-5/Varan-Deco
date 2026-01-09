@@ -2673,9 +2673,6 @@ public class DecoBlocks {
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
-    public static final BlockFamily MUSHROOM_FAMILY = BlockFamilies.register(DecoBlocks.MUSHROOM_PLANKS)
-            .sign(DecoBlocks.STANDING_MUSHROOM_SIGN,DecoBlocks.WALL_MUSHROOM_SIGN)
-            .group("wooden").unlockCriterionName("has_planks").build();
     public static final BlockFamily WOODEN_FAMILY = BlockFamilies.register(DecoBlocks.WOODEN_PLANKS)
             .sign(DecoBlocks.STANDING_WOODEN_SIGN,DecoBlocks.WALL_WOODEN_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
@@ -3237,7 +3234,7 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SOUL_SOILSTONE_BRICK_WALL.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.SMOOTH_GLOWSTONE.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.WHITE_LAMP.asItem());
-        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_BLOCK.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.LIGHT_GRAY_LAMP.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.GRAY_LAMP.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BLACK_LAMP.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BROWN_LAMP.asItem());
