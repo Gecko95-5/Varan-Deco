@@ -2681,7 +2681,7 @@ public class DecoBlocks {
     public static final Block ACACIA_PALLET_DOOR = registerBlock("acacia_pallet_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block DARK_OAK_PALLET_DOOR = registerBlock("dark_oak_pallet_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MANGROVE_PALLET_DOOR = registerBlock("mangrove_pallet_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_DOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRIMSON_PALLET_DOOR = registerBlock("crimson_pallet_door",
@@ -2716,7 +2716,7 @@ public class DecoBlocks {
     public static final Block ACACIA_PALLET_TRAPDOOR = registerBlock("acacia_pallet_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block DARK_OAK_PALLET_TRAPDOOR = registerBlock("dark_oak_pallet_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block MANGROVE_PALLET_TRAPDOOR = registerBlock("mangrove_pallet_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_TRAPDOOR).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRIMSON_PALLET_TRAPDOOR = registerBlock("crimson_pallet_trapdoor",
