@@ -2455,7 +2455,7 @@ public class DecoBlocks {
                     SoundEvents.BLOCK_WOODEN_DOOR_CLOSE,
                     SoundEvents.BLOCK_WOODEN_DOOR_OPEN));
     public static final Block DARK_OAK_PALLET_DOOR = registerBlock("dark_oak_pallet_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_DOOR).nonOpaque(),
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_DOOR).nonOpaque(),
                     SoundEvents.BLOCK_WOODEN_DOOR_CLOSE,
                     SoundEvents.BLOCK_WOODEN_DOOR_OPEN));
     public static final Block MANGROVE_PALLET_DOOR = registerBlock("mangrove_pallet_door",
@@ -2521,7 +2521,7 @@ public class DecoBlocks {
                     SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE,
                     SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN));
     public static final Block DARK_OAK_PALLET_TRAPDOOR = registerBlock("dark_oak_pallet_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_TRAPDOOR).nonOpaque(),
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_TRAPDOOR).nonOpaque(),
                     SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE,
                     SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN));
     public static final Block MANGROVE_PALLET_TRAPDOOR = registerBlock("mangrove_pallet_trapdoor",
