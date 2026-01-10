@@ -6240,6 +6240,226 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerHangingSignRecipe(exporter, DecoItems.MUSHROOM_PLANKS_HANGING_SIGN, DecoBlocks.MUSHROOM_PLANKS);
 
         offerHangingSignRecipe(exporter, DecoItems.MUSHROOM_MOSAIC_HANGING_SIGN, DecoBlocks.MUSHROOM_MOSAIC);
+
+        offerBoatRecipe(exporter, DecoItems.MUSHROOM_BOAT, DecoBlocks.MUSHROOM_PLANKS);
+        offerChestBoatRecipe(exporter, DecoItems.MUSHROOM_CHEST_BOAT, DecoItems.MUSHROOM_BOAT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.OAK_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.OAK_PLANKS)
+                .input('-', Items.OAK_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.OAK_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.OAK_CHEST_RAFT, DecoItems.OAK_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.BIRCH_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.BIRCH_PLANKS)
+                .input('-', Items.BIRCH_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.BIRCH_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.BIRCH_CHEST_RAFT, DecoItems.BIRCH_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.SPRUCE_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.SPRUCE_PLANKS)
+                .input('-', Items.SPRUCE_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SPRUCE_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.SPRUCE_CHEST_RAFT, DecoItems.SPRUCE_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.JUNGLE_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.JUNGLE_PLANKS)
+                .input('-', Items.JUNGLE_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.JUNGLE_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.JUNGLE_CHEST_RAFT, DecoItems.JUNGLE_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.ACACIA_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.ACACIA_PLANKS)
+                .input('-', Items.ACACIA_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.ACACIA_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.ACACIA_CHEST_RAFT, DecoItems.ACACIA_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.DARK_OAK_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.DARK_OAK_PLANKS)
+                .input('-', Items.DARK_OAK_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.DARK_OAK_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.DARK_OAK_CHEST_RAFT, DecoItems.DARK_OAK_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.MANGROVE_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.MANGROVE_PLANKS)
+                .input('-', Items.MANGROVE_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.MANGROVE_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.MANGROVE_CHEST_RAFT, DecoItems.MANGROVE_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.CHERRY_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.CHERRY_PLANKS)
+                .input('-', Items.CHERRY_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.CHERRY_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.CHERRY_CHEST_RAFT, DecoItems.CHERRY_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.CRIMSON_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.CRIMSON_PLANKS)
+                .input('-', Items.CRIMSON_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.CRIMSON_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.CRIMSON_CHEST_RAFT, DecoItems.CRIMSON_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.WARPED_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', Items.WARPED_PLANKS)
+                .input('-', Items.WARPED_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.WARPED_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.WARPED_CHEST_RAFT, DecoItems.WARPED_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.CACTUS_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', DecoBlocks.CACTUS_PLANKS)
+                .input('-', DecoBlocks.CACTUS_PLANK_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.CACTUS_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.CACTUS_CHEST_RAFT, DecoItems.CACTUS_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.MUSHROOM_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', DecoBlocks.MUSHROOM_PLANKS)
+                .input('-', DecoBlocks.MUSHROOM_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.MUSHROOM_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.MUSHROOM_CHEST_RAFT, DecoItems.MUSHROOM_RAFT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.WOODEN_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', DecoBlocks.WOODEN_PLANKS)
+                .input('-', DecoBlocks.WOODEN_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.WOODEN_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.WOODEN_CHEST_RAFT, DecoItems.WOODEN_RAFT);
+
+        offerBoatRecipe(exporter, DecoItems.BAMBOO_BOAT, Blocks.BAMBOO_PLANKS);
+        offerChestBoatRecipe(exporter, DecoItems.BAMBOO_CHEST_BOAT, DecoItems.BAMBOO_BOAT);
+
+        createStairsRecipe(DecoBlocks.OAK_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.OAK_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.OAK_BOOKSHELF),conditionsFromItem(DecoBlocks.OAK_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.OAK_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.OAK_BOOKSHELF_SLAB, DecoBlocks.OAK_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.SPRUCE_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.SPRUCE_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.SPRUCE_BOOKSHELF),conditionsFromItem(DecoBlocks.SPRUCE_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SPRUCE_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SPRUCE_BOOKSHELF_SLAB, DecoBlocks.SPRUCE_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.BIRCH_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.BIRCH_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.BIRCH_BOOKSHELF),conditionsFromItem(DecoBlocks.BIRCH_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BIRCH_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BIRCH_BOOKSHELF_SLAB, DecoBlocks.BIRCH_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.JUNGLE_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.JUNGLE_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.JUNGLE_BOOKSHELF),conditionsFromItem(DecoBlocks.JUNGLE_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.JUNGLE_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.JUNGLE_BOOKSHELF_SLAB, DecoBlocks.JUNGLE_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.ACACIA_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.ACACIA_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.ACACIA_BOOKSHELF),conditionsFromItem(DecoBlocks.ACACIA_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.ACACIA_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.ACACIA_BOOKSHELF_SLAB, DecoBlocks.ACACIA_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.DARK_OAK_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.DARK_OAK_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.DARK_OAK_BOOKSHELF),conditionsFromItem(DecoBlocks.DARK_OAK_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DARK_OAK_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.DARK_OAK_BOOKSHELF_SLAB, DecoBlocks.DARK_OAK_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.MANGROVE_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.MANGROVE_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.MANGROVE_BOOKSHELF),conditionsFromItem(DecoBlocks.MANGROVE_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MANGROVE_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.MANGROVE_BOOKSHELF_SLAB, DecoBlocks.MANGROVE_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.CHERRY_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.CHERRY_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.CHERRY_BOOKSHELF),conditionsFromItem(DecoBlocks.CHERRY_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CHERRY_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHERRY_BOOKSHELF_SLAB, DecoBlocks.CHERRY_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.BAMBOO_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.BAMBOO_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.BAMBOO_BOOKSHELF),conditionsFromItem(DecoBlocks.BAMBOO_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BAMBOO_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.BAMBOO_BOOKSHELF_SLAB, DecoBlocks.BAMBOO_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.CRIMSON_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.CRIMSON_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.CRIMSON_BOOKSHELF),conditionsFromItem(DecoBlocks.CRIMSON_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRIMSON_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CRIMSON_BOOKSHELF_SLAB, DecoBlocks.CRIMSON_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.WARPED_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.WARPED_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.WARPED_BOOKSHELF),conditionsFromItem(DecoBlocks.WARPED_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WARPED_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WARPED_BOOKSHELF_SLAB, DecoBlocks.WARPED_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.CACTUS_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.CACTUS_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.CACTUS_BOOKSHELF),conditionsFromItem(DecoBlocks.CACTUS_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CACTUS_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CACTUS_BOOKSHELF_SLAB, DecoBlocks.CACTUS_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.MUSHROOM_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.MUSHROOM_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.MUSHROOM_BOOKSHELF),conditionsFromItem(DecoBlocks.MUSHROOM_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MUSHROOM_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.MUSHROOM_BOOKSHELF_SLAB, DecoBlocks.MUSHROOM_BOOKSHELF);
+
+        createStairsRecipe(DecoBlocks.WOODEN_BOOKSHELF_STAIRS, Ingredient.ofItems(Items.BOOKSHELF))
+                .criterion(hasItem(Items.BOOKSHELF),conditionsFromItem(Items.BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WOODEN_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WOODEN_BOOKSHELF_SLAB, Items.BOOKSHELF);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

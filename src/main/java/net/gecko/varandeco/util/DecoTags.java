@@ -28,6 +28,21 @@ public class DecoTags {
         public static final TagKey<Block> DECO_BOOKSHELVES =
                 createTag("deco_bookshelves");
 
+        public static final TagKey<Block> DECO_BOOKSHELF_STAIRS =
+                createTag("deco_bookshelf_stairs");
+
+        public static final TagKey<Block> DECO_BOOKSHELF_SLABS =
+                createTag("deco_bookshelf_slab");
+
+        public static final TagKey<Block> WOODEN_BOOKSHELVES =
+                createTag("wooden_bookshelves");
+
+        public static final TagKey<Block> WOODEN_BOOKSHELF_STAIRS =
+                createTag("wooden_bookshelf_stairs");
+
+        public static final TagKey<Block> WOODEN_BOOKSHELF_SLABS =
+                createTag("wooden_bookshelf_slab");
+
         public static final TagKey<Block> DECO_NOTE_BLOCKS =
                 createTag("deco_note_blocks");
 
@@ -122,6 +137,18 @@ public class DecoTags {
 
         public static final TagKey<Item> DECO_BOOKSHELVES =
                 createTag("deco_bookshelves");
+
+        public static final TagKey<Item> DECO_BOOKSHELF_STAIRS =
+                createTag("deco_bookshelf_stairs");
+
+        public static final TagKey<Item> DECO_BOOKSHELF_SLABS =
+                createTag("deco_bookshelf_slab");
+
+        public static final TagKey<Item> WOODEN_BOOKSHELF_STAIRS =
+                createTag("wooden_bookshelf_stairs");
+
+        public static final TagKey<Item> WOODEN_BOOKSHELF_SLABS =
+                createTag("wooden_bookshelf_slab");
 
         public static final TagKey<Item> DECO_CARTOGRAPHY_TABLES =
                 createTag("deco_cartography_tables");

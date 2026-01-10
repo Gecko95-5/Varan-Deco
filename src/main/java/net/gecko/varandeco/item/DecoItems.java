@@ -243,6 +243,11 @@ public class DecoItems {
     public static final Item CACTUS_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_CHEST_BOAT_ID,
             DecoBoats.CACTUS_BOAT_KEY, true);
 
+    public static final Item MUSHROOM_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_BOAT_ID,
+            DecoBoats.MUSHROOM_BOAT_KEY, false);
+    public static final Item MUSHROOM_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_CHEST_BOAT_ID,
+            DecoBoats.MUSHROOM_BOAT_KEY, true);
+
     public static final Item WOODEN_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_BOAT_ID,
             DecoBoats.WOODEN_BOAT_KEY, false);
     public static final Item WOODEN_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_CHEST_BOAT_ID,
@@ -257,6 +262,76 @@ public class DecoItems {
             DecoBoats.WARPED_BOAT_KEY, false);
     public static final Item WARPED_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_CHEST_BOAT_ID,
             DecoBoats.WARPED_BOAT_KEY, true);
+
+    public static final Item BAMBOO_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BAMBOO_BOAT_ID,
+            DecoBoats.BAMBOO_BOAT_KEY, false);
+    public static final Item BAMBOO_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BAMBOO_CHEST_BOAT_ID,
+            DecoBoats.BAMBOO_BOAT_KEY, true);
+
+    public static final Item OAK_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.OAK_RAFT_ID,
+            DecoBoats.OAK_RAFT_KEY, false);
+    public static final Item OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.OAK_CHEST_RAFT_ID,
+            DecoBoats.OAK_RAFT_KEY, true);
+
+    public static final Item SPRUCE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.SPRUCE_RAFT_ID,
+            DecoBoats.SPRUCE_RAFT_KEY, false);
+    public static final Item SPRUCE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.SPRUCE_CHEST_RAFT_ID,
+            DecoBoats.SPRUCE_RAFT_KEY, true);
+
+    public static final Item BIRCH_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BIRCH_RAFT_ID,
+            DecoBoats.BIRCH_RAFT_KEY, false);
+    public static final Item BIRCH_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BIRCH_CHEST_RAFT_ID,
+            DecoBoats.BIRCH_RAFT_KEY, true);
+
+    public static final Item JUNGLE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.JUNGLE_RAFT_ID,
+            DecoBoats.JUNGLE_RAFT_KEY, false);
+    public static final Item JUNGLE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.JUNGLE_CHEST_RAFT_ID,
+            DecoBoats.JUNGLE_RAFT_KEY, true);
+
+    public static final Item ACACIA_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.ACACIA_RAFT_ID,
+            DecoBoats.ACACIA_RAFT_KEY, false);
+    public static final Item ACACIA_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.ACACIA_CHEST_RAFT_ID,
+            DecoBoats.ACACIA_RAFT_KEY, true);
+
+    public static final Item DARK_OAK_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DARK_OAK_RAFT_ID,
+            DecoBoats.DARK_OAK_RAFT_KEY, false);
+    public static final Item DARK_OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DARK_OAK_CHEST_RAFT_ID,
+            DecoBoats.DARK_OAK_RAFT_KEY, true);
+
+    public static final Item MANGROVE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MANGROVE_RAFT_ID,
+            DecoBoats.MANGROVE_RAFT_KEY, false);
+    public static final Item MANGROVE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MANGROVE_CHEST_RAFT_ID,
+            DecoBoats.MANGROVE_RAFT_KEY, true);
+
+    public static final Item CHERRY_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CHERRY_RAFT_ID,
+            DecoBoats.CHERRY_RAFT_KEY, false);
+    public static final Item CHERRY_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CHERRY_CHEST_RAFT_ID,
+            DecoBoats.CHERRY_RAFT_KEY, true);
+
+    public static final Item CRIMSON_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CRIMSON_RAFT_ID,
+            DecoBoats.CRIMSON_RAFT_KEY, false);
+    public static final Item CRIMSON_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CRIMSON_CHEST_RAFT_ID,
+            DecoBoats.CRIMSON_RAFT_KEY, true);
+
+    public static final Item WARPED_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_RAFT_ID,
+            DecoBoats.WARPED_RAFT_KEY, false);
+    public static final Item WARPED_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_CHEST_RAFT_ID,
+            DecoBoats.WARPED_RAFT_KEY, true);
+
+    public static final Item CACTUS_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_RAFT_ID,
+            DecoBoats.CACTUS_RAFT_KEY, false);
+    public static final Item CACTUS_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_CHEST_RAFT_ID,
+            DecoBoats.CACTUS_RAFT_KEY, true);
+
+    public static final Item MUSHROOM_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_RAFT_ID,
+            DecoBoats.MUSHROOM_RAFT_KEY, false);
+    public static final Item MUSHROOM_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_CHEST_RAFT_ID,
+            DecoBoats.MUSHROOM_RAFT_KEY, true);
+
+    public static final Item WOODEN_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_RAFT_ID,
+            DecoBoats.WOODEN_RAFT_KEY, false);
+    public static final Item WOODEN_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_CHEST_RAFT_ID,
+            DecoBoats.WOODEN_RAFT_KEY, true);
 
     public static final Item TALL_SEAGRASS = registerItem("tall_seagrass",
             new TallBlockItem(Blocks.TALL_SEAGRASS,new Item.Settings()));

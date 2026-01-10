@@ -1,6 +1,6 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
-import net.gecko.varandeco.block.entity.EndstoneBlastFurnaceBlockEntity;
+import net.gecko.varandeco.block.entity.stone.EndstoneBlastFurnaceBlockEntity;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.BlockState;

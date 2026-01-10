@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_planks"
+    },
+    "-": {
+      "item": "minecraft:crimson_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "---"
+  ],
+  "result": {
+    "item": "varan-deco:crimson_raft"
+  },
+  "show_notification": true
+}

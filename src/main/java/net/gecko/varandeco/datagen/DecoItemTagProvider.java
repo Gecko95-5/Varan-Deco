@@ -130,7 +130,6 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .addTag(DecoTags.Items.WOODEN_CRAFTING_TABLES);
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELVES)
-                .add(Blocks.BOOKSHELF.asItem())
                 .add(DecoBlocks.CRIMSON_BOOKSHELF.asItem())
                 .add(DecoBlocks.WARPED_BOOKSHELF.asItem())
                 .addTag(DecoTags.Items.WOODEN_BOOKSHELVES);
@@ -198,6 +197,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELVES)
+                .add(Blocks.BOOKSHELF.asItem())
                 .add(DecoBlocks.BIRCH_BOOKSHELF.asItem())
                 .add(DecoBlocks.SPRUCE_BOOKSHELF.asItem())
                 .add(DecoBlocks.JUNGLE_BOOKSHELF.asItem())
@@ -209,6 +209,42 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.BAMBOO_BOOKSHELF.asItem())
                 .add(DecoBlocks.CHERRY_BOOKSHELF.asItem())
                 .add(DecoBlocks.MUSHROOM_BOOKSHELF.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELF_STAIRS)
+                .forceAddTag(DecoTags.Items.WOODEN_BOOKSHELF_STAIRS)
+                .add(DecoBlocks.CRIMSON_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.WARPED_BOOKSHELF_STAIRS.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELF_STAIRS)
+                .add(DecoBlocks.BIRCH_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.SPRUCE_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.JUNGLE_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.ACACIA_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.DARK_OAK_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.MANGROVE_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.CACTUS_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.OAK_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.BAMBOO_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.CHERRY_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.MUSHROOM_BOOKSHELF_STAIRS.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELF_SLABS)
+                .forceAddTag(DecoTags.Items.WOODEN_BOOKSHELF_SLABS)
+                .add(DecoBlocks.CRIMSON_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.WARPED_BOOKSHELF_SLAB.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELF_SLABS)
+                .add(DecoBlocks.BIRCH_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.SPRUCE_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.JUNGLE_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.ACACIA_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.DARK_OAK_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.MANGROVE_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.CACTUS_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.OAK_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.BAMBOO_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.CHERRY_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.MUSHROOM_BOOKSHELF_SLAB.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_SMITHING_TABLES)
                 .add(DecoBlocks.OAK_SMITHING_TABLE.asItem())

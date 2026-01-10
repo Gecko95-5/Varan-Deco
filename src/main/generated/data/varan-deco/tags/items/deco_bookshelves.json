@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:bookshelf",
     "varan-deco:crimson_bookshelf",
     "varan-deco:warped_bookshelf",
     "#varan-deco:wooden_bookshelves"

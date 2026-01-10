@@ -7,19 +7,18 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
-import net.gecko.varandeco.block.cartographytables.*;
-import net.gecko.varandeco.block.craftingtables.*;
-import net.gecko.varandeco.block.flowers.EnderFlowerBlock;
-import net.gecko.varandeco.block.ice.BlackIceBlock;
+import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
-import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.flowers.*;
-import net.gecko.varandeco.block.bubblelevatorblocks.*;
+import net.gecko.varandeco.block.ice.BlackIceBlock;
+import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.*;
-import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
+import net.gecko.varandeco.block.woodmadeblocks.cartographytables.*;
+import net.gecko.varandeco.block.woodmadeblocks.craftingtables.*;
+import net.gecko.varandeco.block.woodmadeblocks.smithingtables.*;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -2389,6 +2388,76 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.PALE_GREEN)));
     public static final Block MUSHROOM_BOOKSHELF = registerBlock("mushroom_bookshelf",
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF).mapColor(MapColor.RAW_IRON_PINK)));
+
+    public static final Block OAK_BOOKSHELF_STAIRS = registerBlock("oak_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.OAK_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.OAK_BOOKSHELF)));
+    public static final Block OAK_BOOKSHELF_SLAB = registerBlock("oak_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.OAK_BOOKSHELF)));
+
+    public static final Block SPRUCE_BOOKSHELF_STAIRS = registerBlock("spruce_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.SPRUCE_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SPRUCE_BOOKSHELF)));
+    public static final Block SPRUCE_BOOKSHELF_SLAB = registerBlock("spruce_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SPRUCE_BOOKSHELF)));
+
+    public static final Block BIRCH_BOOKSHELF_STAIRS = registerBlock("birch_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.BIRCH_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.BIRCH_BOOKSHELF)));
+    public static final Block BIRCH_BOOKSHELF_SLAB = registerBlock("birch_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BIRCH_BOOKSHELF)));
+
+    public static final Block JUNGLE_BOOKSHELF_STAIRS = registerBlock("jungle_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.JUNGLE_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.JUNGLE_BOOKSHELF)));
+    public static final Block JUNGLE_BOOKSHELF_SLAB = registerBlock("jungle_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.JUNGLE_BOOKSHELF)));
+
+    public static final Block DARK_OAK_BOOKSHELF_STAIRS = registerBlock("dark_oak_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.DARK_OAK_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.DARK_OAK_BOOKSHELF)));
+    public static final Block DARK_OAK_BOOKSHELF_SLAB = registerBlock("dark_oak_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.DARK_OAK_BOOKSHELF)));
+
+    public static final Block ACACIA_BOOKSHELF_STAIRS = registerBlock("acacia_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.ACACIA_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.ACACIA_BOOKSHELF)));
+    public static final Block ACACIA_BOOKSHELF_SLAB = registerBlock("acacia_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.ACACIA_BOOKSHELF)));
+
+    public static final Block MANGROVE_BOOKSHELF_STAIRS = registerBlock("mangrove_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.MANGROVE_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MANGROVE_BOOKSHELF)));
+    public static final Block MANGROVE_BOOKSHELF_SLAB = registerBlock("mangrove_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MANGROVE_BOOKSHELF)));
+
+    public static final Block CHERRY_BOOKSHELF_STAIRS = registerBlock("cherry_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.CHERRY_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CHERRY_BOOKSHELF)));
+    public static final Block CHERRY_BOOKSHELF_SLAB = registerBlock("cherry_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CHERRY_BOOKSHELF)));
+
+    public static final Block BAMBOO_BOOKSHELF_STAIRS = registerBlock("bamboo_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.BAMBOO_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.BAMBOO_BOOKSHELF)));
+    public static final Block BAMBOO_BOOKSHELF_SLAB = registerBlock("bamboo_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BAMBOO_BOOKSHELF)));
+
+    public static final Block CRIMSON_BOOKSHELF_STAIRS = registerBlock("crimson_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.CRIMSON_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CRIMSON_BOOKSHELF)));
+    public static final Block CRIMSON_BOOKSHELF_SLAB = registerBlock("crimson_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CRIMSON_BOOKSHELF)));
+
+    public static final Block WARPED_BOOKSHELF_STAIRS = registerBlock("warped_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.WARPED_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WARPED_BOOKSHELF)));
+    public static final Block WARPED_BOOKSHELF_SLAB = registerBlock("warped_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WARPED_BOOKSHELF)));
+
+    public static final Block CACTUS_BOOKSHELF_STAIRS = registerBlock("cactus_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.CACTUS_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CACTUS_BOOKSHELF)));
+    public static final Block CACTUS_BOOKSHELF_SLAB = registerBlock("cactus_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_BOOKSHELF)));
+
+    public static final Block MUSHROOM_BOOKSHELF_STAIRS = registerBlock("mushroom_bookshelf_stairs",
+            new StairsBlock(DecoBlocks.MUSHROOM_BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_BOOKSHELF)));
+    public static final Block MUSHROOM_BOOKSHELF_SLAB = registerBlock("mushroom_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_BOOKSHELF)));
+
+    public static final Block WOODEN_BOOKSHELF_STAIRS = registerBlock("wooden_bookshelf_stairs",
+            new StairsBlock(Blocks.BOOKSHELF.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
+    public static final Block WOODEN_BOOKSHELF_SLAB = registerBlock("wooden_bookshelf_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
 
     public static final Block DEEPSLATE_SMOKER = registerBlock("deepslate_smoker",
             new DeepslateSmokerBlock(FabricBlockSettings.copyOf(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)

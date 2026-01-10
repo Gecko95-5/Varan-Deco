@@ -1651,11 +1651,42 @@ public class DecoModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(DecoItems.CACTUS_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CACTUS_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.MUSHROOM_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.MUSHROOM_CHEST_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WOODEN_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WOODEN_CHEST_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CRIMSON_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CRIMSON_CHEST_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WARPED_BOAT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WARPED_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.BAMBOO_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.BAMBOO_CHEST_BOAT, Models.GENERATED);
+
+        itemModelGenerator.register(DecoItems.OAK_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.OAK_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.BIRCH_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.BIRCH_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.SPRUCE_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.SPRUCE_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.JUNGLE_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.JUNGLE_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.ACACIA_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.ACACIA_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.DARK_OAK_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.DARK_OAK_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.MANGROVE_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.MANGROVE_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CHERRY_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CHERRY_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CRIMSON_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CRIMSON_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WARPED_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WARPED_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CACTUS_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.CACTUS_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.MUSHROOM_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.MUSHROOM_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WOODEN_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.WOODEN_CHEST_RAFT, Models.GENERATED);
     }
 }

@@ -1488,5 +1488,47 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HANGING_CACTUS_SIGN);
         addDrop(DecoBlocks.HANGING_MUSHROOM_MOSAIC_SIGN);
         addDrop(DecoBlocks.HANGING_MUSHROOM_PLANKS_SIGN);
+
+        addDrop(DecoBlocks.OAK_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.OAK_BOOKSHELF_SLAB, slabDrops(DecoBlocks.OAK_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.SPRUCE_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.SPRUCE_BOOKSHELF_SLAB, slabDrops(DecoBlocks.SPRUCE_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.BIRCH_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.BIRCH_BOOKSHELF_SLAB, slabDrops(DecoBlocks.BIRCH_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.JUNGLE_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.JUNGLE_BOOKSHELF_SLAB, slabDrops(DecoBlocks.JUNGLE_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.ACACIA_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.ACACIA_BOOKSHELF_SLAB, slabDrops(DecoBlocks.ACACIA_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.DARK_OAK_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.DARK_OAK_BOOKSHELF_SLAB, slabDrops(DecoBlocks.DARK_OAK_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.MANGROVE_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.MANGROVE_BOOKSHELF_SLAB, slabDrops(DecoBlocks.MANGROVE_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.CHERRY_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.CHERRY_BOOKSHELF_SLAB, slabDrops(DecoBlocks.CHERRY_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.BAMBOO_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.BAMBOO_BOOKSHELF_SLAB, slabDrops(DecoBlocks.BAMBOO_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.CRIMSON_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.CRIMSON_BOOKSHELF_SLAB, slabDrops(DecoBlocks.CRIMSON_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.WARPED_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.WARPED_BOOKSHELF_SLAB, slabDrops(DecoBlocks.WARPED_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.CACTUS_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.CACTUS_BOOKSHELF_SLAB, slabDrops(DecoBlocks.CACTUS_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.MUSHROOM_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.MUSHROOM_BOOKSHELF_SLAB, slabDrops(DecoBlocks.MUSHROOM_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.WOODEN_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.WOODEN_BOOKSHELF_SLAB, slabDrops(DecoBlocks.WOODEN_BOOKSHELF_SLAB));
     }
 }

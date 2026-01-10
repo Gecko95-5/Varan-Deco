@@ -69,7 +69,11 @@ public class DecoFlammableBlocks {
         registry.add(DecoBlocks.NIGHTSHADE,60, 100);
         registry.add(DecoBlocks.ENDERSHADE,60, 100);
         
-        registry.add(DecoTags.Blocks.DECO_BOOKSHELVES,30,20);
+        registry.add(DecoTags.Blocks.WOODEN_BOOKSHELVES,30,20);
+
+        registry.add(DecoTags.Blocks.WOODEN_BOOKSHELF_STAIRS,25,20);
+
+        registry.add(DecoTags.Blocks.WOODEN_BOOKSHELF_SLABS,15,20);
 
         registry.add(DecoBlocks.ANCIENT_ROSE,60, 100);
         registry.add(DecoBlocks.MIGHTY_LAVENDER,60, 100);

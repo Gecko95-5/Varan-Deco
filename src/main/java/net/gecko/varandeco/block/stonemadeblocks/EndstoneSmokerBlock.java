@@ -1,6 +1,6 @@
 package net.gecko.varandeco.block.stonemadeblocks;
 
-import net.gecko.varandeco.block.entity.EndstoneSmokerBlockEntity;
+import net.gecko.varandeco.block.entity.stone.EndstoneSmokerBlockEntity;
 import net.gecko.varandeco.block.entity.DecoBlockEntities;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.BlockState;
