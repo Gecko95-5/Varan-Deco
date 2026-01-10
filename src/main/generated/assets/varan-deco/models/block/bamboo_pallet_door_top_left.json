@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "varan-deco:block/bamboo_pallet_door_bottom",
+    "top": "varan-deco:block/bamboo_pallet_door_top"
+  }
+}

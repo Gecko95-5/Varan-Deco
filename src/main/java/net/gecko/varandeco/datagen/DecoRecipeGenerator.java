@@ -3746,7 +3746,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.CACTUS_MOSAIC),conditionsFromItem(DecoBlocks.CACTUS_MOSAIC))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoItems.CACTUS_MOSAIC_SIGN)));
 
-        offerHangingSignRecipe(exporter, DecoItems.WOODEN_HANGING_SIGN, DecoBlocks.WOODEN_LOG);
+        offerHangingSignRecipe(exporter, DecoItems.WOODEN_HANGING_SIGN, DecoBlocks.STRIPPED_WOODEN_LOG);
 
         offerHangingSignRecipe(exporter, DecoItems.OAK_PLANKS_HANGING_SIGN, Blocks.OAK_PLANKS);
         offerHangingSignRecipe(exporter, DecoItems.SPRUCE_PLANKS_HANGING_SIGN, Blocks.SPRUCE_PLANKS);
@@ -6159,6 +6159,87 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.END_STONE_SLAB),
                         RecipeProvider.conditionsFromItem(DecoBlocks.END_STONE_SLAB))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.END_STONE_GRINDSTONE)));
+
+        createStairsRecipe(DecoBlocks.CHERRY_WOOD_STAIRS, Ingredient.ofItems(Items.CHERRY_WOOD))
+                .criterion(hasItem(Items.CHERRY_WOOD),conditionsFromItem(Items.CHERRY_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CHERRY_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHERRY_WOOD_SLAB, Items.CHERRY_WOOD);
+
+        offerWallRecipe(exporter,RecipeCategory.DECORATIONS, DecoBlocks.CHERRY_WOOD_WALL, Items.CHERRY_WOOD);
+
+        createStairsRecipe(DecoBlocks.STRIPPED_CHERRY_WOOD_STAIRS, Ingredient.ofItems(Items.STRIPPED_CHERRY_WOOD))
+                .criterion(hasItem(Items.STRIPPED_CHERRY_WOOD),conditionsFromItem(Items.STRIPPED_CHERRY_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.STRIPPED_CHERRY_WOOD_STAIRS)));
+
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, DecoBlocks.STRIPPED_CHERRY_WOOD_SLAB, Items.STRIPPED_CHERRY_WOOD);
+
+        offerWallRecipe(exporter,RecipeCategory.DECORATIONS, DecoBlocks.STRIPPED_CHERRY_WOOD_WALL, Items.STRIPPED_CHERRY_WOOD);
+
+        offerNoteBlockVariantRecipe(exporter, DecoBlocks.CHERRY_NOTE_BLOCK, Items.CHERRY_PLANKS);
+        offerNoteBlockVariantRecipe(exporter, DecoBlocks.BAMBOO_NOTE_BLOCK, Items.BAMBOO_PLANKS);
+
+        offerBookshelvesVariantRecipe(exporter, DecoBlocks.MUSHROOM_BOOKSHELF, DecoBlocks.MUSHROOM_BOOKSHELF);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DecoBlocks.CHERRY_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.CHERRY_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.CHERRY_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.CHERRY_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHERRY_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DecoBlocks.CHERRY_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.CHERRY_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.CHERRY_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.CHERRY_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHERRY_PALLET_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DecoBlocks.BAMBOO_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.BAMBOO_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(Items.BAMBOO_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.BAMBOO_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BAMBOO_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DecoBlocks.BAMBOO_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.BAMBOO_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(Items.BAMBOO_SLAB),
+                        RecipeProvider.conditionsFromItem(Items.BAMBOO_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BAMBOO_PALLET_TRAPDOOR)));
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MUSHROOM_MOSAIC, DecoBlocks.MUSHROOM_SLAB);
+
+        createStairsRecipe(DecoBlocks.MUSHROOM_MOSAIC_STAIRS, Ingredient.ofItems(DecoBlocks.MUSHROOM_MOSAIC))
+                .criterion(hasItem(DecoBlocks.MUSHROOM_MOSAIC),conditionsFromItem(DecoBlocks.MUSHROOM_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MUSHROOM_MOSAIC_STAIRS)));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MUSHROOM_MOSAIC_SLAB, DecoBlocks.MUSHROOM_MOSAIC);
+
+        createSignRecipe(DecoItems.STRIPPED_CACTUS_SIGN, Ingredient.ofItems(DecoBlocks.STRIPPED_CACTUS))
+                .criterion(hasItem(DecoBlocks.STRIPPED_CACTUS),conditionsFromItem(DecoBlocks.STRIPPED_CACTUS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_CACTUS_SIGN)));
+        createSignRecipe(DecoItems.MUSHROOM_STEM_SIGN, Ingredient.ofItems(Blocks.MUSHROOM_STEM))
+                .criterion(hasItem(Blocks.MUSHROOM_STEM),conditionsFromItem(Blocks.MUSHROOM_STEM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.MUSHROOM_STEM_SIGN)));
+        createSignRecipe(DecoItems.MUSHROOM_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.MUSHROOM_MOSAIC))
+                .criterion(hasItem(DecoBlocks.MUSHROOM_MOSAIC),conditionsFromItem(DecoBlocks.MUSHROOM_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.MUSHROOM_MOSAIC_SIGN)));
+
+        offerHangingSignRecipe(exporter, DecoItems.CACTUS_HANGING_SIGN, DecoBlocks.STRIPPED_CACTUS);
+        offerHangingSignRecipe(exporter, DecoItems.MUSHROOM_HANGING_SIGN, Blocks.MUSHROOM_STEM);
+
+        offerHangingSignRecipe(exporter, DecoItems.MUSHROOM_PLANKS_HANGING_SIGN, DecoBlocks.MUSHROOM_PLANKS);
+
+        offerHangingSignRecipe(exporter, DecoItems.MUSHROOM_MOSAIC_HANGING_SIGN, DecoBlocks.MUSHROOM_MOSAIC);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

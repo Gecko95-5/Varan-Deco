@@ -1,7 +1,7 @@
-// 1.20.1	2026-01-09T13:47:11.8533508	Variant Decoration/Tags for minecraft:item
-3059f1a0bd4a4d7abca7c2d573f888a8e9b65e51 data\minecraft\tags\items\wooden_doors.json
+// 1.20.1	2026-01-10T01:37:35.1044497	Variant Decoration/Tags for minecraft:item
+d310122ed411b28fffa96ae395ea7bd8dbfc1b4a data\minecraft\tags\items\wooden_doors.json
 b1600cf8e3211a9529ca16289fb835b0dd74b45f data\minecraft\tags\items\wooden_slabs.json
-6fc8b01870cb026078980d1111a49f955f6b637b data\varan-deco\tags\items\wooden_bookshelves.json
+7529c702db9c00efd546ac55a81e4c14e1a42d4c data\varan-deco\tags\items\wooden_bookshelves.json
 d6583564fe0988e904902ca4012cb3552a5fbb3b data\varan-deco\tags\items\wooden_barrels.json
 d84294cbcf63c62ad02acdeb1d2e5789cdc3b169 data\varan-deco\tags\items\deco_barrels.json
 98cd58849cbd16789829c7438fc3d6eca79f8c71 data\varan-deco\tags\items\soul_ground_blocks.json
@@ -9,13 +9,13 @@ d84294cbcf63c62ad02acdeb1d2e5789cdc3b169 data\varan-deco\tags\items\deco_barrels
 7925d9e8fb44cb97b888efe7f6d3bce20b7faae3 data\minecraft\tags\items\stone_tool_materials.json
 bc3c00e25c3517e4af9143ef47a4cd4fd19644f1 data\minecraft\tags\items\wooden_stairs.json
 609a8ec3ee745a73274e550f2d43a11b91f82ba8 data\minecraft\tags\items\wooden_buttons.json
-cab023cc4bdeeec4c7401826f9512bb66e89f9fc data\varan-deco\tags\items\mosaic_wood.json
+15c9cb5e135a621f0c50300441d61ab760f75482 data\varan-deco\tags\items\mosaic_wood.json
 863d9e314bb957a6153a8d7e038716749b4a48f6 data\minecraft\tags\items\logs_that_burn.json
-37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\items\stone_buttons.json
 4c523c00b85600a6a7122e54a266da885e6f4d4d data\varan-deco\tags\items\metal_buttons.json
+4800baa7f8b5b01e16df62c5d8df3ce0dc39e30b data\minecraft\tags\items\stone_buttons.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\items\leaves.json
 2474f4ee11736c5aba7340744dfb686bf962c65b data\varan-deco\tags\items\deco_cartography_tables.json
-2d1e488e3fe3f9d35929e1a7ad1d1b20ab0667b0 data\varan-deco\tags\items\wooden_note_blocks.json
+1f884ed3c211a5ab2f419c8b591f7d65d2960ae8 data\varan-deco\tags\items\wooden_note_blocks.json
 d20afe93463340f8c0f45560157bdffbf1d0282a data\varan-deco\tags\items\water_items.json
 f1059881e175844fb1e917a40d5fe831c2ebfcc2 data\minecraft\tags\items\wooden_fences.json
 bcda88009037272a3cac8184dd0ac00f9193921e data\minecraft\tags\items\wooden_pressure_plates.json
@@ -26,7 +26,7 @@ caa65214e42ad067ce1935d9b7d48e0a9feb9e73 data\varan-deco\tags\items\mushrooms.js
 891a273953301fedd2b8e3942425023aafa89b72 data\varan-deco\tags\items\furnaces.json
 92d078048a083f78e46759682443f371c1563c61 data\varan-deco\tags\items\wooden_smithing_tables.json
 39d5c8c663632335fa74347f8bfde81676f476c7 data\varan-deco\tags\items\deco_smithing_tables.json
-a63be6130cafdac6e5d659230afcc2d36e7c6f74 data\minecraft\tags\items\wooden_trapdoors.json
+58839ece5616325c2041749c7a3c0e4a419b9c19 data\minecraft\tags\items\wooden_trapdoors.json
 ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\items\coloured_lamps.json
 7925d9e8fb44cb97b888efe7f6d3bce20b7faae3 data\minecraft\tags\items\stone_crafting_materials.json
 0b36701cca3476b520456a86541ee99d22b30066 data\minecraft\tags\items\small_flowers.json
@@ -34,8 +34,8 @@ ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\items\coloured_lam
 e0705314b67fa819347a70363b664938cbed6fd8 data\varan-deco\tags\items\deco_ladder.json
 8d0e385f0013a6b64cd8dcff068f0dac4baa22ac data\varan-deco\tags\items\wooden_crafting_tables.json
 2ca188626475d87ba11ea2ec3d04c829ef48efe5 data\varan-deco\tags\items\deco_note_blocks.json
-58718a803d37bac48796b814244ac55c62975cbe data\varan-deco\tags\items\mosaic_stairs.json
+665d9e9ac465717e93d1a7a869f127e6cfddaee1 data\varan-deco\tags\items\mosaic_stairs.json
 db44a9acf89839da347c2210a30a22f8ecd9fc5d data\varan-deco\tags\items\deco_bookshelves.json
-7bc6316142738ff2ef51c93460a4956c93db9cb2 data\varan-deco\tags\items\mosaic_slab.json
+ac1f17d65352aee770a3f3292d2a4b74a1b5c935 data\varan-deco\tags\items\mosaic_slab.json
 632b91eb70f3bbcfef3e51a7dbc151306ea53d4d data\varan-deco\tags\items\wooden_cartography_tables.json
 120bd2a2636bb38668fa1fb792d53006c3926b9e data\varan-deco\tags\items\wooden_logs.json

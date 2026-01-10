@@ -53,6 +53,12 @@ public class DecoItems {
     public static final Item STRIPPED_WARPED_SIGN = registerItem("stripped_warped_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_STRIPPED_WARPED_SIGN, DecoBlocks.WALL_STRIPPED_WARPED_SIGN));
+    public static final Item STRIPPED_CACTUS_SIGN = registerItem("stripped_cactus_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_CACTUS_SIGN, DecoBlocks.WALL_STRIPPED_CACTUS_SIGN));
+    public static final Item MUSHROOM_STEM_SIGN = registerItem("mushroom_stem_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_MUSHROOM_STEM_SIGN, DecoBlocks.WALL_MUSHROOM_STEM_SIGN));
     public static final Item STRIPPED_WOODEN_SIGN = registerItem("stripped_wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN, DecoBlocks.WALL_STRIPPED_WOODEN_SIGN));
@@ -93,10 +99,19 @@ public class DecoItems {
     public static final Item CACTUS_MOSAIC_SIGN = registerItem("cactus_mosaic_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN, DecoBlocks.WALL_CACTUS_MOSAIC_SIGN));
+    public static final Item MUSHROOM_MOSAIC_SIGN = registerItem("mushroom_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_MUSHROOM_MOSAIC_SIGN, DecoBlocks.WALL_MUSHROOM_MOSAIC_SIGN));
     public static final Item WOODEN_MOSAIC_SIGN = registerItem("wooden_mosaic_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_WOODEN_MOSAIC_SIGN));
 
+    public static final Item CACTUS_HANGING_SIGN = registerItem("cactus_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_CACTUS_SIGN, DecoBlocks.WALL_HANGING_CACTUS_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item MUSHROOM_HANGING_SIGN = registerItem("mushroom_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_MUSHROOM_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_SIGN,
+                    new Item.Settings().maxCount(16)));
     public static final Item WOODEN_HANGING_SIGN = registerItem("wooden_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_WOODEN_SIGN, DecoBlocks.WALL_HANGING_WOODEN_SIGN,
                     new Item.Settings().maxCount(16)));
@@ -137,6 +152,9 @@ public class DecoItems {
     public static final Item CACTUS_MOSAIC_HANGING_SIGN = registerItem("cactus_mosaic_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_CACTUS_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_CACTUS_MOSAIC_SIGN,
                     new Item.Settings().maxCount(16)));
+    public static final Item MUSHROOM_MOSAIC_HANGING_SIGN = registerItem("mushroom_mosaic_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_MUSHROOM_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_MOSAIC_SIGN,
+                    new Item.Settings().maxCount(16)));
     public static final Item WOODEN_MOSAIC_HANGING_SIGN = registerItem("wooden_mosaic_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN,
                     new Item.Settings().maxCount(16)));
@@ -173,6 +191,9 @@ public class DecoItems {
                     new Item.Settings().maxCount(16)));
     public static final Item CACTUS_PLANKS_HANGING_SIGN = registerItem("cactus_planks_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_CACTUS_PLANKS_SIGN, DecoBlocks.WALL_HANGING_CACTUS_PLANKS_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item MUSHROOM_PLANKS_HANGING_SIGN = registerItem("mushroom_planks_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_MUSHROOM_PLANKS_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_PLANKS_SIGN,
                     new Item.Settings().maxCount(16)));
     public static final Item WOODEN_PLANKS_HANGING_SIGN = registerItem("wooden_planks_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_WOODEN_PLANKS_SIGN, DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN,

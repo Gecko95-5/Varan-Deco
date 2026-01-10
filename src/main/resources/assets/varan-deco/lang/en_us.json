@@ -33,6 +33,8 @@
   "item.varan-deco.stripped_cherry_sign": "Stripped Cherry Sign",
   "item.varan-deco.stripped_crimson_sign": "Stripped Crimson Sign",
   "item.varan-deco.stripped_warped_sign": "Stripped Warped Sign",
+  "item.varan-deco.stripped_cactus_sign": "Stripped Cactus Sign",
+  "item.varan-deco.mushroom_stem_sign": "Mushroom Stem Sign",
   "item.varan-deco.stripped_wooden_sign": "Stripped Wooden Sign",
 
   "item.varan-deco.oak_mosaic_sign": "Oak Mosaic Sign",
@@ -47,8 +49,11 @@
   "item.varan-deco.crimson_mosaic_sign": "Crimson Mosaic Sign",
   "item.varan-deco.warped_mosaic_sign": "Warped Mosaic Sign",
   "item.varan-deco.cactus_mosaic_sign": "Cactus Mosaic Sign",
+  "item.varan-deco.mushroom_mosaic_sign": "Mushroom Mosaic Sign",
   "item.varan-deco.wooden_mosaic_sign": "Wooden Mosaic Sign",
 
+  "item.varan-deco.cactus_hanging_sign": "Stripped Cactus Hanging Sign",
+  "item.varan-deco.mushroom_hanging_sign": "Mushroom Stem Hanging Sign",
   "item.varan-deco.wooden_hanging_sign": "Stripped Wooden Hanging Sign",
 
   "item.varan-deco.oak_mosaic_hanging_sign": "Oak Mosaic Hanging Sign",
@@ -63,6 +68,7 @@
   "item.varan-deco.crimson_mosaic_hanging_sign": "Crimson Mosaic Hanging Sign",
   "item.varan-deco.warped_mosaic_hanging_sign": "Warped Mosaic Hanging Sign",
   "item.varan-deco.cactus_mosaic_hanging_sign": "Cactus Mosaic Hanging Sign",
+  "item.varan-deco.mushroom_mosaic_hanging_sign": "Mushroom Mosaic Hanging Sign",
   "item.varan-deco.wooden_mosaic_hanging_sign": "Wooden Mosaic Hanging Sign",
 
   "item.varan-deco.oak_planks_hanging_sign": "Oak Hanging Sign",
@@ -76,6 +82,7 @@
   "item.varan-deco.crimson_planks_hanging_sign": "Crimson Hanging Sign",
   "item.varan-deco.warped_planks_hanging_sign": "Warped Hanging Sign",
   "item.varan-deco.cactus_planks_hanging_sign": "Cactus Hanging Sign",
+  "item.varan-deco.mushroom_planks_hanging_sign": "Mushroom Hanging Sign",
   "item.varan-deco.wooden_planks_hanging_sign": "Wooden Hanging Sign",
 
   "item.varan-deco.passtol": "Passtol",
@@ -554,6 +561,10 @@
   "block.varan-deco.wall_stripped_crimson_sign": "Stripped Crimson Wall Sign",
   "block.varan-deco.standing_stripped_warped_sign": "Stripped Warped Sign",
   "block.varan-deco.wall_stripped_warped_sign": "Stripped Warped Wall Sign",
+  "block.varan-deco.standing_stripped_cactus_sign": "Stripped Cactus Sign",
+  "block.varan-deco.wall_stripped_cactus_sign": "Stripped Cactus Wall Sign",
+  "block.varan-deco.standing_mushroom_stem_sign": "Mushroom Stem Sign",
+  "block.varan-deco.wall_mushroom_stem_sign": "Mushroom Stem Wall Sign",
   "block.varan-deco.standing_stripped_wooden_sign": "Stripped Wooden Sign",
   "block.varan-deco.wall_stripped_wooden_sign": "Stripped Wooden Wall Sign",
 
@@ -581,9 +592,15 @@
   "block.varan-deco.wall_warped_mosaic_sign": "Warped Mosaic Wall Sign",
   "block.varan-deco.standing_cactus_mosaic_sign": "Cactus Mosaic Sign",
   "block.varan-deco.wall_cactus_mosaic_sign": "Cactus Mosaic Wall Sign",
+  "block.varan-deco.standing_mushroom_mosaic_sign": "Mushroom Mosaic Sign",
+  "block.varan-deco.wall_mushroom_mosaic_sign": "Mushroom Mosaic Wall Sign",
   "block.varan-deco.standing_wooden_mosaic_sign": "Wooden Mosaic Sign",
   "block.varan-deco.wall_wooden_mosaic_sign": "Wooden Mosaic Wall Sign",
 
+  "block.varan-deco.hanging_cactus_sign": "Stripped Cactus Hanging Sign",
+  "block.varan-deco.wall_hanging_cactus_sign": "Stripped Cactus Wall Hanging Sign",
+  "block.varan-deco.hanging_mushroom_sign": "Mushroom Stem Hanging Sign",
+  "block.varan-deco.wall_hanging_mushroom_sign": "Mushroom Stem Wall Hanging Sign",
   "block.varan-deco.hanging_wooden_sign": "Stripped Wooden Hanging Sign",
   "block.varan-deco.wall_hanging_wooden_sign": "Stripped Wooden Wall Hanging Sign",
 
@@ -599,6 +616,7 @@
   "block.varan-deco.hanging_crimson_mosaic_sign": "Crimson Mosaic Hanging Sign",
   "block.varan-deco.hanging_warped_mosaic_sign": "Warped Mosaic Hanging Sign",
   "block.varan-deco.hanging_cactus_mosaic_sign": "Cactus Mosaic Hanging Sign",
+  "block.varan-deco.hanging_mushroom_mosaic_sign": "Mushroom Mosaic Hanging Sign",
   "block.varan-deco.hanging_wooden_mosaic_sign": "Wooden Mosaic Hanging Sign",
 
   "block.varan-deco.wall_hanging_oak_mosaic_sign": "Oak Mosaic Wall Hanging Sign",
@@ -613,6 +631,7 @@
   "block.varan-deco.wall_hanging_crimson_mosaic_sign": "Crimson Mosaic Wall Hanging Sign",
   "block.varan-deco.wall_hanging_warped_mosaic_sign": "Warped Mosaic Wall Hanging Sign",
   "block.varan-deco.wall_hanging_cactus_mosaic_sign": "Cactus Mosaic Wall Hanging Sign",
+  "block.varan-deco.wall_hanging_mushroom_mosaic_sign": "Mushroom Mosaic Wall Hanging Sign",
   "block.varan-deco.wall_hanging_wooden_mosaic_sign": "Wooden Mosaic Wall Hanging Sign",
 
   "block.varan-deco.hanging_oak_planks_sign": "Oak Hanging Sign",
@@ -626,6 +645,7 @@
   "block.varan-deco.hanging_crimson_planks_sign": "Crimson Hanging Sign",
   "block.varan-deco.hanging_warped_planks_sign": "Warped Hanging Sign",
   "block.varan-deco.hanging_cactus_planks_sign": "Cactus Hanging Sign",
+  "block.varan-deco.hanging_mushroom_planks_sign": "Mushroom Hanging Sign",
   "block.varan-deco.hanging_wooden_planks_sign": "Wooden Hanging Sign",
 
   "block.varan-deco.wall_hanging_oak_planks_sign": "Oak Wall Hanging Sign",
@@ -639,6 +659,7 @@
   "block.varan-deco.wall_hanging_crimson_planks_sign": "Crimson Wall Hanging Sign",
   "block.varan-deco.wall_hanging_warped_planks_sign": "Warped Wall Hanging Sign",
   "block.varan-deco.wall_hanging_cactus_planks_sign": "Cactus Wall Hanging Sign",
+  "block.varan-deco.wall_hanging_mushroom_planks_sign": "Mushroom Wall Hanging Sign",
   "block.varan-deco.wall_hanging_wooden_planks_sign": "Wooden Wall Hanging Sign",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
@@ -1512,7 +1533,6 @@
   "block.varan-deco.stripped_wooden_wood_slab": "Stripped Wooden Wood Slab",
   "block.varan-deco.stripped_wooden_wood_wall": "Stripped Wooden Wood Wall",
 
-
   "block.varan-deco.packed_netherrack": "Packed Netherrack",
   "block.varan-deco.packed_netherrack_stairs": "Packed Netherrack Stairs",
   "block.varan-deco.packed_netherrack_slab": "Packed Netherrack Slab",
@@ -1744,6 +1764,28 @@
   "block.varan-deco.end_stone_smoker": "End Stone Smoker",
   "block.varan-deco.end_stone_stonecutter": "End Stone Stonecutter",
   "block.varan-deco.end_stone_grindstone": "End Stone Grindstone",
+
+  "block.varan-deco.cherry_wood_stairs": "Cherry Wood Stairs",
+  "block.varan-deco.cherry_wood_slab": "Cherry Wood Slab",
+  "block.varan-deco.cherry_wood_wall": "Cherry Wood Wall",
+
+  "block.varan-deco.stripped_cherry_wood_stairs": "Stripped Cherry Wood Stairs",
+  "block.varan-deco.stripped_cherry_wood_slab": "Stripped Cherry Wood Slab",
+  "block.varan-deco.stripped_cherry_wood_wall": "Stripped Cherry Wood Wall",
+
+  "block.varan-deco.mushroom_mosaic": "Mushroom Mosaic",
+  "block.varan-deco.mushroom_mosaic_stairs": "Mushroom Mosaic Stairs",
+  "block.varan-deco.mushroom_mosaic_slab": "Mushroom Mosaic Slab",
+
+  "block.varan-deco.cherry_pallet_door": "Cherry Pallet Door",
+  "block.varan-deco.bamboo_pallet_door": "Bamboo Pallet Door",
+  "block.varan-deco.cherry_pallet_trapdoor": "Cherry Pallet Trapdoor",
+  "block.varan-deco.bamboo_pallet_trapdoor": "Bamboo Pallet Trapdoor",
+
+  "block.varan-deco.mushroom_bookshelf": "Mushroom Bookshelf",
+
+  "block.varan-deco.cherry_note_block": "Cherry Note Block",
+  "block.varan-deco.bamboo_note_block": "Bamboo Note Block",
 
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",

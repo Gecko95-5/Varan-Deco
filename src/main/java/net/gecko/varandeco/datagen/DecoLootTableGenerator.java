@@ -1456,5 +1456,37 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.END_STONE_SMOKER);
         addDrop(DecoBlocks.END_STONE_STONECUTTER);
         addDrop(DecoBlocks.END_STONE_GRINDSTONE);
+
+        addDrop(DecoBlocks.CHERRY_WOOD_STAIRS);
+        addDrop(DecoBlocks.CHERRY_WOOD_SLAB, slabDrops(DecoBlocks.CHERRY_WOOD_SLAB));
+        addDrop(DecoBlocks.CHERRY_WOOD_WALL);
+
+        addDrop(DecoBlocks.STRIPPED_CHERRY_WOOD_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_CHERRY_WOOD_SLAB, slabDrops(DecoBlocks.STRIPPED_CHERRY_WOOD_SLAB));
+        addDrop(DecoBlocks.STRIPPED_CHERRY_WOOD_WALL);
+
+        addDrop(DecoBlocks.CHERRY_NOTE_BLOCK);
+        addDrop(DecoBlocks.BAMBOO_NOTE_BLOCK);
+
+        addDrop(DecoBlocks.CHERRY_PALLET_DOOR, slabDrops(DecoBlocks.CHERRY_PALLET_DOOR));
+        addDrop(DecoBlocks.CHERRY_PALLET_TRAPDOOR);
+
+        addDrop(DecoBlocks.BAMBOO_PALLET_DOOR, slabDrops(DecoBlocks.BAMBOO_PALLET_DOOR));
+        addDrop(DecoBlocks.BAMBOO_PALLET_TRAPDOOR);
+
+        addDrop(DecoBlocks.MUSHROOM_BOOKSHELF);
+
+        addDrop(DecoBlocks.MUSHROOM_MOSAIC);
+        addDrop(DecoBlocks.MUSHROOM_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.MUSHROOM_MOSAIC_SLAB, slabDrops(DecoBlocks.MUSHROOM_MOSAIC_SLAB));
+
+        addDrop(DecoBlocks.STANDING_MUSHROOM_STEM_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_CACTUS_SIGN);
+        addDrop(DecoBlocks.STANDING_MUSHROOM_MOSAIC_SIGN);
+
+        addDrop(DecoBlocks.HANGING_MUSHROOM_SIGN);
+        addDrop(DecoBlocks.HANGING_CACTUS_SIGN);
+        addDrop(DecoBlocks.HANGING_MUSHROOM_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_MUSHROOM_PLANKS_SIGN);
     }
 }

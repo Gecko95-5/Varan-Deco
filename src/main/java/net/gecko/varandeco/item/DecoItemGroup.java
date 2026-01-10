@@ -92,9 +92,19 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.MANGROVE_MOSAIC_SLAB.asItem());
                         entries.add(DecoBlocks.MANGROVE_PALLET_DOOR.asItem());
                         entries.add(DecoBlocks.MANGROVE_PALLET_TRAPDOOR.asItem());
+                        entries.add(DecoBlocks.CHERRY_WOOD_STAIRS.asItem());
+                        entries.add(DecoBlocks.CHERRY_WOOD_SLAB.asItem());
+                        entries.add(DecoBlocks.CHERRY_WOOD_WALL.asItem());
+                        entries.add(DecoBlocks.STRIPPED_CHERRY_WOOD_STAIRS.asItem());
+                        entries.add(DecoBlocks.STRIPPED_CHERRY_WOOD_SLAB.asItem());
+                        entries.add(DecoBlocks.STRIPPED_CHERRY_WOOD_WALL.asItem());
                         entries.add(DecoBlocks.CHERRY_MOSAIC.asItem());
                         entries.add(DecoBlocks.CHERRY_MOSAIC_STAIRS.asItem());
                         entries.add(DecoBlocks.CHERRY_MOSAIC_SLAB.asItem());
+                        entries.add(DecoBlocks.CHERRY_PALLET_DOOR.asItem());
+                        entries.add(DecoBlocks.CHERRY_PALLET_TRAPDOOR.asItem());
+                        entries.add(DecoBlocks.BAMBOO_PALLET_DOOR.asItem());
+                        entries.add(DecoBlocks.BAMBOO_PALLET_TRAPDOOR.asItem());
                         entries.add(DecoBlocks.CRIMSON_HYPHAE_STAIRS.asItem());
                         entries.add(DecoBlocks.CRIMSON_HYPHAE_SLAB.asItem());
                         entries.add(DecoBlocks.CRIMSON_HYPHAE_WALL.asItem());
@@ -134,8 +144,11 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.CACTUS_PLANK_BUTTON.asItem());
                         entries.add(DecoBlocks.MUSHROOM_PLANKS.asItem());
+                        entries.add(DecoBlocks.MUSHROOM_MOSAIC.asItem());
                         entries.add(DecoBlocks.MUSHROOM_STAIRS.asItem());
+                        entries.add(DecoBlocks.MUSHROOM_MOSAIC_STAIRS.asItem());
                         entries.add(DecoBlocks.MUSHROOM_SLAB.asItem());
+                        entries.add(DecoBlocks.MUSHROOM_MOSAIC_SLAB.asItem());
                         entries.add(DecoBlocks.MUSHROOM_FENCE.asItem());
                         entries.add(DecoBlocks.MUSHROOM_FENCE_GATE.asItem());
                         entries.add(DecoBlocks.MUSHROOM_DOOR.asItem());
@@ -297,7 +310,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.CRYSTALLIZED_PRISMARINE_BRICK_WALL.asItem());
                         entries.add(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS.asItem());
-
                         entries.add(DecoBlocks.LIGHT_PRISMARINE.asItem());
                         entries.add(DecoBlocks.LIGHT_PRISMARINE_STAIRS.asItem());
                         entries.add(DecoBlocks.LIGHT_PRISMARINE_SLAB.asItem());
@@ -1117,10 +1129,17 @@ public class DecoItemGroup {
                         entries.add(DecoItems.WARPED_PLANKS_HANGING_SIGN);
                         entries.add(DecoItems.WARPED_MOSAIC_HANGING_SIGN);
                         entries.add(DecoItems.CACTUS_SIGN);
+                        entries.add(DecoItems.STRIPPED_CACTUS_SIGN);
                         entries.add(DecoItems.CACTUS_MOSAIC_SIGN);
+                        entries.add(DecoItems.CACTUS_HANGING_SIGN);
                         entries.add(DecoItems.CACTUS_PLANKS_HANGING_SIGN);
                         entries.add(DecoItems.CACTUS_MOSAIC_HANGING_SIGN);
                         entries.add(DecoItems.MUSHROOM_SIGN);
+                        entries.add(DecoItems.MUSHROOM_STEM_SIGN);
+                        entries.add(DecoItems.MUSHROOM_MOSAIC_SIGN);
+                        entries.add(DecoItems.MUSHROOM_HANGING_SIGN);
+                        entries.add(DecoItems.MUSHROOM_PLANKS_HANGING_SIGN);
+                        entries.add(DecoItems.MUSHROOM_MOSAIC_HANGING_SIGN);
                         entries.add(DecoItems.WOODEN_SIGN);
                         entries.add(DecoItems.STRIPPED_WOODEN_SIGN);
                         entries.add(DecoItems.WOODEN_MOSAIC_SIGN);
@@ -1152,6 +1171,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CRIMSON_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.WARPED_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.CACTUS_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.MUSHROOM_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.OAK_BARREL.asItem());
                         entries.add(DecoBlocks.SPRUCE_BARREL.asItem());
                         entries.add(DecoBlocks.BIRCH_BARREL.asItem());
@@ -1199,6 +1219,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ACACIA_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.DARK_OAK_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.MANGROVE_NOTE_BLOCK.asItem());
+                        entries.add(DecoBlocks.CHERRY_NOTE_BLOCK.asItem());
+                        entries.add(DecoBlocks.BAMBOO_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.CRIMSON_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.WARPED_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.CACTUS_NOTE_BLOCK.asItem());
