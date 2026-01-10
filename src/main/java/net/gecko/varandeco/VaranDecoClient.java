@@ -222,6 +222,8 @@ public class VaranDecoClient implements ClientModInitializer {
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_SIGN_TEXTURE));
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
