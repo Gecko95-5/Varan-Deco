@@ -55,6 +55,36 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.STRIPPED_WOODEN_LOG.asItem())
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD.asItem());
 
+        getOrCreateTagBuilder(DecoTags.Items.LOG_STAIRS)
+                .add(DecoBlocks.BIRCH_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.SPRUCE_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.JUNGLE_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.ACACIA_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.DARK_OAK_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.MANGROVE_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.OAK_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.WOODEN_WOOD_STAIRS.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.LOG_SLABS)
+                .add(DecoBlocks.BIRCH_WOOD_SLAB.asItem())
+                .add(DecoBlocks.SPRUCE_WOOD_SLAB.asItem())
+                .add(DecoBlocks.JUNGLE_WOOD_SLAB.asItem())
+                .add(DecoBlocks.ACACIA_WOOD_SLAB.asItem())
+                .add(DecoBlocks.DARK_OAK_WOOD_SLAB.asItem())
+                .add(DecoBlocks.MANGROVE_WOOD_SLAB.asItem())
+                .add(DecoBlocks.OAK_WOOD_SLAB.asItem())
+                .add(DecoBlocks.WOODEN_WOOD_SLAB.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.LOG_WALLS)
+                .add(DecoBlocks.BIRCH_WOOD_WALL.asItem())
+                .add(DecoBlocks.SPRUCE_WOOD_WALL.asItem())
+                .add(DecoBlocks.JUNGLE_WOOD_WALL.asItem())
+                .add(DecoBlocks.ACACIA_WOOD_WALL.asItem())
+                .add(DecoBlocks.DARK_OAK_WOOD_WALL.asItem())
+                .add(DecoBlocks.MANGROVE_WOOD_WALL.asItem())
+                .add(DecoBlocks.OAK_WOOD_WALL.asItem())
+                .add(DecoBlocks.WOODEN_WOOD_WALL.asItem());
+
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR.asItem())
                 .add(DecoBlocks.MUSHROOM_DOOR.asItem())
@@ -285,6 +315,6 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.BLUE_LAMP.asItem())
                 .add(DecoBlocks.PURPLE_LAMP.asItem())
                 .add(DecoBlocks.MAGENTA_LAMP.asItem())
-                .add(DecoBlocks.PINK_LAMP.asItem());;
+                .add(DecoBlocks.PINK_LAMP.asItem());
     }
 }

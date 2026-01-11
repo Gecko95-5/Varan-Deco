@@ -44,6 +44,10 @@ public class VaranDeco implements ModInitializer {
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_SMITHING_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_BARRELS,300);
 
+        FuelRegistry.INSTANCE.add(DecoTags.Items.LOG_STAIRS,300);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.LOG_SLABS,150);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.LOG_WALLS,300);
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }
