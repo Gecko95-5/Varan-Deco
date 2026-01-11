@@ -9,7 +9,6 @@ import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
-import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
 import org.slf4j.Logger;
 
@@ -44,6 +43,10 @@ public class VaranDeco implements ModInitializer {
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_SMITHING_TABLES,300);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_BARRELS,300);
+
+        FuelRegistry.INSTANCE.add(DecoTags.Items.LOG_STAIRS,300);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.LOG_SLABS,150);
+        FuelRegistry.INSTANCE.add(DecoTags.Items.LOG_WALLS,300);
 
 		LOGGER.info("Hello Fabric world!");
 	}

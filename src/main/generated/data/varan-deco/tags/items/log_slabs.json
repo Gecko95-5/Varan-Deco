@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:birch_wood_slab",
+    "varan-deco:spruce_wood_slab",
+    "varan-deco:jungle_wood_slab",
+    "varan-deco:acacia_wood_slab",
+    "varan-deco:dark_oak_wood_slab",
+    "varan-deco:mangrove_wood_slab",
+    "varan-deco:oak_wood_slab",
+    "varan-deco:wooden_wood_slab"
+  ]
+}
