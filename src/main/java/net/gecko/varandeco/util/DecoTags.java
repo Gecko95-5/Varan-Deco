@@ -49,6 +49,9 @@ public class DecoTags {
         public static final TagKey<Block> WOODEN_LOGS =
                 createTag("wooden_logs");
 
+        public static final TagKey<Block> IRON_CAP_STEM =
+                createTag("iron_cap_stem");
+
         public static final TagKey<Block> TERRACOTTA_STAIRS =
                 createTag("terracotta_stairs");
 
@@ -209,6 +212,18 @@ public class DecoTags {
 
         public static final TagKey<Item> COLOURED_LAMPS =
                 createTag("coloured_lamps");
+
+        public static final TagKey<Item> IRON_CAP_STEM =
+                createTag("iron_cap_stem");
+
+        public static final TagKey<Item> LOG_STAIRS =
+                createTag("log_stairs");
+
+        public static final TagKey<Item> LOG_SLABS =
+                createTag("log_slabs");
+
+        public static final TagKey<Item> LOG_WALLS =
+                createTag("log_walls");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));

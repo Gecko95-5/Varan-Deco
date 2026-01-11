@@ -11,7 +11,7 @@ import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
-import net.gecko.varandeco.block.flowers.*;
+import net.gecko.varandeco.block.nature.*;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
 import net.gecko.varandeco.block.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.*;
@@ -19,6 +19,8 @@ import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.woodmadeblocks.cartographytables.*;
 import net.gecko.varandeco.block.woodmadeblocks.craftingtables.*;
 import net.gecko.varandeco.block.woodmadeblocks.smithingtables.*;
+import net.gecko.varandeco.world.feature.DecoConfiguredFeatures;
+import net.gecko.varandeco.world.feature.tree.IronCapMushroomGenerator;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -37,6 +39,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 
 public class DecoBlocks {
     public static final Block CUT_GRANITE = registerBlock("cut_granite",
@@ -63,6 +66,9 @@ public class DecoBlocks {
     public static final Block MUSHROOM_PLANKS = registerBlock("mushroom_planks",
             new Block(FabricBlockSettings.of().mapColor(MapColor.RAW_IRON_PINK).strength(1.0f,1.5f)
                     .sounds(BlockSoundGroup.WOOD)));
+    public static final Block IRON_CAP_PLANKS = registerBlock("iron_cap_planks",
+            new Block(FabricBlockSettings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).strength(2.0f,3.0f)
+                    .sounds(BlockSoundGroup.NETHER_WOOD).requiresTool().instrument(Instrument.IRON_XYLOPHONE)));
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
             new Block(FabricBlockSettings.create().mapColor(MapColor.BROWN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD)));
@@ -92,11 +98,21 @@ public class DecoBlocks {
     public static final Block STRIPPED_WOODEN_LOG = registerBlock("stripped_wooden_log",
             createLogBlock(MapColor.BROWN, MapColor.BROWN));
     public static final Block STRIPPED_WOODEN_WOOD = registerBlock("stripped_wooden_wood",
-            new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
-                    .sounds(BlockSoundGroup.WOOD)));
-    public static final Block WOODEN_WOOD = registerBlock("wooden_wood",
             new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD)));
+    public static final Block WOODEN_WOOD = registerBlock("wooden_wood",
+            new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.WOOD)));
+    public static final Block IRON_CAP_STEM = registerBlock("iron_cap_stem",
+            createIronCapStem(MapColor.PALE_GREEN, MapColor.LIGHT_BLUE_GRAY));
+    public static final Block STRIPPED_IRON_CAP_STEM = registerBlock("stripped_iron_cap_stem",
+            createIronCapStem(MapColor.LIGHT_BLUE_GRAY, MapColor.LIGHT_BLUE_GRAY));
+    public static final Block STRIPPED_IRON_CAP_HYPHAE = registerBlock("stripped_iron_cap_hyphae",
+            new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.NETHER_WOOD).requiresTool().instrument(Instrument.IRON_XYLOPHONE)));
+    public static final Block IRON_CAP_HYPHAE = registerBlock("iron_cap_hyphae",
+            new PillarBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_GREEN).strength(2.0f,2.0f)
+                    .sounds(BlockSoundGroup.NETHER_WOOD).requiresTool().instrument(Instrument.IRON_XYLOPHONE)));
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
             new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()));
@@ -580,6 +596,8 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)));
     public static final Block WOODEN_MOSAIC = registerBlock("wooden_mosaic",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block IRON_CAP_MOSAIC = registerBlock("iron_cap_mosaic",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block OAK_MOSAIC_STAIRS = registerBlock("oak_mosaic_stairs",
             new StairsBlock(DecoBlocks.OAK_MOSAIC.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.OAK_MOSAIC)));
@@ -607,6 +625,8 @@ public class DecoBlocks {
             new StairsBlock(DecoBlocks.MUSHROOM_MOSAIC.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_MOSAIC)));
     public static final Block WOODEN_MOSAIC_STAIRS = registerBlock("wooden_mosaic_stairs",
             new StairsBlock(DecoBlocks.WOODEN_MOSAIC.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_MOSAIC)));
+    public static final Block IRON_CAP_MOSAIC_STAIRS = registerBlock("iron_cap_mosaic_stairs",
+            new StairsBlock(DecoBlocks.IRON_CAP_MOSAIC.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_MOSAIC)));
 
     public static final Block OAK_MOSAIC_SLAB = registerBlock("oak_mosaic_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.OAK_MOSAIC)));
@@ -634,6 +654,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_MOSAIC)));
     public static final Block WOODEN_MOSAIC_SLAB = registerBlock("wooden_mosaic_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_MOSAIC)));
+    public static final Block IRON_CAP_MOSAIC_SLAB = registerBlock("iron_cap_mosaic_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_MOSAIC)));
 
     public static final Block PASTEL_ORANGE_BLOCK = registerBlock("pastel_orange_block",
             new Block(FabricBlockSettings.create().mapColor(DyeColor.ORANGE).resistance(0.5f)
@@ -786,6 +808,8 @@ public class DecoBlocks {
             new StairsBlock(Blocks.WARPED_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block WOODEN_WOOD_STAIRS = registerBlock("wooden_wood_stairs",
             new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block IRON_CAP_HYPHAE_STAIRS = registerBlock("iron_cap_hyphae_stairs",
+            new StairsBlock(DecoBlocks.IRON_CAP_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block STRIPPED_OAK_WOOD_STAIRS = registerBlock("stripped_oak_wood_stairs",
             new StairsBlock(Blocks.OAK_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
@@ -809,6 +833,8 @@ public class DecoBlocks {
             new StairsBlock(Blocks.WARPED_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block STRIPPED_WOODEN_WOOD_STAIRS = registerBlock("stripped_wooden_wood_stairs",
             new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block STRIPPED_IRON_CAP_HYPHAE_STAIRS = registerBlock("stripped_iron_cap_hyphae_stairs",
+            new StairsBlock(DecoBlocks.IRON_CAP_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)));
@@ -929,6 +955,8 @@ public class DecoBlocks {
             new StairsBlock(DecoBlocks.CACTUS_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block MUSHROOM_STAIRS = registerBlock("mushroom_stairs",
             new StairsBlock(DecoBlocks.MUSHROOM_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)));
+    public static final Block IRON_CAP_STAIRS = registerBlock("iron_cap_stairs",
+            new StairsBlock(DecoBlocks.IRON_CAP_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
     public static final Block WOODEN_STAIRS = registerBlock("wooden_stairs",
             new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
     public static final Block CUT_SANDSTONE_BRICK_STAIRS = registerBlock("cut_sandstone_brick_stairs",
@@ -1155,6 +1183,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block WOODEN_WOOD_SLAB = registerBlock("wooden_wood_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block IRON_CAP_HYPHAE_SLAB = registerBlock("iron_cap_hyphae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block STRIPPED_OAK_WOOD_SLAB = registerBlock("stripped_oak_wood_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
@@ -1178,6 +1208,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block STRIPPED_WOODEN_WOOD_SLAB = registerBlock("stripped_wooden_wood_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block STRIPPED_IRON_CAP_HYPHAE_SLAB = registerBlock("stripped_iron_cap_hyphae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block OBSIDIAN_SLAB = registerBlock("obsidian_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
@@ -1292,6 +1324,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block MUSHROOM_SLAB = registerBlock("mushroom_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)));
+    public static final Block IRON_CAP_SLAB = registerBlock("iron_cap_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
     public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
     public static final Block CUT_SANDSTONE_BRICK_SLAB = registerBlock("cut_sandstone_brick_slab",
@@ -1452,6 +1486,20 @@ public class DecoBlocks {
 
     public static final Block WOODEN_LEAVES = registerBlock("wooden_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES)));
+
+    public static final Block IRON_CAP_MUSHROOM = registerBlock("iron_cap_mushroom",
+            new IronCapBlock(new IronCapMushroomGenerator(),FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM)
+                    .mapColor(MapColor.IRON_GRAY)));
+    public static final Block POTTED_IRON_CAP_MUSHROOM = registerBlockWithoutItem("potted_iron_cap_mushroom",
+            new FlowerPotBlock(IRON_CAP_MUSHROOM,FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM)));
+
+    public static final Block IRON_CAP_MUSHROOM_BLOCK = registerBlock("iron_cap_mushroom_block",
+            new Block(FabricBlockSettings.create().strength(4.0F, 6.0F).mapColor(MapColor.IRON_GRAY)
+                    .sounds(BlockSoundGroup.CANDLE)));
+
+    public static final Block SPORE_IRON_ORE = registerBlock("spore_iron_ore",
+            new Block(FabricBlockSettings.create().strength(3.0F, 3.0F).mapColor(MapColor.LICHEN_GREEN)
+                    .sounds(BlockSoundGroup.NETHER_GOLD_ORE).requiresTool()));
 
     public static final Block PUFFY_DANDELION = registerBlock("puffy_dandelion",
             new PuffyDandelionBlock(StatusEffects.SATURATION, 3,FabricBlockSettings.copyOf(Blocks.DANDELION)));
@@ -1675,6 +1723,8 @@ public class DecoBlocks {
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.CACTUS_PLANKS)));
     public static final Block MUSHROOM_FENCE = registerBlock("mushroom_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)));
+    public static final Block IRON_CAP_FENCE = registerBlock("iron_cap_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
     public static final Block WOODEN_FENCE = registerBlock("wooden_fence",
             new FenceBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
 
@@ -1907,6 +1957,8 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block WOODEN_WOOD_WALL = registerBlock("wooden_wood_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block IRON_CAP_HYPHAE_WALL = registerBlock("iron_cap_hyphae_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block STRIPPED_OAK_WOOD_WALL = registerBlock("stripped_oak_wood_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
@@ -1930,6 +1982,8 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block STRIPPED_WOODEN_WOOD_WALL = registerBlock("stripped_wooden_wood_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)));
+    public static final Block STRIPPED_IRON_CAP_HYPHAE_WALL = registerBlock("stripped_iron_cap_hyphae_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS)));
 
     public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)));
@@ -2689,6 +2743,9 @@ public class DecoBlocks {
     public static final Block MUSHROOM_BUTTON = registerBlock("mushroom_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
                     DecoBlockSets.MUSHROOM,30, true));
+    public static final Block IRON_CAP_BUTTON = registerBlock("iron_cap_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON).sounds(BlockSoundGroup.NETHER_WOOD),
+                    DecoBlockSets.IRON_CAP,50, true));
     public static final Block WOODEN_BUTTON = registerBlock("wooden_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON),
                     DecoBlockSets.WOODEN, 30, true));
@@ -2778,6 +2835,10 @@ public class DecoBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.PALE_YELLOW),
                     DecoBlockSets.MUSHROOM));
+    public static final Block IRON_CAP_PRESSURE_PLATE = registerBlock("iron_cap_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.LIGHT_BLUE_GRAY)
+                    .sounds(BlockSoundGroup.NETHER_WOOD), DecoBlockSets.IRON_CAP));
     public static final Block WOODEN_PRESSURE_PLATE = registerBlock("wooden_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE),DecoBlockSets.WOODEN));
@@ -2788,6 +2849,9 @@ public class DecoBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(), DecoBlockSets.CACUTS));
     public static final Block MUSHROOM_DOOR = registerBlock("mushroom_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_YELLOW).nonOpaque(), DecoBlockSets.MUSHROOM));
+    public static final Block IRON_CAP_DOOR = registerBlock("iron_cap_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).sounds(BlockSoundGroup.NETHER_WOOD)
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY).nonOpaque(), DecoBlockSets.IRON_CAP));
     public static final Block WOODEN_DOOR = registerBlock("wooden_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.BROWN).nonOpaque(),DecoBlockSets.WOODEN));
 
@@ -2826,6 +2890,9 @@ public class DecoBlocks {
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(), DecoBlockSets.CACUTS));
     public static final Block MUSHROOM_TRAPDOOR = registerBlock("mushroom_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_YELLOW).nonOpaque(), DecoBlockSets.MUSHROOM));
+    public static final Block IRON_CAP_TRAPDOOR = registerBlock("iron_cap_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).sounds(BlockSoundGroup.NETHER_WOOD)
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY).nonOpaque(), DecoBlockSets.IRON_CAP));
     public static final Block WOODEN_TRAPDOOR = registerBlock("wooden_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.BROWN).nonOpaque(),DecoBlockSets.WOODEN));
 
@@ -2865,6 +2932,8 @@ public class DecoBlocks {
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS), WoodType.JUNGLE));
     public static final Block WOODEN_FENCE_GATE = registerBlock("wooden_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS), WoodType.OAK));
+    public static final Block IRON_CAP_FENCE_GATE = registerBlock("iron_cap_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(DecoBlocks.IRON_CAP_PLANKS), WoodType.CRIMSON));
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS), WoodType.SPRUCE));
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
@@ -3428,6 +3497,10 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.create().strength(0f)));
     public static final Block MUSHROOM_STEM_TEMP = registerBlockWithoutItem("mushroom_stem_temp",
             new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block IRON_CAP_STEM_TEMP = registerBlockWithoutItem("iron_cap_stem_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
+    public static final Block STRIPPED_IRON_CAP_TEMP = registerBlockWithoutItem("stripped_iron_cap_temp",
+            new Block(FabricBlockSettings.create().strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
@@ -3530,6 +3603,15 @@ public class DecoBlocks {
                         .strength(2.0F)
                         .sounds(BlockSoundGroup.WOOD)
                         .burnable()
+        );
+    }    public static PillarBlock createIronCapStem(MapColor topMapColor, MapColor sideMapColor) {
+        return new PillarBlock(
+                AbstractBlock.Settings.create()
+                        .mapColor(state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
+                        .instrument(Instrument.IRON_XYLOPHONE)
+                        .strength(2.0F)
+                        .sounds(BlockSoundGroup.NETHER_WOOD)
+                        .requiresTool()
         );
     }	private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return false;

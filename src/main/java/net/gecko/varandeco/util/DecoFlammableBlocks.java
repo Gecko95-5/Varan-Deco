@@ -68,6 +68,10 @@ public class DecoFlammableBlocks {
 
         registry.add(DecoBlocks.NIGHTSHADE,60, 100);
         registry.add(DecoBlocks.ENDERSHADE,60, 100);
+
+        registry.add(DecoTags.Blocks.LOG_STAIRS,5,5);
+        registry.add(DecoTags.Blocks.LOG_SLABS,5,5);
+        registry.add(DecoTags.Blocks.LOG_WALLS,5,5);
         
         registry.add(DecoTags.Blocks.WOODEN_BOOKSHELVES,30,20);
 

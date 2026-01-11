@@ -58,5 +58,7 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.RED_SUNFLOWER,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.NOVA_STARFLOWER,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.MIGHTY_LAVENDER,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM, 0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK, 0.85F);
     }
 }

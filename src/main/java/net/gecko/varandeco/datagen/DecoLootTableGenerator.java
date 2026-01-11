@@ -4,16 +4,22 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CarrotsBlock;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.LimitCountLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.operator.BoundedIntUnaryOperator;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -1530,5 +1536,47 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.WOODEN_BOOKSHELF_STAIRS);
         addDrop(DecoBlocks.WOODEN_BOOKSHELF_SLAB, slabDrops(DecoBlocks.WOODEN_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.IRON_CAP_PLANKS);
+        addDrop(DecoBlocks.IRON_CAP_STAIRS);
+        addDrop(DecoBlocks.IRON_CAP_SLAB, slabDrops(DecoBlocks.IRON_CAP_SLAB));
+        addDrop(DecoBlocks.IRON_CAP_FENCE);
+        addDrop(DecoBlocks.IRON_CAP_FENCE_GATE);
+        addDrop(DecoBlocks.IRON_CAP_PRESSURE_PLATE);
+        addDrop(DecoBlocks.IRON_CAP_BUTTON);
+
+        addDrop(DecoBlocks.IRON_CAP_DOOR, doorDrops(DecoBlocks.IRON_CAP_DOOR));
+        addDrop(DecoBlocks.IRON_CAP_TRAPDOOR);
+        addDrop(DecoBlocks.IRON_CAP_MOSAIC);
+        addDrop(DecoBlocks.IRON_CAP_MOSAIC_STAIRS);
+        addDrop(DecoBlocks.IRON_CAP_MOSAIC_SLAB, slabDrops(DecoBlocks.IRON_CAP_MOSAIC_SLAB));
+        addDrop(DecoBlocks.IRON_CAP_HYPHAE_STAIRS);
+        addDrop(DecoBlocks.IRON_CAP_HYPHAE_SLAB, slabDrops(DecoBlocks.IRON_CAP_HYPHAE_SLAB));
+        addDrop(DecoBlocks.IRON_CAP_HYPHAE_WALL);
+
+        addDrop(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_SLAB, slabDrops(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_SLAB));
+        addDrop(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_WALL);
+
+        addDrop(DecoBlocks.IRON_CAP_MUSHROOM);
+        pottedPlantDrops(DecoBlocks.POTTED_IRON_CAP_MUSHROOM);
+
+        addDrop(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK, block -> this.capMushroomBlockDrops(block, DecoBlocks.IRON_CAP_MUSHROOM));
+
+        addDrop(DecoBlocks.SPORE_IRON_ORE, block -> dropsWithSilkTouch(block, this.applyExplosionDecay(block,
+                        ItemEntry.builder(Items.IRON_NUGGET)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 3.0F)))
+                                .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE)))));
+    }
+    public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
+        return dropsWithSilkTouch(
+                dropWithSilkTouch,
+                this.applyExplosionDecay(
+                        dropWithSilkTouch,
+                        ItemEntry.builder(drop)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(-2.0F, 1.0F)))
+                                .apply(LimitCountLootFunction.builder(BoundedIntUnaryOperator.createMin(0)))
+                )
+        );
     }
 }

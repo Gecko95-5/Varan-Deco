@@ -20,6 +20,7 @@ import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
 import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
@@ -76,10 +77,70 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_VOID_PATCH = registerKey("deco_void_patch");
 
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_IRON_CAP_MUSHROOM = registerKey("deco_iron_cap_mushroom");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
-
+        BlockPredicate blockPredicate = BlockPredicate.matchingBlocks(
+                Blocks.OAK_SAPLING,
+                Blocks.SPRUCE_SAPLING,
+                Blocks.BIRCH_SAPLING,
+                Blocks.JUNGLE_SAPLING,
+                Blocks.ACACIA_SAPLING,
+                Blocks.CHERRY_SAPLING,
+                Blocks.DARK_OAK_SAPLING,
+                Blocks.MANGROVE_PROPAGULE,
+                Blocks.DANDELION,
+                Blocks.TORCHFLOWER,
+                Blocks.POPPY,
+                Blocks.BLUE_ORCHID,
+                Blocks.ALLIUM,
+                Blocks.AZURE_BLUET,
+                Blocks.RED_TULIP,
+                Blocks.ORANGE_TULIP,
+                Blocks.WHITE_TULIP,
+                Blocks.PINK_TULIP,
+                Blocks.OXEYE_DAISY,
+                Blocks.CORNFLOWER,
+                Blocks.WITHER_ROSE,
+                Blocks.LILY_OF_THE_VALLEY,
+                Blocks.BROWN_MUSHROOM,
+                Blocks.RED_MUSHROOM,
+                Blocks.WHEAT,
+                Blocks.SUGAR_CANE,
+                Blocks.ATTACHED_PUMPKIN_STEM,
+                Blocks.ATTACHED_MELON_STEM,
+                Blocks.PUMPKIN_STEM,
+                Blocks.MELON_STEM,
+                Blocks.LILY_PAD,
+                Blocks.NETHER_WART,
+                Blocks.COCOA,
+                Blocks.CARROTS,
+                Blocks.POTATOES,
+                Blocks.CHORUS_PLANT,
+                Blocks.CHORUS_FLOWER,
+                Blocks.TORCHFLOWER_CROP,
+                Blocks.PITCHER_CROP,
+                Blocks.BEETROOTS,
+                Blocks.SWEET_BERRY_BUSH,
+                Blocks.WARPED_FUNGUS,
+                Blocks.CRIMSON_FUNGUS,
+                Blocks.WEEPING_VINES,
+                Blocks.WEEPING_VINES_PLANT,
+                Blocks.TWISTING_VINES,
+                Blocks.TWISTING_VINES_PLANT,
+                Blocks.CAVE_VINES,
+                Blocks.CAVE_VINES_PLANT,
+                Blocks.SPORE_BLOSSOM,
+                Blocks.AZALEA,
+                Blocks.FLOWERING_AZALEA,
+                Blocks.MOSS_CARPET,
+                Blocks.PINK_PETALS,
+                Blocks.BIG_DRIPLEAF,
+                Blocks.BIG_DRIPLEAF_STEM,
+                Blocks.SMALL_DRIPLEAF
+        );
 
         List<OreFeatureConfig.Target> overworldBubbleOre =
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, DecoBlocks.BUBBLE_BLOCK.getDefaultState()));
@@ -201,6 +262,15 @@ public class DecoConfiguredFeatures {
         ConfiguredFeatures.register(context, DECO_VOID_PATCH, Feature.DISK,
                 new DiskFeatureConfig(PredicatedStateProvider.of(DecoBlocks.VOID_STONE),
                         BlockPredicate.matchingBlocks(List.of(Blocks.END_STONE)), UniformIntProvider.create(2, 3), 1));
+
+        register(context, DECO_IRON_CAP_MUSHROOM, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(DecoBlocks.IRON_CAP_STEM), new StraightTrunkPlacer(2, 4, 0),
+                BlockStateProvider.of(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK),
+                new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0)),
+                new TwoLayersFeatureSize(1, 0, 2)).decorators
+                        (ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(DecoBlocks.SPORE_IRON_ORE))))
+                .build());
+
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(VaranDeco.MOD_ID, name));

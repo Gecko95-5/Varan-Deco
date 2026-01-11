@@ -230,6 +230,11 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool strippedwoodenwoodpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_WOODEN_TEMP);
 
+        BlockStateModelGenerator.BlockTexturePool ironcapstempool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.IRON_CAP_STEM_TEMP);
+        BlockStateModelGenerator.BlockTexturePool strippedironcapstempool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.STRIPPED_IRON_CAP_TEMP);
+
         BlockStateModelGenerator.BlockTexturePool packednetherrackpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PACKED_NETHERRACK);
         BlockStateModelGenerator.BlockTexturePool netherrackbrickpool =
@@ -361,8 +366,17 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ENDERSHADE, DecoBlocks.POTTED_ENDERSHADE,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.IRON_CAP_MUSHROOM, DecoBlocks.POTTED_IRON_CAP_MUSHROOM,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.SPORE_IRON_ORE);
+
         BlockStateModelGenerator.BlockTexturePool woodenpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_PLANKS);
+
+        BlockStateModelGenerator.BlockTexturePool ironcappool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.IRON_CAP_PLANKS);
 
         BlockStateModelGenerator.BlockTexturePool mushroompool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MUSHROOM_PLANKS);
@@ -372,6 +386,9 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(DecoBlocks.WOODEN_LOG).log(DecoBlocks.WOODEN_LOG).wood(DecoBlocks.WOODEN_WOOD);
         blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_WOODEN_LOG).log(DecoBlocks.STRIPPED_WOODEN_LOG).wood(DecoBlocks.STRIPPED_WOODEN_WOOD);
+
+        blockStateModelGenerator.registerLog(DecoBlocks.IRON_CAP_STEM).log(DecoBlocks.IRON_CAP_STEM).wood(DecoBlocks.IRON_CAP_HYPHAE);
+        blockStateModelGenerator.registerLog(DecoBlocks.STRIPPED_IRON_CAP_STEM).log(DecoBlocks.STRIPPED_IRON_CAP_STEM).wood(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE);
 
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
         blockStateModelGenerator.registerWeightedPressurePlate(DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE, Blocks.COPPER_BLOCK);
@@ -408,6 +425,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WOODEN_MOSAIC);
         BlockStateModelGenerator.BlockTexturePool mushmosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MUSHROOM_MOSAIC);
+        BlockStateModelGenerator.BlockTexturePool ironcapmosaicpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.IRON_CAP_MOSAIC);
 
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.SPRUCE_MOSAIC, TexturedModel.CUBE_ALL);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.JUNGLE_MOSAIC, TexturedModel.CUBE_ALL);
@@ -729,6 +748,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(DecoBlocks.MUSHROOM_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.MUSHROOM_TRAPDOOR);
 
+        blockStateModelGenerator.registerDoor(DecoBlocks.IRON_CAP_DOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.IRON_CAP_TRAPDOOR);
+
         blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_DOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_TRAPDOOR);
 
@@ -897,6 +919,13 @@ public class DecoModelProvider extends FabricModelProvider {
         mushroompool.pressurePlate(DecoBlocks.MUSHROOM_PRESSURE_PLATE);
         mushroompool.fenceGate(DecoBlocks.MUSHROOM_FENCE_GATE);
 
+        ironcappool.stairs(DecoBlocks.IRON_CAP_STAIRS);
+        ironcappool.slab(DecoBlocks.IRON_CAP_SLAB);
+        ironcappool.fence(DecoBlocks.IRON_CAP_FENCE);
+        ironcappool.button(DecoBlocks.IRON_CAP_BUTTON);
+        ironcappool.pressurePlate(DecoBlocks.IRON_CAP_PRESSURE_PLATE);
+        ironcappool.fenceGate(DecoBlocks.IRON_CAP_FENCE_GATE);
+
        bluenetherpool.stairs(DecoBlocks.BLUE_NETHER_BRICK_STAIRS);
        bluenetherpool.slab(DecoBlocks.BLUE_NETHER_BRICK_SLAB);
        bluenetherpool.fence(DecoBlocks.BLUE_NETHER_BRICK_FENCE);
@@ -979,6 +1008,9 @@ public class DecoModelProvider extends FabricModelProvider {
 
         mushmosaicpool.stairs(DecoBlocks.MUSHROOM_MOSAIC_STAIRS);
         mushmosaicpool.slab(DecoBlocks.MUSHROOM_MOSAIC_SLAB);
+
+        ironcapmosaicpool.stairs(DecoBlocks.IRON_CAP_MOSAIC_STAIRS);
+        ironcapmosaicpool.slab(DecoBlocks.IRON_CAP_MOSAIC_SLAB);
 
         polishedeepslatepool.button(DecoBlocks.POLISHED_DEEPSLATE_BUTTON);
         polishedeepslatepool.pressurePlate(DecoBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
@@ -1132,6 +1164,14 @@ public class DecoModelProvider extends FabricModelProvider {
         strippedwoodenwoodpool.slab(DecoBlocks.STRIPPED_WOODEN_WOOD_SLAB);
         strippedwoodenwoodpool.wall(DecoBlocks.STRIPPED_WOODEN_WOOD_WALL);
 
+        ironcapstempool.stairs(DecoBlocks.IRON_CAP_HYPHAE_STAIRS);
+        ironcapstempool.slab(DecoBlocks.IRON_CAP_HYPHAE_SLAB);
+        ironcapstempool.wall(DecoBlocks.IRON_CAP_HYPHAE_WALL);
+
+        strippedironcapstempool.stairs(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_STAIRS);
+        strippedironcapstempool.slab(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_SLAB);
+        strippedironcapstempool.wall(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE_WALL);
+
         packednetherrackpool.stairs(DecoBlocks.PACKED_NETHERRACK_STAIRS);
         packednetherrackpool.slab(DecoBlocks.PACKED_NETHERRACK_SLAB);
         packednetherrackpool.wall(DecoBlocks.PACKED_NETHERRACK_WALL);
@@ -1238,7 +1278,6 @@ public class DecoModelProvider extends FabricModelProvider {
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
        mushroompool.family(DecoBlocks.MUSHROOM_FAMILY);
-
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 

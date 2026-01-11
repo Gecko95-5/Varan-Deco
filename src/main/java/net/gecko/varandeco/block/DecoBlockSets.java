@@ -62,6 +62,7 @@ public record DecoBlockSets(
 
     public static final BlockSetType CACUTS = registerBlockSets(new BlockSetType("cactus"));
     public static final BlockSetType MUSHROOM = registerBlockSets(new BlockSetType("mushroom"));
+    public static final BlockSetType IRON_CAP = registerBlockSets(new BlockSetType("iron_cap"));
     public static final BlockSetType WOODEN = registerBlockSets(new BlockSetType("wooden"));
 
     private static BlockSetType registerBlockSets(BlockSetType blockSetType) {

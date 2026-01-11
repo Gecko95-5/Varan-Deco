@@ -1848,6 +1848,38 @@
   "block.varan-deco.bamboo_bookshelf_slab": "Bamboo Bookshelf Slab",
   "block.varan-deco.wooden_bookshelf_slab": "Bookshelf Slab",
 
+  "block.varan-deco.iron_cap_stem": "Iron Cap Stem",
+  "block.varan-deco.stripped_iron_cap_stem": "Stripped Iron Cap Stem",
+  "block.varan-deco.stripped_iron_cap_hyphae": "Stripped Iron Cap Hyphae",
+  "block.varan-deco.iron_cap_hyphae": "Iron Cap Hyphae",
+
+  "block.varan-deco.iron_cap_mushroom": "Iron Cap Mushroom",
+  "block.varan-deco.iron_cap_mushroom_block": "Iron Cap Mushroom Block",
+  "block.varan-deco.spore_iron_ore": "Spore Iron Ore",
+
+  "block.varan-deco.iron_cap_planks": "Iron Cap Planks",
+  "block.varan-deco.iron_cap_stairs": "Iron Cap Stairs",
+  "block.varan-deco.iron_cap_slab": "Iron Cap Slab",
+  "block.varan-deco.iron_cap_fence": "Iron Cap Fence",
+  "block.varan-deco.iron_cap_fence_gate": "Iron Cap Fence Gate",
+  "block.varan-deco.iron_cap_button": "Iron Cap Button",
+  "block.varan-deco.iron_cap_pressure_plate": "Iron Cap Pressure Plate",
+
+  "block.varan-deco.iron_cap_door": "Iron Cap Door",
+  "block.varan-deco.iron_cap_trapdoor": "Iron Cap Trapdoor",
+
+  "block.varan-deco.iron_cap_hyphae_stairs": "Iron Cap Hyphae Stairs",
+  "block.varan-deco.iron_cap_hyphae_slab": "Iron Cap Hyphae Slab",
+  "block.varan-deco.iron_cap_hyphae_wall": "Iron Cap Hyphae Wall",
+
+  "block.varan-deco.stripped_iron_cap_hyphae_stairs": "Stripped Iron Cap Hyphae Stairs",
+  "block.varan-deco.stripped_iron_cap_hyphae_slab": "Stripped Iron Cap Hyphae Slab",
+  "block.varan-deco.stripped_iron_cap_hyphae_wall": "Stripped Iron Cap Hyphae Wall",
+
+  "block.varan-deco.iron_cap_mosaic": "Iron Cap Mosaic",
+  "block.varan-deco.iron_cap_mosaic_stairs": "Iron Cap Mosaic Stairs",
+  "block.varan-deco.iron_cap_mosaic_slab": "Iron Cap Mosaic Slab",
+
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 

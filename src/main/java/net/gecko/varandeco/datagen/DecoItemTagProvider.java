@@ -22,31 +22,37 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(DecoBlocks.CACTUS_PLANKS.asItem())
                 .add(DecoBlocks.MUSHROOM_PLANKS.asItem())
+                .add(DecoBlocks.IRON_CAP_PLANKS.asItem())
                 .add(DecoBlocks.WOODEN_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS.asItem())
                 .add(DecoBlocks.MUSHROOM_STAIRS.asItem())
+                .add(DecoBlocks.IRON_CAP_STAIRS.asItem())
                 .add(DecoBlocks.WOODEN_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
                 .add(DecoBlocks.CACTUS_PLANK_SLAB.asItem())
                 .add(DecoBlocks.MUSHROOM_SLAB.asItem())
+                .add(DecoBlocks.IRON_CAP_SLAB.asItem())
                 .add(DecoBlocks.WOODEN_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
                 .add(DecoBlocks.CACTUS_PLANK_FENCE.asItem())
                 .add(DecoBlocks.MUSHROOM_FENCE.asItem())
+                .add(DecoBlocks.IRON_CAP_FENCE.asItem())
                 .add(DecoBlocks.WOODEN_FENCE.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
                 .add(DecoBlocks.CACTUS_PLANK_BUTTON.asItem())
                 .add(DecoBlocks.MUSHROOM_BUTTON.asItem())
+                .add(DecoBlocks.IRON_CAP_BUTTON.asItem())
                 .add(DecoBlocks.WOODEN_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
                 .add(DecoBlocks.CACTUS_PLANK_PRESSURE_PLATE.asItem())
                 .add(DecoBlocks.MUSHROOM_PRESSURE_PLATE.asItem())
+                .add(DecoBlocks.IRON_CAP_PRESSURE_PLATE.asItem())
                 .add(DecoBlocks.WOODEN_PRESSURE_PLATE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
@@ -82,6 +88,42 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.WOODEN_WOOD.asItem())
                 .add(DecoBlocks.STRIPPED_WOODEN_LOG.asItem())
                 .add(DecoBlocks.STRIPPED_WOODEN_WOOD.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.IRON_CAP_STEM)
+                .add(DecoBlocks.IRON_CAP_STEM.asItem())
+                .add(DecoBlocks.IRON_CAP_HYPHAE.asItem())
+                .add(DecoBlocks.STRIPPED_IRON_CAP_STEM.asItem())
+                .add(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.LOG_STAIRS)
+                .add(DecoBlocks.BIRCH_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.SPRUCE_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.JUNGLE_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.ACACIA_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.DARK_OAK_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.MANGROVE_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.OAK_WOOD_STAIRS.asItem())
+                .add(DecoBlocks.WOODEN_WOOD_STAIRS.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.LOG_SLABS)
+                .add(DecoBlocks.BIRCH_WOOD_SLAB.asItem())
+                .add(DecoBlocks.SPRUCE_WOOD_SLAB.asItem())
+                .add(DecoBlocks.JUNGLE_WOOD_SLAB.asItem())
+                .add(DecoBlocks.ACACIA_WOOD_SLAB.asItem())
+                .add(DecoBlocks.DARK_OAK_WOOD_SLAB.asItem())
+                .add(DecoBlocks.MANGROVE_WOOD_SLAB.asItem())
+                .add(DecoBlocks.OAK_WOOD_SLAB.asItem())
+                .add(DecoBlocks.WOODEN_WOOD_SLAB.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.LOG_WALLS)
+                .add(DecoBlocks.BIRCH_WOOD_WALL.asItem())
+                .add(DecoBlocks.SPRUCE_WOOD_WALL.asItem())
+                .add(DecoBlocks.JUNGLE_WOOD_WALL.asItem())
+                .add(DecoBlocks.ACACIA_WOOD_WALL.asItem())
+                .add(DecoBlocks.DARK_OAK_WOOD_WALL.asItem())
+                .add(DecoBlocks.MANGROVE_WOOD_WALL.asItem())
+                .add(DecoBlocks.OAK_WOOD_WALL.asItem())
+                .add(DecoBlocks.WOODEN_WOOD_WALL.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
                 .add(DecoBlocks.CACTUS_DOOR.asItem())
@@ -403,6 +445,6 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.BLUE_LAMP.asItem())
                 .add(DecoBlocks.PURPLE_LAMP.asItem())
                 .add(DecoBlocks.MAGENTA_LAMP.asItem())
-                .add(DecoBlocks.PINK_LAMP.asItem());;
+                .add(DecoBlocks.PINK_LAMP.asItem());
     }
 }
