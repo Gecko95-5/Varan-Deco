@@ -4,6 +4,21 @@
     "#varan-deco:deco_crafting_tables",
     "#varan-deco:deco_barrels",
     "#varan-deco:deco_ladders",
-    "#varan-deco:deco_smithing_tables"
+    "#varan-deco:deco_smithing_tables",
+    "#varan-deco:log_stairs",
+    "#varan-deco:log_slabs",
+    "#varan-deco:log_walls",
+    "varan-deco:crimson_hyphae_stairs",
+    "varan-deco:warped_hyphae_stairs",
+    "varan-deco:stripped_crimson_hyphae_stairs",
+    "varan-deco:stripped_warped_hyphae_stairs",
+    "varan-deco:crimson_hyphae_slab",
+    "varan-deco:warped_hyphae_slab",
+    "varan-deco:stripped_crimson_hyphae_slab",
+    "varan-deco:stripped_warped_hyphae_slab",
+    "varan-deco:crimson_hyphae_wall",
+    "varan-deco:warped_hyphae_wall",
+    "varan-deco:stripped_crimson_hyphae_wall",
+    "varan-deco:stripped_warped_hyphae_wall"
   ]
 }
