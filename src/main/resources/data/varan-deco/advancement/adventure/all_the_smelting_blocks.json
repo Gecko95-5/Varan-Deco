@@ -45,6 +45,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "end_stone_furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:end_stone_furnace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "stone_smoker": {
       "conditions": {
         "items": [
@@ -84,6 +96,18 @@
           {
             "items":
               "varan-deco:tuff_smoker"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "end_stone_smoker": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:end_stone_smoker"
+            ]
           }
         ]
       },
@@ -132,6 +156,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "end_stone_blast_furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:end_stone_blast_furnace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -160,6 +196,9 @@
       "tuff_furnace"
     ],
     [
+      "end_stone_furnace"
+    ],
+    [
       "stone_smoker"
     ],
     [
@@ -172,6 +211,9 @@
       "tuff_smoker"
     ],
     [
+      "end_stone_smoker"
+    ],
+    [
       "stone_blast_furnace"
     ],
     [
@@ -182,6 +224,9 @@
     ],
     [
       "tuff_blast_furnace"
+    ],
+    [
+      "end_stone_blast_furnace"
     ]
   ]
 }

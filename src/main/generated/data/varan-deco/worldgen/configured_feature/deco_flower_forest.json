@@ -17,18 +17,6 @@
             "seed": 2345,
             "states": [
               {
-                "Name": "varan-deco:yellow_tulip"
-              },
-              {
-                "Name": "varan-deco:purple_tulip"
-              },
-              {
-                "Name": "varan-deco:magenta_tulip"
-              },
-              {
-                "Name": "varan-deco:blue_tulip"
-              },
-              {
                 "Name": "varan-deco:barberton_daisy"
               },
               {

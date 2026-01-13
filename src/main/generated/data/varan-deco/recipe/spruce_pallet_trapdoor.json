@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pallet_trapdoors",
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "varan-deco:spruce_pallet_trapdoor"
+  }
+}

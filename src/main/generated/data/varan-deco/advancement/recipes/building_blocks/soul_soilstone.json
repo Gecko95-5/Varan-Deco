@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#minecraft:soul_fire_base_blocks"
+            "items": "#varan-deco:soul_ground_blocks"
           }
         ]
       },

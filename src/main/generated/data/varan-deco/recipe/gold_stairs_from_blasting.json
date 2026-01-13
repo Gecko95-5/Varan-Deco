@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:raw_gold_stairs"
+  },
+  "result": {
+    "id": "varan-deco:gold_stairs"
+  }
+}

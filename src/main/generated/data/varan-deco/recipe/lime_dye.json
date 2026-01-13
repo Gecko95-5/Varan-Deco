@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "lime_dye",
   "ingredients": [
     {
       "item": "varan-deco:lime_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "id": "minecraft:lime_dye"
   }
 }

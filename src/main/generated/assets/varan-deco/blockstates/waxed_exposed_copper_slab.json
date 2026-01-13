@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/exposed_copper_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/exposed_copper_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/exposed_copper_slab_top"
+    }
+  }
+}

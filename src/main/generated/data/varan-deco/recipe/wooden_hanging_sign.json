@@ -4,7 +4,7 @@
   "group": "hanging_sign",
   "key": {
     "#": {
-      "item": "varan-deco:wooden_log"
+      "item": "varan-deco:stripped_wooden_log"
     },
     "X": {
       "item": "minecraft:chain"

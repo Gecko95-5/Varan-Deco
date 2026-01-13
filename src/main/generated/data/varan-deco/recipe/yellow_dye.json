@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "yellow_dye",
   "ingredients": [
     {
       "item": "varan-deco:yellow_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "id": "minecraft:yellow_dye"
   }
 }
