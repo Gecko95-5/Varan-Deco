@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_passtol": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:passtol"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:yellow_block_from_shaded_yellow_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_passtol"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:yellow_block_from_shaded_yellow_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

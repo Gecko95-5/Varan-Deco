@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "varan-deco:iron_cap_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_smithing_tables"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:iron_cap_smithing_table"
+  },
+  "show_notification": true
+}

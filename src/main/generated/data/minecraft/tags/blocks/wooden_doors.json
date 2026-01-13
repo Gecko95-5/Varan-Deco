@@ -2,6 +2,22 @@
   "replace": false,
   "values": [
     "varan-deco:cactus_door",
-    "varan-deco:wooden_door"
+    "varan-deco:mushroom_door",
+    "varan-deco:iron_cap_door",
+    "varan-deco:wooden_door",
+    "varan-deco:oak_pallet_door",
+    "varan-deco:spruce_pallet_door",
+    "varan-deco:birch_pallet_door",
+    "varan-deco:jungle_pallet_door",
+    "varan-deco:acacia_pallet_door",
+    "varan-deco:dark_oak_pallet_door",
+    "varan-deco:mangrove_pallet_door",
+    "varan-deco:crimson_pallet_door",
+    "varan-deco:warped_pallet_door",
+    "varan-deco:cactus_pallet_door",
+    "varan-deco:mushroom_pallet_door",
+    "varan-deco:wooden_pallet_door",
+    "varan-deco:cherry_pallet_door",
+    "varan-deco:bamboo_pallet_door"
   ]
 }

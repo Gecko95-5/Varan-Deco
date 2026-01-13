@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:sanded_obsidian"
+  },
+  "result": "varan-deco:cut_obsidian_stairs"
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:bookshelf",
     "varan-deco:birch_bookshelf",
     "varan-deco:spruce_bookshelf",
     "varan-deco:jungle_bookshelf",
@@ -10,6 +11,7 @@
     "varan-deco:cactus_bookshelf",
     "varan-deco:oak_bookshelf",
     "varan-deco:bamboo_bookshelf",
-    "varan-deco:cherry_bookshelf"
+    "varan-deco:cherry_bookshelf",
+    "varan-deco:mushroom_bookshelf"
   ]
 }

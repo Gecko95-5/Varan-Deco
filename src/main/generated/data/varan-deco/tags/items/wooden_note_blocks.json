@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:mushroom_note_block",
+    "varan-deco:oak_note_block",
+    "varan-deco:spruce_note_block",
+    "varan-deco:birch_note_block",
+    "varan-deco:jungle_note_block",
+    "varan-deco:dark_oak_note_block",
+    "varan-deco:acacia_note_block",
+    "varan-deco:mangrove_note_block",
+    "varan-deco:crimson_note_block",
+    "varan-deco:warped_note_block",
+    "varan-deco:cactus_note_block",
+    "varan-deco:cherry_note_block",
+    "varan-deco:bamboo_note_block",
+    "varan-deco:iron_cap_note_block"
+  ]
+}

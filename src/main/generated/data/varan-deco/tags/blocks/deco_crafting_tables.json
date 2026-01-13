@@ -10,8 +10,10 @@
     "varan-deco:crimson_crafting_table",
     "varan-deco:warped_crafting_table",
     "varan-deco:cactus_crafting_table",
+    "varan-deco:mushroom_crafting_table",
     "varan-deco:oak_crafting_table",
     "varan-deco:cherry_crafting_table",
-    "varan-deco:bamboo_crafting_table"
+    "varan-deco:bamboo_crafting_table",
+    "varan-deco:iron_cap_crafting_table"
   ]
 }

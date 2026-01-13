@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "varan-deco:iron_cap_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_note_blocks"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:iron_cap_note_block"
+  },
+  "show_notification": true
+}

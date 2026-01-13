@@ -1,0 +1,73 @@
+package net.gecko.varandeco.block.stonemadeblocks;
+
+import net.gecko.varandeco.block.entity.stone.EndstoneSmokerBlockEntity;
+import net.gecko.varandeco.block.entity.DecoBlockEntities;
+import net.minecraft.block.AbstractFurnaceBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityTicker;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.stat.Stats;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
+public class EndstoneSmokerBlock extends AbstractFurnaceBlock {
+	private static final Formatting FORMATTING = Formatting.RED;
+	private static final Text TEXT = Text.literal("This Block is not able to be used by Villagers").formatted(FORMATTING);
+	public EndstoneSmokerBlock(Settings settings) {
+		super(settings);
+	}
+
+	@Override
+	public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+		return new EndstoneSmokerBlockEntity(pos, state);
+	}
+
+	@Nullable
+	@Override
+	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+		return validateTicker(type, DecoBlockEntities.END_STONE_SMOKER_BE, EndstoneSmokerBlockEntity::tick);
+	}
+
+	@Override
+	protected void openScreen(World world, BlockPos pos, PlayerEntity player) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity instanceof EndstoneSmokerBlockEntity) {
+			player.openHandledScreen((NamedScreenHandlerFactory)blockEntity);
+			player.incrementStat(Stats.INTERACT_WITH_SMOKER);
+		}
+	}
+
+	@Override
+	public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+		if ((Boolean)state.get(LIT)) {
+			double d = pos.getX() + 0.5;
+			double e = pos.getY();
+			double f = pos.getZ() + 0.5;
+			if (random.nextDouble() < 0.1) {
+				world.playSound(d, e, f, SoundEvents.BLOCK_SMOKER_SMOKE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+			}
+
+			world.addParticle(ParticleTypes.SMOKE, d, e + 1.1, f, 0.0, 0.0, 0.0);
+		}
+	}
+	@Override
+	public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+		tooltip.add(TEXT);
+		super.appendTooltip(stack, world, tooltip, options);
+	}
+}

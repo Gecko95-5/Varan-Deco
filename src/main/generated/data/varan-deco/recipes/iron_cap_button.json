@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "varan-deco:iron_cap_planks"
+    }
+  ],
+  "result": {
+    "item": "varan-deco:iron_cap_button"
+  }
+}

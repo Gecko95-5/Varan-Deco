@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pastel_blocks",
+  "key": {
+    "#": {
+      "item": "varan-deco:shaded_red_block"
+    },
+    "X": {
+      "item": "varan-deco:passtol"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "varan-deco:red_block"
+  },
+  "show_notification": true
+}
