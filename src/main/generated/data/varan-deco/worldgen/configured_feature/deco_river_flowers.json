@@ -6,39 +6,32 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:dual_noise_provider",
-            "noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -3
-            },
-            "scale": 0.005,
-            "seed": 2345,
-            "slow_noise": {
-              "amplitudes": [
-                2.0
-              ],
-              "firstOctave": -20
-            },
-            "slow_scale": 0.5,
-            "states": [
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
               {
-                "Name": "varan-deco:pink_orchid"
+                "data": {
+                  "Name": "varan-deco:pink_orchid"
+                },
+                "weight": 3
               },
               {
-                "Name": "varan-deco:white_orchid"
+                "data": {
+                  "Name": "varan-deco:salmon_poppy"
+                },
+                "weight": 2
               },
               {
-                "Name": "varan-deco:salmon_poppy"
+                "data": {
+                  "Name": "varan-deco:lavender"
+                },
+                "weight": 1
               },
               {
-                "Name": "varan-deco:lavender"
+                "data": {
+                  "Name": "varan-deco:white_orchid"
+                },
+                "weight": 3
               }
-            ],
-            "variety": [
-              1,
-              3
             ]
           }
         }

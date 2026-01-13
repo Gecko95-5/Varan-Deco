@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:birch_bookshelf_stairs",
+    "varan-deco:spruce_bookshelf_stairs",
+    "varan-deco:jungle_bookshelf_stairs",
+    "varan-deco:acacia_bookshelf_stairs",
+    "varan-deco:dark_oak_bookshelf_stairs",
+    "varan-deco:mangrove_bookshelf_stairs",
+    "varan-deco:cactus_bookshelf_stairs",
+    "varan-deco:oak_bookshelf_stairs",
+    "varan-deco:bamboo_bookshelf_stairs",
+    "varan-deco:cherry_bookshelf_stairs",
+    "varan-deco:mushroom_bookshelf_stairs"
+  ]
+}

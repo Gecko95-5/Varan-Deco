@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "#": {
+      "item": "minecraft:acacia_planks"
+    },
+    "-": {
+      "item": "minecraft:acacia_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "---"
+  ],
+  "result": {
+    "item": "varan-deco:acacia_raft"
+  }
+}

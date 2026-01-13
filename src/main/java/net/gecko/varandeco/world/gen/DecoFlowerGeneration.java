@@ -10,8 +10,12 @@ public class DecoFlowerGeneration {
     public static void generateFlowers(){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_FLOWER_FOREST_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_TULIPS_FOREST_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.MEADOW),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_MEADOW_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.MEADOW),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_TULIPS_MEADOW_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PLAINS_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SUNFLOWER_PLAINS),

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pallet_doors",
+  "key": {
+    "#": {
+      "item": "varan-deco:wooden_slab"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "varan-deco:wooden_pallet_door"
+  }
+}

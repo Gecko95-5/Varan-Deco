@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/andesite_bricks",
+    "side": "varan-deco:block/andesite_bricks",
+    "top": "varan-deco:block/andesite_bricks"
+  }
+}

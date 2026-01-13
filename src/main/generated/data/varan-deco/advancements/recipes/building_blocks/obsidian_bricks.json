@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_obsidian": {
+    "has_sanded_obsidian": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:obsidian"
+              "varan-deco:sanded_obsidian"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_obsidian"
+      "has_sanded_obsidian"
     ]
   ],
   "rewards": {

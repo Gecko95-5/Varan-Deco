@@ -6,39 +6,32 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:dual_noise_provider",
-            "noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -3
-            },
-            "scale": 0.005,
-            "seed": 2345,
-            "slow_noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -10
-            },
-            "slow_scale": 0.5,
-            "states": [
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
               {
-                "Name": "varan-deco:blue_hibiscus"
+                "data": {
+                  "Name": "varan-deco:blue_hibiscus"
+                },
+                "weight": 2
               },
               {
-                "Name": "varan-deco:michaelmas_daisy"
+                "data": {
+                  "Name": "varan-deco:bromeliad"
+                },
+                "weight": 2
               },
               {
-                "Name": "varan-deco:salmon_poppy"
+                "data": {
+                  "Name": "varan-deco:salmon_poppy"
+                },
+                "weight": 1
               },
               {
-                "Name": "varan-deco:bromeliad"
+                "data": {
+                  "Name": "varan-deco:michaelmas_daisy"
+                },
+                "weight": 1
               }
-            ],
-            "variety": [
-              1,
-              3
             ]
           }
         }

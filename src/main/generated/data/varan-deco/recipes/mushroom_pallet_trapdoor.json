@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pallet_trapdoors",
+  "key": {
+    "#": {
+      "item": "varan-deco:mushroom_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "varan-deco:mushroom_pallet_trapdoor"
+  }
+}

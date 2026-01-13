@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "varan-deco:block/iron_cap_planks",
+    "side": "varan-deco:block/iron_cap_bookshelf"
+  }
+}

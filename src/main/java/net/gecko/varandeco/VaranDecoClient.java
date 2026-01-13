@@ -81,16 +81,30 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CACTUS_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CACTUS_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MUSHROOM_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MUSHROOM_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WOODEN_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WOODEN_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WOODEN_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WARPED_WART_PLANT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_CAP_TRAPDOOR, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BLUE_HIBISCUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BLUE_HIBISCUS, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BROMELIAD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BROMELIAD, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BUTTERCUP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BUTTERCUP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.NIGHTSHADE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_NIGHTSHADE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ENDERSHADE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ENDERSHADE, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_CAP_MUSHROOM, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_IRON_CAP_MUSHROOM, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BIRCH_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SPRUCE_LADDER, RenderLayer.getCutout());
@@ -101,12 +115,18 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CRIMSON_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WARPED_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CACTUS_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MUSHROOM_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WOODEN_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BAMBOO_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CHERRY_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_CAP_LADDER, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HEAVY_IRON_BARS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.LIGHT_IRON_BARS, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HEAVY_GOLD_BARS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLD_BARS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.LIGHT_GOLD_BARS, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HEAVY_COPPER_BARS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_HEAVY_COPPER_BARS, RenderLayer.getCutout());
@@ -239,6 +259,7 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEEPSLATE_STONECUTTER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BLACKSTONE_STONECUTTER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.END_STONE_STONECUTTER, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ANCIENT_ROSE_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ANCIENT_ROSE, RenderLayer.getCutout());
@@ -251,6 +272,8 @@ public class VaranDecoClient implements ClientModInitializer {
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_SIGN_TEXTURE));
 
@@ -274,6 +297,10 @@ public class VaranDecoClient implements ClientModInitializer {
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.STRIPPED_CRIMSON_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.STRIPPED_WARPED_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.STRIPPED_CACTUS_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_STEM_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.STRIPPED_WOODEN_SIGN_TEXTURE));
 
@@ -302,8 +329,14 @@ public class VaranDecoClient implements ClientModInitializer {
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_MOSAIC_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_MOSAIC_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_MOSAIC_SIGN_TEXTURE));
 
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_HANGING_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_HANGING_SIGN_TEXTURE));
 
@@ -329,6 +362,8 @@ public class VaranDecoClient implements ClientModInitializer {
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WARPED_PLANKS_HANGING_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_PLANKS_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_PLANKS_HANGING_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_PLANKS_HANGING_SIGN_TEXTURE));
 
@@ -357,12 +392,33 @@ public class VaranDecoClient implements ClientModInitializer {
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_MOSAIC_HANGING_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
+                (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.MUSHROOM_MOSAIC_HANGING_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.WOODEN_MOSAIC_HANGING_SIGN_TEXTURE));
 
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_BOAT_ID,false);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.MUSHROOM_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CRIMSON_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WARPED_BOAT_ID,false);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.BAMBOO_BOAT_ID,false);
+
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.OAK_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.SPRUCE_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.BIRCH_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.JUNGLE_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.ACACIA_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.DARK_OAK_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.MANGROVE_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.CHERRY_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.CRIMSON_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.WARPED_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.MUSHROOM_RAFT_ID,true);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_RAFT_ID,true);
+
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.IRON_CAP_BOAT_ID,false);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.IRON_CAP_RAFT_ID,true);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
                         world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_note_blocks"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:bamboo_note_block"
+  }
+}

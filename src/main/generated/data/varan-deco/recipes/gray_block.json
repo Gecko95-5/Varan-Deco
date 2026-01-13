@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "gray_block",
   "key": {
     "#": {
       "item": "minecraft:gray_dye"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "item": "varan-deco:gray_block"

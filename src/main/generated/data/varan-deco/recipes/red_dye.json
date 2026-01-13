@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "red_dye",
   "ingredients": [
     {
       "item": "varan-deco:red_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:red_dye"
   }
 }

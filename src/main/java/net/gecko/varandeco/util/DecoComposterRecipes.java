@@ -41,5 +41,10 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ANCIENT_ROSE,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BROMELIAD,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BLUE_HIBISCUS,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BUTTERCUP,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.NIGHTSHADE,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ENDERSHADE,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM, 0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK, 0.85F);
     }
 }

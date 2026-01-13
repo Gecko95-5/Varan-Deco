@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass": {
+    "has_hardened_tinted_glass": {
       "conditions": {
         "items": [
           {
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:hardened_tinted_glass_pane"
+        "recipe": "minecraft:hardened_tinted_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_glass"
+      "has_hardened_tinted_glass"
     ]
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:hardened_tinted_glass_pane"
+      "minecraft:hardened_tinted_glass_pane"
     ]
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/stripped_dark_oak_temp",
+    "side": "varan-deco:block/stripped_dark_oak_temp",
+    "top": "varan-deco:block/stripped_dark_oak_temp"
+  }
+}

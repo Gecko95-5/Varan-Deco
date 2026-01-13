@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:birch_wood_stairs",
+    "varan-deco:spruce_wood_stairs",
+    "varan-deco:jungle_wood_stairs",
+    "varan-deco:acacia_wood_stairs",
+    "varan-deco:dark_oak_wood_stairs",
+    "varan-deco:mangrove_wood_stairs",
+    "varan-deco:oak_wood_stairs",
+    "varan-deco:wooden_wood_stairs"
+  ]
+}

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:cactus_plank_pressure_plate"
+        "recipe": "minecraft:cactus_plank_pressure_plate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:cactus_plank_pressure_plate"
+      "minecraft:cactus_plank_pressure_plate"
     ]
   }
 }

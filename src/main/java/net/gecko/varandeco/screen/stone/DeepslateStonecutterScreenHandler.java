@@ -1,6 +1,7 @@
 package net.gecko.varandeco.screen.stone;
 
 import com.google.common.collect.Lists;
+import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -119,7 +120,7 @@ public class DeepslateStonecutterScreenHandler extends ScreenHandler {
 
 	@Override
 	public boolean canUse(PlayerEntity player) {
-		return canUse(this.context, player, Blocks.STONECUTTER);
+		return canUse(this.context, player, DecoBlocks.DEEPSLATE_STONECUTTER);
 	}
 
 	@Override

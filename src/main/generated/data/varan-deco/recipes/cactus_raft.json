@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "#": {
+      "item": "varan-deco:cactus_planks"
+    },
+    "-": {
+      "item": "varan-deco:cactus_plank_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "---"
+  ],
+  "result": {
+    "item": "varan-deco:cactus_raft"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "varan-deco:block/mushroom_planks",
+    "east": "varan-deco:block/mushroom_crafting_table_side",
+    "north": "varan-deco:block/mushroom_crafting_table_front",
+    "particle": "varan-deco:block/mushroom_crafting_table_front",
+    "south": "varan-deco:block/mushroom_crafting_table_side",
+    "up": "varan-deco:block/mushroom_crafting_table_top",
+    "west": "varan-deco:block/mushroom_crafting_table_front"
+  }
+}
