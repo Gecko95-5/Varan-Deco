@@ -26,6 +26,8 @@
   "item.varan-deco.warped_chest_boat": "Warped Boat with Chest",
   "item.varan-deco.bamboo_boat": "Bamboo Boat",
   "item.varan-deco.bamboo_chest_boat": "Bamboo Boat with Chest",
+  "item.varan-deco.iron_cap_boat": "Iron Cap Boat",
+  "item.varan-deco.iron_cap_chest_boat": "Iron Cap Boat with Chest",
 
   "item.varan-deco.oak_raft": "Oak Raft",
   "item.varan-deco.oak_chest_raft": "Oak Raft with Chest",
@@ -51,6 +53,8 @@
   "item.varan-deco.cactus_chest_raft": "Cactus Raft with Chest",
   "item.varan-deco.mushroom_raft": "Mushroom Raft",
   "item.varan-deco.mushroom_chest_raft": "Mushroom Raft with Chest",
+  "item.varan-deco.iron_cap_raft": "Iron Cap Raft",
+  "item.varan-deco.iron_cap_chest_raft": "Iron Cap Raft with Chest",
   "item.varan-deco.wooden_raft": "Wooden Raft",
   "item.varan-deco.wooden_chest_raft": "Wooden Raft with Chest",
 
@@ -66,6 +70,7 @@
   "item.varan-deco.stripped_warped_sign": "Stripped Warped Sign",
   "item.varan-deco.stripped_cactus_sign": "Stripped Cactus Sign",
   "item.varan-deco.mushroom_stem_sign": "Mushroom Stem Sign",
+  "item.varan-deco.stripped_iron_cap_sign": "Stripped Iron Cap Sign",
   "item.varan-deco.stripped_wooden_sign": "Stripped Wooden Sign",
 
   "item.varan-deco.oak_mosaic_sign": "Oak Mosaic Sign",
@@ -81,10 +86,12 @@
   "item.varan-deco.warped_mosaic_sign": "Warped Mosaic Sign",
   "item.varan-deco.cactus_mosaic_sign": "Cactus Mosaic Sign",
   "item.varan-deco.mushroom_mosaic_sign": "Mushroom Mosaic Sign",
+  "item.varan-deco.iron_cap_mosaic_sign": "Iron Cap Mosaic Sign",
   "item.varan-deco.wooden_mosaic_sign": "Wooden Mosaic Sign",
 
   "item.varan-deco.cactus_hanging_sign": "Stripped Cactus Hanging Sign",
   "item.varan-deco.mushroom_hanging_sign": "Mushroom Stem Hanging Sign",
+  "item.varan-deco.iron_cap_hanging_sign": "Stripped Iron Cap Hanging Sign",
   "item.varan-deco.wooden_hanging_sign": "Stripped Wooden Hanging Sign",
 
   "item.varan-deco.oak_mosaic_hanging_sign": "Oak Mosaic Hanging Sign",
@@ -100,6 +107,7 @@
   "item.varan-deco.warped_mosaic_hanging_sign": "Warped Mosaic Hanging Sign",
   "item.varan-deco.cactus_mosaic_hanging_sign": "Cactus Mosaic Hanging Sign",
   "item.varan-deco.mushroom_mosaic_hanging_sign": "Mushroom Mosaic Hanging Sign",
+  "item.varan-deco.iron_cap_mosaic_hanging_sign": "Iron Cap Mosaic Hanging Sign",
   "item.varan-deco.wooden_mosaic_hanging_sign": "Wooden Mosaic Hanging Sign",
 
   "item.varan-deco.oak_planks_hanging_sign": "Oak Hanging Sign",
@@ -114,6 +122,7 @@
   "item.varan-deco.warped_planks_hanging_sign": "Warped Hanging Sign",
   "item.varan-deco.cactus_planks_hanging_sign": "Cactus Hanging Sign",
   "item.varan-deco.mushroom_planks_hanging_sign": "Mushroom Hanging Sign",
+  "item.varan-deco.iron_cap_planks_hanging_sign": "Iron Cap Hanging Sign",
   "item.varan-deco.wooden_planks_hanging_sign": "Wooden Hanging Sign",
 
   "item.varan-deco.passtol": "Passtol",
@@ -463,6 +472,7 @@
   "block.varan-deco.warped_crafting_table": "Warped Crafting Table",
   "block.varan-deco.cactus_crafting_table": "Cactus Crafting Table",
   "block.varan-deco.mushroom_crafting_table": "Mushroom Crafting Table",
+  "block.varan-deco.iron_cap_crafting_table": "Iron Cap Crafting Table",
 
   "block.varan-deco.oak_barrel": "Oak Barrel",
   "block.varan-deco.spruce_barrel": "Spruce Barrel",
@@ -477,6 +487,7 @@
   "block.varan-deco.warped_barrel": "Warped Barrel",
   "block.varan-deco.cactus_barrel": "Cactus Barrel",
   "block.varan-deco.mushroom_barrel": "Mushroom Barrel",
+  "block.varan-deco.iron_cap_barrel": "Iron Cap Barrel",
 
   "block.varan-deco.spruce_ladder": "Spruce Ladder",
   "block.varan-deco.birch_ladder": "Birch Ladder",
@@ -491,6 +502,7 @@
   "block.varan-deco.cherry_ladder": "Cherry Ladder",
   "block.varan-deco.bamboo_ladder": "Bamboo Ladder",
   "block.varan-deco.mushroom_ladder": "Mushroom Ladder",
+  "block.varan-deco.iron_cap_ladder": "Iron Cap Ladder",
 
   "block.varan-deco.oak_smithing_table": "Oak Smithing Table",
   "block.varan-deco.spruce_smithing_table": "Spruce Smithing Table",
@@ -505,6 +517,7 @@
   "block.varan-deco.cherry_smithing_table": "Cherry Smithing Table",
   "block.varan-deco.bamboo_smithing_table": "Bamboo Smithing Table",
   "block.varan-deco.mushroom_smithing_table": "Mushroom Smithing Table",
+  "block.varan-deco.iron_cap_smithing_table": "Iron Cap Smithing Table",
 
   "block.varan-deco.oak_cartography_table": "Oak Cartography Table",
   "block.varan-deco.birch_cartography_table": "Birch Cartography Table",
@@ -519,6 +532,7 @@
   "block.varan-deco.mushroom_cartography_table": "Mushroom Cartography Table",
   "block.varan-deco.cherry_cartography_table": "Cherry Cartography Table",
   "block.varan-deco.bamboo_cartography_table": "Bamboo Cartography Table",
+  "block.varan-deco.iron_cap_cartography_table": "Iron Cap Cartography Table",
 
   "block.varan-deco.spruce_bookshelf": "Spruce Bookshelf",
   "block.varan-deco.birch_bookshelf": "Birch Bookshelf",
@@ -596,6 +610,8 @@
   "block.varan-deco.wall_stripped_cactus_sign": "Stripped Cactus Wall Sign",
   "block.varan-deco.standing_mushroom_stem_sign": "Mushroom Stem Sign",
   "block.varan-deco.wall_mushroom_stem_sign": "Mushroom Stem Wall Sign",
+  "block.varan-deco.standing_stripped_iron_cap_sign": "Stripped Iron Cap Sign",
+  "block.varan-deco.wall_stripped_iron_cap_sign": "Stripped Iron Cap Wall Sign",
   "block.varan-deco.standing_stripped_wooden_sign": "Stripped Wooden Sign",
   "block.varan-deco.wall_stripped_wooden_sign": "Stripped Wooden Wall Sign",
 
@@ -625,6 +641,8 @@
   "block.varan-deco.wall_cactus_mosaic_sign": "Cactus Mosaic Wall Sign",
   "block.varan-deco.standing_mushroom_mosaic_sign": "Mushroom Mosaic Sign",
   "block.varan-deco.wall_mushroom_mosaic_sign": "Mushroom Mosaic Wall Sign",
+  "block.varan-deco.standing_iron_cap_mosaic_sign": "Iron Cap Mosaic Sign",
+  "block.varan-deco.wall_iron_cap_mosaic_sign": "Iron Cap Mosaic Wall Sign",
   "block.varan-deco.standing_wooden_mosaic_sign": "Wooden Mosaic Sign",
   "block.varan-deco.wall_wooden_mosaic_sign": "Wooden Mosaic Wall Sign",
 
@@ -632,6 +650,8 @@
   "block.varan-deco.wall_hanging_cactus_sign": "Stripped Cactus Wall Hanging Sign",
   "block.varan-deco.hanging_mushroom_sign": "Mushroom Stem Hanging Sign",
   "block.varan-deco.wall_hanging_mushroom_sign": "Mushroom Stem Wall Hanging Sign",
+  "block.varan-deco.hanging_iron_cap_sign": "Stripped Iron Cap Hanging Sign",
+  "block.varan-deco.wall_hanging_iron_cap_sign": "Stripped Iron Cap Wall Hanging Sign",
   "block.varan-deco.hanging_wooden_sign": "Stripped Wooden Hanging Sign",
   "block.varan-deco.wall_hanging_wooden_sign": "Stripped Wooden Wall Hanging Sign",
 
@@ -648,6 +668,7 @@
   "block.varan-deco.hanging_warped_mosaic_sign": "Warped Mosaic Hanging Sign",
   "block.varan-deco.hanging_cactus_mosaic_sign": "Cactus Mosaic Hanging Sign",
   "block.varan-deco.hanging_mushroom_mosaic_sign": "Mushroom Mosaic Hanging Sign",
+  "block.varan-deco.hanging_iron_cap_mosaic_sign": "Iron Cap Mosaic Hanging Sign",
   "block.varan-deco.hanging_wooden_mosaic_sign": "Wooden Mosaic Hanging Sign",
 
   "block.varan-deco.wall_hanging_oak_mosaic_sign": "Oak Mosaic Wall Hanging Sign",
@@ -663,6 +684,7 @@
   "block.varan-deco.wall_hanging_warped_mosaic_sign": "Warped Mosaic Wall Hanging Sign",
   "block.varan-deco.wall_hanging_cactus_mosaic_sign": "Cactus Mosaic Wall Hanging Sign",
   "block.varan-deco.wall_hanging_mushroom_mosaic_sign": "Mushroom Mosaic Wall Hanging Sign",
+  "block.varan-deco.wall_hanging_iron_cap_mosaic_sign": "Iron Cap Mosaic Wall Hanging Sign",
   "block.varan-deco.wall_hanging_wooden_mosaic_sign": "Wooden Mosaic Wall Hanging Sign",
 
   "block.varan-deco.hanging_oak_planks_sign": "Oak Hanging Sign",
@@ -677,6 +699,7 @@
   "block.varan-deco.hanging_warped_planks_sign": "Warped Hanging Sign",
   "block.varan-deco.hanging_cactus_planks_sign": "Cactus Hanging Sign",
   "block.varan-deco.hanging_mushroom_planks_sign": "Mushroom Hanging Sign",
+  "block.varan-deco.hanging_iron_cap_planks_sign": "Iron Cap Hanging Sign",
   "block.varan-deco.hanging_wooden_planks_sign": "Wooden Hanging Sign",
 
   "block.varan-deco.wall_hanging_oak_planks_sign": "Oak Wall Hanging Sign",
@@ -691,6 +714,7 @@
   "block.varan-deco.wall_hanging_warped_planks_sign": "Warped Wall Hanging Sign",
   "block.varan-deco.wall_hanging_cactus_planks_sign": "Cactus Wall Hanging Sign",
   "block.varan-deco.wall_hanging_mushroom_planks_sign": "Mushroom Wall Hanging Sign",
+  "block.varan-deco.wall_hanging_iron_cap_planks_sign": "Iron Cap Wall Hanging Sign",
   "block.varan-deco.wall_hanging_wooden_planks_sign": "Wooden Wall Hanging Sign",
 
   "block.varan-deco.cactus_planks": "Cactus Planks",
@@ -1879,6 +1903,17 @@
   "block.varan-deco.iron_cap_mosaic": "Iron Cap Mosaic",
   "block.varan-deco.iron_cap_mosaic_stairs": "Iron Cap Mosaic Stairs",
   "block.varan-deco.iron_cap_mosaic_slab": "Iron Cap Mosaic Slab",
+
+  "block.varan-deco.iron_cap_pallet_door": "Iron Cap Pallet Door",
+  "block.varan-deco.iron_cap_pallet_trapdoor": "Iron Cap Pallet Trapdoor",
+
+  "block.varan-deco.iron_cap_bookshelf": "Iron Cap Bookshelf",
+  "block.varan-deco.iron_cap_bookshelf_stairs": "Iron Cap Bookshelf Stairs",
+  "block.varan-deco.iron_cap_bookshelf_slab": "Iron Cap Bookshelf Slab",
+  "block.varan-deco.iron_cap_note_block": "Iron Cap Note Block",
+
+  "block.varan-deco.standing_iron_cap_sign": "Iron Cap Sign",
+  "block.varan-deco.wall_iron_cap_sign": "Iron Cap Wall Sign",
 
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",

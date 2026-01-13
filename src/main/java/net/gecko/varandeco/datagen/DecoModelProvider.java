@@ -441,6 +441,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 DecoBlocks.WALL_HANGING_CACTUS_SIGN);
         blockStateModelGenerator.registerHangingSign(DecoBlocks.MUSHROOM_STEM_TEMP, DecoBlocks.HANGING_MUSHROOM_SIGN,
                 DecoBlocks.WALL_HANGING_MUSHROOM_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE, DecoBlocks.HANGING_IRON_CAP_SIGN,
+                DecoBlocks.WALL_HANGING_IRON_CAP_SIGN);
         blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_WOODEN_LOG, DecoBlocks.HANGING_WOODEN_SIGN,
                 DecoBlocks.WALL_HANGING_WOODEN_SIGN);
 
@@ -470,6 +472,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 DecoBlocks.WALL_HANGING_MUSHROOM_PLANKS_SIGN);
         blockStateModelGenerator.registerHangingSign(DecoBlocks.WOODEN_PLANKS, DecoBlocks.HANGING_WOODEN_PLANKS_SIGN,
                 DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.IRON_CAP_PLANKS, DecoBlocks.HANGING_IRON_CAP_PLANKS_SIGN,
+                DecoBlocks.WALL_HANGING_IRON_CAP_PLANKS_SIGN);
 
         blockStateModelGenerator.registerHangingSign(DecoBlocks.OAK_MOSAIC, DecoBlocks.HANGING_OAK_MOSAIC_SIGN,
                 DecoBlocks.WALL_HANGING_OAK_MOSAIC_SIGN);
@@ -499,6 +503,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 DecoBlocks.WALL_HANGING_MUSHROOM_MOSAIC_SIGN);
         blockStateModelGenerator.registerHangingSign(DecoBlocks.WOODEN_MOSAIC, DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN,
                 DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN);
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.IRON_CAP_MOSAIC, DecoBlocks.HANGING_IRON_CAP_MOSAIC_SIGN,
+                DecoBlocks.WALL_HANGING_IRON_CAP_MOSAIC_SIGN);
 
         strippedoakwoodpool.family(DecoBlocks.STRIPPED_OAK_FAMILY);
         strippedsprucewoodpool.family(DecoBlocks.STRIPPED_SPRUCE_FAMILY);
@@ -513,6 +519,7 @@ public class DecoModelProvider extends FabricModelProvider {
         strippedcactuspool.family(DecoBlocks.STRIPPED_CACTUS_FAMILY);
         mushroomstempool.family(DecoBlocks.MUSHROOM_STEM_FAMILY);
         strippedwoodenwoodpool.family(DecoBlocks.STRIPPED_WOODEN_FAMILY);
+        strippedironcapstempool.family(DecoBlocks.STRIPPED_IRON_CAP_FAMILY);
 
         oakmosaicpool.family(DecoBlocks.OAK_MOSAIC_FAMILY);
         sprucemosaicpool.family(DecoBlocks.SPRUCE_MOSAIC_FAMILY);
@@ -528,6 +535,7 @@ public class DecoModelProvider extends FabricModelProvider {
         woodenmosaicpool.family(DecoBlocks.WOODEN_MOSAIC_FAMILY);
         woodenmosaicpool.family(DecoBlocks.MUSHROOM_MOSAIC_FAMILY);
         bamboomosaicpool.family(DecoBlocks.BAMBOO_MOSAIC_FAMILY);
+        ironcapmosaicpool.family(DecoBlocks.IRON_CAP_MOSAIC_FAMILY);
 
         blockStateModelGenerator.registerLantern(DecoBlocks.COPPER_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.EXPOSED_COPPER_LANTERN);
@@ -562,6 +570,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.IRON_CAP_CRAFTING_TABLE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_BOOKSHELF);
@@ -576,6 +585,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_BOOKSHELF);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.IRON_CAP_BOOKSHELF);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.WOODEN_LEAVES);
 
@@ -592,6 +602,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_SMITHING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_SMITHING_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.IRON_CAP_SMITHING_TABLE);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.OAK_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CARTOGRAPHY_TABLE);
@@ -606,6 +617,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BAMBOO_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHERRY_CARTOGRAPHY_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.IRON_CAP_CARTOGRAPHY_TABLE);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.LIGHT_GRAY_BLOCK);
@@ -686,6 +698,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CACTUS_NOTE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHERRY_NOTE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BAMBOO_NOTE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.IRON_CAP_NOTE_BLOCK);
 
         BlockStateModelGenerator.BlockTexturePool policalcpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_CALCITE);
@@ -771,6 +784,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(DecoBlocks.WOODEN_PALLET_DOOR);
         blockStateModelGenerator.registerDoor(DecoBlocks.CHERRY_PALLET_DOOR);
         blockStateModelGenerator.registerDoor(DecoBlocks.BAMBOO_PALLET_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.IRON_CAP_PALLET_DOOR);
 
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.OAK_PALLET_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.SPRUCE_PALLET_TRAPDOOR);
@@ -786,6 +800,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.WOODEN_PALLET_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.CHERRY_PALLET_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(DecoBlocks.BAMBOO_PALLET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.IRON_CAP_PALLET_TRAPDOOR);
 
        andesitepool.wall(DecoBlocks.POLISHED_ANDESITE_WALL);
        dioritepool.wall(DecoBlocks.POLISHED_DIORITE_WALL);
@@ -1278,6 +1293,7 @@ public class DecoModelProvider extends FabricModelProvider {
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
        woodenpool.family(DecoBlocks.WOODEN_FAMILY);
        mushroompool.family(DecoBlocks.MUSHROOM_FAMILY);
+       ironcappool.family(DecoBlocks.IRON_CAP_FAMILY);
 
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 
@@ -1727,5 +1743,9 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.MUSHROOM_CHEST_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WOODEN_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WOODEN_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.IRON_CAP_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.IRON_CAP_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.IRON_CAP_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.IRON_CAP_CHEST_RAFT, Models.GENERATED);
     }
 }

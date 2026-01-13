@@ -5744,10 +5744,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         0.1f, 200).criterion(hasItem(DecoBlocks.RAW_IRON_SLAB), conditionsFromItem(DecoBlocks.RAW_IRON_SLAB))
                 .offerTo(exporter, new Identifier("iron_slab_from_smelting"));
 
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(Items.RAW_IRON_BLOCK), RecipeCategory.MISC, Items.IRON_BLOCK,
-                        6.3f, 900).criterion(hasItem(Items.RAW_IRON_BLOCK), conditionsFromItem(Items.RAW_IRON_BLOCK))
-                .offerTo(exporter, new Identifier("iron_block_from_blasting"));
-
         CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(DecoBlocks.RAW_IRON_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.IRON_STAIRS,
                         0.1f, 100).criterion(hasItem(DecoBlocks.RAW_IRON_STAIRS), conditionsFromItem(DecoBlocks.RAW_IRON_STAIRS))
                 .offerTo(exporter, new Identifier("iron_stairs_from_blasting"));
@@ -6600,6 +6596,69 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(DecoBlocks.SPORE_IRON_ORE), RecipeCategory.MISC, Items.IRON_INGOT,
                         0.7f, 100).criterion(hasItem(DecoBlocks.SPORE_IRON_ORE), conditionsFromItem(DecoBlocks.SPORE_IRON_ORE))
                 .offerTo(exporter, new Identifier("iron_ingot_from_blasting_spore_ore"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.IRON_CAP_PALLET_DOOR,3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.IRON_CAP_SLAB)
+                .group("pallet_doors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.IRON_CAP_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.IRON_CAP_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.IRON_CAP_PALLET_DOOR)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.IRON_CAP_PALLET_TRAPDOOR,2)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.IRON_CAP_SLAB)
+                .group("pallet_trapdoors")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.IRON_CAP_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.IRON_CAP_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.IRON_CAP_PALLET_TRAPDOOR)));
+
+        offerCraftingTableVariantRecipe(exporter, DecoBlocks.IRON_CAP_CRAFTING_TABLE, DecoBlocks.IRON_CAP_PLANKS);
+        offerBarrelVariantRecipe(exporter, DecoBlocks.IRON_CAP_BARREL, DecoBlocks.IRON_CAP_PLANKS);
+        offerCartographyTableVariantRecipe(exporter, DecoBlocks.IRON_CAP_CARTOGRAPHY_TABLE, DecoBlocks.IRON_CAP_PLANKS);
+        offerSmithingTableVariantRecipe(exporter, DecoBlocks.IRON_CAP_SMITHING_TABLE, DecoBlocks.IRON_CAP_PLANKS);
+        offerLadderVariantRecipe(exporter, DecoBlocks.IRON_CAP_LADDER, DecoBlocks.IRON_CAP_SLAB);
+
+        offerNoteBlockVariantRecipe(exporter, DecoBlocks.IRON_CAP_NOTE_BLOCK, DecoBlocks.IRON_CAP_PLANKS);
+
+        offerBookshelvesVariantRecipe(exporter, DecoBlocks.IRON_CAP_BOOKSHELF, DecoBlocks.IRON_CAP_PLANKS);
+
+        createStairsRecipe(DecoBlocks.IRON_CAP_BOOKSHELF_STAIRS, Ingredient.ofItems(DecoBlocks.IRON_CAP_BOOKSHELF))
+                .criterion(hasItem(DecoBlocks.IRON_CAP_BOOKSHELF),conditionsFromItem(DecoBlocks.IRON_CAP_BOOKSHELF))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.IRON_CAP_BOOKSHELF_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.IRON_CAP_BOOKSHELF_SLAB, DecoBlocks.IRON_CAP_BOOKSHELF);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, DecoItems.IRON_CAP_RAFT)
+                .pattern("# #")
+                .pattern("---")
+                .group("boat")
+                .input('#', DecoBlocks.IRON_CAP_PLANKS)
+                .input('-', DecoBlocks.IRON_CAP_SLAB)
+                .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.IRON_CAP_RAFT)));
+        offerChestBoatRecipe(exporter, DecoItems.IRON_CAP_CHEST_RAFT, DecoItems.IRON_CAP_RAFT);
+
+        offerBoatRecipe(exporter, DecoItems.IRON_CAP_BOAT, DecoBlocks.IRON_CAP_PLANKS);
+        offerChestBoatRecipe(exporter, DecoItems.IRON_CAP_CHEST_BOAT, DecoItems.IRON_CAP_BOAT);
+
+        createSignRecipe(DecoItems.IRON_CAP_SIGN, Ingredient.ofItems(DecoBlocks.IRON_CAP_PLANKS))
+                .criterion(hasItem(DecoBlocks.IRON_CAP_PLANKS),conditionsFromItem(DecoBlocks.IRON_CAP_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.IRON_CAP_SIGN)));
+        createSignRecipe(DecoItems.STRIPPED_IRON_CAP_SIGN, Ingredient.ofItems(DecoBlocks.STRIPPED_IRON_CAP_STEM))
+                .criterion(hasItem(DecoBlocks.STRIPPED_IRON_CAP_STEM),conditionsFromItem(DecoBlocks.STRIPPED_IRON_CAP_STEM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.STRIPPED_IRON_CAP_SIGN)));
+        createSignRecipe(DecoItems.IRON_CAP_MOSAIC_SIGN, Ingredient.ofItems(DecoBlocks.IRON_CAP_MOSAIC))
+                .criterion(hasItem(DecoBlocks.IRON_CAP_MOSAIC),conditionsFromItem(DecoBlocks.IRON_CAP_MOSAIC))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoItems.IRON_CAP_MOSAIC_SIGN)));
+
+        offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_HANGING_SIGN, DecoBlocks.STRIPPED_IRON_CAP_STEM);
+
+        offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_PLANKS_HANGING_SIGN, DecoBlocks.IRON_CAP_PLANKS);
+
+        offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_MOSAIC_HANGING_SIGN, DecoBlocks.IRON_CAP_MOSAIC);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

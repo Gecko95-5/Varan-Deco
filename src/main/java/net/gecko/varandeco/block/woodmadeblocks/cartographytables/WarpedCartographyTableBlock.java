@@ -1,7 +1,7 @@
 package net.gecko.varandeco.block.woodmadeblocks.cartographytables;
 
 import net.gecko.varandeco.block.custom.NonStationBlock;
-import net.gecko.varandeco.screen.wood.WarpedCartographyTableScreenHandler;
+import net.gecko.varandeco.screen.wood.cartographytables.WarpedCartographyTableScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;

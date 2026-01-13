@@ -23,6 +23,8 @@ public class DecoBoats {
     public static final Identifier WARPED_CHEST_BOAT_ID = new Identifier(VaranDeco.MOD_ID,"warped_chest_boat");
     public static final Identifier BAMBOO_BOAT_ID = new Identifier(VaranDeco.MOD_ID,"bamboo_boat");
     public static final Identifier BAMBOO_CHEST_BOAT_ID = new Identifier(VaranDeco.MOD_ID,"bamboo_chest_boat");
+    public static final Identifier IRON_CAP_BOAT_ID = new Identifier(VaranDeco.MOD_ID,"iron_cap_boat");
+    public static final Identifier IRON_CAP_CHEST_BOAT_ID = new Identifier(VaranDeco.MOD_ID,"iron_cap_chest_boat");
 
     public static final Identifier OAK_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"oak_raft");
     public static final Identifier OAK_CHEST_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"oak_chest_raft");
@@ -50,6 +52,8 @@ public class DecoBoats {
     public static final Identifier MUSHROOM_CHEST_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"mushroom_chest_raft");
     public static final Identifier WOODEN_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"wooden_raft");
     public static final Identifier WOODEN_CHEST_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"wooden_chest_raft");
+    public static final Identifier IRON_CAP_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"iron_cap_raft");
+    public static final Identifier IRON_CAP_CHEST_RAFT_ID = new Identifier(VaranDeco.MOD_ID,"iron_cap_chest_raft");
 
     public static final RegistryKey<TerraformBoatType> CACTUS_BOAT_KEY = TerraformBoatTypeRegistry.createKey(CACTUS_BOAT_ID);
     public static final RegistryKey<TerraformBoatType> MUSHROOM_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MUSHROOM_BOAT_ID);
@@ -57,6 +61,7 @@ public class DecoBoats {
     public static final RegistryKey<TerraformBoatType> CRIMSON_BOAT_KEY = TerraformBoatTypeRegistry.createKey(CRIMSON_BOAT_ID);
     public static final RegistryKey<TerraformBoatType> WARPED_BOAT_KEY = TerraformBoatTypeRegistry.createKey(WARPED_BOAT_ID);
     public static final RegistryKey<TerraformBoatType> BAMBOO_BOAT_KEY = TerraformBoatTypeRegistry.createKey(BAMBOO_BOAT_ID);
+    public static final RegistryKey<TerraformBoatType> IRON_CAP_BOAT_KEY = TerraformBoatTypeRegistry.createKey(IRON_CAP_BOAT_ID);
 
     public static final RegistryKey<TerraformBoatType> OAK_RAFT_KEY = TerraformBoatTypeRegistry.createKey(OAK_RAFT_ID);
     public static final RegistryKey<TerraformBoatType> SPRUCE_RAFT_KEY = TerraformBoatTypeRegistry.createKey(SPRUCE_RAFT_ID);
@@ -71,6 +76,7 @@ public class DecoBoats {
     public static final RegistryKey<TerraformBoatType> CACTUS_RAFT_KEY = TerraformBoatTypeRegistry.createKey(CACTUS_RAFT_ID);
     public static final RegistryKey<TerraformBoatType> MUSHROOM_RAFT_KEY = TerraformBoatTypeRegistry.createKey(MUSHROOM_RAFT_ID);
     public static final RegistryKey<TerraformBoatType> WOODEN_RAFT_KEY = TerraformBoatTypeRegistry.createKey(WOODEN_RAFT_ID);
+    public static final RegistryKey<TerraformBoatType> IRON_CAP_RAFT_KEY = TerraformBoatTypeRegistry.createKey(IRON_CAP_RAFT_ID);
 
     public static void registerBoats(){
         TerraformBoatType cactusBoat = new TerraformBoatType.Builder()
@@ -233,5 +239,22 @@ public class DecoBoats {
                 .build();
 
         Registry.register(TerraformBoatTypeRegistry.INSTANCE, MUSHROOM_RAFT_KEY, mushroomRaft);
+
+        TerraformBoatType ironCapBoat = new TerraformBoatType.Builder()
+                .item(DecoItems.IRON_CAP_BOAT)
+                .chestItem(DecoItems.IRON_CAP_CHEST_BOAT)
+                .planks(DecoBlocks.IRON_CAP_PLANKS.asItem())
+                .build();
+
+        Registry.register(TerraformBoatTypeRegistry.INSTANCE, IRON_CAP_BOAT_KEY, ironCapBoat);
+
+        TerraformBoatType ironCapRaft = new TerraformBoatType.Builder()
+                .raft()
+                .item(DecoItems.IRON_CAP_RAFT)
+                .chestItem(DecoItems.IRON_CAP_CHEST_RAFT)
+                .planks(DecoBlocks.IRON_CAP_PLANKS.asItem())
+                .build();
+
+        Registry.register(TerraformBoatTypeRegistry.INSTANCE, IRON_CAP_RAFT_KEY, ironCapRaft);
     }
 }

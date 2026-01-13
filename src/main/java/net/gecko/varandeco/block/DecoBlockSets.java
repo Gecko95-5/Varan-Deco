@@ -62,7 +62,12 @@ public record DecoBlockSets(
 
     public static final BlockSetType CACUTS = registerBlockSets(new BlockSetType("cactus"));
     public static final BlockSetType MUSHROOM = registerBlockSets(new BlockSetType("mushroom"));
-    public static final BlockSetType IRON_CAP = registerBlockSets(new BlockSetType("iron_cap"));
+    public static final BlockSetType IRON_CAP = registerBlockSets(new BlockSetType("iron_cap", true,
+                    BlockSoundGroup.NETHER_STEM, SoundEvents.BLOCK_NETHER_WOOD_DOOR_CLOSE,
+                    SoundEvents.BLOCK_NETHER_WOOD_DOOR_OPEN, SoundEvents.BLOCK_NETHER_WOOD_TRAPDOOR_CLOSE,
+                    SoundEvents.BLOCK_NETHER_WOOD_TRAPDOOR_OPEN, SoundEvents.BLOCK_NETHER_WOOD_PRESSURE_PLATE_CLICK_OFF,
+                    SoundEvents.BLOCK_NETHER_WOOD_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_NETHER_WOOD_BUTTON_CLICK_OFF,
+                    SoundEvents.BLOCK_NETHER_WOOD_BUTTON_CLICK_ON));
     public static final BlockSetType WOODEN = registerBlockSets(new BlockSetType("wooden"));
 
     private static BlockSetType registerBlockSets(BlockSetType blockSetType) {

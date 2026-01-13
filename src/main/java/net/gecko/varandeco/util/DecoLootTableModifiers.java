@@ -1,6 +1,7 @@
 package net.gecko.varandeco.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -44,9 +45,9 @@ public class DecoLootTableModifiers {
             }
             if (DIGGING_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(0.5f))
                         .with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS))
                         .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER))
+                        .with(ItemEntry.builder(DecoBlocks.IRON_CAP_MUSHROOM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

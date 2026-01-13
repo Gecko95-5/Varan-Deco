@@ -169,29 +169,34 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Blocks.CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.CRIMSON_CRAFTING_TABLE.asItem())
                 .add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem())
+                .add(DecoBlocks.IRON_CAP_CRAFTING_TABLE.asItem())
                 .addTag(DecoTags.Items.WOODEN_CRAFTING_TABLES);
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELVES)
                 .add(DecoBlocks.CRIMSON_BOOKSHELF.asItem())
                 .add(DecoBlocks.WARPED_BOOKSHELF.asItem())
+                .add(DecoBlocks.IRON_CAP_BOOKSHELF.asItem())
                 .addTag(DecoTags.Items.WOODEN_BOOKSHELVES);
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_BARRELS)
                 .add(Blocks.BARREL.asItem())
                 .add(DecoBlocks.CRIMSON_BARREL.asItem())
                 .add(DecoBlocks.WARPED_BARREL.asItem())
+                .add(DecoBlocks.IRON_CAP_BARREL.asItem())
                 .addTag(DecoTags.Items.WOODEN_BARRELS);
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_CARTOGRAPHY_TABLES)
                 .add(Blocks.CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.CRIMSON_CARTOGRAPHY_TABLE.asItem())
                 .add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem())
+                .add(DecoBlocks.IRON_CAP_CARTOGRAPHY_TABLE.asItem())
                 .addTag(DecoTags.Items.WOODEN_CARTOGRAPHY_TABLES);
 
         getOrCreateTagBuilder(DecoTags.Items.DECO_SMITHING_TABLES)
                 .add(Blocks.SMITHING_TABLE.asItem())
                 .add(DecoBlocks.CRIMSON_SMITHING_TABLE.asItem())
                 .add(DecoBlocks.WARPED_SMITHING_TABLE.asItem())
+                .add(DecoBlocks.IRON_CAP_SMITHING_TABLE.asItem())
                 .addTag(DecoTags.Items.WOODEN_SMITHING_TABLES);
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_CRAFTING_TABLES)
@@ -218,6 +223,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.CACTUS_LADDER.asItem())
                 .add(DecoBlocks.WOODEN_LADDER.asItem())
                 .add(DecoBlocks.MUSHROOM_LADDER.asItem())
+                .add(DecoBlocks.IRON_CAP_LADDER.asItem())
                 .add(DecoBlocks.BAMBOO_LADDER.asItem())
                 .add(DecoBlocks.CHERRY_LADDER.asItem());
 
@@ -255,7 +261,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELF_STAIRS)
                 .forceAddTag(DecoTags.Items.WOODEN_BOOKSHELF_STAIRS)
                 .add(DecoBlocks.CRIMSON_BOOKSHELF_STAIRS.asItem())
-                .add(DecoBlocks.WARPED_BOOKSHELF_STAIRS.asItem());
+                .add(DecoBlocks.WARPED_BOOKSHELF_STAIRS.asItem())
+                .add(DecoBlocks.IRON_CAP_BOOKSHELF_STAIRS.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELF_STAIRS)
                 .add(DecoBlocks.BIRCH_BOOKSHELF_STAIRS.asItem())
@@ -273,7 +280,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(DecoTags.Items.DECO_BOOKSHELF_SLABS)
                 .forceAddTag(DecoTags.Items.WOODEN_BOOKSHELF_SLABS)
                 .add(DecoBlocks.CRIMSON_BOOKSHELF_SLAB.asItem())
-                .add(DecoBlocks.WARPED_BOOKSHELF_SLAB.asItem());
+                .add(DecoBlocks.WARPED_BOOKSHELF_SLAB.asItem())
+                .add(DecoBlocks.IRON_CAP_BOOKSHELF_SLAB.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WOODEN_BOOKSHELF_SLABS)
                 .add(DecoBlocks.BIRCH_BOOKSHELF_SLAB.asItem())
@@ -327,7 +335,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.WARPED_NOTE_BLOCK.asItem())
                 .add(DecoBlocks.CACTUS_NOTE_BLOCK.asItem())
                 .add(DecoBlocks.CHERRY_NOTE_BLOCK.asItem())
-                .add(DecoBlocks.BAMBOO_NOTE_BLOCK.asItem());
+                .add(DecoBlocks.BAMBOO_NOTE_BLOCK.asItem())
+                .add(DecoBlocks.IRON_CAP_NOTE_BLOCK.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.FURNACES)
                 .add(Items.FURNACE.asItem())

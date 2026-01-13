@@ -19,6 +19,9 @@ public class DecoItems {
     public static final Item MUSHROOM_SIGN = registerItem("mushroom_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_MUSHROOM_SIGN, DecoBlocks.WALL_MUSHROOM_SIGN));
+    public static final Item IRON_CAP_SIGN = registerItem("iron_cap_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_IRON_CAP_SIGN, DecoBlocks.WALL_IRON_CAP_SIGN));
     public static final Item WOODEN_SIGN = registerItem("wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
@@ -59,6 +62,9 @@ public class DecoItems {
     public static final Item MUSHROOM_STEM_SIGN = registerItem("mushroom_stem_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_MUSHROOM_STEM_SIGN, DecoBlocks.WALL_MUSHROOM_STEM_SIGN));
+    public static final Item STRIPPED_IRON_CAP_SIGN = registerItem("stripped_iron_cap_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_STRIPPED_IRON_CAP_SIGN, DecoBlocks.WALL_STRIPPED_IRON_CAP_SIGN));
     public static final Item STRIPPED_WOODEN_SIGN = registerItem("stripped_wooden_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN, DecoBlocks.WALL_STRIPPED_WOODEN_SIGN));
@@ -102,6 +108,9 @@ public class DecoItems {
     public static final Item MUSHROOM_MOSAIC_SIGN = registerItem("mushroom_mosaic_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_MUSHROOM_MOSAIC_SIGN, DecoBlocks.WALL_MUSHROOM_MOSAIC_SIGN));
+    public static final Item IRON_CAP_MOSAIC_SIGN = registerItem("iron_cap_mosaic_sign",
+            new SignItem(new Item.Settings().maxCount(16),
+                    DecoBlocks.STANDING_IRON_CAP_MOSAIC_SIGN, DecoBlocks.WALL_IRON_CAP_MOSAIC_SIGN));
     public static final Item WOODEN_MOSAIC_SIGN = registerItem("wooden_mosaic_sign",
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_WOODEN_MOSAIC_SIGN));
@@ -111,6 +120,9 @@ public class DecoItems {
                     new Item.Settings().maxCount(16)));
     public static final Item MUSHROOM_HANGING_SIGN = registerItem("mushroom_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_MUSHROOM_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item IRON_CAP_HANGING_SIGN = registerItem("iron_cap_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_IRON_CAP_SIGN, DecoBlocks.WALL_HANGING_IRON_CAP_SIGN,
                     new Item.Settings().maxCount(16)));
     public static final Item WOODEN_HANGING_SIGN = registerItem("wooden_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_WOODEN_SIGN, DecoBlocks.WALL_HANGING_WOODEN_SIGN,
@@ -155,6 +167,9 @@ public class DecoItems {
     public static final Item MUSHROOM_MOSAIC_HANGING_SIGN = registerItem("mushroom_mosaic_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_MUSHROOM_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_MOSAIC_SIGN,
                     new Item.Settings().maxCount(16)));
+    public static final Item IRON_CAP_MOSAIC_HANGING_SIGN = registerItem("iron_cap_mosaic_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_IRON_CAP_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_IRON_CAP_MOSAIC_SIGN,
+                    new Item.Settings().maxCount(16)));
     public static final Item WOODEN_MOSAIC_HANGING_SIGN = registerItem("wooden_mosaic_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN,
                     new Item.Settings().maxCount(16)));
@@ -194,6 +209,9 @@ public class DecoItems {
                     new Item.Settings().maxCount(16)));
     public static final Item MUSHROOM_PLANKS_HANGING_SIGN = registerItem("mushroom_planks_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_MUSHROOM_PLANKS_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_PLANKS_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item IRON_CAP_PLANKS_HANGING_SIGN = registerItem("iron_cap_planks_hanging_sign",
+            new HangingSignItem(DecoBlocks.HANGING_IRON_CAP_PLANKS_SIGN, DecoBlocks.WALL_HANGING_IRON_CAP_PLANKS_SIGN,
                     new Item.Settings().maxCount(16)));
     public static final Item WOODEN_PLANKS_HANGING_SIGN = registerItem("wooden_planks_hanging_sign",
             new HangingSignItem(DecoBlocks.HANGING_WOODEN_PLANKS_SIGN, DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN,
@@ -332,6 +350,16 @@ public class DecoItems {
             DecoBoats.WOODEN_RAFT_KEY, false);
     public static final Item WOODEN_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_CHEST_RAFT_ID,
             DecoBoats.WOODEN_RAFT_KEY, true);
+
+    public static final Item IRON_CAP_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_BOAT_ID,
+            DecoBoats.IRON_CAP_BOAT_KEY, false);
+    public static final Item IRON_CAP_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_CHEST_BOAT_ID,
+            DecoBoats.IRON_CAP_BOAT_KEY, true);
+
+    public static final Item IRON_CAP_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_RAFT_ID,
+            DecoBoats.IRON_CAP_RAFT_KEY, false);
+    public static final Item IRON_CAP_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_CHEST_RAFT_ID,
+            DecoBoats.IRON_CAP_RAFT_KEY, true);
 
     public static final Item TALL_SEAGRASS = registerItem("tall_seagrass",
             new TallBlockItem(Blocks.TALL_SEAGRASS,new Item.Settings()));

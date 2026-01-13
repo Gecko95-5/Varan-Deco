@@ -119,6 +119,7 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WOODEN_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BAMBOO_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CHERRY_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_CAP_LADDER, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HEAVY_IRON_BARS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.LIGHT_IRON_BARS, RenderLayer.getCutout());
@@ -415,6 +416,9 @@ public class VaranDecoClient implements ClientModInitializer {
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_RAFT_ID,true);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.MUSHROOM_RAFT_ID,true);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_RAFT_ID,true);
+
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.IRON_CAP_BOAT_ID,false);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.IRON_CAP_RAFT_ID,true);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
                         world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),

@@ -176,7 +176,9 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.IRON_CAP_FENCE.asItem());
                         entries.add(DecoBlocks.IRON_CAP_FENCE_GATE.asItem());
                         entries.add(DecoBlocks.IRON_CAP_DOOR.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_PALLET_DOOR.asItem());
                         entries.add(DecoBlocks.IRON_CAP_TRAPDOOR.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_PALLET_TRAPDOOR.asItem());
                         entries.add(DecoBlocks.IRON_CAP_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.IRON_CAP_BUTTON.asItem());
                         entries.add(DecoBlocks.WOODEN_LOG.asItem());
@@ -1071,6 +1073,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.MUSHROOM_CRAFTING_TABLE.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_CRAFTING_TABLE.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_STONECUTTER.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_STONECUTTER.asItem());
                         entries.add(DecoBlocks.END_STONE_STONECUTTER.asItem());
@@ -1087,6 +1090,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.MUSHROOM_CARTOGRAPHY_TABLE.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_CARTOGRAPHY_TABLE.asItem());
                         entries.add(DecoBlocks.OAK_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.SPRUCE_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.BIRCH_SMITHING_TABLE.asItem());
@@ -1100,6 +1104,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.CACTUS_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.MUSHROOM_SMITHING_TABLE.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_SMITHING_TABLE.asItem());
                         entries.add(DecoBlocks.DEEPSLATE_GRINDSTONE.asItem());
                         entries.add(DecoBlocks.BLACKSTONE_GRINDSTONE.asItem());
                         entries.add(DecoBlocks.END_STONE_GRINDSTONE.asItem());
@@ -1166,6 +1171,12 @@ public class DecoItemGroup {
                         entries.add(DecoItems.MUSHROOM_HANGING_SIGN);
                         entries.add(DecoItems.MUSHROOM_PLANKS_HANGING_SIGN);
                         entries.add(DecoItems.MUSHROOM_MOSAIC_HANGING_SIGN);
+                        entries.add(DecoItems.IRON_CAP_SIGN);
+                        entries.add(DecoItems.STRIPPED_IRON_CAP_SIGN);
+                        entries.add(DecoItems.IRON_CAP_MOSAIC_SIGN);
+                        entries.add(DecoItems.IRON_CAP_HANGING_SIGN);
+                        entries.add(DecoItems.IRON_CAP_PLANKS_HANGING_SIGN);
+                        entries.add(DecoItems.IRON_CAP_MOSAIC_HANGING_SIGN);
                         entries.add(DecoItems.WOODEN_SIGN);
                         entries.add(DecoItems.STRIPPED_WOODEN_SIGN);
                         entries.add(DecoItems.WOODEN_MOSAIC_SIGN);
@@ -1184,6 +1195,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_LADDER.asItem());
                         entries.add(DecoBlocks.CACTUS_LADDER.asItem());
                         entries.add(DecoBlocks.MUSHROOM_LADDER.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_LADDER.asItem());
                         entries.add(DecoBlocks.WOODEN_LADDER.asItem());
                         entries.add(DecoBlocks.WOODEN_BOOKSHELF_STAIRS.asItem());
                         entries.add(DecoBlocks.WOODEN_BOOKSHELF_SLAB.asItem());
@@ -1226,6 +1238,9 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.MUSHROOM_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.MUSHROOM_BOOKSHELF_STAIRS.asItem());
                         entries.add(DecoBlocks.MUSHROOM_BOOKSHELF_SLAB.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_BOOKSHELF_STAIRS.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_BOOKSHELF_SLAB.asItem());
                         entries.add(DecoBlocks.OAK_BARREL.asItem());
                         entries.add(DecoBlocks.SPRUCE_BARREL.asItem());
                         entries.add(DecoBlocks.BIRCH_BARREL.asItem());
@@ -1239,6 +1254,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_BARREL.asItem());
                         entries.add(DecoBlocks.CACTUS_BARREL.asItem());
                         entries.add(DecoBlocks.MUSHROOM_BARREL.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_BARREL.asItem());
                         entries.add(DecoBlocks.INFESTED_MOSSY_COBBLESTONE.asItem());
                         entries.add(DecoBlocks.INFESTED_POLISHED_STONE.asItem());
                         entries.add(DecoBlocks.INFESTED_STONE_TILES.asItem());
@@ -1279,6 +1295,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WARPED_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.CACTUS_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.MUSHROOM_NOTE_BLOCK.asItem());
+                        entries.add(DecoBlocks.IRON_CAP_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE.asItem());
                         entries.add(DecoItems.OAK_RAFT);
                         entries.add(DecoItems.OAK_CHEST_RAFT);
@@ -1314,6 +1331,10 @@ public class DecoItemGroup {
                         entries.add(DecoItems.MUSHROOM_RAFT);
                         entries.add(DecoItems.MUSHROOM_CHEST_BOAT);
                         entries.add(DecoItems.MUSHROOM_CHEST_RAFT);
+                        entries.add(DecoItems.IRON_CAP_BOAT);
+                        entries.add(DecoItems.IRON_CAP_RAFT);
+                        entries.add(DecoItems.IRON_CAP_CHEST_BOAT);
+                        entries.add(DecoItems.IRON_CAP_CHEST_RAFT);
                         entries.add(DecoItems.WOODEN_BOAT);
                         entries.add(DecoItems.WOODEN_RAFT);
                         entries.add(DecoItems.WOODEN_CHEST_BOAT);

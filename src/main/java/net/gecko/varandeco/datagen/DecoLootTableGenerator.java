@@ -15,14 +15,13 @@ import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.LimitCountLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.operator.BoundedIntUnaryOperator;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
-import net.minecraft.predicate.StatePredicate;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
     public DecoLootTableGenerator(FabricDataOutput dataOutput) {
@@ -1567,6 +1566,29 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
                         ItemEntry.builder(Items.IRON_NUGGET)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 3.0F)))
                                 .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE)))));
+
+        addDrop(DecoBlocks.IRON_CAP_CRAFTING_TABLE);
+        addDrop(DecoBlocks.IRON_CAP_BARREL);
+        addDrop(DecoBlocks.IRON_CAP_LADDER);
+        addDrop(DecoBlocks.IRON_CAP_SMITHING_TABLE);
+        addDrop(DecoBlocks.IRON_CAP_CARTOGRAPHY_TABLE);
+        addDrop(DecoBlocks.IRON_CAP_NOTE_BLOCK);
+
+        addDrop(DecoBlocks.IRON_CAP_BOOKSHELF);
+
+        addDrop(DecoBlocks.IRON_CAP_BOOKSHELF_STAIRS);
+        addDrop(DecoBlocks.IRON_CAP_BOOKSHELF_SLAB, slabDrops(DecoBlocks.IRON_CAP_BOOKSHELF_SLAB));
+
+        addDrop(DecoBlocks.IRON_CAP_PALLET_DOOR, doorDrops(DecoBlocks.IRON_CAP_PALLET_DOOR));
+        addDrop(DecoBlocks.IRON_CAP_PALLET_TRAPDOOR);
+
+        addDrop(DecoBlocks.STANDING_IRON_CAP_SIGN);
+        addDrop(DecoBlocks.STANDING_STRIPPED_IRON_CAP_SIGN);
+        addDrop(DecoBlocks.STANDING_IRON_CAP_MOSAIC_SIGN);
+
+        addDrop(DecoBlocks.HANGING_IRON_CAP_SIGN);
+        addDrop(DecoBlocks.HANGING_IRON_CAP_MOSAIC_SIGN);
+        addDrop(DecoBlocks.HANGING_IRON_CAP_PLANKS_SIGN);
     }
     public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
         return dropsWithSilkTouch(

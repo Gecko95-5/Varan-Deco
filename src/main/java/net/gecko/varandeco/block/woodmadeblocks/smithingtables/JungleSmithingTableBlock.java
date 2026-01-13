@@ -1,7 +1,7 @@
 package net.gecko.varandeco.block.woodmadeblocks.smithingtables;
 
 import net.gecko.varandeco.block.custom.NonStationCraftingTableBlock;
-import net.gecko.varandeco.screen.wood.JungleSmithingScreenHandler;
+import net.gecko.varandeco.screen.wood.smithingtables.JungleSmithingScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
