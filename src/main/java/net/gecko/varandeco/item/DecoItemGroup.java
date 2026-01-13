@@ -415,7 +415,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.VOID_STONE_BRICKS.asItem());
                         entries.add(DecoBlocks.VOID_STONE_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.VOID_STONE_BRICK_SLAB.asItem());
-                        entries.add(DecoBlocks.VOID_STONE_BRICK_WALL.asItem());entries.add(DecoBlocks.PURPUR_WALL.asItem());
+                        entries.add(DecoBlocks.VOID_STONE_BRICK_WALL.asItem());
+                        entries.add(DecoBlocks.PURPUR_WALL.asItem());
                         entries.add(DecoBlocks.CHISELED_PURPUR.asItem());
                         entries.add(DecoBlocks.SMOOTH_PURPUR.asItem());
                         entries.add(DecoBlocks.SMOOTH_PURPUR_STAIRS.asItem());
@@ -541,8 +542,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ICE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.ICE_BRICK_WALL.asItem());
                         entries.add(DecoBlocks.CHISELED_ICE_BRICKS.asItem());
-                        entries.add(DecoBlocks.FRAGILE_ICE.asItem());
-                        entries.add(DecoBlocks.BLACK_ICE.asItem());
                         entries.add(DecoBlocks.SNOW_STAIRS.asItem());
                         entries.add(DecoBlocks.SNOW_SLAB.asItem());
                         entries.add(DecoBlocks.SNOW_WALL.asItem());
@@ -630,6 +629,12 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL.asItem());
+                    }).build());
+
+    public static final ItemGroup VARAN_DECO_COLOURED_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(VaranDeco.MOD_ID, "varan_deco_colour"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_colour"))
+                    .icon(() -> new ItemStack(DecoBlocks.CUT_GREEN_CONCRETE)).entries((displayContext, entries) -> {
                         entries.add(DecoBlocks.SMOOTH_GLOWSTONE.asItem());
                         entries.add(DecoBlocks.WHITE_LAMP.asItem());
                         entries.add(DecoBlocks.LIGHT_GRAY_LAMP.asItem());
@@ -962,7 +967,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.MOSAIC_BLUE_STAINED_GLASS_PANE.asItem());
                         entries.add(DecoBlocks.MOSAIC_PURPLE_STAINED_GLASS_PANE.asItem());
                         entries.add(DecoBlocks.MOSAIC_MAGENTA_STAINED_GLASS_PANE.asItem());
-                        entries.add(DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE.asItem());entries.add(DecoBlocks.WHITE_BLOCK.asItem());
+                        entries.add(DecoBlocks.MOSAIC_PINK_STAINED_GLASS_PANE.asItem());
+                        entries.add(DecoBlocks.WHITE_BLOCK.asItem());
                         entries.add(DecoBlocks.LIGHT_GRAY_BLOCK.asItem());
                         entries.add(DecoBlocks.GRAY_BLOCK.asItem());
                         entries.add(DecoBlocks.BLACK_BLOCK.asItem());
@@ -1006,12 +1012,19 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.SHADED_PURPLE_BLOCK.asItem());
                         entries.add(DecoBlocks.SHADED_MAGENTA_BLOCK.asItem());
                         entries.add(DecoBlocks.SHADED_PINK_BLOCK.asItem());
+                    }).build());
+
+    public static final ItemGroup VARAN_DECO_NATURAL_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(VaranDeco.MOD_ID, "varan_deco_flower"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_flower"))
+                    .icon(() -> new ItemStack(DecoBlocks.YELLOW_TULIP)).entries((displayContext, entries) -> {
+                        entries.add(DecoBlocks.FRAGILE_ICE.asItem());
+                        entries.add(DecoBlocks.BLACK_ICE.asItem());
                         entries.add(DecoBlocks.SPORE_IRON_ORE.asItem());
                         entries.add(DecoBlocks.WOODEN_LEAVES.asItem());
                         entries.add(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK.asItem());
                         entries.add(DecoBlocks.WOODEN_SAPLING.asItem());
                         entries.add(DecoBlocks.IRON_CAP_MUSHROOM.asItem());
-                        entries.add(DecoItems.TALL_SEAGRASS.asItem());
                         entries.add(DecoBlocks.PUFFY_DANDELION.asItem());
                         entries.add(DecoBlocks.CALIFORNIA_POPPY.asItem());
                         entries.add(DecoBlocks.SALMON_POPPY.asItem());
@@ -1039,11 +1052,18 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ROSE.asItem());
                         entries.add(DecoBlocks.ENDER_ROSE.asItem());
                         entries.add(DecoBlocks.ANCIENT_ROSE.asItem());
+                        entries.add(DecoItems.TALL_SEAGRASS.asItem());
                         entries.add(DecoBlocks.RED_SUNFLOWER.asItem());
                         entries.add(DecoBlocks.NOVA_STARFLOWER.asItem());
                         entries.add(DecoBlocks.WITHER_ROSE_BUSH.asItem());
                         entries.add(DecoBlocks.ENDER_ROSE_BUSH.asItem());
                         entries.add(DecoBlocks.MIGHTY_LAVENDER.asItem());
+                    }).build());
+
+    public static final ItemGroup VARAN_DECO_FUNCTIONAL_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(VaranDeco.MOD_ID, "varan_deco_functional"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_functional"))
+                    .icon(() -> new ItemStack(DecoBlocks.END_STONE_FURNACE)).entries((displayContext, entries) -> {
                         entries.add(DecoBlocks.COPPER_LANTERN.asItem());
                         entries.add(DecoBlocks.COPPER_SOUL_LANTERN.asItem());
                         entries.add(DecoBlocks.EXPOSED_COPPER_LANTERN.asItem());
@@ -1297,6 +1317,22 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.MUSHROOM_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.IRON_CAP_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE.asItem());
+                    }).build());
+
+    public static final ItemGroup VARAN_DECO_MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(VaranDeco.MOD_ID, "varan_deco_misc"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_misc"))
+                    .icon(() -> new ItemStack(DecoItems.BUBBLE_ORB)).entries((displayContext, entries) -> {
+                        entries.add(DecoItems.COPPER_NUGGET);
+                        entries.add(DecoItems.ANCIENT_ROSE_SEEDS);
+                        entries.add(DecoItems.MIGHTY_LAVENDER_FLOWER);
+                        entries.add(DecoItems.LILAC_FLOWER);
+                        entries.add(DecoItems.PASSTOL);
+                        entries.add(DecoItems.SHADDOL);
+                        entries.add(DecoItems.SNOW_BRICK);
+                        entries.add(DecoItems.WARPED_WART);
+                        entries.add(DecoItems.BUBBLE_ORB);
+                        entries.add(DecoItems.ICE_SHARD);
                         entries.add(DecoItems.OAK_RAFT);
                         entries.add(DecoItems.OAK_CHEST_RAFT);
                         entries.add(DecoItems.SPRUCE_RAFT);
@@ -1339,16 +1375,6 @@ public class DecoItemGroup {
                         entries.add(DecoItems.WOODEN_RAFT);
                         entries.add(DecoItems.WOODEN_CHEST_BOAT);
                         entries.add(DecoItems.WOODEN_CHEST_RAFT);
-                        entries.add(DecoItems.COPPER_NUGGET);
-                        entries.add(DecoItems.ANCIENT_ROSE_SEEDS);
-                        entries.add(DecoItems.MIGHTY_LAVENDER_FLOWER);
-                        entries.add(DecoItems.LILAC_FLOWER);
-                        entries.add(DecoItems.PASSTOL);
-                        entries.add(DecoItems.SHADDOL);
-                        entries.add(DecoItems.SNOW_BRICK);
-                        entries.add(DecoItems.WARPED_WART);
-                        entries.add(DecoItems.BUBBLE_ORB);
-                        entries.add(DecoItems.ICE_SHARD);
                     }).build());
 
     public static void registerItemGroups(){
