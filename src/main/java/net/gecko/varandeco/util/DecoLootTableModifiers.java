@@ -1,7 +1,6 @@
 package net.gecko.varandeco.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
-import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -16,8 +15,6 @@ public class DecoLootTableModifiers {
             new Identifier("minecraft", "entities/pufferfish");
     private static final Identifier GUARDIAN_ID =
             new Identifier("minecraft", "entities/guardian");
-    private static final Identifier DIGGING_ID =
-            new Identifier("minecraft", "gameplay/sniffer_digging");
     private static final Identifier ENDERMAN_ID =
             new Identifier("minecraft", "entities/enderman");
     private static final Identifier FORTRESS_ID =
@@ -40,15 +37,6 @@ public class DecoLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.5f))
                         .with(ItemEntry.builder(DecoItems.BUBBLE_ORB))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-            if (DIGGING_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS))
-                        .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER))
-                        .with(ItemEntry.builder(DecoBlocks.IRON_CAP_MUSHROOM))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
