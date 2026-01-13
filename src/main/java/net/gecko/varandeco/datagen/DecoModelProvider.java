@@ -441,7 +441,7 @@ public class DecoModelProvider extends FabricModelProvider {
                 DecoBlocks.WALL_HANGING_CACTUS_SIGN);
         blockStateModelGenerator.registerHangingSign(DecoBlocks.MUSHROOM_STEM_TEMP, DecoBlocks.HANGING_MUSHROOM_SIGN,
                 DecoBlocks.WALL_HANGING_MUSHROOM_SIGN);
-        blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_IRON_CAP_HYPHAE, DecoBlocks.HANGING_IRON_CAP_SIGN,
+        blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_IRON_CAP_TEMP, DecoBlocks.HANGING_IRON_CAP_SIGN,
                 DecoBlocks.WALL_HANGING_IRON_CAP_SIGN);
         blockStateModelGenerator.registerHangingSign(DecoBlocks.STRIPPED_WOODEN_LOG, DecoBlocks.HANGING_WOODEN_SIGN,
                 DecoBlocks.WALL_HANGING_WOODEN_SIGN);
