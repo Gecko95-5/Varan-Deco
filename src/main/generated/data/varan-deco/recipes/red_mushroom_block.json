@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "giant_mushroom_blocks",
+  "key": {
+    "#": {
+      "item": "minecraft:red_mushroom"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:red_mushroom_block"
+  }
+}

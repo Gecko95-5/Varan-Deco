@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "varan-deco:block/iron_cap_planks",
+    "east": "varan-deco:block/iron_cap_crafting_table_side",
+    "north": "varan-deco:block/iron_cap_crafting_table_front",
+    "particle": "varan-deco:block/iron_cap_crafting_table_front",
+    "south": "varan-deco:block/iron_cap_crafting_table_side",
+    "up": "varan-deco:block/iron_cap_crafting_table_top",
+    "west": "varan-deco:block/iron_cap_crafting_table_front"
+  }
+}

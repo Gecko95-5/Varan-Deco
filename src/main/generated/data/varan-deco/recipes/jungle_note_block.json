@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_smithing_tables",
+  "key": {
+    "#": {
+      "item": "minecraft:jungle_planks"
+    },
+    "$": {
+      "tag": "varan-deco:deco_note_blocks"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:jungle_note_block"
+  }
+}

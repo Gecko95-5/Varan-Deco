@@ -25,6 +25,13 @@
     "varan-deco:hanging_cactus_planks_sign",
     "varan-deco:hanging_wooden_planks_sign",
     "varan-deco:hanging_crimson_planks_sign",
-    "varan-deco:hanging_warped_planks_sign"
+    "varan-deco:hanging_warped_planks_sign",
+    "varan-deco:hanging_mushroom_sign",
+    "varan-deco:hanging_cactus_sign",
+    "varan-deco:hanging_mushroom_planks_sign",
+    "varan-deco:hanging_mushroom_mosaic_sign",
+    "varan-deco:hanging_iron_cap_sign",
+    "varan-deco:hanging_iron_cap_planks_sign",
+    "varan-deco:hanging_iron_cap_mosaic_sign"
   ]
 }

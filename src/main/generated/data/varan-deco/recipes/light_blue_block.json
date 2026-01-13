@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "light_blue_block",
   "key": {
     "#": {
       "item": "minecraft:light_blue_dye"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "count": 1,

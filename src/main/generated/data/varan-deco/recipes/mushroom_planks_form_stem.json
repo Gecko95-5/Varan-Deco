@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "minecraft:mushroom_stem"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "varan-deco:mushroom_planks"
+  }
+}

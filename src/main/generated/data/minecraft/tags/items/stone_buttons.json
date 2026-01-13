@@ -5,6 +5,8 @@
     "varan-deco:cobbled_deepslate_button",
     "varan-deco:cobblestone_button",
     "varan-deco:blackstone_button",
-    "varan-deco:polished_stone_button"
+    "varan-deco:polished_stone_button",
+    "varan-deco:end_stone_button",
+    "varan-deco:polished_end_stone_button"
   ]
 }

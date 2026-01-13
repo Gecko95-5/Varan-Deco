@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:sanded_obsidian"
+  },
+  "result": {
+    "count": 2,
+    "id": "varan-deco:obsidian_brick_slab"
+  }
+}

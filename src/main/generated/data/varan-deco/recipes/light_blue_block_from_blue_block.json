@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "light_blue_block",
   "ingredients": [
     {
       "item": "varan-deco:blue_block"

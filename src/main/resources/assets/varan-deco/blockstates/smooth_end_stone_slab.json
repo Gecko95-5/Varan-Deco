@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/smooth_end_stone_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/smooth_end_stone_slab_double"
+    },
+    "type=top": {
+      "model": "varan-deco:block/smooth_end_stone_slab_top"
+    }
+  }
+}

@@ -8,6 +8,8 @@
     "varan-deco:bubble_bricks",
     "varan-deco:chiseled_bubble_bricks",
     "varan-deco:chiseled_magma_bricks",
+    "varan-deco:chiseled_bubble_block",
+    "varan-deco:chiseled_magma_block",
     "minecraft:magma_block",
     "varan-deco:fragile_ice"
   ]

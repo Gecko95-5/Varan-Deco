@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "S": {
-      "item": "minecraft:obsidian"
+      "item": "varan-deco:sanded_obsidian"
     }
   },
   "pattern": [

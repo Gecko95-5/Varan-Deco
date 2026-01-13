@@ -6,39 +6,32 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:dual_noise_provider",
-            "noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -3
-            },
-            "scale": 0.005,
-            "seed": 2345,
-            "slow_noise": {
-              "amplitudes": [
-                2.0
-              ],
-              "firstOctave": -20
-            },
-            "slow_scale": 0.5,
-            "states": [
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
               {
-                "Name": "varan-deco:paeonia"
+                "data": {
+                  "Name": "varan-deco:paeonia"
+                },
+                "weight": 3
               },
               {
-                "Name": "varan-deco:white_orchid"
+                "data": {
+                  "Name": "varan-deco:buttercup"
+                },
+                "weight": 3
               },
               {
-                "Name": "varan-deco:gerbera_daisy"
+                "data": {
+                  "Name": "varan-deco:nightshade"
+                },
+                "weight": 1
               },
               {
-                "Name": "varan-deco:lavender"
+                "data": {
+                  "Name": "varan-deco:white_orchid"
+                },
+                "weight": 2
               }
-            ],
-            "variety": [
-              1,
-              3
             ]
           }
         }
@@ -53,7 +46,7 @@
         }
       ]
     },
-    "tries": 32,
+    "tries": 48,
     "xz_spread": 7,
     "y_spread": 3
   }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "varan-deco:block/smooth_end_stone",
+    "side": "varan-deco:block/smooth_end_stone_slab_side",
+    "top": "varan-deco:block/smooth_end_stone"
+  }
+}

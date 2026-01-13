@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/spruce_bookshelf_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/spruce_bookshelf"
+    },
+    "type=top": {
+      "model": "varan-deco:block/spruce_bookshelf_slab_top"
+    }
+  }
+}

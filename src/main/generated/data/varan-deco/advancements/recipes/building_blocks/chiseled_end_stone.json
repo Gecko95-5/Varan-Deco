@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_stone_slab": {
+    "has_polished_end_stone_slab": {
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:end_stone_slab"
+            "items": "varan-deco:polished_end_stone_slab"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_end_stone_slab"
+      "has_polished_end_stone_slab"
     ]
   ],
   "rewards": {

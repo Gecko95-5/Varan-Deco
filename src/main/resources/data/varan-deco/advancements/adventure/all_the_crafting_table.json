@@ -145,6 +145,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "mushroom": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:mushroom_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "wooden": {
       "conditions": {
         "items": [
@@ -209,6 +221,9 @@
     ],
     [
       "cherry"
+    ],
+    [
+      "mushroom"
     ]
   ]
 }

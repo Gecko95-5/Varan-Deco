@@ -8,6 +8,18 @@
     "varan-deco:obsidian_brick_wall",
     "varan-deco:obsidian_bricks",
     "varan-deco:obsidian_pillar",
-    "varan-deco:chiseled_obsidian"
+    "varan-deco:chiseled_obsidian",
+    "varan-deco:sanded_obsidian",
+    "varan-deco:smooth_obsidian",
+    "varan-deco:cut_obsidian",
+    "varan-deco:sanded_obsidian_stairs",
+    "varan-deco:smooth_obsidian_stairs",
+    "varan-deco:cut_obsidian_stairs",
+    "varan-deco:sanded_obsidian_slab",
+    "varan-deco:smooth_obsidian_slab",
+    "varan-deco:cut_obsidian_slab",
+    "varan-deco:sanded_obsidian_wall",
+    "varan-deco:smooth_obsidian_wall",
+    "varan-deco:cut_obsidian_wall"
   ]
 }
