@@ -270,8 +270,10 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CHISELED_DEEPSLATE_BRICKS.asItem());
                         entries.add(DecoBlocks.TUFF_BUTTON.asItem());
                         entries.add(DecoBlocks.TUFF_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.TUFF_LEVER.asItem());
                         entries.add(DecoBlocks.POLISHED_TUFF_BUTTON.asItem());
                         entries.add(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.POLISHED_TUFF_LEVER.asItem());
                         entries.add(DecoBlocks.SMOOTH_TUFF.asItem());
                         entries.add(DecoBlocks.SMOOTH_TUFF_STAIRS.asItem());
                         entries.add(DecoBlocks.SMOOTH_TUFF_SLAB.asItem());
@@ -464,6 +466,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.RAW_GOLD_SLAB.asItem());
                         entries.add(DecoBlocks.GOLD_STAIRS.asItem());
                         entries.add(DecoBlocks.GOLD_SLAB.asItem());
+                        entries.add(DecoBlocks.CHISELED_GOLD.asItem());
+                        entries.add(DecoBlocks.GOLD_GRATE.asItem());
                         entries.add(DecoBlocks.CUT_GOLD.asItem());
                         entries.add(DecoBlocks.CUT_GOLD_STAIRS.asItem());
                         entries.add(DecoBlocks.CUT_GOLD_SLAB.asItem());

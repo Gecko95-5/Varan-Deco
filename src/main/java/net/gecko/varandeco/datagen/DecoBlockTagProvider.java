@@ -471,7 +471,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.END_STONE_PRESSURE_PLATE)
                 .add(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE)
                 .add(DecoBlocks.END_STONE_BUTTON)
-                .add(DecoBlocks.POLISHED_END_STONE_BUTTON);
+                .add(DecoBlocks.POLISHED_END_STONE_BUTTON)
+                .add(DecoBlocks.GOLD_GRATE)
+                .add(DecoBlocks.CHISELED_GOLD);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -619,7 +621,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.RAW_GOLD_SLAB)
                 .add(DecoBlocks.LIGHT_GOLD_BARS)
                 .add(DecoBlocks.GOLD_BARS)
-                .add(DecoBlocks.HEAVY_GOLD_BARS);
+                .add(DecoBlocks.HEAVY_GOLD_BARS)
+                .add(DecoBlocks.GOLD_GRATE)
+                .add(DecoBlocks.CHISELED_GOLD);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(DecoBlocks.OBSIDIAN_STAIRS)
@@ -2125,7 +2129,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BLACKSTONE_LEVER)
                 .add(DecoBlocks.POLISHED_BLACKSTONE_LEVER)
                 .add(DecoBlocks.END_STONE_LEVER)
-                .add(DecoBlocks.POLISHED_END_STONE_LEVER);
+                .add(DecoBlocks.POLISHED_END_STONE_LEVER)
+                .add(DecoBlocks.TUFF_LEVER)
+                .add(DecoBlocks.POLISHED_TUFF_LEVER);
 
         getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
                 .add(DecoBlocks.IRON_CAP_MUSHROOM);

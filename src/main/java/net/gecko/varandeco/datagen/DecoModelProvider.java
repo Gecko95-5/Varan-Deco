@@ -276,6 +276,9 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_TUFF_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_TUFF_TILES);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GOLD_GRATE);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_GOLD);
+
         blockStateModelGenerator.registerParented(DecoBlocks.POLISHED_STONE, DecoBlocks.INFESTED_POLISHED_STONE);
         blockStateModelGenerator.registerParented(DecoBlocks.STONE_TILES, DecoBlocks.INFESTED_STONE_TILES);
         blockStateModelGenerator.registerParented(Blocks.COBBLED_DEEPSLATE, DecoBlocks.INFESTED_COBBLED_DEEPSLATE);

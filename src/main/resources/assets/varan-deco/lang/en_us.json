@@ -1947,6 +1947,12 @@
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 
+  "block.varan-deco.gold_grate": "Golden Grate",
+  "block.varan-deco.chiseled_gold": "Chiseled Gold",
+
+  "block.varan-deco.tuff_lever": "Tuff Lever",
+  "block.varan-deco.polished_tuff_lever": "Polished Tuff Lever",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

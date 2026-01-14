@@ -1643,6 +1643,12 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.HANGING_IRON_CAP_SIGN);
         addDrop(DecoBlocks.HANGING_IRON_CAP_MOSAIC_SIGN);
         addDrop(DecoBlocks.HANGING_IRON_CAP_PLANKS_SIGN);
+
+        addDrop(DecoBlocks.GOLD_GRATE);
+        addDrop(DecoBlocks.CHISELED_GOLD);
+
+        addDrop(DecoBlocks.TUFF_LEVER);
+        addDrop(DecoBlocks.POLISHED_TUFF_LEVER);
     }
     public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
         return dropsWithSilkTouch(

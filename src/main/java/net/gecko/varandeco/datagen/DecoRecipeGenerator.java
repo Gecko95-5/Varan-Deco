@@ -4060,7 +4060,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.IRON_GRATE, Items.IRON_BLOCK);
 
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_IRON, DecoBlocks.CUT_IRON_SLAB);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_IRON, Items.IRON_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_IRON, Items.IRON_BLOCK,4);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_IRON, DecoBlocks.CUT_IRON);
 
         offerBoatRecipe(exporter, DecoItems.CACTUS_BOAT, DecoBlocks.CACTUS_PLANKS);
@@ -6788,6 +6788,30 @@ offerCraftingTableVariantRecipe(exporter, DecoBlocks.OAK_CRAFTING_TABLE, Items.O
         offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_PLANKS_HANGING_SIGN, DecoBlocks.IRON_CAP_PLANKS);
 
         offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_MOSAIC_HANGING_SIGN, DecoBlocks.IRON_CAP_MOSAIC);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_GOLD, DecoBlocks.CUT_GOLD_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_GOLD, Items.GOLD_BLOCK,4);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_GOLD, DecoBlocks.CUT_GOLD);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DecoBlocks.TUFF_LEVER)
+                .pattern("/")
+                .pattern("#")
+                .input('/', Items.STICK)
+                .input('#', Items.TUFF)
+                .group("lever")
+                .criterion(RecipeProvider.hasItem(Items.TUFF),
+                        RecipeProvider.conditionsFromItem(Items.TUFF))
+                .offerTo(exporter, Identifier.of(RecipeProvider.getRecipeName(DecoBlocks.TUFF_LEVER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DecoBlocks.POLISHED_TUFF_LEVER)
+                .pattern("/")
+                .pattern("#")
+                .input('/', Items.STICK)
+                .input('#', Items.POLISHED_TUFF)
+                .group("lever")
+                .criterion(RecipeProvider.hasItem(Items.POLISHED_TUFF),
+                        RecipeProvider.conditionsFromItem(Items.POLISHED_TUFF))
+                .offerTo(exporter, Identifier.of(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_TUFF_LEVER)));
     }
     public static void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)
