@@ -6,8 +6,7 @@ import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock
 import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.woodmadeblocks.barrel.*;
-import net.gecko.varandeco.block.bubblelevatorblocks.*;
-import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
+import net.gecko.varandeco.block.elementblocks.*;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.ice.BlackIceBlock;
@@ -229,6 +228,8 @@ public class DecoBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.END_STONE)));
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",
             new Block(AbstractBlock.Settings.copy(Blocks.END_STONE).strength(4.0F, 9.0F)));
+    public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.END_STONE_BRICKS)));
     public static final Block CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.END_STONE_BRICKS)));
     public static final Block END_STONE_TILES = registerBlock("end_stone_tiles",
@@ -440,6 +441,26 @@ public class DecoBlocks {
                     .mapColor(MapColor.STONE_GRAY)));
     public static final Block CHISELED_BUBBLE_BRICKS = registerBlock("chiseled_bubble_bricks",
             new BubbleBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BRICKS)));
+    public static final Block WIND_BLOCK = registerBlock("wind_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.TUFF).mapColor(MapColor.LIGHT_BLUE)
+                    .luminance(state -> 1).velocityMultiplier(1.25F).strength(0.25F)));
+    public static final Block CHISELED_WIND_BLOCK = registerBlock("chiseled_wind_block",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.WIND_BLOCK)));
+    public static final Block WIND_BRICKS = registerBlock("wind_bricks",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.WIND_BLOCK).strength(1.25F)
+                    .mapColor(MapColor.TERRACOTTA_GRAY).velocityMultiplier(1.0F)));
+    public static final Block CHISELED_WIND_BRICKS = registerBlock("chiseled_wind_bricks",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.WIND_BRICKS)));
+    public static final Block EARTH_BLOCK = registerBlock("earth_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE).mapColor(MapColor.BROWN)
+                    .luminance(state -> 1).velocityMultiplier(0.25F).strength(2.0F)));
+    public static final Block CHISELED_EARTH_BLOCK = registerBlock("chiseled_earth_block",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BLOCK)));
+    public static final Block EARTH_BRICKS = registerBlock("earth_bricks",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BLOCK).strength(3.0F)
+                    .mapColor(MapColor.DEEPSLATE_GRAY).velocityMultiplier(1.0F)));
+    public static final Block CHISELED_EARTH_BRICKS = registerBlock("chiseled_earth_bricks",
+            new Block(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BRICKS)));
     public static final Block CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS)));
     public static final Block CRACKED_RED_NETHER_BRICKS = registerBlock("cracked_red_nether_bricks",
@@ -1149,6 +1170,18 @@ public class DecoBlocks {
     public static final Block BUBBLE_BRICK_STAIRS = registerBlock("bubble_brick_stairs",
             new BubbleStairBlock(DecoBlocks.BUBBLE_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BRICKS)));
+    public static final Block WIND_STAIRS = registerBlock("wind_stairs",
+            new StairsBlock(DecoBlocks.WIND_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.copy(DecoBlocks.WIND_BLOCK)));
+    public static final Block WIND_BRICK_STAIRS = registerBlock("wind_brick_stairs",
+            new StairsBlock(DecoBlocks.WIND_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(DecoBlocks.WIND_BRICKS)));
+    public static final Block EARTH_STAIRS = registerBlock("earth_stairs",
+            new StairsBlock(DecoBlocks.EARTH_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.copy(DecoBlocks.EARTH_BLOCK)));
+    public static final Block EARTH_BRICK_STAIRS = registerBlock("earth_brick_stairs",
+            new StairsBlock(DecoBlocks.EARTH_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(DecoBlocks.EARTH_BRICKS)));
     public static final Block BLUE_NETHER_BRICK_STAIRS = registerBlock("blue_nether_brick_stairs",
             new StairsBlock(DecoBlocks.BLUE_NETHER_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
@@ -1507,6 +1540,14 @@ public class DecoBlocks {
             new BubbleSlabBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK)));
     public static final Block BUBBLE_BRICK_SLAB = registerBlock("bubble_brick_slab",
             new BubbleSlabBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BRICKS)));
+    public static final Block WIND_SLAB = registerBlock("wind_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.WIND_BLOCK)));
+    public static final Block WIND_BRICK_SLAB = registerBlock("wind_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.WIND_BRICKS)));
+    public static final Block EARTH_SLAB = registerBlock("earth_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BLOCK)));
+    public static final Block EARTH_BRICK_SLAB = registerBlock("earth_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BRICKS)));
     public static final Block BLUE_NETHER_BRICK_SLAB = registerBlock("blue_nether_brick_slab",
             new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
@@ -2311,6 +2352,14 @@ public class DecoBlocks {
             new BubbleWallBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BLOCK)));
     public static final Block BUBBLE_BRICK_WALL = registerBlock("bubble_brick_wall",
             new BubbleWallBlock(AbstractBlock.Settings.copy(DecoBlocks.BUBBLE_BRICKS)));
+    public static final Block WIND_WALL = registerBlock("wind_wall",
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.WIND_BLOCK)));
+    public static final Block WIND_BRICK_WALL = registerBlock("wind_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.WIND_BRICKS)));
+    public static final Block EARTH_WALL = registerBlock("earth_wall",
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BLOCK)));
+    public static final Block EARTH_BRICK_WALL = registerBlock("earth_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.EARTH_BRICKS)));
     public static final Block BLUE_NETHER_BRICK_WALL = registerBlock("blue_nether_brick_wall",
             new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.BLUE_NETHER_BRICKS)));
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",

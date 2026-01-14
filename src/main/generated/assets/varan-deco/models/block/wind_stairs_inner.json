@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/wind_block",
+    "side": "varan-deco:block/wind_block",
+    "top": "varan-deco:block/wind_block"
+  }
+}

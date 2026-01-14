@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/wind_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/wind_block"
+    },
+    "type=top": {
+      "model": "varan-deco:block/wind_slab_top"
+    }
+  }
+}

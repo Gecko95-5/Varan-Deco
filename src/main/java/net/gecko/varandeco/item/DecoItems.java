@@ -229,6 +229,9 @@ public class DecoItems {
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",
             new BubbleItem(new Item.Settings()));
 
+    public static final Item EARTH_SPHERE = registerItem("earth_sphere",
+            new Item(new Item.Settings()));
+
     public static final Item ICE_SHARD = registerItem("ice_shard",
             new Item(new Item.Settings()));
 

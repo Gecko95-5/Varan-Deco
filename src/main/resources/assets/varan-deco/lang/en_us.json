@@ -4,6 +4,7 @@
   "item.varan-deco.mushroom_sign": "Mushroom Sign",
   "item.varan-deco.wooden_sign": "Wooden Sign",
   "item.varan-deco.bubble_orb": "Bubble Orb",
+  "item.varan-deco.earth_sphere": "Earth Sphere",
   "item.varan-deco.warped_wart": "Warped Wart",
   "item.varan-deco.copper_nugget": "Copper Nugget",
   "item.varan-deco.ancient_rose_seeds": "Ancient Rose Seeds",
@@ -1952,6 +1953,30 @@
 
   "block.varan-deco.tuff_lever": "Tuff Lever",
   "block.varan-deco.polished_tuff_lever": "Polished Tuff Lever",
+
+  "block.varan-deco.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
+
+  "block.varan-deco.wind_block": "Wind Block",
+  "block.varan-deco.wind_stairs": "Wind Stairs",
+  "block.varan-deco.wind_slab": "Wind Slab",
+  "block.varan-deco.wind_wall": "Wind Wall",
+  "block.varan-deco.chiseled_wind_block": "Chiseled Wind Block",
+  "block.varan-deco.wind_bricks": "Wind Bricks",
+  "block.varan-deco.wind_brick_stairs": "Wind Brick Stairs",
+  "block.varan-deco.wind_brick_slab": "Wind Brick Slab",
+  "block.varan-deco.wind_brick_wall": "Wind Brick Wall",
+  "block.varan-deco.chiseled_wind_bricks": "Chiseled Wind Bricks",
+
+  "block.varan-deco.earth_block": "Earth Block",
+  "block.varan-deco.earth_stairs": "Earth Stairs",
+  "block.varan-deco.earth_slab": "Earth Slab",
+  "block.varan-deco.earth_wall": "Earth Wall",
+  "block.varan-deco.chiseled_earth_block": "Chiseled Earth Block",
+  "block.varan-deco.earth_bricks": "Earth Bricks",
+  "block.varan-deco.earth_brick_stairs": "Earth Brick Stairs",
+  "block.varan-deco.earth_brick_slab": "Earth Brick Slab",
+  "block.varan-deco.earth_brick_wall": "Earth Brick Wall",
+  "block.varan-deco.chiseled_earth_bricks": "Chiseled Earth Bricks",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",

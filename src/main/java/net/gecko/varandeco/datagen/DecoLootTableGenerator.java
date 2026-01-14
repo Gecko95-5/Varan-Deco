@@ -22,7 +22,6 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.function.LimitCountLootFunction;
-import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.operator.BoundedIntUnaryOperator;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -1649,6 +1648,32 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.TUFF_LEVER);
         addDrop(DecoBlocks.POLISHED_TUFF_LEVER);
+
+        addDrop(DecoBlocks.CHISELED_END_STONE_BRICKS);
+
+        addDrop(DecoBlocks.WIND_BLOCK, block -> this.drops(block, Items.WIND_CHARGE, ConstantLootNumberProvider.create(2.0F)));
+        addDrop(DecoBlocks.EARTH_BLOCK, block -> this.drops(block, DecoItems.EARTH_SPHERE, ConstantLootNumberProvider.create(2.0F))); addDrop(DecoBlocks.IRON_CAP_PLANKS);
+
+        addDrop(DecoBlocks.CHISELED_WIND_BLOCK);
+        addDrop(DecoBlocks.CHISELED_EARTH_BLOCK);
+        addDrop(DecoBlocks.WIND_BRICKS);
+        addDrop(DecoBlocks.EARTH_BRICKS);
+        addDrop(DecoBlocks.CHISELED_WIND_BRICKS);
+        addDrop(DecoBlocks.CHISELED_EARTH_BRICKS);
+
+        addDrop(DecoBlocks.WIND_STAIRS);
+        addDrop(DecoBlocks.WIND_SLAB, slabDrops(DecoBlocks.WIND_SLAB));
+        addDrop(DecoBlocks.WIND_WALL);
+        addDrop(DecoBlocks.WIND_BRICK_STAIRS);
+        addDrop(DecoBlocks.WIND_BRICK_SLAB, slabDrops(DecoBlocks.WIND_BRICK_SLAB));
+        addDrop(DecoBlocks.WIND_BRICK_WALL);
+
+        addDrop(DecoBlocks.EARTH_STAIRS);
+        addDrop(DecoBlocks.EARTH_SLAB, slabDrops(DecoBlocks.EARTH_SLAB));
+        addDrop(DecoBlocks.EARTH_WALL);
+        addDrop(DecoBlocks.EARTH_BRICK_STAIRS);
+        addDrop(DecoBlocks.EARTH_BRICK_SLAB, slabDrops(DecoBlocks.EARTH_BRICK_SLAB));
+        addDrop(DecoBlocks.EARTH_BRICK_WALL);
     }
     public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
         return dropsWithSilkTouch(

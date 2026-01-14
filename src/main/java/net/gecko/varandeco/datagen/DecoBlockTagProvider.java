@@ -221,6 +221,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEEPSLATE_STONECUTTER)
                 .add(DecoBlocks.BLACKSTONE_STONECUTTER)
                 .add(DecoBlocks.TUFF_STONECUTTER)
+                .add(DecoBlocks.END_STONE_STONECUTTER)
                 .add(DecoBlocks.DEEPSLATE_STAIRS)
                 .add(DecoBlocks.DEEPSLATE_SLAB)
                 .add(DecoBlocks.DEEPSLATE_WALL)
@@ -310,6 +311,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEEPSLATE_GRINDSTONE)
                 .add(DecoBlocks.BLACKSTONE_GRINDSTONE)
                 .add(DecoBlocks.TUFF_GRINDSTONE)
+                .add(DecoBlocks.END_STONE_GRINDSTONE)
                 .add(DecoBlocks.COBBLED_SANDSTONE)
                 .add(DecoBlocks.COBBLED_RED_SANDSTONE)
                 .add(DecoBlocks.COBBLED_SOUL_SOILSTONE)
@@ -473,7 +475,28 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.END_STONE_BUTTON)
                 .add(DecoBlocks.POLISHED_END_STONE_BUTTON)
                 .add(DecoBlocks.GOLD_GRATE)
-                .add(DecoBlocks.CHISELED_GOLD);
+                .add(DecoBlocks.CHISELED_GOLD)
+                .add(DecoBlocks.CHISELED_END_STONE_BRICKS)
+                .add(DecoBlocks.WIND_BLOCK)
+                .add(DecoBlocks.WIND_STAIRS)
+                .add(DecoBlocks.WIND_SLAB)
+                .add(DecoBlocks.WIND_WALL)
+                .add(DecoBlocks.CHISELED_WIND_BLOCK)
+                .add(DecoBlocks.WIND_BRICKS)
+                .add(DecoBlocks.WIND_BRICK_STAIRS)
+                .add(DecoBlocks.WIND_BRICK_SLAB)
+                .add(DecoBlocks.WIND_BRICK_WALL)
+                .add(DecoBlocks.CHISELED_WIND_BRICKS)
+                .add(DecoBlocks.EARTH_BLOCK)
+                .add(DecoBlocks.EARTH_STAIRS)
+                .add(DecoBlocks.EARTH_SLAB)
+                .add(DecoBlocks.EARTH_WALL)
+                .add(DecoBlocks.CHISELED_EARTH_BLOCK)
+                .add(DecoBlocks.EARTH_BRICKS)
+                .add(DecoBlocks.EARTH_BRICK_STAIRS)
+                .add(DecoBlocks.EARTH_BRICK_SLAB)
+                .add(DecoBlocks.EARTH_BRICK_WALL)
+                .add(DecoBlocks.CHISELED_EARTH_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -739,7 +762,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_OBSIDIAN_WALL)
                 .add(DecoBlocks.POLISHED_END_STONE_WALL)
                 .add(DecoBlocks.SMOOTH_END_STONE_WALL)
-                .add(DecoBlocks.END_STONE_TILE_WALL);
+                .add(DecoBlocks.END_STONE_TILE_WALL)
+                .add(DecoBlocks.WIND_WALL)
+                .add(DecoBlocks.WIND_BRICK_WALL)
+                .add(DecoBlocks.EARTH_WALL)
+                .add(DecoBlocks.EARTH_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -921,7 +948,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
                 .add(DecoBlocks.POLISHED_END_STONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_END_STONE_STAIRS)
-                .add(DecoBlocks.END_STONE_TILE_STAIRS);
+                .add(DecoBlocks.END_STONE_TILE_STAIRS)
+                .add(DecoBlocks.EARTH_BRICK_STAIRS)
+                .add(DecoBlocks.EARTH_STAIRS)
+                .add(DecoBlocks.WIND_STAIRS)
+                .add(DecoBlocks.WIND_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1020,8 +1051,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_END_STONE_SLAB)
                 .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
                 .add(DecoBlocks.END_STONE_TILE_SLAB)
-                .add(DecoBlocks.END_STONE_STONECUTTER)
-                .add(DecoBlocks.END_STONE_GRINDSTONE);
+                .add(DecoBlocks.WIND_BRICK_SLAB)
+                .add(DecoBlocks.WIND_SLAB)
+                .add(DecoBlocks.EARTH_SLAB)
+                .add(DecoBlocks.EARTH_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)

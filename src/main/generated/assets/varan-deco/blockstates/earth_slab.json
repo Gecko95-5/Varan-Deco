@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/earth_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/earth_block"
+    },
+    "type=top": {
+      "model": "varan-deco:block/earth_slab_top"
+    }
+  }
+}

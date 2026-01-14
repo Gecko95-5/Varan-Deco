@@ -98,6 +98,10 @@
     "varan-deco:cut_obsidian_stairs",
     "varan-deco:polished_end_stone_stairs",
     "varan-deco:smooth_end_stone_stairs",
-    "varan-deco:end_stone_tile_stairs"
+    "varan-deco:end_stone_tile_stairs",
+    "varan-deco:earth_brick_stairs",
+    "varan-deco:earth_stairs",
+    "varan-deco:wind_stairs",
+    "varan-deco:wind_brick_stairs"
   ]
 }

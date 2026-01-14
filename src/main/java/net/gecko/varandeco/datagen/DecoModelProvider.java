@@ -278,6 +278,23 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.GOLD_GRATE);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_GOLD);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_END_STONE_BRICKS);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_WIND_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_EARTH_BLOCK);
+
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_WIND_BRICKS, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_EARTH_BRICKS, TexturedModel.CUBE_BOTTOM_TOP);
+
+        BlockStateModelGenerator.BlockTexturePool windpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WIND_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool windbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WIND_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool earthpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.EARTH_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool earthbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.EARTH_BRICKS);
 
         blockStateModelGenerator.registerParented(DecoBlocks.POLISHED_STONE, DecoBlocks.INFESTED_POLISHED_STONE);
         blockStateModelGenerator.registerParented(DecoBlocks.STONE_TILES, DecoBlocks.INFESTED_STONE_TILES);
@@ -1326,6 +1343,22 @@ public class DecoModelProvider extends FabricModelProvider {
         polishedtuffpool.button(DecoBlocks.POLISHED_TUFF_BUTTON);
         polishedtuffpool.pressurePlate(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE);
 
+        windpool.stairs(DecoBlocks.WIND_STAIRS);
+        windpool.slab(DecoBlocks.WIND_SLAB);
+        windpool.wall(DecoBlocks.WIND_WALL);
+
+        windbrickpool.stairs(DecoBlocks.WIND_BRICK_STAIRS);
+        windbrickpool.slab(DecoBlocks.WIND_BRICK_SLAB);
+        windbrickpool.wall(DecoBlocks.WIND_BRICK_WALL);
+
+        earthpool.stairs(DecoBlocks.EARTH_STAIRS);
+        earthpool.slab(DecoBlocks.EARTH_SLAB);
+        earthpool.wall(DecoBlocks.EARTH_WALL);
+
+        earthbrickpool.stairs(DecoBlocks.EARTH_BRICK_STAIRS);
+        earthbrickpool.slab(DecoBlocks.EARTH_BRICK_SLAB);
+        earthbrickpool.wall(DecoBlocks.EARTH_BRICK_WALL);
+
        blockStateModelGenerator.registerCrop(DecoBlocks.WARPED_WART_PLANT, WarpedWartBlock.AGE,0,1,2,3);
 
         BlockStateModelGenerator.BlockTexturePool terracottapool =
@@ -1724,6 +1757,7 @@ public class DecoModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
         itemModelGenerator.register(DecoItems.BUBBLE_ORB, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.EARTH_SPHERE, Models.GENERATED);
         itemModelGenerator.register(DecoItems.ICE_SHARD, Models.GENERATED);
         itemModelGenerator.register(DecoItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DecoItems.ANCIENT_ROSE_SEEDS, Models.GENERATED);

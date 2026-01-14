@@ -6812,6 +6812,163 @@ offerCraftingTableVariantRecipe(exporter, DecoBlocks.OAK_CRAFTING_TABLE, Items.O
                 .criterion(RecipeProvider.hasItem(Items.POLISHED_TUFF),
                         RecipeProvider.conditionsFromItem(Items.POLISHED_TUFF))
                 .offerTo(exporter, Identifier.of(RecipeProvider.getRecipeName(DecoBlocks.POLISHED_TUFF_LEVER)));
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_END_STONE_BRICKS, Items.END_STONE_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_END_STONE_BRICKS, Items.END_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_END_STONE_BRICKS, DecoBlocks.POLISHED_END_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_END_STONE_BRICKS, Items.END_STONE_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoItems.EARTH_SPHERE)
+                .pattern(" # ")
+                .pattern("#D#")
+                .pattern(" # ")
+                .input('#', Items.MUD)
+                .input('D', Items.COARSE_DIRT)
+                .criterion(hasItem(Items.COARSE_DIRT),
+                        conditionsFromItem(Items.COARSE_DIRT))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoItems.EARTH_SPHERE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.WIND_BLOCK)
+                .pattern("#I")
+                .pattern("I#")
+                .input('#', Items.TUFF)
+                .input('I', Items.WIND_CHARGE)
+                .criterion(hasItem(Items.WIND_CHARGE),
+                        conditionsFromItem(Items.WIND_CHARGE))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.WIND_BLOCK)));
+
+        createStairsRecipe(DecoBlocks.WIND_STAIRS, Ingredient.ofItems(DecoBlocks.WIND_BLOCK))
+                .criterion(hasItem(DecoBlocks.WIND_BLOCK),conditionsFromItem(DecoBlocks.WIND_BLOCK))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.WIND_STAIRS)));
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_STAIRS, DecoBlocks.WIND_BLOCK);
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_SLAB, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_SLAB, DecoBlocks.WIND_BLOCK);
+
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.WIND_WALL, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_WALL, DecoBlocks.WIND_BLOCK);
+
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICKS, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICKS, DecoBlocks.WIND_BLOCK);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_WIND_BLOCK, DecoBlocks.WIND_SLAB);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_WIND_BLOCK, DecoBlocks.WIND_BLOCK);
+
+        createStairsRecipe(DecoBlocks.WIND_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.WIND_BRICKS))
+                .criterion(hasItem(DecoBlocks.WIND_BRICKS),conditionsFromItem(DecoBlocks.WIND_BRICKS))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.WIND_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_STAIRS, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_STAIRS, DecoBlocks.WIND_BRICKS);
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_SLAB, DecoBlocks.WIND_BRICKS);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_SLAB, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_SLAB, DecoBlocks.WIND_BRICKS);
+
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.WIND_BRICK_WALL, DecoBlocks.WIND_BRICKS);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_WALL, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.WIND_BRICK_WALL, DecoBlocks.WIND_BRICKS);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_WIND_BRICKS, DecoBlocks.WIND_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_WIND_BRICKS, DecoBlocks.WIND_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_WIND_BRICKS, DecoBlocks.WIND_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.EARTH_BLOCK)
+                .pattern("#I")
+                .pattern("I#")
+                .input('#', Items.COBBLED_DEEPSLATE)
+                .input('I', DecoItems.EARTH_SPHERE)
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.EARTH_BLOCK)));
+
+        createStairsRecipe(DecoBlocks.EARTH_STAIRS, Ingredient.ofItems(DecoBlocks.EARTH_BLOCK))
+                .criterion(hasItem(DecoBlocks.EARTH_BLOCK),conditionsFromItem(DecoBlocks.EARTH_BLOCK))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.EARTH_STAIRS)));
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_STAIRS, DecoBlocks.EARTH_BLOCK);
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_SLAB, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_SLAB, DecoBlocks.EARTH_BLOCK);
+
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.EARTH_WALL, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_WALL, DecoBlocks.EARTH_BLOCK);
+
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICKS, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICKS, DecoBlocks.EARTH_BLOCK);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_EARTH_BLOCK, DecoBlocks.EARTH_SLAB);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_EARTH_BLOCK, DecoBlocks.EARTH_BLOCK);
+
+        createStairsRecipe(DecoBlocks.EARTH_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.EARTH_BRICKS))
+                .criterion(hasItem(DecoBlocks.EARTH_BRICKS),conditionsFromItem(DecoBlocks.EARTH_BRICKS))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.EARTH_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_STAIRS, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_STAIRS, DecoBlocks.EARTH_BRICKS);
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_SLAB, DecoBlocks.EARTH_BRICKS);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_SLAB, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_SLAB, DecoBlocks.EARTH_BRICKS);
+
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS,DecoBlocks.EARTH_BRICK_WALL, DecoBlocks.EARTH_BRICKS);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_WALL, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.EARTH_BRICK_WALL, DecoBlocks.EARTH_BRICKS);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_EARTH_BRICKS, DecoBlocks.EARTH_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_EARTH_BRICKS, DecoBlocks.EARTH_BLOCK);
+        offerStonecuttingRecipe(exporter,  RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_EARTH_BRICKS, DecoBlocks.EARTH_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.GRASS_BLOCK,3)
+                .pattern("G0G")
+                .pattern("###")
+                .input('#', Items.DIRT)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('G', Items.SHORT_GRASS)
+                .group("dirt_like")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.GRASS_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.FARMLAND,3)
+                .pattern("S0S")
+                .pattern("###")
+                .input('#', Items.DIRT)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('S', DecoTags.Items.SEEDS)
+                .group("dirt_like")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.FARMLAND)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.DIRT_PATH,3)
+                .pattern(" 0 ")
+                .pattern("###")
+                .input('#', Items.DIRT)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .group("dirt_like")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.DIRT_PATH)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.MYCELIUM,3)
+                .pattern("M0M")
+                .pattern("###")
+                .input('#', Items.COARSE_DIRT)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('M', DecoTags.Items.MUSHROOMS)
+                .group("dirt_like")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.MYCELIUM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.PODZOL,3)
+                .pattern("B0B")
+                .pattern("###")
+                .input('#', Items.COARSE_DIRT)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('B', Items.DEAD_BUSH)
+                .group("dirt_like")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.PODZOL)));
     }
     public static void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

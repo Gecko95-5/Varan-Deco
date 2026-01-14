@@ -460,5 +460,14 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.PURPLE_LAMP.asItem())
                 .add(DecoBlocks.MAGENTA_LAMP.asItem())
                 .add(DecoBlocks.PINK_LAMP.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.SEEDS)
+                .add(Items.WHEAT_SEEDS.asItem())
+                .add(Items.BEETROOT_SEEDS.asItem())
+                .add(Items.PUMPKIN_SEEDS.asItem())
+                .add(Items.MELON_SEEDS.asItem())
+                .add(Items.TORCHFLOWER_SEEDS.asItem())
+                .add(Items.PITCHER_POD.asItem())
+                .add(DecoItems.ANCIENT_ROSE_SEEDS.asItem());
     }
 }

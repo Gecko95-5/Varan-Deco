@@ -96,7 +96,9 @@
     "varan-deco:polished_end_stone_slab",
     "varan-deco:smooth_end_stone_slab",
     "varan-deco:end_stone_tile_slab",
-    "varan-deco:end_stone_stonecutter",
-    "varan-deco:end_stone_grindstone"
+    "varan-deco:wind_brick_slab",
+    "varan-deco:wind_slab",
+    "varan-deco:earth_slab",
+    "varan-deco:earth_brick_slab"
   ]
 }
