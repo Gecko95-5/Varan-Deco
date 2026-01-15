@@ -1,6 +1,8 @@
 {
   "values": [
     "minecraft:standing_cactus_sign",
+    "minecraft:standing_mushroom_sign",
+    "minecraft:standing_iron_cap_sign",
     "minecraft:standing_wooden_sign",
     "minecraft:standing_stripped_oak_sign",
     "minecraft:standing_stripped_spruce_sign",
@@ -27,6 +29,11 @@
     "minecraft:standing_warped_mosaic_sign",
     "minecraft:standing_cactus_mosaic_sign",
     "minecraft:standing_wooden_mosaic_sign",
+    "minecraft:standing_mushroom_stem_sign",
+    "minecraft:standing_stripped_cactus_sign",
+    "minecraft:standing_mushroom_mosaic_sign",
+    "minecraft:standing_stripped_iron_cap_sign",
+    "minecraft:standing_iron_cap_mosaic_sign",
     "minecraft:standing_pale_oak_mosaic_sign"
   ]
 }

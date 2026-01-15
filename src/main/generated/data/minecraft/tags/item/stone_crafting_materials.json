@@ -2,6 +2,7 @@
   "values": [
     "minecraft:stone",
     "minecraft:deepslate",
-    "minecraft:tuff"
+    "minecraft:tuff",
+    "minecraft:end_stone"
   ]
 }

@@ -1,5 +1,6 @@
 {
   "values": [
+    "minecraft:bookshelf",
     "minecraft:birch_bookshelf",
     "minecraft:spruce_bookshelf",
     "minecraft:jungle_bookshelf",
@@ -10,6 +11,7 @@
     "minecraft:oak_bookshelf",
     "minecraft:bamboo_bookshelf",
     "minecraft:cherry_bookshelf",
-    "minecraft:pale_oak_bookshelf"
+    "minecraft:pale_oak_bookshelf",
+    "minecraft:mushroom_bookshelf"
   ]
 }

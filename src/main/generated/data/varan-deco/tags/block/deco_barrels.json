@@ -10,8 +10,10 @@
     "minecraft:crimson_barrel",
     "minecraft:warped_barrel",
     "minecraft:cactus_barrel",
+    "minecraft:mushroom_barrel",
     "minecraft:cherry_barrel",
     "minecraft:bamboo_barrel",
-    "minecraft:pale_oak_barrel"
+    "minecraft:pale_oak_barrel",
+    "minecraft:iron_cap_barrel"
   ]
 }

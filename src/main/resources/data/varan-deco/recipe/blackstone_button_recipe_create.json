@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    "minecraft:blackstone"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:blackstone_button"
+  }
+}

@@ -1,6 +1,8 @@
 {
   "item.minecraft.snow_brick": "Snow Brick",
   "item.minecraft.cactus_sign": "Cactus Sign",
+  "item.minecraft.mushroom_sign": "Mushroom Sign",
+  "item.minecraft.iron_cap_sign": "Iron Cap Sign",
   "item.minecraft.wooden_sign": "Wooden Sign",
   "item.minecraft.bubble_orb": "Bubble Orb",
   "item.minecraft.warped_wart": "Warped Wart",
@@ -13,12 +15,47 @@
 
   "item.varan-deco.cactus_boat": "Cactus Boat",
   "item.varan-deco.cactus_chest_boat": "Cactus Boat with Chest",
+  "item.varan-deco.mushroom_boat": "Mushroom Boat",
+  "item.varan-deco.mushroom_chest_boat": "Mushroom Boat with Chest",
   "item.varan-deco.wooden_boat": "Wooden Boat",
   "item.varan-deco.wooden_chest_boat": "Wooden Boat with Chest",
   "item.varan-deco.crimson_boat": "Crimson Boat",
   "item.varan-deco.crimson_chest_boat": "Crimson Boat with Chest",
   "item.varan-deco.warped_boat": "Warped Boat",
   "item.varan-deco.warped_chest_boat": "Warped Boat with Chest",
+  "item.varan-deco.bamboo_boat": "Bamboo Boat",
+  "item.varan-deco.bamboo_chest_boat": "Bamboo Boat with Chest",
+  "item.varan-deco.iron_cap_boat": "Iron Cap Boat",
+  "item.varan-deco.iron_cap_chest_boat": "Iron Cap Boat with Chest",
+
+  "item.varan-deco.oak_raft": "Oak Raft",
+  "item.varan-deco.oak_chest_raft": "Oak Raft with Chest",
+  "item.varan-deco.spruce_raft": "Spruce Raft",
+  "item.varan-deco.spruce_chest_raft": "Spruce Raft with Chest",
+  "item.varan-deco.birch_raft": "Birch Raft",
+  "item.varan-deco.birch_chest_raft": "Birch Raft with Chest",
+  "item.varan-deco.jungle_raft": "Jungle Raft",
+  "item.varan-deco.jungle_chest_raft": "Jungle Raft with Chest",
+  "item.varan-deco.acacia_raft": "Acacia Raft",
+  "item.varan-deco.acacia_chest_raft": "Acacia Raft with Chest",
+  "item.varan-deco.dark_oak_raft": "Dark Oak Raft",
+  "item.varan-deco.dark_oak_chest_raft": "Dark Oak Raft with Chest",
+  "item.varan-deco.mangrove_raft": "Mangrove Raft",
+  "item.varan-deco.mangrove_chest_raft": "Mangrove Raft with Chest",
+  "item.varan-deco.cherry_raft": "Cherry Raft",
+  "item.varan-deco.cherry_chest_raft": "Cherry Raft with Chest",
+  "item.varan-deco.crimson_raft": "Crimson Raft",
+  "item.varan-deco.crimson_chest_raft": "Crimson Raft with Chest",
+  "item.varan-deco.warped_raft": "Warped Raft",
+  "item.varan-deco.warped_chest_raft": "Warped Raft with Chest",
+  "item.varan-deco.cactus_raft": "Cactus Raft",
+  "item.varan-deco.cactus_chest_raft": "Cactus Raft with Chest",
+  "item.varan-deco.mushroom_raft": "Mushroom Raft",
+  "item.varan-deco.mushroom_chest_raft": "Mushroom Raft with Chest",
+  "item.varan-deco.iron_cap_raft": "Iron Cap Raft",
+  "item.varan-deco.iron_cap_chest_raft": "Iron Cap Raft with Chest",
+  "item.varan-deco.wooden_raft": "Wooden Raft",
+  "item.varan-deco.wooden_chest_raft": "Wooden Raft with Chest",
 
   "item.minecraft.stripped_oak_sign": "Stripped Oak Sign",
   "item.minecraft.stripped_spruce_sign": "Stripped Spruce Sign",
@@ -30,6 +67,9 @@
   "item.minecraft.stripped_cherry_sign": "Stripped Cherry Sign",
   "item.minecraft.stripped_crimson_sign": "Stripped Crimson Sign",
   "item.minecraft.stripped_warped_sign": "Stripped Warped Sign",
+  "item.minecraft.stripped_cactus_sign": "Stripped Cactus Sign",
+  "item.minecraft.mushroom_stem_sign": "Mushroom Stem Sign",
+  "item.minecraft.stripped_iron_cap_sign": "Stripped Iron Cap Sign",
   "item.minecraft.stripped_wooden_sign": "Stripped Wooden Sign",
   "item.minecraft.stripped_pale_oak_sign": "Stripped Pale Oak Sign",
 
@@ -45,9 +85,14 @@
   "item.minecraft.crimson_mosaic_sign": "Crimson Mosaic Sign",
   "item.minecraft.warped_mosaic_sign": "Warped Mosaic Sign",
   "item.minecraft.cactus_mosaic_sign": "Cactus Mosaic Sign",
+  "item.minecraft.mushroom_mosaic_sign": "Mushroom Mosaic Sign",
+  "item.minecraft.iron_cap_mosaic_sign": "Iron Cap Mosaic Sign",
   "item.minecraft.wooden_mosaic_sign": "Wooden Mosaic Sign",
   "item.minecraft.pale_oak_mosaic_sign": "Pale Oak Mosaic Sign",
 
+  "item.minecraft.cactus_hanging_sign": "Stripped Cactus Hanging Sign",
+  "item.minecraft.mushroom_hanging_sign": "Mushroom Stem Hanging Sign",
+  "item.minecraft.iron_cap_hanging_sign": "Stripped Iron Cap Hanging Sign",
   "item.minecraft.wooden_hanging_sign": "Stripped Wooden Hanging Sign",
 
   "item.minecraft.oak_mosaic_hanging_sign": "Oak Mosaic Hanging Sign",
@@ -62,6 +107,8 @@
   "item.minecraft.crimson_mosaic_hanging_sign": "Crimson Mosaic Hanging Sign",
   "item.minecraft.warped_mosaic_hanging_sign": "Warped Mosaic Hanging Sign",
   "item.minecraft.cactus_mosaic_hanging_sign": "Cactus Mosaic Hanging Sign",
+  "item.minecraft.mushroom_mosaic_hanging_sign": "Mushroom Mosaic Hanging Sign",
+  "item.minecraft.iron_cap_mosaic_hanging_sign": "Iron Cap Mosaic Hanging Sign",
   "item.minecraft.wooden_mosaic_hanging_sign": "Wooden Mosaic Hanging Sign",
   "item.minecraft.pale_oak_mosaic_hanging_sign": "Pale Oak Mosaic Hanging Sign",
 
@@ -76,8 +123,13 @@
   "item.minecraft.crimson_planks_hanging_sign": "Crimson Hanging Sign",
   "item.minecraft.warped_planks_hanging_sign": "Warped Hanging Sign",
   "item.minecraft.cactus_planks_hanging_sign": "Cactus Hanging Sign",
+  "item.minecraft.mushroom_planks_hanging_sign": "Mushroom Hanging Sign",
+  "item.minecraft.iron_cap_planks_hanging_sign": "Iron Cap Hanging Sign",
   "item.minecraft.wooden_planks_hanging_sign": "Wooden Hanging Sign",
   "item.minecraft.pale_oak_planks_hanging_sign": "Pale Oak Hanging Sign",
+
+  "item.minecraft.passtol": "Passtol",
+  "item.minecraft.shaddol": "Shaddol",
 
   "block.minecraft.polished_andesite_temp": "Non-Craftable Polished Andesite",
   "block.minecraft.polished_diorite_temp": "Non-Craftable Polished Diorite",
@@ -92,8 +144,8 @@
   "block.minecraft.packed_mud_temp": "Non-Craftable Packed Mud",
   "block.minecraft.nether_bricks_temp": "Non-Craftable Nether Bricks",
   "block.minecraft.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
-  "block.varan-deco.sandstone_top_temp": "Smooth Sandstone Template",
-  "block.varan-deco.red_sandstone_top_temp": "Smooth Red Sandstone Template",
+  "block.minecraft.sandstone_top_temp": "Smooth Sandstone Template",
+  "block.minecraft.red_sandstone_top_temp": "Smooth Red Sandstone Template",
   "block.minecraft.snow_temp": "Non-Craftable Snow",
   "block.minecraft.packed_ice_temp": "Non-Craftable Packed Ice",
   "block.minecraft.blue_ice_temp": "Non-Craftable Blue Ice",
@@ -160,11 +212,18 @@
   "block.minecraft.dark_oak_mosaic_temp": "Non-Craftable Dark Oak Mosaic",
   "block.minecraft.crimson_mosaic_temp": "Non-Craftable Crimson Mosaic",
   "block.minecraft.cactus_mosaic_temp": "Non-Craftable Cactus Mosaic",
-  "block.minecraft.polished_tuff_temp": "Non-Craftable Polished Tuff",
-  "block.minecraft.stripped_pale_oak_temp": "Non-Craftable Stripped Pale Oak Wood",
-  "block.minecraft.pale_oak_mosaic_temp": "Non-Craftable Pale Oak Mosaic",
   "block.minecraft.purpur_temp": "Non-Craftable Purpur",
   "block.minecraft.smooth_basalt_temp": "Smooth Basalt Template",
+  "block.minecraft.polished_tuff_temp": "Non-Craftable Polished Tuff",
+  "block.minecraft.iron_temp": "Non-Craftable Block of Iron",
+  "block.minecraft.raw_iron_temp": "Non-Craftable Block of Raw Iron",
+  "block.minecraft.gold_temp": "Non-Craftable Block of Gold",
+  "block.minecraft.raw_gold_temp": "Non-Craftable Block of Raw Gold",
+  "block.minecraft.copper_temp": "Non-Craftable Block of Copper",
+  "block.minecraft.raw_copper_temp": "Non-Craftable Block of Raw Copper",
+  "block.minecraft.exposed_copper_temp": "Exposed Copper Template",
+  "block.minecraft.weathered_copper_temp": "Weathered Copper Template",
+  "block.minecraft.oxidized_copper_temp": "Oxidized Copper Template",
 
   "block.minecraft.warped_wart_plant": "Warped Wart",
 
@@ -406,6 +465,8 @@
 
   "block.minecraft.chiseled_blue_nether_bricks": "Chiseled Blue Nether Bricks",
   "block.minecraft.cracked_blue_nether_bricks": "Cracked Blue Nether Bricks",
+  "block.minecraft.mushroom_crafting_table": "Mushroom Crafting Table",
+  "block.minecraft.iron_cap_crafting_table": "Iron Cap Crafting Table",
 
   "block.minecraft.spruce_crafting_table": "Spruce Crafting Table",
   "block.minecraft.birch_crafting_table": "Birch Crafting Table",
@@ -420,6 +481,8 @@
   "block.minecraft.warped_crafting_table": "Warped Crafting Table",
   "block.minecraft.cactus_crafting_table": "Cactus Crafting Table",
   "block.minecraft.oak_crafting_table": "Oak Crafting Table",
+  "block.minecraft.mushroom_barrel": "Mushroom Barrel",
+  "block.minecraft.iron_cap_barrel": "Iron Cap Barrel",
 
   "block.minecraft.oak_barrel": "Oak Barrel",
   "block.minecraft.spruce_barrel": "Spruce Barrel",
@@ -434,6 +497,8 @@
   "block.minecraft.crimson_barrel": "Crimson Barrel",
   "block.minecraft.warped_barrel": "Warped Barrel",
   "block.minecraft.cactus_barrel": "Cactus Barrel",
+  "block.minecraft.mushroom_ladder": "Mushroom Ladder",
+  "block.minecraft.iron_cap_ladder": "Iron Cap Ladder",
 
   "block.minecraft.spruce_ladder": "Spruce Ladder",
   "block.minecraft.birch_ladder": "Birch Ladder",
@@ -448,6 +513,8 @@
   "block.minecraft.cherry_ladder": "Cherry Ladder",
   "block.minecraft.bamboo_ladder": "Bamboo Ladder",
   "block.minecraft.pale_oak_ladder": "Pale Oak Ladder",
+  "block.minecraft.mushroom_smithing_table": "Mushroom Smithing Table",
+  "block.minecraft.iron_cap_smithing_table": "Iron Cap Smithing Table",
 
   "block.minecraft.oak_smithing_table": "Oak Smithing Table",
   "block.minecraft.spruce_smithing_table": "Spruce Smithing Table",
@@ -459,9 +526,11 @@
   "block.minecraft.crimson_smithing_table": "Crimson Smithing Table",
   "block.minecraft.warped_smithing_table": "Warped Smithing Table",
   "block.minecraft.cactus_smithing_table": "Cactus Smithing Table",
+  "block.minecraft.mushroom_cartography_table": "Mushroom Cartography Table",
   "block.minecraft.cherry_smithing_table": "Cherry Smithing Table",
   "block.minecraft.bamboo_smithing_table": "Bamboo Smithing Table",
   "block.minecraft.pale_oak_smithing_table": "Pale Oak Smithing Table",
+  "block.minecraft.iron_cap_cartography_table": "Iron Cap Cartography Table",
 
   "block.minecraft.oak_cartography_table": "Oak Cartography Table",
   "block.minecraft.birch_cartography_table": "Birch Cartography Table",
@@ -530,6 +599,12 @@
   "block.minecraft.warped_mosaic_slab": "Warped Mosaic Slab",
   "block.minecraft.cactus_mosaic_slab": "Cactus Mosaic Slab",
   "block.minecraft.wooden_mosaic_slab": "Wooden Mosaic Slab",
+  "block.minecraft.standing_stripped_cactus_sign": "Stripped Cactus Sign",
+  "block.minecraft.wall_stripped_cactus_sign": "Stripped Cactus Wall Sign",
+  "block.minecraft.standing_mushroom_stem_sign": "Mushroom Stem Sign",
+  "block.minecraft.wall_mushroom_stem_sign": "Mushroom Stem Wall Sign",
+  "block.minecraft.standing_stripped_iron_cap_sign": "Stripped Iron Cap Sign",
+  "block.minecraft.wall_stripped_iron_cap_sign": "Stripped Iron Cap Wall Sign",
   "block.minecraft.cherry_mosaic_slab": "Cherry Mosaic Slab",
   "block.minecraft.pale_oak_mosaic_slab": "Pale Oak Mosaic Slab",
 
@@ -555,9 +630,19 @@
   "block.minecraft.wall_stripped_warped_sign": "Stripped Warped Wall Sign",
   "block.minecraft.standing_stripped_wooden_sign": "Stripped Wooden Sign",
   "block.minecraft.wall_stripped_wooden_sign": "Stripped Wooden Wall Sign",
+  "block.minecraft.standing_mushroom_mosaic_sign": "Mushroom Mosaic Sign",
+  "block.minecraft.wall_mushroom_mosaic_sign": "Mushroom Mosaic Wall Sign",
+  "block.minecraft.standing_iron_cap_mosaic_sign": "Iron Cap Mosaic Sign",
+  "block.minecraft.wall_iron_cap_mosaic_sign": "Iron Cap Mosaic Wall Sign",
   "block.minecraft.standing_stripped_pale_oak_sign": "Stripped Pale Oak Sign",
   "block.minecraft.wall_stripped_pale_oak_sign": "Stripped Pale Oak Wall Sign",
 
+  "block.minecraft.hanging_cactus_sign": "Stripped Cactus Hanging Sign",
+  "block.minecraft.wall_hanging_cactus_sign": "Stripped Cactus Wall Hanging Sign",
+  "block.minecraft.hanging_mushroom_sign": "Mushroom Stem Hanging Sign",
+  "block.minecraft.wall_hanging_mushroom_sign": "Mushroom Stem Wall Hanging Sign",
+  "block.minecraft.hanging_iron_cap_sign": "Stripped Iron Cap Hanging Sign",
+  "block.minecraft.wall_hanging_iron_cap_sign": "Stripped Iron Cap Wall Hanging Sign",
   "block.minecraft.standing_oak_mosaic_sign": "Oak Mosaic Sign",
   "block.minecraft.wall_oak_mosaic_sign": "Oak Mosaic Wall Sign",
   "block.minecraft.standing_spruce_mosaic_sign": "Spruce Mosaic Sign",
@@ -602,6 +687,8 @@
   "block.minecraft.hanging_crimson_mosaic_sign": "Crimson Mosaic Hanging Sign",
   "block.minecraft.hanging_warped_mosaic_sign": "Warped Mosaic Hanging Sign",
   "block.minecraft.hanging_cactus_mosaic_sign": "Cactus Mosaic Hanging Sign",
+  "block.minecraft.wall_hanging_mushroom_mosaic_sign": "Mushroom Mosaic Wall Hanging Sign",
+  "block.minecraft.wall_hanging_iron_cap_mosaic_sign": "Iron Cap Mosaic Wall Hanging Sign",
   "block.minecraft.hanging_wooden_mosaic_sign": "Wooden Mosaic Hanging Sign",
   "block.minecraft.hanging_pale_oak_mosaic_sign": "Pale Oak Mosaic Hanging Sign",
 
@@ -617,6 +704,8 @@
   "block.minecraft.wall_hanging_crimson_mosaic_sign": "Crimson Mosaic Wall Hanging Sign",
   "block.minecraft.wall_hanging_warped_mosaic_sign": "Warped Mosaic Wall Hanging Sign",
   "block.minecraft.wall_hanging_cactus_mosaic_sign": "Cactus Mosaic Wall Hanging Sign",
+  "block.minecraft.hanging_mushroom_planks_sign": "Mushroom Hanging Sign",
+  "block.minecraft.hanging_iron_cap_planks_sign": "Iron Cap Hanging Sign",
   "block.minecraft.wall_hanging_wooden_mosaic_sign": "Wooden Mosaic Wall Hanging Sign",
   "block.minecraft.wall_hanging_pale_oak_mosaic_sign": "Pale Oak Mosaic Wall Hanging Sign",
 
@@ -631,6 +720,8 @@
   "block.minecraft.hanging_crimson_planks_sign": "Crimson Hanging Sign",
   "block.minecraft.hanging_warped_planks_sign": "Warped Hanging Sign",
   "block.minecraft.hanging_cactus_planks_sign": "Cactus Hanging Sign",
+  "block.minecraft.wall_hanging_mushroom_planks_sign": "Mushroom Wall Hanging Sign",
+  "block.minecraft.wall_hanging_iron_cap_planks_sign": "Iron Cap Wall Hanging Sign",
   "block.minecraft.hanging_wooden_planks_sign": "Wooden Hanging Sign",
   "block.minecraft.hanging_pale_oak_planks_sign": "Pale Oak Hanging Sign",
 
@@ -1100,6 +1191,11 @@
   "block.minecraft.smooth_purpur_slab": "Smooth Purpur Slab",
   "block.minecraft.smooth_purpur_wall": "Smooth Purpur Wall",
 
+  "block.minecraft.cut_purpur": "Cut Purpur",
+  "block.minecraft.cut_purpur_stairs": "Cut Purpur Stairs",
+  "block.minecraft.cut_purpur_slab": "Cut Purpur Slab",
+  "block.minecraft.cut_purpur_wall": "Cut Purpur Wall",
+
   "block.minecraft.purpur_bricks": "Purpur Bricks",
   "block.minecraft.purpur_brick_stairs": "Purpur Brick Stairs",
   "block.minecraft.purpur_brick_slab": "Purpur Brick Slab",
@@ -1142,8 +1238,8 @@
   "block.minecraft.light_iron_bars": "Light Iron Bars",
   "block.minecraft.heavy_iron_bars": "Heavy Iron Bars",
 
-  "block.minecraft.gold_door": "Gold Door",
-  "block.minecraft.gold_trapdoor": "Gold Trapdoor",
+  "block.minecraft.gold_door": "Golden Door",
+  "block.minecraft.gold_trapdoor": "Golden Trapdoor",
 
   "block.minecraft.polished_deepslate_button": "Polished Deepslate Button",
   "block.minecraft.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
@@ -1186,20 +1282,32 @@
   "block.minecraft.weathered_copper_bars": "Weathered Copper Bars",
   "block.minecraft.waxed_weathered_copper_bars": "Waxed Weathered Copper Bars",
 
+  "block.minecraft.polished_deepslate_button": "Polished Deepslate Button",
+  "block.minecraft.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
+  "block.minecraft.polished_deepslate_lever": "Polished Deepslate Lever",
+
   "block.minecraft.oxidized_copper_bars": "Oxidized Copper Bars",
   "block.minecraft.waxed_oxidized_copper_bars": "Waxed Oxidized Copper Bars",
+  "block.minecraft.deepslate_lever": "Deepslate Lever",
 
   "block.minecraft.deepslate_button": "Deepslate Button",
   "block.minecraft.deepslate_pressure_plate": "Deepslate Pressure Plate",
+  "block.minecraft.cobbled_deepslate_lever": "Cobbled Deepslate Lever",
 
   "block.minecraft.cobbled_deepslate_button": "Cobbled Deepslate Button",
   "block.minecraft.cobbled_deepslate_pressure_plate": "Cobbled Deepslate Pressure Plate",
 
+  "block.minecraft.stone_lever": "Stone Lever",
+
   "block.minecraft.cobblestone_button": "Cobblestone Button",
   "block.minecraft.cobblestone_pressure_plate": "Cobblestone Pressure Plate",
+  "block.minecraft.blackstone_lever": "Blackstone Lever",
+
+  "block.minecraft.polished_blackstone_lever": "Polished Blackstone Lever",
 
   "block.minecraft.blackstone_button": "Blackstone Button",
   "block.minecraft.blackstone_pressure_plate": "Blackstone Pressure Plate",
+  "block.minecraft.polished_stone_lever": "Polished Stone Lever",
 
   "block.minecraft.polished_stone_button": "Polished Stone Button",
   "block.minecraft.polished_stone_pressure_plate": "Polished Stone Pressure Plate",
@@ -1267,6 +1375,14 @@
   "block.minecraft.blue_hibiscus": "Blue Hibiscus",
   "block.minecraft.potted_blue_hibiscus": "Potted Blue Hibiscus",
 
+  "block.minecraft.buttercup": "Buttercup",
+  "block.minecraft.potted_buttercup": "Potted Buttercup",
+
+  "block.minecraft.nightshade": "Nightshade",
+  "block.minecraft.potted_nightshade": "Potted Nightshade",
+  "block.minecraft.endershade": "Endershade",
+  "block.minecraft.potted_endershade": "Potted Endershade",
+
   "block.minecraft.bromeliad": "Bromeliad",
   "block.minecraft.potted_bromeliad": "Potted Bromeliad",
 
@@ -1317,6 +1433,36 @@
 
   "block.minecraft.oxidized_copper_weight_pressure_plate": "Oxidized Copper Weighted Pressure Plate",
   "block.minecraft.waxed_oxidized_copper_weight_pressure_plate": "Waxed Oxidized Copper Weighted Pressure Plate",
+
+  "block.minecraft.pastel_light_gray_block": "Pastel Light Gray Block",
+  "block.minecraft.pastel_gray_block": "Pastel Gray Block",
+  "block.minecraft.pastel_brown_block": "Pastel Brown Block",
+  "block.minecraft.pastel_red_block": "Pastel Red Block",
+  "block.minecraft.pastel_orange_block": "Pastel Orange Block",
+  "block.minecraft.pastel_yellow_block": "Pastel Yellow Block",
+  "block.minecraft.pastel_lime_block": "Pastel Lime Block",
+  "block.minecraft.pastel_green_block": "Pastel Green Block",
+  "block.minecraft.pastel_cyan_block": "Pastel Cyan Block",
+  "block.minecraft.pastel_light_blue_block": "Pastel Light Blue Block",
+  "block.minecraft.pastel_blue_block": "Pastel Blue Block",
+  "block.minecraft.pastel_purple_block": "Pastel Purple Block",
+  "block.minecraft.pastel_magenta_block": "Pastel Magenta Block",
+  "block.minecraft.pastel_pink_block": "Pastel Pink Block",
+
+  "block.minecraft.shaded_light_gray_block": "Shaded Light Gray Block",
+  "block.minecraft.shaded_gray_block": "Shaded Gray Block",
+  "block.minecraft.shaded_brown_block": "Shaded Brown Block",
+  "block.minecraft.shaded_red_block": "Shaded Red Block",
+  "block.minecraft.shaded_orange_block": "Shaded Orange Block",
+  "block.minecraft.shaded_yellow_block": "Shaded Yellow Block",
+  "block.minecraft.shaded_lime_block": "Shaded Lime Block",
+  "block.minecraft.shaded_green_block": "Shaded Green Block",
+  "block.minecraft.shaded_cyan_block": "Shaded Cyan Block",
+  "block.minecraft.shaded_light_blue_block": "Shaded Light Blue Block",
+  "block.minecraft.shaded_blue_block": "Shaded Blue Block",
+  "block.minecraft.shaded_purple_block": "Shaded Purple Block",
+  "block.minecraft.shaded_magenta_block": "Shaded Magenta Block",
+  "block.minecraft.shaded_pink_block": "Shaded Pink Block",
 
   "block.minecraft.white_block": "White Block",
   "block.minecraft.light_gray_block": "Light Gray Block",
@@ -1382,6 +1528,413 @@
 
   "block.minecraft.fragile_ice": "Fragile Ice",
 
+  "block.minecraft.oak_wood_stairs": "Oak Wood Stairs",
+  "block.minecraft.oak_wood_slab": "Oak Wood Slab",
+  "block.minecraft.oak_wood_wall": "Oak Wood Wall",
+
+  "block.minecraft.spruce_wood_stairs": "Spruce Wood Stairs",
+  "block.minecraft.spruce_wood_slab": "Spruce Wood Slab",
+  "block.minecraft.spruce_wood_wall": "Spruce Wood Wall",
+
+  "block.minecraft.birch_wood_stairs": "Birch Wood Stairs",
+  "block.minecraft.birch_wood_slab": "Birch Wood Slab",
+  "block.minecraft.birch_wood_wall": "Birch Wood Wall",
+
+  "block.minecraft.jungle_wood_stairs": "Jungle Wood Stairs",
+  "block.minecraft.jungle_wood_slab": "Jungle Wood Slab",
+  "block.minecraft.jungle_wood_wall": "Jungle Wood Wall",
+
+  "block.minecraft.acacia_wood_stairs": "Acacia Wood Stairs",
+  "block.minecraft.acacia_wood_slab": "Acacia Wood Slab",
+  "block.minecraft.acacia_wood_wall": "Acacia Wood Wall",
+
+  "block.minecraft.dark_oak_wood_stairs": "Dark Oak Wood Stairs",
+  "block.minecraft.dark_oak_wood_slab": "Dark Oak Wood Slab",
+  "block.minecraft.dark_oak_wood_wall": "Dark Oak Wood Wall",
+
+  "block.minecraft.mangrove_wood_stairs": "Mangrove Wood Stairs",
+  "block.minecraft.mangrove_wood_slab": "Mangrove Wood Slab",
+  "block.minecraft.mangrove_wood_wall": "Mangrove Wood Wall",
+
+  "block.minecraft.crimson_hyphae_stairs": "Crimson Hyphae Stairs",
+  "block.minecraft.crimson_hyphae_slab": "Crimson Hyphae Slab",
+  "block.minecraft.crimson_hyphae_wall": "Crimson Hyphae Wall",
+
+  "block.minecraft.warped_hyphae_stairs": "Warped Hyphae Stairs",
+  "block.minecraft.warped_hyphae_slab": "Warped Hyphae Slab",
+  "block.minecraft.warped_hyphae_wall": "Warped Hyphae Wall",
+
+  "block.minecraft.stripped_oak_wood_stairs": "Stripped Oak Wood Stairs",
+  "block.minecraft.stripped_oak_wood_slab": "Stripped Oak Wood Slab",
+  "block.minecraft.stripped_oak_wood_wall": "Stripped Oak Wood Wall",
+
+  "block.minecraft.stripped_spruce_wood_stairs": "Stripped Spruce Wood Stairs",
+  "block.minecraft.stripped_spruce_wood_slab": "Stripped Spruce Wood Slab",
+  "block.minecraft.stripped_spruce_wood_wall": "Stripped Spruce Wood Wall",
+
+  "block.minecraft.stripped_birch_wood_stairs": "Stripped Birch Wood Stairs",
+  "block.minecraft.stripped_birch_wood_slab": "Stripped Birch Wood Slab",
+  "block.minecraft.stripped_birch_wood_wall": "Stripped Birch Wood Wall",
+
+  "block.minecraft.stripped_jungle_wood_stairs": "Stripped Jungle Wood Stairs",
+  "block.minecraft.stripped_jungle_wood_slab": "Stripped Jungle Wood Slab",
+  "block.minecraft.stripped_jungle_wood_wall": "Stripped Jungle Wood Wall",
+
+  "block.minecraft.stripped_acacia_wood_stairs": "Stripped Acacia Wood Stairs",
+  "block.minecraft.stripped_acacia_wood_slab": "Stripped Acacia Wood Slab",
+  "block.minecraft.stripped_acacia_wood_wall": "Stripped Acacia Wood Wall",
+
+  "block.minecraft.stripped_dark_oak_wood_stairs": "Stripped Dark Oak Wood Stairs",
+  "block.minecraft.stripped_dark_oak_wood_slab": "Stripped Dark Oak Wood Slab",
+  "block.minecraft.stripped_dark_oak_wood_wall": "Stripped Dark Oak Wood Wall",
+
+  "block.minecraft.stripped_mangrove_wood_stairs": "Stripped Mangrove Wood Stairs",
+  "block.minecraft.stripped_mangrove_wood_slab": "Stripped Mangrove Wood Slab",
+  "block.minecraft.stripped_mangrove_wood_wall": "Stripped Mangrove Wood Wall",
+
+  "block.minecraft.stripped_crimson_hyphae_stairs": "Stripped Crimson Hyphae Stairs",
+  "block.minecraft.stripped_crimson_hyphae_slab": "Stripped Crimson Hyphae Slab",
+  "block.minecraft.stripped_crimson_hyphae_wall": "Stripped Crimson Hyphae Wall",
+
+  "block.minecraft.stripped_warped_hyphae_stairs": "Stripped Warped Hyphae Stairs",
+  "block.minecraft.stripped_warped_hyphae_slab": "Stripped Warped Hyphae Slab",
+  "block.minecraft.stripped_warped_hyphae_wall": "Stripped Warped Hyphae Wall",
+
+  "block.minecraft.wooden_wood_stairs": "Wooden Wood Stairs",
+  "block.minecraft.wooden_wood_slab": "Wooden Wood Slab",
+  "block.minecraft.wooden_wood_wall": "Wooden Wood Wall",
+
+  "block.minecraft.stripped_wooden_wood_stairs": "Stripped Wooden Wood Stairs",
+  "block.minecraft.stripped_wooden_wood_slab": "Stripped Wooden Wood Slab",
+  "block.minecraft.stripped_wooden_wood_wall": "Stripped Wooden Wood Wall",
+
+  "block.minecraft.packed_netherrack": "Packed Netherrack",
+  "block.minecraft.packed_netherrack_stairs": "Packed Netherrack Stairs",
+  "block.minecraft.packed_netherrack_slab": "Packed Netherrack Slab",
+  "block.minecraft.packed_netherrack_wall": "Packed Netherrack Wall",
+
+  "block.minecraft.netherrack_bricks": "Netherrack Bricks",
+  "block.minecraft.netherrack_brick_stairs": "Netherrack Brick Stairs",
+  "block.minecraft.netherrack_brick_slab": "Netherrack Brick Slab",
+  "block.minecraft.netherrack_brick_wall": "Netherrack Brick Wall",
+
+  "block.minecraft.chiseled_ice_bricks": "Chiseled Ice Bricks",
+  "block.minecraft.chiseled_mud_bricks": "Chiseled Mud Bricks",
+  "block.minecraft.chiseled_netherrack_bricks": "Chiseled Netherrack Bricks",
+
+  "block.minecraft.packed_cactus": "Packed Cactus",
+  "block.minecraft.stripped_cactus": "Stripped Cactus",
+
+  "block.minecraft.smooth_glowstone": "Smooth Glowstone",
+  "block.minecraft.basalt_bricks": "Basalt Bricks",
+
+  "block.minecraft.oak_pallet_door": "Oak Pallet Door",
+  "block.minecraft.spruce_pallet_door": "Spruce Pallet Door",
+  "block.minecraft.birch_pallet_door": "Birch Pallet Door",
+  "block.minecraft.jungle_pallet_door": "Jungle Pallet Door",
+  "block.minecraft.acacia_pallet_door": "Acacia Pallet Door",
+  "block.minecraft.dark_oak_pallet_door": "Dark Oak Pallet Door",
+  "block.minecraft.mangrove_pallet_door": "Mangrove Pallet Door",
+  "block.minecraft.crimson_pallet_door": "Crimson Pallet Door",
+  "block.minecraft.warped_pallet_door": "Warped Pallet Door",
+  "block.minecraft.cactus_pallet_door": "Cactus Pallet Door",
+  "block.minecraft.wooden_pallet_door": "Wooden Pallet Door",
+
+  "block.minecraft.oak_pallet_trapdoor": "Oak Pallet Trapdoor",
+  "block.minecraft.spruce_pallet_trapdoor": "Spruce Pallet Trapdoor",
+  "block.minecraft.birch_pallet_trapdoor": "Birch Pallet Trapdoor",
+  "block.minecraft.jungle_pallet_trapdoor": "Jungle Pallet Trapdoor",
+  "block.minecraft.acacia_pallet_trapdoor": "Acacia Pallet Trapdoor",
+  "block.minecraft.dark_oak_pallet_trapdoor": "Dark Oak Pallet Trapdoor",
+  "block.minecraft.mangrove_pallet_trapdoor": "Mangrove Pallet Trapdoor",
+  "block.minecraft.crimson_pallet_trapdoor": "Crimson Pallet Trapdoor",
+  "block.minecraft.warped_pallet_trapdoor": "Warped Pallet Trapdoor",
+  "block.minecraft.cactus_pallet_trapdoor": "Cactus Pallet Trapdoor",
+  "block.minecraft.wooden_pallet_trapdoor": "Wooden Pallet Trapdoor",
+
+  "block.minecraft.white_lamp": "White Lamp",
+  "block.minecraft.light_gray_lamp": "Light Gray Lamp",
+  "block.minecraft.gray_lamp": "Gray Lamp",
+  "block.minecraft.black_lamp": "Black Lamp",
+  "block.minecraft.brown_lamp": "Brown Lamp",
+  "block.minecraft.red_lamp": "Red Lamp",
+  "block.minecraft.orange_lamp": "Orange Lamp",
+  "block.minecraft.yellow_lamp": "Yellow Lamp",
+  "block.minecraft.lime_lamp": "Lime Lamp",
+  "block.minecraft.green_lamp": "Green Lamp",
+  "block.minecraft.cyan_lamp": "Cyan Lamp",
+  "block.minecraft.light_blue_lamp": "Light Blue Lamp",
+  "block.minecraft.blue_lamp": "Blue Lamp",
+  "block.minecraft.purple_lamp": "Purple Lamp",
+  "block.minecraft.magenta_lamp": "Magenta Lamp",
+  "block.minecraft.pink_lamp": "Pink Lamp",
+
+  "block.minecraft.mushroom_planks": "Mushroom Planks",
+  "block.minecraft.mushroom_stairs": "Mushroom Stairs",
+  "block.minecraft.mushroom_slab": "Mushroom Slab",
+  "block.minecraft.mushroom_fence": "Mushroom Fence",
+  "block.minecraft.mushroom_fence_gate": "Mushroom Fence Gate",
+  "block.minecraft.mushroom_button": "Mushroom Button",
+  "block.minecraft.mushroom_pressure_plate": "Mushroom Pressure Plate",
+
+  "block.minecraft.mushroom_door": "Mushroom Door",
+  "block.minecraft.mushroom_trapdoor": "Mushroom Trapdoor",
+
+  "block.minecraft.mushroom_pallet_door": "Mushroom Pallet Door",
+  "block.minecraft.mushroom_pallet_trapdoor": "Mushroom Pallet Trapdoor",
+
+  "block.minecraft.standing_mushroom_sign": "Mushroom Sign",
+  "block.minecraft.wall_mushroom_sign": "Mushroom Wall Sign",
+
+  "block.minecraft.mushroom_note_block": "Mushroom Note Block",
+  "block.minecraft.oak_note_block": "Oak Note Block",
+  "block.minecraft.spruce_note_block": "Spruce Note Block",
+  "block.minecraft.birch_note_block": "Birch Note Block",
+  "block.minecraft.jungle_note_block": "Jungle Note Block",
+  "block.minecraft.acacia_note_block": "Acacia Note Block",
+  "block.minecraft.dark_oak_note_block": "Dark Oak Note Block",
+  "block.minecraft.mangrove_note_block": "Mangrove Note Block",
+  "block.minecraft.crimson_note_block": "Crimson Note Block",
+  "block.minecraft.warped_note_block": "Warped Note Block",
+  "block.minecraft.cactus_note_block": "Cactus Note Block",
+
+  "block.minecraft.polished_calcite": "Polished Calcite",
+
+  "block.minecraft.polished_calcite_stairs": "Polished Calcite Stairs",
+  "block.minecraft.polished_calcite_slab": "Polished Calcite Slab",
+  "block.minecraft.polished_calcite_wall": "Polished Calcite Wall",
+
+  "block.minecraft.cut_calcite": "Cut Calcite",
+
+  "block.minecraft.cut_calcite_stairs": "Cut Calcite Stairs",
+  "block.minecraft.cut_calcite_slab": "Cut Calcite Slab",
+  "block.minecraft.cut_calcite_wall": "Cut Calcite Wall",
+
+  "block.minecraft.calcite_bricks": "Calcite Bricks",
+
+  "block.minecraft.calcite_brick_stairs": "Calcite Bricks Stairs",
+  "block.minecraft.calcite_brick_slab": "Calcite Bricks Slab",
+  "block.minecraft.calcite_brick_wall": "Calcite Bricks Wall",
+
+  "block.minecraft.cut_granite": "Cut Granite",
+
+  "block.minecraft.cut_granite_stairs": "Cut Granite Stairs",
+  "block.minecraft.cut_granite_slab": "Cut Granite Slab",
+  "block.minecraft.cut_granite_wall": "Cut Granite Wall",
+
+  "block.minecraft.granite_bricks": "Granite Bricks",
+
+  "block.minecraft.granite_brick_stairs": "Granite Bricks Stairs",
+  "block.minecraft.granite_brick_slab": "Granite Bricks Slab",
+  "block.minecraft.granite_brick_wall": "Granite Bricks Wall",
+
+  "block.minecraft.cut_diorite": "Cut Diorite",
+
+  "block.minecraft.cut_diorite_stairs": "Cut Diorite Stairs",
+  "block.minecraft.cut_diorite_slab": "Cut Diorite Slab",
+  "block.minecraft.cut_diorite_wall": "Cut Diorite Wall",
+
+  "block.minecraft.diorite_bricks": "Diorite Bricks",
+
+  "block.minecraft.diorite_brick_stairs": "Diorite Bricks Stairs",
+  "block.minecraft.diorite_brick_slab": "Diorite Bricks Slab",
+  "block.minecraft.diorite_brick_wall": "Diorite Bricks Wall",
+
+  "block.minecraft.cut_andesite": "Cut Andesite",
+
+  "block.minecraft.cut_andesite_stairs": "Cut Andesite Stairs",
+  "block.minecraft.cut_andesite_slab": "Cut Andesite Slab",
+  "block.minecraft.cut_andesite_wall": "Cut Andesite Wall",
+
+  "block.minecraft.andesite_bricks": "Andesite Bricks",
+
+  "block.minecraft.andesite_brick_stairs": "Andesite Bricks Stairs",
+  "block.minecraft.andesite_brick_slab": "Andesite Bricks Slab",
+  "block.minecraft.andesite_brick_wall": "Andesite Bricks Wall",
+
+  "block.minecraft.cut_gold": "Cut Gold",
+  "block.minecraft.cut_gold_stairs": "Cut Gold Stairs",
+  "block.minecraft.cut_gold_slab": "Cut Gold Slab",
+
+  "block.minecraft.gold_stairs": "Golden Stairs",
+  "block.minecraft.gold_slab": "Golden Slab",
+  "block.minecraft.iron_stairs": "Iron Stairs",
+  "block.minecraft.iron_slab": "Iron Slab",
+
+  "block.minecraft.raw_gold_stairs": "Raw Gold Stairs",
+  "block.minecraft.raw_gold_slab": "Raw Gold Slab",
+  "block.minecraft.raw_iron_stairs": "Raw Iron Stairs",
+  "block.minecraft.raw_iron_slab": "Raw Iron Slab",
+
+  "block.minecraft.copper_stairs": "Copper Stairs",
+  "block.minecraft.copper_slab": "Copper Slab",
+  "block.minecraft.raw_copper_stairs": "Raw Copper Stairs",
+  "block.minecraft.raw_copper_slab": "Raw Copper Slab",
+  "block.minecraft.exposed_copper_stairs": "Exposed Copper Stairs",
+  "block.minecraft.exposed_copper_slab": "Exposed Copper Slab",
+  "block.minecraft.weathered_copper_stairs": "Weathered Copper Stairs",
+  "block.minecraft.weathered_copper_slab": "Weathered Copper Slab",
+  "block.minecraft.oxidized_copper_stairs": "Oxidized Copper Stairs",
+  "block.minecraft.oxidized_copper_slab": "Oxidized Copper Slab",
+
+  "block.minecraft.waxed_copper_stairs": "Waxed Copper Stairs",
+  "block.minecraft.waxed_copper_slab": "Waxed Copper Slab",
+  "block.minecraft.waxed_exposed_copper_stairs": "Waxed Exposed Copper Stairs",
+  "block.minecraft.waxed_exposed_copper_slab": "Waxed Exposed Copper Slab",
+  "block.minecraft.waxed_weathered_copper_stairs": "Waxed Weathered Copper Stairs",
+  "block.minecraft.waxed_weathered_copper_slab": "Waxed Weathered Copper Slab",
+  "block.minecraft.waxed_oxidized_copper_stairs": "Waxed Oxidized Copper Stairs",
+  "block.minecraft.waxed_oxidized_copper_slab": "Waxed Oxidized Copper Slab",
+
+  "block.minecraft.gold_bars": "Golden Bars",
+  "block.minecraft.light_gold_bars": "Light Golden Bars",
+  "block.minecraft.heavy_gold_bars": "Heavy Golden Bars",
+
+  "block.minecraft.sanded_obsidian": "Sanded Obsidian",
+  "block.minecraft.sanded_obsidian_stairs": "Sanded Obsidian Stairs",
+  "block.minecraft.sanded_obsidian_slab": "Sanded Obsidian Slab",
+  "block.minecraft.sanded_obsidian_wall": "Sanded Obsidian Wall",
+
+  "block.minecraft.smooth_obsidian": "Smooth Obsidian",
+  "block.minecraft.smooth_obsidian_stairs": "Smooth Obsidian Stairs",
+  "block.minecraft.smooth_obsidian_slab": "Smooth Obsidian Slab",
+  "block.minecraft.smooth_obsidian_wall": "Smooth Obsidian Wall",
+
+  "block.minecraft.cut_obsidian": "Cut Obsidian",
+  "block.minecraft.cut_obsidian_stairs": "Cut Obsidian Stairs",
+  "block.minecraft.cut_obsidian_slab": "Cut Obsidian Slab",
+  "block.minecraft.cut_obsidian_wall": "Cut Obsidian Wall",
+
+  "block.minecraft.chiseled_magma_block": "Chiseled Magma Block",
+  "block.minecraft.chiseled_bubble_block": "Chiseled Bubble Block",
+
+  "block.minecraft.polished_end_stone": "Polished End Stone",
+  "block.minecraft.polished_end_stone_stairs": "Polished End Stone Stairs",
+  "block.minecraft.polished_end_stone_slab": "Polished End Stone Slab",
+  "block.minecraft.polished_end_stone_wall": "Polished End Stone Wall",
+
+  "block.minecraft.smooth_end_stone": "Smooth End Stone",
+  "block.minecraft.smooth_end_stone_stairs": "Smooth End Stone Stairs",
+  "block.minecraft.smooth_end_stone_slab": "Smooth End Stone Slab",
+  "block.minecraft.smooth_end_stone_wall": "Smooth End Stone Wall",
+
+  "block.minecraft.end_stone_tiles": "End Stone Tiles",
+  "block.minecraft.end_stone_tile_stairs": "End Stone Tile Stairs",
+  "block.minecraft.end_stone_tile_slab": "End Stone Tile Slab",
+  "block.minecraft.end_stone_tile_wall": "End Stone Tile Wall",
+
+  "block.minecraft.cracked_end_stone_tiles": "Cracked End Stone Tiles",
+  "block.minecraft.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+
+  "block.minecraft.polished_end_stone_button": "Polished End Stone Button",
+  "block.minecraft.polished_end_stone_pressure_plate": "Polished End Stone Pressure Plate",
+  "block.minecraft.polished_end_stone_lever": "Polished End Stone Lever",
+
+  "block.minecraft.end_stone_button": "End Stone Button",
+  "block.minecraft.end_stone_pressure_plate": "End Stone Pressure Plate",
+  "block.minecraft.end_stone_lever": "End Stone Lever",
+
+  "block.minecraft.end_stone_furnace": "End Stone Furnace",
+  "block.minecraft.end_stone_blast_furnace": "End Stone Blast Furnace",
+  "block.minecraft.end_stone_smoker": "End Stone Smoker",
+  "block.minecraft.end_stone_stonecutter": "End Stone Stonecutter",
+  "block.minecraft.end_stone_grindstone": "End Stone Grindstone",
+
+  "block.minecraft.cherry_wood_stairs": "Cherry Wood Stairs",
+  "block.minecraft.cherry_wood_slab": "Cherry Wood Slab",
+  "block.minecraft.cherry_wood_wall": "Cherry Wood Wall",
+
+  "block.minecraft.stripped_cherry_wood_stairs": "Stripped Cherry Wood Stairs",
+  "block.minecraft.stripped_cherry_wood_slab": "Stripped Cherry Wood Slab",
+  "block.minecraft.stripped_cherry_wood_wall": "Stripped Cherry Wood Wall",
+
+  "block.minecraft.mushroom_mosaic": "Mushroom Mosaic",
+  "block.minecraft.mushroom_mosaic_stairs": "Mushroom Mosaic Stairs",
+  "block.minecraft.mushroom_mosaic_slab": "Mushroom Mosaic Slab",
+
+  "block.minecraft.cherry_pallet_door": "Cherry Pallet Door",
+  "block.minecraft.bamboo_pallet_door": "Bamboo Pallet Door",
+  "block.minecraft.cherry_pallet_trapdoor": "Cherry Pallet Trapdoor",
+  "block.minecraft.bamboo_pallet_trapdoor": "Bamboo Pallet Trapdoor",
+
+  "block.minecraft.mushroom_bookshelf": "Mushroom Bookshelf",
+
+  "block.minecraft.cherry_note_block": "Cherry Note Block",
+  "block.minecraft.bamboo_note_block": "Bamboo Note Block",
+
+  "block.minecraft.oak_bookshelf_stairs": "Oak Bookshelf Stairs",
+  "block.minecraft.spruce_bookshelf_stairs": "Spruce Bookshelf Stairs",
+  "block.minecraft.birch_bookshelf_stairs": "Birch Bookshelf Stairs",
+  "block.minecraft.jungle_bookshelf_stairs": "Jungle Bookshelf Stairs",
+  "block.minecraft.acacia_bookshelf_stairs": "Acacia Bookshelf Stairs",
+  "block.minecraft.dark_oak_bookshelf_stairs": "Dark Oak Bookshelf Stairs",
+  "block.minecraft.mangrove_bookshelf_stairs": "Mangrove Bookshelf Stairs",
+  "block.minecraft.crimson_bookshelf_stairs": "Crimson Bookshelf Stairs",
+  "block.minecraft.warped_bookshelf_stairs": "Warped Bookshelf Stairs",
+  "block.minecraft.cactus_bookshelf_stairs": "Cactus Bookshelf Stairs",
+  "block.minecraft.cherry_bookshelf_stairs": "Cherry Bookshelf Stairs",
+  "block.minecraft.mushroom_bookshelf_stairs": "Mushroom Bookshelf Stairs",
+  "block.minecraft.bamboo_bookshelf_stairs": "Bamboo Bookshelf Stairs",
+  "block.minecraft.wooden_bookshelf_stairs": "Bookshelf Stairs",
+
+  "block.minecraft.oak_bookshelf_slab": "Oak Bookshelf Slab",
+  "block.minecraft.spruce_bookshelf_slab": "Spruce Bookshelf Slab",
+  "block.minecraft.birch_bookshelf_slab": "Birch Bookshelf Slab",
+  "block.minecraft.jungle_bookshelf_slab": "Jungle Bookshelf Slab",
+  "block.minecraft.acacia_bookshelf_slab": "Acacia Bookshelf Slab",
+  "block.minecraft.dark_oak_bookshelf_slab": "Dark Oak Bookshelf Slab",
+  "block.minecraft.mangrove_bookshelf_slab": "Mangrove Bookshelf Slab",
+  "block.minecraft.crimson_bookshelf_slab": "Crimson Bookshelf Slab",
+  "block.minecraft.warped_bookshelf_slab": "Warped Bookshelf Slab",
+  "block.minecraft.cactus_bookshelf_slab": "Cactus Bookshelf Slab",
+  "block.minecraft.cherry_bookshelf_slab": "Cherry Bookshelf Slab",
+  "block.minecraft.mushroom_bookshelf_slab": "Mushroom Bookshelf Slab",
+  "block.minecraft.bamboo_bookshelf_slab": "Bamboo Bookshelf Slab",
+  "block.minecraft.wooden_bookshelf_slab": "Bookshelf Slab",
+
+  "block.minecraft.iron_cap_stem": "Iron Cap Stem",
+  "block.minecraft.stripped_iron_cap_stem": "Stripped Iron Cap Stem",
+  "block.minecraft.stripped_iron_cap_hyphae": "Stripped Iron Cap Hyphae",
+  "block.minecraft.iron_cap_hyphae": "Iron Cap Hyphae",
+
+  "block.minecraft.iron_cap_mushroom": "Iron Cap Mushroom",
+  "block.minecraft.iron_cap_mushroom_block": "Iron Cap Mushroom Block",
+  "block.minecraft.spore_iron_ore": "Spore Iron Ore",
+
+  "block.minecraft.iron_cap_planks": "Iron Cap Planks",
+  "block.minecraft.iron_cap_stairs": "Iron Cap Stairs",
+  "block.minecraft.iron_cap_slab": "Iron Cap Slab",
+  "block.minecraft.iron_cap_fence": "Iron Cap Fence",
+  "block.minecraft.iron_cap_fence_gate": "Iron Cap Fence Gate",
+  "block.minecraft.iron_cap_button": "Iron Cap Button",
+  "block.minecraft.iron_cap_pressure_plate": "Iron Cap Pressure Plate",
+
+  "block.minecraft.iron_cap_door": "Iron Cap Door",
+  "block.minecraft.iron_cap_trapdoor": "Iron Cap Trapdoor",
+
+  "block.minecraft.iron_cap_hyphae_stairs": "Iron Cap Hyphae Stairs",
+  "block.minecraft.iron_cap_hyphae_slab": "Iron Cap Hyphae Slab",
+  "block.minecraft.iron_cap_hyphae_wall": "Iron Cap Hyphae Wall",
+
+  "block.minecraft.stripped_iron_cap_hyphae_stairs": "Stripped Iron Cap Hyphae Stairs",
+  "block.minecraft.stripped_iron_cap_hyphae_slab": "Stripped Iron Cap Hyphae Slab",
+  "block.minecraft.stripped_iron_cap_hyphae_wall": "Stripped Iron Cap Hyphae Wall",
+
+  "block.minecraft.iron_cap_mosaic": "Iron Cap Mosaic",
+  "block.minecraft.iron_cap_mosaic_stairs": "Iron Cap Mosaic Stairs",
+  "block.minecraft.iron_cap_mosaic_slab": "Iron Cap Mosaic Slab",
+
+  "block.minecraft.iron_cap_pallet_door": "Iron Cap Pallet Door",
+  "block.minecraft.iron_cap_pallet_trapdoor": "Iron Cap Pallet Trapdoor",
+
+  "block.minecraft.iron_cap_bookshelf": "Iron Cap Bookshelf",
+  "block.minecraft.iron_cap_bookshelf_stairs": "Iron Cap Bookshelf Stairs",
+  "block.minecraft.iron_cap_bookshelf_slab": "Iron Cap Bookshelf Slab",
+  "block.minecraft.iron_cap_note_block": "Iron Cap Note Block",
+
+  "block.minecraft.standing_iron_cap_sign": "Iron Cap Sign",
+  "block.minecraft.wall_iron_cap_sign": "Iron Cap Wall Sign",
+
   "block.minecraft.infested_polished_stone": "Infested Polished Stone",
   "block.minecraft.infested_stone_tiles": "Infested Stone Tiles",
   "block.minecraft.infested_cracked_stone_tiles": "Infested Cracked Stone Tiles",
@@ -1421,14 +1974,14 @@
   "item.minecraft.lingering_potion.effect.water_bubble": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.water_bubble": "Arrow of The Water Bubble",
 
-  "entity.varan-deco.cactus_boat": "Cactus Boat",
-  "entity.varan-deco.cactus_chest_boat": "Cactus Boat with Chest",
-  "entity.varan-deco.wooden_boat": "Wooden Boat",
-  "entity.varan-deco.wooden_chest_boat": "Wooden Boat with Chest",
-  "entity.varan-deco.crimson_boat": "Crimson Boat",
-  "entity.varan-deco.crimson_chest_boat": "Crimson Boat with Chest",
-  "entity.varan-deco.warped_boat": "Warped Boat",
-  "entity.varan-deco.warped_chest_boat": "Warped Boat with Chest",
+  "entity.minecraft.cactus_boat": "Cactus Boat",
+  "entity.minecraft.cactus_chest_boat": "Cactus Boat with Chest",
+  "entity.minecraft.wooden_boat": "Wooden Boat",
+  "entity.minecraft.wooden_chest_boat": "Wooden Boat with Chest",
+  "entity.minecraft.crimson_boat": "Crimson Boat",
+  "entity.minecraft.crimson_chest_boat": "Crimson Boat with Chest",
+  "entity.minecraft.warped_boat": "Warped Boat",
+  "entity.minecraft.warped_chest_boat": "Warped Boat with Chest",
 
   "itemgroup.varan_deco_blocks": "Variant Decoration"
 }

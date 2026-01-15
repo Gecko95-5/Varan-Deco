@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "minecraft:block/copper_bars",
-        "bars": "minecraft:block/copper_bars",
+        "particle": "minecraft:block/copper_bars_edge",
+        "bars": "minecraft:block/copper_bars_edge",
         "edge": "minecraft:block/copper_bars_edge"
     },
     "elements": [

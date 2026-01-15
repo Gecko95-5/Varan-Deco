@@ -18,11 +18,15 @@ public class DecoBlockEntities {
 
     public static BlockEntityType<TuffFurnaceBlockEntity> TUFF_FURNACE_BE;
 
+    public static BlockEntityType<EndstoneFurnaceBlockEntity> END_STONE_FURNACE_BE;
+
     public static BlockEntityType<DeepslateBlastFurnaceBlockEntity> DEEPSLATE_BLAST_FURNACE_BE;
 
     public static BlockEntityType<BlackstoneBlastFurnaceBlockEntity> BLACKSTONE_BLAST_FURNACE_BE;
 
     public static BlockEntityType<TuffBlastFurnaceBlockEntity> TUFF_BLAST_FURNACE_BE;
+
+    public static BlockEntityType<EndstoneBlastFurnaceBlockEntity> END_STONE_BLAST_FURNACE_BE;
 
     public static BlockEntityType<DeepslateSmokerBlockEntity> DEEPSLATE_SMOKER_BE;
 
@@ -56,6 +60,12 @@ public class DecoBlockEntities {
 
     public static BlockEntityType<PaleOakBarrelBlockEntity> PALE_OAK_BARREL_BE;
 
+    public static BlockEntityType<MushroomBarrelBlockEntity> MUSHROOM_BARREL_BE;
+
+    public static BlockEntityType<IronCapBarrelBlockEntity> IRON_CAP_BARREL_BE;
+
+    public static BlockEntityType<EndstoneSmokerBlockEntity> END_STONE_SMOKER_BE;
+
     public static void registerBlockEntities(){
 
         DEEPSLATE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
@@ -73,6 +83,11 @@ public class DecoBlockEntities {
                 FabricBlockEntityTypeBuilder.create(TuffFurnaceBlockEntity::new,
                         DecoBlocks.TUFF_FURNACE).build());
 
+        END_STONE_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "end_stone_furnace_be"),
+                FabricBlockEntityTypeBuilder.create(EndstoneFurnaceBlockEntity::new,
+                        DecoBlocks.END_STONE_FURNACE).build(null));
+
         DEEPSLATE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_blast_furnace_be"),
                 FabricBlockEntityTypeBuilder.create(DeepslateBlastFurnaceBlockEntity::new,
@@ -88,6 +103,11 @@ public class DecoBlockEntities {
                 FabricBlockEntityTypeBuilder.create(TuffBlastFurnaceBlockEntity::new,
                         DecoBlocks.TUFF_BLAST_FURNACE).build());
 
+        END_STONE_BLAST_FURNACE_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "end_stone_blast_furnace_be"),
+                FabricBlockEntityTypeBuilder.create(EndstoneBlastFurnaceBlockEntity::new,
+                        DecoBlocks.END_STONE_BLAST_FURNACE).build(null));
+
         DEEPSLATE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "deepslate_smoker_be"),
                 FabricBlockEntityTypeBuilder.create(DeepslateSmokerBlockEntity::new,
@@ -102,6 +122,11 @@ public class DecoBlockEntities {
                 Identifier.of(VaranDeco.MOD_ID, "tuff_smoker_be"),
                 FabricBlockEntityTypeBuilder.create(TuffSmokerBlockEntity::new,
                         DecoBlocks.TUFF_SMOKER).build());
+
+        END_STONE_SMOKER_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "end_stone_smoker_be"),
+                FabricBlockEntityTypeBuilder.create(EndstoneSmokerBlockEntity::new,
+                        DecoBlocks.END_STONE_SMOKER).build(null));
 
         ACACIA_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 Identifier.of(VaranDeco.MOD_ID, "acacia_barrel_be"),
@@ -167,5 +192,15 @@ public class DecoBlockEntities {
                 Identifier.of(VaranDeco.MOD_ID, "pale_oak_barrel_be"),
                 FabricBlockEntityTypeBuilder.create(PaleOakBarrelBlockEntity::new,
                         DecoBlocks.PALE_OAK_BARREL).build());
+
+        MUSHROOM_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "mushroom_barrel_be"),
+                FabricBlockEntityTypeBuilder.create(MushroomBarrelBlockEntity::new,
+                        DecoBlocks.MUSHROOM_BARREL).build(null));
+
+        IRON_CAP_BARREL_BE = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                Identifier.of(VaranDeco.MOD_ID, "iron_cap_barrel_be"),
+                FabricBlockEntityTypeBuilder.create(IronCapBarrelBlockEntity::new,
+                        DecoBlocks.IRON_CAP_BARREL).build(null));
     }
 }

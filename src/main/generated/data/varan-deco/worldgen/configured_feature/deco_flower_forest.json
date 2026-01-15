@@ -17,18 +17,6 @@
             "seed": 2345,
             "states": [
               {
-                "Name": "minecraft:yellow_tulip"
-              },
-              {
-                "Name": "minecraft:purple_tulip"
-              },
-              {
-                "Name": "minecraft:magenta_tulip"
-              },
-              {
-                "Name": "minecraft:blue_tulip"
-              },
-              {
                 "Name": "minecraft:barberton_daisy"
               },
               {

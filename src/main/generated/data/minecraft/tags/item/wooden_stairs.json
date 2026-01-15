@@ -1,6 +1,8 @@
 {
   "values": [
     "minecraft:cactus_plank_stairs",
+    "minecraft:mushroom_stairs",
+    "minecraft:iron_cap_stairs",
     "minecraft:wooden_stairs"
   ]
 }

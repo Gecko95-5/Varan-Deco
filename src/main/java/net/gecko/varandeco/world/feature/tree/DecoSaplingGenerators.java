@@ -14,4 +14,12 @@ public class DecoSaplingGenerators {
                     Optional.of(DecoConfiguredFeatures.DECO_FANCY_WOODEN_TREE_KEY),
                     Optional.empty(),
                     Optional.empty());
+
+    public static final SaplingGenerator IRON_CAP =
+            new SaplingGenerator("iron_cap", 0f, Optional.empty(),
+                    Optional.empty(),
+                    Optional.of(DecoConfiguredFeatures.DECO_IRON_CAP_MUSHROOM),
+                    Optional.empty(),
+                    Optional.empty(),
+                    Optional.empty());
 }
