@@ -848,7 +848,8 @@ public class DecoBlocks {
             new StairsBlock(Blocks.MANGROVE_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)
                     .mapColor(MapColor.DIRT_BROWN)));
     public static final Block CHERRY_WOOD_STAIRS = registerBlock("cherry_wood_stairs",
-            new StairsBlock(Blocks.CHERRY_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+            new StairsBlock(Blocks.CHERRY_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)
+                    .mapColor(MapColor.TERRACOTTA_GRAY)));
     public static final Block CRIMSON_HYPHAE_STAIRS = registerBlock("crimson_hyphae_stairs",
             new StairsBlock(Blocks.CRIMSON_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)
                     .mapColor(MapColor.DARK_CRIMSON).sounds(BlockSoundGroup.NETHER_STEM)));
@@ -856,9 +857,11 @@ public class DecoBlocks {
             new StairsBlock(Blocks.WARPED_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)
                     .mapColor(MapColor.DARK_DULL_PINK).sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block WOODEN_WOOD_STAIRS = registerBlock("wooden_wood_stairs",
-            new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS)));
+            new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS)
+                    .mapColor(MapColor.TERRACOTTA_BROWN)));
     public static final Block IRON_CAP_HYPHAE_STAIRS = registerBlock("iron_cap_hyphae_stairs",
-            new StairsBlock(DecoBlocks.IRON_CAP_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS)));
+            new StairsBlock(DecoBlocks.IRON_CAP_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS)
+                    .mapColor(MapColor.TERRACOTTA_GRAY)));
 
     public static final Block STRIPPED_OAK_WOOD_STAIRS = registerBlock("stripped_oak_wood_stairs",
             new StairsBlock(Blocks.OAK_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -875,7 +878,8 @@ public class DecoBlocks {
     public static final Block STRIPPED_MANGROVE_WOOD_STAIRS = registerBlock("stripped_mangrove_wood_stairs",
             new StairsBlock(Blocks.MANGROVE_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
     public static final Block STRIPPED_CHERRY_WOOD_STAIRS = registerBlock("stripped_cherry_wood_stairs",
-            new StairsBlock(Blocks.CHERRY_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+            new StairsBlock(Blocks.CHERRY_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)
+                    .mapColor(MapColor.PINK)));
     public static final Block STRIPPED_CRIMSON_HYPHAE_STAIRS = registerBlock("stripped_crimson_hyphae_stairs",
             new StairsBlock(Blocks.CRIMSON_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)
                     .sounds(BlockSoundGroup.NETHER_STEM)));
@@ -1227,29 +1231,31 @@ public class DecoBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK)));
 
     public static final Block OAK_WOOD_SLAB = registerBlock("oak_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.DIRT_BROWN)));
     public static final Block SPRUCE_WOOD_SLAB = registerBlock("spruce_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).mapColor(MapColor.BROWN)));
     public static final Block BIRCH_WOOD_SLAB = registerBlock("birch_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS).mapColor(MapColor.OFF_WHITE)));
     public static final Block JUNGLE_WOOD_SLAB = registerBlock("jungle_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS).mapColor(MapColor.DIRT_BROWN)));
     public static final Block ACACIA_WOOD_SLAB = registerBlock("acacia_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS).mapColor(MapColor.STONE_GRAY)));
     public static final Block DARK_OAK_WOOD_SLAB = registerBlock("dark_oak_wood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS)));
     public static final Block MANGROVE_WOOD_SLAB = registerBlock("mangrove_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS).mapColor(MapColor.DIRT_BROWN)));
     public static final Block CHERRY_WOOD_SLAB = registerBlock("cherry_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS).mapColor(MapColor.TERRACOTTA_GRAY)));
     public static final Block CRIMSON_HYPHAE_SLAB = registerBlock("crimson_hyphae_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)
+                    .mapColor(MapColor.DARK_CRIMSON)));
     public static final Block WARPED_HYPHAE_SLAB = registerBlock("warped_hyphae_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)
+                    .mapColor(MapColor.DARK_DULL_PINK)));
     public static final Block WOODEN_WOOD_SLAB = registerBlock("wooden_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS).mapColor(MapColor.TERRACOTTA_BROWN)));
     public static final Block IRON_CAP_HYPHAE_SLAB = registerBlock("iron_cap_hyphae_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS).mapColor(MapColor.TERRACOTTA_GRAY)));
 
     public static final Block STRIPPED_OAK_WOOD_SLAB = registerBlock("stripped_oak_wood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -1266,7 +1272,7 @@ public class DecoBlocks {
     public static final Block STRIPPED_MANGROVE_WOOD_SLAB = registerBlock("stripped_mangrove_wood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
     public static final Block STRIPPED_CHERRY_WOOD_SLAB = registerBlock("stripped_cherry_wood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS).mapColor(MapColor.PINK)));
     public static final Block STRIPPED_CRIMSON_HYPHAE_SLAB = registerBlock("stripped_crimson_hyphae_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block STRIPPED_WARPED_HYPHAE_SLAB = registerBlock("stripped_warped_hyphae_slab",
@@ -2027,29 +2033,31 @@ public class DecoBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.DRIPSTONE_BLOCK)));
 
     public static final Block OAK_WOOD_WALL = registerBlock("oak_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.DIRT_BROWN)));
     public static final Block SPRUCE_WOOD_WALL = registerBlock("spruce_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).mapColor(MapColor.BROWN)));
     public static final Block BIRCH_WOOD_WALL = registerBlock("birch_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS).mapColor(MapColor.OFF_WHITE)));
     public static final Block JUNGLE_WOOD_WALL = registerBlock("jungle_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS).mapColor(MapColor.DIRT_BROWN)));
     public static final Block ACACIA_WOOD_WALL = registerBlock("acacia_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS).mapColor(MapColor.STONE_GRAY)));
     public static final Block DARK_OAK_WOOD_WALL = registerBlock("dark_oak_wood_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS)));
     public static final Block MANGROVE_WOOD_WALL = registerBlock("mangrove_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS).mapColor(MapColor.DIRT_BROWN)));
     public static final Block CHERRY_WOOD_WALL = registerBlock("cherry_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS).mapColor(MapColor.TERRACOTTA_GRAY)));
     public static final Block CRIMSON_HYPHAE_WALL = registerBlock("crimson_hyphae_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)
+                    .mapColor(MapColor.DARK_CRIMSON)));
     public static final Block WARPED_HYPHAE_WALL = registerBlock("warped_hyphae_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)
+                    .mapColor(MapColor.DARK_DULL_PINK)));
     public static final Block WOODEN_WOOD_WALL = registerBlock("wooden_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS).mapColor(MapColor.TERRACOTTA_BROWN)));
     public static final Block IRON_CAP_HYPHAE_WALL = registerBlock("iron_cap_hyphae_wall",
-            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS).mapColor(MapColor.TERRACOTTA_GRAY)));
 
     public static final Block STRIPPED_OAK_WOOD_WALL = registerBlock("stripped_oak_wood_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -2066,7 +2074,7 @@ public class DecoBlocks {
     public static final Block STRIPPED_MANGROVE_WOOD_WALL = registerBlock("stripped_mangrove_wood_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
     public static final Block STRIPPED_CHERRY_WOOD_WALL = registerBlock("stripped_cherry_wood_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS).mapColor(MapColor.PINK)));
     public static final Block STRIPPED_CRIMSON_HYPHAE_WALL = registerBlock("stripped_crimson_hyphae_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.NETHER_STEM)));
     public static final Block STRIPPED_WARPED_HYPHAE_WALL = registerBlock("stripped_warped_hyphae_wall",
