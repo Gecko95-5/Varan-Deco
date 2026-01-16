@@ -4057,7 +4057,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         conditionsFromItem(Items.IRON_BLOCK))
                 .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.IRON_GRATE)));
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.IRON_GRATE, Items.IRON_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.IRON_GRATE, Items.IRON_BLOCK,4);
 
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_IRON, DecoBlocks.CUT_IRON_SLAB);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_IRON, Items.IRON_BLOCK,4);
@@ -6788,6 +6788,18 @@ offerCraftingTableVariantRecipe(exporter, DecoBlocks.OAK_CRAFTING_TABLE, Items.O
         offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_PLANKS_HANGING_SIGN, DecoBlocks.IRON_CAP_PLANKS);
 
         offerHangingSignRecipe(exporter, DecoItems.IRON_CAP_MOSAIC_HANGING_SIGN, DecoBlocks.IRON_CAP_MOSAIC);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GOLD_GRATE,4)
+                .pattern(" X ")
+                .pattern("X#X")
+                .pattern(" X ")
+                .input('#', Items.GOLD_BLOCK)
+                .input('X', DecoBlocks.LIGHT_GOLD_BARS)
+                .criterion(hasItem(Items.GOLD_BLOCK),
+                        conditionsFromItem(Items.GOLD_BLOCK))
+                .offerTo(exporter, Identifier.of(getRecipeName(DecoBlocks.GOLD_GRATE)));
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.GOLD_GRATE, Items.GOLD_BLOCK,4);
 
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CHISELED_GOLD, DecoBlocks.CUT_GOLD_SLAB);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,DecoBlocks.CHISELED_GOLD, Items.GOLD_BLOCK,4);
