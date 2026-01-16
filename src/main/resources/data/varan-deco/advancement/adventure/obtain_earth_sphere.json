@@ -1,11 +1,11 @@
 {
-  "parent": "varan-deco:adventure/obtain_earth_sphere",
+  "parent": "minecraft:adventure/root",
   "criteria": {
-    "orb": {
+    "sphere": {
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:bubble_orb"
+            "items": "varan-deco:earth_sphere"
           }
         ]
       },
@@ -14,19 +14,19 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain a Bubble Orb",
+    "description": "Obtain a Earth Sphere",
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:bubble_orb"
+      "id": "varan-deco:earth_sphere"
     },
     "show_toast": true,
-    "title": "The Orb found in the Ocean Depths"
+    "title": "Made of Mud a Soil the Sphere of Earth"
   },
   "requirements": [
     [
-      "orb"
+      "sphere"
     ]
   ]
 }
