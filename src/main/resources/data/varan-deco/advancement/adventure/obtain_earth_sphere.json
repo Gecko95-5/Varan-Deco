@@ -14,7 +14,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain a Earth Sphere",
+    "description": "Craft an Earth Sphere with Mud & Soil",
     "frame": "task",
     "hidden": false,
     "icon": {
@@ -22,7 +22,7 @@
       "id": "varan-deco:earth_sphere"
     },
     "show_toast": true,
-    "title": "Made of Mud a Soil the Sphere of Earth"
+    "title": "A small piece of World"
   },
   "requirements": [
     [

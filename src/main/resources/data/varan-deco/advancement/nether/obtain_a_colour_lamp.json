@@ -5,12 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tags": [
-              {
-                "expected": true,
-                "id": "varan-deco:coloured_lamps"
-              }
-            ]
+            "items": "#varan-deco:coloured_lamps"
           }
         ]
       },
