@@ -228,6 +228,9 @@ public class DecoTags {
         public static final TagKey<Item> LOG_WALLS =
                 createTag("log_walls");
 
+        public static final TagKey<Item> SEEDS =
+                createTag("seeds");
+
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), Identifier.of(VaranDeco.MOD_ID, name));
         }

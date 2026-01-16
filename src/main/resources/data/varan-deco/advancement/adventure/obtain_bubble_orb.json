@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/root",
+  "parent": "varan-deco:adventure/obtain_earth_sphere",
   "criteria": {
     "orb": {
       "conditions": {

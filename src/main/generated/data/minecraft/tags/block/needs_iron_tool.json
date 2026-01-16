@@ -12,6 +12,8 @@
     "minecraft:raw_gold_slab",
     "minecraft:light_gold_bars",
     "minecraft:gold_bars",
-    "minecraft:heavy_gold_bars"
+    "minecraft:heavy_gold_bars",
+    "minecraft:gold_grate",
+    "minecraft:chiseled_gold"
   ]
 }

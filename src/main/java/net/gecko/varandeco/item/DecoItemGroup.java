@@ -103,6 +103,17 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CHERRY_MOSAIC_SLAB.asItem());
                         entries.add(DecoBlocks.CHERRY_PALLET_DOOR.asItem());
                         entries.add(DecoBlocks.CHERRY_PALLET_TRAPDOOR.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_WOOD_STAIRS.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_WOOD_SLAB.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_WOOD_WALL.asItem());
+                        entries.add(DecoBlocks.STRIPPED_PALE_OAK_WOOD_STAIRS.asItem());
+                        entries.add(DecoBlocks.STRIPPED_PALE_OAK_WOOD_SLAB.asItem());
+                        entries.add(DecoBlocks.STRIPPED_PALE_OAK_WOOD_WALL.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_MOSAIC.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_MOSAIC_SLAB.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_PALLET_DOOR.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_PALLET_TRAPDOOR.asItem());
                         entries.add(DecoBlocks.BAMBOO_PALLET_DOOR.asItem());
                         entries.add(DecoBlocks.BAMBOO_PALLET_TRAPDOOR.asItem());
                         entries.add(DecoBlocks.CRIMSON_HYPHAE_STAIRS.asItem());
@@ -111,9 +122,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS.asItem());
                         entries.add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB.asItem());
                         entries.add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.asItem());
-                        entries.add(DecoBlocks.PALE_OAK_MOSAIC.asItem());
-                        entries.add(DecoBlocks.PALE_OAK_MOSAIC_STAIRS.asItem());
-                        entries.add(DecoBlocks.PALE_OAK_MOSAIC_SLAB.asItem());
                         entries.add(DecoBlocks.CRIMSON_MOSAIC.asItem());
                         entries.add(DecoBlocks.CRIMSON_MOSAIC_STAIRS.asItem());
                         entries.add(DecoBlocks.CRIMSON_MOSAIC_SLAB.asItem());
@@ -273,8 +281,10 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CHISELED_DEEPSLATE_BRICKS.asItem());
                         entries.add(DecoBlocks.TUFF_BUTTON.asItem());
                         entries.add(DecoBlocks.TUFF_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.TUFF_LEVER.asItem());
                         entries.add(DecoBlocks.POLISHED_TUFF_BUTTON.asItem());
                         entries.add(DecoBlocks.POLISHED_TUFF_PRESSURE_PLATE.asItem());
+                        entries.add(DecoBlocks.POLISHED_TUFF_LEVER.asItem());
                         entries.add(DecoBlocks.SMOOTH_TUFF.asItem());
                         entries.add(DecoBlocks.SMOOTH_TUFF_STAIRS.asItem());
                         entries.add(DecoBlocks.SMOOTH_TUFF_SLAB.asItem());
@@ -421,6 +431,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.POLISHED_END_STONE_BUTTON.asItem());
                         entries.add(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE.asItem());
                         entries.add(DecoBlocks.POLISHED_END_STONE_LEVER.asItem());
+                        entries.add(DecoBlocks.CHISELED_END_STONE_BRICKS.asItem());
                         entries.add(DecoBlocks.CRACKED_END_STONE_BRICKS.asItem());
                         entries.add(DecoBlocks.END_STONE_TILES.asItem());
                         entries.add(DecoBlocks.END_STONE_TILE_STAIRS.asItem());
@@ -467,6 +478,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.RAW_GOLD_SLAB.asItem());
                         entries.add(DecoBlocks.GOLD_STAIRS.asItem());
                         entries.add(DecoBlocks.GOLD_SLAB.asItem());
+                        entries.add(DecoBlocks.CHISELED_GOLD.asItem());
+                        entries.add(DecoBlocks.GOLD_GRATE.asItem());
                         entries.add(DecoBlocks.CUT_GOLD.asItem());
                         entries.add(DecoBlocks.CUT_GOLD_STAIRS.asItem());
                         entries.add(DecoBlocks.CUT_GOLD_SLAB.asItem());
@@ -589,6 +602,26 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.BUBBLE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.BUBBLE_BRICK_WALL.asItem());
                         entries.add(DecoBlocks.CHISELED_BUBBLE_BRICKS.asItem());
+                        entries.add(DecoBlocks.WIND_BLOCK.asItem());
+                        entries.add(DecoBlocks.WIND_STAIRS.asItem());
+                        entries.add(DecoBlocks.WIND_SLAB.asItem());
+                        entries.add(DecoBlocks.WIND_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_WIND_BLOCK.asItem());
+                        entries.add(DecoBlocks.WIND_BRICKS.asItem());
+                        entries.add(DecoBlocks.WIND_BRICK_STAIRS.asItem());
+                        entries.add(DecoBlocks.WIND_BRICK_SLAB.asItem());
+                        entries.add(DecoBlocks.WIND_BRICK_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_WIND_BRICKS.asItem());
+                        entries.add(DecoBlocks.EARTH_BLOCK.asItem());
+                        entries.add(DecoBlocks.EARTH_STAIRS.asItem());
+                        entries.add(DecoBlocks.EARTH_SLAB.asItem());
+                        entries.add(DecoBlocks.EARTH_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_EARTH_BLOCK.asItem());
+                        entries.add(DecoBlocks.EARTH_BRICKS.asItem());
+                        entries.add(DecoBlocks.EARTH_BRICK_STAIRS.asItem());
+                        entries.add(DecoBlocks.EARTH_BRICK_SLAB.asItem());
+                        entries.add(DecoBlocks.EARTH_BRICK_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_EARTH_BRICKS.asItem());
                         entries.add(DecoBlocks.MAGMA_STAIRS.asItem());
                         entries.add(DecoBlocks.MAGMA_SLAB.asItem());
                         entries.add(DecoBlocks.MAGMA_WALL.asItem());
@@ -1256,6 +1289,8 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CHERRY_BOOKSHELF_STAIRS.asItem());
                         entries.add(DecoBlocks.CHERRY_BOOKSHELF_SLAB.asItem());
                         entries.add(DecoBlocks.PALE_OAK_BOOKSHELF.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_BOOKSHELF_STAIRS.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_BOOKSHELF_SLAB.asItem());
                         entries.add(DecoBlocks.BAMBOO_BOOKSHELF.asItem());
                         entries.add(DecoBlocks.BAMBOO_BOOKSHELF_STAIRS.asItem());
                         entries.add(DecoBlocks.BAMBOO_BOOKSHELF_SLAB.asItem());
@@ -1327,6 +1362,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DARK_OAK_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.MANGROVE_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.CHERRY_NOTE_BLOCK.asItem());
+                        entries.add(DecoBlocks.PALE_OAK_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.BAMBOO_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.CRIMSON_NOTE_BLOCK.asItem());
                         entries.add(DecoBlocks.WARPED_NOTE_BLOCK.asItem());
@@ -1385,6 +1421,7 @@ public class DecoItemGroup {
                         entries.add(DecoItems.SNOW_BRICK);
                         entries.add(DecoItems.WARPED_WART);
                         entries.add(DecoItems.BUBBLE_ORB);
+                        entries.add(DecoItems.EARTH_SPHERE);
                         entries.add(DecoItems.ICE_SHARD);
                     }).build());
 

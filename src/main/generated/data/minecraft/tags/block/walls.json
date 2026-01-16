@@ -90,6 +90,10 @@
     "minecraft:cut_obsidian_wall",
     "minecraft:polished_end_stone_wall",
     "minecraft:smooth_end_stone_wall",
-    "minecraft:end_stone_tile_wall"
+    "minecraft:end_stone_tile_wall",
+    "minecraft:wind_wall",
+    "minecraft:wind_brick_wall",
+    "minecraft:earth_wall",
+    "minecraft:earth_brick_wall"
   ]
 }

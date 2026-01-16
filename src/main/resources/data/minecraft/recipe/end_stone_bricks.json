@@ -1,8 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "item": "varan-deco:polished_end_stone"
+    "#": "varan-deco:polished_end_stone"
     }
   },
   "pattern": [
@@ -11,6 +10,6 @@
   ],
   "result": {
     "count": 4,
-    "item": "minecraft:end_stone_bricks"
+    "id": "minecraft:end_stone_bricks"
   }
 }

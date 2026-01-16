@@ -1,17 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
   "key": {
-    "#": {
-      "tag": "varan-deco:soul_ground_blocks"
-    }
+    "#": "minecraft:prismarine_crystals"
   },
   "pattern": [
     "##",
     "##"
   ],
   "result": {
-    "count": 1,
-    "id": "varan-deco:soul_soilstone"
+    "count": 4,
+    "id": "minecraft:crystallized_prismarine"
   }
 }

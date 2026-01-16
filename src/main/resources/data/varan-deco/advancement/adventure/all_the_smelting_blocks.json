@@ -50,7 +50,7 @@
         "items": [
           {
             "items": [
-              "varan-deco:end_stone_furnace"
+              "minecraft:end_stone_furnace"
             ]
           }
         ]
@@ -106,7 +106,7 @@
         "items": [
           {
             "items": [
-              "varan-deco:end_stone_smoker"
+              "minecraft:end_stone_smoker"
             ]
           }
         ]
@@ -162,7 +162,7 @@
         "items": [
           {
             "items": [
-              "varan-deco:end_stone_blast_furnace"
+              "minecraft:end_stone_blast_furnace"
             ]
           }
         ]

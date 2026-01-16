@@ -96,7 +96,9 @@
     "minecraft:polished_end_stone_slab",
     "minecraft:smooth_end_stone_slab",
     "minecraft:end_stone_tile_slab",
-    "minecraft:end_stone_stonecutter",
-    "minecraft:end_stone_grindstone"
+    "minecraft:wind_brick_slab",
+    "minecraft:wind_slab",
+    "minecraft:earth_slab",
+    "minecraft:earth_brick_slab"
   ]
 }

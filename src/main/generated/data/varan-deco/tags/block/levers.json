@@ -9,6 +9,8 @@
     "minecraft:blackstone_lever",
     "minecraft:polished_blackstone_lever",
     "minecraft:end_stone_lever",
-    "minecraft:polished_end_stone_lever"
+    "minecraft:polished_end_stone_lever",
+    "minecraft:tuff_lever",
+    "minecraft:polished_tuff_lever"
   ]
 }

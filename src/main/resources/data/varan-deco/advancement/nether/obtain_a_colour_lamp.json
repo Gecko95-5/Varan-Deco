@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "varan-deco:coloured_lamps"
+            "items": "#varan-deco:coloured_lamps"
           }
         ]
       },
@@ -18,7 +18,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "varan-deco:red_lamp"
+      "item": "minecraft:red_lamp"
     },
     "show_toast": true,
     "title": "Coloured Lamp encased in Glass"

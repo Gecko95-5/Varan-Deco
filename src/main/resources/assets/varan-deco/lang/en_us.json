@@ -9,6 +9,7 @@
   "item.minecraft.copper_nugget": "Copper Nugget",
   "item.minecraft.lilac_flower": "Lilac Flower",
   "item.minecraft.ice_shard": "Ice Shard",
+  "item.minecraft.earth_sphere": "Earth Sphere",
   "item.minecraft.tall_seagrass": "Tall Seagrass",
   "item.minecraft.ancient_rose_seeds": "Ancient Rose Seeds",
   "item.minecraft.mighty_lavender_flower": "Mighty Lavender Flower",
@@ -1241,9 +1242,6 @@
   "block.minecraft.gold_door": "Golden Door",
   "block.minecraft.gold_trapdoor": "Golden Trapdoor",
 
-  "block.minecraft.polished_deepslate_button": "Polished Deepslate Button",
-  "block.minecraft.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
-
   "block.minecraft.tuff_button": "Tuff Button",
   "block.minecraft.tuff_pressure_plate": "Tuff Pressure Plate",
   "block.minecraft.polished_tuff_button": "Polished Tuff Button",
@@ -1608,6 +1606,14 @@
   "block.minecraft.stripped_wooden_wood_slab": "Stripped Wooden Wood Slab",
   "block.minecraft.stripped_wooden_wood_wall": "Stripped Wooden Wood Wall",
 
+  "block.minecraft.pale_oak_wood_stairs": "Pale Oak Wood Stairs",
+  "block.minecraft.pale_oak_wood_slab": "Pale Oak Wood Slab",
+  "block.minecraft.pale_oak_wood_wall": "Pale Oak Wood Wall",
+
+  "block.minecraft.stripped_pale_oak_wood_stairs": "Stripped Pale Oak Wood Stairs",
+  "block.minecraft.stripped_pale_oak_wood_slab": "Stripped Pale Oak Wood Slab",
+  "block.minecraft.stripped_pale_oak_wood_wall": "Stripped Pale Oak Wood Wall",
+
   "block.minecraft.packed_netherrack": "Packed Netherrack",
   "block.minecraft.packed_netherrack_stairs": "Packed Netherrack Stairs",
   "block.minecraft.packed_netherrack_slab": "Packed Netherrack Slab",
@@ -1639,6 +1645,7 @@
   "block.minecraft.warped_pallet_door": "Warped Pallet Door",
   "block.minecraft.cactus_pallet_door": "Cactus Pallet Door",
   "block.minecraft.wooden_pallet_door": "Wooden Pallet Door",
+  "block.minecraft.pale_oak_pallet_door": "Pale Oak Pallet Door",
 
   "block.minecraft.oak_pallet_trapdoor": "Oak Pallet Trapdoor",
   "block.minecraft.spruce_pallet_trapdoor": "Spruce Pallet Trapdoor",
@@ -1651,6 +1658,7 @@
   "block.minecraft.warped_pallet_trapdoor": "Warped Pallet Trapdoor",
   "block.minecraft.cactus_pallet_trapdoor": "Cactus Pallet Trapdoor",
   "block.minecraft.wooden_pallet_trapdoor": "Wooden Pallet Trapdoor",
+  "block.minecraft.pale_oak_pallet_trapdoor": "Pale Oak Pallet Trapdoor",
 
   "block.minecraft.white_lamp": "White Lamp",
   "block.minecraft.light_gray_lamp": "Light Gray Lamp",
@@ -1697,6 +1705,7 @@
   "block.minecraft.crimson_note_block": "Crimson Note Block",
   "block.minecraft.warped_note_block": "Warped Note Block",
   "block.minecraft.cactus_note_block": "Cactus Note Block",
+  "block.minecraft.pale_oak_note_block": "Pale Oak Note Block",
 
   "block.minecraft.polished_calcite": "Polished Calcite",
 
@@ -1876,6 +1885,7 @@
   "block.minecraft.mushroom_bookshelf_stairs": "Mushroom Bookshelf Stairs",
   "block.minecraft.bamboo_bookshelf_stairs": "Bamboo Bookshelf Stairs",
   "block.minecraft.wooden_bookshelf_stairs": "Bookshelf Stairs",
+  "block.minecraft.pale_oak_bookshelf_stairs": "Pale Oak Bookshelf Stairs",
 
   "block.minecraft.oak_bookshelf_slab": "Oak Bookshelf Slab",
   "block.minecraft.spruce_bookshelf_slab": "Spruce Bookshelf Slab",
@@ -1891,6 +1901,7 @@
   "block.minecraft.mushroom_bookshelf_slab": "Mushroom Bookshelf Slab",
   "block.minecraft.bamboo_bookshelf_slab": "Bamboo Bookshelf Slab",
   "block.minecraft.wooden_bookshelf_slab": "Bookshelf Slab",
+  "block.minecraft.pale_oak_bookshelf_slab": "Pale Oak Bookshelf Slab",
 
   "block.minecraft.iron_cap_stem": "Iron Cap Stem",
   "block.minecraft.stripped_iron_cap_stem": "Stripped Iron Cap Stem",
@@ -1934,6 +1945,41 @@
 
   "block.minecraft.standing_iron_cap_sign": "Iron Cap Sign",
   "block.minecraft.wall_iron_cap_sign": "Iron Cap Wall Sign",
+
+  "block.minecraft.gold_grate": "Golden Grate",
+  "block.minecraft.chiseled_gold": "Chiseled Gold",
+
+  "block.minecraft.tuff_lever": "Tuff Lever",
+  "block.minecraft.polished_tuff_lever": "Polished Tuff Lever",
+
+  "block.minecraft.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
+
+  "block.minecraft.wind_block": "Wind Block",
+  "block.minecraft.wind_stairs": "Wind Stairs",
+  "block.minecraft.wind_slab": "Wind Slab",
+  "block.minecraft.wind_wall": "Wind Wall",
+  "block.minecraft.chiseled_wind_block": "Chiseled Wind Block",
+  "block.minecraft.wind_bricks": "Wind Bricks",
+  "block.minecraft.wind_brick_stairs": "Wind Brick Stairs",
+  "block.minecraft.wind_brick_slab": "Wind Brick Slab",
+  "block.minecraft.wind_brick_wall": "Wind Brick Wall",
+  "block.minecraft.chiseled_wind_bricks": "Chiseled Wind Bricks",
+
+  "block.minecraft.earth_block": "Earth Block",
+  "block.minecraft.earth_stairs": "Earth Stairs",
+  "block.minecraft.earth_slab": "Earth Slab",
+  "block.minecraft.earth_wall": "Earth Wall",
+  "block.minecraft.chiseled_earth_block": "Chiseled Earth Block",
+  "block.minecraft.earth_bricks": "Earth Bricks",
+  "block.minecraft.earth_brick_stairs": "Earth Brick Stairs",
+  "block.minecraft.earth_brick_slab": "Earth Brick Slab",
+  "block.minecraft.earth_brick_wall": "Earth Brick Wall",
+  "block.minecraft.chiseled_earth_bricks": "Chiseled Earth Bricks",
+
+  "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
+  "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
+  "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
+  "item.minecraft.tipped_arrow.effect.bubble_potion": "Arrow of The Water Bubble",
 
   "block.minecraft.infested_polished_stone": "Infested Polished Stone",
   "block.minecraft.infested_stone_tiles": "Infested Stone Tiles",

@@ -98,6 +98,10 @@
     "minecraft:cut_obsidian_stairs",
     "minecraft:polished_end_stone_stairs",
     "minecraft:smooth_end_stone_stairs",
-    "minecraft:end_stone_tile_stairs"
+    "minecraft:end_stone_tile_stairs",
+    "minecraft:earth_brick_stairs",
+    "minecraft:earth_stairs",
+    "minecraft:wind_stairs",
+    "minecraft:wind_brick_stairs"
   ]
 }
