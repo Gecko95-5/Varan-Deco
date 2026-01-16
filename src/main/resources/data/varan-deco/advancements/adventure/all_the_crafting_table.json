@@ -157,6 +157,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "iron_cap": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:iron_cap_crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "wooden": {
       "conditions": {
         "items": [
@@ -223,6 +235,9 @@
     ],
     [
       "mushroom"
+    ],
+    [
+      "iron_cap"
     ]
   ]
 }
