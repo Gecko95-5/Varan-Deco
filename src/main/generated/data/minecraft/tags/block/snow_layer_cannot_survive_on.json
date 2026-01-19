@@ -8,6 +8,8 @@
     "minecraft:bubble_bricks",
     "minecraft:chiseled_bubble_bricks",
     "minecraft:chiseled_magma_bricks",
+    "minecraft:chiseled_bubble_block",
+    "minecraft:chiseled_magma_block",
     "minecraft:magma_block",
     "minecraft:fragile_ice"
   ]

@@ -12,5 +12,10 @@ public class DecoStrippableBlocks {
         StrippableBlockRegistry.register(DecoBlocks.DRIFTWOOD, DecoBlocks.STRIPPED_DRIFTWOOD);
         StrippableBlockRegistry.register(DecoBlocks.DRIED_DRIFTWOOD_LOG, DecoBlocks.STRIPPED_DRIFTWOOD_LOG);
         StrippableBlockRegistry.register(DecoBlocks.DRIED_DRIFTWOOD, DecoBlocks.STRIPPED_DRIFTWOOD);
+
+        StrippableBlockRegistry.register(DecoBlocks.IRON_CAP_STEM, DecoBlocks.STRIPPED_IRON_CAP_STEM);
+        StrippableBlockRegistry.register(DecoBlocks.IRON_CAP_HYPHAE, DecoBlocks.STRIPPED_IRON_CAP_HYPHAE);
+
+        StrippableBlockRegistry.register(DecoBlocks.PACKED_CACTUS, DecoBlocks.STRIPPED_CACTUS);
     }
 }

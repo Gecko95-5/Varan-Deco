@@ -3,8 +3,6 @@ package net.gecko.varandeco.util;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 
-import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_BUTTON;
-import static net.gecko.varandeco.block.DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE;
 
 public class DecoOxidizableBlocks {
     public static void registerOxidizableBlocks(){
@@ -20,13 +18,22 @@ public class DecoOxidizableBlocks {
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_SOUL_LANTERN, DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN, DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN);
 
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
 
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_BUTTON, EXPOSED_COPPER_BUTTON);
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(EXPOSED_COPPER_BUTTON, DecoBlocks.WEATHERED_COPPER_BUTTON);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_BUTTON, DecoBlocks.EXPOSED_COPPER_BUTTON);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_BUTTON, DecoBlocks.WEATHERED_COPPER_BUTTON);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_BUTTON, DecoBlocks.OXIDIZED_COPPER_BUTTON);
+
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_STAIRS, DecoBlocks.EXPOSED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_STAIRS, DecoBlocks.WEATHERED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_STAIRS, DecoBlocks.OXIDIZED_COPPER_STAIRS);
+
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_SLAB, DecoBlocks.EXPOSED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_SLAB, DecoBlocks.WEATHERED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_SLAB, DecoBlocks.OXIDIZED_COPPER_SLAB);
+
     }
     public static void registerWaxableBlocks(){
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.HEAVY_COPPER_BARS, DecoBlocks.WAXED_HEAVY_COPPER_BARS);
@@ -45,13 +52,23 @@ public class DecoOxidizableBlocks {
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN, DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
 
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_COPPER_WEIGHT_PRESSURE_PLATE);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_EXPOSED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_WEATHERED_COPPER_WEIGHT_PRESSURE_PLATE);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE, DecoBlocks.WAXED_OXIDIZED_COPPER_WEIGHT_PRESSURE_PLATE);
 
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_BUTTON, DecoBlocks.WAXED_COPPER_BUTTON);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(EXPOSED_COPPER_BUTTON, DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_BUTTON, DecoBlocks.WAXED_EXPOSED_COPPER_BUTTON);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_BUTTON, DecoBlocks.WAXED_WEATHERED_COPPER_BUTTON);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_BUTTON, DecoBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
+
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_STAIRS, DecoBlocks.WAXED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_STAIRS, DecoBlocks.WAXED_EXPOSED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_STAIRS, DecoBlocks.WAXED_WEATHERED_COPPER_STAIRS);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_STAIRS, DecoBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
+
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_SLAB, DecoBlocks.WAXED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_SLAB, DecoBlocks.WAXED_EXPOSED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_SLAB, DecoBlocks.WAXED_WEATHERED_COPPER_SLAB);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_SLAB, DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
     }
 }
