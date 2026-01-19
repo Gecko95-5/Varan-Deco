@@ -6,6 +6,8 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.item.custom.BubbleItem;
 import net.gecko.varandeco.item.custom.SnowBrickItem;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.gecko.varandeco.util.interfaces.HangingSignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.SignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.TallPlantItemRegisterFunction;
@@ -24,6 +26,10 @@ public class DecoItems {
 
     public static final Item CACTUS_SIGN = registerSignItem("cactus_sign",
             DecoBlocks.STANDING_CACTUS_SIGN, DecoBlocks.WALL_CACTUS_SIGN, SignItem::new);
+    public static final Item MUSHROOM_SIGN = registerSignItem("mushroom_sign",
+                    DecoBlocks.STANDING_MUSHROOM_SIGN, DecoBlocks.WALL_MUSHROOM_SIGN, SignItem::new);
+    public static final Item IRON_CAP_SIGN = registerSignItem("iron_cap_sign",
+                    DecoBlocks.STANDING_IRON_CAP_SIGN, DecoBlocks.WALL_IRON_CAP_SIGN, SignItem::new);
     public static final Item WOODEN_SIGN = registerSignItem("wooden_sign",
             DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN, SignItem::new);
     public static final Item DRIFTWOOD_SIGN = registerSignItem("driftwood_sign",
@@ -59,6 +65,12 @@ public class DecoItems {
     public static final Item STRIPPED_WARPED_SIGN = registerSignItem("stripped_warped_sign",
             DecoBlocks.STANDING_STRIPPED_WARPED_SIGN, DecoBlocks.WALL_STRIPPED_WARPED_SIGN,
                     SignItem::new);
+    public static final Item STRIPPED_CACTUS_SIGN = registerSignItem("stripped_cactus_sign",
+                    DecoBlocks.STANDING_STRIPPED_CACTUS_SIGN, DecoBlocks.WALL_STRIPPED_CACTUS_SIGN, SignItem::new);
+    public static final Item MUSHROOM_STEM_SIGN = registerSignItem("mushroom_stem_sign",
+                    DecoBlocks.STANDING_MUSHROOM_STEM_SIGN, DecoBlocks.WALL_MUSHROOM_STEM_SIGN, SignItem::new);
+    public static final Item STRIPPED_IRON_CAP_SIGN = registerSignItem("stripped_iron_cap_sign",
+                    DecoBlocks.STANDING_STRIPPED_IRON_CAP_SIGN, DecoBlocks.WALL_STRIPPED_IRON_CAP_SIGN, SignItem::new);
     public static final Item STRIPPED_WOODEN_SIGN = registerSignItem("stripped_wooden_sign",
             DecoBlocks.STANDING_STRIPPED_WOODEN_SIGN, DecoBlocks.WALL_STRIPPED_WOODEN_SIGN,
                     SignItem::new);
@@ -105,6 +117,10 @@ public class DecoItems {
     public static final Item CACTUS_MOSAIC_SIGN = registerSignItem("cactus_mosaic_sign",
             DecoBlocks.STANDING_CACTUS_MOSAIC_SIGN, DecoBlocks.WALL_CACTUS_MOSAIC_SIGN,
                     SignItem::new);
+    public static final Item MUSHROOM_MOSAIC_SIGN = registerSignItem("mushroom_mosaic_sign",
+                    DecoBlocks.STANDING_MUSHROOM_MOSAIC_SIGN, DecoBlocks.WALL_MUSHROOM_MOSAIC_SIGN, SignItem::new);
+    public static final Item IRON_CAP_MOSAIC_SIGN = registerSignItem("iron_cap_mosaic_sign",
+                    DecoBlocks.STANDING_IRON_CAP_MOSAIC_SIGN, DecoBlocks.WALL_IRON_CAP_MOSAIC_SIGN, SignItem::new);
     public static final Item WOODEN_MOSAIC_SIGN = registerSignItem("wooden_mosaic_sign",
             DecoBlocks.STANDING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_WOODEN_MOSAIC_SIGN,
                     SignItem::new);
@@ -115,6 +131,12 @@ public class DecoItems {
             DecoBlocks.STANDING_DRIFTWOOD_MOSAIC_SIGN, DecoBlocks.WALL_DRIFTWOOD_MOSAIC_SIGN,
                     SignItem::new);
 
+    public static final Item CACTUS_HANGING_SIGN = registerHangingSignItem("cactus_hanging_sign",
+            DecoBlocks.HANGING_CACTUS_SIGN, DecoBlocks.WALL_HANGING_CACTUS_SIGN, HangingSignItem::new);
+    public static final Item MUSHROOM_HANGING_SIGN = registerHangingSignItem("mushroom_hanging_sign",
+            DecoBlocks.HANGING_MUSHROOM_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_SIGN, HangingSignItem::new);
+    public static final Item IRON_CAP_HANGING_SIGN = registerHangingSignItem("iron_cap_hanging_sign",
+            DecoBlocks.HANGING_IRON_CAP_SIGN, DecoBlocks.WALL_HANGING_IRON_CAP_SIGN, HangingSignItem::new);
     public static final Item WOODEN_HANGING_SIGN = registerHangingSignItem("wooden_hanging_sign",
             DecoBlocks.WALL_HANGING_WOODEN_SIGN, DecoBlocks.HANGING_WOODEN_SIGN, HangingSignItem::new);
 
@@ -157,6 +179,10 @@ public class DecoItems {
     public static final Item CACTUS_MOSAIC_HANGING_SIGN = registerHangingSignItem("cactus_mosaic_hanging_sign",
             DecoBlocks.HANGING_CACTUS_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_CACTUS_MOSAIC_SIGN,
             HangingSignItem::new);
+    public static final Item MUSHROOM_MOSAIC_HANGING_SIGN = registerHangingSignItem("mushroom_mosaic_hanging_sign",
+            DecoBlocks.HANGING_MUSHROOM_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_MOSAIC_SIGN, HangingSignItem::new);
+    public static final Item IRON_CAP_MOSAIC_HANGING_SIGN = registerHangingSignItem("iron_cap_mosaic_hanging_sign",
+            DecoBlocks.HANGING_IRON_CAP_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_IRON_CAP_MOSAIC_SIGN, HangingSignItem::new);
     public static final Item WOODEN_MOSAIC_HANGING_SIGN = registerHangingSignItem("wooden_mosaic_hanging_sign",
             DecoBlocks.HANGING_WOODEN_MOSAIC_SIGN, DecoBlocks.WALL_HANGING_WOODEN_MOSAIC_SIGN,
             HangingSignItem::new);
@@ -200,6 +226,10 @@ public class DecoItems {
     public static final Item CACTUS_PLANKS_HANGING_SIGN = registerHangingSignItem("cactus_planks_hanging_sign",
             DecoBlocks.HANGING_CACTUS_PLANKS_SIGN, DecoBlocks.WALL_HANGING_CACTUS_PLANKS_SIGN,
             HangingSignItem::new);
+    public static final Item MUSHROOM_PLANKS_HANGING_SIGN = registerHangingSignItem("mushroom_planks_hanging_sign",
+            DecoBlocks.HANGING_MUSHROOM_PLANKS_SIGN, DecoBlocks.WALL_HANGING_MUSHROOM_PLANKS_SIGN, HangingSignItem::new);
+    public static final Item IRON_CAP_PLANKS_HANGING_SIGN = registerHangingSignItem("iron_cap_planks_hanging_sign",
+            DecoBlocks.HANGING_IRON_CAP_PLANKS_SIGN, DecoBlocks.WALL_HANGING_IRON_CAP_PLANKS_SIGN, HangingSignItem::new);
     public static final Item WOODEN_PLANKS_HANGING_SIGN = registerHangingSignItem("wooden_planks_hanging_sign",
             DecoBlocks.HANGING_WOODEN_PLANKS_SIGN, DecoBlocks.WALL_HANGING_WOODEN_PLANKS_SIGN,
             HangingSignItem::new);
@@ -212,7 +242,13 @@ public class DecoItems {
 
     public static final Item SNOW_BRICK = registerCooldownItem("snow_brick",16, 1, SnowBrickItem::new);
 
+    public static final Item PASSTOL = registerItem("passtol", 64, Item::new);
+
+    public static final Item SHADDOL = registerItem("shaddol", 64, Item::new);
+
     public static final Item BUBBLE_ORB = registerItem("bubble_orb",64, BubbleItem::new);
+
+    public static final Item EARTH_SPHERE = registerItem("earth_sphere", 64, Item::new);
 
     public static final Item ICE_SHARD = registerItem("ice_shard",64, Item::new);
 
@@ -232,6 +268,16 @@ public class DecoItems {
     public static final Item CACTUS_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
             false, false);
     public static final Item CACTUS_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
+            true, false);
+
+    public static final Item MUSHROOM_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_BOAT_ID,
+            false, false);
+    public static final Item MUSHROOM_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_BOAT_ID,
+            true, false);
+
+    public static final Item DRIFTWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DRIFTWOOD_RAFT_ID,
+            false, false);
+    public static final Item DRIFTWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DRIFTWOOD_RAFT_ID,
             true, false);
 
     public static final Item WOODEN_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_BOAT_ID,
@@ -254,8 +300,93 @@ public class DecoItems {
     public static final Item DRIFTWOOD_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DRIFTWOOD_RAFT_ID,
             true, true);
 
-    //I had some inspiration The Mentor CodeLab
+    public static final Item BAMBOO_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BAMBOO_BOAT_ID,
+            false,false);
+    public static final Item BAMBOO_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BAMBOO_BOAT_ID,
+            true, false);
 
+    public static final Item OAK_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.OAK_RAFT_ID,
+            false,true);
+    public static final Item OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.OAK_RAFT_ID,
+            true, true);
+
+    public static final Item SPRUCE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.SPRUCE_RAFT_ID,
+            false,true);
+    public static final Item SPRUCE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.SPRUCE_RAFT_ID,
+            true, true);
+
+    public static final Item BIRCH_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BIRCH_RAFT_ID,
+            false,true);
+    public static final Item BIRCH_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.BIRCH_RAFT_ID,
+            true, true);
+
+    public static final Item JUNGLE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.JUNGLE_RAFT_ID,
+            false,true);
+    public static final Item JUNGLE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.JUNGLE_RAFT_ID,
+            true, true);
+
+    public static final Item ACACIA_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.ACACIA_RAFT_ID,
+            false,true);
+    public static final Item ACACIA_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.ACACIA_RAFT_ID,
+            true, true);
+
+    public static final Item DARK_OAK_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DARK_OAK_RAFT_ID,
+            false,true);
+    public static final Item DARK_OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DARK_OAK_RAFT_ID,
+            true, true);
+
+    public static final Item PALE_OAK_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.PALE_OAK_RAFT_ID,
+            false,true);
+    public static final Item PALE_OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.PALE_OAK_RAFT_ID,
+            true, true);
+
+    public static final Item MANGROVE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MANGROVE_RAFT_ID,
+            false,true);
+    public static final Item MANGROVE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MANGROVE_RAFT_ID,
+            true, true);
+
+    public static final Item CHERRY_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CHERRY_RAFT_ID,
+            false,true);
+    public static final Item CHERRY_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CHERRY_RAFT_ID,
+            true, true);
+
+    public static final Item CRIMSON_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CRIMSON_BOAT_ID,
+            false,true);
+    public static final Item CRIMSON_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CRIMSON_BOAT_ID,
+            true, true);
+
+    public static final Item WARPED_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_BOAT_ID,
+            false,true);
+    public static final Item WARPED_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WARPED_BOAT_ID,
+            true, true);
+
+    public static final Item CACTUS_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
+            false,true);
+    public static final Item CACTUS_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.CACTUS_BOAT_ID,
+            true, true);
+
+    public static final Item MUSHROOM_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_BOAT_ID,
+            false,true);
+    public static final Item MUSHROOM_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MUSHROOM_BOAT_ID,
+            true, true);
+
+    public static final Item WOODEN_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_BOAT_ID,
+            false,true);
+    public static final Item WOODEN_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.WOODEN_BOAT_ID,
+            true, true);
+
+    public static final Item IRON_CAP_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_BOAT_ID,
+            false,false);
+    public static final Item IRON_CAP_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_BOAT_ID,
+            true,false);
+
+    public static final Item IRON_CAP_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_BOAT_ID,
+            false, true);
+    public static final Item IRON_CAP_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.IRON_CAP_BOAT_ID,
+            true, true);
+
+
+    //I had some inspiration The Mentor CodeLab
     public static RegistryKey<Item> getItemKey(String name){
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(name));
     }

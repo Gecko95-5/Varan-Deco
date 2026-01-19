@@ -7,6 +7,8 @@ import net.minecraft.util.Identifier;
 
 public class DecoWoodTypes {
     public static WoodType CACTUS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"cactus"));
+    public static WoodType MUSHROOM_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"mushroom"));
+    public static WoodType IRON_CAP_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"iron_cap"));
     public static WoodType WOODEN_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"wooden"));
     public static WoodType DRIFTWOOD_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"driftwood"));
 
@@ -21,6 +23,9 @@ public class DecoWoodTypes {
     public static WoodType STRIPPED_PALE_OAK_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_pale_oak"));
     public static WoodType STRIPPED_CRIMSON_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_crimson"));
     public static WoodType STRIPPED_WARPED_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_warped"));
+    public static WoodType MUSHROOM_STEM_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"mushroom_stem"));
+    public static WoodType STRIPPED_CACTUS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_cactus"));
+    public static WoodType STRIPPED_IRON_CAP_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_iron_cap"));
     public static WoodType STRIPPED_WOODEN_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_wooden"));
     public static WoodType STRIPPED_DRIFTWOOD_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"stripped_driftwood"));
 
@@ -37,6 +42,8 @@ public class DecoWoodTypes {
     public static WoodType CRIMSON_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"crimson_mosaic"));
     public static WoodType WARPED_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"warped_mosaic"));
     public static WoodType CACTUS_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"cactus_mosaic"));
+    public static WoodType MUSHROOM_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"mushroom_mosaic"));
+    public static WoodType IRON_CAP_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"iron_cap_mosaic"));
     public static WoodType WOODEN_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"wooden_mosaic"));
     public static WoodType DRIFTWOOD_MOSAIC_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"driftwood_mosaic"));
 
@@ -53,5 +60,7 @@ public class DecoWoodTypes {
     public static WoodType WARPED_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"warped_planks"));
     public static WoodType CACTUS_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"cactus_planks"));
     public static WoodType WOODEN_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"wooden_planks"));
+    public static WoodType MUSHROOM_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"mushroom_planks"));
+    public static WoodType IRON_CAP_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"iron_cap_planks"));
     public static WoodType DRIFTWOOD_PLANKS_TYPE = TerraformSignBlockHelper.registerDefaultWoodType(Identifier.of(VaranDeco.MOD_ID,"driftwood_planks"));
 }

@@ -24,15 +24,6 @@
             "slow_scale": 1.0,
             "states": [
               {
-                "Name": "minecraft:black_tulip"
-              },
-              {
-                "Name": "minecraft:green_tulip"
-              },
-              {
-                "Name": "minecraft:cyan_tulip"
-              },
-              {
                 "Name": "minecraft:barberton_daisy"
               },
               {

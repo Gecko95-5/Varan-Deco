@@ -1,6 +1,8 @@
 {
   "values": [
     "varan-deco:cactus_wall_sign",
+    "varan-deco:mushroom_wall_sign",
+    "varan-deco:iron_cap_wall_sign",
     "varan-deco:wooden_wall_sign",
     "varan-deco:driftwood_wall_sign",
     "varan-deco:stripped_oak_wall_sign",
@@ -29,6 +31,11 @@
     "varan-deco:warped_mosaic_wall_sign",
     "varan-deco:cactus_mosaic_wall_sign",
     "varan-deco:wooden_mosaic_wall_sign",
+    "varan-deco:mushroom_stem_wall_sign",
+    "varan-deco:stripped_cactus_wall_sign",
+    "varan-deco:mushroom_mosaic_wall_sign",
+    "varan-deco:stripped_iron_cap_wall_sign",
+    "varan-deco:iron_cap_mosaic_wall_sign",
     "varan-deco:pale_oak_mosaic_wall_sign",
     "varan-deco:driftwood_mosaic_wall_sign"
   ]
