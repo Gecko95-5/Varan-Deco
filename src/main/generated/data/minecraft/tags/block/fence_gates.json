@@ -3,6 +3,8 @@
     "minecraft:nether_brick_fence_gate",
     "minecraft:red_nether_brick_fence_gate",
     "minecraft:cactus_plank_fence_gate",
+    "minecraft:iron_cap_fence_gate",
+    "minecraft:mushroom_fence_gate",
     "minecraft:wooden_fence_gate"
   ]
 }

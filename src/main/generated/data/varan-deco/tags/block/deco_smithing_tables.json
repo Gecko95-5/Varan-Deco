@@ -13,6 +13,8 @@
     "minecraft:bamboo_smithing_table",
     "minecraft:pale_oak_smithing_table",
     "minecraft:cherry_smithing_table",
-    "minecraft:driftwood_smithing_table"
+    "minecraft:driftwood_smithing_table",
+    "minecraft:mushroom_smithing_table",
+    "minecraft:iron_cap_smithing_table"
   ]
 }

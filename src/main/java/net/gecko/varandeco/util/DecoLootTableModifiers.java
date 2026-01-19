@@ -44,15 +44,6 @@ public class DecoLootTableModifiers {
 
                 tableBuilder.pool(poolBuilder.build());
             }
-            if (LootTables.SNIFFER_DIGGING_GAMEPLAY.equals(key)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(0.5f))
-                        .with(ItemEntry.builder(DecoItems.ANCIENT_ROSE_SEEDS))
-                        .with(ItemEntry.builder(DecoItems.MIGHTY_LAVENDER_FLOWER))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
             if (ENDERMAN_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))

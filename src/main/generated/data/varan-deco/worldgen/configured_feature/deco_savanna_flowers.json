@@ -6,39 +6,32 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:dual_noise_provider",
-            "noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -3
-            },
-            "scale": 0.005,
-            "seed": 2345,
-            "slow_noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -10
-            },
-            "slow_scale": 0.5,
-            "states": [
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
               {
-                "Name": "minecraft:gerbera_daisy"
+                "data": {
+                  "Name": "minecraft:gerbera_daisy"
+                },
+                "weight": 2
               },
               {
-                "Name": "minecraft:blue_eyed_daisy"
+                "data": {
+                  "Name": "minecraft:michaelmas_daisy"
+                },
+                "weight": 2
               },
               {
-                "Name": "minecraft:michaelmas_daisy"
+                "data": {
+                  "Name": "minecraft:blue_eyed_daisy"
+                },
+                "weight": 1
               },
               {
-                "Name": "minecraft:california_poppy"
+                "data": {
+                  "Name": "minecraft:california_poppy"
+                },
+                "weight": 1
               }
-            ],
-            "variety": [
-              1,
-              3
             ]
           }
         }
@@ -53,7 +46,7 @@
         }
       ]
     },
-    "tries": 16,
+    "tries": 24,
     "xz_spread": 7,
     "y_spread": 3
   }

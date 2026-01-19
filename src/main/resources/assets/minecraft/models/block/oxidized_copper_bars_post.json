@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "minecraft:block/oxidized_copper_bars",
-        "bars": "minecraft:block/oxidized_copper_bars",
+        "particle": "minecraft:block/oxidized_copper_bars_edge",
+        "bars": "minecraft:block/oxidized_copper_bars_edge",
         "edge": "minecraft:block/oxidized_copper_bars_edge"
     },
     "elements": [

@@ -40,6 +40,7 @@ public class VaranDeco implements ModInitializer {
 		DecoCustomTrades.registerCustomTrades();
 		DecoEntities.registerDecoEntities();
 		DecoTruckPlacerType.register();
+        DecoFeatures.registerDecoFeatures();
 
 		LOGGER.info("Hello Fabric world!");
 

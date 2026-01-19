@@ -6,7 +6,7 @@
     "minecraft:bowl",
     "minecraft:brown_mushroom",
     "minecraft:red_mushroom",
-    "minecraft:wildflowers"
+    "#varan-deco:wildflowers"
   ],
   "result": {
     "components": {

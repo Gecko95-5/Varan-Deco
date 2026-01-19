@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "minecraft:block/heavy_iron_bars",
-        "bars": "minecraft:block/heavy_iron_bars",
+        "particle": "minecraft:block/heavy_iron_bars_edge",
+        "bars": "minecraft:block/heavy_iron_bars_edge",
         "edge": "minecraft:block/heavy_iron_bars_edge"
     },
     "elements": [
