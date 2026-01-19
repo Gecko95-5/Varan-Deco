@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "minecraft:block/iron_cap_hyphae_slab"
+      "model": "minecraft:block/pale_oak_wood_slab"
     },
     "type=double": {
-      "model": "minecraft:block/iron_cap_stem_temp"
+      "model": "minecraft:block/pale_oak_wood_temp"
     },
     "type=top": {
-      "model": "minecraft:block/iron_cap_hyphae_slab_top"
+      "model": "minecraft:block/pale_oak_wood_slab_top"
     }
   }
 }

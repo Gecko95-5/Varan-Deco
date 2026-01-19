@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "minecraft:block/stripped_iron_cap_hyphae_slab"
+      "model": "minecraft:block/stripped_pale_oak_wood_slab"
     },
     "type=double": {
-      "model": "minecraft:block/stripped_iron_cap_temp"
+      "model": "minecraft:block/stripped_pale_oak_temp"
     },
     "type=top": {
-      "model": "minecraft:block/stripped_iron_cap_hyphae_slab_top"
+      "model": "minecraft:block/stripped_pale_oak_wood_slab_top"
     }
   }
 }

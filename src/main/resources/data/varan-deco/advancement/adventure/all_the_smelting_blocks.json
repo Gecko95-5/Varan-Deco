@@ -49,9 +49,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
+            "items":
               "minecraft:end_stone_furnace"
-            ]
           }
         ]
       },
@@ -105,9 +104,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
+            "items":
               "minecraft:end_stone_smoker"
-            ]
           }
         ]
       },
@@ -161,9 +159,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
+            "items":
               "minecraft:end_stone_blast_furnace"
-            ]
           }
         ]
       },

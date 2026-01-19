@@ -60,6 +60,8 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.MANGROVE_CHEST_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CHERRY_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CHERRY_CHEST_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.PALE_OAK_RAFT, Models.GENERATED);
+        itemModelGenerator.register(DecoItems.PALE_OAK_CHEST_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CRIMSON_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.CRIMSON_CHEST_RAFT, Models.GENERATED);
         itemModelGenerator.register(DecoItems.WARPED_RAFT, Models.GENERATED);

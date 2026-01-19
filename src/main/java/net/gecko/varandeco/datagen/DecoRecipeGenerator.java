@@ -2326,6 +2326,16 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         .offerTo(exporter, getRecipeName(DecoBlocks.PALE_OAK_BOOKSHELF_STAIRS) + "_recipe_create");
 
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.PALE_OAK_BOOKSHELF_SLAB, DecoBlocks.PALE_OAK_BOOKSHELF);
+
+                createShaped(RecipeCategory.TRANSPORTATION, DecoItems.PALE_OAK_RAFT)
+                        .pattern("# #")
+                        .pattern("---")
+                        .group("boat")
+                        .input('#', Items.PALE_OAK_PLANKS)
+                        .input('-', Items.PALE_OAK_SLAB)
+                        .criterion("in_water", requireEnteringFluid(Blocks.WATER))
+                        .offerTo(exporter, getRecipeName(DecoItems.PALE_OAK_RAFT)+ "_recipe_create");
+                offerChestBoatRecipe(DecoItems.PALE_OAK_CHEST_RAFT, DecoItems.PALE_OAK_RAFT);
     }
     public void  offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
                 createShaped(RecipeCategory.DECORATIONS,output,3)

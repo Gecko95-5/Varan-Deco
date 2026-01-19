@@ -315,6 +315,11 @@ public class DecoItems {
     public static final Item DARK_OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.DARK_OAK_RAFT_ID,
             true, true);
 
+    public static final Item PALE_OAK_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.PALE_OAK_RAFT_ID,
+            false,true);
+    public static final Item PALE_OAK_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.PALE_OAK_RAFT_ID,
+            true, true);
+
     public static final Item MANGROVE_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MANGROVE_RAFT_ID,
             false,true);
     public static final Item MANGROVE_CHEST_RAFT = TerraformBoatItemHelper.registerBoatItem(DecoBoats.MANGROVE_RAFT_ID,

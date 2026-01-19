@@ -17,7 +17,7 @@
         "items": [
           {
             "items":
-            "varan-deco:bubble_block"
+            "minecraft:bubble_block"
           }
         ]
       },
@@ -28,7 +28,7 @@
         "items": [
           {
             "items":
-            "varan-deco:wind_block"
+            "minecraft:wind_block"
           }
         ]
       },
@@ -39,7 +39,7 @@
         "items": [
           {
             "items":
-            "varan-deco:earth_block"
+            "minecraft:earth_block"
           }
         ]
       },
@@ -53,7 +53,7 @@
     "hidden": true,
     "icon": {
       "count": 1,
-      "id": "varan-deco:wind_block"
+      "id": "minecraft:wind_block"
     },
     "show_toast": true,
     "title": "Earth, Fire, Water, Air in Blocks"

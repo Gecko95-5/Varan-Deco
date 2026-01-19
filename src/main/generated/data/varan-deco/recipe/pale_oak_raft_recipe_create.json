@@ -3,15 +3,15 @@
   "category": "misc",
   "group": "boat",
   "key": {
-    "#": "minecraft:bamboo_planks",
-    "-": "minecraft:bamboo_slab"
+    "#": "minecraft:pale_oak_planks",
+    "-": "minecraft:pale_oak_slab"
   },
   "pattern": [
     "# #",
     "---"
   ],
   "result": {
-    "id": "minecraft:bamboo_raft"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "varan-deco:pale_oak_raft"
+  }
 }

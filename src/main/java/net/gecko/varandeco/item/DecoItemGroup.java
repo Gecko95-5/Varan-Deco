@@ -1386,6 +1386,8 @@ public class DecoItemGroup {
                         entries.add(DecoItems.MANGROVE_CHEST_RAFT);
                         entries.add(DecoItems.CHERRY_RAFT);
                         entries.add(DecoItems.CHERRY_CHEST_RAFT);
+                        entries.add(DecoItems.PALE_OAK_RAFT);
+                        entries.add(DecoItems.PALE_OAK_CHEST_RAFT);
                         entries.add(DecoItems.BAMBOO_BOAT);
                         entries.add(DecoItems.BAMBOO_CHEST_BOAT);
                         entries.add(DecoItems.CRIMSON_BOAT);

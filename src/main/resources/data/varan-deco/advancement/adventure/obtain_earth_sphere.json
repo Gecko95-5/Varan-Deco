@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:earth_sphere"
+            "items": "minecraft:earth_sphere"
           }
         ]
       },
@@ -19,7 +19,7 @@
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "varan-deco:earth_sphere"
+      "id": "minecraft:earth_sphere"
     },
     "show_toast": true,
     "title": "A small piece of World"

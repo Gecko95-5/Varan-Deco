@@ -19,5 +19,6 @@ public class DecoBoats {
     public static final Identifier ACACIA_RAFT_ID = Identifier.of(VaranDeco.MOD_ID,"acacia");
     public static final Identifier DARK_OAK_RAFT_ID = Identifier.of(VaranDeco.MOD_ID,"dark_oak");
     public static final Identifier MANGROVE_RAFT_ID = Identifier.of(VaranDeco.MOD_ID,"mangrove");
+    public static final Identifier PALE_OAK_RAFT_ID = Identifier.of(VaranDeco.MOD_ID,"pale_oak");
     public static final Identifier CHERRY_RAFT_ID = Identifier.of(VaranDeco.MOD_ID,"cherry");
 }

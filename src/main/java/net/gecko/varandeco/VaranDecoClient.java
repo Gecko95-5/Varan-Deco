@@ -287,6 +287,7 @@ public class VaranDecoClient implements ClientModInitializer {
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.DARK_OAK_RAFT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.MANGROVE_RAFT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CHERRY_RAFT_ID);
+        TerraformBoatClientHelper.registerModelLayers(DecoBoats.PALE_OAK_RAFT_ID);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : -12012264,
                 DecoBlocks.WOODEN_LEAVES);
