@@ -6,36 +6,26 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:dual_noise_provider",
-            "noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -3
-            },
-            "scale": 0.005,
-            "seed": 2345,
-            "slow_noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": -10
-            },
-            "slow_scale": 0.5,
-            "states": [
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
               {
-                "Name": "minecraft:rose"
+                "data": {
+                  "Name": "minecraft:rose"
+                },
+                "weight": 5
               },
               {
-                "Name": "minecraft:california_poppy"
+                "data": {
+                  "Name": "minecraft:barberton_daisy"
+                },
+                "weight": 3
               },
               {
-                "Name": "minecraft:barberton_daisy"
+                "data": {
+                  "Name": "minecraft:california_poppy"
+                },
+                "weight": 1
               }
-            ],
-            "variety": [
-              1,
-              3
             ]
           }
         }

@@ -19,6 +19,9 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WOODEN_SAPLING,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WOODEN_LEAVES,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.KELP_LEAVES,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.SWEET_WILDFLOWERS,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ROUGE_WILDFLOWERS,0.3F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.GECKO_WILDFLOWERS,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DEAD_KELP_LEAVES,0.15F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DRIFTWOOD_SAPLING,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DRIFTWOOD_SPROUT,0.15F);
@@ -47,5 +50,10 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ANCIENT_ROSE,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BLUE_HIBISCUS,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BROMELIAD,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BUTTERCUP,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.NIGHTSHADE,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ENDERSHADE,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM, 0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK, 0.85F);
     }
 }

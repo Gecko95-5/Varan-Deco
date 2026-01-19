@@ -1,6 +1,8 @@
 {
   "values": [
     "minecraft:wall_cactus_sign",
+    "minecraft:wall_mushroom_sign",
+    "minecraft:wall_iron_cap_sign",
     "minecraft:wall_wooden_sign",
     "minecraft:wall_driftwood_sign",
     "minecraft:wall_stripped_oak_sign",
@@ -29,6 +31,11 @@
     "minecraft:wall_warped_mosaic_sign",
     "minecraft:wall_cactus_mosaic_sign",
     "minecraft:wall_wooden_mosaic_sign",
+    "minecraft:wall_mushroom_stem_sign",
+    "minecraft:wall_stripped_cactus_sign",
+    "minecraft:wall_mushroom_mosaic_sign",
+    "minecraft:wall_stripped_iron_cap_sign",
+    "minecraft:wall_iron_cap_mosaic_sign",
     "minecraft:wall_pale_oak_mosaic_sign",
     "minecraft:wall_driftwood_mosaic_sign"
   ]

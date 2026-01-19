@@ -24,10 +24,23 @@ public class DecoMiscGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_FROZEN_OCEAN),
                 GenerationStep.Feature.UNDERGROUND_ORES, DecoPlacedFeatures.DECO_DEEP_BUBBLE_ORE_PLACED);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_OCEAN),
-                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_FALLEN_DRIFTWOOD_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_MIDLANDS),
+                GenerationStep.Feature.SURFACE_STRUCTURES, DecoPlacedFeatures.DECO_VOID_PATCH_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_HIGHLANDS),
+                GenerationStep.Feature.SURFACE_STRUCTURES, DecoPlacedFeatures.DECO_VOID_PATCH_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_BARRENS),
+                GenerationStep.Feature.SURFACE_STRUCTURES, DecoPlacedFeatures.DECO_VOID_BIG_PATCH_PLACED);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIED_FALLEN_DRIFTWOOD_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SNOWY_BEACH),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIED_FALLEN_DRIFTWOOD_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_SHORE),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIED_FALLEN_DRIFTWOOD_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OCEAN),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIFTWOOD_SPROUT_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_OCEAN),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DRIFTWOOD_SPROUT_PLACED);
     }
 }

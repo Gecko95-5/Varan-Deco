@@ -30,6 +30,13 @@
     "minecraft:wall_hanging_pale_oak_planks_sign",
     "minecraft:wall_hanging_crimson_planks_sign",
     "minecraft:wall_hanging_warped_planks_sign",
+    "minecraft:wall_hanging_mushroom_sign",
+    "minecraft:wall_hanging_cactus_sign",
+    "minecraft:wall_hanging_mushroom_planks_sign",
+    "minecraft:wall_hanging_mushroom_mosaic_sign",
+    "minecraft:wall_hanging_iron_cap_sign",
+    "minecraft:wall_hanging_iron_cap_planks_sign",
+    "minecraft:wall_hanging_iron_cap_mosaic_sign",
     "minecraft:wall_hanging_driftwood_planks_sign"
   ]
 }

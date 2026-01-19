@@ -72,8 +72,28 @@ public class DecoFlammableBlocks {
 
         registry.add(DecoBlocks.PAEONIA,60, 100);
         registry.add(DecoBlocks.LAVENDER,60, 100);
+
+        registry.add(DecoBlocks.BROMELIAD,60, 100);
+        registry.add(DecoBlocks.BLUE_HIBISCUS,60, 100);
+
+        registry.add(DecoBlocks.BUTTERCUP,60, 100);
+
+        registry.add(DecoBlocks.NIGHTSHADE,60, 100);
+        registry.add(DecoBlocks.ENDERSHADE,60, 100);
+
+        registry.add(DecoBlocks.ROUGE_WILDFLOWERS,60, 100);
+        registry.add(DecoBlocks.SWEET_WILDFLOWERS,60, 100);
+        registry.add(DecoBlocks.GECKO_WILDFLOWERS,60, 100);
+
+        registry.add(DecoTags.Blocks.LOG_STAIRS,5,5);
+        registry.add(DecoTags.Blocks.LOG_SLABS,5,5);
+        registry.add(DecoTags.Blocks.LOG_WALLS,5,5);
         
-        registry.add(DecoTags.Blocks.DECO_BOOKSHELVES,30,20);
+        registry.add(DecoTags.Blocks.WOODEN_BOOKSHELVES,30,20);
+
+        registry.add(DecoTags.Blocks.WOODEN_BOOKSHELF_STAIRS,25,20);
+
+        registry.add(DecoTags.Blocks.WOODEN_BOOKSHELF_SLABS,15,20);
 
         registry.add(DecoBlocks.ANCIENT_ROSE,60, 100);
         registry.add(DecoBlocks.MIGHTY_LAVENDER,60, 100);
