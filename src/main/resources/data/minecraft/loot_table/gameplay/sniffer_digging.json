@@ -14,15 +14,15 @@
         },
         {
           "type": "minecraft:item",
-          "name": "varan-deco:ancient_rose_seeds"
+          "name": "minecraft:ancient_rose_seeds"
         },
         {
           "type": "minecraft:item",
-          "name": "varan-deco:mighty_lavender_flower"
+          "name": "minecraft:mighty_lavender_flower"
         },
         {
           "type": "minecraft:item",
-          "name": "varan-deco:iron_cap_mushroom"
+          "name": "minecraft:iron_cap_mushroom"
         }
       ],
       "rolls": 1.0
