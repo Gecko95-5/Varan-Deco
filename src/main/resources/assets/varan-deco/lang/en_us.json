@@ -2109,5 +2109,9 @@
   "entity.minecraft.wooden_raft": "Wooden Raft",
   "entity.minecraft.wooden_chest_raft": "Wooden Raft with Chest",
 
-  "itemgroup.varan_deco_blocks": "Variant Decoration"
+  "itemgroup.varan_deco_blocks": "V-Deco - Building Blocks",
+  "itemgroup.varan_deco_colour": "V-Deco - Coloured Blocks",
+  "itemgroup.varan_deco_flower": "V-Deco - Natural Blocks",
+  "itemgroup.varan_deco_functional": "V-Deco - Functional Blocks",
+  "itemgroup.varan_deco_misc": "V-Deco - Miscellaneous"
 }
