@@ -2484,9 +2484,9 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),CactusBarrelBlock::new);
     public static final Block DRIFTWOOD_BARREL = registerNonStationBlock("driftwood_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_GREEN),DriftwoodBarrelBlock::new);
-    public static final Block MUSHROOM_BARREL = registerBlock("mushroom_barrel",
+    public static final Block MUSHROOM_BARREL = registerNonStationBlock("mushroom_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RAW_IRON_PINK),MushroomBarrelBlock::new);
-    public static final Block IRON_CAP_BARREL = registerBlock("iron_cap_barrel",
+    public static final Block IRON_CAP_BARREL = registerNonStationBlock("iron_cap_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.LIGHT_BLUE_GRAY)
                     .sounds(BlockSoundGroup.NETHER_STEM),IronCapBarrelBlock::new);
 
@@ -2622,7 +2622,7 @@ public class DecoBlocks {
     public static final Block TUFF_SMOKER = registerNonStationBlock("tuff_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.TERRACOTTA_GRAY)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffSmokerBlock::new);
-    public static final Block END_STONE_SMOKER = registerBlock("end_stone_smoker",
+    public static final Block END_STONE_SMOKER = registerNonStationBlock("end_stone_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.PALE_YELLOW)
                     .strength(4.5f),TuffSmokerBlock::new);
 
@@ -2635,7 +2635,7 @@ public class DecoBlocks {
     public static final Block TUFF_BLAST_FURNACE = registerNonStationBlock("tuff_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.TERRACOTTA_GRAY)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF_BRICKS),TuffBlastFurnaceBlock::new);
-    public static final Block END_STONE_BLAST_FURNACE = registerBlock("end_stone_blast_furnace",
+    public static final Block END_STONE_BLAST_FURNACE = registerNonStationBlock("end_stone_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.PALE_YELLOW)
                     .strength(4.5f),EndstoneBlastFurnaceBlock::new);
 
@@ -2671,9 +2671,9 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),CactusCartographyTableBlock::new);
     public static final Block DRIFTWOOD_CARTOGRAPHY_TABLE = registerNonStationBlock("driftwood_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),DriftwoodCartographyTableBlock::new);
-    public static final Block MUSHROOM_CARTOGRAPHY_TABLE = registerBlock("mushroom_cartography_table",
+    public static final Block MUSHROOM_CARTOGRAPHY_TABLE = registerNonStationBlock("mushroom_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),MushroomCartographyTableBlock::new);
-    public static final Block IRON_CAP_CARTOGRAPHY_TABLE = registerBlock("iron_cap_cartography_table",
+    public static final Block IRON_CAP_CARTOGRAPHY_TABLE = registerNonStationBlock("iron_cap_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE)
                     .sounds(BlockSoundGroup.NETHER_STEM),IronCapCartographyTableBlock::new);
 
@@ -2685,7 +2685,7 @@ public class DecoBlocks {
     public static final Block TUFF_GRINDSTONE = registerNonStationBlock("tuff_grindstone",
             AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.TERRACOTTA_GRAY)
             .sounds(BlockSoundGroup.TUFF),TuffGrindstoneBlock::new);
-    public static final Block END_STONE_GRINDSTONE = registerBlock("end_stone_grindstone",
+    public static final Block END_STONE_GRINDSTONE = registerNonStationBlock("end_stone_grindstone",
             AbstractBlock.Settings.copy(Blocks.GRINDSTONE).mapColor(MapColor.PALE_YELLOW),EndstoneGrindstoneBlock::new);
 
     public static final Block OAK_SMITHING_TABLE = registerNonStationBlock("oak_smithing_table",
@@ -2718,9 +2718,9 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE) , PaleOakSmithingTableBlock::new);
     public static final Block CACTUS_SMITHING_TABLE = registerNonStationBlock("cactus_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),CactusSmithingTableBlock::new);
-    public static final Block MUSHROOM_SMITHING_TABLE = registerBlock("mushroom_smithing_table",
+    public static final Block MUSHROOM_SMITHING_TABLE = registerNonStationBlock("mushroom_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),MushroomSmithingTableBlock::new);
-    public static final Block IRON_CAP_SMITHING_TABLE = registerBlock("iron_cap_smithing_table",
+    public static final Block IRON_CAP_SMITHING_TABLE = registerNonStationBlock("iron_cap_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE).sounds(BlockSoundGroup.NETHER_STEM),IronCapSmithingTableBlock::new);
     public static final Block DRIFTWOOD_SMITHING_TABLE = registerNonStationBlock("driftwood_smithing_table",
             AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE),DriftwoodSmithingTableBlock::new);
@@ -2734,7 +2734,7 @@ public class DecoBlocks {
     public static final Block TUFF_STONECUTTER = registerNonStationBlock("tuff_stonecutter",
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.BLACK)
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffStonecutterBlock::new);
-    public static final Block END_STONE_STONECUTTER = registerBlock("end_stone_stonecutter",
+    public static final Block END_STONE_STONECUTTER = registerNonStationBlock("end_stone_stonecutter",
             AbstractBlock.Settings.copy(Blocks.STONECUTTER).mapColor(MapColor.PALE_YELLOW)
                     .strength(4.5f),EndstoneStonecutterBlock::new);
 
