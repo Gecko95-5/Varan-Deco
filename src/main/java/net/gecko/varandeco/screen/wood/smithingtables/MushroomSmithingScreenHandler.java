@@ -70,7 +70,7 @@ public class MushroomSmithingScreenHandler extends ForgingScreenHandler {
 
     @Override
     protected boolean canUse(BlockState state) {
-        return state.isOf(DecoBlocks.DARK_OAK_SMITHING_TABLE);
+        return state.isOf(DecoBlocks.MUSHROOM_SMITHING_TABLE);
     }
 
     @Override
