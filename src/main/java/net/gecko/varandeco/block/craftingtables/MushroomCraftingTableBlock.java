@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.craftingtables;
 
+import net.gecko.varandeco.screen.wood.MushroomCraftingScreenHandler;
 import net.gecko.varandeco.screen.wood.SpruceCraftingScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -36,7 +37,7 @@ public class MushroomCraftingTableBlock extends Block {
 	@Override
 	public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
 		return new SimpleNamedScreenHandlerFactory(
-			(syncId, inventory, player) -> new SpruceCraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE
+			(syncId, inventory, player) -> new MushroomCraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE
 		);
 	}
 }
