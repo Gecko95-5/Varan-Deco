@@ -1,4 +1,4 @@
-// 1.20.6	2026-01-13T11:47:38.8513795	Variant Decoration/Block Loot Tables
+// 1.20.6	2026-01-21T14:08:20.9370551	Variant Decoration/Block Loot Tables
 c8a9d53cbdfd2f8325db048d7c1a8ebd08e9bb26 data\varan-deco\loot_tables\blocks\crimson_pallet_door.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -904,8 +904,8 @@ d281bef960f38e2299867f2cee3b8b4bdfae49bf data\varan-deco\loot_tables\blocks\pack
 1d8af2d6543b32671700750814dc43cd38ee6b2e data\varan-deco\loot_tables\blocks\cracked_polished_blackstone_tiles.json
 f7029e32a2748f4de1f73e990c5dae11f40c4461 data\varan-deco\loot_tables\blocks\infested_polished_granite.json
 717689d33282fb99e9c7f934a9fb9aff8dcf33c0 data\varan-deco\loot_tables\blocks\waxed_weathered_copper_slab.json
-f87e11dcaebfda49cc5ebc5a2fe09d33f95ad32b data\varan-deco\loot_tables\blocks\cut_soul_soilstone_bricks.json
 76d0f3cb244c11ca5aec1d891236b31300bedcbd data\varan-deco\loot_tables\blocks\bamboo_bookshelf_stairs.json
+f87e11dcaebfda49cc5ebc5a2fe09d33f95ad32b data\varan-deco\loot_tables\blocks\cut_soul_soilstone_bricks.json
 787be6c5c61b6fd58e635c3443bfc888449fe275 data\varan-deco\loot_tables\blocks\smooth_deepslate.json
 ed61d8618f9c26ce408069722cb9afee03fa6aeb data\varan-deco\loot_tables\blocks\spruce_crafting_table.json
 d73e0310c1a4e7e5af5af8b77a007bc3c7bc24f6 data\varan-deco\loot_tables\blocks\polished_end_stone_button.json

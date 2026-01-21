@@ -1,4 +1,4 @@
-// 1.20.6	2026-01-13T11:47:38.7286411	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2026-01-21T14:08:20.865749	Variant Decoration/Tags for minecraft:block
 9834d4813129845b093976fce476955eae313149 data\varan-deco\tags\blocks\infested_blocks.json
 a05872baff65e20b7f08bed44f2d28cb8f7da236 data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
@@ -14,15 +14,15 @@ b2e1088b3d441bfaf74eba9e77f7f0128d1b3f6a data\varan-deco\tags\blocks\deco_booksh
 645744139ae4b21643fd1e4112ab857402ba5300 data\varan-deco\tags\blocks\copper_lantern.json
 708fcab827927b3fa41dfcdeef198d7e8afd8f78 data\minecraft\tags\blocks\ceiling_hanging_signs.json
 05e0dd49a258e826d24330de2e562908cb49b4ad data\varan-deco\tags\blocks\deco_smithing_tables.json
-03227e2b36f5ffbf28789d7541f0a4f14c215812 data\varan-deco\tags\blocks\hardened_glass.json
 0808f3dee068e61a81ca6cf1471240e4e5404eee data\varan-deco\tags\blocks\wooden_bookshelf_stairs.json
+03227e2b36f5ffbf28789d7541f0a4f14c215812 data\varan-deco\tags\blocks\hardened_glass.json
 b74c33355336b6a65edbc5cbcead60e676335942 data\varan-deco\tags\blocks\deco_crafting_tables.json
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\blocks\soul_speed_blocks.json
 47aec1ccc822721d1413e8deda13ec6e8e236f89 data\varan-deco\tags\blocks\terracotta_slabs.json
 b38abf222ff2cc3d5574a8f02060740c15f82605 data\varan-deco\tags\blocks\concrete_stairs.json
 ba31b117088c7537d6544eedf1d4d7f84f3cbdbf data\varan-deco\tags\blocks\levers.json
-c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\blocks\mineable\shovel.json
 d0652a96bb5d589a11dd64796881d26fc6a5b17f data\minecraft\tags\blocks\wooden_fences.json
+c0644394d548997b1729da2fc9f903a540efba6c data\minecraft\tags\blocks\mineable\shovel.json
 2519c42e5f61a57d319ae243beca1b74abce7c18 data\minecraft\tags\blocks\fences.json
 b6feec2809938a12dd391f7839c7e47473d612f2 data\minecraft\tags\blocks\piglin_repellents.json
 9e34a85ac8004c9abd4ab69e4c179641ac7a585f data\varan-deco\tags\blocks\mosaic_glass.json
@@ -30,8 +30,8 @@ caeafb8dcf40c99dd42102be3eb0cd767f0f54ed data\minecraft\tags\blocks\wooden_stair
 6643f0c71e514a4a88c07d49949fe9b83a98a1b9 data\varan-deco\tags\blocks\deco_ladders.json
 7cd36c6362a0ab272cd9a1896a2f9ce501cf186f data\varan-deco\tags\blocks\deco_furnaces.json
 18c6dcd7316622a4c3e33307df5dcab4d12690e8 data\varan-deco\tags\blocks\mosaic_glass_panes.json
-01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 800d8430476079cdaa10108567a5286dd9337e94 data\minecraft\tags\blocks\snow.json
+01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\blocks\soul_fire_base_blocks.json
 1ceb31ff318282c7b51f8398f0ab2986ef590ffd data\varan-deco\tags\blocks\concrete_slabs.json
 c3b0b46490582b9940cd1c1f7a9f91c4b937798d data\minecraft\tags\blocks\wooden_slabs.json
 a0ecc4546b368bd9ec40186b711e2d5da829bf60 data\varan-deco\tags\blocks\deco_barrels.json
@@ -55,8 +55,8 @@ d26e5da10ff94642ee34f8287dae824ec727e4e4 data\minecraft\tags\blocks\snow_layer_c
 400cb820962bff0d92095c4b962722e603d0f232 data\minecraft\tags\blocks\guarded_by_piglins.json
 d59e4e47a69393d9d43b2301198f3c6b145639df data\varan-deco\tags\blocks\terracotta_stairs.json
 0c0a036a96916d99901bab645c526ccc1b9a92ac data\minecraft\tags\blocks\needs_diamond_tool.json
-ce9df1c6650c3ceb03343f58ca65d31cebd29003 data\minecraft\tags\blocks\fence_gates.json
 0523c4f80dac67c362eb256e6b6ebcaaa388f003 data\minecraft\tags\blocks\walls.json
+ce9df1c6650c3ceb03343f58ca65d31cebd29003 data\minecraft\tags\blocks\fence_gates.json
 3824cb6574ebf09a781826d361c30f1bada94d54 data\minecraft\tags\blocks\enderman_holdable.json
 5a3a1abe180521d2238140f9056e1a70e46c931b data\varan-deco\tags\blocks\wooden_logs.json
 afd008caf2cf6818f50b4ab00adff62ab0565881 data\minecraft\tags\blocks\saplings.json
@@ -79,8 +79,8 @@ c3a59751e549cd10d82f1622b179fd68cbf9eaa8 data\varan-deco\tags\blocks\terracotta_
 d8a7581710998460c0f7d6d38ad297f5fd462959 data\minecraft\tags\blocks\climbable.json
 94030005c1892cf1cd442339b4964bf46f70abdf data\minecraft\tags\blocks\standing_signs.json
 76beaf7264ead0837d8481d79bdeb0f0284baea8 data\varan-deco\tags\blocks\deco_bookshelf_slab.json
-58e136113a592809e4e1865d0a485ab607f26360 data\minecraft\tags\blocks\stone_pressure_plates.json
 af1bd98681062ca5bb6b76676e5c4bf80302b25b data\varan-deco\tags\blocks\wooden_bookshelf_slab.json
+58e136113a592809e4e1865d0a485ab607f26360 data\minecraft\tags\blocks\stone_pressure_plates.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\blocks\logs_that_burn.json
 f8462e012b53e697e9f8b33bd6331d4aadd19d9b data\minecraft\tags\blocks\flower_pots.json
 4a3241366f3b841d42a3102c7e6833c1f80af121 data\varan-deco\tags\blocks\iron_cap_stem.json
