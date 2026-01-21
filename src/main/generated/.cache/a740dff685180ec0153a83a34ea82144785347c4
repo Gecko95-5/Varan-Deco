@@ -1,4 +1,4 @@
-// 1.20.2	2026-01-13T01:16:41.9041101	Variant Decoration/Tags for minecraft:block
+// 1.20.2	2026-01-21T13:33:07.8560014	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 fa7c9ac1647b19d0d19dbc1ffe7cc1f7ba127e6c data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
@@ -64,8 +64,8 @@ d407b9751f8dea4784116ff1c5a484adc2658aeb data\varan-deco\tags\blocks\wooden_logs
 01d68d789c04dc9f94cb9200b6dbdf1a511cb47b data\minecraft\tags\blocks\ice.json
 e29f5d2c69bb6e61bb5af78b98b80b0a6e42d8d4 data\minecraft\tags\blocks\tall_flowers.json
 ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\blocks\coloured_lamps.json
-37bab4159aa015299bae0a859eeaa24ca06728e7 data\minecraft\tags\blocks\mineable\hoe.json
 80d1c8cd45c5279ea4b11a08dc67fe6503df3163 data\minecraft\tags\blocks\mineable\axe.json
+37bab4159aa015299bae0a859eeaa24ca06728e7 data\minecraft\tags\blocks\mineable\hoe.json
 924616dee2472d452eb5c2557b697b718d094cd9 data\minecraft\tags\blocks\needs_iron_tool.json
 da2c2d394015e9413dd8b82cba6171e814f36d88 data\minecraft\tags\blocks\wooden_trapdoors.json
 85105541d8a09cd82943de534069661304e1777e data\minecraft\tags\blocks\wall_signs.json
