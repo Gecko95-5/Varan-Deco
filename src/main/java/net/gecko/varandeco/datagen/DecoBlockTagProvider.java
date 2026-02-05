@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.GrassBlock;
 import net.minecraft.tag.BlockTags;
 
 public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -481,7 +482,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CHISELED_SNOW_BRICKS)
                 .add(DecoBlocks.SNOW_BRICK_STAIRS)
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
-                .add(DecoBlocks.SNOW_BRICK_WALL);
+                .add(DecoBlocks.SNOW_BRICK_WALL)
+                .add(DecoBlocks.PACKED_GRASS);
 
         getOrCreateTagBuilder(BlockTags.SNOW)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -492,6 +494,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_STAIRS)
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.SNOW_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.DIRT)
+                .add(DecoBlocks.PACKED_GRASS);
+
 
         getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
                 .add(DecoBlocks.WOODEN_LOG);

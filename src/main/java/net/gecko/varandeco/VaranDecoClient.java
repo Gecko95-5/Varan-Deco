@@ -9,6 +9,7 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoEntities;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.FoliageColors;
+import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
@@ -229,6 +230,12 @@ public class VaranDecoClient implements ClientModInitializer {
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
                         world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
                 DecoBlocks.WOODEN_LEAVES);
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex)
+                        -> world != null && pos != null ? BiomeColors.getGrassColor(world, pos) :
+                        GrassColors.getColor(0.5, 1.0),
+                DecoBlocks.PACKED_GRASS);
+
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.PACKED_GRASS.asItem());
     }
 }

@@ -1,4 +1,4 @@
-// 1.19.2	2026-01-21T11:10:41.5621149	minecraft:block Loot Table
+// 1.19.2	2026-02-05T00:43:17.6009015	minecraft:block Loot Table
 c8a9d53cbdfd2f8325db048d7c1a8ebd08e9bb26 data\varan-deco\loot_tables\blocks\crimson_pallet_door.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -43,6 +43,7 @@ d4ad675f689046e5977377e8ccc3e2161fd824e2 data\varan-deco\loot_tables\blocks\infe
 5773a1dd20c3b3055af1562165787fd2c005fe91 data\varan-deco\loot_tables\blocks\cobbled_red_sandstone_stairs.json
 e1b1b73e43a3e0308d8d03bff82edd2641be8a8b data\varan-deco\loot_tables\blocks\black_tulip.json
 8db9a9024bfcef27333a01f9eff81d3085d4736d data\varan-deco\loot_tables\blocks\light_blue_block.json
+25a50739b92da88e189a976db00907bc78bc3759 data\varan-deco\loot_tables\blocks\packed_grass.json
 171c6ff2d48a24f33328371ec4145f63b8a4910e data\varan-deco\loot_tables\blocks\chiseled_bubble_bricks.json
 0788bf36c3127d7e9676d45d0e4a80f7d8b0a2ba data\varan-deco\loot_tables\blocks\potted_nightshade.json
 cf42de2ddfa1c0e7c3c00988b58516462fa02450 data\varan-deco\loot_tables\blocks\sanded_obsidian_slab.json

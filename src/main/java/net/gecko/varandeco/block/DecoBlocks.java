@@ -8,6 +8,7 @@ import net.gecko.varandeco.block.bubblelevatorblocks.*;
 import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.NonStationBarrelBlock;
+import net.gecko.varandeco.block.custom.PackedGrassBlock;
 import net.gecko.varandeco.block.custom.TintedGlassPaneBlock;
 import net.gecko.varandeco.block.custom.WarpedWartBlock;
 import net.gecko.varandeco.block.flower.*;
@@ -61,6 +62,8 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_CALCITE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block PACKED_GRASS = registerBlock("packed_grass",
+            new PackedGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CACTUS_PLANKS = registerBlock("cactus_planks",
             new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PALE_GREEN).strength(1.0f,1.5f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);

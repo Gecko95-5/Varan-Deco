@@ -2335,5 +2335,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.END_STONE_STONECUTTER));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_grindstone"),
                 BlockLootTableGenerator.drops(DecoBlocks.END_STONE_GRINDSTONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_grass"),
+                BlockLootTableGenerator.drops(DecoBlocks.PACKED_GRASS));
     }
 }

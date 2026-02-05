@@ -1,4 +1,4 @@
-// 1.19.2	2026-01-21T11:10:41.5982207	Tags for minecraft:block
+// 1.19.2	2026-02-05T00:43:17.6098795	Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 3aed7447a1e18c9876324cee68bd2a40ed1b5969 data\minecraft\tags\blocks\mineable\pickaxe.json
 13572902612b2eccd1b530eb796c999c9979fa83 data\minecraft\tags\blocks\slabs.json
@@ -12,10 +12,11 @@ bd4d9138c95450b620fc8d5b8798885a64c941e1 data\varan-deco\tags\blocks\deco_smithi
 d533ac9bae31073b1976290d95395a4093bba6c2 data\varan-deco\tags\blocks\hardened_glass.json
 ed2aad4c6390a08ce149e68233e64e55308a95b8 data\varan-deco\tags\blocks\deco_crafting_tables.json
 c8671ab38e8dff3b7bee1836b246dd635caf0123 data\minecraft\tags\blocks\soul_speed_blocks.json
+48baae5c4214323b1f6dba1b90ac179e9be37167 data\minecraft\tags\blocks\dirt.json
 70ce753d64106b85eb9922928a70dc5e78030078 data\varan-deco\tags\blocks\terracotta_slabs.json
 ee8e6bd3bb9a2d4060230c8113a0e6d81ac6dd7b data\varan-deco\tags\blocks\concrete_stairs.json
 aaeb3e74f1d91f365b56533c88b765714def6f3b data\varan-deco\tags\blocks\levers.json
-b49c22eac898b1758c60e8ebbc4f19d87dc76d91 data\minecraft\tags\blocks\mineable\shovel.json
+750ae4feaaa29af36c6f4a833b76cfc66acddb2f data\minecraft\tags\blocks\mineable\shovel.json
 f1059881e175844fb1e917a40d5fe831c2ebfcc2 data\minecraft\tags\blocks\wooden_fences.json
 50fbf9b49b1a61568b2453f7511728689b7288cd data\minecraft\tags\blocks\fences.json
 367933ae77380e4e6b88adc1b6458353cb5c2859 data\minecraft\tags\blocks\piglin_repellents.json
