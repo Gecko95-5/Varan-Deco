@@ -2338,5 +2338,93 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_grass"),
                 BlockLootTableGenerator.drops(DecoBlocks.PACKED_GRASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_mycelium"),
+                BlockLootTableGenerator.drops(DecoBlocks.PACKED_MYCELIUM));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_podzol"),
+                BlockLootTableGenerator.drops(DecoBlocks.PACKED_PODZOL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_crimson_nylium"),
+                BlockLootTableGenerator.drops(DecoBlocks.PACKED_CRIMSON_NYLIUM));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/packed_warped_nylium"),
+                BlockLootTableGenerator.drops(DecoBlocks.PACKED_WARPED_NYLIUM));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/grass_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRASS_CARPET));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mycelium_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.MYCELIUM_CARPET));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/podzol_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.PODZOL_CARPET));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_nylium_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_NYLIUM_CARPET));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_nylium_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_NYLIUM_CARPET));
+        
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bedrock_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BEDROCK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/grass_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRASS_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/podzol_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.PODZOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mycelium_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MYCELIUM_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_nylium_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRIMSON_NYLIUM_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_nylium_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_NYLIUM_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dirt_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DIRT_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coarse_dirt_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.COARSE_DIRT_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/rooted_dirt_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.ROOTED_DIRT_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mud_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/clay_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLAY_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bone_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BONE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/moss_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSS_STAIRS));
+                
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bedrock_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BEDROCK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/grass_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.GRASS_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/podzol_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.PODZOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mycelium_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MYCELIUM_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/crimson_nylium_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRIMSON_NYLIUM_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_nylium_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WARPED_NYLIUM_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/moss_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MOSS_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dirt_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DIRT_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coarse_dirt_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COARSE_DIRT_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/rooted_dirt_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.ROOTED_DIRT_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mud_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MUD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/clay_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CLAY_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bone_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BONE_SLAB));
+        
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bedrock_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BEDROCK_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dirt_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DIRT_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coarse_dirt_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.COARSE_DIRT_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/rooted_dirt_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.ROOTED_DIRT_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mud_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.MUD_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/clay_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLAY_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bone_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BONE_WALL));
     }
 }

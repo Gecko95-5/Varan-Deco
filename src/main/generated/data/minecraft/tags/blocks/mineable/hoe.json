@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:packed_grass",
+    "varan-deco:packed_podzol",
+    "varan-deco:packed_mycelium",
+    "varan-deco:packed_crimson_nylium",
+    "varan-deco:packed_warped_nylium",
+    "varan-deco:grass_carpet",
+    "varan-deco:podzol_carpet",
+    "varan-deco:mycelium_carpet",
+    "varan-deco:crimson_nylium_carpet",
+    "varan-deco:warped_nylium_carpet",
+    "varan-deco:grass_stairs",
+    "varan-deco:podzol_stairs",
+    "varan-deco:mycelium_stairs",
+    "varan-deco:crimson_nylium_stairs",
+    "varan-deco:warped_nylium_stairs",
+    "varan-deco:grass_slab",
+    "varan-deco:podzol_slab",
+    "varan-deco:packed_mycelium_slab",
+    "varan-deco:crimson_nylium_slab",
+    "varan-deco:warped_nylium_slab",
+    "varan-deco:moss_stairs",
+    "varan-deco:moss_slab"
+  ]
+}

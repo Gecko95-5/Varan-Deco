@@ -5712,6 +5712,132 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.END_STONE_SLAB),
                         RecipeProvider.conditionsFromItem(DecoBlocks.END_STONE_SLAB))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.END_STONE_GRINDSTONE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_GRASS)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.GRASS_BLOCK)
+                .group("packed_soil")
+                .criterion(RecipeProvider.hasItem(Items.GRASS_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.GRASS_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.PACKED_GRASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_PODZOL)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.PODZOL)
+                .group("packed_soil")
+                .criterion(RecipeProvider.hasItem(Items.PODZOL),
+                        RecipeProvider.conditionsFromItem(Items.PODZOL))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.PACKED_PODZOL)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_MYCELIUM)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.MYCELIUM)
+                .group("packed_soil")
+                .criterion(RecipeProvider.hasItem(Items.MYCELIUM),
+                        RecipeProvider.conditionsFromItem(Items.MYCELIUM))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.PACKED_MYCELIUM)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_CRIMSON_NYLIUM)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.CRIMSON_NYLIUM)
+                .group("packed_nylium")
+                .criterion(RecipeProvider.hasItem(Items.CRIMSON_NYLIUM),
+                        RecipeProvider.conditionsFromItem(Items.CRIMSON_NYLIUM))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.PACKED_CRIMSON_NYLIUM)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.PACKED_WARPED_NYLIUM)
+                .pattern("##")
+                .pattern("##")
+                .input('#', Items.WARPED_NYLIUM)
+                .group("packed_nylium")
+                .criterion(RecipeProvider.hasItem(Items.WARPED_NYLIUM),
+                        RecipeProvider.conditionsFromItem(Items.WARPED_NYLIUM))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.PACKED_WARPED_NYLIUM)));
+
+        offerCarpetRecipe(exporter, DecoBlocks.GRASS_CARPET, DecoBlocks.PACKED_GRASS);
+        offerCarpetRecipe(exporter, DecoBlocks.PODZOL_CARPET, DecoBlocks.PACKED_PODZOL);
+        offerCarpetRecipe(exporter, DecoBlocks.MYCELIUM_CARPET, DecoBlocks.PACKED_MYCELIUM);
+        offerCarpetRecipe(exporter, DecoBlocks.CRIMSON_NYLIUM_CARPET, DecoBlocks.PACKED_CRIMSON_NYLIUM);
+        offerCarpetRecipe(exporter, DecoBlocks.WARPED_NYLIUM_CARPET, DecoBlocks.PACKED_WARPED_NYLIUM);
+
+        createStairsRecipe(DecoBlocks.GRASS_STAIRS, Ingredient.ofItems(DecoBlocks.PACKED_GRASS))
+                .criterion(hasItem(DecoBlocks.PACKED_GRASS),conditionsFromItem(DecoBlocks.PACKED_GRASS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GRASS_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.GRASS_SLAB, DecoBlocks.PACKED_GRASS);
+
+        createStairsRecipe(DecoBlocks.PODZOL_STAIRS, Ingredient.ofItems(DecoBlocks.PACKED_PODZOL))
+                .criterion(hasItem(DecoBlocks.PACKED_PODZOL),conditionsFromItem(DecoBlocks.PACKED_PODZOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PODZOL_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.PODZOL_SLAB, DecoBlocks.PACKED_PODZOL);
+
+        createStairsRecipe(DecoBlocks.MYCELIUM_STAIRS, Ingredient.ofItems(DecoBlocks.PACKED_MYCELIUM))
+                .criterion(hasItem(DecoBlocks.PACKED_MYCELIUM),conditionsFromItem(DecoBlocks.PACKED_MYCELIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MYCELIUM_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.MYCELIUM_SLAB, DecoBlocks.PACKED_MYCELIUM);
+
+        createStairsRecipe(DecoBlocks.CRIMSON_NYLIUM_STAIRS, Ingredient.ofItems(DecoBlocks.PACKED_CRIMSON_NYLIUM))
+                .criterion(hasItem(DecoBlocks.PACKED_CRIMSON_NYLIUM),conditionsFromItem(DecoBlocks.PACKED_CRIMSON_NYLIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRIMSON_NYLIUM_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.CRIMSON_NYLIUM_SLAB, DecoBlocks.PACKED_CRIMSON_NYLIUM);
+
+        createStairsRecipe(DecoBlocks.WARPED_NYLIUM_STAIRS, Ingredient.ofItems(DecoBlocks.PACKED_WARPED_NYLIUM))
+                .criterion(hasItem(DecoBlocks.PACKED_WARPED_NYLIUM),conditionsFromItem(DecoBlocks.PACKED_WARPED_NYLIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WARPED_NYLIUM_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.WARPED_NYLIUM_SLAB, DecoBlocks.PACKED_WARPED_NYLIUM);
+
+        createStairsRecipe(DecoBlocks.MOSS_STAIRS, Ingredient.ofItems(Items.MOSS_BLOCK))
+                .criterion(hasItem(Items.MOSS_BLOCK),conditionsFromItem(Items.MOSS_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSS_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.MOSS_SLAB, Items.MOSS_BLOCK);
+
+        createStairsRecipe(DecoBlocks.DIRT_STAIRS, Ingredient.ofItems(Items.DIRT))
+                .criterion(hasItem(Items.DIRT),conditionsFromItem(Items.DIRT))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.DIRT_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.DIRT_SLAB, Items.DIRT);
+        offerWallRecipe(exporter, DecoBlocks.DIRT_WALL, Items.DIRT);
+
+        createStairsRecipe(DecoBlocks.COARSE_DIRT_STAIRS, Ingredient.ofItems(Items.COARSE_DIRT))
+                .criterion(hasItem(Items.COARSE_DIRT),conditionsFromItem(Items.COARSE_DIRT))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COARSE_DIRT_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.COARSE_DIRT_SLAB, Items.COARSE_DIRT);
+        offerWallRecipe(exporter, DecoBlocks.COARSE_DIRT_WALL, Items.COARSE_DIRT);
+
+        createStairsRecipe(DecoBlocks.ROOTED_DIRT_STAIRS, Ingredient.ofItems(Items.ROOTED_DIRT))
+                .criterion(hasItem(Items.ROOTED_DIRT),conditionsFromItem(Items.ROOTED_DIRT))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.ROOTED_DIRT_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.ROOTED_DIRT_SLAB, Items.ROOTED_DIRT);
+        offerWallRecipe(exporter, DecoBlocks.ROOTED_DIRT_WALL, Items.ROOTED_DIRT);
+
+        createStairsRecipe(DecoBlocks.MUD_STAIRS, Ingredient.ofItems(Items.MUD))
+                .criterion(hasItem(Items.MUD),conditionsFromItem(Items.MUD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MUD_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.MUD_SLAB, Items.MUD);
+        offerWallRecipe(exporter, DecoBlocks.MUD_WALL, Items.MUD);
+
+        createStairsRecipe(DecoBlocks.CLAY_STAIRS, Ingredient.ofItems(Items.CLAY))
+                .criterion(hasItem(Items.CLAY),conditionsFromItem(Items.CLAY))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CLAY_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.CLAY_SLAB, Items.CLAY);
+        offerWallRecipe(exporter, DecoBlocks.CLAY_WALL, Items.CLAY);
+
+        createStairsRecipe(DecoBlocks.BONE_STAIRS, Ingredient.ofItems(Items.BONE_BLOCK))
+                .criterion(hasItem(Items.BONE_BLOCK),conditionsFromItem(Items.BONE_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BONE_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.BONE_SLAB, Items.BONE_BLOCK);
+        offerWallRecipe(exporter, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(Items.ROOTED_DIRT)
+                .pattern("#M")
+                .pattern("M#")
+                .input('#', Items.DIRT)
+                .input('M', Items.HANGING_ROOTS)
+                .criterion(RecipeProvider.hasItem(Items.DIRT),
+                        RecipeProvider.conditionsFromItem(Items.DIRT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.ROOTED_DIRT)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

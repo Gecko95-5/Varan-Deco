@@ -299,6 +299,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(DecoTags.Blocks.INFESTED_BLOCKS)
                 .add(DecoBlocks.DEEPSLATE_GRINDSTONE)
                 .add(DecoBlocks.BLACKSTONE_GRINDSTONE)
+                .add(DecoBlocks.END_STONE_GRINDSTONE)
+                .add(DecoBlocks.END_STONE_STONECUTTER)
                 .add(DecoBlocks.COBBLED_SANDSTONE)
                 .add(DecoBlocks.COBBLED_RED_SANDSTONE)
                 .add(DecoBlocks.COBBLED_SOUL_SOILSTONE)
@@ -457,7 +459,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.END_STONE_PRESSURE_PLATE)
                 .add(DecoBlocks.POLISHED_END_STONE_PRESSURE_PLATE)
                 .add(DecoBlocks.END_STONE_BUTTON)
-                .add(DecoBlocks.POLISHED_END_STONE_BUTTON);
+                .add(DecoBlocks.POLISHED_END_STONE_BUTTON)
+                .add(DecoBlocks.BONE_SLAB)
+                .add(DecoBlocks.BONE_STAIRS)
+                .add(DecoBlocks.BONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -483,7 +488,21 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_STAIRS)
                 .add(DecoBlocks.SNOW_BRICK_SLAB)
                 .add(DecoBlocks.SNOW_BRICK_WALL)
-                .add(DecoBlocks.PACKED_GRASS);
+                .add(DecoBlocks.DIRT_STAIRS)
+                .add(DecoBlocks.COARSE_DIRT_STAIRS)
+                .add(DecoBlocks.ROOTED_DIRT_STAIRS)
+                .add(DecoBlocks.MUD_STAIRS)
+                .add(DecoBlocks.CLAY_STAIRS)
+                .add(DecoBlocks.DIRT_SLAB)
+                .add(DecoBlocks.COARSE_DIRT_SLAB)
+                .add(DecoBlocks.ROOTED_DIRT_SLAB)
+                .add(DecoBlocks.MUD_SLAB)
+                .add(DecoBlocks.CLAY_SLAB)
+                .add(DecoBlocks.DIRT_WALL)
+                .add(DecoBlocks.COARSE_DIRT_WALL)
+                .add(DecoBlocks.ROOTED_DIRT_WALL)
+                .add(DecoBlocks.MUD_WALL)
+                .add(DecoBlocks.CLAY_WALL);
 
         getOrCreateTagBuilder(BlockTags.SNOW)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -496,8 +515,50 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SNOW_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
-                .add(DecoBlocks.PACKED_GRASS);
+                .add(DecoBlocks.PACKED_GRASS)
+                .add(DecoBlocks.PACKED_PODZOL)
+                .add(DecoBlocks.PACKED_MYCELIUM);
 
+        getOrCreateTagBuilder(BlockTags.NYLIUM)
+                .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
+                .add(DecoBlocks.PACKED_WARPED_NYLIUM);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(DecoBlocks.PACKED_GRASS)
+                .add(DecoBlocks.PACKED_PODZOL)
+                .add(DecoBlocks.PACKED_MYCELIUM)
+                .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
+                .add(DecoBlocks.PACKED_WARPED_NYLIUM)
+                .add(DecoBlocks.GRASS_CARPET)
+                .add(DecoBlocks.PODZOL_CARPET)
+                .add(DecoBlocks.MYCELIUM_CARPET)
+                .add(DecoBlocks.CRIMSON_NYLIUM_CARPET)
+                .add(DecoBlocks.WARPED_NYLIUM_CARPET)
+                .add(DecoBlocks.GRASS_STAIRS)
+                .add(DecoBlocks.PODZOL_STAIRS)
+                .add(DecoBlocks.MYCELIUM_STAIRS)
+                .add(DecoBlocks.CRIMSON_NYLIUM_STAIRS)
+                .add(DecoBlocks.WARPED_NYLIUM_STAIRS)
+                .add(DecoBlocks.GRASS_SLAB)
+                .add(DecoBlocks.PODZOL_SLAB)
+                .add(DecoBlocks.MYCELIUM_SLAB)
+                .add(DecoBlocks.CRIMSON_NYLIUM_SLAB)
+                .add(DecoBlocks.WARPED_NYLIUM_SLAB)
+                .add(DecoBlocks.MOSS_STAIRS)
+                .add(DecoBlocks.MOSS_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
+                .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
+                .add(DecoBlocks.PACKED_WARPED_NYLIUM)
+                .add(DecoBlocks.GRASS_CARPET)
+                .add(DecoBlocks.PODZOL_CARPET)
+                .add(DecoBlocks.MYCELIUM_CARPET)
+                .add(DecoBlocks.CRIMSON_NYLIUM_CARPET)
+                .add(DecoBlocks.WARPED_NYLIUM_CARPET);
+
+        getOrCreateTagBuilder(BlockTags.MUSHROOM_GROW_BLOCK)
+                .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
+                .add(DecoBlocks.PACKED_WARPED_NYLIUM);
 
         getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
                 .add(DecoBlocks.WOODEN_LOG);
@@ -607,6 +668,37 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
                 .add(DecoBlocks.CUT_OBSIDIAN_WALL);
 
+        getOrCreateTagBuilder(BlockTags.DRAGON_IMMUNE)
+                .add(DecoBlocks.OBSIDIAN_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_BRICK_STAIRS)
+                .add(DecoBlocks.OBSIDIAN_SLAB)
+                .add(DecoBlocks.OBSIDIAN_BRICK_SLAB)
+                .add(DecoBlocks.OBSIDIAN_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICK_WALL)
+                .add(DecoBlocks.OBSIDIAN_BRICKS)
+                .add(DecoBlocks.OBSIDIAN_PILLAR)
+                .add(DecoBlocks.CHISELED_OBSIDIAN)
+                .add(DecoBlocks.SANDED_OBSIDIAN)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN)
+                .add(DecoBlocks.CUT_OBSIDIAN)
+                .add(DecoBlocks.SANDED_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
+                .add(DecoBlocks.SANDED_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_SLAB)
+                .add(DecoBlocks.CUT_OBSIDIAN_SLAB)
+                .add(DecoBlocks.SANDED_OBSIDIAN_WALL)
+                .add(DecoBlocks.SMOOTH_OBSIDIAN_WALL)
+                .add(DecoBlocks.CUT_OBSIDIAN_WALL)
+                .add(DecoBlocks.BEDROCK_STAIRS)
+                .add(DecoBlocks.BEDROCK_SLAB)
+                .add(DecoBlocks.BEDROCK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.WITHER_IMMUNE)
+                .add(DecoBlocks.BEDROCK_STAIRS)
+                .add(DecoBlocks.BEDROCK_SLAB)
+                .add(DecoBlocks.BEDROCK_WALL);
+
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(DecoBlocks.POLISHED_STONE_WALL)
                 .add(DecoBlocks.POLISHED_ANDESITE_WALL)
@@ -695,7 +787,14 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_OBSIDIAN_WALL)
                 .add(DecoBlocks.POLISHED_END_STONE_WALL)
                 .add(DecoBlocks.SMOOTH_END_STONE_WALL)
-                .add(DecoBlocks.END_STONE_TILE_WALL);
+                .add(DecoBlocks.END_STONE_TILE_WALL)
+                .add(DecoBlocks.BEDROCK_WALL)
+                .add(DecoBlocks.DIRT_WALL)
+                .add(DecoBlocks.COARSE_DIRT_WALL)
+                .add(DecoBlocks.ROOTED_DIRT_WALL)
+                .add(DecoBlocks.MUD_WALL)
+                .add(DecoBlocks.CLAY_WALL)
+                .add(DecoBlocks.BONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -819,7 +918,33 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_OBSIDIAN_STAIRS)
                 .add(DecoBlocks.POLISHED_END_STONE_STAIRS)
                 .add(DecoBlocks.SMOOTH_END_STONE_STAIRS)
-                .add(DecoBlocks.END_STONE_TILE_STAIRS);
+                .add(DecoBlocks.END_STONE_TILE_STAIRS)
+                .add(DecoBlocks.BEDROCK_STAIRS)
+                .add(DecoBlocks.GRASS_STAIRS)
+                .add(DecoBlocks.PODZOL_STAIRS)
+                .add(DecoBlocks.MYCELIUM_STAIRS)
+                .add(DecoBlocks.CRIMSON_NYLIUM_STAIRS)
+                .add(DecoBlocks.WARPED_NYLIUM_STAIRS)
+                .add(DecoBlocks.DIRT_STAIRS)
+                .add(DecoBlocks.COARSE_DIRT_STAIRS)
+                .add(DecoBlocks.ROOTED_DIRT_STAIRS)
+                .add(DecoBlocks.MUD_STAIRS)
+                .add(DecoBlocks.CLAY_STAIRS)
+                .add(DecoBlocks.BONE_STAIRS)
+                .add(DecoBlocks.BEDROCK_SLAB)
+                .add(DecoBlocks.GRASS_SLAB)
+                .add(DecoBlocks.PODZOL_SLAB)
+                .add(DecoBlocks.MYCELIUM_SLAB)
+                .add(DecoBlocks.CRIMSON_NYLIUM_SLAB)
+                .add(DecoBlocks.WARPED_NYLIUM_SLAB)
+                .add(DecoBlocks.MOSS_STAIRS)
+                .add(DecoBlocks.MOSS_SLAB)
+                .add(DecoBlocks.DIRT_SLAB)
+                .add(DecoBlocks.COARSE_DIRT_SLAB)
+                .add(DecoBlocks.ROOTED_DIRT_SLAB)
+                .add(DecoBlocks.MUD_SLAB)
+                .add(DecoBlocks.CLAY_SLAB)
+                .add(DecoBlocks.BONE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -911,8 +1036,20 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_END_STONE_SLAB)
                 .add(DecoBlocks.SMOOTH_END_STONE_SLAB)
                 .add(DecoBlocks.END_STONE_TILE_SLAB)
-                .add(DecoBlocks.END_STONE_STONECUTTER)
-                .add(DecoBlocks.END_STONE_GRINDSTONE);
+                .add(DecoBlocks.BEDROCK_SLAB)
+                .add(DecoBlocks.GRASS_SLAB)
+                .add(DecoBlocks.PODZOL_SLAB)
+                .add(DecoBlocks.MYCELIUM_SLAB)
+                .add(DecoBlocks.CRIMSON_NYLIUM_SLAB)
+                .add(DecoBlocks.WARPED_NYLIUM_SLAB)
+                .add(DecoBlocks.MOSS_STAIRS)
+                .add(DecoBlocks.MOSS_SLAB)
+                .add(DecoBlocks.DIRT_SLAB)
+                .add(DecoBlocks.COARSE_DIRT_SLAB)
+                .add(DecoBlocks.ROOTED_DIRT_SLAB)
+                .add(DecoBlocks.MUD_SLAB)
+                .add(DecoBlocks.CLAY_SLAB)
+                .add(DecoBlocks.BONE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)

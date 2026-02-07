@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carpet",
+  "key": {
+    "#": {
+      "item": "varan-deco:packed_podzol"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "varan-deco:podzol_carpet"
+  }
+}
