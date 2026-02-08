@@ -473,6 +473,10 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CRACKED_POLISHED_BLACKSTONE_TILES = registerBlock("cracked_polished_blackstone_tiles",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block CLOUD_BLOCK = registerBlock("cloud_block",
+            new CloudBlock(FabricBlockSettings.of(Material.GLASS).strength(1f,6.0f).sounds(BlockSoundGroup.WOOL)
+                    .nonOpaque().allowsSpawning(DecoBlocks::never).noCollision()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block FRAGILE_ICE = registerBlock("fragile_ice",
             new FragileIceBlock(FabricBlockSettings.of(Material.ICE).slipperiness(0.98F)
                     .breakInstantly().sounds(BlockSoundGroup.GLASS).nonOpaque()

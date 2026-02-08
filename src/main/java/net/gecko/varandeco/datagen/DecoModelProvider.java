@@ -592,6 +592,7 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_TILES);
 
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CLOUD_BLOCK);
 
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
 

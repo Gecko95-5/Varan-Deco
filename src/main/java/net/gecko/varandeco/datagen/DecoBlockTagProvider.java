@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.GrassBlock;
 import net.minecraft.tag.BlockTags;
 
 public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -545,7 +544,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_NYLIUM_SLAB)
                 .add(DecoBlocks.WARPED_NYLIUM_SLAB)
                 .add(DecoBlocks.MOSS_STAIRS)
-                .add(DecoBlocks.MOSS_SLAB);
+                .add(DecoBlocks.MOSS_SLAB)
+                .add(DecoBlocks.CLOUD_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
                 .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)

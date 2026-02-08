@@ -2426,5 +2426,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CLAY_WALL));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bone_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.BONE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLOUD_BLOCK));
     }
 }

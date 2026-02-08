@@ -1,4 +1,4 @@
-// 1.19.2	2026-02-07T00:57:06.4611395	minecraft:block Loot Table
+// 1.19.2	2026-02-07T18:38:31.2928411	minecraft:block Loot Table
 c8a9d53cbdfd2f8325db048d7c1a8ebd08e9bb26 data\varan-deco\loot_tables\blocks\crimson_pallet_door.json
 49eb7fda084de7eeee9a496d4f5e876816504a7c data\varan-deco\loot_tables\blocks\obsidian_brick_slab.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
@@ -25,6 +25,7 @@ f435a890b1208ac222ecb11deb5492b702388285 data\varan-deco\loot_tables\blocks\red_
 e63dab3311f0a000a87dd485766b6510181defd9 data\varan-deco\loot_tables\blocks\cyan_terracotta_wall.json
 caecbc588006d4da920543b2296d879b23d97eac data\varan-deco\loot_tables\blocks\bone_wall.json
 8e2c1b386ceb0e213f226de18a41786ea2d98a83 data\varan-deco\loot_tables\blocks\purple_concrete_pillar.json
+63654518df94880d63ee6fb672703f11e70bc012 data\varan-deco\loot_tables\blocks\cloud_block.json
 1e60c7276c400b8783dfd06d1d28781d0091af47 data\varan-deco\loot_tables\blocks\purple_terracotta_slab.json
 117230cacf56cd5b4a704ef1c08223b6ded6d9f9 data\varan-deco\loot_tables\blocks\green_tulip.json
 63e7ada7c1431284794469c155d998e47664073d data\varan-deco\loot_tables\blocks\raw_gold_stairs.json

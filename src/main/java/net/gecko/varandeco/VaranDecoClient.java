@@ -220,6 +220,8 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FRAGILE_ICE, RenderLayer.getTranslucent());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BLOCK, RenderLayer.getTranslucent());
+
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
