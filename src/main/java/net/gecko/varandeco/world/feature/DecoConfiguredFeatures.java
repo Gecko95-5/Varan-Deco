@@ -5,6 +5,8 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.collection.DataPool;
@@ -29,6 +31,7 @@ import java.util.List;
 import java.util.OptionalInt;
 
 public class DecoConfiguredFeatures {
+    public static final RuleTest SKY = new BlockMatchRuleTest(Blocks.AIR);
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_FLOWER_FOREST =
             ConfiguredFeatures.register("deco_flower_forest_flowers", Feature.FLOWER,

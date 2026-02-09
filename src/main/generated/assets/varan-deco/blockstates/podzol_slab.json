@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/podzol_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/podzol_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/podzol_slab_top"
+    }
+  }
+}

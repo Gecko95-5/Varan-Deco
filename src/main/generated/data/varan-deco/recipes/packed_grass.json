@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "packed_soil",
+  "key": {
+    "#": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "varan-deco:packed_grass"
+  }
+}

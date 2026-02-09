@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/bedrock_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/bedrock_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/bedrock_slab_top"
+    }
+  }
+}

@@ -90,7 +90,21 @@
     "varan-deco:polished_end_stone_slab",
     "varan-deco:smooth_end_stone_slab",
     "varan-deco:end_stone_tile_slab",
-    "varan-deco:end_stone_stonecutter",
-    "varan-deco:end_stone_grindstone"
+    "varan-deco:bedrock_slab",
+    "varan-deco:grass_slab",
+    "varan-deco:podzol_slab",
+    "varan-deco:packed_mycelium_slab",
+    "varan-deco:crimson_nylium_slab",
+    "varan-deco:warped_nylium_slab",
+    "varan-deco:moss_stairs",
+    "varan-deco:moss_slab",
+    "varan-deco:dirt_slab",
+    "varan-deco:coarse_dirt_slab",
+    "varan-deco:rooted_dirt_slab",
+    "varan-deco:mud_slab",
+    "varan-deco:clay_slab",
+    "varan-deco:bone_slab",
+    "varan-deco:cloud_slab",
+    "varan-deco:cloud_brick_slab"
   ]
 }

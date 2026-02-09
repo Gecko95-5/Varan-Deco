@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "varan-deco:clouds",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136474,
+
+    "spacing": 1,
+
+    "separation": 0,
+
+    "type": "minecraft:random_spread"
+  }
+}
