@@ -1431,6 +1431,31 @@
 
   "block.varan-deco.cloud_block": "Cloud Block",
 
+  "block.varan-deco.solid_cloud": "Solid Cloud",
+  "block.varan-deco.cloud_stairs": "Cloud Stairs",
+  "block.varan-deco.cloud_slab": "Cloud Slab",
+  "block.varan-deco.cloud_wall": "Cloud Wall",
+
+  "block.varan-deco.cloud_bricks": "Cloud Bricks",
+  "block.varan-deco.cloud_brick_stairs": "Cloud Brick Stairs",
+  "block.varan-deco.cloud_brick_slab": "Cloud Brick Slab",
+  "block.varan-deco.cloud_brick_wall": "Cloud Brick Wall",
+
+  "block.varan-deco.chiseled_cloud_bricks": "Chiseled Cloud Bricks",
+
+  "block.varan-deco.iron_ladder": "Iron Ladder",
+  "block.varan-deco.golden_ladder": "Golden Ladder",
+
+  "block.varan-deco.copper_ladder": "Copper Ladder",
+  "block.varan-deco.exposed_copper_ladder": "Exposed Copper Ladder",
+  "block.varan-deco.weathered_copper_ladder": "Weathered Copper Ladder",
+  "block.varan-deco.oxidized_copper_ladder": "Oxidized Copper Ladder",
+
+  "block.varan-deco.waxed_copper_ladder": "Waxed Copper Ladder",
+  "block.varan-deco.waxed_exposed_copper_ladder": "Waxed Exposed Copper Ladder",
+  "block.varan-deco.waxed_weathered_copper_ladder": "Waxed Weathered Copper Ladder",
+  "block.varan-deco.waxed_oxidized_copper_ladder": "Waxed Oxidized Copper Ladder",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

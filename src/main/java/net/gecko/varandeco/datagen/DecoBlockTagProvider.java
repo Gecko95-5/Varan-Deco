@@ -461,7 +461,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_END_STONE_BUTTON)
                 .add(DecoBlocks.BONE_SLAB)
                 .add(DecoBlocks.BONE_STAIRS)
-                .add(DecoBlocks.BONE_WALL);
+                .add(DecoBlocks.BONE_WALL)
+                .add(DecoBlocks.IRON_LADDER)
+                .add(DecoBlocks.COPPER_LADDER)
+                .add(DecoBlocks.EXPOSED_COPPER_LADDER)
+                .add(DecoBlocks.WEATHERED_COPPER_LADDER)
+                .add(DecoBlocks.OXIDIZED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER)
+                .add(DecoBlocks.GOLDEN_LADDER);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -545,7 +555,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_NYLIUM_SLAB)
                 .add(DecoBlocks.MOSS_STAIRS)
                 .add(DecoBlocks.MOSS_SLAB)
-                .add(DecoBlocks.CLOUD_BLOCK);
+                .add(DecoBlocks.CLOUD_BLOCK)
+                .add(DecoBlocks.SOLID_CLOUD)
+                .add(DecoBlocks.CLOUD_BRICKS)
+                .add(DecoBlocks.CHISELED_CLOUD_BRICKS)
+                .add(DecoBlocks.CLOUD_STAIRS)
+                .add(DecoBlocks.CLOUD_BRICK_STAIRS)
+                .add(DecoBlocks.CLOUD_SLAB)
+                .add(DecoBlocks.CLOUD_BRICK_SLAB)
+                .add(DecoBlocks.CLOUD_WALL)
+                .add(DecoBlocks.CLOUD_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
                 .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
@@ -628,7 +647,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)
                 .add(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_MAGMA)
-                .add(DecoBlocks.END_STONE_BLAST_FURNACE);
+                .add(DecoBlocks.END_STONE_BLAST_FURNACE)
+                .add(DecoBlocks.IRON_LADDER)
+                .add(DecoBlocks.COPPER_LADDER)
+                .add(DecoBlocks.EXPOSED_COPPER_LADDER)
+                .add(DecoBlocks.WEATHERED_COPPER_LADDER)
+                .add(DecoBlocks.OXIDIZED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(DecoBlocks.BLACK_ICE)
@@ -643,7 +671,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.RAW_GOLD_SLAB)
                 .add(DecoBlocks.LIGHT_GOLD_BARS)
                 .add(DecoBlocks.GOLD_BARS)
-                .add(DecoBlocks.HEAVY_GOLD_BARS);
+                .add(DecoBlocks.HEAVY_GOLD_BARS)
+                .add(DecoBlocks.GOLDEN_LADDER);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(DecoBlocks.OBSIDIAN_STAIRS)
@@ -794,7 +823,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ROOTED_DIRT_WALL)
                 .add(DecoBlocks.MUD_WALL)
                 .add(DecoBlocks.CLAY_WALL)
-                .add(DecoBlocks.BONE_WALL);
+                .add(DecoBlocks.BONE_WALL)
+                .add(DecoBlocks.CLOUD_WALL)
+                .add(DecoBlocks.CLOUD_BRICK_WALL);;
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -944,7 +975,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ROOTED_DIRT_SLAB)
                 .add(DecoBlocks.MUD_SLAB)
                 .add(DecoBlocks.CLAY_SLAB)
-                .add(DecoBlocks.BONE_SLAB);
+                .add(DecoBlocks.BONE_SLAB)
+                .add(DecoBlocks.CLOUD_STAIRS)
+                .add(DecoBlocks.CLOUD_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1049,7 +1082,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ROOTED_DIRT_SLAB)
                 .add(DecoBlocks.MUD_SLAB)
                 .add(DecoBlocks.CLAY_SLAB)
-                .add(DecoBlocks.BONE_SLAB);
+                .add(DecoBlocks.BONE_SLAB)
+                .add(DecoBlocks.CLOUD_SLAB)
+                .add(DecoBlocks.CLOUD_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1478,7 +1513,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WEATHERED_COPPER_CHAIN)
                 .add(DecoBlocks.WAXED_EXPOSED_COPPER_CHAIN)
                 .add(DecoBlocks.OXIDIZED_COPPER_CHAIN)
-                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN)
+                .add(DecoBlocks.IRON_LADDER)
+                .add(DecoBlocks.COPPER_LADDER)
+                .add(DecoBlocks.EXPOSED_COPPER_LADDER)
+                .add(DecoBlocks.WEATHERED_COPPER_LADDER)
+                .add(DecoBlocks.OXIDIZED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER)
+                .add(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER)
+                .add(DecoBlocks.GOLDEN_LADDER);
 
         getOrCreateTagBuilder(DecoTags.Blocks.HARDENED_GLASS)
                 .add(DecoBlocks.HARDENED_GLASS)

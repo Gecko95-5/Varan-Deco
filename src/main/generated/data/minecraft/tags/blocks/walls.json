@@ -95,6 +95,8 @@
     "varan-deco:rooted_dirt_wall",
     "varan-deco:mud_wall",
     "varan-deco:clay_wall",
-    "varan-deco:bone_wall"
+    "varan-deco:bone_wall",
+    "varan-deco:cloud_wall",
+    "varan-deco:cloud_brick_wall"
   ]
 }

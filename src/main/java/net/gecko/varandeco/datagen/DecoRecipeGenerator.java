@@ -5827,8 +5827,11 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         createStairsRecipe(DecoBlocks.BONE_STAIRS, Ingredient.ofItems(Items.BONE_BLOCK))
                 .criterion(hasItem(Items.BONE_BLOCK),conditionsFromItem(Items.BONE_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BONE_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.BONE_STAIRS, Items.BONE_BLOCK);
         offerSlabRecipe(exporter, DecoBlocks.BONE_SLAB, Items.BONE_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BONE_SLAB, Items.BONE_BLOCK,2);
         offerWallRecipe(exporter, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
 
         ShapedRecipeJsonBuilder.create(Items.ROOTED_DIRT)
                 .pattern("#M")
@@ -5838,6 +5841,63 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.DIRT),
                         RecipeProvider.conditionsFromItem(Items.DIRT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.ROOTED_DIRT)));
+
+        createStairsRecipe(DecoBlocks.CLOUD_STAIRS, Ingredient.ofItems(DecoBlocks.SOLID_CLOUD))
+                .criterion(hasItem(DecoBlocks.SOLID_CLOUD),conditionsFromItem(DecoBlocks.SOLID_CLOUD))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CLOUD_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.CLOUD_SLAB, DecoBlocks.SOLID_CLOUD);
+        offerWallRecipe(exporter, DecoBlocks.CLOUD_WALL, DecoBlocks.SOLID_CLOUD);
+
+        createStairsRecipe(DecoBlocks.CLOUD_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.CLOUD_BRICKS))
+                .criterion(hasItem(DecoBlocks.CLOUD_BRICKS),conditionsFromItem(DecoBlocks.CLOUD_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CLOUD_BRICK_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.CLOUD_BRICK_SLAB, DecoBlocks.CLOUD_BRICKS);
+        offerWallRecipe(exporter, DecoBlocks.CLOUD_BRICK_WALL, DecoBlocks.CLOUD_BRICKS);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_CLOUD_BRICKS, DecoBlocks.CLOUD_BRICK_SLAB);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SOLID_CLOUD)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.CLOUD_BLOCK)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CLOUD_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CLOUD_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SOLID_CLOUD)));
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.CLOUD_BRICKS, DecoBlocks.SOLID_CLOUD);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.IRON_LADDER,3)
+                .input('#', Items.IRON_NUGGET)
+                .input('I', Items.IRON_INGOT)
+                .pattern("# #")
+                .pattern("#I#")
+                .pattern("# #")
+                .group("metal_ladder")
+                .criterion(RecipeProvider.hasItem(Items.IRON_NUGGET),
+                        RecipeProvider.conditionsFromItem(Items.IRON_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.IRON_LADDER)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GOLDEN_LADDER,3)
+                .input('#', Items.GOLD_NUGGET)
+                .input('I', Items.GOLD_INGOT)
+                .pattern("# #")
+                .pattern("#I#")
+                .pattern("# #")
+                .group("metal_ladder")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_NUGGET),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.GOLDEN_LADDER)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.COPPER_LADDER,3)
+                .input('#', DecoItems.COPPER_NUGGET)
+                .input('I', Items.COPPER_INGOT)
+                .pattern("# #")
+                .pattern("#I#")
+                .pattern("# #")
+                .group("metal_ladder")
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COPPER_LADDER)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

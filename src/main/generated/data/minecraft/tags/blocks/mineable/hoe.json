@@ -23,6 +23,15 @@
     "varan-deco:warped_nylium_slab",
     "varan-deco:moss_stairs",
     "varan-deco:moss_slab",
-    "varan-deco:cloud_block"
+    "varan-deco:cloud_block",
+    "varan-deco:solid_cloud",
+    "varan-deco:cloud_bricks",
+    "varan-deco:chiseled_cloud_bricks",
+    "varan-deco:cloud_stairs",
+    "varan-deco:cloud_brick_stairs",
+    "varan-deco:cloud_slab",
+    "varan-deco:cloud_brick_slab",
+    "varan-deco:cloud_wall",
+    "varan-deco:cloud_brick_wall"
   ]
 }

@@ -447,6 +447,16 @@
     "varan-deco:polished_end_stone_button",
     "varan-deco:bone_slab",
     "varan-deco:bone_stairs",
-    "varan-deco:bone_wall"
+    "varan-deco:bone_wall",
+    "varan-deco:iron_ladder",
+    "varan-deco:copper_ladder",
+    "varan-deco:exposed_copper_ladder",
+    "varan-deco:weathered_copper_ladder",
+    "varan-deco:oxidized_copper_ladder",
+    "varan-deco:waxed_copper_ladder",
+    "varan-deco:waxed_exposed_copper_ladder",
+    "varan-deco:waxed_weathered_copper_ladder",
+    "varan-deco:waxed_oxidized_copper_ladder",
+    "varan-deco:golden_ladder"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "metal_ladder",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#I#",
+    "# #"
+  ],
+  "result": {
+    "count": 3,
+    "item": "varan-deco:iron_ladder"
+  }
+}

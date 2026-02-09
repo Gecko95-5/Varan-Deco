@@ -2429,5 +2429,51 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_block"),
                 BlockLootTableGenerator.drops(DecoBlocks.CLOUD_BLOCK));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/solid_cloud"),
+                BlockLootTableGenerator.drops(DecoBlocks.SOLID_CLOUD));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLOUD_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CLOUD_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLOUD_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLOUD_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLOUD_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CLOUD_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cloud_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CLOUD_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_cloud_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_CLOUD_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/iron_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.IRON_LADDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/golden_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.GOLDEN_LADDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.COPPER_LADDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.WAXED_COPPER_LADDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/exposed_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.EXPOSED_COPPER_LADDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_exposed_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/weathered_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.WEATHERED_COPPER_LADDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_weathered_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/oxidized_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.OXIDIZED_COPPER_LADDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_ladder"),
+                BlockLootTableGenerator.drops(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER));
     }
 }

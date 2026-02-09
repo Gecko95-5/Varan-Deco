@@ -262,9 +262,15 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool bedrockpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BEDROCK_TEMP);
 
+        BlockStateModelGenerator.BlockTexturePool cloudpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SOLID_CLOUD);
+        BlockStateModelGenerator.BlockTexturePool cloudbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CLOUD_BRICKS);
+
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_ICE_BRICKS, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_MUD_BRICKS, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_NETHERRACK_BRICKS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_CLOUD_BRICKS, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.PACKED_CACTUS, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.STRIPPED_CACTUS, TexturedModel.CUBE_COLUMN);
@@ -1102,6 +1108,14 @@ public class DecoModelProvider extends FabricModelProvider {
         bedrockpool.stairs(DecoBlocks.BEDROCK_STAIRS);
         bedrockpool.slab(DecoBlocks.BEDROCK_SLAB);
         bedrockpool.wall(DecoBlocks.BEDROCK_WALL);
+
+        cloudpool.stairs(DecoBlocks.CLOUD_STAIRS);
+        cloudpool.slab(DecoBlocks.CLOUD_SLAB);
+        cloudpool.wall(DecoBlocks.CLOUD_WALL);
+
+        cloudbrickpool.stairs(DecoBlocks.CLOUD_BRICK_STAIRS);
+        cloudbrickpool.slab(DecoBlocks.CLOUD_BRICK_SLAB);
+        cloudbrickpool.wall(DecoBlocks.CLOUD_BRICK_WALL);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

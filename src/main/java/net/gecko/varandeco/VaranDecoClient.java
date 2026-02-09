@@ -221,6 +221,26 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FRAGILE_ICE, RenderLayer.getTranslucent());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BLOCK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SOLID_CLOUD, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICKS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CHISELED_CLOUD_BRICKS, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_STAIRS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_SLAB, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_WALL, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_STAIRS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_SLAB, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_WALL, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.EXPOSED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WEATHERED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.OXIDIZED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER, RenderLayer.getCutout());
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));

@@ -12,10 +12,7 @@ import net.gecko.varandeco.block.nature.*;
 import net.gecko.varandeco.block.nature.flower.*;
 import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
 import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizableChainBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizableLanternBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizablePaneBlock;
-import net.gecko.varandeco.block.oxidizable.OxidizablePressurePlateBlock;
+import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.item.DecoItemGroup;
@@ -475,8 +472,18 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block CLOUD_BLOCK = registerBlock("cloud_block",
-            new CloudBlock(FabricBlockSettings.of(Material.GLASS).strength(1f,6.0f).sounds(BlockSoundGroup.WOOL)
+            new CloudBlock(FabricBlockSettings.of(Material.GLASS).strength(0.4f,0.2f).sounds(BlockSoundGroup.WOOL)
                     .nonOpaque().allowsSpawning(DecoBlocks::never).noCollision()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SOLID_CLOUD = registerBlock("solid_cloud",
+            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).strength(0.8f,0.4f)
+                    .allowsSpawning(DecoBlocks::never).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_BRICKS = registerBlock("cloud_bricks",
+            new TransparentBlock(FabricBlockSettings.copyOf(DecoBlocks.SOLID_CLOUD).strength(1.2f,0.6f)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_CLOUD_BRICKS = registerBlock("chiseled_cloud_bricks",
+            new TransparentBlock(FabricBlockSettings.copyOf(DecoBlocks.SOLID_CLOUD).strength(1.2f,0.6f)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block FRAGILE_ICE = registerBlock("fragile_ice",
             new FragileIceBlock(FabricBlockSettings.of(Material.ICE).slipperiness(0.98F)
                     .breakInstantly().sounds(BlockSoundGroup.GLASS).nonOpaque()
@@ -1187,6 +1194,12 @@ public class DecoBlocks {
     public static final Block POLISHED_BLACKSTONE_TILE_STAIRS = registerBlock("polished_blackstone_tile_stairs",
             new StairsBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES.getDefaultState(),
                     FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_STAIRS = registerBlock("cloud_stairs",
+            new TransparentStairsBlock(DecoBlocks.SOLID_CLOUD.getDefaultState(),
+                    FabricBlockSettings.copyOf(DecoBlocks.SOLID_CLOUD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_BRICK_STAIRS = registerBlock("cloud_brick_stairs",
+            new TransparentStairsBlock(DecoBlocks.CLOUD_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(DecoBlocks.CLOUD_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1584,6 +1597,10 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_SLAB = registerBlock("cloud_slab",
+            new TransparentSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SOLID_CLOUD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_BRICK_SLAB = registerBlock("cloud_brick_slab",
+            new TransparentSlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CLOUD_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block WOODEN_SAPLING = registerBlock("wooden_sapling",
             new SaplingBlock(new WoodenSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -1804,6 +1821,35 @@ public class DecoBlocks {
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_LADDER = registerBlock("wooden_ladder",
             new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block IRON_LADDER = registerBlock("iron_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER).sounds(BlockSoundGroup.METAL)
+                    .strength(5.0F, 6.0F).requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GOLDEN_LADDER = registerBlock("golden_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(Blocks.LADDER).sounds(BlockSoundGroup.METAL)
+                    .strength(5.0F, 6.0F).requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COPPER_LADDER = registerBlock("copper_ladder",
+            new OxidizableLadderBlock(Oxidizable.OxidationLevel.UNAFFECTED,FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.COPPER).strength(5.0F, 6.0F).requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block EXPOSED_COPPER_LADDER = registerBlock("exposed_copper_ladder",
+            new OxidizableLadderBlock(Oxidizable.OxidationLevel.EXPOSED,FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.COPPER).strength(5.0F, 6.0F).requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WEATHERED_COPPER_LADDER = registerBlock("weathered_copper_ladder",
+            new OxidizableLadderBlock(Oxidizable.OxidationLevel.WEATHERED,FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.COPPER).strength(5.0F, 6.0F).requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block OXIDIZED_COPPER_LADDER = registerBlock("oxidized_copper_ladder",
+            new OxidizableLadderBlock(Oxidizable.OxidationLevel.OXIDIZED,FabricBlockSettings.copyOf(Blocks.LADDER)
+                    .sounds(BlockSoundGroup.COPPER).strength(5.0F, 6.0F).requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block WAXED_COPPER_LADDER = registerBlock("waxed_copper_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(DecoBlocks.COPPER_LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_EXPOSED_COPPER_LADDER = registerBlock("waxed_exposed_copper_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(DecoBlocks.EXPOSED_COPPER_LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_WEATHERED_COPPER_LADDER = registerBlock("waxed_weathered_copper_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block WAXED_OXIDIZED_COPPER_LADDER = registerBlock("waxed_oxidized_copper_ladder",
+            new LadderBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_LADDER)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block GRASS_CARPET = registerBlock("grass_carpet",
             new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).sounds(BlockSoundGroup.GRASS)),
@@ -2407,6 +2453,10 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_WALL = registerBlock("cloud_wall",
+            new TransparentWallBlock(FabricBlockSettings.copyOf(DecoBlocks.SOLID_CLOUD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CLOUD_BRICK_WALL = registerBlock("cloud_brick_wall",
+            new TransparentWallBlock(FabricBlockSettings.copyOf(DecoBlocks.CLOUD_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block RED_SUNFLOWER = registerBlock("red_sunflower",
             new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
