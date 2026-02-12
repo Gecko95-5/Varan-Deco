@@ -2488,5 +2488,70 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.POPPED_BLUET));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_popped_bluet"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_POPPED_BLUET));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.WHITE_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WHITE_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_gray_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_GRAY_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_gray_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIGHT_GRAY_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gray_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRAY_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gray_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.GRAY_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACK_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BLACK_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brown_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BROWN_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brown_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BROWN_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.RED_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/orange_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.ORANGE_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/orange_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.ORANGE_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.YELLOW_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/yellow_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.YELLOW_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lime_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIME_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lime_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIME_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/green_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.GREEN_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/green_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.GREEN_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CYAN_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CYAN_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_blue_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LIGHT_BLUE_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/light_blue_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LIGHT_BLUE_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BLUE_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purple_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.PURPLE_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/purple_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.PURPLE_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/magenta_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MAGENTA_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/magenta_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MAGENTA_WOOL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_wool_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.PINK_WOOL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_wool_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.PINK_WOOL_SLAB));
     }
 }
