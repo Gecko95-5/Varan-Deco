@@ -2475,5 +2475,18 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.OXIDIZED_COPPER_LADDER));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/waxed_oxidized_copper_ladder"),
                 BlockLootTableGenerator.drops(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/alpine_poppy"),
+                BlockLootTableGenerator.drops(DecoBlocks.ALPINE_POPPY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_alpine_poppy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_ALPINE_POPPY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_eye_daisy"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_EYE_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_dead_eye_daisy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_DEAD_EYE_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/popped_bluet"),
+                BlockLootTableGenerator.drops(DecoBlocks.POPPED_BLUET));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_popped_bluet"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_POPPED_BLUET));
     }
 }

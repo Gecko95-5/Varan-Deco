@@ -5898,6 +5898,26 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
                         RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COPPER_LADDER)));
+
+        ShapelessRecipeJsonBuilder.create(Items.WHITE_DYE)
+                .input(DecoBlocks.ALPINE_POPPY)
+                .group("white_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ALPINE_POPPY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ALPINE_POPPY))
+                .offerTo(exporter, new Identifier("white_dye_from_alpine_poppy"));
+        ShapelessRecipeJsonBuilder.create(Items.GRAY_DYE)
+                .input(DecoBlocks.DEAD_EYE_DAISY)
+                .group("gray_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.DEAD_EYE_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.DEAD_EYE_DAISY))
+                .offerTo(exporter, new Identifier("gray_dye_from_dead_eye_daisy"));
+        ShapelessRecipeJsonBuilder.create(Items.ORANGE_DYE)
+                .input(DecoBlocks.POPPED_BLUET)
+                .group("orange_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.POPPED_BLUET),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.POPPED_BLUET))
+                .offerTo(exporter, new Identifier("orange_dye_from_popped_bluet"));
+
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

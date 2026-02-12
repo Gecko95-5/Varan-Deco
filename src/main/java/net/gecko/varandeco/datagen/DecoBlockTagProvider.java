@@ -1629,7 +1629,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BROMELIAD)
                 .add(DecoBlocks.BUTTERCUP)
                 .add(DecoBlocks.NIGHTSHADE)
-                .add(DecoBlocks.ENDERSHADE);
+                .add(DecoBlocks.ENDERSHADE)
+                .add(DecoBlocks.ALPINE_POPPY)
+                .add(DecoBlocks.POPPED_BLUET)
+                .add(DecoBlocks.DEAD_EYE_DAISY);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -1657,7 +1660,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_BLUE_HIBISCUS)
                 .add(DecoBlocks.POTTED_BUTTERCUP)
                 .add(DecoBlocks.POTTED_NIGHTSHADE)
-                .add(DecoBlocks.POTTED_ENDERSHADE);
+                .add(DecoBlocks.POTTED_ENDERSHADE)
+                .add(DecoBlocks.POTTED_ALPINE_POPPY)
+                .add(DecoBlocks.POTTED_POPPED_BLUET)
+                .add(DecoBlocks.POTTED_DEAD_EYE_DAISY);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)
