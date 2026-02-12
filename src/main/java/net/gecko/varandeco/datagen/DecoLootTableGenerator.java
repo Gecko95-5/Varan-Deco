@@ -1266,5 +1266,122 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.END_STONE_SMOKER);
         addDrop(DecoBlocks.END_STONE_STONECUTTER);
         addDrop(DecoBlocks.END_STONE_GRINDSTONE);
+        
+        addDrop(DecoBlocks.PACKED_GRASS);
+        addDrop(DecoBlocks.PACKED_MYCELIUM);
+        addDrop(DecoBlocks.PACKED_PODZOL);
+        addDrop(DecoBlocks.PACKED_CRIMSON_NYLIUM);
+        addDrop(DecoBlocks.PACKED_WARPED_NYLIUM);
+
+        addDrop(DecoBlocks.GRASS_CARPET);
+        addDrop(DecoBlocks.MYCELIUM_CARPET);
+        addDrop(DecoBlocks.PODZOL_CARPET);
+        addDrop(DecoBlocks.CRIMSON_NYLIUM_CARPET);
+        addDrop(DecoBlocks.WARPED_NYLIUM_CARPET);
+
+        addDrop(DecoBlocks.BEDROCK_STAIRS);
+        addDrop(DecoBlocks.GRASS_STAIRS);
+        addDrop(DecoBlocks.PODZOL_STAIRS);
+        addDrop(DecoBlocks.MYCELIUM_STAIRS);
+        addDrop(DecoBlocks.CRIMSON_NYLIUM_STAIRS);
+        addDrop(DecoBlocks.WARPED_NYLIUM_STAIRS);
+        addDrop(DecoBlocks.DIRT_STAIRS);
+        addDrop(DecoBlocks.COARSE_DIRT_STAIRS);
+        addDrop(DecoBlocks.ROOTED_DIRT_STAIRS);
+        addDrop(DecoBlocks.MUD_STAIRS);
+        addDrop(DecoBlocks.CLAY_STAIRS);
+        addDrop(DecoBlocks.BONE_STAIRS);
+        addDrop(DecoBlocks.MOSS_STAIRS);
+
+        addDrop(DecoBlocks.BEDROCK_SLAB, slabDrops(DecoBlocks.BEDROCK_SLAB));
+        addDrop(DecoBlocks.GRASS_SLAB, slabDrops(DecoBlocks.GRASS_SLAB));
+        addDrop(DecoBlocks.PODZOL_SLAB, slabDrops(DecoBlocks.PODZOL_SLAB));
+        addDrop(DecoBlocks.MYCELIUM_SLAB, slabDrops(DecoBlocks.MYCELIUM_SLAB));
+        addDrop(DecoBlocks.CRIMSON_NYLIUM_SLAB, slabDrops(DecoBlocks.CRIMSON_NYLIUM_SLAB));
+        addDrop(DecoBlocks.WARPED_NYLIUM_SLAB, slabDrops(DecoBlocks.WARPED_NYLIUM_SLAB));
+        addDrop(DecoBlocks.MOSS_SLAB, slabDrops(DecoBlocks.MOSS_SLAB));
+        addDrop(DecoBlocks.DIRT_SLAB, slabDrops(DecoBlocks.DIRT_SLAB));
+        addDrop(DecoBlocks.COARSE_DIRT_SLAB, slabDrops(DecoBlocks.COARSE_DIRT_SLAB));
+        addDrop(DecoBlocks.ROOTED_DIRT_SLAB, slabDrops(DecoBlocks.ROOTED_DIRT_SLAB));
+        addDrop(DecoBlocks.MUD_SLAB, slabDrops(DecoBlocks.MUD_SLAB));
+        addDrop(DecoBlocks.CLAY_SLAB, slabDrops(DecoBlocks.CLAY_SLAB));
+        addDrop(DecoBlocks.BONE_SLAB, slabDrops(DecoBlocks.BONE_SLAB));
+
+        addDrop(DecoBlocks.BEDROCK_WALL);
+        addDrop(DecoBlocks.DIRT_WALL);
+        addDrop(DecoBlocks.COARSE_DIRT_WALL);
+        addDrop(DecoBlocks.ROOTED_DIRT_WALL);
+        addDrop(DecoBlocks.MUD_WALL);
+        addDrop(DecoBlocks.CLAY_WALL);
+        addDrop(DecoBlocks.BONE_WALL);
+
+        addDrop(DecoBlocks.CLOUD_BLOCK);
+
+        addDrop(DecoBlocks.SOLID_CLOUD);
+        addDrop(DecoBlocks.CLOUD_STAIRS);
+        addDrop(DecoBlocks.CLOUD_SLAB, slabDrops(DecoBlocks.BEDROCK_SLAB));
+        addDrop(DecoBlocks.CLOUD_WALL);
+
+        addDrop(DecoBlocks.CLOUD_BRICKS);
+        addDrop(DecoBlocks.CLOUD_BRICK_STAIRS);
+        addDrop(DecoBlocks.CLOUD_BRICK_SLAB, slabDrops(DecoBlocks.BEDROCK_SLAB));
+        addDrop(DecoBlocks.CLOUD_BRICK_WALL);
+
+        addDrop(DecoBlocks.CHISELED_CLOUD_BRICKS);
+
+        addDrop(DecoBlocks.IRON_LADDER);
+        addDrop(DecoBlocks.GOLDEN_LADDER);
+
+        addDrop(DecoBlocks.COPPER_LADDER);
+        addDrop(DecoBlocks.WAXED_COPPER_LADDER);
+
+        addDrop(DecoBlocks.EXPOSED_COPPER_LADDER);
+        addDrop(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER);
+
+        addDrop(DecoBlocks.WEATHERED_COPPER_LADDER);
+        addDrop(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER);
+
+        addDrop(DecoBlocks.OXIDIZED_COPPER_LADDER);
+        addDrop(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER);
+
+        addDrop(DecoBlocks.ALPINE_POPPY);
+        pottedPlantDrops(DecoBlocks.POTTED_ALPINE_POPPY);
+        addDrop(DecoBlocks.DEAD_EYE_DAISY);
+        pottedPlantDrops(DecoBlocks.POTTED_DEAD_EYE_DAISY);
+        addDrop(DecoBlocks.POPPED_BLUET);
+        pottedPlantDrops(DecoBlocks.POTTED_POPPED_BLUET);
+
+        addDrop(DecoBlocks.WHITE_WOOL_STAIRS);
+        addDrop(DecoBlocks.WHITE_WOOL_SLAB, slabDrops(DecoBlocks.WHITE_WOOL_SLAB));
+        addDrop(DecoBlocks.LIGHT_GRAY_WOOL_STAIRS);
+        addDrop(DecoBlocks.LIGHT_GRAY_WOOL_SLAB, slabDrops(DecoBlocks.LIGHT_GRAY_WOOL_SLAB));
+        addDrop(DecoBlocks.GRAY_WOOL_STAIRS);
+        addDrop(DecoBlocks.GRAY_WOOL_SLAB, slabDrops(DecoBlocks.GRAY_WOOL_SLAB));
+        addDrop(DecoBlocks.BLACK_WOOL_STAIRS);
+        addDrop(DecoBlocks.BLACK_WOOL_SLAB, slabDrops(DecoBlocks.BLACK_WOOL_SLAB));
+        addDrop(DecoBlocks.BROWN_WOOL_STAIRS);
+        addDrop(DecoBlocks.BROWN_WOOL_SLAB, slabDrops(DecoBlocks.BROWN_WOOL_SLAB));
+        addDrop(DecoBlocks.RED_WOOL_STAIRS);
+        addDrop(DecoBlocks.RED_WOOL_SLAB, slabDrops(DecoBlocks.RED_WOOL_SLAB));
+        addDrop(DecoBlocks.ORANGE_WOOL_STAIRS);
+        addDrop(DecoBlocks.ORANGE_WOOL_SLAB, slabDrops(DecoBlocks.ORANGE_WOOL_SLAB));
+        addDrop(DecoBlocks.YELLOW_WOOL_STAIRS);
+        addDrop(DecoBlocks.YELLOW_WOOL_SLAB, slabDrops(DecoBlocks.YELLOW_WOOL_SLAB));
+        addDrop(DecoBlocks.LIME_WOOL_STAIRS);
+        addDrop(DecoBlocks.LIME_WOOL_SLAB, slabDrops(DecoBlocks.LIME_WOOL_SLAB));
+        addDrop(DecoBlocks.GREEN_WOOL_STAIRS);
+        addDrop(DecoBlocks.GREEN_WOOL_SLAB, slabDrops(DecoBlocks.GREEN_WOOL_SLAB));
+        addDrop(DecoBlocks.CYAN_WOOL_STAIRS);
+        addDrop(DecoBlocks.CYAN_WOOL_SLAB, slabDrops(DecoBlocks.CYAN_WOOL_SLAB));
+        addDrop(DecoBlocks.LIGHT_BLUE_WOOL_STAIRS);
+        addDrop(DecoBlocks.LIGHT_BLUE_WOOL_SLAB, slabDrops(DecoBlocks.LIGHT_BLUE_WOOL_SLAB));
+        addDrop(DecoBlocks.BLUE_WOOL_STAIRS);
+        addDrop(DecoBlocks.BLUE_WOOL_SLAB, slabDrops(DecoBlocks.BLUE_WOOL_SLAB));
+        addDrop(DecoBlocks.PURPLE_WOOL_STAIRS);
+        addDrop(DecoBlocks.PURPLE_WOOL_SLAB, slabDrops(DecoBlocks.PURPLE_WOOL_SLAB));
+        addDrop(DecoBlocks.MAGENTA_WOOL_STAIRS);
+        addDrop(DecoBlocks.MAGENTA_WOOL_SLAB, slabDrops(DecoBlocks.MAGENTA_WOOL_SLAB));
+        addDrop(DecoBlocks.PINK_WOOL_STAIRS);
+        addDrop(DecoBlocks.PINK_WOOL_SLAB, slabDrops(DecoBlocks.PINK_WOOL_SLAB));
     }
 }

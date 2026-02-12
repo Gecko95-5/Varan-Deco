@@ -9,6 +9,7 @@ import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
@@ -32,9 +33,8 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import java.util.List;
 import java.util.OptionalInt;
 
-import static net.minecraft.block.Blocks.POPPY;
-
 public class DecoConfiguredFeatures {
+    public static final RuleTest SKY = new BlockMatchRuleTest(Blocks.AIR);
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FLOWER_FOREST_KEY = registerKey("deco_flower_forest");
 
@@ -76,6 +76,8 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_VOID_PATCH = registerKey("deco_void_patch");
 
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_DESERT = registerKey("deco_desert");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
@@ -108,7 +110,7 @@ public class DecoConfiguredFeatures {
                                 new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                 1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
                                 1.0F, List.of(DecoBlocks.BARBERTON_DAISY.getDefaultState(),
-                                DecoBlocks.GERBERA_DAISY.getDefaultState(), DecoBlocks.ROSE.getDefaultState()))))));
+                                DecoBlocks.ALPINE_POPPY.getDefaultState(), DecoBlocks.ROSE.getDefaultState()))))));
 
         ConfiguredFeatures.register(context, DECO_TULIPS_MEADOW_KEY,
                 Feature.FLOWER, DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
@@ -147,6 +149,10 @@ public class DecoConfiguredFeatures {
         register(context, DECO_SWAMP_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.YELLOW_ORCHID)))));
 
+        register(context, DECO_DESERT, Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.POPPED_BLUET.getDefaultState(),1)
+                                    .add(DecoBlocks.DEAD_EYE_DAISY.getDefaultState(),1).build()),16));
 
         ConfiguredFeatures.register(context, DECO_RIVER_KEY,
                 Feature.FLOWER, DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider

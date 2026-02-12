@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "packed_nylium",
+  "key": {
+    "#": {
+      "item": "minecraft:warped_nylium"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "varan-deco:packed_warped_nylium"
+  }
+}

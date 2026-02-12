@@ -3,6 +3,7 @@ package net.gecko.varandeco.world.gen;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.gecko.varandeco.world.feature.DecoPlacedFeatures;
+import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 
@@ -20,11 +21,7 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PLAINS_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SUNFLOWER_PLAINS),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PLAINS_PLACED);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA),
-                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SAVANNA_PLACED);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA_PLATEAU),
-                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SAVANNA_PLACED);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_SAVANNA),
+        BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_SAVANNA),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SAVANNA_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_PEAKS),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SAVANNA_PLACED);
@@ -108,5 +105,12 @@ public class DecoFlowerGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WOODED_BADLANDS),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_MESA_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DESERT_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BADLANDS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DESERT_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.ERODED_BADLANDS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DESERT_PLACED);
     }
 }

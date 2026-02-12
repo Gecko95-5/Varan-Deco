@@ -284,6 +284,8 @@
     "#varan-deco:infested_blocks",
     "varan-deco:deepslate_grindstone",
     "varan-deco:blackstone_grindstone",
+    "varan-deco:end_stone_grindstone",
+    "varan-deco:end_stone_stonecutter",
     "varan-deco:cobbled_sandstone",
     "varan-deco:cobbled_red_sandstone",
     "varan-deco:cobbled_soul_soilstone",
@@ -442,6 +444,19 @@
     "varan-deco:end_stone_pressure_plate",
     "varan-deco:polished_end_stone_pressure_plate",
     "varan-deco:end_stone_button",
-    "varan-deco:polished_end_stone_button"
+    "varan-deco:polished_end_stone_button",
+    "varan-deco:bone_slab",
+    "varan-deco:bone_stairs",
+    "varan-deco:bone_wall",
+    "varan-deco:iron_ladder",
+    "varan-deco:copper_ladder",
+    "varan-deco:exposed_copper_ladder",
+    "varan-deco:weathered_copper_ladder",
+    "varan-deco:oxidized_copper_ladder",
+    "varan-deco:waxed_copper_ladder",
+    "varan-deco:waxed_exposed_copper_ladder",
+    "varan-deco:waxed_weathered_copper_ladder",
+    "varan-deco:waxed_oxidized_copper_ladder",
+    "varan-deco:golden_ladder"
   ]
 }
