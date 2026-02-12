@@ -80,6 +80,10 @@ public class DecoPlacedFeatures {
             DecoConfiguredFeatures.DECO_MESA, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
+    public static final RegistryEntry<PlacedFeature> DECO_DESERT_PLACED = PlacedFeatures.register("deco_desert_placed",
+            DecoConfiguredFeatures.DECO_DESERT, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
     public static final RegistryEntry<PlacedFeature> DECO_BUBBLE_ORE_PLACED = PlacedFeatures.register("deco_bubble_ore_placed",
             DecoConfiguredFeatures.DECO_BUBBLE_ORE, modifiersWithCount(5,
                     HeightRangePlacementModifier.uniform(YOffset.fixed(8), YOffset.fixed(27))));

@@ -825,7 +825,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CLAY_WALL)
                 .add(DecoBlocks.BONE_WALL)
                 .add(DecoBlocks.CLOUD_WALL)
-                .add(DecoBlocks.CLOUD_BRICK_WALL);;
+                .add(DecoBlocks.CLOUD_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -977,7 +977,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CLAY_SLAB)
                 .add(DecoBlocks.BONE_SLAB)
                 .add(DecoBlocks.CLOUD_STAIRS)
-                .add(DecoBlocks.CLOUD_BRICK_STAIRS);
+                .add(DecoBlocks.CLOUD_BRICK_STAIRS)
+                .addTag(DecoTags.Blocks.WOOL_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1084,7 +1085,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CLAY_SLAB)
                 .add(DecoBlocks.BONE_SLAB)
                 .add(DecoBlocks.CLOUD_SLAB)
-                .add(DecoBlocks.CLOUD_BRICK_SLAB);
+                .add(DecoBlocks.CLOUD_BRICK_SLAB)
+                .addTag(DecoTags.Blocks.WOOL_SLABS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1464,6 +1466,46 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CUT_MAGENTA_CONCRETE_WALL)
                 .add(DecoBlocks.CUT_BROWN_CONCRETE_WALL);
 
+        getOrCreateTagBuilder(BlockTags.WOOL)
+                .addTag(DecoTags.Blocks.WOOL_STAIRS)
+                .addTag(DecoTags.Blocks.WOOL_SLABS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.WOOL_STAIRS)
+                .add(DecoBlocks.BLACK_WOOL_STAIRS)
+                .add(DecoBlocks.LIGHT_BLUE_WOOL_STAIRS)
+                .add(DecoBlocks.LIGHT_GRAY_WOOL_STAIRS)
+                .add(DecoBlocks.WHITE_WOOL_STAIRS)
+                .add(DecoBlocks.GRAY_WOOL_STAIRS)
+                .add(DecoBlocks.RED_WOOL_STAIRS)
+                .add(DecoBlocks.ORANGE_WOOL_STAIRS)
+                .add(DecoBlocks.YELLOW_WOOL_STAIRS)
+                .add(DecoBlocks.LIME_WOOL_STAIRS)
+                .add(DecoBlocks.GREEN_WOOL_STAIRS)
+                .add(DecoBlocks.CYAN_WOOL_STAIRS)
+                .add(DecoBlocks.BLUE_WOOL_STAIRS)
+                .add(DecoBlocks.PURPLE_WOOL_STAIRS)
+                .add(DecoBlocks.PINK_WOOL_STAIRS)
+                .add(DecoBlocks.MAGENTA_WOOL_STAIRS)
+                .add(DecoBlocks.BROWN_WOOL_STAIRS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.WOOL_SLABS)
+                .add(DecoBlocks.BLACK_WOOL_SLAB)
+                .add(DecoBlocks.LIGHT_BLUE_WOOL_SLAB)
+                .add(DecoBlocks.LIGHT_GRAY_WOOL_SLAB)
+                .add(DecoBlocks.WHITE_WOOL_SLAB)
+                .add(DecoBlocks.GRAY_WOOL_SLAB)
+                .add(DecoBlocks.RED_WOOL_SLAB)
+                .add(DecoBlocks.ORANGE_WOOL_SLAB)
+                .add(DecoBlocks.YELLOW_WOOL_SLAB)
+                .add(DecoBlocks.LIME_WOOL_SLAB)
+                .add(DecoBlocks.GREEN_WOOL_SLAB)
+                .add(DecoBlocks.CYAN_WOOL_SLAB)
+                .add(DecoBlocks.BLUE_WOOL_SLAB)
+                .add(DecoBlocks.PURPLE_WOOL_SLAB)
+                .add(DecoBlocks.PINK_WOOL_SLAB)
+                .add(DecoBlocks.MAGENTA_WOOL_SLAB)
+                .add(DecoBlocks.BROWN_WOOL_SLAB);
+
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_BARRELS)
                 .add(DecoBlocks.OAK_BARREL)
                 .add(DecoBlocks.SPRUCE_BARREL)
@@ -1629,7 +1671,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.BROMELIAD)
                 .add(DecoBlocks.BUTTERCUP)
                 .add(DecoBlocks.NIGHTSHADE)
-                .add(DecoBlocks.ENDERSHADE);
+                .add(DecoBlocks.ENDERSHADE)
+                .add(DecoBlocks.ALPINE_POPPY)
+                .add(DecoBlocks.POPPED_BLUET)
+                .add(DecoBlocks.DEAD_EYE_DAISY);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -1657,7 +1702,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_BLUE_HIBISCUS)
                 .add(DecoBlocks.POTTED_BUTTERCUP)
                 .add(DecoBlocks.POTTED_NIGHTSHADE)
-                .add(DecoBlocks.POTTED_ENDERSHADE);
+                .add(DecoBlocks.POTTED_ENDERSHADE)
+                .add(DecoBlocks.POTTED_ALPINE_POPPY)
+                .add(DecoBlocks.POTTED_POPPED_BLUET)
+                .add(DecoBlocks.POTTED_DEAD_EYE_DAISY);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)

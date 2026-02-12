@@ -72,6 +72,8 @@ public class DecoFlammableBlocks {
         registry.add(DecoTags.Blocks.LOG_STAIRS,5,5);
         registry.add(DecoTags.Blocks.LOG_SLABS,5,5);
         registry.add(DecoTags.Blocks.LOG_WALLS,5,5);
-        
+
+        registry.add(DecoTags.Blocks.WOOL_STAIRS,30, 60);
+        registry.add(DecoTags.Blocks.WOOL_SLABS,30, 60);
     }
 }

@@ -59,9 +59,7 @@ public class DecoConfiguredFeatures {
                             new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
                                     new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                     1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
-                                    1.0F, List.of(DecoBlocks.BLACK_TULIP.getDefaultState(),
-                                            DecoBlocks.GREEN_TULIP.getDefaultState(), DecoBlocks.CYAN_TULIP.getDefaultState(),
-                                            DecoBlocks.BARBERTON_DAISY.getDefaultState(), DecoBlocks.GERBERA_DAISY.getDefaultState(),
+                                    1.0F, List.of(DecoBlocks.BARBERTON_DAISY.getDefaultState(), DecoBlocks.ALPINE_POPPY.getDefaultState(),
                                             DecoBlocks.ROSE.getDefaultState()))))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_TULIPS_MEADOW =
@@ -111,6 +109,12 @@ public class DecoConfiguredFeatures {
                             (DataPool.<BlockState>builder().add(DecoBlocks.ROSE.getDefaultState(),5)
                                     .add(DecoBlocks.BARBERTON_DAISY.getDefaultState(),3)
                                     .add(DecoBlocks.CALIFORNIA_POPPY.getDefaultState(),1).build()),16));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_DESERT =
+            ConfiguredFeatures.register("deco_desert_flowers", Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.POPPED_BLUET.getDefaultState(),1)
+                                    .add(DecoBlocks.DEAD_EYE_DAISY.getDefaultState(),1).build()),16));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_SWAMP = ConfiguredFeatures.register(
             "deco_swamp_flower", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,

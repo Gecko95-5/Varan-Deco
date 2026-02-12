@@ -101,6 +101,15 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ENDERSHADE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ENDERSHADE, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ALPINE_POPPY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ALPINE_POPPY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEAD_EYE_DAISY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_DEAD_EYE_DAISY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POPPED_BLUET, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_POPPED_BLUET, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BIRCH_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SPRUCE_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.JUNGLE_LADDER, RenderLayer.getCutout());
@@ -233,6 +242,9 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_SLAB, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_WALL, RenderLayer.getTranslucent());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLDEN_LADDER, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.COPPER_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_COPPER_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.EXPOSED_COPPER_LADDER, RenderLayer.getCutout());
@@ -252,12 +264,7 @@ public class VaranDecoClient implements ClientModInitializer {
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
                         world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
                 DecoBlocks.WOODEN_LEAVES);
-        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex)
-                        -> world != null && pos != null ? BiomeColors.getGrassColor(world, pos) :
-                        GrassColors.getColor(0.5, 1.0),
-                DecoBlocks.PACKED_GRASS);
 
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
-        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.PACKED_GRASS.asItem());
     }
 }

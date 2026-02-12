@@ -5898,6 +5898,121 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoItems.COPPER_NUGGET),
                         RecipeProvider.conditionsFromItem(DecoItems.COPPER_NUGGET))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COPPER_LADDER)));
+
+        ShapelessRecipeJsonBuilder.create(Items.WHITE_DYE)
+                .input(DecoBlocks.ALPINE_POPPY)
+                .group("white_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ALPINE_POPPY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ALPINE_POPPY))
+                .offerTo(exporter, new Identifier("white_dye_from_alpine_poppy"));
+        ShapelessRecipeJsonBuilder.create(Items.GRAY_DYE)
+                .input(DecoBlocks.DEAD_EYE_DAISY)
+                .group("gray_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.DEAD_EYE_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.DEAD_EYE_DAISY))
+                .offerTo(exporter, new Identifier("gray_dye_from_dead_eye_daisy"));
+        ShapelessRecipeJsonBuilder.create(Items.ORANGE_DYE)
+                .input(DecoBlocks.POPPED_BLUET)
+                .group("orange_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.POPPED_BLUET),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.POPPED_BLUET))
+                .offerTo(exporter, new Identifier("orange_dye_from_popped_bluet"));
+
+        createStairsRecipe(DecoBlocks.WHITE_WOOL_STAIRS, Ingredient.ofItems(Items.WHITE_WOOL))
+                .criterion(hasItem(Items.WHITE_WOOL),conditionsFromItem(Items.WHITE_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WHITE_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.WHITE_WOOL_SLAB, Items.WHITE_WOOL);
+
+        createStairsRecipe(DecoBlocks.BLACK_WOOL_STAIRS, Ingredient.ofItems(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.BLACK_WOOL),conditionsFromItem(Items.BLACK_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLACK_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.BLACK_WOOL_SLAB, Items.BLACK_WOOL);
+
+        createStairsRecipe(DecoBlocks.GRAY_WOOL_STAIRS, Ingredient.ofItems(Items.GRAY_WOOL))
+                .criterion(hasItem(Items.GRAY_WOOL),conditionsFromItem(Items.GRAY_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GRAY_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.GRAY_WOOL_SLAB, Items.GRAY_WOOL);
+
+        createStairsRecipe(DecoBlocks.LIGHT_GRAY_WOOL_STAIRS, Ingredient.ofItems(Items.LIGHT_GRAY_WOOL))
+                .criterion(hasItem(Items.LIGHT_GRAY_WOOL),conditionsFromItem(Items.LIGHT_GRAY_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIGHT_GRAY_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.LIGHT_GRAY_WOOL_SLAB, Items.LIGHT_GRAY_WOOL);
+
+        createStairsRecipe(DecoBlocks.BROWN_WOOL_STAIRS, Ingredient.ofItems(Items.BROWN_WOOL))
+                .criterion(hasItem(Items.BROWN_WOOL),conditionsFromItem(Items.BROWN_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BROWN_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.BROWN_WOOL_SLAB, Items.BROWN_WOOL);
+
+        createStairsRecipe(DecoBlocks.RED_WOOL_STAIRS, Ingredient.ofItems(Items.RED_WOOL))
+                .criterion(hasItem(Items.RED_WOOL),conditionsFromItem(Items.RED_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.RED_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.RED_WOOL_SLAB, Items.RED_WOOL);
+
+        createStairsRecipe(DecoBlocks.ORANGE_WOOL_STAIRS, Ingredient.ofItems(Items.ORANGE_WOOL))
+                .criterion(hasItem(Items.ORANGE_WOOL),conditionsFromItem(Items.ORANGE_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.ORANGE_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.ORANGE_WOOL_SLAB, Items.ORANGE_WOOL);
+
+        createStairsRecipe(DecoBlocks.YELLOW_WOOL_STAIRS, Ingredient.ofItems(Items.YELLOW_WOOL))
+                .criterion(hasItem(Items.YELLOW_WOOL),conditionsFromItem(Items.YELLOW_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.YELLOW_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.YELLOW_WOOL_SLAB, Items.YELLOW_WOOL);
+
+        createStairsRecipe(DecoBlocks.LIME_WOOL_STAIRS, Ingredient.ofItems(Items.LIME_WOOL))
+                .criterion(hasItem(Items.LIME_WOOL),conditionsFromItem(Items.LIME_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIME_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.LIME_WOOL_SLAB, Items.LIME_WOOL);
+
+        createStairsRecipe(DecoBlocks.GREEN_WOOL_STAIRS, Ingredient.ofItems(Items.GREEN_WOOL))
+                .criterion(hasItem(Items.GREEN_WOOL),conditionsFromItem(Items.GREEN_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GREEN_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.GREEN_WOOL_SLAB, Items.GREEN_WOOL);
+
+        createStairsRecipe(DecoBlocks.CYAN_WOOL_STAIRS, Ingredient.ofItems(Items.CYAN_WOOL))
+                .criterion(hasItem(Items.CYAN_WOOL),conditionsFromItem(Items.CYAN_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CYAN_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.CYAN_WOOL_SLAB, Items.CYAN_WOOL);
+
+        createStairsRecipe(DecoBlocks.BLUE_WOOL_STAIRS, Ingredient.ofItems(Items.BLUE_WOOL))
+                .criterion(hasItem(Items.BLUE_WOOL),conditionsFromItem(Items.BLUE_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.BLUE_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.BLUE_WOOL_SLAB, Items.BLUE_WOOL);
+
+        createStairsRecipe(DecoBlocks.LIGHT_BLUE_WOOL_STAIRS, Ingredient.ofItems(Items.LIGHT_BLUE_WOOL))
+                .criterion(hasItem(Items.LIGHT_BLUE_WOOL),conditionsFromItem(Items.LIGHT_BLUE_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LIGHT_BLUE_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.LIGHT_BLUE_WOOL_SLAB, Items.LIGHT_BLUE_WOOL);
+
+        createStairsRecipe(DecoBlocks.PURPLE_WOOL_STAIRS, Ingredient.ofItems(Items.PURPLE_WOOL))
+                .criterion(hasItem(Items.PURPLE_WOOL),conditionsFromItem(Items.PURPLE_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PURPLE_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.PURPLE_WOOL_SLAB, Items.PURPLE_WOOL);
+
+        createStairsRecipe(DecoBlocks.MAGENTA_WOOL_STAIRS, Ingredient.ofItems(Items.MAGENTA_WOOL))
+                .criterion(hasItem(Items.MAGENTA_WOOL),conditionsFromItem(Items.MAGENTA_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MAGENTA_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.MAGENTA_WOOL_SLAB, Items.MAGENTA_WOOL);
+
+        createStairsRecipe(DecoBlocks.PINK_WOOL_STAIRS, Ingredient.ofItems(Items.PINK_WOOL))
+                .criterion(hasItem(Items.PINK_WOOL),conditionsFromItem(Items.PINK_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PINK_WOOL_STAIRS)));
+
+        offerSlabRecipe(exporter, DecoBlocks.PINK_WOOL_SLAB, Items.PINK_WOOL);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
