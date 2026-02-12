@@ -189,6 +189,12 @@ public class DecoCustomTrades {
                             new ItemStack(Items.EMERALD),
                             new ItemStack(DecoBlocks.LAVENDER),
                             9, 0, 0.075f)));
+        TradeOfferHelper.registerWanderingTraderOffers(1,
+                factories ->
+                        factories.add((entity, random) -> new TradeOffer(
+                                new ItemStack(Items.EMERALD),
+                                new ItemStack(DecoBlocks.CLOUD_BLOCK,4),
+                                9, 0, 0.075f)));
 
         TradeOfferHelper.registerWanderingTraderOffers(2,
                 factories -> 
