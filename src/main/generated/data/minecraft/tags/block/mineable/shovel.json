@@ -7,6 +7,21 @@
     "minecraft:chiseled_snow_bricks",
     "minecraft:snow_brick_stairs",
     "minecraft:snow_brick_slab",
-    "minecraft:snow_brick_wall"
+    "minecraft:snow_brick_wall",
+    "minecraft:dirt_stairs",
+    "minecraft:coarse_dirt_stairs",
+    "minecraft:rooted_dirt_stairs",
+    "minecraft:mud_stairs",
+    "minecraft:clay_stairs",
+    "minecraft:dirt_slab",
+    "minecraft:coarse_dirt_slab",
+    "minecraft:rooted_dirt_slab",
+    "minecraft:mud_slab",
+    "minecraft:clay_slab",
+    "minecraft:dirt_wall",
+    "minecraft:coarse_dirt_wall",
+    "minecraft:rooted_dirt_wall",
+    "minecraft:mud_wall",
+    "minecraft:clay_wall"
   ]
 }

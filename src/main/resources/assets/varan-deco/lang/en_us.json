@@ -134,100 +134,6 @@
   "item.minecraft.passtol": "Passtol",
   "item.minecraft.shaddol": "Shaddol",
 
-  "block.minecraft.polished_andesite_temp": "Non-Craftable Polished Andesite",
-  "block.minecraft.polished_diorite_temp": "Non-Craftable Polished Diorite",
-  "block.minecraft.polished_granite_temp": "Non-Craftable Polished Granite",
-  "block.minecraft.stone_temp": "Stone Template",
-  "block.minecraft.smooth_stone_temp": "Smooth Stone Template",
-  "block.minecraft.calcite_temp": "Calcite Template",
-  "block.minecraft.tuff_temp": "Tuff Template",
-  "block.minecraft.dripstone_temp": "Dripstone Block Template",
-  "block.minecraft.netherrack_temp": "Netherrack Template",
-  "block.minecraft.magma_temp": "Magma Block Template",
-  "block.minecraft.packed_mud_temp": "Non-Craftable Packed Mud",
-  "block.minecraft.nether_bricks_temp": "Non-Craftable Nether Bricks",
-  "block.minecraft.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
-  "block.minecraft.sandstone_top_temp": "Smooth Sandstone Template",
-  "block.minecraft.red_sandstone_top_temp": "Smooth Red Sandstone Template",
-  "block.minecraft.snow_temp": "Non-Craftable Snow",
-  "block.minecraft.packed_ice_temp": "Non-Craftable Packed Ice",
-  "block.minecraft.blue_ice_temp": "Non-Craftable Blue Ice",
-  "block.minecraft.dark_prismarine_temp": "Non-Craftable Dark Prismarine",
-  "block.minecraft.prismarine_bricks_temp": "Non-Craftable Prismarine Bricks",
-  "block.minecraft.quartz_temp": "Non-Craftable Quartz Block",
-  "block.minecraft.smooth_quartz_temp": "Non-Craftable Smooth Quartz Block",
-  "block.minecraft.quartz_bricks_temp": "Non-Craftable Quartz Bricks",
-  "block.minecraft.terracotta_temp": "Non-Craftable Terracotta",
-  "block.minecraft.white_terracotta_temp": "Non-Craftable White Terracotta",
-  "block.minecraft.light_gray_terracotta_temp": "Non-Craftable Light Gray Terracotta",
-  "block.minecraft.gray_terracotta_temp": "Non-Craftable Gray Terracotta",
-  "block.minecraft.black_terracotta_temp": "Non-Craftable Black Terracotta",
-  "block.minecraft.brown_terracotta_temp": "Non-Craftable Brown Terracotta",
-  "block.minecraft.red_terracotta_temp": "Non-Craftable Red Terracotta",
-  "block.minecraft.orange_terracotta_temp": "Non-Craftable Orange Terracotta",
-  "block.minecraft.yellow_terracotta_temp": "Non-Craftable Yellow Terracotta",
-  "block.minecraft.lime_terracotta_temp": "Non-Craftable Lime Terracotta",
-  "block.minecraft.green_terracotta_temp": "Non-Craftable Green Terracotta",
-  "block.minecraft.cyan_terracotta_temp": "Non-Craftable Cyan Terracotta",
-  "block.minecraft.light_blue_terracotta_temp": "Non-Craftable Light Blue Terracotta",
-  "block.minecraft.blue_terracotta_temp": "Non-Craftable Blue Terracotta",
-  "block.minecraft.purple_terracotta_temp": "Non-Craftable Purple Terracotta",
-  "block.minecraft.magenta_terracotta_temp": "Non-Craftable Magenta Terracotta",
-  "block.minecraft.pink_terracotta_temp": "Non-Craftable Pink Terracotta",
-  "block.minecraft.white_concrete_temp": "Non-Craftable White Concrete",
-  "block.minecraft.light_gray_concrete_temp": "Non-Craftable Light Gray Concrete",
-  "block.minecraft.gray_concrete_temp": "Non-Craftable Gray Concrete",
-  "block.minecraft.black_concrete_temp": "Non-Craftable Black Concrete",
-  "block.minecraft.brown_concrete_temp": "Non-Craftable Brown Concrete",
-  "block.minecraft.red_concrete_temp": "Non-Craftable Red Concrete",
-  "block.minecraft.orange_concrete_temp": "Non-Craftable Orange Concrete",
-  "block.minecraft.yellow_concrete_temp": "Non-Craftable Yellow Concrete",
-  "block.minecraft.lime_concrete_temp": "Non-Craftable Lime Concrete",
-  "block.minecraft.green_concrete_temp": "Non-Craftable Green Concrete",
-  "block.minecraft.cyan_concrete_temp": "Non-Craftable Cyan Concrete",
-  "block.minecraft.light_blue_concrete_temp": "Non-Craftable Light Blue Concrete",
-  "block.minecraft.blue_concrete_temp": "Non-Craftable Blue Concrete",
-  "block.minecraft.purple_concrete_temp": "Non-Craftable Purple Concrete",
-  "block.minecraft.magenta_concrete_temp": "Non-Craftable Magenta Concrete",
-  "block.minecraft.pink_concrete_temp": "Non-Craftable Pink Concrete",
-  "block.minecraft.end_stone_temp": "End Stone Template",
-  "block.minecraft.obsidian_temp": "Obsidian Template",
-  "block.minecraft.polished_deepslate_temp": "Non-Craftable Polished Deepslate",
-  "block.minecraft.deepslate_temp": "Deepslate Template",
-  "block.minecraft.cobbled_deepslate_temp": "Cobbled Deepslate Template",
-  "block.minecraft.cobblestone_temp": "Cobblestone Template",
-  "block.minecraft.blackstone_temp": "Blackstone Template",
-  "block.minecraft.polished_stone_temp": "Non-Craftable Polished Stone",
-  "block.minecraft.stripped_oak_temp": "Non-Craftable Stripped Oak Wood",
-  "block.minecraft.stripped_spruce_temp": "Non-Craftable Stripped Spruce Wood",
-  "block.minecraft.stripped_birch_temp": "Non-Craftable Stripped Birch Wood",
-  "block.minecraft.stripped_jungle_temp": "Non-Craftable Stripped Jungle Wood",
-  "block.minecraft.stripped_acacia_temp": "Non-Craftable Stripped Acacia Wood",
-  "block.minecraft.stripped_dark_oak_temp": "Non-Craftable Stripped Dark Oak Wood",
-  "block.minecraft.stripped_mangrove_temp": "Non-Craftable Stripped Mangrove Wood",
-  "block.minecraft.stripped_cherry_temp": "Non-Craftable Stripped Cherry Wood",
-  "block.minecraft.stripped_crimson_temp": "Non-Craftable Stripped Crimson Wood",
-  "block.minecraft.stripped_warped_temp": "Non-Craftable Stripped Warped Wood",
-  "block.minecraft.stripped_wooden_temp": "Non-Craftable Stripped Wooden Wood",
-  "block.minecraft.bamboo_mosaic_temp": "Non-Craftable Bamboo Mosaic",
-  "block.minecraft.spruce_mosaic_temp": "Non-Craftable Spruce Mosaic",
-  "block.minecraft.jungle_mosaic_temp": "Non-Craftable Jungle Mosaic",
-  "block.minecraft.dark_oak_mosaic_temp": "Non-Craftable Dark Oak Mosaic",
-  "block.minecraft.crimson_mosaic_temp": "Non-Craftable Crimson Mosaic",
-  "block.minecraft.cactus_mosaic_temp": "Non-Craftable Cactus Mosaic",
-  "block.minecraft.purpur_temp": "Non-Craftable Purpur",
-  "block.minecraft.smooth_basalt_temp": "Smooth Basalt Template",
-  "block.minecraft.polished_tuff_temp": "Non-Craftable Polished Tuff",
-  "block.minecraft.iron_temp": "Non-Craftable Block of Iron",
-  "block.minecraft.raw_iron_temp": "Non-Craftable Block of Raw Iron",
-  "block.minecraft.gold_temp": "Non-Craftable Block of Gold",
-  "block.minecraft.raw_gold_temp": "Non-Craftable Block of Raw Gold",
-  "block.minecraft.copper_temp": "Non-Craftable Block of Copper",
-  "block.minecraft.raw_copper_temp": "Non-Craftable Block of Raw Copper",
-  "block.minecraft.exposed_copper_temp": "Exposed Copper Template",
-  "block.minecraft.weathered_copper_temp": "Weathered Copper Template",
-  "block.minecraft.oxidized_copper_temp": "Oxidized Copper Template",
-
   "block.minecraft.warped_wart_plant": "Warped Wart",
 
   "block.minecraft.ancient_rose_crop": "Ancient Rose",
@@ -818,6 +724,54 @@
   "block.minecraft.magenta_terracotta_slab": "Magenta Terracotta Slab",
   "block.minecraft.magenta_terracotta_wall": "Magenta Terracotta Wall",
 
+  "block.minecraft.white_wool_stairs": "White Wool Stairs",
+  "block.minecraft.white_wool_slab": "White Wool Slab",
+
+  "block.minecraft.light_gray_wool_stairs": "Light Gray Wool Stairs",
+  "block.minecraft.light_gray_wool_slab": "Light Gray Wool Slab",
+
+  "block.minecraft.gray_wool_stairs": "Gray Wool Stairs",
+  "block.minecraft.gray_wool_slab": "Gray Wool Slab",
+
+  "block.minecraft.black_wool_stairs": "Black Wool Stairs",
+  "block.minecraft.black_wool_slab": "Black Wool Slab",
+
+  "block.minecraft.brown_wool_stairs": "Brown Wool Stairs",
+  "block.minecraft.brown_wool_slab": "Brown Wool Slab",
+
+  "block.minecraft.red_wool_stairs": "Red Wool Stairs",
+  "block.minecraft.red_wool_slab": "Red Wool Slab",
+
+  "block.minecraft.orange_wool_stairs": "Orange Wool Stairs",
+  "block.minecraft.orange_wool_slab": "Orange Wool Slab",
+
+  "block.minecraft.yellow_wool_stairs": "Yellow Wool Stairs",
+  "block.minecraft.yellow_wool_slab": "Yellow Wool Slab",
+
+  "block.minecraft.lime_wool_stairs": "Lime Wool Stairs",
+  "block.minecraft.lime_wool_slab": "Lime Wool Slab",
+
+  "block.minecraft.green_wool_stairs": "Green Wool Stairs",
+  "block.minecraft.green_wool_slab": "Green Wool Slab",
+
+  "block.minecraft.cyan_wool_stairs": "Cyan Wool Stairs",
+  "block.minecraft.cyan_wool_slab": "Cyan Wool Slab",
+
+  "block.minecraft.light_blue_wool_stairs": "Light Blue Wool Stairs",
+  "block.minecraft.light_blue_wool_slab": "Light Blue Wool Slab",
+
+  "block.minecraft.blue_wool_stairs": "Blue Wool Stairs",
+  "block.minecraft.blue_wool_slab": "Blue Wool Slab",
+
+  "block.minecraft.purple_wool_stairs": "Purple Wool Stairs",
+  "block.minecraft.purple_wool_slab": "Purple Wool Slab",
+
+  "block.minecraft.magenta_wool_stairs": "Magenta Wool Stairs",
+  "block.minecraft.magenta_wool_slab": "Magenta Wool Slab",
+
+  "block.minecraft.pink_wool_stairs": "Pink Wool Stairs",
+  "block.minecraft.pink_wool_slab": "Pink Wool Slab",
+
   "block.minecraft.pink_terracotta_stairs": "Pink Terracotta Stairs",
   "block.minecraft.pink_terracotta_slab": "Pink Terracotta Slab",
   "block.minecraft.pink_terracotta_wall": "Pink Terracotta Wall",
@@ -1382,6 +1336,15 @@
   "block.minecraft.potted_nightshade": "Potted Nightshade",
   "block.minecraft.endershade": "Endershade",
   "block.minecraft.potted_endershade": "Potted Endershade",
+
+  "block.minecraft.alpine_poppy": "Alpine Poppy",
+  "block.minecraft.potted_alpine_poppy": "Potted Alpine Poppy",
+
+  "block.minecraft.dead_eye_daisy": "Dead-Eye Daisy",
+  "block.minecraft.potted_dead_eye_daisy": "Potted Dead-Eye Daisy",
+
+  "block.minecraft.popped_bluet": "Popped Bluet",
+  "block.minecraft.potted_popped_bluet": "Potted Popped Bluet",
 
   "block.minecraft.bromeliad": "Bromeliad",
   "block.minecraft.potted_bromeliad": "Potted Bromeliad",
@@ -1977,6 +1940,167 @@
   "block.minecraft.earth_brick_slab": "Earth Brick Slab",
   "block.minecraft.earth_brick_wall": "Earth Brick Wall",
   "block.minecraft.chiseled_earth_bricks": "Chiseled Earth Bricks",
+
+  "block.minecraft.packed_grass": "Packed Grass",
+  "block.minecraft.grass_carpet": "Grass Carpet",
+
+  "block.minecraft.packed_podzol": "Packed Podzol",
+  "block.minecraft.podzol_carpet": "Podzol Carpet",
+
+  "block.minecraft.packed_mycelium": "Packed Mycelium",
+  "block.minecraft.mycelium_carpet": "Mycelium Carpet",
+
+  "block.minecraft.packed_crimson_nylium": "Packed Crimson Nylium",
+  "block.minecraft.crimson_nylium_carpet": "Crimson Nylium Carpet",
+
+  "block.minecraft.packed_warped_nylium": "Packed Warped Nylium",
+  "block.minecraft.warped_nylium_carpet": "Warped Nylium Carpet",
+
+  "block.minecraft.grass_stairs": "Grass Stairs",
+  "block.minecraft.grass_slab": "Grass Slab",
+
+  "block.minecraft.podzol_stairs": "Podzol Stairs",
+  "block.minecraft.podzol_slab": "Podzol Slab",
+
+  "block.minecraft.crimson_nylium_stairs": "Crimson Nylium Stairs",
+  "block.minecraft.crimson_nylium_slab": "Crimson Nylium Slab",
+
+  "block.minecraft.warped_nylium_stairs": "Warped Nylium Stairs",
+  "block.minecraft.warped_nylium_slab": "Warped Nylium Slab",
+
+  "block.minecraft.mycelium_stairs": "Mycelium Stairs",
+  "block.minecraft.mycelium_slab": "Mycelium Slab",
+
+  "block.minecraft.moss_stairs": "Moss Stairs",
+  "block.minecraft.moss_slab": "Moss Slab",
+
+  "block.minecraft.dirt_stairs": "Dirt Stairs",
+  "block.minecraft.dirt_slab": "Dirt Slab",
+  "block.minecraft.dirt_wall": "Dirt Wall",
+
+  "block.minecraft.mud_stairs": "Mud Stairs",
+  "block.minecraft.mud_slab": "Mud Slab",
+  "block.minecraft.mud_wall": "Mud Wall",
+
+  "block.minecraft.clay_stairs": "Clay Stairs",
+  "block.minecraft.clay_slab": "Clay Slab",
+  "block.minecraft.clay_wall": "Clay Wall",
+
+  "block.minecraft.coarse_dirt_stairs": "Coarse Dirt Stairs",
+  "block.minecraft.coarse_dirt_slab": "Coarse Dirt Slab",
+  "block.minecraft.coarse_dirt_wall": "Coarse Dirt Wall",
+
+  "block.minecraft.rooted_dirt_stairs": "Rooted Dirt Stairs",
+  "block.minecraft.rooted_dirt_slab": "Rooted Dirt Slab",
+  "block.minecraft.rooted_dirt_wall": "Rooted Dirt Wall",
+
+  "block.minecraft.bone_stairs": "Bone Stairs",
+  "block.minecraft.bone_slab": "Bone Slab",
+  "block.minecraft.bone_wall": "Bone Wall",
+
+  "block.minecraft.bedrock_stairs": "Bedrock Stairs",
+  "block.minecraft.bedrock_slab": "Bedrock Slab",
+  "block.minecraft.bedrock_wall": "Bedrock Wall",
+
+  "block.varan-deco.cloud_block": "Cloud Block",
+
+  "block.minecraft.solid_cloud": "Solid Cloud",
+  "block.minecraft.cloud_stairs": "Cloud Stairs",
+  "block.minecraft.cloud_slab": "Cloud Slab",
+  "block.minecraft.cloud_wall": "Cloud Wall",
+
+  "block.minecraft.cloud_bricks": "Cloud Bricks",
+  "block.minecraft.cloud_brick_stairs": "Cloud Brick Stairs",
+  "block.minecraft.cloud_brick_slab": "Cloud Brick Slab",
+  "block.minecraft.cloud_brick_wall": "Cloud Brick Wall",
+
+  "block.minecraft.chiseled_cloud_bricks": "Chiseled Cloud Bricks",
+
+  "block.minecraft.iron_ladder": "Iron Ladder",
+  "block.minecraft.golden_ladder": "Golden Ladder",
+
+  "block.minecraft.copper_ladder": "Copper Ladder",
+  "block.minecraft.exposed_copper_ladder": "Exposed Copper Ladder",
+  "block.minecraft.weathered_copper_ladder": "Weathered Copper Ladder",
+  "block.minecraft.oxidized_copper_ladder": "Oxidized Copper Ladder",
+
+  "block.minecraft.waxed_copper_ladder": "Waxed Copper Ladder",
+  "block.minecraft.waxed_exposed_copper_ladder": "Waxed Exposed Copper Ladder",
+  "block.minecraft.waxed_weathered_copper_ladder": "Waxed Weathered Copper Ladder",
+  "block.minecraft.waxed_oxidized_copper_ladder": "Waxed Oxidized Copper Ladder",
+
+  "block.minecraft.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+  "block.minecraft.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+  "block.minecraft.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
+
+  "block.minecraft.cracked_stone_tile_stairs": "Cracked Stone Tile Stairs",
+  "block.minecraft.cracked_stone_tile_slab": "Cracked Stone Tile Slab",
+  "block.minecraft.cracked_stone_tile_wall": "Cracked Stone Tile Wall",
+
+  "block.minecraft.cracked_deepslate_brick_stairs": "Cracked Deepslate Brick Stairs",
+  "block.minecraft.cracked_deepslate_brick_slab": "Cracked Deepslate Brick Slab",
+  "block.minecraft.cracked_deepslate_brick_wall": "Cracked Deepslate Brick Wall",
+
+  "block.minecraft.cracked_deepslate_tile_stairs": "Cracked Deepslate Tile Stairs",
+  "block.minecraft.cracked_deepslate_tile_slab": "Cracked Deepslate Tile Slab",
+  "block.minecraft.cracked_deepslate_tile_wall": "Cracked Deepslate Tile Wall",
+
+  "block.minecraft.cracked_polished_blackstone_brick_stairs": "Cracked Polished Blackstone Brick Stairs",
+  "block.minecraft.cracked_polished_blackstone_brick_slab": "Cracked Polished Blackstone Brick Slab",
+  "block.minecraft.cracked_polished_blackstone_brick_wall": "Cracked Polished Blackstone Brick Wall",
+
+  "block.minecraft.cracked_polished_blackstone_tile_stairs": "Cracked Polished Blackstone Tile Stairs",
+  "block.minecraft.cracked_polished_blackstone_tile_slab": "Cracked Polished Blackstone Tile Slab",
+  "block.minecraft.cracked_polished_blackstone_tile_wall": "Cracked Polished Blackstone Tile Wall",
+
+  "block.minecraft.cracked_end_stone_brick_stairs": "Cracked End Stone Brick Stairs",
+  "block.minecraft.cracked_end_stone_brick_slab": "Cracked End Stone Brick Slab",
+  "block.minecraft.cracked_end_stone_brick_wall": "Cracked End Stone Brick Wall",
+
+  "block.minecraft.cracked_end_stone_tile_stairs": "Cracked End Stone Tile Stairs",
+  "block.minecraft.cracked_end_stone_tile_slab": "Cracked End Stone Tile Slab",
+  "block.minecraft.cracked_end_stone_tile_wall": "Cracked End Stone Tile Wall",
+
+  "block.minecraft.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
+  "block.minecraft.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
+  "block.minecraft.cracked_nether_brick_wall": "Cracked Nether Brick Wall",
+
+  "block.minecraft.cracked_nether_brick_fence": "Cracked Nether Brick Fence",
+  "block.minecraft.cracked_nether_brick_fence_gate": "Cracked Nether Brick Fence Gate",
+
+  "block.minecraft.cracked_red_nether_brick_stairs": "Cracked Red Nether Brick Stairs",
+  "block.minecraft.cracked_red_nether_brick_slab": "Cracked Red Nether Brick Slab",
+  "block.minecraft.cracked_red_nether_brick_wall": "Cracked Red Nether Brick Wall",
+
+  "block.minecraft.cracked_red_nether_brick_fence": "Cracked Red Nether Brick Fence",
+  "block.minecraft.cracked_red_nether_brick_fence_gate": "Cracked Red Nether Brick Fence Gate",
+
+  "block.minecraft.cracked_blue_nether_brick_stairs": "Cracked Blue Nether Brick Stairs",
+  "block.minecraft.cracked_blue_nether_brick_slab": "Cracked Blue Nether Brick Slab",
+  "block.minecraft.cracked_blue_nether_brick_wall": "Cracked Blue Nether Brick Wall",
+
+  "block.minecraft.cracked_blue_nether_brick_fence": "Cracked Blue Nether Brick Fence",
+  "block.minecraft.cracked_blue_nether_brick_fence_gate": "Cracked Blue Nether Brick Fence Gate",
+
+  "block.minecraft.cracked_tuff_brick_stairs": "Cracked Tuff Brick Stairs",
+  "block.minecraft.cracked_tuff_brick_slab": "Cracked Tuff Brick Slab",
+  "block.minecraft.cracked_tuff_brick_wall": "Cracked Tuff Brick Wall",
+
+  "block.minecraft.cracked_tuff_tile_stairs": "Cracked Tuff Tile Stairs",
+  "block.minecraft.cracked_tuff_tile_slab": "Cracked Tuff Tile Slab",
+  "block.minecraft.cracked_tuff_tile_wall": "Cracked Tuff Tile Wall",
+
+  "block.minecraft.pale_moss_stairs": "Pale Moss Stairs",
+  "block.minecraft.pale_moss_slab": "Pale Moss Slab",
+
+  "block.minecraft.resin_stairs": "Resin Stairs",
+  "block.minecraft.resin_slab": "Resin Slab",
+  "block.minecraft.resin_wall": "Resin Wall",
+
+  "block.minecraft.smooth_resin": "Smooth Resin",
+  "block.minecraft.smooth_resin_stairs": "Smooth Resin Stairs",
+  "block.minecraft.smooth_resin_slab": "Smooth Resin Slab",
+  "block.minecraft.smooth_resin_wall": "Smooth Resin Wall",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
