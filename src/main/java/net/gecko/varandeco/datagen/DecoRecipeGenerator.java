@@ -6254,6 +6254,60 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.BELL)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRACKED_NETHER_BRICK_FENCE,6)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', Items.CRACKED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.CRACKED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(Items.CRACKED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_NETHER_BRICK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE,6)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_RED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE,6)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', Items.CRACKED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.CRACKED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(Items.CRACKED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_RED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
