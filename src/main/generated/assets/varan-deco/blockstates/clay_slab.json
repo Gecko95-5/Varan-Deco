@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/clay_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/clay_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/clay_slab_top"
+    }
+  }
+}

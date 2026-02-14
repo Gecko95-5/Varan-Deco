@@ -103,6 +103,15 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_CAP_MUSHROOM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_IRON_CAP_MUSHROOM, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ALPINE_POPPY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ALPINE_POPPY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEAD_EYE_DAISY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_DEAD_EYE_DAISY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POPPED_BLUET, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_POPPED_BLUET, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BIRCH_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SPRUCE_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.JUNGLE_LADDER, RenderLayer.getCutout());
@@ -271,6 +280,31 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FRAGILE_ICE, RenderLayer.getTranslucent());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BLOCK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SOLID_CLOUD, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICKS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CHISELED_CLOUD_BRICKS, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_STAIRS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_SLAB, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_WALL, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_STAIRS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_SLAB, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CLOUD_BRICK_WALL, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLDEN_LADDER, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.EXPOSED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WEATHERED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.OXIDIZED_COPPER_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER, RenderLayer.getCutout());
+
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.MUSHROOM_BOAT_ID,false);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_BOAT_ID,false);
@@ -298,6 +332,7 @@ public class VaranDecoClient implements ClientModInitializer {
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) ->
                         world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
                 DecoBlocks.WOODEN_LEAVES);
+
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
     }
 }
