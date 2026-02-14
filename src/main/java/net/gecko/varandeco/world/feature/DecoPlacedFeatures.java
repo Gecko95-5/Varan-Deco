@@ -34,6 +34,7 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_JUNGLE_PLACED = registerKey("deco_jungle_placed");
     public static final RegistryKey<PlacedFeature> DECO_SPARSE_JUNGLE_PLACED = registerKey("deco_sparse_jungle_placed");
     public static final RegistryKey<PlacedFeature> DECO_MESA_PLACED = registerKey("deco_mesa_placed");
+    public static final RegistryKey<PlacedFeature> DECO_DESERT_PLACED = registerKey("deco_desert_placed");
     public static final RegistryKey<PlacedFeature> DECO_BUBBLE_ORE_PLACED = registerKey("deco_bubble_ore_placed");
     public static final RegistryKey<PlacedFeature> DECO_DEEP_BUBBLE_ORE_PLACED = registerKey("deco_deep_bubble_ore_placed");
     public static final RegistryKey<PlacedFeature> DECO_VOID_PATCH_PLACED = registerKey("deco_void_patch_placed");
@@ -109,7 +110,9 @@ register(context,DECO_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.ge
         OrePlacement.modifiersWithCount(5,
                 HeightRangePlacementModifier.uniform(YOffset.fixed(8), YOffset.fixed(27))));
 
-register(context,DECO_DEEP_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_ORE),
+register(context, DECO_DESERT_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_DESERT), RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());register(context,DECO_DEEP_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_ORE),
         OrePlacement.modifiersWithCount(5,
                 HeightRangePlacementModifier.uniform(YOffset.fixed(8), YOffset.fixed(45))));
 

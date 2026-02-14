@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:black_wool_slab",
+    "varan-deco:light_blue_wool_slab",
+    "varan-deco:light_gray_wool_slab",
+    "varan-deco:white_wool_slab",
+    "varan-deco:gray_wool_slab",
+    "varan-deco:red_wool_slab",
+    "varan-deco:orange_wool_slab",
+    "varan-deco:yellow_wool_slab",
+    "varan-deco:lime_wool_slab",
+    "varan-deco:green_wool_slab",
+    "varan-deco:cyan_wool_slab",
+    "varan-deco:blue_wool_slab",
+    "varan-deco:purple_wool_slab",
+    "varan-deco:pink_wool_slab",
+    "varan-deco:magenta_wool_slab",
+    "varan-deco:brown_wool_slab"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/moss_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/moss_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/moss_slab_top"
+    }
+  }
+}
