@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "varan-deco:block/clay_temp",
+    "side": "varan-deco:block/clay_temp",
+    "top": "varan-deco:block/clay_temp"
+  }
+}

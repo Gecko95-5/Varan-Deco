@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:crystallized_prismarine"
-  },
-  "result": "varan-deco:crystallized_prismarine_slab"
-}
