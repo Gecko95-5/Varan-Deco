@@ -1,5 +1,6 @@
 package net.gecko.varandeco.util;
 
+import com.terraformersmc.terraform.leaves.ComposterRecipes;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 
@@ -44,6 +45,9 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BUTTERCUP,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.NIGHTSHADE,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ENDERSHADE,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DEAD_EYE_DAISY,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ALPINE_POPPY,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.POPPED_BLUET,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM, 0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK, 0.85F);
     }

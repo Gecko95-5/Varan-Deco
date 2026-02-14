@@ -1,4 +1,4 @@
-// 1.20.6	2026-01-21T14:08:20.9336662	Variant Decoration/Tags for minecraft:item
+// 1.20.6	2026-02-14T23:54:10.256992	Variant Decoration/Tags for minecraft:item
 5a2824783225b2ebdf2ba364bc584d9aaeeefe02 data\minecraft\tags\items\wooden_doors.json
 0a4b01d983287abae47d98123cfd55f91ab88d57 data\varan-deco\tags\items\wooden_barrels.json
 411ec412cfa34a2d9dfcdd6d54380847f3de82a0 data\varan-deco\tags\items\deco_barrels.json
@@ -10,7 +10,7 @@ bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\items\logs_that_bur
 d0652a96bb5d589a11dd64796881d26fc6a5b17f data\minecraft\tags\items\wooden_fences.json
 ae6a5284b821cf8425822655673d64efabc01ed1 data\minecraft\tags\items\buttons.json
 6de271f015f7b873556f9a29e1c78000aee68489 data\varan-deco\tags\items\furnaces.json
-1358bf25d939add7bd4da27f1f31f6e9556475cd data\minecraft\tags\items\small_flowers.json
+e565cc745013cc7c7de5a0c257e2470eacadce5b data\minecraft\tags\items\small_flowers.json
 30c6bafc685645a0a265e29299967b24838dc985 data\varan-deco\tags\items\deco_ladder.json
 e065592ab9cf8401d9507378bfb0b130b28a4b78 data\varan-deco\tags\items\deco_bookshelves.json
 1bb86d8d299b021cc366894b0ab23af915d23390 data\varan-deco\tags\items\log_stairs.json
@@ -44,6 +44,6 @@ fa97631a31c67ec04dc971ea54ae0ef270a9333f data\varan-deco\tags\items\deco_craftin
 7341d5935cb542fbbb545d49d6494a21a72917f0 data\varan-deco\tags\items\deco_note_blocks.json
 303f63c3917036cc86688b55eb9631edec7be0e3 data\varan-deco\tags\items\mosaic_stairs.json
 91b88f3e61e4f3efe5c326b84bda08694fb25cd1 data\varan-deco\tags\items\mosaic_slab.json
-4a3241366f3b841d42a3102c7e6833c1f80af121 data\varan-deco\tags\items\iron_cap_stem.json
 4faf8bc4eade5035542efef23082cbeb20e1adaa data\varan-deco\tags\items\log_slabs.json
+4a3241366f3b841d42a3102c7e6833c1f80af121 data\varan-deco\tags\items\iron_cap_stem.json
 1c5268e1b5c72c56fc0822cd2bf444e3238f7605 data\varan-deco\tags\items\wooden_cartography_tables.json

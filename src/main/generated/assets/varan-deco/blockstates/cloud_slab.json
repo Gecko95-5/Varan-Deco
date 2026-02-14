@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/cloud_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/solid_cloud"
+    },
+    "type=top": {
+      "model": "varan-deco:block/cloud_slab_top"
+    }
+  }
+}

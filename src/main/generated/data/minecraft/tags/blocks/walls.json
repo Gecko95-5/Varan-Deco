@@ -89,6 +89,26 @@
     "varan-deco:cut_obsidian_wall",
     "varan-deco:polished_end_stone_wall",
     "varan-deco:smooth_end_stone_wall",
-    "varan-deco:end_stone_tile_wall"
+    "varan-deco:end_stone_tile_wall",
+    "varan-deco:bedrock_wall",
+    "varan-deco:dirt_wall",
+    "varan-deco:coarse_dirt_wall",
+    "varan-deco:rooted_dirt_wall",
+    "varan-deco:mud_wall",
+    "varan-deco:clay_wall",
+    "varan-deco:bone_wall",
+    "varan-deco:cloud_wall",
+    "varan-deco:cloud_brick_wall",
+    "varan-deco:cracked_stone_brick_wall",
+    "varan-deco:cracked_stone_tile_wall",
+    "varan-deco:cracked_deepslate_brick_wall",
+    "varan-deco:cracked_deepslate_tile_wall",
+    "varan-deco:cracked_polished_blackstone_brick_wall",
+    "varan-deco:cracked_polished_blackstone_tile_wall",
+    "varan-deco:cracked_end_stone_brick_wall",
+    "varan-deco:cracked_end_stone_tile_wall",
+    "varan-deco:cracked_nether_brick_wall",
+    "varan-deco:cracked_red_nether_brick_wall",
+    "varan-deco:cracked_blue_nether_brick_wall"
   ]
 }
