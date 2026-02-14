@@ -3,6 +3,10 @@
   "values": [
     "varan-deco:nether_brick_fence_gate",
     "varan-deco:red_nether_brick_fence_gate",
+    "varan-deco:blue_nether_brick_fence_gate",
+    "varan-deco:cracked_nether_brick_fence_gate",
+    "varan-deco:cracked_red_nether_brick_fence_gate",
+    "varan-deco:cracked_blue_nether_brick_fence_gate",
     "varan-deco:cactus_plank_fence_gate",
     "varan-deco:iron_cap_fence_gate",
     "varan-deco:mushroom_fence_gate",

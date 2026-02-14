@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "metal_ladder",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#I#",
+    "# #"
+  ],
+  "result": {
+    "count": 3,
+    "item": "varan-deco:golden_ladder"
+  },
+  "show_notification": true
+}

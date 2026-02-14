@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/rooted_dirt_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/rooted_dirt_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/rooted_dirt_slab_top"
+    }
+  }
+}
