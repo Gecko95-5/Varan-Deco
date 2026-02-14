@@ -13,82 +13,6 @@
   "item.varan-deco.passtol": "Passtol",
   "item.varan-deco.shaddol": "Shaddol",
 
-  "block.varan-deco.polished_andesite_temp": "Non-Craftable Polished Andesite",
-  "block.varan-deco.polished_diorite_temp": "Non-Craftable Polished Diorite",
-  "block.varan-deco.polished_granite_temp": "Non-Craftable Polished Granite",
-  "block.varan-deco.stone_temp": "Stone Template",
-  "block.varan-deco.smooth_stone_temp": "Smooth Stone Template",
-  "block.varan-deco.calcite_temp": "Calcite Template",
-  "block.varan-deco.tuff_temp": "Tuff Template",
-  "block.varan-deco.dripstone_temp": "Dripstone Block Template",
-  "block.varan-deco.netherrack_temp": "Netherrack Template",
-  "block.varan-deco.magma_temp": "Magma Block Template",
-  "block.varan-deco.packed_mud_temp": "Non-Craftable Packed Mud",
-  "block.varan-deco.sandstone_top_temp": "Smooth Sandstone Template",
-  "block.varan-deco.red_sandstone_top_temp": "Smooth Red Sandstone Template",
-  "block.varan-deco.nether_bricks_temp": "Non-Craftable Nether Bricks",
-  "block.varan-deco.red_nether_bricks_temp": "Non-Craftable Red Nether Bricks",
-  "block.varan-deco.snow_temp": "Non-Craftable Snow",
-  "block.varan-deco.packed_ice_temp": "Non-Craftable Packed Ice",
-  "block.varan-deco.blue_ice_temp": "Non-Craftable Blue Ice",
-  "block.varan-deco.dark_prismarine_temp": "Non-Craftable Dark Prismarine",
-  "block.varan-deco.prismarine_bricks_temp": "Non-Craftable Prismarine Bricks",
-  "block.varan-deco.quartz_temp": "Non-Craftable Quartz Block",
-  "block.varan-deco.smooth_quartz_temp": "Non-Craftable Smooth Quartz Block",
-  "block.varan-deco.quartz_bricks_temp": "Non-Craftable Quartz Bricks",
-  "block.varan-deco.terracotta_temp": "Non-Craftable Terracotta",
-  "block.varan-deco.white_terracotta_temp": "Non-Craftable White Terracotta",
-  "block.varan-deco.light_gray_terracotta_temp": "Non-Craftable Light Gray Terracotta",
-  "block.varan-deco.gray_terracotta_temp": "Non-Craftable Gray Terracotta",
-  "block.varan-deco.black_terracotta_temp": "Non-Craftable Black Terracotta",
-  "block.varan-deco.brown_terracotta_temp": "Non-Craftable Brown Terracotta",
-  "block.varan-deco.red_terracotta_temp": "Non-Craftable Red Terracotta",
-  "block.varan-deco.orange_terracotta_temp": "Non-Craftable Orange Terracotta",
-  "block.varan-deco.yellow_terracotta_temp": "Non-Craftable Yellow Terracotta",
-  "block.varan-deco.lime_terracotta_temp": "Non-Craftable Lime Terracotta",
-  "block.varan-deco.green_terracotta_temp": "Non-Craftable Green Terracotta",
-  "block.varan-deco.cyan_terracotta_temp": "Non-Craftable Cyan Terracotta",
-  "block.varan-deco.light_blue_terracotta_temp": "Non-Craftable Light Blue Terracotta",
-  "block.varan-deco.blue_terracotta_temp": "Non-Craftable Blue Terracotta",
-  "block.varan-deco.purple_terracotta_temp": "Non-Craftable Purple Terracotta",
-  "block.varan-deco.magenta_terracotta_temp": "Non-Craftable Magenta Terracotta",
-  "block.varan-deco.pink_terracotta_temp": "Non-Craftable Pink Terracotta",
-  "block.varan-deco.white_concrete_temp": "Non-Craftable White Concrete",
-  "block.varan-deco.light_gray_concrete_temp": "Non-Craftable Light Gray Concrete",
-  "block.varan-deco.gray_concrete_temp": "Non-Craftable Gray Concrete",
-  "block.varan-deco.black_concrete_temp": "Non-Craftable Black Concrete",
-  "block.varan-deco.brown_concrete_temp": "Non-Craftable Brown Concrete",
-  "block.varan-deco.red_concrete_temp": "Non-Craftable Red Concrete",
-  "block.varan-deco.orange_concrete_temp": "Non-Craftable Orange Concrete",
-  "block.varan-deco.yellow_concrete_temp": "Non-Craftable Yellow Concrete",
-  "block.varan-deco.lime_concrete_temp": "Non-Craftable Lime Concrete",
-  "block.varan-deco.green_concrete_temp": "Non-Craftable Green Concrete",
-  "block.varan-deco.cyan_concrete_temp": "Non-Craftable Cyan Concrete",
-  "block.varan-deco.light_blue_concrete_temp": "Non-Craftable Light Blue Concrete",
-  "block.varan-deco.blue_concrete_temp": "Non-Craftable Blue Concrete",
-  "block.varan-deco.purple_concrete_temp": "Non-Craftable Purple Concrete",
-  "block.varan-deco.magenta_concrete_temp": "Non-Craftable Magenta Concrete",
-  "block.varan-deco.pink_concrete_temp": "Non-Craftable Pink Concrete",
-  "block.varan-deco.end_stone_temp": "End Stone Template",
-  "block.varan-deco.obsidian_temp": "Obsidian Template",
-  "block.varan-deco.polished_deepslate_temp": "Non-Craftable Polished Deepslate",
-  "block.varan-deco.deepslate_temp": "Deepslate Template",
-  "block.varan-deco.cobbled_deepslate_temp": "Cobbled Deepslate Template",
-  "block.varan-deco.cobblestone_temp": "Cobblestone Template",
-  "block.varan-deco.blackstone_temp": "Blackstone Template",
-  "block.varan-deco.polished_stone_temp": "Non-Craftable Polished Stone",
-  "block.varan-deco.purpur_temp": "Non-Craftable Purpur",
-  "block.varan-deco.smooth_basalt_temp": "Smooth Basalt Template",
-  "block.varan-deco.iron_temp": "Non-Craftable Block of Iron",
-  "block.varan-deco.raw_iron_temp": "Non-Craftable Block of Raw Iron",
-  "block.varan-deco.gold_temp": "Non-Craftable Block of Gold",
-  "block.varan-deco.raw_gold_temp": "Non-Craftable Block of Raw Gold",
-  "block.varan-deco.copper_temp": "Non-Craftable Block of Copper",
-  "block.varan-deco.raw_copper_temp": "Non-Craftable Block of Raw Copper",
-  "block.varan-deco.exposed_copper_temp": "Exposed Copper Template",
-  "block.varan-deco.weathered_copper_temp": "Weathered Copper Template",
-  "block.varan-deco.oxidized_copper_temp": "Oxidized Copper Template",
-
   "block.varan-deco.warped_wart_plant": "Warped Wart",
 
   "block.varan-deco.stone_wall": "Stone Wall",
@@ -465,6 +389,54 @@
   "block.varan-deco.pink_terracotta_stairs": "Pink Terracotta Stairs",
   "block.varan-deco.pink_terracotta_slab": "Pink Terracotta Slab",
   "block.varan-deco.pink_terracotta_wall": "Pink Terracotta Wall",
+
+  "block.varan-deco.white_wool_stairs": "White Wool Stairs",
+  "block.varan-deco.white_wool_slab": "White Wool Slab",
+
+  "block.varan-deco.light_gray_wool_stairs": "Light Gray Wool Stairs",
+  "block.varan-deco.light_gray_wool_slab": "Light Gray Wool Slab",
+
+  "block.varan-deco.gray_wool_stairs": "Gray Wool Stairs",
+  "block.varan-deco.gray_wool_slab": "Gray Wool Slab",
+
+  "block.varan-deco.black_wool_stairs": "Black Wool Stairs",
+  "block.varan-deco.black_wool_slab": "Black Wool Slab",
+
+  "block.varan-deco.brown_wool_stairs": "Brown Wool Stairs",
+  "block.varan-deco.brown_wool_slab": "Brown Wool Slab",
+
+  "block.varan-deco.red_wool_stairs": "Red Wool Stairs",
+  "block.varan-deco.red_wool_slab": "Red Wool Slab",
+
+  "block.varan-deco.orange_wool_stairs": "Orange Wool Stairs",
+  "block.varan-deco.orange_wool_slab": "Orange Wool Slab",
+
+  "block.varan-deco.yellow_wool_stairs": "Yellow Wool Stairs",
+  "block.varan-deco.yellow_wool_slab": "Yellow Wool Slab",
+
+  "block.varan-deco.lime_wool_stairs": "Lime Wool Stairs",
+  "block.varan-deco.lime_wool_slab": "Lime Wool Slab",
+
+  "block.varan-deco.green_wool_stairs": "Green Wool Stairs",
+  "block.varan-deco.green_wool_slab": "Green Wool Slab",
+
+  "block.varan-deco.cyan_wool_stairs": "Cyan Wool Stairs",
+  "block.varan-deco.cyan_wool_slab": "Cyan Wool Slab",
+
+  "block.varan-deco.light_blue_wool_stairs": "Light Blue Wool Stairs",
+  "block.varan-deco.light_blue_wool_slab": "Light Blue Wool Slab",
+
+  "block.varan-deco.blue_wool_stairs": "Blue Wool Stairs",
+  "block.varan-deco.blue_wool_slab": "Blue Wool Slab",
+
+  "block.varan-deco.purple_wool_stairs": "Purple Wool Stairs",
+  "block.varan-deco.purple_wool_slab": "Purple Wool Slab",
+
+  "block.varan-deco.magenta_wool_stairs": "Magenta Wool Stairs",
+  "block.varan-deco.magenta_wool_slab": "Magenta Wool Slab",
+
+  "block.varan-deco.pink_wool_stairs": "Pink Wool Stairs",
+  "block.varan-deco.pink_wool_slab": "Pink Wool Slab",
 
   "block.varan-deco.white_concrete_stairs": "White Concrete Stairs",
   "block.varan-deco.white_concrete_slab": "White Concrete Slab",
@@ -977,6 +949,15 @@
   "block.varan-deco.endershade": "Endershade",
   "block.varan-deco.potted_endershade": "Potted Endershade",
 
+  "block.varan-deco.alpine_poppy": "Alpine Poppy",
+  "block.varan-deco.potted_alpine_poppy": "Potted Alpine Poppy",
+
+  "block.varan-deco.dead_eye_daisy": "Dead-Eye Daisy",
+  "block.varan-deco.potted_dead_eye_daisy": "Potted Dead-Eye Daisy",
+
+  "block.varan-deco.popped_bluet": "Popped Bluet",
+  "block.varan-deco.potted_popped_bluet": "Potted Popped Bluet",
+
   "block.varan-deco.copper_chain": "Copper Chain",
   "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
 
@@ -1444,6 +1425,147 @@
   "block.varan-deco.bubble_elevator_block_magma": "Bubble Elevator Block",
   "block.varan-deco.bubble_elevator_block_bubble": "Bubble Elevator Block",
 
+  "block.varan-deco.packed_grass": "Packed Grass",
+  "block.varan-deco.grass_carpet": "Grass Carpet",
+
+  "block.varan-deco.packed_podzol": "Packed Podzol",
+  "block.varan-deco.podzol_carpet": "Podzol Carpet",
+
+  "block.varan-deco.packed_mycelium": "Packed Mycelium",
+  "block.varan-deco.mycelium_carpet": "Mycelium Carpet",
+
+  "block.varan-deco.packed_crimson_nylium": "Packed Crimson Nylium",
+  "block.varan-deco.crimson_nylium_carpet": "Crimson Nylium Carpet",
+
+  "block.varan-deco.packed_warped_nylium": "Packed Warped Nylium",
+  "block.varan-deco.warped_nylium_carpet": "Warped Nylium Carpet",
+
+  "block.varan-deco.grass_stairs": "Grass Stairs",
+  "block.varan-deco.grass_slab": "Grass Slab",
+
+  "block.varan-deco.podzol_stairs": "Podzol Stairs",
+  "block.varan-deco.podzol_slab": "Podzol Slab",
+
+  "block.varan-deco.crimson_nylium_stairs": "Crimson Nylium Stairs",
+  "block.varan-deco.crimson_nylium_slab": "Crimson Nylium Slab",
+
+  "block.varan-deco.warped_nylium_stairs": "Warped Nylium Stairs",
+  "block.varan-deco.warped_nylium_slab": "Warped Nylium Slab",
+
+  "block.varan-deco.mycelium_stairs": "Mycelium Stairs",
+  "block.varan-deco.mycelium_slab": "Mycelium Slab",
+
+  "block.varan-deco.moss_stairs": "Moss Stairs",
+  "block.varan-deco.moss_slab": "Moss Slab",
+
+  "block.varan-deco.dirt_stairs": "Dirt Stairs",
+  "block.varan-deco.dirt_slab": "Dirt Slab",
+  "block.varan-deco.dirt_wall": "Dirt Wall",
+
+  "block.varan-deco.mud_stairs": "Mud Stairs",
+  "block.varan-deco.mud_slab": "Mud Slab",
+  "block.varan-deco.mud_wall": "Mud Wall",
+
+  "block.varan-deco.clay_stairs": "Clay Stairs",
+  "block.varan-deco.clay_slab": "Clay Slab",
+  "block.varan-deco.clay_wall": "Clay Wall",
+
+  "block.varan-deco.coarse_dirt_stairs": "Coarse Dirt Stairs",
+  "block.varan-deco.coarse_dirt_slab": "Coarse Dirt Slab",
+  "block.varan-deco.coarse_dirt_wall": "Coarse Dirt Wall",
+
+  "block.varan-deco.rooted_dirt_stairs": "Rooted Dirt Stairs",
+  "block.varan-deco.rooted_dirt_slab": "Rooted Dirt Slab",
+  "block.varan-deco.rooted_dirt_wall": "Rooted Dirt Wall",
+
+  "block.varan-deco.bone_stairs": "Bone Stairs",
+  "block.varan-deco.bone_slab": "Bone Slab",
+  "block.varan-deco.bone_wall": "Bone Wall",
+
+  "block.varan-deco.bedrock_stairs": "Bedrock Stairs",
+  "block.varan-deco.bedrock_slab": "Bedrock Slab",
+  "block.varan-deco.bedrock_wall": "Bedrock Wall",
+
+  "block.varan-deco.cloud_block": "Cloud Block",
+
+  "block.varan-deco.solid_cloud": "Solid Cloud",
+  "block.varan-deco.cloud_stairs": "Cloud Stairs",
+  "block.varan-deco.cloud_slab": "Cloud Slab",
+  "block.varan-deco.cloud_wall": "Cloud Wall",
+
+  "block.varan-deco.cloud_bricks": "Cloud Bricks",
+  "block.varan-deco.cloud_brick_stairs": "Cloud Brick Stairs",
+  "block.varan-deco.cloud_brick_slab": "Cloud Brick Slab",
+  "block.varan-deco.cloud_brick_wall": "Cloud Brick Wall",
+
+  "block.varan-deco.chiseled_cloud_bricks": "Chiseled Cloud Bricks",
+
+  "block.varan-deco.iron_ladder": "Iron Ladder",
+  "block.varan-deco.golden_ladder": "Golden Ladder",
+
+  "block.varan-deco.copper_ladder": "Copper Ladder",
+  "block.varan-deco.exposed_copper_ladder": "Exposed Copper Ladder",
+  "block.varan-deco.weathered_copper_ladder": "Weathered Copper Ladder",
+  "block.varan-deco.oxidized_copper_ladder": "Oxidized Copper Ladder",
+
+  "block.varan-deco.waxed_copper_ladder": "Waxed Copper Ladder",
+  "block.varan-deco.waxed_exposed_copper_ladder": "Waxed Exposed Copper Ladder",
+  "block.varan-deco.waxed_weathered_copper_ladder": "Waxed Weathered Copper Ladder",
+  "block.varan-deco.waxed_oxidized_copper_ladder": "Waxed Oxidized Copper Ladder",
+
+  "block.varan-deco.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+  "block.varan-deco.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+  "block.varan-deco.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
+
+  "block.varan-deco.cracked_stone_tile_stairs": "Cracked Stone Tile Stairs",
+  "block.varan-deco.cracked_stone_tile_slab": "Cracked Stone Tile Slab",
+  "block.varan-deco.cracked_stone_tile_wall": "Cracked Stone Tile Wall",
+
+  "block.varan-deco.cracked_deepslate_brick_stairs": "Cracked Deepslate Brick Stairs",
+  "block.varan-deco.cracked_deepslate_brick_slab": "Cracked Deepslate Brick Slab",
+  "block.varan-deco.cracked_deepslate_brick_wall": "Cracked Deepslate Brick Wall",
+
+  "block.varan-deco.cracked_deepslate_tile_stairs": "Cracked Deepslate Tile Stairs",
+  "block.varan-deco.cracked_deepslate_tile_slab": "Cracked Deepslate Tile Slab",
+  "block.varan-deco.cracked_deepslate_tile_wall": "Cracked Deepslate Tile Wall",
+
+  "block.varan-deco.cracked_polished_blackstone_brick_stairs": "Cracked Polished Blackstone Brick Stairs",
+  "block.varan-deco.cracked_polished_blackstone_brick_slab": "Cracked Polished Blackstone Brick Slab",
+  "block.varan-deco.cracked_polished_blackstone_brick_wall": "Cracked Polished Blackstone Brick Wall",
+
+  "block.varan-deco.cracked_polished_blackstone_tile_stairs": "Cracked Polished Blackstone Tile Stairs",
+  "block.varan-deco.cracked_polished_blackstone_tile_slab": "Cracked Polished Blackstone Tile Slab",
+  "block.varan-deco.cracked_polished_blackstone_tile_wall": "Cracked Polished Blackstone Tile Wall",
+
+  "block.varan-deco.cracked_end_stone_brick_stairs": "Cracked End Stone Brick Stairs",
+  "block.varan-deco.cracked_end_stone_brick_slab": "Cracked End Stone Brick Slab",
+  "block.varan-deco.cracked_end_stone_brick_wall": "Cracked End Stone Brick Wall",
+
+  "block.varan-deco.cracked_end_stone_tile_stairs": "Cracked End Stone Tile Stairs",
+  "block.varan-deco.cracked_end_stone_tile_slab": "Cracked End Stone Tile Slab",
+  "block.varan-deco.cracked_end_stone_tile_wall": "Cracked End Stone Tile Wall",
+
+  "block.varan-deco.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
+  "block.varan-deco.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
+  "block.varan-deco.cracked_nether_brick_wall": "Cracked Nether Brick Wall",
+
+  "block.varan-deco.cracked_nether_brick_fence": "Cracked Nether Brick Fence",
+  "block.varan-deco.cracked_nether_brick_fence_gate": "Cracked Nether Brick Fence Gate",
+
+  "block.varan-deco.cracked_red_nether_brick_stairs": "Cracked Red Nether Brick Stairs",
+  "block.varan-deco.cracked_red_nether_brick_slab": "Cracked Red Nether Brick Slab",
+  "block.varan-deco.cracked_red_nether_brick_wall": "Cracked Red Nether Brick Wall",
+
+  "block.varan-deco.cracked_red_nether_brick_fence": "Cracked Red Nether Brick Fence",
+  "block.varan-deco.cracked_red_nether_brick_fence_gate": "Cracked Red Nether Brick Fence Gate",
+
+  "block.varan-deco.cracked_blue_nether_brick_stairs": "Cracked Blue Nether Brick Stairs",
+  "block.varan-deco.cracked_blue_nether_brick_slab": "Cracked Blue Nether Brick Slab",
+  "block.varan-deco.cracked_blue_nether_brick_wall": "Cracked Blue Nether Brick Wall",
+
+  "block.varan-deco.cracked_blue_nether_brick_fence": "Cracked Blue Nether Brick Fence",
+  "block.varan-deco.cracked_blue_nether_brick_fence_gate": "Cracked Blue Nether Brick Fence Gate",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
@@ -1458,6 +1580,6 @@
   "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.strong_bubble_potion": "Arrow of The Water Bubble",
-  
+
   "itemGroup.varan-deco.varan_deco_blocks": "Variant Decoration"
 }

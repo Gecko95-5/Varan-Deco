@@ -45,6 +45,10 @@ public class DecoOxidizableBlocks {
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_SLAB, DecoBlocks.WEATHERED_COPPER_SLAB);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_SLAB, DecoBlocks.OXIDIZED_COPPER_SLAB);
 
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.COPPER_LADDER, DecoBlocks.EXPOSED_COPPER_LADDER);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.EXPOSED_COPPER_LADDER, DecoBlocks.WEATHERED_COPPER_LADDER);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(DecoBlocks.WEATHERED_COPPER_LADDER, DecoBlocks.OXIDIZED_COPPER_LADDER);
+
     }
     public static void registerWaxableBlocks(){
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.HEAVY_COPPER_BARS, DecoBlocks.WAXED_HEAVY_COPPER_BARS);
@@ -91,5 +95,10 @@ public class DecoOxidizableBlocks {
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_SLAB, DecoBlocks.WAXED_EXPOSED_COPPER_SLAB);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_SLAB, DecoBlocks.WAXED_WEATHERED_COPPER_SLAB);
         OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_SLAB, DecoBlocks.WAXED_OXIDIZED_COPPER_SLAB);
+
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.COPPER_LADDER, DecoBlocks.WAXED_COPPER_LADDER);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.EXPOSED_COPPER_LADDER, DecoBlocks.WAXED_EXPOSED_COPPER_LADDER);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.WEATHERED_COPPER_LADDER, DecoBlocks.WAXED_WEATHERED_COPPER_LADDER);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(DecoBlocks.OXIDIZED_COPPER_LADDER, DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER);
     }
 }
