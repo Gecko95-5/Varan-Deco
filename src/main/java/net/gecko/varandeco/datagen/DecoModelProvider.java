@@ -102,11 +102,15 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.QUARTZ_BRICKS_TEMP);
         BlockStateModelGenerator.BlockTexturePool cutquartzpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_QUARTZ);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_RED_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cracknetherpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_NETHER_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool crackrednetherpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_RED_NETHER_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_RED_NETHER_BRICKS);
         BlockStateModelGenerator.BlockTexturePool bluenetherpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLUE_NETHER_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackbluenetherpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS);
         BlockStateModelGenerator.BlockTexturePool smoothdeepslatepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_DEEPSLATE);
@@ -135,8 +139,18 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHARCOAL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.FLINT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ECHO_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_STONE_TILES);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackstonebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_STONE_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool crackstonetilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackblackstonebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool crackblackstonetilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackdeepbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_DEEPSLATE_BRICKS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool crackdeeptilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_DEEPSLATE_TILES_TEMP);
         BlockStateModelGenerator.BlockTexturePool cutironpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_IRON);
         BlockStateModelGenerator.BlockTexturePool polishedeepslatepool =
@@ -604,8 +618,10 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool endstonetilepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.END_STONE_TILES);
 
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CRACKED_END_STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackendstonebrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_END_STONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackendstonetilepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_END_STONE_TILES);
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CLOUD_BLOCK);
 
@@ -1125,6 +1141,56 @@ public class DecoModelProvider extends FabricModelProvider {
         cloudbrickpool.stairs(DecoBlocks.CLOUD_BRICK_STAIRS);
         cloudbrickpool.slab(DecoBlocks.CLOUD_BRICK_SLAB);
         cloudbrickpool.wall(DecoBlocks.CLOUD_BRICK_WALL);
+
+        crackstonebrickpool.stairs(DecoBlocks.CRACKED_STONE_BRICK_STAIRS);
+        crackstonebrickpool.slab(DecoBlocks.CRACKED_STONE_BRICK_SLAB);
+        crackstonebrickpool.wall(DecoBlocks.CRACKED_STONE_BRICK_WALL);
+
+        crackstonetilepool.stairs(DecoBlocks.CRACKED_STONE_TILE_STAIRS);
+        crackstonetilepool.slab(DecoBlocks.CRACKED_STONE_TILE_SLAB);
+        crackstonetilepool.wall(DecoBlocks.CRACKED_STONE_TILE_WALL);
+
+        crackblackstonebrickpool.stairs(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
+        crackblackstonebrickpool.slab(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
+        crackblackstonebrickpool.wall(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
+
+        crackblackstonetilepool.stairs(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS);
+        crackblackstonetilepool.slab(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB);
+        crackblackstonetilepool.wall(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_WALL);
+
+        crackdeepbrickpool.stairs(DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
+        crackdeepbrickpool.slab(DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB);
+        crackdeepbrickpool.wall(DecoBlocks.CRACKED_DEEPSLATE_BRICK_WALL);
+
+        crackdeeptilepool.stairs(DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
+        crackdeeptilepool.slab(DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB);
+        crackdeeptilepool.wall(DecoBlocks.CRACKED_DEEPSLATE_TILE_WALL);
+
+        crackendstonebrickpool.stairs(DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS);
+        crackendstonebrickpool.slab(DecoBlocks.CRACKED_END_STONE_BRICK_SLAB);
+        crackendstonebrickpool.wall(DecoBlocks.CRACKED_END_STONE_BRICK_WALL);
+
+        crackendstonetilepool.stairs(DecoBlocks.CRACKED_END_STONE_TILE_STAIRS);
+        crackendstonetilepool.slab(DecoBlocks.CRACKED_END_STONE_TILE_SLAB);
+        crackendstonetilepool.wall(DecoBlocks.CRACKED_END_STONE_TILE_WALL);
+
+        cracknetherpool.stairs(DecoBlocks.CRACKED_NETHER_BRICK_STAIRS);
+        cracknetherpool.slab(DecoBlocks.CRACKED_NETHER_BRICK_SLAB);
+        cracknetherpool.wall(DecoBlocks.CRACKED_NETHER_BRICK_WALL);
+        cracknetherpool.fence(DecoBlocks.CRACKED_NETHER_BRICK_FENCE);
+        cracknetherpool.fenceGate(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE);
+
+        crackrednetherpool.stairs(DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
+        crackrednetherpool.slab(DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB);
+        crackrednetherpool.wall(DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL);
+        crackrednetherpool.fence(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
+        crackrednetherpool.fenceGate(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
+
+        crackbluenetherpool.stairs(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+        crackbluenetherpool.slab(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
+        crackbluenetherpool.wall(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+        crackbluenetherpool.fence(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+        crackbluenetherpool.fenceGate(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

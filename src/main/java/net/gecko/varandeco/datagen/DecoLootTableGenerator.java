@@ -1266,7 +1266,7 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.END_STONE_SMOKER);
         addDrop(DecoBlocks.END_STONE_STONECUTTER);
         addDrop(DecoBlocks.END_STONE_GRINDSTONE);
-        
+
         addDrop(DecoBlocks.PACKED_GRASS);
         addDrop(DecoBlocks.PACKED_MYCELIUM);
         addDrop(DecoBlocks.PACKED_PODZOL);
@@ -1383,5 +1383,57 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.MAGENTA_WOOL_SLAB, slabDrops(DecoBlocks.MAGENTA_WOOL_SLAB));
         addDrop(DecoBlocks.PINK_WOOL_STAIRS);
         addDrop(DecoBlocks.PINK_WOOL_SLAB, slabDrops(DecoBlocks.PINK_WOOL_SLAB));
+
+        addDrop(DecoBlocks.CRACKED_STONE_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_STONE_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_STONE_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_STONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_STONE_TILE_STAIRS);
+        addDrop(DecoBlocks.CRACKED_STONE_TILE_SLAB, slabDrops(DecoBlocks.CRACKED_STONE_TILE_SLAB));
+        addDrop(DecoBlocks.CRACKED_STONE_TILE_WALL);
+
+        addDrop(DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_DEEPSLATE_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
+        addDrop(DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB, slabDrops(DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB));
+        addDrop(DecoBlocks.CRACKED_DEEPSLATE_TILE_WALL);
+
+        addDrop(DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_END_STONE_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_END_STONE_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_END_STONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_END_STONE_TILE_STAIRS);
+        addDrop(DecoBlocks.CRACKED_END_STONE_TILE_SLAB, slabDrops(DecoBlocks.CRACKED_END_STONE_TILE_SLAB));
+        addDrop(DecoBlocks.CRACKED_END_STONE_TILE_WALL);
+
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS);
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB, slabDrops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB));
+        addDrop(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_WALL);
+
+        addDrop(DecoBlocks.CRACKED_NETHER_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_NETHER_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_NETHER_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_NETHER_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+        addDrop(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, slabDrops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB));
+        addDrop(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+
+        addDrop(DecoBlocks.CRACKED_NETHER_BRICK_FENCE);
+        addDrop(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
+        addDrop(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+
+        addDrop(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE);
+        addDrop(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
+        addDrop(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
     }
 }

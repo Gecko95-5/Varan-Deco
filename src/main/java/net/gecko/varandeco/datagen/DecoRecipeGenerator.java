@@ -6025,6 +6025,301 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.PINK_WOOL_STAIRS)));
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PINK_WOOL_SLAB, Items.PINK_WOOL);
+
+        createStairsRecipe(DecoBlocks.CRACKED_STONE_BRICK_STAIRS, Ingredient.ofItems(Items.CRACKED_STONE_BRICKS))
+                .criterion(hasItem(Items.CRACKED_STONE_BRICKS),conditionsFromItem(Items.CRACKED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_STONE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_BRICK_STAIRS, Items.CRACKED_STONE_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_BRICK_SLAB, Items.CRACKED_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_BRICK_SLAB, Items.CRACKED_STONE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_STONE_BRICK_WALL, Items.CRACKED_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_BRICK_WALL, Items.CRACKED_STONE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS, Ingredient.ofItems(Items.CRACKED_DEEPSLATE_BRICKS))
+                .criterion(hasItem(Items.CRACKED_DEEPSLATE_BRICKS),conditionsFromItem(Items.CRACKED_DEEPSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS, Items.CRACKED_DEEPSLATE_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB, Items.CRACKED_DEEPSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB, Items.CRACKED_DEEPSLATE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_WALL, Items.CRACKED_DEEPSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_WALL, Items.CRACKED_DEEPSLATE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS, Ingredient.ofItems(Items.CRACKED_DEEPSLATE_TILES))
+                .criterion(hasItem(Items.CRACKED_DEEPSLATE_TILES),conditionsFromItem(Items.CRACKED_DEEPSLATE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS, Items.CRACKED_DEEPSLATE_TILES);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB, Items.CRACKED_DEEPSLATE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB, Items.CRACKED_DEEPSLATE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_DEEPSLATE_TILE_WALL, Items.CRACKED_DEEPSLATE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_TILE_WALL, Items.CRACKED_DEEPSLATE_TILES);
+
+        createStairsRecipe(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Ingredient.ofItems(Items.CRACKED_POLISHED_BLACKSTONE_BRICKS))
+                .criterion(hasItem(Items.CRACKED_POLISHED_BLACKSTONE_BRICKS),conditionsFromItem(Items.CRACKED_POLISHED_BLACKSTONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Items.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Items.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Items.CRACKED_POLISHED_BLACKSTONE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, Items.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, Items.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.CRACKED_NETHER_BRICK_STAIRS, Ingredient.ofItems(Items.CRACKED_NETHER_BRICKS))
+                .criterion(hasItem(Items.CRACKED_NETHER_BRICKS),conditionsFromItem(Items.CRACKED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_NETHER_BRICK_STAIRS, Items.CRACKED_NETHER_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_NETHER_BRICK_SLAB, Items.CRACKED_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_NETHER_BRICK_SLAB, Items.CRACKED_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_NETHER_BRICK_WALL, Items.CRACKED_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_NETHER_BRICK_WALL, Items.CRACKED_NETHER_BRICKS);
+
+        createStairsRecipe(DecoBlocks.CRACKED_STONE_TILE_STAIRS, Ingredient.ofItems(DecoBlocks.CRACKED_STONE_TILES))
+                .criterion(hasItem(DecoBlocks.CRACKED_STONE_TILES),conditionsFromItem(DecoBlocks.CRACKED_STONE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_STONE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_TILE_STAIRS, DecoBlocks.CRACKED_STONE_TILES);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_TILE_SLAB, DecoBlocks.CRACKED_STONE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_TILE_SLAB, DecoBlocks.CRACKED_STONE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_STONE_TILE_WALL, DecoBlocks.CRACKED_STONE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_TILE_WALL, DecoBlocks.CRACKED_STONE_TILES);
+
+        createStairsRecipe(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS, Ingredient.ofItems(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES))
+                .criterion(hasItem(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES),conditionsFromItem(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_WALL, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_WALL, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES);
+
+        createStairsRecipe(DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.CRACKED_END_STONE_BRICKS))
+                .criterion(hasItem(DecoBlocks.CRACKED_END_STONE_BRICKS),conditionsFromItem(DecoBlocks.CRACKED_END_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS, DecoBlocks.CRACKED_END_STONE_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_BRICK_SLAB, DecoBlocks.CRACKED_END_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_BRICK_SLAB, DecoBlocks.CRACKED_END_STONE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_END_STONE_BRICK_WALL, DecoBlocks.CRACKED_END_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_BRICK_WALL, DecoBlocks.CRACKED_END_STONE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.CRACKED_END_STONE_TILE_STAIRS, Ingredient.ofItems(DecoBlocks.CRACKED_END_STONE_TILES))
+                .criterion(hasItem(DecoBlocks.CRACKED_END_STONE_TILES),conditionsFromItem(DecoBlocks.CRACKED_END_STONE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_END_STONE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_TILE_STAIRS, DecoBlocks.CRACKED_END_STONE_TILES);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_TILE_SLAB, DecoBlocks.CRACKED_END_STONE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_TILE_SLAB, DecoBlocks.CRACKED_END_STONE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_END_STONE_TILE_WALL, DecoBlocks.CRACKED_END_STONE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_TILE_WALL, DecoBlocks.CRACKED_END_STONE_TILES);
+
+        createStairsRecipe(DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.CRACKED_RED_NETHER_BRICKS))
+                .criterion(hasItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS),conditionsFromItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, DecoBlocks.CRACKED_RED_NETHER_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB, DecoBlocks.CRACKED_RED_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB, DecoBlocks.CRACKED_RED_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL, DecoBlocks.CRACKED_RED_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL, DecoBlocks.CRACKED_RED_NETHER_BRICKS);
+
+        createStairsRecipe(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
+                .criterion(hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, DecoBlocks.CRACKED_BLUE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, DecoBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.STONE_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.STONE_BRICK_STAIRS), conditionsFromItem(Items.STONE_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_stone_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.STONE_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.STONE_BRICK_SLAB), conditionsFromItem(Items.STONE_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_stone_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.STONE_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_STONE_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(Items.STONE_BRICK_WALL), conditionsFromItem(Items.STONE_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_stone_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.POLISHED_BLACKSTONE_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.POLISHED_BLACKSTONE_BRICK_STAIRS), conditionsFromItem(Items.POLISHED_BLACKSTONE_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_polished_blackstone_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.POLISHED_BLACKSTONE_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.POLISHED_BLACKSTONE_BRICK_SLAB), conditionsFromItem(Items.POLISHED_BLACKSTONE_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_polished_blackstone_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.POLISHED_BLACKSTONE_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(Items.POLISHED_BLACKSTONE_BRICK_WALL), conditionsFromItem(Items.POLISHED_BLACKSTONE_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_polished_blackstone_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE_BRICK_STAIRS), conditionsFromItem(Items.DEEPSLATE_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_deepslate_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE_BRICK_SLAB), conditionsFromItem(Items.DEEPSLATE_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_deepslate_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_DEEPSLATE_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE_BRICK_WALL), conditionsFromItem(Items.DEEPSLATE_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_deepslate_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.NETHER_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_NETHER_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.NETHER_BRICK_STAIRS), conditionsFromItem(Items.NETHER_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_nether_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.NETHER_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_NETHER_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.NETHER_BRICK_SLAB), conditionsFromItem(Items.NETHER_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_nether_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.NETHER_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_NETHER_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(Items.NETHER_BRICK_WALL), conditionsFromItem(Items.NETHER_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_nether_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.NETHER_BRICK_FENCE), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_NETHER_BRICK_FENCE,
+                        0.1f, 200).criterion(hasItem(Items.NETHER_BRICK_FENCE), conditionsFromItem(Items.NETHER_BRICK_FENCE))
+                .offerTo(exporter, new Identifier("cracked_nether_brick_fence_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.NETHER_BRICK_FENCE_GATE), RecipeCategory.REDSTONE, DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.NETHER_BRICK_FENCE_GATE), conditionsFromItem(DecoBlocks.NETHER_BRICK_FENCE_GATE))
+                .offerTo(exporter, new Identifier("cracked_nether_brick_fence_gate_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_NETHER_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.RED_NETHER_BRICK_STAIRS), conditionsFromItem(Items.RED_NETHER_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_red_nether_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_NETHER_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.RED_NETHER_BRICK_SLAB), conditionsFromItem(Items.RED_NETHER_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_red_nether_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_NETHER_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(Items.RED_NETHER_BRICK_WALL), conditionsFromItem(Items.RED_NETHER_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_red_nether_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.RED_NETHER_BRICK_FENCE), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.RED_NETHER_BRICK_FENCE), conditionsFromItem(DecoBlocks.RED_NETHER_BRICK_FENCE))
+                .offerTo(exporter, new Identifier("cracked_red_nether_brick_fence_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE), RecipeCategory.REDSTONE, DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE), conditionsFromItem(DecoBlocks.RED_NETHER_BRICK_FENCE_GATE))
+                .offerTo(exporter, new Identifier("cracked_red_nether_brick_fence_gate_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICK_STAIRS), conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_blue_nether_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICK_SLAB), conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_blue_nether_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICK_WALL), conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_blue_nether_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICK_FENCE), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICK_FENCE), conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICK_FENCE))
+                .offerTo(exporter, new Identifier("cracked_blue_nether_brick_fence_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE), RecipeCategory.REDSTONE, DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE), conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE))
+                .offerTo(exporter, new Identifier("cracked_blue_nether_brick_fence_gate_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE_TILE_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE_TILE_STAIRS), conditionsFromItem(Items.DEEPSLATE_TILE_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_deepslate_tile_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE_TILE_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE_TILE_SLAB), conditionsFromItem(Items.DEEPSLATE_TILE_SLAB))
+                .offerTo(exporter, new Identifier("cracked_deepslate_tile_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.DEEPSLATE_TILE_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_DEEPSLATE_TILE_WALL,
+                        0.1f, 200).criterion(hasItem(Items.DEEPSLATE_TILE_WALL), conditionsFromItem(Items.DEEPSLATE_TILE_WALL))
+                .offerTo(exporter, new Identifier("cracked_deepslate_tile_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.END_STONE_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS,
+                        0.1f, 200).criterion(hasItem(Items.END_STONE_BRICK_STAIRS), conditionsFromItem(Items.END_STONE_BRICK_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_end_stone_brick_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.END_STONE_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_BRICK_SLAB,
+                        0.1f, 200).criterion(hasItem(Items.END_STONE_BRICK_SLAB), conditionsFromItem(Items.END_STONE_BRICK_SLAB))
+                .offerTo(exporter, new Identifier("cracked_end_stone_brick_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.END_STONE_BRICK_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_END_STONE_BRICK_WALL,
+                        0.1f, 200).criterion(hasItem(Items.END_STONE_BRICK_WALL), conditionsFromItem(Items.END_STONE_BRICK_WALL))
+                .offerTo(exporter, new Identifier("cracked_end_stone_brick_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.STONE_TILE_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_TILE_STAIRS,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.STONE_TILE_STAIRS), conditionsFromItem(DecoBlocks.STONE_TILE_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_stone_tile_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.STONE_TILE_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_STONE_TILE_SLAB,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.STONE_TILE_SLAB), conditionsFromItem(DecoBlocks.STONE_TILE_SLAB))
+                .offerTo(exporter, new Identifier("cracked_stone_tile_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.STONE_TILE_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_STONE_TILE_WALL,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.STONE_TILE_WALL), conditionsFromItem(DecoBlocks.STONE_TILE_WALL))
+                .offerTo(exporter, new Identifier("cracked_stone_tile_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS), conditionsFromItem(DecoBlocks.POLISHED_BLACKSTONE_TILE_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_polished_blackstone_tile_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB), conditionsFromItem(DecoBlocks.POLISHED_BLACKSTONE_TILE_SLAB))
+                .offerTo(exporter, new Identifier("cracked_polished_blackstone_tile_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_WALL,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL), conditionsFromItem(DecoBlocks.POLISHED_BLACKSTONE_TILE_WALL))
+                .offerTo(exporter, new Identifier("cracked_polished_blackstone_tile_wall_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.END_STONE_TILE_STAIRS), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_TILE_STAIRS,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.END_STONE_TILE_STAIRS), conditionsFromItem(DecoBlocks.END_STONE_TILE_STAIRS))
+                .offerTo(exporter, new Identifier("cracked_end_stone_tile_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.END_STONE_TILE_SLAB), RecipeCategory.BUILDING_BLOCKS, DecoBlocks.CRACKED_END_STONE_TILE_SLAB,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.END_STONE_TILE_SLAB), conditionsFromItem(DecoBlocks.END_STONE_TILE_SLAB))
+                .offerTo(exporter, new Identifier("cracked_end_stone_tile_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.END_STONE_TILE_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_END_STONE_TILE_WALL,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.END_STONE_TILE_WALL), conditionsFromItem(DecoBlocks.END_STONE_TILE_WALL))
+                .offerTo(exporter, new Identifier("cracked_end_stone_tile_wall_from_smelting"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.BELL)
+                .input('#', Items.GOLD_NUGGET)
+                .input('I', Items.GOLD_INGOT)
+                .input('/', Items.STICK)
+                .pattern("///")
+                .pattern("I#I")
+                .pattern(" I ")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.BELL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.CRACKED_NETHER_BRICK_FENCE,6)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', Items.CRACKED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.CRACKED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(Items.CRACKED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_NETHER_BRICK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE,6)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_RED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE,6)
+                .pattern("#/#")
+                .pattern("#/#")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', Items.CRACKED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.CRACKED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(Items.CRACKED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_RED_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_RED_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)
+                .pattern("/#/")
+                .pattern("/#/")
+                .input('/', Items.NETHER_BRICK)
+                .input('#', DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

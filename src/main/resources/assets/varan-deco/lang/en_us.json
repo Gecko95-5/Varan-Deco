@@ -1513,6 +1513,59 @@
   "block.varan-deco.waxed_weathered_copper_ladder": "Waxed Weathered Copper Ladder",
   "block.varan-deco.waxed_oxidized_copper_ladder": "Waxed Oxidized Copper Ladder",
 
+  "block.varan-deco.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+  "block.varan-deco.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+  "block.varan-deco.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
+
+  "block.varan-deco.cracked_stone_tile_stairs": "Cracked Stone Tile Stairs",
+  "block.varan-deco.cracked_stone_tile_slab": "Cracked Stone Tile Slab",
+  "block.varan-deco.cracked_stone_tile_wall": "Cracked Stone Tile Wall",
+
+  "block.varan-deco.cracked_deepslate_brick_stairs": "Cracked Deepslate Brick Stairs",
+  "block.varan-deco.cracked_deepslate_brick_slab": "Cracked Deepslate Brick Slab",
+  "block.varan-deco.cracked_deepslate_brick_wall": "Cracked Deepslate Brick Wall",
+
+  "block.varan-deco.cracked_deepslate_tile_stairs": "Cracked Deepslate Tile Stairs",
+  "block.varan-deco.cracked_deepslate_tile_slab": "Cracked Deepslate Tile Slab",
+  "block.varan-deco.cracked_deepslate_tile_wall": "Cracked Deepslate Tile Wall",
+
+  "block.varan-deco.cracked_polished_blackstone_brick_stairs": "Cracked Polished Blackstone Brick Stairs",
+  "block.varan-deco.cracked_polished_blackstone_brick_slab": "Cracked Polished Blackstone Brick Slab",
+  "block.varan-deco.cracked_polished_blackstone_brick_wall": "Cracked Polished Blackstone Brick Wall",
+
+  "block.varan-deco.cracked_polished_blackstone_tile_stairs": "Cracked Polished Blackstone Tile Stairs",
+  "block.varan-deco.cracked_polished_blackstone_tile_slab": "Cracked Polished Blackstone Tile Slab",
+  "block.varan-deco.cracked_polished_blackstone_tile_wall": "Cracked Polished Blackstone Tile Wall",
+
+  "block.varan-deco.cracked_end_stone_brick_stairs": "Cracked End Stone Brick Stairs",
+  "block.varan-deco.cracked_end_stone_brick_slab": "Cracked End Stone Brick Slab",
+  "block.varan-deco.cracked_end_stone_brick_wall": "Cracked End Stone Brick Wall",
+
+  "block.varan-deco.cracked_end_stone_tile_stairs": "Cracked End Stone Tile Stairs",
+  "block.varan-deco.cracked_end_stone_tile_slab": "Cracked End Stone Tile Slab",
+  "block.varan-deco.cracked_end_stone_tile_wall": "Cracked End Stone Tile Wall",
+
+  "block.varan-deco.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
+  "block.varan-deco.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
+  "block.varan-deco.cracked_nether_brick_wall": "Cracked Nether Brick Wall",
+
+  "block.varan-deco.cracked_nether_brick_fence": "Cracked Nether Brick Fence",
+  "block.varan-deco.cracked_nether_brick_fence_gate": "Cracked Nether Brick Fence Gate",
+
+  "block.varan-deco.cracked_red_nether_brick_stairs": "Cracked Red Nether Brick Stairs",
+  "block.varan-deco.cracked_red_nether_brick_slab": "Cracked Red Nether Brick Slab",
+  "block.varan-deco.cracked_red_nether_brick_wall": "Cracked Red Nether Brick Wall",
+
+  "block.varan-deco.cracked_red_nether_brick_fence": "Cracked Red Nether Brick Fence",
+  "block.varan-deco.cracked_red_nether_brick_fence_gate": "Cracked Red Nether Brick Fence Gate",
+
+  "block.varan-deco.cracked_blue_nether_brick_stairs": "Cracked Blue Nether Brick Stairs",
+  "block.varan-deco.cracked_blue_nether_brick_slab": "Cracked Blue Nether Brick Slab",
+  "block.varan-deco.cracked_blue_nether_brick_wall": "Cracked Blue Nether Brick Wall",
+
+  "block.varan-deco.cracked_blue_nether_brick_fence": "Cracked Blue Nether Brick Fence",
+  "block.varan-deco.cracked_blue_nether_brick_fence_gate": "Cracked Blue Nether Brick Fence Gate",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

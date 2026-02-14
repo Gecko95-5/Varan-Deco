@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "varan-deco:cracked_blue_nether_bricks"
+    },
+    "/": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 6,
+    "item": "varan-deco:cracked_blue_nether_brick_fence"
+  }
+}
