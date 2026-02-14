@@ -106,6 +106,17 @@
     "varan-deco:bone_slab",
     "varan-deco:cloud_slab",
     "varan-deco:cloud_brick_slab",
-    "#varan-deco:wool_slabs"
+    "#varan-deco:wool_slabs",
+    "varan-deco:cracked_stone_brick_slab",
+    "varan-deco:cracked_stone_tile_slab",
+    "varan-deco:cracked_deepslate_brick_slab",
+    "varan-deco:cracked_deepslate_tile_slab",
+    "varan-deco:cracked_polished_blackstone_brick_slab",
+    "varan-deco:cracked_polished_blackstone_tile_slab",
+    "varan-deco:cracked_end_stone_brick_slab",
+    "varan-deco:cracked_end_stone_tile_slab",
+    "varan-deco:cracked_nether_brick_slab",
+    "varan-deco:cracked_red_nether_brick_slab",
+    "varan-deco:cracked_blue_nether_brick_slab"
   ]
 }
