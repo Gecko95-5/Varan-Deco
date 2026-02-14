@@ -2553,5 +2553,96 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.PINK_WOOL_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/pink_wool_slab"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.PINK_WOOL_SLAB));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_STONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_STONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_STONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_tile_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_STONE_TILE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_tile_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_STONE_TILE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_stone_tile_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_STONE_TILE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_deepslate_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_deepslate_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_DEEPSLATE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_deepslate_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_DEEPSLATE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_deepslate_tile_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_DEEPSLATE_TILE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_deepslate_tile_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_DEEPSLATE_TILE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_deepslate_tile_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_DEEPSLATE_TILE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_END_STONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_END_STONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_END_STONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_tile_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_END_STONE_TILE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_tile_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_END_STONE_TILE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_end_stone_tile_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_END_STONE_TILE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_tile_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_tile_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_polished_blackstone_tile_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILE_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_nether_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_NETHER_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_nether_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_NETHER_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_nether_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_NETHER_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_red_nether_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_red_nether_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_red_nether_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL));
+        
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_nether_brick_fence"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_NETHER_BRICK_FENCE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_red_nether_brick_fence"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_brick_fence"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_nether_brick_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_red_nether_brick_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_brick_fence_gate"),
+                BlockLootTableGenerator.drops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE));
     }
 }

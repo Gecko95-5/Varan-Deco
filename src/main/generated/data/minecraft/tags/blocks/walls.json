@@ -97,6 +97,17 @@
     "varan-deco:clay_wall",
     "varan-deco:bone_wall",
     "varan-deco:cloud_wall",
-    "varan-deco:cloud_brick_wall"
+    "varan-deco:cloud_brick_wall",
+    "varan-deco:cracked_stone_brick_wall",
+    "varan-deco:cracked_stone_tile_wall",
+    "varan-deco:cracked_deepslate_brick_wall",
+    "varan-deco:cracked_deepslate_tile_wall",
+    "varan-deco:cracked_polished_blackstone_brick_wall",
+    "varan-deco:cracked_polished_blackstone_tile_wall",
+    "varan-deco:cracked_end_stone_brick_wall",
+    "varan-deco:cracked_end_stone_tile_wall",
+    "varan-deco:cracked_nether_brick_wall",
+    "varan-deco:cracked_red_nether_brick_wall",
+    "varan-deco:cracked_blue_nether_brick_wall"
   ]
 }
