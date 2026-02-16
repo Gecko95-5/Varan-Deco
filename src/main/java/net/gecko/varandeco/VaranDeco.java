@@ -11,6 +11,7 @@ import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.item.DecoItems;
 import net.gecko.varandeco.potion.DecoPotion;
 import net.gecko.varandeco.util.*;
+import net.gecko.varandeco.effects.DecoStatusEffects;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
@@ -40,6 +41,7 @@ public class VaranDeco implements ModInitializer {
 		DecoLootTableModifiers.modifyLootTables();
 		DecoComposterRecipes.registerCompostableItems();
 		DecoEntities.registerDecoEntities();
+        DecoStatusEffects.registerStatusEffects();
 
 		FuelRegistry.INSTANCE.add(DecoBlocks.CHARCOAL_BLOCK,16000);
 		FuelRegistry.INSTANCE.add(DecoTags.Items.WOODEN_CRAFTING_TABLES,300);
@@ -65,6 +67,9 @@ public class VaranDeco implements ModInitializer {
 			builder.registerPotionRecipe(Potions.LONG_WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.LONG_WATER_BUBBLE_POTION);
 			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
 			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_WATER_BUBBLE_POTION);
+            builder.registerPotionRecipe(Potions.AWKWARD, DecoItems.EARTH_SPHERE, DecoPotion.GROUNDING_POTION);
+            builder.registerPotionRecipe(DecoPotion.GROUNDING_POTION, Items.REDSTONE, DecoPotion.LONG_GROUNDING_POTION);
+            builder.registerPotionRecipe(DecoPotion.GROUNDING_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_GROUNDING_POTION);
 			builder.registerPotionRecipe(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
 		});
 	}

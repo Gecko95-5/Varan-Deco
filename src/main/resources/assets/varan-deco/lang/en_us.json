@@ -2090,6 +2090,8 @@
   "block.varan-deco.cracked_tuff_tile_slab": "Cracked Tuff Tile Slab",
   "block.varan-deco.cracked_tuff_tile_wall": "Cracked Tuff Tile Wall",
 
+  "effect.varan-deco.grounded": "Grounded",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
@@ -2104,6 +2106,21 @@
   "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.strong_bubble_potion": "Arrow of The Water Bubble",
+
+  "item.minecraft.potion.effect.grounding_potion": "Potion of Grounding",
+  "item.minecraft.splash_potion.effect.grounding_potion": "Splash Potion of Grounding",
+  "item.minecraft.lingering_potion.effect.grounding_potion": "Lingering Potion of Grounding",
+  "item.minecraft.tipped_arrow.effect.grounding_potion": "Arrow of Grounding",
+
+  "item.minecraft.potion.effect.long_grounding_potion": "Potion of Grounding",
+  "item.minecraft.splash_potion.effect.long_grounding_potion": "Splash Potion of Grounding",
+  "item.minecraft.lingering_potion.effect.long_grounding_potion": "Lingering Potion of Grounding",
+  "item.minecraft.tipped_arrow.effect.long_grounding_potion": "Arrow of Grounding",
+
+  "item.minecraft.potion.effect.strong_grounding_potion": "Potion of Grounding",
+  "item.minecraft.splash_potion.effect.strong_grounding_potion": "Splash Potion of Grounding",
+  "item.minecraft.lingering_potion.effect.strong_grounding_potion": "Lingering Potion of Grounding",
+  "item.minecraft.tipped_arrow.effect.strong_grounding_potion": "Arrow of Grounding",
 
   "itemgroup.varan_deco_blocks": "Variant Decoration"
 }
