@@ -19,6 +19,7 @@ import net.gecko.varandeco.block.woodmadeblocks.barrel.*;
 import net.gecko.varandeco.block.woodmadeblocks.cartographytables.*;
 import net.gecko.varandeco.block.woodmadeblocks.craftingtables.*;
 import net.gecko.varandeco.block.woodmadeblocks.smithingtables.*;
+import net.gecko.varandeco.effects.DecoStatusEffects;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
@@ -1810,6 +1811,10 @@ public class DecoBlocks {
             StatusEffects.SPEED, 5,Blocks.BLUE_ORCHID);
     public static final Block POTTED_POPPED_BLUET = registerFlowerPot("potted_popped_bluet",
             POPPED_BLUET, Blocks.POTTED_BLUE_ORCHID);
+    public static final Block HAZZY_BLUET = registerDesertFlower("hazzy_bluet",
+            StatusEffects.DARKNESS, 5,Blocks.BLUE_ORCHID);
+    public static final Block POTTED_HAZZY_BLUET = registerFlowerPot("potted_hazzy_bluet",
+            HAZZY_BLUET, Blocks.POTTED_BLUE_ORCHID);
 
     public static final Block YELLOW_TULIP = registerFlower("yellow_tulip",
             StatusEffects.WEAKNESS, 7, Blocks.RED_TULIP);
@@ -1871,6 +1876,10 @@ public class DecoBlocks {
             StatusEffects.HASTE,5, Blocks.POPPY);
     public static final Block POTTED_LAVENDER = registerFlowerPot("potted_lavender",
             LAVENDER,Blocks.POTTED_POPPY);
+    public static final Block DRILL_LAVENDER = registerFlower("drill_lavender",
+            DecoStatusEffects.GROUNDED,7, DecoBlocks.LAVENDER);
+    public static final Block POTTED_DRILL_LAVENDER = registerFlowerPot("potted_drill_lavender",
+            DRILL_LAVENDER,DecoBlocks.LAVENDER);
 
     public static final Block BLUE_HIBISCUS = registerFlower("blue_hibiscus",
                 StatusEffects.ABSORPTION,7, Blocks.POPPY);

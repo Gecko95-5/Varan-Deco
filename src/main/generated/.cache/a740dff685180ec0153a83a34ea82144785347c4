@@ -8,7 +8,7 @@ b5a9a47e729506a1fe366b220d75d708c5463227 data/minecraft/tags/block/dragon_immune
 2c1697e2fb2e8dccf7b6ab5089aeee4afe0d80b3 data/minecraft/tags/block/enderman_holdable.json
 4c16c98c5420fcff6e1fc4ce0fd49971e10242b7 data/minecraft/tags/block/fence_gates.json
 254468eceeed9c2e4f26346d153f1132ebea331f data/minecraft/tags/block/fences.json
-3c978242bbc590a546130a7045f94f1bca76093d data/minecraft/tags/block/flower_pots.json
+fd3639410de01a0e9eab13b016d6836eaad5f02e data/minecraft/tags/block/flower_pots.json
 4f9854af73d731877f894001c4dd6da941c9035a data/minecraft/tags/block/flowers.json
 400cb820962bff0d92095c4b962722e603d0f232 data/minecraft/tags/block/guarded_by_piglins.json
 e679dfca792e4ebae644965689391497d194529c data/minecraft/tags/block/ice.json
@@ -31,7 +31,7 @@ ba534b68a8b6997db1f0bded0aa2321c824d3213 data/minecraft/tags/block/piglin_repell
 f35376a6bf06ba120e497430b3ab638b5b79f26a data/minecraft/tags/block/saplings.json
 c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replaceable.json
 84fc42fd901269e1810ef391f385cf6f6776c3a7 data/minecraft/tags/block/slabs.json
-72caa96d1607bb17b21e9f866f3e8b7b14904bff data/minecraft/tags/block/small_flowers.json
+7418046c136260971777aad367ad50c9de6285bc data/minecraft/tags/block/small_flowers.json
 73d66f372d8c4d1b45f3aa477fbb0a97cfa88b10 data/minecraft/tags/block/snaps_goat_horn.json
 2b1cf933b140a1bf229504c154469b32bc03f95d data/minecraft/tags/block/snow.json
 ed1adce6a84768b565d2a59ac7f50296d184c69d data/minecraft/tags/block/snow_layer_cannot_survive_on.json

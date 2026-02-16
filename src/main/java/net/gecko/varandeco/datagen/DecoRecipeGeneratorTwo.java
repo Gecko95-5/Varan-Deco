@@ -15,7 +15,6 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -2984,7 +2983,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .pattern("###")
                         .input('#', Items.NETHERRACK)
                         .input('0', DecoItems.EARTH_SPHERE)
-                        .input('B', Items.WARPED_ROOTS)
+                        .input('R', Items.WARPED_ROOTS)
                         .group("nyliums")
                         .criterion(hasItem(DecoItems.EARTH_SPHERE),
                                 conditionsFromItem(DecoItems.EARTH_SPHERE))
@@ -2999,7 +2998,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .group("packed_soil")
                         .criterion(hasItem(DecoItems.EARTH_SPHERE),
                                 conditionsFromItem(DecoItems.EARTH_SPHERE))
-                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_GRASS)+ "_recipe_create");
+                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_GRASS)+ "_from_earth_sphere");
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_PODZOL)
                         .pattern(" B ")
@@ -3010,7 +3009,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .group("packed_soil")
                         .criterion(hasItem(DecoItems.EARTH_SPHERE),
                                 conditionsFromItem(DecoItems.EARTH_SPHERE))
-                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_PODZOL)+ "_recipe_create");
+                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_PODZOL)+ "_from_earth_sphere");
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_MYCELIUM)
                         .pattern(" M ")
@@ -3021,7 +3020,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .group("packed_soil")
                         .criterion(hasItem(DecoItems.EARTH_SPHERE),
                                 conditionsFromItem(DecoItems.EARTH_SPHERE))
-                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_MYCELIUM)+ "_recipe_create");
+                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_MYCELIUM)+ "_from_earth_sphere");
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_CRIMSON_NYLIUM)
                         .pattern(" R ")
@@ -3032,7 +3031,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .group("packed_nylium")
                         .criterion(hasItem(Items.NETHERRACK),
                                 conditionsFromItem(Items.NETHERRACK))
-                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_CRIMSON_NYLIUM)+ "_recipe_create");
+                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_CRIMSON_NYLIUM)+ "_from_netherrack");
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_WARPED_NYLIUM)
                         .pattern(" R ")
@@ -3043,7 +3042,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .group("packed_nylium")
                         .criterion(hasItem(Items.NETHERRACK),
                                 conditionsFromItem(Items.NETHERRACK))
-                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_WARPED_NYLIUM)+ "_recipe_create");
+                        .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_WARPED_NYLIUM)+ "_from_netherrack");
 
                 createStairsRecipe(DecoBlocks.PALE_MOSS_STAIRS, Ingredient.ofItems(Items.PALE_MOSS_BLOCK))
                         .criterion(hasItem(Items.PALE_MOSS_BLOCK),conditionsFromItem(Items.PALE_MOSS_BLOCK))
@@ -3077,6 +3076,19 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_RESIN_SLAB, DecoBlocks.SMOOTH_RESIN,2);
                 offerWallRecipe(RecipeCategory.DECORATIONS, DecoBlocks.SMOOTH_RESIN_WALL, DecoBlocks.SMOOTH_RESIN);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,DecoBlocks.SMOOTH_RESIN_WALL, DecoBlocks.SMOOTH_RESIN);
+
+                createShapeless(RecipeCategory.MISC, Items.LIGHT_GRAY_DYE)
+                        .input(DecoBlocks.HAZZY_BLUET)
+                        .group("light_gray_dye")
+                        .criterion(hasItem(DecoBlocks.HAZZY_BLUET),
+                                conditionsFromItem(DecoBlocks.HAZZY_BLUET))
+                        .offerTo(exporter,getRecipeName(Items.LIGHT_GRAY_DYE)+"_from_hazzy_bluet");
+                createShapeless(RecipeCategory.MISC, Items.BROWN_DYE)
+                        .input(DecoBlocks.DRILL_LAVENDER)
+                        .group("brown_dye")
+                        .criterion(hasItem(DecoBlocks.DRILL_LAVENDER),
+                                conditionsFromItem(DecoBlocks.DRILL_LAVENDER))
+                        .offerTo(exporter,getRecipeName(Items.BROWN_DYE)+"_from_drill_lavender");
     }
     public void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         createShaped(RecipeCategory.DECORATIONS,output,3)

@@ -81,68 +81,11 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_DESERT = registerKey("deco_desert");
 
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_PALE = registerKey("deco_pale");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
-        BlockPredicate blockPredicate = BlockPredicate.matchingBlocks(
-                Blocks.OAK_SAPLING,
-                Blocks.SPRUCE_SAPLING,
-                Blocks.BIRCH_SAPLING,
-                Blocks.JUNGLE_SAPLING,
-                Blocks.ACACIA_SAPLING,
-                Blocks.CHERRY_SAPLING,
-                Blocks.DARK_OAK_SAPLING,
-                Blocks.MANGROVE_PROPAGULE,
-                Blocks.DANDELION,
-                Blocks.TORCHFLOWER,
-                Blocks.POPPY,
-                Blocks.BLUE_ORCHID,
-                Blocks.ALLIUM,
-                Blocks.AZURE_BLUET,
-                Blocks.RED_TULIP,
-                Blocks.ORANGE_TULIP,
-                Blocks.WHITE_TULIP,
-                Blocks.PINK_TULIP,
-                Blocks.OXEYE_DAISY,
-                Blocks.CORNFLOWER,
-                Blocks.WITHER_ROSE,
-                Blocks.LILY_OF_THE_VALLEY,
-                Blocks.BROWN_MUSHROOM,
-                Blocks.RED_MUSHROOM,
-                Blocks.WHEAT,
-                Blocks.SUGAR_CANE,
-                Blocks.ATTACHED_PUMPKIN_STEM,
-                Blocks.ATTACHED_MELON_STEM,
-                Blocks.PUMPKIN_STEM,
-                Blocks.MELON_STEM,
-                Blocks.LILY_PAD,
-                Blocks.NETHER_WART,
-                Blocks.COCOA,
-                Blocks.CARROTS,
-                Blocks.POTATOES,
-                Blocks.CHORUS_PLANT,
-                Blocks.CHORUS_FLOWER,
-                Blocks.TORCHFLOWER_CROP,
-                Blocks.PITCHER_CROP,
-                Blocks.BEETROOTS,
-                Blocks.SWEET_BERRY_BUSH,
-                Blocks.WARPED_FUNGUS,
-                Blocks.CRIMSON_FUNGUS,
-                Blocks.WEEPING_VINES,
-                Blocks.WEEPING_VINES_PLANT,
-                Blocks.TWISTING_VINES,
-                Blocks.TWISTING_VINES_PLANT,
-                Blocks.CAVE_VINES,
-                Blocks.CAVE_VINES_PLANT,
-                Blocks.SPORE_BLOSSOM,
-                Blocks.AZALEA,
-                Blocks.FLOWERING_AZALEA,
-                Blocks.MOSS_CARPET,
-                Blocks.PINK_PETALS,
-                Blocks.BIG_DRIPLEAF,
-                Blocks.BIG_DRIPLEAF_STEM,
-                Blocks.SMALL_DRIPLEAF
-        );
 
         List<OreFeatureConfig.Target> overworldBubbleOre =
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, DecoBlocks.BUBBLE_BLOCK.getDefaultState()));
@@ -172,7 +115,8 @@ public class DecoConfiguredFeatures {
                                         1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
                                         1.0F, List.of(DecoBlocks.BARBERTON_DAISY.getDefaultState(),
                                         DecoBlocks.ALPINE_POPPY.getDefaultState(), DecoBlocks.ROSE.getDefaultState()))))));
-                                        ConfiguredFeatures.register(context, DECO_TULIPS_MEADOW_KEY,
+
+        ConfiguredFeatures.register(context, DECO_TULIPS_MEADOW_KEY,
                 Feature.FLOWER, DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
                         (DataPool.<BlockState>builder().add(DecoBlocks.BLACK_TULIP.getDefaultState(),1)
                                 .add(DecoBlocks.GREEN_TULIP.getDefaultState(),5)
@@ -213,6 +157,11 @@ public class DecoConfiguredFeatures {
                     DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
                             (DataPool.<BlockState>builder().add(DecoBlocks.POPPED_BLUET.getDefaultState(),1)
                                     .add(DecoBlocks.DEAD_EYE_DAISY.getDefaultState(),1).build()),16));
+
+        register(context, DECO_PALE, Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.HAZZY_BLUET.getDefaultState(),5)
+                                    .add(DecoBlocks.DRILL_LAVENDER.getDefaultState(),1).build()),64));
 
         ConfiguredFeatures.register(context, DECO_RIVER_KEY, Feature.FLOWER,
                         DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider

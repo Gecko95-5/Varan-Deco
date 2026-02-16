@@ -1346,6 +1346,12 @@
   "block.minecraft.popped_bluet": "Popped Bluet",
   "block.minecraft.potted_popped_bluet": "Potted Popped Bluet",
 
+  "block.minecraft.drill_lavender": "Drill Lavender",
+  "block.minecraft.potted_drill_lavender": "Potted Drill Lavender",
+
+  "block.minecraft.hazzy_bluet": "Hazzy Bluet",
+  "block.minecraft.potted_hazzy_bluet": "Potted Hazzy Bluet",
+
   "block.minecraft.bromeliad": "Bromeliad",
   "block.minecraft.potted_bromeliad": "Potted Bromeliad",
 
@@ -2102,6 +2108,8 @@
   "block.minecraft.smooth_resin_slab": "Smooth Resin Slab",
   "block.minecraft.smooth_resin_wall": "Smooth Resin Wall",
 
+  "effect.varan-deco.grounded": "Grounded",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
@@ -2145,6 +2153,11 @@
   "item.minecraft.splash_potion.effect.water_bubble": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.water_bubble": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.water_bubble": "Arrow of The Water Bubble",
+
+  "item.minecraft.potion.effect.grounded": "Potion of Grounding",
+  "item.minecraft.splash_potion.effect.grounded": "Splash Potion of Grounding",
+  "item.minecraft.lingering_potion.effect.grounded": "Lingering Potion of Grounding",
+  "item.minecraft.tipped_arrow.effect.grounded": "Arrow of Grounding",
 
   "entity.minecraft.cactus_boat": "Cactus Boat",
   "entity.minecraft.cactus_chest_boat": "Cactus Boat with Chest",

@@ -1921,6 +1921,11 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.SMOOTH_RESIN_STAIRS);
         addDrop(DecoBlocks.SMOOTH_RESIN_SLAB, slabDrops(DecoBlocks.SMOOTH_RESIN_SLAB));
         addDrop(DecoBlocks.SMOOTH_RESIN_WALL);
+
+        addDrop(DecoBlocks.HAZZY_BLUET);
+        pottedPlantDrops(DecoBlocks.POTTED_HAZZY_BLUET);
+        addDrop(DecoBlocks.DRILL_LAVENDER);
+        pottedPlantDrops(DecoBlocks.POTTED_DRILL_LAVENDER);
     }
     public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
         return dropsWithSilkTouch(

@@ -112,5 +112,8 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DESERT_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.ERODED_BADLANDS),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_DESERT_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PALE_GARDEN),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PALE_PLACED);
     }
 }

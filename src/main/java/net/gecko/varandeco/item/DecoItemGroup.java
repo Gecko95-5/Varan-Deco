@@ -1211,6 +1211,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.WHITE_ORCHID.asItem());
                         entries.add(DecoBlocks.PINK_ORCHID.asItem());
                         entries.add(DecoBlocks.POPPED_BLUET.asItem());
+                        entries.add(DecoBlocks.HAZZY_BLUET.asItem());
                         entries.add(DecoBlocks.YELLOW_TULIP.asItem());
                         entries.add(DecoBlocks.PURPLE_TULIP.asItem());
                         entries.add(DecoBlocks.MAGENTA_TULIP.asItem());
@@ -1225,6 +1226,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.DEAD_EYE_DAISY.asItem());
                         entries.add(DecoBlocks.PAEONIA.asItem());
                         entries.add(DecoBlocks.LAVENDER.asItem());
+                        entries.add(DecoBlocks.DRILL_LAVENDER.asItem());
                         entries.add(DecoBlocks.BLUE_HIBISCUS.asItem());
                         entries.add(DecoBlocks.BROMELIAD.asItem());
                         entries.add(DecoBlocks.BUTTERCUP.asItem());
