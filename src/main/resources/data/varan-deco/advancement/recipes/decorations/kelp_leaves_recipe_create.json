@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:kelp_leaves_recipe_create"
+        "recipe": "varan-deco:kelp_leaves_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:kelp_leaves_recipe_create"
+      "varan-deco:kelp_leaves_recipe_create"
     ]
   }
 }

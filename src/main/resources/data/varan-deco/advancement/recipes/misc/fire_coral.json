@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:fire_coral"
+        "recipe": "varan-deco:fire_coral"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:fire_coral"
+      "varan-deco:fire_coral"
     ]
   }
 }

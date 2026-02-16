@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dried_kelp_from_smoking_kelp_leaves"
+        "recipe": "varan-deco:dried_kelp_from_smoking_kelp_leaves"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dried_kelp_from_smoking_kelp_leaves"
+      "varan-deco:dried_kelp_from_smoking_kelp_leaves"
     ]
   }
 }

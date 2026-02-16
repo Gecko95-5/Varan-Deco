@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:driftwood_mosaic_slab"
+        "recipe": "varan-deco:driftwood_mosaic_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:driftwood_mosaic_slab"
+      "varan-deco:driftwood_mosaic_slab"
     ]
   }
 }

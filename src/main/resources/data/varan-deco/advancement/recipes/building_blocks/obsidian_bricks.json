@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_obsidian": {
+    "has_sanded_obsidian": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:obsidian"
+            "items": "minecraft:sanded_obsidian"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:obsidian_bricks"
+        "recipe": "varan-deco:obsidian_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_obsidian"
+      "has_sanded_obsidian"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:obsidian_bricks"
+      "varan-deco:obsidian_bricks"
     ]
   }
 }

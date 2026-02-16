@@ -1,16 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bubble_orb": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:bubble_orb"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_ender_eye": {
       "conditions": {
         "items": [
@@ -23,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:heart_of_the_sea_recipe_create"
+        "recipe": "varan-deco:heart_of_the_sea_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ender_eye",
-      "has_bubble_orb"
+      "has_ender_eye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:heart_of_the_sea_recipe_create"
+      "varan-deco:heart_of_the_sea_recipe_create"
     ]
   }
 }

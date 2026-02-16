@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dead_brain_coral_block"
+        "recipe": "varan-deco:dead_brain_coral_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dead_brain_coral_block"
+      "varan-deco:dead_brain_coral_block"
     ]
   }
 }

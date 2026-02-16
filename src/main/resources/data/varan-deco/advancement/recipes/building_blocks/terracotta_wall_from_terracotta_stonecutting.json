@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:terracotta_wall_from_terracotta_stonecutting"
+        "recipe": "varan-deco:terracotta_wall_from_terracotta_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:terracotta_wall_from_terracotta_stonecutting"
+      "varan-deco:terracotta_wall_from_terracotta_stonecutting"
     ]
   }
 }

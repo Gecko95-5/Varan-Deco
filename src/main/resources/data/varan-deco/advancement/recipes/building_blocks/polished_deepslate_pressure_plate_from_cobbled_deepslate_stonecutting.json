@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polished_deepslate_pressure_plate_from_cobbled_deepslate_stonecutting"
+        "recipe": "varan-deco:polished_deepslate_pressure_plate_from_cobbled_deepslate_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polished_deepslate_pressure_plate_from_cobbled_deepslate_stonecutting"
+      "varan-deco:polished_deepslate_pressure_plate_from_cobbled_deepslate_stonecutting"
     ]
   }
 }

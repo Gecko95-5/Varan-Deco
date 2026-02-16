@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:hardened_magenta_stained_glass_pane"
+        "recipe": "varan-deco:hardened_magenta_stained_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:hardened_magenta_stained_glass_pane"
+      "varan-deco:hardened_magenta_stained_glass_pane"
     ]
   }
 }

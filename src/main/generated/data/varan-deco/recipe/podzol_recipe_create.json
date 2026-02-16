@@ -5,7 +5,7 @@
   "key": {
     "#": "minecraft:coarse_dirt",
     "0": "minecraft:earth_sphere",
-    "B": "minecraft:dead_bush"
+    "B": "minecraft:leaf_litter"
   },
   "pattern": [
     "B0B",

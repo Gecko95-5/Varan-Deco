@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tube_coral"
+        "recipe": "varan-deco:tube_coral"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tube_coral"
+      "varan-deco:tube_coral"
     ]
   }
 }

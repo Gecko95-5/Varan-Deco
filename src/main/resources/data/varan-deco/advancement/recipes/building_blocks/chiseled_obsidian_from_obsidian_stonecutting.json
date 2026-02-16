@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:chiseled_obsidian_from_obsidian_stonecutting"
+        "recipe": "varan-deco:chiseled_obsidian_from_obsidian_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:chiseled_obsidian_from_obsidian_stonecutting"
+      "varan-deco:chiseled_obsidian_from_obsidian_stonecutting"
     ]
   }
 }

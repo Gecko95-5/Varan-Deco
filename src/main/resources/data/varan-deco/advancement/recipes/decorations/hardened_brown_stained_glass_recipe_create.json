@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:hardened_brown_stained_glass_recipe_create"
+        "recipe": "varan-deco:hardened_brown_stained_glass_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:hardened_brown_stained_glass_recipe_create"
+      "varan-deco:hardened_brown_stained_glass_recipe_create"
     ]
   }
 }

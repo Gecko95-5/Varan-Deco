@@ -39,6 +39,15 @@
     "minecraft:bubble_elevator_block_bubble",
     "minecraft:bubble_elevator_block_magma",
     "minecraft:end_stone_blast_furnace",
-    "minecraft:spore_iron_ore"
+    "minecraft:spore_iron_ore",
+    "minecraft:iron_ladder",
+    "minecraft:copper_ladder",
+    "minecraft:exposed_copper_ladder",
+    "minecraft:weathered_copper_ladder",
+    "minecraft:oxidized_copper_ladder",
+    "minecraft:waxed_copper_ladder",
+    "minecraft:waxed_exposed_copper_ladder",
+    "minecraft:waxed_weathered_copper_ladder",
+    "minecraft:waxed_oxidized_copper_ladder"
   ]
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cobbled_red_sandstone_recipe_create"
+        "recipe": "varan-deco:cobbled_red_sandstone_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cobbled_red_sandstone_recipe_create"
+      "varan-deco:cobbled_red_sandstone_recipe_create"
     ]
   }
 }
