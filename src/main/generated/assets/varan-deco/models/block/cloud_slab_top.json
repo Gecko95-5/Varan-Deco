@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "varan-deco:block/solid_cloud",
+    "side": "varan-deco:block/solid_cloud",
+    "top": "varan-deco:block/solid_cloud"
+  }
+}

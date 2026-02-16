@@ -14,7 +14,7 @@ public class VaranDecoDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(DecoLootTableGenerator::new);
-		pack.addProvider(DecoRecipeGenerator::new);
+		pack.addProvider(DecoRecipeGeneratorTwo::new);
 		pack.addProvider(DecoModelProvider::new);
 		pack.addProvider(DecoBlockTagProvider::new);
 		pack.addProvider(DecoItemTagProvider::new);
