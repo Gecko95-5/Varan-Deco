@@ -76,6 +76,11 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.LAVENDER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_LAVENDER, BlockRenderLayer.CUTOUT);
 
+        BlockRenderLayerMap.putBlock(DecoBlocks.HAZZY_BLUET, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_HAZZY_BLUET, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.DRILL_LAVENDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_DRILL_LAVENDER, BlockRenderLayer.CUTOUT);
+
         BlockRenderLayerMap.putBlock(DecoBlocks.CACTUS_DOOR, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.CACTUS_TRAPDOOR, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.MUSHROOM_DOOR, BlockRenderLayer.CUTOUT);
@@ -108,6 +113,15 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.ROUGE_WILDFLOWERS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.SWEET_WILDFLOWERS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.GECKO_WILDFLOWERS, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.ALPINE_POPPY, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_ALPINE_POPPY, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.DEAD_EYE_DAISY, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_DEAD_EYE_DAISY, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.POPPED_BLUET, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_POPPED_BLUET, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.BIRCH_LADDER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.SPRUCE_LADDER, BlockRenderLayer.CUTOUT);
@@ -272,6 +286,31 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.MIGHTY_LAVENDER, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.FRAGILE_ICE, BlockRenderLayer.TRANSLUCENT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_BLOCK, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.SOLID_CLOUD, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_BRICKS, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CHISELED_CLOUD_BRICKS, BlockRenderLayer.TRANSLUCENT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_STAIRS, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_SLAB, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_WALL, BlockRenderLayer.TRANSLUCENT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_BRICK_STAIRS, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_BRICK_SLAB, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CLOUD_BRICK_WALL, BlockRenderLayer.TRANSLUCENT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.IRON_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.GOLDEN_LADDER, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WEATHERED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
 
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.MUSHROOM_BOAT_ID);
