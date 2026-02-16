@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gray_dye",
+  "ingredients": [
+    {
+      "item": "varan-deco:dead_eye_daisy"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:gray_dye"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pallet_doors",
+  "key": {
+    "#": {
+      "item": "varan-deco:mushroom_slab"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "varan-deco:mushroom_pallet_door"
+  }
+}

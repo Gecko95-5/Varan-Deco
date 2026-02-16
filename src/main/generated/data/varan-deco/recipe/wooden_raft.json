@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "#": {
+      "item": "varan-deco:wooden_planks"
+    },
+    "-": {
+      "item": "varan-deco:wooden_slab"
+    }
+  },
+  "pattern": [
+    "# #",
+    "---"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:wooden_raft"
+  }
+}

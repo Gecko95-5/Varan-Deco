@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:polished_calcite"
+  },
+  "result": {
+    "count": 1,
+    "id": "varan-deco:calcite_brick_wall"
+  }
+}

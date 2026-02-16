@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pastel_blocks",
+  "key": {
+    "#": {
+      "item": "varan-deco:shaded_cyan_block"
+    },
+    "X": {
+      "item": "varan-deco:passtol"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "varan-deco:cyan_block"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-15T22:01:01.6509554	Variant Decoration/Block Loot Tables
+// 1.21.1	2026-02-16T14:30:23.8231062	Variant Decoration/Block Loot Tables
 6b9101e7ceda89f6e686532b4327493609e97c02 data\varan-deco\loot_table\blocks\packed_ice_stairs.json
 70051a4ab33259dc35f78375ad7200003269c894 data\varan-deco\loot_table\blocks\bubble_brick_wall.json
 787be6c5c61b6fd58e635c3443bfc888449fe275 data\varan-deco\loot_table\blocks\smooth_deepslate.json
@@ -168,8 +168,8 @@ d429dd07fa7a50f43a3b0042e77eeb7d44b86a1c data\varan-deco\loot_table\blocks\lime_
 ba22920913223f906a4b69ef5c0da29adf30d520 data\varan-deco\loot_table\blocks\hardened_blue_stained_glass_pane.json
 cc43bacf125765018203de9de77a030e38b7185f data\varan-deco\loot_table\blocks\cracked_stone_tile_wall.json
 3b5dda3f72238e9c4cd597e6b4634a63fe5d6016 data\varan-deco\loot_table\blocks\hanging_dark_oak_planks_sign.json
-886f6470dd230f634f19a3bdce579e6f3928c109 data\varan-deco\loot_table\blocks\spruce_pallet_door.json
 fb7d0f95d1dac9c68c39a7fd686f3faea2e78683 data\varan-deco\loot_table\blocks\spruce_pallet_trapdoor.json
+886f6470dd230f634f19a3bdce579e6f3928c109 data\varan-deco\loot_table\blocks\spruce_pallet_door.json
 318f392c74bb21e30d1542479e9e0b5d69604c62 data\varan-deco\loot_table\blocks\jungle_wood_wall.json
 455e6b52cd242980544deb7cb704ec55a3e6d17b data\varan-deco\loot_table\blocks\oak_note_block.json
 634274b5af5e9c0dec338658f155ed06985f88a3 data\varan-deco\loot_table\blocks\ice_brick_slab.json
@@ -378,8 +378,8 @@ e5c89bf853fdd06bd486502ecf63fde72e5544a2 data\varan-deco\loot_table\blocks\hangi
 9bf3315346e3027b24d7cec6d084722a366a86a7 data\varan-deco\loot_table\blocks\oxidized_heavy_copper_bars.json
 9ea2abcea06cb69d087d833ddd00e349379fec98 data\varan-deco\loot_table\blocks\polished_stone.json
 9a133936fb830c7fa164f52e8e1ec1426773c76c data\varan-deco\loot_table\blocks\birch_wood_slab.json
-f850e751a01944da1723f1ba3ef8b99fa50afc5c data\varan-deco\loot_table\blocks\oak_wood_slab.json
 81181661b8c5e1c38c36ad2194f7827172171304 data\varan-deco\loot_table\blocks\earth_bricks.json
+f850e751a01944da1723f1ba3ef8b99fa50afc5c data\varan-deco\loot_table\blocks\oak_wood_slab.json
 5763c78ee3a11f23c7675d9eab950408af113784 data\varan-deco\loot_table\blocks\pastel_orange_block.json
 510693989a947c4776fde471efbb0fb1dd6f7bb7 data\varan-deco\loot_table\blocks\hanging_bamboo_mosaic_sign.json
 52f0ac7cf9dfb8f616467ca2564644880840ace4 data\varan-deco\loot_table\blocks\orange_terracotta_brick_stairs.json

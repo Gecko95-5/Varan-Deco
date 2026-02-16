@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:mud"
+    },
+    "D": {
+      "item": "minecraft:coarse_dirt"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#D#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:earth_sphere"
+  }
+}

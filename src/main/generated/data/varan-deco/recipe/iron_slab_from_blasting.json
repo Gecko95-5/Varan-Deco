@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "varan-deco:raw_iron_slab"
+  },
+  "result": {
+    "id": "varan-deco:iron_slab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shaded_blocks",
+  "key": {
+    "#": {
+      "item": "varan-deco:magenta_block"
+    },
+    "X": {
+      "item": "varan-deco:shaddol"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "varan-deco:shaded_magenta_block"
+  }
+}
