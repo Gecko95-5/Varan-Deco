@@ -494,7 +494,12 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.BROMELIAD.asItem())
                 .add(DecoBlocks.NIGHTSHADE.asItem())
                 .add(DecoBlocks.ENDERSHADE.asItem())
-                .add(DecoBlocks.BUTTERCUP.asItem());
+                .add(DecoBlocks.BUTTERCUP.asItem())
+                .add(DecoBlocks.ALPINE_POPPY.asItem())
+                .add(DecoBlocks.POPPED_BLUET.asItem())
+                .add(DecoBlocks.DEAD_EYE_DAISY.asItem())
+                .add(DecoBlocks.HAZZY_BLUET.asItem())
+                .add(DecoBlocks.DRILL_LAVENDER.asItem());
 
         getOrCreateTagBuilder(DecoTags.Items.WATER_ITEMS)
                 .add(Items.WATER_BUCKET)
