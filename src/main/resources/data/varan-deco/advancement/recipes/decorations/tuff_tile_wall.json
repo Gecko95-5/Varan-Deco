@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tuff_tile_wall"
+        "recipe": "varan-deco:tuff_tile_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tuff_tile_wall"
+      "varan-deco:tuff_tile_wall"
     ]
   }
 }

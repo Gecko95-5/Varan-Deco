@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polished_gilded_blackstone_recipe_create"
+        "recipe": "varan-deco:polished_gilded_blackstone_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polished_gilded_blackstone_recipe_create"
+      "varan-deco:polished_gilded_blackstone_recipe_create"
     ]
   }
 }

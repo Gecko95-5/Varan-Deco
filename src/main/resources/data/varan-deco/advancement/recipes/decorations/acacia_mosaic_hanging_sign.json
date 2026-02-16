@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:acacia_mosaic_hanging_sign"
+        "recipe": "varan-deco:acacia_mosaic_hanging_sign"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:acacia_mosaic_hanging_sign"
+      "varan-deco:acacia_mosaic_hanging_sign"
     ]
   }
 }

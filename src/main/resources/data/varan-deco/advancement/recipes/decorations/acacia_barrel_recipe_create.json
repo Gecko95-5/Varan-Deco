@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:acacia_barrel_recipe_create"
+        "recipe": "varan-deco:acacia_barrel_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:acacia_barrel_recipe_create"
+      "varan-deco:acacia_barrel_recipe_create"
     ]
   }
 }

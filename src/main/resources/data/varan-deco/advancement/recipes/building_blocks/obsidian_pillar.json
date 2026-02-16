@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:obsidian_pillar"
+        "recipe": "varan-deco:obsidian_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:obsidian_pillar"
+      "varan-deco:obsidian_pillar"
     ]
   }
 }

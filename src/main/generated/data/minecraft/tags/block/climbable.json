@@ -9,6 +9,16 @@
     "minecraft:weathered_copper_chain",
     "minecraft:waxed_weathered_copper_chain",
     "minecraft:oxidized_copper_chain",
-    "minecraft:waxed_oxidized_copper_chain"
+    "minecraft:waxed_oxidized_copper_chain",
+    "minecraft:iron_ladder",
+    "minecraft:copper_ladder",
+    "minecraft:exposed_copper_ladder",
+    "minecraft:weathered_copper_ladder",
+    "minecraft:oxidized_copper_ladder",
+    "minecraft:waxed_copper_ladder",
+    "minecraft:waxed_exposed_copper_ladder",
+    "minecraft:waxed_weathered_copper_ladder",
+    "minecraft:waxed_oxidized_copper_ladder",
+    "minecraft:golden_ladder"
   ]
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sandstone_brick_wall"
+        "recipe": "varan-deco:sandstone_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sandstone_brick_wall"
+      "varan-deco:sandstone_brick_wall"
     ]
   }
 }

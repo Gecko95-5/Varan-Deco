@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:iron_button_recipe_create"
+        "recipe": "varan-deco:iron_button_recipe_create"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:iron_button_recipe_create"
+      "varan-deco:iron_button_recipe_create"
     ]
   }
 }

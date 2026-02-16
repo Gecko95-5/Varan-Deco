@@ -39,6 +39,8 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_MESA_WILDFLOWER_PLACED = registerKey("deco_mesa_wildflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_MEADOW_WILDFLOWER_PLACED = registerKey("deco_meadow_wildflower_placed");
     public static final RegistryKey<PlacedFeature> DECO_BIRCH_WILDFLOWER_PLACED = registerKey("deco_birch_wildflower_placed");
+    public static final RegistryKey<PlacedFeature> DECO_DESERT_PLACED = registerKey("deco_desert_placed");
+    public static final RegistryKey<PlacedFeature> DECO_PALE_PLACED = registerKey("deco_pale_placed");
     public static final RegistryKey<PlacedFeature> DECO_BUBBLE_ORE_PLACED = registerKey("deco_bubble_ore_placed");
     public static final RegistryKey<PlacedFeature> DECO_DEEP_BUBBLE_ORE_PLACED = registerKey("deco_deep_bubble_ore_placed");
     public static final RegistryKey<PlacedFeature> DECO_DRIFTWOOD_SPROUT_PLACED = registerKey("deco_driftwood_sprout_placed");
@@ -129,6 +131,14 @@ register(context, DECO_MESA_PLACED, configuredFeatureRegistryEntryLookup.getOrTh
 register(context,DECO_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_ORE),
         OrePlacement.modifiersWithCount(5,
                 HeightRangePlacementModifier.uniform(YOffset.fixed(8), YOffset.fixed(27))));
+
+register(context, DECO_DESERT_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_DESERT), RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+register(context, DECO_PALE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_PALE), RarityFilterPlacementModifier.of(8), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 register(context,DECO_DEEP_BUBBLE_ORE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(DecoConfiguredFeatures.DECO_BUBBLE_ORE),
         OrePlacement.modifiersWithCount(5,

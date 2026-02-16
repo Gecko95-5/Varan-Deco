@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crimson_mosaic_hanging_sign"
+        "recipe": "varan-deco:crimson_mosaic_hanging_sign"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:crimson_mosaic_hanging_sign"
+      "varan-deco:crimson_mosaic_hanging_sign"
     ]
   }
 }
