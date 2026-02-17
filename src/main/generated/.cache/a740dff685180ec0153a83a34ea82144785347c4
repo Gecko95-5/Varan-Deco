@@ -1,8 +1,8 @@
-// 1.21.1	2026-02-16T14:30:23.7558223	Variant Decoration/Tags for minecraft:block
+// 1.21.1	2026-02-17T14:06:53.887088	Variant Decoration/Tags for minecraft:block
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\block\soul_speed_blocks.json
 05e0dd49a258e826d24330de2e562908cb49b4ad data\varan-deco\tags\block\deco_smithing_tables.json
-cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
 c3b0b46490582b9940cd1c1f7a9f91c4b937798d data\minecraft\tags\block\wooden_slabs.json
+cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
 ec73d7be1df243704a077160fb38ab43ab0e0c10 data\minecraft\tags\block\dirt.json
 16d11133c7838ddbb3400b3162c3634ec43abd87 data\minecraft\tags\block\fences.json
 1dcc609f2b53cc6b57fcea6684ca9219a90d60c3 data\minecraft\tags\block\sculk_replaceable.json

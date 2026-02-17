@@ -2911,6 +2911,83 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.TUFF_TILE_WALL), RecipeCategory.DECORATIONS, DecoBlocks.CRACKED_TUFF_TILE_WALL,
                         0.1f, 200).criterion(hasItem(DecoBlocks.TUFF_TILE_WALL), conditionsFromItem(DecoBlocks.TUFF_TILE_WALL))
                 .offerTo(exporter, Identifier.of("cracked_tuff_tile_wall_from_smelting"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.CRIMSON_NYLIUM,3)
+                .pattern("R0R")
+                .pattern("###")
+                .input('#', Items.NETHERRACK)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('R', Items.CRIMSON_ROOTS)
+                .group("nyliums")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter,getRecipeName(Items.CRIMSON_NYLIUM)+ "_recipe_create");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.WARPED_NYLIUM,3)
+                .pattern("R0R")
+                .pattern("###")
+                .input('#', Items.NETHERRACK)
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('R', Items.WARPED_ROOTS)
+                .group("nyliums")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter,getRecipeName(Items.WARPED_NYLIUM)+ "_recipe_create");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_GRASS)
+                .pattern(" G ")
+                .pattern("G0G")
+                .pattern(" G ")
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('G', Items.SHORT_GRASS)
+                .group("packed_soil")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_GRASS)+ "_from_earth_sphere");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_PODZOL)
+                .pattern(" B ")
+                .pattern("B0B")
+                .pattern(" B ")
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('B', Items.DEAD_BUSH)
+                .group("packed_soil")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_PODZOL)+ "_from_earth_sphere");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_MYCELIUM)
+                .pattern(" M ")
+                .pattern("M0M")
+                .pattern(" M ")
+                .input('0', DecoItems.EARTH_SPHERE)
+                .input('M', DecoTags.Items.MUSHROOMS)
+                .group("packed_soil")
+                .criterion(hasItem(DecoItems.EARTH_SPHERE),
+                        conditionsFromItem(DecoItems.EARTH_SPHERE))
+                .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_MYCELIUM)+ "_from_earth_sphere");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_CRIMSON_NYLIUM)
+                .pattern(" R ")
+                .pattern("R0R")
+                .pattern(" R ")
+                .input('0', Items.NETHERRACK)
+                .input('R', Items.CRIMSON_ROOTS)
+                .group("packed_nylium")
+                .criterion(hasItem(Items.NETHERRACK),
+                        conditionsFromItem(Items.NETHERRACK))
+                .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_CRIMSON_NYLIUM)+ "_from_netherrack");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.PACKED_WARPED_NYLIUM)
+                .pattern(" R ")
+                .pattern("R0R")
+                .pattern(" R ")
+                .input('0', Items.NETHERRACK)
+                .input('R', Items.WARPED_ROOTS)
+                .group("packed_nylium")
+                .criterion(hasItem(Items.NETHERRACK),
+                        conditionsFromItem(Items.NETHERRACK))
+                .offerTo(exporter,getRecipeName(DecoBlocks.PACKED_WARPED_NYLIUM)+ "_from_netherrack");
     }
     public static void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)
