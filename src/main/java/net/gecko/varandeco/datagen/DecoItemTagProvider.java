@@ -300,7 +300,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.DRIFTWOOD_BOOKSHELF.asItem());
 
         valueLookupBuilder(DecoTags.Items.DECO_BOOKSHELF_STAIRS)
-                .forceAddTag(DecoTags.Items.WOODEN_BOOKSHELF_STAIRS)
+                .addTag(DecoTags.Items.WOODEN_BOOKSHELF_STAIRS)
                 .add(DecoBlocks.CRIMSON_BOOKSHELF_STAIRS.asItem())
                 .add(DecoBlocks.WARPED_BOOKSHELF_STAIRS.asItem())
                 .add(DecoBlocks.IRON_CAP_BOOKSHELF_STAIRS.asItem());
@@ -321,7 +321,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.MUSHROOM_BOOKSHELF_STAIRS.asItem());
 
         valueLookupBuilder(DecoTags.Items.DECO_BOOKSHELF_SLABS)
-                .forceAddTag(DecoTags.Items.WOODEN_BOOKSHELF_SLABS)
+                .addTag(DecoTags.Items.WOODEN_BOOKSHELF_SLABS)
                 .add(DecoBlocks.CRIMSON_BOOKSHELF_SLAB.asItem())
                 .add(DecoBlocks.WARPED_BOOKSHELF_SLAB.asItem())
                 .add(DecoBlocks.IRON_CAP_BOOKSHELF_SLAB.asItem());
