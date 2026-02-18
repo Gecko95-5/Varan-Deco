@@ -740,12 +740,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL.asItem());
-                    }).build());
-
-    public static final ItemGroup VARAN_DECO_COLOURED_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(VaranDeco.MOD_ID, "varan_deco_colour"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_colour"))
-                    .icon(() -> new ItemStack(DecoBlocks.CUT_GREEN_CONCRETE)).entries((displayContext, entries) -> {
                         entries.add(DecoBlocks.BONE_STAIRS.asItem());
                         entries.add(DecoBlocks.BONE_SLAB.asItem());
                         entries.add(DecoBlocks.BONE_WALL.asItem());
@@ -767,6 +761,12 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.BEDROCK_STAIRS.asItem());
                         entries.add(DecoBlocks.BEDROCK_SLAB.asItem());
                         entries.add(DecoBlocks.BEDROCK_WALL.asItem());
+                    }).build());
+
+    public static final ItemGroup VARAN_DECO_COLOURED_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(VaranDeco.MOD_ID, "varan_deco_colour"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.varan_deco_colour"))
+                    .icon(() -> new ItemStack(DecoBlocks.CUT_GREEN_CONCRETE)).entries((displayContext, entries) -> {
                         entries.add(DecoBlocks.WHITE_WOOL_STAIRS.asItem());
                         entries.add(DecoBlocks.WHITE_WOOL_SLAB.asItem());
                         entries.add(DecoBlocks.LIGHT_GRAY_WOOL_STAIRS.asItem());
