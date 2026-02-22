@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_dye_from_mighty_lavender_flower"
+        "recipe": "minecraft:light_gray_dye_from_mighty_lavender_flower"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_dye_from_mighty_lavender_flower"
+      "minecraft:light_gray_dye_from_mighty_lavender_flower"
     ]
   }
 }
