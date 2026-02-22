@@ -17,7 +17,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        
+
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(DecoBlocks.POLISHED_STONE)
                 .add(DecoBlocks.POLISHED_STONE_STAIRS)
@@ -614,6 +614,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.PACKED_GRASS)
                 .add(DecoBlocks.PACKED_DRY_GRASS)
                 .add(DecoBlocks.DRY_GRASS_BLOCK)
+                .add(DecoBlocks.PACKED_PODZOL)
+                .add(DecoBlocks.PACKED_MYCELIUM);
+
+        valueLookupBuilder(BlockTags.SNIFFER_DIGGABLE_BLOCK)
+                .add(DecoBlocks.PACKED_GRASS)
                 .add(DecoBlocks.PACKED_PODZOL)
                 .add(DecoBlocks.PACKED_MYCELIUM);
 

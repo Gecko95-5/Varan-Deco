@@ -3077,19 +3077,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .group("red_dye")
                 .criterion(hasItem(DecoBlocks.ROSE),
                         conditionsFromItem(DecoBlocks.ROSE))
-                .offerTo(exporter,"red_dye_from_rose"+ "_recipe_create");
-        createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE)
-                .input(DecoBlocks.ENDER_ROSE)
-                .group("purple_dye")
-                .criterion(hasItem(DecoBlocks.ENDER_ROSE),
-                        conditionsFromItem(DecoBlocks.ENDER_ROSE))
-                .offerTo(exporter,"purple_dye_from_ender_rose"+ "_recipe_create");
-        createShapeless(RecipeCategory.MISC,Items.PURPLE_DYE,4)
-                .input(DecoBlocks.ENDER_ROSE_BUSH)
-                .group("purple_dye")
-                .criterion(hasItem(DecoBlocks.ENDER_ROSE_BUSH),
-                        conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
-                .offerTo(exporter,"purple_dye_from_ender_rose_bush"+ "_recipe_create");
+                .offerTo(exporter, "red_dye_from_rose");
         createShapeless(RecipeCategory.MISC,Items.BLACK_DYE,4)
                 .input(DecoBlocks.WITHER_ROSE_BUSH)
                 .group("black_dye")
@@ -3969,20 +3957,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.ANCIENT_ROSE),
                         conditionsFromItem(DecoBlocks.ANCIENT_ROSE))
                 .offerTo(exporter,"light_blue_dye_from_ancient_rose"+ "_recipe_create");
-
-        createShapeless(RecipeCategory.MISC,Items.PINK_DYE,4)
-                .input(DecoBlocks.MIGHTY_LAVENDER)
-                .group("pink_dye")
-                .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
-                        conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
-                .offerTo(exporter,"pink_dye_from_mighty_lavender"+ "_recipe_create");
-
-        createShapeless(RecipeCategory.MISC,Items.PINK_DYE)
-                .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
-                .group("pink_dye")
-                .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
-                        conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
-                .offerTo(exporter,"pink_dye_from_mighty_lavender_flower"+ "_recipe_create");
 
         createShaped(RecipeCategory.DECORATIONS,DecoBlocks.MIGHTY_LAVENDER)
                 .pattern("##")
