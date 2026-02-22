@@ -1,8 +1,8 @@
-// 1.19.4	2026-02-13T23:27:21.3641591	Variant Decoration/Tags for minecraft:block
+// 1.19.4	2026-02-22T19:36:02.2832362	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 e9b19ba57c4ddf3f0ffe2b7ba0a195be29a1650f data\minecraft\tags\blocks\mineable\pickaxe.json
-2d1e488e3fe3f9d35929e1a7ad1d1b20ab0667b0 data\varan-deco\tags\blocks\deco_note_blocks.json
 d563b89aa193c4331fa6eb4fc9f984c968a60133 data\minecraft\tags\blocks\slabs.json
+2d1e488e3fe3f9d35929e1a7ad1d1b20ab0667b0 data\varan-deco\tags\blocks\deco_note_blocks.json
 80f7ecbb5778c8b0cc624eb7d99e5dadfb31bba8 data\minecraft\tags\blocks\planks.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
 3938e4bd40d437e271abf8ac18de0697705cc696 data\minecraft\tags\blocks\sculk_replaceable.json
@@ -38,8 +38,8 @@ e6daf194a7895a22069bfc6bdfb4854b75d5e6a9 data\varan-deco\tags\blocks\concrete_wa
 1030ea039173d6542ffe992c4c2da855f514a8f1 data\minecraft\tags\blocks\buttons.json
 12ad503ec3cab80485ccaa5ced6e20461088c495 data\varan-deco\tags\blocks\log_walls.json
 89f45f8cd5abedccd8e3f3855d551a6f6f570e4f data\minecraft\tags\blocks\dragon_immune.json
-356b137b5113cb08c5b9d635f7b50e1121741509 data\varan-deco\tags\blocks\dye_blocks.json
 984d6e9afee58b05e077d9155c60981df863a816 data\minecraft\tags\blocks\stairs.json
+356b137b5113cb08c5b9d635f7b50e1121741509 data\varan-deco\tags\blocks\dye_blocks.json
 99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
 ac53701d329aeca1c7adbae27837f62ec46ec9d8 data\minecraft\tags\blocks\snaps_goat_horn.json
 87ca1982f13e2f0faa321cc5988667c8b66a4f3d data\minecraft\tags\blocks\snow_layer_cannot_survive_on.json
@@ -48,8 +48,8 @@ cdf7333dc31338cb5e57f9d646b5f0bc3337637d data\minecraft\tags\blocks\nylium.json
 225124da5c3a06044318ca6ef320397078fa466a data\varan-deco\tags\blocks\terracotta_stairs.json
 ed6daf5df1a48422c2d8dd39b9fde95868fe091f data\varan-deco\tags\blocks\wool_stairs.json
 9675b3c2f8bc37f5fc7f36c1cc4dca035e839b13 data\minecraft\tags\blocks\needs_diamond_tool.json
-da33c9cdb9064e358dc1478772ab68cbf406ff40 data\minecraft\tags\blocks\fence_gates.json
 242136e77faaf5a2263f27b8a1bca0850bd614bc data\minecraft\tags\blocks\walls.json
+da33c9cdb9064e358dc1478772ab68cbf406ff40 data\minecraft\tags\blocks\fence_gates.json
 b7bd51b7625bc3f764b5d44c79c14e892acca490 data\minecraft\tags\blocks\enderman_holdable.json
 d407b9751f8dea4784116ff1c5a484adc2658aeb data\varan-deco\tags\blocks\wooden_logs.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\blocks\saplings.json

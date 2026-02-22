@@ -3673,6 +3673,7 @@ public class DecoBlocks {
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CLOUD_BRICK_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CLOUD_BRICK_SLAB.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CLOUD_BRICK_WALL.asItem());
+        addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.CHISELED_CLOUD_BRICKS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BEDROCK_STAIRS.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BEDROCK_SLAB.asItem());
         addToItemGroup(DecoItemGroup.VARAN_DECO,DecoBlocks.BEDROCK_WALL.asItem());
