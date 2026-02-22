@@ -3037,18 +3037,18 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
                 .offerTo(exporter, new Identifier("red_dye_from_rose"));
-        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
+        ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE)
                 .input(DecoBlocks.ENDER_ROSE)
-                .group("purple_dye")
+                .group("magenta_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
-                .offerTo(exporter, new Identifier("purple_dye_from_ender_rose"));
-        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE,4)
+                .offerTo(exporter, new Identifier("magenta_dye_from_ender_rose"));
+        ShapelessRecipeJsonBuilder.create(Items.MAGENTA_DYE,4)
                 .input(DecoBlocks.ENDER_ROSE_BUSH)
-                .group("purple_dye")
+                .group("magenta_dye")
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE_BUSH),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
-                .offerTo(exporter, new Identifier("purple_dye_from_ender_rose_bush"));
+                .offerTo(exporter, new Identifier("magenta_dye_from_ender_rose_bush"));
         ShapelessRecipeJsonBuilder.create(Items.BLACK_DYE,4)
                 .input(DecoBlocks.WITHER_ROSE_BUSH)
                 .group("black_dye")
