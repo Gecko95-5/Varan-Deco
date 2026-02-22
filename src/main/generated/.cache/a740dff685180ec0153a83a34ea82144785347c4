@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-17T14:06:53.887088	Variant Decoration/Tags for minecraft:block
+// 1.21.1	2026-02-22T23:27:58.7468078	Variant Decoration/Tags for minecraft:block
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\block\soul_speed_blocks.json
 05e0dd49a258e826d24330de2e562908cb49b4ad data\varan-deco\tags\block\deco_smithing_tables.json
 c3b0b46490582b9940cd1c1f7a9f91c4b937798d data\minecraft\tags\block\wooden_slabs.json
@@ -51,6 +51,7 @@ a3c9ceba091fb2543fffeade87c6d2ecafe41120 data\minecraft\tags\block\climbable.jso
 91b88f3e61e4f3efe5c326b84bda08694fb25cd1 data\varan-deco\tags\block\mosaic_slab.json
 9e34a85ac8004c9abd4ab69e4c179641ac7a585f data\varan-deco\tags\block\mosaic_glass.json
 47aec1ccc822721d1413e8deda13ec6e8e236f89 data\varan-deco\tags\block\terracotta_slabs.json
+ec73d7be1df243704a077160fb38ab43ab0e0c10 data\minecraft\tags\block\sniffer_diggable_block.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\block\logs_that_burn.json
 386859249a641879d7a470212fe41a6e01b8f956 data\varan-deco\tags\block\deco_cartography_tables.json
 d26e5da10ff94642ee34f8287dae824ec727e4e4 data\minecraft\tags\block\snow_layer_cannot_survive_on.json

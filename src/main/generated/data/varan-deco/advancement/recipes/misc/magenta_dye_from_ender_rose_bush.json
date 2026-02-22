@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mighty_lavender_flower": {
+    "has_ender_rose_bush": {
       "conditions": {
         "items": [
           {
-            "items": "varan-deco:mighty_lavender_flower"
+            "items": "varan-deco:ender_rose_bush"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_dye_from_mighty_lavender_flower"
+        "recipe": "minecraft:magenta_dye_from_ender_rose_bush"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mighty_lavender_flower"
+      "has_ender_rose_bush"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_dye_from_mighty_lavender_flower"
+      "minecraft:magenta_dye_from_ender_rose_bush"
     ]
   }
 }
