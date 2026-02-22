@@ -2680,6 +2680,33 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                .input(DecoBlocks.ENDER_ROSE)
+                .group("magenta_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
+                .offerTo(exporter, new Identifier("magenta_dye_from_ender_rose"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.MAGENTA_DYE,4)
+                .input(DecoBlocks.ENDER_ROSE_BUSH)
+                .group("magenta_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE_BUSH),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
+                .offerTo(exporter, new Identifier("magenta_dye_from_ender_rose_bush"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE,4)
+                .input(DecoBlocks.MIGHTY_LAVENDER)
+                .group("light_gray_dye")
+                .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
+                        conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
+                .offerTo(exporter, new Identifier("light_gray_dye_from_mighty_lavender"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE)
+                .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
+                .group("light_gray_dye")
+                .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
+                        conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
+                .offerTo(exporter, new Identifier("light_gray_dye_from_mighty_lavender_flower"));
     }
     public static void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

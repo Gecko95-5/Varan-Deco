@@ -3053,18 +3053,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.ROSE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.ROSE))
                 .offerTo(exporter, new Identifier("red_dye_from_rose"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PURPLE_DYE)
-                .input(DecoBlocks.ENDER_ROSE)
-                .group("purple_dye")
-                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE),
-                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE))
-                .offerTo(exporter, new Identifier("purple_dye_from_ender_rose"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PURPLE_DYE,4)
-                .input(DecoBlocks.ENDER_ROSE_BUSH)
-                .group("purple_dye")
-                .criterion(RecipeProvider.hasItem(DecoBlocks.ENDER_ROSE_BUSH),
-                        RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
-                .offerTo(exporter, new Identifier("purple_dye_from_ender_rose_bush"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BLACK_DYE,4)
                 .input(DecoBlocks.WITHER_ROSE_BUSH)
                 .group("black_dye")
@@ -3931,20 +3919,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(DecoBlocks.ANCIENT_ROSE),
                         conditionsFromItem(DecoBlocks.ANCIENT_ROSE))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_ancient_rose"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE,4)
-                .input(DecoBlocks.MIGHTY_LAVENDER)
-                .group("pink_dye")
-                .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
-                        conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
-                .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
-                .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
-                .group("pink_dye")
-                .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
-                        conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
-                .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender_flower"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,DecoBlocks.MIGHTY_LAVENDER)
                 .pattern("##")
