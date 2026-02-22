@@ -31,7 +31,6 @@ import java.util.List;
 import java.util.OptionalInt;
 
 public class DecoConfiguredFeatures {
-    public static final RuleTest SKY = new BlockMatchRuleTest(Blocks.AIR);
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_FLOWER_FOREST =
             ConfiguredFeatures.register("deco_flower_forest_flowers", Feature.FLOWER,
