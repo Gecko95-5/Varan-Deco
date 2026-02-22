@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "purple_dye",
+  "group": "magenta_dye",
   "ingredients": [
-    "minecraft:ender_rose_bush"
+    "minecraft:ender_rose"
   ],
   "result": {
-    "count": 4,
-    "id": "minecraft:purple_dye"
+    "count": 1,
+    "id": "minecraft:magenta_dye"
   }
 }

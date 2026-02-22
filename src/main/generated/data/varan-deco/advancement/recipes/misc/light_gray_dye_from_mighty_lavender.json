@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mighty_lavender_flower": {
+    "has_mighty_lavender": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:mighty_lavender_flower"
+            "items": "minecraft:mighty_lavender"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_dye_from_mighty_lavender_flower_recipe_create"
+        "recipe": "minecraft:light_gray_dye_from_mighty_lavender"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mighty_lavender_flower"
+      "has_mighty_lavender"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_dye_from_mighty_lavender_flower_recipe_create"
+      "minecraft:light_gray_dye_from_mighty_lavender"
     ]
   }
 }

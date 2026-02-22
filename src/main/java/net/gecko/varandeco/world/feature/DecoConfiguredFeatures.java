@@ -44,7 +44,6 @@ import java.util.List;
 import java.util.OptionalInt;
 
 public class DecoConfiguredFeatures {
-    public static final RuleTest SKY = new BlockMatchRuleTest(Blocks.AIR);
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_FLOWER_FOREST_KEY = registerKey("deco_flower_forest");
 
@@ -106,7 +105,7 @@ public class DecoConfiguredFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
+
 
         List<OreFeatureConfig.Target> overworldBubbleOre =
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, DecoBlocks.BUBBLE_BLOCK.getDefaultState()));

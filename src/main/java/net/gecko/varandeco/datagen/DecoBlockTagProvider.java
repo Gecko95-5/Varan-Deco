@@ -618,6 +618,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.PACKED_PODZOL)
                 .add(DecoBlocks.PACKED_MYCELIUM);
 
+        getOrCreateTagBuilder(BlockTags.SNIFFER_DIGGABLE_BLOCK)
+                .add(DecoBlocks.PACKED_GRASS)
+                .add(DecoBlocks.PACKED_PODZOL)
+                .add(DecoBlocks.PACKED_MYCELIUM);
+
         getOrCreateTagBuilder(BlockTags.NYLIUM)
                 .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
                 .add(DecoBlocks.PACKED_WARPED_NYLIUM);
