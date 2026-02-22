@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ender_rose_bush": {
+    "has_ender_rose": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-deco:ender_rose_bush"
+              "varan-deco:ender_rose"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:purple_dye_from_ender_rose_bush"
+        "recipe": "minecraft:magenta_dye_from_ender_rose"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ender_rose_bush",
+      "has_ender_rose",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:purple_dye_from_ender_rose_bush"
+      "minecraft:magenta_dye_from_ender_rose"
     ]
   },
   "sends_telemetry_event": false
