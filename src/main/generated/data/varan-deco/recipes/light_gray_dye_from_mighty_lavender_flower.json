@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "purple_dye",
+  "group": "light_gray_dye",
   "ingredients": [
     {
-      "item": "varan-deco:ender_rose"
+      "item": "varan-deco:mighty_lavender_flower"
     }
   ],
   "result": {
-    "item": "minecraft:purple_dye"
+    "item": "minecraft:light_gray_dye"
   }
 }

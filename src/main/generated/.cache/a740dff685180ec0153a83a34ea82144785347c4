@@ -1,4 +1,4 @@
-// 1.20.2	2026-02-14T20:50:40.4655399	Variant Decoration/Tags for minecraft:block
+// 1.20.2	2026-02-22T21:33:48.5812379	Variant Decoration/Tags for minecraft:block
 0a4f68436cff24df692bc5e12b6aede505ffd34d data\varan-deco\tags\blocks\infested_blocks.json
 a98638aed04852e1185b90a0441884ee7e268479 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
@@ -21,6 +21,7 @@ c8671ab38e8dff3b7bee1836b246dd635caf0123 data\minecraft\tags\blocks\soul_speed_b
 ab9d7217254f117e4afcc07f79cc72f5553ed619 data\minecraft\tags\blocks\dirt.json
 70ce753d64106b85eb9922928a70dc5e78030078 data\varan-deco\tags\blocks\terracotta_slabs.json
 ee8e6bd3bb9a2d4060230c8113a0e6d81ac6dd7b data\varan-deco\tags\blocks\concrete_stairs.json
+ab9d7217254f117e4afcc07f79cc72f5553ed619 data\minecraft\tags\blocks\sniffer_diggable_block.json
 aaeb3e74f1d91f365b56533c88b765714def6f3b data\varan-deco\tags\blocks\levers.json
 0907224e46af8f54a123f3814636251201e0696f data\minecraft\tags\blocks\wooden_fences.json
 a02e0e834e293d42ad01033bb8792d8e048709c0 data\minecraft\tags\blocks\mineable\shovel.json
@@ -70,8 +71,8 @@ e80b6c6002b896b8d542bf617e22c7f4760c1415 data\minecraft\tags\blocks\wither_immun
 01d68d789c04dc9f94cb9200b6dbdf1a511cb47b data\minecraft\tags\blocks\ice.json
 e29f5d2c69bb6e61bb5af78b98b80b0a6e42d8d4 data\minecraft\tags\blocks\tall_flowers.json
 ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\blocks\coloured_lamps.json
-80d1c8cd45c5279ea4b11a08dc67fe6503df3163 data\minecraft\tags\blocks\mineable\axe.json
 226183184666e5815f4db654d0c82e32adb7ccb7 data\minecraft\tags\blocks\mineable\hoe.json
+80d1c8cd45c5279ea4b11a08dc67fe6503df3163 data\minecraft\tags\blocks\mineable\axe.json
 e6a86af95e9ec41a3e8781f05b536f9236c53ed9 data\minecraft\tags\blocks\needs_iron_tool.json
 da2c2d394015e9413dd8b82cba6171e814f36d88 data\minecraft\tags\blocks\wooden_trapdoors.json
 85105541d8a09cd82943de534069661304e1777e data\minecraft\tags\blocks\wall_signs.json
