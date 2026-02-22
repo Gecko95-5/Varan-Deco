@@ -2951,7 +2951,7 @@ public class DecoBlocks {
                     .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffSmokerBlock::new);
     public static final Block END_STONE_SMOKER = registerNonStationBlock("end_stone_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.PALE_YELLOW)
-                    .strength(4.5f),TuffSmokerBlock::new);
+                    .strength(4.5f),EndstoneSmokerBlock::new);
 
     public static final Block DEEPSLATE_BLAST_FURNACE = registerNonStationBlock("deepslate_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)

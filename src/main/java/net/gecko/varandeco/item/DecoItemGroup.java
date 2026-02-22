@@ -751,6 +751,7 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.CLOUD_BRICK_STAIRS.asItem());
                         entries.add(DecoBlocks.CLOUD_BRICK_SLAB.asItem());
                         entries.add(DecoBlocks.CLOUD_BRICK_WALL.asItem());
+                        entries.add(DecoBlocks.CHISELED_CLOUD_BRICKS.asItem());
                         entries.add(DecoBlocks.RESIN_STAIRS.asItem());
                         entries.add(DecoBlocks.RESIN_SLAB.asItem());
                         entries.add(DecoBlocks.RESIN_WALL.asItem());

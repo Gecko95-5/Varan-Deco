@@ -35,6 +35,7 @@ c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replace
 78c61268667ab46d25413e13eb64fa9509e31677 data/minecraft/tags/block/slabs.json
 7418046c136260971777aad367ad50c9de6285bc data/minecraft/tags/block/small_flowers.json
 73d66f372d8c4d1b45f3aa477fbb0a97cfa88b10 data/minecraft/tags/block/snaps_goat_horn.json
+05e0cb7f4d14d0790f2e7c2ca6c28dc633f42920 data/minecraft/tags/block/sniffer_diggable_block.json
 2b1cf933b140a1bf229504c154469b32bc03f95d data/minecraft/tags/block/snow.json
 ed1adce6a84768b565d2a59ac7f50296d184c69d data/minecraft/tags/block/snow_layer_cannot_survive_on.json
 f2fb186f7b236213990ba0d2d5dae80164daca34 data/minecraft/tags/block/soul_fire_base_blocks.json

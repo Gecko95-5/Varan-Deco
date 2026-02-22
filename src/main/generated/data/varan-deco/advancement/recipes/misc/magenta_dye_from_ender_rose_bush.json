@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:purple_dye_from_ender_rose_bush_recipe_create"
+        "recipe": "varan-deco:magenta_dye_from_ender_rose_bush"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:purple_dye_from_ender_rose_bush_recipe_create"
+      "varan-deco:magenta_dye_from_ender_rose_bush"
     ]
   }
 }
