@@ -15,6 +15,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -3089,6 +3090,33 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.DRILL_LAVENDER),
                                 conditionsFromItem(DecoBlocks.DRILL_LAVENDER))
                         .offerTo(exporter,getRecipeName(Items.BROWN_DYE)+"_from_drill_lavender");
+
+                createShapeless(RecipeCategory.MISC,Items.MAGENTA_DYE)
+                        .input(DecoBlocks.ENDER_ROSE)
+                        .group("magenta_dye")
+                        .criterion(hasItem(DecoBlocks.ENDER_ROSE),
+                                conditionsFromItem(DecoBlocks.ENDER_ROSE))
+                        .offerTo(exporter, "magenta_dye_from_ender_rose");
+                createShapeless(RecipeCategory.MISC,Items.MAGENTA_DYE,4)
+                        .input(DecoBlocks.ENDER_ROSE_BUSH)
+                        .group("magenta_dye")
+                        .criterion(hasItem(DecoBlocks.ENDER_ROSE_BUSH),
+                                conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
+                        .offerTo(exporter, "magenta_dye_from_ender_rose_bush");
+
+                createShapeless(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE,4)
+                        .input(DecoBlocks.MIGHTY_LAVENDER)
+                        .group("light_gray_dye")
+                        .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
+                                conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
+                        .offerTo(exporter, "light_gray_dye_from_mighty_lavender");
+
+                createShapeless(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE)
+                        .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
+                        .group("light_gray_dye")
+                        .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
+                                conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
+                        .offerTo(exporter, "light_gray_dye_from_mighty_lavender_flower");
     }
     public void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         createShaped(RecipeCategory.DECORATIONS,output,3)
