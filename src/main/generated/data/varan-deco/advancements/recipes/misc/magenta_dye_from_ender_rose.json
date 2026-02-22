@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:purple_dye_from_ender_rose"
+        "recipe": "minecraft:magenta_dye_from_ender_rose"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:purple_dye_from_ender_rose"
+      "minecraft:magenta_dye_from_ender_rose"
     ]
   }
 }
