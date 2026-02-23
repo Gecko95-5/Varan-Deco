@@ -2693,19 +2693,19 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.ENDER_ROSE_BUSH))
                 .offerTo(exporter, new Identifier("magenta_dye_from_ender_rose_bush"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE,4)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE,4)
                 .input(DecoBlocks.MIGHTY_LAVENDER)
-                .group("pink_dye")
+                .group("light_gray_dye")
                 .criterion(hasItem(DecoBlocks.MIGHTY_LAVENDER),
                         conditionsFromItem(DecoBlocks.MIGHTY_LAVENDER))
-                .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender"));
+                .offerTo(exporter, new Identifier("light_gray_from_mighty_lavender"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.PINK_DYE)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.LIGHT_GRAY_DYE)
                 .input(DecoItems.MIGHTY_LAVENDER_FLOWER)
-                .group("pink_dye")
+                .group("light_gray_dye")
                 .criterion(hasItem(DecoItems.MIGHTY_LAVENDER_FLOWER),
                         conditionsFromItem(DecoItems.MIGHTY_LAVENDER_FLOWER))
-                .offerTo(exporter, new Identifier("pink_dye_from_mighty_lavender_flower"));
+                .offerTo(exporter, new Identifier("light_gray_from_mighty_lavender_flower"));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,output,3)

@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "pink_dye",
+  "group": "light_gray_dye",
   "ingredients": [
     {
       "item": "varan-deco:mighty_lavender_flower"
     }
   ],
   "result": {
-    "item": "minecraft:pink_dye"
+    "item": "minecraft:light_gray_dye"
   }
 }
