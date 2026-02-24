@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:block/grass_carpet",
+    "model": "minecraft:block/grass_stairs",
     "tints": [
       {
         "type": "minecraft:grass",

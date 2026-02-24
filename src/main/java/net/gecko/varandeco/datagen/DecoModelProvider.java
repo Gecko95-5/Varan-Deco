@@ -8,10 +8,30 @@ import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Model;
 import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TextureKey;
+import net.minecraft.client.data.TextureMap;
 import net.minecraft.client.data.TexturedModel;
+import net.minecraft.util.Identifier;
+
+import java.lang.reflect.Field;
+import java.util.Optional;
+import java.util.function.Consumer;
 
 public class DecoModelProvider extends FabricModelProvider {
+
+    // Thanks to PedalHat29861 Packed Grass is now has a Colour Base on the Biomes
+    private static final Identifier GRASS_BASE_TEXTURE = Identifier.of("minecraft", "block/grass_block_base");
+    private static final Model CUBE_ALL_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/cube_all_tinted")), Optional.empty(), TextureKey.ALL);
+    private static final Model SLAB_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/slab_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model SLAB_TOP_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/slab_top_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model STAIRS_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/stairs_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model STAIRS_INNER_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/stairs_inner_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model STAIRS_OUTER_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/stairs_outer_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model CARPET_TINTED = new Model(Optional.of(Identifier.of("minecraft", "block/carpet_tinted")), Optional.empty(), TextureKey.WOOL);
+    //
+
     public DecoModelProvider(FabricDataOutput output) {
         super(output);
     }
@@ -404,7 +424,6 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.FRAGILE_ICE);
 
-        blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_GRASS, DecoBlocks.GRASS_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_DRY_GRASS, DecoBlocks.DRY_GRASS_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_PODZOL, DecoBlocks.PODZOL_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_MYCELIUM, DecoBlocks.MYCELIUM_CARPET);
@@ -1560,9 +1579,6 @@ public class DecoModelProvider extends FabricModelProvider {
         endstonetilepool.slab(DecoBlocks.END_STONE_TILE_SLAB);
         endstonetilepool.wall(DecoBlocks.END_STONE_TILE_WALL);
 
-        grasspool.stairs(DecoBlocks.GRASS_STAIRS);
-        grasspool.slab(DecoBlocks.GRASS_SLAB);
-
         drygrasspool.stairs(DecoBlocks.DRY_GRASS_STAIRS);
         drygrasspool.slab(DecoBlocks.DRY_GRASS_SLAB);
 
@@ -2185,5 +2201,59 @@ public class DecoModelProvider extends FabricModelProvider {
         cutpinkconcretepool.stairs(DecoBlocks.CUT_PINK_CONCRETE_STAIRS);
         cutpinkconcretepool.slab(DecoBlocks.CUT_PINK_CONCRETE_SLAB);
         cutpinkconcretepool.wall(DecoBlocks.CUT_PINK_CONCRETE_WALL);
+
+        registerTintedGrassModels(blockStateModelGenerator);
+    }
+
+    private void registerTintedGrassModels(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier packedGrassModelId = blockStateModelGenerator.createSubModel(DecoBlocks.PACKED_GRASS, "", CUBE_ALL_TINTED,
+                block -> TextureMap.of(TextureKey.ALL, GRASS_BASE_TEXTURE));
+        Identifier grassCarpetModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_CARPET, "", CARPET_TINTED,
+                block -> TextureMap.of(TextureKey.WOOL, GRASS_BASE_TEXTURE));
+        Identifier grassSlabModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_SLAB, "", SLAB_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassSlabTopModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_SLAB, "_top", SLAB_TOP_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassStairsModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_STAIRS, "", STAIRS_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassStairsInnerModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_STAIRS, "_inner", STAIRS_INNER_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassStairsOuterModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_STAIRS, "_outer", STAIRS_OUTER_TINTED,
+                block -> createGrassStairSlabTextureMap());
+
+        Consumer<Object> blockStateCollector = getBlockStateCollector(blockStateModelGenerator);
+        blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(
+                DecoBlocks.PACKED_GRASS, BlockStateModelGenerator.createWeightedVariant(packedGrassModelId)));
+        blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(
+                DecoBlocks.GRASS_CARPET, BlockStateModelGenerator.createWeightedVariant(grassCarpetModelId)));
+        blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(
+                DecoBlocks.GRASS_SLAB,
+                BlockStateModelGenerator.createWeightedVariant(grassSlabModelId),
+                BlockStateModelGenerator.createWeightedVariant(grassSlabTopModelId),
+                BlockStateModelGenerator.createWeightedVariant(packedGrassModelId)
+        ));
+        blockStateCollector.accept(BlockStateModelGenerator.createStairsBlockState(
+                DecoBlocks.GRASS_STAIRS,
+                BlockStateModelGenerator.createWeightedVariant(grassStairsInnerModelId),
+                BlockStateModelGenerator.createWeightedVariant(grassStairsModelId),
+                BlockStateModelGenerator.createWeightedVariant(grassStairsOuterModelId)
+        ));
+    }
+
+    private static TextureMap createGrassStairSlabTextureMap() {
+        return TextureMap.of(TextureKey.BOTTOM, GRASS_BASE_TEXTURE)
+                .put(TextureKey.TOP, GRASS_BASE_TEXTURE)
+                .put(TextureKey.SIDE, GRASS_BASE_TEXTURE);
+    }
+
+    @SuppressWarnings("unchecked")
+    private static Consumer<Object> getBlockStateCollector(BlockStateModelGenerator blockStateModelGenerator) {
+        try {
+            Field field = BlockStateModelGenerator.class.getDeclaredField("blockStateCollector");
+            field.setAccessible(true);
+            return (Consumer<Object>) field.get(blockStateModelGenerator);
+        } catch (ReflectiveOperationException exception) {
+            throw new RuntimeException("Failed to access blockStateCollector from BlockStateModelGenerator", exception);
+        }
     }
 }

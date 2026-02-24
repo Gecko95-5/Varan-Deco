@@ -344,5 +344,12 @@ public class VaranDecoClient implements ClientModInitializer {
                 return -1;
             }
         }, DecoBlocks.ROUGE_WILDFLOWERS, DecoBlocks.SWEET_WILDFLOWERS, DecoBlocks.GECKO_WILDFLOWERS);
+
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
+            if (tintIndex == 0) {
+                return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.getDefaultColor();
+            }
+            return -1;
+        }, DecoBlocks.PACKED_GRASS, DecoBlocks.GRASS_SLAB, DecoBlocks.GRASS_STAIRS, DecoBlocks.GRASS_CARPET);
     }
 }

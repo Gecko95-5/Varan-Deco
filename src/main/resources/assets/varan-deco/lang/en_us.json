@@ -1607,13 +1607,13 @@
   "block.minecraft.driftwood_log_slab": "Driftwood Slab",
   "block.minecraft.driftwood_log_wall": "Driftwood Wall",
 
-  "block.minecraft.dried_driftwood_stairs": "Dried Driftwood Wood Stairs",
-  "block.minecraft.dried_driftwood_slab": "Dried Driftwood Wood Slab",
-  "block.minecraft.dried_driftwood_wall": "Dried Driftwood Wood Wall",
+  "block.minecraft.dried_driftwood_stairs": "Dried Driftwood Stairs",
+  "block.minecraft.dried_driftwood_slab": "Dried Driftwood Slab",
+  "block.minecraft.dried_driftwood_wall": "Dried Driftwood Wall",
 
-  "block.minecraft.stripped_driftwood_stairs": "Stripped Driftwood Wood Stairs",
-  "block.minecraft.stripped_driftwood_slab": "Stripped Driftwood Wood Slab",
-  "block.minecraft.stripped_driftwood_wall": "Stripped Driftwood Wood Wall",
+  "block.minecraft.stripped_driftwood_stairs": "Stripped Driftwood Stairs",
+  "block.minecraft.stripped_driftwood_slab": "Stripped Driftwood Slab",
+  "block.minecraft.stripped_driftwood_wall": "Stripped Driftwood Wall",
 
   "block.minecraft.packed_netherrack": "Packed Netherrack",
   "block.minecraft.packed_netherrack_stairs": "Packed Netherrack Stairs",
@@ -1729,9 +1729,9 @@
 
   "block.minecraft.calcite_bricks": "Calcite Bricks",
 
-  "block.minecraft.calcite_brick_stairs": "Calcite Bricks Stairs",
-  "block.minecraft.calcite_brick_slab": "Calcite Bricks Slab",
-  "block.minecraft.calcite_brick_wall": "Calcite Bricks Wall",
+  "block.minecraft.calcite_brick_stairs": "Calcite Brick Stairs",
+  "block.minecraft.calcite_brick_slab": "Calcite Brick Slab",
+  "block.minecraft.calcite_brick_wall": "Calcite Brick Wall",
 
   "block.minecraft.cut_granite": "Cut Granite",
 
@@ -1741,9 +1741,9 @@
 
   "block.minecraft.granite_bricks": "Granite Bricks",
 
-  "block.minecraft.granite_brick_stairs": "Granite Bricks Stairs",
-  "block.minecraft.granite_brick_slab": "Granite Bricks Slab",
-  "block.minecraft.granite_brick_wall": "Granite Bricks Wall",
+  "block.minecraft.granite_brick_stairs": "Granite Brick Stairs",
+  "block.minecraft.granite_brick_slab": "Granite Brick Slab",
+  "block.minecraft.granite_brick_wall": "Granite Brick Wall",
 
   "block.minecraft.cut_diorite": "Cut Diorite",
 
@@ -1753,9 +1753,9 @@
 
   "block.minecraft.diorite_bricks": "Diorite Bricks",
 
-  "block.minecraft.diorite_brick_stairs": "Diorite Bricks Stairs",
-  "block.minecraft.diorite_brick_slab": "Diorite Bricks Slab",
-  "block.minecraft.diorite_brick_wall": "Diorite Bricks Wall",
+  "block.minecraft.diorite_brick_stairs": "Diorite Brick Stairs",
+  "block.minecraft.diorite_brick_slab": "Diorite Brick Slab",
+  "block.minecraft.diorite_brick_wall": "Diorite Brick Wall",
 
   "block.minecraft.cut_andesite": "Cut Andesite",
 
@@ -1765,9 +1765,9 @@
 
   "block.minecraft.andesite_bricks": "Andesite Bricks",
 
-  "block.minecraft.andesite_brick_stairs": "Andesite Bricks Stairs",
-  "block.minecraft.andesite_brick_slab": "Andesite Bricks Slab",
-  "block.minecraft.andesite_brick_wall": "Andesite Bricks Wall",
+  "block.minecraft.andesite_brick_stairs": "Andesite Brick Stairs",
+  "block.minecraft.andesite_brick_slab": "Andesite Brick Slab",
+  "block.minecraft.andesite_brick_wall": "Andesite Brick Wall",
 
   "block.minecraft.cut_gold": "Cut Gold",
   "block.minecraft.cut_gold_stairs": "Cut Gold Stairs",
