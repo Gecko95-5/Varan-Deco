@@ -2,16 +2,29 @@ package net.gecko.varandeco.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.block.nature.WarpedWartBlock;
 import net.gecko.varandeco.item.DecoItems;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
+
+import java.lang.reflect.Field;
+import java.util.Optional;
+import java.util.function.Consumer;
 
 public class DecoModelProvider extends FabricModelProvider {
+    // Thanks to PedalHat29861 Packed Grass is now has a Colour Base on the Biomes
+    private static final Identifier GRASS_BASE_TEXTURE = new Identifier(VaranDeco.MOD_ID, "block/grass_block_base");
+    private static final Model CUBE_ALL_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/cube_all_tinted")), Optional.empty(), TextureKey.ALL);
+    private static final Model SLAB_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/slab_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model SLAB_TOP_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/slab_top_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model STAIRS_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/stairs_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model STAIRS_INNER_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/stairs_inner_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model STAIRS_OUTER_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/stairs_outer_tinted")), Optional.empty(), TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
+    private static final Model CARPET_TINTED = new Model(Optional.of(new Identifier(VaranDeco.MOD_ID, "block/carpet_tinted")), Optional.empty(), TextureKey.WOOL);
+    //
     public DecoModelProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
@@ -180,6 +193,13 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool polisoulsoilstonepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
+        BlockStateModelGenerator.BlockTexturePool mossdeeppool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossblackstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossendstonepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.MOSSY_END_STONE_BRICKS);
+
         BlockStateModelGenerator.BlockTexturePool sandstonebrickspool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool redsandstonebrickspool =
@@ -245,8 +265,6 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool netherrackbrickpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.NETHERRACK_BRICKS);
 
-        BlockStateModelGenerator.BlockTexturePool grasspool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.GRASS_TEMP);
         BlockStateModelGenerator.BlockTexturePool podzolpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.PODZOL_TEMP);
         BlockStateModelGenerator.BlockTexturePool myceliumpool =
@@ -294,7 +312,6 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.FRAGILE_ICE);
 
-        blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_GRASS, DecoBlocks.GRASS_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_PODZOL, DecoBlocks.PODZOL_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_MYCELIUM, DecoBlocks.MYCELIUM_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.PACKED_CRIMSON_NYLIUM, DecoBlocks.CRIMSON_NYLIUM_CARPET);
@@ -1086,9 +1103,6 @@ public class DecoModelProvider extends FabricModelProvider {
         endstonetilepool.slab(DecoBlocks.END_STONE_TILE_SLAB);
         endstonetilepool.wall(DecoBlocks.END_STONE_TILE_WALL);
 
-        grasspool.stairs(DecoBlocks.GRASS_STAIRS);
-        grasspool.slab(DecoBlocks.GRASS_SLAB);
-
         podzolpool.stairs(DecoBlocks.PODZOL_STAIRS);
         podzolpool.slab(DecoBlocks.PODZOL_SLAB);
 
@@ -1189,6 +1203,18 @@ public class DecoModelProvider extends FabricModelProvider {
         crackbluenetherpool.wall(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
         crackbluenetherpool.fence(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
         crackbluenetherpool.fenceGate(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
+
+        mossdeeppool.stairs(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS);
+        mossdeeppool.slab(DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB);
+        mossdeeppool.wall(DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL);
+
+        mossblackstonepool.stairs(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS);
+        mossblackstonepool.slab(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB);
+        mossblackstonepool.wall(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL);
+
+        mossendstonepool.stairs(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS);
+        mossendstonepool.slab(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB);
+        mossendstonepool.wall(DecoBlocks.MOSSY_END_STONE_BRICK_WALL);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);
@@ -1635,8 +1661,53 @@ public class DecoModelProvider extends FabricModelProvider {
         cutpinkconcretepool.stairs(DecoBlocks.CUT_PINK_CONCRETE_STAIRS);
         cutpinkconcretepool.slab(DecoBlocks.CUT_PINK_CONCRETE_SLAB);
         cutpinkconcretepool.wall(DecoBlocks.CUT_PINK_CONCRETE_WALL);
+        registerTintedGrassModels(blockStateModelGenerator);
     }
 
+    private void registerTintedGrassModels(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier packedGrassModelId = blockStateModelGenerator.createSubModel(DecoBlocks.PACKED_GRASS, "", CUBE_ALL_TINTED,
+                block -> TextureMap.of(TextureKey.ALL, GRASS_BASE_TEXTURE));
+        Identifier grassCarpetModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_CARPET, "", CARPET_TINTED,
+                block -> TextureMap.of(TextureKey.WOOL, GRASS_BASE_TEXTURE));
+        Identifier grassSlabModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_SLAB, "", SLAB_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassSlabTopModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_SLAB, "_top", SLAB_TOP_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassStairsModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_STAIRS, "", STAIRS_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassStairsInnerModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_STAIRS, "_inner", STAIRS_INNER_TINTED,
+                block -> createGrassStairSlabTextureMap());
+        Identifier grassStairsOuterModelId = blockStateModelGenerator.createSubModel(DecoBlocks.GRASS_STAIRS, "_outer", STAIRS_OUTER_TINTED,
+                block -> createGrassStairSlabTextureMap());
+
+        Consumer<Object> blockStateCollector = getBlockStateCollector(blockStateModelGenerator);
+        blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(
+                DecoBlocks.PACKED_GRASS, packedGrassModelId));
+        blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(
+                DecoBlocks.GRASS_CARPET, grassCarpetModelId));
+        blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(
+                DecoBlocks.GRASS_SLAB, grassSlabModelId, grassSlabTopModelId, packedGrassModelId));
+        blockStateCollector.accept(BlockStateModelGenerator.createStairsBlockState(
+                DecoBlocks.GRASS_STAIRS, grassStairsInnerModelId, grassStairsModelId, grassStairsOuterModelId));
+    }
+
+    private static TextureMap createGrassStairSlabTextureMap() {
+        return TextureMap.of(TextureKey.BOTTOM, GRASS_BASE_TEXTURE)
+                .put(TextureKey.TOP, GRASS_BASE_TEXTURE)
+                .put(TextureKey.SIDE, GRASS_BASE_TEXTURE);
+    }
+
+    @SuppressWarnings("unchecked")
+    private static Consumer<Object> getBlockStateCollector(BlockStateModelGenerator blockStateModelGenerator) {
+        try {
+            Field field = BlockStateModelGenerator.class.getDeclaredField("blockStateCollector");
+            field.setAccessible(true);
+            return (Consumer<Object>) field.get(blockStateModelGenerator);
+        } catch (ReflectiveOperationException exception) {
+            throw new RuntimeException("Failed to access blockStateCollector from BlockStateModelGenerator", exception);
+        }
+
+    }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(DecoItems.SNOW_BRICK, Models.GENERATED);
@@ -1650,4 +1721,5 @@ public class DecoModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(DecoItems.LILAC_FLOWER, Models.HANDHELD);
     }
+
 }

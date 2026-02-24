@@ -6308,6 +6308,54 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)
+                .input(Items.GLOW_LICHEN)
+                .input(Items.DEEPSLATE_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.GLOW_LICHEN),
+                        RecipeProvider.conditionsFromItem(Items.GLOW_LICHEN))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_END_STONE_BRICKS)
+                .input(Items.CHORUS_FRUIT)
+                .input(Items.END_STONE_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.CHORUS_FRUIT),
+                        RecipeProvider.conditionsFromItem(Items.CHORUS_FRUIT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MOSSY_END_STONE_BRICKS)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)
+                .input(Items.TWISTING_VINES)
+                .input(Items.POLISHED_BLACKSTONE_BRICKS)
+                .criterion(RecipeProvider.hasItem(Items.TWISTING_VINES),
+                        RecipeProvider.conditionsFromItem(Items.TWISTING_VINES))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)));
+
+        createStairsRecipe(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.MOSSY_DEEPSLATE_BRICKS))
+                .criterion(hasItem(DecoBlocks.MOSSY_DEEPSLATE_BRICKS),conditionsFromItem(DecoBlocks.MOSSY_DEEPSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS, DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+        offerSlabRecipe(exporter, DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB, DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB, DecoBlocks.MOSSY_DEEPSLATE_BRICKS,2);
+        offerWallRecipe(exporter, DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL, DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL, DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.MOSSY_END_STONE_BRICKS))
+                .criterion(hasItem(DecoBlocks.MOSSY_END_STONE_BRICKS),conditionsFromItem(DecoBlocks.MOSSY_END_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS, DecoBlocks.MOSSY_END_STONE_BRICKS);
+        offerSlabRecipe(exporter, DecoBlocks.MOSSY_END_STONE_BRICK_SLAB, DecoBlocks.MOSSY_END_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_END_STONE_BRICK_SLAB, DecoBlocks.MOSSY_END_STONE_BRICKS,2);
+        offerWallRecipe(exporter, DecoBlocks.MOSSY_END_STONE_BRICK_WALL, DecoBlocks.MOSSY_END_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_END_STONE_BRICK_WALL, DecoBlocks.MOSSY_END_STONE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS))
+                .criterion(hasItem(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS),conditionsFromItem(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+        offerSlabRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS,2);
+        offerWallRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

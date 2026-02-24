@@ -1566,6 +1566,24 @@
   "block.varan-deco.cracked_blue_nether_brick_fence": "Cracked Blue Nether Brick Fence",
   "block.varan-deco.cracked_blue_nether_brick_fence_gate": "Cracked Blue Nether Brick Fence Gate",
 
+  "block.varan-deco.mossy_deepslate_bricks": "Mossy Deepslate Bricks",
+
+  "block.varan-deco.mossy_deepslate_brick_stairs": "Mossy Deepslate Brick Stairs",
+  "block.varan-deco.mossy_deepslate_brick_slab": "Mossy Deepslate Brick Slab",
+  "block.varan-deco.mossy_deepslate_brick_wall": "Mossy Deepslate Brick Wall",
+
+  "block.varan-deco.mossy_polished_blackstone_bricks": "Mossy Polished Blackstone Bricks",
+
+  "block.varan-deco.mossy_polished_blackstone_brick_stairs": "Mossy Polished Blackstone Brick Stairs",
+  "block.varan-deco.mossy_polished_blackstone_brick_slab": "Mossy Polished Blackstone Brick Slab",
+  "block.varan-deco.mossy_polished_blackstone_brick_wall": "Mossy Polished Blackstone Brick Wall",
+
+  "block.varan-deco.mossy_end_stone_bricks": "Mossy End Stone Bricks",
+
+  "block.varan-deco.mossy_end_stone_brick_stairs": "Mossy End Stone Brick Stairs",
+  "block.varan-deco.mossy_end_stone_brick_slab": "Mossy End Stone Brick Slab",
+  "block.varan-deco.mossy_end_stone_brick_wall": "Mossy End Stone Brick Wall",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

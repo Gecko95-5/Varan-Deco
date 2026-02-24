@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "varan-deco:block/cube_all_tinted",
   "textures": {
-    "all": "varan-deco:block/packed_grass"
+    "all": "varan-deco:block/grass_block_base"
   }
 }

@@ -510,7 +510,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE)
                 .add(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE)
                 .add(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE)
-                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
+                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICKS)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -875,7 +887,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRACKED_END_STONE_TILE_WALL)
                 .add(DecoBlocks.CRACKED_NETHER_BRICK_WALL)
                 .add(DecoBlocks.CRACKED_RED_NETHER_BRICK_WALL)
-                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_WALL)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -1046,7 +1061,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRACKED_END_STONE_TILE_STAIRS)
                 .add(DecoBlocks.CRACKED_NETHER_BRICK_STAIRS)
                 .add(DecoBlocks.CRACKED_RED_NETHER_BRICK_STAIRS)
-                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1165,7 +1183,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRACKED_END_STONE_TILE_SLAB)
                 .add(DecoBlocks.CRACKED_NETHER_BRICK_SLAB)
                 .add(DecoBlocks.CRACKED_RED_NETHER_BRICK_SLAB)
-                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
+                .add(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB)
+                .add(DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB)
+                .add(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB)
+                .add(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)

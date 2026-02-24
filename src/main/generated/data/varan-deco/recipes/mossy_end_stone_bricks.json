@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:end_stone_bricks"
+    }
+  ],
+  "result": {
+    "item": "varan-deco:mossy_end_stone_bricks"
+  }
+}

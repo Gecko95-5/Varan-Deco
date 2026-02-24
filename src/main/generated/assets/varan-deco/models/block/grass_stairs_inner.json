@@ -1,8 +1,8 @@
 {
-  "parent": "minecraft:block/inner_stairs",
+  "parent": "varan-deco:block/stairs_inner_tinted",
   "textures": {
-    "bottom": "varan-deco:block/grass_temp",
-    "side": "varan-deco:block/grass_temp",
-    "top": "varan-deco:block/grass_temp"
+    "bottom": "varan-deco:block/grass_block_base",
+    "side": "varan-deco:block/grass_block_base",
+    "top": "varan-deco:block/grass_block_base"
   }
 }

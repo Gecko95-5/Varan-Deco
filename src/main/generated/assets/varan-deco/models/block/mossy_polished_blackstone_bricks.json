@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "varan-deco:block/grass_temp"
+    "all": "varan-deco:block/mossy_polished_blackstone_bricks"
   }
 }

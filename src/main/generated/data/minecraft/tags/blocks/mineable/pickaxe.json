@@ -496,6 +496,18 @@
     "varan-deco:cracked_blue_nether_brick_fence",
     "varan-deco:cracked_nether_brick_fence_gate",
     "varan-deco:cracked_red_nether_brick_fence_gate",
-    "varan-deco:cracked_blue_nether_brick_fence_gate"
+    "varan-deco:cracked_blue_nether_brick_fence_gate",
+    "varan-deco:mossy_deepslate_bricks",
+    "varan-deco:mossy_deepslate_brick_stairs",
+    "varan-deco:mossy_deepslate_brick_slab",
+    "varan-deco:mossy_deepslate_brick_wall",
+    "varan-deco:mossy_polished_blackstone_bricks",
+    "varan-deco:mossy_polished_blackstone_brick_stairs",
+    "varan-deco:mossy_polished_blackstone_brick_slab",
+    "varan-deco:mossy_polished_blackstone_brick_wall",
+    "varan-deco:mossy_end_stone_bricks",
+    "varan-deco:mossy_end_stone_brick_stairs",
+    "varan-deco:mossy_end_stone_brick_slab",
+    "varan-deco:mossy_end_stone_brick_wall"
   ]
 }
