@@ -113,6 +113,14 @@ public class DecoBlocks {
     public static final Block HARDENED_TINTED_GLASS = registerBlock("hardened_tinted_glass",
             new TintedGlassBlock(FabricBlockSettings.copyOf(Blocks.TINTED_GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block CHISELED_LAPIS = registerBlock("chiseled_lapis",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LAPIS_BRICKS = registerBlock("lapis_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK).strength(4)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_LAPIS = registerBlock("cut_lapis",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block LAPIS_PILLAR = registerBlock("lapis_pillar",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICKS = registerBlock("cut_sandstone_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE).strength(1.6f)),
             DecoItemGroup.VARAN_DECO_BUILDING);
@@ -127,6 +135,8 @@ public class DecoBlocks {
     public static final Block SMOOTH_OBSIDIAN = registerBlock("smooth_obsidian",
             new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).strength(60.0F, 1200.0F)),
             DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block SMOOTH_LAPIS = registerBlock("smooth_lapis",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK).mapColor(MapColor.BLUE)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_PURPUR = registerBlock("smooth_purpur",
             new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block SMOOTH_DEEPSLATE = registerBlock("smooth_deepslate",
@@ -218,12 +228,16 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_DEEPSLATE_BRICKS = registerBlock("mossy_deepslate_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block PACKED_MYCELIUM = registerBlock("packed_mycelium",
             new PackedMyceliumBlock(FabricBlockSettings.copyOf(Blocks.MYCELIUM)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CHISELED_END_STONE = registerBlock("chiseled_end_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4.0F, 9.0F)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_END_STONE_BRICKS = registerBlock("mossy_end_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block END_STONE_TILES = registerBlock("end_stone_tiles",
@@ -465,6 +479,8 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.GILDED_BLACKSTONE).strength(2.5f)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CHISELED_GLIDED_BLACKSTONE = registerBlock("chiseled_gilded_blackstone",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_GLIDED_BLACKSTONE)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_POLISHED_BLACKSTONE_BRICKS = registerBlock("mossy_polished_blackstone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_BLACKSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block POLISHED_BLACKSTONE_TILES = registerBlock("polished_blackstone_tiles",
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).strength(1.5f).resistance(6.0f).requiresTool()),
             DecoItemGroup.VARAN_DECO_BUILDING);
@@ -753,6 +769,9 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)),
             DecoItemGroup.VARAN_DECO_BUILDING);
 
+    public static final Block LAPIS_SLAB = registerBlock("lapis_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block WHITE_WOOL_SLAB = registerBlock("white_wool_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block ORANGE_WOOL_SLAB = registerBlock("orange_wool_slab",
@@ -915,6 +934,10 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block LAPIS_BRICK_SLAB = registerBlock("lapis_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_LAPIS_SLAB = registerBlock("cut_lapis_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_LAPIS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_SLAB = registerBlock("cut_sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block COBBLED_SANDSTONE_SLAB = registerBlock("cobbled_sandstone_slab",
@@ -923,6 +946,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_SANDSTONE)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block SMOOTH_LAPIS_SLAB = registerBlock("smooth_lapis_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_LAPIS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_OBSIDIAN_SLAB = registerBlock("smooth_obsidian_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_OBSIDIAN)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block SMOOTH_PURPUR_SLAB = registerBlock("smooth_purpur_slab",
@@ -955,8 +980,12 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CRACKED_STONE_TILE_SLAB = registerBlock("cracked_stone_tile_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CRACKED_STONE_TILES)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block POLISHED_END_STONE_SLAB = registerBlock("polished_end_stone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_END_STONE)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_END_STONE_BRICK_SLAB = registerBlock("mossy_end_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MOSSY_END_STONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CRACKED_END_STONE_BRICK_SLAB = registerBlock("cracked_end_stone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CRACKED_END_STONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block END_STONE_TILE_SLAB = registerBlock("end_stone_tile_slab",
@@ -1077,6 +1106,8 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = registerBlock("cracked_blue_nether_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock("mossy_polished_blackstone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("polished_blackstone_tile_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CRACKED_POLISHED_BLACKSTONE_TILE_SLAB = registerBlock("cracked_polished_blackstone_tile_slab",
@@ -1232,6 +1263,9 @@ public class DecoBlocks {
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)),
             DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block LAPIS_STAIRS = registerBlock("lapis_stairs",
+            new StairsBlock(Blocks.LAPIS_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WHITE_WOOL_STAIRS = registerBlock("white_wool_stairs",
             new StairsBlock(Blocks.WHITE_WOOL.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)),
             DecoItemGroup.VARAN_DECO_BUILDING);
@@ -1480,6 +1514,12 @@ public class DecoBlocks {
     public static final Block WOODEN_STAIRS = registerBlock("wooden_stairs",
             new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)),
             DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block LAPIS_BRICK_STAIRS = registerBlock("lapis_brick_stairs",
+            new StairsBlock(DecoBlocks.LAPIS_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_LAPIS_STAIRS = registerBlock("cut_lapis_stairs",
+            new StairsBlock(DecoBlocks.CUT_LAPIS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CUT_LAPIS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_STAIRS = registerBlock("cut_sandstone_brick_stairs",
             new StairsBlock(DecoBlocks.CUT_SANDSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)),
             DecoItemGroup.VARAN_DECO_BUILDING);
@@ -1492,6 +1532,9 @@ public class DecoBlocks {
     public static final Block SANDSTONE_BRICK_STAIRS = registerBlock("sandstone_brick_stairs",
             new StairsBlock(DecoBlocks.SANDSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SANDSTONE_BRICKS)),
             DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block SMOOTH_LAPIS_STAIRS = registerBlock("smooth_lapis_stairs",
+            new StairsBlock(DecoBlocks.SMOOTH_LAPIS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_LAPIS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_OBSIDIAN_STAIRS = registerBlock("smooth_obsidian_stairs",
             new StairsBlock(DecoBlocks.SMOOTH_OBSIDIAN.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_OBSIDIAN)),
             DecoItemGroup.VARAN_DECO_BUILDING);
@@ -1540,8 +1583,14 @@ public class DecoBlocks {
     public static final Block CRACKED_STONE_TILE_STAIRS = registerBlock("cracked_stone_tile_stairs",
             new StairsBlock(DecoBlocks.CRACKED_STONE_TILES.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CRACKED_STONE_TILES)),
             DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlock("mossy_deepslate_brick_stairs",
+            new StairsBlock(DecoBlocks.MOSSY_DEEPSLATE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)),
+            DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block POLISHED_END_STONE_STAIRS = registerBlock("polished_end_stone_stairs",
             new StairsBlock(DecoBlocks.POLISHED_END_STONE.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.POLISHED_END_STONE)),
+            DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_END_STONE_BRICK_STAIRS = registerBlock("mossy_end_stone_brick_stairs",
+            new StairsBlock(DecoBlocks.MOSSY_END_STONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MOSSY_END_STONE_BRICKS)),
             DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block CRACKED_END_STONE_BRICK_STAIRS = registerBlock("cracked_end_stone_brick_stairs",
             new StairsBlock(DecoBlocks.CRACKED_END_STONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CRACKED_END_STONE_BRICKS)),
@@ -1723,6 +1772,9 @@ public class DecoBlocks {
     public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = registerBlock("cracked_blue_nether_brick_stairs",
             new StairsBlock(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BUILDING);
+    public static final Block MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("mossy_polished_blackstone_brick_stairs",
+            new StairsBlock(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)),
+            DecoItemGroup.VARAN_DECO_BUILDING);
     public static final Block POLISHED_BLACKSTONE_TILE_STAIRS = registerBlock("polished_blackstone_tile_stairs",
             new StairsBlock(DecoBlocks.POLISHED_BLACKSTONE_TILES.getDefaultState(),
                     FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_BUILDING);
@@ -2327,6 +2379,9 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)),
             DecoItemGroup.VARAN_DECO_DECORATION);
 
+    public static final Block LAPIS_WALL = registerBlock("lapis_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block SMOOTH_QUARTZ_WALL = registerBlock("smooth_quartz_wall",
@@ -2466,6 +2521,10 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_CALCITE)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block CALCITE_BRICK_WALL = registerBlock("calcite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CALCITE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
+    public static final Block LAPIS_BRICK_WALL = registerBlock("lapis_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CUT_LAPIS_WALL = registerBlock("cut_lapis_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_LAPIS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICK_WALL = registerBlock("cut_sandstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CUT_SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block COBBLED_SANDSTONE_WALL = registerBlock("cobbled_sandstone_wall",
@@ -2474,6 +2533,8 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_SANDSTONE)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SANDSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
+    public static final Block SMOOTH_LAPIS_WALL = registerBlock("smooth_lapis_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_LAPIS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block SMOOTH_OBSIDIAN_WALL = registerBlock("smooth_obsidian_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SMOOTH_OBSIDIAN)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block SMOOTH_PURPUR_WALL = registerBlock("smooth_purpur_wall",
@@ -2506,8 +2567,12 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.STONE_TILES)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block CRACKED_STONE_TILE_WALL = registerBlock("cracked_stone_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CRACKED_STONE_TILES)), DecoItemGroup.VARAN_DECO_DECORATION);
+    public static final Block MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block POLISHED_END_STONE_WALL = registerBlock("polished_end_stone_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_END_STONE)), DecoItemGroup.VARAN_DECO_DECORATION);
+    public static final Block MOSSY_END_STONE_BRICK_WALL = registerBlock("mossy_end_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.MOSSY_END_STONE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block CRACKED_END_STONE_BRICK_WALL = registerBlock("cracked_end_stone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CRACKED_END_STONE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block END_STONE_TILE_WALL = registerBlock("end_stone_tile_wall",
@@ -2628,6 +2693,8 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = registerBlock("cracked_blue_nether_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CRACKED_BLUE_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
+    public static final Block MOSSY_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("mossy_polished_blackstone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block POLISHED_BLACKSTONE_TILE_WALL = registerBlock("polished_blackstone_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.POLISHED_BLACKSTONE_TILES)), DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block CRACKED_POLISHED_BLACKSTONE_TILE_WALL = registerBlock("cracked_polished_blackstone_tile_wall",
@@ -3301,8 +3368,6 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block RAW_COPPER_TEMP = registerBlockWithoutItem("raw_copper_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
-    public static final Block GRASS_TEMP = registerBlockWithoutItem("grass_temp",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block PODZOL_TEMP = registerBlockWithoutItem("podzol_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block MYCELIUM_TEMP = registerBlockWithoutItem("mycelium_temp",
@@ -3368,6 +3433,8 @@ public class DecoBlocks {
     public static final Block CRACKED_NETHER_BRICKS_TEMP = registerBlockWithoutItem("cracked_nether_bricks_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICKS_TEMP = registerBlockWithoutItem("cracked_polished_blackstone_bricks_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block LAPIS_TEMP = registerBlockWithoutItem("lapis_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)

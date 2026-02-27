@@ -132,6 +132,9 @@
     "varan-deco:cracked_end_stone_tile_stairs",
     "varan-deco:cracked_nether_brick_stairs",
     "varan-deco:cracked_red_nether_brick_stairs",
-    "varan-deco:cracked_blue_nether_brick_stairs"
+    "varan-deco:cracked_blue_nether_brick_stairs",
+    "varan-deco:mossy_deepslate_brick_stairs",
+    "varan-deco:mossy_polished_blackstone_brick_stairs",
+    "varan-deco:mossy_end_stone_brick_stairs"
   ]
 }

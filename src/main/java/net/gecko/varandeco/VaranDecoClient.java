@@ -7,6 +7,9 @@ import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoEntities;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.color.world.GrassColors;
@@ -14,6 +17,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.item.BlockItem;
 
 public class VaranDecoClient implements ClientModInitializer {
     @Override
@@ -265,6 +269,14 @@ public class VaranDecoClient implements ClientModInitializer {
                         world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor(),
                 DecoBlocks.WOODEN_LEAVES);
 
+        ColorProviderRegistry.BLOCK.register((
+                (state, world, pos, tintIndex) -> world != null && pos != null
+                        ? BiomeColors.getGrassColor(world, pos) : GrassColors.getColor(0.5, 1.0)),
+                DecoBlocks.PACKED_GRASS, DecoBlocks.GRASS_STAIRS, DecoBlocks.GRASS_SLAB, DecoBlocks.GRASS_CARPET);
+
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 4764952, DecoBlocks.WOODEN_LEAVES.asItem());
+
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 8633197, DecoBlocks.PACKED_GRASS.asItem(),
+                DecoBlocks.GRASS_STAIRS.asItem(),DecoBlocks.GRASS_SLAB.asItem(),DecoBlocks.GRASS_CARPET);
     }
 }

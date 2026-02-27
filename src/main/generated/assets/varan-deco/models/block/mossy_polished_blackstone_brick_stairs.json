@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "varan-deco:block/mossy_polished_blackstone_bricks",
+    "side": "varan-deco:block/mossy_polished_blackstone_bricks",
+    "top": "varan-deco:block/mossy_polished_blackstone_bricks"
+  }
+}

@@ -2644,5 +2644,32 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cracked_blue_nether_brick_fence_gate"),
                 BlockLootTableGenerator.drops(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_deepslate_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_DEEPSLATE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_deepslate_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_deepslate_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_deepslate_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_polished_blackstone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_polished_blackstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_polished_blackstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_polished_blackstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_end_stone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_END_STONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_end_stone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_end_stone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_end_stone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.MOSSY_END_STONE_BRICK_WALL));
     }
 }
