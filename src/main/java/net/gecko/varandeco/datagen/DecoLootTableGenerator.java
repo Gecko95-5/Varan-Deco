@@ -2671,5 +2671,44 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/mossy_end_stone_brick_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.MOSSY_END_STONE_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAPIS_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LAPIS_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAPIS_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAPIS_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAPIS_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.LAPIS_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAPIS_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_lapis"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_LAPIS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_lapis_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_LAPIS_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_lapis_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CUT_LAPIS_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cut_lapis_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CUT_LAPIS_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_lapis"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_LAPIS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_lapis_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_LAPIS_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_lapis_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SMOOTH_LAPIS_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_lapis_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SMOOTH_LAPIS_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_lapis"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_LAPIS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/lapis_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.LAPIS_PILLAR));
     }
 }

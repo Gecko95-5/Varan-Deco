@@ -135,6 +135,14 @@
     "varan-deco:cracked_blue_nether_brick_stairs",
     "varan-deco:mossy_deepslate_brick_stairs",
     "varan-deco:mossy_polished_blackstone_brick_stairs",
-    "varan-deco:mossy_end_stone_brick_stairs"
+    "varan-deco:mossy_end_stone_brick_stairs",
+    "varan-deco:lapis_stairs",
+    "varan-deco:lapis_brick_stairs",
+    "varan-deco:cut_lapis_stairs",
+    "varan-deco:smooth_lapis_stairs",
+    "varan-deco:lapis_slab",
+    "varan-deco:lapis_brick_slab",
+    "varan-deco:cut_lapis_slab",
+    "varan-deco:smooth_lapis_slab"
   ]
 }

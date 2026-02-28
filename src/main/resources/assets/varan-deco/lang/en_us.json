@@ -1584,6 +1584,31 @@
   "block.varan-deco.mossy_end_stone_brick_slab": "Mossy End Stone Brick Slab",
   "block.varan-deco.mossy_end_stone_brick_wall": "Mossy End Stone Brick Wall",
 
+  "block.varan-deco.lapis_stairs": "Lapis Lazuli Stairs",
+  "block.varan-deco.lapis_slab": "Lapis Lazuli Slab",
+  "block.varan-deco.lapis_wall": "Lapis Lazuli Wall",
+
+  "block.varan-deco.lapis_bricks": "Lapis Lazuli Bricks",
+
+  "block.varan-deco.lapis_brick_stairs": "Lapis Lazuli Brick Stairs",
+  "block.varan-deco.lapis_brick_slab": "Lapis Lazuli Brick Slab",
+  "block.varan-deco.lapis_brick_wall": "Lapis Lazuli Brick Wall",
+
+  "block.varan-deco.cut_lapis": "Cut Lapis Lazuli",
+
+  "block.varan-deco.cut_lapis_stairs": "Cut Lapis Lazuli Stairs",
+  "block.varan-deco.cut_lapis_slab": "Cut Lapis Lazuli Slab",
+  "block.varan-deco.cut_lapis_wall": "Cut Lapis Lazuli Wall",
+
+  "block.varan-deco.smooth_lapis": "Smooth Lapis Lazuli",
+
+  "block.varan-deco.smooth_lapis_stairs": "Smooth Lapis Lazuli Stairs",
+  "block.varan-deco.smooth_lapis_slab": "Smooth Lapis Lazuli Slab",
+  "block.varan-deco.smooth_lapis_wall": "Smooth Lapis Lazuli Wall",
+
+  "block.varan-deco.chiseled_lapis": "Chiseled Lapis Lazuli",
+  "block.varan-deco.lapis_pillar": "Lapis Lazuli Pillar",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

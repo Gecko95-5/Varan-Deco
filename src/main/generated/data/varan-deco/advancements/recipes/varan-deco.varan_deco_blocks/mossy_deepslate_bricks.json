@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glow_lichen": {
+    "has_sculk_vein": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:glow_lichen"
+              "minecraft:sculk_vein"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_glow_lichen",
+      "has_sculk_vein",
       "has_the_recipe"
     ]
   ],

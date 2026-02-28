@@ -120,7 +120,7 @@ public class DecoBlocks {
     public static final Block CUT_LAPIS = registerBlock("cut_lapis",
             new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_PILLAR = registerBlock("lapis_pillar",
-            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_SANDSTONE_BRICKS = registerBlock("cut_sandstone_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE).strength(1.6f)),
             DecoItemGroup.VARAN_DECO_BLOCKS);

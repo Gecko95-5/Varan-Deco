@@ -216,6 +216,18 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool cutobsidianpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_OBSIDIAN);
 
+        BlockStateModelGenerator.BlockTexturePool lapispool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.LAPIS_TEMP);
+        BlockStateModelGenerator.BlockTexturePool lapisbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.LAPIS_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool smlapispool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_LAPIS);
+        BlockStateModelGenerator.BlockTexturePool cutlapispool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CUT_LAPIS);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_LAPIS);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.LAPIS_PILLAR, TexturedModel.CUBE_COLUMN);
+
         BlockStateModelGenerator.BlockTexturePool oakwoodpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OAK_WOOD_TEMP);
         BlockStateModelGenerator.BlockTexturePool sprucewoodpool =
@@ -1215,6 +1227,22 @@ public class DecoModelProvider extends FabricModelProvider {
         mossendstonepool.stairs(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS);
         mossendstonepool.slab(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB);
         mossendstonepool.wall(DecoBlocks.MOSSY_END_STONE_BRICK_WALL);
+
+        lapispool.stairs(DecoBlocks.LAPIS_STAIRS);
+        lapispool.slab(DecoBlocks.LAPIS_SLAB);
+        lapispool.wall(DecoBlocks.LAPIS_WALL);
+
+        cutlapispool.stairs(DecoBlocks.CUT_LAPIS_STAIRS);
+        cutlapispool.slab(DecoBlocks.CUT_LAPIS_SLAB);
+        cutlapispool.wall(DecoBlocks.CUT_LAPIS_WALL);
+
+        smlapispool.stairs(DecoBlocks.SMOOTH_LAPIS_STAIRS);
+        smlapispool.slab(DecoBlocks.SMOOTH_LAPIS_SLAB);
+        smlapispool.wall(DecoBlocks.SMOOTH_LAPIS_WALL);
+
+        lapisbrickpool.stairs(DecoBlocks.LAPIS_BRICK_STAIRS);
+        lapisbrickpool.slab(DecoBlocks.LAPIS_BRICK_SLAB);
+        lapisbrickpool.wall(DecoBlocks.LAPIS_BRICK_WALL);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

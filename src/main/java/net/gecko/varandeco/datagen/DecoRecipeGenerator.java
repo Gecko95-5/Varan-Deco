@@ -6310,10 +6310,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE)));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)
-                .input(Items.GLOW_LICHEN)
+                .input(Items.SCULK_VEIN)
                 .input(Items.DEEPSLATE_BRICKS)
-                .criterion(RecipeProvider.hasItem(Items.GLOW_LICHEN),
-                        RecipeProvider.conditionsFromItem(Items.GLOW_LICHEN))
+                .criterion(RecipeProvider.hasItem(Items.SCULK_VEIN),
+                        RecipeProvider.conditionsFromItem(Items.SCULK_VEIN))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_END_STONE_BRICKS)
@@ -6356,6 +6356,88 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS,2);
         offerWallRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
         offerStonecuttingRecipe(exporter, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+
+        createStairsRecipe(DecoBlocks.LAPIS_STAIRS, Ingredient.ofItems(Items.LAPIS_BLOCK))
+                .criterion(hasItem(Items.LAPIS_BLOCK),conditionsFromItem(Items.LAPIS_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LAPIS_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_STAIRS, Items.LAPIS_BLOCK);
+        offerSlabRecipe(exporter, DecoBlocks.LAPIS_SLAB, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_SLAB, Items.LAPIS_BLOCK,2);
+        offerWallRecipe(exporter, DecoBlocks.LAPIS_WALL, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_WALL, Items.LAPIS_BLOCK);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.LAPIS_BRICKS, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICKS, Items.LAPIS_BLOCK);
+
+        createStairsRecipe(DecoBlocks.LAPIS_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.LAPIS_BRICKS))
+                .criterion(hasItem(DecoBlocks.LAPIS_BRICKS),conditionsFromItem(DecoBlocks.LAPIS_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.LAPIS_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICK_STAIRS, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICK_STAIRS, DecoBlocks.LAPIS_BRICKS);
+        offerSlabRecipe(exporter, DecoBlocks.LAPIS_BRICK_SLAB, DecoBlocks.LAPIS_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICK_SLAB, Items.LAPIS_BLOCK,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICK_SLAB, DecoBlocks.LAPIS_BRICKS,2);
+        offerWallRecipe(exporter, DecoBlocks.LAPIS_BRICK_WALL, DecoBlocks.LAPIS_BRICKS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICK_WALL, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_BRICK_WALL, DecoBlocks.LAPIS_BRICKS);
+
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CUT_LAPIS,4)
+                .pattern("#L")
+                .pattern("L#")
+                .input('#', Items.LAPIS_BLOCK)
+                .input('L', Items.LAPIS_LAZULI)
+                .criterion(RecipeProvider.hasItem(Items.LAPIS_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.LAPIS_BLOCK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CUT_LAPIS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS, Items.LAPIS_BLOCK);
+
+        createStairsRecipe(DecoBlocks.CUT_LAPIS_STAIRS, Ingredient.ofItems(DecoBlocks.CUT_LAPIS))
+                .criterion(hasItem(DecoBlocks.CUT_LAPIS),conditionsFromItem(DecoBlocks.CUT_LAPIS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.CUT_LAPIS_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS_STAIRS, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS_STAIRS, DecoBlocks.CUT_LAPIS);
+        offerSlabRecipe(exporter, DecoBlocks.CUT_LAPIS_SLAB, DecoBlocks.CUT_LAPIS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS_SLAB, Items.LAPIS_BLOCK,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS_SLAB, DecoBlocks.CUT_LAPIS,2);
+        offerWallRecipe(exporter, DecoBlocks.CUT_LAPIS_WALL, DecoBlocks.CUT_LAPIS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS_WALL, Items.LAPIS_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CUT_LAPIS_WALL, DecoBlocks.CUT_LAPIS);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.LAPIS_BLOCK), DecoBlocks.SMOOTH_LAPIS,
+                        0.1f, 200).criterion(hasItem(Items.LAPIS_BLOCK), conditionsFromItem(Items.LAPIS_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_LAPIS)));
+
+        createStairsRecipe(DecoBlocks.SMOOTH_LAPIS_STAIRS, Ingredient.ofItems(DecoBlocks.SMOOTH_LAPIS))
+                .criterion(hasItem(DecoBlocks.SMOOTH_LAPIS),conditionsFromItem(DecoBlocks.SMOOTH_LAPIS))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_LAPIS_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_LAPIS_STAIRS, DecoBlocks.SMOOTH_LAPIS);
+        offerSlabRecipe(exporter, DecoBlocks.SMOOTH_LAPIS_SLAB, DecoBlocks.SMOOTH_LAPIS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_LAPIS_SLAB, DecoBlocks.SMOOTH_LAPIS,2);
+        offerWallRecipe(exporter, DecoBlocks.SMOOTH_LAPIS_WALL, DecoBlocks.SMOOTH_LAPIS);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SMOOTH_LAPIS_WALL, DecoBlocks.SMOOTH_LAPIS);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.LAPIS_STAIRS), DecoBlocks.SMOOTH_LAPIS_STAIRS,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.LAPIS_STAIRS), conditionsFromItem(DecoBlocks.LAPIS_STAIRS))
+                .offerTo(exporter, new Identifier("smooth_lapis_stairs_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.LAPIS_SLAB), DecoBlocks.SMOOTH_LAPIS_SLAB,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.LAPIS_SLAB), conditionsFromItem(DecoBlocks.LAPIS_SLAB))
+                .offerTo(exporter, new Identifier("smooth_lapis_slab_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.LAPIS_WALL), DecoBlocks.SMOOTH_LAPIS_WALL,
+                        0.1f, 200).criterion(hasItem(DecoBlocks.LAPIS_WALL), conditionsFromItem(DecoBlocks.LAPIS_WALL))
+                .offerTo(exporter, new Identifier("smooth_lapis_wall_from_smelting"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_LAPIS,2)
+                .pattern("##")
+                .pattern("##")
+                .input('#', DecoBlocks.LAPIS_SLAB)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.LAPIS_SLAB),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.LAPIS_SLAB))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_LAPIS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_LAPIS, Items.LAPIS_BLOCK);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.LAPIS_PILLAR, DecoBlocks.LAPIS_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_PILLAR, Items.LAPIS_BLOCK);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

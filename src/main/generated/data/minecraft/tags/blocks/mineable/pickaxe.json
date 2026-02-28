@@ -508,6 +508,23 @@
     "varan-deco:mossy_end_stone_bricks",
     "varan-deco:mossy_end_stone_brick_stairs",
     "varan-deco:mossy_end_stone_brick_slab",
-    "varan-deco:mossy_end_stone_brick_wall"
+    "varan-deco:mossy_end_stone_brick_wall",
+    "varan-deco:lapis_pillar",
+    "varan-deco:chiseled_lapis",
+    "varan-deco:lapis_bricks",
+    "varan-deco:cut_lapis",
+    "varan-deco:smooth_lapis",
+    "varan-deco:lapis_stairs",
+    "varan-deco:lapis_brick_stairs",
+    "varan-deco:cut_lapis_stairs",
+    "varan-deco:smooth_lapis_stairs",
+    "varan-deco:lapis_slab",
+    "varan-deco:lapis_brick_slab",
+    "varan-deco:cut_lapis_slab",
+    "varan-deco:smooth_lapis_slab",
+    "varan-deco:lapis_wall",
+    "varan-deco:lapis_brick_wall",
+    "varan-deco:cut_lapis_wall",
+    "varan-deco:smooth_lapis_wall"
   ]
 }

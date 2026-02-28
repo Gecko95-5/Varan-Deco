@@ -111,6 +111,10 @@
     "varan-deco:cracked_blue_nether_brick_wall",
     "varan-deco:mossy_deepslate_brick_wall",
     "varan-deco:mossy_polished_blackstone_brick_wall",
-    "varan-deco:mossy_end_stone_brick_wall"
+    "varan-deco:mossy_end_stone_brick_wall",
+    "varan-deco:lapis_wall",
+    "varan-deco:lapis_brick_wall",
+    "varan-deco:cut_lapis_wall",
+    "varan-deco:smooth_lapis_wall"
   ]
 }
