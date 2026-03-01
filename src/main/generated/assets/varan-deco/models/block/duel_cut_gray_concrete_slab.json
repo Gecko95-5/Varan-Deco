@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "varan-deco:block/duel_cut_gray_concrete",
+    "side": "varan-deco:block/duel_cut_gray_concrete",
+    "top": "varan-deco:block/duel_cut_gray_concrete"
+  }
+}

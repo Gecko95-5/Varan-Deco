@@ -340,23 +340,34 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParented(Blocks.DEEPSLATE_BRICKS, DecoBlocks.INFESTED_DEEPSLATE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.DEEPSLATE_TILES, DecoBlocks.INFESTED_DEEPSLATE_TILES);
         blockStateModelGenerator.registerParented(Blocks.CRACKED_DEEPSLATE_BRICKS, DecoBlocks.INFESTED_CRACKED_DEEPSLATE_BRICKS);
+        blockStateModelGenerator.registerParented(DecoBlocks.MOSSY_DEEPSLATE_BRICKS, DecoBlocks.INFESTED_MOSSY_DEEPSLATE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.CRACKED_DEEPSLATE_TILES, DecoBlocks.INFESTED_CRACKED_DEEPSLATE_TILES);
         blockStateModelGenerator.registerParented(Blocks.MOSSY_COBBLESTONE, DecoBlocks.INFESTED_MOSSY_COBBLESTONE);
         blockStateModelGenerator.registerParented(Blocks.CHISELED_DEEPSLATE, DecoBlocks.INFESTED_CHISELED_DEEPSLATE);
         blockStateModelGenerator.registerParented(Blocks.CALCITE, DecoBlocks.INFESTED_CALCITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.POLISHED_CALCITE, DecoBlocks.INFESTED_POLISHED_CALCITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CUT_CALCITE, DecoBlocks.INFESTED_CUT_CALCITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CALCITE_BRICKS, DecoBlocks.INFESTED_CALCITE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.DRIPSTONE_BLOCK, DecoBlocks.INFESTED_DRIPSTONE_BLOCK);
         blockStateModelGenerator.registerParented(Blocks.TUFF, DecoBlocks.INFESTED_TUFF);
         blockStateModelGenerator.registerParented(Blocks.GRANITE, DecoBlocks.INFESTED_GRANITE);
         blockStateModelGenerator.registerParented(Blocks.POLISHED_GRANITE, DecoBlocks.INFESTED_POLISHED_GRANITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CUT_GRANITE, DecoBlocks.INFESTED_CUT_GRANITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.GRANITE_BRICKS, DecoBlocks.INFESTED_GRANITE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.DIORITE, DecoBlocks.INFESTED_DIORITE);
         blockStateModelGenerator.registerParented(Blocks.POLISHED_DIORITE, DecoBlocks.INFESTED_POLISHED_DIORITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CUT_DIORITE, DecoBlocks.INFESTED_CUT_DIORITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.DIORITE_BRICKS, DecoBlocks.INFESTED_DIORITE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.ANDESITE, DecoBlocks.INFESTED_ANDESITE);
         blockStateModelGenerator.registerParented(Blocks.POLISHED_ANDESITE, DecoBlocks.INFESTED_POLISHED_ANDESITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.CUT_ANDESITE, DecoBlocks.INFESTED_CUT_ANDESITE);
+        blockStateModelGenerator.registerParented(DecoBlocks.ANDESITE_BRICKS, DecoBlocks.INFESTED_ANDESITE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.BLACKSTONE, DecoBlocks.INFESTED_BLACKSTONE);
         blockStateModelGenerator.registerParented(Blocks.POLISHED_BLACKSTONE, DecoBlocks.INFESTED_POLISHED_BLACKSTONE);
         blockStateModelGenerator.registerParented(Blocks.POLISHED_BLACKSTONE_BRICKS, DecoBlocks.INFESTED_POLISHED_BLACKSTONE_BRICKS);
         blockStateModelGenerator.registerParented(DecoBlocks.POLISHED_BLACKSTONE_TILES, DecoBlocks.INFESTED_POLISHED_BLACKSTONE_TILES);
         blockStateModelGenerator.registerParented(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        blockStateModelGenerator.registerParented(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS, DecoBlocks.INFESTED_MOSSY_POLISHED_BLACKSTONE_BRICKS);
         blockStateModelGenerator.registerParented(Blocks.CHISELED_POLISHED_BLACKSTONE, DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
         blockStateModelGenerator.registerParented(DecoBlocks.CRACKED_STONE_TILES, DecoBlocks.INFESTED_CRACKED_STONE_TILES);
         blockStateModelGenerator.registerParented(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES, DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES);
@@ -1436,6 +1447,68 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.MAGENTA_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.PINK_CONCRETE_PILLAR, TexturedModel.CUBE_COLUMN);
 
+        BlockStateModelGenerator.BlockTexturePool ducutlightgrayconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutgrayconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_GRAY_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutblackconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_BLACK_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutbrownconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_BROWN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutredconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_RED_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutorangeconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutyellowconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutlimeconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_LIME_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutgreenconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_GREEN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutcyanconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_CYAN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutlightblueconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutblueconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_BLUE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutpurpleconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutmagnetaconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool ducutpinkconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DUEL_CUT_PINK_CONCRETE);
+
+        BlockStateModelGenerator.BlockTexturePool checklightgrayconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkgrayconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_GRAY_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkblackconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_BLACK_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkbrownconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_BROWN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkredconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_RED_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkorangeconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_ORANGE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkyellowconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_YELLOW_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checklimeconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_LIME_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkgreenconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_GREEN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkcyanconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_CYAN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checklightblueconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkblueconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_BLUE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkpurpleconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_PURPLE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkmagnetaconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_MAGENTA_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool checkpinkconcretepool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_PINK_CONCRETE);
+
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GLASS, DecoBlocks.HARDENED_GLASS_PANE);
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_TINTED_GLASS, DecoBlocks.HARDENED_TINTED_GLASS_PANE);
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_WHITE_STAINED_GLASS, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE);
@@ -1689,6 +1762,99 @@ public class DecoModelProvider extends FabricModelProvider {
         cutpinkconcretepool.stairs(DecoBlocks.CUT_PINK_CONCRETE_STAIRS);
         cutpinkconcretepool.slab(DecoBlocks.CUT_PINK_CONCRETE_SLAB);
         cutpinkconcretepool.wall(DecoBlocks.CUT_PINK_CONCRETE_WALL);
+
+        ducutlightgrayconcretepool.stairs(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_STAIRS);
+        ducutlightgrayconcretepool.slab(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_SLAB);
+        ducutlightgrayconcretepool.wall(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_WALL);
+        ducutgrayconcretepool.stairs(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_STAIRS);
+        ducutgrayconcretepool.slab(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_SLAB);
+        ducutgrayconcretepool.wall(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_WALL);
+        ducutblackconcretepool.stairs(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_STAIRS);
+        ducutblackconcretepool.slab(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_SLAB);
+        ducutblackconcretepool.wall(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_WALL);
+        ducutbrownconcretepool.stairs(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_STAIRS);
+        ducutbrownconcretepool.slab(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_SLAB);
+        ducutbrownconcretepool.wall(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_WALL);
+        ducutredconcretepool.stairs(DecoBlocks.DUEL_CUT_RED_CONCRETE_STAIRS);
+        ducutredconcretepool.slab(DecoBlocks.DUEL_CUT_RED_CONCRETE_SLAB);
+        ducutredconcretepool.wall(DecoBlocks.DUEL_CUT_RED_CONCRETE_WALL);
+        ducutorangeconcretepool.stairs(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_STAIRS);
+        ducutorangeconcretepool.slab(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_SLAB);
+        ducutorangeconcretepool.wall(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_WALL);
+        ducutyellowconcretepool.stairs(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_STAIRS);
+        ducutyellowconcretepool.slab(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_SLAB);
+        ducutyellowconcretepool.wall(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_WALL);
+        ducutlimeconcretepool.stairs(DecoBlocks.DUEL_CUT_LIME_CONCRETE_STAIRS);
+        ducutlimeconcretepool.slab(DecoBlocks.DUEL_CUT_LIME_CONCRETE_SLAB);
+        ducutlimeconcretepool.wall(DecoBlocks.DUEL_CUT_LIME_CONCRETE_WALL);
+        ducutgreenconcretepool.stairs(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_STAIRS);
+        ducutgreenconcretepool.slab(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_SLAB);
+        ducutgreenconcretepool.wall(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_WALL);
+        ducutcyanconcretepool.stairs(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_STAIRS);
+        ducutcyanconcretepool.slab(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_SLAB);
+        ducutcyanconcretepool.wall(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_WALL);
+        ducutlightblueconcretepool.stairs(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_STAIRS);
+        ducutlightblueconcretepool.slab(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_SLAB);
+        ducutlightblueconcretepool.wall(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_WALL);
+        ducutblueconcretepool.stairs(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_STAIRS);
+        ducutblueconcretepool.slab(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_SLAB);
+        ducutblueconcretepool.wall(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_WALL);
+        ducutpurpleconcretepool.stairs(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_STAIRS);
+        ducutpurpleconcretepool.slab(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_SLAB);
+        ducutpurpleconcretepool.wall(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_WALL);
+        ducutmagnetaconcretepool.stairs(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_STAIRS);
+        ducutmagnetaconcretepool.slab(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_SLAB);
+        ducutmagnetaconcretepool.wall(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_WALL);
+        ducutpinkconcretepool.stairs(DecoBlocks.DUEL_CUT_PINK_CONCRETE_STAIRS);
+        ducutpinkconcretepool.slab(DecoBlocks.DUEL_CUT_PINK_CONCRETE_SLAB);
+        ducutpinkconcretepool.wall(DecoBlocks.DUEL_CUT_PINK_CONCRETE_WALL);
+
+        checklightgrayconcretepool.stairs(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_STAIRS);
+        checklightgrayconcretepool.slab(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_SLAB);
+        checklightgrayconcretepool.wall(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_WALL);
+        checkgrayconcretepool.stairs(DecoBlocks.CHECKERED_GRAY_CONCRETE_STAIRS);
+        checkgrayconcretepool.slab(DecoBlocks.CHECKERED_GRAY_CONCRETE_SLAB);
+        checkgrayconcretepool.wall(DecoBlocks.CHECKERED_GRAY_CONCRETE_WALL);
+        checkblackconcretepool.stairs(DecoBlocks.CHECKERED_BLACK_CONCRETE_STAIRS);
+        checkblackconcretepool.slab(DecoBlocks.CHECKERED_BLACK_CONCRETE_SLAB);
+        checkblackconcretepool.wall(DecoBlocks.CHECKERED_BLACK_CONCRETE_WALL);
+        checkbrownconcretepool.stairs(DecoBlocks.CHECKERED_BROWN_CONCRETE_STAIRS);
+        checkbrownconcretepool.slab(DecoBlocks.CHECKERED_BROWN_CONCRETE_SLAB);
+        checkbrownconcretepool.wall(DecoBlocks.CHECKERED_BROWN_CONCRETE_WALL);
+        checkredconcretepool.stairs(DecoBlocks.CHECKERED_RED_CONCRETE_STAIRS);
+        checkredconcretepool.slab(DecoBlocks.CHECKERED_RED_CONCRETE_SLAB);
+        checkredconcretepool.wall(DecoBlocks.CHECKERED_RED_CONCRETE_WALL);
+        checkorangeconcretepool.stairs(DecoBlocks.CHECKERED_ORANGE_CONCRETE_STAIRS);
+        checkorangeconcretepool.slab(DecoBlocks.CHECKERED_ORANGE_CONCRETE_SLAB);
+        checkorangeconcretepool.wall(DecoBlocks.CHECKERED_ORANGE_CONCRETE_WALL);
+        checkyellowconcretepool.stairs(DecoBlocks.CHECKERED_YELLOW_CONCRETE_STAIRS);
+        checkyellowconcretepool.slab(DecoBlocks.CHECKERED_YELLOW_CONCRETE_SLAB);
+        checkyellowconcretepool.wall(DecoBlocks.CHECKERED_YELLOW_CONCRETE_WALL);
+        checklimeconcretepool.stairs(DecoBlocks.CHECKERED_LIME_CONCRETE_STAIRS);
+        checklimeconcretepool.slab(DecoBlocks.CHECKERED_LIME_CONCRETE_SLAB);
+        checklimeconcretepool.wall(DecoBlocks.CHECKERED_LIME_CONCRETE_WALL);
+        checkgreenconcretepool.stairs(DecoBlocks.CHECKERED_GREEN_CONCRETE_STAIRS);
+        checkgreenconcretepool.slab(DecoBlocks.CHECKERED_GREEN_CONCRETE_SLAB);
+        checkgreenconcretepool.wall(DecoBlocks.CHECKERED_GREEN_CONCRETE_WALL);
+        checkcyanconcretepool.stairs(DecoBlocks.CHECKERED_CYAN_CONCRETE_STAIRS);
+        checkcyanconcretepool.slab(DecoBlocks.CHECKERED_CYAN_CONCRETE_SLAB);
+        checkcyanconcretepool.wall(DecoBlocks.CHECKERED_CYAN_CONCRETE_WALL);
+        checklightblueconcretepool.stairs(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_STAIRS);
+        checklightblueconcretepool.slab(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_SLAB);
+        checklightblueconcretepool.wall(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_WALL);
+        checkblueconcretepool.stairs(DecoBlocks.CHECKERED_BLUE_CONCRETE_STAIRS);
+        checkblueconcretepool.slab(DecoBlocks.CHECKERED_BLUE_CONCRETE_SLAB);
+        checkblueconcretepool.wall(DecoBlocks.CHECKERED_BLUE_CONCRETE_WALL);
+        checkpurpleconcretepool.stairs(DecoBlocks.CHECKERED_PURPLE_CONCRETE_STAIRS);
+        checkpurpleconcretepool.slab(DecoBlocks.CHECKERED_PURPLE_CONCRETE_SLAB);
+        checkpurpleconcretepool.wall(DecoBlocks.CHECKERED_PURPLE_CONCRETE_WALL);
+        checkmagnetaconcretepool.stairs(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_STAIRS);
+        checkmagnetaconcretepool.slab(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_SLAB);
+        checkmagnetaconcretepool.wall(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_WALL);
+        checkpinkconcretepool.stairs(DecoBlocks.CHECKERED_PINK_CONCRETE_STAIRS);
+        checkpinkconcretepool.slab(DecoBlocks.CHECKERED_PINK_CONCRETE_SLAB);
+        checkpinkconcretepool.wall(DecoBlocks.CHECKERED_PINK_CONCRETE_WALL);
+
         registerTintedGrassModels(blockStateModelGenerator);
     }
 

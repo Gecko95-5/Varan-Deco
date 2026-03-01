@@ -1109,6 +1109,20 @@
   "block.varan-deco.infested_cracked_polished_blackstone_tiles": "Infested Cracked Polished Blackstone Tiles",
   "block.varan-deco.infested_chiseled_polished_blackstone": "Infested Chiseled Polished Blackstone",
 
+  "block.varan-deco.infested_mossy_deepslate_bricks": "Infested Mossy Deepslate Bricks",
+  "block.varan-deco.infested_mossy_polished_blackstone_bricks": "Infested Mossy Polished Blackstone Bricks",
+
+  "block.varan-deco.infested_cut_granite": "Infested Cut Granite",
+  "block.varan-deco.infested_granite_bricks": "Infested Granite Bricks",
+  "block.varan-deco.infested_cut_diorite": "Infested Cut Diorite",
+  "block.varan-deco.infested_diorite_bricks": "Infested Diorite Bricks",
+  "block.varan-deco.infested_cut_andesite": "Infested Cut Andesite",
+  "block.varan-deco.infested_andesite_bricks": "Infested Andesite Bricks",
+
+  "block.varan-deco.infested_polished_calcite": "Infested Polished Calcite",
+  "block.varan-deco.infested_cut_calcite": "Infested Cut Calcite",
+  "block.varan-deco.infested_calcite_bricks": "Infested Calcite Bricks",
+
   "block.varan-deco.oak_wood_stairs": "Oak Wood Stairs",
   "block.varan-deco.oak_wood_slab": "Oak Wood Slab",
   "block.varan-deco.oak_wood_wall": "Oak Wood Wall",
@@ -1608,6 +1622,158 @@
 
   "block.varan-deco.chiseled_lapis": "Chiseled Lapis Lazuli",
   "block.varan-deco.lapis_pillar": "Lapis Lazuli Pillar",
+
+  "block.varan-deco.duel_cut_light_gray_concrete": "Duel Cut Light Gray Concrete",
+  "block.varan-deco.duel_cut_gray_concrete": "Duel Cut Gray Concrete",
+  "block.varan-deco.duel_cut_black_concrete": "Duel Cut Black Concrete",
+  "block.varan-deco.duel_cut_brown_concrete": "Duel Cut Brown Concrete",
+  "block.varan-deco.duel_cut_red_concrete": "Duel Cut Red Concrete",
+  "block.varan-deco.duel_cut_orange_concrete": "Duel Cut Orange Concrete",
+  "block.varan-deco.duel_cut_yellow_concrete": "Duel Cut Yellow Concrete",
+  "block.varan-deco.duel_cut_lime_concrete": "Duel Cut Lime Concrete",
+  "block.varan-deco.duel_cut_green_concrete": "Duel Cut Green Concrete",
+  "block.varan-deco.duel_cut_cyan_concrete": "Duel Cut Cyan Concrete",
+  "block.varan-deco.duel_cut_light_blue_concrete": "Duel Cut Light Blue Concrete",
+  "block.varan-deco.duel_cut_blue_concrete": "Duel Cut Blue Concrete",
+  "block.varan-deco.duel_cut_purple_concrete": "Duel Cut Purple Concrete",
+  "block.varan-deco.duel_cut_magenta_concrete": "Duel Cut Magenta Concrete",
+  "block.varan-deco.duel_cut_pink_concrete": "Duel Cut Pink Concrete",
+
+  "block.varan-deco.duel_cut_light_gray_concrete_stairs": "Duel Cut Light Gray Concrete Stairs",
+  "block.varan-deco.duel_cut_light_gray_concrete_slab": "Duel Cut Light Gray Concrete Slab",
+  "block.varan-deco.duel_cut_light_gray_concrete_wall": "Duel Cut Light Gray Concrete Wall",
+
+  "block.varan-deco.duel_cut_gray_concrete_stairs": "Duel Cut Gray Concrete Stairs",
+  "block.varan-deco.duel_cut_gray_concrete_slab": "Duel Cut Gray Concrete Slab",
+  "block.varan-deco.duel_cut_gray_concrete_wall": "Duel Cut Gray Concrete Wall",
+
+  "block.varan-deco.duel_cut_black_concrete_stairs": "Duel Cut Black Concrete Stairs",
+  "block.varan-deco.duel_cut_black_concrete_slab": "Duel Cut Black Concrete Slab",
+  "block.varan-deco.duel_cut_black_concrete_wall": "Duel Cut Black Concrete Wall",
+
+  "block.varan-deco.duel_cut_brown_concrete_stairs": "Duel Cut Brown Concrete Stairs",
+  "block.varan-deco.duel_cut_brown_concrete_slab": "Duel Cut Brown Concrete Slab",
+  "block.varan-deco.duel_cut_brown_concrete_wall": "Duel Cut Brown Concrete Wall",
+
+  "block.varan-deco.duel_cut_red_concrete_stairs": "Duel Cut Red Concrete Stairs",
+  "block.varan-deco.duel_cut_red_concrete_slab": "Duel Cut Red Concrete Slab",
+  "block.varan-deco.duel_cut_red_concrete_wall": "Duel Cut Red Concrete Wall",
+
+  "block.varan-deco.duel_cut_orange_concrete_stairs": "Duel Cut Orange Concrete Stairs",
+  "block.varan-deco.duel_cut_orange_concrete_slab": "Duel Cut Orange Concrete Slab",
+  "block.varan-deco.duel_cut_orange_concrete_wall": "Duel Cut Orange Concrete Wall",
+
+  "block.varan-deco.duel_cut_yellow_concrete_stairs": "Duel Cut Yellow Concrete Stairs",
+  "block.varan-deco.duel_cut_yellow_concrete_slab": "Duel Cut Yellow Concrete Slab",
+  "block.varan-deco.duel_cut_yellow_concrete_wall": "Duel Cut Yellow Concrete Wall",
+
+  "block.varan-deco.duel_cut_lime_concrete_stairs": "Duel Cut Lime Concrete Stairs",
+  "block.varan-deco.duel_cut_lime_concrete_slab": "Duel Cut Lime Concrete Slab",
+  "block.varan-deco.duel_cut_lime_concrete_wall": "Duel Cut Lime Concrete Wall",
+
+  "block.varan-deco.duel_cut_green_concrete_stairs": "Duel Cut Green Concrete Stairs",
+  "block.varan-deco.duel_cut_green_concrete_slab": "Duel Cut Green Concrete Slab",
+  "block.varan-deco.duel_cut_green_concrete_wall": "Duel Cut Green Concrete Wall",
+
+  "block.varan-deco.duel_cut_cyan_concrete_stairs": "Duel Cut Cyan Concrete Stairs",
+  "block.varan-deco.duel_cut_cyan_concrete_slab": "Duel Cut Cyan Concrete Slab",
+  "block.varan-deco.duel_cut_cyan_concrete_wall": "Duel Cut Cyan Concrete Wall",
+
+  "block.varan-deco.duel_cut_light_blue_concrete_stairs": "Duel Cut Light Blue Concrete Stairs",
+  "block.varan-deco.duel_cut_light_blue_concrete_slab": "Duel Cut Light Blue Concrete Slab",
+  "block.varan-deco.duel_cut_light_blue_concrete_wall": "Duel Cut Light Blue Concrete Wall",
+
+  "block.varan-deco.duel_cut_blue_concrete_stairs": "Duel Cut Blue Concrete Stairs",
+  "block.varan-deco.duel_cut_blue_concrete_slab": "Duel Cut Blue Concrete Slab",
+  "block.varan-deco.duel_cut_blue_concrete_wall": "Duel Cut Blue Concrete Wall",
+
+  "block.varan-deco.duel_cut_purple_concrete_stairs": "Duel Cut Purple Concrete Stairs",
+  "block.varan-deco.duel_cut_purple_concrete_slab": "Duel Cut Purple Concrete Slab",
+  "block.varan-deco.duel_cut_purple_concrete_wall": "Duel Cut Purple Concrete Wall",
+
+  "block.varan-deco.duel_cut_magenta_concrete_stairs": "Duel Cut Magenta Concrete Stairs",
+  "block.varan-deco.duel_cut_magenta_concrete_slab": "Duel Cut Magenta Concrete Slab",
+  "block.varan-deco.duel_cut_magenta_concrete_wall": "Duel Cut Magenta Concrete Wall",
+
+  "block.varan-deco.duel_cut_pink_concrete_stairs": "Duel Cut Pink Concrete Stairs",
+  "block.varan-deco.duel_cut_pink_concrete_slab": "Duel Cut Pink Concrete Slab",
+  "block.varan-deco.duel_cut_pink_concrete_wall": "Duel Cut Pink Concrete Wall",
+
+  "block.varan-deco.checkered_light_gray_concrete": "Checkered Light Gray Concrete",
+  "block.varan-deco.checkered_gray_concrete": "Checkered Gray Concrete",
+  "block.varan-deco.checkered_black_concrete": "Checkered Black Concrete",
+  "block.varan-deco.checkered_brown_concrete": "Checkered Brown Concrete",
+  "block.varan-deco.checkered_red_concrete": "Checkered Red Concrete",
+  "block.varan-deco.checkered_orange_concrete": "Checkered Orange Concrete",
+  "block.varan-deco.checkered_yellow_concrete": "Checkered Yellow Concrete",
+  "block.varan-deco.checkered_lime_concrete": "Checkered Lime Concrete",
+  "block.varan-deco.checkered_green_concrete": "Checkered Green Concrete",
+  "block.varan-deco.checkered_cyan_concrete": "Checkered Cyan Concrete",
+  "block.varan-deco.checkered_light_blue_concrete": "Checkered Light Blue Concrete",
+  "block.varan-deco.checkered_blue_concrete": "Checkered Blue Concrete",
+  "block.varan-deco.checkered_purple_concrete": "Checkered Purple Concrete",
+  "block.varan-deco.checkered_magenta_concrete": "Checkered Magenta Concrete",
+  "block.varan-deco.checkered_pink_concrete": "Checkered Pink Concrete",
+
+  "block.varan-deco.checkered_light_gray_concrete_stairs": "Checkered Light Gray Concrete Stairs",
+  "block.varan-deco.checkered_light_gray_concrete_slab": "Checkered Light Gray Concrete Slab",
+  "block.varan-deco.checkered_light_gray_concrete_wall": "Checkered Light Gray Concrete Wall",
+
+  "block.varan-deco.checkered_gray_concrete_stairs": "Checkered Gray Concrete Stairs",
+  "block.varan-deco.checkered_gray_concrete_slab": "Checkered Gray Concrete Slab",
+  "block.varan-deco.checkered_gray_concrete_wall": "Checkered Gray Concrete Wall",
+
+  "block.varan-deco.checkered_black_concrete_stairs": "Checkered Black Concrete Stairs",
+  "block.varan-deco.checkered_black_concrete_slab": "Checkered Black Concrete Slab",
+  "block.varan-deco.checkered_black_concrete_wall": "Checkered Black Concrete Wall",
+
+  "block.varan-deco.checkered_brown_concrete_stairs": "Checkered Brown Concrete Stairs",
+  "block.varan-deco.checkered_brown_concrete_slab": "Checkered Brown Concrete Slab",
+  "block.varan-deco.checkered_brown_concrete_wall": "Checkered Brown Concrete Wall",
+
+  "block.varan-deco.checkered_red_concrete_stairs": "Checkered Red Concrete Stairs",
+  "block.varan-deco.checkered_red_concrete_slab": "Checkered Red Concrete Slab",
+  "block.varan-deco.checkered_red_concrete_wall": "Checkered Red Concrete Wall",
+
+  "block.varan-deco.checkered_orange_concrete_stairs": "Checkered Orange Concrete Stairs",
+  "block.varan-deco.checkered_orange_concrete_slab": "Checkered Orange Concrete Slab",
+  "block.varan-deco.checkered_orange_concrete_wall": "Checkered Orange Concrete Wall",
+
+  "block.varan-deco.checkered_yellow_concrete_stairs": "Checkered Yellow Concrete Stairs",
+  "block.varan-deco.checkered_yellow_concrete_slab": "Checkered Yellow Concrete Slab",
+  "block.varan-deco.checkered_yellow_concrete_wall": "Checkered Yellow Concrete Wall",
+
+  "block.varan-deco.checkered_lime_concrete_stairs": "Checkered Lime Concrete Stairs",
+  "block.varan-deco.checkered_lime_concrete_slab": "Checkered Lime Concrete Slab",
+  "block.varan-deco.checkered_lime_concrete_wall": "Checkered Lime Concrete Wall",
+
+  "block.varan-deco.checkered_green_concrete_stairs": "Checkered Green Concrete Stairs",
+  "block.varan-deco.checkered_green_concrete_slab": "Checkered Green Concrete Slab",
+  "block.varan-deco.checkered_green_concrete_wall": "Checkered Green Concrete Wall",
+
+  "block.varan-deco.checkered_cyan_concrete_stairs": "Checkered Cyan Concrete Stairs",
+  "block.varan-deco.checkered_cyan_concrete_slab": "Checkered Cyan Concrete Slab",
+  "block.varan-deco.checkered_cyan_concrete_wall": "Checkered Cyan Concrete Wall",
+
+  "block.varan-deco.checkered_light_blue_concrete_stairs": "Checkered Light Blue Concrete Stairs",
+  "block.varan-deco.checkered_light_blue_concrete_slab": "Checkered Light Blue Concrete Slab",
+  "block.varan-deco.checkered_light_blue_concrete_wall": "Checkered Light Blue Concrete Wall",
+
+  "block.varan-deco.checkered_blue_concrete_stairs": "Checkered Blue Concrete Stairs",
+  "block.varan-deco.checkered_blue_concrete_slab": "Checkered Blue Concrete Slab",
+  "block.varan-deco.checkered_blue_concrete_wall": "Checkered Blue Concrete Wall",
+
+  "block.varan-deco.checkered_purple_concrete_stairs": "Checkered Purple Concrete Stairs",
+  "block.varan-deco.checkered_purple_concrete_slab": "Checkered Purple Concrete Slab",
+  "block.varan-deco.checkered_purple_concrete_wall": "Checkered Purple Concrete Wall",
+
+  "block.varan-deco.checkered_magenta_concrete_stairs": "Checkered Magenta Concrete Stairs",
+  "block.varan-deco.checkered_magenta_concrete_slab": "Checkered Magenta Concrete Slab",
+  "block.varan-deco.checkered_magenta_concrete_wall": "Checkered Magenta Concrete Wall",
+
+  "block.varan-deco.checkered_pink_concrete_stairs": "Checkered Pink Concrete Stairs",
+  "block.varan-deco.checkered_pink_concrete_slab": "Checkered Pink Concrete Slab",
+  "block.varan-deco.checkered_pink_concrete_wall": "Checkered Pink Concrete Wall",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
