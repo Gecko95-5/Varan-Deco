@@ -48,6 +48,15 @@ public class DecoPlacedFeatures {
             RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
             BiomePlacementModifier.of());
 
+    public static final RegistryEntry<PlacedFeature> DECO_ROOFED_PLACED = PlacedFeatures.register("deco_roofed_flowers_placed",
+            DecoConfiguredFeatures.DECO_ROOFED,NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+            RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+            BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_MEGA_TULIP_PLACED = PlacedFeatures.register("deco_mega_tulip_placed",
+            DecoConfiguredFeatures.DECO_MEGA_TULIPS, RarityFilterPlacementModifier.of(24), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
     public static final RegistryEntry<PlacedFeature> DECO_ROSE_PLACED = PlacedFeatures.register("deco_rose_placed",
             DecoConfiguredFeatures.DECO_ROSE, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());

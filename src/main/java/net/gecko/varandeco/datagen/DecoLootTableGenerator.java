@@ -2981,5 +2981,25 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CUT_CALCITE, DecoBlocks.CUT_CALCITE));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/infested_calcite_bricks"),
                 BlockLootTableGenerator.drops(DecoBlocks.INFESTED_CALCITE_BRICKS, DecoBlocks.CALCITE_BRICKS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/iris"),
+                BlockLootTableGenerator.drops(DecoBlocks.IRIS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_iris"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_IRIS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_delphinium"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_DELPHINIUM));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_blue_delphinium"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_BLUE_DELPHINIUM));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/cyan_orchid"),
+                BlockLootTableGenerator.drops(DecoBlocks.CYAN_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_cyan_orchid"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_CYAN_ORCHID));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/felicia_daisy"),
+                BlockLootTableGenerator.drops(DecoBlocks.FELICIA_DAISY));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_felicia_daisy"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_FELICIA_DAISY));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jack_o_soul_lantern"),
+                BlockLootTableGenerator.drops(DecoBlocks.JACK_O_SOUL_LANTERN));
     }
 }

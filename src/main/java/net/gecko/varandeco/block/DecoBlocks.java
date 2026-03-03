@@ -172,6 +172,9 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
             new Block(FabricBlockSettings.copyOf(DecoBlocks.SNOW_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block JACK_O_SOUL_LANTERN = registerBlock("jack_o_soul_lantern",
+            new MovablePumpkinBlock(FabricBlockSettings.copyOf(Blocks.CARVED_PUMPKIN).luminance(state -> 10)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PACKED_NETHERRACK = registerBlock("packed_netherrack",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(3.2F,1.0f)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -2045,6 +2048,11 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_PINK_ORCHID = registerBlockWithoutItem("potted_pink_orchid",
             new FlowerPotBlock(PINK_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
+    public static final Block CYAN_ORCHID = registerBlock("cyan_orchid",
+            new FlowerBlock(StatusEffects.GLOWING, 7,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_CYAN_ORCHID = registerBlockWithoutItem("potted_cyan_orchid",
+            new FlowerPotBlock(CYAN_ORCHID,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID)));
 
     public static final Block POPPED_BLUET = registerBlock("popped_bluet",
             new DesertFlowerBlock(StatusEffects.SPEED, 5,FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID)),
@@ -2114,6 +2122,11 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_DEAD_EYE_DAISY = registerBlockWithoutItem("potted_dead_eye_daisy",
             new FlowerPotBlock(DEAD_EYE_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
+    public static final Block FELICIA_DAISY = registerBlock("felicia_daisy",
+            new DesertFlowerBlock(StatusEffects.HUNGER, 11,FabricBlockSettings.copyOf(Blocks.OXEYE_DAISY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_FELICIA_DAISY = registerBlockWithoutItem("potted_felicia_daisy",
+            new FlowerPotBlock(FELICIA_DAISY,FabricBlockSettings.copyOf(Blocks.POTTED_OXEYE_DAISY)));
 
     public static final Block PAEONIA = registerBlock("paeonia",
             new FlowerBlock(StatusEffects.SLOWNESS,7,FabricBlockSettings.copyOf(Blocks.POPPY)),
@@ -2155,6 +2168,18 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_ENDERSHADE = registerBlockWithoutItem("potted_endershade",
             new FlowerPotBlock(ENDERSHADE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block IRIS = registerBlock("iris",
+            new FlowerBlock(StatusEffects.MINING_FATIGUE,7,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_IRIS = registerBlockWithoutItem("potted_iris",
+            new FlowerPotBlock(IRIS,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
+    public static final Block BLUE_DELPHINIUM = registerBlock("blue_delphinium",
+            new FlowerBlock(StatusEffects.REGENERATION,5,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_BLUE_DELPHINIUM = registerBlockWithoutItem("potted_blue_delphinium",
+            new FlowerPotBlock(BLUE_DELPHINIUM,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block ROSE = registerBlock("rose",
             new FlowerBlock(StatusEffects.POISON, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
@@ -3015,6 +3040,10 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block NOVA_STARFLOWER = registerBlock("nova_starflower",
             new NovaStarflowerBlock(FabricBlockSettings.copyOf(Blocks.SUNFLOWER)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block MEGA_BROWN_TULIP = registerBlock("mega_brown_tulip",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.PEONY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block WITHER_ROSE_BUSH = registerBlock("wither_rose_bush",

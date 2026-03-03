@@ -699,7 +699,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CRIMSON_HYPHAE_WALL)
                 .add(DecoBlocks.WARPED_HYPHAE_WALL)
                 .add(DecoBlocks.STRIPPED_CRIMSON_HYPHAE_WALL)
-                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL);
+                .add(DecoBlocks.STRIPPED_WARPED_HYPHAE_WALL)
+                .add(DecoBlocks.JACK_O_SOUL_LANTERN);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS)
@@ -1944,7 +1945,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.ENDERSHADE)
                 .add(DecoBlocks.ALPINE_POPPY)
                 .add(DecoBlocks.POPPED_BLUET)
-                .add(DecoBlocks.DEAD_EYE_DAISY);
+                .add(DecoBlocks.DEAD_EYE_DAISY)
+                .add(DecoBlocks.IRIS)
+                .add(DecoBlocks.BLUE_DELPHINIUM)
+                .add(DecoBlocks.CYAN_ORCHID)
+                .add(DecoBlocks.FELICIA_DAISY);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DecoBlocks.POTTED_YELLOW_TULIP)
@@ -1975,11 +1980,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POTTED_ENDERSHADE)
                 .add(DecoBlocks.POTTED_ALPINE_POPPY)
                 .add(DecoBlocks.POTTED_POPPED_BLUET)
-                .add(DecoBlocks.POTTED_DEAD_EYE_DAISY);
+                .add(DecoBlocks.POTTED_DEAD_EYE_DAISY)
+                .add(DecoBlocks.POTTED_IRIS)
+                .add(DecoBlocks.POTTED_BLUE_DELPHINIUM)
+                .add(DecoBlocks.POTTED_CYAN_ORCHID)
+                .add(DecoBlocks.POTTED_FELICIA_DAISY);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(DecoBlocks.WITHER_ROSE_BUSH)
                 .add(DecoBlocks.ENDER_ROSE_BUSH)
+                .add(DecoBlocks.MEGA_BROWN_TULIP)
                 .add(DecoBlocks.RED_SUNFLOWER)
                 .add(DecoBlocks.NOVA_STARFLOWER);
 

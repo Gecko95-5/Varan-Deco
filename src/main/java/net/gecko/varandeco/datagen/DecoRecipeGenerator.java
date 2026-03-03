@@ -3759,142 +3759,142 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.BLACKSTONE_SLAB))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BLACKSTONE_GRINDSTONE)));
 
-        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_SANDSTONE)
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_SANDSTONE,4)
                 .input(Items.SANDSTONE)
                 .criterion(RecipeProvider.hasItem(Items.SANDSTONE),
                         RecipeProvider.conditionsFromItem(Items.SANDSTONE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COBBLED_SANDSTONE)));
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE, Items.SANDSTONE,4);
 
         createStairsRecipe(DecoBlocks.COBBLED_SANDSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.COBBLED_SANDSTONE))
                 .criterion(hasItem(DecoBlocks.COBBLED_SANDSTONE),conditionsFromItem(DecoBlocks.COBBLED_SANDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COBBLED_SANDSTONE_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_STAIRS, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_STAIRS, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_STAIRS, DecoBlocks.COBBLED_SANDSTONE);
 
         offerSlabRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_SLAB, DecoBlocks.COBBLED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_SLAB, Items.SANDSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_SLAB, Items.SANDSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_SLAB, DecoBlocks.COBBLED_SANDSTONE,2);
 
         offerWallRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_WALL, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_WALL, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
 
         offerPolishedStoneRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE, DecoBlocks.COBBLED_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE, DecoBlocks.COBBLED_SANDSTONE);
 
         createStairsRecipe(DecoBlocks.POLISHED_SANDSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.POLISHED_SANDSTONE))
                 .criterion(hasItem(DecoBlocks.POLISHED_SANDSTONE),conditionsFromItem(DecoBlocks.POLISHED_SANDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.POLISHED_SANDSTONE_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_STAIRS, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_STAIRS, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_STAIRS, DecoBlocks.COBBLED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_STAIRS, DecoBlocks.POLISHED_SANDSTONE);
 
         offerSlabRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_SLAB, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_SLAB, Items.SANDSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_SLAB, Items.SANDSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_SLAB, DecoBlocks.COBBLED_SANDSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_SLAB, DecoBlocks.POLISHED_SANDSTONE,2);
 
         offerWallRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_WALL, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_WALL, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.COBBLED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SANDSTONE_WALL, DecoBlocks.POLISHED_SANDSTONE);
 
         offerPolishedStoneRecipe(exporter, DecoBlocks.SANDSTONE_BRICKS, DecoBlocks.POLISHED_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICKS, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICKS, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICKS, DecoBlocks.COBBLED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICKS, DecoBlocks.POLISHED_SANDSTONE);
 
         createStairsRecipe(DecoBlocks.SANDSTONE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.SANDSTONE_BRICKS))
                 .criterion(hasItem(DecoBlocks.SANDSTONE_BRICKS),conditionsFromItem(DecoBlocks.SANDSTONE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SANDSTONE_BRICK_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_STAIRS, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_STAIRS, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_STAIRS, DecoBlocks.COBBLED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_STAIRS, DecoBlocks.POLISHED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_STAIRS, DecoBlocks.SANDSTONE_BRICKS);
 
         offerSlabRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_SLAB, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_SLAB, Items.SANDSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_SLAB, Items.SANDSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_SLAB, DecoBlocks.COBBLED_SANDSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_SLAB, DecoBlocks.POLISHED_SANDSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_SLAB, DecoBlocks.SANDSTONE_BRICKS,2);
 
         offerWallRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_WALL, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_WALL, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.COBBLED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SANDSTONE_BRICK_WALL, DecoBlocks.SANDSTONE_BRICKS);
 
-        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_RED_SANDSTONE)
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_RED_SANDSTONE,4)
                 .input(Items.RED_SANDSTONE)
                 .criterion(RecipeProvider.hasItem(Items.RED_SANDSTONE),
                         RecipeProvider.conditionsFromItem(Items.RED_SANDSTONE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COBBLED_RED_SANDSTONE)));
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE, Items.RED_SANDSTONE,4);
 
         createStairsRecipe(DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.COBBLED_RED_SANDSTONE))
                 .criterion(hasItem(DecoBlocks.COBBLED_RED_SANDSTONE),conditionsFromItem(DecoBlocks.COBBLED_RED_SANDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_STAIRS, DecoBlocks.COBBLED_RED_SANDSTONE);
 
         offerSlabRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_SLAB, DecoBlocks.COBBLED_RED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_SLAB, Items.RED_SANDSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_SLAB, Items.RED_SANDSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_SLAB, DecoBlocks.COBBLED_RED_SANDSTONE,2);
 
         offerWallRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
 
         offerPolishedStoneRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE, DecoBlocks.COBBLED_RED_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE, DecoBlocks.COBBLED_RED_SANDSTONE);
 
         createStairsRecipe(DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.POLISHED_RED_SANDSTONE))
                 .criterion(hasItem(DecoBlocks.POLISHED_RED_SANDSTONE),conditionsFromItem(DecoBlocks.POLISHED_RED_SANDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS, DecoBlocks.COBBLED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_STAIRS, DecoBlocks.POLISHED_RED_SANDSTONE);
 
         offerSlabRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, Items.RED_SANDSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, Items.RED_SANDSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, DecoBlocks.COBBLED_RED_SANDSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB, DecoBlocks.POLISHED_RED_SANDSTONE,2);
 
         offerWallRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_WALL, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_RED_SANDSTONE_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
 
         offerPolishedStoneRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICKS, DecoBlocks.POLISHED_RED_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICKS, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICKS, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICKS, DecoBlocks.COBBLED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICKS, DecoBlocks.POLISHED_RED_SANDSTONE);
 
         createStairsRecipe(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.RED_SANDSTONE_BRICKS))
                 .criterion(hasItem(DecoBlocks.RED_SANDSTONE_BRICKS),conditionsFromItem(DecoBlocks.RED_SANDSTONE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.RED_SANDSTONE_BRICK_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_STAIRS, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_STAIRS, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_STAIRS, DecoBlocks.COBBLED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_STAIRS, DecoBlocks.POLISHED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_STAIRS, DecoBlocks.RED_SANDSTONE_BRICKS);
 
         offerSlabRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_SLAB, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_SLAB, Items.RED_SANDSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_SLAB, Items.RED_SANDSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_SLAB, DecoBlocks.COBBLED_RED_SANDSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_SLAB, DecoBlocks.POLISHED_RED_SANDSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_SLAB, DecoBlocks.RED_SANDSTONE_BRICKS,2);
 
         offerWallRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.COBBLED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.RED_SANDSTONE_BRICKS);
@@ -3905,66 +3905,66 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.SOUL_SOILSTONE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COBBLED_SOUL_SOILSTONE)));
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE,4);
 
         createStairsRecipe(DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.COBBLED_SOUL_SOILSTONE))
                 .criterion(hasItem(DecoBlocks.COBBLED_SOUL_SOILSTONE),conditionsFromItem(DecoBlocks.COBBLED_SOUL_SOILSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_STAIRS, DecoBlocks.COBBLED_SOUL_SOILSTONE);
 
         offerSlabRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB, DecoBlocks.COBBLED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB, DecoBlocks.SOUL_SOILSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB, DecoBlocks.SOUL_SOILSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_SLAB, DecoBlocks.COBBLED_SOUL_SOILSTONE,2);
 
         offerWallRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.COBBLED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
 
         offerPolishedStoneRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
 
         createStairsRecipe(DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS, Ingredient.ofItems(DecoBlocks.POLISHED_SOUL_SOILSTONE))
                 .criterion(hasItem(DecoBlocks.POLISHED_SOUL_SOILSTONE),conditionsFromItem(DecoBlocks.POLISHED_SOUL_SOILSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_STAIRS, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
         offerSlabRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, DecoBlocks.SOUL_SOILSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, DecoBlocks.SOUL_SOILSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, DecoBlocks.COBBLED_SOUL_SOILSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB, DecoBlocks.POLISHED_SOUL_SOILSTONE,2);
 
         offerWallRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
         offerPolishedStoneRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICKS, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
-        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICKS, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICKS, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICKS, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICKS, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
         createStairsRecipe(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS, Ingredient.ofItems(DecoBlocks.SOUL_SOILSTONE_BRICKS))
                 .criterion(hasItem(DecoBlocks.SOUL_SOILSTONE_BRICKS),conditionsFromItem(DecoBlocks.SOUL_SOILSTONE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)));
-        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS, DecoBlocks.POLISHED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS, DecoBlocks.SOUL_SOILSTONE_BRICKS);
 
         offerSlabRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.SOUL_SOILSTONE,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.SOUL_SOILSTONE,8);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.COBBLED_SOUL_SOILSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.POLISHED_SOUL_SOILSTONE,2);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB, DecoBlocks.SOUL_SOILSTONE_BRICKS,2);
 
         offerWallRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
-        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.POLISHED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.SOUL_SOILSTONE_BRICK_WALL, DecoBlocks.SOUL_SOILSTONE_BRICKS);
@@ -4004,19 +4004,19 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BUBBLE_ELEVATOR_BLOCK_BUBBLE)));
 
         offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.POLISHED_SANDSTONE_SLAB);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SANDSTONE, Items.SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SANDSTONE, Items.SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.COBBLED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SANDSTONE, DecoBlocks.POLISHED_SANDSTONE);
 
 
         offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, DecoBlocks.POLISHED_RED_SANDSTONE_SLAB);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, Items.RED_SANDSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, Items.RED_SANDSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, DecoBlocks.COBBLED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_RED_SANDSTONE, DecoBlocks.POLISHED_RED_SANDSTONE);
 
 
         offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE_SLAB);
-        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.SOUL_SOILSTONE,4);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.COBBLED_SOUL_SOILSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE, DecoBlocks.POLISHED_SOUL_SOILSTONE);
 
@@ -6800,6 +6800,45 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, DecoBlocks.CHECKERED_PINK_CONCRETE_WALL, DecoBlocks.CHECKERED_PINK_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHECKERED_PINK_CONCRETE_WALL, DecoBlocks.CHECKERED_PINK_CONCRETE);
+
+        ShapelessRecipeJsonBuilder.create(Items.BLUE_DYE)
+                .input(DecoBlocks.IRIS)
+                .group("blue_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.IRIS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.IRIS))
+                .offerTo(exporter, new Identifier("blue_dye_from_iris"));
+        ShapelessRecipeJsonBuilder.create(Items.LIGHT_BLUE_DYE)
+                .input(DecoBlocks.BLUE_DELPHINIUM)
+                .group("light_blue_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_DELPHINIUM),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_DELPHINIUM))
+                .offerTo(exporter, new Identifier("light_blue_dye_from_blue_delphinium"));
+        ShapelessRecipeJsonBuilder.create(Items.CYAN_DYE)
+                .input(DecoBlocks.CYAN_ORCHID)
+                .group("cyan_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CYAN_ORCHID),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CYAN_ORCHID))
+                .offerTo(exporter, new Identifier("cyan_dye_from_cyan_orchid"));
+        ShapelessRecipeJsonBuilder.create(Items.BLUE_DYE)
+                .input(DecoBlocks.FELICIA_DAISY)
+                .group("blue_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.FELICIA_DAISY),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.FELICIA_DAISY))
+                .offerTo(exporter, new Identifier("blue_dye_from_felicia_daisy"));
+
+        ShapelessRecipeJsonBuilder.create(Items.BROWN_DYE,2)
+                .input(DecoBlocks.MEGA_BROWN_TULIP)
+                .group("brown_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.MEGA_BROWN_TULIP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.MEGA_BROWN_TULIP))
+                .offerTo(exporter, new Identifier("brown_dye_from_mega_brown_tulip"));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.JACK_O_SOUL_LANTERN)
+                .input(Items.CARVED_PUMPKIN)
+                .input(Items.SOUL_TORCH)
+                .criterion(RecipeProvider.hasItem(Items.SOUL_TORCH),
+                        RecipeProvider.conditionsFromItem(Items.SOUL_TORCH))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.JACK_O_SOUL_LANTERN)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
