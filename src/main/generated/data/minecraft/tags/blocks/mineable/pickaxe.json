@@ -555,6 +555,15 @@
     "varan-deco:checkered_purple_concrete",
     "varan-deco:checkered_pink_concrete",
     "varan-deco:checkered_magenta_concrete",
-    "varan-deco:checkered_brown_concrete"
+    "varan-deco:checkered_brown_concrete",
+    "varan-deco:nether_brick_pillar",
+    "varan-deco:red_nether_brick_pillar",
+    "varan-deco:blue_nether_brick_pillar",
+    "varan-deco:dripstone_bricks",
+    "varan-deco:dripstone_brick_pillar",
+    "varan-deco:void_stone_brick_pillar",
+    "varan-deco:casted_iron",
+    "varan-deco:casted_iron_stairs",
+    "varan-deco:casted_iron_slab"
   ]
 }

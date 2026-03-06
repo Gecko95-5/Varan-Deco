@@ -228,6 +228,18 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_LAPIS);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.LAPIS_PILLAR, TexturedModel.CUBE_COLUMN);
 
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.RED_NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.BLUE_NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
+
+        BlockStateModelGenerator.BlockTexturePool castironpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CASTED_IRON);
+        BlockStateModelGenerator.BlockTexturePool dripbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DRIPSTONE_BRICKS);
+
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.DRIPSTONE_BRICK_PILLAR, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.VOID_STONE_BRICK_PILLAR, TexturedModel.CUBE_ALL);
+
         BlockStateModelGenerator.BlockTexturePool oakwoodpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OAK_WOOD_TEMP);
         BlockStateModelGenerator.BlockTexturePool sprucewoodpool =
@@ -1266,6 +1278,9 @@ public class DecoModelProvider extends FabricModelProvider {
         lapisbrickpool.stairs(DecoBlocks.LAPIS_BRICK_STAIRS);
         lapisbrickpool.slab(DecoBlocks.LAPIS_BRICK_SLAB);
         lapisbrickpool.wall(DecoBlocks.LAPIS_BRICK_WALL);
+
+        castironpool.stairs(DecoBlocks.CASTED_IRON_STAIRS);
+        castironpool.slab(DecoBlocks.CASTED_IRON_SLAB);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

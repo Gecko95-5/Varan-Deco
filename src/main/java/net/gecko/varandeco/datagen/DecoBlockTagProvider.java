@@ -569,7 +569,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CHECKERED_PURPLE_CONCRETE)
                 .add(DecoBlocks.CHECKERED_PINK_CONCRETE)
                 .add(DecoBlocks.CHECKERED_MAGENTA_CONCRETE)
-                .add(DecoBlocks.CHECKERED_BROWN_CONCRETE);
+                .add(DecoBlocks.CHECKERED_BROWN_CONCRETE)
+                .add(DecoBlocks.NETHER_BRICK_PILLAR)
+                .add(DecoBlocks.RED_NETHER_BRICK_PILLAR)
+                .add(DecoBlocks.BLUE_NETHER_BRICK_PILLAR)
+                .add(DecoBlocks.DRIPSTONE_BRICKS)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR)
+                .add(DecoBlocks.CASTED_IRON)
+                .add(DecoBlocks.CASTED_IRON_STAIRS)
+                .add(DecoBlocks.CASTED_IRON_SLAB);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -788,7 +797,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LIGHT_GOLD_BARS)
                 .add(DecoBlocks.GOLD_BARS)
                 .add(DecoBlocks.HEAVY_GOLD_BARS)
-                .add(DecoBlocks.GOLDEN_LADDER);
+                .add(DecoBlocks.GOLDEN_LADDER)
+                .add(DecoBlocks.CASTED_IRON)
+                .add(DecoBlocks.CASTED_IRON_STAIRS)
+                .add(DecoBlocks.CASTED_IRON_SLAB);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(DecoBlocks.OBSIDIAN_STAIRS)
@@ -1138,10 +1150,7 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LAPIS_BRICK_STAIRS)
                 .add(DecoBlocks.CUT_LAPIS_STAIRS)
                 .add(DecoBlocks.SMOOTH_LAPIS_STAIRS)
-                .add(DecoBlocks.LAPIS_SLAB)
-                .add(DecoBlocks.LAPIS_BRICK_SLAB)
-                .add(DecoBlocks.CUT_LAPIS_SLAB)
-                .add(DecoBlocks.SMOOTH_LAPIS_SLAB);
+                .add(DecoBlocks.CASTED_IRON_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1267,7 +1276,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LAPIS_SLAB)
                 .add(DecoBlocks.LAPIS_BRICK_SLAB)
                 .add(DecoBlocks.CUT_LAPIS_SLAB)
-                .add(DecoBlocks.SMOOTH_LAPIS_SLAB);
+                .add(DecoBlocks.SMOOTH_LAPIS_SLAB)
+                .add(DecoBlocks.CASTED_IRON_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)

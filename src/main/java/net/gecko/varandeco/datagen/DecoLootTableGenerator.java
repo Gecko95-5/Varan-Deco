@@ -3001,5 +3001,26 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/jack_o_soul_lantern"),
                 BlockLootTableGenerator.drops(DecoBlocks.JACK_O_SOUL_LANTERN));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/nether_brick_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.NETHER_BRICK_PILLAR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_nether_brick_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_NETHER_BRICK_PILLAR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/blue_nether_brick_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLUE_NETHER_BRICK_PILLAR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.DRIPSTONE_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.DRIPSTONE_BRICK_PILLAR));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_BRICK_PILLAR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/casted_iron"),
+                BlockLootTableGenerator.drops(DecoBlocks.CASTED_IRON));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/casted_iron_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CASTED_IRON_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/casted_iron_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CASTED_IRON_SLAB));
     }
 }

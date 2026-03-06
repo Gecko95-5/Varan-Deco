@@ -124,6 +124,7 @@
     "varan-deco:lapis_slab",
     "varan-deco:lapis_brick_slab",
     "varan-deco:cut_lapis_slab",
-    "varan-deco:smooth_lapis_slab"
+    "varan-deco:smooth_lapis_slab",
+    "varan-deco:casted_iron_slab"
   ]
 }

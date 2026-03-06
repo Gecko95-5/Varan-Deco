@@ -974,6 +974,18 @@
 
   "block.varan-deco.jack_o_soul_lantern": "Jack-O-Soul Lantern",
 
+  "block.varan-deco.casted_iron": "Casted Iron",
+  "block.varan-deco.casted_iron_stairs": "Casted Iron Stairs",
+  "block.varan-deco.casted_iron_slab": "Casted Iron Slab",
+
+  "block.varan-deco.nether_brick_pillar": "Nether Brick Pillar",
+  "block.varan-deco.red_nether_brick_pillar": "Red Nether Brick Pillar",
+  "block.varan-deco.blue_nether_brick_pillar": "Blue Nether Brick Pillar",
+
+  "block.varan-deco.dripstone_bricks": "Dripstone Bricks",
+  "block.varan-deco.dripstone_brick_pillar": "Dripstone Brick Pillar",
+  "block.varan-deco.void_stone_brick_pillar": "Void Stone Brick Pillar",
+
   "block.varan-deco.copper_chain": "Copper Chain",
   "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
 
@@ -1483,7 +1495,7 @@
   "block.varan-deco.warped_nylium_slab": "Warped Nylium Slab",
 
   "block.varan-deco.mycelium_stairs": "Mycelium Stairs",
-  "block.varan-deco.mycelium_slab": "Mycelium Slab",
+  "block.varan-deco.packed_mycelium_slab": "Mycelium Slab",
 
   "block.varan-deco.moss_stairs": "Moss Stairs",
   "block.varan-deco.moss_slab": "Moss Slab",

@@ -1,7 +1,7 @@
-// 1.19.2	2026-03-02T22:08:55.1651073	Tags for minecraft:block
+// 1.19.2	2026-03-06T01:04:47.5081438	Tags for minecraft:block
 b14f3efbef6b6c52273c5d22ef14ab6a6a0286b9 data\varan-deco\tags\blocks\infested_blocks.json
-08bafaf08b3e32db4ac5fad2d07c8ed5001c8156 data\minecraft\tags\blocks\mineable\pickaxe.json
-99486ee2b5a289769f172f46b1dad62109aa7661 data\minecraft\tags\blocks\slabs.json
+8b509ad5e44882dd5e32a20dd0f3adaf20b91263 data\minecraft\tags\blocks\mineable\pickaxe.json
+5343002667e820bf65d6b81b837437343b178148 data\minecraft\tags\blocks\slabs.json
 2d1e488e3fe3f9d35929e1a7ad1d1b20ab0667b0 data\varan-deco\tags\blocks\deco_note_blocks.json
 80f7ecbb5778c8b0cc624eb7d99e5dadfb31bba8 data\minecraft\tags\blocks\planks.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
@@ -38,7 +38,7 @@ fdc9dd52d4ae4c0c4fe955104bc6e53e71340a6b data\varan-deco\tags\blocks\deco_cartog
 4800baa7f8b5b01e16df62c5d8df3ce0dc39e30b data\minecraft\tags\blocks\buttons.json
 12ad503ec3cab80485ccaa5ced6e20461088c495 data\varan-deco\tags\blocks\log_walls.json
 89f45f8cd5abedccd8e3f3855d551a6f6f570e4f data\minecraft\tags\blocks\dragon_immune.json
-3b9ed5be918e51a397e240df71c676f156366639 data\minecraft\tags\blocks\stairs.json
+cc0b737cabb845bbd936ec8d2f647537f04d2fab data\minecraft\tags\blocks\stairs.json
 356b137b5113cb08c5b9d635f7b50e1121741509 data\varan-deco\tags\blocks\dye_blocks.json
 99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
 ac53701d329aeca1c7adbae27837f62ec46ec9d8 data\minecraft\tags\blocks\snaps_goat_horn.json
@@ -60,7 +60,7 @@ e80b6c6002b896b8d542bf617e22c7f4760c1415 data\minecraft\tags\blocks\wither_immun
 ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\blocks\coloured_lamps.json
 0439852a9aa078cdf076347440baf1dcc3adef45 data\minecraft\tags\blocks\mineable\hoe.json
 e6d349dc0327522890cc26d8c82ad9ca7f8e418b data\minecraft\tags\blocks\mineable\axe.json
-e6a86af95e9ec41a3e8781f05b536f9236c53ed9 data\minecraft\tags\blocks\needs_iron_tool.json
+0c778d55e9837641221bf3d128babe41cc14150c data\minecraft\tags\blocks\needs_iron_tool.json
 e4004431fdfa14fdb2014a3ddb04064476be3a29 data\minecraft\tags\blocks\wooden_trapdoors.json
 ebe6a87d227a721528c3f1a7906c301ab589c81c data\minecraft\tags\blocks\wall_signs.json
 6574be471f5fb0acf4490d26d2b7935e1c6ee039 data\minecraft\tags\blocks\impermeable.json
