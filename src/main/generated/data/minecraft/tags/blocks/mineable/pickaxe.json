@@ -564,6 +564,19 @@
     "varan-deco:void_stone_brick_pillar",
     "varan-deco:casted_iron",
     "varan-deco:casted_iron_stairs",
-    "varan-deco:casted_iron_slab"
+    "varan-deco:casted_iron_slab",
+    "varan-deco:dripstone_brick_stairs",
+    "varan-deco:dripstone_brick_pillar_stairs",
+    "varan-deco:void_stone_brick_pillar_stairs",
+    "varan-deco:dripstone_brick_slab",
+    "varan-deco:dripstone_brick_pillar_slab",
+    "varan-deco:void_stone_brick_pillar_slab",
+    "varan-deco:dripstone_brick_wall",
+    "varan-deco:dripstone_brick_pillar_wall",
+    "varan-deco:void_stone_brick_pillar_wall",
+    "varan-deco:chiseled_dripstone",
+    "#varan-deco:coral_stairs",
+    "#varan-deco:coral_slabs",
+    "#varan-deco:coral_walls"
   ]
 }

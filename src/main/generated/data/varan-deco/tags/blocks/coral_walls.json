@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:tube_coral_wall",
+    "varan-deco:brain_coral_wall",
+    "varan-deco:bubble_coral_wall",
+    "varan-deco:fire_coral_wall",
+    "varan-deco:horn_coral_wall",
+    "varan-deco:dead_tube_coral_wall",
+    "varan-deco:dead_brain_coral_wall",
+    "varan-deco:dead_bubble_coral_wall",
+    "varan-deco:dead_fire_coral_wall",
+    "varan-deco:dead_horn_coral_wall"
+  ]
+}

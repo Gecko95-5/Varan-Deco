@@ -237,6 +237,13 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool dripbrickpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DRIPSTONE_BRICKS);
 
+        BlockStateModelGenerator.BlockTexturePool dripbrickpillarpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DRIPSTONE_BRICK_PILLAR_TEMP);
+        BlockStateModelGenerator.BlockTexturePool voidstonebrickpillarpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.VOID_STONE_BRICK_PILLAR_TEMP);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_DRIPSTONE);
+
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.DRIPSTONE_BRICK_PILLAR, TexturedModel.CUBE_ALL);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.VOID_STONE_BRICK_PILLAR, TexturedModel.CUBE_ALL);
 
@@ -322,6 +329,28 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SOLID_CLOUD);
         BlockStateModelGenerator.BlockTexturePool cloudbrickpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CLOUD_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool tubecoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.TUBE_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool braincoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BRAIN_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool bubblecoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BUBBLE_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool firecoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.FIRE_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool horncoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.HORN_CORAL_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool deadtubecoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_TUBE_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool deadbraincoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_BRAIN_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool deadbubblecoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_BUBBLE_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool deadfirecoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_FIRE_CORAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool deadhorncoralpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_HORN_CORAL_TEMP);
 
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_ICE_BRICKS, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_MUD_BRICKS, TexturedModel.CUBE_COLUMN);
@@ -1281,6 +1310,50 @@ public class DecoModelProvider extends FabricModelProvider {
 
         castironpool.stairs(DecoBlocks.CASTED_IRON_STAIRS);
         castironpool.slab(DecoBlocks.CASTED_IRON_SLAB);
+
+        dripbrickpool.stairs(DecoBlocks.DRIPSTONE_BRICK_STAIRS);
+        dripbrickpool.slab(DecoBlocks.DRIPSTONE_BRICK_SLAB);
+        dripbrickpool.wall(DecoBlocks.DRIPSTONE_BRICK_WALL);
+
+        dripbrickpillarpool.stairs(DecoBlocks.DRIPSTONE_BRICK_PILLAR_STAIRS);
+        dripbrickpillarpool.slab(DecoBlocks.DRIPSTONE_BRICK_PILLAR_SLAB);
+        dripbrickpillarpool.wall(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL);
+
+        voidstonebrickpillarpool.stairs(DecoBlocks.VOID_STONE_BRICK_PILLAR_STAIRS);
+        voidstonebrickpillarpool.slab(DecoBlocks.VOID_STONE_BRICK_PILLAR_SLAB);
+        voidstonebrickpillarpool.wall(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL);
+
+        tubecoralpool.stairs(DecoBlocks.TUBE_CORAL_STAIRS);
+        tubecoralpool.slab(DecoBlocks.TUBE_CORAL_SLAB);
+        tubecoralpool.wall(DecoBlocks.TUBE_CORAL_WALL);
+        bubblecoralpool.stairs(DecoBlocks.BUBBLE_CORAL_STAIRS);
+        bubblecoralpool.slab(DecoBlocks.BUBBLE_CORAL_SLAB);
+        bubblecoralpool.wall(DecoBlocks.BUBBLE_CORAL_WALL);
+        braincoralpool.stairs(DecoBlocks.BRAIN_CORAL_STAIRS);
+        braincoralpool.slab(DecoBlocks.BRAIN_CORAL_SLAB);
+        braincoralpool.wall(DecoBlocks.BRAIN_CORAL_WALL);
+        firecoralpool.stairs(DecoBlocks.FIRE_CORAL_STAIRS);
+        firecoralpool.slab(DecoBlocks.FIRE_CORAL_SLAB);
+        firecoralpool.wall(DecoBlocks.FIRE_CORAL_WALL);
+        horncoralpool.stairs(DecoBlocks.HORN_CORAL_STAIRS);
+        horncoralpool.slab(DecoBlocks.HORN_CORAL_SLAB);
+        horncoralpool.wall(DecoBlocks.HORN_CORAL_WALL);
+
+        deadtubecoralpool.stairs(DecoBlocks.DEAD_TUBE_CORAL_STAIRS);
+        deadtubecoralpool.slab(DecoBlocks.DEAD_TUBE_CORAL_SLAB);
+        deadtubecoralpool.wall(DecoBlocks.DEAD_TUBE_CORAL_WALL);
+        deadbubblecoralpool.stairs(DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS);
+        deadbubblecoralpool.slab(DecoBlocks.DEAD_BUBBLE_CORAL_SLAB);
+        deadbubblecoralpool.wall(DecoBlocks.DEAD_BUBBLE_CORAL_WALL);
+        deadbraincoralpool.stairs(DecoBlocks.DEAD_BRAIN_CORAL_STAIRS);
+        deadbraincoralpool.slab(DecoBlocks.DEAD_BRAIN_CORAL_SLAB);
+        deadbraincoralpool.wall(DecoBlocks.DEAD_BRAIN_CORAL_WALL);
+        deadfirecoralpool.stairs(DecoBlocks.DEAD_FIRE_CORAL_STAIRS);
+        deadfirecoralpool.slab(DecoBlocks.DEAD_FIRE_CORAL_SLAB);
+        deadfirecoralpool.wall(DecoBlocks.DEAD_FIRE_CORAL_WALL);
+        deadhorncoralpool.stairs(DecoBlocks.DEAD_HORN_CORAL_STAIRS);
+        deadhorncoralpool.slab(DecoBlocks.DEAD_HORN_CORAL_SLAB);
+        deadhorncoralpool.wall(DecoBlocks.DEAD_HORN_CORAL_WALL);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

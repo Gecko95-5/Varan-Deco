@@ -140,6 +140,10 @@
     "varan-deco:lapis_brick_stairs",
     "varan-deco:cut_lapis_stairs",
     "varan-deco:smooth_lapis_stairs",
-    "varan-deco:casted_iron_stairs"
+    "varan-deco:casted_iron_stairs",
+    "varan-deco:dripstone_brick_stairs",
+    "varan-deco:dripstone_brick_pillar_stairs",
+    "varan-deco:void_stone_brick_pillar_stairs",
+    "#varan-deco:coral_stairs"
   ]
 }

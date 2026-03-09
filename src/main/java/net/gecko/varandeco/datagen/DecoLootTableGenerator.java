@@ -3022,5 +3022,99 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.CASTED_IRON_STAIRS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/casted_iron_slab"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.CASTED_IRON_SLAB));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DRIPSTONE_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_pillar_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DRIPSTONE_BRICK_PILLAR_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_pillar_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_BRICK_PILLAR_STAIRS));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DRIPSTONE_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_pillar_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DRIPSTONE_BRICK_PILLAR_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_pillar_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.VOID_STONE_BRICK_PILLAR_SLAB));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DRIPSTONE_BRICK_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dripstone_brick_pillar_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/void_stone_brick_pillar_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/chiseled_dripstone"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHISELED_DRIPSTONE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tube_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.TUBE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tube_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.TUBE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tube_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.TUBE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brain_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BRAIN_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brain_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BRAIN_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/brain_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BRAIN_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.BUBBLE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/bubble_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.BUBBLE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/fire_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.FIRE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/fire_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.FIRE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/fire_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.FIRE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/horn_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HORN_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/horn_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HORN_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/horn_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HORN_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_tube_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_TUBE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_tube_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DEAD_TUBE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_tube_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_TUBE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_brain_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_BRAIN_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_brain_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DEAD_BRAIN_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_brain_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_BRAIN_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_bubble_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_bubble_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DEAD_BUBBLE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_bubble_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_BUBBLE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_fire_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_FIRE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_fire_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DEAD_FIRE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_fire_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_FIRE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_horn_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_HORN_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_horn_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.DEAD_HORN_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_horn_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.DEAD_HORN_CORAL_WALL));
     }
 }

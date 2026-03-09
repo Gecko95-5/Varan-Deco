@@ -578,7 +578,20 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.VOID_STONE_BRICK_PILLAR)
                 .add(DecoBlocks.CASTED_IRON)
                 .add(DecoBlocks.CASTED_IRON_STAIRS)
-                .add(DecoBlocks.CASTED_IRON_SLAB);
+                .add(DecoBlocks.CASTED_IRON_SLAB)
+                .add(DecoBlocks.DRIPSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_STAIRS)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_STAIRS)
+                .add(DecoBlocks.DRIPSTONE_BRICK_SLAB)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_SLAB)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_SLAB)
+                .add(DecoBlocks.DRIPSTONE_BRICK_WALL)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL)
+                .add(DecoBlocks.CHISELED_DRIPSTONE)
+                .addTag(DecoTags.Blocks.CORAL_STAIRS)
+                .addTag(DecoTags.Blocks.CORAL_SLABS)
+                .addTag(DecoTags.Blocks.CORAL_WALLS);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -971,7 +984,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LAPIS_WALL)
                 .add(DecoBlocks.LAPIS_BRICK_WALL)
                 .add(DecoBlocks.CUT_LAPIS_WALL)
-                .add(DecoBlocks.SMOOTH_LAPIS_WALL);
+                .add(DecoBlocks.SMOOTH_LAPIS_WALL)
+                .add(DecoBlocks.DRIPSTONE_BRICK_WALL)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL)
+                .addTag(DecoTags.Blocks.CORAL_WALLS);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -1150,7 +1167,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LAPIS_BRICK_STAIRS)
                 .add(DecoBlocks.CUT_LAPIS_STAIRS)
                 .add(DecoBlocks.SMOOTH_LAPIS_STAIRS)
-                .add(DecoBlocks.CASTED_IRON_STAIRS);
+                .add(DecoBlocks.CASTED_IRON_STAIRS)
+                .add(DecoBlocks.DRIPSTONE_BRICK_STAIRS)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_STAIRS)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_STAIRS)
+                .addTag(DecoTags.Blocks.CORAL_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1277,7 +1298,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.LAPIS_BRICK_SLAB)
                 .add(DecoBlocks.CUT_LAPIS_SLAB)
                 .add(DecoBlocks.SMOOTH_LAPIS_SLAB)
-                .add(DecoBlocks.CASTED_IRON_SLAB);
+                .add(DecoBlocks.CASTED_IRON_SLAB)
+                .add(DecoBlocks.DRIPSTONE_BRICK_SLAB)
+                .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_SLAB)
+                .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_SLAB)
+                .addTag(DecoTags.Blocks.CORAL_SLABS);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -2259,5 +2284,41 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_BLACKSTONE_LEVER)
                 .add(DecoBlocks.END_STONE_LEVER)
                 .add(DecoBlocks.POLISHED_END_STONE_LEVER);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.CORAL_STAIRS)
+                .add(DecoBlocks.TUBE_CORAL_STAIRS)
+                .add(DecoBlocks.BRAIN_CORAL_STAIRS)
+                .add(DecoBlocks.BUBBLE_CORAL_STAIRS)
+                .add(DecoBlocks.FIRE_CORAL_STAIRS)
+                .add(DecoBlocks.HORN_CORAL_STAIRS)
+                .add(DecoBlocks.DEAD_TUBE_CORAL_STAIRS)
+                .add(DecoBlocks.DEAD_BRAIN_CORAL_STAIRS)
+                .add(DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS)
+                .add(DecoBlocks.DEAD_FIRE_CORAL_STAIRS)
+                .add(DecoBlocks.DEAD_HORN_CORAL_STAIRS);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.CORAL_SLABS)
+                .add(DecoBlocks.TUBE_CORAL_SLAB)
+                .add(DecoBlocks.BRAIN_CORAL_SLAB)
+                .add(DecoBlocks.BUBBLE_CORAL_SLAB)
+                .add(DecoBlocks.FIRE_CORAL_SLAB)
+                .add(DecoBlocks.HORN_CORAL_SLAB)
+                .add(DecoBlocks.DEAD_TUBE_CORAL_SLAB)
+                .add(DecoBlocks.DEAD_BRAIN_CORAL_SLAB)
+                .add(DecoBlocks.DEAD_BUBBLE_CORAL_SLAB)
+                .add(DecoBlocks.DEAD_FIRE_CORAL_SLAB)
+                .add(DecoBlocks.DEAD_HORN_CORAL_SLAB);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.CORAL_WALLS)
+                .add(DecoBlocks.TUBE_CORAL_WALL)
+                .add(DecoBlocks.BRAIN_CORAL_WALL)
+                .add(DecoBlocks.BUBBLE_CORAL_WALL)
+                .add(DecoBlocks.FIRE_CORAL_WALL)
+                .add(DecoBlocks.HORN_CORAL_WALL)
+                .add(DecoBlocks.DEAD_TUBE_CORAL_WALL)
+                .add(DecoBlocks.DEAD_BRAIN_CORAL_WALL)
+                .add(DecoBlocks.DEAD_BUBBLE_CORAL_WALL)
+                .add(DecoBlocks.DEAD_FIRE_CORAL_WALL)
+                .add(DecoBlocks.DEAD_HORN_CORAL_WALL);
     }
 }

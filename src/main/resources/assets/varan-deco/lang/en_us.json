@@ -983,8 +983,61 @@
   "block.varan-deco.blue_nether_brick_pillar": "Blue Nether Brick Pillar",
 
   "block.varan-deco.dripstone_bricks": "Dripstone Bricks",
+  "block.varan-deco.dripstone_brick_stairs": "Dripstone Brick Stairs",
+  "block.varan-deco.dripstone_brick_slab": "Dripstone Brick Slab",
+  "block.varan-deco.dripstone_brick_wall": "Dripstone Brick Wall",
+
   "block.varan-deco.dripstone_brick_pillar": "Dripstone Brick Pillar",
+  "block.varan-deco.dripstone_brick_pillar_stairs": "Dripstone Brick Pillar Stairs",
+  "block.varan-deco.dripstone_brick_pillar_slab": "Dripstone Brick Pillar Slab",
+  "block.varan-deco.dripstone_brick_pillar_wall": "Dripstone Brick Pillar Wall",
+
   "block.varan-deco.void_stone_brick_pillar": "Void Stone Brick Pillar",
+  "block.varan-deco.void_stone_brick_pillar_stairs": "Void Stone Brick Pillar Stairs",
+  "block.varan-deco.void_stone_brick_pillar_slab": "Void Stone Brick Pillar Slab",
+  "block.varan-deco.void_stone_brick_pillar_wall": "Void Stone Brick Pillar Wall",
+
+  "block.varan-deco.chiseled_dripstone": "Chiseled Dripstone",
+
+  "block.varan-deco.tube_coral_stairs": "Tube Coral Stairs",
+  "block.varan-deco.tube_coral_slab": "Tube Coral Slab",
+  "block.varan-deco.tube_coral_wall": "Tube Coral Wall",
+
+  "block.varan-deco.brain_coral_stairs": "Brain Coral Stairs",
+  "block.varan-deco.brain_coral_slab": "Brain Coral Slab",
+  "block.varan-deco.brain_coral_wall": "Brain Coral Wall",
+
+  "block.varan-deco.bubble_coral_stairs": "Bubble Coral Stairs",
+  "block.varan-deco.bubble_coral_slab": "Bubble Coral Slab",
+  "block.varan-deco.bubble_coral_wall": "Bubble Coral Wall",
+
+  "block.varan-deco.fire_coral_stairs": "Fire Coral Stairs",
+  "block.varan-deco.fire_coral_slab": "Fire Coral Slab",
+  "block.varan-deco.fire_coral_wall": "Fire Coral Wall",
+
+  "block.varan-deco.horn_coral_stairs": "Horn Coral Stairs",
+  "block.varan-deco.horn_coral_slab": "Horn Coral Slab",
+  "block.varan-deco.horn_coral_wall": "Horn Coral Wall",
+
+  "block.varan-deco.dead_tube_coral_stairs": "Dead Tube Coral Stairs",
+  "block.varan-deco.dead_tube_coral_slab": "Dead Tube Coral Slab",
+  "block.varan-deco.dead_tube_coral_wall": "Dead Tube Coral Wall",
+
+  "block.varan-deco.dead_brain_coral_stairs": "Dead Brain Coral Stairs",
+  "block.varan-deco.dead_brain_coral_slab": "Dead Brain Coral Slab",
+  "block.varan-deco.dead_brain_coral_wall": "Dead Brain Coral Wall",
+
+  "block.varan-deco.dead_bubble_coral_stairs": "Dead Bubble Coral Stairs",
+  "block.varan-deco.dead_bubble_coral_slab": "Dead Bubble Coral Slab",
+  "block.varan-deco.dead_bubble_coral_wall": "Dead Bubble Coral Wall",
+
+  "block.varan-deco.dead_fire_coral_stairs": "Dead Fire Coral Stairs",
+  "block.varan-deco.dead_fire_coral_slab": "Dead Fire Coral Slab",
+  "block.varan-deco.dead_fire_coral_wall": "Dead Fire Coral Wall",
+
+  "block.varan-deco.dead_horn_coral_stairs": "Dead Horn Coral Stairs",
+  "block.varan-deco.dead_horn_coral_slab": "Dead Horn Coral Slab",
+  "block.varan-deco.dead_horn_coral_wall": "Dead Horn Coral Wall",
 
   "block.varan-deco.copper_chain": "Copper Chain",
   "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
