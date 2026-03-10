@@ -41,8 +41,7 @@ public class DecoConfiguredFeatures {
                                             DecoBlocks.GERBERA_DAISY.getDefaultState(),DecoBlocks.WHITE_ORCHID.getDefaultState(),
                                             DecoBlocks.PINK_ORCHID.getDefaultState(),DecoBlocks.YELLOW_ORCHID.getDefaultState(),
                                             Blocks.BLUE_ORCHID.getDefaultState(),DecoBlocks.SALMON_POPPY.getDefaultState(),
-                                            DecoBlocks.ROSE.getDefaultState(),DecoBlocks.PAEONIA.getDefaultState(),
-                                            DecoBlocks.LAVENDER.getDefaultState()))))));
+                                            DecoBlocks.ROSE.getDefaultState(),DecoBlocks.PAEONIA.getDefaultState()))))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_TULIPS_FOREST =
             ConfiguredFeatures.register("deco_tulips_forest", Feature.FLOWER,
@@ -70,11 +69,11 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_BIRCH =
             ConfiguredFeatures.register("deco_birch_flowers", Feature.FLOWER,
-                    ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                             new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3),
                                     new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0),
                                     1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0),
-                                    1.0F, List.of(DecoBlocks.LAVENDER.getDefaultState(),
+                                    1.0F, List.of(DecoBlocks.FELICIA_DAISY.getDefaultState(),
                                             DecoBlocks.PAEONIA.getDefaultState(), DecoBlocks.NIGHTSHADE.getDefaultState(),
                                                 DecoBlocks.BUTTERCUP.getDefaultState()))))));
 
@@ -126,6 +125,18 @@ public class DecoConfiguredFeatures {
                                     .add(DecoBlocks.SALMON_POPPY.getDefaultState(),2)
                                     .add(DecoBlocks.LAVENDER.getDefaultState(),1)
                                     .add(DecoBlocks.WHITE_ORCHID.getDefaultState(),3).build()),32));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_ROOFED =
+            ConfiguredFeatures.register("deco_roofed_flowers", Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.IRIS.getDefaultState(),2)
+                                    .add(DecoBlocks.BLUE_DELPHINIUM.getDefaultState(),2)
+                                    .add(DecoBlocks.CYAN_ORCHID.getDefaultState(),1)
+                                    .add(DecoBlocks.LAVENDER.getDefaultState(),1).build()),32));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_MEGA_TULIPS = ConfiguredFeatures.register(
+            "deco_mega_tulips", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                    new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.MEGA_BROWN_TULIP))));
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_ROSE = ConfiguredFeatures.register(
             "deco_rose", Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "special_cut_concrete",
+  "key": {
+    "#": {
+      "item": "varan-deco:cut_gray_concrete"
+    },
+    "$": {
+      "item": "varan-deco:passtol"
+    }
+  },
+  "pattern": [
+    "$#",
+    "#$"
+  ],
+  "result": {
+    "item": "varan-deco:checkered_gray_concrete"
+  }
+}

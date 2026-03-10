@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:casted_iron"
+  },
+  "result": "varan-deco:casted_iron_stairs"
+}

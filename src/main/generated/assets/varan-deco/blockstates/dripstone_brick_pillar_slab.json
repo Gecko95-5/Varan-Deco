@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/dripstone_brick_pillar_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/dripstone_brick_pillar_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/dripstone_brick_pillar_slab_top"
+    }
+  }
+}
