@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:checkered_red_concrete"
+  },
+  "result": "varan-deco:checkered_red_concrete_stairs"
+}

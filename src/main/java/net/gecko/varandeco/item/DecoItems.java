@@ -23,6 +23,22 @@ public class DecoItems {
             new SignItem(new Item.Settings().maxCount(16),
                     DecoBlocks.STANDING_WOODEN_SIGN, DecoBlocks.WALL_WOODEN_SIGN));
 
+    public static final Item HYDRATED_TUBE_CORAL_FAN = registerItem("hydrated_tube_coral_fan",
+            new WallStandingBlockItem(DecoBlocks.HYDRATED_TUBE_CORAL_FAN,DecoBlocks.HYDRATED_TUBE_CORAL_WALL_FAN,
+                    new Item.Settings()));
+    public static final Item HYDRATED_BRAIN_CORAL_FAN = registerItem("hydrated_brain_coral_fan",
+            new WallStandingBlockItem(DecoBlocks.HYDRATED_BRAIN_CORAL_FAN,DecoBlocks.HYDRATED_BRAIN_CORAL_WALL_FAN,
+                    new Item.Settings()));
+    public static final Item HYDRATED_BUBBLE_CORAL_FAN = registerItem("hydrated_bubble_coral_fan",
+            new WallStandingBlockItem(DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN,DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL_FAN,
+                    new Item.Settings()));
+    public static final Item HYDRATED_FIRE_CORAL_FAN = registerItem("hydrated_fire_coral_fan",
+            new WallStandingBlockItem(DecoBlocks.HYDRATED_FIRE_CORAL_FAN,DecoBlocks.HYDRATED_FIRE_CORAL_WALL_FAN,
+                    new Item.Settings()));
+    public static final Item HYDRATED_HORN_CORAL_FAN = registerItem("hydrated_horn_coral_fan",
+            new WallStandingBlockItem(DecoBlocks.HYDRATED_HORN_CORAL_FAN,DecoBlocks.HYDRATED_HORN_CORAL_WALL_FAN,
+                    new Item.Settings()));
+
     public static final Item SNOW_BRICK = registerItem("snow_brick",
             new Item(new Item.Settings().maxCount(16)));
 

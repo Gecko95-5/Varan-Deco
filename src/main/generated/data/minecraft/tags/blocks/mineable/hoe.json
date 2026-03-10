@@ -32,6 +32,16 @@
     "varan-deco:cloud_slab",
     "varan-deco:cloud_brick_slab",
     "varan-deco:cloud_wall",
-    "varan-deco:cloud_brick_wall"
+    "varan-deco:cloud_brick_wall",
+    "varan-deco:hay_carpet",
+    "varan-deco:hay_stairs",
+    "varan-deco:hay_slab",
+    "varan-deco:sculk_carpet",
+    "varan-deco:nether_wart_stairs",
+    "varan-deco:warped_wart_stairs",
+    "varan-deco:sculk_stairs",
+    "varan-deco:nether_wart_slab",
+    "varan-deco:warped_wart_slab",
+    "varan-deco:sculk_slab"
   ]
 }

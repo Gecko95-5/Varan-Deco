@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "varan-deco:dripstone_bricks"
+  },
+  "result": "varan-deco:dripstone_brick_pillar_slab"
+}

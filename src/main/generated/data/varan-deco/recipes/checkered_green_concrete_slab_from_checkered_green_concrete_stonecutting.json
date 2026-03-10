@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "varan-deco:checkered_green_concrete"
+  },
+  "result": "varan-deco:checkered_green_concrete_slab"
+}

@@ -4,7 +4,7 @@
       "model": "varan-deco:block/grass_slab"
     },
     "type=double": {
-      "model": "varan-deco:block/grass_temp"
+      "model": "varan-deco:block/packed_grass"
     },
     "type=top": {
       "model": "varan-deco:block/grass_slab_top"

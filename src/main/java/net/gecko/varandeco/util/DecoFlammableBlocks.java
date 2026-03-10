@@ -1,5 +1,6 @@
 package net.gecko.varandeco.util;
 
+import com.terraformersmc.terraform.leaves.ComposterRecipes;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Blocks;
@@ -72,6 +73,11 @@ public class DecoFlammableBlocks {
         registry.add(DecoBlocks.DEAD_EYE_DAISY,60, 100);
         registry.add(DecoBlocks.POPPED_BLUET,60, 100);
         registry.add(DecoBlocks.ALPINE_POPPY,60, 100);
+
+        registry.add(DecoBlocks.IRIS,60, 100);
+        registry.add(DecoBlocks.BLUE_DELPHINIUM,60, 100);
+        registry.add(DecoBlocks.CYAN_ORCHID,60, 100);
+        registry.add(DecoBlocks.FELICIA_DAISY,60, 100);
 
         registry.add(DecoTags.Blocks.LOG_STAIRS,5,5);
         registry.add(DecoTags.Blocks.LOG_SLABS,5,5);
