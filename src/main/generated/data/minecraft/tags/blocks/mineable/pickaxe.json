@@ -575,6 +575,11 @@
     "varan-deco:dripstone_brick_pillar_wall",
     "varan-deco:void_stone_brick_pillar_wall",
     "varan-deco:chiseled_dripstone",
+    "varan-deco:hydrated_tube_coral",
+    "varan-deco:hydrated_brain_coral",
+    "varan-deco:hydrated_bubble_coral",
+    "varan-deco:hydrated_fire_coral",
+    "varan-deco:hydrated_horn_coral",
     "#varan-deco:coral_stairs",
     "#varan-deco:coral_slabs",
     "#varan-deco:coral_walls"

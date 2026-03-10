@@ -5481,7 +5481,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.OBSIDIAN), DecoBlocks.SMOOTH_OBSIDIAN,
                         0.1f, 200).criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.SMOOTH_OBSIDIAN)));
-        
+
         createStairsRecipe(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS, Ingredient.ofItems(DecoBlocks.SMOOTH_OBSIDIAN))
                 .criterion(hasItem(DecoBlocks.SMOOTH_OBSIDIAN),conditionsFromItem(DecoBlocks.SMOOTH_OBSIDIAN))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SMOOTH_OBSIDIAN_STAIRS)));
@@ -7066,6 +7066,203 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, DecoBlocks.DEAD_HORN_CORAL_WALL, Items.DEAD_HORN_CORAL_BLOCK);
         offerStonecuttingRecipe(exporter, DecoBlocks.DEAD_HORN_CORAL_WALL, Items.DEAD_HORN_CORAL_BLOCK);
+
+        offerHydratingRecipe(exporter, Items.TUBE_CORAL, Items.DEAD_TUBE_CORAL);
+        offerHydratingRecipe(exporter, Items.BRAIN_CORAL, Items.DEAD_BRAIN_CORAL);
+        offerHydratingRecipe(exporter, Items.BUBBLE_CORAL, Items.DEAD_BUBBLE_CORAL);
+        offerHydratingRecipe(exporter, Items.FIRE_CORAL, Items.DEAD_FIRE_CORAL);
+        offerHydratingRecipe(exporter, Items.HORN_CORAL, Items.DEAD_HORN_CORAL);
+
+        offerHydratingRecipe(exporter, Items.TUBE_CORAL_FAN, Items.DEAD_TUBE_CORAL_FAN);
+        offerHydratingRecipe(exporter, Items.BRAIN_CORAL_FAN, Items.DEAD_BRAIN_CORAL_FAN);
+        offerHydratingRecipe(exporter, Items.BUBBLE_CORAL_FAN, Items.DEAD_BUBBLE_CORAL_FAN);
+        offerHydratingRecipe(exporter, Items.FIRE_CORAL_FAN, Items.DEAD_FIRE_CORAL_FAN);
+        offerHydratingRecipe(exporter, Items.HORN_CORAL_FAN, Items.DEAD_HORN_CORAL_FAN);
+
+        offerHydratingRecipe(exporter, Items.TUBE_CORAL_BLOCK, Items.DEAD_TUBE_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, Items.BRAIN_CORAL_BLOCK, Items.DEAD_BRAIN_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, Items.BUBBLE_CORAL_BLOCK, Items.DEAD_BUBBLE_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, Items.FIRE_CORAL_BLOCK, Items.DEAD_FIRE_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, Items.HORN_CORAL_BLOCK, Items.DEAD_HORN_CORAL_BLOCK);
+
+        offerHydratingRecipe(exporter, DecoBlocks.TUBE_CORAL_STAIRS, DecoBlocks.DEAD_TUBE_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.BRAIN_CORAL_STAIRS, DecoBlocks.DEAD_BRAIN_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.BUBBLE_CORAL_STAIRS, DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.FIRE_CORAL_STAIRS, DecoBlocks.DEAD_FIRE_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.HORN_CORAL_STAIRS, DecoBlocks.DEAD_HORN_CORAL_STAIRS);
+
+        offerHydratingRecipe(exporter, DecoBlocks.TUBE_CORAL_SLAB, DecoBlocks.DEAD_TUBE_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.BRAIN_CORAL_SLAB, DecoBlocks.DEAD_BRAIN_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.BUBBLE_CORAL_SLAB, DecoBlocks.DEAD_BUBBLE_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.FIRE_CORAL_SLAB, DecoBlocks.DEAD_FIRE_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.HORN_CORAL_SLAB, DecoBlocks.DEAD_HORN_CORAL_SLAB);
+
+        offerHydratingRecipe(exporter, DecoBlocks.TUBE_CORAL_WALL, DecoBlocks.DEAD_TUBE_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.BRAIN_CORAL_WALL, DecoBlocks.DEAD_BRAIN_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.BUBBLE_CORAL_WALL, DecoBlocks.DEAD_BUBBLE_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.FIRE_CORAL_WALL, DecoBlocks.DEAD_FIRE_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.HORN_CORAL_WALL, DecoBlocks.DEAD_HORN_CORAL_WALL);
+
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL, Items.TUBE_CORAL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL, Items.BRAIN_CORAL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL, Items.BUBBLE_CORAL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL, Items.FIRE_CORAL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL, Items.HORN_CORAL);
+
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_TUBE_CORAL_FAN, Items.TUBE_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_BRAIN_CORAL_FAN, Items.BRAIN_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_BUBBLE_CORAL_FAN, Items.BUBBLE_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_FIRE_CORAL_FAN, Items.FIRE_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_HORN_CORAL_FAN, Items.HORN_CORAL_FAN);
+
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_BUBBLE_CORAL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_TUBE_CORAL, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_BRAIN_CORAL, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_FIRE_CORAL, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_HORN_CORAL, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK, Items.TUBE_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK, Items.BRAIN_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK, Items.BUBBLE_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK, Items.FIRE_CORAL_BLOCK);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK, Items.HORN_CORAL_BLOCK);
+
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS, DecoBlocks.TUBE_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS, DecoBlocks.BRAIN_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS, DecoBlocks.BUBBLE_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS, DecoBlocks.FIRE_CORAL_STAIRS);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_STAIRS, DecoBlocks.HORN_CORAL_STAIRS);
+
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_SLAB, DecoBlocks.TUBE_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB, DecoBlocks.BRAIN_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB, DecoBlocks.BUBBLE_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_SLAB, DecoBlocks.FIRE_CORAL_SLAB);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_SLAB, DecoBlocks.HORN_CORAL_SLAB);
+
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_WALL, DecoBlocks.TUBE_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_WALL, DecoBlocks.BRAIN_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL, DecoBlocks.BUBBLE_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_WALL, DecoBlocks.FIRE_CORAL_WALL);
+        offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_WALL, DecoBlocks.HORN_CORAL_WALL);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HYDRATED_BUBBLE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', DecoItems.HYDRATED_BUBBLE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_BUBBLE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_BUBBLE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("hydrated_bubble_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HYDRATED_TUBE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', DecoItems.HYDRATED_TUBE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_TUBE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_TUBE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("hydrated_tube_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HYDRATED_BRAIN_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', DecoItems.HYDRATED_BRAIN_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_BRAIN_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_BRAIN_CORAL_FAN))
+                .offerTo(exporter, new Identifier("hydrated_brain_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HYDRATED_FIRE_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', DecoItems.HYDRATED_FIRE_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_FIRE_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_FIRE_CORAL_FAN))
+                .offerTo(exporter, new Identifier("hydrated_fire_coral_from_fan"));
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HYDRATED_HORN_CORAL)
+                .pattern("#")
+                .pattern("#")
+                .input('#', DecoItems.HYDRATED_HORN_CORAL_FAN)
+                .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_HORN_CORAL_FAN),
+                        RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_HORN_CORAL_FAN))
+                .offerTo(exporter, new Identifier("hydrated_horn_coral_from_fan"));
+
+        createStairsRecipe(DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS, Ingredient.ofItems(DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK))
+                .criterion(hasItem(DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK),conditionsFromItem(DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS,DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
+
+        offerSlabRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_SLAB, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_SLAB, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK,2);
+
+        offerWallRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_WALL, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_WALL, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
+
+        createStairsRecipe(DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS, Ingredient.ofItems(DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK))
+                .criterion(hasItem(DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK),conditionsFromItem(DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
+
+        offerSlabRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK,2);
+
+        offerWallRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_WALL, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_WALL, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
+
+        createStairsRecipe(DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS, Ingredient.ofItems(DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK))
+                .criterion(hasItem(DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK),conditionsFromItem(DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
+
+        offerSlabRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK,2);
+
+        offerWallRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
+
+        createStairsRecipe(DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS, Ingredient.ofItems(DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK))
+                .criterion(hasItem(DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK),conditionsFromItem(DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
+
+        offerSlabRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_SLAB, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_SLAB, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK,2);
+
+        offerWallRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_WALL, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL_WALL, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
+
+        createStairsRecipe(DecoBlocks.HYDRATED_HORN_CORAL_STAIRS, Ingredient.ofItems(DecoBlocks.HYDRATED_HORN_CORAL_BLOCK))
+                .criterion(hasItem(DecoBlocks.HYDRATED_HORN_CORAL_BLOCK),conditionsFromItem(DecoBlocks.HYDRATED_HORN_CORAL_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HYDRATED_HORN_CORAL_STAIRS)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_STAIRS, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+
+        offerSlabRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_SLAB, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_SLAB, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK,2);
+
+        offerWallRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_WALL, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+        offerStonecuttingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL_WALL, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+
+        createStairsRecipe(DecoBlocks.HAY_STAIRS, Ingredient.ofItems(Items.HAY_BLOCK))
+                .criterion(hasItem(Items.HAY_BLOCK),conditionsFromItem(Items.HAY_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HAY_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.HAY_SLAB, Items.HAY_BLOCK);
+        offerCarpetRecipe(exporter, DecoBlocks.HAY_CARPET, Items.HAY_BLOCK);
+
+        createStairsRecipe(DecoBlocks.NETHER_WART_STAIRS, Ingredient.ofItems(Items.NETHER_WART_BLOCK))
+                .criterion(hasItem(Items.NETHER_WART_BLOCK),conditionsFromItem(Items.NETHER_WART_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.NETHER_WART_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.NETHER_WART_SLAB, Items.NETHER_WART_BLOCK);
+
+        createStairsRecipe(DecoBlocks.WARPED_WART_STAIRS, Ingredient.ofItems(Items.WARPED_WART_BLOCK))
+                .criterion(hasItem(Items.WARPED_WART_BLOCK),conditionsFromItem(Items.WARPED_WART_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.WARPED_WART_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.WARPED_WART_SLAB, Items.WARPED_WART_BLOCK);
+
+        createStairsRecipe(DecoBlocks.SCULK_STAIRS, Ingredient.ofItems(Items.SCULK))
+                .criterion(hasItem(Items.SCULK),conditionsFromItem(Items.SCULK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SCULK_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.SCULK_SLAB, Items.SCULK);
+        offerCarpetRecipe(exporter, DecoBlocks.SCULK_CARPET, Items.SCULK);
+
+        createStairsRecipe(DecoBlocks.HONEYCOMB_STAIRS, Ingredient.ofItems(Items.HONEYCOMB_BLOCK))
+                .criterion(hasItem(Items.HONEYCOMB_BLOCK),conditionsFromItem(Items.HONEYCOMB_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.HONEYCOMB_STAIRS)));
+        offerSlabRecipe(exporter, DecoBlocks.HONEYCOMB_SLAB, Items.HONEYCOMB_BLOCK);
+        offerWallRecipe(exporter, DecoBlocks.HONEYCOMB_WALL, Items.HONEYCOMB_BLOCK);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
@@ -7264,5 +7461,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(concreteInput),
                         RecipeProvider.conditionsFromItem(concreteInput))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
+    }
+    public static void offerHydratingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible coralInput) {
+        ShapelessRecipeJsonBuilder.create(output)
+                .input(coralInput)
+                .input(DecoItems.BUBBLE_ORB)
+                .group("hydrating_dead_coral")
+                .criterion(RecipeProvider.hasItem(coralInput),
+                        RecipeProvider.conditionsFromItem(coralInput))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)+ "from_hydrating"));
     }
 }

@@ -714,6 +714,36 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool crackendstonetilepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_END_STONE_TILES);
 
+        BlockStateModelGenerator.BlockTexturePool haypool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.HAY_TEMP);
+
+        blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.HAY_CARPET_TEMP, DecoBlocks.HAY_CARPET);
+
+        BlockStateModelGenerator.BlockTexturePool nethwartpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.NETHER_WART_TEMP);
+        BlockStateModelGenerator.BlockTexturePool warpwartpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WARPED_WART_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool sculkpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SCULK_TEMP);
+
+        blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.SCULK_CARPET_TEMP, DecoBlocks.SCULK_CARPET);
+
+        BlockStateModelGenerator.BlockTexturePool honeypool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.HONEYCOMB_TEMP);
+
+        blockStateModelGenerator.registerTintableCross(DecoBlocks.HYDRATED_TUBE_CORAL, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(DecoBlocks.HYDRATED_BRAIN_CORAL, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(DecoBlocks.HYDRATED_BUBBLE_CORAL, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(DecoBlocks.HYDRATED_HORN_CORAL, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(DecoBlocks.HYDRATED_FIRE_CORAL, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerCoralFan(DecoBlocks.HYDRATED_TUBE_CORAL_FAN, DecoBlocks.HYDRATED_TUBE_CORAL_WALL_FAN);
+        blockStateModelGenerator.registerCoralFan(DecoBlocks.HYDRATED_BRAIN_CORAL_FAN, DecoBlocks.HYDRATED_BRAIN_CORAL_WALL_FAN);
+        blockStateModelGenerator.registerCoralFan(DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN, DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL_FAN);
+        blockStateModelGenerator.registerCoralFan(DecoBlocks.HYDRATED_FIRE_CORAL_FAN, DecoBlocks.HYDRATED_FIRE_CORAL_WALL_FAN);
+        blockStateModelGenerator.registerCoralFan(DecoBlocks.HYDRATED_HORN_CORAL_FAN, DecoBlocks.HYDRATED_HORN_CORAL_WALL_FAN);
+
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CLOUD_BLOCK);
 
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BASALT_BRICKS, TexturedModel.CUBE_COLUMN);
@@ -1339,6 +1369,28 @@ public class DecoModelProvider extends FabricModelProvider {
         horncoralpool.slab(DecoBlocks.HORN_CORAL_SLAB);
         horncoralpool.wall(DecoBlocks.HORN_CORAL_WALL);
 
+        tubecoralpool.same(DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
+        bubblecoralpool.same(DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
+        braincoralpool.same(DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
+        firecoralpool.same(DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
+        horncoralpool.same(DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+
+        tubecoralpool.stairs(DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS);
+        tubecoralpool.slab(DecoBlocks.HYDRATED_TUBE_CORAL_SLAB);
+        tubecoralpool.wall(DecoBlocks.HYDRATED_TUBE_CORAL_WALL);
+        bubblecoralpool.stairs(DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS);
+        bubblecoralpool.slab(DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB);
+        bubblecoralpool.wall(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL);
+        braincoralpool.stairs(DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS);
+        braincoralpool.slab(DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB);
+        braincoralpool.wall(DecoBlocks.HYDRATED_BRAIN_CORAL_WALL);
+        firecoralpool.stairs(DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS);
+        firecoralpool.slab(DecoBlocks.HYDRATED_FIRE_CORAL_SLAB);
+        firecoralpool.wall(DecoBlocks.HYDRATED_FIRE_CORAL_WALL);
+        horncoralpool.stairs(DecoBlocks.HYDRATED_HORN_CORAL_STAIRS);
+        horncoralpool.slab(DecoBlocks.HYDRATED_HORN_CORAL_SLAB);
+        horncoralpool.wall(DecoBlocks.HYDRATED_HORN_CORAL_WALL);
+
         deadtubecoralpool.stairs(DecoBlocks.DEAD_TUBE_CORAL_STAIRS);
         deadtubecoralpool.slab(DecoBlocks.DEAD_TUBE_CORAL_SLAB);
         deadtubecoralpool.wall(DecoBlocks.DEAD_TUBE_CORAL_WALL);
@@ -1354,6 +1406,22 @@ public class DecoModelProvider extends FabricModelProvider {
         deadhorncoralpool.stairs(DecoBlocks.DEAD_HORN_CORAL_STAIRS);
         deadhorncoralpool.slab(DecoBlocks.DEAD_HORN_CORAL_SLAB);
         deadhorncoralpool.wall(DecoBlocks.DEAD_HORN_CORAL_WALL);
+
+        haypool.stairs(DecoBlocks.HAY_STAIRS);
+        haypool.slab(DecoBlocks.HAY_SLAB);
+
+        nethwartpool.stairs(DecoBlocks.NETHER_WART_STAIRS);
+        nethwartpool.slab(DecoBlocks.NETHER_WART_SLAB);
+
+        warpwartpool.stairs(DecoBlocks.WARPED_WART_STAIRS);
+        warpwartpool.slab(DecoBlocks.WARPED_WART_SLAB);
+
+        sculkpool.stairs(DecoBlocks.SCULK_STAIRS);
+        sculkpool.slab(DecoBlocks.SCULK_SLAB);
+
+        honeypool.stairs(DecoBlocks.HONEYCOMB_STAIRS);
+        honeypool.slab(DecoBlocks.HONEYCOMB_SLAB);
+        honeypool.wall(DecoBlocks.HONEYCOMB_WALL);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

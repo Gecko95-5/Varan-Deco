@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.SimpleFabricLootTableProvider
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
@@ -14,6 +15,8 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 import java.util.function.BiConsumer;
+
+import static net.minecraft.data.server.BlockLootTableGenerator.drops;
 
 public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
     public DecoLootTableGenerator(FabricDataGenerator dataGenerator) {
@@ -3116,5 +3119,111 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.DEAD_HORN_CORAL_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/dead_horn_coral_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.DEAD_HORN_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_tube_coral"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_TUBE_CORAL, Items.TUBE_CORAL,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_brain_coral"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BRAIN_CORAL, Items.BRAIN_CORAL,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_bubble_coral"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BUBBLE_CORAL, Items.BUBBLE_CORAL,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_FIRE_CORAL, Items.FIRE_CORAL,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_horn_coral"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_HORN_CORAL, Items.HORN_CORAL,
+                        ConstantLootNumberProvider.create(1.0F)));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_tube_coral_fan"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_TUBE_CORAL_FAN, Items.TUBE_CORAL_FAN,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_brain_coral_fan"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BRAIN_CORAL_FAN, Items.BRAIN_CORAL_FAN,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_bubble_coral_fan"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN, Items.BUBBLE_CORAL_FAN,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral_fan"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_FIRE_CORAL_FAN, Items.FIRE_CORAL_FAN,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_horn_coral_fan"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_HORN_CORAL_FAN, Items.HORN_CORAL_FAN,
+                        ConstantLootNumberProvider.create(1.0F)));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_tube_coral_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK, Items.TUBE_CORAL_BLOCK,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_brain_coral_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK, Items.BRAIN_CORAL_BLOCK,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_bubble_coral_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK, Items.BUBBLE_CORAL_BLOCK,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK, Items.FIRE_CORAL_BLOCK,
+                        ConstantLootNumberProvider.create(1.0F)));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_horn_coral_block"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_HORN_CORAL_BLOCK, Items.HORN_CORAL_BLOCK,
+                        ConstantLootNumberProvider.create(1.0F)));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_tube_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_tube_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HYDRATED_TUBE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_tube_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_TUBE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_brain_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_brain_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_brain_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BRAIN_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_bubble_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_bubble_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_bubble_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HYDRATED_FIRE_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_FIRE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hay_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HAY_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hay_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HAY_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hay_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.HAY_CARPET));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/nether_wart_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.NETHER_WART_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/nether_wart_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.NETHER_WART_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_wart_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.WARPED_WART_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/warped_wart_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.WARPED_WART_SLAB));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sculk_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCULK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sculk_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SCULK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sculk_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCULK_CARPET));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/honeycomb_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HONEYCOMB_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/honeycomb_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HONEYCOMB_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/honeycomb_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HONEYCOMB_WALL));
     }
 }

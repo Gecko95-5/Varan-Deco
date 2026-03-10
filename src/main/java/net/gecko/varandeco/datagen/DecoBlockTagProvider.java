@@ -589,6 +589,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL)
                 .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL)
                 .add(DecoBlocks.CHISELED_DRIPSTONE)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL)
                 .addTag(DecoTags.Blocks.CORAL_STAIRS)
                 .addTag(DecoTags.Blocks.CORAL_SLABS)
                 .addTag(DecoTags.Blocks.CORAL_WALLS);
@@ -684,7 +689,17 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.CLOUD_SLAB)
                 .add(DecoBlocks.CLOUD_BRICK_SLAB)
                 .add(DecoBlocks.CLOUD_WALL)
-                .add(DecoBlocks.CLOUD_BRICK_WALL);
+                .add(DecoBlocks.CLOUD_BRICK_WALL)
+                .add(DecoBlocks.HAY_CARPET)
+                .add(DecoBlocks.HAY_STAIRS)
+                .add(DecoBlocks.HAY_SLAB)
+                .add(DecoBlocks.SCULK_CARPET)
+                .add(DecoBlocks.NETHER_WART_STAIRS)
+                .add(DecoBlocks.WARPED_WART_STAIRS)
+                .add(DecoBlocks.SCULK_STAIRS)
+                .add(DecoBlocks.NETHER_WART_SLAB)
+                .add(DecoBlocks.WARPED_WART_SLAB)
+                .add(DecoBlocks.SCULK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
                 .add(DecoBlocks.PACKED_CRIMSON_NYLIUM)
@@ -988,7 +1003,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DRIPSTONE_BRICK_WALL)
                 .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL)
                 .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL)
-                .addTag(DecoTags.Blocks.CORAL_WALLS);
+                .addTag(DecoTags.Blocks.CORAL_WALLS)
+                .add(DecoBlocks.HONEYCOMB_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -1171,7 +1187,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DRIPSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_STAIRS)
                 .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_STAIRS)
-                .addTag(DecoTags.Blocks.CORAL_STAIRS);
+                .addTag(DecoTags.Blocks.CORAL_STAIRS)
+                .add(DecoBlocks.HAY_STAIRS)
+                .add(DecoBlocks.NETHER_WART_STAIRS)
+                .add(DecoBlocks.WARPED_WART_STAIRS)
+                .add(DecoBlocks.SCULK_STAIRS)
+                .add(DecoBlocks.HONEYCOMB_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1302,7 +1323,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DRIPSTONE_BRICK_SLAB)
                 .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_SLAB)
                 .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_SLAB)
-                .addTag(DecoTags.Blocks.CORAL_SLABS);
+                .addTag(DecoTags.Blocks.CORAL_SLABS)
+                .add(DecoBlocks.HAY_SLAB)
+                .add(DecoBlocks.NETHER_WART_SLAB)
+                .add(DecoBlocks.WARPED_WART_SLAB)
+                .add(DecoBlocks.SCULK_SLAB)
+                .add(DecoBlocks.HONEYCOMB_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -2295,7 +2321,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEAD_BRAIN_CORAL_STAIRS)
                 .add(DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS)
                 .add(DecoBlocks.DEAD_FIRE_CORAL_STAIRS)
-                .add(DecoBlocks.DEAD_HORN_CORAL_STAIRS);
+                .add(DecoBlocks.DEAD_HORN_CORAL_STAIRS)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL_STAIRS);
 
         getOrCreateTagBuilder(DecoTags.Blocks.CORAL_SLABS)
                 .add(DecoBlocks.TUBE_CORAL_SLAB)
@@ -2307,7 +2338,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEAD_BRAIN_CORAL_SLAB)
                 .add(DecoBlocks.DEAD_BUBBLE_CORAL_SLAB)
                 .add(DecoBlocks.DEAD_FIRE_CORAL_SLAB)
-                .add(DecoBlocks.DEAD_HORN_CORAL_SLAB);
+                .add(DecoBlocks.DEAD_HORN_CORAL_SLAB)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL_SLAB)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL_SLAB)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL_SLAB);
 
         getOrCreateTagBuilder(DecoTags.Blocks.CORAL_WALLS)
                 .add(DecoBlocks.TUBE_CORAL_WALL)
@@ -2319,6 +2355,28 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DEAD_BRAIN_CORAL_WALL)
                 .add(DecoBlocks.DEAD_BUBBLE_CORAL_WALL)
                 .add(DecoBlocks.DEAD_FIRE_CORAL_WALL)
-                .add(DecoBlocks.DEAD_HORN_CORAL_WALL);
+                .add(DecoBlocks.DEAD_HORN_CORAL_WALL)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL_WALL)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL_WALL)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL_WALL)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL_WALL);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.HYDRATED_CORALS)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL_FAN)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL_FAN)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL_FAN)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL_FAN)
+                .add(DecoBlocks.HYDRATED_TUBE_CORAL_WALL_FAN)
+                .add(DecoBlocks.HYDRATED_BRAIN_CORAL_WALL_FAN)
+                .add(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL_FAN)
+                .add(DecoBlocks.HYDRATED_FIRE_CORAL_WALL_FAN)
+                .add(DecoBlocks.HYDRATED_HORN_CORAL_WALL_FAN);
     }
 }

@@ -1039,6 +1039,73 @@
   "block.varan-deco.dead_horn_coral_slab": "Dead Horn Coral Slab",
   "block.varan-deco.dead_horn_coral_wall": "Dead Horn Coral Wall",
 
+  "block.varan-deco.hydrated_tube_coral": "Hydrated Tube Coral",
+  "block.varan-deco.hydrated_brain_coral": "Hydrated Brain Coral",
+  "block.varan-deco.hydrated_bubble_coral": "Hydrated Bubble Coral",
+  "block.varan-deco.hydrated_fire_coral": "Hydrated Fire Coral",
+  "block.varan-deco.hydrated_horn_coral": "Hydrated Horn Coral",
+
+  "block.varan-deco.hydrated_tube_coral_fan": "Hydrated Tube Coral Fan",
+  "block.varan-deco.hydrated_brain_coral_fan": "Hydrated Brain Coral Fan",
+  "block.varan-deco.hydrated_bubble_coral_fan": "Hydrated Bubble Coral Fan",
+  "block.varan-deco.hydrated_fire_coral_fan": "Hydrated Fire Coral Fan",
+  "block.varan-deco.hydrated_horn_coral_fan": "Hydrated Horn Coral Fan",
+
+  "item.varan-deco.hydrated_tube_coral_fan": "Hydrated Tube Coral Fan",
+  "item.varan-deco.hydrated_brain_coral_fan": "Hydrated Brain Coral Fan",
+  "item.varan-deco.hydrated_bubble_coral_fan": "Hydrated Bubble Coral Fan",
+  "item.varan-deco.hydrated_fire_coral_fan": "Hydrated Fire Coral Fan",
+  "item.varan-deco.hydrated_horn_coral_fan": "Hydrated Horn Coral Fan",
+
+  "block.varan-deco.hydrated_tube_coral_wall_fan": "Hydrated Tube Coral Wall Fan",
+  "block.varan-deco.hydrated_brain_coral_wall_fan": "Hydrated Brain Coral Wall Fan",
+  "block.varan-deco.hydrated_bubble_coral_wall_fan": "Hydrated Bubble Coral Wall Fan",
+  "block.varan-deco.hydrated_fire_coral_wall_fan": "Hydrated Fire Coral Wall Fan",
+  "block.varan-deco.hydrated_horn_coral_wall_fan": "Hydrated Horn Coral Wall Fan",
+
+  "block.varan-deco.hydrated_tube_coral_block": "Hydrated Tube Coral Block",
+  "block.varan-deco.hydrated_brain_coral_block": "Hydrated Brain Coral Block",
+  "block.varan-deco.hydrated_bubble_coral_block": "Hydrated Bubble Coral Block",
+  "block.varan-deco.hydrated_fire_coral_block": "Hydrated Fire Coral Block",
+  "block.varan-deco.hydrated_horn_coral_block": "Hydrated Horn Coral Block",
+
+  "block.varan-deco.hydrated_tube_coral_stairs": "Hydrated Tube Coral Stairs",
+  "block.varan-deco.hydrated_tube_coral_slab": "Hydrated Tube Coral Slab",
+  "block.varan-deco.hydrated_tube_coral_wall": "Hydrated Tube Coral Wall",
+
+  "block.varan-deco.hydrated_brain_coral_stairs": "Hydrated Brain Coral Stairs",
+  "block.varan-deco.hydrated_brain_coral_slab": "Hydrated Brain Coral Slab",
+  "block.varan-deco.hydrated_brain_coral_wall": "Hydrated Brain Coral Wall",
+
+  "block.varan-deco.hydrated_bubble_coral_stairs": "Hydrated Bubble Coral Stairs",
+  "block.varan-deco.hydrated_bubble_coral_slab": "Hydrated Bubble Coral Slab",
+  "block.varan-deco.hydrated_bubble_coral_wall": "Hydrated Bubble Coral Wall",
+
+  "block.varan-deco.hydrated_fire_coral_stairs": "Hydrated Fire Coral Stairs",
+  "block.varan-deco.hydrated_fire_coral_slab": "Hydrated Fire Coral Slab",
+  "block.varan-deco.hydrated_fire_coral_wall": "Hydrated Fire Coral Wall",
+
+  "block.varan-deco.hydrated_horn_coral_stairs": "Hydrated Horn Coral Stairs",
+  "block.varan-deco.hydrated_horn_coral_slab": "Hydrated Horn Coral Slab",
+  "block.varan-deco.hydrated_horn_coral_wall": "Hydrated Horn Coral Wall",
+
+  "block.varan-deco.hay_stairs": "Hay Stairs",
+  "block.varan-deco.hay_slab": "Hay Slab",
+  "block.varan-deco.hay_carpet": "Hay Carpet",
+
+  "block.varan-deco.nether_wart_stairs": "Nether Wart Stairs",
+  "block.varan-deco.nether_wart_slab": "Nether Wart Slab",
+  "block.varan-deco.warped_wart_stairs": "Warped Wart Stairs",
+  "block.varan-deco.warped_wart_slab": "Warped Wart Slab",
+
+  "block.varan-deco.sculk_stairs": "Sculk Stairs",
+  "block.varan-deco.sculk_slab": "Sculk Slab",
+  "block.varan-deco.sculk_carpet": "Sculk Carpet",
+
+  "block.varan-deco.honeycomb_stairs": "Honeycomb Stairs",
+  "block.varan-deco.honeycomb_slab": "Honeycomb Slab",
+  "block.varan-deco.honeycomb_wall": "Honeycomb Wall",
+
   "block.varan-deco.copper_chain": "Copper Chain",
   "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
 

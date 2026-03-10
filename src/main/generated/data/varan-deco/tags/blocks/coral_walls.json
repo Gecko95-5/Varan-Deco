@@ -10,6 +10,11 @@
     "varan-deco:dead_brain_coral_wall",
     "varan-deco:dead_bubble_coral_wall",
     "varan-deco:dead_fire_coral_wall",
-    "varan-deco:dead_horn_coral_wall"
+    "varan-deco:dead_horn_coral_wall",
+    "varan-deco:hydrated_tube_coral_wall",
+    "varan-deco:hydrated_brain_coral_wall",
+    "varan-deco:hydrated_bubble_coral_wall",
+    "varan-deco:hydrated_fire_coral_wall",
+    "varan-deco:hydrated_horn_coral_wall"
   ]
 }
