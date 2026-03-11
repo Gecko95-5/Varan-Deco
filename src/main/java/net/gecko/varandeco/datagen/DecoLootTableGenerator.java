@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.SimpleFabricLootTableProvider
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
@@ -15,8 +14,6 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 import java.util.function.BiConsumer;
-
-import static net.minecraft.data.server.BlockLootTableGenerator.drops;
 
 public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
     public DecoLootTableGenerator(FabricDataGenerator dataGenerator) {
@@ -3195,6 +3192,13 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.HYDRATED_FIRE_CORAL_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_fire_coral_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_FIRE_CORAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_horn_coral_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_HORN_CORAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_horn_coral_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.HYDRATED_HORN_CORAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hydrated_horn_coral_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.HYDRATED_HORN_CORAL_WALL));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hay_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.HAY_STAIRS));

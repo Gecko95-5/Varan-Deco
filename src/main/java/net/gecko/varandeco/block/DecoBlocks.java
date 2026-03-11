@@ -9,9 +9,6 @@ import net.gecko.varandeco.block.cartographytables.*;
 import net.gecko.varandeco.block.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.nature.*;
-import net.gecko.varandeco.block.nature.CoralSlabBlock;
-import net.gecko.varandeco.block.nature.CoralStairBlock;
-import net.gecko.varandeco.block.nature.CoralWallBlock;
 import net.gecko.varandeco.block.nature.flower.*;
 import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
 import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
@@ -965,7 +962,7 @@ public class DecoBlocks {
     public static final Block BLACK_TERRACOTTA_SLAB = registerBlock("black_terracotta_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HAY_SLAB = registerBlock("hay_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+            new HaySlabBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block TERRACOTTA_SLAB = registerBlock("terracotta_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block PACKED_ICE_SLAB = registerBlock("packed_ice_slab",
@@ -1614,7 +1611,7 @@ public class DecoBlocks {
             new StairsBlock(Blocks.BLACK_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HAY_STAIRS = registerBlock("hay_stairs",
-            new StairsBlock(Blocks.HAY_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)),
+            new HayStairsBlock(Blocks.HAY_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
             new StairsBlock(Blocks.TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.TERRACOTTA)),
