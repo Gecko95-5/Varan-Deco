@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "ingredient": "minecraft:soul_soilstone",
   "result": {
-    "count": 1,
+    "count": 4,
     "id": "minecraft:polished_soul_soilstone"
   }
 }

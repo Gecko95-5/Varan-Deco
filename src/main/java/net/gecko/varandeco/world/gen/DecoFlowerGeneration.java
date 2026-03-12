@@ -126,5 +126,10 @@ public class DecoFlowerGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PALE_GARDEN),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_PALE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROOFED_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_MEGA_TULIP_PLACED);
     }
 }

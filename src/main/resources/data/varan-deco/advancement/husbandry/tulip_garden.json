@@ -121,6 +121,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "brown": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:mega_brown_tulip"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -168,6 +180,9 @@
     ],
     [
       "green"
+    ],
+    [
+      "brown"
     ]
   ]
 }
