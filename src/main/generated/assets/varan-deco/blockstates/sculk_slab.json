@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/sculk_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/sculk_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/sculk_slab_top"
+    }
+  }
+}

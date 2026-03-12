@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "varan-deco:block/mega_brown_tulip_bottom"
+    },
+    "half=upper": {
+      "model": "varan-deco:block/mega_brown_tulip_top"
+    }
+  }
+}

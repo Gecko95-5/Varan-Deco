@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "hydrating_coral",
+  "ingredients": [
+    {
+      "item": "varan-deco:dead_bubble_coral_stairs"
+    },
+    {
+      "item": "varan-deco:bubble_orb"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:bubble_coral_stairs"
+  }
+}

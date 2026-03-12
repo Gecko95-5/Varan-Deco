@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "varan-deco:block/mega_brown_tulip_bottom"
+  }
+}

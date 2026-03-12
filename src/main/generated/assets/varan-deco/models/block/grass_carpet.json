@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/carpet",
+  "parent": "varan-deco:block/carpet_tinted",
   "textures": {
-    "wool": "varan-deco:block/packed_grass"
+    "wool": "varan-deco:block/grass_block_base"
   }
 }

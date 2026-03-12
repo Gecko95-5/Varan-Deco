@@ -10,6 +10,7 @@ import net.minecraft.world.BlockView;
 
 public class DesertFlowerBlock extends FlowerBlock {
 
+
     public DesertFlowerBlock(RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Settings settings) {
         super(stewEffect, effectLengthInSeconds, settings);
     }

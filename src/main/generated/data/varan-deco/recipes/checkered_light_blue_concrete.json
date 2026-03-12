@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "special_cut_concrete",
+  "key": {
+    "#": {
+      "item": "varan-deco:cut_light_blue_concrete"
+    },
+    "$": {
+      "item": "varan-deco:passtol"
+    }
+  },
+  "pattern": [
+    "$#",
+    "#$"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:checkered_light_blue_concrete"
+  }
+}

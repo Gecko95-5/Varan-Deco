@@ -122,6 +122,23 @@
     "varan-deco:cracked_end_stone_tile_slab",
     "varan-deco:cracked_nether_brick_slab",
     "varan-deco:cracked_red_nether_brick_slab",
-    "varan-deco:cracked_blue_nether_brick_slab"
+    "varan-deco:cracked_blue_nether_brick_slab",
+    "varan-deco:mossy_deepslate_brick_slab",
+    "varan-deco:mossy_polished_blackstone_brick_slab",
+    "varan-deco:mossy_end_stone_brick_slab",
+    "varan-deco:lapis_slab",
+    "varan-deco:lapis_brick_slab",
+    "varan-deco:cut_lapis_slab",
+    "varan-deco:smooth_lapis_slab",
+    "varan-deco:casted_iron_slab",
+    "varan-deco:dripstone_brick_slab",
+    "varan-deco:dripstone_brick_pillar_slab",
+    "varan-deco:void_stone_brick_pillar_slab",
+    "#varan-deco:coral_slabs",
+    "varan-deco:hay_slab",
+    "varan-deco:nether_wart_slab",
+    "varan-deco:warped_wart_slab",
+    "varan-deco:sculk_slab",
+    "varan-deco:honeycomb_slab"
   ]
 }

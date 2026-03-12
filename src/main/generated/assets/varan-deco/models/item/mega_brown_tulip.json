@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "varan-deco:block/mega_brown_tulip_top"
+  }
+}

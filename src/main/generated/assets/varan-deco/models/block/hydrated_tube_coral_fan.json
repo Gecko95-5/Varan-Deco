@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/coral_fan",
+  "textures": {
+    "fan": "varan-deco:block/hydrated_tube_coral_fan"
+  }
+}
