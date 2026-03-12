@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "varan-deco:checkered_purple_concrete"
+  },
+  "result": "varan-deco:checkered_purple_concrete_wall"
+}

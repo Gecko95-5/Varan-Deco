@@ -108,6 +108,18 @@
     "varan-deco:cracked_end_stone_tile_wall",
     "varan-deco:cracked_nether_brick_wall",
     "varan-deco:cracked_red_nether_brick_wall",
-    "varan-deco:cracked_blue_nether_brick_wall"
+    "varan-deco:cracked_blue_nether_brick_wall",
+    "varan-deco:mossy_deepslate_brick_wall",
+    "varan-deco:mossy_polished_blackstone_brick_wall",
+    "varan-deco:mossy_end_stone_brick_wall",
+    "varan-deco:lapis_wall",
+    "varan-deco:lapis_brick_wall",
+    "varan-deco:cut_lapis_wall",
+    "varan-deco:smooth_lapis_wall",
+    "varan-deco:dripstone_brick_wall",
+    "varan-deco:dripstone_brick_pillar_wall",
+    "varan-deco:void_stone_brick_pillar_wall",
+    "#varan-deco:coral_walls",
+    "varan-deco:honeycomb_wall"
   ]
 }

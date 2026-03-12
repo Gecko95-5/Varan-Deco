@@ -21,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_calcite"
+          "name": "minecraft:calcite"
         }
       ],
       "rolls": 1.0

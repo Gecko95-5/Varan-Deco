@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "coral",
+  "key": {
+    "#": {
+      "item": "minecraft:dead_horn_coral_fan"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "minecraft:dead_horn_coral"
+  },
+  "show_notification": true
+}

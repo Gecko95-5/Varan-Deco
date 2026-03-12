@@ -49,6 +49,18 @@ public class DecoTags {
         public static final TagKey<Block> CONCRETE_WALLS =
                 createTag("concrete_walls");
 
+        public static final TagKey<Block> CORAL_STAIRS =
+                createTag("coral_stairs");
+
+        public static final TagKey<Block> CORAL_SLABS =
+                createTag("coral_slabs");
+
+        public static final TagKey<Block> CORAL_WALLS =
+                createTag("coral_walls");
+
+        public static final TagKey<Block> HYDRATED_CORALS =
+                createTag("hydrated_corals");
+
         public static final TagKey<Block> WOOL_STAIRS =
                 createTag("wool_stairs");
 

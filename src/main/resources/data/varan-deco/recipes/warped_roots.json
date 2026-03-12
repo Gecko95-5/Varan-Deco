@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "coral",
+  "key": {
+    "#": {
+      "item": "minecraft:nether_sprouts"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "minecraft:warped_roots"
+  },
+  "show_notification": true
+}
