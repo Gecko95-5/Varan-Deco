@@ -132,6 +132,24 @@
     "minecraft:cracked_tuff_tile_slab",
     "minecraft:pale_moss_slab",
     "minecraft:resin_slab",
-    "minecraft:smooth_resin_slab"
+    "minecraft:smooth_resin_slab",
+    "minecraft:mossy_deepslate_brick_slab",
+    "minecraft:mossy_polished_blackstone_brick_slab",
+    "minecraft:mossy_end_stone_brick_slab",
+    "minecraft:lapis_slab",
+    "minecraft:lapis_brick_slab",
+    "minecraft:cut_lapis_slab",
+    "minecraft:smooth_lapis_slab",
+    "minecraft:casted_iron_slab",
+    "minecraft:dripstone_brick_slab",
+    "minecraft:dripstone_brick_pillar_slab",
+    "minecraft:void_stone_brick_pillar_slab",
+    "#varan-deco:coral_slabs",
+    "minecraft:hay_slab",
+    "minecraft:nether_wart_slab",
+    "minecraft:warped_wart_slab",
+    "minecraft:sculk_slab",
+    "minecraft:honeycomb_slab",
+    "minecraft:mossy_tuff_brick_slab"
   ]
 }

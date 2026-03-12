@@ -13,11 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-<<<<<<<< HEAD:src/main/resources/data/varan-deco/advancement/recipes/decorations/ender_rose_bush_recipe_create.json
         "recipe": "minecraft:ender_rose_bush_recipe_create"
-========
-        "recipe": "minecraft:magenta_dye_from_ender_rose"
->>>>>>>> bbf2178c2 (2.2.0-(2.2 Finished)):src/main/generated/data/varan-deco/advancement/recipes/misc/magenta_dye_from_ender_rose.json
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,11 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-<<<<<<<< HEAD:src/main/resources/data/varan-deco/advancement/recipes/decorations/ender_rose_bush_recipe_create.json
       "minecraft:ender_rose_bush_recipe_create"
-========
-      "minecraft:magenta_dye_from_ender_rose"
->>>>>>>> bbf2178c2 (2.2.0-(2.2 Finished)):src/main/generated/data/varan-deco/advancement/recipes/misc/magenta_dye_from_ender_rose.json
     ]
   }
 }

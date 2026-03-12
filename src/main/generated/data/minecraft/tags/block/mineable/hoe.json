@@ -34,6 +34,16 @@
     "minecraft:cloud_brick_wall",
     "minecraft:pale_moss_stairs",
     "minecraft:pale_moss_slab",
+    "minecraft:hay_carpet",
+    "minecraft:hay_stairs",
+    "minecraft:hay_slab",
+    "minecraft:sculk_carpet",
+    "minecraft:nether_wart_stairs",
+    "minecraft:warped_wart_stairs",
+    "minecraft:sculk_stairs",
+    "minecraft:nether_wart_slab",
+    "minecraft:warped_wart_slab",
+    "minecraft:sculk_slab",
     "minecraft:spore_iron_ore"
   ]
 }

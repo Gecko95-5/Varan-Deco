@@ -11,6 +11,7 @@ import net.minecraft.world.WorldView;
 
 public class PuffyDandelionBlock extends FlowerBlock implements Fertilizable {
 
+
     public PuffyDandelionBlock(RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Settings settings) {
         super(stewEffect, effectLengthInSeconds, settings);
     }

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_all_tinted",
   "textures": {
-    "all": "minecraft:block/packed_grass"
+    "all": "minecraft:block/grass_block_base"
   }
 }

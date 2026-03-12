@@ -118,6 +118,19 @@
     "minecraft:cracked_tuff_brick_wall",
     "minecraft:cracked_tuff_tile_wall",
     "minecraft:resin_wall",
-    "minecraft:smooth_resin_wall"
+    "minecraft:smooth_resin_wall",
+    "minecraft:mossy_deepslate_brick_wall",
+    "minecraft:mossy_polished_blackstone_brick_wall",
+    "minecraft:mossy_end_stone_brick_wall",
+    "minecraft:lapis_wall",
+    "minecraft:lapis_brick_wall",
+    "minecraft:cut_lapis_wall",
+    "minecraft:smooth_lapis_wall",
+    "minecraft:dripstone_brick_wall",
+    "minecraft:dripstone_brick_pillar_wall",
+    "minecraft:void_stone_brick_pillar_wall",
+    "#varan-deco:coral_walls",
+    "minecraft:honeycomb_wall",
+    "minecraft:mossy_tuff_brick_wall"
   ]
 }

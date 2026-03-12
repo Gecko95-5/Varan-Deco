@@ -13,11 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-<<<<<<<< HEAD:src/main/generated/data/varan-deco/advancement/recipes/redstone/mangrove_pallet_door_recipe_create.json
         "recipe": "minecraft:mangrove_pallet_door_recipe_create"
-========
-        "recipe": "minecraft:light_gray_dye_from_mighty_lavender"
->>>>>>>> bbf2178c2 (2.2.0-(2.2 Finished)):src/main/generated/data/varan-deco/advancement/recipes/misc/light_gray_dye_from_mighty_lavender.json
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,11 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-<<<<<<<< HEAD:src/main/generated/data/varan-deco/advancement/recipes/redstone/mangrove_pallet_door_recipe_create.json
       "minecraft:mangrove_pallet_door_recipe_create"
-========
-      "minecraft:light_gray_dye_from_mighty_lavender"
->>>>>>>> bbf2178c2 (2.2.0-(2.2 Finished)):src/main/generated/data/varan-deco/advancement/recipes/misc/light_gray_dye_from_mighty_lavender.json
     ]
   }
 }
