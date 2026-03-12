@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:ink_sac"
+    },
+    "S": {
+      "tag": "varan-deco:mushrooms"
+    }
+  },
+  "pattern": [
+    "S#",
+    "#S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:shaddol"
+  }
+}
