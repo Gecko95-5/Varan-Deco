@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "-": {
+      "item": "varan-deco:iron_slab"
+    }
+  },
+  "pattern": [
+    "---",
+    "-#-",
+    "---"
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:casted_iron"
+  }
+}

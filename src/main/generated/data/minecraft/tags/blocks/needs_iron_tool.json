@@ -14,6 +14,9 @@
     "varan-deco:light_gold_bars",
     "varan-deco:gold_bars",
     "varan-deco:heavy_gold_bars",
-    "varan-deco:golden_ladder"
+    "varan-deco:golden_ladder",
+    "varan-deco:casted_iron",
+    "varan-deco:casted_iron_stairs",
+    "varan-deco:casted_iron_slab"
   ]
 }

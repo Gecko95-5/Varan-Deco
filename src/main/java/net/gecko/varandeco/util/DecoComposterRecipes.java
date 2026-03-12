@@ -1,6 +1,5 @@
 package net.gecko.varandeco.util;
 
-import com.terraformersmc.terraform.leaves.ComposterRecipes;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.item.DecoItems;
 
@@ -15,6 +14,7 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WITHER_ROSE_BUSH,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.RED_SUNFLOWER,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.NOVA_STARFLOWER,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.MEGA_BROWN_TULIP,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.MIGHTY_LAVENDER,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WOODEN_SAPLING,0.3F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.WOODEN_LEAVES,0.3F);
@@ -48,6 +48,10 @@ public class DecoComposterRecipes {
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.DEAD_EYE_DAISY,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.ALPINE_POPPY,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.POPPED_BLUET,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRIS,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.BLUE_DELPHINIUM,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.CYAN_ORCHID,0.65F);
+        ComposterItemsRecipes.registerCompostableItem(DecoBlocks.FELICIA_DAISY,0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM, 0.65F);
         ComposterItemsRecipes.registerCompostableItem(DecoBlocks.IRON_CAP_MUSHROOM_BLOCK, 0.85F);
     }

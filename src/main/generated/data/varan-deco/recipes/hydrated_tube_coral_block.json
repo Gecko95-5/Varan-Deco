@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "coral_block",
+  "key": {
+    "#": {
+      "item": "varan-deco:hydrated_tube_coral"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "varan-deco:hydrated_tube_coral_block"
+  }
+}
