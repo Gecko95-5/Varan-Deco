@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:void_stone"
-  },
-  "result": "varan-deco:void_stone_brick_pillar_stairs"
-}

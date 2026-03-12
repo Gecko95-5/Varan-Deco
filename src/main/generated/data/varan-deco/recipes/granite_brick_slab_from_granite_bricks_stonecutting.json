@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "varan-deco:granite_bricks"
-  },
-  "result": "varan-deco:granite_brick_slab"
-}

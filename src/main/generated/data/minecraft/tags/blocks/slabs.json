@@ -124,6 +124,16 @@
     "varan-deco:lapis_slab",
     "varan-deco:lapis_brick_slab",
     "varan-deco:cut_lapis_slab",
-    "varan-deco:smooth_lapis_slab"
+    "varan-deco:smooth_lapis_slab",
+    "varan-deco:casted_iron_slab",
+    "varan-deco:dripstone_brick_slab",
+    "varan-deco:dripstone_brick_pillar_slab",
+    "varan-deco:void_stone_brick_pillar_slab",
+    "#varan-deco:coral_slabs",
+    "varan-deco:hay_slab",
+    "varan-deco:nether_wart_slab",
+    "varan-deco:warped_wart_slab",
+    "varan-deco:sculk_slab",
+    "varan-deco:honeycomb_slab"
   ]
 }

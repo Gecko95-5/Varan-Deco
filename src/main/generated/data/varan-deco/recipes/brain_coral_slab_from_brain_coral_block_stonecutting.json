@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "minecraft:brain_coral_block"
-  },
-  "result": "varan-deco:brain_coral_slab"
-}

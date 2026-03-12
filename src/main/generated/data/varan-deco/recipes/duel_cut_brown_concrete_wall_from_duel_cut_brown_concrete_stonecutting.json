@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:duel_cut_brown_concrete"
-  },
-  "result": "varan-deco:duel_cut_brown_concrete_wall"
-}

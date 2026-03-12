@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "varan-deco:checkered_light_blue_concrete"
-  },
-  "result": "varan-deco:checkered_light_blue_concrete_slab"
-}

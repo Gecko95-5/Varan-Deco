@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "varan-deco:cut_calcite"
-  },
-  "result": "varan-deco:calcite_brick_slab"
-}

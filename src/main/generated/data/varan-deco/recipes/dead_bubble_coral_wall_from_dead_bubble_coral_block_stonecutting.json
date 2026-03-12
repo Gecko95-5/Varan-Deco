@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:dead_bubble_coral_block"
-  },
-  "result": "varan-deco:dead_bubble_coral_wall"
-}

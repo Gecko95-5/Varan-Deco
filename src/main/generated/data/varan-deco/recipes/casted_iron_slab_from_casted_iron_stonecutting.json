@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "varan-deco:casted_iron"
-  },
-  "result": "varan-deco:casted_iron_slab"
-}

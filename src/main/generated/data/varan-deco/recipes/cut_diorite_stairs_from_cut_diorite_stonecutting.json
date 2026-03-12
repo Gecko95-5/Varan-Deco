@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:cut_diorite"
-  },
-  "result": "varan-deco:cut_diorite_stairs"
-}

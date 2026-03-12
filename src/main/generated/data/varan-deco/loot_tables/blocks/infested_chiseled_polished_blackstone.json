@@ -21,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "varan-deco:infested_chiseled_polished_blackstone"
+          "name": "minecraft:chiseled_polished_blackstone"
         }
       ],
       "rolls": 1.0

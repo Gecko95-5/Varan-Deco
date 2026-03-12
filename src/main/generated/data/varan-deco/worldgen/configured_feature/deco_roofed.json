@@ -10,27 +10,27 @@
             "entries": [
               {
                 "data": {
-                  "Name": "varan-deco:paeonia"
+                  "Name": "varan-deco:iris"
                 },
-                "weight": 3
+                "weight": 2
               },
               {
                 "data": {
-                  "Name": "varan-deco:buttercup"
+                  "Name": "varan-deco:blue_delphinium"
                 },
-                "weight": 3
+                "weight": 2
               },
               {
                 "data": {
-                  "Name": "varan-deco:nightshade"
+                  "Name": "varan-deco:cyan_orchid"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "varan-deco:felicia_daisy"
+                  "Name": "varan-deco:lavender"
                 },
-                "weight": 2
+                "weight": 1
               }
             ]
           }
@@ -46,7 +46,7 @@
         }
       ]
     },
-    "tries": 48,
+    "tries": 32,
     "xz_spread": 7,
     "y_spread": 3
   }

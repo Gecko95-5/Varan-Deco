@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:dead_tube_coral_block"
-  },
-  "result": "varan-deco:dead_tube_coral_stairs"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:end_stone_tiles"
-  },
-  "result": "varan-deco:end_stone_tile_stairs"
-}

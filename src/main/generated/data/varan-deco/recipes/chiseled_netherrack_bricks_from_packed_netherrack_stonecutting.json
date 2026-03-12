@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:packed_netherrack"
-  },
-  "result": "varan-deco:chiseled_netherrack_bricks"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "varan-deco:andesite_bricks"
-  },
-  "result": "varan-deco:andesite_brick_wall"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:horn_coral_block"
-  },
-  "result": "varan-deco:horn_coral_stairs"
-}

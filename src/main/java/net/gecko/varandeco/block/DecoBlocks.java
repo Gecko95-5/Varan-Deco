@@ -133,7 +133,7 @@ public class DecoBlocks {
     public static final Block CUT_LAPIS = registerBlock("cut_lapis",
             new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)));
     public static final Block LAPIS_PILLAR = registerBlock("lapis_pillar",
-            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)));
     public static final Block CUT_SANDSTONE_BRICKS = registerBlock("cut_sandstone_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE).strength(1.6f)));
     public static final Block COBBLED_SANDSTONE = registerBlock("cobbled_sandstone",

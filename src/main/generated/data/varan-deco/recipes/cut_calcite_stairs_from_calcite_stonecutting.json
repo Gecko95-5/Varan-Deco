@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:calcite"
-  },
-  "result": "varan-deco:cut_calcite_stairs"
-}
