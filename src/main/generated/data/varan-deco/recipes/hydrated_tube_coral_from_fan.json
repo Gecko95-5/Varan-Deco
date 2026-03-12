@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "coral",
+  "key": {
+    "#": {
+      "item": "varan-deco:hydrated_tube_coral_fan"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "varan-deco:hydrated_tube_coral"
+  },
+  "show_notification": true
+}

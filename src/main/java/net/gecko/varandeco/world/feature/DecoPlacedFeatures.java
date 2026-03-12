@@ -39,6 +39,8 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_DEEP_BUBBLE_ORE_PLACED = registerKey("deco_deep_bubble_ore_placed");
     public static final RegistryKey<PlacedFeature> DECO_VOID_PATCH_PLACED = registerKey("deco_void_patch_placed");
     public static final RegistryKey<PlacedFeature> DECO_VOID_BIG_PATCH_PLACED = registerKey("deco_void_big_patch_placed");
+    public static final RegistryKey<PlacedFeature> DECO_ROOFED_PLACED = registerKey("deco_roofed_placed");
+    public static final RegistryKey<PlacedFeature> DECO_MEGA_TULIP_PLACED = registerKey("deco_mega_tulip_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -74,7 +76,14 @@ register(context,DECO_RIVER_PLACED, configuredFeatureRegistryEntryLookup.getOrTh
                 RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of());
 
-register(context,DECO_ROSE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+register(context,DECO_ROOFED_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+            DecoConfiguredFeatures.DECO_ROOFED), NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+                RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+
+        register(context,DECO_MEGA_TULIP_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_MEGA_TULIP), RarityFilterPlacementModifier.of(24),
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());register(context,DECO_ROSE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_ROSE_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 

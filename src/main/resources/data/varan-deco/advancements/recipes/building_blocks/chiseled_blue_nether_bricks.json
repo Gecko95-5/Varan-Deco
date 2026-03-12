@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:chiseled_blue_nether_bricks"
+        "recipe": "minecraft:chiseled_blue_nether_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:chiseled_blue_nether_bricks"
+      "minecraft:chiseled_blue_nether_bricks"
     ]
   },
   "sends_telemetry_event": false
