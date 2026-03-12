@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:chiseled_red_nether_bricks"
+        "recipe": "minecraft:chiseled_red_nether_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:chiseled_red_nether_bricks"
+      "minecraft:chiseled_red_nether_bricks"
     ]
   }
 }

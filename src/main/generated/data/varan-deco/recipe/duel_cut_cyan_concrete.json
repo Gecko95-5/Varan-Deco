@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "special_cut_concrete",
+  "key": {
+    "#": {
+      "item": "varan-deco:cut_cyan_concrete"
+    },
+    "$": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "$#",
+    "#$"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:duel_cut_cyan_concrete"
+  }
+}

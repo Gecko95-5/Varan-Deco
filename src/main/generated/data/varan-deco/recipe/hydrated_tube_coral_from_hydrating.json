@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "hydrating_coral",
+  "ingredients": [
+    {
+      "item": "minecraft:tube_coral"
+    },
+    {
+      "item": "varan-deco:bubble_orb"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:hydrated_tube_coral"
+  }
+}

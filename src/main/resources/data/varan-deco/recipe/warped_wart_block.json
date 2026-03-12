@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "coral_block",
   "key": {
     "#": {
       "item": "varan-deco:warped_wart"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "count": 1,
