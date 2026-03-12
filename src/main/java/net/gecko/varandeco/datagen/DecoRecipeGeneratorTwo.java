@@ -2967,11 +2967,25 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerHydratingRecipe(exporter, DecoItems.HYDRATED_FIRE_CORAL_FAN, Items.FIRE_CORAL_FAN);
         offerHydratingRecipe(exporter, DecoItems.HYDRATED_HORN_CORAL_FAN, Items.HORN_CORAL_FAN);
 
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,DecoBlocks.HYDRATED_BUBBLE_CORAL, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,DecoBlocks.HYDRATED_TUBE_CORAL, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,DecoBlocks.HYDRATED_BRAIN_CORAL, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,DecoBlocks.HYDRATED_FIRE_CORAL, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,DecoBlocks.HYDRATED_HORN_CORAL, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_BUBBLE_CORAL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK,
+                "hydrated_bubble_coral_block","coral_block",
+                "hydrated_bubble_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_TUBE_CORAL, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK,
+                "hydrated_tube_coral_block","coral_block",
+                "hydrated_tube_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_HORN_CORAL, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK,
+                "hydrated_horn_coral_block","coral_block",
+                "hydrated_horn_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_BRAIN_CORAL, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK,
+                "hydrated_brain_coral_block","coral_block",
+                "hydrated_brain_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_FIRE_CORAL, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK,
+                "hydrated_fire_coral_block","coral_block",
+                "hydrated_fire_coral","coral");
 
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK, Items.TUBE_CORAL_BLOCK);
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK, Items.BRAIN_CORAL_BLOCK);
@@ -3008,6 +3022,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_TUBE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_TUBE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_TUBE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_tube_coral_from_fan"));
@@ -3015,6 +3030,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_BRAIN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_BRAIN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_BRAIN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_brain_coral_from_fan"));
@@ -3022,6 +3038,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_FIRE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_FIRE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_FIRE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_fire_coral_from_fan"));
@@ -3029,6 +3046,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_HORN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_HORN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_HORN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_horn_coral_from_fan"));
@@ -3273,9 +3291,31 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,output)
                 .input(coralInput)
                 .input(DecoItems.BUBBLE_ORB)
-                .group("hydrating_dead_coral")
+                .group("hydrating_coral")
                 .criterion(RecipeProvider.hasItem(coralInput),
                         RecipeProvider.conditionsFromItem(coralInput))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)+ "from_hydrating"));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)+ "_from_hydrating"));
+    }
+    public static void offerReversibleCompactingFourRecipes(
+            Consumer<RecipeJsonProvider> exporter,
+            ItemConvertible input,
+            ItemConvertible compacted,
+            String compactingRecipeName,
+            @Nullable String compactingRecipeGroup,
+            String reverseRecipeName,
+            @Nullable String reverseRecipeGroup
+    ) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,input, 4)
+                .input(compacted)
+                .group(reverseRecipeGroup)
+                .criterion(hasItem(compacted), conditionsFromItem(compacted))
+                .offerTo(exporter, new Identifier(reverseRecipeName));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,compacted)
+                .input('#', input)
+                .pattern("##")
+                .pattern("##")
+                .group(compactingRecipeGroup)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(compactingRecipeName));
     }
 }
