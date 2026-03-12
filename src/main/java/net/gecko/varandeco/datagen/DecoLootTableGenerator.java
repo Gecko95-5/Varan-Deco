@@ -23,6 +23,7 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 
+
 public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
     public DecoLootTableGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
@@ -1758,6 +1759,323 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(DecoBlocks.CRACKED_NETHER_BRICK_FENCE_GATE);
         addDrop(DecoBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
         addDrop(DecoBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
+
+        addDrop(DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+        addDrop(DecoBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS);
+        addDrop(DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB, slabDrops(DecoBlocks.MOSSY_DEEPSLATE_BRICK_SLAB));
+        addDrop(DecoBlocks.MOSSY_DEEPSLATE_BRICK_WALL);
+
+        addDrop(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+        addDrop(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_STAIRS);
+        addDrop(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB, slabDrops(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_SLAB));
+        addDrop(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.MOSSY_END_STONE_BRICKS);
+        addDrop(DecoBlocks.MOSSY_END_STONE_BRICK_STAIRS);
+        addDrop(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB, slabDrops(DecoBlocks.MOSSY_END_STONE_BRICK_SLAB));
+        addDrop(DecoBlocks.MOSSY_END_STONE_BRICK_WALL);
+
+        addDrop(DecoBlocks.LAPIS_STAIRS);
+        addDrop(DecoBlocks.LAPIS_SLAB, slabDrops(DecoBlocks.LAPIS_SLAB));
+        addDrop(DecoBlocks.LAPIS_WALL);
+
+        addDrop(DecoBlocks.LAPIS_BRICKS);
+        addDrop(DecoBlocks.LAPIS_BRICK_STAIRS);
+        addDrop(DecoBlocks.LAPIS_BRICK_SLAB, slabDrops(DecoBlocks.LAPIS_BRICK_SLAB));
+        addDrop(DecoBlocks.LAPIS_BRICK_WALL);
+
+        addDrop(DecoBlocks.CUT_LAPIS);
+        addDrop(DecoBlocks.CUT_LAPIS_STAIRS);
+        addDrop(DecoBlocks.CUT_LAPIS_SLAB, slabDrops(DecoBlocks.CUT_LAPIS_SLAB));
+        addDrop(DecoBlocks.CUT_LAPIS_WALL);
+
+        addDrop(DecoBlocks.SMOOTH_LAPIS);
+        addDrop(DecoBlocks.SMOOTH_LAPIS_STAIRS);
+        addDrop(DecoBlocks.SMOOTH_LAPIS_SLAB, slabDrops(DecoBlocks.SMOOTH_LAPIS_SLAB));
+        addDrop(DecoBlocks.SMOOTH_LAPIS_WALL);
+
+        addDrop(DecoBlocks.CHISELED_LAPIS);
+        addDrop(DecoBlocks.LAPIS_PILLAR);
+
+        addDropWithSilkTouch(DecoBlocks.INFESTED_MOSSY_DEEPSLATE_BRICKS, DecoBlocks.MOSSY_DEEPSLATE_BRICKS);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_MOSSY_POLISHED_BLACKSTONE_BRICKS, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS);
+
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CUT_ANDESITE, DecoBlocks.CUT_ANDESITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_ANDESITE_BRICKS, DecoBlocks.ANDESITE_BRICKS);
+
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CUT_GRANITE, DecoBlocks.CUT_GRANITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_GRANITE_BRICKS, DecoBlocks.GRANITE_BRICKS);
+
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CUT_DIORITE, DecoBlocks.CUT_DIORITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_DIORITE_BRICKS, DecoBlocks.DIORITE_BRICKS);
+
+        addDropWithSilkTouch(DecoBlocks.INFESTED_POLISHED_CALCITE, DecoBlocks.POLISHED_CALCITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CUT_CALCITE, DecoBlocks.CUT_CALCITE);
+        addDropWithSilkTouch(DecoBlocks.INFESTED_CALCITE_BRICKS, DecoBlocks.CALCITE_BRICKS);
+
+        addDrop(DecoBlocks.IRIS);
+        pottedPlantDrops(DecoBlocks.POTTED_IRIS);
+        addDrop(DecoBlocks.BLUE_DELPHINIUM);
+        pottedPlantDrops(DecoBlocks.POTTED_BLUE_DELPHINIUM);
+        addDrop(DecoBlocks.CYAN_ORCHID);
+        pottedPlantDrops(DecoBlocks.POTTED_CYAN_ORCHID);
+        addDrop(DecoBlocks.FELICIA_DAISY);
+        pottedPlantDrops(DecoBlocks.POTTED_FELICIA_DAISY);
+
+        addDrop(DecoBlocks.JACK_O_SOUL_LANTERN);
+
+        addDrop(DecoBlocks.NETHER_BRICK_PILLAR);
+        addDrop(DecoBlocks.RED_NETHER_BRICK_PILLAR);
+        addDrop(DecoBlocks.BLUE_NETHER_BRICK_PILLAR);
+
+        addDrop(DecoBlocks.DRIPSTONE_BRICKS);
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_PILLAR);
+        addDrop(DecoBlocks.VOID_STONE_BRICK_PILLAR);
+
+        addDrop(DecoBlocks.CASTED_IRON);
+        addDrop(DecoBlocks.CASTED_IRON_STAIRS);
+        addDrop(DecoBlocks.CASTED_IRON_SLAB, slabDrops(DecoBlocks.CASTED_IRON_SLAB));
+
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_STAIRS);
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_PILLAR_STAIRS);
+        addDrop(DecoBlocks.VOID_STONE_BRICK_PILLAR_STAIRS);
+
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_SLAB, slabDrops(DecoBlocks.DRIPSTONE_BRICK_SLAB));
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_PILLAR_SLAB, slabDrops(DecoBlocks.DRIPSTONE_BRICK_SLAB));
+        addDrop(DecoBlocks.VOID_STONE_BRICK_PILLAR_SLAB, slabDrops(DecoBlocks.DRIPSTONE_BRICK_SLAB));
+
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_WALL);
+        addDrop(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL);
+        addDrop(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL);
+
+        addDrop(DecoBlocks.CHISELED_DRIPSTONE);
+
+        addDrop(DecoBlocks.TUBE_CORAL_STAIRS);
+        addDrop(DecoBlocks.TUBE_CORAL_SLAB, slabDrops(DecoBlocks.TUBE_CORAL_SLAB));
+        addDrop(DecoBlocks.TUBE_CORAL_WALL);
+
+        addDrop(DecoBlocks.BRAIN_CORAL_STAIRS);
+        addDrop(DecoBlocks.BRAIN_CORAL_SLAB, slabDrops(DecoBlocks.BRAIN_CORAL_SLAB));
+        addDrop(DecoBlocks.BRAIN_CORAL_WALL);
+
+        addDrop(DecoBlocks.BUBBLE_CORAL_STAIRS);
+        addDrop(DecoBlocks.BUBBLE_CORAL_SLAB, slabDrops(DecoBlocks.BUBBLE_CORAL_SLAB));
+        addDrop(DecoBlocks.BUBBLE_CORAL_WALL);
+
+        addDrop(DecoBlocks.FIRE_CORAL_STAIRS);
+        addDrop(DecoBlocks.FIRE_CORAL_SLAB, slabDrops(DecoBlocks.FIRE_CORAL_SLAB));
+        addDrop(DecoBlocks.FIRE_CORAL_WALL);
+
+        addDrop(DecoBlocks.HORN_CORAL_STAIRS);
+        addDrop(DecoBlocks.HORN_CORAL_SLAB, slabDrops(DecoBlocks.HORN_CORAL_SLAB));
+        addDrop(DecoBlocks.HORN_CORAL_WALL);
+
+        addDrop(DecoBlocks.DEAD_TUBE_CORAL_STAIRS);
+        addDrop(DecoBlocks.DEAD_TUBE_CORAL_SLAB, slabDrops(DecoBlocks.DEAD_TUBE_CORAL_SLAB));
+        addDrop(DecoBlocks.DEAD_TUBE_CORAL_WALL);
+
+        addDrop(DecoBlocks.DEAD_BRAIN_CORAL_STAIRS);
+        addDrop(DecoBlocks.DEAD_BRAIN_CORAL_SLAB, slabDrops(DecoBlocks.DEAD_BRAIN_CORAL_SLAB));
+        addDrop(DecoBlocks.DEAD_BRAIN_CORAL_WALL);
+
+        addDrop(DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS);
+        addDrop(DecoBlocks.DEAD_BUBBLE_CORAL_SLAB, slabDrops(DecoBlocks.DEAD_BUBBLE_CORAL_SLAB));
+        addDrop(DecoBlocks.DEAD_BUBBLE_CORAL_WALL);
+
+        addDrop(DecoBlocks.DEAD_FIRE_CORAL_STAIRS);
+        addDrop(DecoBlocks.DEAD_FIRE_CORAL_SLAB, slabDrops(DecoBlocks.DEAD_FIRE_CORAL_SLAB));
+        addDrop(DecoBlocks.DEAD_FIRE_CORAL_WALL);
+
+        addDrop(DecoBlocks.DEAD_HORN_CORAL_STAIRS);
+        addDrop(DecoBlocks.DEAD_HORN_CORAL_SLAB, slabDrops(DecoBlocks.DEAD_HORN_CORAL_SLAB));
+        addDrop(DecoBlocks.DEAD_HORN_CORAL_WALL);
+
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_TUBE_CORAL, Blocks.TUBE_CORAL);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_BRAIN_CORAL, Blocks.BRAIN_CORAL);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_BUBBLE_CORAL, Blocks.BUBBLE_CORAL);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_FIRE_CORAL, Blocks.FIRE_CORAL);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_HORN_CORAL, Blocks.HORN_CORAL);
+
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_TUBE_CORAL_FAN, Blocks.TUBE_CORAL_FAN);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_BRAIN_CORAL_FAN, Blocks.BRAIN_CORAL_FAN);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN, Blocks.BUBBLE_CORAL_FAN);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_FIRE_CORAL_FAN, Blocks.FIRE_CORAL_FAN);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_HORN_CORAL_FAN, Blocks.HORN_CORAL_FAN);
+
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK, Blocks.TUBE_CORAL_BLOCK);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK, Blocks.BRAIN_CORAL_BLOCK);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK, Blocks.BUBBLE_CORAL_BLOCK);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK, Blocks.FIRE_CORAL_BLOCK);
+        addDropWithSilkTouch(DecoBlocks.HYDRATED_HORN_CORAL_BLOCK, Blocks.HORN_CORAL_BLOCK);
+
+        addDrop(DecoBlocks.HYDRATED_TUBE_CORAL_STAIRS);
+        addDrop(DecoBlocks.HYDRATED_TUBE_CORAL_SLAB, slabDrops(DecoBlocks.HYDRATED_TUBE_CORAL_SLAB));
+        addDrop(DecoBlocks.HYDRATED_TUBE_CORAL_WALL);
+
+        addDrop(DecoBlocks.HYDRATED_BRAIN_CORAL_STAIRS);
+        addDrop(DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB, slabDrops(DecoBlocks.HYDRATED_BRAIN_CORAL_SLAB));
+        addDrop(DecoBlocks.HYDRATED_BRAIN_CORAL_WALL);
+
+        addDrop(DecoBlocks.HYDRATED_BUBBLE_CORAL_STAIRS);
+        addDrop(DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB, slabDrops(DecoBlocks.HYDRATED_BUBBLE_CORAL_SLAB));
+        addDrop(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL);
+
+        addDrop(DecoBlocks.HYDRATED_FIRE_CORAL_STAIRS);
+        addDrop(DecoBlocks.HYDRATED_FIRE_CORAL_SLAB, slabDrops(DecoBlocks.HYDRATED_FIRE_CORAL_SLAB));
+        addDrop(DecoBlocks.HYDRATED_FIRE_CORAL_WALL);
+
+        addDrop(DecoBlocks.HYDRATED_HORN_CORAL_STAIRS);
+        addDrop(DecoBlocks.HYDRATED_HORN_CORAL_SLAB, slabDrops(DecoBlocks.HYDRATED_HORN_CORAL_SLAB));
+        addDrop(DecoBlocks.HYDRATED_HORN_CORAL_WALL);
+
+        addDrop(DecoBlocks.HAY_STAIRS);
+        addDrop(DecoBlocks.HAY_SLAB, slabDrops(DecoBlocks.HAY_SLAB));
+        addDrop(DecoBlocks.HAY_CARPET);
+
+        addDrop(DecoBlocks.NETHER_WART_STAIRS);
+        addDrop(DecoBlocks.NETHER_WART_SLAB, slabDrops(DecoBlocks.NETHER_WART_SLAB));
+        addDrop(DecoBlocks.WARPED_WART_STAIRS);
+        addDrop(DecoBlocks.WARPED_WART_SLAB, slabDrops(DecoBlocks.WARPED_WART_SLAB));
+
+        addDrop(DecoBlocks.SCULK_STAIRS);
+        addDrop(DecoBlocks.SCULK_SLAB, slabDrops(DecoBlocks.SCULK_SLAB));
+        addDrop(DecoBlocks.SCULK_CARPET);
+
+        addDrop(DecoBlocks.HONEYCOMB_STAIRS);
+        addDrop(DecoBlocks.HONEYCOMB_SLAB, slabDrops(DecoBlocks.HONEYCOMB_SLAB));
+        addDrop(DecoBlocks.HONEYCOMB_WALL);
+
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_GRAY_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_BLACK_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_BROWN_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_RED_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_LIME_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_GREEN_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_CYAN_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_BLUE_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE);
+        addDrop(DecoBlocks.DUEL_CUT_PINK_CONCRETE);
+
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_GRAY_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_BLACK_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_BROWN_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_RED_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_RED_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_RED_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_RED_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_ORANGE_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_YELLOW_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_LIME_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_LIME_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_LIME_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_LIME_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_GREEN_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_CYAN_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_LIGHT_BLUE_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_BLUE_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_PURPLE_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_MAGENTA_CONCRETE_WALL);
+        addDrop(DecoBlocks.DUEL_CUT_PINK_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.DUEL_CUT_PINK_CONCRETE_SLAB, slabDrops(DecoBlocks.DUEL_CUT_PINK_CONCRETE_SLAB));
+        addDrop(DecoBlocks.DUEL_CUT_PINK_CONCRETE_WALL);
+
+        addDrop(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_GRAY_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_BLACK_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_BROWN_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_RED_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_YELLOW_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_ORANGE_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_LIME_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_GREEN_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_CYAN_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_BLUE_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_PURPLE_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_MAGENTA_CONCRETE);
+        addDrop(DecoBlocks.CHECKERED_PINK_CONCRETE);
+
+        addDrop(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_LIGHT_GRAY_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_GRAY_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_GRAY_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_GRAY_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_GRAY_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_BLACK_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_BLACK_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_BLACK_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_BLACK_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_BROWN_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_BROWN_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_BROWN_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_BROWN_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_RED_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_RED_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_RED_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_RED_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_ORANGE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_ORANGE_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_ORANGE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_ORANGE_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_YELLOW_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_YELLOW_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_YELLOW_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_YELLOW_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_LIME_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_LIME_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_LIME_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_LIME_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_GREEN_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_GREEN_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_GREEN_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_GREEN_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_CYAN_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_CYAN_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_CYAN_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_CYAN_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_LIGHT_BLUE_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_BLUE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_BLUE_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_BLUE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_BLUE_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_PURPLE_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_PURPLE_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_PURPLE_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_PURPLE_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_MAGENTA_CONCRETE_WALL);
+        addDrop(DecoBlocks.CHECKERED_PINK_CONCRETE_STAIRS);
+        addDrop(DecoBlocks.CHECKERED_PINK_CONCRETE_SLAB, slabDrops(DecoBlocks.CHECKERED_PINK_CONCRETE_SLAB));
+        addDrop(DecoBlocks.CHECKERED_PINK_CONCRETE_WALL);
+
+        addDrop(DecoBlocks.BAMBOO_BLOCK_STAIRS);
+        addDrop(DecoBlocks.BAMBOO_BLOCK_SLAB, slabDrops(DecoBlocks.BAMBOO_BLOCK_SLAB));
+        addDrop(DecoBlocks.BAMBOO_BLOCK_WALL);
+
+        addDrop(DecoBlocks.STRIPPED_BAMBOO_STAIRS);
+        addDrop(DecoBlocks.STRIPPED_BAMBOO_SLAB, slabDrops(DecoBlocks.STRIPPED_BAMBOO_SLAB));
+        addDrop(DecoBlocks.STRIPPED_BAMBOO_WALL);
     }
     public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
         return dropsWithSilkTouch(

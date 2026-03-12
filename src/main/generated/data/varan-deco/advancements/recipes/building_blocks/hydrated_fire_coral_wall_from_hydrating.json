@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fire_coral_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:fire_coral_wall"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hydrated_fire_coral_wall_from_hydrating"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_fire_coral_wall",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hydrated_fire_coral_wall_from_hydrating"
+    ]
+  },
+  "sends_telemetry_event": false
+}
