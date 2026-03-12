@@ -103,6 +103,10 @@ public class DecoConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> DECO_PALE = registerKey("deco_pale");
 
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_ROOFED = registerKey("deco_roofed");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> DECO_MEGA_TULIP = registerKey("deco_mega_tulip");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
 
@@ -118,8 +122,7 @@ public class DecoConfiguredFeatures {
                                 DecoBlocks.GERBERA_DAISY.getDefaultState(), DecoBlocks.WHITE_ORCHID.getDefaultState(),
                                 DecoBlocks.PINK_ORCHID.getDefaultState(), DecoBlocks.YELLOW_ORCHID.getDefaultState(),
                                 Blocks.BLUE_ORCHID.getDefaultState(), DecoBlocks.SALMON_POPPY.getDefaultState(),
-                                DecoBlocks.ROSE.getDefaultState(), DecoBlocks.PAEONIA.getDefaultState(),
-                                DecoBlocks.LAVENDER.getDefaultState()))))));
+                                DecoBlocks.ROSE.getDefaultState(), DecoBlocks.PAEONIA.getDefaultState()))))));
 
         register(context, DECO_TULIPS_FOREST_KEY,
                 Feature.FLOWER, DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
@@ -137,11 +140,11 @@ public class DecoConfiguredFeatures {
                                         DecoBlocks.ALPINE_POPPY.getDefaultState(), DecoBlocks.ROSE.getDefaultState()))))));
 
         register(context, DECO_MEADOW_WILDFLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(
-                64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
                 (new WeightedBlockStateProvider(flowerbed(DecoBlocks.ROUGE_WILDFLOWERS))))));
 
         register(context, DECO_BIRCH_WILDFLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(
-                64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                16, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
                 (new WeightedBlockStateProvider(flowerbed(DecoBlocks.SWEET_WILDFLOWERS))))));
                                         ConfiguredFeatures.register(context, DECO_TULIPS_MEADOW_KEY,
                 Feature.FLOWER, DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
@@ -178,7 +181,7 @@ public class DecoConfiguredFeatures {
                                 .add(DecoBlocks.CALIFORNIA_POPPY.getDefaultState(),1).build()),16));
 
         register(context, DECO_MESA_WILDFLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(
-                        64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                        16, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
                 (new WeightedBlockStateProvider(flowerbed(DecoBlocks.GECKO_WILDFLOWERS))))));
 
         register(context, DECO_SWAMP_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
@@ -201,7 +204,18 @@ public class DecoConfiguredFeatures {
                                 .add(DecoBlocks.LAVENDER.getDefaultState(),1)
                                 .add(DecoBlocks.WHITE_ORCHID.getDefaultState(),3).build()),32));
 
-        register(context, DECO_ROSE_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
+        ConfiguredFeatures.register(context,DECO_ROOFED, Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (Pool.<BlockState>builder().add(DecoBlocks.IRIS.getDefaultState(),2)
+                                    .add(DecoBlocks.BLUE_DELPHINIUM.getDefaultState(),2)
+                                    .add(DecoBlocks.CYAN_ORCHID.getDefaultState(),1)
+                                    .add(DecoBlocks.LAVENDER.getDefaultState(),1).build()),32));
+
+    ConfiguredFeatures.register(
+            context, DECO_MEGA_TULIP, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                    new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.MEGA_BROWN_TULIP))));
+
+            ConfiguredFeatures.register(context, DECO_ROSE_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2,
                         PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.ROSE)))));
 
         register(context, DECO_ENDER_KEY, Feature.FLOWER,
@@ -221,7 +235,7 @@ public class DecoConfiguredFeatures {
                         (Pool.<BlockState>builder().add(DecoBlocks.PAEONIA.getDefaultState(),3)
                                 .add(DecoBlocks.BUTTERCUP.getDefaultState(),3)
                                 .add(DecoBlocks.NIGHTSHADE.getDefaultState(),1)
-                                .add(DecoBlocks.WHITE_ORCHID.getDefaultState(),2).build()),48));
+                                .add(DecoBlocks.FELICIA_DAISY.getDefaultState(),2).build()),48));
 
         register(context, DECO_WOODEN_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                         BlockStateProvider.of(DecoBlocks.WOODEN_LOG), new ForkingTrunkPlacer(5, 2, 2),

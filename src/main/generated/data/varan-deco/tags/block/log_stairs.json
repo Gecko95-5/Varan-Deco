@@ -19,6 +19,8 @@
     "minecraft:wooden_wood_stairs",
     "minecraft:stripped_wooden_wood_stairs",
     "minecraft:cherry_wood_stairs",
-    "minecraft:stripped_cherry_wood_stairs"
+    "minecraft:stripped_cherry_wood_stairs",
+    "minecraft:bamboo_block_stairs",
+    "minecraft:stripped_bamboo_stairs"
   ]
 }

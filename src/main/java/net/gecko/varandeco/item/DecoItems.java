@@ -6,8 +6,6 @@ import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.item.custom.BubbleItem;
 import net.gecko.varandeco.item.custom.SnowBrickItem;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.*;
 import net.gecko.varandeco.util.interfaces.HangingSignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.SignRegisterFunction;
 import net.gecko.varandeco.util.interfaces.TallPlantItemRegisterFunction;
@@ -19,8 +17,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
+
+import static net.minecraft.item.Items.register;
 
 public class DecoItems {
 
@@ -239,6 +241,22 @@ public class DecoItems {
     public static final Item DRIFTWOOD_PLANKS_HANGING_SIGN = registerHangingSignItem("driftwood_planks_hanging_sign",
             DecoBlocks.HANGING_DRIFTWOOD_PLANKS_SIGN, DecoBlocks.WALL_HANGING_DRIFTWOOD_PLANKS_SIGN,
             HangingSignItem::new);
+
+    public static final Item HYDRATED_TUBE_CORAL_FAN = register(
+            DecoBlocks.HYDRATED_TUBE_CORAL_FAN, (block, settings) ->
+                    new VerticallyAttachableBlockItem(block, DecoBlocks.HYDRATED_TUBE_CORAL_WALL_FAN, Direction.DOWN, settings));
+    public static final Item HYDRATED_BRAIN_CORAL_FAN = register(
+            DecoBlocks.HYDRATED_BRAIN_CORAL_FAN, (block, settings) ->
+                    new VerticallyAttachableBlockItem(block, DecoBlocks.HYDRATED_BRAIN_CORAL_WALL_FAN, Direction.DOWN, settings));
+    public static final Item HYDRATED_BUBBLE_CORAL_FAN = register(
+            DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN, (block, settings) ->
+                    new VerticallyAttachableBlockItem(block, DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL_FAN, Direction.DOWN, settings));
+    public static final Item HYDRATED_FIRE_CORAL_FAN = register(
+            DecoBlocks.HYDRATED_FIRE_CORAL_FAN, (block, settings) ->
+                    new VerticallyAttachableBlockItem(block, DecoBlocks.HYDRATED_FIRE_CORAL_WALL_FAN, Direction.DOWN, settings));
+    public static final Item HYDRATED_HORN_CORAL_FAN = register(
+            DecoBlocks.HYDRATED_HORN_CORAL_FAN, (block, settings) ->
+                    new VerticallyAttachableBlockItem(block, DecoBlocks.HYDRATED_HORN_CORAL_WALL_FAN, Direction.DOWN, settings));
 
     public static final Item SNOW_BRICK = registerCooldownItem("snow_brick",16,1,
             SnowBrickItem::new);

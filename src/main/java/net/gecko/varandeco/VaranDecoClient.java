@@ -8,9 +8,16 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.entity.DecoEntities;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
+import net.minecraft.world.biome.GrassColors;
+import net.minecraft.world.biome.FoliageColors;
+import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.item.BlockItem;
 import net.minecraft.world.biome.GrassColors;
 
 public class VaranDecoClient implements ClientModInitializer {
@@ -122,6 +129,38 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POPPED_BLUET, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_POPPED_BLUET, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRIS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_IRIS, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CYAN_ORCHID, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_CYAN_ORCHID, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BLUE_DELPHINIUM, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BLUE_DELPHINIUM, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FELICIA_DAISY, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_FELICIA_DAISY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MEGA_BROWN_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_BUBBLE_CORAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_HORN_CORAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_BRAIN_CORAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_FIRE_CORAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_TUBE_CORAL, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_BUBBLE_CORAL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_HORN_CORAL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_BRAIN_CORAL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_FIRE_CORAL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_TUBE_CORAL_FAN, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_HORN_CORAL_WALL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_BRAIN_CORAL_WALL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_FIRE_CORAL_WALL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HYDRATED_TUBE_CORAL_WALL_FAN, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BIRCH_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SPRUCE_LADDER, RenderLayer.getCutout());
@@ -357,5 +396,10 @@ public class VaranDecoClient implements ClientModInitializer {
                 return -1;
             }
         }, DecoBlocks.ROUGE_WILDFLOWERS, DecoBlocks.SWEET_WILDFLOWERS, DecoBlocks.GECKO_WILDFLOWERS);
+
+        ColorProviderRegistry.BLOCK.register((
+                (state, world, pos, tintIndex) -> world != null && pos != null
+                        ? BiomeColors.getGrassColor(world, pos) : GrassColors.getColor(0.5, 1.0)),
+                DecoBlocks.PACKED_GRASS, DecoBlocks.GRASS_STAIRS, DecoBlocks.GRASS_SLAB, DecoBlocks.GRASS_CARPET);
     }
 }
