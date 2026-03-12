@@ -19,6 +19,8 @@
     "minecraft:wooden_wood_slab",
     "minecraft:stripped_wooden_wood_slab",
     "minecraft:cherry_wood_slab",
-    "minecraft:stripped_cherry_wood_slab"
+    "minecraft:stripped_cherry_wood_slab",
+    "minecraft:bamboo_block_slab",
+    "minecraft:stripped_bamboo_slab"
   ]
 }

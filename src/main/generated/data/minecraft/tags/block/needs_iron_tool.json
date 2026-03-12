@@ -16,6 +16,9 @@
     "minecraft:gold_grate",
     "minecraft:chiseled_gold",
     "minecraft:heavy_gold_bars",
-    "minecraft:golden_ladder"
+    "minecraft:golden_ladder",
+    "minecraft:casted_iron",
+    "minecraft:casted_iron_stairs",
+    "minecraft:casted_iron_slab"
   ]
 }
