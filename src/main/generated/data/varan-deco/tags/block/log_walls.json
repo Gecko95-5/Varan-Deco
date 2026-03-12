@@ -19,6 +19,8 @@
     "minecraft:wooden_wood_wall",
     "minecraft:stripped_wooden_wood_wall",
     "minecraft:cherry_wood_wall",
-    "minecraft:stripped_cherry_wood_wall"
+    "minecraft:stripped_cherry_wood_wall",
+    "minecraft:bamboo_block_wall",
+    "minecraft:stripped_bamboo_wall"
   ]
 }
