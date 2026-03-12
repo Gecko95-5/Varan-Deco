@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "coral",
+  "ingredients": [
+    {
+      "item": "varan-deco:hydrated_horn_coral_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "varan-deco:hydrated_horn_coral"
+  }
+}

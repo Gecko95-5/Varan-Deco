@@ -1272,8 +1272,8 @@
   "block.varan-deco.puffy_dandelion": "Puffy Dandelion",
   "block.varan-deco.potted_puffy_dandelion": "Potted Puffy Dandelion",
 
-  "block.varan-deco.california_poppy": "California Poppy",
-  "block.varan-deco.potted_california_poppy": "Potted California Poppy",
+  "block.varan-deco.california_poppy": "Sunny Poppy",
+  "block.varan-deco.potted_california_poppy": "Potted Sunny Poppy",
   "block.varan-deco.salmon_poppy": "Salmon Poppy",
   "block.varan-deco.potted_salmon_poppy": "Potted Salmon Poppy",
 
@@ -1327,6 +1327,154 @@
 
   "block.varan-deco.popped_bluet": "Popped Bluet",
   "block.varan-deco.potted_popped_bluet": "Potted Popped Bluet",
+
+  "block.varan-deco.iris": "Iris",
+  "block.varan-deco.potted_iris": "Potted Iris",
+
+  "block.varan-deco.felicia_daisy": "Felicia Daisy",
+  "block.varan-deco.potted_felicia_daisy": "Potted Felicia Daisy",
+
+  "block.varan-deco.cyan_orchid": "Cyan Orchid",
+  "block.varan-deco.potted_cyan_orchid": "Potted Cyan Orchid",
+
+  "block.varan-deco.blue_delphinium": "Blue Delphinium",
+  "block.varan-deco.potted_blue_delphinium": "Potted Blue Delphinium",
+
+  "block.varan-deco.mega_brown_tulip": "Brown Mega Tulip",
+
+  "block.varan-deco.jack_o_soul_lantern": "Jack-O-Soul Lantern",
+
+  "block.varan-deco.casted_iron": "Casted Iron",
+  "block.varan-deco.casted_iron_stairs": "Casted Iron Stairs",
+  "block.varan-deco.casted_iron_slab": "Casted Iron Slab",
+
+  "block.varan-deco.nether_brick_pillar": "Nether Brick Pillar",
+  "block.varan-deco.red_nether_brick_pillar": "Red Nether Brick Pillar",
+  "block.varan-deco.blue_nether_brick_pillar": "Blue Nether Brick Pillar",
+
+  "block.varan-deco.dripstone_bricks": "Dripstone Bricks",
+  "block.varan-deco.dripstone_brick_stairs": "Dripstone Brick Stairs",
+  "block.varan-deco.dripstone_brick_slab": "Dripstone Brick Slab",
+  "block.varan-deco.dripstone_brick_wall": "Dripstone Brick Wall",
+
+  "block.varan-deco.dripstone_brick_pillar": "Dripstone Brick Pillar",
+  "block.varan-deco.dripstone_brick_pillar_stairs": "Dripstone Brick Pillar Stairs",
+  "block.varan-deco.dripstone_brick_pillar_slab": "Dripstone Brick Pillar Slab",
+  "block.varan-deco.dripstone_brick_pillar_wall": "Dripstone Brick Pillar Wall",
+
+  "block.varan-deco.void_stone_brick_pillar": "Void Stone Brick Pillar",
+  "block.varan-deco.void_stone_brick_pillar_stairs": "Void Stone Brick Pillar Stairs",
+  "block.varan-deco.void_stone_brick_pillar_slab": "Void Stone Brick Pillar Slab",
+  "block.varan-deco.void_stone_brick_pillar_wall": "Void Stone Brick Pillar Wall",
+
+  "block.varan-deco.chiseled_dripstone": "Chiseled Dripstone",
+
+  "block.varan-deco.tube_coral_stairs": "Tube Coral Stairs",
+  "block.varan-deco.tube_coral_slab": "Tube Coral Slab",
+  "block.varan-deco.tube_coral_wall": "Tube Coral Wall",
+
+  "block.varan-deco.brain_coral_stairs": "Brain Coral Stairs",
+  "block.varan-deco.brain_coral_slab": "Brain Coral Slab",
+  "block.varan-deco.brain_coral_wall": "Brain Coral Wall",
+
+  "block.varan-deco.bubble_coral_stairs": "Bubble Coral Stairs",
+  "block.varan-deco.bubble_coral_slab": "Bubble Coral Slab",
+  "block.varan-deco.bubble_coral_wall": "Bubble Coral Wall",
+
+  "block.varan-deco.fire_coral_stairs": "Fire Coral Stairs",
+  "block.varan-deco.fire_coral_slab": "Fire Coral Slab",
+  "block.varan-deco.fire_coral_wall": "Fire Coral Wall",
+
+  "block.varan-deco.horn_coral_stairs": "Horn Coral Stairs",
+  "block.varan-deco.horn_coral_slab": "Horn Coral Slab",
+  "block.varan-deco.horn_coral_wall": "Horn Coral Wall",
+
+  "block.varan-deco.dead_tube_coral_stairs": "Dead Tube Coral Stairs",
+  "block.varan-deco.dead_tube_coral_slab": "Dead Tube Coral Slab",
+  "block.varan-deco.dead_tube_coral_wall": "Dead Tube Coral Wall",
+
+  "block.varan-deco.dead_brain_coral_stairs": "Dead Brain Coral Stairs",
+  "block.varan-deco.dead_brain_coral_slab": "Dead Brain Coral Slab",
+  "block.varan-deco.dead_brain_coral_wall": "Dead Brain Coral Wall",
+
+  "block.varan-deco.dead_bubble_coral_stairs": "Dead Bubble Coral Stairs",
+  "block.varan-deco.dead_bubble_coral_slab": "Dead Bubble Coral Slab",
+  "block.varan-deco.dead_bubble_coral_wall": "Dead Bubble Coral Wall",
+
+  "block.varan-deco.dead_fire_coral_stairs": "Dead Fire Coral Stairs",
+  "block.varan-deco.dead_fire_coral_slab": "Dead Fire Coral Slab",
+  "block.varan-deco.dead_fire_coral_wall": "Dead Fire Coral Wall",
+
+  "block.varan-deco.dead_horn_coral_stairs": "Dead Horn Coral Stairs",
+  "block.varan-deco.dead_horn_coral_slab": "Dead Horn Coral Slab",
+  "block.varan-deco.dead_horn_coral_wall": "Dead Horn Coral Wall",
+
+  "block.varan-deco.hydrated_tube_coral": "Hydrated Tube Coral",
+  "block.varan-deco.hydrated_brain_coral": "Hydrated Brain Coral",
+  "block.varan-deco.hydrated_bubble_coral": "Hydrated Bubble Coral",
+  "block.varan-deco.hydrated_fire_coral": "Hydrated Fire Coral",
+  "block.varan-deco.hydrated_horn_coral": "Hydrated Horn Coral",
+
+  "block.varan-deco.hydrated_tube_coral_fan": "Hydrated Tube Coral Fan",
+  "block.varan-deco.hydrated_brain_coral_fan": "Hydrated Brain Coral Fan",
+  "block.varan-deco.hydrated_bubble_coral_fan": "Hydrated Bubble Coral Fan",
+  "block.varan-deco.hydrated_fire_coral_fan": "Hydrated Fire Coral Fan",
+  "block.varan-deco.hydrated_horn_coral_fan": "Hydrated Horn Coral Fan",
+
+  "item.varan-deco.hydrated_tube_coral_fan": "Hydrated Tube Coral Fan",
+  "item.varan-deco.hydrated_brain_coral_fan": "Hydrated Brain Coral Fan",
+  "item.varan-deco.hydrated_bubble_coral_fan": "Hydrated Bubble Coral Fan",
+  "item.varan-deco.hydrated_fire_coral_fan": "Hydrated Fire Coral Fan",
+  "item.varan-deco.hydrated_horn_coral_fan": "Hydrated Horn Coral Fan",
+
+  "block.varan-deco.hydrated_tube_coral_wall_fan": "Hydrated Tube Coral Wall Fan",
+  "block.varan-deco.hydrated_brain_coral_wall_fan": "Hydrated Brain Coral Wall Fan",
+  "block.varan-deco.hydrated_bubble_coral_wall_fan": "Hydrated Bubble Coral Wall Fan",
+  "block.varan-deco.hydrated_fire_coral_wall_fan": "Hydrated Fire Coral Wall Fan",
+  "block.varan-deco.hydrated_horn_coral_wall_fan": "Hydrated Horn Coral Wall Fan",
+
+  "block.varan-deco.hydrated_tube_coral_block": "Hydrated Tube Coral Block",
+  "block.varan-deco.hydrated_brain_coral_block": "Hydrated Brain Coral Block",
+  "block.varan-deco.hydrated_bubble_coral_block": "Hydrated Bubble Coral Block",
+  "block.varan-deco.hydrated_fire_coral_block": "Hydrated Fire Coral Block",
+  "block.varan-deco.hydrated_horn_coral_block": "Hydrated Horn Coral Block",
+
+  "block.varan-deco.hydrated_tube_coral_stairs": "Hydrated Tube Coral Stairs",
+  "block.varan-deco.hydrated_tube_coral_slab": "Hydrated Tube Coral Slab",
+  "block.varan-deco.hydrated_tube_coral_wall": "Hydrated Tube Coral Wall",
+
+  "block.varan-deco.hydrated_brain_coral_stairs": "Hydrated Brain Coral Stairs",
+  "block.varan-deco.hydrated_brain_coral_slab": "Hydrated Brain Coral Slab",
+  "block.varan-deco.hydrated_brain_coral_wall": "Hydrated Brain Coral Wall",
+
+  "block.varan-deco.hydrated_bubble_coral_stairs": "Hydrated Bubble Coral Stairs",
+  "block.varan-deco.hydrated_bubble_coral_slab": "Hydrated Bubble Coral Slab",
+  "block.varan-deco.hydrated_bubble_coral_wall": "Hydrated Bubble Coral Wall",
+
+  "block.varan-deco.hydrated_fire_coral_stairs": "Hydrated Fire Coral Stairs",
+  "block.varan-deco.hydrated_fire_coral_slab": "Hydrated Fire Coral Slab",
+  "block.varan-deco.hydrated_fire_coral_wall": "Hydrated Fire Coral Wall",
+
+  "block.varan-deco.hydrated_horn_coral_stairs": "Hydrated Horn Coral Stairs",
+  "block.varan-deco.hydrated_horn_coral_slab": "Hydrated Horn Coral Slab",
+  "block.varan-deco.hydrated_horn_coral_wall": "Hydrated Horn Coral Wall",
+
+  "block.varan-deco.hay_stairs": "Hay Stairs",
+  "block.varan-deco.hay_slab": "Hay Slab",
+  "block.varan-deco.hay_carpet": "Hay Carpet",
+
+  "block.varan-deco.nether_wart_stairs": "Nether Wart Stairs",
+  "block.varan-deco.nether_wart_slab": "Nether Wart Slab",
+  "block.varan-deco.warped_wart_stairs": "Warped Wart Stairs",
+  "block.varan-deco.warped_wart_slab": "Warped Wart Slab",
+
+  "block.varan-deco.sculk_stairs": "Sculk Stairs",
+  "block.varan-deco.sculk_slab": "Sculk Slab",
+  "block.varan-deco.sculk_carpet": "Sculk Carpet",
+
+  "block.varan-deco.honeycomb_stairs": "Honeycomb Stairs",
+  "block.varan-deco.honeycomb_slab": "Honeycomb Slab",
+  "block.varan-deco.honeycomb_wall": "Honeycomb Wall",
 
   "block.varan-deco.copper_chain": "Copper Chain",
   "block.varan-deco.waxed_copper_chain": "Waxed Copper Chain",
@@ -1500,6 +1648,20 @@
   "block.varan-deco.infested_chiseled_stone": "Infested Chiseled Stone",
   "block.varan-deco.infested_chiseled_deepslate_bricks": "Infested Chiseled Deepslate Bricks",
   "block.varan-deco.infested_chiseled_polished_blackstone_bricks": "Infested Chiseled Polished Blackstone Bricks",
+
+  "block.varan-deco.infested_mossy_deepslate_bricks": "Infested Mossy Deepslate Bricks",
+  "block.varan-deco.infested_mossy_polished_blackstone_bricks": "Infested Mossy Polished Blackstone Bricks",
+
+  "block.varan-deco.infested_cut_granite": "Infested Cut Granite",
+  "block.varan-deco.infested_granite_bricks": "Infested Granite Bricks",
+  "block.varan-deco.infested_cut_diorite": "Infested Cut Diorite",
+  "block.varan-deco.infested_diorite_bricks": "Infested Diorite Bricks",
+  "block.varan-deco.infested_cut_andesite": "Infested Cut Andesite",
+  "block.varan-deco.infested_andesite_bricks": "Infested Andesite Bricks",
+
+  "block.varan-deco.infested_polished_calcite": "Infested Polished Calcite",
+  "block.varan-deco.infested_cut_calcite": "Infested Cut Calcite",
+  "block.varan-deco.infested_calcite_bricks": "Infested Calcite Bricks",
 
   "block.varan-deco.oak_wood_stairs": "Oak Wood Stairs",
   "block.varan-deco.oak_wood_slab": "Oak Wood Slab",
@@ -1969,7 +2131,7 @@
   "block.varan-deco.warped_nylium_slab": "Warped Nylium Slab",
 
   "block.varan-deco.mycelium_stairs": "Mycelium Stairs",
-  "block.varan-deco.mycelium_slab": "Mycelium Slab",
+  "block.varan-deco.packed_mycelium_slab": "Mycelium Slab",
 
   "block.varan-deco.moss_stairs": "Moss Stairs",
   "block.varan-deco.moss_slab": "Moss Slab",
@@ -2081,6 +2243,215 @@
 
   "block.varan-deco.cracked_blue_nether_brick_fence": "Cracked Blue Nether Brick Fence",
   "block.varan-deco.cracked_blue_nether_brick_fence_gate": "Cracked Blue Nether Brick Fence Gate",
+
+  "block.varan-deco.mossy_deepslate_bricks": "Mossy Deepslate Bricks",
+
+  "block.varan-deco.mossy_deepslate_brick_stairs": "Mossy Deepslate Brick Stairs",
+  "block.varan-deco.mossy_deepslate_brick_slab": "Mossy Deepslate Brick Slab",
+  "block.varan-deco.mossy_deepslate_brick_wall": "Mossy Deepslate Brick Wall",
+
+  "block.varan-deco.mossy_tuff_bricks": "Mossy Tuff Bricks",
+
+  "block.varan-deco.mossy_tuff_brick_stairs": "Mossy Tuff Brick Stairs",
+  "block.varan-deco.mossy_tuff_brick_slab": "Mossy Tuff Brick Slab",
+  "block.varan-deco.mossy_tuff_brick_wall": "Mossy Tuff Brick Wall",
+
+  "block.varan-deco.mossy_polished_blackstone_bricks": "Mossy Polished Blackstone Bricks",
+
+  "block.varan-deco.mossy_polished_blackstone_brick_stairs": "Mossy Polished Blackstone Brick Stairs",
+  "block.varan-deco.mossy_polished_blackstone_brick_slab": "Mossy Polished Blackstone Brick Slab",
+  "block.varan-deco.mossy_polished_blackstone_brick_wall": "Mossy Polished Blackstone Brick Wall",
+
+  "block.varan-deco.mossy_end_stone_bricks": "Mossy End Stone Bricks",
+
+  "block.varan-deco.mossy_end_stone_brick_stairs": "Mossy End Stone Brick Stairs",
+  "block.varan-deco.mossy_end_stone_brick_slab": "Mossy End Stone Brick Slab",
+  "block.varan-deco.mossy_end_stone_brick_wall": "Mossy End Stone Brick Wall",
+
+  "block.varan-deco.lapis_stairs": "Lapis Lazuli Stairs",
+  "block.varan-deco.lapis_slab": "Lapis Lazuli Slab",
+  "block.varan-deco.lapis_wall": "Lapis Lazuli Wall",
+
+  "block.varan-deco.lapis_bricks": "Lapis Lazuli Bricks",
+
+  "block.varan-deco.lapis_brick_stairs": "Lapis Lazuli Brick Stairs",
+  "block.varan-deco.lapis_brick_slab": "Lapis Lazuli Brick Slab",
+  "block.varan-deco.lapis_brick_wall": "Lapis Lazuli Brick Wall",
+
+  "block.varan-deco.cut_lapis": "Cut Lapis Lazuli",
+
+  "block.varan-deco.cut_lapis_stairs": "Cut Lapis Lazuli Stairs",
+  "block.varan-deco.cut_lapis_slab": "Cut Lapis Lazuli Slab",
+  "block.varan-deco.cut_lapis_wall": "Cut Lapis Lazuli Wall",
+
+  "block.varan-deco.smooth_lapis": "Smooth Lapis Lazuli",
+
+  "block.varan-deco.smooth_lapis_stairs": "Smooth Lapis Lazuli Stairs",
+  "block.varan-deco.smooth_lapis_slab": "Smooth Lapis Lazuli Slab",
+  "block.varan-deco.smooth_lapis_wall": "Smooth Lapis Lazuli Wall",
+
+  "block.varan-deco.chiseled_lapis": "Chiseled Lapis Lazuli",
+  "block.varan-deco.lapis_pillar": "Lapis Lazuli Pillar",
+
+  "block.varan-deco.duel_cut_light_gray_concrete": "Duel Cut Light Gray Concrete",
+  "block.varan-deco.duel_cut_gray_concrete": "Duel Cut Gray Concrete",
+  "block.varan-deco.duel_cut_black_concrete": "Duel Cut Black Concrete",
+  "block.varan-deco.duel_cut_brown_concrete": "Duel Cut Brown Concrete",
+  "block.varan-deco.duel_cut_red_concrete": "Duel Cut Red Concrete",
+  "block.varan-deco.duel_cut_orange_concrete": "Duel Cut Orange Concrete",
+  "block.varan-deco.duel_cut_yellow_concrete": "Duel Cut Yellow Concrete",
+  "block.varan-deco.duel_cut_lime_concrete": "Duel Cut Lime Concrete",
+  "block.varan-deco.duel_cut_green_concrete": "Duel Cut Green Concrete",
+  "block.varan-deco.duel_cut_cyan_concrete": "Duel Cut Cyan Concrete",
+  "block.varan-deco.duel_cut_light_blue_concrete": "Duel Cut Light Blue Concrete",
+  "block.varan-deco.duel_cut_blue_concrete": "Duel Cut Blue Concrete",
+  "block.varan-deco.duel_cut_purple_concrete": "Duel Cut Purple Concrete",
+  "block.varan-deco.duel_cut_magenta_concrete": "Duel Cut Magenta Concrete",
+  "block.varan-deco.duel_cut_pink_concrete": "Duel Cut Pink Concrete",
+
+  "block.varan-deco.duel_cut_light_gray_concrete_stairs": "Duel Cut Light Gray Concrete Stairs",
+  "block.varan-deco.duel_cut_light_gray_concrete_slab": "Duel Cut Light Gray Concrete Slab",
+  "block.varan-deco.duel_cut_light_gray_concrete_wall": "Duel Cut Light Gray Concrete Wall",
+
+  "block.varan-deco.duel_cut_gray_concrete_stairs": "Duel Cut Gray Concrete Stairs",
+  "block.varan-deco.duel_cut_gray_concrete_slab": "Duel Cut Gray Concrete Slab",
+  "block.varan-deco.duel_cut_gray_concrete_wall": "Duel Cut Gray Concrete Wall",
+
+  "block.varan-deco.duel_cut_black_concrete_stairs": "Duel Cut Black Concrete Stairs",
+  "block.varan-deco.duel_cut_black_concrete_slab": "Duel Cut Black Concrete Slab",
+  "block.varan-deco.duel_cut_black_concrete_wall": "Duel Cut Black Concrete Wall",
+
+  "block.varan-deco.duel_cut_brown_concrete_stairs": "Duel Cut Brown Concrete Stairs",
+  "block.varan-deco.duel_cut_brown_concrete_slab": "Duel Cut Brown Concrete Slab",
+  "block.varan-deco.duel_cut_brown_concrete_wall": "Duel Cut Brown Concrete Wall",
+
+  "block.varan-deco.duel_cut_red_concrete_stairs": "Duel Cut Red Concrete Stairs",
+  "block.varan-deco.duel_cut_red_concrete_slab": "Duel Cut Red Concrete Slab",
+  "block.varan-deco.duel_cut_red_concrete_wall": "Duel Cut Red Concrete Wall",
+
+  "block.varan-deco.duel_cut_orange_concrete_stairs": "Duel Cut Orange Concrete Stairs",
+  "block.varan-deco.duel_cut_orange_concrete_slab": "Duel Cut Orange Concrete Slab",
+  "block.varan-deco.duel_cut_orange_concrete_wall": "Duel Cut Orange Concrete Wall",
+
+  "block.varan-deco.duel_cut_yellow_concrete_stairs": "Duel Cut Yellow Concrete Stairs",
+  "block.varan-deco.duel_cut_yellow_concrete_slab": "Duel Cut Yellow Concrete Slab",
+  "block.varan-deco.duel_cut_yellow_concrete_wall": "Duel Cut Yellow Concrete Wall",
+
+  "block.varan-deco.duel_cut_lime_concrete_stairs": "Duel Cut Lime Concrete Stairs",
+  "block.varan-deco.duel_cut_lime_concrete_slab": "Duel Cut Lime Concrete Slab",
+  "block.varan-deco.duel_cut_lime_concrete_wall": "Duel Cut Lime Concrete Wall",
+
+  "block.varan-deco.duel_cut_green_concrete_stairs": "Duel Cut Green Concrete Stairs",
+  "block.varan-deco.duel_cut_green_concrete_slab": "Duel Cut Green Concrete Slab",
+  "block.varan-deco.duel_cut_green_concrete_wall": "Duel Cut Green Concrete Wall",
+
+  "block.varan-deco.duel_cut_cyan_concrete_stairs": "Duel Cut Cyan Concrete Stairs",
+  "block.varan-deco.duel_cut_cyan_concrete_slab": "Duel Cut Cyan Concrete Slab",
+  "block.varan-deco.duel_cut_cyan_concrete_wall": "Duel Cut Cyan Concrete Wall",
+
+  "block.varan-deco.duel_cut_light_blue_concrete_stairs": "Duel Cut Light Blue Concrete Stairs",
+  "block.varan-deco.duel_cut_light_blue_concrete_slab": "Duel Cut Light Blue Concrete Slab",
+  "block.varan-deco.duel_cut_light_blue_concrete_wall": "Duel Cut Light Blue Concrete Wall",
+
+  "block.varan-deco.duel_cut_blue_concrete_stairs": "Duel Cut Blue Concrete Stairs",
+  "block.varan-deco.duel_cut_blue_concrete_slab": "Duel Cut Blue Concrete Slab",
+  "block.varan-deco.duel_cut_blue_concrete_wall": "Duel Cut Blue Concrete Wall",
+
+  "block.varan-deco.duel_cut_purple_concrete_stairs": "Duel Cut Purple Concrete Stairs",
+  "block.varan-deco.duel_cut_purple_concrete_slab": "Duel Cut Purple Concrete Slab",
+  "block.varan-deco.duel_cut_purple_concrete_wall": "Duel Cut Purple Concrete Wall",
+
+  "block.varan-deco.duel_cut_magenta_concrete_stairs": "Duel Cut Magenta Concrete Stairs",
+  "block.varan-deco.duel_cut_magenta_concrete_slab": "Duel Cut Magenta Concrete Slab",
+  "block.varan-deco.duel_cut_magenta_concrete_wall": "Duel Cut Magenta Concrete Wall",
+
+  "block.varan-deco.duel_cut_pink_concrete_stairs": "Duel Cut Pink Concrete Stairs",
+  "block.varan-deco.duel_cut_pink_concrete_slab": "Duel Cut Pink Concrete Slab",
+  "block.varan-deco.duel_cut_pink_concrete_wall": "Duel Cut Pink Concrete Wall",
+
+  "block.varan-deco.checkered_light_gray_concrete": "Checkered Light Gray Concrete",
+  "block.varan-deco.checkered_gray_concrete": "Checkered Gray Concrete",
+  "block.varan-deco.checkered_black_concrete": "Checkered Black Concrete",
+  "block.varan-deco.checkered_brown_concrete": "Checkered Brown Concrete",
+  "block.varan-deco.checkered_red_concrete": "Checkered Red Concrete",
+  "block.varan-deco.checkered_orange_concrete": "Checkered Orange Concrete",
+  "block.varan-deco.checkered_yellow_concrete": "Checkered Yellow Concrete",
+  "block.varan-deco.checkered_lime_concrete": "Checkered Lime Concrete",
+  "block.varan-deco.checkered_green_concrete": "Checkered Green Concrete",
+  "block.varan-deco.checkered_cyan_concrete": "Checkered Cyan Concrete",
+  "block.varan-deco.checkered_light_blue_concrete": "Checkered Light Blue Concrete",
+  "block.varan-deco.checkered_blue_concrete": "Checkered Blue Concrete",
+  "block.varan-deco.checkered_purple_concrete": "Checkered Purple Concrete",
+  "block.varan-deco.checkered_magenta_concrete": "Checkered Magenta Concrete",
+  "block.varan-deco.checkered_pink_concrete": "Checkered Pink Concrete",
+
+  "block.varan-deco.checkered_light_gray_concrete_stairs": "Checkered Light Gray Concrete Stairs",
+  "block.varan-deco.checkered_light_gray_concrete_slab": "Checkered Light Gray Concrete Slab",
+  "block.varan-deco.checkered_light_gray_concrete_wall": "Checkered Light Gray Concrete Wall",
+
+  "block.varan-deco.checkered_gray_concrete_stairs": "Checkered Gray Concrete Stairs",
+  "block.varan-deco.checkered_gray_concrete_slab": "Checkered Gray Concrete Slab",
+  "block.varan-deco.checkered_gray_concrete_wall": "Checkered Gray Concrete Wall",
+
+  "block.varan-deco.checkered_black_concrete_stairs": "Checkered Black Concrete Stairs",
+  "block.varan-deco.checkered_black_concrete_slab": "Checkered Black Concrete Slab",
+  "block.varan-deco.checkered_black_concrete_wall": "Checkered Black Concrete Wall",
+
+  "block.varan-deco.checkered_brown_concrete_stairs": "Checkered Brown Concrete Stairs",
+  "block.varan-deco.checkered_brown_concrete_slab": "Checkered Brown Concrete Slab",
+  "block.varan-deco.checkered_brown_concrete_wall": "Checkered Brown Concrete Wall",
+
+  "block.varan-deco.checkered_red_concrete_stairs": "Checkered Red Concrete Stairs",
+  "block.varan-deco.checkered_red_concrete_slab": "Checkered Red Concrete Slab",
+  "block.varan-deco.checkered_red_concrete_wall": "Checkered Red Concrete Wall",
+
+  "block.varan-deco.checkered_orange_concrete_stairs": "Checkered Orange Concrete Stairs",
+  "block.varan-deco.checkered_orange_concrete_slab": "Checkered Orange Concrete Slab",
+  "block.varan-deco.checkered_orange_concrete_wall": "Checkered Orange Concrete Wall",
+
+  "block.varan-deco.checkered_yellow_concrete_stairs": "Checkered Yellow Concrete Stairs",
+  "block.varan-deco.checkered_yellow_concrete_slab": "Checkered Yellow Concrete Slab",
+  "block.varan-deco.checkered_yellow_concrete_wall": "Checkered Yellow Concrete Wall",
+
+  "block.varan-deco.checkered_lime_concrete_stairs": "Checkered Lime Concrete Stairs",
+  "block.varan-deco.checkered_lime_concrete_slab": "Checkered Lime Concrete Slab",
+  "block.varan-deco.checkered_lime_concrete_wall": "Checkered Lime Concrete Wall",
+
+  "block.varan-deco.checkered_green_concrete_stairs": "Checkered Green Concrete Stairs",
+  "block.varan-deco.checkered_green_concrete_slab": "Checkered Green Concrete Slab",
+  "block.varan-deco.checkered_green_concrete_wall": "Checkered Green Concrete Wall",
+
+  "block.varan-deco.checkered_cyan_concrete_stairs": "Checkered Cyan Concrete Stairs",
+  "block.varan-deco.checkered_cyan_concrete_slab": "Checkered Cyan Concrete Slab",
+  "block.varan-deco.checkered_cyan_concrete_wall": "Checkered Cyan Concrete Wall",
+
+  "block.varan-deco.checkered_light_blue_concrete_stairs": "Checkered Light Blue Concrete Stairs",
+  "block.varan-deco.checkered_light_blue_concrete_slab": "Checkered Light Blue Concrete Slab",
+  "block.varan-deco.checkered_light_blue_concrete_wall": "Checkered Light Blue Concrete Wall",
+
+  "block.varan-deco.checkered_blue_concrete_stairs": "Checkered Blue Concrete Stairs",
+  "block.varan-deco.checkered_blue_concrete_slab": "Checkered Blue Concrete Slab",
+  "block.varan-deco.checkered_blue_concrete_wall": "Checkered Blue Concrete Wall",
+
+  "block.varan-deco.checkered_purple_concrete_stairs": "Checkered Purple Concrete Stairs",
+  "block.varan-deco.checkered_purple_concrete_slab": "Checkered Purple Concrete Slab",
+  "block.varan-deco.checkered_purple_concrete_wall": "Checkered Purple Concrete Wall",
+
+  "block.varan-deco.checkered_magenta_concrete_stairs": "Checkered Magenta Concrete Stairs",
+  "block.varan-deco.checkered_magenta_concrete_slab": "Checkered Magenta Concrete Slab",
+  "block.varan-deco.checkered_magenta_concrete_wall": "Checkered Magenta Concrete Wall",
+
+  "block.varan-deco.checkered_pink_concrete_stairs": "Checkered Pink Concrete Stairs",
+  "block.varan-deco.checkered_pink_concrete_slab": "Checkered Pink Concrete Slab",
+  "block.varan-deco.checkered_pink_concrete_wall": "Checkered Pink Concrete Wall",
+
+  "block.varan-deco.bamboo_block_stairs": "Bamboo Block Stairs",
+  "block.varan-deco.bamboo_block_slab": "Bamboo Block Slab",
+  "block.varan-deco.bamboo_block_wall": "Bamboo Block Wall",
+
+  "block.varan-deco.stripped_bamboo_stairs": "Stripped Bamboo Stairs",
+  "block.varan-deco.stripped_bamboo_slab": "Stripped Bamboo Slab",
+  "block.varan-deco.stripped_bamboo_wall": "Stripped Bamboo Wall",
 
   "block.varan-deco.cracked_tuff_brick_stairs": "Cracked Tuff Brick Stairs",
   "block.varan-deco.cracked_tuff_brick_slab": "Cracked Tuff Brick Slab",

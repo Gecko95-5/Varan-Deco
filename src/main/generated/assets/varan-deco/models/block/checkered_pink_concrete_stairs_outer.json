@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/checkered_pink_concrete",
+    "side": "varan-deco:block/checkered_pink_concrete",
+    "top": "varan-deco:block/checkered_pink_concrete"
+  }
+}

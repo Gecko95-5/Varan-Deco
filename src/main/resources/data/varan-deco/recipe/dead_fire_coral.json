@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "coral",
   "ingredients": [
     {
       "item": "minecraft:dead_fire_coral_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "id": "minecraft:dead_fire_coral"
   }
 }

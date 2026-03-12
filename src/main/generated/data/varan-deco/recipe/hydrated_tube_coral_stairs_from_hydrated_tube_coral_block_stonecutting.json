@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:hydrated_tube_coral_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "varan-deco:hydrated_tube_coral_stairs"
+  }
+}
