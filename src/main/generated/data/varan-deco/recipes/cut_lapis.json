@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:lapis_block"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "#L",
+    "L#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:cut_lapis"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "varan-deco:block/sculk_carpet_temp"
+  }
+}
