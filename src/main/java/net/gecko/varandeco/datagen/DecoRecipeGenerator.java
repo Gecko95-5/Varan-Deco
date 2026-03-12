@@ -3611,22 +3611,51 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.ENDER_EYE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.HEART_OF_THE_SEA)));
 
-        offerReversibleCompactingRecipes(exporter,Items.BUBBLE_CORAL, Items.BUBBLE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.TUBE_CORAL, Items.TUBE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.BRAIN_CORAL, Items.BRAIN_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.FIRE_CORAL, Items.FIRE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.HORN_CORAL, Items.HORN_CORAL_BLOCK);
+        offerReversibleCompactingFourRecipes(exporter,Items.BUBBLE_CORAL, Items.BUBBLE_CORAL_BLOCK,
+                "bubble_coral_block","coral_block",
+                "bubble_coral","coral");
 
-        offerReversibleCompactingRecipes(exporter,Items.DEAD_BUBBLE_CORAL, Items.DEAD_BUBBLE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.DEAD_TUBE_CORAL, Items.DEAD_TUBE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.DEAD_BRAIN_CORAL, Items.DEAD_BRAIN_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.DEAD_FIRE_CORAL, Items.DEAD_FIRE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,Items.DEAD_HORN_CORAL, Items.DEAD_HORN_CORAL_BLOCK);
+        offerReversibleCompactingFourRecipes(exporter,Items.TUBE_CORAL, Items.TUBE_CORAL_BLOCK,
+                "tube_coral_block","coral_block",
+                "tube_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.HORN_CORAL, Items.HORN_CORAL_BLOCK,
+                "horn_coral_block","coral_block",
+                "horn_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.BRAIN_CORAL, Items.BRAIN_CORAL_BLOCK,
+                "brain_coral_block","coral_block",
+                "brain_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.FIRE_CORAL, Items.FIRE_CORAL_BLOCK,
+                "fire_coral_block","coral_block",
+                "fire_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.DEAD_BUBBLE_CORAL, Items.DEAD_BUBBLE_CORAL_BLOCK,
+                "dead_bubble_coral_block","coral_block",
+                "dead_bubble_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.DEAD_TUBE_CORAL, Items.DEAD_TUBE_CORAL_BLOCK,
+                "dead_tube_coral_block","coral_block",
+                "dead_tube_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.DEAD_HORN_CORAL, Items.DEAD_HORN_CORAL_BLOCK,
+                "dead_horn_coral_block","coral_block",
+                "dead_horn_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.DEAD_BRAIN_CORAL, Items.DEAD_BRAIN_CORAL_BLOCK,
+                "dead_brain_coral_block","coral_block",
+                "dead_brain_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,Items.DEAD_FIRE_CORAL, Items.DEAD_FIRE_CORAL_BLOCK,
+                "dead_fire_coral_block","coral_block",
+                "dead_fire_coral","coral");
 
         ShapedRecipeJsonBuilder.create(Items.BUBBLE_CORAL)
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.BUBBLE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.BUBBLE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.BUBBLE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("bubble_coral_from_fan"));
@@ -3634,6 +3663,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.TUBE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.TUBE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.TUBE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("tube_coral_from_fan"));
@@ -3641,6 +3671,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.BRAIN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.BRAIN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.BRAIN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("brain_coral_from_fan"));
@@ -3648,6 +3679,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.FIRE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.FIRE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.FIRE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("fire_coral_from_fan"));
@@ -3655,6 +3687,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.HORN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.HORN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.HORN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("horn_coral_from_fan"));
@@ -3663,6 +3696,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.DEAD_BUBBLE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.DEAD_BUBBLE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.DEAD_BUBBLE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("dead_bubble_coral_from_fan"));
@@ -3670,6 +3704,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.DEAD_TUBE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.DEAD_TUBE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.DEAD_TUBE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("dead_tube_coral_from_fan"));
@@ -3677,6 +3712,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.DEAD_BRAIN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.DEAD_BRAIN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.DEAD_BRAIN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("dead_brain_coral_from_fan"));
@@ -3684,6 +3720,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.DEAD_FIRE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.DEAD_FIRE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.DEAD_FIRE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("dead_fire_coral_from_fan"));
@@ -3691,6 +3728,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', Items.DEAD_HORN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(Items.DEAD_HORN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(Items.DEAD_HORN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("dead_horn_coral_from_fan"));
@@ -7115,11 +7153,26 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerHydratingRecipe(exporter, DecoItems.HYDRATED_FIRE_CORAL_FAN, Items.FIRE_CORAL_FAN);
         offerHydratingRecipe(exporter, DecoItems.HYDRATED_HORN_CORAL_FAN, Items.HORN_CORAL_FAN);
 
-        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_BUBBLE_CORAL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_TUBE_CORAL, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_BRAIN_CORAL, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_FIRE_CORAL, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
-        offerReversibleCompactingRecipes(exporter,DecoBlocks.HYDRATED_HORN_CORAL, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK);
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_BUBBLE_CORAL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK,
+                "hydrated_bubble_coral_block","coral_block",
+                "hydrated_bubble_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_TUBE_CORAL, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK,
+                "hydrated_tube_coral_block","coral_block",
+                "hydrated_tube_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_HORN_CORAL, DecoBlocks.HYDRATED_HORN_CORAL_BLOCK,
+                "hydrated_horn_coral_block","coral_block",
+                "hydrated_horn_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_BRAIN_CORAL, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK,
+                "hydrated_brain_coral_block","coral_block",
+                "hydrated_brain_coral","coral");
+
+        offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_FIRE_CORAL, DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK,
+                "hydrated_fire_coral_block","coral_block",
+                "hydrated_fire_coral","coral");
+
 
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK, Items.TUBE_CORAL_BLOCK);
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK, Items.BRAIN_CORAL_BLOCK);
@@ -7149,6 +7202,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_BUBBLE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_BUBBLE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_BUBBLE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_bubble_coral_from_fan"));
@@ -7156,6 +7210,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_TUBE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_TUBE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_TUBE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_tube_coral_from_fan"));
@@ -7163,6 +7218,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_BRAIN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_BRAIN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_BRAIN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_brain_coral_from_fan"));
@@ -7170,6 +7226,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_FIRE_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_FIRE_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_FIRE_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_fire_coral_from_fan"));
@@ -7177,6 +7234,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("#")
                 .input('#', DecoItems.HYDRATED_HORN_CORAL_FAN)
+                .group("coral")
                 .criterion(RecipeProvider.hasItem(DecoItems.HYDRATED_HORN_CORAL_FAN),
                         RecipeProvider.conditionsFromItem(DecoItems.HYDRATED_HORN_CORAL_FAN))
                 .offerTo(exporter, new Identifier("hydrated_horn_coral_from_fan"));
@@ -7469,6 +7527,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .group("hydrating_dead_coral")
                 .criterion(RecipeProvider.hasItem(coralInput),
                         RecipeProvider.conditionsFromItem(coralInput))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)+ "from_hydrating"));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)+ "_from_hydrating"));
     }
 }

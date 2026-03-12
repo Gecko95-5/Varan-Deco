@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "coral",
   "ingredients": [
     {
       "item": "varan-deco:hydrated_tube_coral_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "varan-deco:hydrated_tube_coral"
   }
 }
