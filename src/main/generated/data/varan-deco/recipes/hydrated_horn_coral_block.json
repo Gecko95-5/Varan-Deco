@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "coral_block",
   "key": {
     "#": {
       "item": "varan-deco:hydrated_horn_coral"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "item": "varan-deco:hydrated_horn_coral_block"
