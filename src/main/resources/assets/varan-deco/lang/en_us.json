@@ -1322,8 +1322,8 @@
   "block.minecraft.puffy_dandelion": "Puffy Dandelion",
   "block.minecraft.potted_puffy_dandelion": "Potted Puffy Dandelion",
 
-  "block.minecraft.california_poppy": "California Poppy",
-  "block.minecraft.potted_california_poppy": "Potted California Poppy",
+  "block.minecraft.california_poppy": "Sunny Poppy",
+  "block.minecraft.potted_california_poppy": "Potted Sunny Poppy",
   "block.minecraft.salmon_poppy": "Salmon Poppy",
   "block.minecraft.potted_salmon_poppy": "Potted Salmon Poppy",
 
@@ -1377,6 +1377,154 @@
 
   "block.minecraft.drill_lavender": "Drill Lavender",
   "block.minecraft.potted_drill_lavender": "Potted Drill Lavender",
+
+  "block.minecraft.iris": "Iris",
+  "block.minecraft.potted_iris": "Potted Iris",
+
+  "block.minecraft.felicia_daisy": "Felicia Daisy",
+  "block.minecraft.potted_felicia_daisy": "Potted Felicia Daisy",
+
+  "block.minecraft.cyan_orchid": "Cyan Orchid",
+  "block.minecraft.potted_cyan_orchid": "Potted Cyan Orchid",
+
+  "block.minecraft.blue_delphinium": "Blue Delphinium",
+  "block.minecraft.potted_blue_delphinium": "Potted Blue Delphinium",
+
+  "block.minecraft.mega_brown_tulip": "Brown Mega Tulip",
+
+  "block.minecraft.jack_o_soul_lantern": "Jack-O-Soul Lantern",
+
+  "block.minecraft.casted_iron": "Casted Iron",
+  "block.minecraft.casted_iron_stairs": "Casted Iron Stairs",
+  "block.minecraft.casted_iron_slab": "Casted Iron Slab",
+
+  "block.minecraft.nether_brick_pillar": "Nether Brick Pillar",
+  "block.minecraft.red_nether_brick_pillar": "Red Nether Brick Pillar",
+  "block.minecraft.blue_nether_brick_pillar": "Blue Nether Brick Pillar",
+
+  "block.minecraft.dripstone_bricks": "Dripstone Bricks",
+  "block.minecraft.dripstone_brick_stairs": "Dripstone Brick Stairs",
+  "block.minecraft.dripstone_brick_slab": "Dripstone Brick Slab",
+  "block.minecraft.dripstone_brick_wall": "Dripstone Brick Wall",
+
+  "block.minecraft.dripstone_brick_pillar": "Dripstone Brick Pillar",
+  "block.minecraft.dripstone_brick_pillar_stairs": "Dripstone Brick Pillar Stairs",
+  "block.minecraft.dripstone_brick_pillar_slab": "Dripstone Brick Pillar Slab",
+  "block.minecraft.dripstone_brick_pillar_wall": "Dripstone Brick Pillar Wall",
+
+  "block.minecraft.void_stone_brick_pillar": "Void Stone Brick Pillar",
+  "block.minecraft.void_stone_brick_pillar_stairs": "Void Stone Brick Pillar Stairs",
+  "block.minecraft.void_stone_brick_pillar_slab": "Void Stone Brick Pillar Slab",
+  "block.minecraft.void_stone_brick_pillar_wall": "Void Stone Brick Pillar Wall",
+
+  "block.minecraft.chiseled_dripstone": "Chiseled Dripstone",
+
+  "block.minecraft.tube_coral_stairs": "Tube Coral Stairs",
+  "block.minecraft.tube_coral_slab": "Tube Coral Slab",
+  "block.minecraft.tube_coral_wall": "Tube Coral Wall",
+
+  "block.minecraft.brain_coral_stairs": "Brain Coral Stairs",
+  "block.minecraft.brain_coral_slab": "Brain Coral Slab",
+  "block.minecraft.brain_coral_wall": "Brain Coral Wall",
+
+  "block.minecraft.bubble_coral_stairs": "Bubble Coral Stairs",
+  "block.minecraft.bubble_coral_slab": "Bubble Coral Slab",
+  "block.minecraft.bubble_coral_wall": "Bubble Coral Wall",
+
+  "block.minecraft.fire_coral_stairs": "Fire Coral Stairs",
+  "block.minecraft.fire_coral_slab": "Fire Coral Slab",
+  "block.minecraft.fire_coral_wall": "Fire Coral Wall",
+
+  "block.minecraft.horn_coral_stairs": "Horn Coral Stairs",
+  "block.minecraft.horn_coral_slab": "Horn Coral Slab",
+  "block.minecraft.horn_coral_wall": "Horn Coral Wall",
+
+  "block.minecraft.dead_tube_coral_stairs": "Dead Tube Coral Stairs",
+  "block.minecraft.dead_tube_coral_slab": "Dead Tube Coral Slab",
+  "block.minecraft.dead_tube_coral_wall": "Dead Tube Coral Wall",
+
+  "block.minecraft.dead_brain_coral_stairs": "Dead Brain Coral Stairs",
+  "block.minecraft.dead_brain_coral_slab": "Dead Brain Coral Slab",
+  "block.minecraft.dead_brain_coral_wall": "Dead Brain Coral Wall",
+
+  "block.minecraft.dead_bubble_coral_stairs": "Dead Bubble Coral Stairs",
+  "block.minecraft.dead_bubble_coral_slab": "Dead Bubble Coral Slab",
+  "block.minecraft.dead_bubble_coral_wall": "Dead Bubble Coral Wall",
+
+  "block.minecraft.dead_fire_coral_stairs": "Dead Fire Coral Stairs",
+  "block.minecraft.dead_fire_coral_slab": "Dead Fire Coral Slab",
+  "block.minecraft.dead_fire_coral_wall": "Dead Fire Coral Wall",
+
+  "block.minecraft.dead_horn_coral_stairs": "Dead Horn Coral Stairs",
+  "block.minecraft.dead_horn_coral_slab": "Dead Horn Coral Slab",
+  "block.minecraft.dead_horn_coral_wall": "Dead Horn Coral Wall",
+
+  "block.minecraft.hydrated_tube_coral": "Hydrated Tube Coral",
+  "block.minecraft.hydrated_brain_coral": "Hydrated Brain Coral",
+  "block.minecraft.hydrated_bubble_coral": "Hydrated Bubble Coral",
+  "block.minecraft.hydrated_fire_coral": "Hydrated Fire Coral",
+  "block.minecraft.hydrated_horn_coral": "Hydrated Horn Coral",
+
+  "block.minecraft.hydrated_tube_coral_fan": "Hydrated Tube Coral Fan",
+  "block.minecraft.hydrated_brain_coral_fan": "Hydrated Brain Coral Fan",
+  "block.minecraft.hydrated_bubble_coral_fan": "Hydrated Bubble Coral Fan",
+  "block.minecraft.hydrated_fire_coral_fan": "Hydrated Fire Coral Fan",
+  "block.minecraft.hydrated_horn_coral_fan": "Hydrated Horn Coral Fan",
+
+  "item.minecraft.hydrated_tube_coral_fan": "Hydrated Tube Coral Fan",
+  "item.minecraft.hydrated_brain_coral_fan": "Hydrated Brain Coral Fan",
+  "item.minecraft.hydrated_bubble_coral_fan": "Hydrated Bubble Coral Fan",
+  "item.minecraft.hydrated_fire_coral_fan": "Hydrated Fire Coral Fan",
+  "item.minecraft.hydrated_horn_coral_fan": "Hydrated Horn Coral Fan",
+
+  "block.minecraft.hydrated_tube_coral_wall_fan": "Hydrated Tube Coral Wall Fan",
+  "block.minecraft.hydrated_brain_coral_wall_fan": "Hydrated Brain Coral Wall Fan",
+  "block.minecraft.hydrated_bubble_coral_wall_fan": "Hydrated Bubble Coral Wall Fan",
+  "block.minecraft.hydrated_fire_coral_wall_fan": "Hydrated Fire Coral Wall Fan",
+  "block.minecraft.hydrated_horn_coral_wall_fan": "Hydrated Horn Coral Wall Fan",
+
+  "block.minecraft.hydrated_tube_coral_block": "Hydrated Tube Coral Block",
+  "block.minecraft.hydrated_brain_coral_block": "Hydrated Brain Coral Block",
+  "block.minecraft.hydrated_bubble_coral_block": "Hydrated Bubble Coral Block",
+  "block.minecraft.hydrated_fire_coral_block": "Hydrated Fire Coral Block",
+  "block.minecraft.hydrated_horn_coral_block": "Hydrated Horn Coral Block",
+
+  "block.minecraft.hydrated_tube_coral_stairs": "Hydrated Tube Coral Stairs",
+  "block.minecraft.hydrated_tube_coral_slab": "Hydrated Tube Coral Slab",
+  "block.minecraft.hydrated_tube_coral_wall": "Hydrated Tube Coral Wall",
+
+  "block.minecraft.hydrated_brain_coral_stairs": "Hydrated Brain Coral Stairs",
+  "block.minecraft.hydrated_brain_coral_slab": "Hydrated Brain Coral Slab",
+  "block.minecraft.hydrated_brain_coral_wall": "Hydrated Brain Coral Wall",
+
+  "block.minecraft.hydrated_bubble_coral_stairs": "Hydrated Bubble Coral Stairs",
+  "block.minecraft.hydrated_bubble_coral_slab": "Hydrated Bubble Coral Slab",
+  "block.minecraft.hydrated_bubble_coral_wall": "Hydrated Bubble Coral Wall",
+
+  "block.minecraft.hydrated_fire_coral_stairs": "Hydrated Fire Coral Stairs",
+  "block.minecraft.hydrated_fire_coral_slab": "Hydrated Fire Coral Slab",
+  "block.minecraft.hydrated_fire_coral_wall": "Hydrated Fire Coral Wall",
+
+  "block.minecraft.hydrated_horn_coral_stairs": "Hydrated Horn Coral Stairs",
+  "block.minecraft.hydrated_horn_coral_slab": "Hydrated Horn Coral Slab",
+  "block.minecraft.hydrated_horn_coral_wall": "Hydrated Horn Coral Wall",
+
+  "block.minecraft.hay_stairs": "Hay Stairs",
+  "block.minecraft.hay_slab": "Hay Slab",
+  "block.minecraft.hay_carpet": "Hay Carpet",
+
+  "block.minecraft.nether_wart_stairs": "Nether Wart Stairs",
+  "block.minecraft.nether_wart_slab": "Nether Wart Slab",
+  "block.minecraft.warped_wart_stairs": "Warped Wart Stairs",
+  "block.minecraft.warped_wart_slab": "Warped Wart Slab",
+
+  "block.minecraft.sculk_stairs": "Sculk Stairs",
+  "block.minecraft.sculk_slab": "Sculk Slab",
+  "block.minecraft.sculk_carpet": "Sculk Carpet",
+
+  "block.minecraft.honeycomb_stairs": "Honeycomb Stairs",
+  "block.minecraft.honeycomb_slab": "Honeycomb Slab",
+  "block.minecraft.honeycomb_wall": "Honeycomb Wall",
 
   "block.minecraft.hazzy_bluet": "Hazzy Bluet",
   "block.minecraft.potted_hazzy_bluet": "Potted Hazzy Bluet",
@@ -1548,6 +1696,20 @@
   "block.minecraft.smooth_basalt_stairs": "Smooth Basalt Stairs",
   "block.minecraft.smooth_basalt_slab": "Smooth Basalt Slab",
   "block.minecraft.smooth_basalt_wall": "Smooth Basalt Wall",
+
+  "block.minecraft.infested_mossy_deepslate_bricks": "Infested Mossy Deepslate Bricks",
+  "block.minecraft.infested_mossy_polished_blackstone_bricks": "Infested Mossy Polished Blackstone Bricks",
+
+  "block.minecraft.infested_cut_granite": "Infested Cut Granite",
+  "block.minecraft.infested_granite_bricks": "Infested Granite Bricks",
+  "block.minecraft.infested_cut_diorite": "Infested Cut Diorite",
+  "block.minecraft.infested_diorite_bricks": "Infested Diorite Bricks",
+  "block.minecraft.infested_cut_andesite": "Infested Cut Andesite",
+  "block.minecraft.infested_andesite_bricks": "Infested Andesite Bricks",
+
+  "block.minecraft.infested_polished_calcite": "Infested Polished Calcite",
+  "block.minecraft.infested_cut_calcite": "Infested Cut Calcite",
+  "block.minecraft.infested_calcite_bricks": "Infested Calcite Bricks",
 
   "block.minecraft.fragile_ice": "Fragile Ice",
 
@@ -2058,7 +2220,7 @@
   "block.minecraft.warped_nylium_slab": "Warped Nylium Slab",
 
   "block.minecraft.mycelium_stairs": "Mycelium Stairs",
-  "block.minecraft.mycelium_slab": "Mycelium Slab",
+  "block.minecraft.packed_mycelium_slab": "Mycelium Slab",
 
   "block.minecraft.moss_stairs": "Moss Stairs",
   "block.minecraft.moss_slab": "Moss Slab",
@@ -2174,6 +2336,215 @@
   "block.minecraft.cracked_tuff_brick_stairs": "Cracked Tuff Brick Stairs",
   "block.minecraft.cracked_tuff_brick_slab": "Cracked Tuff Brick Slab",
   "block.minecraft.cracked_tuff_brick_wall": "Cracked Tuff Brick Wall",
+
+  "block.minecraft.mossy_deepslate_bricks": "Mossy Deepslate Bricks",
+
+  "block.minecraft.mossy_deepslate_brick_stairs": "Mossy Deepslate Brick Stairs",
+  "block.minecraft.mossy_deepslate_brick_slab": "Mossy Deepslate Brick Slab",
+  "block.minecraft.mossy_deepslate_brick_wall": "Mossy Deepslate Brick Wall",
+
+  "block.minecraft.mossy_tuff_bricks": "Mossy Tuff Bricks",
+
+  "block.minecraft.mossy_tuff_brick_stairs": "Mossy Tuff Brick Stairs",
+  "block.minecraft.mossy_tuff_brick_slab": "Mossy Tuff Brick Slab",
+  "block.minecraft.mossy_tuff_brick_wall": "Mossy Tuff Brick Wall",
+
+  "block.minecraft.mossy_polished_blackstone_bricks": "Mossy Polished Blackstone Bricks",
+
+  "block.minecraft.mossy_polished_blackstone_brick_stairs": "Mossy Polished Blackstone Brick Stairs",
+  "block.minecraft.mossy_polished_blackstone_brick_slab": "Mossy Polished Blackstone Brick Slab",
+  "block.minecraft.mossy_polished_blackstone_brick_wall": "Mossy Polished Blackstone Brick Wall",
+
+  "block.minecraft.mossy_end_stone_bricks": "Mossy End Stone Bricks",
+
+  "block.minecraft.mossy_end_stone_brick_stairs": "Mossy End Stone Brick Stairs",
+  "block.minecraft.mossy_end_stone_brick_slab": "Mossy End Stone Brick Slab",
+  "block.minecraft.mossy_end_stone_brick_wall": "Mossy End Stone Brick Wall",
+
+  "block.minecraft.lapis_stairs": "Lapis Lazuli Stairs",
+  "block.minecraft.lapis_slab": "Lapis Lazuli Slab",
+  "block.minecraft.lapis_wall": "Lapis Lazuli Wall",
+
+  "block.minecraft.lapis_bricks": "Lapis Lazuli Bricks",
+
+  "block.minecraft.lapis_brick_stairs": "Lapis Lazuli Brick Stairs",
+  "block.minecraft.lapis_brick_slab": "Lapis Lazuli Brick Slab",
+  "block.minecraft.lapis_brick_wall": "Lapis Lazuli Brick Wall",
+
+  "block.minecraft.cut_lapis": "Cut Lapis Lazuli",
+
+  "block.minecraft.cut_lapis_stairs": "Cut Lapis Lazuli Stairs",
+  "block.minecraft.cut_lapis_slab": "Cut Lapis Lazuli Slab",
+  "block.minecraft.cut_lapis_wall": "Cut Lapis Lazuli Wall",
+
+  "block.minecraft.smooth_lapis": "Smooth Lapis Lazuli",
+
+  "block.minecraft.smooth_lapis_stairs": "Smooth Lapis Lazuli Stairs",
+  "block.minecraft.smooth_lapis_slab": "Smooth Lapis Lazuli Slab",
+  "block.minecraft.smooth_lapis_wall": "Smooth Lapis Lazuli Wall",
+
+  "block.minecraft.chiseled_lapis": "Chiseled Lapis Lazuli",
+  "block.minecraft.lapis_pillar": "Lapis Lazuli Pillar",
+
+  "block.minecraft.duel_cut_light_gray_concrete": "Duel Cut Light Gray Concrete",
+  "block.minecraft.duel_cut_gray_concrete": "Duel Cut Gray Concrete",
+  "block.minecraft.duel_cut_black_concrete": "Duel Cut Black Concrete",
+  "block.minecraft.duel_cut_brown_concrete": "Duel Cut Brown Concrete",
+  "block.minecraft.duel_cut_red_concrete": "Duel Cut Red Concrete",
+  "block.minecraft.duel_cut_orange_concrete": "Duel Cut Orange Concrete",
+  "block.minecraft.duel_cut_yellow_concrete": "Duel Cut Yellow Concrete",
+  "block.minecraft.duel_cut_lime_concrete": "Duel Cut Lime Concrete",
+  "block.minecraft.duel_cut_green_concrete": "Duel Cut Green Concrete",
+  "block.minecraft.duel_cut_cyan_concrete": "Duel Cut Cyan Concrete",
+  "block.minecraft.duel_cut_light_blue_concrete": "Duel Cut Light Blue Concrete",
+  "block.minecraft.duel_cut_blue_concrete": "Duel Cut Blue Concrete",
+  "block.minecraft.duel_cut_purple_concrete": "Duel Cut Purple Concrete",
+  "block.minecraft.duel_cut_magenta_concrete": "Duel Cut Magenta Concrete",
+  "block.minecraft.duel_cut_pink_concrete": "Duel Cut Pink Concrete",
+
+  "block.minecraft.duel_cut_light_gray_concrete_stairs": "Duel Cut Light Gray Concrete Stairs",
+  "block.minecraft.duel_cut_light_gray_concrete_slab": "Duel Cut Light Gray Concrete Slab",
+  "block.minecraft.duel_cut_light_gray_concrete_wall": "Duel Cut Light Gray Concrete Wall",
+
+  "block.minecraft.duel_cut_gray_concrete_stairs": "Duel Cut Gray Concrete Stairs",
+  "block.minecraft.duel_cut_gray_concrete_slab": "Duel Cut Gray Concrete Slab",
+  "block.minecraft.duel_cut_gray_concrete_wall": "Duel Cut Gray Concrete Wall",
+
+  "block.minecraft.duel_cut_black_concrete_stairs": "Duel Cut Black Concrete Stairs",
+  "block.minecraft.duel_cut_black_concrete_slab": "Duel Cut Black Concrete Slab",
+  "block.minecraft.duel_cut_black_concrete_wall": "Duel Cut Black Concrete Wall",
+
+  "block.minecraft.duel_cut_brown_concrete_stairs": "Duel Cut Brown Concrete Stairs",
+  "block.minecraft.duel_cut_brown_concrete_slab": "Duel Cut Brown Concrete Slab",
+  "block.minecraft.duel_cut_brown_concrete_wall": "Duel Cut Brown Concrete Wall",
+
+  "block.minecraft.duel_cut_red_concrete_stairs": "Duel Cut Red Concrete Stairs",
+  "block.minecraft.duel_cut_red_concrete_slab": "Duel Cut Red Concrete Slab",
+  "block.minecraft.duel_cut_red_concrete_wall": "Duel Cut Red Concrete Wall",
+
+  "block.minecraft.duel_cut_orange_concrete_stairs": "Duel Cut Orange Concrete Stairs",
+  "block.minecraft.duel_cut_orange_concrete_slab": "Duel Cut Orange Concrete Slab",
+  "block.minecraft.duel_cut_orange_concrete_wall": "Duel Cut Orange Concrete Wall",
+
+  "block.minecraft.duel_cut_yellow_concrete_stairs": "Duel Cut Yellow Concrete Stairs",
+  "block.minecraft.duel_cut_yellow_concrete_slab": "Duel Cut Yellow Concrete Slab",
+  "block.minecraft.duel_cut_yellow_concrete_wall": "Duel Cut Yellow Concrete Wall",
+
+  "block.minecraft.duel_cut_lime_concrete_stairs": "Duel Cut Lime Concrete Stairs",
+  "block.minecraft.duel_cut_lime_concrete_slab": "Duel Cut Lime Concrete Slab",
+  "block.minecraft.duel_cut_lime_concrete_wall": "Duel Cut Lime Concrete Wall",
+
+  "block.minecraft.duel_cut_green_concrete_stairs": "Duel Cut Green Concrete Stairs",
+  "block.minecraft.duel_cut_green_concrete_slab": "Duel Cut Green Concrete Slab",
+  "block.minecraft.duel_cut_green_concrete_wall": "Duel Cut Green Concrete Wall",
+
+  "block.minecraft.duel_cut_cyan_concrete_stairs": "Duel Cut Cyan Concrete Stairs",
+  "block.minecraft.duel_cut_cyan_concrete_slab": "Duel Cut Cyan Concrete Slab",
+  "block.minecraft.duel_cut_cyan_concrete_wall": "Duel Cut Cyan Concrete Wall",
+
+  "block.minecraft.duel_cut_light_blue_concrete_stairs": "Duel Cut Light Blue Concrete Stairs",
+  "block.minecraft.duel_cut_light_blue_concrete_slab": "Duel Cut Light Blue Concrete Slab",
+  "block.minecraft.duel_cut_light_blue_concrete_wall": "Duel Cut Light Blue Concrete Wall",
+
+  "block.minecraft.duel_cut_blue_concrete_stairs": "Duel Cut Blue Concrete Stairs",
+  "block.minecraft.duel_cut_blue_concrete_slab": "Duel Cut Blue Concrete Slab",
+  "block.minecraft.duel_cut_blue_concrete_wall": "Duel Cut Blue Concrete Wall",
+
+  "block.minecraft.duel_cut_purple_concrete_stairs": "Duel Cut Purple Concrete Stairs",
+  "block.minecraft.duel_cut_purple_concrete_slab": "Duel Cut Purple Concrete Slab",
+  "block.minecraft.duel_cut_purple_concrete_wall": "Duel Cut Purple Concrete Wall",
+
+  "block.minecraft.duel_cut_magenta_concrete_stairs": "Duel Cut Magenta Concrete Stairs",
+  "block.minecraft.duel_cut_magenta_concrete_slab": "Duel Cut Magenta Concrete Slab",
+  "block.minecraft.duel_cut_magenta_concrete_wall": "Duel Cut Magenta Concrete Wall",
+
+  "block.minecraft.duel_cut_pink_concrete_stairs": "Duel Cut Pink Concrete Stairs",
+  "block.minecraft.duel_cut_pink_concrete_slab": "Duel Cut Pink Concrete Slab",
+  "block.minecraft.duel_cut_pink_concrete_wall": "Duel Cut Pink Concrete Wall",
+
+  "block.minecraft.checkered_light_gray_concrete": "Checkered Light Gray Concrete",
+  "block.minecraft.checkered_gray_concrete": "Checkered Gray Concrete",
+  "block.minecraft.checkered_black_concrete": "Checkered Black Concrete",
+  "block.minecraft.checkered_brown_concrete": "Checkered Brown Concrete",
+  "block.minecraft.checkered_red_concrete": "Checkered Red Concrete",
+  "block.minecraft.checkered_orange_concrete": "Checkered Orange Concrete",
+  "block.minecraft.checkered_yellow_concrete": "Checkered Yellow Concrete",
+  "block.minecraft.checkered_lime_concrete": "Checkered Lime Concrete",
+  "block.minecraft.checkered_green_concrete": "Checkered Green Concrete",
+  "block.minecraft.checkered_cyan_concrete": "Checkered Cyan Concrete",
+  "block.minecraft.checkered_light_blue_concrete": "Checkered Light Blue Concrete",
+  "block.minecraft.checkered_blue_concrete": "Checkered Blue Concrete",
+  "block.minecraft.checkered_purple_concrete": "Checkered Purple Concrete",
+  "block.minecraft.checkered_magenta_concrete": "Checkered Magenta Concrete",
+  "block.minecraft.checkered_pink_concrete": "Checkered Pink Concrete",
+
+  "block.minecraft.checkered_light_gray_concrete_stairs": "Checkered Light Gray Concrete Stairs",
+  "block.minecraft.checkered_light_gray_concrete_slab": "Checkered Light Gray Concrete Slab",
+  "block.minecraft.checkered_light_gray_concrete_wall": "Checkered Light Gray Concrete Wall",
+
+  "block.minecraft.checkered_gray_concrete_stairs": "Checkered Gray Concrete Stairs",
+  "block.minecraft.checkered_gray_concrete_slab": "Checkered Gray Concrete Slab",
+  "block.minecraft.checkered_gray_concrete_wall": "Checkered Gray Concrete Wall",
+
+  "block.minecraft.checkered_black_concrete_stairs": "Checkered Black Concrete Stairs",
+  "block.minecraft.checkered_black_concrete_slab": "Checkered Black Concrete Slab",
+  "block.minecraft.checkered_black_concrete_wall": "Checkered Black Concrete Wall",
+
+  "block.minecraft.checkered_brown_concrete_stairs": "Checkered Brown Concrete Stairs",
+  "block.minecraft.checkered_brown_concrete_slab": "Checkered Brown Concrete Slab",
+  "block.minecraft.checkered_brown_concrete_wall": "Checkered Brown Concrete Wall",
+
+  "block.minecraft.checkered_red_concrete_stairs": "Checkered Red Concrete Stairs",
+  "block.minecraft.checkered_red_concrete_slab": "Checkered Red Concrete Slab",
+  "block.minecraft.checkered_red_concrete_wall": "Checkered Red Concrete Wall",
+
+  "block.minecraft.checkered_orange_concrete_stairs": "Checkered Orange Concrete Stairs",
+  "block.minecraft.checkered_orange_concrete_slab": "Checkered Orange Concrete Slab",
+  "block.minecraft.checkered_orange_concrete_wall": "Checkered Orange Concrete Wall",
+
+  "block.minecraft.checkered_yellow_concrete_stairs": "Checkered Yellow Concrete Stairs",
+  "block.minecraft.checkered_yellow_concrete_slab": "Checkered Yellow Concrete Slab",
+  "block.minecraft.checkered_yellow_concrete_wall": "Checkered Yellow Concrete Wall",
+
+  "block.minecraft.checkered_lime_concrete_stairs": "Checkered Lime Concrete Stairs",
+  "block.minecraft.checkered_lime_concrete_slab": "Checkered Lime Concrete Slab",
+  "block.minecraft.checkered_lime_concrete_wall": "Checkered Lime Concrete Wall",
+
+  "block.minecraft.checkered_green_concrete_stairs": "Checkered Green Concrete Stairs",
+  "block.minecraft.checkered_green_concrete_slab": "Checkered Green Concrete Slab",
+  "block.minecraft.checkered_green_concrete_wall": "Checkered Green Concrete Wall",
+
+  "block.minecraft.checkered_cyan_concrete_stairs": "Checkered Cyan Concrete Stairs",
+  "block.minecraft.checkered_cyan_concrete_slab": "Checkered Cyan Concrete Slab",
+  "block.minecraft.checkered_cyan_concrete_wall": "Checkered Cyan Concrete Wall",
+
+  "block.minecraft.checkered_light_blue_concrete_stairs": "Checkered Light Blue Concrete Stairs",
+  "block.minecraft.checkered_light_blue_concrete_slab": "Checkered Light Blue Concrete Slab",
+  "block.minecraft.checkered_light_blue_concrete_wall": "Checkered Light Blue Concrete Wall",
+
+  "block.minecraft.checkered_blue_concrete_stairs": "Checkered Blue Concrete Stairs",
+  "block.minecraft.checkered_blue_concrete_slab": "Checkered Blue Concrete Slab",
+  "block.minecraft.checkered_blue_concrete_wall": "Checkered Blue Concrete Wall",
+
+  "block.minecraft.checkered_purple_concrete_stairs": "Checkered Purple Concrete Stairs",
+  "block.minecraft.checkered_purple_concrete_slab": "Checkered Purple Concrete Slab",
+  "block.minecraft.checkered_purple_concrete_wall": "Checkered Purple Concrete Wall",
+
+  "block.minecraft.checkered_magenta_concrete_stairs": "Checkered Magenta Concrete Stairs",
+  "block.minecraft.checkered_magenta_concrete_slab": "Checkered Magenta Concrete Slab",
+  "block.minecraft.checkered_magenta_concrete_wall": "Checkered Magenta Concrete Wall",
+
+  "block.minecraft.checkered_pink_concrete_stairs": "Checkered Pink Concrete Stairs",
+  "block.minecraft.checkered_pink_concrete_slab": "Checkered Pink Concrete Slab",
+  "block.minecraft.checkered_pink_concrete_wall": "Checkered Pink Concrete Wall",
+
+  "block.minecraft.bamboo_block_stairs": "Bamboo Block Stairs",
+  "block.minecraft.bamboo_block_slab": "Bamboo Block Slab",
+  "block.minecraft.bamboo_block_wall": "Bamboo Block Wall",
+
+  "block.minecraft.stripped_bamboo_stairs": "Stripped Bamboo Stairs",
+  "block.minecraft.stripped_bamboo_slab": "Stripped Bamboo Slab",
+  "block.minecraft.stripped_bamboo_wall": "Stripped Bamboo Wall",
 
   "block.minecraft.cracked_tuff_tile_stairs": "Cracked Tuff Tile Stairs",
   "block.minecraft.cracked_tuff_tile_slab": "Cracked Tuff Tile Slab",

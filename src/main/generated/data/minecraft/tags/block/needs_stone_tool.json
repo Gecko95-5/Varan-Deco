@@ -56,6 +56,23 @@
     "minecraft:waxed_copper_ladder",
     "minecraft:waxed_exposed_copper_ladder",
     "minecraft:waxed_weathered_copper_ladder",
-    "minecraft:waxed_oxidized_copper_ladder"
+    "minecraft:waxed_oxidized_copper_ladder",
+    "minecraft:lapis_pillar",
+    "minecraft:chiseled_lapis",
+    "minecraft:lapis_bricks",
+    "minecraft:cut_lapis",
+    "minecraft:smooth_lapis",
+    "minecraft:lapis_stairs",
+    "minecraft:lapis_brick_stairs",
+    "minecraft:cut_lapis_stairs",
+    "minecraft:smooth_lapis_stairs",
+    "minecraft:lapis_slab",
+    "minecraft:lapis_brick_slab",
+    "minecraft:cut_lapis_slab",
+    "minecraft:smooth_lapis_slab",
+    "minecraft:lapis_wall",
+    "minecraft:lapis_brick_wall",
+    "minecraft:cut_lapis_wall",
+    "minecraft:smooth_lapis_wall"
   ]
 }
