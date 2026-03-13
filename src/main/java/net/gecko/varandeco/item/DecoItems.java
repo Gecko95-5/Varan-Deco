@@ -75,6 +75,11 @@ public class DecoItems {
     }
 
     public static void addItemsToItemGroups() {
+        addToItemGroup(DecoItemGroup.VARAN_DECO, HYDRATED_TUBE_CORAL_FAN);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, HYDRATED_BRAIN_CORAL_FAN);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, HYDRATED_BUBBLE_CORAL_FAN);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, HYDRATED_FIRE_CORAL_FAN);
+        addToItemGroup(DecoItemGroup.VARAN_DECO, HYDRATED_HORN_CORAL_FAN);
         addToItemGroup(DecoItemGroup.VARAN_DECO, CACTUS_SIGN);
         addToItemGroup(DecoItemGroup.VARAN_DECO, MUSHROOM_SIGN);
         addToItemGroup(DecoItemGroup.VARAN_DECO, WOODEN_SIGN);

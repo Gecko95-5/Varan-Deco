@@ -1,4 +1,4 @@
-// 1.19.3	2026-03-12T16:07:34.6150686	Variant Decoration/Tags for minecraft:item
+// 1.19.3	2026-03-12T22:11:38.3041823	Variant Decoration/Tags for minecraft:item
 3059f1a0bd4a4d7abca7c2d573f888a8e9b65e51 data\minecraft\tags\items\wooden_doors.json
 b1600cf8e3211a9529ca16289fb835b0dd74b45f data\minecraft\tags\items\wooden_slabs.json
 9a82a2a79373742a46dc771c676c0fba26c0b4a5 data\varan-deco\tags\items\wooden_barrels.json
@@ -6,8 +6,8 @@ d84294cbcf63c62ad02acdeb1d2e5789cdc3b169 data\varan-deco\tags\items\deco_barrels
 98cd58849cbd16789829c7438fc3d6eca79f8c71 data\varan-deco\tags\items\soul_ground_blocks.json
 80f7ecbb5778c8b0cc624eb7d99e5dadfb31bba8 data\minecraft\tags\items\planks.json
 7925d9e8fb44cb97b888efe7f6d3bce20b7faae3 data\minecraft\tags\items\stone_tool_materials.json
-bc3c00e25c3517e4af9143ef47a4cd4fd19644f1 data\minecraft\tags\items\wooden_stairs.json
 609a8ec3ee745a73274e550f2d43a11b91f82ba8 data\minecraft\tags\items\wooden_buttons.json
+bc3c00e25c3517e4af9143ef47a4cd4fd19644f1 data\minecraft\tags\items\wooden_stairs.json
 863d9e314bb957a6153a8d7e038716749b4a48f6 data\minecraft\tags\items\logs_that_burn.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\items\leaves.json
 2474f4ee11736c5aba7340744dfb686bf962c65b data\varan-deco\tags\items\deco_cartography_tables.json
