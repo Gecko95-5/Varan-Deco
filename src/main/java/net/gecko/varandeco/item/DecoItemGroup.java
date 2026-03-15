@@ -1358,7 +1358,6 @@ public class DecoItemGroup {
                         entries.add(DecoBlocks.ROSE.asItem());
                         entries.add(DecoBlocks.ENDER_ROSE.asItem());
                         entries.add(DecoBlocks.ANCIENT_ROSE.asItem());
-                        entries.add(DecoItems.TALL_SEAGRASS.asItem());
                         entries.add(DecoBlocks.RED_SUNFLOWER.asItem());
                         entries.add(DecoBlocks.NOVA_STARFLOWER.asItem());
                         entries.add(DecoBlocks.WITHER_ROSE_BUSH.asItem());
