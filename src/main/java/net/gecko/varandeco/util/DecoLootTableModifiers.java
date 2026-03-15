@@ -2,6 +2,7 @@ package net.gecko.varandeco.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.gecko.varandeco.item.DecoItems;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -19,6 +20,10 @@ public class DecoLootTableModifiers {
             new Identifier("minecraft", "entities/enderman");
     private static final Identifier FORTRESS_ID =
             new Identifier("minecraft", "chests/nether_bridge");
+    private static final Identifier SHIPWRECK_SP_ID =
+            new Identifier("minecraft", "chests/shipwreck_supply");
+    private static final Identifier SHIPWRECK_TR_ID =
+            new Identifier("minecraft", "chests/shipwreck_treasure");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -37,6 +42,25 @@ public class DecoLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.5f))
                         .with(ItemEntry.builder(DecoItems.BUBBLE_ORB))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (SHIPWRECK_TR_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(UniformLootNumberProvider.create(2.0f, 3.0f))
+                        .with(ItemEntry.builder(DecoItems.BUBBLE_ORB))
+                        .with(ItemEntry.builder(Items.PRISMARINE_SHARD))
+                        .with(ItemEntry.builder(Items.PRISMARINE_CRYSTALS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0f, 2.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (SHIPWRECK_SP_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(UniformLootNumberProvider.create(2.0f, 4.0f))
+                        .with(ItemEntry.builder(DecoItems.TALL_SEAGRASS))
+                        .with(ItemEntry.builder(Items.SEAGRASS))
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
