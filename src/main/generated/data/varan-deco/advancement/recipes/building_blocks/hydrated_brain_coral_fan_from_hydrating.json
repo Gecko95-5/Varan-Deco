@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_brain_coral": {
+    "has_brain_coral_fan": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:brain_coral"
+            "items": "minecraft:brain_coral_fan"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_brain_coral"
+      "has_brain_coral_fan"
     ]
   ],
   "rewards": {

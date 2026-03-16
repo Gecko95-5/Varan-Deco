@@ -3,7 +3,7 @@
   "category": "building",
   "group": "hydrating_coral",
   "ingredients": [
-    "minecraft:bubble_coral",
+    "minecraft:bubble_coral_fan",
     "minecraft:bubble_orb"
   ],
   "result": {
