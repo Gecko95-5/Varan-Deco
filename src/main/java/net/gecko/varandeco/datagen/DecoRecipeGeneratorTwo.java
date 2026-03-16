@@ -3896,11 +3896,11 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_FIRE_CORAL, Items.FIRE_CORAL);
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_HORN_CORAL, Items.HORN_CORAL);
 
-        offerHydratingRecipe(exporter, DecoItems.HYDRATED_TUBE_CORAL_FAN, Items.TUBE_CORAL);
-        offerHydratingRecipe(exporter, DecoItems.HYDRATED_BRAIN_CORAL_FAN, Items.BRAIN_CORAL);
-        offerHydratingRecipe(exporter, DecoItems.HYDRATED_BUBBLE_CORAL_FAN, Items.BUBBLE_CORAL);
-        offerHydratingRecipe(exporter, DecoItems.HYDRATED_FIRE_CORAL_FAN, Items.FIRE_CORAL);
-        offerHydratingRecipe(exporter, DecoItems.HYDRATED_HORN_CORAL_FAN, Items.HORN_CORAL);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_TUBE_CORAL_FAN, Items.TUBE_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_BRAIN_CORAL_FAN, Items.BRAIN_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_BUBBLE_CORAL_FAN, Items.BUBBLE_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_FIRE_CORAL_FAN, Items.FIRE_CORAL_FAN);
+        offerHydratingRecipe(exporter, DecoItems.HYDRATED_HORN_CORAL_FAN, Items.HORN_CORAL_FAN);
 
         offerReversibleCompactingFourRecipes(exporter,DecoBlocks.HYDRATED_BUBBLE_CORAL, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK,
                 "hydrated_bubble_coral_block","coral_block",

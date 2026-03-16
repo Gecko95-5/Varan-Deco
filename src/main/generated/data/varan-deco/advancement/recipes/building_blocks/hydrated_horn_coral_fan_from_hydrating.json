@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_horn_coral": {
+    "has_horn_coral_fan": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:horn_coral"
+            "items": "minecraft:horn_coral_fan"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_horn_coral"
+      "has_horn_coral_fan"
     ]
   ],
   "rewards": {

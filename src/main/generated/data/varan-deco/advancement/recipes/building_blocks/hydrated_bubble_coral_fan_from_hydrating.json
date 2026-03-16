@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bubble_coral": {
+    "has_bubble_coral_fan": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:bubble_coral"
+            "items": "minecraft:bubble_coral_fan"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bubble_coral"
+      "has_bubble_coral_fan"
     ]
   ],
   "rewards": {
