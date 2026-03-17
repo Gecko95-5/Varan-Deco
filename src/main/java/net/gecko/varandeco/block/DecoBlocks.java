@@ -5,12 +5,12 @@ import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.nature.*;
 import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
 import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
-import net.gecko.varandeco.block.nature.underwaterwood.*;
+import net.gecko.varandeco.block.nature.underwater.*;
 import net.gecko.varandeco.block.woodmadeblocks.barrel.*;
 import net.gecko.varandeco.block.elementblocks.*;
 import net.gecko.varandeco.block.custom.*;
-import net.gecko.varandeco.block.elementblocks.*;
 import net.gecko.varandeco.block.nature.*;
+import net.gecko.varandeco.block.nature.underwater.corals.*;
 import net.gecko.varandeco.block.nature.flowers.*;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
@@ -2040,32 +2040,32 @@ public class DecoBlocks {
             DecoBlocks.DRIPSTONE_BRICK_PILLAR,DecoBlocks.DRIPSTONE_BRICK_PILLAR);
     public static final Block VOID_STONE_BRICK_PILLAR_STAIRS = registerStairs("void_stone_brick_pillar_stairs",
             DecoBlocks.DRIPSTONE_BRICK_PILLAR,DecoBlocks.DRIPSTONE_BRICK_PILLAR);
-    public static final Block TUBE_CORAL_STAIRS = registerCoralStairs("tube_coral_stairs",
-            DecoBlocks.DEAD_TUBE_CORAL_STAIRS,Blocks.TUBE_CORAL_BLOCK,Blocks.TUBE_CORAL_BLOCK);
+    public static final Block TUBE_CORAL_STAIRS = registerTubeCoralStairs("tube_coral_stairs",
+            Blocks.TUBE_CORAL_BLOCK,Blocks.TUBE_CORAL_BLOCK);
     public static final Block DEAD_TUBE_CORAL_STAIRS = registerStairs("dead_tube_coral_stairs",
             Blocks.DEAD_TUBE_CORAL_BLOCK,Blocks.DEAD_TUBE_CORAL_BLOCK);
     public static final Block HYDRATED_TUBE_CORAL_STAIRS = registerStairs("hydrated_tube_coral_stairs",
             DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK,DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK);
-    public static final Block BRAIN_CORAL_STAIRS = registerCoralStairs("brain_coral_stairs",
-            DecoBlocks.DEAD_BRAIN_CORAL_STAIRS,Blocks.BRAIN_CORAL_BLOCK,Blocks.BRAIN_CORAL_BLOCK);
+    public static final Block BRAIN_CORAL_STAIRS = registerBrainCoralStairs("brain_coral_stairs",
+            Blocks.BRAIN_CORAL_BLOCK,Blocks.BRAIN_CORAL_BLOCK);
     public static final Block DEAD_BRAIN_CORAL_STAIRS = registerStairs("dead_brain_coral_stairs",
             Blocks.DEAD_BRAIN_CORAL_BLOCK,Blocks.DEAD_BRAIN_CORAL_BLOCK);
     public static final Block HYDRATED_BRAIN_CORAL_STAIRS = registerStairs("hydrated_brain_coral_stairs",
             DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK,DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK);
-    public static final Block BUBBLE_CORAL_STAIRS = registerCoralStairs("bubble_coral_stairs",
-            DecoBlocks.DEAD_BUBBLE_CORAL_STAIRS,Blocks.BUBBLE_CORAL_BLOCK,Blocks.BUBBLE_CORAL_BLOCK);
+    public static final Block BUBBLE_CORAL_STAIRS = registerBubbleCoralStairs("bubble_coral_stairs",
+            Blocks.BUBBLE_CORAL_BLOCK,Blocks.BUBBLE_CORAL_BLOCK);
     public static final Block DEAD_BUBBLE_CORAL_STAIRS = registerStairs("dead_bubble_coral_stairs",
             Blocks.DEAD_BUBBLE_CORAL_BLOCK,Blocks.DEAD_BUBBLE_CORAL_BLOCK);
     public static final Block HYDRATED_BUBBLE_CORAL_STAIRS = registerStairs("hydrated_bubble_coral_stairs",
             DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK,DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK);
-    public static final Block FIRE_CORAL_STAIRS = registerCoralStairs("fire_coral_stairs",
-            DecoBlocks.DEAD_FIRE_CORAL_STAIRS,Blocks.FIRE_CORAL_BLOCK,Blocks.FIRE_CORAL_BLOCK);
+    public static final Block FIRE_CORAL_STAIRS = registerFireCoralStairs("fire_coral_stairs",
+            Blocks.FIRE_CORAL_BLOCK,Blocks.FIRE_CORAL_BLOCK);
     public static final Block DEAD_FIRE_CORAL_STAIRS = registerStairs("dead_fire_coral_stairs",
             Blocks.DEAD_FIRE_CORAL_BLOCK,Blocks.DEAD_FIRE_CORAL_BLOCK);
     public static final Block HYDRATED_FIRE_CORAL_STAIRS = registerStairs("hydrated_fire_coral_stairs",
             DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK,DecoBlocks.HYDRATED_FIRE_CORAL_BLOCK);
-    public static final Block HORN_CORAL_STAIRS = registerCoralStairs("horn_coral_stairs",
-            DecoBlocks.DEAD_HORN_CORAL_STAIRS,Blocks.HORN_CORAL_BLOCK,Blocks.HORN_CORAL_BLOCK);
+    public static final Block HORN_CORAL_STAIRS = registerHornCoralStairs("horn_coral_stairs",
+            Blocks.HORN_CORAL_BLOCK,Blocks.HORN_CORAL_BLOCK);
     public static final Block DEAD_HORN_CORAL_STAIRS = registerStairs("dead_horn_coral_stairs",
             Blocks.DEAD_HORN_CORAL_BLOCK,Blocks.DEAD_HORN_CORAL_BLOCK);
     public static final Block HYDRATED_HORN_CORAL_STAIRS = registerStairs("hydrated_horn_coral_stairs",
@@ -5018,8 +5018,24 @@ public class DecoBlocks {
         return registerSimple(name, new OxidizableLanternBlock(oxidationLevel,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
-    public static CoralStairBlock registerCoralStairs(String name, Block deadCoralBlock, Block block, Block copyBlock){
-        return registerSimple(name, new CoralStairBlock(deadCoralBlock, block.getDefaultState(),
+    public static TubeCoralStairBlock registerTubeCoralStairs(String name, Block block, Block copyBlock){
+        return registerSimple(name, new TubeCoralStairBlock(block.getDefaultState(),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static BrainCoralStairBlock registerBrainCoralStairs(String name, Block block, Block copyBlock){
+        return registerSimple(name, new BrainCoralStairBlock(block.getDefaultState(),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static BubbleCoralStairBlock registerBubbleCoralStairs(String name, Block block, Block copyBlock){
+        return registerSimple(name, new BubbleCoralStairBlock(block.getDefaultState(),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static FireCoralStairBlock registerFireCoralStairs(String name, Block block, Block copyBlock){
+        return registerSimple(name, new FireCoralStairBlock(block.getDefaultState(),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static HornCoralStairBlock registerHornCoralStairs(String name, Block block, Block copyBlock){
+        return registerSimple(name, new HornCoralStairBlock(block.getDefaultState(),
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static CoralSlabBlock registerCoralSlab(String name, Block deadCoralBlock, Block copyBlock){
