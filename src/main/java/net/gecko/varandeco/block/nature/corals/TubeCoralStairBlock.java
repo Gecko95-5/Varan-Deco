@@ -1,5 +1,6 @@
-package net.gecko.varandeco.block.nature;
+package net.gecko.varandeco.block.nature.corals;
 
+import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -11,20 +12,24 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 
-public class CoralStairBlock extends StairsBlock {
-    private final Block deadCoralBlock;
-    public CoralStairBlock(Block deadCoralBlock, BlockState baseBlockState, Settings settings) {
+public class TubeCoralStairBlock extends StairsBlock {
+    public TubeCoralStairBlock(BlockState baseBlockState, Settings settings) {
         super(baseBlockState, settings);
-        this.deadCoralBlock = deadCoralBlock;
     }
 
     @Override
-    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+    protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
+        this.checkLivingConditions(state, world, world, world.random, pos);
+    }
+
+    @Override
+    protected void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (!isInWater(state, world, pos)) {
-            world.setBlockState(pos, this.deadCoralBlock.getDefaultState().with(WATERLOGGED, false), Block.NOTIFY_LISTENERS);
+            world.setBlockState(pos, DecoBlocks.DEAD_TUBE_CORAL_STAIRS.getDefaultState().with(WATERLOGGED, false).with(FACING, state.get(FACING)), Block.NOTIFY_LISTENERS);
         }
     }
 

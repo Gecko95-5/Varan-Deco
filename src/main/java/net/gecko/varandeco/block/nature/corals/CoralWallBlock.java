@@ -1,9 +1,9 @@
-package net.gecko.varandeco.block.nature;
+package net.gecko.varandeco.block.nature.corals;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
@@ -11,15 +11,20 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.WorldAccess;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 
-public class CoralSlabBlock extends SlabBlock {
+public class CoralWallBlock extends WallBlock {
     private final Block deadCoralBlock;
-    public CoralSlabBlock(Block deadCoralBlock, Settings settings) {
+    public CoralWallBlock(Block deadCoralBlock, Settings settings) {
         super(settings);
         this.deadCoralBlock = deadCoralBlock;
+    }
+
+    @Override
+    protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
+        this.checkLivingConditions(state, world, world, world.random, pos);
     }
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
