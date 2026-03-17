@@ -1,4 +1,4 @@
-// 1.19.2	2026-03-12T21:57:26.3000031	Recipes
+// 1.19.2	2026-03-17T09:45:54.8662227	Recipes
 05f3ac2366c02e936a348f94fb001f7ea3daa14d data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\cobbled_red_sandstone_from_red_sandstone_stonecutting.json
 79f90a4fa3c9789e77a76f04d7ef5efe628cdea6 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\cracked_stone_tile_wall.json
 3a87b0548bea39b05d3b1b6b71ffa835025c5217 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\polished_calcite.json
@@ -1332,7 +1332,7 @@ b2673c7209d4388015312481c970ae8604175cb9 data\varan-deco\advancements\recipes\va
 cda752bc1681de32f75e8d820a0a61f98eb10ec0 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\smooth_purpur_wall_from_smooth_purpur_stonecutting.json
 44949efeeeeea48505a1a0af504f1af27818e0c6 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\oak_note_block.json
 bc2107b8707af507f5882baba79837ee11261c84 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\hydrated_fire_coral_from_hydrating.json
-309faeb4a761201e2a2984eaab5e336c46765070 data\varan-deco\recipes\rooted_dirt.json
+950ae3ed0f78b17bdf707cc3e2a6510a7918a9da data\varan-deco\recipes\rooted_dirt.json
 154734d70eef86245c7862ddf2f624172bc511a5 data\varan-deco\recipes\polished_calcite_wall.json
 6e23ef3679f15485988e17372415d2d042db4cf5 data\varan-deco\recipes\black_ice.json
 a11fa6b1ec89b5cbd9dca35535c357b7dc41500d data\varan-deco\recipes\cut_red_sandstone_brick_stairs_from_red_sandstone_stonecutting.json
