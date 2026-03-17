@@ -1,4 +1,4 @@
-// 1.20.2	2026-03-13T13:09:04.8132006	Variant Decoration/Block Loot Tables
+// 1.20.2	2026-03-17T10:28:11.4257322	Variant Decoration/Block Loot Tables
 0b9e8ba80cd1063b21e08f925987bc40f4eb2a8f data\varan-deco\loot_tables\blocks\hydrated_bubble_coral_block.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
 a16b36ff9d76cab66f165b686fb08f6be0925ad3 data\varan-deco\loot_tables\blocks\duel_cut_pink_concrete_stairs.json
@@ -402,8 +402,8 @@ a3fe15fdd671d21c1ab0ab1afda2b6d33494e683 data\varan-deco\loot_tables\blocks\duel
 a785a6ef768237378824afa7bd139335e9638465 data\varan-deco\loot_tables\blocks\copper_weight_pressure_plate.json
 a38c79c18dc332e0e0b98feafcbf26494da0ce1b data\varan-deco\loot_tables\blocks\waxed_weathered_copper_bars.json
 6a10910274caeed4e216f993e8118876d6458759 data\varan-deco\loot_tables\blocks\cloud_brick_stairs.json
-096258518c4b432fb100c2e2f3acc3fb91065964 data\varan-deco\loot_tables\blocks\cut_yellow_concrete_slab.json
 5c85d061c741f47f1f95998cf942fded7febf21f data\varan-deco\loot_tables\blocks\lapis_brick_wall.json
+096258518c4b432fb100c2e2f3acc3fb91065964 data\varan-deco\loot_tables\blocks\cut_yellow_concrete_slab.json
 edd728d89858c7e8b3ae5d8e9128a60fafbaf7f5 data\varan-deco\loot_tables\blocks\heavy_gold_bars.json
 3f7e7ff6f115719ee10aa02c9f8fd5f54ca93d25 data\varan-deco\loot_tables\blocks\bubble_wall.json
 e8c5c54d87d9114e500253dff73409142e5d1b79 data\varan-deco\loot_tables\blocks\cut_sandstone_bricks.json
@@ -562,8 +562,8 @@ f9ec8258c3f55c9545974301641121fd4d9c14ac data\varan-deco\loot_tables\blocks\dark
 57ffcae144cc72a3cebc81bc33203580db6794a8 data\varan-deco\loot_tables\blocks\crimson_smithing_table.json
 d58d6db122096ee5c4d66ad43fc259d88f823256 data\varan-deco\loot_tables\blocks\cactus_plank_stairs.json
 ac047d2826006138cb329532e55063a86f1d9fc0 data\varan-deco\loot_tables\blocks\magenta_concrete_wall.json
-5a9d2af179004d9148bc50c39b498a97bd9dddda data\varan-deco\loot_tables\blocks\blue_nether_brick_fence_gate.json
 654ceaa6a3ba27bc51b8f4445c96aea8c8dee8d6 data\varan-deco\loot_tables\blocks\iron_cap_hyphae_wall.json
+5a9d2af179004d9148bc50c39b498a97bd9dddda data\varan-deco\loot_tables\blocks\blue_nether_brick_fence_gate.json
 297ead762c98cc5b46a4b864e2114d8091c780e1 data\varan-deco\loot_tables\blocks\netherrack_brick_slab.json
 d5df299bffd45cfc51f0e857df5ef8cec2fe451f data\varan-deco\loot_tables\blocks\cut_lapis.json
 75f6e761c4cc72569df78cf8b6c2ad4093b6aeb8 data\varan-deco\loot_tables\blocks\brown_concrete_slab.json

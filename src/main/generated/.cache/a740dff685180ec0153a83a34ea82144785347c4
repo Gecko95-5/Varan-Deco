@@ -1,4 +1,4 @@
-// 1.20.2	2026-03-13T13:09:04.7363296	Variant Decoration/Tags for minecraft:block
+// 1.20.2	2026-03-17T10:28:11.2252431	Variant Decoration/Tags for minecraft:block
 39813965b994e8044a88f49eb544feb9a9aba270 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
 e4c56aa273e892661d878452d499bff029b06217 data\varan-deco\tags\blocks\deco_note_blocks.json
@@ -38,8 +38,8 @@ d6711d79ce206665219e502b165bec04844a8e87 data\minecraft\tags\blocks\walls.json
 6233edd7704b66169e6d6fc85374900bb1e4378b data\minecraft\tags\blocks\fence_gates.json
 4ae8b3bed3d1dbec70a892967fa82b53c3934c3e data\minecraft\tags\blocks\enderman_holdable.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\blocks\saplings.json
-863991d5119327165b9ef485a73073ea9a145494 data\minecraft\tags\blocks\mineable\hoe.json
 ec74cf1dcd5ca5f827a4b3aca3ea4b52e2328257 data\minecraft\tags\blocks\mineable\axe.json
+863991d5119327165b9ef485a73073ea9a145494 data\minecraft\tags\blocks\mineable\hoe.json
 de55858f598551ea44df4edc40d23a7830d0016d data\minecraft\tags\blocks\overworld_natural_logs.json
 8e9158cfbf694ebdf812a620eef5a0a87de555ae data\minecraft\tags\blocks\wool.json
 7091a3766a69796f7bd0c05df67d6ecf0c6e55ad data\varan-deco\tags\blocks\coral_walls.json

@@ -2203,7 +2203,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.ROOTED_DIRT,4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.ROOTED_DIRT,2)
                 .pattern("#M")
                 .pattern("M#")
                 .input('#', Items.DIRT)
