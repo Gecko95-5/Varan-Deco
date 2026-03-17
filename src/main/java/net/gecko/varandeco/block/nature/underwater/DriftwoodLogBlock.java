@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.nature.underwaterwood;
+package net.gecko.varandeco.block.nature.underwater;
 
 import com.mojang.serialization.MapCodec;
 import net.gecko.varandeco.block.DecoBlocks;
