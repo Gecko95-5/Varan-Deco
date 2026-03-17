@@ -1,4 +1,4 @@
-// 1.19.3	2026-03-12T22:11:38.2341811	Variant Decoration/Tags for minecraft:block
+// 1.19.3	2026-03-17T10:00:36.2018123	Variant Decoration/Tags for minecraft:block
 b14f3efbef6b6c52273c5d22ef14ab6a6a0286b9 data\varan-deco\tags\blocks\infested_blocks.json
 9fced4dcc3648ca6a2cce2192ea83eaf411d4856 data\minecraft\tags\blocks\mineable\pickaxe.json
 ba1cc2c2db58f51e4298dbf8c9331bc10013c29a data\minecraft\tags\blocks\slabs.json
@@ -50,8 +50,8 @@ cdf7333dc31338cb5e57f9d646b5f0bc3337637d data\minecraft\tags\blocks\nylium.json
 225124da5c3a06044318ca6ef320397078fa466a data\varan-deco\tags\blocks\terracotta_stairs.json
 ed6daf5df1a48422c2d8dd39b9fde95868fe091f data\varan-deco\tags\blocks\wool_stairs.json
 9675b3c2f8bc37f5fc7f36c1cc4dca035e839b13 data\minecraft\tags\blocks\needs_diamond_tool.json
-212021e71a607113c9eb5ac8eb99f882537125a4 data\minecraft\tags\blocks\walls.json
 da33c9cdb9064e358dc1478772ab68cbf406ff40 data\minecraft\tags\blocks\fence_gates.json
+212021e71a607113c9eb5ac8eb99f882537125a4 data\minecraft\tags\blocks\walls.json
 b7bd51b7625bc3f764b5d44c79c14e892acca490 data\minecraft\tags\blocks\enderman_holdable.json
 d407b9751f8dea4784116ff1c5a484adc2658aeb data\varan-deco\tags\blocks\wooden_logs.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\blocks\saplings.json
@@ -60,8 +60,8 @@ e80b6c6002b896b8d542bf617e22c7f4760c1415 data\minecraft\tags\blocks\wither_immun
 01d68d789c04dc9f94cb9200b6dbdf1a511cb47b data\minecraft\tags\blocks\ice.json
 3c746a39a7e0b21147ecc56eceef49f31a33e685 data\minecraft\tags\blocks\tall_flowers.json
 ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\blocks\coloured_lamps.json
-e6d349dc0327522890cc26d8c82ad9ca7f8e418b data\minecraft\tags\blocks\mineable\axe.json
 c604e67d8e75a536a72f5c1b195819a96d49f4e3 data\minecraft\tags\blocks\mineable\hoe.json
+e6d349dc0327522890cc26d8c82ad9ca7f8e418b data\minecraft\tags\blocks\mineable\axe.json
 4b3774eb1b0f75057a8ff07461b8c5d7c161771a data\varan-deco\tags\blocks\coral_slabs.json
 0c778d55e9837641221bf3d128babe41cc14150c data\minecraft\tags\blocks\needs_iron_tool.json
 e4004431fdfa14fdb2014a3ddb04064476be3a29 data\minecraft\tags\blocks\wooden_trapdoors.json
