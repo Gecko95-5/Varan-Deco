@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-13T12:29:03.511377	Variant Decoration/Block Loot Tables
+// 1.20.1	2026-03-17T10:21:40.1792363	Variant Decoration/Block Loot Tables
 0b9e8ba80cd1063b21e08f925987bc40f4eb2a8f data\varan-deco\loot_tables\blocks\hydrated_bubble_coral_block.json
 99f3074778499019fb3587945a08c20389613be7 data\varan-deco\loot_tables\blocks\smooth_stone_stairs.json
 a16b36ff9d76cab66f165b686fb08f6be0925ad3 data\varan-deco\loot_tables\blocks\duel_cut_pink_concrete_stairs.json
@@ -522,8 +522,8 @@ c8e84b7af8f99cbf13b80851c96585ec2e0cab5c data\varan-deco\loot_tables\blocks\cher
 035ab44f99af7029cf84868f3e7d2b7e4d6b89b7 data\varan-deco\loot_tables\blocks\chiseled_magma_block.json
 95acd4e615c35d8def9436a19ffae6143b8f120c data\varan-deco\loot_tables\blocks\cut_iron_stairs.json
 88f2aba16d6b5678cc4f90bed46c8b2b85d64258 data\varan-deco\loot_tables\blocks\stone_lever.json
-fd21e0678130fbf3892ec892004cc6fc1d18830a data\varan-deco\loot_tables\blocks\smooth_stone_wall.json
 f6072eabb6b8231e13107bd895ef477ebc4d1f7b data\varan-deco\loot_tables\blocks\dripstone_brick_slab.json
+fd21e0678130fbf3892ec892004cc6fc1d18830a data\varan-deco\loot_tables\blocks\smooth_stone_wall.json
 a552d4aad64d1b198962abf9368ef828a59cf179 data\varan-deco\loot_tables\blocks\mossy_end_stone_brick_wall.json
 9ba85879f866e09966b9e5d372447a0e3b1db53e data\varan-deco\loot_tables\blocks\deepslate_smoker.json
 5a15b6625532e54d4ff50b90f8dc92f4ef5b4f65 data\varan-deco\loot_tables\blocks\cherry_bookshelf_slab.json
