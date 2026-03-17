@@ -1,4 +1,4 @@
-// 1.20.6	2026-03-14T12:39:33.8725901	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2026-03-17T10:35:59.3366401	Variant Decoration/Tags for minecraft:block
 0bc10f0493d1ba09f6447ada92e5cbf90ee5d007 data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
 574b2d180eb029d900d7b34b9bf6cd7d592ad0e4 data\varan-deco\tags\blocks\deco_note_blocks.json
@@ -34,12 +34,12 @@ d26e5da10ff94642ee34f8287dae824ec727e4e4 data\minecraft\tags\blocks\snow_layer_c
 6a5baa2346ef80d460972ebe2b04af6468abffbc data\varan-deco\tags\blocks\deco_bookshelves.json
 400cb820962bff0d92095c4b962722e603d0f232 data\minecraft\tags\blocks\guarded_by_piglins.json
 213c2e4b5326c33a2ffb599f04da655134380476 data\minecraft\tags\blocks\nylium.json
-65f15704c0ae514aee19193d864d84866391c8f2 data\minecraft\tags\blocks\fence_gates.json
 e314c602793ee890ad873af72f4b73557d3913ce data\minecraft\tags\blocks\walls.json
+65f15704c0ae514aee19193d864d84866391c8f2 data\minecraft\tags\blocks\fence_gates.json
 6f56ef7125bcd8b74c54ae7de03f701c05f83978 data\minecraft\tags\blocks\enderman_holdable.json
 afd008caf2cf6818f50b4ab00adff62ab0565881 data\minecraft\tags\blocks\saplings.json
-63395c989eee05aa48acdf832434ee4d775c0305 data\minecraft\tags\blocks\mineable\axe.json
 e75fa939e1b17f51f73a69b45397d3bfb4bd9acb data\minecraft\tags\blocks\mineable\hoe.json
+63395c989eee05aa48acdf832434ee4d775c0305 data\minecraft\tags\blocks\mineable\axe.json
 3b3f66b9f1192884709a6829b454edd2643bbedb data\minecraft\tags\blocks\overworld_natural_logs.json
 0246f70a162664d624b210459b083bf6cadd3242 data\minecraft\tags\blocks\wool.json
 4623936ef427b0b69969a4c81011d6ae0463ecba data\varan-deco\tags\blocks\coral_walls.json
