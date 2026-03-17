@@ -1,4 +1,4 @@
-package net.gecko.varandeco.block.nature.underwaterwood;
+package net.gecko.varandeco.block.nature.underwater;
 
 import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.*;
