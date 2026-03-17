@@ -2209,7 +2209,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerWallRecipe(RecipeCategory.DECORATIONS, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.BONE_WALL, Items.BONE_BLOCK);
 
-        createShaped(RecipeCategory.BUILDING_BLOCKS, Items.ROOTED_DIRT,4)
+        createShaped(RecipeCategory.BUILDING_BLOCKS, Items.ROOTED_DIRT,2)
                 .pattern("#M")
                 .pattern("M#")
                 .input('#', Items.DIRT)
