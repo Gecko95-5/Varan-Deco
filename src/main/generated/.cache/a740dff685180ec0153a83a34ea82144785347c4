@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-14T15:49:58.1616296	Variant Decoration/Tags for minecraft:block
+// 1.21.1	2026-03-17T10:41:29.7700454	Variant Decoration/Tags for minecraft:block
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\block\soul_speed_blocks.json
 05e0dd49a258e826d24330de2e562908cb49b4ad data\varan-deco\tags\block\deco_smithing_tables.json
 cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
@@ -53,8 +53,8 @@ f1608d17ae9db10b10685d1145d76a77ad856f0e data\minecraft\tags\block\wall_hanging_
 400cb820962bff0d92095c4b962722e603d0f232 data\minecraft\tags\block\guarded_by_piglins.json
 c3b0b46490582b9940cd1c1f7a9f91c4b937798d data\minecraft\tags\block\wooden_slabs.json
 16d11133c7838ddbb3400b3162c3634ec43abd87 data\minecraft\tags\block\fences.json
-79f02bad6f2d7b1b970df9716b4ce008ce870db2 data\minecraft\tags\block\enchantment_power_provider.json
 0f3ab19b352a8ab595c116a197d7388e02b8b39c data\minecraft\tags\block\tall_flowers.json
+79f02bad6f2d7b1b970df9716b4ce008ce870db2 data\minecraft\tags\block\enchantment_power_provider.json
 ba35545b8aa55fa18cd3ccc37de57fd5a8e4d812 data\varan-deco\tags\block\log_walls.json
 0881cf7257e1530b7ac65e3439a52d9074da7348 data\varan-deco\tags\block\concrete_slabs.json
 fbc294af58cbe48a1fe8038302a263fa69835418 data\varan-deco\tags\block\mosaic_wood.json
@@ -84,8 +84,8 @@ bb77c8b23b742a8d375842872d36b28e6211a19a data\minecraft\tags\block\logs_that_bur
 d26e5da10ff94642ee34f8287dae824ec727e4e4 data\minecraft\tags\block\snow_layer_cannot_survive_on.json
 d209cea437511d8bc846125cb94d0284ca05cdcb data\minecraft\tags\block\stairs.json
 7f58886ff6117e9056a5060154c7ef26c01ac440 data\minecraft\tags\block\wooden_trapdoors.json
-b0b4636ba706ebcd36b54405a4274ea1974830f0 data\minecraft\tags\block\buttons.json
 01c936e6bca766d070d5f1a7b6ff0d56f7894c57 data\minecraft\tags\block\soul_fire_base_blocks.json
+b0b4636ba706ebcd36b54405a4274ea1974830f0 data\minecraft\tags\block\buttons.json
 e0083db902435b3630df4492988f3c0065a729d2 data\minecraft\tags\block\walls.json
 ec916ed0925acdb6a2e130c43e0103dd4936793c data\varan-deco\tags\block\log_slabs.json
 213c2e4b5326c33a2ffb599f04da655134380476 data\minecraft\tags\block\mushroom_grow_block.json

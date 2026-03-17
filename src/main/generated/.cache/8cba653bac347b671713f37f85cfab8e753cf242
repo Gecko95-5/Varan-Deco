@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-14T15:49:58.2343318	Variant Decoration/Recipes
+// 1.21.1	2026-03-17T10:41:29.9672409	Variant Decoration/Recipes
 b5cf8b4094ef69162a75692bd42229b8aed081dd data\varan-deco\recipe\mangrove_raft.json
 860b09f472812595cebd70c18b559ea34caee1b7 data\varan-deco\advancement\recipes\building_blocks\wind_bricks.json
 a288f22417fdf4dc1c4e49eccc9054dccad99a3d data\varan-deco\recipe\dead_bubble_coral_stairs.json
@@ -1169,7 +1169,7 @@ d05f8033acd12533eb44784e9d81bea185ddbfd2 data\varan-deco\advancement\recipes\bui
 58b9586904115adfcb76c3d8775063721533cded data\varan-deco\recipe\cracked_blue_nether_brick_slab_from_smelting.json
 27c781eb4128de3ef2d5ccd6e48acaddcb0b781a data\varan-deco\recipe\cherry_wood_wall.json
 d041c1f58e1e8611541deccaa8a1bd804e9db57b data\varan-deco\advancement\recipes\building_blocks\smooth_red_sandstone_stairs_from_smelting.json
-b69a49a446f6276e70bd5dcd90cea02293e5344b data\varan-deco\recipe\rooted_dirt.json
+7c9620aeaee9914e3e1d189a69c810beb764abcc data\varan-deco\recipe\rooted_dirt.json
 163888a468701abd5db6138a2c7e4f758494f774 data\varan-deco\recipe\tube_coral_slab.json
 0992e9f3433bab271833ad0186ed34d0d6911d04 data\varan-deco\recipe\cracked_tuff_brick_slab_from_cracked_tuff_bricks_stonecutting.json
 85a5edb5bb1f3d58e89eaafd12c78146811d6728 data\varan-deco\recipe\dark_oak_wood_stairs.json
