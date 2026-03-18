@@ -1,4 +1,4 @@
-// 1.19.2	2026-03-17T09:45:54.8662227	Recipes
+// 1.19.2	2026-03-18T01:10:17.0352713	Recipes
 05f3ac2366c02e936a348f94fb001f7ea3daa14d data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\cobbled_red_sandstone_from_red_sandstone_stonecutting.json
 79f90a4fa3c9789e77a76f04d7ef5efe628cdea6 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\cracked_stone_tile_wall.json
 3a87b0548bea39b05d3b1b6b71ffa835025c5217 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\polished_calcite.json
@@ -2454,6 +2454,7 @@ db6b6d84b03257a52b1815ebc280ba9fd942b616 data\varan-deco\advancements\recipes\va
 f44b1efd68afe11412df7da7182cbd082aaea4ff data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\blue_ice_wall_from_blue_ice_stonecutting.json
 69123db44a39b58bff0583900910b914bbda338f data\varan-deco\recipes\oxidized_heavy_copper_bars.json
 201a30cbec79355c717f198069eb6fe6ac74d89e data\varan-deco\recipes\light_blue_lamp.json
+f5c49a4692899709afa49fbe25ec70c9c0f348b5 data\varan-deco\recipes\hanging_roots.json
 f6f8249f81385bb58486a8f19bf671314d7a8aa1 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\acacia_wood_wall.json
 5bf7010d0cccefaeec836a7b4e84f06d7a94e050 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\checkered_yellow_concrete_slab.json
 11fc84469dcd5f2cb6450e8124987601df976df5 data\varan-deco\recipes\deepslate_pressure_plate_from_deepslate_stonecutting.json
@@ -4804,6 +4805,7 @@ e1a37237d52ef4fc8e113f6cd748665033d6b88f data\varan-deco\advancements\recipes\va
 348b96595ee2ca00fcbaae16adec7a51a3dfcfe8 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\oak_wood_wall.json
 94959e14018e28c79baa1e11c8f283f7c3ac4e67 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\checkered_cyan_concrete_wall_from_checkered_cyan_concrete_stonecutting.json
 6c08e02b44b06cf2a94f93a0e436abaf0f1e7e31 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\mushroom_slab.json
+630613fd3fbffaf35ff70e28b3998fb3a2e8eb35 data\varan-deco\advancements\recipes\decorations\hanging_roots.json
 6f92a2c998cb14047106ef5502baf321680e33ca data\varan-deco\recipes\polished_deepslate_pressure_plate.json
 a694e8ffd292bc66b7c95b2cbfa2a767a36f47b6 data\varan-deco\recipes\chiseled_polished_red_sandstone.json
 e30918243f0b9f0b4633cefddc0c87176aec74b9 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\dripstone_brick_stairs_from_dripstone_bricks_stonecutting.json
@@ -5095,7 +5097,7 @@ ddab44f20e93503894c4b99c13f52ce00ce6edaf data\varan-deco\recipes\cut_lapis_stair
 da87831cb934fc10e35d03b348d5494f3e6e0e49 data\varan-deco\recipes\brain_coral_fan_from_hydrating.json
 2a89227b1de723a7ed1a04781093c3b6a7edafa0 data\varan-deco\recipes\lime_block_from_pastel_lime_block.json
 b3e6e6d6b54e94d5666694ceca37200cb9580a0b data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\hydrated_tube_coral_fan_from_hydrating.json
-aeadc1cf5aa2ad6f3ba4e99ba2da43440b257572 data\varan-deco\recipes\bell.json
+cf33a5de2047b281b469db7b6b2891b78bd8c88c data\varan-deco\recipes\bell.json
 e2574cb86b9dabb621587ee777517e2019896e74 data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\lapis_stairs.json
 f1ca2a5572502662b4e8580d7bfedb2fa657ec64 data\varan-deco\recipes\lapis_bricks.json
 fe15233d919a43d3a06c464ed6360dac2f5fb28d data\varan-deco\advancements\recipes\varan-deco.varan_deco_blocks\mossy_polished_blackstone_brick_slab.json
