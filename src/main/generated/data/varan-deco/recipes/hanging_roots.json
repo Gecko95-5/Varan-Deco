@@ -3,21 +3,18 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:gold_nugget"
+      "tag": "minecraft:logs_that_burn"
     },
     "/": {
       "item": "minecraft:stick"
-    },
-    "I": {
-      "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [
-    "///",
-    " I ",
-    "I#I"
+    "/#/",
+    " / "
   ],
   "result": {
-    "item": "minecraft:bell"
+    "count": 16,
+    "item": "minecraft:hanging_roots"
   }
 }
