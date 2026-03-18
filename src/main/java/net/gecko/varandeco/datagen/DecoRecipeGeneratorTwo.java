@@ -2624,9 +2624,10 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .input('#', Items.GOLD_NUGGET)
                 .input('I', Items.GOLD_INGOT)
                 .input('/', Items.STICK)
-                .pattern("///")
+                .input('S', ItemTags.STONE_CRAFTING_MATERIALS)
+                .pattern("S/S")
+                .pattern("SIS")
                 .pattern("I#I")
-                .pattern(" I ")
                 .criterion(hasItem(Items.GOLD_INGOT),
                         conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter,getRecipeName(Items.BELL)+ "_recipe_create");
@@ -4206,6 +4207,14 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSSY_TUFF_BRICK_SLAB, DecoBlocks.MOSSY_TUFF_BRICKS,2);
         offerWallRecipe(RecipeCategory.DECORATIONS, DecoBlocks.MOSSY_TUFF_BRICK_WALL, DecoBlocks.MOSSY_TUFF_BRICKS);
         offerStonecuttingRecipe(RecipeCategory.DECORATIONS, DecoBlocks.MOSSY_TUFF_BRICK_WALL, DecoBlocks.MOSSY_TUFF_BRICKS);
+
+                createShaped(RecipeCategory.DECORATIONS,Items.HANGING_ROOTS, 16)
+                .input('#', ItemTags.LOGS_THAT_BURN)
+                .input('/', Items.STICK)
+                .pattern("/#/")
+                .pattern(" / ")
+                .criterion("has_logs", conditionsFromTag(ItemTags.LOGS_THAT_BURN))
+                .offerTo(exporter,getRecipeName(Items.HANGING_ROOTS) + "_recipe_create");
     }
     public void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         createShaped(RecipeCategory.DECORATIONS,output,3)
