@@ -4,12 +4,13 @@
   "key": {
     "#": "minecraft:gold_nugget",
     "/": "minecraft:stick",
-    "I": "minecraft:gold_ingot"
+    "I": "minecraft:gold_ingot",
+    "S": "#minecraft:stone_crafting_materials"
   },
   "pattern": [
-    "///",
-    "I#I",
-    " I "
+    "S/S",
+    "SIS",
+    "I#I"
   ],
   "result": {
     "count": 1,
