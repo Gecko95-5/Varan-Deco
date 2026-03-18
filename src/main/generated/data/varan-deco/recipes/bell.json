@@ -14,8 +14,8 @@
   },
   "pattern": [
     "///",
-    "I#I",
-    " I "
+    " I ",
+    "I#I"
   ],
   "result": {
     "item": "minecraft:bell"

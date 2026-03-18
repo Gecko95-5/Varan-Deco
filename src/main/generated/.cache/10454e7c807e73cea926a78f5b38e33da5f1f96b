@@ -1,4 +1,4 @@
-// 1.19.4	2026-03-17T10:15:32.2934106	Variant Decoration/Block Loot Tables
+// 1.19.3	2026-03-18T01:18:36.961041	Variant Decoration/Block Loot Tables
 0b9e8ba80cd1063b21e08f925987bc40f4eb2a8f data\varan-deco\loot_tables\blocks\hydrated_bubble_coral_block.json
 7950225e5ee817de56ac4ede1d2bac9de366cecc data\varan-deco\loot_tables\blocks\hydrated_brain_coral_block.json
 c8a9d53cbdfd2f8325db048d7c1a8ebd08e9bb26 data\varan-deco\loot_tables\blocks\crimson_pallet_door.json
@@ -893,10 +893,10 @@ c349b90d06f90d1e7147563daff0e799fedff9a2 data\varan-deco\loot_tables\blocks\tuff
 877795749cded23e0c71a66aada7b8047ea7199f data\varan-deco\loot_tables\blocks\birch_pallet_trapdoor.json
 5b7f1a2e8250f7e9f5de24973c4ddaf8b6901151 data\varan-deco\loot_tables\blocks\black_concrete_stairs.json
 160ab7b09d0d7576c336d255757b77a4309929ac data\varan-deco\loot_tables\blocks\dark_oak_wood_stairs.json
-e2637e0a5825f60da80019f267d69fc528c6906a data\varan-deco\loot_tables\blocks\bubble_slab.json
-277fc9714453c1f61d911b32891b0eebdf106cf2 data\varan-deco\loot_tables\blocks\michaelmas_daisy.json
-dce44016e234d7f24db8194b0ddebbbcb340228d data\varan-deco\loot_tables\blocks\brown_wool_stairs.json
 1c3cfdb23dcc2b27afd6a1c3559f93bdb0c02f49 data\varan-deco\loot_tables\blocks\smooth_blackstone_wall.json
+dce44016e234d7f24db8194b0ddebbbcb340228d data\varan-deco\loot_tables\blocks\brown_wool_stairs.json
+277fc9714453c1f61d911b32891b0eebdf106cf2 data\varan-deco\loot_tables\blocks\michaelmas_daisy.json
+e2637e0a5825f60da80019f267d69fc528c6906a data\varan-deco\loot_tables\blocks\bubble_slab.json
 fdafc8a493fb2d63b663c3f3374a1b7c63e38dee data\varan-deco\loot_tables\blocks\gold_trapdoor.json
 907857247fddda3383b98aa3a92b98c92a71213b data\varan-deco\loot_tables\blocks\blackstone_grindstone.json
 2f655b1a8e0d887880962cf2d2c9cdb838f1aaf1 data\varan-deco\loot_tables\blocks\weathered_copper_stairs.json
