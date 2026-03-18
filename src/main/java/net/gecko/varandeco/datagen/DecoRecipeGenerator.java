@@ -6306,8 +6306,9 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', Items.GOLD_NUGGET)
                 .input('I', Items.GOLD_INGOT)
                 .input('/', Items.STICK)
-                .pattern("///")
-                .pattern(" I ")
+                .input('S', ItemTags.STONE_CRAFTING_MATERIALS)
+                .pattern("S/S")
+                .pattern("SIS")
                 .pattern("I#I")
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))

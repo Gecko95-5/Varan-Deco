@@ -9,11 +9,14 @@
     },
     "I": {
       "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "tag": "minecraft:stone_crafting_materials"
     }
   },
   "pattern": [
-    "///",
-    " I ",
+    "S/S",
+    "SIS",
     "I#I"
   ],
   "result": {
