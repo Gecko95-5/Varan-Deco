@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    "minecraft:chorus_fruit",
+    "minecraft:moss_block",
     "minecraft:end_stone_bricks"
   ],
   "result": {
