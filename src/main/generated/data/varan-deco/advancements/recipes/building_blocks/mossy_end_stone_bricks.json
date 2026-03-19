@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chorus_fruit": {
+    "has_end_stone_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:chorus_fruit"
+              "minecraft:end_stone_bricks"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_chorus_fruit"
+      "has_end_stone_bricks"
     ]
   ],
   "rewards": {
