@@ -6376,10 +6376,10 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MOSSY_DEEPSLATE_BRICKS)));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_END_STONE_BRICKS)
-                .input(Items.CHORUS_FRUIT)
+                .input(Items.MOSS_BLOCK)
                 .input(Items.END_STONE_BRICKS)
-                .criterion(RecipeProvider.hasItem(Items.CHORUS_FRUIT),
-                        RecipeProvider.conditionsFromItem(Items.CHORUS_FRUIT))
+                .criterion(RecipeProvider.hasItem(Items.END_STONE_BRICKS),
+                        RecipeProvider.conditionsFromItem(Items.END_STONE_BRICKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.MOSSY_END_STONE_BRICKS)));
 
         ShapelessRecipeJsonBuilder.create(DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)
