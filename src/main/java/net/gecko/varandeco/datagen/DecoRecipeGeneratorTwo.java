@@ -3113,10 +3113,10 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .offerTo(exporter,getRecipeName(DecoBlocks.MOSSY_DEEPSLATE_BRICKS) + "_recipe_create");
 
                 createShapeless(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSSY_END_STONE_BRICKS)
-                        .input(Items.CHORUS_FRUIT)
+                        .input(Items.MOSS_BLOCK)
                         .input(Items.END_STONE_BRICKS)
-                        .criterion(hasItem(Items.CHORUS_FRUIT),
-                                conditionsFromItem(Items.CHORUS_FRUIT))
+                        .criterion(hasItem(Items.END_STONE_BRICKS),
+                                conditionsFromItem(Items.END_STONE_BRICKS))
                         .offerTo(exporter,getRecipeName(DecoBlocks.MOSSY_END_STONE_BRICKS) + "_recipe_create");
 
                 createShapeless(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.MOSSY_POLISHED_BLACKSTONE_BRICKS)
