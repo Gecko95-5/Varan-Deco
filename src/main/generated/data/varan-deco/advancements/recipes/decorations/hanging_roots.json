@@ -28,5 +28,6 @@
     "recipes": [
       "minecraft:hanging_roots"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
