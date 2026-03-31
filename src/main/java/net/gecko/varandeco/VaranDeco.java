@@ -12,8 +12,8 @@ import net.gecko.varandeco.util.*;
 import net.gecko.varandeco.world.feature.tree.DecoTruckPlacerType;
 import net.gecko.varandeco.effects.DecoStatusEffects;
 import net.gecko.varandeco.world.gen.DecoWorldGeneration;
-import net.minecraft.item.Items;
-import net.minecraft.potion.Potions;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
@@ -48,14 +48,14 @@ public class VaranDeco implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-			builder.registerPotionRecipe(Potions.WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
-			builder.registerPotionRecipe(Potions.LONG_WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.LONG_WATER_BUBBLE_POTION);
-			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
-			builder.registerPotionRecipe(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_WATER_BUBBLE_POTION);
-            builder.registerPotionRecipe(Potions.AWKWARD, DecoItems.EARTH_SPHERE, DecoPotion.GROUNDING_POTION);
-            builder.registerPotionRecipe(DecoPotion.GROUNDING_POTION, Items.REDSTONE, DecoPotion.LONG_GROUNDING_POTION);
-            builder.registerPotionRecipe(DecoPotion.GROUNDING_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_GROUNDING_POTION);
-			builder.registerPotionRecipe(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
+			builder.addMix(Potions.WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.WATER_BUBBLE_POTION);
+			builder.addMix(Potions.LONG_WATER_BREATHING, DecoItems.BUBBLE_ORB, DecoPotion.LONG_WATER_BUBBLE_POTION);
+			builder.addMix(DecoPotion.WATER_BUBBLE_POTION, Items.REDSTONE, DecoPotion.LONG_WATER_BUBBLE_POTION);
+			builder.addMix(DecoPotion.WATER_BUBBLE_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_WATER_BUBBLE_POTION);
+            builder.addMix(Potions.AWKWARD, DecoItems.EARTH_SPHERE, DecoPotion.GROUNDING_POTION);
+            builder.addMix(DecoPotion.GROUNDING_POTION, Items.REDSTONE, DecoPotion.LONG_GROUNDING_POTION);
+            builder.addMix(DecoPotion.GROUNDING_POTION, Items.GLOWSTONE_DUST, DecoPotion.STRONG_GROUNDING_POTION);
+			builder.addMix(Potions.WATER, DecoItems.WARPED_WART, Potions.AWKWARD);
 		});
 	}
 }

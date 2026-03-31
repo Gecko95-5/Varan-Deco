@@ -1,90 +1,90 @@
 package net.gecko.varandeco.block.elementblocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BubbleColumnBlock;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.particle.ParticleTypes;
-import net.minecraft.registry.tag.FluidTags;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldView;
-import net.minecraft.world.tick.ScheduledTickView;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.BubbleColumnBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class BubbleBlock extends Block {
 
-    public BubbleBlock(Settings settings) {
+    public BubbleBlock(Properties settings) {
         super(settings);
     }
 
     @Override
-    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects() && entity.isOnFire()) {
-            if (entity.isPlayer()) {
-                entity.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH, 1.0f, 1.0f);
+    public void stepOn(Level world, BlockPos pos, BlockState state, Entity entity) {
+        if (!entity.isSteppingCarefully() && entity.isOnFire()) {
+            if (entity.isAlwaysTicking()) {
+                entity.playSound(SoundEvents.FIRE_EXTINGUISH, 1.0f, 1.0f);
             }
-            entity.extinguish();
+            entity.clearFire();
         }
-        if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
-            entity.setAir(300);
+        if (!entity.isSteppingCarefully() && entity.isUnderWater()) {
+            entity.setAirSupply(300);
         }
 
-        super.onSteppedOn(world, pos, state, entity);
+        super.stepOn(world, pos, state, entity);
     }
 
     @Override
-    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        int air = player.getMaxAir();
-        if (player.isSubmergedInWater()) {
-            player.setAir(air + 40);
+    public BlockState playerWillDestroy(Level world, BlockPos pos, BlockState state, Player player) {
+        int air = player.getMaxAirSupply();
+        if (player.isUnderWater()) {
+            player.setAirSupply(air + 40);
         }
-        super.onBreak(world, pos, state, player);
+        super.playerWillDestroy(world, pos, state, player);
         return state;
     }
 
     @Override
-    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        BubbleColumnBlock.update(world, pos.up(), state);
+    public void tick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
+        BubbleColumnBlock.updateColumn(world, pos.above(), state);
     }
 
     @Override
-    protected BlockState getStateForNeighborUpdate(
+    protected BlockState updateShape(
             BlockState state,
-            WorldView world,
-            ScheduledTickView tickView,
+            LevelReader world,
+            ScheduledTickAccess tickView,
             BlockPos pos,
             Direction direction,
             BlockPos neighborPos,
             BlockState neighborState,
-            Random random
+            RandomSource random
     ) {
-        if (direction == Direction.UP && neighborState.isOf(Blocks.WATER)) {
-            tickView.scheduleBlockTick(pos, this, 20);
+        if (direction == Direction.UP && neighborState.is(Blocks.WATER)) {
+            tickView.scheduleTick(pos, this, 20);
         }
 
-        return super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
+        return super.updateShape(state, world, tickView, pos, direction, neighborPos, neighborState, random);
     }
 
     @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        BlockPos blockPos = pos.up();
-        if (world.getFluidState(pos).isIn(FluidTags.WATER)) {
+    public void randomTick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
+        BlockPos blockPos = pos.above();
+        if (world.getFluidState(pos).is(FluidTags.WATER)) {
             world.playSound(
-                    null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.5F, 2.6F + (world.random.nextFloat() - world.random.nextFloat()) * 0.8F
+                    null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 0.5F, 2.6F + (world.random.nextFloat() - world.random.nextFloat()) * 0.8F
             );
-            world.spawnParticles(ParticleTypes.LARGE_SMOKE, blockPos.getX() + 0.5, blockPos.getY() + 0.25, blockPos.getZ() + 0.5, 8, 0.5, 0.25, 0.5, 0.0);
+            world.sendParticles(ParticleTypes.LARGE_SMOKE, blockPos.getX() + 0.5, blockPos.getY() + 0.25, blockPos.getZ() + 0.5, 8, 0.5, 0.25, 0.5, 0.0);
         }
     }
 
     @Override
-    public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
-        world.scheduleBlockTick(pos, this, 20);
+    public void onPlace(BlockState state, Level world, BlockPos pos, BlockState oldState, boolean notify) {
+        world.scheduleTick(pos, this, 20);
     }
 }

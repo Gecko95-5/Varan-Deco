@@ -1,19 +1,18 @@
 package net.gecko.varandeco.block.custom;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
-public class HayStairsBlock extends StairsBlock {
-    public HayStairsBlock(BlockState baseBlockState, Settings settings) {
+public class HayStairsBlock extends StairBlock {
+    public HayStairsBlock(BlockState baseBlockState, Properties settings) {
         super(baseBlockState, settings);
     }
 
     @Override
-    public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, double fallDistance) {
-        entity.handleFallDamage(fallDistance, 0.2F, world.getDamageSources().fall());
+    public void fallOn(Level world, BlockState state, BlockPos pos, Entity entity, double fallDistance) {
+        entity.causeFallDamage(fallDistance, 0.2F, world.damageSources().fall());
     }
 }

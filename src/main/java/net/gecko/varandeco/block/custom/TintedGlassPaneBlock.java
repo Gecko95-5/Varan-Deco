@@ -1,20 +1,20 @@
 package net.gecko.varandeco.block.custom;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.PaneBlock;
+import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
-public class TintedGlassPaneBlock extends PaneBlock {
-    public TintedGlassPaneBlock(Settings settings) {
+public class TintedGlassPaneBlock extends IronBarsBlock {
+    public TintedGlassPaneBlock(Properties settings) {
         super(settings);
     }
 
     @Override
-    protected boolean isTransparent(BlockState state) {
+    protected boolean propagatesSkylightDown(BlockState state) {
         return false;
     }
 
     @Override
-    protected int getOpacity(BlockState state) {
+    protected int getLightBlock(BlockState state) {
         return 15;
     }
 }

@@ -1,32 +1,32 @@
 package net.gecko.varandeco.block.elementblocks;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.WallBlock;
-import net.minecraft.entity.Entity;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BubbleWallBlock extends WallBlock {
     private static final Logger log = LoggerFactory.getLogger(BubbleWallBlock.class);
 
-    public BubbleWallBlock(Settings settings) {
+    public BubbleWallBlock(Properties settings) {
         super(settings);
     }
     @Override
-    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects() && entity.isOnFire()) {
-            if (entity.isPlayer()) {
-                entity.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH, 1.0f, 1.0f);
+    public void stepOn(Level world, BlockPos pos, BlockState state, Entity entity) {
+        if (!entity.isSteppingCarefully() && entity.isOnFire()) {
+            if (entity.isAlwaysTicking()) {
+                entity.playSound(SoundEvents.FIRE_EXTINGUISH, 1.0f, 1.0f);
             }
-            entity.extinguish();
+            entity.clearFire();
         }
-        if (!entity.bypassesSteppingEffects() && entity.isSubmergedInWater()) {
-            entity.setAir(300);
+        if (!entity.isSteppingCarefully() && entity.isUnderWater()) {
+            entity.setAirSupply(300);
         }
 
-        super.onSteppedOn(world, pos, state, entity);
+        super.stepOn(world, pos, state, entity);
     }
 }
