@@ -985,11 +985,11 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glass"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLASS));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tinted_hardened_glass"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_tinted_glass"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_TINTED_GLASS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glass_pane"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLASS_PANE));
-        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/tinted_hardened_glass_pane"),
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_tinted_glass_pane"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_TINTED_GLASS_PANE));
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_white_stained_glass"),
@@ -3229,5 +3229,15 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.HONEYCOMB_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/honeycomb_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.HONEYCOMB_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/glowing_glass"),
+                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.GLOWING_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/glowing_glass_pane"),
+                BlockLootTableGenerator.dropsWithSilkTouch(DecoBlocks.GLOWING_GLASS_PANE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glowing_glass"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLOWING_GLASS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glowing_glass_pane"),
+                BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLOWING_GLASS_PANE));
     }
 }

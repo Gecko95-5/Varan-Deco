@@ -123,12 +123,18 @@ public class DecoBlocks {
     public static final Block WOODEN_WOOD = registerBlock("wooden_wood",
             new PillarBlock(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.TERRACOTTA_BROWN).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GLOWING_GLASS = registerBlock("glowing_glass",
+            new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).nonOpaque().luminance(state -> 15)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
             new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_TINTED_GLASS = registerBlock("hardened_tinted_glass",
             new TintedGlassBlock(FabricBlockSettings.copyOf(Blocks.TINTED_GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_GLOWING_GLASS = registerBlock("hardened_glowing_glass",
+            new GlassBlock(FabricBlockSettings.copyOf(DecoBlocks.HARDENED_GLASS).nonOpaque().luminance(state -> 15)),
+                DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHISELED_LAPIS = registerBlock("chiseled_lapis",
             new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_BRICKS = registerBlock("lapis_bricks",
@@ -3249,12 +3255,18 @@ public class DecoBlocks {
 
     public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane",
             new TintedGlassPaneBlock(FabricBlockSettings.copyOf(Blocks.BLACK_STAINED_GLASS_PANE).nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block GLOWING_GLASS_PANE = registerBlock("glowing_glass_pane",
+            new PaneBlock(FabricBlockSettings.copyOf(Blocks.GLASS_PANE).nonOpaque().luminance(state -> 15)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_GLASS_PANE = registerBlock("hardened_glass_pane",
             new PaneBlock(FabricBlockSettings.copyOf(Blocks.GLASS_PANE).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_TINTED_GLASS_PANE = registerBlock("hardened_tinted_glass_pane",
-            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.TINTED_GLASS_PANE).strength(25.0F,100.0f)
+            new TintedGlassPaneBlock(FabricBlockSettings.copyOf(DecoBlocks.TINTED_GLASS_PANE).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block HARDENED_GLOWING_GLASS_PANE = registerBlock("hardened_glowing_glass_pane",
+            new PaneBlock(FabricBlockSettings.copyOf(DecoBlocks.HARDENED_GLASS_PANE).luminance(state -> 15)
+                    .nonOpaque()), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block HARDENED_WHITE_STAINED_GLASS_PANE = registerBlock("hardened_white_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.WHITE,FabricBlockSettings.copyOf(Blocks.WHITE_STAINED_GLASS_PANE).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool()), DecoItemGroup.VARAN_DECO_BLOCKS);
