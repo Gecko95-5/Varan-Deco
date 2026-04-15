@@ -1677,6 +1677,9 @@ public class DecoModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool checkpinkconcretepool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHECKERED_PINK_CONCRETE);
 
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.GLOWING_GLASS, DecoBlocks.GLOWING_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GLOWING_GLASS, DecoBlocks.HARDENED_GLOWING_GLASS_PANE);
+
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_GLASS, DecoBlocks.HARDENED_GLASS_PANE);
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_TINTED_GLASS, DecoBlocks.HARDENED_TINTED_GLASS_PANE);
         blockStateModelGenerator.registerGlassPane(DecoBlocks.HARDENED_WHITE_STAINED_GLASS, DecoBlocks.HARDENED_WHITE_STAINED_GLASS_PANE);

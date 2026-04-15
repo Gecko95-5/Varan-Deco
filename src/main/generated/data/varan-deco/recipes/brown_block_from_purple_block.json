@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "brown_block",
+  "ingredients": [
+    {
+      "item": "varan-deco:yellow_block"
+    },
+    {
+      "item": "varan-deco:purple_block"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "varan-deco:brown_block"
+  }
+}

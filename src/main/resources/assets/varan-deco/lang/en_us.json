@@ -1923,6 +1923,11 @@
   "block.varan-deco.checkered_pink_concrete_slab": "Checkered Pink Concrete Slab",
   "block.varan-deco.checkered_pink_concrete_wall": "Checkered Pink Concrete Wall",
 
+  "block.varan-deco.glowing_glass": "Glowing Glass",
+  "block.varan-deco.glowing_glass_pane": "Glowing Glass Pane",
+  "block.varan-deco.hardened_glowing_glass": "Hardened Glowing Glass",
+  "block.varan-deco.hardened_glowing_glass_pane": "Hardened Glowing Glass Pane",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

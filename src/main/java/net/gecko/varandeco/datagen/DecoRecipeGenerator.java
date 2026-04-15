@@ -488,7 +488,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.PRISMARINE_BRICKS),
                         RecipeProvider.conditionsFromItem(Items.PRISMARINE_BRICKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_PRISMARINE_BRICKS)));
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS,4)
                 .pattern(" # ")
                 .pattern("#I#")
                 .pattern(" # ")
@@ -4143,7 +4143,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(DecoItems.SHADDOL,4)
                 .pattern("S#")
                 .pattern("#S")
-                .input('#', Items.INK_SAC)
+                .input('#', Items.CHARCOAL)
                 .input('S', DecoTags.Items.MUSHROOMS)
                 .criterion("has_mushrooms", conditionsFromTag(DecoTags.Items.MUSHROOMS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SHADDOL)));
@@ -7064,7 +7064,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 "hydrated_fire_coral_block","coral_block",
                 "hydrated_fire_coral","coral");
 
-
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_TUBE_CORAL_BLOCK, Items.TUBE_CORAL_BLOCK);
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BRAIN_CORAL_BLOCK, Items.BRAIN_CORAL_BLOCK);
         offerHydratingRecipe(exporter, DecoBlocks.HYDRATED_BUBBLE_CORAL_BLOCK, Items.BUBBLE_CORAL_BLOCK);
@@ -7214,12 +7213,126 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, DecoBlocks.HONEYCOMB_WALL, Items.HONEYCOMB_BLOCK);
 
         ShapedRecipeJsonBuilder.create(Items.HANGING_ROOTS, 16)
-                .input('#', ItemTags.LOGS_THAT_BURN)
-                .input('/', Items.STICK)
                 .pattern("/#/")
                 .pattern(" / ")
+                .input('#', ItemTags.LOGS_THAT_BURN)
+                .input('/', Items.STICK)
                 .criterion("has_logs", conditionsFromTag(ItemTags.LOGS_THAT_BURN))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.HANGING_ROOTS)));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.BROWN_BLOCK,2)
+                .input(DecoBlocks.YELLOW_BLOCK)
+                .input(DecoBlocks.PURPLE_BLOCK)
+                .group("brown_block")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.YELLOW_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.YELLOW_BLOCK))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.PURPLE_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.PURPLE_BLOCK))
+                .offerTo(exporter, new Identifier("brown_block_from_purple_block"));
+
+        ShapelessRecipeJsonBuilder.create(Items.BROWN_DYE,2)
+                .input(Items.YELLOW_DYE)
+                .input(Items.PURPLE_DYE)
+                .group("brown_dye")
+                .criterion(RecipeProvider.hasItem(Items.YELLOW_DYE),
+                        RecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .criterion(RecipeProvider.hasItem(Items.PURPLE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.PURPLE_DYE))
+                .offerTo(exporter, new Identifier("brown_dye_from_purple_dye"));
+
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.BROWN_BLOCK,2)
+                .input(DecoBlocks.BLUE_BLOCK)
+                .input(DecoBlocks.ORANGE_BLOCK)
+                .group("brown_block")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_BLOCK))
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ORANGE_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ORANGE_BLOCK))
+                .offerTo(exporter, new Identifier("brown_block_from_orange_block"));
+
+        ShapelessRecipeJsonBuilder.create(Items.BROWN_DYE,2)
+                .input(Items.BLUE_DYE)
+                .input(Items.ORANGE_DYE)
+                .group("brown_dye")
+                .criterion(RecipeProvider.hasItem(Items.BLUE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+                .criterion(RecipeProvider.hasItem(Items.ORANGE_DYE),
+                        RecipeProvider.conditionsFromItem(Items.ORANGE_DYE))
+                .offerTo(exporter, new Identifier("brown_dye_from_orange_dye"));
+
+        ShapedRecipeJsonBuilder.create(Items.COBWEB)
+                .pattern(" / ")
+                .pattern("/ /")
+                .pattern(" / ")
+                .input('/', Items.STRING)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.COBWEB)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GLOWING_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.GLOWSTONE_DUST)
+                .input('X', Items.GLASS)
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.GLOWING_GLASS)));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GLOWING_GLASS_PANE,6)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.GLOWSTONE_DUST)
+                .input('X', Items.GLASS_PANE)
+                .group("glowing_glass_pane")
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter, new Identifier("glowing_glass_pane_glowstone_dust"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GLOWING_GLASS_PANE,18)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.GLOWING_GLASS)
+                .group("glowing_glass_pane")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.GLOWING_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.GLOWING_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.GLOWING_GLASS_PANE)));
+
+        offerHardenedGlassRecipe(exporter,DecoBlocks.HARDENED_GLOWING_GLASS, DecoBlocks.GLOWING_GLASS);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GLOWING_GLASS,2)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.GLOWSTONE_DUST)
+                .input('X', DecoBlocks.HARDENED_GLASS)
+                .group("hardened_glass")
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_GLOWING_GLASS)));
+
+        offerHardenedGlassPaneRecipe(exporter,DecoBlocks.HARDENED_GLOWING_GLASS_PANE, DecoBlocks.GLOWING_GLASS_PANE);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GLOWING_GLASS_PANE,6)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .input('#', Items.GLOWSTONE_DUST)
+                .input('X', DecoBlocks.HARDENED_GLASS_PANE)
+                .group("hardened_glass_pane")
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter, new Identifier("hardened_glowing_glass_pane_glowstone_dust"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.HARDENED_GLOWING_GLASS_PANE,18)
+                .pattern("###")
+                .pattern("###")
+                .input('#', DecoBlocks.HARDENED_GLOWING_GLASS)
+                .group("hardened_glass_pane")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLOWING_GLASS),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLOWING_GLASS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_GLOWING_GLASS_PANE)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

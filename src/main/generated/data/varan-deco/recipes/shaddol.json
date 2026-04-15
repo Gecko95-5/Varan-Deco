@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:ink_sac"
+      "item": "minecraft:charcoal"
     },
     "S": {
       "tag": "varan-deco:mushrooms"
