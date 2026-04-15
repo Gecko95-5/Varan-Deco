@@ -488,7 +488,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.PRISMARINE_BRICKS),
                         RecipeProvider.conditionsFromItem(Items.PRISMARINE_BRICKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_PRISMARINE_BRICKS)));
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS)
+        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_CRYSTALLIZED_PRISMARINE_BRICKS,4)
                 .pattern(" # ")
                 .pattern("#I#")
                 .pattern(" # ")
@@ -4143,7 +4143,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(DecoItems.SHADDOL,4)
                 .pattern("S#")
                 .pattern("#S")
-                .input('#', Items.INK_SAC)
+                .input('#', Items.CHARCOAL)
                 .input('S', DecoTags.Items.MUSHROOMS)
                 .criterion("has_mushrooms", conditionsFromTag(DecoTags.Items.MUSHROOMS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SHADDOL)));
