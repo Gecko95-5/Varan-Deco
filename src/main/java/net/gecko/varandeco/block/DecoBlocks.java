@@ -2169,6 +2169,11 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block POTTED_PUFFY_DANDELION = registerBlockWithoutItem("potted_puffy_dandelion",
             new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
+    public static final Block TAIGA_DANDELION = registerBlock("taiga_dandelion",
+            new PuffyDandelionBlock(StatusEffects.INSTANT_HEALTH, 1,FabricBlockSettings.copyOf(Blocks.DANDELION)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_TAIGA_DANDELION = registerBlockWithoutItem("potted_taiga_dandelion",
+            new FlowerPotBlock(TAIGA_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
 
     public static final Block CALIFORNIA_POPPY = registerBlock("california_poppy",
             new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
@@ -2292,6 +2297,11 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
             new FlowerPotBlock(LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block FERN_LAVENDER = registerBlock("fern_lavender",
+            new FlowerBlock(StatusEffects.SPEED,9,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_FERN_LAVENDER = registerBlockWithoutItem("potted_fern_lavender",
+            new FlowerPotBlock(FERN_LAVENDER,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block BLUE_HIBISCUS = registerBlock("blue_hibiscus",
             new FlowerBlock(StatusEffects.ABSORPTION,7,FabricBlockSettings.copyOf(Blocks.POPPY)),
@@ -2310,6 +2320,11 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block POTTED_BUTTERCUP = registerBlockWithoutItem("potted_buttercup",
             new FlowerPotBlock(BUTTERCUP,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block CARAMEL_BUTTERCUP = registerBlock("caramel_buttercup",
+            new FlowerBlock(StatusEffects.NAUSEA,3,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_CARAMEL_BUTTERCUP = registerBlockWithoutItem("potted_caramel_buttercup",
+            new FlowerPotBlock(CARAMEL_BUTTERCUP,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
     public static final Block NIGHTSHADE = registerBlock("nightshade",
             new FlowerBlock(StatusEffects.INSTANT_DAMAGE,1,FabricBlockSettings.copyOf(Blocks.POPPY)),
@@ -2334,11 +2349,22 @@ public class DecoBlocks {
     public static final Block POTTED_BLUE_DELPHINIUM = registerBlockWithoutItem("potted_blue_delphinium",
             new FlowerPotBlock(BLUE_DELPHINIUM,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
 
+    public static final Block ALPINE_SPEEDWELL = registerBlock("alpine_speedwell",
+            new FlowerBlock(StatusEffects.SPEED,13,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_ALPINE_SPEEDWELL = registerBlockWithoutItem("potted_alpine_speedwell",
+            new FlowerPotBlock(ALPINE_SPEEDWELL,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+
     public static final Block ROSE = registerBlock("rose",
             new FlowerBlock(StatusEffects.POISON, 5,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_DECORATION);
     public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
             new FlowerPotBlock(ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
+    public static final Block SILVER_ROSE = registerBlock("silver_rose",
+            new FlowerBlock(StatusEffects.INSTANT_DAMAGE, 1,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block POTTED_SILVER_ROSE = registerBlockWithoutItem("potted_silver_rose",
+            new FlowerPotBlock(SILVER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
     public static final Block ENDER_ROSE = registerBlock("ender_rose",
             new EnderRoseBlock(StatusEffects.LEVITATION,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_DECORATION);

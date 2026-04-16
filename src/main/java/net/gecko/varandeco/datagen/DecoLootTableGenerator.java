@@ -3239,5 +3239,27 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLOWING_GLASS));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hardened_glowing_glass_pane"),
                 BlockLootTableGenerator.drops(DecoBlocks.HARDENED_GLOWING_GLASS_PANE));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/taiga_dandelion"),
+                BlockLootTableGenerator.drops(DecoBlocks.TAIGA_DANDELION));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_taiga_dandelion"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_TAIGA_DANDELION));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/fern_lavender"),
+                BlockLootTableGenerator.drops(DecoBlocks.FERN_LAVENDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_fern_lavender"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_FERN_LAVENDER));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/caramel_buttercup"),
+                BlockLootTableGenerator.drops(DecoBlocks.CARAMEL_BUTTERCUP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_caramel_buttercup"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_CARAMEL_BUTTERCUP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/silver_rose"),
+                BlockLootTableGenerator.drops(DecoBlocks.SILVER_ROSE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_silver_rose"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_SILVER_ROSE));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/alpine_speedwell"),
+                BlockLootTableGenerator.drops(DecoBlocks.ALPINE_SPEEDWELL));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_alpine_speedwell"),
+                BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_ALPINE_SPEEDWELL));
+
     }
 }
