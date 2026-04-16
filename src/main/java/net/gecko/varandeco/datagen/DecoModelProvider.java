@@ -500,6 +500,17 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.FELICIA_DAISY, DecoBlocks.POTTED_FELICIA_DAISY,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.TAIGA_DANDELION, DecoBlocks.POTTED_TAIGA_DANDELION,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.FERN_LAVENDER, DecoBlocks.POTTED_FERN_LAVENDER,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.CARAMEL_BUTTERCUP, DecoBlocks.POTTED_CARAMEL_BUTTERCUP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.SILVER_ROSE, DecoBlocks.POTTED_SILVER_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.ALPINE_SPEEDWELL, DecoBlocks.POTTED_ALPINE_SPEEDWELL,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerDoubleBlock(DecoBlocks.MEGA_BROWN_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
