@@ -3261,5 +3261,8 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/potted_alpine_speedwell"),
                 BlockLootTableGenerator.pottedPlantDrops(DecoBlocks.POTTED_ALPINE_SPEEDWELL));
 
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gold_chain"),
+                BlockLootTableGenerator.drops(DecoBlocks.GOLD_CHAIN));
+
     }
 }

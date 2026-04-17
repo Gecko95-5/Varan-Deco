@@ -7333,6 +7333,47 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoBlocks.HARDENED_GLOWING_GLASS),
                         RecipeProvider.conditionsFromItem(DecoBlocks.HARDENED_GLOWING_GLASS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.HARDENED_GLOWING_GLASS_PANE)));
+
+        ShapelessRecipeJsonBuilder.create(Items.GRAY_DYE)
+                .input(DecoBlocks.TAIGA_DANDELION)
+                .group("gray_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.TAIGA_DANDELION),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.TAIGA_DANDELION))
+                .offerTo(exporter, new Identifier("gray_dye_from_taiga_dandelion"));
+        ShapelessRecipeJsonBuilder.create(Items.GREEN_DYE)
+                .input(DecoBlocks.FERN_LAVENDER)
+                .group("green_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.FERN_LAVENDER),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.FERN_LAVENDER))
+                .offerTo(exporter, new Identifier("green_dye_from_fern_lavender"));
+        ShapelessRecipeJsonBuilder.create(Items.BROWN_DYE)
+                .input(DecoBlocks.CARAMEL_BUTTERCUP)
+                .group("brown_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.CARAMEL_BUTTERCUP),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.CARAMEL_BUTTERCUP))
+                .offerTo(exporter, new Identifier("brown_dye_from_caramel_buttercup"));
+        ShapelessRecipeJsonBuilder.create(Items.LIGHT_GRAY_DYE)
+                .input(DecoBlocks.SILVER_ROSE)
+                .group("light_gray_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SILVER_ROSE),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SILVER_ROSE))
+                .offerTo(exporter, new Identifier("light_gray_dye_from_silver_rose"));
+        ShapelessRecipeJsonBuilder.create(Items.PURPLE_DYE)
+                .input(DecoBlocks.ALPINE_SPEEDWELL)
+                .group("purple_dye")
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ALPINE_SPEEDWELL),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ALPINE_SPEEDWELL))
+                .offerTo(exporter, new Identifier("purple_dye_from_alpine_speedwell"));
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.GOLD_CHAIN)
+                .pattern("-")
+                .pattern("#")
+                .pattern("-")
+                .input('-', Items.GOLD_INGOT)
+                .input('#', Items.GOLD_NUGGET)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_CHAIN)));
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

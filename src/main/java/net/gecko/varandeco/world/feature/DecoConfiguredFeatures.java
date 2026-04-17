@@ -101,6 +101,33 @@ public class DecoConfiguredFeatures {
                                     .add(DecoBlocks.BLUE_EYED_DAISY.getDefaultState(),1)
                                     .add(DecoBlocks.CALIFORNIA_POPPY.getDefaultState(),1).build()),24));
 
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_TAIGA =
+            ConfiguredFeatures.register("deco_taiga_flowers", Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.TAIGA_DANDELION.getDefaultState(),2)
+                                    .add(DecoBlocks.PUFFY_DANDELION.getDefaultState(),2)
+                                    .add(DecoBlocks.FERN_LAVENDER.getDefaultState(),1)
+                                    .add(DecoBlocks.CARAMEL_BUTTERCUP.getDefaultState(),1).build()),24));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_WINDSWEPT_FOREST =
+            ConfiguredFeatures.register("deco_windswept_forest_flowers", Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.TAIGA_DANDELION.getDefaultState(),2)
+                                    .add(DecoBlocks.PUFFY_DANDELION.getDefaultState(),2)
+                                    .add(DecoBlocks.CARAMEL_BUTTERCUP.getDefaultState(),2)
+                                    .add(DecoBlocks.ALPINE_POPPY.getDefaultState(),1)
+                                    .add(DecoBlocks.ALPINE_SPEEDWELL.getDefaultState(),1).build()),24));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_WINDSWEPT =
+            ConfiguredFeatures.register("deco_windswept_flowers", Feature.FLOWER,
+                    DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider
+                            (DataPool.<BlockState>builder().add(DecoBlocks.ALPINE_POPPY.getDefaultState(),2)
+                                    .add(DecoBlocks.ALPINE_SPEEDWELL.getDefaultState(),1).build()),16));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_SILVER_ROSE = ConfiguredFeatures.register(
+            "deco_silver_rose", Feature.FLOWER, new RandomPatchFeatureConfig(16, 6, 2,
+                    PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(DecoBlocks.SILVER_ROSE)))));
+
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DECO_MESA =
             ConfiguredFeatures.register("deco_mesa_flowers", Feature.FLOWER,
                     DecoConfiguredFeatures.createRandomPatchFeatureConfig(new WeightedBlockStateProvider

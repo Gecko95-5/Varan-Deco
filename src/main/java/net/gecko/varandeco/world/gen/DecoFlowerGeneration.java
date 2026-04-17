@@ -120,5 +120,27 @@ public class DecoFlowerGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_ROOFED_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_MEGA_TULIP_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_TAIGA_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_TAIGA_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_TAIGA_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_HILLS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_WINDSWEPT_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_GRAVELLY_HILLS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_WINDSWEPT_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_WINDSWEPT_FOREST_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_HILLS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SILVER_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_GRAVELLY_HILLS),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SILVER_ROSE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, DecoPlacedFeatures.DECO_SILVER_ROSE_PLACED.getKey().get());
     }
 }

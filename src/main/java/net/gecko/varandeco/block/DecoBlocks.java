@@ -2363,7 +2363,7 @@ public class DecoBlocks {
     public static final Block POTTED_ROSE = registerBlockWithoutItem("potted_rose",
             new FlowerPotBlock(ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
     public static final Block SILVER_ROSE = registerBlock("silver_rose",
-            new FlowerBlock(StatusEffects.INSTANT_DAMAGE, 1,FabricBlockSettings.copyOf(Blocks.POPPY)),
+            new SilverRoseBlock(StatusEffects.INSTANT_DAMAGE,FabricBlockSettings.copyOf(Blocks.POPPY)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block POTTED_SILVER_ROSE = registerBlockWithoutItem("potted_silver_rose",
             new FlowerPotBlock(SILVER_ROSE,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY)));
@@ -2736,6 +2736,9 @@ public class DecoBlocks {
             new ChainBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_OXIDIZED_COPPER_CHAIN = registerBlock("waxed_oxidized_copper_chain",
             new ChainBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block GOLD_CHAIN = registerBlock("gold_chain",
+            new ChainBlock(FabricBlockSettings.copyOf(Blocks.CHAIN)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);

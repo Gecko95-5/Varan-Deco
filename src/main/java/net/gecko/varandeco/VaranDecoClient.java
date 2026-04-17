@@ -93,13 +93,11 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BLUE_HIBISCUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BLUE_HIBISCUS, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BROMELIAD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BROMELIAD, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BUTTERCUP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BUTTERCUP, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.NIGHTSHADE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_NIGHTSHADE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ENDERSHADE, RenderLayer.getCutout());
@@ -107,24 +105,30 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ALPINE_POPPY, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ALPINE_POPPY, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.DEAD_EYE_DAISY, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_DEAD_EYE_DAISY, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POPPED_BLUET, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_POPPED_BLUET, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRIS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_IRIS, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CYAN_ORCHID, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_CYAN_ORCHID, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.BLUE_DELPHINIUM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_BLUE_DELPHINIUM, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FELICIA_DAISY, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_FELICIA_DAISY, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.TAIGA_DANDELION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_TAIGA_DANDELION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.FERN_LAVENDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_FERN_LAVENDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.CARAMEL_BUTTERCUP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_CARAMEL_BUTTERCUP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.SILVER_ROSE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_SILVER_ROSE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.ALPINE_SPEEDWELL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.POTTED_ALPINE_SPEEDWELL, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.MEGA_BROWN_TULIP, RenderLayer.getCutout());
 
@@ -200,6 +204,8 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_CHAIN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.OXIDIZED_COPPER_CHAIN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_CHAIN, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLD_CHAIN, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.COPPER_LANTERN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_COPPER_LANTERN, RenderLayer.getCutout());
