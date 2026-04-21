@@ -3264,5 +3264,30 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gold_chain"),
                 BlockLootTableGenerator.drops(DecoBlocks.GOLD_CHAIN));
 
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.COAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.COAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.COAL_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.COAL_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.COAL_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/coal_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.COAL_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/charcoal_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHARCOAL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/charcoal_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.CHARCOAL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/charcoal_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.CHARCOAL_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_LAMP));
     }
 }

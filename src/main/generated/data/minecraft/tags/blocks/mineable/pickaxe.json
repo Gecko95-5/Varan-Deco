@@ -583,6 +583,18 @@
     "varan-deco:hydrated_horn_coral",
     "#varan-deco:coral_stairs",
     "#varan-deco:coral_slabs",
-    "#varan-deco:coral_walls"
+    "#varan-deco:coral_walls",
+    "varan-deco:coal_stairs",
+    "varan-deco:coal_slab",
+    "varan-deco:coal_wall",
+    "varan-deco:coal_bricks",
+    "varan-deco:coal_brick_stairs",
+    "varan-deco:coal_brick_slab",
+    "varan-deco:coal_brick_wall",
+    "varan-deco:chiseled_coal_bricks",
+    "varan-deco:charcoal_stairs",
+    "varan-deco:charcoal_slab",
+    "varan-deco:charcoal_wall",
+    "varan-deco:hanging_lamp"
   ]
 }

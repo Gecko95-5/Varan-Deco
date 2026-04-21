@@ -597,7 +597,19 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HYDRATED_HORN_CORAL)
                 .addTag(DecoTags.Blocks.CORAL_STAIRS)
                 .addTag(DecoTags.Blocks.CORAL_SLABS)
-                .addTag(DecoTags.Blocks.CORAL_WALLS);
+                .addTag(DecoTags.Blocks.CORAL_WALLS)
+                .add(DecoBlocks.COAL_STAIRS)
+                .add(DecoBlocks.COAL_SLAB)
+                .add(DecoBlocks.COAL_WALL)
+                .add(DecoBlocks.COAL_BRICKS)
+                .add(DecoBlocks.COAL_BRICK_STAIRS)
+                .add(DecoBlocks.COAL_BRICK_SLAB)
+                .add(DecoBlocks.COAL_BRICK_WALL)
+                .add(DecoBlocks.CHISELED_COAL_BRICKS)
+                .add(DecoBlocks.CHARCOAL_STAIRS)
+                .add(DecoBlocks.CHARCOAL_SLAB)
+                .add(DecoBlocks.CHARCOAL_WALL)
+                .add(DecoBlocks.HANGING_LAMP);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -1003,7 +1015,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.DRIPSTONE_BRICK_PILLAR_WALL)
                 .add(DecoBlocks.VOID_STONE_BRICK_PILLAR_WALL)
                 .addTag(DecoTags.Blocks.CORAL_WALLS)
-                .add(DecoBlocks.HONEYCOMB_WALL);
+                .add(DecoBlocks.HONEYCOMB_WALL)
+                .add(DecoBlocks.COAL_WALL)
+                .add(DecoBlocks.COAL_BRICK_WALL)
+                .add(DecoBlocks.CHARCOAL_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -1191,7 +1206,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.NETHER_WART_STAIRS)
                 .add(DecoBlocks.WARPED_WART_STAIRS)
                 .add(DecoBlocks.SCULK_STAIRS)
-                .add(DecoBlocks.HONEYCOMB_STAIRS);
+                .add(DecoBlocks.HONEYCOMB_STAIRS)
+                .add(DecoBlocks.COAL_STAIRS)
+                .add(DecoBlocks.COAL_BRICK_STAIRS)
+                .add(DecoBlocks.CHARCOAL_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1327,7 +1345,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.NETHER_WART_SLAB)
                 .add(DecoBlocks.WARPED_WART_SLAB)
                 .add(DecoBlocks.SCULK_SLAB)
-                .add(DecoBlocks.HONEYCOMB_SLAB);
+                .add(DecoBlocks.HONEYCOMB_SLAB)
+                .add(DecoBlocks.COAL_SLAB)
+                .add(DecoBlocks.COAL_BRICK_SLAB)
+                .add(DecoBlocks.CHARCOAL_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -1425,7 +1446,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
-                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
+                .add(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
 
         getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS)
                 .add(DecoBlocks.SOUL_SOILSTONE)
@@ -1456,7 +1478,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.POLISHED_SOUL_SOILSTONE_WALL)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_STAIRS)
                 .add(DecoBlocks.SOUL_SOILSTONE_BRICK_SLAB)
-                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL);
+                .add(DecoBlocks.SOUL_SOILSTONE_BRICK_WALL)
+                .add(DecoBlocks.CHISELED_POLISHED_SOUL_SOILSTONE);
 
         getOrCreateTagBuilder(DecoTags.Blocks.DECO_CRAFTING_TABLES)
                 .add(DecoBlocks.BIRCH_CRAFTING_TABLE)

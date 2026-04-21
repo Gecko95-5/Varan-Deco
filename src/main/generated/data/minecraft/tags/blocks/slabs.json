@@ -134,6 +134,9 @@
     "varan-deco:nether_wart_slab",
     "varan-deco:warped_wart_slab",
     "varan-deco:sculk_slab",
-    "varan-deco:honeycomb_slab"
+    "varan-deco:honeycomb_slab",
+    "varan-deco:coal_slab",
+    "varan-deco:coal_brick_slab",
+    "varan-deco:charcoal_slab"
   ]
 }

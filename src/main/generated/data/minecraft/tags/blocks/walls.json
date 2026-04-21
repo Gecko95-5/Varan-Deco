@@ -120,6 +120,9 @@
     "varan-deco:dripstone_brick_pillar_wall",
     "varan-deco:void_stone_brick_pillar_wall",
     "#varan-deco:coral_walls",
-    "varan-deco:honeycomb_wall"
+    "varan-deco:honeycomb_wall",
+    "varan-deco:coal_wall",
+    "varan-deco:coal_brick_wall",
+    "varan-deco:charcoal_wall"
   ]
 }

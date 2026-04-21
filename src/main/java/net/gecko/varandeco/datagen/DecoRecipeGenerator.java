@@ -7374,6 +7374,29 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_CHAIN)));
+
+        offerBasicStairSlabWallRecipes(exporter, Items.COAL_BLOCK, DecoBlocks.COAL_STAIRS,
+                DecoBlocks.COAL_SLAB, DecoBlocks.COAL_WALL);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.COAL_BRICKS)
+                .pattern("B#")
+                .pattern("#B")
+                .input('#', Items.COAL)
+                .input('B', Items.BRICK)
+                .criterion(RecipeProvider.hasItem(Items.BRICK),
+                        RecipeProvider.conditionsFromItem(Items.BRICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.COAL_BRICKS)));
+
+        offerBasicStairSlabWallRecipes(exporter, DecoBlocks.COAL_BRICKS, DecoBlocks.COAL_BRICK_STAIRS,
+                DecoBlocks.COAL_BRICK_SLAB, DecoBlocks.COAL_BRICK_WALL);
+
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_COAL_BRICKS, DecoBlocks.COAL_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_COAL_BRICKS, DecoBlocks.COAL_BRICKS);
+
+        offerNonStonecutterStairSlabWallRecipes(exporter, DecoBlocks.CHARCOAL_BLOCK, DecoBlocks.CHARCOAL_STAIRS,
+                DecoBlocks.CHARCOAL_SLAB, DecoBlocks.CHARCOAL_WALL);
+
+        offerHangingLampRecipe(exporter, DecoBlocks.HANGING_LAMP, DecoBlocks.SMOOTH_GLOWSTONE);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)
@@ -7386,6 +7409,18 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.STICK),
                         RecipeProvider.conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
+    }
+    public static void offerHangingLampRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapedRecipeJsonBuilder.create(output,8)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('X', input)
+                .input('#', Items.IRON_NUGGET)
+                .group("hanging_lamps")
+                .criterion(RecipeProvider.hasItem(input),
+                        RecipeProvider.conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
     }
 
     public static void offerCraftingTableVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
@@ -7599,5 +7634,20 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, wall, blockInput);
         offerStonecuttingRecipe(exporter, wall, blockInput);
+    }
+    public static void offerNonStonecutterStairSlabWallRecipes(
+            Consumer<RecipeJsonProvider> exporter,
+            ItemConvertible blockInput,
+            ItemConvertible stair,
+            ItemConvertible slab,
+            ItemConvertible wall
+    ) {
+        createStairsRecipe(stair, Ingredient.ofItems(blockInput))
+                .criterion(hasItem(blockInput),conditionsFromItem(blockInput))
+                .offerTo(exporter, new Identifier(getRecipeName(stair)));
+
+        offerSlabRecipe(exporter, slab, blockInput);
+
+        offerWallRecipe(exporter, wall, blockInput);
     }
 }

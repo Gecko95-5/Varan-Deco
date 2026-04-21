@@ -147,7 +147,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.OBSIDIAN_BRICKS);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_OBSIDIAN, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.OBSIDIAN_PILLAR, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHARCOAL_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool charcoalpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHARCOAL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.FLINT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ECHO_BLOCK);
         BlockStateModelGenerator.BlockTexturePool crackstonebrickpool =
@@ -351,6 +352,13 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_FIRE_CORAL_TEMP);
         BlockStateModelGenerator.BlockTexturePool deadhorncoralpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.DEAD_HORN_CORAL_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool coalpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COAL_TEMP);
+        BlockStateModelGenerator.BlockTexturePool coalbrickpool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COAL_BRICKS);
+
+        blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_COAL_BRICKS, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_ICE_BRICKS, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(DecoBlocks.CHISELED_MUD_BRICKS, TexturedModel.CUBE_COLUMN);
@@ -1433,6 +1441,18 @@ public class DecoModelProvider extends FabricModelProvider {
         honeypool.stairs(DecoBlocks.HONEYCOMB_STAIRS);
         honeypool.slab(DecoBlocks.HONEYCOMB_SLAB);
         honeypool.wall(DecoBlocks.HONEYCOMB_WALL);
+
+        coalpool.stairs(DecoBlocks.COAL_STAIRS);
+        coalpool.slab(DecoBlocks.COAL_SLAB);
+        coalpool.wall(DecoBlocks.COAL_WALL);
+
+        coalbrickpool.stairs(DecoBlocks.COAL_BRICK_STAIRS);
+        coalbrickpool.slab(DecoBlocks.COAL_BRICK_SLAB);
+        coalbrickpool.wall(DecoBlocks.COAL_BRICK_WALL);
+
+        charcoalpool.stairs(DecoBlocks.CHARCOAL_STAIRS);
+        charcoalpool.slab(DecoBlocks.CHARCOAL_SLAB);
+        charcoalpool.wall(DecoBlocks.CHARCOAL_WALL);
 
         cactusplankpool.family(DecoBlocks.CACTUS_FAMILY);
         woodenpool.family(DecoBlocks.WOODEN_FAMILY);

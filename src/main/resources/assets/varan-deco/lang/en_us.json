@@ -185,41 +185,43 @@
   "block.varan-deco.light_prismarine_slab": "Light Prismarine Slab",
   "block.varan-deco.light_prismarine_wall": "Light Prismarine Wall",
 
-  "block.varan-deco.soul_soilstone": "Soul Soilstone",
-  "block.varan-deco.soul_soilstone_stairs": "Soul Soilstone Stairs",
-  "block.varan-deco.soul_soilstone_slab": "Soul Soilstone Slab",
-  "block.varan-deco.soul_soilstone_wall": "Soul Soilstone Wall",
+  "block.varan-deco.soul_soilstone": "Soulstone",
+  "block.varan-deco.soul_soilstone_stairs": "Soulstone Stairs",
+  "block.varan-deco.soul_soilstone_slab": "Soulstone Slab",
+  "block.varan-deco.soul_soilstone_wall": "Soulstone Wall",
 
-  "block.varan-deco.cut_soul_soilstone": "Cut Soul Soilstone",
-  "block.varan-deco.cut_soul_soilstone_stairs": "Cut Soul Soilstone Stairs",
-  "block.varan-deco.cut_soul_soilstone_slab": "Cut Soul Soilstone Slab",
-  "block.varan-deco.cut_soul_soilstone_wall": "Cut Soul Soilstone Wall",
+  "block.varan-deco.cut_soul_soilstone": "Cut Soulstone",
+  "block.varan-deco.cut_soul_soilstone_stairs": "Cut Soulstone Stairs",
+  "block.varan-deco.cut_soul_soilstone_slab": "Cut Soulstone Slab",
+  "block.varan-deco.cut_soul_soilstone_wall": "Cut Soulstone Wall",
 
-  "block.varan-deco.cut_soul_soilstone_bricks": "Cut Soul Soilstone Bricks",
-  "block.varan-deco.cut_soul_soilstone_brick_stairs": "Cut Soul Soilstone Brick Stairs",
-  "block.varan-deco.cut_soul_soilstone_brick_slab": "Cut Soul Soilstone Brick Slab",
-  "block.varan-deco.cut_soul_soilstone_brick_wall": "Cut Soul Soilstone Brick Wall",
+  "block.varan-deco.cut_soul_soilstone_bricks": "Cut Soulstone Bricks",
+  "block.varan-deco.cut_soul_soilstone_brick_stairs": "Cut Soulstone Brick Stairs",
+  "block.varan-deco.cut_soul_soilstone_brick_slab": "Cut Soulstone Brick Slab",
+  "block.varan-deco.cut_soul_soilstone_brick_wall": "Cut Soulstone Brick Wall",
 
-  "block.varan-deco.smooth_soul_soilstone": "Smooth Soul Soilstone",
-  "block.varan-deco.smooth_soul_soilstone_stairs": "Smooth Soul Soilstone Stairs",
-  "block.varan-deco.smooth_soul_soilstone_slab": "Smooth Soul Soilstone Slab",
-  "block.varan-deco.smooth_soul_soilstone_wall": "Smooth Soul Soilstone Wall",
+  "block.varan-deco.smooth_soul_soilstone": "Smooth Soulstone",
+  "block.varan-deco.smooth_soul_soilstone_stairs": "Smooth Soulstone Stairs",
+  "block.varan-deco.smooth_soul_soilstone_slab": "Smooth Soulstone Slab",
+  "block.varan-deco.smooth_soul_soilstone_wall": "Smooth Soulstone Wall",
 
-  "block.varan-deco.cobbled_soul_soilstone": "Cobbled Soul Soilstone",
-  "block.varan-deco.cobbled_soul_soilstone_stairs": "Cobbled Soul Soilstone Stairs",
-  "block.varan-deco.cobbled_soul_soilstone_slab": "Cobbled Soul Soilstone Slab",
-  "block.varan-deco.cobbled_soul_soilstone_wall": "Cobbled Soul Soilstone Wall",
+  "block.varan-deco.cobbled_soul_soilstone": "Cobbled Soulstone",
+  "block.varan-deco.cobbled_soul_soilstone_stairs": "Cobbled Soulstone Stairs",
+  "block.varan-deco.cobbled_soul_soilstone_slab": "Cobbled Soulstone Slab",
+  "block.varan-deco.cobbled_soul_soilstone_wall": "Cobbled Soulstone Wall",
 
-  "block.varan-deco.polished_soul_soilstone": "Polished Soul Soilstone",
-  "block.varan-deco.polished_soul_soilstone_stairs": "Polished Soul Soilstone Stairs",
-  "block.varan-deco.polished_soul_soilstone_slab": "Polished Soul Soilstone Slab",
-  "block.varan-deco.polished_soul_soilstone_wall": "Polished Soul Soilstone Wall",
-  "block.varan-deco.chiseled_polished_soul_soilstone": "Chiseled Polished Soul Soilstone",
+  "block.varan-deco.polished_soul_soilstone": "Polished Soulstone",
+  "block.varan-deco.polished_soul_soilstone_stairs": "Polished Soulstone Stairs",
+  "block.varan-deco.polished_soul_soilstone_slab": "Polished Soulstone Slab",
+  "block.varan-deco.polished_soul_soilstone_wall": "Polished Soulstone Wall",
+  "block.varan-deco.chiseled_polished_soul_soilstone": "Chiseled Polished Soulstone",
 
-  "block.varan-deco.soul_soilstone_bricks": "Polished Soul Soilstone Bricks",
-  "block.varan-deco.soul_soilstone_brick_stairs": "Polished Soul Soilstone Brick Stairs",
-  "block.varan-deco.soul_soilstone_brick_slab": "Polished Soul Soilstone Brick Slab",
-  "block.varan-deco.soul_soilstone_brick_wall": "Polished Soul Soilstone Brick Wall",
+  "block.varan-deco.soul_soilstone_bricks": "Polished Soulstone Bricks",
+  "block.varan-deco.soul_soilstone_brick_stairs": "Polished Soulstone Brick Stairs",
+  "block.varan-deco.soul_soilstone_brick_slab": "Polished Soulstone Brick Slab",
+  "block.varan-deco.soul_soilstone_brick_wall": "Polished Soulstone Brick Wall",
+
+  "block.varan-deco.chiseled_soul_soilstone": "Chiseled Soulstone",
 
   "block.varan-deco.quartz_wall": "Quartz Wall",
   "block.varan-deco.smooth_quartz_wall": "Smooth Quartz Wall",
@@ -232,8 +234,6 @@
   "block.varan-deco.cut_quartz_stairs": "Cut Quartz Stairs",
   "block.varan-deco.cut_quartz_slab": "Cut Quartz Slab",
   "block.varan-deco.cut_quartz_wall": "Cut Quartz Wall",
-
-  "block.varan-deco.chiseled_soul_soilstone": "Chiseled Soul Soilstone",
 
   "block.varan-deco.chiseled_red_nether_bricks": "Chiseled Red Nether Bricks",
   "block.varan-deco.cracked_red_nether_bricks": "Cracked Red Nether Bricks",
@@ -1939,6 +1939,24 @@
   "block.varan-deco.checkered_pink_concrete_stairs": "Checkered Pink Concrete Stairs",
   "block.varan-deco.checkered_pink_concrete_slab": "Checkered Pink Concrete Slab",
   "block.varan-deco.checkered_pink_concrete_wall": "Checkered Pink Concrete Wall",
+
+  "block.varan-deco.coal_stairs": "Coal Stairs",
+  "block.varan-deco.coal_slab": "Coal Slab",
+  "block.varan-deco.coal_wall": "Coal Wall",
+
+  "block.varan-deco.coal_bricks": "Coal Bricks",
+
+  "block.varan-deco.coal_brick_stairs": "Coal Brick Stairs",
+  "block.varan-deco.coal_brick_slab": "Coal Brick Slab",
+  "block.varan-deco.coal_brick_wall": "Coal Brick Wall",
+
+  "block.varan-deco.chiseled_coal_bricks": "Chiseled Coal Bricks",
+
+  "block.varan-deco.charcoal_stairs": "Charcoal Stairs",
+  "block.varan-deco.charcoal_slab": "Charcoal Slab",
+  "block.varan-deco.charcoal_wall": "Charcoal Wall",
+
+  "block.varan-deco.hanging_lamp": "Hanging Lamp",
 
   "block.varan-deco.glowing_glass": "Glowing Glass",
   "block.varan-deco.glowing_glass_pane": "Glowing Glass Pane",

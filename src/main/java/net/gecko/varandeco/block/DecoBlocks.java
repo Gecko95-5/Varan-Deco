@@ -5,15 +5,19 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
-import net.gecko.varandeco.block.cartographytables.*;
-import net.gecko.varandeco.block.craftingtables.*;
+import net.gecko.varandeco.block.nature.packed.PackedCrimsonNyliumBlock;
+import net.gecko.varandeco.block.nature.packed.PackedGrassBlock;
+import net.gecko.varandeco.block.nature.packed.PackedMyceliumBlock;
+import net.gecko.varandeco.block.nature.packed.PackedWarpedNyliumBlock;
+import net.gecko.varandeco.block.wooden.cartographytables.*;
+import net.gecko.varandeco.block.wooden.craftingtables.*;
 import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.nature.*;
 import net.gecko.varandeco.block.nature.flower.*;
 import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
 import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
 import net.gecko.varandeco.block.oxidizable.*;
-import net.gecko.varandeco.block.smithingtables.*;
+import net.gecko.varandeco.block.wooden.smithingtables.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.item.DecoItemGroup;
 import net.gecko.varandeco.world.feature.tree.WoodenSaplingGenerator;
@@ -82,6 +86,10 @@ public class DecoBlocks {
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
             new Block(FabricBlockSettings.of(Material.WOOD).mapColor(MapColor.BROWN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COAL_BRICKS = registerBlock("coal_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).mapColor(DyeColor.BLACK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHISELED_COAL_BRICKS = registerBlock("chiseled_coal_bricks",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.COAL_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.SPRUCE_BROWN).requiresTool()
                     .strength(5.0F, 6.0F).sounds(BlockSoundGroup.WOOD)), DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -779,6 +787,9 @@ public class DecoBlocks {
     public static final Block BEDROCK_SLAB = registerBlock("bedrock_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block COAL_SLAB = registerBlock("coal_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block RAW_IRON_SLAB = registerBlock("raw_iron_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RAW_COPPER_SLAB = registerBlock("raw_copper_slab",
@@ -1072,6 +1083,10 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.MUSHROOM_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COAL_BRICK_SLAB = registerBlock("coal_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.COAL_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHARCOAL_SLAB = registerBlock("charcoal_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CHARCOAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_BRICK_SLAB = registerBlock("lapis_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_LAPIS_SLAB = registerBlock("cut_lapis_slab",
@@ -1366,6 +1381,10 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block BEDROCK_STAIRS = registerBlock("bedrock_stairs",
             new StairsBlock(Blocks.BEDROCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BEDROCK)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block COAL_STAIRS = registerBlock("coal_stairs",
+            new StairsBlock(Blocks.COAL_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block RAW_IRON_STAIRS = registerBlock("raw_iron_stairs",
@@ -1775,6 +1794,12 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WOODEN_STAIRS = registerBlock("wooden_stairs",
             new StairsBlock(DecoBlocks.WOODEN_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.WOODEN_PLANKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COAL_BRICK_STAIRS = registerBlock("coal_brick_stairs",
+            new StairsBlock(DecoBlocks.COAL_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.COAL_BRICKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHARCOAL_STAIRS = registerBlock("charcoal_stairs",
+            new StairsBlock(DecoBlocks.CHARCOAL_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CHARCOAL_BLOCK)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_BRICK_STAIRS = registerBlock("lapis_brick_stairs",
             new StairsBlock(DecoBlocks.LAPIS_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)),
@@ -2780,6 +2805,9 @@ public class DecoBlocks {
     public static final Block BEDROCK_WALL = registerBlock("bedrock_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block COAL_WALL = registerBlock("coal_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block OAK_WOOD_WALL = registerBlock("oak_wood_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.DIRT_BROWN)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
@@ -3009,6 +3037,10 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.DRIPSTONE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block DRIPSTONE_BRICK_PILLAR_WALL = registerBlock("dripstone_brick_pillar_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.DRIPSTONE_BRICK_PILLAR)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block COAL_BRICK_WALL = registerBlock("coal_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.COAL_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block CHARCOAL_WALL = registerBlock("charcoal_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CHARCOAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_BRICK_WALL = registerBlock("lapis_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_LAPIS_WALL = registerBlock("cut_lapis_wall",
@@ -3534,6 +3566,10 @@ public class DecoBlocks {
             new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.WEATHERED_COPPER_SOUL_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block WAXED_OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("waxed_oxidized_copper_soul_lantern",
             new LanternBlock(FabricBlockSettings.copyOf(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block HANGING_LAMP = registerBlock("hanging_lamp",
+            new HangingLampBlock(FabricBlockSettings.of(Material.METAL).sounds(BlockSoundGroup.LANTERN)
+                    .luminance(state -> 15)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block BUBBLE_ELEVATOR_BLOCK_BUBBLE = registerBlock("bubble_elevator_block_bubble",
             new BubbleElevatorBubbleBlock(FabricBlockSettings.copyOf(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
@@ -4075,6 +4111,8 @@ public class DecoBlocks {
     public static final Block SCULK_CARPET_TEMP = registerBlockWithoutItem("sculk_carpet_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block HONEYCOMB_TEMP = registerBlockWithoutItem("honeycomb_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block COAL_TEMP = registerBlockWithoutItem("coal_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)

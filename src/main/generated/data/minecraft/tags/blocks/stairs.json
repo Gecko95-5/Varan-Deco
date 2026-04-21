@@ -149,6 +149,9 @@
     "varan-deco:nether_wart_stairs",
     "varan-deco:warped_wart_stairs",
     "varan-deco:sculk_stairs",
-    "varan-deco:honeycomb_stairs"
+    "varan-deco:honeycomb_stairs",
+    "varan-deco:coal_stairs",
+    "varan-deco:coal_brick_stairs",
+    "varan-deco:charcoal_stairs"
   ]
 }
