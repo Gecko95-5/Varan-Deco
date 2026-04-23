@@ -17,6 +17,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.data.client.Models;
 import net.minecraft.item.BlockItem;
 
 public class VaranDecoClient implements ClientModInitializer {
@@ -300,6 +301,24 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.OXIDIZED_COPPER_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_WHITE_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_LIGHT_GRAY_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_GRAY_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_BLACK_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_BROWN_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_RED_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_ORANGE_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_YELLOW_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_LIME_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_GREEN_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_CYAN_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_LIGHT_BLUE_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_BLUE_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_PURPLE_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_MAGENTA_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_PINK_LAMP, RenderLayer.getCutout());
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));

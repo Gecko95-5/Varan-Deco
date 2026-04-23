@@ -152,6 +152,10 @@
     "varan-deco:honeycomb_stairs",
     "varan-deco:coal_stairs",
     "varan-deco:coal_brick_stairs",
-    "varan-deco:charcoal_stairs"
+    "varan-deco:charcoal_stairs",
+    "varan-deco:sand_stairs",
+    "varan-deco:red_sand_stairs",
+    "varan-deco:gravel_stairs",
+    "varan-deco:flint_stairs"
   ]
 }

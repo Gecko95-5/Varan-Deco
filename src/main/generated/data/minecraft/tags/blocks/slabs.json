@@ -137,6 +137,10 @@
     "varan-deco:honeycomb_slab",
     "varan-deco:coal_slab",
     "varan-deco:coal_brick_slab",
-    "varan-deco:charcoal_slab"
+    "varan-deco:charcoal_slab",
+    "varan-deco:sand_slab",
+    "varan-deco:red_sand_slab",
+    "varan-deco:gravel_slab",
+    "varan-deco:flint_slab"
   ]
 }

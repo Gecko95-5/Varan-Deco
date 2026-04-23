@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carpet",
+  "key": {
+    "#": {
+      "item": "minecraft:sand"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "varan-deco:sand_carpet"
+  }
+}

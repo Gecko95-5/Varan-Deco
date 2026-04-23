@@ -1,4 +1,4 @@
-// 1.19.2	2026-04-20T22:29:37.4297205	Tags for minecraft:item
+// 1.19.2	2026-04-22T22:44:07.1908891	Tags for minecraft:item
 3059f1a0bd4a4d7abca7c2d573f888a8e9b65e51 data\minecraft\tags\items\wooden_doors.json
 b1600cf8e3211a9529ca16289fb835b0dd74b45f data\minecraft\tags\items\wooden_slabs.json
 9a82a2a79373742a46dc771c676c0fba26c0b4a5 data\varan-deco\tags\items\wooden_barrels.json
@@ -22,6 +22,7 @@ caa65214e42ad067ce1935d9b7d48e0a9feb9e73 data\varan-deco\tags\items\mushrooms.js
 891a273953301fedd2b8e3942425023aafa89b72 data\varan-deco\tags\items\furnaces.json
 e4188e215b3d1a019a25efd26a0adfe0f74a9cdf data\varan-deco\tags\items\wooden_smithing_tables.json
 39d5c8c663632335fa74347f8bfde81676f476c7 data\varan-deco\tags\items\deco_smithing_tables.json
+1117d23fde5b79f818af4a51e928f3e3131e1cce data\varan-deco\tags\items\hanging_lamps.json
 a63be6130cafdac6e5d659230afcc2d36e7c6f74 data\minecraft\tags\items\wooden_trapdoors.json
 ae19698b70eb1548440a613ca0179a6a3bfa901a data\varan-deco\tags\items\coloured_lamps.json
 7925d9e8fb44cb97b888efe7f6d3bce20b7faae3 data\minecraft\tags\items\stone_crafting_materials.json

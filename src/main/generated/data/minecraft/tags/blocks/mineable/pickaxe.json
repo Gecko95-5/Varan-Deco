@@ -241,7 +241,6 @@
     "varan-deco:obsidian_bricks",
     "varan-deco:obsidian_pillar",
     "varan-deco:chiseled_obsidian",
-    "varan-deco:charcoal_block",
     "varan-deco:flint_block",
     "varan-deco:echo_block",
     "varan-deco:cut_iron",
@@ -592,9 +591,9 @@
     "varan-deco:coal_brick_slab",
     "varan-deco:coal_brick_wall",
     "varan-deco:chiseled_coal_bricks",
-    "varan-deco:charcoal_stairs",
-    "varan-deco:charcoal_slab",
-    "varan-deco:charcoal_wall",
-    "varan-deco:hanging_lamp"
+    "#varan-deco:hanging_lamps",
+    "varan-deco:flint_stairs",
+    "varan-deco:flint_slab",
+    "varan-deco:flint_wall"
   ]
 }

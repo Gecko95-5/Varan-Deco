@@ -1958,10 +1958,43 @@
 
   "block.varan-deco.hanging_lamp": "Hanging Lamp",
 
+  "block.varan-deco.hanging_white_lamp": "Hanging White Lamp",
+  "block.varan-deco.hanging_light_gray_lamp": "Hanging Light Gray Lamp",
+  "block.varan-deco.hanging_gray_lamp": "Hanging Gray Lamp",
+  "block.varan-deco.hanging_black_lamp": "Hanging Black Lamp",
+  "block.varan-deco.hanging_brown_lamp": "Hanging Brown Lamp",
+  "block.varan-deco.hanging_red_lamp": "Hanging Red Lamp",
+  "block.varan-deco.hanging_orange_lamp": "Hanging Orange Lamp",
+  "block.varan-deco.hanging_yellow_lamp": "Hanging Yellow Lamp",
+  "block.varan-deco.hanging_lime_lamp": "Hanging Lime Lamp",
+  "block.varan-deco.hanging_green_lamp": "Hanging Green Lamp",
+  "block.varan-deco.hanging_cyan_lamp": "Hanging Cyan Lamp",
+  "block.varan-deco.hanging_light_blue_lamp": "Hanging Light Blue Lamp",
+  "block.varan-deco.hanging_blue_lamp": "Hanging Blue Lamp",
+  "block.varan-deco.hanging_purple_lamp": "Hanging Purple Lamp",
+  "block.varan-deco.hanging_magenta_lamp": "Hanging Magenta Lamp",
+  "block.varan-deco.hanging_pink_lamp": "Hanging Pink Lamp",
+
   "block.varan-deco.glowing_glass": "Glowing Glass",
   "block.varan-deco.glowing_glass_pane": "Glowing Glass Pane",
   "block.varan-deco.hardened_glowing_glass": "Hardened Glowing Glass",
   "block.varan-deco.hardened_glowing_glass_pane": "Hardened Glowing Glass Pane",
+
+  "block.varan-deco.sand_stairs": "Sand Stairs",
+  "block.varan-deco.sand_slab": "Sand Slab",
+  "block.varan-deco.sand_carpet": "Sand Carpet",
+
+  "block.varan-deco.red_sand_stairs": "Red Sand Stairs",
+  "block.varan-deco.red_sand_slab": "Red Sand Slab",
+  "block.varan-deco.red_sand_carpet": "Red Sand Carpet",
+
+  "block.varan-deco.gravel_stairs": "Gravel Stairs",
+  "block.varan-deco.gravel_slab": "Gravel Slab",
+  "block.varan-deco.gravel_carpet": "Gravel Carpet",
+
+  "block.varan-deco.flint_stairs": "Flint Stairs",
+  "block.varan-deco.flint_slab": "Flint Slab",
+  "block.varan-deco.flint_wall": "Flint Wall",
 
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",

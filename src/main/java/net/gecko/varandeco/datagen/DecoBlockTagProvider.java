@@ -255,7 +255,6 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.OBSIDIAN_BRICKS)
                 .add(DecoBlocks.OBSIDIAN_PILLAR)
                 .add(DecoBlocks.CHISELED_OBSIDIAN)
-                .add(DecoBlocks.CHARCOAL_BLOCK)
                 .add(DecoBlocks.FLINT_BLOCK)
                 .add(DecoBlocks.ECHO_BLOCK)
                 .add(DecoBlocks.CUT_IRON)
@@ -606,10 +605,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.COAL_BRICK_SLAB)
                 .add(DecoBlocks.COAL_BRICK_WALL)
                 .add(DecoBlocks.CHISELED_COAL_BRICKS)
-                .add(DecoBlocks.CHARCOAL_STAIRS)
-                .add(DecoBlocks.CHARCOAL_SLAB)
-                .add(DecoBlocks.CHARCOAL_WALL)
-                .add(DecoBlocks.HANGING_LAMP);
+                .addTag(DecoTags.Blocks.HANGING_LAMPS)
+                .add(DecoBlocks.FLINT_STAIRS)
+                .add(DecoBlocks.FLINT_SLAB)
+                .add(DecoBlocks.FLINT_WALL);
 
         getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(DecoTags.Blocks.DECO_BARRELS);
@@ -646,7 +645,16 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.COARSE_DIRT_WALL)
                 .add(DecoBlocks.ROOTED_DIRT_WALL)
                 .add(DecoBlocks.MUD_WALL)
-                .add(DecoBlocks.CLAY_WALL);
+                .add(DecoBlocks.CLAY_WALL)
+                .add(DecoBlocks.SAND_STAIRS)
+                .add(DecoBlocks.RED_SAND_STAIRS)
+                .add(DecoBlocks.GRAVEL_STAIRS)
+                .add(DecoBlocks.SAND_SLAB)
+                .add(DecoBlocks.RED_SAND_SLAB)
+                .add(DecoBlocks.GRAVEL_SLAB)
+                .add(DecoBlocks.SAND_CARPET)
+                .add(DecoBlocks.RED_SAND_CARPET)
+                .add(DecoBlocks.GRAVEL_CARPET);
 
         getOrCreateTagBuilder(BlockTags.SNOW)
                 .add(DecoBlocks.SNOW_STAIRS)
@@ -728,6 +736,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WOODEN_LOG);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(DecoBlocks.CHARCOAL_BLOCK)
+                .add(DecoBlocks.CHARCOAL_STAIRS)
+                .add(DecoBlocks.CHARCOAL_SLAB)
+                .add(DecoBlocks.CHARCOAL_WALL)
                 .addTag(DecoTags.Blocks.DECO_CRAFTING_TABLES)
                 .addTag(DecoTags.Blocks.DECO_BARRELS)
                 .addTag(DecoTags.Blocks.DECO_LADDERS)
@@ -1018,7 +1030,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HONEYCOMB_WALL)
                 .add(DecoBlocks.COAL_WALL)
                 .add(DecoBlocks.COAL_BRICK_WALL)
-                .add(DecoBlocks.CHARCOAL_WALL);
+                .add(DecoBlocks.CHARCOAL_WALL)
+                .add(DecoBlocks.FLINT_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(DecoBlocks.RED_NETHER_BRICK_FENCE)
@@ -1209,7 +1222,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HONEYCOMB_STAIRS)
                 .add(DecoBlocks.COAL_STAIRS)
                 .add(DecoBlocks.COAL_BRICK_STAIRS)
-                .add(DecoBlocks.CHARCOAL_STAIRS);
+                .add(DecoBlocks.CHARCOAL_STAIRS)
+                .add(DecoBlocks.SAND_STAIRS)
+                .add(DecoBlocks.RED_SAND_STAIRS)
+                .add(DecoBlocks.GRAVEL_STAIRS)
+                .add(DecoBlocks.FLINT_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DecoBlocks.POLISHED_STONE_SLAB)
@@ -1348,7 +1365,11 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HONEYCOMB_SLAB)
                 .add(DecoBlocks.COAL_SLAB)
                 .add(DecoBlocks.COAL_BRICK_SLAB)
-                .add(DecoBlocks.CHARCOAL_SLAB);
+                .add(DecoBlocks.CHARCOAL_SLAB)
+                .add(DecoBlocks.SAND_SLAB)
+                .add(DecoBlocks.RED_SAND_SLAB)
+                .add(DecoBlocks.GRAVEL_SLAB)
+                .add(DecoBlocks.FLINT_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(DecoBlocks.CACTUS_PLANK_STAIRS)
@@ -2479,5 +2500,24 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HYDRATED_BUBBLE_CORAL_WALL_FAN)
                 .add(DecoBlocks.HYDRATED_FIRE_CORAL_WALL_FAN)
                 .add(DecoBlocks.HYDRATED_HORN_CORAL_WALL_FAN);
+
+        getOrCreateTagBuilder(DecoTags.Blocks.HANGING_LAMPS)
+                .add(DecoBlocks.HANGING_LAMP)
+                .add(DecoBlocks.HANGING_WHITE_LAMP)
+                .add(DecoBlocks.HANGING_LIGHT_GRAY_LAMP)
+                .add(DecoBlocks.HANGING_GRAY_LAMP)
+                .add(DecoBlocks.HANGING_BLACK_LAMP)
+                .add(DecoBlocks.HANGING_BROWN_LAMP)
+                .add(DecoBlocks.HANGING_RED_LAMP)
+                .add(DecoBlocks.HANGING_ORANGE_LAMP)
+                .add(DecoBlocks.HANGING_YELLOW_LAMP)
+                .add(DecoBlocks.HANGING_LIME_LAMP)
+                .add(DecoBlocks.HANGING_GREEN_LAMP)
+                .add(DecoBlocks.HANGING_CYAN_LAMP)
+                .add(DecoBlocks.HANGING_LIGHT_BLUE_LAMP)
+                .add(DecoBlocks.HANGING_BLUE_LAMP)
+                .add(DecoBlocks.HANGING_PURPLE_LAMP)
+                .add(DecoBlocks.HANGING_MAGENTA_LAMP)
+                .add(DecoBlocks.HANGING_PINK_LAMP);
     }
 }

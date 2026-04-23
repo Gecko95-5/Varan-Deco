@@ -3289,5 +3289,66 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
 
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_lamp"),
                 BlockLootTableGenerator.drops(DecoBlocks.HANGING_LAMP));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_white_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_WHITE_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_light_gray_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_LIGHT_GRAY_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_gray_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_GRAY_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_black_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_BLACK_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_brown_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_BROWN_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_red_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_RED_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_orange_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_ORANGE_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_yellow_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_YELLOW_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_lime_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_LIME_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_green_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_GREEN_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_cyan_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_CYAN_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_light_blue_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_LIGHT_BLUE_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_blue_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_BLUE_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_purple_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_PURPLE_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_magenta_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_MAGENTA_LAMP));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/hanging_pink_lamp"),
+                BlockLootTableGenerator.drops(DecoBlocks.HANGING_PINK_LAMP));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sand_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SAND_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sand_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SAND_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/sand_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.SAND_CARPET));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sand_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.RED_SAND_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sand_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_SAND_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/red_sand_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.RED_SAND_CARPET));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gravel_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.GRAVEL_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gravel_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRAVEL_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gravel_carpet"),
+                BlockLootTableGenerator.drops(DecoBlocks.GRAVEL_CARPET));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/flint_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.FLINT_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/flint_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.FLINT_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/flint_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.FLINT_WALL));
     }
 }
