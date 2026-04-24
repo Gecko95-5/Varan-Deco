@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:blue_concrete_pillar"
+        "recipe": "minecraft:blue_concrete_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:blue_concrete_pillar"
+      "minecraft:blue_concrete_pillar"
     ]
   }
 }

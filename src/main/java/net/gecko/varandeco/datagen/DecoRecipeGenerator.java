@@ -665,14 +665,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.WARPED_WART))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.WARPED_WART_BLOCK)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_RED_NETHER_BRICKS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', Items.RED_NETHER_BRICK_SLAB)
-                .criterion(RecipeProvider.hasItem(Blocks.RED_NETHER_BRICK_SLAB),
-                        RecipeProvider.conditionsFromItem(Blocks.RED_NETHER_BRICK_SLAB))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_RED_NETHER_BRICKS)));
-
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_RED_NETHER_BRICKS, Items.RED_NETHER_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_RED_NETHER_BRICKS, Items.RED_NETHER_BRICKS);
 
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.RED_NETHER_BRICKS), DecoBlocks.CRACKED_RED_NETHER_BRICKS,
@@ -717,13 +710,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.BLUE_NETHER_BRICK_FENCE_GATE)));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.BLUE_NETHER_BRICK_SLAB)
-                .criterion(RecipeProvider.hasItem(DecoBlocks.BLUE_NETHER_BRICK_SLAB),
-                        RecipeProvider.conditionsFromItem(DecoBlocks.BLUE_NETHER_BRICK_SLAB))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_BLUE_NETHER_BRICKS)));
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_BLUE_NETHER_BRICKS, DecoBlocks.BLUE_NETHER_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_BLUE_NETHER_BRICKS, DecoBlocks.BLUE_NETHER_BRICKS);
 
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoBlocks.BLUE_NETHER_BRICKS), DecoBlocks.CRACKED_BLUE_NETHER_BRICKS,
@@ -1835,52 +1822,52 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_WALL, Items.PINK_CONCRETE);
         offerStonecuttingRecipe(exporter, DecoBlocks.CUT_PINK_CONCRETE_WALL, DecoBlocks.CUT_PINK_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.WHITE_CONCRETE_PILLAR, DecoBlocks.WHITE_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.WHITE_CONCRETE_PILLAR, DecoBlocks.WHITE_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.WHITE_CONCRETE_PILLAR, Items.WHITE_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_PILLAR, DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_PILLAR, DecoBlocks.LIGHT_GRAY_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_GRAY_CONCRETE_PILLAR, Items.LIGHT_GRAY_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.GRAY_CONCRETE_PILLAR, DecoBlocks.GRAY_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.GRAY_CONCRETE_PILLAR, DecoBlocks.GRAY_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.GRAY_CONCRETE_PILLAR, Items.GRAY_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.BLACK_CONCRETE_PILLAR, DecoBlocks.BLACK_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.BLACK_CONCRETE_PILLAR, DecoBlocks.BLACK_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLACK_CONCRETE_PILLAR, Items.BLACK_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.BROWN_CONCRETE_PILLAR, DecoBlocks.BROWN_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.BROWN_CONCRETE_PILLAR, DecoBlocks.BROWN_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.BROWN_CONCRETE_PILLAR, Items.BROWN_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.RED_CONCRETE_PILLAR, DecoBlocks.RED_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.RED_CONCRETE_PILLAR, DecoBlocks.RED_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_CONCRETE_PILLAR, Items.RED_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_PILLAR, DecoBlocks.ORANGE_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_PILLAR, DecoBlocks.ORANGE_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.ORANGE_CONCRETE_PILLAR, Items.ORANGE_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_PILLAR, DecoBlocks.YELLOW_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_PILLAR, DecoBlocks.YELLOW_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.YELLOW_CONCRETE_PILLAR, Items.YELLOW_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.LIME_CONCRETE_PILLAR, DecoBlocks.LIME_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.LIME_CONCRETE_PILLAR, DecoBlocks.LIME_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.LIME_CONCRETE_PILLAR, Items.LIME_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.GREEN_CONCRETE_PILLAR, DecoBlocks.GREEN_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.GREEN_CONCRETE_PILLAR, DecoBlocks.GREEN_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.GREEN_CONCRETE_PILLAR, Items.GREEN_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.CYAN_CONCRETE_PILLAR, DecoBlocks.CYAN_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.CYAN_CONCRETE_PILLAR, DecoBlocks.CYAN_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.CYAN_CONCRETE_PILLAR, Items.CYAN_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.LIGHT_BLUE_CONCRETE_PILLAR, DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.LIGHT_BLUE_CONCRETE_PILLAR, DecoBlocks.LIGHT_BLUE_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.LIGHT_BLUE_CONCRETE_PILLAR, Items.LIGHT_BLUE_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.BLUE_CONCRETE_PILLAR, DecoBlocks.BLUE_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.BLUE_CONCRETE_PILLAR, DecoBlocks.BLUE_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_CONCRETE_PILLAR, Items.BLUE_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_PILLAR, DecoBlocks.PURPLE_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_PILLAR, DecoBlocks.PURPLE_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.PURPLE_CONCRETE_PILLAR, Items.PURPLE_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_PILLAR, DecoBlocks.MAGENTA_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_PILLAR, DecoBlocks.MAGENTA_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.MAGENTA_CONCRETE_PILLAR, Items.MAGENTA_CONCRETE);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, DecoBlocks.PINK_CONCRETE_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, DecoBlocks.PINK_CONCRETE_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.PINK_CONCRETE_PILLAR, Items.PINK_CONCRETE);
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.TINTED_GLASS_PANE,6)
@@ -2622,7 +2609,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.SANDED_OBSIDIAN);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_BRICK_WALL, DecoBlocks.OBSIDIAN_BRICKS);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.OBSIDIAN_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.OBSIDIAN_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.OBSIDIAN_PILLAR, DecoBlocks.SANDED_OBSIDIAN);
 
         ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_OBSIDIAN,2)
@@ -4224,5 +4211,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, wall, blockInput);
         offerStonecuttingRecipe(exporter, wall, blockInput);
+    }
+    public static void offerPillarBlockRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapedRecipeJsonBuilder.create(output)
+                .input('#', input)
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
     }
 }

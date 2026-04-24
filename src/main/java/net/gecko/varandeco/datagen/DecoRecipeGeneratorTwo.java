@@ -2283,16 +2283,10 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         0.1f, 200).criterion(hasItem(DecoBlocks.LAPIS_WALL), conditionsFromItem(DecoBlocks.LAPIS_WALL))
                 .offerTo(exporter, new Identifier("smooth_lapis_wall_from_smelting"));
 
-        ShapedRecipeJsonBuilder.create(DecoBlocks.CHISELED_LAPIS,2)
-                .pattern("##")
-                .pattern("##")
-                .input('#', DecoBlocks.LAPIS_SLAB)
-                .criterion(RecipeProvider.hasItem(DecoBlocks.LAPIS_SLAB),
-                        RecipeProvider.conditionsFromItem(DecoBlocks.LAPIS_SLAB))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoBlocks.CHISELED_LAPIS)));
+        offerChiseledBlockRecipe(exporter, DecoBlocks.CHISELED_LAPIS, DecoBlocks.LAPIS_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.CHISELED_LAPIS, Items.LAPIS_BLOCK);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.LAPIS_PILLAR, DecoBlocks.LAPIS_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.LAPIS_PILLAR, DecoBlocks.LAPIS_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.LAPIS_PILLAR, Items.LAPIS_BLOCK);
 
         offerDuelCutRecipe(exporter, DecoBlocks.DUEL_CUT_LIGHT_GRAY_CONCRETE, DecoBlocks.CUT_LIGHT_GRAY_CONCRETE);
@@ -2696,14 +2690,14 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.SOUL_TORCH))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.JACK_O_SOUL_LANTERN)));
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.NETHER_BRICK_PILLAR, Items.NETHER_BRICK_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.NETHER_BRICK_PILLAR, Items.NETHER_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.NETHER_BRICK_PILLAR, Items.NETHER_BRICKS);
-        offerChiseledBlockRecipe(exporter, DecoBlocks.RED_NETHER_BRICK_PILLAR, Items.RED_NETHER_BRICK_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.RED_NETHER_BRICK_PILLAR, Items.RED_NETHER_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_NETHER_BRICK_PILLAR, Items.RED_NETHER_BRICKS);
-        offerChiseledBlockRecipe(exporter, DecoBlocks.BLUE_NETHER_BRICK_PILLAR, DecoBlocks.BLUE_NETHER_BRICK_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.BLUE_NETHER_BRICK_PILLAR, DecoBlocks.BLUE_NETHER_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.BLUE_NETHER_BRICK_PILLAR, DecoBlocks.BLUE_NETHER_BRICKS);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.VOID_STONE_BRICK_PILLAR, DecoBlocks.VOID_STONE_BRICK_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.VOID_STONE_BRICK_PILLAR, DecoBlocks.VOID_STONE_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.VOID_STONE_BRICK_PILLAR, DecoBlocks.VOID_STONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.VOID_STONE_BRICK_PILLAR, DecoBlocks.VOID_STONE_BRICKS);
 
@@ -2748,7 +2742,7 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.DRIPSTONE_BRICK_WALL, Items.DRIPSTONE_BLOCK);
         offerStonecuttingRecipe(exporter, DecoBlocks.DRIPSTONE_BRICK_WALL, DecoBlocks.DRIPSTONE_BRICKS);
 
-        offerChiseledBlockRecipe(exporter, DecoBlocks.DRIPSTONE_BRICK_PILLAR, DecoBlocks.DRIPSTONE_BRICK_SLAB);
+        offerPillarBlockRecipe(exporter, DecoBlocks.DRIPSTONE_BRICK_PILLAR, DecoBlocks.DRIPSTONE_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, DecoBlocks.DRIPSTONE_BRICK_PILLAR, Items.DRIPSTONE_BLOCK);
         offerStonecuttingRecipe(exporter, DecoBlocks.DRIPSTONE_BRICK_PILLAR, DecoBlocks.DRIPSTONE_BRICKS);
 
@@ -3636,5 +3630,14 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
         offerSlabRecipe(exporter, slab, blockInput);
 
         offerCarpetRecipe(exporter, carpet, blockInput);
+    }
+    public static void offerPillarBlockRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapedRecipeJsonBuilder.create(output)
+                .input('#', input)
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
     }
 }

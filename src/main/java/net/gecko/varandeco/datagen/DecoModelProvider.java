@@ -234,6 +234,14 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.RED_NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BLUE_NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
 
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.SANDSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.RED_SANDSTONE_BRICKS);
+
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.SOUL_SOILSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CHISELED_SOUL_SOILSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_SOUL_SOILSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS);
+
         BlockStateModelGenerator.BlockTexturePool castironPool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CASTED_IRON);
         BlockStateModelGenerator.BlockTexturePool dripbrickPool =

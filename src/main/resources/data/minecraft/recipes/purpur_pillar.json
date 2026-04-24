@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:nether_brick_slab"
+      "item": "minecraft:purpur_slab"
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "#",
+    "#",
+    "#"
   ],
   "result": {
-    "item": "minecraft:chiseled_nether_bricks"
+    "item": "minecraft:purpur_pillar"
   }
 }
