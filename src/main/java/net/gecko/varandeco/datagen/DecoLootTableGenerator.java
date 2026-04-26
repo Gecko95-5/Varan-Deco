@@ -2296,7 +2296,6 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/end_stone_tile_stairs"),
                 BlockLootTableGenerator.drops(DecoBlocks.END_STONE_TILE_STAIRS));
 
-
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/polished_end_stone_slab"),
                 BlockLootTableGenerator.slabDrops(DecoBlocks.POLISHED_END_STONE_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/smooth_end_stone_slab"),
@@ -3350,5 +3349,11 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.slabDrops(DecoBlocks.FLINT_SLAB));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/flint_wall"),
                 BlockLootTableGenerator.drops(DecoBlocks.FLINT_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/white_sand"),
+                BlockLootTableGenerator.drops(DecoBlocks.WHITE_SAND));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/black_sand"),
+                BlockLootTableGenerator.drops(DecoBlocks.BLACK_SAND));
     }
 }

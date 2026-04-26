@@ -1,4 +1,4 @@
-// 1.19.2	2026-04-24T09:51:35.4451679	minecraft:block Loot Table
+// 1.19.2	2026-04-25T23:50:36.8014106	minecraft:block Loot Table
 e8eda6562d871d9a283f0899b892af67812f45d9 data\varan-deco\loot_tables\blocks\hydrated_bubble_coral_block.json
 9762d58161bd1a43b55d19505f1c186003622fbc data\varan-deco\loot_tables\blocks\hydrated_brain_coral_block.json
 c8a9d53cbdfd2f8325db048d7c1a8ebd08e9bb26 data\varan-deco\loot_tables\blocks\crimson_pallet_door.json
@@ -1326,6 +1326,7 @@ d7ae94b966b2683a09ac4fd17d9625ec771ca99c data\varan-deco\loot_tables\blocks\pink
 d55d461cbed7c0240185f1180528a246a93bc769 data\varan-deco\loot_tables\blocks\lime_terracotta_wall.json
 720258fb355530f5dad18bd94b01af99bbc4cb2c data\varan-deco\loot_tables\blocks\duel_cut_pink_concrete_slab.json
 d9f6a8f6bd4401ac17a1b04f2777e2f0740c3b2f data\varan-deco\loot_tables\blocks\smooth_lapis_stairs.json
+68c4115003a4c9e1b226ff03cdeb1e8bd14aa2e5 data\varan-deco\loot_tables\blocks\black_sand.json
 a2b0e06019eb0cdf5a0f75bad903dd2d22c329b6 data\varan-deco\loot_tables\blocks\packed_mud_stairs.json
 15ab2d57b82c6f533f9ab7dc17a9c4ff1b3d213c data\varan-deco\loot_tables\blocks\cactus_pallet_trapdoor.json
 f2da00c84d36ad1c9ddef59f1da30c0b6744f012 data\varan-deco\loot_tables\blocks\checkered_yellow_concrete_stairs.json
@@ -1393,6 +1394,7 @@ e00c031fde94c81a795849691747e3ca7b95ae1b data\varan-deco\loot_tables\blocks\gold
 38637d43f9c76b70b7a6df6ecf4daa31d7fa5050 data\varan-deco\loot_tables\blocks\bubble_brick_slab.json
 63a08b80e5e501e615732795f618d38d414e3d48 data\varan-deco\loot_tables\blocks\blue_terracotta_slab.json
 3bb38582efc236a409b2f76dc2797a51ac2d0dcd data\varan-deco\loot_tables\blocks\cactus_cartography_table.json
+16a00b6b2cefb130b33824bc7b5fdb61b5e2af1e data\varan-deco\loot_tables\blocks\white_sand.json
 0d785a85bf2c6b05dbf3c90db6bac2eff5cf9a2b data\varan-deco\loot_tables\blocks\warped_hyphae_wall.json
 53bcedad9f5500581ff9230c847235dbcf71367d data\varan-deco\loot_tables\blocks\waxed_copper_stairs.json
 79ca3fcb553dfefc3c16560c0fb45caad2a9764f data\varan-deco\loot_tables\blocks\purple_terracotta_brick_wall.json

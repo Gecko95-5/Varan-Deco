@@ -347,5 +347,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.HANGING_PURPLE_LAMP.asItem())
                 .add(DecoBlocks.HANGING_MAGENTA_LAMP.asItem())
                 .add(DecoBlocks.HANGING_PINK_LAMP.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAND)
+                .add(DecoBlocks.WHITE_SAND.asItem())
+                .add(DecoBlocks.BLACK_SAND.asItem());
     }
 }

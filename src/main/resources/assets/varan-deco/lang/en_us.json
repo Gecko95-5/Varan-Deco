@@ -223,6 +223,86 @@
 
   "block.varan-deco.chiseled_soul_soilstone": "Chiseled Soulstone",
 
+  "block.varan-deco.white_sand": "White Sand",
+
+  "block.varan-deco.white_sandstone": "White Sandstone",
+  "block.varan-deco.white_sandstone_stairs": "White Sandstone Stairs",
+  "block.varan-deco.white_sandstone_slab": "White Sandstone Slab",
+  "block.varan-deco.white_sandstone_wall": "White Sandstone Wall",
+
+  "block.varan-deco.cut_white_sandstone": "Cut White Sandstone",
+  "block.varan-deco.cut_white_sandstone_stairs": "Cut White Sandstone Stairs",
+  "block.varan-deco.cut_white_sandstone_slab": "Cut White Sandstone Slab",
+  "block.varan-deco.cut_white_sandstone_wall": "Cut White Sandstone Wall",
+
+  "block.varan-deco.cut_white_sandstone_bricks": "Cut White Sandstone Bricks",
+  "block.varan-deco.cut_white_sandstone_brick_stairs": "Cut White Sandstone Brick Stairs",
+  "block.varan-deco.cut_white_sandstone_brick_slab": "Cut White Sandstone Brick Slab",
+  "block.varan-deco.cut_white_sandstone_brick_wall": "Cut White Sandstone Brick Wall",
+
+  "block.varan-deco.smooth_white_sandstone": "Smooth White Sandstone",
+  "block.varan-deco.smooth_white_sandstone_stairs": "Smooth White Sandstone Stairs",
+  "block.varan-deco.smooth_white_sandstone_slab": "Smooth White Sandstone Slab",
+  "block.varan-deco.smooth_white_sandstone_wall": "Smooth White Sandstone Wall",
+
+  "block.varan-deco.cobbled_white_sandstone": "Cobbled White Sandstone",
+  "block.varan-deco.cobbled_white_sandstone_stairs": "Cobbled White Sandstone Stairs",
+  "block.varan-deco.cobbled_white_sandstone_slab": "Cobbled White Sandstone Slab",
+  "block.varan-deco.cobbled_white_sandstone_wall": "Cobbled White Sandstone Wall",
+
+  "block.varan-deco.polished_white_sandstone": "Polished White Sandstone",
+  "block.varan-deco.polished_white_sandstone_stairs": "Polished White Sandstone Stairs",
+  "block.varan-deco.polished_white_sandstone_slab": "Polished White Sandstone Slab",
+  "block.varan-deco.polished_white_sandstone_wall": "Polished White Sandstone Wall",
+  "block.varan-deco.chiseled_polished_white_sandstone": "Chiseled Polished White Sandstone",
+
+  "block.varan-deco.white_sandstone_bricks": "Polished White Sandstone Bricks",
+  "block.varan-deco.white_sandstone_brick_stairs": "Polished White Sandstone Brick Stairs",
+  "block.varan-deco.white_sandstone_brick_slab": "Polished White Sandstone Brick Slab",
+  "block.varan-deco.white_sandstone_brick_wall": "Polished White Sandstone Brick Wall",
+
+  "block.varan-deco.chiseled_white_sandstone": "Chiseled White Sandstone",
+
+  "block.varan-deco.black_sand": "Black Sand",
+
+  "block.varan-deco.black_sandstone": "Black Sandstone",
+  "block.varan-deco.black_sandstone_stairs": "Black Sandstone Stairs",
+  "block.varan-deco.black_sandstone_slab": "Black Sandstone Slab",
+  "block.varan-deco.black_sandstone_wall": "Black Sandstone Wall",
+
+  "block.varan-deco.cut_black_sandstone": "Cut Black Sandstone",
+  "block.varan-deco.cut_black_sandstone_stairs": "Cut Black Sandstone Stairs",
+  "block.varan-deco.cut_black_sandstone_slab": "Cut Black Sandstone Slab",
+  "block.varan-deco.cut_black_sandstone_wall": "Cut Black Sandstone Wall",
+
+  "block.varan-deco.cut_black_sandstone_bricks": "Cut Black Sandstone Bricks",
+  "block.varan-deco.cut_black_sandstone_brick_stairs": "Cut Black Sandstone Brick Stairs",
+  "block.varan-deco.cut_black_sandstone_brick_slab": "Cut Black Sandstone Brick Slab",
+  "block.varan-deco.cut_black_sandstone_brick_wall": "Cut Black Sandstone Brick Wall",
+
+  "block.varan-deco.smooth_black_sandstone": "Smooth Black Sandstone",
+  "block.varan-deco.smooth_black_sandstone_stairs": "Smooth Black Sandstone Stairs",
+  "block.varan-deco.smooth_black_sandstone_slab": "Smooth Black Sandstone Slab",
+  "block.varan-deco.smooth_black_sandstone_wall": "Smooth Black Sandstone Wall",
+
+  "block.varan-deco.cobbled_black_sandstone": "Cobbled Black Sandstone",
+  "block.varan-deco.cobbled_black_sandstone_stairs": "Cobbled Black Sandstone Stairs",
+  "block.varan-deco.cobbled_black_sandstone_slab": "Cobbled Black Sandstone Slab",
+  "block.varan-deco.cobbled_black_sandstone_wall": "Cobbled Black Sandstone Wall",
+
+  "block.varan-deco.polished_black_sandstone": "Polished Black Sandstone",
+  "block.varan-deco.polished_black_sandstone_stairs": "Polished Black Sandstone Stairs",
+  "block.varan-deco.polished_black_sandstone_slab": "Polished Black Sandstone Slab",
+  "block.varan-deco.polished_black_sandstone_wall": "Polished Black Sandstone Wall",
+  "block.varan-deco.chiseled_polished_black_sandstone": "Chiseled Polished Black Sandstone",
+
+  "block.varan-deco.black_sandstone_bricks": "Polished Black Sandstone Bricks",
+  "block.varan-deco.black_sandstone_brick_stairs": "Polished Black Sandstone Brick Stairs",
+  "block.varan-deco.black_sandstone_brick_slab": "Polished Black Sandstone Brick Slab",
+  "block.varan-deco.black_sandstone_brick_wall": "Polished Black Sandstone Brick Wall",
+
+  "block.varan-deco.chiseled_black_sandstone": "Chiseled Black Sandstone",
+
   "block.varan-deco.quartz_wall": "Quartz Wall",
   "block.varan-deco.smooth_quartz_wall": "Smooth Quartz Wall",
 

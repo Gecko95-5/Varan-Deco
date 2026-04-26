@@ -234,8 +234,8 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.RED_NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(DecoBlocks.BLUE_NETHER_BRICK_PILLAR, TexturedModel.CUBE_COLUMN);
 
-        blockStateModelGenerator.registerSimpleState(DecoBlocks.SANDSTONE_BRICKS);
-        blockStateModelGenerator.registerSimpleState(DecoBlocks.RED_SANDSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_SANDSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_RED_SANDSTONE_BRICKS);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SOUL_SOILSTONE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CHISELED_SOUL_SOILSTONE);
@@ -429,6 +429,10 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParented(Blocks.CHISELED_POLISHED_BLACKSTONE, DecoBlocks.INFESTED_CHISELED_POLISHED_BLACKSTONE);
         blockStateModelGenerator.registerParented(DecoBlocks.CRACKED_STONE_TILES, DecoBlocks.INFESTED_CRACKED_STONE_TILES);
         blockStateModelGenerator.registerParented(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES, DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_SAND);
+
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLACK_SAND);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);

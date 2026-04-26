@@ -654,7 +654,9 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.GRAVEL_SLAB)
                 .add(DecoBlocks.SAND_CARPET)
                 .add(DecoBlocks.RED_SAND_CARPET)
-                .add(DecoBlocks.GRAVEL_CARPET);
+                .add(DecoBlocks.GRAVEL_CARPET)
+                .add(DecoBlocks.WHITE_SAND)
+                .add(DecoBlocks.BLACK_SAND);
 
         getOrCreateTagBuilder(BlockTags.SNOW)
                 .add(DecoBlocks.SNOW_STAIRS)
