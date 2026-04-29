@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:gold_bars"
+    },
+    "-": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "#-",
+    "--"
+  ],
+  "result": {
+    "item": "varan-deco:gold_bar_trapdoor"
+  }
+}

@@ -39,6 +39,21 @@ public class DecoPlacedFeatures {
             RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
             BiomePlacementModifier.of());
 
+    public static final RegistryEntry<PlacedFeature> DECO_TAIGA_PLACED = PlacedFeatures.register("deco_taiga_flowers_placed",
+            DecoConfiguredFeatures.DECO_TAIGA,NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+            RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+            BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_WINDSWEPT_PLACED = PlacedFeatures.register("deco_windswept_flowers_placed",
+            DecoConfiguredFeatures.DECO_WINDSWEPT,NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+            RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+            BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_WINDSWEPT_FOREST_PLACED = PlacedFeatures.register(
+            "deco_windswept_forest_flowers_placed", DecoConfiguredFeatures.DECO_WINDSWEPT_FOREST,
+            NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4), RarityFilterPlacementModifier.of(16),
+            SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
     public static final RegistryEntry<PlacedFeature> DECO_SWAMP_PLACED = PlacedFeatures.register("deco_swamp_flowers_placed",
             DecoConfiguredFeatures.DECO_SWAMP, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
@@ -59,6 +74,10 @@ public class DecoPlacedFeatures {
 
     public static final RegistryEntry<PlacedFeature> DECO_ROSE_PLACED = PlacedFeatures.register("deco_rose_placed",
             DecoConfiguredFeatures.DECO_ROSE, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> DECO_SILVER_ROSE_PLACED = PlacedFeatures.register("deco_silver_rose_placed",
+            DecoConfiguredFeatures.DECO_SILVER_ROSE, RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
     public static final RegistryEntry<PlacedFeature> DECO_ENDER_PLACED = PlacedFeatures.register("deco_ender_placed",

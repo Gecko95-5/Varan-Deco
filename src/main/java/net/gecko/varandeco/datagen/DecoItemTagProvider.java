@@ -328,5 +328,28 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(DecoBlocks.PURPLE_LAMP.asItem())
                 .add(DecoBlocks.MAGENTA_LAMP.asItem())
                 .add(DecoBlocks.PINK_LAMP.asItem());
+
+        getOrCreateTagBuilder(DecoTags.Items.HANGING_LAMPS)
+                .add(DecoBlocks.HANGING_LAMP.asItem())
+                .add(DecoBlocks.HANGING_WHITE_LAMP.asItem())
+                .add(DecoBlocks.HANGING_LIGHT_GRAY_LAMP.asItem())
+                .add(DecoBlocks.HANGING_GRAY_LAMP.asItem())
+                .add(DecoBlocks.HANGING_BLACK_LAMP.asItem())
+                .add(DecoBlocks.HANGING_BROWN_LAMP.asItem())
+                .add(DecoBlocks.HANGING_RED_LAMP.asItem())
+                .add(DecoBlocks.HANGING_ORANGE_LAMP.asItem())
+                .add(DecoBlocks.HANGING_YELLOW_LAMP.asItem())
+                .add(DecoBlocks.HANGING_LIME_LAMP.asItem())
+                .add(DecoBlocks.HANGING_GREEN_LAMP.asItem())
+                .add(DecoBlocks.HANGING_CYAN_LAMP.asItem())
+                .add(DecoBlocks.HANGING_LIGHT_BLUE_LAMP.asItem())
+                .add(DecoBlocks.HANGING_BLUE_LAMP.asItem())
+                .add(DecoBlocks.HANGING_PURPLE_LAMP.asItem())
+                .add(DecoBlocks.HANGING_MAGENTA_LAMP.asItem())
+                .add(DecoBlocks.HANGING_PINK_LAMP.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAND)
+                .add(DecoBlocks.WHITE_SAND.asItem())
+                .add(DecoBlocks.BLACK_SAND.asItem());
     }
 }

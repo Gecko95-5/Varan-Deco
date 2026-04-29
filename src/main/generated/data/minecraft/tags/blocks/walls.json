@@ -120,6 +120,24 @@
     "varan-deco:dripstone_brick_pillar_wall",
     "varan-deco:void_stone_brick_pillar_wall",
     "#varan-deco:coral_walls",
-    "varan-deco:honeycomb_wall"
+    "varan-deco:honeycomb_wall",
+    "varan-deco:coal_wall",
+    "varan-deco:coal_brick_wall",
+    "varan-deco:charcoal_wall",
+    "varan-deco:flint_wall",
+    "varan-deco:white_sandstone_wall",
+    "varan-deco:cut_white_sandstone_wall",
+    "varan-deco:smooth_white_sandstone_wall",
+    "varan-deco:cut_white_sandstone_brick_wall",
+    "varan-deco:cobbled_white_sandstone_wall",
+    "varan-deco:polished_white_sandstone_wall",
+    "varan-deco:white_sandstone_brick_wall",
+    "varan-deco:black_sandstone_wall",
+    "varan-deco:cut_black_sandstone_wall",
+    "varan-deco:smooth_black_sandstone_wall",
+    "varan-deco:cut_black_sandstone_brick_wall",
+    "varan-deco:cobbled_black_sandstone_wall",
+    "varan-deco:polished_black_sandstone_wall",
+    "varan-deco:black_sandstone_brick_wall"
   ]
 }

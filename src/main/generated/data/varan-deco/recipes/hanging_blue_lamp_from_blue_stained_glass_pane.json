@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hanging_coloured_lamp",
+  "key": {
+    "#": {
+      "item": "minecraft:blue_stained_glass_pane"
+    },
+    "$": {
+      "item": "varan-deco:hanging_lamp"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-deco:hanging_blue_lamp"
+  }
+}

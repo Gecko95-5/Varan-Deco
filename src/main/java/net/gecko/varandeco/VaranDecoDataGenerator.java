@@ -8,7 +8,7 @@ public class VaranDecoDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		fabricDataGenerator.addProvider(DecoLootTableGenerator::new);
-		fabricDataGenerator.addProvider(DecoRecipeGenerator::new);
+		fabricDataGenerator.addProvider(DecoRecipeGeneratorTwo::new);
 		fabricDataGenerator.addProvider(DecoModelProvider::new);
 		fabricDataGenerator.addProvider(DecoBlockTagProvider::new);
 		fabricDataGenerator.addProvider(DecoItemTagProvider::new);
