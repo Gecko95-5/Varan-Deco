@@ -102,9 +102,25 @@ public class DecoBlocks {
     public static final Block FLINT_BLOCK = registerBlock("flint_block",
             new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).requiresTool().strength(5.0F, 6.0F)
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_AMETHYST = registerBlock("shined_amethyst",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).mapColor(MapColor.PALE_PURPLE)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block AMETHYST_BRICKS = registerBlock("amethyst_bricks",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SHINED_AMETHYST).strength(2.0F)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_AMETHYST = registerBlock("scattered_amethyst",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_AMETHYST)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block AMETHYST_PILLAR = registerBlock("amethyst_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_AMETHYST)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block ECHO_BLOCK = registerBlock("echo_block",
             new Block(FabricBlockSettings.of(Material.METAL, MapColor.BLACK).requiresTool().strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.SCULK_CATALYST).luminance(state -> 7)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_ECHO = registerBlock("shined_echo",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.ECHO_BLOCK).luminance(state -> 3)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_BRICKS = registerBlock("echo_bricks",
+            new Block(FabricBlockSettings.copyOf(DecoBlocks.SHINED_ECHO).strength(2.5F)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_ECHO = registerBlock("scattered_echo",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_ECHO)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_PILLAR = registerBlock("echo_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_ECHO)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_IRON = registerBlock("cut_iron",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_IRON_STAIRS = registerBlock("cut_iron_stairs",
@@ -847,6 +863,9 @@ public class DecoBlocks {
     public static final Block RAW_GOLD_SLAB = registerBlock("raw_gold_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.RAW_GOLD_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
+    public static final Block AMETHYST_SLAB = registerBlock("amethyst_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block COPPER_SLAB = registerBlock("copper_slab",
@@ -1143,6 +1162,20 @@ public class DecoBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.CHARCOAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block FLINT_SLAB = registerBlock("flint_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.FLINT_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_AMETHYST_SLAB = registerBlock("shined_amethyst_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_AMETHYST)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block AMETHYST_BRICK_SLAB = registerBlock("amethyst_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.AMETHYST_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_AMETHYST_SLAB = registerBlock("scattered_amethyst_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SCATTERED_AMETHYST)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_SLAB = registerBlock("echo_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.ECHO_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_ECHO_SLAB = registerBlock("shined_echo_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_ECHO)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_BRICK_SLAB = registerBlock("echo_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.ECHO_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_ECHO_SLAB = registerBlock("scattered_echo_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.SCATTERED_ECHO)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_BRICK_SLAB = registerBlock("lapis_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_LAPIS_SLAB = registerBlock("cut_lapis_slab",
@@ -1489,6 +1522,10 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block RAW_GOLD_STAIRS = registerBlock("raw_gold_stairs",
             new StairsBlock(Blocks.RAW_GOLD_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.RAW_GOLD_BLOCK)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+
+    public static final Block AMETHYST_STAIRS = registerBlock("amethyst_stairs",
+            new StairsBlock(Blocks.AMETHYST_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block IRON_STAIRS = registerBlock("iron_stairs",
@@ -1900,6 +1937,27 @@ public class DecoBlocks {
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CHARCOAL_STAIRS = registerBlock("charcoal_stairs",
             new StairsBlock(DecoBlocks.CHARCOAL_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.CHARCOAL_BLOCK)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_AMETHYST_STAIRS = registerBlock("shined_amethyst_stairs",
+            new StairsBlock(DecoBlocks.SHINED_AMETHYST.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SHINED_AMETHYST)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block AMETHYST_BRICK_STAIRS = registerBlock("amethyst_brick_stairs",
+            new StairsBlock(DecoBlocks.AMETHYST_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.AMETHYST_BRICKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_AMETHYST_STAIRS = registerBlock("scattered_amethyst_stairs",
+            new StairsBlock(DecoBlocks.SCATTERED_AMETHYST.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SCATTERED_AMETHYST)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_STAIRS = registerBlock("echo_stairs",
+            new StairsBlock(DecoBlocks.ECHO_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.ECHO_BLOCK)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_ECHO_STAIRS = registerBlock("shined_echo_stairs",
+            new StairsBlock(DecoBlocks.SHINED_ECHO.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SHINED_ECHO)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_BRICK_STAIRS = registerBlock("echo_brick_stairs",
+            new StairsBlock(DecoBlocks.ECHO_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.ECHO_BRICKS)),
+            DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_ECHO_STAIRS = registerBlock("scattered_echo_stairs",
+            new StairsBlock(DecoBlocks.SCATTERED_ECHO.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.SCATTERED_ECHO)),
             DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block FLINT_STAIRS = registerBlock("flint_stairs",
             new StairsBlock(DecoBlocks.FLINT_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(DecoBlocks.FLINT_BLOCK)),
@@ -2968,6 +3026,8 @@ public class DecoBlocks {
 
     public static final Block COAL_WALL = registerBlock("coal_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block AMETHYST_WALL = registerBlock("amethyst_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
 
     public static final Block OAK_WOOD_WALL = registerBlock("oak_wood_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.DIRT_BROWN)),
@@ -3204,6 +3264,20 @@ public class DecoBlocks {
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.CHARCOAL_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block FLINT_WALL = registerBlock("flint_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.FLINT_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_AMETHYST_WALL = registerBlock("shined_amethyst_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_AMETHYST)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block AMETHYST_BRICK_WALL = registerBlock("amethyst_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.AMETHYST_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_AMETHYST_WALL = registerBlock("scattered_amethyst_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SCATTERED_AMETHYST)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_WALL = registerBlock("echo_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.ECHO_BLOCK)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SHINED_ECHO_WALL = registerBlock("shined_echo_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SHINED_ECHO)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block ECHO_BRICK_WALL = registerBlock("echo_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.ECHO_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
+    public static final Block SCATTERED_ECHO_WALL = registerBlock("scattered_echo_wall",
+            new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.SCATTERED_ECHO)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block LAPIS_BRICK_WALL = registerBlock("lapis_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(DecoBlocks.LAPIS_BRICKS)), DecoItemGroup.VARAN_DECO_BLOCKS);
     public static final Block CUT_LAPIS_WALL = registerBlock("cut_lapis_wall",
