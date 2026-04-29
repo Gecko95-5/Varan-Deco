@@ -156,6 +156,22 @@
     "varan-deco:sand_stairs",
     "varan-deco:red_sand_stairs",
     "varan-deco:gravel_stairs",
-    "varan-deco:flint_stairs"
+    "varan-deco:flint_stairs",
+    "varan-deco:white_sandstone_stairs",
+    "varan-deco:cut_white_sandstone_stairs",
+    "varan-deco:smooth_white_sandstone_stairs",
+    "varan-deco:cut_white_sandstone_brick_stairs",
+    "varan-deco:cobbled_white_sandstone_stairs",
+    "varan-deco:polished_white_sandstone_stairs",
+    "varan-deco:white_sandstone_brick_stairs",
+    "varan-deco:black_sandstone_stairs",
+    "varan-deco:cut_black_sandstone_stairs",
+    "varan-deco:smooth_black_sandstone_stairs",
+    "varan-deco:cut_black_sandstone_brick_stairs",
+    "varan-deco:cobbled_black_sandstone_stairs",
+    "varan-deco:polished_black_sandstone_stairs",
+    "varan-deco:black_sandstone_brick_stairs",
+    "varan-deco:white_sand_stairs",
+    "varan-deco:black_sand_stairs"
   ]
 }

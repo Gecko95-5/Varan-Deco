@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:sand"
+    },
+    "S": {
+      "item": "varan-deco:shaddol"
+    }
+  },
+  "pattern": [
+    "S#",
+    "#S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:black_sand"
+  }
+}

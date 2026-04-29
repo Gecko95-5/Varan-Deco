@@ -3834,7 +3834,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.POLISHED_RED_SANDSTONE);
         offerStonecuttingRecipe(exporter, DecoBlocks.RED_SANDSTONE_BRICK_WALL, DecoBlocks.RED_SANDSTONE_BRICKS);
 
-        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_SOUL_SOILSTONE)
+        ShapelessRecipeJsonBuilder.create(DecoBlocks.COBBLED_SOUL_SOILSTONE,4)
                 .input(DecoBlocks.SOUL_SOILSTONE)
                 .criterion(RecipeProvider.hasItem(DecoBlocks.SOUL_SOILSTONE),
                         RecipeProvider.conditionsFromItem(DecoBlocks.SOUL_SOILSTONE))

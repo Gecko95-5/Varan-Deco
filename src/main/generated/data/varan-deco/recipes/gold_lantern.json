@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "-": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "---",
+    "-#-",
+    "---"
+  ],
+  "result": {
+    "item": "varan-deco:gold_lantern"
+  }
+}

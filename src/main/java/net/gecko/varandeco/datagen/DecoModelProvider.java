@@ -242,6 +242,36 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_SOUL_SOILSTONE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_SOUL_SOILSTONE_BRICKS);
 
+        BlockStateModelGenerator.BlockTexturePool smoothWhiteSandstonePool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_WHITE_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool cobWhiteSandstonePool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COBBLED_WHITE_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool polishedWhiteSandstonePool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_WHITE_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool whiteSandstoneBricksPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WHITE_SANDSTONE_BRICKS);
+
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.WHITE_SANDSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CHISELED_WHITE_SANDSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_WHITE_SANDSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_WHITE_SANDSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_POLISHED_WHITE_SANDSTONE);
+
+        BlockStateModelGenerator.BlockTexturePool smoothBlackSandstonePool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SMOOTH_BLACK_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool cobBlackSandstonePool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.COBBLED_BLACK_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool polishedBlackSandstonePool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.POLISHED_BLACK_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool blackSandstoneBricksPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACK_SANDSTONE_BRICKS);
+
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.BLACK_SANDSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CHISELED_BLACK_SANDSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_BLACK_SANDSTONE);
+        blockStateModelGenerator.registerSimpleState(DecoBlocks.CUT_BLACK_SANDSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.CHISELED_POLISHED_BLACK_SANDSTONE);
+
         BlockStateModelGenerator.BlockTexturePool castironPool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CASTED_IRON);
         BlockStateModelGenerator.BlockTexturePool dripbrickPool =
@@ -430,9 +460,15 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParented(DecoBlocks.CRACKED_STONE_TILES, DecoBlocks.INFESTED_CRACKED_STONE_TILES);
         blockStateModelGenerator.registerParented(DecoBlocks.CRACKED_POLISHED_BLACKSTONE_TILES, DecoBlocks.INFESTED_CRACKED_POLISHED_BLACKSTONE_TILES);
 
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.WHITE_SAND);
+        blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.WHITE_SAND, DecoBlocks.WHITE_SAND_CARPET);
 
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.BLACK_SAND);
+        BlockStateModelGenerator.BlockTexturePool whiteSandPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.WHITE_SAND_TEMP);
+
+        blockStateModelGenerator.registerWoolAndCarpet(DecoBlocks.BLACK_SAND, DecoBlocks.BLACK_SAND_CARPET);
+
+        BlockStateModelGenerator.BlockTexturePool blackSandPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACK_SAND_TEMP);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -575,6 +611,15 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_EXPOSED_COPPER_SOUL_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_WEATHERED_COPPER_SOUL_LANTERN);
         blockStateModelGenerator.registerLantern(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN);
+
+        blockStateModelGenerator.registerLantern(DecoBlocks.GOLD_LANTERN);
+        blockStateModelGenerator.registerLantern(DecoBlocks.GOLD_SOUL_LANTERN);
+
+        blockStateModelGenerator.registerDoor(DecoBlocks.IRON_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(DecoBlocks.GOLD_BAR_DOOR);
+
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.IRON_BAR_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(DecoBlocks.GOLD_BAR_TRAPDOOR);
 
         blockStateModelGenerator.registerSimpleState(DecoBlocks.BIRCH_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleState(DecoBlocks.SPRUCE_CRAFTING_TABLE);
@@ -1488,6 +1533,44 @@ public class DecoModelProvider extends FabricModelProvider {
         flintPool.stairs(DecoBlocks.FLINT_STAIRS);
         flintPool.slab(DecoBlocks.FLINT_SLAB);
         flintPool.wall(DecoBlocks.FLINT_WALL);
+
+        smoothWhiteSandstonePool.stairs(DecoBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS);
+        smoothWhiteSandstonePool.slab(DecoBlocks.SMOOTH_WHITE_SANDSTONE_SLAB);
+        smoothWhiteSandstonePool.wall(DecoBlocks.SMOOTH_WHITE_SANDSTONE_WALL);
+
+        cobWhiteSandstonePool.stairs(DecoBlocks.COBBLED_WHITE_SANDSTONE_STAIRS);
+        cobWhiteSandstonePool.slab(DecoBlocks.COBBLED_WHITE_SANDSTONE_SLAB);
+        cobWhiteSandstonePool.wall(DecoBlocks.COBBLED_WHITE_SANDSTONE_WALL);
+
+        polishedWhiteSandstonePool.stairs(DecoBlocks.POLISHED_WHITE_SANDSTONE_STAIRS);
+        polishedWhiteSandstonePool.slab(DecoBlocks.POLISHED_WHITE_SANDSTONE_SLAB);
+        polishedWhiteSandstonePool.wall(DecoBlocks.POLISHED_WHITE_SANDSTONE_WALL);
+
+        whiteSandstoneBricksPool.stairs(DecoBlocks.WHITE_SANDSTONE_BRICK_STAIRS);
+        whiteSandstoneBricksPool.slab(DecoBlocks.WHITE_SANDSTONE_BRICK_SLAB);
+        whiteSandstoneBricksPool.wall(DecoBlocks.WHITE_SANDSTONE_BRICK_WALL);
+
+        smoothBlackSandstonePool.stairs(DecoBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS);
+        smoothBlackSandstonePool.slab(DecoBlocks.SMOOTH_BLACK_SANDSTONE_SLAB);
+        smoothBlackSandstonePool.wall(DecoBlocks.SMOOTH_BLACK_SANDSTONE_WALL);
+
+        cobBlackSandstonePool.stairs(DecoBlocks.COBBLED_BLACK_SANDSTONE_STAIRS);
+        cobBlackSandstonePool.slab(DecoBlocks.COBBLED_BLACK_SANDSTONE_SLAB);
+        cobBlackSandstonePool.wall(DecoBlocks.COBBLED_BLACK_SANDSTONE_WALL);
+
+        polishedBlackSandstonePool.stairs(DecoBlocks.POLISHED_BLACK_SANDSTONE_STAIRS);
+        polishedBlackSandstonePool.slab(DecoBlocks.POLISHED_BLACK_SANDSTONE_SLAB);
+        polishedBlackSandstonePool.wall(DecoBlocks.POLISHED_BLACK_SANDSTONE_WALL);
+
+        blackSandstoneBricksPool.stairs(DecoBlocks.BLACK_SANDSTONE_BRICK_STAIRS);
+        blackSandstoneBricksPool.slab(DecoBlocks.BLACK_SANDSTONE_BRICK_SLAB);
+        blackSandstoneBricksPool.wall(DecoBlocks.BLACK_SANDSTONE_BRICK_WALL);
+
+        whiteSandPool.stairs(DecoBlocks.WHITE_SAND_STAIRS);
+        whiteSandPool.slab(DecoBlocks.WHITE_SAND_SLAB);
+
+        blackSandPool.stairs(DecoBlocks.BLACK_SAND_STAIRS);
+        blackSandPool.slab(DecoBlocks.BLACK_SAND_SLAB);
 
         cactusplankPool.family(DecoBlocks.CACTUS_FAMILY);
         woodenPool.family(DecoBlocks.WOODEN_FAMILY);

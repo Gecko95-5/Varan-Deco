@@ -224,6 +224,9 @@
   "block.varan-deco.chiseled_soul_soilstone": "Chiseled Soulstone",
 
   "block.varan-deco.white_sand": "White Sand",
+  "block.varan-deco.white_sand_stairs": "White Sand Stairs",
+  "block.varan-deco.white_sand_slab": "White Sand Slab",
+  "block.varan-deco.white_sand_carpet": "White Sand Carpet",
 
   "block.varan-deco.white_sandstone": "White Sandstone",
   "block.varan-deco.white_sandstone_stairs": "White Sandstone Stairs",
@@ -264,6 +267,9 @@
   "block.varan-deco.chiseled_white_sandstone": "Chiseled White Sandstone",
 
   "block.varan-deco.black_sand": "Black Sand",
+  "block.varan-deco.black_sand_stairs": "Black Sand Stairs",
+  "block.varan-deco.black_sand_slab": "Black Sand Slab",
+  "block.varan-deco.black_sand_carpet": "Black Sand Carpet",
 
   "block.varan-deco.black_sandstone": "Black Sandstone",
   "block.varan-deco.black_sandstone_stairs": "Black Sandstone Stairs",
@@ -302,6 +308,14 @@
   "block.varan-deco.black_sandstone_brick_wall": "Polished Black Sandstone Brick Wall",
 
   "block.varan-deco.chiseled_black_sandstone": "Chiseled Black Sandstone",
+
+  "block.varan-deco.gold_lantern": "Golden Lantern",
+  "block.varan-deco.gold_soul_lantern": "Golden Soul Lantern",
+
+  "block.varan-deco.iron_bar_door": "Iron Bar Door",
+  "block.varan-deco.iron_bar_trapdoor": "Iron Bar Trapdoor",
+  "block.varan-deco.gold_bar_door": "Golden Bar Door",
+  "block.varan-deco.gold_bar_trapdoor": "Golden Bar Trapdoor",
 
   "block.varan-deco.quartz_wall": "Quartz Wall",
   "block.varan-deco.smooth_quartz_wall": "Smooth Quartz Wall",

@@ -320,6 +320,14 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_MAGENTA_LAMP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.HANGING_PINK_LAMP, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLD_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLD_SOUL_LANTERN, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_BAR_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.IRON_BAR_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLD_BAR_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DecoBlocks.GOLD_BAR_TRAPDOOR, RenderLayer.getCutout());
+
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, DecoBlocks.CACTUS_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
