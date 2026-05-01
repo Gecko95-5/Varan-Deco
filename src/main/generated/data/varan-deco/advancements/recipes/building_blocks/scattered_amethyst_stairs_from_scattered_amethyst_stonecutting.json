@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scattered_amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:scattered_amethyst"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:scattered_amethyst_stairs_from_scattered_amethyst_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_scattered_amethyst",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:scattered_amethyst_stairs_from_scattered_amethyst_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

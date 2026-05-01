@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "brown_dye",
+  "ingredients": [
+    {
+      "item": "varan-deco:caramel_buttercup"
+    }
+  ],
+  "result": {
+    "item": "minecraft:brown_dye"
+  }
+}
