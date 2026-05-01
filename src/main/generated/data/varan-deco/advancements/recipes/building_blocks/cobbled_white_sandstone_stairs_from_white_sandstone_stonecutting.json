@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cobbled_white_sandstone_stairs_from_white_sandstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:white_sandstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cobbled_white_sandstone_stairs_from_white_sandstone_stonecutting"
+    ]
+  }
+}

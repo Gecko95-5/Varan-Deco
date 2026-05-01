@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "varan-deco:shined_echo"
+  },
+  "result": "varan-deco:scattered_echo_wall"
+}

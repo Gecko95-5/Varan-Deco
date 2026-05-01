@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hanging_white_lamp"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_lamp": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:white_lamp"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_lamp"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hanging_white_lamp"
+    ]
+  }
+}
