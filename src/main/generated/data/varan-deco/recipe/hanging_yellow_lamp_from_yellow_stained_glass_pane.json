@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hanging_coloured_lamp",
+  "key": {
+    "#": {
+      "item": "minecraft:yellow_stained_glass_pane"
+    },
+    "$": {
+      "item": "varan-deco:hanging_lamp"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:hanging_yellow_lamp"
+  }
+}

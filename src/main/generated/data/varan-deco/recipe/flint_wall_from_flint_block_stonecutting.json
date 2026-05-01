@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:flint_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "varan-deco:flint_wall"
+  }
+}

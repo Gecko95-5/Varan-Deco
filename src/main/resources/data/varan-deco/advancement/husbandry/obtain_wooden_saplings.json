@@ -15,7 +15,9 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain a Wooden Saplings",
+    "description": {
+      "translate": "advancements.varan-deco.wooden_sapling.description"
+    },
     "frame": "task",
     "hidden": false,
     "icon": {
@@ -23,7 +25,9 @@
       "id": "varan-deco:wooden_sapling"
     },
     "show_toast": true,
-    "title": "The Wood of Woods"
+    "title": {
+      "translate": "advancements.varan-deco.wooden_sapling.title"
+    }
   },
   "requirements": [
     [

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:scattered_amethyst"
+  },
+  "result": {
+    "count": 1,
+    "id": "varan-deco:scattered_amethyst_wall"
+  }
+}

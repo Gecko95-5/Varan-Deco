@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "varan-deco:copper_bars"
+    },
+    "-": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "#-",
+    "--"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:copper_bar_trapdoor"
+  }
+}

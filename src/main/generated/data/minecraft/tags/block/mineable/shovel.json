@@ -22,6 +22,23 @@
     "varan-deco:coarse_dirt_wall",
     "varan-deco:rooted_dirt_wall",
     "varan-deco:mud_wall",
-    "varan-deco:clay_wall"
+    "varan-deco:clay_wall",
+    "varan-deco:sand_stairs",
+    "varan-deco:red_sand_stairs",
+    "varan-deco:gravel_stairs",
+    "varan-deco:sand_slab",
+    "varan-deco:red_sand_slab",
+    "varan-deco:gravel_slab",
+    "varan-deco:sand_carpet",
+    "varan-deco:red_sand_carpet",
+    "varan-deco:gravel_carpet",
+    "varan-deco:white_sand",
+    "varan-deco:black_sand",
+    "varan-deco:white_sand_stairs",
+    "varan-deco:black_sand_stairs",
+    "varan-deco:white_sand_slab",
+    "varan-deco:black_sand_slab",
+    "varan-deco:white_sand_carpet",
+    "varan-deco:black_sand_carpet"
   ]
 }

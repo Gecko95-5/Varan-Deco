@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:echo_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "varan-deco:echo_brick_wall"
+  }
+}

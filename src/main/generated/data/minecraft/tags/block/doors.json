@@ -1,0 +1,14 @@
+{
+  "values": [
+    "varan-deco:iron_bar_door",
+    "varan-deco:copper_bar_door",
+    "varan-deco:exposed_copper_bar_door",
+    "varan-deco:weathered_copper_bar_door",
+    "varan-deco:oxidized_copper_bar_door",
+    "varan-deco:waxed_copper_bar_door",
+    "varan-deco:waxed_exposed_copper_bar_door",
+    "varan-deco:waxed_weathered_copper_bar_door",
+    "varan-deco:waxed_oxidized_copper_bar_door",
+    "varan-deco:gold_bar_door"
+  ]
+}
