@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hanging_lamp": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:hanging_lamp"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hanging_orange_lamp_from_orange_stained_glass_pane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_hanging_lamp",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hanging_orange_lamp_from_orange_stained_glass_pane"
+    ]
+  },
+  "sends_telemetry_event": false
+}

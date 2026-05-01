@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "varan-deco:block/scattered_amethyst",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "varan-deco:block/scattered_amethyst",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "varan-deco:block/scattered_amethyst"
+    },
+    "facing=west": {
+      "model": "varan-deco:block/scattered_amethyst",
+      "y": 90
+    }
+  }
+}

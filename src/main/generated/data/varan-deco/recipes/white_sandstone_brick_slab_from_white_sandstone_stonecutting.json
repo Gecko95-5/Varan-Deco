@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 8,
+  "ingredient": {
+    "item": "varan-deco:white_sandstone"
+  },
+  "result": "varan-deco:white_sandstone_brick_slab"
+}
