@@ -3522,5 +3522,79 @@ public class DecoLootTableGenerator extends SimpleFabricLootTableProvider {
                 BlockLootTableGenerator.doorDrops(DecoBlocks.GOLD_BAR_DOOR));
         identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/gold_bar_trapdoor"),
                 BlockLootTableGenerator.drops(DecoBlocks.GOLD_BAR_TRAPDOOR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.AMETHYST_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.AMETHYST_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.AMETHYST_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.ECHO_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_amethyst"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHINED_AMETHYST));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_amethyst_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHINED_AMETHYST_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_amethyst_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SHINED_AMETHYST_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_amethyst_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHINED_AMETHYST_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.AMETHYST_PILLAR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.AMETHYST_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.AMETHYST_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.AMETHYST_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/amethyst_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.AMETHYST_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_amethyst"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCATTERED_AMETHYST));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_amethyst_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCATTERED_AMETHYST_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_amethyst_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SCATTERED_AMETHYST_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_amethyst_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCATTERED_AMETHYST_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_echo"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHINED_ECHO));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_echo_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHINED_ECHO_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_echo_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SHINED_ECHO_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/shined_echo_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SHINED_ECHO_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_pillar"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_PILLAR));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_bricks"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_BRICKS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_brick_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_BRICK_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_brick_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.ECHO_BRICK_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/echo_brick_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.ECHO_BRICK_WALL));
+
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_echo"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCATTERED_ECHO));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_echo_stairs"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCATTERED_ECHO_STAIRS));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_echo_slab"),
+                BlockLootTableGenerator.slabDrops(DecoBlocks.SCATTERED_ECHO_SLAB));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranDeco.MOD_ID,"blocks/scattered_echo_wall"),
+                BlockLootTableGenerator.drops(DecoBlocks.SCATTERED_ECHO_WALL));
     }
 }

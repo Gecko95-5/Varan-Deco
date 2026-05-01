@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/shined_echo_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/shined_echo"
+    },
+    "type=top": {
+      "model": "varan-deco:block/shined_echo_slab_top"
+    }
+  }
+}

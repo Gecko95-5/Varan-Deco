@@ -2090,6 +2090,47 @@
   "block.varan-deco.flint_slab": "Flint Slab",
   "block.varan-deco.flint_wall": "Flint Wall",
 
+  "block.varan-deco.amethyst_stairs": "Amethyst Stairs",
+  "block.varan-deco.amethyst_slab": "Amethyst Slab",
+  "block.varan-deco.amethyst_wall": "Amethyst Wall",
+
+  "block.varan-deco.echo_stairs": "Echo Stairs",
+  "block.varan-deco.echo_slab": "Echo Slab",
+  "block.varan-deco.echo_wall": "Echo Wall",
+
+  "block.varan-deco.shined_amethyst": "Shined Amethyst Block",
+  "block.varan-deco.shined_amethyst_stairs": "Shined Amethyst Stairs",
+  "block.varan-deco.shined_amethyst_slab": "Shined Amethyst Slab",
+  "block.varan-deco.shined_amethyst_wall": "Shined Amethyst Wall",
+
+  "block.varan-deco.shined_echo": "Shined Echo Block",
+  "block.varan-deco.shined_echo_stairs": "Shined Echo Stairs",
+  "block.varan-deco.shined_echo_slab": "Shined Echo Slab",
+  "block.varan-deco.shined_echo_wall": "Shined Echo Wall",
+
+  "block.varan-deco.amethyst_pillar": "Amethyst Pillar",
+  "block.varan-deco.echo_pillar": "Echo Pillar",
+
+  "block.varan-deco.scattered_amethyst": "Scattered Amethyst Block",
+  "block.varan-deco.scattered_amethyst_stairs": "Scattered Amethyst Stairs",
+  "block.varan-deco.scattered_amethyst_slab": "Scattered Amethyst Slab",
+  "block.varan-deco.scattered_amethyst_wall": "Scattered Amethyst Wall",
+
+  "block.varan-deco.scattered_echo": "Scattered Echo Block",
+  "block.varan-deco.scattered_echo_stairs": "Scattered Echo Stairs",
+  "block.varan-deco.scattered_echo_slab": "Scattered Echo Slab",
+  "block.varan-deco.scattered_echo_wall": "Scattered Echo Wall",
+
+  "block.varan-deco.amethyst_bricks": "Amethyst Bricks",
+  "block.varan-deco.amethyst_brick_stairs": "Amethyst Brick Stairs",
+  "block.varan-deco.amethyst_brick_slab": "Amethyst Brick Slab",
+  "block.varan-deco.amethyst_brick_wall": "Amethyst Brick Wall",
+
+  "block.varan-deco.echo_bricks": "Echo Bricks",
+  "block.varan-deco.echo_brick_stairs": "Echo Brick Stairs",
+  "block.varan-deco.echo_brick_slab": "Echo Brick Slab",
+  "block.varan-deco.echo_brick_wall": "Echo Brick Wall",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",

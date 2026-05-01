@@ -3597,6 +3597,85 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 DecoBlocks.WHITE_SAND_CARPET);
         offerStairSlabCarpetRecipes(exporter, DecoBlocks.BLACK_SAND, DecoBlocks.BLACK_SAND_STAIRS,DecoBlocks.BLACK_SAND_SLAB,
                 DecoBlocks.BLACK_SAND_CARPET);
+
+        offerBasicStairSlabWallRecipes(exporter,Blocks.AMETHYST_BLOCK, DecoBlocks.AMETHYST_STAIRS,
+                DecoBlocks.AMETHYST_SLAB, DecoBlocks.AMETHYST_WALL);
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.ECHO_BLOCK, DecoBlocks.ECHO_STAIRS,
+                DecoBlocks.ECHO_SLAB, DecoBlocks.ECHO_WALL);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SHINED_AMETHYST,2)
+                .pattern("#F")
+                .pattern("F#")
+                .input('F', Items.FLINT)
+                .input('#', Items.AMETHYST_BLOCK)
+                .criterion(RecipeProvider.hasItem(Items.AMETHYST_BLOCK),
+                        RecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SHINED_AMETHYST)));
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.SHINED_AMETHYST, DecoBlocks.SHINED_AMETHYST_STAIRS,
+                DecoBlocks.SHINED_AMETHYST_SLAB, DecoBlocks.SHINED_AMETHYST_WALL);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SHINED_ECHO,2)
+                .pattern("#F")
+                .pattern("F#")
+                .input('F', Items.FLINT)
+                .input('#', DecoBlocks.ECHO_BLOCK)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.ECHO_BLOCK),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.ECHO_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SHINED_ECHO)));
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.SHINED_ECHO, DecoBlocks.SHINED_ECHO_STAIRS,
+                DecoBlocks.SHINED_ECHO_SLAB, DecoBlocks.SHINED_ECHO_WALL);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SCATTERED_AMETHYST,4)
+                .pattern("#/")
+                .pattern("/#")
+                .input('/', Items.AMETHYST_SHARD)
+                .input('#', DecoBlocks.SHINED_AMETHYST)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SHINED_AMETHYST),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SHINED_AMETHYST))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SCATTERED_AMETHYST)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_AMETHYST, DecoBlocks.SHINED_AMETHYST,2);
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.SCATTERED_AMETHYST, DecoBlocks.SCATTERED_AMETHYST_STAIRS,
+                DecoBlocks.SCATTERED_AMETHYST_SLAB, DecoBlocks.SCATTERED_AMETHYST_WALL);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_AMETHYST_STAIRS, DecoBlocks.SHINED_AMETHYST,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_AMETHYST_SLAB, DecoBlocks.SHINED_AMETHYST,4);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_AMETHYST_WALL, DecoBlocks.SHINED_AMETHYST,2);
+
+        ShapedRecipeJsonBuilder.create(DecoBlocks.SCATTERED_ECHO,4)
+                .pattern("#/")
+                .pattern("/#")
+                .input('/', Items.ECHO_SHARD)
+                .input('#', DecoBlocks.SHINED_ECHO)
+                .criterion(RecipeProvider.hasItem(DecoBlocks.SHINED_ECHO),
+                        RecipeProvider.conditionsFromItem(DecoBlocks.SHINED_ECHO))
+                .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.SCATTERED_ECHO)));
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_ECHO, DecoBlocks.SHINED_ECHO,2);
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.SCATTERED_ECHO, DecoBlocks.SCATTERED_ECHO_STAIRS,
+                DecoBlocks.SCATTERED_ECHO_SLAB, DecoBlocks.SCATTERED_ECHO_WALL);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_ECHO_STAIRS, DecoBlocks.SHINED_ECHO,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_ECHO_SLAB, DecoBlocks.SHINED_ECHO,4);
+        offerStonecuttingRecipe(exporter, DecoBlocks.SCATTERED_ECHO_WALL, DecoBlocks.SHINED_ECHO,2);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.AMETHYST_BRICKS, DecoBlocks.SHINED_AMETHYST);
+        offerStonecuttingRecipe(exporter, DecoBlocks.AMETHYST_BRICKS, DecoBlocks.SHINED_AMETHYST);
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.AMETHYST_BRICKS, DecoBlocks.AMETHYST_BRICK_STAIRS,
+                DecoBlocks.AMETHYST_BRICK_SLAB, DecoBlocks.AMETHYST_BRICK_WALL);
+        offerStonecuttingRecipe(exporter, DecoBlocks.AMETHYST_BRICK_STAIRS, DecoBlocks.SHINED_AMETHYST);
+        offerStonecuttingRecipe(exporter, DecoBlocks.AMETHYST_BRICK_SLAB, DecoBlocks.SHINED_AMETHYST,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.AMETHYST_BRICK_WALL, DecoBlocks.SHINED_AMETHYST);
+
+        offerPolishedStoneRecipe(exporter, DecoBlocks.ECHO_BRICKS, DecoBlocks.SHINED_ECHO);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ECHO_BRICKS, DecoBlocks.SHINED_ECHO);
+        offerBasicStairSlabWallRecipes(exporter,DecoBlocks.ECHO_BRICKS, DecoBlocks.ECHO_BRICK_STAIRS,
+                DecoBlocks.ECHO_BRICK_SLAB, DecoBlocks.ECHO_BRICK_WALL);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ECHO_BRICK_STAIRS, DecoBlocks.SHINED_ECHO);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ECHO_BRICK_SLAB, DecoBlocks.SHINED_ECHO,2);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ECHO_BRICK_WALL, DecoBlocks.SHINED_ECHO);
+
+        offerPillarBlockRecipe(exporter, DecoBlocks.AMETHYST_PILLAR, DecoBlocks.SHINED_AMETHYST_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.AMETHYST_PILLAR, DecoBlocks.SHINED_AMETHYST);
+
+        offerPillarBlockRecipe(exporter, DecoBlocks.ECHO_PILLAR, DecoBlocks.SHINED_ECHO_SLAB);
+        offerStonecuttingRecipe(exporter, DecoBlocks.ECHO_PILLAR, DecoBlocks.SHINED_ECHO);
     }
     public static void offerLadderVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible woodInput) {
         ShapedRecipeJsonBuilder.create(output,3)

@@ -151,7 +151,8 @@ public class DecoModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CHARCOAL_BLOCK);
         BlockStateModelGenerator.BlockTexturePool flintPool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.FLINT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(DecoBlocks.ECHO_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool echoPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ECHO_BLOCK);
         BlockStateModelGenerator.BlockTexturePool crackstonebrickPool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.CRACKED_STONE_BRICKS_TEMP);
         BlockStateModelGenerator.BlockTexturePool crackstonetilePool =
@@ -469,6 +470,30 @@ public class DecoModelProvider extends FabricModelProvider {
 
         BlockStateModelGenerator.BlockTexturePool blackSandPool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BLACK_SAND_TEMP);
+
+        BlockStateModelGenerator.BlockTexturePool amethystPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.AMETHYST_TEMP);
+        BlockStateModelGenerator.BlockTexturePool shinedAmethystPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SHINED_AMETHYST);
+        BlockStateModelGenerator.BlockTexturePool scatterAmethystPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SCATTERED_AMETHYST_TEMP);
+        BlockStateModelGenerator.BlockTexturePool amethystBrickPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.AMETHYST_BRICKS);
+
+        blockStateModelGenerator.registerSouthDefaultHorizontalFacing(TexturedModel.TEMPLATE_GLAZED_TERRACOTTA,
+                DecoBlocks.SCATTERED_AMETHYST);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.AMETHYST_PILLAR, TexturedModel.CUBE_COLUMN);
+
+        BlockStateModelGenerator.BlockTexturePool shinedEchoPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SHINED_ECHO);
+        BlockStateModelGenerator.BlockTexturePool scatterEchoPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.SCATTERED_ECHO_TEMP);
+        BlockStateModelGenerator.BlockTexturePool echoBrickPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.ECHO_BRICKS);
+
+        blockStateModelGenerator.registerSouthDefaultHorizontalFacing(TexturedModel.TEMPLATE_GLAZED_TERRACOTTA,
+                DecoBlocks.SCATTERED_ECHO);
+        blockStateModelGenerator.registerAxisRotated(DecoBlocks.ECHO_PILLAR, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerFlowerPotPlant(DecoBlocks.YELLOW_TULIP, DecoBlocks.POTTED_YELLOW_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -1571,6 +1596,38 @@ public class DecoModelProvider extends FabricModelProvider {
 
         blackSandPool.stairs(DecoBlocks.BLACK_SAND_STAIRS);
         blackSandPool.slab(DecoBlocks.BLACK_SAND_SLAB);
+
+        amethystPool.stairs(DecoBlocks.AMETHYST_STAIRS);
+        amethystPool.slab(DecoBlocks.AMETHYST_SLAB);
+        amethystPool.wall(DecoBlocks.AMETHYST_WALL);
+
+        scatterAmethystPool.stairs(DecoBlocks.SCATTERED_AMETHYST_STAIRS);
+        scatterAmethystPool.slab(DecoBlocks.SCATTERED_AMETHYST_SLAB);
+        scatterAmethystPool.wall(DecoBlocks.SCATTERED_AMETHYST_WALL);
+
+        shinedAmethystPool.stairs(DecoBlocks.SHINED_AMETHYST_STAIRS);
+        shinedAmethystPool.slab(DecoBlocks.SHINED_AMETHYST_SLAB);
+        shinedAmethystPool.wall(DecoBlocks.SHINED_AMETHYST_WALL);
+
+        amethystBrickPool.stairs(DecoBlocks.AMETHYST_BRICK_STAIRS);
+        amethystBrickPool.slab(DecoBlocks.AMETHYST_BRICK_SLAB);
+        amethystBrickPool.wall(DecoBlocks.AMETHYST_BRICK_WALL);
+
+        echoPool.stairs(DecoBlocks.ECHO_STAIRS);
+        echoPool.slab(DecoBlocks.ECHO_SLAB);
+        echoPool.wall(DecoBlocks.ECHO_WALL);
+
+        scatterEchoPool.stairs(DecoBlocks.SCATTERED_ECHO_STAIRS);
+        scatterEchoPool.slab(DecoBlocks.SCATTERED_ECHO_SLAB);
+        scatterEchoPool.wall(DecoBlocks.SCATTERED_ECHO_WALL);
+
+        shinedEchoPool.stairs(DecoBlocks.SHINED_ECHO_STAIRS);
+        shinedEchoPool.slab(DecoBlocks.SHINED_ECHO_SLAB);
+        shinedEchoPool.wall(DecoBlocks.SHINED_ECHO_WALL);
+
+        echoBrickPool.stairs(DecoBlocks.ECHO_BRICK_STAIRS);
+        echoBrickPool.slab(DecoBlocks.ECHO_BRICK_SLAB);
+        echoBrickPool.wall(DecoBlocks.ECHO_BRICK_WALL);
 
         cactusplankPool.family(DecoBlocks.CACTUS_FAMILY);
         woodenPool.family(DecoBlocks.WOODEN_FAMILY);

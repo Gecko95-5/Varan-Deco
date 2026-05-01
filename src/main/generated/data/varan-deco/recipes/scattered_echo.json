@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-deco:shined_echo"
+    },
+    "/": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "pattern": [
+    "#/",
+    "/#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:scattered_echo"
+  }
+}

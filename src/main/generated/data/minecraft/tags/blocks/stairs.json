@@ -172,6 +172,14 @@
     "varan-deco:polished_black_sandstone_stairs",
     "varan-deco:black_sandstone_brick_stairs",
     "varan-deco:white_sand_stairs",
-    "varan-deco:black_sand_stairs"
+    "varan-deco:black_sand_stairs",
+    "varan-deco:amethyst_stairs",
+    "varan-deco:shined_amethyst_stairs",
+    "varan-deco:scattered_amethyst_stairs",
+    "varan-deco:amethyst_brick_stairs",
+    "varan-deco:echo_stairs",
+    "varan-deco:shined_echo_stairs",
+    "varan-deco:scattered_echo_stairs",
+    "varan-deco:echo_brick_stairs"
   ]
 }

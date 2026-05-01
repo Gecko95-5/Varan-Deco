@@ -138,6 +138,14 @@
     "varan-deco:cut_black_sandstone_brick_wall",
     "varan-deco:cobbled_black_sandstone_wall",
     "varan-deco:polished_black_sandstone_wall",
-    "varan-deco:black_sandstone_brick_wall"
+    "varan-deco:black_sandstone_brick_wall",
+    "varan-deco:amethyst_wall",
+    "varan-deco:shined_amethyst_wall",
+    "varan-deco:scattered_amethyst_wall",
+    "varan-deco:amethyst_brick_wall",
+    "varan-deco:echo_wall",
+    "varan-deco:shined_echo_wall",
+    "varan-deco:scattered_echo_wall",
+    "varan-deco:echo_brick_wall"
   ]
 }

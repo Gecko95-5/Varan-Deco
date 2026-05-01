@@ -1,7 +1,7 @@
-// 1.19.2	2026-04-28T09:41:03.6596246	Tags for minecraft:block
+// 1.19.2	2026-05-01T01:34:52.7732746	Tags for minecraft:block
 b14f3efbef6b6c52273c5d22ef14ab6a6a0286b9 data\varan-deco\tags\blocks\infested_blocks.json
-95a3cef08cec715ea9994b139f5fd5abe4ab1c84 data\minecraft\tags\blocks\mineable\pickaxe.json
-c622dd6f195041ded5ba68151f5f43192ccc34fd data\minecraft\tags\blocks\slabs.json
+65bda592dd61b05c5d84700d54f498c5f5e266c1 data\minecraft\tags\blocks\mineable\pickaxe.json
+ffdffc05b633cb11e69356d9ad3a3c5c648187b9 data\minecraft\tags\blocks\slabs.json
 2d1e488e3fe3f9d35929e1a7ad1d1b20ab0667b0 data\varan-deco\tags\blocks\deco_note_blocks.json
 80f7ecbb5778c8b0cc624eb7d99e5dadfb31bba8 data\minecraft\tags\blocks\planks.json
 76cb6cf6466ab668ba3914daac0b7b973eca98c0 data\minecraft\tags\blocks\leaves.json
@@ -40,7 +40,7 @@ da8f5f477625e1792137a4c0ccd7d644fd25c6c7 data\minecraft\tags\blocks\small_flower
 4800baa7f8b5b01e16df62c5d8df3ce0dc39e30b data\minecraft\tags\blocks\buttons.json
 12ad503ec3cab80485ccaa5ced6e20461088c495 data\varan-deco\tags\blocks\log_walls.json
 89f45f8cd5abedccd8e3f3855d551a6f6f570e4f data\minecraft\tags\blocks\dragon_immune.json
-4d6698acffb3992308117403b49f817b0057e71b data\minecraft\tags\blocks\stairs.json
+21f24f9b571f441bb7134e7169fa0f73041d7eee data\minecraft\tags\blocks\stairs.json
 356b137b5113cb08c5b9d635f7b50e1121741509 data\varan-deco\tags\blocks\dye_blocks.json
 5ccd89a66ad0f91faf5726d04b38bbd36b02b7cd data\varan-deco\tags\blocks\coral_stairs.json
 99fd3d767a6e34c43619295ec3c562b8071745de data\minecraft\tags\blocks\pressure_plates.json
@@ -52,7 +52,7 @@ cdf7333dc31338cb5e57f9d646b5f0bc3337637d data\minecraft\tags\blocks\nylium.json
 225124da5c3a06044318ca6ef320397078fa466a data\varan-deco\tags\blocks\terracotta_stairs.json
 ed6daf5df1a48422c2d8dd39b9fde95868fe091f data\varan-deco\tags\blocks\wool_stairs.json
 9675b3c2f8bc37f5fc7f36c1cc4dca035e839b13 data\minecraft\tags\blocks\needs_diamond_tool.json
-52cff5178270aa07045bc02fef71fa40d548bb6b data\minecraft\tags\blocks\walls.json
+149166b8666960028a461bbaa4ce4e0d1363d5f3 data\minecraft\tags\blocks\walls.json
 da33c9cdb9064e358dc1478772ab68cbf406ff40 data\minecraft\tags\blocks\fence_gates.json
 1ab6b5170d54ec3a0ab9b2ac595e188ba1756f5b data\minecraft\tags\blocks\trapdoors.json
 b7bd51b7625bc3f764b5d44c79c14e892acca490 data\minecraft\tags\blocks\enderman_holdable.json
