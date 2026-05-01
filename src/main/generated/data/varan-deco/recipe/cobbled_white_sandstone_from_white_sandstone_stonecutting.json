@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:white_sandstone"
+  },
+  "result": {
+    "count": 4,
+    "id": "varan-deco:cobbled_white_sandstone"
+  }
+}

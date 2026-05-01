@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hardened_glass_pane",
+  "key": {
+    "#": {
+      "item": "varan-deco:hardened_glowing_glass"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 18,
+    "id": "varan-deco:hardened_glowing_glass_pane"
+  }
+}

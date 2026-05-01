@@ -78,6 +78,12 @@ public class DecoFlammableBlocks {
         registry.add(DecoBlocks.CYAN_ORCHID,60, 100);
         registry.add(DecoBlocks.FELICIA_DAISY,60, 100);
 
+        registry.add(DecoBlocks.TAIGA_DANDELION,60, 100);
+        registry.add(DecoBlocks.FERN_LAVENDER,60, 100);
+        registry.add(DecoBlocks.CARAMEL_BUTTERCUP,60, 100);
+        registry.add(DecoBlocks.SILVER_ROSE,60, 100);
+        registry.add(DecoBlocks.ALPINE_SPEEDWELL,60, 100);
+
         registry.add(DecoTags.Blocks.LOG_STAIRS,5,5);
         registry.add(DecoTags.Blocks.LOG_SLABS,5,5);
         registry.add(DecoTags.Blocks.LOG_WALLS,5,5);

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "varan-deco:block/scattered_echo",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "varan-deco:block/scattered_echo",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "varan-deco:block/scattered_echo"
+    },
+    "facing=west": {
+      "model": "varan-deco:block/scattered_echo",
+      "y": 90
+    }
+  }
+}
