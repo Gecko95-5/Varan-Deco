@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 
 public class NonStationBlockItem extends BlockItem {
     private static final Formatting FORMATTING = Formatting.RED;
-    private static final Text TEXT = Text.literal("This Block is not able to be used by Villagers").formatted(FORMATTING);
+    private static final Text TEXT = Text.translatable("tooltip.varan-deco.nonStationBlock").formatted(FORMATTING);
     public NonStationBlockItem(Block block, Settings settings) {
         super(block, settings);
     }
