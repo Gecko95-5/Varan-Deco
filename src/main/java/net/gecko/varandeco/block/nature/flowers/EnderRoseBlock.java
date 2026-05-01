@@ -7,6 +7,7 @@ import net.minecraft.block.*;
 import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCollisionHandler;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -66,7 +67,8 @@ public class EnderRoseBlock extends FlowerBlock {
         if (world instanceof ServerWorld serverWorld
                 && world.getDifficulty() != Difficulty.PEACEFUL
                 && entity instanceof LivingEntity livingEntity
-                && !livingEntity.isInvulnerableTo(serverWorld, world.getDamageSources().magic())) {
+                && livingEntity.getType() != EntityType.ENDERMAN
+                && livingEntity.getType() != EntityType.ENDERMITE) {
             livingEntity.addStatusEffect(this.getContactEffect());
         }
     }
