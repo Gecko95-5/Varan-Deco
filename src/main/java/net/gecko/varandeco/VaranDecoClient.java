@@ -8,9 +8,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
 import net.gecko.varandeco.entity.DecoBoats;
 import net.gecko.varandeco.entity.DecoEntities;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.BlockRenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
@@ -102,13 +99,11 @@ public class VaranDecoClient implements ClientModInitializer {
 
         BlockRenderLayerMap.putBlock(DecoBlocks.BLUE_HIBISCUS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_BLUE_HIBISCUS, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.BROMELIAD, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_BROMELIAD, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.BUTTERCUP, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_BUTTERCUP, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.NIGHTSHADE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_NIGHTSHADE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.ENDERSHADE, BlockRenderLayer.CUTOUT);
@@ -120,29 +115,38 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.ROUGE_WILDFLOWERS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.SWEET_WILDFLOWERS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.GECKO_WILDFLOWERS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.SEA_WILDFLOWERS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.MONOCHROME_WILDFLOWERS, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.ALPINE_POPPY, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_ALPINE_POPPY, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.DEAD_EYE_DAISY, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_DEAD_EYE_DAISY, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.POPPED_BLUET, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_POPPED_BLUET, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.IRIS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_IRIS, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.CYAN_ORCHID, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_CYAN_ORCHID, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.BLUE_DELPHINIUM, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_BLUE_DELPHINIUM, BlockRenderLayer.CUTOUT);
-
         BlockRenderLayerMap.putBlock(DecoBlocks.FELICIA_DAISY, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_FELICIA_DAISY, BlockRenderLayer.CUTOUT);
 
+        BlockRenderLayerMap.putBlock(DecoBlocks.TAIGA_DANDELION, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_TAIGA_DANDELION, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.FERN_LAVENDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_FERN_LAVENDER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.CARAMEL_BUTTERCUP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_CARAMEL_BUTTERCUP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.SILVER_ROSE, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_SILVER_ROSE, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.ALPINE_SPEEDWELL, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.POTTED_ALPINE_SPEEDWELL, BlockRenderLayer.CUTOUT);
+
         BlockRenderLayerMap.putBlock(DecoBlocks.MEGA_BROWN_TULIP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.MEGA_GRAY_TULIP, BlockRenderLayer.CUTOUT);
 
         BlockRenderLayerMap.putBlock(DecoBlocks.HYDRATED_BUBBLE_CORAL, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.HYDRATED_HORN_CORAL, BlockRenderLayer.CUTOUT);
@@ -234,6 +238,8 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_SOUL_LANTERN, BlockRenderLayer.CUTOUT);
 
+        BlockRenderLayerMap.putBlock(DecoBlocks.GOLD_CHAIN, BlockRenderLayer.CUTOUT);
+
         BlockRenderLayerMap.putBlock(DecoBlocks.TINTED_GLASS_PANE, BlockRenderLayer.TRANSLUCENT);
         BlockRenderLayerMap.putBlock(DecoBlocks.HARDENED_GLASS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.HARDENED_GLASS_PANE, BlockRenderLayer.CUTOUT);
@@ -309,6 +315,11 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS, BlockRenderLayer.TRANSLUCENT);
         BlockRenderLayerMap.putBlock(DecoBlocks.MOSAIC_GREEN_STAINED_GLASS_PANE, BlockRenderLayer.TRANSLUCENT);
 
+        BlockRenderLayerMap.putBlock(DecoBlocks.GLOWING_GLASS, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.GLOWING_GLASS_PANE, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HARDENED_GLOWING_GLASS, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HARDENED_GLOWING_GLASS_PANE, BlockRenderLayer.TRANSLUCENT);
+
         BlockRenderLayerMap.putBlock(DecoBlocks.DEEPSLATE_STONECUTTER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.BLACKSTONE_STONECUTTER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.TUFF_STONECUTTER, BlockRenderLayer.CUTOUT);
@@ -351,6 +362,50 @@ public class VaranDecoClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_LADDER, BlockRenderLayer.CUTOUT);
 
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_WHITE_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_LIGHT_GRAY_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_GRAY_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_BLACK_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_BROWN_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_RED_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_ORANGE_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_YELLOW_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_LIME_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_GREEN_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_CYAN_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_LIGHT_BLUE_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_BLUE_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_PURPLE_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_MAGENTA_LAMP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.HANGING_PINK_LAMP, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.GOLD_LANTERN, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.GOLD_SOUL_LANTERN, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.IRON_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.IRON_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.GOLD_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.GOLD_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WEATHERED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_BAR_DOOR, BlockRenderLayer.CUTOUT);
+
+        BlockRenderLayerMap.putBlock(DecoBlocks.COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.EXPOSED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_EXPOSED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WEATHERED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_WEATHERED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.OXIDIZED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(DecoBlocks.WAXED_OXIDIZED_COPPER_BAR_TRAPDOOR, BlockRenderLayer.CUTOUT);
+
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.CACTUS_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.MUSHROOM_BOAT_ID);
         TerraformBoatClientHelper.registerModelLayers(DecoBoats.WOODEN_BOAT_ID);
@@ -382,7 +437,8 @@ public class VaranDecoClient implements ClientModInitializer {
             } else {
                 return -1;
             }
-        }, DecoBlocks.ROUGE_WILDFLOWERS, DecoBlocks.SWEET_WILDFLOWERS, DecoBlocks.GECKO_WILDFLOWERS);
+        }, DecoBlocks.ROUGE_WILDFLOWERS, DecoBlocks.SWEET_WILDFLOWERS, DecoBlocks.GECKO_WILDFLOWERS, DecoBlocks.MONOCHROME_WILDFLOWERS,
+                DecoBlocks.SEA_WILDFLOWERS);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             if (tintIndex == 0) {
