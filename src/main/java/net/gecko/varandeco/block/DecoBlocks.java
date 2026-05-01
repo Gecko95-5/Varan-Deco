@@ -7,11 +7,16 @@ import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.custom.*;
 import net.gecko.varandeco.block.elementblocks.*;
-import net.gecko.varandeco.block.nature.*;
+import net.gecko.varandeco.block.nature.CloudBlock;
+import net.gecko.varandeco.block.nature.IronCapBlock;
+import net.gecko.varandeco.block.nature.PackedNyliumBlock;
+import net.gecko.varandeco.block.nature.WarpedWartBlock;
 import net.gecko.varandeco.block.nature.corals.*;
 import net.gecko.varandeco.block.nature.flowers.*;
 import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
 import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
+import net.gecko.varandeco.block.nature.packed.PackedGrassBlock;
+import net.gecko.varandeco.block.nature.packed.PackedMyceliumBlock;
 import net.gecko.varandeco.block.oxidizable.*;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.woodmadeblocks.barrel.*;
@@ -37,6 +42,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.ColorCode;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
@@ -69,7 +75,7 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.POLISHED_CALCITE), Block::new);
     public static final Block DRIPSTONE_BRICKS = registerBlock("dripstone_bricks",
             AbstractBlock.Settings.copy(Blocks.DRIPSTONE_BLOCK).strength(2.0F, 1.0F), Block::new);
-    public static final Block DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar", 
+    public static final Block DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar",
             AbstractBlock.Settings.copy(DecoBlocks.DRIPSTONE_BRICKS), PillarBlock::new);
     public static final Block CHISELED_DRIPSTONE = registerBlock("chiseled_dripstone",
             AbstractBlock.Settings.copy(Blocks.DRIPSTONE_BLOCK), Block::new);
@@ -93,15 +99,39 @@ public class DecoBlocks {
     public static final Block WOODEN_PLANKS = registerBlock("wooden_planks",
             AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(2.0f,3.0f)
                     .sounds(BlockSoundGroup.WOOD), Block::new);
+    public static final Block WHITE_SAND = registerFallingBlock("white_sand",
+            new ColorCode(0xc0c0c0),Blocks.SAND,MapColor.OFF_WHITE);
+    public static final Block BLACK_SAND = registerFallingBlock("black_sand",
+            new ColorCode(0x404040), Blocks.SAND, MapColor.DEEPSLATE_GRAY);
+    public static final Block COAL_BRICKS = registerBlock("coal_bricks",
+            AbstractBlock.Settings.copy(Blocks.BRICKS).mapColor(MapColor.BLACK), Block::new);
+    public static final Block CHISELED_COAL_BRICKS = registerBlock("chiseled_coal_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.COAL_BRICKS), Block::new);
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
             AbstractBlock.Settings.create().requiresTool()
                     .strength(5.0F, 6.0F).sounds(BlockSoundGroup.WOOD).mapColor(MapColor.SPRUCE_BROWN), Block::new);
     public static final Block FLINT_BLOCK = registerBlock("flint_block",
             AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F)
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS), Block::new);
+    public static final Block SHINED_AMETHYST = registerBlock("shined_amethyst",
+            AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).mapColor(MapColor.PALE_PURPLE), Block::new);
+    public static final Block AMETHYST_BRICKS = registerBlock("amethyst_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_AMETHYST).strength(2.0F), Block::new);
+    public static final Block SCATTERED_AMETHYST = registerBlock("scattered_amethyst",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_AMETHYST), GlazedTerracottaBlock::new);
+    public static final Block AMETHYST_PILLAR = registerBlock("amethyst_pillar",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_AMETHYST), PillarBlock::new);
     public static final Block ECHO_BLOCK = registerBlock("echo_block",
             AbstractBlock.Settings.create().requiresTool().strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.SCULK_CATALYST).luminance(state -> 7).mapColor(MapColor.BLACK), Block::new);
+    public static final Block SHINED_ECHO = registerBlock("shined_echo",
+            AbstractBlock.Settings.copy(DecoBlocks.ECHO_BLOCK).luminance(state -> 3), Block::new);
+    public static final Block ECHO_BRICKS = registerBlock("echo_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_ECHO).strength(2.5F), Block::new);
+    public static final Block SCATTERED_ECHO = registerBlock("scattered_echo",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_ECHO), GlazedTerracottaBlock::new);
+    public static final Block ECHO_PILLAR = registerBlock("echo_pillar",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_ECHO), PillarBlock::new);
     public static final Block CUT_IRON = registerBlock("cut_iron",
             AbstractBlock.Settings.copy(Blocks.IRON_BLOCK), Block::new);
     public static final Block CUT_IRON_STAIRS = registerStairs("cut_iron_stairs",
@@ -154,12 +184,16 @@ public class DecoBlocks {
     public static final Block IRON_CAP_HYPHAE = registerBlock("iron_cap_hyphae",
             AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GRAY).strength(2.0f,2.0f)
                     .sounds(BlockSoundGroup.NETHER_WOOD).requiresTool().instrument(NoteBlockInstrument.IRON_XYLOPHONE),PillarBlock::new);
+    public static final Block GLOWING_GLASS = registerBlock("glowing_glass",
+            AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque().luminance(state -> 15),TransparentBlock::new);
     public static final Block HARDENED_GLASS = registerBlock("hardened_glass",
             AbstractBlock.Settings.copy(Blocks.GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool(),TransparentBlock::new);
     public static final Block HARDENED_TINTED_GLASS = registerBlock("hardened_tinted_glass",
             AbstractBlock.Settings.copy(Blocks.TINTED_GLASS).strength(25.0f,100.0f)
                     .nonOpaque().requiresTool(),TintedGlassBlock::new);
+    public static final Block HARDENED_GLOWING_GLASS = registerBlock("hardened_glowing_glass",
+            AbstractBlock.Settings.copy(DecoBlocks.HARDENED_GLASS).nonOpaque().luminance(state -> 15),TransparentBlock::new);
     public static final Block CHISELED_LAPIS = registerBlock("chiseled_lapis",
             AbstractBlock.Settings.copy(Blocks.LAPIS_BLOCK), Block::new);
     public static final Block LAPIS_BRICKS = registerBlock("lapis_bricks",
@@ -414,6 +448,42 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE), Block::new);
     public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
             AbstractBlock.Settings.copy(DecoBlocks.CUT_RED_SANDSTONE_BRICKS), Block::new);
+    public static final Block WHITE_SANDSTONE = registerBlock("white_sandstone",
+            AbstractBlock.Settings.copy(Blocks.SANDSTONE).requiresTool().mapColor(MapColor.OFF_WHITE), Block::new);
+    public static final Block CHISELED_WHITE_SANDSTONE = registerBlock("chiseled_white_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE), Block::new);
+    public static final Block SMOOTH_WHITE_SANDSTONE = registerBlock("smooth_white_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE), Block::new);
+    public static final Block CUT_WHITE_SANDSTONE = registerBlock("cut_white_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE), Block::new);
+    public static final Block CUT_WHITE_SANDSTONE_BRICKS = registerBlock("cut_white_sandstone_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE).strength(1.6f), Block::new);
+    public static final Block COBBLED_WHITE_SANDSTONE = registerBlock("cobbled_white_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE), Block::new);
+    public static final Block CHISELED_POLISHED_WHITE_SANDSTONE = registerBlock("chiseled_polished_white_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.CHISELED_WHITE_SANDSTONE), Block::new);
+    public static final Block POLISHED_WHITE_SANDSTONE = registerBlock("polished_white_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE), Block::new);
+    public static final Block WHITE_SANDSTONE_BRICKS = registerBlock("white_sandstone_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE_BRICKS), Block::new);
+    public static final Block BLACK_SANDSTONE = registerBlock("black_sandstone",
+            AbstractBlock.Settings.copy(Blocks.SANDSTONE).requiresTool().mapColor(MapColor.DEEPSLATE_GRAY), Block::new);
+    public static final Block CHISELED_BLACK_SANDSTONE = registerBlock("chiseled_black_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE), Block::new);
+    public static final Block SMOOTH_BLACK_SANDSTONE = registerBlock("smooth_black_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE), Block::new);
+    public static final Block CUT_BLACK_SANDSTONE = registerBlock("cut_black_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE), Block::new);
+    public static final Block CUT_BLACK_SANDSTONE_BRICKS = registerBlock("cut_black_sandstone_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE).strength(1.6f), Block::new);
+    public static final Block COBBLED_BLACK_SANDSTONE = registerBlock("cobbled_black_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE), Block::new);
+    public static final Block CHISELED_POLISHED_BLACK_SANDSTONE = registerBlock("chiseled_polished_black_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.CHISELED_BLACK_SANDSTONE), Block::new);
+    public static final Block POLISHED_BLACK_SANDSTONE = registerBlock("polished_black_sandstone",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE), Block::new);
+    public static final Block BLACK_SANDSTONE_BRICKS = registerBlock("black_sandstone_bricks",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE_BRICKS), Block::new);
     public static final Block CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
             AbstractBlock.Settings.copy(Blocks.PRISMARINE).mapColor(MapColor.DIAMOND_BLUE), Block::new);
     public static final Block CRYSTALLIZED_PRISMARINE = registerBlock("crystallized_prismarine",
@@ -958,12 +1028,25 @@ public class DecoBlocks {
     public static final Block BEDROCK_SLAB = registerBlock("bedrock_slab",
             AbstractBlock.Settings.copy(Blocks.BEDROCK), SlabBlock::new);
 
+    public static final Block SAND_SLAB = registerFallingSlabBlock("sand_slab",
+            14406560,Blocks.SAND);
+    public static final Block RED_SAND_SLAB = registerFallingSlabBlock("red_sand_slab",
+            11098145,Blocks.RED_SAND);
+    public static final Block GRAVEL_SLAB = registerFallingSlabBlock("gravel_slab",
+            -8356741,Blocks.GRAVEL);
+
+    public static final Block COAL_SLAB = registerBlock("coal_slab",
+            AbstractBlock.Settings.copy(Blocks.COAL_BLOCK), SlabBlock::new);
+
     public static final Block RAW_IRON_SLAB = registerBlock("raw_iron_slab",
             AbstractBlock.Settings.copy(Blocks.RAW_IRON_BLOCK), SlabBlock::new);
     public static final Block RAW_COPPER_SLAB = registerBlock("raw_copper_slab",
             AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK), SlabBlock::new);
     public static final Block RAW_GOLD_SLAB = registerBlock("raw_gold_slab",
             AbstractBlock.Settings.copy(Blocks.RAW_GOLD_BLOCK), SlabBlock::new);
+
+    public static final Block AMETHYST_SLAB = registerBlock("amethyst_slab",
+            AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK), SlabBlock::new);
 
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             AbstractBlock.Settings.copy(Blocks.IRON_BLOCK), SlabBlock::new);
@@ -1248,6 +1331,30 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.IRON_CAP_PLANKS), SlabBlock::new);
     public static final Block WOODEN_SLAB = registerBlock("wooden_slab",
             AbstractBlock.Settings.copy(DecoBlocks.WOODEN_PLANKS), SlabBlock::new);
+    public static final Block WHITE_SAND_SLAB = registerFallingSlabBlock("white_sand_slab",
+            0xc0c0c0,DecoBlocks.WHITE_SAND);
+    public static final Block BLACK_SAND_SLAB = registerFallingSlabBlock("black_sand_slab",
+            0x404040,DecoBlocks.BLACK_SAND);
+    public static final Block COAL_BRICK_SLAB = registerBlock("coal_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.COAL_BRICKS), SlabBlock::new);
+    public static final Block CHARCOAL_SLAB = registerBlock("charcoal_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.CHARCOAL_BLOCK), SlabBlock::new);
+    public static final Block FLINT_SLAB = registerBlock("flint_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.FLINT_BLOCK), SlabBlock::new);
+    public static final Block SHINED_AMETHYST_SLAB = registerBlock("shined_amethyst_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_AMETHYST), SlabBlock::new);
+    public static final Block AMETHYST_BRICK_SLAB = registerBlock("amethyst_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.AMETHYST_BRICKS), SlabBlock::new);
+    public static final Block SCATTERED_AMETHYST_SLAB = registerBlock("scattered_amethyst_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.SCATTERED_AMETHYST), SlabBlock::new);
+    public static final Block ECHO_SLAB = registerBlock("echo_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.ECHO_BLOCK), SlabBlock::new);
+    public static final Block SHINED_ECHO_SLAB = registerBlock("shined_echo_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_ECHO), SlabBlock::new);
+    public static final Block ECHO_BRICK_SLAB = registerBlock("echo_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.ECHO_BRICKS), SlabBlock::new);
+    public static final Block SCATTERED_ECHO_SLAB = registerBlock("scattered_echo_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.SCATTERED_ECHO), SlabBlock::new);
     public static final Block LAPIS_BRICK_SLAB = registerBlock("lapis_brick_slab",
             AbstractBlock.Settings.copy(DecoBlocks.LAPIS_BRICKS), SlabBlock::new);
     public static final Block CUT_LAPIS_SLAB = registerBlock("cut_lapis_slab",
@@ -1266,6 +1373,10 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_OBSIDIAN), SlabBlock::new);
     public static final Block SMOOTH_PURPUR_SLAB = registerBlock("smooth_purpur_slab",
             AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_PURPUR), SlabBlock::new);
+    public static final Block SMOOTH_WHITE_SANDSTONE_SLAB = registerBlock("smooth_white_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_WHITE_SANDSTONE), SlabBlock::new);
+    public static final Block SMOOTH_BLACK_SANDSTONE_SLAB = registerBlock("smooth_black_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_BLACK_SANDSTONE), SlabBlock::new);
     public static final Block SMOOTH_DEEPSLATE_SLAB = registerBlock("smooth_deepslate_slab",
             AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_DEEPSLATE), SlabBlock::new);
     public static final Block SMOOTH_BLACKSTONE_SLAB = registerBlock("smooth_blackstone_slab",
@@ -1470,6 +1581,30 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.POLISHED_RED_SANDSTONE), SlabBlock::new);
     public static final Block RED_SANDSTONE_BRICK_SLAB = registerBlock("red_sandstone_brick_slab",
             AbstractBlock.Settings.copy(DecoBlocks.RED_SANDSTONE_BRICKS), SlabBlock::new);
+    public static final Block WHITE_SANDSTONE_SLAB = registerBlock("white_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE), SlabBlock::new);
+    public static final Block CUT_WHITE_SANDSTONE_SLAB = registerBlock("cut_white_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE), SlabBlock::new);
+    public static final Block CUT_WHITE_SANDSTONE_BRICK_SLAB = registerBlock("cut_white_sandstone_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE_BRICKS), SlabBlock::new);
+    public static final Block COBBLED_WHITE_SANDSTONE_SLAB = registerBlock("cobbled_white_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.COBBLED_WHITE_SANDSTONE), SlabBlock::new);
+    public static final Block POLISHED_WHITE_SANDSTONE_SLAB = registerBlock("polished_white_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.POLISHED_WHITE_SANDSTONE), SlabBlock::new);
+    public static final Block WHITE_SANDSTONE_BRICK_SLAB = registerBlock("white_sandstone_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE_BRICKS), SlabBlock::new);
+    public static final Block BLACK_SANDSTONE_SLAB = registerBlock("black_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE), SlabBlock::new);
+    public static final Block CUT_BLACK_SANDSTONE_SLAB = registerBlock("cut_black_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE), SlabBlock::new);
+    public static final Block CUT_BLACK_SANDSTONE_BRICK_SLAB = registerBlock("cut_black_sandstone_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE_BRICKS), SlabBlock::new);
+    public static final Block COBBLED_BLACK_SANDSTONE_SLAB = registerBlock("cobbled_black_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.COBBLED_BLACK_SANDSTONE), SlabBlock::new);
+    public static final Block POLISHED_BLACK_SANDSTONE_SLAB = registerBlock("polished_black_sandstone_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.POLISHED_BLACK_SANDSTONE), SlabBlock::new);
+    public static final Block BLACK_SANDSTONE_BRICK_SLAB = registerBlock("black_sandstone_brick_slab",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE_BRICKS), SlabBlock::new);
     public static final Block MAGMA_BRICK_SLAB = registerBlock("magma_brick_slab",
             AbstractBlock.Settings.copy(DecoBlocks.MAGMA_BRICKS), MagmaBrickSlabBlock::new);
     public static final Block BUBBLE_SLAB = registerBlock("bubble_slab",
@@ -1528,6 +1663,16 @@ public class DecoBlocks {
             DecoBlocks.PACKED_WARPED_NYLIUM, DecoBlocks.PACKED_WARPED_NYLIUM);
     public static final Block BEDROCK_STAIRS = registerStairs("bedrock_stairs",
             Blocks.BEDROCK, Blocks.BEDROCK);
+
+    public static final Block SAND_STAIRS = registerFallingStairs("sand_stairs",
+            14406560,Blocks.SAND,Blocks.SAND);
+    public static final Block RED_SAND_STAIRS = registerFallingStairs("red_sand_stairs",
+            11098145,Blocks.RED_SAND,Blocks.RED_SAND);
+    public static final Block GRAVEL_STAIRS = registerFallingStairs("gravel_stairs",
+            -8356741,Blocks.GRAVEL,Blocks.GRAVEL);
+
+    public static final Block COAL_STAIRS = registerStairs("coal_stairs",
+            Blocks.COAL_BLOCK,Blocks.COAL_BLOCK);
     public static final Block RAW_IRON_STAIRS = registerStairs("raw_iron_stairs",
             Blocks.RAW_IRON_BLOCK, Blocks.RAW_IRON_BLOCK);
     public static final Block RAW_COPPER_STAIRS = registerStairs("raw_copper_stairs",
@@ -1555,6 +1700,9 @@ public class DecoBlocks {
             Blocks.WAXED_OXIDIZED_COPPER, Blocks.WAXED_OXIDIZED_COPPER);
     public static final Block GOLD_STAIRS = registerStairs("gold_stairs",
             Blocks.GOLD_BLOCK, Blocks.GOLD_BLOCK);
+
+    public static final Block AMETHYST_STAIRS = registerStairs("amethyst_stairs",
+            Blocks.AMETHYST_BLOCK,Blocks.AMETHYST_BLOCK);
 
     public static final Block OAK_WOOD_STAIRS = registerWoodStairs("oak_wood_stairs",
             Blocks.OAK_PLANKS, Blocks.OAK_PLANKS, MapColor.DIRT_BROWN);
@@ -2095,6 +2243,61 @@ public class DecoBlocks {
             DecoBlocks.SOLID_CLOUD, DecoBlocks.SOLID_CLOUD);
     public static final Block CLOUD_BRICK_STAIRS = registerStairs("cloud_brick_stairs",
             DecoBlocks.CLOUD_BRICKS, DecoBlocks.CLOUD_BRICKS);
+    
+    public static final Block WHITE_SAND_STAIRS = registerFallingStairs("white_sand_stairs",
+            0xc0c0c0,DecoBlocks.WHITE_SAND,DecoBlocks.WHITE_SAND);
+    public static final Block BLACK_SAND_STAIRS = registerFallingStairs("black_sand_stairs",
+            0x404040,DecoBlocks.BLACK_SAND,DecoBlocks.BLACK_SAND);
+    public static final Block COAL_BRICK_STAIRS = registerStairs("coal_brick_stairs",
+            DecoBlocks.COAL_BRICKS,DecoBlocks.COAL_BRICKS);
+    public static final Block CHARCOAL_STAIRS = registerStairs("charcoal_stairs",
+            DecoBlocks.CHARCOAL_BLOCK,DecoBlocks.CHARCOAL_BLOCK);
+    public static final Block SHINED_AMETHYST_STAIRS = registerStairs("shined_amethyst_stairs",
+            DecoBlocks.SHINED_AMETHYST,DecoBlocks.SHINED_AMETHYST);
+    public static final Block AMETHYST_BRICK_STAIRS = registerStairs("amethyst_brick_stairs",
+            DecoBlocks.AMETHYST_BRICKS,DecoBlocks.AMETHYST_BRICKS);
+    public static final Block SCATTERED_AMETHYST_STAIRS = registerStairs("scattered_amethyst_stairs",
+            DecoBlocks.SCATTERED_AMETHYST,DecoBlocks.SCATTERED_AMETHYST);
+    public static final Block ECHO_STAIRS = registerStairs("echo_stairs",
+            DecoBlocks.ECHO_BLOCK,DecoBlocks.ECHO_BLOCK);
+    public static final Block SHINED_ECHO_STAIRS = registerStairs("shined_echo_stairs",
+            DecoBlocks.SHINED_ECHO,DecoBlocks.SHINED_ECHO);
+    public static final Block ECHO_BRICK_STAIRS = registerStairs("echo_brick_stairs",
+            DecoBlocks.ECHO_BRICKS,DecoBlocks.ECHO_BRICKS);
+    public static final Block SCATTERED_ECHO_STAIRS = registerStairs("scattered_echo_stairs",
+            DecoBlocks.SCATTERED_ECHO,DecoBlocks.SCATTERED_ECHO);
+    public static final Block FLINT_STAIRS = registerStairs("flint_stairs",
+            DecoBlocks.FLINT_BLOCK,DecoBlocks.FLINT_BLOCK);
+
+    public static final Block SMOOTH_WHITE_SANDSTONE_STAIRS = registerStairs("smooth_white_sandstone_stairs",
+            DecoBlocks.SMOOTH_WHITE_SANDSTONE,DecoBlocks.SMOOTH_WHITE_SANDSTONE);
+    public static final Block SMOOTH_BLACK_SANDSTONE_STAIRS = registerStairs("smooth_black_sandstone_stairs",
+            DecoBlocks.SMOOTH_BLACK_SANDSTONE,DecoBlocks.SMOOTH_BLACK_SANDSTONE);
+    
+    public static final Block WHITE_SANDSTONE_STAIRS = registerStairs("white_sandstone_stairs",
+            DecoBlocks.WHITE_SANDSTONE,DecoBlocks.WHITE_SANDSTONE);
+    public static final Block CUT_WHITE_SANDSTONE_STAIRS = registerStairs("cut_white_sandstone_stairs",
+            DecoBlocks.CUT_WHITE_SANDSTONE,DecoBlocks.CUT_WHITE_SANDSTONE);
+    public static final Block CUT_WHITE_SANDSTONE_BRICK_STAIRS = registerStairs("cut_white_sandstone_brick_stairs",
+            DecoBlocks.CUT_WHITE_SANDSTONE_BRICKS,DecoBlocks.CUT_WHITE_SANDSTONE_BRICKS);
+    public static final Block COBBLED_WHITE_SANDSTONE_STAIRS = registerStairs("cobbled_white_sandstone_stairs",
+            DecoBlocks.COBBLED_WHITE_SANDSTONE,DecoBlocks.COBBLED_WHITE_SANDSTONE);
+    public static final Block POLISHED_WHITE_SANDSTONE_STAIRS = registerStairs("polished_white_sandstone_stairs",
+            DecoBlocks.POLISHED_WHITE_SANDSTONE,DecoBlocks.POLISHED_WHITE_SANDSTONE);
+    public static final Block WHITE_SANDSTONE_BRICK_STAIRS = registerStairs("white_sandstone_brick_stairs",
+            DecoBlocks.WHITE_SANDSTONE_BRICKS,DecoBlocks.WHITE_SANDSTONE_BRICKS);
+    public static final Block BLACK_SANDSTONE_STAIRS = registerStairs("black_sandstone_stairs",
+            DecoBlocks.BLACK_SANDSTONE,DecoBlocks.BLACK_SANDSTONE);
+    public static final Block CUT_BLACK_SANDSTONE_STAIRS = registerStairs("cut_black_sandstone_stairs",
+            DecoBlocks.CUT_BLACK_SANDSTONE,DecoBlocks.CUT_BLACK_SANDSTONE);
+    public static final Block CUT_BLACK_SANDSTONE_BRICK_STAIRS = registerStairs("cut_black_sandstone_brick_stairs",
+            DecoBlocks.CUT_BLACK_SANDSTONE_BRICKS,DecoBlocks.CUT_BLACK_SANDSTONE_BRICKS);
+    public static final Block COBBLED_BLACK_SANDSTONE_STAIRS = registerStairs("cobbled_black_sandstone_stairs",
+            DecoBlocks.COBBLED_BLACK_SANDSTONE,DecoBlocks.COBBLED_BLACK_SANDSTONE);
+    public static final Block POLISHED_BLACK_SANDSTONE_STAIRS = registerStairs("polished_black_sandstone_stairs",
+            DecoBlocks.POLISHED_BLACK_SANDSTONE,DecoBlocks.POLISHED_BLACK_SANDSTONE);
+    public static final Block BLACK_SANDSTONE_BRICK_STAIRS = registerStairs("black_sandstone_brick_stairs",
+            DecoBlocks.BLACK_SANDSTONE_BRICKS,DecoBlocks.BLACK_SANDSTONE_BRICKS);
 
     public static final Block STRIPPED_PALE_OAK_WOOD_SLAB = registerBlock("stripped_pale_oak_wood_slab",
             AbstractBlock.Settings.copy(Blocks.PALE_OAK_PLANKS), SlabBlock::new);
@@ -2144,6 +2347,10 @@ public class DecoBlocks {
             StatusEffects.SATURATION, 3, Blocks.DANDELION);
     public static final Block POTTED_PUFFY_DANDELION = registerFlowerPot("potted_puffy_dandelion",
             PUFFY_DANDELION,Blocks.POTTED_DANDELION);
+    public static final Block TAIGA_DANDELION = registerFlower("taiga_dandelion",
+            StatusEffects.INSTANT_HEALTH, 1,Blocks.DANDELION);
+    public static final Block POTTED_TAIGA_DANDELION = registerFlowerPot("potted_taiga_dandelion",
+            TAIGA_DANDELION,Blocks.POTTED_DANDELION);
 
     public static final Block CALIFORNIA_POPPY = registerFlower("california_poppy",
             StatusEffects.FIRE_RESISTANCE, 5, Blocks.POPPY);
@@ -2252,6 +2459,10 @@ public class DecoBlocks {
             DecoStatusEffects.GROUNDED,7, DecoBlocks.LAVENDER);
     public static final Block POTTED_DRILL_LAVENDER = registerFlowerPot("potted_drill_lavender",
             DRILL_LAVENDER,DecoBlocks.LAVENDER);
+    public static final Block FERN_LAVENDER = registerFlower("fern_lavender",
+            StatusEffects.SPEED,9,Blocks.POPPY);
+    public static final Block POTTED_FERN_LAVENDER = registerFlowerPot("potted_fern_lavender",
+            FERN_LAVENDER,Blocks.POTTED_POPPY);
 
     public static final Block BLUE_HIBISCUS = registerFlower("blue_hibiscus",
                 StatusEffects.ABSORPTION,7, Blocks.POPPY);
@@ -2267,6 +2478,10 @@ public class DecoBlocks {
             StatusEffects.ABSORPTION,7,Blocks.POPPY);
     public static final Block POTTED_BUTTERCUP = registerFlowerPot("potted_buttercup",
             BUTTERCUP,Blocks.POTTED_POPPY);
+    public static final Block CARAMEL_BUTTERCUP = registerFlower("caramel_buttercup",
+            StatusEffects.NAUSEA,3,Blocks.POPPY);
+    public static final Block POTTED_CARAMEL_BUTTERCUP = registerFlowerPot("potted_caramel_buttercup",
+            CARAMEL_BUTTERCUP,Blocks.POTTED_POPPY);
 
     public static final Block NIGHTSHADE = registerFlower("nightshade",
             StatusEffects.INSTANT_DAMAGE,1,Blocks.POPPY);
@@ -2287,10 +2502,19 @@ public class DecoBlocks {
     public static final Block POTTED_BLUE_DELPHINIUM = registerFlowerPot("potted_blue_delphinium",
             BLUE_DELPHINIUM,Blocks.POTTED_POPPY);
 
+    public static final Block ALPINE_SPEEDWELL = registerFlower("alpine_speedwell",
+            StatusEffects.SPEED,13,Blocks.POPPY);
+    public static final Block POTTED_ALPINE_SPEEDWELL = registerFlowerPot("potted_alpine_speedwell",
+            ALPINE_SPEEDWELL,Blocks.POTTED_POPPY);
+
     public static final Block ROSE = registerFlower("rose",
             StatusEffects.POISON, 5, Blocks.POPPY);
     public static final Block POTTED_ROSE = registerFlowerPot("potted_rose",
             ROSE,Blocks.POTTED_POPPY);
+    public static final Block SILVER_ROSE = registerSilverRose("silver_rose",
+            StatusEffects.INSTANT_DAMAGE,1,Blocks.POPPY);
+    public static final Block POTTED_SILVER_ROSE = registerFlowerPot("potted_silver_rose",
+            SILVER_ROSE,Blocks.POTTED_POPPY);
     public static final Block ENDER_ROSE = registerRoseFlower("ender_rose",
             StatusEffects.LEVITATION, 8.0F, Blocks.POPPY);
     public static final Block POTTED_ENDER_ROSE = registerFlowerPot("potted_ender_rose",
@@ -2431,6 +2655,15 @@ public class DecoBlocks {
     public static final Block WARPED_NYLIUM_CARPET = registerBlock("warped_nylium_carpet",
             AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.TEAL)
                     .sounds(BlockSoundGroup.NYLIUM),CarpetBlock::new);
+    public static final Block SAND_CARPET = registerBlock("sand_carpet",
+            AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.PALE_YELLOW)
+                    .sounds(BlockSoundGroup.SAND),CarpetBlock::new);
+    public static final Block RED_SAND_CARPET = registerBlock("red_sand_carpet",
+            AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.ORANGE)
+                    .sounds(BlockSoundGroup.SAND),CarpetBlock::new);
+    public static final Block GRAVEL_CARPET = registerBlock("gravel_carpet",
+            AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.STONE_GRAY)
+                    .sounds(BlockSoundGroup.GRAVEL),CarpetBlock::new);
     public static final Block MYCELIUM_CARPET = registerBlock("mycelium_carpet",
             AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.PURPLE)
                     .sounds(BlockSoundGroup.GRASS),CarpetBlock::new);
@@ -2441,6 +2674,13 @@ public class DecoBlocks {
     public static final Block SCULK_CARPET = registerBlock("sculk_carpet",
             AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.BLACK)
                     .sounds(BlockSoundGroup.SCULK),CarpetBlock::new);
+
+    public static final Block WHITE_SAND_CARPET = registerBlock("white_sand_carpet",
+            AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.OFF_WHITE)
+                    .sounds(BlockSoundGroup.SAND),CarpetBlock::new);
+    public static final Block BLACK_SAND_CARPET = registerBlock("black_sand_carpet",
+            AbstractBlock.Settings.copy(Blocks.MOSS_CARPET).mapColor(MapColor.DEEPSLATE_GRAY)
+                    .sounds(BlockSoundGroup.SAND),CarpetBlock::new);
 
     public static final Block PACKED_CACTUS = registerBlock("packed_cactus",
             AbstractBlock.Settings.copy(Blocks.DARK_OAK_WOOD).strength(0.4F).sounds(BlockSoundGroup.WOOL)
@@ -2636,6 +2876,9 @@ public class DecoBlocks {
     public static final Block WAXED_OXIDIZED_COPPER_CHAIN = registerBlock("waxed_oxidized_copper_chain",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_CHAIN),ChainBlock::new);
 
+    public static final Block GOLD_CHAIN = registerBlock("gold_chain",
+            AbstractBlock.Settings.copy(Blocks.CHAIN),ChainBlock::new);
+
     public static final Block CRACKED_NETHER_BRICK_FENCE = registerBlock("cracked_nether_brick_fence",
             AbstractBlock.Settings.copy(Blocks.CRACKED_NETHER_BRICKS),FenceBlock::new);
     public static final Block CRACKED_RED_NETHER_BRICK_FENCE = registerBlock("cracked_red_nether_brick_fence",
@@ -2668,6 +2911,11 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.MUD), WallBlock::new);
     public static final Block BEDROCK_WALL = registerBlock("bedrock_wall",
             AbstractBlock.Settings.copy(Blocks.BEDROCK), WallBlock::new);
+
+    public static final Block COAL_WALL = registerBlock("coal_wall",
+            AbstractBlock.Settings.copy(Blocks.COAL_BLOCK), WallBlock::new);
+    public static final Block AMETHYST_WALL = registerBlock("amethyst_wall",
+            AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK), WallBlock::new);
 
     public static final Block OAK_WOOD_WALL = registerBlock("oak_wood_wall",
             AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.DIRT_BROWN), WallBlock::new);
@@ -2896,6 +3144,26 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.DRIPSTONE_BRICKS), WallBlock::new);
     public static final Block DRIPSTONE_BRICK_PILLAR_WALL = registerBlock("dripstone_brick_pillar_wall",
             AbstractBlock.Settings.copy(DecoBlocks.DRIPSTONE_BRICK_PILLAR), WallBlock::new);
+    public static final Block COAL_BRICK_WALL = registerBlock("coal_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.COAL_BRICKS), WallBlock::new);
+    public static final Block CHARCOAL_WALL = registerBlock("charcoal_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.CHARCOAL_BLOCK), WallBlock::new);
+    public static final Block FLINT_WALL = registerBlock("flint_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.FLINT_BLOCK), WallBlock::new);
+    public static final Block SHINED_AMETHYST_WALL = registerBlock("shined_amethyst_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_AMETHYST), WallBlock::new);
+    public static final Block AMETHYST_BRICK_WALL = registerBlock("amethyst_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.AMETHYST_BRICKS), WallBlock::new);
+    public static final Block SCATTERED_AMETHYST_WALL = registerBlock("scattered_amethyst_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.SCATTERED_AMETHYST), WallBlock::new);
+    public static final Block ECHO_WALL = registerBlock("echo_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.ECHO_BLOCK), WallBlock::new);
+    public static final Block SHINED_ECHO_WALL = registerBlock("shined_echo_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.SHINED_ECHO), WallBlock::new);
+    public static final Block ECHO_BRICK_WALL = registerBlock("echo_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.ECHO_BRICKS), WallBlock::new);
+    public static final Block SCATTERED_ECHO_WALL = registerBlock("scattered_echo_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.SCATTERED_ECHO), WallBlock::new);
     public static final Block LAPIS_BRICK_WALL = registerBlock("lapis_brick_wall",
             AbstractBlock.Settings.copy(DecoBlocks.LAPIS_BRICKS), WallBlock::new);
     public static final Block CUT_LAPIS_WALL = registerBlock("cut_lapis_wall",
@@ -2914,6 +3182,10 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_OBSIDIAN), WallBlock::new);
     public static final Block SMOOTH_PURPUR_WALL = registerBlock("smooth_purpur_wall",
             AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_PURPUR),WallBlock::new);
+    public static final Block SMOOTH_WHITE_SANDSTONE_WALL = registerBlock("smooth_white_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_WHITE_SANDSTONE), WallBlock::new);
+    public static final Block SMOOTH_BLACK_SANDSTONE_WALL = registerBlock("smooth_black_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_BLACK_SANDSTONE), WallBlock::new);
     public static final Block SMOOTH_DEEPSLATE_WALL = registerBlock("smooth_deepslate_wall",
             AbstractBlock.Settings.copy(DecoBlocks.SMOOTH_DEEPSLATE),WallBlock::new);
     public static final Block SMOOTH_BLACKSTONE_WALL = registerBlock("smooth_blackstone_wall",
@@ -3120,6 +3392,30 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.POLISHED_RED_SANDSTONE),WallBlock::new);
     public static final Block RED_SANDSTONE_BRICK_WALL = registerBlock("red_sandstone_brick_wall",
             AbstractBlock.Settings.copy(DecoBlocks.RED_SANDSTONE_BRICKS),WallBlock::new);
+    public static final Block WHITE_SANDSTONE_WALL = registerBlock("white_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE), WallBlock::new);
+    public static final Block CUT_WHITE_SANDSTONE_WALL = registerBlock("cut_white_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE), WallBlock::new);
+    public static final Block CUT_WHITE_SANDSTONE_BRICK_WALL = registerBlock("cut_white_sandstone_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_WHITE_SANDSTONE_BRICKS), WallBlock::new);
+    public static final Block COBBLED_WHITE_SANDSTONE_WALL = registerBlock("cobbled_white_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.COBBLED_WHITE_SANDSTONE), WallBlock::new);
+    public static final Block POLISHED_WHITE_SANDSTONE_WALL = registerBlock("polished_white_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.POLISHED_WHITE_SANDSTONE), WallBlock::new);
+    public static final Block WHITE_SANDSTONE_BRICK_WALL = registerBlock("white_sandstone_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.WHITE_SANDSTONE_BRICKS), WallBlock::new);
+    public static final Block BLACK_SANDSTONE_WALL = registerBlock("black_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE), WallBlock::new);
+    public static final Block CUT_BLACK_SANDSTONE_WALL = registerBlock("cut_black_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE), WallBlock::new);
+    public static final Block CUT_BLACK_SANDSTONE_BRICK_WALL = registerBlock("cut_black_sandstone_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.CUT_BLACK_SANDSTONE_BRICKS), WallBlock::new);
+    public static final Block COBBLED_BLACK_SANDSTONE_WALL = registerBlock("cobbled_black_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.COBBLED_BLACK_SANDSTONE), WallBlock::new);
+    public static final Block POLISHED_BLACK_SANDSTONE_WALL = registerBlock("polished_black_sandstone_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.POLISHED_BLACK_SANDSTONE), WallBlock::new);
+    public static final Block BLACK_SANDSTONE_BRICK_WALL = registerBlock("black_sandstone_brick_wall",
+            AbstractBlock.Settings.copy(DecoBlocks.BLACK_SANDSTONE_BRICKS), WallBlock::new);
     public static final Block MAGMA_BRICK_WALL = registerBlock("magma_brick_wall",
             AbstractBlock.Settings.copy(DecoBlocks.MAGMA_BRICKS),MagmaBrickWallBlock::new);
     public static final Block BUBBLE_WALL = registerBlock("bubble_wall",
@@ -3177,6 +3473,9 @@ public class DecoBlocks {
     public static final Block MEGA_BROWN_TULIP = registerBlock("mega_brown_tulip",
             AbstractBlock.Settings.copy(Blocks.PEONY),TallFlowerBlock::new);
 
+    public static final Block MEGA_GRAY_TULIP = registerBlock("mega_gray_tulip",
+            AbstractBlock.Settings.copy(Blocks.PEONY),TallFlowerBlock::new);
+
     public static final Block WITHER_ROSE_BUSH = registerBlock("wither_rose_bush",
             AbstractBlock.Settings.copy(Blocks.ROSE_BUSH),WitherRoseBushBlock::new);
     public static final Block ENDER_ROSE_BUSH = registerBlock("ender_rose_bush",
@@ -3184,44 +3483,49 @@ public class DecoBlocks {
 
     public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane",
             AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS_PANE).nonOpaque(),TintedGlassPaneBlock::new);
+    public static final Block GLOWING_GLASS_PANE = registerBlock("glowing_glass_pane",
+            AbstractBlock.Settings.copy(Blocks.GLASS_PANE).nonOpaque().luminance(state -> 15),PaneBlock::new);
     public static final Block HARDENED_GLASS_PANE = registerBlock("hardened_glass_pane",
             AbstractBlock.Settings.copy(Blocks.GLASS_PANE).strength(25.0F,100.0f)
                     .nonOpaque().requiresTool(),PaneBlock::new);
     public static final Block HARDENED_TINTED_GLASS_PANE = registerBlock("hardened_tinted_glass_pane",
             AbstractBlock.Settings.copy(DecoBlocks.TINTED_GLASS_PANE).strength(25.0F,100.0f)
-                    .nonOpaque().requiresTool(),TintedGlassPaneBlock::new);
+                    .nonOpaque().requiresTool(),PaneBlock::new);
+    public static final Block HARDENED_GLOWING_GLASS_PANE = registerBlock("hardened_glowing_glass_pane",
+            AbstractBlock.Settings.copy(DecoBlocks.HARDENED_GLASS_PANE).luminance(state -> 15)
+                    .nonOpaque(),PaneBlock::new);
     public static final Block HARDENED_WHITE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_white_stained_glass_pane",
             DyeColor.WHITE,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_ORANGE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_orange_stained_glass_pane",
-           DyeColor.ORANGE,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.ORANGE,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_MAGENTA_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_magenta_stained_glass_pane",
-           DyeColor.MAGENTA,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.MAGENTA,DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_LIGHT_BLUE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_light_blue_stained_glass_pane",
-           DyeColor.LIGHT_BLUE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.LIGHT_BLUE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_YELLOW_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_yellow_stained_glass_pane",
-           DyeColor.YELLOW, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.YELLOW, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_LIME_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_lime_stained_glass_pane",
-           DyeColor.LIME, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.LIME, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_PINK_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_pink_stained_glass_pane",
-           DyeColor.PINK, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.PINK, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_GRAY_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_gray_stained_glass_pane",
-           DyeColor.GRAY, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.GRAY, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_LIGHT_GRAY_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_light_gray_stained_glass_pane",
-           DyeColor.LIGHT_GRAY, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.LIGHT_GRAY, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_CYAN_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_cyan_stained_glass_pane",
-           DyeColor.CYAN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.CYAN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_PURPLE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_purple_stained_glass_pane",
-           DyeColor.PURPLE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.PURPLE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_BLUE_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_blue_stained_glass_pane",
-           DyeColor.BLUE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.BLUE, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_BROWN_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_brown_stained_glass_pane",
-           DyeColor.BROWN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.BROWN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_GREEN_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_green_stained_glass_pane",
-           DyeColor.GREEN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.GREEN, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_RED_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_red_stained_glass_pane",
-           DyeColor.RED, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.RED, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
     public static final Block HARDENED_BLACK_STAINED_GLASS_PANE = registerStainedGlassPane("hardened_black_stained_glass_pane",
-           DyeColor.BLACK, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
+            DyeColor.BLACK, DecoBlocks.HARDENED_GLASS_PANE,25.0F,100.0f);
 
     public static final Block MOSAIC_WHITE_STAINED_GLASS_PANE = registerStainedGlassPane("mosaic_white_stained_glass_pane",
            DyeColor.WHITE,Blocks.WHITE_STAINED_GLASS_PANE, 0.6f, 0.3f);
@@ -3584,6 +3888,9 @@ public class DecoBlocks {
     public static final Block WAXED_OXIDIZED_COPPER_LANTERN = registerBlock("waxed_oxidized_copper_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_LANTERN),LanternBlock::new);
 
+    public static final Block GOLD_LANTERN = registerBlock("gold_lantern",
+            AbstractBlock.Settings.copy(Blocks.LANTERN),LanternBlock::new);
+
     public static final Block COPPER_SOUL_LANTERN = registerOxidLantern("copper_soul_lantern",
             Oxidizable.OxidationLevel.UNAFFECTED,Blocks.SOUL_LANTERN);
     public static final Block WAXED_COPPER_SOUL_LANTERN = registerBlock("waxed_copper_soul_lantern",
@@ -3600,6 +3907,45 @@ public class DecoBlocks {
             Oxidizable.OxidationLevel.OXIDIZED,Blocks.SOUL_LANTERN);
     public static final Block WAXED_OXIDIZED_COPPER_SOUL_LANTERN = registerBlock("waxed_oxidized_copper_soul_lantern",
             AbstractBlock.Settings.copy(DecoBlocks.OXIDIZED_COPPER_SOUL_LANTERN),LanternBlock::new);
+
+    public static final Block GOLD_SOUL_LANTERN = registerBlock("gold_soul_lantern",
+            AbstractBlock.Settings.copy(Blocks.SOUL_LANTERN),LanternBlock::new);
+
+    public static final Block HANGING_LAMP = registerBlock("hanging_lamp",
+            AbstractBlock.Settings.copy(Blocks.LANTERN),HangingLampBlock::new);
+
+    public static final Block HANGING_WHITE_LAMP = registerBlock("hanging_white_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_ORANGE_LAMP = registerBlock("hanging_orange_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_MAGENTA_LAMP = registerBlock("hanging_magenta_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_LIGHT_BLUE_LAMP = registerBlock("hanging_light_blue_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_YELLOW_LAMP = registerBlock("hanging_yellow_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_LIME_LAMP = registerBlock("hanging_lime_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_PINK_LAMP = registerBlock("hanging_pink_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_GRAY_LAMP = registerBlock("hanging_gray_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_LIGHT_GRAY_LAMP = registerBlock("hanging_light_gray_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_CYAN_LAMP = registerBlock("hanging_cyan_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_PURPLE_LAMP = registerBlock("hanging_purple_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_BLUE_LAMP = registerBlock("hanging_blue_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_BROWN_LAMP = registerBlock("hanging_brown_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_GREEN_LAMP = registerBlock("hanging_green_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_RED_LAMP = registerBlock("hanging_red_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
+    public static final Block HANGING_BLACK_LAMP = registerBlock("hanging_black_lamp",
+            AbstractBlock.Settings.copy(DecoBlocks.HANGING_LAMP),HangingLampBlock::new);
 
     public static final Block BUBBLE_ELEVATOR_BLOCK_BUBBLE = registerBlock("bubble_elevator_block_bubble",
             AbstractBlock.Settings.copy(Blocks.WAXED_COPPER_BLOCK).resistance(25.0f)
@@ -3768,8 +4114,31 @@ public class DecoBlocks {
     public static final Block WOODEN_PRESSURE_PLATE = registerPressurePlateBlock("wooden_pressure_plate",
             DecoBlockSets.WOODEN, Blocks.SPRUCE_PRESSURE_PLATE);
 
+    public static final Block IRON_BAR_DOOR = registerDoorBlock("iron_bar_door",
+            BlockSetType.IRON, Blocks.IRON_DOOR);
     public static final Block GOLD_DOOR = registerDoorBlock("gold_door",
             BlockSetType.GOLD, Blocks.GOLD_BLOCK);
+    public static final Block GOLD_BAR_DOOR = registerDoorBlock("gold_bar_door",
+            BlockSetType.GOLD, DecoBlocks.GOLD_DOOR);
+
+    public static final Block COPPER_BAR_DOOR = registerOxidDoorBlock("copper_bar_door",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.UNAFFECTED, Blocks.COPPER_DOOR);
+    public static final Block EXPOSED_COPPER_BAR_DOOR = registerOxidDoorBlock("exposed_copper_bar_door",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.EXPOSED, Blocks.EXPOSED_COPPER_DOOR);
+    public static final Block WEATHERED_COPPER_BAR_DOOR = registerOxidDoorBlock("weathered_copper_bar_door",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.UNAFFECTED, Blocks.WEATHERED_COPPER_DOOR);
+    public static final Block OXIDIZED_COPPER_BAR_DOOR = registerOxidDoorBlock("oxidized_copper_bar_door",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.OXIDIZED, Blocks.OXIDIZED_COPPER_DOOR);
+
+    public static final Block WAXED_COPPER_BAR_DOOR = registerDoorBlock("waxed_copper_bar_door",
+            BlockSetType.COPPER, DecoBlocks.COPPER_BAR_DOOR);
+    public static final Block WAXED_EXPOSED_COPPER_BAR_DOOR = registerDoorBlock("waxed_exposed_copper_bar_door",
+            BlockSetType.COPPER, DecoBlocks.EXPOSED_COPPER_BAR_DOOR);
+    public static final Block WAXED_WEATHERED_COPPER_BAR_DOOR = registerDoorBlock("waxed_weathered_copper_bar_door",
+            BlockSetType.COPPER, DecoBlocks.WEATHERED_COPPER_BAR_DOOR);
+    public static final Block WAXED_OXIDIZED_COPPER_BAR_DOOR = registerDoorBlock("waxed_oxidized_copper_bar_door",
+            BlockSetType.COPPER, DecoBlocks.OXIDIZED_COPPER_BAR_DOOR);
+
     public static final Block CACTUS_DOOR = registerDoorBlock("cactus_door",
             BlockSetType.BIRCH, Blocks.OAK_DOOR);
     public static final Block MUSHROOM_DOOR = registerDoorBlock("mushroom_door",
@@ -3812,8 +4181,32 @@ public class DecoBlocks {
             DecoBlockSets.IRON_CAP, DecoBlocks.IRON_CAP_DOOR);
     public static final Block WOODEN_PALLET_DOOR = registerDoorBlock("wooden_pallet_door",
             DecoBlockSets.WOODEN, DecoBlocks.WOODEN_DOOR);
+
+    public static final Block IRON_BAR_TRAPDOOR = registerTrapDoorBlock("iron_bar_trapdoor",
+            BlockSetType.IRON, Blocks.IRON_TRAPDOOR);
     public static final Block GOLD_TRAPDOOR = registerTrapDoorBlock("gold_trapdoor",
             BlockSetType.GOLD, Blocks.GOLD_BLOCK);
+    public static final Block GOLD_BAR_TRAPDOOR = registerTrapDoorBlock("gold_bar_trapdoor",
+            BlockSetType.GOLD, DecoBlocks.GOLD_TRAPDOOR);
+
+    public static final Block COPPER_BAR_TRAPDOOR = registerOxidTrapDoorBlock("copper_bar_trapdoor",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.UNAFFECTED, Blocks.COPPER_TRAPDOOR);
+    public static final Block EXPOSED_COPPER_BAR_TRAPDOOR = registerOxidTrapDoorBlock("exposed_copper_bar_trapdoor",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.EXPOSED, Blocks.EXPOSED_COPPER_TRAPDOOR);
+    public static final Block WEATHERED_COPPER_BAR_TRAPDOOR = registerOxidTrapDoorBlock("weathered_copper_bar_trapdoor",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.UNAFFECTED,Blocks.WEATHERED_COPPER_TRAPDOOR);
+    public static final Block OXIDIZED_COPPER_BAR_TRAPDOOR = registerOxidTrapDoorBlock("oxidized_copper_bar_trapdoor",
+            BlockSetType.COPPER, Oxidizable.OxidationLevel.OXIDIZED,Blocks.OXIDIZED_COPPER_TRAPDOOR);
+
+    public static final Block WAXED_COPPER_BAR_TRAPDOOR = registerTrapDoorBlock("waxed_copper_bar_trapdoor",
+            BlockSetType.COPPER, DecoBlocks.COPPER_BAR_TRAPDOOR);
+    public static final Block WAXED_EXPOSED_COPPER_BAR_TRAPDOOR = registerTrapDoorBlock("waxed_exposed_copper_bar_trapdoor",
+            BlockSetType.COPPER, DecoBlocks.EXPOSED_COPPER_BAR_TRAPDOOR);
+    public static final Block WAXED_WEATHERED_COPPER_BAR_TRAPDOOR = registerTrapDoorBlock("waxed_weathered_copper_bar_trapdoor",
+            BlockSetType.COPPER, DecoBlocks.WEATHERED_COPPER_BAR_TRAPDOOR);
+    public static final Block WAXED_OXIDIZED_COPPER_BAR_TRAPDOOR = registerTrapDoorBlock("waxed_oxidized_copper_bar_trapdoor",
+            BlockSetType.COPPER, DecoBlocks.OXIDIZED_COPPER_BAR_TRAPDOOR);
+
     public static final Block CACTUS_TRAPDOOR = registerTrapDoorBlock("cactus_trapdoor",
             BlockSetType.BIRCH, Blocks.OAK_TRAPDOOR);
     public static final Block MUSHROOM_TRAPDOOR = registerTrapDoorBlock("mushroom_trapdoor",
@@ -4452,6 +4845,18 @@ public class DecoBlocks {
     public static final Block HONEYCOMB_TEMP = registerBlockTemp("honeycomb_temp",Block::new);
     public static final Block BAMBOO_TEMP = registerBlockTemp("bamboo_temp",Block::new);
     public static final Block STRIPPED_BAMBOO_TEMP = registerBlockTemp("stripped_bamboo_temp",Block::new);
+    public static final Block COAL_TEMP = registerBlockTemp("coal_temp",Block::new);
+    public static final Block SAND_TEMP = registerBlockTemp("sand_temp",Block::new);
+    public static final Block SAND_CARPET_TEMP = registerBlockTemp("sand_carpet_temp",Block::new);
+    public static final Block RED_SAND_TEMP = registerBlockTemp("red_sand_temp",Block::new);
+    public static final Block RED_SAND_CARPET_TEMP = registerBlockTemp("red_sand_carpet_temp",Block::new);
+    public static final Block GRAVEL_TEMP = registerBlockTemp("gravel_temp",Block::new);
+    public static final Block GRAVEL_CARPET_TEMP = registerBlockTemp("gravel_carpet_temp",Block::new);
+    public static final Block WHITE_SAND_TEMP = registerBlockTemp("white_sand_temp",Block::new);
+    public static final Block BLACK_SAND_TEMP = registerBlockTemp("black_sand_temp",Block::new);
+    public static final Block AMETHYST_TEMP = registerBlockTemp("amethyst_temp",Block::new);
+    public static final Block SCATTERED_AMETHYST_TEMP = registerBlockTemp("scattered_amethyst_temp",Block::new);
+    public static final Block SCATTERED_ECHO_TEMP = registerBlockTemp("scattered_echo_temp",Block::new);
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)
@@ -4616,6 +5021,10 @@ public class DecoBlocks {
         return registerSimple(name, new OxidizableStairsBlock(oxidationLevel, block.getDefaultState(),
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
+    public static FallingStairBlock registerFallingStairs(String name, int colour, Block block, Block copyBlock){
+        return registerSimple(name, new FallingStairBlock(colour, block.getDefaultState(),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
     public static OxidizableSlabBlock registerOxidSlab(String name, Oxidizable.OxidationLevel oxidationLevel, Block copyBlock){
         return registerSimple(name, new OxidizableSlabBlock(oxidationLevel,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
@@ -4661,7 +5070,11 @@ public class DecoBlocks {
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static FlowerBlock registerFlower(String name, RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Block copyBlock){
-        return registerSimple(name, new FlowerBlock( createStewEffectList(stewEffect, effectLengthInSeconds),
+        return registerSimple(name,  new FlowerBlock(createStewEffectList(stewEffect, effectLengthInSeconds),
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static SilverRoseBlock registerSilverRose(String name, RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Block copyBlock){
+        return registerSimple(name,  new SilverRoseBlock(stewEffect, effectLengthInSeconds,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static PuffyDandelionBlock registerPuffyFlower(String name, RegistryEntry<StatusEffect> stewEffect, float effectLengthInSeconds, Block copyBlock){
@@ -4749,6 +5162,14 @@ public class DecoBlocks {
         return registerSimple(name, new ButtonBlock(blockSetType, pressTicks,
                 AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
     }
+    public static ColoredFallingBlock registerFallingBlock(String name, ColorCode color,  Block copyBlock,MapColor mapColour) {
+        return registerSimple(name, new ColoredFallingBlock(color,
+                AbstractBlock.Settings.copy(copyBlock).mapColor(mapColour).registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static FallingSlabBlock registerFallingSlabBlock(String name, int color,  Block copyBlock) {
+        return registerSimple(name, new FallingSlabBlock(color,
+                AbstractBlock.Settings.copy(copyBlock).registryKey(DecoBlocks.getBlockKey(name))));
+    }
     public static OxidizableButtonBlock registerOxidButton(String name, Oxidizable.OxidationLevel oxidationLevel,
                                                            BlockSetType blockSetType, int pressTicks, Block copyBlock) {
         return registerSimple(name, new OxidizableButtonBlock(oxidationLevel, blockSetType, pressTicks,
@@ -4773,6 +5194,18 @@ public class DecoBlocks {
     }
     public static TrapdoorBlock registerTrapDoorBlock(String name, BlockSetType blockSetType, Block copyBlock) {
         return registerSimple(name, new TrapdoorBlock(blockSetType,
+                AbstractBlock.Settings.copy(copyBlock).nonOpaque().registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizableDoorBlock registerOxidDoorBlock(String name, BlockSetType blockSetType,
+                                                            Oxidizable.OxidationLevel oxidationLevel,
+                                                            Block copyBlock) {
+        return registerSimple(name, new OxidizableDoorBlock(blockSetType, oxidationLevel,
+                AbstractBlock.Settings.copy(copyBlock).nonOpaque().registryKey(DecoBlocks.getBlockKey(name))));
+    }
+    public static OxidizableTrapdoorBlock registerOxidTrapDoorBlock(String name,BlockSetType blockSetType,
+                                                                    Oxidizable.OxidationLevel oxidationLevel,
+                                                                     Block copyBlock) {
+        return registerSimple(name, new OxidizableTrapdoorBlock(blockSetType, oxidationLevel,
                 AbstractBlock.Settings.copy(copyBlock).nonOpaque().registryKey(DecoBlocks.getBlockKey(name))));
     }
     public static FenceGateBlock registerFenceGateBlock(String name, WoodType type, Block copyBlock) {

@@ -42,6 +42,11 @@ public class DecoPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DECO_VOID_BIG_PATCH_PLACED = registerKey("deco_void_big_patch_placed");
     public static final RegistryKey<PlacedFeature> DECO_ROOFED_PLACED = registerKey("deco_roofed_placed");
     public static final RegistryKey<PlacedFeature> DECO_MEGA_TULIP_PLACED = registerKey("deco_mega_tulip_placed");
+    public static final RegistryKey<PlacedFeature> DECO_PALE_MEGA_TULIP_PLACED = registerKey("deco_pale_mega_tulip_placed");
+    public static final RegistryKey<PlacedFeature> DECO_SILVER_ROSE_PLACED = registerKey("deco_silver_rose_placed");
+    public static final RegistryKey<PlacedFeature> DECO_TAIGA_PLACED = registerKey("deco_taiga_flowers_placed");
+    public static final RegistryKey<PlacedFeature> DECO_WINDSWEPT_PLACED = registerKey("deco_windswept_flowers_placed");
+    public static final RegistryKey<PlacedFeature> DECO_WINDSWEPT_FOREST_PLACED = registerKey("deco_windswept_forest_flowers_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -72,7 +77,19 @@ register(context,DECO_SWAMP_PLACED, configuredFeatureRegistryEntryLookup.getOrTh
                 DecoConfiguredFeatures.DECO_SWAMP_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
-register(context,DECO_RIVER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+register(context,DECO_TAIGA_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+            DecoConfiguredFeatures.DECO_TAIGA), NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+                RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+
+        register(context,DECO_WINDSWEPT_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+            DecoConfiguredFeatures.DECO_WINDSWEPT), NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+                RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+
+        register(context,DECO_WINDSWEPT_FOREST_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_WINDSWEPT_FOREST), NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
+                RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());register(context,DECO_RIVER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_RIVER_KEY), NoiseThresholdCountPlacementModifier.of(-0.8, 15, 4),
                 RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of());
@@ -84,9 +101,19 @@ register(context,DECO_ROOFED_PLACED, configuredFeatureRegistryEntryLookup.getOrT
 
         register(context,DECO_MEGA_TULIP_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_MEGA_TULIP), RarityFilterPlacementModifier.of(24),
-                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());register(context,DECO_ROSE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        register(context,DECO_ROSE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_ROSE_KEY), RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        register(context,DECO_PALE_MEGA_TULIP_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+                DecoConfiguredFeatures.DECO_PALE_MEGA_TULIP), RarityFilterPlacementModifier.of(16),
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+register(context,DECO_SILVER_ROSE_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
+            DecoConfiguredFeatures.DECO_SILVER_ROSE), RarityFilterPlacementModifier.of(16),
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 register(context,DECO_ENDER_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(
                 DecoConfiguredFeatures.DECO_ENDER_KEY), RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(),

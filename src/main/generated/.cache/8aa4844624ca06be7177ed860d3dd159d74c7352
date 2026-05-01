@@ -6,7 +6,7 @@ ccf0a9022a62726234e3ea4370b71450a2751b78 data/minecraft/tags/item/leaves.json
 bb77c8b23b742a8d375842872d36b28e6211a19a data/minecraft/tags/item/logs_that_burn.json
 46cb4b72bb2f8503789b2d60630f1ca4044282f1 data/minecraft/tags/item/planks.json
 f35376a6bf06ba120e497430b3ab638b5b79f26a data/minecraft/tags/item/saplings.json
-01506031597647d13ef9d5b5fb52590461f8b33c data/minecraft/tags/item/small_flowers.json
+9e2f3624ec61ccac87a02e3158a72bc7177a0a03 data/minecraft/tags/item/small_flowers.json
 69c9fb0224b16350d86b28643f7d40d2b6001b20 data/minecraft/tags/item/stone_buttons.json
 120a0f92a9d22e1966595e6afb272f0c60a5e5c5 data/minecraft/tags/item/stone_crafting_materials.json
 36b2acd3789855661ef39084e13acdeb1c8d3190 data/minecraft/tags/item/stone_tool_materials.json
@@ -29,6 +29,7 @@ c5b75f5d6d9b78cc668338fc7579e4ffcd31da8f data/varan-deco/tags/item/deco_bookshel
 d36c5471ba55fae953eb60db3b7da6ed18360809 data/varan-deco/tags/item/deco_smithing_tables.json
 7438cb1f15178c6a48abc8b192db0bc54c936a39 data/varan-deco/tags/item/furnaces.json
 ffd53d52d0d0c9f59dd8ca26d1814b40256dbf24 data/varan-deco/tags/item/giant_mushroom_blocks.json
+fe982dd1fbae0013c7e06d9f04ab43e399099d8b data/varan-deco/tags/item/hanging_lamps.json
 e41c9b7ad2daf38720c64f6ef72d9d77be6b5f88 data/varan-deco/tags/item/iron_cap_stem.json
 2912a9fa51854772cd70708615b52a0175799ff3 data/varan-deco/tags/item/log_slabs.json
 7c238fc4271e5f065f5a4f461b196f13693e0c2a data/varan-deco/tags/item/log_stairs.json

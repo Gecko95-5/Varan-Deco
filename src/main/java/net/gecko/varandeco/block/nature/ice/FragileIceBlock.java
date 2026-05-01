@@ -2,14 +2,14 @@ package net.gecko.varandeco.block.nature.ice;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.registry.tag.EntityTypeTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class FragileIceBlock extends Block {
+public class  FragileIceBlock extends Block{
     public FragileIceBlock(Settings settings) {
         super(settings);
     }
@@ -29,6 +29,12 @@ public class FragileIceBlock extends Block {
             if (!entity.getType().isIn(EntityTypeTags.POWDER_SNOW_WALKABLE_MOBS))
                 world.breakBlock(pos, true);
             entity.handleFallDamage(fallDistance, 1.5F, world.getDamageSources().fall());
+        }
+    }
+    @Override
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (world.getDimension().ultrawarm()) {
+            world.removeBlock(pos, false);
         }
     }
 }

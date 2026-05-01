@@ -16,6 +16,17 @@ public class DecoFuelRegistry {
             builder.add(DecoTags.Items.MOSAIC_WOOD,300);
             builder.add(DecoTags.Items.MOSAIC_STAIRS,300);
             builder.add(DecoTags.Items.MOSAIC_SLABS,150);
+            builder.add(DecoBlocks.COAL_BRICKS,3200);
+            builder.add(DecoBlocks.CHISELED_COAL_BRICKS,3200);
+            builder.add(DecoBlocks.COAL_BRICK_STAIRS,3200);
+            builder.add(DecoBlocks.COAL_BRICK_SLAB,1600);
+            builder.add(DecoBlocks.COAL_BRICK_WALL,3200);
+            builder.add(DecoBlocks.COAL_STAIRS,16000);
+            builder.add(DecoBlocks.COAL_SLAB,8000);
+            builder.add(DecoBlocks.COAL_WALL,16000);
+            builder.add(DecoBlocks.CHARCOAL_STAIRS,16000);
+            builder.add(DecoBlocks.CHARCOAL_SLAB,8000);
+            builder.add(DecoBlocks.CHARCOAL_WALL,16000);
         });
     }
 }
