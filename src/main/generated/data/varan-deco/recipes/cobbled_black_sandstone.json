@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "varan-deco:black_sandstone"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "varan-deco:cobbled_black_sandstone"
+  }
+}

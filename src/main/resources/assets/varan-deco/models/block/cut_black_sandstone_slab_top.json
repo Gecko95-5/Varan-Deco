@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "varan-deco:block/polished_black_sandstone",
+    "side": "varan-deco:block/cut_black_sandstone",
+    "top": "varan-deco:block/black_sandstone_top"
+  }
+}

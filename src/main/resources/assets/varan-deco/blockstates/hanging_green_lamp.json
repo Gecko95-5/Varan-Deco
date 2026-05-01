@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "varan-deco:block/green_lamp_bulb"
+    },
+    "hanging=true": {
+      "model": "varan-deco:block/hanging_green_lamp"
+    }
+  }
+}

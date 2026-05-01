@@ -1,0 +1,15 @@
+{
+  "block.minecraft.ladder": "Дубовая Лестница",
+  "block.minecraft.furnace": "Каменный Печь",
+  "block.minecraft.blast_furnace": "Каменный Плавильная печь",
+  "block.minecraft.smoker": "Каменный Коптильня",
+  "block.minecraft.stonecutter": "Каменный Камнерез",
+  "block.minecraft.grindstone": "Каменный Точило",
+  "block.minecraft.chain": "железо Цепь",
+  "block.minecraft.lantern": "железо Фонарь",
+  "block.minecraft.soul_lantern": "железо Фонарь душ",
+  "block.minecraft.light_weighted_pressure_plate": "золото Весовая нажимная панель",
+  "block.minecraft.heavy_weighted_pressure_plate": "железо Весовая нажимная панель",
+  "block.minecraft.lever": "Булыжная Рычаг",
+  "block.minecraft.purpur_block": "Пурпурный блок"
+}

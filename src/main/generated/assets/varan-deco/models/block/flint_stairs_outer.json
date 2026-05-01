@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "varan-deco:block/flint_block",
+    "side": "varan-deco:block/flint_block",
+    "top": "varan-deco:block/flint_block"
+  }
+}

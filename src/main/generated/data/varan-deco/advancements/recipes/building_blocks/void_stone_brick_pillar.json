@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "varan-deco:void_stone_brick_pillar"
+        "recipe": "minecraft:void_stone_brick_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "varan-deco:void_stone_brick_pillar"
+      "minecraft:void_stone_brick_pillar"
     ]
   }
 }

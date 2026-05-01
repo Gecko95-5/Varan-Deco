@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "glowing_glass_pane",
+  "key": {
+    "#": {
+      "item": "varan-deco:glowing_glass"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 18,
+    "item": "varan-deco:glowing_glass_pane"
+  }
+}

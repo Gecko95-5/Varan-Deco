@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "varan-deco:block/gravel_slab"
+    },
+    "type=double": {
+      "model": "varan-deco:block/gravel_temp"
+    },
+    "type=top": {
+      "model": "varan-deco:block/gravel_slab_top"
+    }
+  }
+}
