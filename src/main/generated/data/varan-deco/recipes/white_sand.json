@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:sand"
+    },
+    "P": {
+      "item": "varan-deco:passtol"
+    }
+  },
+  "pattern": [
+    "P#",
+    "#P"
+  ],
+  "result": {
+    "count": 4,
+    "id": "varan-deco:white_sand"
+  }
+}

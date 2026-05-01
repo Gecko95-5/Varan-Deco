@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:coal"
+    },
+    "B": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "B#",
+    "#B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varan-deco:coal_bricks"
+  }
+}

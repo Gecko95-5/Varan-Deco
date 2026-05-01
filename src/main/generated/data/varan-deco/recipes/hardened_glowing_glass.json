@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hardened_glass",
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "X": {
+      "item": "varan-deco:hardened_glass"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 2,
+    "id": "varan-deco:hardened_glowing_glass"
+  }
+}

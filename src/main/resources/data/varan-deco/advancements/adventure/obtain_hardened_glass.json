@@ -16,7 +16,9 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Crafted Hardened Glass",
+    "description": {
+      "translate": "advancements.varan-deco.hardened_glass.description"
+    },
     "frame": "task",
     "hidden": false,
     "icon": {
@@ -24,8 +26,9 @@
       "id": "varan-deco:hardened_glass"
     },
     "show_toast": true,
-    "title": "As Tough as Obsidian"
-  },
+    "title": "advancements.varan-deco.hardened_glass.title"
+  }
+},
   "requirements": [
     [
       "glass"

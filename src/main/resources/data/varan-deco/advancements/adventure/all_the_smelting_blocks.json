@@ -148,7 +148,9 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain all the Smelting Blocks",
+    "description":{
+      "translate": "advancements.varan-deco.smelting_blocks.description"
+    },
     "frame": "challenge",
     "hidden": false,
     "icon": {
@@ -156,7 +158,9 @@
       "id": "varan-deco:blackstone_blast_furnace"
     },
     "show_toast": true,
-    "title": "Smelting a Million"
+    "title":{
+      "translate": "advancements.varan-deco.smelting_blocks.title"
+    }
   },
   "requirements": [
     [

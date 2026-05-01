@@ -16,7 +16,9 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Obtain a Fragile Ice Block, Try not to Step on it",
+    "description": {
+      "translate": "advancements.varan-deco.fragile_ice.description"
+    },
     "frame": "task",
     "hidden": true,
     "icon": {
@@ -24,7 +26,9 @@
       "id": "varan-deco:fragile_ice"
     },
     "show_toast": true,
-    "title": "More Fragile than Glass"
+    "title": {
+      "translate": "advancements.varan-deco.fragile_ice.title"
+    }
   },
   "requirements": [
     [

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class NonStationCraftingTableBlock extends CraftingTableBlock {
     private static final Formatting FORMATTING = Formatting.RED;
-    private static final Text TEXT = Text.literal("This Block is not able to be used by Villagers").formatted(FORMATTING);
+    private static final Text TEXT = Text.translatable("tooltip.varan-deco.nonStationBlock").formatted(FORMATTING);
     public NonStationCraftingTableBlock(Settings settings) {
         super(settings);
     }

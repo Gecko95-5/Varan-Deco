@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:shined_amethyst"
+  },
+  "result": {
+    "count": 4,
+    "id": "varan-deco:scattered_amethyst_slab"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "varan-deco:coal_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "varan-deco:chiseled_coal_bricks"
+  }
+}
