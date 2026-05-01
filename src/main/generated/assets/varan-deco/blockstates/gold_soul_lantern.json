@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "varan-deco:block/gold_soul_lantern"
+    },
+    "hanging=true": {
+      "model": "varan-deco:block/gold_soul_lantern_hanging"
+    }
+  }
+}

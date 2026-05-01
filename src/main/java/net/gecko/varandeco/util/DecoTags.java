@@ -94,6 +94,12 @@ public class DecoTags {
         public static final TagKey<Block> HARDENED_GLASS_PANES =
                 createTag("hardened_glass_panes");
 
+        public static final TagKey<Block> GLASS =
+                createTag("glass");
+
+        public static final TagKey<Block> GLASS_PANES =
+                createTag("glass_panes");
+
         public static final TagKey<Block> MOSAIC_GLASS =
                 createTag("mosaic_glass");
 
@@ -141,6 +147,9 @@ public class DecoTags {
 
         public static final TagKey<Block> LOG_WALLS =
                 createTag("log_walls");
+
+        public static final TagKey<Block> HANGING_LAMPS =
+                createTag("hanging_lamps");
 
         private static TagKey<Block> createTag(String name){
             return TagKey.of(Registries.BLOCK.getKey(), new Identifier(VaranDeco.MOD_ID, name));
@@ -242,6 +251,9 @@ public class DecoTags {
 
         public static final TagKey<Item> LOG_WALLS =
                 createTag("log_walls");
+
+        public static final TagKey<Item> HANGING_LAMPS =
+                createTag("hanging_lamps");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registries.ITEM.getKey(), new Identifier(VaranDeco.MOD_ID, name));

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "varan-deco:echo_block"
+    },
+    "F": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    "#F",
+    "F#"
+  ],
+  "result": {
+    "count": 2,
+    "item": "varan-deco:shined_echo"
+  },
+  "show_notification": true
+}
