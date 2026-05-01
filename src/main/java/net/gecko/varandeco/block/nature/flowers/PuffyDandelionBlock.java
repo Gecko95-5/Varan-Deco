@@ -1,5 +1,6 @@
 package net.gecko.varandeco.block.nature.flowers;
 
+import net.gecko.varandeco.block.DecoBlocks;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -8,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.biome.BiomeKeys;
 
 public class PuffyDandelionBlock extends FlowerBlock implements Fertilizable {
 
@@ -28,6 +30,12 @@ public class PuffyDandelionBlock extends FlowerBlock implements Fertilizable {
 
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        world.setBlockState(pos, Blocks.DANDELION.getDefaultState(), Block.NOTIFY_ALL);
+        if (world.getBiome(pos).matchesKey(BiomeKeys.TAIGA) && world.getBiome(pos).matchesKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA) &&
+                world.getBiome(pos).matchesKey(BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA) &&
+                    world.getBiome(pos).matchesKey(BiomeKeys.WINDSWEPT_FOREST)) {
+            world.setBlockState(pos, DecoBlocks.TAIGA_DANDELION.getDefaultState(), Block.NOTIFY_ALL);
+        } else {
+            world.setBlockState(pos, Blocks.DANDELION.getDefaultState(), Block.NOTIFY_ALL);
+        }
     }
 }
