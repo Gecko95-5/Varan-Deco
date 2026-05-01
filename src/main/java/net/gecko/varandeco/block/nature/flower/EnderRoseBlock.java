@@ -6,6 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
@@ -22,7 +23,7 @@ import net.minecraft.world.World;
 
 public class EnderRoseBlock extends FlowerBlock {
     public EnderRoseBlock(StatusEffect effect, Settings settings) {
-        super(effect, 8, settings);
+        super(effect, 7, settings);
     }
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
@@ -47,7 +48,8 @@ public class EnderRoseBlock extends FlowerBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
-            if (entity instanceof LivingEntity livingEntity && !livingEntity.isInvulnerableTo(DamageSource.MAGIC.setProjectile())) {
+            if (entity instanceof LivingEntity livingEntity && livingEntity.getType() != EntityType.ENDERMAN
+                    && livingEntity.getType() != EntityType.ENDERMITE) {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 40));
             }
         }

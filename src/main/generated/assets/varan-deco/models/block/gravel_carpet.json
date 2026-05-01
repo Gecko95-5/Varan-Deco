@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "varan-deco:block/gravel_carpet_temp"
+  }
+}

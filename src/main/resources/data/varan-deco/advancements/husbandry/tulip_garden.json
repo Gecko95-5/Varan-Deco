@@ -148,14 +148,18 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "Collect all the Different type of Tulips",
+    "description": {
+      "translate": "advancements.varan-deco.tulips.description"
+    },
     "frame": "challenge",
     "hidden": false,
     "icon": {
       "item": "varan-deco:black_tulip"
     },
     "show_toast": true,
-    "title": "The Tulip Gardener"
+    "title": {
+      "translate": "advancements.varan-deco.tulips.title"
+    }
   },
   "requirements": [
     [
