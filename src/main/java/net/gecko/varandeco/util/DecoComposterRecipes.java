@@ -55,6 +55,12 @@ public class DecoComposterRecipes {
         ComposterRecipes.registerCompostableBlock(DecoBlocks.BLUE_DELPHINIUM);
         ComposterRecipes.registerCompostableBlock(DecoBlocks.CYAN_ORCHID);
         ComposterRecipes.registerCompostableBlock(DecoBlocks.FELICIA_DAISY);
+
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.TAIGA_DANDELION);
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.FERN_LAVENDER);
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.CARAMEL_BUTTERCUP);
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.SILVER_ROSE);
+        ComposterRecipes.registerCompostableBlock(DecoBlocks.ALPINE_SPEEDWELL);
     }
     public static void registerCompostableItems(){
         ComposterItemsRecipes.registerCompostableItem(DecoItems.WARPED_WART,0.65F);

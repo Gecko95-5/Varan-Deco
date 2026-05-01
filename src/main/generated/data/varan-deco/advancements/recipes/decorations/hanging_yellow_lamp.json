@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hanging_yellow_lamp"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_lamp": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "varan-deco:yellow_lamp"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_yellow_lamp",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hanging_yellow_lamp"
+    ]
+  },
+  "sends_telemetry_event": false
+}

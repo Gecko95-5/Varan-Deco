@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "varan-deco:hanging_lamp",
+    "varan-deco:hanging_white_lamp",
+    "varan-deco:hanging_light_gray_lamp",
+    "varan-deco:hanging_gray_lamp",
+    "varan-deco:hanging_black_lamp",
+    "varan-deco:hanging_brown_lamp",
+    "varan-deco:hanging_red_lamp",
+    "varan-deco:hanging_orange_lamp",
+    "varan-deco:hanging_yellow_lamp",
+    "varan-deco:hanging_lime_lamp",
+    "varan-deco:hanging_green_lamp",
+    "varan-deco:hanging_cyan_lamp",
+    "varan-deco:hanging_light_blue_lamp",
+    "varan-deco:hanging_blue_lamp",
+    "varan-deco:hanging_purple_lamp",
+    "varan-deco:hanging_magenta_lamp",
+    "varan-deco:hanging_pink_lamp"
+  ]
+}
