@@ -157,6 +157,14 @@
     "varan-deco:polished_black_sandstone_slab",
     "varan-deco:black_sandstone_brick_slab",
     "varan-deco:white_sand_slab",
-    "varan-deco:black_sand_slab"
+    "varan-deco:black_sand_slab",
+    "varan-deco:amethyst_slab",
+    "varan-deco:shined_amethyst_slab",
+    "varan-deco:scattered_amethyst_slab",
+    "varan-deco:amethyst_brick_slab",
+    "varan-deco:echo_slab",
+    "varan-deco:shined_echo_slab",
+    "varan-deco:scattered_echo_slab",
+    "varan-deco:echo_brick_slab"
   ]
 }

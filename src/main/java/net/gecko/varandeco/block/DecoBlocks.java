@@ -4443,6 +4443,12 @@ public class DecoBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
     public static final Block BLACK_SAND_TEMP = registerBlockWithoutItem("black_sand_temp",
             new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block AMETHYST_TEMP = registerBlockWithoutItem("amethyst_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block SCATTERED_AMETHYST_TEMP = registerBlockWithoutItem("scattered_amethyst_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
+    public static final Block SCATTERED_ECHO_TEMP = registerBlockWithoutItem("scattered_echo_temp",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(0f)));
 
     public static final BlockFamily CACTUS_FAMILY = BlockFamilies.register(DecoBlocks.CACTUS_PLANKS)
             .sign(DecoBlocks.STANDING_CACTUS_SIGN,DecoBlocks.WALL_CACTUS_SIGN)

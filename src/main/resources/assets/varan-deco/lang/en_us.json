@@ -2090,6 +2090,47 @@
   "block.varan-deco.flint_slab": "Flint Slab",
   "block.varan-deco.flint_wall": "Flint Wall",
 
+  "block.varan-deco.amethyst_stairs": "Amethyst Stairs",
+  "block.varan-deco.amethyst_slab": "Amethyst Slab",
+  "block.varan-deco.amethyst_wall": "Amethyst Wall",
+
+  "block.varan-deco.echo_stairs": "Echo Stairs",
+  "block.varan-deco.echo_slab": "Echo Slab",
+  "block.varan-deco.echo_wall": "Echo Wall",
+
+  "block.varan-deco.shined_amethyst": "Shined Amethyst Block",
+  "block.varan-deco.shined_amethyst_stairs": "Shined Amethyst Stairs",
+  "block.varan-deco.shined_amethyst_slab": "Shined Amethyst Slab",
+  "block.varan-deco.shined_amethyst_wall": "Shined Amethyst Wall",
+
+  "block.varan-deco.shined_echo": "Shined Echo Block",
+  "block.varan-deco.shined_echo_stairs": "Shined Echo Stairs",
+  "block.varan-deco.shined_echo_slab": "Shined Echo Slab",
+  "block.varan-deco.shined_echo_wall": "Shined Echo Wall",
+
+  "block.varan-deco.amethyst_pillar": "Amethyst Pillar",
+  "block.varan-deco.echo_pillar": "Echo Pillar",
+
+  "block.varan-deco.scattered_amethyst": "Scattered Amethyst Block",
+  "block.varan-deco.scattered_amethyst_stairs": "Scattered Amethyst Stairs",
+  "block.varan-deco.scattered_amethyst_slab": "Scattered Amethyst Slab",
+  "block.varan-deco.scattered_amethyst_wall": "Scattered Amethyst Wall",
+
+  "block.varan-deco.scattered_echo": "Scattered Echo Block",
+  "block.varan-deco.scattered_echo_stairs": "Scattered Echo Stairs",
+  "block.varan-deco.scattered_echo_slab": "Scattered Echo Slab",
+  "block.varan-deco.scattered_echo_wall": "Scattered Echo Wall",
+
+  "block.varan-deco.amethyst_bricks": "Amethyst Bricks",
+  "block.varan-deco.amethyst_brick_stairs": "Amethyst Brick Stairs",
+  "block.varan-deco.amethyst_brick_slab": "Amethyst Brick Slab",
+  "block.varan-deco.amethyst_brick_wall": "Amethyst Brick Wall",
+
+  "block.varan-deco.echo_bricks": "Echo Bricks",
+  "block.varan-deco.echo_brick_stairs": "Echo Brick Stairs",
+  "block.varan-deco.echo_brick_slab": "Echo Brick Slab",
+  "block.varan-deco.echo_brick_wall": "Echo Brick Wall",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
@@ -2104,6 +2145,39 @@
   "item.minecraft.splash_potion.effect.strong_bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Lingering Potion of The Water Bubble",
   "item.minecraft.tipped_arrow.effect.strong_bubble_potion": "Arrow of The Water Bubble",
+
+  "tooltip.varan-deco.nonStationBlock": "This Block is not able to be used by Villagers",
+
+  "advancements.varan-deco.crafting_table.title": "The Crafting Collector",
+  "advancements.varan-deco.crafting_table.description": "Obtain all Different Types of Crafting Table",
+  "advancements.varan-deco.smelting_blocks.title": "Smelting a Million",
+  "advancements.varan-deco.smelting_blocks.description": "Obtain all the Smelting Blocks",
+  "advancements.varan-deco.bubble_elevator.title": "The Best Two in One",
+  "advancements.varan-deco.bubble_elevator.description": "Craft the Bubble Elevator Block",
+  "advancements.varan-deco.black_ice.title": "To Dangerous to Be Place",
+  "advancements.varan-deco.black_ice.description": "Crafted a very Dense Block of Ice",
+  "advancements.varan-deco.bubble_orb.title": "The Orb found in the Ocean Depths",
+  "advancements.varan-deco.bubble_orb.description": "Obtain a Bubble Orb",
+  "advancements.varan-deco.fragile_ice.title": "More Fragile than Glass",
+  "advancements.varan-deco.fragile_ice.description": "Obtain a Fragile Ice Block, Try not to Step on it",
+  "advancements.varan-deco.hardened_glass.title": "As Tough as Obsidian",
+  "advancements.varan-deco.hardened_glass.description": "Crafted Hardened Glass",
+
+  "advancements.varan-deco.flowers.title": "Petals of Power",
+  "advancements.varan-deco.flowers.description": "Obtain any Flower",
+  "advancements.varan-deco.wooden_sapling.title": "The Wood of Woods",
+  "advancements.varan-deco.wooden_sapling.description": "Obtain a Wooden Saplings",
+  "advancements.varan-deco.tulips.title": "The Tulip Gardener",
+  "advancements.varan-deco.tulips.description": "Collect all the Different type of Tulips",
+  "advancements.varan-deco.daisy.title": "Dandy Daisies",
+  "advancements.varan-deco.daisy.description": "Collect all the Different type of Daisies",
+
+  "advancements.varan-deco.blaze_snow_brick.title": "Chill Out",
+  "advancements.varan-deco.blaze_snow_brick.description": "Kill a Blaze with a Snow Brick",
+  "advancements.varan-deco.coloured_lamp.title": "Coloured Lamp encased in Glass",
+  "advancements.varan-deco.coloured_lamp.description": "Crafted a Colour Lamp with Stained Glass Panes",
+  "advancements.varan-deco.smooth_glowstone.title": "A Smooth Beacon of Light",
+  "advancements.varan-deco.smooth_glowstone.description": "Smelt a Block of Smooth Glowstone",
 
   "itemGroup.varan-deco.varan_deco_blocks": "V-Deco - Building Blocks",
   "itemGroup.varan-deco.varan_deco_decoration": "V-Deco - Decoration Blocks",
