@@ -180,42 +180,6 @@
   "block.varan-deco.light_prismarine_slab": "Плита из светлого призмарина",
   "block.varan-deco.light_prismarine_wall": "Ограда из светлого призмарина",
 
-  "block.varan-deco.soul_soilstone": "Камень из почвы душ",
-  "block.varan-deco.soul_soilstone_stairs": "Ступеньки из камня из почвы душ",
-  "block.varan-deco.soul_soilstone_slab": "Плита из камня из почвы душ",
-  "block.varan-deco.soul_soilstone_wall": "Ограда из камня из почвы душ",
-
-  "block.varan-deco.cut_soul_soilstone": "Резной камень из почвы душ",
-  "block.varan-deco.cut_soul_soilstone_stairs": "Ступеньки из резного камня из почвы душ",
-  "block.varan-deco.cut_soul_soilstone_slab": "Плита из резного камня из почвы душ",
-  "block.varan-deco.cut_soul_soilstone_wall": "Ограда из резного камня из почвы душ",
-
-  "block.varan-deco.cut_soul_soilstone_bricks": "Кирпичи из резного камня из почвы душ",
-  "block.varan-deco.cut_soul_soilstone_brick_stairs": "Ступеньки из кирпича резного камня из почвы душ",
-  "block.varan-deco.cut_soul_soilstone_brick_slab": "Плита из кирпича резного камня из почвы душ",
-  "block.varan-deco.cut_soul_soilstone_brick_wall": "Ограда из кирпича резного камня из почвы душ",
-
-  "block.varan-deco.smooth_soul_soilstone": "Гладкий камень из почвы душ",
-  "block.varan-deco.smooth_soul_soilstone_stairs": "Ступеньки из гладкого камня из почвы душ",
-  "block.varan-deco.smooth_soul_soilstone_slab": "Плита из гладкого камня из почвы душ",
-  "block.varan-deco.smooth_soul_soilstone_wall": "Ограда из гладкого камня из почвы душ",
-
-  "block.varan-deco.cobbled_soul_soilstone": "Бутовый камень из почвы душ",
-  "block.varan-deco.cobbled_soul_soilstone_stairs": "Ступеньки из бутового камня из почвы душ",
-  "block.varan-deco.cobbled_soul_soilstone_slab": "Плита из бутового камня из почвы душ",
-  "block.varan-deco.cobbled_soul_soilstone_wall": "Ограда из бутового камня из почвы душ",
-
-  "block.varan-deco.polished_soul_soilstone": "Полированный камень из почвы душ",
-  "block.varan-deco.polished_soul_soilstone_stairs": "Ступеньки из полированного камня из почвы душ",
-  "block.varan-deco.polished_soul_soilstone_slab": "Плита из полированного камня из почвы душ",
-  "block.varan-deco.polished_soul_soilstone_wall": "Ограда из полированного камня из почвы душ",
-  "block.varan-deco.chiseled_polished_soul_soilstone": "Резной полированный камень из почвы душ",
-
-  "block.varan-deco.soul_soilstone_bricks": "Полированные кирпичи из камня из почвы душ",
-  "block.varan-deco.soul_soilstone_brick_stairs": "Ступеньки из полированного кирпича камня из почвы душ",
-  "block.varan-deco.soul_soilstone_brick_slab": "Плита из полированного кирпича камня из почвы душ",
-  "block.varan-deco.soul_soilstone_brick_wall": "Ограда из полированного кирпича камня из почвы душ",
-
   "block.varan-deco.quartz_wall": "Кварцевая ограда",
   "block.varan-deco.smooth_quartz_wall": "Ограда из гладкого кварца",
 
@@ -228,7 +192,6 @@
   "block.varan-deco.cut_quartz_slab": "Плита из резного кварца",
   "block.varan-deco.cut_quartz_wall": "Ограда из резного кварца",
 
-  "block.varan-deco.chiseled_soul_soilstone": "Резной камень из почвы душ",
 
   "block.varan-deco.chiseled_red_nether_bricks": "Резные красные незерские кирпичи",
   "block.varan-deco.cracked_red_nether_bricks": "Потрескавшиеся красные незерские кирпичи",
@@ -1658,16 +1621,6 @@
   "item.minecraft.lingering_potion.effect.bubble_potion": "Туманное зелье водного пузыря",
   "item.minecraft.tipped_arrow.effect.bubble_potion": "Стрела водного пузыря",
 
-  "item.minecraft.potion.effect.long_bubble_potion": "Зелье водного пузыря",
-  "item.minecraft.splash_potion.effect.long_bubble_potion": "Взрывное зелье водного пузыря",
-  "item.minecraft.lingering_potion.effect.long_bubble_potion": "Туманное зелье водного пузыря",
-  "item.minecraft.tipped_arrow.effect.long_bubble_potion": "Стрела водного пузыря",
-
-  "item.minecraft.potion.effect.strong_bubble_potion": "Зелье водного пузыря",
-  "item.minecraft.splash_potion.effect.strong_bubble_potion": "Взрывное зелье водного пузыря",
-  "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Туманное зелье водного пузыря",
-  "item.minecraft.tipped_arrow.effect.strong_bubble_potion": "Стрела водного пузыря",
-
   "block.varan-deco.infested_polished_stone": "Заражённый полированный камень",
   "block.varan-deco.infested_stone_tiles": "Заражённая каменная плитка",
   "block.varan-deco.infested_cracked_stone_tiles": "Заражённая потрескавшаяся каменная плитка",
@@ -1698,6 +1651,325 @@
 
   "block.varan-deco.bubble_elevator_block_magma": "Блок пузырькового лифта (магма)",
   "block.varan-deco.bubble_elevator_block_bubble": "Блок пузырькового лифта (пузырьки)",
+
+  "block.varan-deco.tuff_stairs": "Туфовые ступеньки",
+  "block.varan-deco.tuff_slab": "Туфовая плита",
+  "block.varan-deco.tuff_wall": "Туфовая ограда",
+
+  "block.varan-deco.copper_chain": "Медная цепь",
+  "block.varan-deco.waxed_copper_chain": "Вощёная медная цепь",
+
+  "block.varan-deco.exposed_copper_chain": "Потемневшая медная цепь",
+  "block.varan-deco.waxed_exposed_copper_chain": "Вощёная потемневшая медная цепь",
+
+  "block.varan-deco.weathered_copper_chain": "Состаренная медная цепь",
+  "block.varan-deco.waxed_weathered_copper_chain": "Вощёная состаренная медная цепь",
+
+  "block.varan-deco.oxidized_copper_chain": "Окисленная медная цепь",
+  "block.varan-deco.waxed_oxidized_copper_chain": "Вощёная окисленная медная цепь",
+
+  "block.varan-deco.copper_lantern": "Медный фонарь",
+  "block.varan-deco.waxed_copper_lantern": "Вощёный медный фонарь",
+
+  "block.varan-deco.exposed_copper_lantern": "Потемневший медный фонарь",
+  "block.varan-deco.waxed_exposed_copper_lantern": "Вощёный потемневший медный фонарь",
+
+  "block.varan-deco.weathered_copper_lantern": "Состаренный медный фонарь",
+  "block.varan-deco.waxed_weathered_copper_lantern": "Вощёный состаренный медный фонарь",
+
+  "block.varan-deco.oxidized_copper_lantern": "Окисленный медный фонарь",
+  "block.varan-deco.waxed_oxidized_copper_lantern": "Вощёный окисленный медный фонарь",
+
+  "block.varan-deco.copper_bars": "Медная решётка",
+  "block.varan-deco.waxed_copper_bars": "Вощёная медная решётка",
+
+  "block.varan-deco.exposed_copper_bars": "Потемневшая медная решётка",
+  "block.varan-deco.waxed_exposed_copper_bars": "Вощёная потемневшая медная решётка",
+
+  "block.varan-deco.weathered_copper_bars": "Состаренная медная решётка",
+  "block.varan-deco.waxed_weathered_copper_bars": "Вощёная состаренная медная решётка",
+
+  "block.varan-deco.oxidized_copper_bars": "Окисленная медная решётка",
+  "block.varan-deco.waxed_oxidized_copper_bars": "Вощёная окисленная медная решётка",
+
+  "block.varan-deco.soul_soilstone": "Камень душ",
+  "block.varan-deco.soul_soilstone_stairs": "Ступеньки из камня душ",
+  "block.varan-deco.soul_soilstone_slab": "Плита из камня душ",
+  "block.varan-deco.soul_soilstone_wall": "Ограда из камня душ",
+
+  "block.varan-deco.cut_soul_soilstone": "Резной камень душ",
+  "block.varan-deco.cut_soul_soilstone_stairs": "Ступеньки из резного камня душ",
+  "block.varan-deco.cut_soul_soilstone_slab": "Плита из резного камня душ",
+  "block.varan-deco.cut_soul_soilstone_wall": "Ограда из резного камня душ",
+
+  "block.varan-deco.cut_soul_soilstone_bricks": "Резные кирпичи из камня душ",
+  "block.varan-deco.cut_soul_soilstone_brick_stairs": "Ступеньки из резных кирпичей камня душ",
+  "block.varan-deco.cut_soul_soilstone_brick_slab": "Плита из резных кирпичей камня душ",
+  "block.varan-deco.cut_soul_soilstone_brick_wall": "Ограда из резных кирпичей камня душ",
+
+  "block.varan-deco.smooth_soul_soilstone": "Гладкий камень душ",
+  "block.varan-deco.smooth_soul_soilstone_stairs": "Ступеньки из гладкого камня душ",
+  "block.varan-deco.smooth_soul_soilstone_slab": "Плита из гладкого камня душ",
+  "block.varan-deco.smooth_soul_soilstone_wall": "Ограда из гладкого камня душ",
+
+  "block.varan-deco.cobbled_soul_soilstone": "Булыжный камень душ",
+  "block.varan-deco.cobbled_soul_soilstone_stairs": "Ступеньки из булыжного камня душ",
+  "block.varan-deco.cobbled_soul_soilstone_slab": "Плита из булыжного камня душ",
+  "block.varan-deco.cobbled_soul_soilstone_wall": "Ограда из булыжного камня душ",
+
+  "block.varan-deco.polished_soul_soilstone": "Полированный камень душ",
+  "block.varan-deco.polished_soul_soilstone_stairs": "Ступеньки из полированного камня душ",
+  "block.varan-deco.polished_soul_soilstone_slab": "Плита из полированного камня душ",
+  "block.varan-deco.polished_soul_soilstone_wall": "Ограда из полированного камня душ",
+  "block.varan-deco.chiseled_polished_soul_soilstone": "Резной полированный камень душ",
+
+  "block.varan-deco.soul_soilstone_bricks": "Полированные кирпичи из камня душ",
+  "block.varan-deco.soul_soilstone_brick_stairs": "Ступеньки из полированных кирпичей камня душ",
+  "block.varan-deco.soul_soilstone_brick_slab": "Плита из полированных кирпичей камня душ",
+  "block.varan-deco.soul_soilstone_brick_wall": "Ограда из полированных кирпичей камня душ",
+
+  "block.varan-deco.chiseled_soul_soilstone": "Резной камень душ",
+
+  "block.varan-deco.white_sand": "Белый песок",
+  "block.varan-deco.white_sand_stairs": "Ступеньки из белого песка",
+  "block.varan-deco.white_sand_slab": "Плита из белого песка",
+  "block.varan-deco.white_sand_carpet": "Ковёр из белого песка",
+
+  "block.varan-deco.white_sandstone": "Белый песчаник",
+  "block.varan-deco.white_sandstone_stairs": "Ступеньки из белого песчаника",
+  "block.varan-deco.white_sandstone_slab": "Плита из белого песчаника",
+  "block.varan-deco.white_sandstone_wall": "Ограда из белого песчаника",
+
+  "block.varan-deco.cut_white_sandstone": "Резной белый песчаник",
+  "block.varan-deco.cut_white_sandstone_stairs": "Ступеньки из резного белого песчаника",
+  "block.varan-deco.cut_white_sandstone_slab": "Плита из резного белого песчаника",
+  "block.varan-deco.cut_white_sandstone_wall": "Ограда из резного белого песчаника",
+
+  "block.varan-deco.cut_white_sandstone_bricks": "Резные кирпичи из белого песчаника",
+  "block.varan-deco.cut_white_sandstone_brick_stairs": "Ступеньки из резных кирпичей белого песчаника",
+  "block.varan-deco.cut_white_sandstone_brick_slab": "Плита из резных кирпичей белого песчаника",
+  "block.varan-deco.cut_white_sandstone_brick_wall": "Ограда из резных кирпичей белого песчаника",
+
+  "block.varan-deco.smooth_white_sandstone": "Гладкий белый песчаник",
+  "block.varan-deco.smooth_white_sandstone_stairs": "Ступеньки из гладкого белого песчаника",
+  "block.varan-deco.smooth_white_sandstone_slab": "Плита из гладкого белого песчаника",
+  "block.varan-deco.smooth_white_sandstone_wall": "Ограда из гладкого белого песчаника",
+
+  "block.varan-deco.cobbled_white_sandstone": "Булыжный белый песчаник",
+  "block.varan-deco.cobbled_white_sandstone_stairs": "Ступеньки из булыжного белого песчаника",
+  "block.varan-deco.cobbled_white_sandstone_slab": "Плита из булыжного белого песчаника",
+  "block.varan-deco.cobbled_white_sandstone_wall": "Ограда из булыжного белого песчаника",
+
+  "block.varan-deco.polished_white_sandstone": "Полированный белый песчаник",
+  "block.varan-deco.polished_white_sandstone_stairs": "Ступеньки из полированного белого песчаника",
+  "block.varan-deco.polished_white_sandstone_slab": "Плита из полированного белого песчаника",
+  "block.varan-deco.polished_white_sandstone_wall": "Ограда из полированного белого песчаника",
+  "block.varan-deco.chiseled_polished_white_sandstone": "Резной полированный белый песчаник",
+
+  "block.varan-deco.white_sandstone_bricks": "Полированные кирпичи из белого песчаника",
+  "block.varan-deco.white_sandstone_brick_stairs": "Ступеньки из полированных кирпичей белого песчаника",
+  "block.varan-deco.white_sandstone_brick_slab": "Плита из полированных кирпичей белого песчаника",
+  "block.varan-deco.white_sandstone_brick_wall": "Ограда из полированных кирпичей белого песчаника",
+
+  "block.varan-deco.chiseled_white_sandstone": "Резной белый песчаник",
+
+  "block.varan-deco.black_sand": "Чёрный песок",
+  "block.varan-deco.black_sand_stairs": "Ступеньки из чёрного песка",
+  "block.varan-deco.black_sand_slab": "Плита из чёрного песка",
+  "block.varan-deco.black_sand_carpet": "Ковёр из чёрного песка",
+
+  "block.varan-deco.black_sandstone": "Чёрный песчаник",
+  "block.varan-deco.black_sandstone_stairs": "Ступеньки из чёрного песчаника",
+  "block.varan-deco.black_sandstone_slab": "Плита из чёрного песчаника",
+  "block.varan-deco.black_sandstone_wall": "Ограда из чёрного песчаника",
+
+  "block.varan-deco.cut_black_sandstone": "Резной чёрный песчаник",
+  "block.varan-deco.cut_black_sandstone_stairs": "Ступеньки из резного чёрного песчаника",
+  "block.varan-deco.cut_black_sandstone_slab": "Плита из резного чёрного песчаника",
+  "block.varan-deco.cut_black_sandstone_wall": "Ограда из резного чёрного песчаника",
+
+  "block.varan-deco.cut_black_sandstone_bricks": "Резные кирпичи из чёрного песчаника",
+  "block.varan-deco.cut_black_sandstone_brick_stairs": "Ступеньки из резных кирпичей чёрного песчаника",
+  "block.varan-deco.cut_black_sandstone_brick_slab": "Плита из резных кирпичей чёрного песчаника",
+  "block.varan-deco.cut_black_sandstone_brick_wall": "Ограда из резных кирпичей чёрного песчаника",
+
+  "block.varan-deco.smooth_black_sandstone": "Гладкий чёрный песчаник",
+  "block.varan-deco.smooth_black_sandstone_stairs": "Ступеньки из гладкого чёрного песчаника",
+  "block.varan-deco.smooth_black_sandstone_slab": "Плита из гладкого чёрного песчаника",
+  "block.varan-deco.smooth_black_sandstone_wall": "Ограда из гладкого чёрного песчаника",
+
+  "block.varan-deco.cobbled_black_sandstone": "Булыжный чёрный песчаник",
+  "block.varan-deco.cobbled_black_sandstone_stairs": "Ступеньки из булыжного чёрного песчаника",
+  "block.varan-deco.cobbled_black_sandstone_slab": "Плита из булыжного чёрного песчаника",
+  "block.varan-deco.cobbled_black_sandstone_wall": "Ограда из булыжного чёрного песчаника",
+
+  "block.varan-deco.polished_black_sandstone": "Полированный чёрный песчаник",
+  "block.varan-deco.polished_black_sandstone_stairs": "Ступеньки из полированного чёрного песчаника",
+  "block.varan-deco.polished_black_sandstone_slab": "Плита из полированного чёрного песчаника",
+  "block.varan-deco.polished_black_sandstone_wall": "Ограда из полированного чёрного песчаника",
+  "block.varan-deco.chiseled_polished_black_sandstone": "Резной полированный чёрный песчаник",
+
+  "block.varan-deco.black_sandstone_bricks": "Полированные кирпичи из чёрного песчаника",
+  "block.varan-deco.black_sandstone_brick_stairs": "Ступеньки из полированных кирпичей чёрного песчаника",
+  "block.varan-deco.black_sandstone_brick_slab": "Плита из полированных кирпичей чёрного песчаника",
+  "block.varan-deco.black_sandstone_brick_wall": "Ограда из полированных кирпичей чёрного песчаника",
+
+  "block.varan-deco.chiseled_black_sandstone": "Резной чёрный песчаник",
+
+  "block.varan-deco.gold_lantern": "Золотой фонарь",
+  "block.varan-deco.gold_soul_lantern": "Золотой фонарь душ",
+
+  "block.varan-deco.iron_bar_door": "Дверь из железной решётки",
+  "block.varan-deco.iron_bar_trapdoor": "Люк из железной решётки",
+  "block.varan-deco.gold_bar_door": "Дверь из золотой решётки",
+  "block.varan-deco.gold_bar_trapdoor": "Люк из золотой решётки",
+
+  "block.varan-deco.taiga_dandelion": "Таёжный одуванчик",
+  "block.varan-deco.potted_taiga_dandelion": "Таёжный одуванчик в горшке",
+
+  "block.varan-deco.fern_lavender": "Папоротниковая лаванда",
+  "block.varan-deco.potted_fern_lavender": "Папоротниковая лаванда в горшке",
+
+  "block.varan-deco.caramel_buttercup": "Карамельный лютик",
+  "block.varan-deco.potted_caramel_buttercup": "Карамельный лютик в горшке",
+
+  "block.varan-deco.silver_rose": "Серебряная роза",
+  "block.varan-deco.potted_silver_rose": "Серебряная роза в горшке",
+
+  "block.varan-deco.alpine_speedwell": "Альпийская вероника",
+  "block.varan-deco.potted_alpine_speedwell": "Альпийская вероника в горшке",
+
+  "block.varan-deco.coal_stairs": "Угольные ступеньки",
+  "block.varan-deco.coal_slab": "Угольная плита",
+  "block.varan-deco.coal_wall": "Угольная ограда",
+
+  "block.varan-deco.coal_bricks": "Угольные кирпичи",
+
+  "block.varan-deco.coal_brick_stairs": "Ступеньки из угольных кирпичей",
+  "block.varan-deco.coal_brick_slab": "Плита из угольных кирпичей",
+  "block.varan-deco.coal_brick_wall": "Ограда из угольных кирпичей",
+
+  "block.varan-deco.chiseled_coal_bricks": "Резные угольные кирпичи",
+
+  "block.varan-deco.charcoal_stairs": "Ступеньки из древесного угля",
+  "block.varan-deco.charcoal_slab": "Плита из древесного угля",
+  "block.varan-deco.charcoal_wall": "Ограда из древесного угля",
+
+  "block.varan-deco.hanging_lamp": "Подвесная лампа",
+
+  "block.varan-deco.hanging_white_lamp": "Подвесная белая лампа",
+  "block.varan-deco.hanging_light_gray_lamp": "Подвесная светло-серая лампа",
+  "block.varan-deco.hanging_gray_lamp": "Подвесная серая лампа",
+  "block.varan-deco.hanging_black_lamp": "Подвесная чёрная лампа",
+  "block.varan-deco.hanging_brown_lamp": "Подвесная коричневая лампа",
+  "block.varan-deco.hanging_red_lamp": "Подвесная красная лампа",
+  "block.varan-deco.hanging_orange_lamp": "Подвесная оранжевая лампа",
+  "block.varan-deco.hanging_yellow_lamp": "Подвесная жёлтая лампа",
+  "block.varan-deco.hanging_lime_lamp": "Подвесная лаймовая лампа",
+  "block.varan-deco.hanging_green_lamp": "Подвесная зелёная лампа",
+  "block.varan-deco.hanging_cyan_lamp": "Подвесная бирюзовая лампа",
+  "block.varan-deco.hanging_light_blue_lamp": "Подвесная голубая лампа",
+  "block.varan-deco.hanging_blue_lamp": "Подвесная синяя лампа",
+  "block.varan-deco.hanging_purple_lamp": "Подвесная фиолетовая лампа",
+  "block.varan-deco.hanging_magenta_lamp": "Подвесная пурпурная лампа",
+  "block.varan-deco.hanging_pink_lamp": "Подвесная розовая лампа",
+
+  "block.varan-deco.glowing_glass": "Светящееся стекло",
+  "block.varan-deco.glowing_glass_pane": "Светящаяся стеклянная панель",
+  "block.varan-deco.hardened_glowing_glass": "Упрочнённое светящееся стекло",
+  "block.varan-deco.hardened_glowing_glass_pane": "Упрочнённая светящаяся стеклянная панель",
+
+  "block.varan-deco.sand_stairs": "Ступеньки из песка",
+  "block.varan-deco.sand_slab": "Песчаная плита",
+  "block.varan-deco.sand_carpet": "Песчаный ковёр",
+
+  "block.varan-deco.red_sand_stairs": "Ступеньки из красного песка",
+  "block.varan-deco.red_sand_slab": "Плита из красного песка",
+  "block.varan-deco.red_sand_carpet": "Ковёр из красного песка",
+
+  "block.varan-deco.gravel_stairs": "Ступеньки из гравия",
+  "block.varan-deco.gravel_slab": "Гравийная плита",
+  "block.varan-deco.gravel_carpet": "Ковёр из гравия",
+
+  "block.varan-deco.flint_stairs": "Ступеньки из кремня",
+  "block.varan-deco.flint_slab": "Кремнёвая плита",
+  "block.varan-deco.flint_wall": "Кремнёвая ограда",
+
+  "block.varan-deco.amethyst_stairs": "Аметистовые ступеньки",
+  "block.varan-deco.amethyst_slab": "Аметистовая плита",
+  "block.varan-deco.amethyst_wall": "Аметистовая ограда",
+
+  "block.varan-deco.echo_stairs": "Эховые ступеньки",
+  "block.varan-deco.echo_slab": "Эховая плита",
+  "block.varan-deco.echo_wall": "Эховая ограда",
+
+  "block.varan-deco.shined_amethyst": "Сияющий аметистовый блок",
+  "block.varan-deco.shined_amethyst_stairs": "Сияющие аметистовые ступеньки",
+  "block.varan-deco.shined_amethyst_slab": "Сияющая аметистовая плита",
+  "block.varan-deco.shined_amethyst_wall": "Сияющая аметистовая ограда",
+
+  "block.varan-deco.shined_echo": "Сияющий эхо-блок",
+  "block.varan-deco.shined_echo_stairs": "Сияющие эховые ступеньки",
+  "block.varan-deco.shined_echo_slab": "Сияющая эховая плита",
+  "block.varan-deco.shined_echo_wall": "Сияющая эховая ограда",
+
+  "block.varan-deco.amethyst_pillar": "Аметистовая колонна",
+  "block.varan-deco.echo_pillar": "Эхо-колонна",
+
+  "block.varan-deco.scattered_amethyst": "Блок россыпи аметиста",
+  "block.varan-deco.scattered_amethyst_stairs": "Ступеньки из россыпи аметиста",
+  "block.varan-deco.scattered_amethyst_slab": "Плита из россыпи аметиста",
+  "block.varan-deco.scattered_amethyst_wall": "Ограда из россыпи аметиста",
+
+  "block.varan-deco.scattered_echo": "Блок россыпи эха",
+  "block.varan-deco.scattered_echo_stairs": "Ступеньки из россыпи эха",
+  "block.varan-deco.scattered_echo_slab": "Плита из россыпи эха",
+  "block.varan-deco.scattered_echo_wall": "Ограда из россыпи эха",
+
+  "block.varan-deco.amethyst_bricks": "Аметистовые кирпичи",
+  "block.varan-deco.amethyst_brick_stairs": "Ступеньки из аметистовых кирпичей",
+  "block.varan-deco.amethyst_brick_slab": "Плита из аметистовых кирпичей",
+  "block.varan-deco.amethyst_brick_wall": "Ограда из аметистовых кирпичей",
+
+  "block.varan-deco.echo_bricks": "Эховые кирпичи",
+  "block.varan-deco.echo_brick_stairs": "Ступеньки из эховых кирпичей",
+  "block.varan-deco.echo_brick_slab": "Плита из эховых кирпичей",
+  "block.varan-deco.echo_brick_wall": "Ограда из эховых кирпичей",
+
+  "block.varan-deco.gold_chain": "Золотая цепь",
+
+  "tooltip.varan-deco.nonStationBlock": "Этот блок не может использоваться жителями",
+
+  "advancements.varan-deco.crafting_table.title": "Коллекционер верстаков",
+  "advancements.varan-deco.crafting_table.description": "Получите все виды верстаков",
+  "advancements.varan-deco.smelting_blocks.title": "Миллион переплавок",
+  "advancements.varan-deco.smelting_blocks.description": "Получите все плавильные блоки",
+  "advancements.varan-deco.bubble_elevator.title": "Лучший два в одном",
+  "advancements.varan-deco.bubble_elevator.description": "Создайте пузырьковый лифт",
+  "advancements.varan-deco.black_ice.title": "Слишком опасно, чтобы ставить",
+  "advancements.varan-deco.black_ice.description": "Создайте очень плотный блок льда",
+  "advancements.varan-deco.bubble_orb.title": "Сфера из океанских глубин",
+  "advancements.varan-deco.bubble_orb.description": "Получите пузырьковую сферу",
+  "advancements.varan-deco.fragile_ice.title": "Хрупче стекла",
+  "advancements.varan-deco.fragile_ice.description": "Получите хрупкий лёд, постарайтесь на него не наступать",
+  "advancements.varan-deco.hardened_glass.title": "Прочное, как обсидиан",
+  "advancements.varan-deco.hardened_glass.description": "Создайте закалённое стекло",
+
+  "advancements.varan-deco.flowers.title": "Лепестки силы",
+  "advancements.varan-deco.flowers.description": "Получите любой цветок",
+  "advancements.varan-deco.wooden_sapling.title": "Древесина всех древесин",
+  "advancements.varan-deco.wooden_sapling.description": "Получите древесный саженец",
+  "advancements.varan-deco.tulips.title": "Садовник тюльпанов",
+  "advancements.varan-deco.tulips.description": "Соберите все виды тюльпанов",
+  "advancements.varan-deco.daisy.title": "Прекрасные ромашки",
+  "advancements.varan-deco.daisy.description": "Соберите все виды ромашек",
+
+  "advancements.varan-deco.blaze_snow_brick.title": "Остынь",
+  "advancements.varan-deco.blaze_snow_brick.description": "Убейте ифрита снежным кирпичом",
+  "advancements.varan-deco.coloured_lamp.title": "Цветная лампа в стекле",
+  "advancements.varan-deco.coloured_lamp.description": "Создайте цветную лампу с помощью окрашенных стеклянных панелей",
+  "advancements.varan-deco.smooth_glowstone.title": "Гладкий светокаменный маяк",
+  "advancements.varan-deco.smooth_glowstone.description": "Переплавьте блок гладкого светокамня",
 
   "itemGroup.varan-deco.varan_deco_blocks": "Variant Decoration"
 }
