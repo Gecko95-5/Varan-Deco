@@ -2425,5 +2425,20 @@
   "advancements.varan-deco.smooth_glowstone.title": "Гладкий светокаменный маяк",
   "advancements.varan-deco.smooth_glowstone.description": "Переплавьте блок гладкого светокамня",
 
+  "item.minecraft.potion.effect.bubble_potion": "Зелье водного пузыря",
+  "item.minecraft.splash_potion.effect.bubble_potion": "Взрывное зелье водного пузыря",
+  "item.minecraft.lingering_potion.effect.bubble_potion": "Туманное зелье водного пузыря",
+  "item.minecraft.tipped_arrow.effect.bubble_potion": "Стрела водного пузыря",
+
+  "item.minecraft.potion.effect.long_bubble_potion": "Зелье водного пузыря",
+  "item.minecraft.splash_potion.effect.long_bubble_potion": "Взрывное зелье водного пузыря",
+  "item.minecraft.lingering_potion.effect.long_bubble_potion": "Туманное зелье водного пузыря",
+  "item.minecraft.tipped_arrow.effect.long_bubble_potion": "Стрела водного пузыря",
+
+  "item.minecraft.potion.effect.strong_bubble_potion": "Зелье водного пузыря",
+  "item.minecraft.splash_potion.effect.strong_bubble_potion": "Взрывное зелье водного пузыря",
+  "item.minecraft.lingering_potion.effect.strong_bubble_potion": "Туманное зелье водного пузыря",
+  "item.minecraft.tipped_arrow.effect.strong_bubble_potion": "Стрела водного пузыря",
+
   "itemgroup.varan_deco_blocks": "Варианты декора"
 }
