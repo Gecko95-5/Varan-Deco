@@ -94,7 +94,8 @@
     "frame": "challenge",
     "hidden": false,
     "icon": {
-      "item": "varan-deco:gerbera_daisy"
+      "count": 1,
+      "id": "varan-deco:gerbera_daisy"
     },
     "show_toast": true,
     "title": {
