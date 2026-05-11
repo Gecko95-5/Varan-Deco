@@ -2089,7 +2089,7 @@ public class DecoBlocks {
     public static final Block POTTED_PUFFY_DANDELION = registerBlockWithoutItem("potted_puffy_dandelion",
             new FlowerPotBlock(PUFFY_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
     public static final Block TAIGA_DANDELION = registerBlock("taiga_dandelion",
-            new PuffyDandelionBlock(StatusEffects.INSTANT_HEALTH, 1,FabricBlockSettings.copyOf(Blocks.DANDELION)));
+            new FlowerBlock(StatusEffects.INSTANT_HEALTH, 1,FabricBlockSettings.copyOf(Blocks.DANDELION)));
     public static final Block POTTED_TAIGA_DANDELION = registerBlockWithoutItem("potted_taiga_dandelion",
             new FlowerPotBlock(TAIGA_DANDELION,FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION)));
 
