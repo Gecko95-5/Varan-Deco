@@ -31,6 +31,7 @@ d70c8ed3cfa7ec1f50380f1f396021fd234b3795 data/minecraft/tags/block/needs_stone_t
 747dea34a5501636ce1b8662a42befc1afe5436e data/minecraft/tags/block/piglin_repellents.json
 34d4bb1ec5d769b5e17bf73278e0d1b6bbf8e713 data/minecraft/tags/block/planks.json
 6f44fdec71e126c89fbd59d86b55b9d938a83765 data/minecraft/tags/block/pressure_plates.json
+aec7e8309a3fedcf77006a821029d901400cb63d data/minecraft/tags/block/sand.json
 b7e6a540240367fd515f5eebf5b116893a889e97 data/minecraft/tags/block/saplings.json
 c77173603e8ca41d4c8481a267905c0c8f52e0ff data/minecraft/tags/block/sculk_replaceable.json
 5315a0a8a33660ac4bcebc21f05b2e012b303548 data/minecraft/tags/block/slabs.json

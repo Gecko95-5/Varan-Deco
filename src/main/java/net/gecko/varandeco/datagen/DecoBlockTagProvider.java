@@ -3344,5 +3344,10 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.HANGING_PURPLE_LAMP)
                 .add(DecoBlocks.HANGING_MAGENTA_LAMP)
                 .add(DecoBlocks.HANGING_PINK_LAMP);
+
+        getOrCreateTagBuilder(BlockTags.SAND)
+                .add(DecoBlocks.WHITE_SAND)
+                .add(DecoBlocks.BLACK_SAND)
+                .add(DecoBlocks.DRY_GRASS_BLOCK);
     }
 }

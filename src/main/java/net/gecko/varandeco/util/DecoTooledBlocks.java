@@ -1,9 +1,15 @@
 package net.gecko.varandeco.util;
 
+import com.mojang.datafixers.util.Pair;
+import net.fabricmc.fabric.api.registry.FlattenableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.fabricmc.fabric.api.registry.TillableBlockRegistry;
 import net.gecko.varandeco.block.DecoBlocks;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.HoeItem;
+import net.minecraft.item.Items;
 
-public class DecoStrippableBlocks {
+public class DecoTooledBlocks {
     public static void registerStrippables(){
         StrippableBlockRegistry.register(DecoBlocks.WOODEN_LOG, DecoBlocks.STRIPPED_WOODEN_LOG);
         StrippableBlockRegistry.register(DecoBlocks.WOODEN_WOOD, DecoBlocks.STRIPPED_WOODEN_WOOD);
@@ -18,4 +24,12 @@ public class DecoStrippableBlocks {
 
         StrippableBlockRegistry.register(DecoBlocks.PACKED_CACTUS, DecoBlocks.STRIPPED_CACTUS);
     }
+    public static void registerTilling(){
+        TillableBlockRegistry.register(DecoBlocks.DRY_GRASS_BLOCK,itemUsageContext -> true,
+                Blocks.DIRT.getDefaultState(), Items.SHORT_DRY_GRASS);
+    }
+    public static void registerFlatting(){
+        FlattenableBlockRegistry.register(DecoBlocks.DRY_GRASS_BLOCK, Blocks.DIRT_PATH.getDefaultState());
+    }
+
 }
