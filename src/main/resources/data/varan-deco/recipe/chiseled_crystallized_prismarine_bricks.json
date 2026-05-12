@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "varan-deco:crystallized_prismarine_bricks"
+      "item": "minecraft:crystallized_prismarine_bricks"
     },
     "I": {
       "item": "minecraft:prismarine"
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "varan-deco:chiseled_crystallized_prismarine_bricks"
+    "id": "minecraft:chiseled_crystallized_prismarine_bricks"
   }
 }

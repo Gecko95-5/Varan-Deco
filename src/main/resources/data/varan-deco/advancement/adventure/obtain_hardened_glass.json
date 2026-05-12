@@ -13,9 +13,12 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "description": {
       "translate": "advancements.varan-deco.hardened_glass.description"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "count": 1,
       "id": "minecraft:hardened_glass"
