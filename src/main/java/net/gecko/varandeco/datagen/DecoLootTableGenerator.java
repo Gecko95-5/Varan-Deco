@@ -940,6 +940,9 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(Blocks.ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                 UniformLootNumberProvider.create(3.0F, 6.0f)));
 
+        addDrop(Blocks.PACKED_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
+                UniformLootNumberProvider.create(6.0F, 9.0f)));
+
         addDrop(Blocks.BLUE_ICE, block -> this.drops(block, DecoItems.ICE_SHARD,
                 UniformLootNumberProvider.create(9.0F, 12.0f)));
 
