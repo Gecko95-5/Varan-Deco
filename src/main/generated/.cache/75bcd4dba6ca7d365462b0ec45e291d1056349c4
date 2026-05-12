@@ -1,4 +1,4 @@
-// 1.19.2	2026-05-01T01:34:52.7732746	Tags for minecraft:block
+// 1.19.2	2026-05-12T19:03:38.5488747	Tags for minecraft:block
 b14f3efbef6b6c52273c5d22ef14ab6a6a0286b9 data\varan-deco\tags\blocks\infested_blocks.json
 65bda592dd61b05c5d84700d54f498c5f5e266c1 data\minecraft\tags\blocks\mineable\pickaxe.json
 ffdffc05b633cb11e69356d9ad3a3c5c648187b9 data\minecraft\tags\blocks\slabs.json
@@ -10,6 +10,7 @@ a0f97a443ff6c31b666270d0b7303aa355341586 data\minecraft\tags\blocks\needs_stone_
 0f8f8c6e84586269b8ee68133aa35affcfb95535 data\varan-deco\tags\blocks\copper_lantern.json
 bd4d9138c95450b620fc8d5b8798885a64c941e1 data\varan-deco\tags\blocks\deco_smithing_tables.json
 2214383974325a4e567d7e3d0073a99a8a3b71fd data\varan-deco\tags\blocks\hardened_glass.json
+7876d0189684683c1a8d99bee98142007aaf8f0a data\minecraft\tags\blocks\sand.json
 ed2aad4c6390a08ce149e68233e64e55308a95b8 data\varan-deco\tags\blocks\deco_crafting_tables.json
 be96bf8a4fdd6f00abc94cf5a61c6c34e6fadd3f data\minecraft\tags\blocks\soul_speed_blocks.json
 ab9d7217254f117e4afcc07f79cc72f5553ed619 data\minecraft\tags\blocks\dirt.json
