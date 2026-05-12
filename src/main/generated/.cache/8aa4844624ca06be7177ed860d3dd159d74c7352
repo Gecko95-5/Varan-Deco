@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-10T19:05:07.6389368	Variant Decoration/Tags for minecraft:item
+// 1.21.1	2026-05-12T15:26:04.9664584	Variant Decoration/Tags for minecraft:item
 4bb010d563ea8a4beb30357e64a26d4367a083f5 data\minecraft\tags\item\wooden_pressure_plates.json
 0a4b01d983287abae47d98123cfd55f91ab88d57 data\varan-deco\tags\item\wooden_barrels.json
 af1bd98681062ca5bb6b76676e5c4bf80302b25b data\varan-deco\tags\item\wooden_bookshelf_slab.json
@@ -37,9 +37,9 @@ ffd53d52d0d0c9f59dd8ca26d1814b40256dbf24 data\varan-deco\tags\item\giant_mushroo
 bf3b3b75502980f17e89bf2d8a6a7cb5e09bc7d9 data\minecraft\tags\item\stone_buttons.json
 76beaf7264ead0837d8481d79bdeb0f0284baea8 data\varan-deco\tags\item\deco_bookshelf_slab.json
 8122f6ffedd557098624520fd9890018cf01b568 data\minecraft\tags\item\wooden_buttons.json
+411ec412cfa34a2d9dfcdd6d54380847f3de82a0 data\varan-deco\tags\item\deco_barrels.json
 1787a0512df087c749cbf4dbaec4a06468fada50 data\varan-deco\tags\item\deco_smithing_tables.json
 120a0f92a9d22e1966595e6afb272f0c60a5e5c5 data\minecraft\tags\item\stone_crafting_materials.json
-411ec412cfa34a2d9dfcdd6d54380847f3de82a0 data\varan-deco\tags\item\deco_barrels.json
 fa97631a31c67ec04dc971ea54ae0ef270a9333f data\varan-deco\tags\item\deco_crafting_tables.json
 1665c2dc5d4d397cf22006cd02d72671252bf14c data\minecraft\tags\item\leaves.json
 91b88f3e61e4f3efe5c326b84bda08694fb25cd1 data\varan-deco\tags\item\mosaic_slab.json

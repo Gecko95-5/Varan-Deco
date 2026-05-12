@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-10T19:05:07.6184259	Variant Decoration/Recipes
+// 1.21.1	2026-05-12T15:26:04.8615146	Variant Decoration/Recipes
 b5cf8b4094ef69162a75692bd42229b8aed081dd data\varan-deco\recipe\mangrove_raft.json
 860b09f472812595cebd70c18b559ea34caee1b7 data\varan-deco\advancement\recipes\building_blocks\wind_bricks.json
 a288f22417fdf4dc1c4e49eccc9054dccad99a3d data\varan-deco\recipe\dead_bubble_coral_stairs.json
@@ -9,8 +9,8 @@ e59598ea111b9f172a37eb088404ea160ff91234 data\varan-deco\advancement\recipes\bui
 01b02f9b9bb35a998be0d680683fd5c5b820956a data\varan-deco\advancement\recipes\building_blocks\cut_black_sandstone_brick_stairs_from_cut_black_sandstone_bricks_stonecutting.json
 a452f0c74b78001138060b8a58a81f0362d790f4 data\varan-deco\recipe\bubble_coral_wall_from_bubble_coral_block_stonecutting.json
 cc5b68037becc9b7701f85c46002f9ca2290c7e1 data\varan-deco\recipe\gold_slab_from_blasting.json
-649a50a8d4ab38df8e8f480c48d1f221df11acc9 data\varan-deco\recipe\cracked_tuff_brick_wall_from_smelting.json
 0ca1bf3cf5edf137d7d5ca06928338279e62c685 data\varan-deco\recipe\cracked_tuff_brick_slab.json
+649a50a8d4ab38df8e8f480c48d1f221df11acc9 data\varan-deco\recipe\cracked_tuff_brick_wall_from_smelting.json
 6c4fc39ce3f6686eae402934d36638d55aca5081 data\varan-deco\recipe\end_stone_brick_wall_from_polished_end_stone_stonecutting.json
 be74736f832e019435471ebef642b6a12c4f00c3 data\varan-deco\recipe\bubble_coral_slab_from_bubble_coral_block_stonecutting.json
 fed09085f5defb2a8be6b228e0ed1f2070fcc931 data\varan-deco\advancement\recipes\building_blocks\polished_calcite.json
