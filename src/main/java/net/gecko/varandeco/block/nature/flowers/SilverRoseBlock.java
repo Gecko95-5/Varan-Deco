@@ -29,22 +29,6 @@ public class SilverRoseBlock extends FlowerBlock {
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
         return super.canPlantOnTop(floor, world, pos) || floor.isOf(Blocks.STONE) || floor.isOf(Blocks.GRAVEL);
     }
-
-    @Override
-    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        VoxelShape voxelShape = this.getOutlineShape(state, world, pos, ShapeContext.absent());
-        Vec3d vec3d = voxelShape.getBoundingBox().getCenter();
-        double d = pos.getX() + vec3d.x;
-        double e = pos.getZ() + vec3d.z;
-
-        for (int i = 0; i < 3; i++) {
-            if (random.nextBoolean()) {
-                world.addParticle(
-                        ParticleTypes.PORTAL, d + random.nextDouble() / 5.0, pos.getY() + (0.5 - random.nextDouble()), e + random.nextDouble() / 5.0, 0.0, 0.0, 0.0
-                );
-            }
-        }
-    }
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
