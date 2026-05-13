@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:crystallized_prismarine_bricks"
-    },
-    "I": {
-      "item": "minecraft:prismarine"
-    }
+    "#": "minecraft:crystallized_prismarine_bricks",
+    "I": "minecraft:prismarine"
   },
   "pattern": [
     " # ",
