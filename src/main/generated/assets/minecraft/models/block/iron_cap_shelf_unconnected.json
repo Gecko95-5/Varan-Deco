@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_shelf_unconnected",
   "textures": {
     "all": "minecraft:block/iron_cap_shelf",
-    "particle": "minecraft:block/stripped_iron_cap_hyphae"
+    "particle": "minecraft:block/stripped_iron_cap_stem"
   }
 }
