@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-10T20:34:05.2172777	Variant Decoration/Tags for minecraft:block
+// 1.21.1	2026-05-15T13:24:49.0634903	Variant Decoration/Tags for minecraft:block
 b8783ff08d4e35f366bec18feb8919719662c6df data\minecraft\tags\block\soul_speed_blocks.json
 05e0dd49a258e826d24330de2e562908cb49b4ad data\varan-deco\tags\block\deco_smithing_tables.json
 cc7dd866e3df98d2ff5df09f79da557b17d112bf data\minecraft\tags\block\ice.json
@@ -45,6 +45,7 @@ aab8d78e41b7bd91b43e3c530699de16f8db9abc data\varan-deco\tags\block\wool_slabs.j
 68c1a8c6377b8439be8db3bf1380d6b33cee52d3 data\varan-deco\tags\block\coral_stairs.json
 e75fa939e1b17f51f73a69b45397d3bfb4bd9acb data\minecraft\tags\block\mineable\hoe.json
 6643f0c71e514a4a88c07d49949fe9b83a98a1b9 data\varan-deco\tags\block\deco_ladders.json
+60adf041f8c24b5151a393c8faeb64d6e8461117 data\minecraft\tags\block\sand.json
 2e318345e13d02d85fd8ba9088d20b04a6b3d170 data\varan-deco\tags\block\glass_panes.json
 34a005ede30313173c75c547f292d5337be64ac1 data\minecraft\tags\block\needs_stone_tool.json
 a0ecc4546b368bd9ec40186b711e2d5da829bf60 data\varan-deco\tags\block\deco_barrels.json
