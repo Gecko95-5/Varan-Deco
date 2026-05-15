@@ -1,4 +1,4 @@
-// 1.20.6	2026-05-10T00:24:33.9907357	Variant Decoration/Tags for minecraft:block
+// 1.20.6	2026-05-15T12:55:50.6952802	Variant Decoration/Tags for minecraft:block
 87ea4ff7429aaee89deb5e19da3fa8c9d6a10515 data\minecraft\tags\blocks\mineable\pickaxe.json
 e26ce0a4124a4adf3a6b8fd7cfd6132692869fe7 data\minecraft\tags\blocks\stone_buttons.json
 574b2d180eb029d900d7b34b9bf6cd7d592ad0e4 data\varan-deco\tags\blocks\deco_note_blocks.json
@@ -10,6 +10,7 @@ f1608d17ae9db10b10685d1145d76a77ad856f0e data\minecraft\tags\blocks\wall_hanging
 05e0dd49a258e826d24330de2e562908cb49b4ad data\varan-deco\tags\blocks\deco_smithing_tables.json
 0808f3dee068e61a81ca6cf1471240e4e5404eee data\varan-deco\tags\blocks\wooden_bookshelf_stairs.json
 65b184a5345dd72a9a60d8f7541f72270fbd47df data\varan-deco\tags\blocks\hardened_glass.json
+60adf041f8c24b5151a393c8faeb64d6e8461117 data\minecraft\tags\blocks\sand.json
 b74c33355336b6a65edbc5cbcead60e676335942 data\varan-deco\tags\blocks\deco_crafting_tables.json
 ec73d7be1df243704a077160fb38ab43ab0e0c10 data\minecraft\tags\blocks\dirt.json
 47aec1ccc822721d1413e8deda13ec6e8e236f89 data\varan-deco\tags\blocks\terracotta_slabs.json
