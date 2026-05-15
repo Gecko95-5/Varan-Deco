@@ -4810,6 +4810,19 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                         .criterion(hasItem(DecoBlocks.MONOCHROME_WILDFLOWERS),
                                 conditionsFromItem(DecoBlocks.MONOCHROME_WILDFLOWERS))
                         .offerTo(exporter, getRecipeName(Items.BLACK_DYE) + "_from_wildflower");
+
+                offerShelfRecipe(DecoBlocks.CACTUS_SHELF, DecoBlocks.STRIPPED_CACTUS);
+                offerShelfRecipe(DecoBlocks.MUSHROOM_SHELF, Blocks.MUSHROOM_STEM);
+                offerShelfRecipe(DecoBlocks.IRON_CAP_SHELF, DecoBlocks.STRIPPED_IRON_CAP_HYPHAE);
+                offerShelfRecipe(DecoBlocks.DRIFTWOOD_SHELF, DecoBlocks.STRIPPED_DRIFTWOOD_LOG);
+                offerShelfRecipe(DecoBlocks.WOODEN_SHELF, DecoBlocks.STRIPPED_WOODEN_LOG);
+
+                createShapeless(RecipeCategory.BUILDING_BLOCKS, DecoBlocks.JACK_O_COPPER_LANTERN)
+                        .input(Items.CARVED_PUMPKIN)
+                        .input(Items.COPPER_TORCH)
+                        .criterion(hasItem(Items.COPPER_TORCH),
+                                conditionsFromItem(Items.COPPER_TORCH))
+                        .offerTo(exporter, getRecipeName(DecoBlocks.JACK_O_COPPER_LANTERN) + "_recipe_create");
     }
     public void offerLadderVariantRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible woodInput) {
         createShaped(RecipeCategory.DECORATIONS,output,3)

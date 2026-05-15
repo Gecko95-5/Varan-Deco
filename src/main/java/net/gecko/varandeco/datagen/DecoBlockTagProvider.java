@@ -7,7 +7,6 @@ import net.gecko.varandeco.util.DecoTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -977,7 +976,8 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WARPED_MOSAIC_SLAB)
                 .add(DecoBlocks.IRON_CAP_MOSAIC_SLAB)
                 .add(DecoBlocks.IRON_CAP_MUSHROOM)
-                .add(DecoBlocks.JACK_O_SOUL_LANTERN);
+                .add(DecoBlocks.JACK_O_SOUL_LANTERN)
+                .add(DecoBlocks.JACK_O_COPPER_LANTERN);
 
         valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(DecoTags.Blocks.HARDENED_GLASS)
@@ -3317,5 +3317,12 @@ public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(DecoBlocks.WHITE_SAND)
                 .add(DecoBlocks.BLACK_SAND)
                 .add(DecoBlocks.DRY_GRASS_BLOCK);
+
+        valueLookupBuilder(BlockTags.WOODEN_SHELVES)
+                .add(DecoBlocks.CACTUS_SHELF)
+                .add(DecoBlocks.IRON_CAP_SHELF)
+                .add(DecoBlocks.MUSHROOM_SHELF)
+                .add(DecoBlocks.DRIFTWOOD_SHELF)
+                .add(DecoBlocks.WOODEN_SHELF);
     }
 }

@@ -24,8 +24,7 @@
       "id": "minecraft:hardened_glass"
     },
     "title": "advancements.varan-deco.hardened_glass.title"
-  }
-},
+  },
   "requirements": [
     [
       "glass"
