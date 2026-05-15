@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varandeco.VaranDeco;
 import net.gecko.varandeco.block.bubblelevatorblocks.*;
+import net.gecko.varandeco.block.nature.flower.SilverRoseBlock;
 import net.gecko.varandeco.block.nature.packed.PackedCrimsonNyliumBlock;
 import net.gecko.varandeco.block.nature.packed.PackedGrassBlock;
 import net.gecko.varandeco.block.nature.packed.PackedMyceliumBlock;
@@ -37,6 +38,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
@@ -3593,15 +3595,11 @@ public class DecoBlocks {
                     FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE),DecoBlockSets.WOODEN));
 
     public static final Block IRON_BAR_DOOR = registerBlock("iron_bar_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR).nonOpaque(),
-                    SoundEvents.BLOCK_IRON_DOOR_CLOSE,
-                    SoundEvents.BLOCK_IRON_DOOR_OPEN));
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR).nonOpaque(), BlockSetType.IRON));
     public static final Block GOLD_DOOR = registerBlock("gold_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.GOLD));
     public static final Block GOLD_BAR_DOOR = registerBlock("gold_bar_door",
-            new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.GOLD_DOOR).nonOpaque(),
-                    SoundEvents.BLOCK_IRON_DOOR_CLOSE,
-                    SoundEvents.BLOCK_IRON_DOOR_OPEN));
+            new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.GOLD_DOOR).nonOpaque(), BlockSetType.GOLD));
     public static final Block CACTUS_DOOR = registerBlock("cactus_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(), DecoBlockSets.CACUTS));
     public static final Block MUSHROOM_DOOR = registerBlock("mushroom_door",
@@ -3636,15 +3634,11 @@ public class DecoBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(DecoBlocks.WOODEN_DOOR).nonOpaque(), DecoBlockSets.WOODEN));
 
     public static final Block IRON_BAR_TRAPDOOR = registerBlock("iron_bar_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR).nonOpaque(),
-                    SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE,
-                    SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR).nonOpaque(), BlockSetType.IRON));
     public static final Block GOLD_TRAPDOOR = registerBlock("gold_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.GOLD));
     public static final Block GOLD_BAR_TRAPDOOR = registerBlock("gold_bar_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.GOLD_TRAPDOOR).nonOpaque(),
-                    SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE,
-                    SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(DecoBlocks.GOLD_TRAPDOOR).nonOpaque(), BlockSetType.GOLD));
     public static final Block CACTUS_TRAPDOOR = registerBlock("cactus_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PALE_GREEN).nonOpaque(), DecoBlockSets.CACUTS));
     public static final Block MUSHROOM_TRAPDOOR = registerBlock("mushroom_trapdoor",
