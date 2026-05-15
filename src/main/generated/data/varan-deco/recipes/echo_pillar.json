@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "varan-deco:echo_pillar"
-  }
+  },
+  "show_notification": true
 }

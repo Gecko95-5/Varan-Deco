@@ -16,5 +16,6 @@
   "result": {
     "count": 2,
     "item": "varan-deco:shined_echo"
-  }
+  },
+  "show_notification": true
 }

@@ -16,5 +16,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:scattered_amethyst"
-  }
+  },
+  "show_notification": true
 }

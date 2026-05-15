@@ -13,5 +13,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:polished_white_sandstone"
-  }
+  },
+  "show_notification": true
 }

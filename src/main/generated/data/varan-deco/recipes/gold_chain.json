@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "varan-deco:gold_chain"
-  }
+  },
+  "show_notification": true
 }

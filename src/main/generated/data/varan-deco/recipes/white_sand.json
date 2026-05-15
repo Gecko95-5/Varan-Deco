@@ -16,5 +16,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:white_sand"
-  }
+  },
+  "show_notification": true
 }

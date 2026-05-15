@@ -14,5 +14,6 @@
   "result": {
     "count": 4,
     "item": "varan-deco:shined_echo_stairs"
-  }
+  },
+  "show_notification": true
 }

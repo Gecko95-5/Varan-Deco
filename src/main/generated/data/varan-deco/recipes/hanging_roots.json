@@ -16,5 +16,6 @@
   "result": {
     "count": 16,
     "item": "minecraft:hanging_roots"
-  }
+  },
+  "show_notification": true
 }

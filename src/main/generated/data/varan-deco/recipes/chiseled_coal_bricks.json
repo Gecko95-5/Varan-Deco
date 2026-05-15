@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "varan-deco:chiseled_coal_bricks"
-  }
+  },
+  "show_notification": true
 }

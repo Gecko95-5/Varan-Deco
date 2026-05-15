@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "varan-deco:gold_lantern"
-  }
+  },
+  "show_notification": true
 }

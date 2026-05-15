@@ -13,5 +13,6 @@
   "result": {
     "count": 6,
     "item": "varan-deco:shined_echo_wall"
-  }
+  },
+  "show_notification": true
 }

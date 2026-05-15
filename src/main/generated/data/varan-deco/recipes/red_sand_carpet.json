@@ -13,5 +13,6 @@
   "result": {
     "count": 3,
     "item": "varan-deco:red_sand_carpet"
-  }
+  },
+  "show_notification": true
 }

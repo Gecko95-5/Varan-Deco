@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "varan-deco:hanging_blue_lamp"
-  }
+  },
+  "show_notification": true
 }

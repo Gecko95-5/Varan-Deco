@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:coal_bricks"
-  }
+  },
+  "show_notification": true
 }

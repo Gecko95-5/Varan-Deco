@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "varan-deco:amethyst_pillar"
-  }
+  },
+  "show_notification": true
 }

@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "varan-deco:gold_bar_trapdoor"
-  }
+  },
+  "show_notification": true
 }

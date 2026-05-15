@@ -18,5 +18,6 @@
   "result": {
     "count": 8,
     "item": "varan-deco:hanging_magenta_lamp"
-  }
+  },
+  "show_notification": true
 }
