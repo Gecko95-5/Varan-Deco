@@ -1,10 +1,8 @@
 package net.gecko.varandeco.block.nature.ice;
 
-import net.gecko.varandeco.util.DecoEnchantmentHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.registry.tag.EntityTypeTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
@@ -20,8 +18,7 @@ public class  FragileIceBlock extends Block{
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         super.onSteppedOn(world, pos, state, entity);
         if (!entity.bypassesSteppingEffects()) {
-            if (!entity.getType().isIn(EntityTypeTags.POWDER_SNOW_WALKABLE_MOBS) &&
-                    !DecoEnchantmentHelper.hasFeatherFalling((LivingEntity)entity))
+            if (!entity.getType().isIn(EntityTypeTags.POWDER_SNOW_WALKABLE_MOBS))
                 world.breakBlock(pos, true);
         }
     }
