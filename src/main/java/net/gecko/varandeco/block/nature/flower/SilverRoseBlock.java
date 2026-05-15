@@ -34,7 +34,7 @@ public class SilverRoseBlock extends FlowerBlock {
         if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
             if (entity instanceof LivingEntity livingEntity &&
                     livingEntity.getType() != EntityType.FOX && entity.getType() != EntityType.BEE) {
-                livingEntity.damage(DamageSource.SWEET_BERRY_BUSH,1);
+                livingEntity.damage(world.getDamageSources().sweetBerryBush(), 1.0F);
             }
         }
     }
