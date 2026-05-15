@@ -18,7 +18,7 @@ e679dfca792e4ebae644965689391497d194529c data/minecraft/tags/block/ice.json
 eedf18ecf898a1522b18f68b73d1b31427ec2ebc data/minecraft/tags/block/leaves.json
 bca3193a178670643eb7951bcbf62df66a82b9a0 data/minecraft/tags/block/logs.json
 112f54edac636b7f3e31ec3980c565cb269c14eb data/minecraft/tags/block/logs_that_burn.json
-6d6211e046917f938901d12242fa1f4300efa100 data/minecraft/tags/block/mineable/axe.json
+bfc0db47d81233f6f7dfc09cdf22a6d6029aea06 data/minecraft/tags/block/mineable/axe.json
 2ef625387a624fedc7ef5e66c7453647527e725e data/minecraft/tags/block/mineable/hoe.json
 e8eba4b6e90dec231fbd9d8c34d6ea23d13b2b50 data/minecraft/tags/block/mineable/pickaxe.json
 916b0dc3400eac062663781544dcb25010bd2a94 data/minecraft/tags/block/mineable/shovel.json
@@ -56,6 +56,7 @@ ccbb2ba936d1cc49166557696fb5f6c5a207c333 data/minecraft/tags/block/wooden_button
 f214724289bac1f1be50e17c4f13661452686857 data/minecraft/tags/block/wooden_doors.json
 14aefcdc5a90bbba79bb01b15932eb2d81076fc3 data/minecraft/tags/block/wooden_fences.json
 55a67e51029338c8689c6ad32c8f856a36fa88cd data/minecraft/tags/block/wooden_pressure_plates.json
+555f0646bfca0e4ec34179b0571ed40146dc8202 data/minecraft/tags/block/wooden_shelves.json
 fef8400b0d71252d10add276e689892c6840fcdb data/minecraft/tags/block/wooden_slabs.json
 d34886f044f4a7f003e257842fbe177b81b49451 data/minecraft/tags/block/wooden_stairs.json
 88ac06593a7e8510d7cdb1a2eac5abf454f243a9 data/minecraft/tags/block/wooden_trapdoors.json

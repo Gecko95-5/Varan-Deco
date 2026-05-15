@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:carved_pumpkin",
+    "minecraft:copper_torch"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:jack_o_copper_lantern"
+  }
+}

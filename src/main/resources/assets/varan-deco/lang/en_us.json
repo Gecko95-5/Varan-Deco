@@ -2760,6 +2760,14 @@
   "block.minecraft.waxed_oxidized_copper_bar_door": "Waxed Oxidized Copper Bar Door",
   "block.minecraft.waxed_oxidized_copper_bar_trapdoor": "Waxed Oxidized Copper Bar Trapdoor",
 
+  "block.minecraft.jack_o_copper_lantern": "Jack-O-Copper Lantern",
+
+  "block.minecraft.cactus_shelf": "Cactus Shelf",
+  "block.minecraft.mushroom_shelf": "Mushroom Shelf",
+  "block.minecraft.iron_cap_shelf": "Iron Cap Shelf",
+  "block.minecraft.driftwood_shelf": "Driftwood Shelf",
+  "block.minecraft.wooden_shelf": "Wooden Shelf",
+
   "item.minecraft.potion.effect.bubble_potion": "Water Bubble Potion",
   "item.minecraft.splash_potion.effect.bubble_potion": "Splash Potion of The Water Bubble",
   "item.minecraft.lingering_potion.effect.bubble_potion": "Lingering Potion of The Water Bubble",
