@@ -1262,6 +1262,13 @@
   "block.minecraft.mega_brown_tulip": "Коричневый мега-тюльпан",
 
   "block.minecraft.jack_o_soul_lantern": "Светильник Джека с душой",
+  "block.minecraft.jack_o_copper_lantern": "Медный светильник Джека",
+
+  "block.minecraft.cactus_shelf": "Кактусовые полка",
+  "block.minecraft.mushroom_shelf": "Грибные полка",
+  "block.minecraft.iron_cap_shelf": "Железно-грибные полка",
+  "block.minecraft.driftwood_shelf": "Плавниковые полка",
+  "block.minecraft.wooden_shelf": "Деревянные полка",
 
   "block.minecraft.casted_iron": "Литое железо",
   "block.minecraft.casted_iron_stairs": "Ступеньки из литого железа",

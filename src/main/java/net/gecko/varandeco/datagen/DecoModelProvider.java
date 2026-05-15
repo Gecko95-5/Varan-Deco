@@ -857,6 +857,12 @@ public class DecoModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerbed(DecoBlocks.SEA_WILDFLOWERS);
         blockStateModelGenerator.registerFlowerbed(DecoBlocks.MONOCHROME_WILDFLOWERS);
 
+        blockStateModelGenerator.registerShelf(DecoBlocks.CACTUS_SHELF, DecoBlocks.STRIPPED_CACTUS);
+        blockStateModelGenerator.registerShelf(DecoBlocks.MUSHROOM_SHELF, Blocks.MUSHROOM_STEM);
+        blockStateModelGenerator.registerShelf(DecoBlocks.IRON_CAP_SHELF, DecoBlocks.STRIPPED_IRON_CAP_STEM);
+        blockStateModelGenerator.registerShelf(DecoBlocks.DRIFTWOOD_SHELF, DecoBlocks.STRIPPED_DRIFTWOOD_LOG);
+        blockStateModelGenerator.registerShelf(DecoBlocks.WOODEN_SHELF, DecoBlocks.STRIPPED_WOODEN_LOG);
+
         BlockStateModelGenerator.BlockTexturePool bamboomosaicpool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(DecoBlocks.BAMBOO_MOSAIC_TEMP);
 

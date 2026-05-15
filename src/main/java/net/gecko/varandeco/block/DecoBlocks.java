@@ -2,30 +2,25 @@ package net.gecko.varandeco.block;
 
 import com.terraformersmc.terraform.sign.api.block.TerraformSignBlockHelper;
 import net.gecko.varandeco.VaranDeco;
-import net.gecko.varandeco.block.nature.*;
-import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
-import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
-import net.gecko.varandeco.block.nature.underwater.*;
-import net.gecko.varandeco.block.woodmadeblocks.barrel.*;
-import net.gecko.varandeco.block.elementblocks.*;
 import net.gecko.varandeco.block.custom.*;
-import net.gecko.varandeco.block.nature.CloudBlock;
-import net.gecko.varandeco.block.nature.IronCapBlock;
-import net.gecko.varandeco.block.nature.PackedNyliumBlock;
-import net.gecko.varandeco.block.nature.WarpedWartBlock;
-import net.gecko.varandeco.block.nature.underwater.corals.*;
+import net.gecko.varandeco.block.elementblocks.*;
+import net.gecko.varandeco.block.nature.*;
 import net.gecko.varandeco.block.nature.flowers.*;
 import net.gecko.varandeco.block.nature.ice.BlackIceBlock;
 import net.gecko.varandeco.block.nature.ice.FragileIceBlock;
 import net.gecko.varandeco.block.nature.packed.PackedGrassBlock;
 import net.gecko.varandeco.block.nature.packed.PackedMyceliumBlock;
-import net.gecko.varandeco.block.oxidizable.*;
+import net.gecko.varandeco.block.nature.underwater.*;
+import net.gecko.varandeco.block.nature.underwater.corals.*;
+import net.gecko.varandeco.block.oxidizable.OxidizableButtonBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizableLadderBlock;
+import net.gecko.varandeco.block.oxidizable.OxidizablePressurePlateBlock;
 import net.gecko.varandeco.block.stonemadeblocks.*;
 import net.gecko.varandeco.block.woodmadeblocks.cartographytables.*;
 import net.gecko.varandeco.block.woodmadeblocks.craftingtables.*;
 import net.gecko.varandeco.block.woodmadeblocks.smithingtables.*;
-import net.gecko.varandeco.item.custom.NonStationBlockItem;
 import net.gecko.varandeco.effects.DecoStatusEffects;
+import net.gecko.varandeco.item.custom.NonStationBlockItem;
 import net.gecko.varandeco.world.feature.tree.DecoSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
@@ -279,6 +274,8 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(DecoBlocks.SNOW_BRICKS), Block::new);
     public static final Block JACK_O_SOUL_LANTERN = registerBlock("jack_o_soul_lantern",
             AbstractBlock.Settings.copy(Blocks.CARVED_PUMPKIN).luminance(state -> 10),MovablePumpkinBlock::new);
+    public static final Block JACK_O_COPPER_LANTERN = registerBlock("jack_o_copper_lantern",
+            AbstractBlock.Settings.copy(Blocks.CARVED_PUMPKIN).luminance(state -> 15),MovablePumpkinBlock::new);
     public static final Block PACKED_NETHERRACK = registerBlock("packed_netherrack",
             AbstractBlock.Settings.copy(Blocks.NETHERRACK).strength(3.2F,1.0f), Block::new);
     public static final Block NETHERRACK_BRICKS = registerBlock("netherrack_bricks",
@@ -2656,16 +2653,16 @@ public class DecoBlocks {
 
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
-                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE), DeepslateFurnaceBlock::new);
+                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE),FurnaceBlock::new);
     public static final Block BLACKSTONE_FURNACE = registerBlock("blackstone_furnace",
             AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.BLACK)
-                    .strength(3.0f), BlackstoneFurnaceBlock::new);
+                    .strength(3.0f),FurnaceBlock::new);
     public static final Block TUFF_FURNACE = registerBlock("tuff_furnace",
             AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.TERRACOTTA_GRAY)
-                    .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffFurnaceBlock::new);
+                    .strength(3.0f).sounds(BlockSoundGroup.TUFF),FurnaceBlock::new);
     public static final Block END_STONE_FURNACE = registerBlock("end_stone_furnace",
             AbstractBlock.Settings.copy(Blocks.FURNACE).mapColor(MapColor.PALE_YELLOW)
-                    .strength(4.5f),EndstoneFurnaceBlock::new);
+                    .strength(4.5f),FurnaceBlock::new);
 
     public static final Block SPRUCE_LADDER = registerBlock("spruce_ladder",
             AbstractBlock.Settings.copy(Blocks.LADDER),LadderBlock::new);
@@ -3661,43 +3658,54 @@ public class DecoBlocks {
             AbstractBlock.Settings.copy(Blocks.HORN_CORAL_WALL_FAN), DeadCoralWallFanBlock::new,
             copyLootTable(HYDRATED_HORN_CORAL_FAN, false));
 
+    public static final Block CACTUS_SHELF = registerBlock("cactus_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF).mapColor(MapColor.PALE_GREEN), ShelfBlock::new);
+    public static final Block MUSHROOM_SHELF = registerBlock("mushroom_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF).mapColor(MapColor.WHITE_GRAY), ShelfBlock::new);
+    public static final Block IRON_CAP_SHELF = registerBlock("iron_cap_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF).mapColor(MapColor.LIGHT_BLUE_GRAY), ShelfBlock::new);
+    public static final Block DRIFTWOOD_SHELF = registerBlock("driftwood_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF).mapColor(MapColor.DARK_GREEN), ShelfBlock::new);
+    public static final Block WOODEN_SHELF = registerBlock("wooden_shelf",
+            AbstractBlock.Settings.copy(Blocks.OAK_SHELF).mapColor(MapColor.BROWN), ShelfBlock::new);
+
     public static final Block OAK_BARREL = registerNonStationBlock("oak_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN), OakBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OAK_TAN), BarrelBlock::new);
     public static final Block SPRUCE_BARREL = registerNonStationBlock("spruce_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL), SpruceBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL), BarrelBlock::new);
     public static final Block BIRCH_BARREL = registerNonStationBlock("birch_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW), BirchBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW), BarrelBlock::new);
     public static final Block JUNGLE_BARREL = registerNonStationBlock("jungle_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN), JungleBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN), BarrelBlock::new);
     public static final Block ACACIA_BARREL = registerNonStationBlock("acacia_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE), AcaciaBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.ORANGE), BarrelBlock::new);
     public static final Block DARK_OAK_BARREL = registerNonStationBlock("dark_oak_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN),DarkOakBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.BROWN),BarrelBlock::new);
     public static final Block MANGROVE_BARREL = registerNonStationBlock("mangrove_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED),MangroveBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RED),BarrelBlock::new);
     public static final Block BAMBOO_BARREL = registerNonStationBlock("bamboo_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.YELLOW)
-                    .sounds(BlockSoundGroup.BAMBOO_WOOD),BambooBarrelBlock::new);
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD),BarrelBlock::new);
     public static final Block CHERRY_BARREL = registerNonStationBlock("cherry_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE)
-                    .sounds(BlockSoundGroup.CHERRY_WOOD),CherryBarrelBlock::new);
+                    .sounds(BlockSoundGroup.CHERRY_WOOD),BarrelBlock::new);
     public static final Block PALE_OAK_BARREL = registerNonStationBlock("pale_oak_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OFF_WHITE) ,PaleOakBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.OFF_WHITE) ,BarrelBlock::new);
     public static final Block CRIMSON_BARREL = registerNonStationBlock("crimson_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DULL_PINK)
-                    .sounds(BlockSoundGroup.NETHER_WOOD),CrimsonBarrelBlock::new);
+                    .sounds(BlockSoundGroup.NETHER_WOOD),BarrelBlock::new);
     public static final Block WARPED_BARREL = registerNonStationBlock("warped_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_AQUA)
-                    .sounds(BlockSoundGroup.NETHER_WOOD),WarpedBarrelBlock::new);
+                    .sounds(BlockSoundGroup.NETHER_WOOD),BarrelBlock::new);
     public static final Block CACTUS_BARREL = registerNonStationBlock("cactus_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),CactusBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.PALE_GREEN),BarrelBlock::new);
     public static final Block DRIFTWOOD_BARREL = registerNonStationBlock("driftwood_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_GREEN),DriftwoodBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.DARK_GREEN),BarrelBlock::new);
     public static final Block MUSHROOM_BARREL = registerNonStationBlock("mushroom_barrel",
-            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RAW_IRON_PINK),MushroomBarrelBlock::new);
+            AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.RAW_IRON_PINK),BarrelBlock::new);
     public static final Block IRON_CAP_BARREL = registerNonStationBlock("iron_cap_barrel",
             AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.LIGHT_BLUE_GRAY)
-                    .sounds(BlockSoundGroup.NETHER_STEM),IronCapBarrelBlock::new);
+                    .sounds(BlockSoundGroup.NETHER_STEM),BarrelBlock::new);
 
     public static final Block OAK_BOOKSHELF = registerBlock("oak_bookshelf",
             AbstractBlock.Settings.copy(Blocks.BOOKSHELF).mapColor(MapColor.BROWN),Block::new);
@@ -3824,29 +3832,29 @@ public class DecoBlocks {
 
     public static final Block DEEPSLATE_SMOKER = registerNonStationBlock("deepslate_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.DEEPSLATE_GRAY)
-                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE),DeepslateSmokerBlock::new);
+                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE),SmokerBlock::new);
     public static final Block BLACKSTONE_SMOKER = registerNonStationBlock("blackstone_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.BLACK)
-                    .strength(3.0f),BlackstoneSmokerBlock::new);
+                    .strength(3.0f),SmokerBlock::new);
     public static final Block TUFF_SMOKER = registerNonStationBlock("tuff_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.TERRACOTTA_GRAY)
-                    .strength(3.0f).sounds(BlockSoundGroup.TUFF),TuffSmokerBlock::new);
+                    .strength(3.0f).sounds(BlockSoundGroup.TUFF),SmokerBlock::new);
     public static final Block END_STONE_SMOKER = registerNonStationBlock("end_stone_smoker",
             AbstractBlock.Settings.copy(Blocks.SMOKER).mapColor(MapColor.PALE_YELLOW)
-                    .strength(4.5f),EndstoneSmokerBlock::new);
+                    .strength(4.5f),SmokerBlock::new);
 
     public static final Block DEEPSLATE_BLAST_FURNACE = registerNonStationBlock("deepslate_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)
-                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE_BRICKS),DeepslateBlastFurnaceBlock::new);
+                    .strength(4.5f).sounds(BlockSoundGroup.DEEPSLATE_BRICKS),BlastFurnaceBlock::new);
     public static final Block BLACKSTONE_BLAST_FURNACE = registerNonStationBlock("blackstone_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.BLACK)
-                    .strength(3.0f),BlackstoneBlastFurnaceBlock::new);
+                    .strength(3.0f),BlastFurnaceBlock::new);
     public static final Block TUFF_BLAST_FURNACE = registerNonStationBlock("tuff_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.TERRACOTTA_GRAY)
-                    .strength(3.0f).sounds(BlockSoundGroup.TUFF_BRICKS),TuffBlastFurnaceBlock::new);
+                    .strength(3.0f).sounds(BlockSoundGroup.TUFF_BRICKS),BlastFurnaceBlock::new);
     public static final Block END_STONE_BLAST_FURNACE = registerNonStationBlock("end_stone_blast_furnace",
             AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).mapColor(MapColor.PALE_YELLOW)
-                    .strength(4.5f),EndstoneBlastFurnaceBlock::new);
+                    .strength(4.5f),BlastFurnaceBlock::new);
 
     public static final Block OAK_CARTOGRAPHY_TABLE = registerNonStationBlock("oak_cartography_table",
             AbstractBlock.Settings.copy(Blocks.CARTOGRAPHY_TABLE),OakCartographyTableBlock::new);
@@ -5091,7 +5099,6 @@ public class DecoBlocks {
     public static final Block STRIPPED_DRIFTWOOD_TEMP = registerBlockTemp("stripped_driftwood_temp",Block::new);
     public static final Block DRIFTWOOD_TEMP = registerBlockTemp("driftwood_temp",Block::new);
     public static final Block DRIED_DRIFTWOOD_TEMP = registerBlockTemp("dried_driftwood_temp",Block::new);
-    public static final Block GRASS_TEMP = registerBlockTemp("grass_temp",Block::new);
     public static final Block DRY_GRASS_TEMP = registerBlockTemp("dry_grass_temp",Block::new);
     public static final Block PODZOL_TEMP = registerBlockTemp("podzol_temp",Block::new);
     public static final Block MYCELIUM_TEMP = registerBlockTemp("mycelium_temp",Block::new);

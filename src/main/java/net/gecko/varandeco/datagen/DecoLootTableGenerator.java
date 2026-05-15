@@ -2518,6 +2518,14 @@ public class DecoLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(DecoBlocks.SEA_WILDFLOWERS, this.segmentedDrops(DecoBlocks.SEA_WILDFLOWERS));
         addDrop(DecoBlocks.MONOCHROME_WILDFLOWERS, this.segmentedDrops(DecoBlocks.MONOCHROME_WILDFLOWERS));
+
+        addDrop(DecoBlocks.JACK_O_COPPER_LANTERN);
+
+        addDrop(DecoBlocks.CACTUS_SHELF);
+        addDrop(DecoBlocks.MUSHROOM_SHELF);
+        addDrop(DecoBlocks.IRON_CAP_SHELF);
+        addDrop(DecoBlocks.DRIFTWOOD_SHELF);
+        addDrop(DecoBlocks.WOODEN_SHELF);
     }
     public LootTable.Builder capMushroomBlockDrops(Block dropWithSilkTouch, ItemConvertible drop) {
         return dropsWithSilkTouch(
