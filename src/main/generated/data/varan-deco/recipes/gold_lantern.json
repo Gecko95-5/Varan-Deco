@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:gold_nugget"
+      "item": "minecraft:torch"
     },
     "-": {
-      "item": "minecraft:torch"
+      "item": "minecraft:gold_nugget"
     }
   },
   "pattern": [
