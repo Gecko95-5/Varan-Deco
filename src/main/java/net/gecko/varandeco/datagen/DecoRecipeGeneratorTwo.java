@@ -3821,8 +3821,8 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("-")
                 .pattern("#")
                 .pattern("-")
-                .input('-', Items.GOLD_INGOT)
-                .input('#', Items.GOLD_NUGGET)
+                .input('-', Items.GOLD_NUGGET)
+                .input('#', Items.GOLD_INGOT)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_CHAIN)));
@@ -4096,8 +4096,8 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("---")
                 .pattern("-#-")
                 .pattern("---")
-                .input('-', Items.TORCH)
-                .input('#', Items.GOLD_NUGGET)
+                .input('-', Items.GOLD_NUGGET)
+                .input('#', Items.TORCH)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_NUGGET),
                         RecipeProvider.conditionsFromItem(Items.GOLD_NUGGET))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_LANTERN)));
@@ -4106,8 +4106,8 @@ public class DecoRecipeGeneratorTwo extends FabricRecipeProvider {
                 .pattern("---")
                 .pattern("-#-")
                 .pattern("---")
-                .input('-', Items.SOUL_TORCH)
-                .input('#', Items.GOLD_NUGGET)
+                .input('-', Items.GOLD_NUGGET)
+                .input('#', Items.SOUL_TORCH)
                 .criterion(RecipeProvider.hasItem(Items.SOUL_TORCH),
                         RecipeProvider.conditionsFromItem(Items.SOUL_TORCH))
                 .offerTo(exporter, new Identifier(getRecipeName(DecoBlocks.GOLD_SOUL_LANTERN)));
