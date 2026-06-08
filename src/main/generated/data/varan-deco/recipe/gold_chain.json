@@ -3,10 +3,10 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:gold_nugget"
+      "item": "minecraft:gold_ingot"
     },
     "-": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:gold_nugget"
     }
   },
   "pattern": [
