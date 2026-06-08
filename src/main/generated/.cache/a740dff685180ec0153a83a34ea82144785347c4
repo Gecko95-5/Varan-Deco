@@ -1,4 +1,4 @@
-// 1.20.4	2026-05-09T23:47:25.7938433	Variant Decoration/Tags for minecraft:block
+// 1.20.4	2026-06-08T11:23:09.598959	Variant Decoration/Tags for minecraft:block
 cce3bb423ec2cb71811a4c5397e0793ce12fe3a5 data\minecraft\tags\blocks\mineable\pickaxe.json
 37eb77e1d219bec256d2cad070ded4835ecb4b1d data\minecraft\tags\blocks\stone_buttons.json
 e4c56aa273e892661d878452d499bff029b06217 data\varan-deco\tags\blocks\deco_note_blocks.json
@@ -10,6 +10,7 @@ d8466559a72b9d0c3d6e907e83933e990132ee14 data\minecraft\tags\blocks\ceiling_hang
 0160d0bf9b0fbed1babe0bd33d8e6c3098acf285 data\varan-deco\tags\blocks\deco_smithing_tables.json
 185270de475d3d74474524759d539318162ac95d data\varan-deco\tags\blocks\wooden_bookshelf_stairs.json
 2214383974325a4e567d7e3d0073a99a8a3b71fd data\varan-deco\tags\blocks\hardened_glass.json
+7876d0189684683c1a8d99bee98142007aaf8f0a data\minecraft\tags\blocks\sand.json
 54a0a4fd27a5be1ffb45074ecbd67e05ccecf393 data\varan-deco\tags\blocks\deco_crafting_tables.json
 ab9d7217254f117e4afcc07f79cc72f5553ed619 data\minecraft\tags\blocks\dirt.json
 70ce753d64106b85eb9922928a70dc5e78030078 data\varan-deco\tags\blocks\terracotta_slabs.json
@@ -34,8 +35,8 @@ d8ed063f51fa131f077dfb0606c828127a995702 data\varan-deco\tags\blocks\log_slabs.j
 90095a40c785133cf39fcc3b24ccc1fc71360f73 data\varan-deco\tags\blocks\deco_bookshelves.json
 06bd1476079615f2c1cd225789179eab4b2fd9ef data\minecraft\tags\blocks\guarded_by_piglins.json
 cdf7333dc31338cb5e57f9d646b5f0bc3337637d data\minecraft\tags\blocks\nylium.json
-72cc6e369598b792ade874b279f9c32cf46fd7cc data\minecraft\tags\blocks\walls.json
 6233edd7704b66169e6d6fc85374900bb1e4378b data\minecraft\tags\blocks\fence_gates.json
+72cc6e369598b792ade874b279f9c32cf46fd7cc data\minecraft\tags\blocks\walls.json
 4ae8b3bed3d1dbec70a892967fa82b53c3934c3e data\minecraft\tags\blocks\enderman_holdable.json
 489a3a19afdbceb10c72e7d75af0bebd43c3359b data\minecraft\tags\blocks\saplings.json
 863991d5119327165b9ef485a73073ea9a145494 data\minecraft\tags\blocks\mineable\hoe.json
